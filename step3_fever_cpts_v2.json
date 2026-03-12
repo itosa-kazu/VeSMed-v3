@@ -1,0 +1,8344 @@
+{
+  "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
+  "version": "2.0",
+  "step": "3_conditional_probability_tables",
+  "root_priors": {
+    "R01": {
+      "description": "日本の成人発熱外来の年齢分布",
+      "distribution": {
+        "18_39": 0.4,
+        "40_64": 0.35,
+        "65_plus": 0.25
+      }
+    },
+    "R02": {
+      "description": "性別分布",
+      "distribution": {
+        "male": 0.45,
+        "female": 0.55
+      }
+    },
+    "R03": {
+      "description": "喫煙率（日本成人）",
+      "distribution": {
+        "never": 0.6,
+        "former": 0.2,
+        "current": 0.2
+      }
+    },
+    "R04": {
+      "description": "糖尿病有病率（日本成人）",
+      "distribution": {
+        "no": 0.88,
+        "yes": 0.12
+      }
+    },
+    "R05": {
+      "description": "免疫不全の割合",
+      "distribution": {
+        "no": 0.97,
+        "yes": 0.03
+      }
+    },
+    "R06": {
+      "description": "2週間以内の熱帯渡航歴",
+      "distribution": {
+        "no": 0.98,
+        "yes": 0.02
+      }
+    },
+    "R07": {
+      "description": "3ヶ月以内の入院歴",
+      "distribution": {
+        "no": 0.92,
+        "yes": 0.08
+      }
+    },
+    "R08": {
+      "description": "4週間以内の新規薬剤開始",
+      "distribution": {
+        "no": 0.85,
+        "yes": 0.15
+      }
+    },
+    "R09": {
+      "description": "静注薬物使用",
+      "distribution": {
+        "no": 0.995,
+        "yes": 0.005
+      }
+    },
+    "R10": {
+      "description": "人工弁・体内デバイス",
+      "distribution": {
+        "no": 0.98,
+        "yes": 0.02
+      }
+    },
+    "R11": {
+      "description": "呼吸器感染との接触・流行",
+      "distribution": {
+        "no": 0.6,
+        "yes": 0.4
+      }
+    },
+    "R12": {
+      "description": "胆石既往",
+      "distribution": {
+        "no": 0.9,
+        "yes": 0.1
+      }
+    },
+    "R13": {
+      "description": "尿道カテーテル留置",
+      "distribution": {
+        "no": 0.97,
+        "yes": 0.03
+      }
+    },
+    "R14": {
+      "description": "皮膚外傷・創傷",
+      "distribution": {
+        "no": 0.9,
+        "yes": 0.1
+      }
+    },
+    "R15": {
+      "description": "妊娠（女性の中での割合、男性では0）",
+      "distribution": {
+        "no": 0.96,
+        "yes": 0.04
+      }
+    },
+    "R16": {
+      "description": "大量飲酒習慣",
+      "distribution": {
+        "no": 0.9,
+        "yes": 0.1
+      }
+    },
+    "R17": {
+      "description": "今季インフルエンザワクチン接種",
+      "distribution": {
+        "no": 0.5,
+        "yes": 0.5
+      }
+    },
+    "R18": {
+      "description": "6ヶ月以内COVIDワクチン",
+      "distribution": {
+        "no": 0.7,
+        "yes": 0.3
+      }
+    },
+    "R19": {
+      "description": "現在の季節（均等分布：システム入力時に設定）",
+      "distribution": {
+        "spring": 0.25,
+        "summer": 0.25,
+        "autumn": 0.25,
+        "winter": 0.25
+      }
+    },
+    "R20": {
+      "description": "タンポン・腟内異物",
+      "distribution": {
+        "no": 0.98,
+        "yes": 0.02
+      }
+    }
+  },
+  "full_cpts": {
+    "D01": {
+      "parents": [
+        "R11",
+        "R19"
+      ],
+      "description": "かぜの発症確率",
+      "cpt": {
+        "no|spring": 0.3,
+        "no|summer": 0.2,
+        "no|autumn": 0.3,
+        "no|winter": 0.35,
+        "yes|spring": 0.4,
+        "yes|summer": 0.25,
+        "yes|autumn": 0.4,
+        "yes|winter": 0.5
+      }
+    },
+    "D02": {
+      "parents": [
+        "R05",
+        "R11",
+        "R17",
+        "R19"
+      ],
+      "description": "インフルエンザの発症確率。冬+流行+ワクチンなしで最高",
+      "cpt": {
+        "no|no|no|spring": 0.01,
+        "no|no|no|summer": 0.01,
+        "no|no|no|autumn": 0.05,
+        "no|no|no|winter": 0.15,
+        "no|no|yes|spring": 0.004,
+        "no|no|yes|summer": 0.004,
+        "no|no|yes|autumn": 0.02,
+        "no|no|yes|winter": 0.06,
+        "no|yes|no|spring": 0.02,
+        "no|yes|no|summer": 0.02,
+        "no|yes|no|autumn": 0.1,
+        "no|yes|no|winter": 0.3,
+        "no|yes|yes|spring": 0.008,
+        "no|yes|yes|summer": 0.008,
+        "no|yes|yes|autumn": 0.04,
+        "no|yes|yes|winter": 0.12,
+        "yes|no|no|spring": 0.013,
+        "yes|no|no|summer": 0.013,
+        "yes|no|no|autumn": 0.065,
+        "yes|no|no|winter": 0.195,
+        "yes|no|yes|spring": 0.005,
+        "yes|no|yes|summer": 0.005,
+        "yes|no|yes|autumn": 0.026,
+        "yes|no|yes|winter": 0.078,
+        "yes|yes|no|spring": 0.026,
+        "yes|yes|no|summer": 0.026,
+        "yes|yes|no|autumn": 0.13,
+        "yes|yes|no|winter": 0.39,
+        "yes|yes|yes|spring": 0.01,
+        "yes|yes|yes|summer": 0.01,
+        "yes|yes|yes|autumn": 0.052,
+        "yes|yes|yes|winter": 0.156
+      }
+    },
+    "D03": {
+      "parents": [
+        "R05",
+        "R11",
+        "R18"
+      ],
+      "description": "COVID発症確率",
+      "cpt": {
+        "no|no|no": 0.05,
+        "no|no|yes": 0.025,
+        "no|yes|no": 0.125,
+        "no|yes|yes": 0.062,
+        "yes|no|no": 0.06,
+        "yes|no|yes": 0.03,
+        "yes|yes|no": 0.15,
+        "yes|yes|yes": 0.075
+      }
+    },
+    "D04": {
+      "parents": [
+        "R01",
+        "R11"
+      ],
+      "description": "咽頭扁桃炎の発症確率",
+      "cpt": {
+        "18_39|no": 0.06,
+        "18_39|yes": 0.12,
+        "40_64|no": 0.04,
+        "40_64|yes": 0.08,
+        "65_plus|no": 0.02,
+        "65_plus|yes": 0.04
+      }
+    },
+    "D06": {
+      "parents": [
+        "R03",
+        "R11"
+      ],
+      "description": "急性気管支炎の発症確率",
+      "cpt": {
+        "never|no": 0.03,
+        "never|yes": 0.06,
+        "former|no": 0.04,
+        "former|yes": 0.08,
+        "current|no": 0.06,
+        "current|yes": 0.12
+      }
+    },
+    "D07": {
+      "parents": [
+        "R19"
+      ],
+      "description": "胃腸炎。冬にノロ、夏に細菌性。",
+      "cpt": {
+        "spring": 0.08,
+        "summer": 0.1,
+        "autumn": 0.08,
+        "winter": 0.12
+      }
+    },
+    "D08": {
+      "parents": [
+        "R02",
+        "R13",
+        "R15"
+      ],
+      "description": "膀胱炎。女性・カテーテル・妊娠でリスク上昇",
+      "cpt": {
+        "male|no|no": 0.01,
+        "male|no|yes": 0.01,
+        "male|yes|no": 0.03,
+        "male|yes|yes": 0.03,
+        "female|no|no": 0.06,
+        "female|no|yes": 0.12,
+        "female|yes|no": 0.18,
+        "female|yes|yes": 0.36
+      }
+    },
+    "D10": {
+      "parents": [
+        "R01"
+      ],
+      "description": "虫垂炎。若年者に好発",
+      "cpt": {
+        "18_39": 0.03,
+        "40_64": 0.015,
+        "65_plus": 0.008
+      }
+    },
+    "D11": {
+      "parents": [
+        "R01",
+        "R12"
+      ],
+      "description": "胆嚢炎。胆石既往+高齢でリスク上昇",
+      "cpt": {
+        "18_39|no": 0.003,
+        "18_39|yes": 0.02,
+        "40_64|no": 0.005,
+        "40_64|yes": 0.03,
+        "65_plus|no": 0.008,
+        "65_plus|yes": 0.05
+      }
+    },
+    "D12": {
+      "parents": [
+        "R04",
+        "R05",
+        "R09",
+        "R14"
+      ],
+      "description": "蜂窩織炎。創傷・糖尿病・免疫不全でリスク上昇",
+      "cpt": {
+        "no|no|no|no": 0.005,
+        "no|no|no|yes": 0.025,
+        "no|no|yes|no": 0.015,
+        "no|no|yes|yes": 0.075,
+        "no|yes|no|no": 0.01,
+        "no|yes|no|yes": 0.05,
+        "no|yes|yes|no": 0.03,
+        "no|yes|yes|yes": 0.15,
+        "yes|no|no|no": 0.01,
+        "yes|no|no|yes": 0.05,
+        "yes|no|yes|no": 0.03,
+        "yes|no|yes|yes": 0.15,
+        "yes|yes|no|no": 0.02,
+        "yes|yes|no|yes": 0.1,
+        "yes|yes|yes|no": 0.06,
+        "yes|yes|yes|yes": 0.3
+      }
+    },
+    "D13": {
+      "parents": [
+        "R01",
+        "R05"
+      ],
+      "description": "髄膜炎。3状態：no/viral/bacterial",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "18_39|no": {
+          "no": 0.994,
+          "viral": 0.004,
+          "bacterial": 0.002
+        },
+        "18_39|yes": {
+          "no": 0.985,
+          "viral": 0.005,
+          "bacterial": 0.01
+        },
+        "40_64|no": {
+          "no": 0.996,
+          "viral": 0.002,
+          "bacterial": 0.002
+        },
+        "40_64|yes": {
+          "no": 0.988,
+          "viral": 0.003,
+          "bacterial": 0.009
+        },
+        "65_plus|no": {
+          "no": 0.995,
+          "viral": 0.001,
+          "bacterial": 0.004
+        },
+        "65_plus|yes": {
+          "no": 0.98,
+          "viral": 0.002,
+          "bacterial": 0.018
+        }
+      }
+    },
+    "D14": {
+      "parents": [
+        "R09",
+        "R10"
+      ],
+      "description": "感染性心内膜炎。IV drug use + prosthetic valve",
+      "cpt": {
+        "no|no": 0.001,
+        "no|yes": 0.008,
+        "yes|no": 0.015,
+        "yes|yes": 0.04
+      }
+    },
+    "D15": {
+      "parents": [
+        "R06"
+      ],
+      "description": "マラリア。渡航歴なしではほぼ0",
+      "cpt": {
+        "no": 0.0001,
+        "tropical_endemic": 0.15,
+        "developed": 0.0075,
+        "domestic": 0.0075
+      }
+    },
+    "D16": {
+      "parents": [
+        "R06",
+        "R19"
+      ],
+      "description": "デング熱。渡航歴+季節依存",
+      "cpt": {
+        "no|spring": 0.0001,
+        "no|summer": 0.0001,
+        "no|autumn": 0.0001,
+        "no|winter": 0.0001,
+        "tropical_endemic|spring": 0.05,
+        "developed|spring": 0.0025000000000000005,
+        "domestic|spring": 0.0025000000000000005,
+        "tropical_endemic|summer": 0.1,
+        "developed|summer": 0.005000000000000001,
+        "domestic|summer": 0.005000000000000001,
+        "tropical_endemic|autumn": 0.08,
+        "developed|autumn": 0.004,
+        "domestic|autumn": 0.004,
+        "tropical_endemic|winter": 0.03,
+        "developed|winter": 0.0015,
+        "domestic|winter": 0.0015
+      }
+    },
+    "D17": {
+      "parents": [
+        "R05",
+        "R11",
+        "R16"
+      ],
+      "description": "結核。免疫不全・接触歴・飲酒でリスク上昇",
+      "cpt": {
+        "no|no|no": 0.003,
+        "no|no|yes": 0.006,
+        "no|yes|no": 0.009,
+        "no|yes|yes": 0.018,
+        "yes|no|no": 0.015,
+        "yes|no|yes": 0.03,
+        "yes|yes|no": 0.045,
+        "yes|yes|yes": 0.09
+      }
+    },
+    "D18": {
+      "parents": [
+        "R01"
+      ],
+      "description": "伝染性単核球症。若年者に好発",
+      "cpt": {
+        "18_39": 0.02,
+        "40_64": 0.003,
+        "65_plus": 0.001
+      }
+    },
+    "D19": {
+      "parents": [
+        "R08"
+      ],
+      "description": "薬剤熱。新規薬剤なしではほぼ0",
+      "cpt": {
+        "no": 0.001,
+        "yes": 0.04
+      }
+    },
+    "D20": {
+      "parents": [
+        "D01"
+      ],
+      "description": "副鼻腔炎。かぜに続発",
+      "cpt": {
+        "no": 0.01,
+        "yes": 0.08
+      }
+    },
+    "D21": {
+      "parents": [
+        "R01",
+        "R05"
+      ],
+      "description": "帯状疱疹。加齢・免疫不全でリスク上昇",
+      "cpt": {
+        "18_39|no": 0.005,
+        "18_39|yes": 0.015,
+        "40_64|no": 0.008,
+        "40_64|yes": 0.025,
+        "65_plus|no": 0.015,
+        "65_plus|yes": 0.04
+      }
+    },
+    "D22": {
+      "parents": [
+        "R02"
+      ],
+      "description": "前立腺炎。男性のみ",
+      "cpt": {
+        "male": 0.015,
+        "female": 0.001
+      }
+    },
+    "D23": {
+      "parents": [
+        "R06",
+        "R19"
+      ],
+      "description": "リケッチア症。日本では秋、渡航歴でも",
+      "cpt": {
+        "no|spring": 0.0005,
+        "no|summer": 0.001,
+        "no|autumn": 0.003,
+        "no|winter": 0.0005,
+        "yes|spring": 0.005,
+        "yes|summer": 0.01,
+        "yes|autumn": 0.015,
+        "yes|winter": 0.003
+      }
+    },
+    "D24": {
+      "parents": [
+        "R14",
+        "R20"
+      ],
+      "description": "TSS。創傷+タンポンがリスク",
+      "cpt": {
+        "no|no": 0.0005,
+        "no|yes": 0.005,
+        "yes|no": 0.003,
+        "yes|yes": 0.01
+      }
+    },
+    "D25": {
+      "parents": [
+        "R12"
+      ],
+      "description": "胆管炎。胆石既往でリスク大幅上昇",
+      "cpt": {
+        "no": 0.002,
+        "yes": 0.03
+      }
+    },
+    "D26": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "PID。若年女性に多い",
+      "cpt": {
+        "18_39|male": 0.001,
+        "18_39|female": 0.025,
+        "40_64|male": 0.001,
+        "40_64|female": 0.01,
+        "65_plus|male": 0.001,
+        "65_plus|female": 0.003
+      }
+    },
+    "D27": {
+      "parents": [
+        "R01"
+      ],
+      "description": "憩室炎。高齢者に多い",
+      "cpt": {
+        "18_39": 0.003,
+        "40_64": 0.01,
+        "65_plus": 0.02
+      }
+    },
+    "D28": {
+      "parents": [
+        "R06"
+      ],
+      "description": "腸チフス。渡航歴なしではほぼ0",
+      "cpt": {
+        "no": 0.0001,
+        "tropical_endemic": 0.08,
+        "developed": 0.004,
+        "domestic": 0.004
+      }
+    },
+    "S03": {
+      "parents": [
+        "D01",
+        "D20"
+      ],
+      "description": "鼻汁。かぜと副鼻腔炎で出現",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no": {
+          "absent": 0.95,
+          "watery": 0.03,
+          "purulent": 0.02
+        },
+        "no|yes": {
+          "absent": 0.1,
+          "watery": 0.1,
+          "purulent": 0.8
+        },
+        "yes|no": {
+          "absent": 0.15,
+          "watery": 0.6,
+          "purulent": 0.25
+        },
+        "yes|yes": {
+          "absent": 0.05,
+          "watery": 0.15,
+          "purulent": 0.8
+        }
+      }
+    },
+    "S08": {
+      "parents": [
+        "D16",
+        "D18",
+        "D23"
+      ],
+      "description": "関節痛",
+      "cpt": {
+        "no|no|no": 0.05,
+        "no|no|yes": 0.5,
+        "no|yes|no": 0.4,
+        "no|yes|yes": 0.5,
+        "yes|no|no": 0.8,
+        "yes|no|yes": 0.8,
+        "yes|yes|no": 0.8,
+        "yes|yes|yes": 0.8
+      }
+    },
+    "S10": {
+      "parents": [
+        "D08",
+        "D09",
+        "D22"
+      ],
+      "description": "排尿痛",
+      "cpt": {
+        "no|no|no": 0.02,
+        "no|no|yes": 0.7,
+        "no|yes|no": 0.6,
+        "no|yes|yes": 0.7,
+        "yes|no|no": 0.9,
+        "yes|no|yes": 0.9,
+        "yes|yes|no": 0.9,
+        "yes|yes|yes": 0.9
+      }
+    },
+    "S11": {
+      "parents": [
+        "D08",
+        "D09",
+        "D22"
+      ],
+      "description": "頻尿",
+      "cpt": {
+        "no|no|no": 0.03,
+        "no|no|yes": 0.65,
+        "no|yes|no": 0.5,
+        "no|yes|yes": 0.65,
+        "yes|no|no": 0.85,
+        "yes|no|yes": 0.85,
+        "yes|yes|no": 0.85,
+        "yes|yes|yes": 0.85
+      }
+    },
+    "S14": {
+      "parents": [
+        "D07",
+        "D28"
+      ],
+      "description": "下痢",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no": {
+          "absent": 0.95,
+          "watery": 0.03,
+          "bloody": 0.02
+        },
+        "no|yes": {
+          "absent": 0.3,
+          "watery": 0.5,
+          "bloody": 0.2
+        },
+        "yes|no": {
+          "absent": 0.1,
+          "watery": 0.65,
+          "bloody": 0.25
+        },
+        "yes|yes": {
+          "absent": 0.08,
+          "watery": 0.55,
+          "bloody": 0.37
+        }
+      }
+    },
+    "S15": {
+      "parents": [
+        "D09"
+      ],
+      "description": "側腹部痛",
+      "cpt": {
+        "no": 0.02,
+        "yes": 0.75
+      }
+    },
+    "S16": {
+      "parents": [
+        "D14",
+        "D17"
+      ],
+      "description": "盗汗",
+      "cpt": {
+        "no|no": 0.03,
+        "no|yes": 0.65,
+        "yes|no": 0.5,
+        "yes|yes": 0.8
+      }
+    },
+    "S17": {
+      "parents": [
+        "D14",
+        "D17"
+      ],
+      "description": "体重減少",
+      "cpt": {
+        "no|no": 0.02,
+        "no|yes": 0.55,
+        "yes|no": 0.35,
+        "yes|yes": 0.7
+      }
+    },
+    "S19": {
+      "parents": [
+        "D03"
+      ],
+      "description": "味覚嗅覚障害。COVID特異的",
+      "cpt": {
+        "no": 0.01,
+        "yes": 0.35
+      }
+    },
+    "S20": {
+      "parents": [
+        "D20"
+      ],
+      "description": "顔面痛。副鼻腔炎で出現",
+      "cpt": {
+        "no": 0.02,
+        "yes": 0.75
+      }
+    },
+    "S21": {
+      "parents": [
+        "D05"
+      ],
+      "description": "胸痛",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "absent": 0.97,
+          "pleuritic": 0.02,
+          "constant": 0.01
+        },
+        "yes": {
+          "absent": 0.55,
+          "pleuritic": 0.4,
+          "constant": 0.05
+        }
+      }
+    },
+    "E06": {
+      "parents": [
+        "D13"
+      ],
+      "description": "項部硬直。髄膜炎の3状態で確率が異なる",
+      "cpt_type": "conditional_on_multinomial",
+      "cpt": {
+        "no": 0.005,
+        "viral": 0.4,
+        "bacterial": 0.85
+      }
+    },
+    "E07": {
+      "parents": [
+        "D05",
+        "D06"
+      ],
+      "description": "肺聴診",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no": {
+          "clear": 0.92,
+          "wheezes_rhonchi": 0.05,
+          "crackles": 0.03
+        },
+        "no|yes": {
+          "clear": 0.3,
+          "wheezes_rhonchi": 0.55,
+          "crackles": 0.15
+        },
+        "yes|no": {
+          "clear": 0.15,
+          "wheezes_rhonchi": 0.1,
+          "crackles": 0.75
+        },
+        "yes|yes": {
+          "clear": 0.1,
+          "wheezes_rhonchi": 0.15,
+          "crackles": 0.75
+        }
+      }
+    },
+    "E08": {
+      "parents": [
+        "D01",
+        "D04",
+        "D18"
+      ],
+      "description": "咽頭所見",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no": {
+          "normal": 0.85,
+          "erythema": 0.12,
+          "exudate": 0.03
+        },
+        "no|no|yes": {
+          "normal": 0.05,
+          "erythema": 0.25,
+          "exudate": 0.7
+        },
+        "no|yes|no": {
+          "normal": 0.05,
+          "erythema": 0.2,
+          "exudate": 0.75
+        },
+        "no|yes|yes": {
+          "normal": 0.05,
+          "erythema": 0.2,
+          "exudate": 0.75
+        },
+        "yes|no|no": {
+          "normal": 0.3,
+          "erythema": 0.6,
+          "exudate": 0.1
+        },
+        "yes|no|yes": {
+          "normal": 0.05,
+          "erythema": 0.25,
+          "exudate": 0.7
+        },
+        "yes|yes|no": {
+          "normal": 0.05,
+          "erythema": 0.2,
+          "exudate": 0.75
+        },
+        "yes|yes|yes": {
+          "normal": 0.05,
+          "erythema": 0.2,
+          "exudate": 0.75
+        }
+      }
+    },
+    "E10": {
+      "parents": [
+        "D11"
+      ],
+      "description": "マーフィー徴候",
+      "cpt": {
+        "no": 0.02,
+        "yes": 0.8
+      }
+    },
+    "E11": {
+      "parents": [
+        "D09"
+      ],
+      "description": "CVA叩打痛",
+      "cpt": {
+        "no": 0.02,
+        "yes": 0.8
+      }
+    },
+    "E13": {
+      "parents": [
+        "D04",
+        "D12",
+        "D18"
+      ],
+      "description": "リンパ節腫脹",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no": {
+          "none": 0.9,
+          "cervical": 0.08,
+          "generalized": 0.02
+        },
+        "no|no|yes": {
+          "none": 0.05,
+          "cervical": 0.2,
+          "generalized": 0.75
+        },
+        "no|yes|no": {
+          "none": 0.4,
+          "cervical": 0.55,
+          "generalized": 0.05
+        },
+        "no|yes|yes": {
+          "none": 0.05,
+          "cervical": 0.2,
+          "generalized": 0.75
+        },
+        "yes|no|no": {
+          "none": 0.2,
+          "cervical": 0.75,
+          "generalized": 0.05
+        },
+        "yes|no|yes": {
+          "none": 0.05,
+          "cervical": 0.2,
+          "generalized": 0.75
+        },
+        "yes|yes|no": {
+          "none": 0.2,
+          "cervical": 0.75,
+          "generalized": 0.05
+        },
+        "yes|yes|yes": {
+          "none": 0.05,
+          "cervical": 0.2,
+          "generalized": 0.75
+        }
+      }
+    },
+    "E14": {
+      "parents": [
+        "D14",
+        "D15",
+        "D18",
+        "D28"
+      ],
+      "description": "脾腫",
+      "cpt": {
+        "no|no|no|no": 0.02,
+        "no|no|no|yes": 0.4,
+        "no|no|yes|no": 0.5,
+        "no|no|yes|yes": 0.5,
+        "no|yes|no|no": 0.6,
+        "no|yes|no|yes": 0.6,
+        "no|yes|yes|no": 0.6,
+        "no|yes|yes|yes": 0.6,
+        "yes|no|no|no": 0.3,
+        "yes|no|no|yes": 0.4,
+        "yes|no|yes|no": 0.5,
+        "yes|no|yes|yes": 0.5,
+        "yes|yes|no|no": 0.6,
+        "yes|yes|no|yes": 0.6,
+        "yes|yes|yes|no": 0.6,
+        "yes|yes|yes|yes": 0.6
+      }
+    },
+    "E15": {
+      "parents": [
+        "D14"
+      ],
+      "description": "新規心雑音。心内膜炎でのみ出現",
+      "cpt": {
+        "no": 0.01,
+        "yes": 0.7
+      }
+    },
+    "E17": {
+      "parents": [
+        "D23"
+      ],
+      "description": "刺し口。リケッチア症で出現",
+      "cpt": {
+        "no": 0.001,
+        "yes": 0.75
+      }
+    },
+    "E18": {
+      "parents": [
+        "D15",
+        "D25",
+        "D28"
+      ],
+      "description": "黄疸",
+      "cpt": {
+        "no|no|no": 0.01,
+        "no|no|yes": 0.1,
+        "no|yes|no": 0.7,
+        "no|yes|yes": 0.7,
+        "yes|no|no": 0.25,
+        "yes|no|yes": 0.25,
+        "yes|yes|no": 0.7,
+        "yes|yes|yes": 0.7
+      }
+    },
+    "E05": {
+      "parents": [
+        "D03",
+        "D05",
+        "D17"
+      ],
+      "description": "酸素飽和度",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no": {
+          "normal_over_96": 0.95,
+          "mild_93_96": 0.04,
+          "severe_under_93": 0.01
+        },
+        "no|no|yes": {
+          "normal_over_96": 0.55,
+          "mild_93_96": 0.3,
+          "severe_under_93": 0.15
+        },
+        "no|yes|no": {
+          "normal_over_96": 0.4,
+          "mild_93_96": 0.35,
+          "severe_under_93": 0.25
+        },
+        "no|yes|yes": {
+          "normal_over_96": 0.4,
+          "mild_93_96": 0.35,
+          "severe_under_93": 0.25
+        },
+        "yes|no|no": {
+          "normal_over_96": 0.6,
+          "mild_93_96": 0.3,
+          "severe_under_93": 0.1
+        },
+        "yes|no|yes": {
+          "normal_over_96": 0.6,
+          "mild_93_96": 0.3,
+          "severe_under_93": 0.1
+        },
+        "yes|yes|no": {
+          "normal_over_96": 0.4,
+          "mild_93_96": 0.35,
+          "severe_under_93": 0.25
+        },
+        "yes|yes|yes": {
+          "normal_over_96": 0.4,
+          "mild_93_96": 0.35,
+          "severe_under_93": 0.25
+        }
+      }
+    },
+    "L05": {
+      "parents": [
+        "D08",
+        "D09",
+        "D22"
+      ],
+      "description": "尿検査",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no": {
+          "normal": 0.9,
+          "pyuria_only": 0.07,
+          "pyuria_and_bacteria": 0.03
+        },
+        "no|no|yes": {
+          "normal": 0.15,
+          "pyuria_only": 0.45,
+          "pyuria_and_bacteria": 0.4
+        },
+        "no|yes|no": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        },
+        "no|yes|yes": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        },
+        "yes|no|no": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        },
+        "yes|no|yes": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        },
+        "yes|yes|no": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        },
+        "yes|yes|yes": {
+          "normal": 0.05,
+          "pyuria_only": 0.25,
+          "pyuria_and_bacteria": 0.7
+        }
+      }
+    },
+    "L06": {
+      "parents": [
+        "D02"
+      ],
+      "description": "迅速インフルエンザ検査（感度60-70%、特異度98%）",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "not_done": 0.3,
+          "negative": 0.68,
+          "positive": 0.02
+        },
+        "yes": {
+          "not_done": 0.1,
+          "negative": 0.25,
+          "positive": 0.65
+        }
+      }
+    },
+    "L07": {
+      "parents": [
+        "D04"
+      ],
+      "description": "迅速溶連菌検査（感度85-95%、特異度95%）",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "not_done": 0.5,
+          "negative": 0.45,
+          "positive": 0.05
+        },
+        "yes": {
+          "not_done": 0.15,
+          "negative": 0.15,
+          "positive": 0.7
+        }
+      }
+    },
+    "L08": {
+      "parents": [
+        "D03"
+      ],
+      "description": "COVID抗原検査（感度70-80%、特異度98%）",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "not_done": 0.2,
+          "negative": 0.78,
+          "positive": 0.02
+        },
+        "yes": {
+          "not_done": 0.1,
+          "negative": 0.15,
+          "positive": 0.75
+        }
+      }
+    },
+    "L10": {
+      "parents": [
+        "D15"
+      ],
+      "description": "マラリア塗抹検査",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "not_done": 0.8,
+          "negative": 0.19,
+          "positive": 0.01
+        },
+        "yes": {
+          "not_done": 0.05,
+          "negative": 0.05,
+          "positive": 0.9
+        }
+      }
+    },
+    "L12": {
+      "parents": [
+        "D10",
+        "D11",
+        "D25"
+      ],
+      "description": "腹部超音波",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no": {
+          "not_done": 0.5,
+          "normal": 0.45,
+          "gallbladder_wall_thickening": 0.03,
+          "appendix_swelling": 0.02
+        },
+        "no|no|yes": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        },
+        "no|yes|no": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        },
+        "no|yes|yes": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        },
+        "yes|no|no": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "gallbladder_wall_thickening": 0.05,
+          "appendix_swelling": 0.75
+        },
+        "yes|no|yes": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        },
+        "yes|yes|no": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        },
+        "yes|yes|yes": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "gallbladder_wall_thickening": 0.8,
+          "appendix_swelling": 0.05
+        }
+      }
+    },
+    "L13": {
+      "parents": [
+        "D18"
+      ],
+      "description": "異好性抗体（EBV迅速検査）",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no": {
+          "not_done": 0.8,
+          "negative": 0.18,
+          "positive": 0.02
+        },
+        "yes": {
+          "not_done": 0.2,
+          "negative": 0.1,
+          "positive": 0.7
+        }
+      }
+    },
+    "T03": {
+      "parents": [
+        "D14",
+        "D15",
+        "D19",
+        "D28"
+      ],
+      "description": "発熱パターン",
+      "cpt_type": "multinomial",
+      "cpt": {
+        "no|no|no|no": {
+          "continuous": 0.4,
+          "intermittent": 0.35,
+          "periodic": 0.1,
+          "stepwise": 0.15
+        },
+        "no|no|no|yes": {
+          "continuous": 0.2,
+          "intermittent": 0.1,
+          "periodic": 0.1,
+          "stepwise": 0.6
+        },
+        "no|no|yes|no": {
+          "continuous": 0.6,
+          "intermittent": 0.25,
+          "periodic": 0.05,
+          "stepwise": 0.1
+        },
+        "no|no|yes|yes": {
+          "continuous": 0.2,
+          "intermittent": 0.1,
+          "periodic": 0.1,
+          "stepwise": 0.6
+        },
+        "no|yes|no|no": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "no|yes|no|yes": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "no|yes|yes|no": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "no|yes|yes|yes": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "yes|no|no|no": {
+          "continuous": 0.25,
+          "intermittent": 0.55,
+          "periodic": 0.1,
+          "stepwise": 0.1
+        },
+        "yes|no|no|yes": {
+          "continuous": 0.2,
+          "intermittent": 0.1,
+          "periodic": 0.1,
+          "stepwise": 0.6
+        },
+        "yes|no|yes|no": {
+          "continuous": 0.25,
+          "intermittent": 0.55,
+          "periodic": 0.1,
+          "stepwise": 0.1
+        },
+        "yes|no|yes|yes": {
+          "continuous": 0.2,
+          "intermittent": 0.1,
+          "periodic": 0.1,
+          "stepwise": 0.6
+        },
+        "yes|yes|no|no": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "yes|yes|no|yes": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "yes|yes|yes|no": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        },
+        "yes|yes|yes|yes": {
+          "continuous": 0.15,
+          "intermittent": 0.25,
+          "periodic": 0.55,
+          "stepwise": 0.05
+        }
+      }
+    },
+    "D29": {
+      "parents": [
+        "R04",
+        "R06"
+      ],
+      "description": "肝膿瘍（細菌性/アメーバ性）",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D30": {
+      "parents": [
+        "R04"
+      ],
+      "description": "腸腰筋膿瘍",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D31": {
+      "parents": [
+        "R04",
+        "R09"
+      ],
+      "description": "化膿性脊椎炎/椎間板炎",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D32": {
+      "parents": [
+        "R01",
+        "R04",
+        "R42"
+      ],
+      "description": "化膿性関節炎",
+      "cpt": {
+        "no|no|no": 0.005,
+        "yes|no|no": 0.015,
+        "no|yes|no": 0.015,
+        "yes|yes|no": 0.045,
+        "no|no|yes": 0.015,
+        "yes|no|yes": 0.045,
+        "no|yes|yes": 0.045,
+        "yes|yes|yes": 0.135
+      }
+    },
+    "D33": {
+      "parents": [],
+      "description": "扁桃周囲膿瘍",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D34": {
+      "parents": [],
+      "description": "深頸部感染症",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D35": {
+      "parents": [
+        "R16",
+        "R37"
+      ],
+      "description": "肺膿瘍",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D36": {
+      "parents": [],
+      "description": "膿胸",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D37": {
+      "parents": [],
+      "description": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D38": {
+      "parents": [
+        "R07",
+        "R14"
+      ],
+      "description": "Clostridioides difficile感染症",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D39": {
+      "parents": [
+        "R04"
+      ],
+      "description": "肛門周囲膿瘍",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D40": {
+      "parents": [
+        "R15",
+        "R22"
+      ],
+      "description": "カテーテル関連血流感染症",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D41": {
+      "parents": [
+        "R04",
+        "R21"
+      ],
+      "description": "手術部位感染(SSI)",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D42": {
+      "parents": [
+        "R01",
+        "R04",
+        "R13"
+      ],
+      "description": "複雑性尿路感染症",
+      "cpt": {
+        "no|no|no": 0.005,
+        "yes|no|no": 0.015,
+        "no|yes|no": 0.015,
+        "yes|yes|no": 0.045,
+        "no|no|yes": 0.015,
+        "yes|no|yes": 0.045,
+        "no|yes|yes": 0.045,
+        "yes|yes|yes": 0.135
+      }
+    },
+    "D43": {
+      "parents": [
+        "R02"
+      ],
+      "description": "精巣上体炎",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D44": {
+      "parents": [
+        "R36"
+      ],
+      "description": "急性HIV感染症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D45": {
+      "parents": [
+        "R25"
+      ],
+      "description": "サイトメガロウイルス感染症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D46": {
+      "parents": [
+        "R43"
+      ],
+      "description": "麻疹",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D47": {
+      "parents": [
+        "R43"
+      ],
+      "description": "流行性耳下腺炎（ムンプス）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D48": {
+      "parents": [
+        "R43"
+      ],
+      "description": "風疹",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D50": {
+      "parents": [
+        "R25",
+        "R29"
+      ],
+      "description": "ニューモシスチス肺炎",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D51": {
+      "parents": [
+        "R06"
+      ],
+      "description": "アメーバ赤痢",
+      "cpt": {
+        "no": 0.005,
+        "tropical_endemic": 0.015,
+        "developed": 0.00075,
+        "domestic": 0.00075
+      }
+    },
+    "D52": {
+      "parents": [
+        "R31"
+      ],
+      "description": "レプトスピラ症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D53": {
+      "parents": [
+        "R30"
+      ],
+      "description": "ブルセラ症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D54": {
+      "parents": [
+        "R30"
+      ],
+      "description": "猫ひっかき病",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D56": {
+      "parents": [],
+      "description": "百日咳",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D57": {
+      "parents": [
+        "R04"
+      ],
+      "description": "壊死性筋膜炎",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D58": {
+      "parents": [],
+      "description": "成人Still病",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D59": {
+      "parents": [
+        "R02"
+      ],
+      "description": "全身性エリテマトーデス",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D60": {
+      "parents": [],
+      "description": "ANCA関連血管炎",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D61": {
+      "parents": [
+        "R01"
+      ],
+      "description": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D62": {
+      "parents": [],
+      "description": "サルコイドーシス",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D63": {
+      "parents": [
+        "R35"
+      ],
+      "description": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D64": {
+      "parents": [],
+      "description": "反応性関節炎",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D65": {
+      "parents": [],
+      "description": "痛風/偽痛風発作",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D66": {
+      "parents": [],
+      "description": "家族性地中海熱",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D67": {
+      "parents": [],
+      "description": "悪性リンパ腫",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D68": {
+      "parents": [],
+      "description": "急性白血病",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D69": {
+      "parents": [],
+      "description": "腎細胞癌",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D70": {
+      "parents": [
+        "R24"
+      ],
+      "description": "肝細胞癌",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D71": {
+      "parents": [
+        "R34"
+      ],
+      "description": "甲状腺クリーゼ",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D72": {
+      "parents": [
+        "R29"
+      ],
+      "description": "副腎クリーゼ",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D73": {
+      "parents": [],
+      "description": "褐色細胞腫",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D74": {
+      "parents": [
+        "R26"
+      ],
+      "description": "悪性症候群",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D75": {
+      "parents": [
+        "R27"
+      ],
+      "description": "セロトニン症候群",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D76": {
+      "parents": [
+        "R33"
+      ],
+      "description": "輸血関連発熱反応",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D77": {
+      "parents": [],
+      "description": "深部静脈血栓症/肺塞栓症",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D78": {
+      "parents": [
+        "R32"
+      ],
+      "description": "熱中症（重症）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D79": {
+      "parents": [
+        "R28"
+      ],
+      "description": "人工弁心内膜炎",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D80": {
+      "parents": [
+        "R15"
+      ],
+      "description": "無石胆嚢炎",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D81": {
+      "parents": [
+        "R24"
+      ],
+      "description": "特発性細菌性腹膜炎(SBP)",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D82": {
+      "parents": [
+        "R21"
+      ],
+      "description": "院内髄膜炎（術後/外傷後）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D83": {
+      "parents": [
+        "R23",
+        "R29"
+      ],
+      "description": "侵襲性アスペルギルス症",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D84": {
+      "parents": [],
+      "description": "単純ヘルペス脳炎",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D85": {
+      "parents": [],
+      "description": "歯原性感染症（歯性膿瘍/Ludwig angina）",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D86": {
+      "parents": [
+        "R12",
+        "R16"
+      ],
+      "description": "急性膵炎",
+      "cpt": {
+        "no|no": 0.005,
+        "yes|no": 0.015,
+        "no|yes": 0.015,
+        "yes|yes": 0.045
+      }
+    },
+    "D87": {
+      "parents": [],
+      "description": "亜急性甲状腺炎",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D88": {
+      "parents": [
+        "R39"
+      ],
+      "description": "アルコール離脱症候群",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D89": {
+      "parents": [
+        "R38"
+      ],
+      "description": "悪性高熱症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D90": {
+      "parents": [],
+      "description": "ベーチェット病",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D91": {
+      "parents": [
+        "R06"
+      ],
+      "description": "チクングニア熱",
+      "cpt": {
+        "no": 0.005,
+        "tropical_endemic": 0.015,
+        "developed": 0.00075,
+        "domestic": 0.00075
+      }
+    },
+    "D92": {
+      "parents": [
+        "R40"
+      ],
+      "description": "腫瘍熱（固形腫瘍）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D93": {
+      "parents": [
+        "R08"
+      ],
+      "description": "DRESS症候群（薬剤性過敏症症候群）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D94": {
+      "parents": [],
+      "description": "IgG4関連疾患",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D96": {
+      "parents": [
+        "R02"
+      ],
+      "description": "菊池病（壊死性リンパ節炎）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D97": {
+      "parents": [],
+      "description": "キャッスルマン病",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D98": {
+      "parents": [
+        "R02"
+      ],
+      "description": "高安動脈炎（大動脈炎症候群）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D99": {
+      "parents": [
+        "R02"
+      ],
+      "description": "非結核性抗酸菌症",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D100": {
+      "parents": [
+        "R06"
+      ],
+      "description": "A型急性肝炎",
+      "cpt": {
+        "no": 0.005,
+        "tropical_endemic": 0.015,
+        "developed": 0.00075,
+        "domestic": 0.00075
+      }
+    },
+    "D101": {
+      "parents": [
+        "R36"
+      ],
+      "description": "梅毒（二期）",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
+    },
+    "D102": {
+      "parents": [],
+      "description": "レジオネラ肺炎",
+      "cpt": {
+        "": 0.005
+      }
+    }
+  },
+  "noisy_or_params": {
+    "D05": {
+      "description": "肺炎。6つのリスク因子",
+      "leak": 0.02,
+      "parent_effects": {
+        "R01": {
+          "18_39": 0.02,
+          "40_64": 0.03,
+          "65_plus": 0.06
+        },
+        "R03": {
+          "never": 0.02,
+          "former": 0.03,
+          "current": 0.05
+        },
+        "R04": 0.04,
+        "R05": 0.06,
+        "R07": 0.05,
+        "R16": 0.04
+      }
+    },
+    "D09": {
+      "description": "腎盂腎炎。6つの親",
+      "leak": 0.005,
+      "parent_effects": {
+        "R02": {
+          "male": 0.005,
+          "female": 0.025
+        },
+        "R04": 0.02,
+        "R07": 0.015,
+        "R13": 0.04,
+        "R15": 0.03,
+        "D08": 0.15
+      }
+    },
+    "D49": {
+      "description": "カンジダ血症/侵襲性カンジダ症",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "leak": 0.005,
+      "parent_effects": {
+        "R14": {
+          "no": 0,
+          "yes": 0.015
+        },
+        "R15": {
+          "no": 0,
+          "yes": 0.015
+        },
+        "R22": {
+          "no": 0,
+          "yes": 0.015
+        },
+        "R23": {
+          "no": 0,
+          "yes": 0.015
+        }
+      }
+    },
+    "D55": {
+      "description": "Q熱",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "leak": 0.0001,
+      "parent_effects": {
+        "R30": {
+          "none": 0,
+          "livestock": 0.02,
+          "pet_cat": 0.005,
+          "wild_animal": 0.003
+        }
+      }
+    },
+    "D95": {
+      "description": "日本脳炎",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "leak": 0.0001,
+      "parent_effects": {
+        "R43": {
+          "unvaccinated": 0.005,
+          "vaccinated": 0,
+          "unknown": 0.003
+        },
+        "R06": {
+          "no": 0,
+          "tropical_endemic": 0.005,
+          "developed": 0.00025,
+          "domestic": 0.0001
+        }
+      }
+    },
+    "E01": {
+      "description": "体温。全疾患が影響。5状態",
+      "leak": {
+        "under_37.5": 0.1,
+        "37.5_38.0": 0.5,
+        "38.0_39.0": 0.25,
+        "39.0_40.0": 0.1,
+        "over_40.0": 0.05
+      },
+      "parent_effects": {
+        "D01": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.4,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.13,
+          "over_40.0": 0.02
+        },
+        "D02": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.1
+        },
+        "D03": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.35,
+          "over_40.0": 0.05
+        },
+        "D04": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.4,
+          "over_40.0": 0.1
+        },
+        "D05": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D06": {
+          "under_37.5": 0.1,
+          "37.5_38.0": 0.45,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
+        },
+        "D07": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.3,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.2,
+          "over_40.0": 0.05
+        },
+        "D08": {
+          "under_37.5": 0.3,
+          "37.5_38.0": 0.45,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
+        },
+        "D09": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.15
+        },
+        "D10": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.35,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.17,
+          "over_40.0": 0.03
+        },
+        "D11": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.35,
+          "over_40.0": 0.1
+        },
+        "D12": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.3,
+          "over_40.0": 0.05
+        },
+        "D13": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D14": {
+          "under_37.5": 0.1,
+          "37.5_38.0": 0.3,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.17,
+          "over_40.0": 0.03
+        },
+        "D15": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.23
+        },
+        "D16": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.15
+        },
+        "D17": {
+          "under_37.5": 0.1,
+          "37.5_38.0": 0.4,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.13,
+          "over_40.0": 0.02
+        },
+        "D18": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.45,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D19": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.35,
+          "over_40.0": 0.1
+        },
+        "D20": {
+          "under_37.5": 0.15,
+          "37.5_38.0": 0.45,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
+        },
+        "D21": {
+          "under_37.5": 0.2,
+          "37.5_38.0": 0.45,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
+        },
+        "D22": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.12
+        },
+        "D23": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.15
+        },
+        "D24": {
+          "under_37.5": 0.01,
+          "37.5_38.0": 0.04,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.4,
+          "over_40.0": 0.4
+        },
+        "D25": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.25
+        },
+        "D26": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D27": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.3,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.2,
+          "over_40.0": 0.05
+        },
+        "D28": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.15
+        },
+        "D29": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D30": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D33": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D34": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D40": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D49": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D57": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D71": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D74": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D78": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D84": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D89": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D102": {
+          "under_37.5": 0.02,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.5,
+          "over_40.0": 0.3
+        },
+        "D31": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D32": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D35": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D36": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D37": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D38": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D41": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D42": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D43": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D44": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D46": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D51": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D52": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D55": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D75": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D76": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D77": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D80": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D81": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D82": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D85": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D86": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D88": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D91": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D93": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D95": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D100": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.15
+        },
+        "D39": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D45": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D47": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D48": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D50": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D53": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D54": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D56": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D58": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.45,
+          "over_40.0": 0.3
+        },
+        "D59": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D60": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D61": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D62": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D63": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D64": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D65": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D66": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D67": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D68": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D69": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D70": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D72": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D73": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D83": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D87": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D90": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D92": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D94": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D96": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D97": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D98": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D99": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D101": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
+        },
+        "D79": {
+          "under_37.5": 0.03,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.4,
+          "over_40.0": 0.12
+        }
+      }
+    },
+    "E02": {
+      "description": "心拍数。体温依存 + ショック性頻脈",
+      "states": [
+        "under_100",
+        "100_120",
+        "over_120"
+      ],
+      "leak": {
+        "under_100": 0.85,
+        "100_120": 0.1,
+        "over_120": 0.05
+      },
+      "parent_effects": {
+        "E01": "体温1℃上昇で約10bpm → 実装時に体温状態から直接計算",
+        "D24": {
+          "under_100": 0.1,
+          "100_120": 0.3,
+          "over_120": 0.6
+        },
+        "D13": {
+          "under_100": 0.3,
+          "100_120": 0.4,
+          "over_120": 0.3
+        },
+        "D57": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D71": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D74": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D75": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D77": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D78": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D88": {
+          "under_100": 0.1,
+          "100_120": 0.4,
+          "over_120": 0.5
+        },
+        "D73": {
+          "under_100": 0.15,
+          "100_120": 0.45,
+          "over_120": 0.4
+        },
+        "D89": {
+          "under_100": 0.1,
+          "100_120": 0.3,
+          "over_120": 0.6
+        },
+        "D14": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
+        },
+        "D76": {
+          "under_100": 0.3,
+          "100_120": 0.5,
+          "over_120": 0.2
+        },
+        "D19": {
+          "under_100": 0.7,
+          "100_120": 0.25,
+          "over_120": 0.05
+        }
+      }
+    },
+    "E03": {
+      "description": "収縮期血圧。ショック・敗血症で低血圧",
+      "states": [
+        "normal",
+        "hypotension"
+      ],
+      "leak": {
+        "normal": 0.95,
+        "hypotension": 0.05
+      },
+      "parent_effects": {
+        "D13": {
+          "normal": 0.5,
+          "hypotension": 0.5
+        },
+        "D15": {
+          "normal": 0.7,
+          "hypotension": 0.3
+        },
+        "D24": {
+          "normal": 0.15,
+          "hypotension": 0.85
+        },
+        "D25": {
+          "normal": 0.6,
+          "hypotension": 0.4
+        },
+        "D57": {
+          "normal_over_90": 0.3,
+          "hypotension_under_90": 0.7
+        },
+        "D72": {
+          "normal_over_90": 0.15,
+          "hypotension_under_90": 0.85
+        },
+        "D76": {
+          "normal_over_90": 0.5,
+          "hypotension_under_90": 0.5
+        },
+        "D78": {
+          "normal_over_90": 0.3,
+          "hypotension_under_90": 0.7
+        },
+        "D74": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        },
+        "D73": {
+          "normal_over_90": 0.3,
+          "hypotension_under_90": 0.7
+        },
+        "D88": {
+          "normal_over_90": 0.7,
+          "hypotension_under_90": 0.3
+        },
+        "D89": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        }
+      }
+    },
+    "E04": {
+      "description": "呼吸数。肺疾患 + 発熱による代償",
+      "states": [
+        "normal_under_20",
+        "tachypnea_20_30",
+        "severe_over_30"
+      ],
+      "leak": {
+        "normal_under_20": 0.9,
+        "tachypnea_20_30": 0.08,
+        "severe_over_30": 0.02
+      },
+      "parent_effects": {
+        "D05": {
+          "normal_under_20": 0.25,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.25
+        },
+        "D03": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.4,
+          "severe_over_30": 0.2
+        },
+        "E01": "発熱に伴う代償性頻呼吸 → 実装時に体温状態から計算",
+        "D14": {
+          "normal_under_20": 0.6,
+          "tachypnea_20_30": 0.3,
+          "severe_over_30": 0.1
+        }
+      }
+    },
+    "E05": {
+      "description": "酸素飽和度",
+      "states": [
+        "normal_over_96",
+        "mild_hypoxia_93_96",
+        "severe_hypoxia_under_93"
+      ],
+      "leak": {
+        "normal_over_96": 0.98,
+        "mild_hypoxia_93_96": 0.01,
+        "severe_hypoxia_under_93": 0.01
+      },
+      "parent_effects": {
+        "D50": {
+          "normal_over_96": 0.1,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.6
+        },
+        "D77": {
+          "normal_over_96": 0.2,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.4
+        },
+        "D05": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.3
+        },
+        "D03": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.35
+        },
+        "D17": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.15
+        },
+        "D14": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.15
+        }
+      }
+    },
+    "E06": {
+      "description": "項部硬直",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D82": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D84": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D95": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D13": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D14": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "M01": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D17": {
+          "absent": 0.85,
+          "present": 0.15
+        }
+      }
+    },
+    "E07": {
+      "description": "肺聴診。肺炎でcrackles、気管支炎でwheezes",
+      "states": [
+        "clear",
+        "crackles",
+        "wheezes"
+      ],
+      "leak": {
+        "clear": 0.92,
+        "crackles": 0.03,
+        "wheezes": 0.05
+      },
+      "parent_effects": {
+        "D05": {
+          "clear": 0.15,
+          "crackles": 0.75,
+          "wheezes": 0.1
+        },
+        "D06": {
+          "clear": 0.3,
+          "crackles": 0.15,
+          "wheezes": 0.55
+        }
+      }
+    },
+    "E08": {
+      "description": "咽頭所見",
+      "states": [
+        "normal",
+        "erythema",
+        "exudate_or_white_patch"
+      ],
+      "leak": {
+        "normal": 0.98,
+        "erythema": 0.01,
+        "exudate_or_white_patch": 0.01
+      },
+      "parent_effects": {
+        "D33": {
+          "normal": 0.02,
+          "erythema": 0.18,
+          "exudate_or_white_patch": 0.8
+        },
+        "D04": {
+          "normal": 0.05,
+          "erythema": 0.25,
+          "exudate_or_white_patch": 0.7
+        },
+        "D01": {
+          "normal": 0.3,
+          "erythema": 0.6,
+          "exudate_or_white_patch": 0.1
+        },
+        "D18": {
+          "normal": 0.1,
+          "erythema": 0.3,
+          "exudate_or_white_patch": 0.6
+        }
+      }
+    },
+    "E09": {
+      "description": "腹部触診",
+      "states": [
+        "soft_nontender",
+        "localized_tenderness",
+        "peritoneal_signs"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "localized_tenderness": 0.07,
+        "peritoneal_signs": 0.03
+      },
+      "parent_effects": {
+        "D07": {
+          "normal": 0.3,
+          "localized_tenderness": 0.65,
+          "peritoneal_signs": 0.05
+        },
+        "D10": {
+          "normal": 0.05,
+          "localized_tenderness": 0.4,
+          "peritoneal_signs": 0.55
+        },
+        "D11": {
+          "normal": 0.08,
+          "localized_tenderness": 0.75,
+          "peritoneal_signs": 0.17
+        },
+        "D25": {
+          "normal": 0.1,
+          "localized_tenderness": 0.7,
+          "peritoneal_signs": 0.2
+        },
+        "D26": {
+          "normal": 0.1,
+          "localized_tenderness": 0.75,
+          "peritoneal_signs": 0.15
+        },
+        "D27": {
+          "normal": 0.08,
+          "localized_tenderness": 0.7,
+          "peritoneal_signs": 0.22
+        },
+        "D80": {
+          "soft_nontender": 0.1,
+          "localized_tenderness": 0.7,
+          "peritoneal_signs": 0.2
+        },
+        "D81": {
+          "soft_nontender": 0.15,
+          "localized_tenderness": 0.45,
+          "peritoneal_signs": 0.4
+        }
+      }
+    },
+    "E10": {
+      "description": "マーフィー徴候",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "positive": 0.02
+      },
+      "parent_effects": {
+        "D80": {
+          "negative": 0.2,
+          "positive": 0.8
+        },
+        "D11": {
+          "negative": 0.15,
+          "positive": 0.85
+        }
+      }
+    },
+    "E12": {
+      "description": "皮膚診察所見。6状態",
+      "states": [
+        "normal",
+        "localized_erythema_warmth_swelling",
+        "petechiae_purpura",
+        "maculopapular_rash",
+        "vesicular_dermatomal",
+        "diffuse_erythroderma"
+      ],
+      "leak": {
+        "normal": 0.92,
+        "localized_erythema_warmth_swelling": 0.03,
+        "petechiae_purpura": 0.01,
+        "maculopapular_rash": 0.02,
+        "vesicular_dermatomal": 0.01,
+        "diffuse_erythroderma": 0.01
+      },
+      "parent_effects": {
+        "D12": {
+          "normal": 0.02,
+          "localized_erythema_warmth_swelling": 0.9,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.02,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.04
+        },
+        "D13": {
+          "normal": 0.5,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.4,
+          "maculopapular_rash": 0.05,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.02
+        },
+        "D16": {
+          "normal": 0.4,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.08,
+          "maculopapular_rash": 0.45,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.04
+        },
+        "D19": {
+          "normal": 0.6,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.03,
+          "maculopapular_rash": 0.3,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.04
+        },
+        "D21": {
+          "normal": 0.02,
+          "localized_erythema_warmth_swelling": 0.03,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.02,
+          "vesicular_dermatomal": 0.9,
+          "diffuse_erythroderma": 0.02
+        },
+        "D23": {
+          "normal": 0.25,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.03,
+          "maculopapular_rash": 0.65,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.04
+        },
+        "D24": {
+          "normal": 0.05,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.02,
+          "maculopapular_rash": 0.03,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.84
+        },
+        "D28": {
+          "normal": 0.7,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.03,
+          "maculopapular_rash": 0.2,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.04
+        },
+        "D14": {
+          "normal": 0.6,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.3,
+          "maculopapular_rash": 0.05,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.02
+        },
+        "D41": {
+          "normal": 0.2,
+          "localized_erythema_warmth_swelling": 0.75,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        },
+        "D44": {
+          "normal": 0.3,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.04,
+          "maculopapular_rash": 0.6,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        },
+        "D46": {
+          "normal": 0.05,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.88,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        },
+        "D48": {
+          "normal": 0.1,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.83,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        },
+        "D57": {
+          "normal": 0.05,
+          "localized_erythema_warmth_swelling": 0.2,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.3,
+          "skin_necrosis": 0.4
+        },
+        "D58": {
+          "normal": 0.1,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.82,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.02
+        },
+        "D60": {
+          "normal": 0.3,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.1,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.5,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.05
+        },
+        "D62": {
+          "normal": 0.4,
+          "localized_erythema_warmth_swelling": 0.3,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.2,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.05
+        },
+        "D68": {
+          "normal": 0.3,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.3,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.3,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.05
+        },
+        "D90": {
+          "normal": 0.3,
+          "localized_erythema_warmth_swelling": 0.3,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.1,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.25
+        },
+        "D91": {
+          "normal": 0.15,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.78,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        },
+        "D93": {
+          "normal": 0.05,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.6,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.2,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.05,
+          "skin_necrosis": 0.02
+        },
+        "D101": {
+          "normal": 0.1,
+          "localized_erythema_warmth_swelling": 0.01,
+          "petechiae_purpura": 0.01,
+          "maculopapular_rash": 0.83,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
+        }
+      }
+    },
+    "E13": {
+      "description": "リンパ節腫脹",
+      "states": [
+        "absent",
+        "cervical",
+        "generalized"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "cervical": 0.01,
+        "generalized": 0.01
+      },
+      "parent_effects": {
+        "D44": {
+          "absent": 0.15,
+          "cervical": 0.25,
+          "generalized": 0.6
+        },
+        "D45": {
+          "absent": 0.3,
+          "cervical": 0.3,
+          "generalized": 0.4
+        },
+        "D48": {
+          "absent": 0.15,
+          "cervical": 0.7,
+          "generalized": 0.15
+        },
+        "D54": {
+          "absent": 0.05,
+          "cervical": 0.3,
+          "generalized": 0.65
+        },
+        "D58": {
+          "absent": 0.4,
+          "cervical": 0.25,
+          "generalized": 0.35
+        },
+        "D62": {
+          "absent": 0.3,
+          "cervical": 0.2,
+          "generalized": 0.5
+        },
+        "D67": {
+          "absent": 0.05,
+          "cervical": 0.3,
+          "generalized": 0.65
+        },
+        "D68": {
+          "absent": 0.3,
+          "cervical": 0.25,
+          "generalized": 0.45
+        },
+        "D93": {
+          "absent": 0.3,
+          "cervical": 0.3,
+          "generalized": 0.4
+        },
+        "D96": {
+          "absent": 0.05,
+          "cervical": 0.85,
+          "generalized": 0.1
+        },
+        "D97": {
+          "absent": 0.05,
+          "cervical": 0.25,
+          "generalized": 0.7
+        },
+        "D101": {
+          "absent": 0.15,
+          "cervical": 0.2,
+          "generalized": 0.65
+        },
+        "D04": {
+          "absent": 0.4,
+          "cervical": 0.5,
+          "generalized": 0.1
+        },
+        "D18": {
+          "absent": 0.1,
+          "cervical": 0.4,
+          "generalized": 0.5
+        },
+        "D12": {
+          "absent": 0.6,
+          "cervical": 0.35,
+          "generalized": 0.05
+        },
+        "D21": {
+          "absent": 0.5,
+          "cervical": 0.4,
+          "generalized": 0.1
+        }
+      }
+    },
+    "E14": {
+      "description": "脾腫",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D45": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D53": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D58": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D67": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D68": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D97": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D15": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D18": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D14": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D28": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D17": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "E15": {
+      "description": "新規心雑音",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D79": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D14": {
+          "absent": 0.2,
+          "present": 0.8
+        }
+      }
+    },
+    "E16": {
+      "description": "意識レベル。髄膜炎・マラリア・TSS・胆管炎・心内膜炎で障害",
+      "states": [
+        "normal",
+        "confused",
+        "obtunded"
+      ],
+      "leak": {
+        "normal": 0.97,
+        "confused": 0.02,
+        "obtunded": 0.01
+      },
+      "parent_effects": {
+        "D13": {
+          "normal": 0.2,
+          "confused": 0.4,
+          "obtunded": 0.4
+        },
+        "D15": {
+          "normal": 0.6,
+          "confused": 0.3,
+          "obtunded": 0.1
+        },
+        "D24": {
+          "normal": 0.25,
+          "confused": 0.4,
+          "obtunded": 0.35
+        },
+        "D25": {
+          "normal": 0.5,
+          "confused": 0.35,
+          "obtunded": 0.15
+        },
+        "D14": {
+          "normal": 0.55,
+          "confused": 0.3,
+          "obtunded": 0.15
+        },
+        "D71": {
+          "normal": 0.3,
+          "confused": 0.4,
+          "obtunded": 0.3
+        },
+        "D72": {
+          "normal": 0.3,
+          "confused": 0.4,
+          "obtunded": 0.3
+        },
+        "D74": {
+          "normal": 0.2,
+          "confused": 0.4,
+          "obtunded": 0.4
+        },
+        "D75": {
+          "normal": 0.3,
+          "confused": 0.5,
+          "obtunded": 0.2
+        },
+        "D78": {
+          "normal": 0.1,
+          "confused": 0.3,
+          "obtunded": 0.6
+        },
+        "D82": {
+          "normal": 0.15,
+          "confused": 0.35,
+          "obtunded": 0.5
+        },
+        "D84": {
+          "normal": 0.1,
+          "confused": 0.3,
+          "obtunded": 0.6
+        },
+        "D88": {
+          "normal": 0.3,
+          "confused": 0.5,
+          "obtunded": 0.2
+        },
+        "D95": {
+          "normal": 0.1,
+          "confused": 0.3,
+          "obtunded": 0.6
+        },
+        "D102": {
+          "normal": 0.4,
+          "confused": 0.45,
+          "obtunded": 0.15
+        },
+        "M01": {
+          "normal": 0.2,
+          "confused": 0.4,
+          "obtunded": 0.4
+        },
+        "D17": {
+          "normal": 0.8,
+          "confused": 0.15,
+          "obtunded": 0.05
+        }
+      }
+    },
+    "E18": {
+      "description": "黄疸",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D29": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D52": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D94": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D100": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D15": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D25": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D28": {
+          "absent": 0.7,
+          "present": 0.3
+        }
+      }
+    },
+    "E19": {
+      "description": "甲状腺腫大",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D71": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D87": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "E20": {
+      "description": "蝶形紅斑",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.995,
+        "present": 0.005
+      },
+      "parent_effects": {
+        "D59": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "E21": {
+      "description": "関節の発赤・熱感",
+      "states": [
+        "absent",
+        "monoarticular",
+        "polyarticular"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "monoarticular": 0.02,
+        "polyarticular": 0.01
+      },
+      "parent_effects": {
+        "D32": {
+          "absent": 0.05,
+          "monoarticular": 0.9,
+          "polyarticular": 0.05
+        },
+        "D64": {
+          "absent": 0.15,
+          "monoarticular": 0.45,
+          "polyarticular": 0.4
+        },
+        "D65": {
+          "absent": 0.05,
+          "monoarticular": 0.9,
+          "polyarticular": 0.05
+        }
+      }
+    },
+    "E22": {
+      "description": "口蓋垂偏位",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D33": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "E23": {
+      "description": "頸部腫脹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D34": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "E24": {
+      "description": "耳下腺腫脹",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "unilateral": 0.005,
+        "bilateral": 0.005
+      },
+      "parent_effects": {
+        "D47": {
+          "absent": 0.05,
+          "unilateral": 0.25,
+          "bilateral": 0.7
+        },
+        "D94": {
+          "absent": 0.4,
+          "unilateral": 0.4,
+          "bilateral": 0.2
+        }
+      }
+    },
+    "E25": {
+      "description": "結膜充血",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D46": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D52": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D64": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "E26": {
+      "description": "Koplik斑",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.999,
+        "present": 0.001
+      },
+      "parent_effects": {
+        "D46": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "E27": {
+      "description": "腸腰筋徴候",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D30": {
+          "absent": 0.2,
+          "present": 0.8
+        }
+      }
+    },
+    "E28": {
+      "description": "腹水",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D70": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D81": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D17": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "E29": {
+      "description": "発汗停止",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D78": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "E30": {
+      "description": "クローヌス",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D75": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "E31": {
+      "description": "流涎",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D33": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D34": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "E32": {
+      "description": "甲状腺圧痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D87": {
+          "absent": 0.05,
+          "present": 0.95
+        }
+      }
+    },
+    "E33": {
+      "description": "脈拍左右差/血管雑音",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D98": {
+          "absent": 0.2,
+          "present": 0.8
+        }
+      }
+    },
+    "E34": {
+      "description": "肝腫大",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D29": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D45": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D53": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D70": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D97": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D67": {
+          "absent": 0.35,
+          "present": 0.65
+        }
+      }
+    },
+    "E35": {
+      "description": "眼症状（ぶどう膜炎/結膜炎）",
+      "states": [
+        "absent",
+        "conjunctivitis",
+        "uveitis"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "conjunctivitis": 0.015,
+        "uveitis": 0.005
+      },
+      "parent_effects": {
+        "D62": {
+          "absent": 0.4,
+          "conjunctivitis": 0.1,
+          "uveitis": 0.5
+        },
+        "D90": {
+          "absent": 0.3,
+          "conjunctivitis": 0.1,
+          "uveitis": 0.6
+        }
+      }
+    },
+    "L01": {
+      "description": "白血球数。14親。各疾患の典型的なWBC変化",
+      "states": [
+        "low_under_4000",
+        "normal_4000_10000",
+        "high_10000_20000",
+        "very_high_over_20000"
+      ],
+      "leak": {
+        "low_under_4000": 0.03,
+        "normal_4000_10000": 0.85,
+        "high_10000_20000": 0.1,
+        "very_high_over_20000": 0.02
+      },
+      "parent_effects": {
+        "D02": {
+          "low_under_4000": 0.15,
+          "normal_4000_10000": 0.6,
+          "high_10000_20000": 0.2,
+          "very_high_over_20000": 0.05
+        },
+        "D05": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.27
+        },
+        "D10": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.6,
+          "very_high_over_20000": 0.18
+        },
+        "D11": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.6,
+          "very_high_over_20000": 0.23
+        },
+        "D13": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.1,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.45
+        },
+        "D16": {
+          "low_under_4000": 0.4,
+          "normal_4000_10000": 0.45,
+          "high_10000_20000": 0.12,
+          "very_high_over_20000": 0.03
+        },
+        "D18": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.15
+        },
+        "D22": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.6,
+          "very_high_over_20000": 0.18
+        },
+        "D24": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.1,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.5
+        },
+        "D25": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.12,
+          "high_10000_20000": 0.5,
+          "very_high_over_20000": 0.35
+        },
+        "D26": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.17
+        },
+        "D27": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.6,
+          "very_high_over_20000": 0.18
+        },
+        "D28": {
+          "low_under_4000": 0.35,
+          "normal_4000_10000": 0.45,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
+        },
+        "R05": {
+          "low_under_4000": 0.25,
+          "normal_4000_10000": 0.5,
+          "high_10000_20000": 0.2,
+          "very_high_over_20000": 0.05
+        },
+        "D14": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.22
+        },
+        "D29": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D30": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D31": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D32": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D33": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D34": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D35": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D36": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D37": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D38": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D40": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D41": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D42": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D49": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D57": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D80": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D81": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D82": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D85": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D86": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D93": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D102": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D56": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.43
+        },
+        "D58": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.08,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.5
+        },
+        "D96": {
+          "low_under_4000": 0.5,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.13,
+          "very_high_over_20000": 0.02
+        },
+        "D68": {
+          "low_under_4000": 0.6,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.1,
+          "very_high_over_20000": 0.05
+        },
+        "D39": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.23
+        },
+        "D52": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.28
+        },
+        "D53": {
+          "low_under_4000": 0.3,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.12,
+          "very_high_over_20000": 0.03
+        }
+      }
+    },
+    "L02": {
+      "description": "CRP。12親",
+      "states": [
+        "normal_under_0.3",
+        "mild_0.3_3",
+        "moderate_3_10",
+        "high_over_10"
+      ],
+      "leak": {
+        "normal_under_0.3": 0.8,
+        "mild_0.3_3": 0.12,
+        "moderate_3_10": 0.06,
+        "high_over_10": 0.02
+      },
+      "parent_effects": {
+        "D01": {
+          "normal_under_0.3": 0.4,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.13,
+          "high_over_10": 0.02
+        },
+        "D02": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.05
+        },
+        "D05": {
+          "normal_under_0.3": 0.03,
+          "mild_0.3_3": 0.07,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D09": {
+          "normal_under_0.3": 0.03,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.52
+        },
+        "D10": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D11": {
+          "normal_under_0.3": 0.03,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.52
+        },
+        "D12": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D13": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.05,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.73
+        },
+        "D22": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D25": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.65
+        },
+        "D26": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.2,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.35
+        },
+        "D27": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D14": {
+          "normal_under_0.3": 0.03,
+          "mild_0.3_3": 0.07,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D29": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D30": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D31": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D32": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D33": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D34": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D35": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D36": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D37": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D38": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D40": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D41": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D42": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D43": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D49": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D51": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D55": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D57": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D79": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D80": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D81": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D82": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D83": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D85": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D86": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D87": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D88": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D91": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D93": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D95": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D96": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D97": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D100": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D102": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D48": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D54": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.4,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.1
+        },
+        "D59": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D62": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D63": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D64": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D65": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D66": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D69": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D90": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D92": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D94": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D98": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D99": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D58": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.05,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.73
+        },
+        "D61": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.03,
+          "moderate_3_10": 0.15,
+          "high_over_10": 0.8
+        },
+        "D39": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.4
+        },
+        "D52": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D60": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.08,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.6
+        },
+        "D21": {
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.05
+        },
+        "D76": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.15
+        },
+        "D53": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        }
+      }
+    },
+    "L03": {
+      "description": "プロカルシトニン。6親",
+      "states": [
+        "not_done",
+        "low_under_0.25",
+        "gray_0.25_0.5",
+        "high_over_0.5"
+      ],
+      "leak": {
+        "not_done": 0.4,
+        "low_under_0.25": 0.45,
+        "gray_0.25_0.5": 0.1,
+        "high_over_0.5": 0.05
+      },
+      "parent_effects": {
+        "D05": {
+          "not_done": 0.15,
+          "low_under_0.25": 0.15,
+          "gray_0.25_0.5": 0.2,
+          "high_over_0.5": 0.5
+        },
+        "D09": {
+          "not_done": 0.15,
+          "low_under_0.25": 0.15,
+          "gray_0.25_0.5": 0.25,
+          "high_over_0.5": 0.45
+        },
+        "D13": {
+          "not_done": 0.1,
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.1,
+          "high_over_0.5": 0.75
+        },
+        "D14": {
+          "not_done": 0.15,
+          "low_under_0.25": 0.2,
+          "gray_0.25_0.5": 0.25,
+          "high_over_0.5": 0.4
+        },
+        "D24": {
+          "not_done": 0.1,
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.1,
+          "high_over_0.5": 0.75
+        },
+        "D25": {
+          "not_done": 0.1,
+          "low_under_0.25": 0.1,
+          "gray_0.25_0.5": 0.15,
+          "high_over_0.5": 0.65
+        }
+      }
+    },
+    "L04": {
+      "description": "胸部X線。肺炎・COVID・結核・心内膜炎(敗血症性肺塞栓)で異常。BHL=両側肺門リンパ節腫脹",
+      "states": [
+        "normal",
+        "lobar_infiltrate",
+        "bilateral_infiltrate",
+        "BHL",
+        "pleural_effusion"
+      ],
+      "leak": {
+        "normal": 0.915,
+        "lobar_infiltrate": 0.03,
+        "bilateral_infiltrate": 0.03,
+        "BHL": 0.005,
+        "pleural_effusion": 0.02
+      },
+      "parent_effects": {
+        "D05": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.63,
+          "bilateral_infiltrate": 0.2,
+          "BHL": 0.02,
+          "pleural_effusion": 0.1
+        },
+        "D03": {
+          "normal": 0.3,
+          "lobar_infiltrate": 0.1,
+          "bilateral_infiltrate": 0.53,
+          "BHL": 0.02,
+          "pleural_effusion": 0.05
+        },
+        "D17": {
+          "normal": 0.15,
+          "lobar_infiltrate": 0.45,
+          "bilateral_infiltrate": 0.2,
+          "BHL": 0.05,
+          "pleural_effusion": 0.15
+        },
+        "D14": {
+          "normal": 0.38,
+          "lobar_infiltrate": 0.15,
+          "bilateral_infiltrate": 0.35,
+          "BHL": 0.02,
+          "pleural_effusion": 0.1
+        },
+        "D35": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.58,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.2
+        },
+        "D36": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.1,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.73
+        },
+        "D50": {
+          "normal": 0.38,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.02,
+          "pleural_effusion": 0.15
+        },
+        "D55": {
+          "normal": 0.28,
+          "lobar_infiltrate": 0.45,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.02,
+          "pleural_effusion": 0.1
+        },
+        "D77": {
+          "normal": 0.38,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.02,
+          "pleural_effusion": 0.15
+        },
+        "D83": {
+          "normal": 0.38,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.02,
+          "pleural_effusion": 0.15
+        },
+        "D99": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.46,
+          "bilateral_infiltrate": 0.3,
+          "BHL": 0.04,
+          "pleural_effusion": 0.1
+        },
+        "D102": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.68,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.02,
+          "pleural_effusion": 0.1
+        },
+        "D92": {
+          "normal": 0.43,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.07,
+          "pleural_effusion": 0.15
+        },
+        "D67": {
+          "normal": 0.25,
+          "lobar_infiltrate": 0.1,
+          "bilateral_infiltrate": 0.3,
+          "BHL": 0.15,
+          "pleural_effusion": 0.2
+        },
+        "D60": {
+          "normal": 0.38,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.02,
+          "pleural_effusion": 0.15
+        },
+        "D62": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.03,
+          "bilateral_infiltrate": 0.07,
+          "BHL": 0.7,
+          "pleural_effusion": 0.1
+        },
+        "D68": {
+          "normal": 0.35,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.05,
+          "pleural_effusion": 0.15
+        },
+        "D69": {
+          "normal": 0.37,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.03,
+          "pleural_effusion": 0.15
+        }
+      }
+    },
+    "L09": {
+      "description": "血液培養。6親",
+      "states": [
+        "not_done_or_pending",
+        "negative",
+        "gram_positive",
+        "gram_negative"
+      ],
+      "leak": {
+        "not_done_or_pending": 0.5,
+        "negative": 0.45,
+        "gram_positive": 0.03,
+        "gram_negative": 0.02
+      },
+      "parent_effects": {
+        "D09": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.4,
+          "gram_positive": 0.05,
+          "gram_negative": 0.35
+        },
+        "D13": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.2,
+          "gram_positive": 0.45,
+          "gram_negative": 0.25
+        },
+        "D14": {
+          "not_done_or_pending": 0.05,
+          "negative": 0.1,
+          "gram_positive": 0.65,
+          "gram_negative": 0.2
+        },
+        "D24": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.15,
+          "gram_positive": 0.6,
+          "gram_negative": 0.15
+        },
+        "D25": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.25,
+          "gram_positive": 0.1,
+          "gram_negative": 0.55
+        },
+        "D28": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.25,
+          "gram_positive": 0.05,
+          "gram_negative": 0.6
+        },
+        "D29": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.35,
+          "gram_positive": 0.15,
+          "gram_negative": 0.4
+        },
+        "D30": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.35,
+          "gram_positive": 0.3,
+          "gram_negative": 0.25
+        },
+        "D31": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.35,
+          "gram_positive": 0.4,
+          "gram_negative": 0.15
+        },
+        "D32": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.3,
+          "gram_positive": 0.45,
+          "gram_negative": 0.15
+        },
+        "D40": {
+          "not_done_or_pending": 0.05,
+          "negative": 0.15,
+          "gram_positive": 0.6,
+          "gram_negative": 0.2
+        },
+        "D42": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.5,
+          "gram_positive": 0.05,
+          "gram_negative": 0.35
+        },
+        "D49": {
+          "not_done_or_pending": 0.05,
+          "negative": 0.25,
+          "gram_positive": 0.6,
+          "gram_negative": 0.1
+        },
+        "D53": {
+          "not_done_or_pending": 0.1,
+          "negative": 0.4,
+          "gram_positive": 0.05,
+          "gram_negative": 0.45
+        },
+        "D79": {
+          "not_done_or_pending": 0.05,
+          "negative": 0.15,
+          "gram_positive": 0.6,
+          "gram_negative": 0.2
+        }
+      }
+    },
+    "L10": {
+      "description": "マラリア塗抹検査。マラリアで陽性率~90%",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "not_done": 0.85,
+        "negative": 0.14,
+        "positive": 0.01
+      },
+      "parent_effects": {
+        "D15": {
+          "not_done": 0.05,
+          "negative": 0.05,
+          "positive": 0.9
+        }
+      }
+    },
+    "L11": {
+      "description": "肝酵素。6親",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "mild_elevated": 0.1,
+        "high_elevated": 0.05
+      },
+      "parent_effects": {
+        "D11": {
+          "normal": 0.4,
+          "mild_elevated": 0.45,
+          "high_elevated": 0.15
+        },
+        "D16": {
+          "normal": 0.3,
+          "mild_elevated": 0.45,
+          "high_elevated": 0.25
+        },
+        "D18": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "high_elevated": 0.3
+        },
+        "D25": {
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "high_elevated": 0.6
+        },
+        "D15": {
+          "normal": 0.35,
+          "mild_elevated": 0.4,
+          "high_elevated": 0.25
+        },
+        "D28": {
+          "normal": 0.4,
+          "mild_elevated": 0.4,
+          "high_elevated": 0.2
+        },
+        "D29": {
+          "normal": 0.15,
+          "mild_elevated": 0.5,
+          "very_high": 0.35
+        },
+        "D45": {
+          "normal": 0.2,
+          "mild_elevated": 0.6,
+          "very_high": 0.2
+        },
+        "D52": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "very_high": 0.3
+        },
+        "D55": {
+          "normal": 0.15,
+          "mild_elevated": 0.45,
+          "very_high": 0.4
+        },
+        "D58": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "very_high": 0.3
+        },
+        "D70": {
+          "normal": 0.1,
+          "mild_elevated": 0.5,
+          "very_high": 0.4
+        },
+        "D93": {
+          "normal": 0.15,
+          "mild_elevated": 0.45,
+          "very_high": 0.4
+        },
+        "D100": {
+          "normal": 0.02,
+          "mild_elevated": 0.18,
+          "very_high": 0.8
+        },
+        "D17": {
+          "normal": 0.6,
+          "mild_elevated": 0.3,
+          "very_high": 0.1
+        },
+        "D53": {
+          "normal": 0.35,
+          "mild_elevated": 0.45,
+          "very_high": 0.2
+        }
+      }
+    },
+    "L14": {
+      "description": "末梢血液像。7親",
+      "states": [
+        "normal",
+        "left_shift",
+        "atypical_lymphocytes",
+        "thrombocytopenia",
+        "eosinophilia"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "left_shift": 0.08,
+        "atypical_lymphocytes": 0.03,
+        "thrombocytopenia": 0.02,
+        "eosinophilia": 0.02
+      },
+      "parent_effects": {
+        "D05": {
+          "normal": 0.2,
+          "left_shift": 0.7,
+          "atypical_lymphocytes": 0.03,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.02
+        },
+        "D13": {
+          "normal": 0.15,
+          "left_shift": 0.75,
+          "atypical_lymphocytes": 0.03,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.02
+        },
+        "D15": {
+          "normal": 0.2,
+          "left_shift": 0.1,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.6,
+          "eosinophilia": 0.05
+        },
+        "D16": {
+          "normal": 0.15,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.7,
+          "eosinophilia": 0.05
+        },
+        "D18": {
+          "normal": 0.1,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.75,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.05
+        },
+        "D19": {
+          "normal": 0.5,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.35
+        },
+        "D23": {
+          "normal": 0.25,
+          "left_shift": 0.1,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.55,
+          "eosinophilia": 0.05
+        },
+        "D14": {
+          "normal": 0.3,
+          "left_shift": 0.5,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.1,
+          "eosinophilia": 0.05
+        },
+        "D44": {
+          "normal": 0.3,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.55,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.05
+        },
+        "D45": {
+          "normal": 0.2,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.65,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.05
+        },
+        "D93": {
+          "normal": 0.1,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.1,
+          "thrombocytopenia": 0.05,
+          "eosinophilia": 0.7
+        }
+      }
+    },
+    "L15": {
+      "description": "フェリチン",
+      "states": [
+        "normal",
+        "mild_elevated",
+        "very_high_over_1000",
+        "extreme_over_10000"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "mild_elevated": 0.08,
+        "very_high_over_1000": 0.015,
+        "extreme_over_10000": 0.005
+      },
+      "parent_effects": {
+        "D58": {
+          "normal": 0.02,
+          "mild_elevated": 0.08,
+          "very_high_over_1000": 0.5,
+          "extreme_over_10000": 0.4
+        },
+        "D67": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "very_high_over_1000": 0.25,
+          "extreme_over_10000": 0.05
+        },
+        "D68": {
+          "normal": 0.2,
+          "mild_elevated": 0.4,
+          "very_high_over_1000": 0.3,
+          "extreme_over_10000": 0.1
+        }
+      }
+    },
+    "L16": {
+      "description": "LDH",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "elevated": 0.1
+      },
+      "parent_effects": {
+        "D50": {
+          "normal": 0.1,
+          "elevated": 0.9
+        },
+        "D67": {
+          "normal": 0.2,
+          "elevated": 0.8
+        },
+        "D68": {
+          "normal": 0.15,
+          "elevated": 0.85
+        }
+      }
+    },
+    "L17": {
+      "description": "CK(クレアチンキナーゼ)",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high"
+      ],
+      "leak": {
+        "normal": 0.95,
+        "elevated": 0.04,
+        "very_high": 0.01
+      },
+      "parent_effects": {
+        "D57": {
+          "normal": 0.2,
+          "elevated": 0.5,
+          "very_high": 0.3
+        },
+        "D74": {
+          "normal": 0.02,
+          "elevated": 0.18,
+          "very_high": 0.8
+        },
+        "D78": {
+          "normal": 0.1,
+          "elevated": 0.4,
+          "very_high": 0.5
+        },
+        "D89": {
+          "normal": 0.02,
+          "elevated": 0.08,
+          "very_high": 0.9
+        }
+      }
+    },
+    "L18": {
+      "description": "抗核抗体",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.9,
+        "positive": 0.1
+      },
+      "parent_effects": {
+        "D59": {
+          "negative": 0.02,
+          "positive": 0.98
+        }
+      }
+    },
+    "L19": {
+      "description": "ANCA",
+      "states": [
+        "negative",
+        "c_ANCA",
+        "p_ANCA"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "c_ANCA": 0.01,
+        "p_ANCA": 0.01
+      },
+      "parent_effects": {
+        "D60": {
+          "negative": 0.05,
+          "c_ANCA": 0.35,
+          "p_ANCA": 0.6
+        }
+      }
+    },
+    "L20": {
+      "description": "D-dimer",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "elevated": 0.15
+      },
+      "parent_effects": {
+        "D77": {
+          "normal": 0.05,
+          "elevated": 0.95
+        }
+      }
+    },
+    "L21": {
+      "description": "末梢血芽球",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D68": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "L22": {
+      "description": "汎血球減少",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D68": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D67": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D59": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D17": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "L23": {
+      "description": "尿酸値",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "elevated": 0.15
+      },
+      "parent_effects": {
+        "D65": {
+          "normal": 0.2,
+          "elevated": 0.8
+        }
+      }
+    },
+    "L24": {
+      "description": "ACE(アンギオテンシン変換酵素)",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.95,
+        "elevated": 0.05
+      },
+      "parent_effects": {
+        "D62": {
+          "normal": 0.3,
+          "elevated": 0.7
+        }
+      }
+    },
+    "L25": {
+      "description": "AFP(αフェトプロテイン)",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.97,
+        "elevated": 0.03
+      },
+      "parent_effects": {
+        "D70": {
+          "normal": 0.15,
+          "elevated": 0.85
+        }
+      }
+    },
+    "L26": {
+      "description": "ガラクトマンナン抗原",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "positive": 0.02
+      },
+      "parent_effects": {
+        "D83": {
+          "negative": 0.15,
+          "positive": 0.85
+        }
+      }
+    },
+    "L27": {
+      "description": "β-Dグルカン",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.95,
+        "positive": 0.05
+      },
+      "parent_effects": {
+        "D49": {
+          "negative": 0.2,
+          "positive": 0.8
+        },
+        "D50": {
+          "negative": 0.15,
+          "positive": 0.85
+        },
+        "D83": {
+          "negative": 0.25,
+          "positive": 0.75
+        }
+      }
+    },
+    "L28": {
+      "description": "赤沈(ESR)",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high_over_100"
+      ],
+      "leak": {
+        "normal": 0.98,
+        "elevated": 0.01,
+        "very_high_over_100": 0.01
+      },
+      "parent_effects": {
+        "D31": {
+          "normal": 0.05,
+          "elevated": 0.35,
+          "very_high_over_100": 0.6
+        },
+        "D58": {
+          "normal": 0.05,
+          "elevated": 0.3,
+          "very_high_over_100": 0.65
+        },
+        "D59": {
+          "normal": 0.1,
+          "elevated": 0.5,
+          "very_high_over_100": 0.4
+        },
+        "D61": {
+          "normal": 0.02,
+          "elevated": 0.18,
+          "very_high_over_100": 0.8
+        },
+        "D62": {
+          "normal": 0.15,
+          "elevated": 0.55,
+          "very_high_over_100": 0.3
+        },
+        "D67": {
+          "normal": 0.1,
+          "elevated": 0.5,
+          "very_high_over_100": 0.4
+        },
+        "D79": {
+          "normal": 0.05,
+          "elevated": 0.4,
+          "very_high_over_100": 0.55
+        },
+        "D87": {
+          "normal": 0.02,
+          "elevated": 0.18,
+          "very_high_over_100": 0.8
+        },
+        "D96": {
+          "normal": 0.1,
+          "elevated": 0.6,
+          "very_high_over_100": 0.3
+        },
+        "D97": {
+          "normal": 0.05,
+          "elevated": 0.4,
+          "very_high_over_100": 0.55
+        },
+        "D98": {
+          "normal": 0.02,
+          "elevated": 0.18,
+          "very_high_over_100": 0.8
+        },
+        "D66": {
+          "normal": 0.15,
+          "elevated": 0.6,
+          "very_high_over_100": 0.25
+        },
+        "D60": {
+          "normal": 0.05,
+          "elevated": 0.4,
+          "very_high_over_100": 0.55
+        },
+        "D63": {
+          "normal": 0.1,
+          "elevated": 0.55,
+          "very_high_over_100": 0.35
+        },
+        "D69": {
+          "normal": 0.15,
+          "elevated": 0.55,
+          "very_high_over_100": 0.3
+        }
+      }
+    },
+    "L29": {
+      "description": "腹水検査（好中球数）",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated_over_250"
+      ],
+      "leak": {
+        "not_done": 0.7,
+        "normal": 0.28,
+        "elevated_over_250": 0.02
+      },
+      "parent_effects": {
+        "D81": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "elevated_over_250": 0.85
+        }
+      }
+    },
+    "L30": {
+      "description": "関節液検査",
+      "states": [
+        "not_done",
+        "inflammatory",
+        "septic",
+        "crystals"
+      ],
+      "leak": {
+        "not_done": 0.8,
+        "inflammatory": 0.12,
+        "septic": 0.05,
+        "crystals": 0.03
+      },
+      "parent_effects": {
+        "D32": {
+          "not_done": 0.1,
+          "inflammatory": 0.1,
+          "septic": 0.75,
+          "crystals": 0.05
+        },
+        "D65": {
+          "not_done": 0.1,
+          "inflammatory": 0.1,
+          "septic": 0.05,
+          "crystals": 0.75
+        }
+      }
+    },
+    "L31": {
+      "description": "腹部CT",
+      "states": [
+        "normal",
+        "abscess",
+        "mass",
+        "other_abnormal"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "abscess": 0.05,
+        "mass": 0.05,
+        "other_abnormal": 0.05
+      },
+      "parent_effects": {
+        "D29": {
+          "normal": 0.05,
+          "abscess": 0.85,
+          "mass": 0.05,
+          "other_abnormal": 0.05
+        },
+        "D30": {
+          "normal": 0.05,
+          "abscess": 0.85,
+          "mass": 0.05,
+          "other_abnormal": 0.05
+        }
+      }
+    },
+    "L32": {
+      "description": "甲状腺機能検査",
+      "states": [
+        "normal",
+        "hyperthyroid",
+        "hypothyroid"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "hyperthyroid": 0.07,
+        "hypothyroid": 0.03
+      },
+      "parent_effects": {
+        "D71": {
+          "normal": 0.02,
+          "hyperthyroid": 0.95,
+          "hypothyroid": 0.03
+        },
+        "D87": {
+          "normal": 0.1,
+          "hyperthyroid": 0.85,
+          "hypothyroid": 0.05
+        }
+      }
+    },
+    "L33": {
+      "description": "HIV検査",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "positive": 0.02
+      },
+      "parent_effects": {
+        "D44": {
+          "negative": 0.3,
+          "positive": 0.7
+        }
+      }
+    },
+    "L34": {
+      "description": "便培養/CDトキシン",
+      "states": [
+        "not_done",
+        "normal",
+        "pathogen_detected",
+        "CD_positive"
+      ],
+      "leak": {
+        "not_done": 0.6,
+        "normal": 0.3,
+        "pathogen_detected": 0.07,
+        "CD_positive": 0.03
+      },
+      "parent_effects": {
+        "D37": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "pathogen_detected": 0.75,
+          "CD_positive": 0.05
+        },
+        "D38": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "pathogen_detected": 0.05,
+          "CD_positive": 0.8
+        }
+      }
+    },
+    "L35": {
+      "description": "胸部CT詳細所見",
+      "states": [
+        "normal",
+        "consolidation",
+        "GGO",
+        "cavity",
+        "halo_sign",
+        "BHL",
+        "pleural_effusion"
+      ],
+      "leak": {
+        "normal": 0.7,
+        "consolidation": 0.1,
+        "GGO": 0.05,
+        "cavity": 0.03,
+        "halo_sign": 0.02,
+        "BHL": 0.05,
+        "pleural_effusion": 0.05
+      },
+      "parent_effects": {
+        "D35": {
+          "normal": 0.05,
+          "consolidation": 0.15,
+          "GGO": 0.05,
+          "cavity": 0.65,
+          "halo_sign": 0.02,
+          "BHL": 0.02,
+          "pleural_effusion": 0.06
+        },
+        "D50": {
+          "normal": 0.05,
+          "consolidation": 0.05,
+          "GGO": 0.8,
+          "cavity": 0.02,
+          "halo_sign": 0.02,
+          "BHL": 0.02,
+          "pleural_effusion": 0.04
+        },
+        "D62": {
+          "normal": 0.1,
+          "consolidation": 0.05,
+          "GGO": 0.05,
+          "cavity": 0.02,
+          "halo_sign": 0.02,
+          "BHL": 0.7,
+          "pleural_effusion": 0.06
+        },
+        "D83": {
+          "normal": 0.05,
+          "consolidation": 0.15,
+          "GGO": 0.1,
+          "cavity": 0.1,
+          "halo_sign": 0.5,
+          "BHL": 0.02,
+          "pleural_effusion": 0.08
+        }
+      }
+    },
+    "L36": {
+      "description": "アミラーゼ/リパーゼ",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "elevated": 0.07,
+        "very_high": 0.03
+      },
+      "parent_effects": {
+        "D47": {
+          "normal": 0.2,
+          "elevated": 0.6,
+          "very_high": 0.2
+        },
+        "D86": {
+          "normal": 0.02,
+          "elevated": 0.18,
+          "very_high": 0.8
+        }
+      }
+    },
+    "L37": {
+      "description": "血清IgG4",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.97,
+        "elevated": 0.03
+      },
+      "parent_effects": {
+        "D94": {
+          "normal": 0.1,
+          "elevated": 0.9
+        }
+      }
+    },
+    "L38": {
+      "description": "梅毒血清検査(RPR/TPHA)",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {
+        "D101": {
+          "negative": 0.02,
+          "positive": 0.98
+        }
+      }
+    },
+    "L39": {
+      "description": "肝炎ウイルス血清検査",
+      "states": [
+        "negative",
+        "HAV_IgM",
+        "HBV",
+        "HCV"
+      ],
+      "leak": {
+        "negative": 0.9,
+        "HAV_IgM": 0.03,
+        "HBV": 0.04,
+        "HCV": 0.03
+      },
+      "parent_effects": {
+        "D100": {
+          "negative": 0.02,
+          "HAV_IgM": 0.93,
+          "HBV": 0.03,
+          "HCV": 0.02
+        }
+      }
+    },
+    "L40": {
+      "description": "レジオネラ尿中抗原",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "positive": 0.02
+      },
+      "parent_effects": {
+        "D102": {
+          "negative": 0.1,
+          "positive": 0.9
+        }
+      }
+    },
+    "L41": {
+      "description": "IL-6/sIL-2R",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "elevated": 0.1
+      },
+      "parent_effects": {
+        "D97": {
+          "normal": 0.05,
+          "elevated": 0.95
+        },
+        "D67": {
+          "normal": 0.2,
+          "elevated": 0.8
+        }
+      }
+    },
+    "L44": {
+      "description": "電解質（Na/K）",
+      "states": [
+        "normal",
+        "hyponatremia",
+        "hyperkalemia",
+        "other"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "hyponatremia": 0.07,
+        "hyperkalemia": 0.02,
+        "other": 0.01
+      },
+      "parent_effects": {
+        "D72": {
+          "normal": 0.1,
+          "hyponatremia": 0.3,
+          "hyperkalemia": 0.55,
+          "other": 0.05
+        },
+        "D102": {
+          "normal": 0.2,
+          "hyponatremia": 0.7,
+          "hyperkalemia": 0.05,
+          "other": 0.05
+        }
+      }
+    },
+    "L45": {
+      "description": "髄液検査",
+      "states": [
+        "not_done",
+        "normal",
+        "viral_pattern",
+        "bacterial_pattern",
+        "HSV_PCR_positive"
+      ],
+      "leak": {
+        "not_done": 0.7,
+        "normal": 0.25,
+        "viral_pattern": 0.03,
+        "bacterial_pattern": 0.01,
+        "HSV_PCR_positive": 0.01
+      },
+      "parent_effects": {
+        "D84": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "viral_pattern": 0.13,
+          "bacterial_pattern": 0.01,
+          "HSV_PCR_positive": 0.79
+        },
+        "D13": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "viral_pattern": 0.23,
+          "bacterial_pattern": 0.68,
+          "HSV_PCR_positive": 0.02
+        },
+        "D82": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "viral_pattern": 0.05,
+          "bacterial_pattern": 0.86,
+          "HSV_PCR_positive": 0.02
+        },
+        "D95": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "viral_pattern": 0.88,
+          "bacterial_pattern": 0.03,
+          "HSV_PCR_positive": 0.02
+        },
+        "D14": {
+          "not_done": 0.4,
+          "normal": 0.15,
+          "viral_pattern": 0.1,
+          "bacterial_pattern": 0.3,
+          "HSV_PCR_positive": 0.05
+        },
+        "D17": {
+          "not_done": 0.5,
+          "normal": 0.1,
+          "viral_pattern": 0.25,
+          "bacterial_pattern": 0.15,
+          "HSV_PCR_positive": 0.0
+        }
+      }
+    },
+    "L46": {
+      "description": "頭部MRI",
+      "states": [
+        "normal",
+        "temporal_lobe_lesion",
+        "diffuse_abnormal",
+        "other"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "temporal_lobe_lesion": 0.03,
+        "diffuse_abnormal": 0.04,
+        "other": 0.03
+      },
+      "parent_effects": {
+        "D84": {
+          "normal": 0.05,
+          "temporal_lobe_lesion": 0.85,
+          "diffuse_abnormal": 0.05,
+          "other": 0.05
+        },
+        "D95": {
+          "normal": 0.1,
+          "temporal_lobe_lesion": 0.05,
+          "diffuse_abnormal": 0.75,
+          "other": 0.1
+        }
+      }
+    },
+    "M01": {
+      "description": "くも膜下出血",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.998,
+        "present": 0.002
+      },
+      "parent_effects": {
+        "D14": {
+          "absent": 0.88,
+          "present": 0.12
+        }
+      }
+    },
+    "S01": {
+      "description": "咳嗽",
+      "states": [
+        "absent",
+        "dry",
+        "productive"
+      ],
+      "leak": 0.05,
+      "parent_effects": {
+        "D01": 0.7,
+        "D02": 0.6,
+        "D03": 0.55,
+        "D05": 0.85,
+        "D06": 0.9,
+        "D17": 0.8,
+        "D14": {
+          "absent": 0.5,
+          "dry": 0.2,
+          "productive": 0.3
+        },
+        "D35": {
+          "absent": 0.1,
+          "dry": 0.1,
+          "productive": 0.8
+        },
+        "D36": {
+          "absent": 0.2,
+          "dry": 0.2,
+          "productive": 0.6
+        },
+        "D46": {
+          "absent": 0.15,
+          "dry": 0.6,
+          "productive": 0.25
+        },
+        "D50": {
+          "absent": 0.1,
+          "dry": 0.8,
+          "productive": 0.1
+        },
+        "D55": {
+          "absent": 0.3,
+          "dry": 0.5,
+          "productive": 0.2
+        },
+        "D56": {
+          "absent": 0.05,
+          "dry": 0.85,
+          "productive": 0.1
+        },
+        "D83": {
+          "absent": 0.2,
+          "dry": 0.5,
+          "productive": 0.3
+        },
+        "D99": {
+          "absent": 0.15,
+          "dry": 0.25,
+          "productive": 0.6
+        },
+        "D102": {
+          "absent": 0.2,
+          "dry": 0.5,
+          "productive": 0.3
+        },
+        "D92": {
+          "absent": 0.6,
+          "dry": 0.25,
+          "productive": 0.15
+        },
+        "D67": {
+          "absent": 0.5,
+          "dry": 0.35,
+          "productive": 0.15
+        },
+        "D62": {
+          "absent": 0.5,
+          "dry": 0.4,
+          "productive": 0.1
+        }
+      }
+    },
+    "S02": {
+      "description": "咽頭痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": 0.05,
+      "parent_effects": {
+        "D01": 0.5,
+        "D02": 0.3,
+        "D03": 0.4,
+        "D04": 0.9,
+        "D18": 0.8,
+        "D33": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D44": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D58": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D85": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S04": {
+      "description": "呼吸困難。肺炎・COVID・結核・心内膜炎で出現",
+      "states": [
+        "absent",
+        "exertional",
+        "at_rest"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "exertional": 0.02,
+        "at_rest": 0.01
+      },
+      "parent_effects": {
+        "D05": {
+          "absent": 0.2,
+          "exertional": 0.4,
+          "at_rest": 0.4
+        },
+        "D03": {
+          "absent": 0.5,
+          "exertional": 0.35,
+          "at_rest": 0.15
+        },
+        "D17": {
+          "absent": 0.4,
+          "exertional": 0.4,
+          "at_rest": 0.2
+        },
+        "D14": {
+          "absent": 0.5,
+          "exertional": 0.3,
+          "at_rest": 0.2
+        },
+        "D34": {
+          "absent": 0.4,
+          "exertional": 0.2,
+          "at_rest": 0.4
+        },
+        "D36": {
+          "absent": 0.2,
+          "exertional": 0.5,
+          "at_rest": 0.3
+        },
+        "D50": {
+          "absent": 0.1,
+          "exertional": 0.4,
+          "at_rest": 0.5
+        },
+        "D77": {
+          "absent": 0.15,
+          "exertional": 0.25,
+          "at_rest": 0.6
+        },
+        "D62": {
+          "absent": 0.55,
+          "exertional": 0.35,
+          "at_rest": 0.1
+        }
+      }
+    },
+    "S05": {
+      "description": "頭痛",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ],
+      "leak": 0.08,
+      "parent_effects": {
+        "D01": 0.35,
+        "D02": 0.6,
+        "D03": 0.5,
+        "D13": 0.9,
+        "D15": 0.7,
+        "D16": 0.8,
+        "D20": 0.75,
+        "D28": 0.6,
+        "D14": 0.4,
+        "D52": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D55": {
+          "absent": 0.1,
+          "mild": 0.2,
+          "severe": 0.7
+        },
+        "D82": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D84": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D91": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D95": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D102": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D61": {
+          "absent": 0.3,
+          "mild": 0.3,
+          "severe": 0.4
+        },
+        "D73": {
+          "absent": 0.2,
+          "mild": 0.3,
+          "severe": 0.5
+        },
+        "D21": {
+          "absent": 0.5,
+          "mild": 0.3,
+          "severe": 0.2
+        },
+        "M01": {
+          "absent": 0.02,
+          "mild": 0.03,
+          "severe": 0.95
+        },
+        "D17": {
+          "absent": 0.6,
+          "mild": 0.15,
+          "severe": 0.25
+        },
+        "D53": {
+          "absent": 0.45,
+          "mild": 0.3,
+          "severe": 0.25
+        }
+      }
+    },
+    "S06": {
+      "description": "筋肉痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": 0.05,
+      "parent_effects": {
+        "D02": 0.75,
+        "D03": 0.5,
+        "D15": 0.6,
+        "D16": 0.85,
+        "D23": 0.55,
+        "D24": 0.7,
+        "D44": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D52": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D53": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D61": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D91": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "S07": {
+      "description": "倦怠感",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ],
+      "leak": 0.1,
+      "parent_effects": {
+        "D01": 0.4,
+        "D02": 0.75,
+        "D03": 0.7,
+        "D14": 0.65,
+        "D17": {
+          "absent": 0.1,
+          "mild": 0.2,
+          "severe": 0.7
+        },
+        "D18": 0.8,
+        "D19": {
+          "absent": 0.4,
+          "mild": 0.5,
+          "severe": 0.1
+        },
+        "D44": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D45": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D50": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D53": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D54": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D58": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D59": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D61": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D62": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D63": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D67": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D68": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D72": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D87": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D92": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D96": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D97": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D98": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D99": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D100": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D101": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D79": {
+          "absent": 0.15,
+          "mild": 0.4,
+          "severe": 0.45
+        },
+        "D90": {
+          "absent": 0.3,
+          "mild": 0.4,
+          "severe": 0.3
+        },
+        "D60": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
+        },
+        "D21": {
+          "absent": 0.4,
+          "mild": 0.45,
+          "severe": 0.15
+        }
+      }
+    },
+    "S08": {
+      "description": "関節痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D32": {
+          "absent": 0.02,
+          "present": 0.98
+        },
+        "D48": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D53": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D58": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D59": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D64": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D65": {
+          "absent": 0.02,
+          "present": 0.98
+        },
+        "D66": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D91": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D16": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D18": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D23": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S09": {
+      "description": "悪寒戦慄",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": 0.03,
+      "parent_effects": {
+        "D02": 0.5,
+        "D03": 0.3,
+        "D09": 0.7,
+        "D13": 0.65,
+        "D14": 0.55,
+        "D15": 0.85,
+        "D24": 0.7,
+        "D25": 0.75,
+        "D29": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D30": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D40": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D49": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D52": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D57": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D79": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D102": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D31": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D32": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D37": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D42": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D76": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D35": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S12": {
+      "description": "腹痛部位。7状態のnoisy-MAX",
+      "states": [
+        "absent",
+        "epigastric",
+        "RUQ",
+        "RLQ",
+        "LLQ",
+        "suprapubic",
+        "diffuse"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "epigastric": 0.03,
+        "RUQ": 0.02,
+        "RLQ": 0.02,
+        "LLQ": 0.01,
+        "suprapubic": 0.01,
+        "diffuse": 0.01
+      },
+      "parent_effects": {
+        "D07": {
+          "absent": 0.15,
+          "epigastric": 0.3,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.05,
+          "diffuse": 0.35
+        },
+        "D08": {
+          "absent": 0.3,
+          "epigastric": 0.05,
+          "RUQ": 0.02,
+          "RLQ": 0.03,
+          "LLQ": 0.02,
+          "suprapubic": 0.55,
+          "diffuse": 0.03
+        },
+        "D09": {
+          "absent": 0.25,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.1,
+          "LLQ": 0.05,
+          "suprapubic": 0.1,
+          "diffuse": 0.4
+        },
+        "D10": {
+          "absent": 0.08,
+          "epigastric": 0.1,
+          "RUQ": 0.02,
+          "RLQ": 0.7,
+          "LLQ": 0.02,
+          "suprapubic": 0.03,
+          "diffuse": 0.05
+        },
+        "D11": {
+          "absent": 0.08,
+          "epigastric": 0.1,
+          "RUQ": 0.72,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.04
+        },
+        "D25": {
+          "absent": 0.08,
+          "epigastric": 0.1,
+          "RUQ": 0.7,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.06
+        },
+        "D26": {
+          "absent": 0.1,
+          "epigastric": 0.05,
+          "RUQ": 0.03,
+          "RLQ": 0.1,
+          "LLQ": 0.07,
+          "suprapubic": 0.5,
+          "diffuse": 0.15
+        },
+        "D27": {
+          "absent": 0.08,
+          "epigastric": 0.05,
+          "RUQ": 0.02,
+          "RLQ": 0.05,
+          "LLQ": 0.7,
+          "suprapubic": 0.03,
+          "diffuse": 0.07
+        },
+        "D29": {
+          "absent": 0.1,
+          "epigastric": 0.05,
+          "RUQ": 0.7,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.1
+        },
+        "D37": {
+          "absent": 0.15,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.1,
+          "LLQ": 0.1,
+          "suprapubic": 0.05,
+          "diffuse": 0.5
+        },
+        "D38": {
+          "absent": 0.2,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.05,
+          "diffuse": 0.55
+        },
+        "D39": {
+          "absent": 0.1,
+          "epigastric": 0.01,
+          "RUQ": 0.01,
+          "RLQ": 0.1,
+          "LLQ": 0.05,
+          "suprapubic": 0.03,
+          "diffuse": 0.7
+        },
+        "D51": {
+          "absent": 0.1,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.15,
+          "LLQ": 0.1,
+          "suprapubic": 0.05,
+          "diffuse": 0.5
+        },
+        "D63": {
+          "absent": 0.1,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.3,
+          "LLQ": 0.2,
+          "suprapubic": 0.05,
+          "diffuse": 0.25
+        },
+        "D66": {
+          "absent": 0.1,
+          "epigastric": 0.1,
+          "RUQ": 0.1,
+          "RLQ": 0.1,
+          "LLQ": 0.1,
+          "suprapubic": 0.1,
+          "diffuse": 0.4
+        },
+        "D80": {
+          "absent": 0.1,
+          "epigastric": 0.05,
+          "RUQ": 0.7,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.1
+        },
+        "D81": {
+          "absent": 0.1,
+          "epigastric": 0.1,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.05,
+          "diffuse": 0.6
+        },
+        "D86": {
+          "absent": 0.05,
+          "epigastric": 0.75,
+          "RUQ": 0.05,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.1
+        },
+        "D94": {
+          "absent": 0.3,
+          "epigastric": 0.4,
+          "RUQ": 0.1,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.15
+        },
+        "D17": {
+          "absent": 0.7,
+          "epigastric": 0.05,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "lower_abdominal": 0.05,
+          "diffuse_abdominal": 0.1
+        }
+      }
+    },
+    "S13": {
+      "description": "悪心・嘔吐",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": 0.05,
+      "parent_effects": {
+        "D07": 0.8,
+        "D09": 0.5,
+        "D10": 0.7,
+        "D11": 0.6,
+        "D13": 0.55,
+        "D25": 0.5,
+        "D37": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D51": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D56": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D72": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D86": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D100": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "M01": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D17": {
+          "absent": 0.7,
+          "present": 0.3
+        }
+      }
+    },
+    "S14": {
+      "description": "下痢",
+      "states": [
+        "absent",
+        "watery",
+        "bloody"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "watery": 0.01,
+        "bloody": 0.01
+      },
+      "parent_effects": {
+        "D37": {
+          "absent": 0.05,
+          "watery": 0.25,
+          "bloody": 0.7
+        },
+        "D38": {
+          "absent": 0.05,
+          "watery": 0.9,
+          "bloody": 0.05
+        },
+        "D51": {
+          "absent": 0.1,
+          "watery": 0.2,
+          "bloody": 0.7
+        },
+        "D63": {
+          "absent": 0.15,
+          "watery": 0.3,
+          "bloody": 0.55
+        },
+        "D71": {
+          "absent": 0.4,
+          "watery": 0.55,
+          "bloody": 0.05
+        },
+        "D75": {
+          "absent": 0.4,
+          "watery": 0.55,
+          "bloody": 0.05
+        },
+        "D102": {
+          "absent": 0.4,
+          "watery": 0.55,
+          "bloody": 0.05
+        },
+        "D07": {
+          "absent": 0.05,
+          "watery": 0.9,
+          "bloody": 0.05
+        },
+        "D28": {
+          "absent": 0.2,
+          "watery": 0.6,
+          "bloody": 0.2
+        },
+        "D17": {
+          "absent": 0.8,
+          "watery": 0.15,
+          "bloody": 0.05
+        }
+      }
+    },
+    "S16": {
+      "description": "盗汗",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D53": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D67": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D92": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D14": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D17": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "S17": {
+      "description": "体重減少",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D35": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D60": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D63": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D67": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D69": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D70": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D92": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D98": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D99": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D17": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D14": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D50": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S18": {
+      "description": "皮膚の訴え",
+      "states": [
+        "absent",
+        "localized_pain_redness",
+        "rash_widespread"
+      ],
+      "leak": 0.03,
+      "parent_effects": {
+        "D12": 0.9,
+        "D16": 0.5,
+        "D21": 0.95,
+        "D23": 0.7,
+        "D24": 0.8,
+        "D57": {
+          "absent": 0.05,
+          "localized_pain_redness": 0.9,
+          "rash_widespread": 0.05
+        }
+      }
+    },
+    "S21": {
+      "description": "胸痛。肺炎・膿胸・FMF・肺塞栓で胸膜性疼痛",
+      "states": [
+        "absent",
+        "pleuritic",
+        "constant"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "pleuritic": 0.02,
+        "constant": 0.01
+      },
+      "parent_effects": {
+        "D05": {
+          "absent": 0.55,
+          "pleuritic": 0.4,
+          "constant": 0.05
+        },
+        "D36": {
+          "absent": 0.3,
+          "pleuritic": 0.6,
+          "constant": 0.1
+        },
+        "D66": {
+          "absent": 0.35,
+          "pleuritic": 0.55,
+          "constant": 0.1
+        },
+        "D77": {
+          "absent": 0.3,
+          "pleuritic": 0.6,
+          "constant": 0.1
+        }
+      }
+    },
+    "S22": {
+      "description": "背部痛（脊椎レベル）",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D30": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D31": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D86": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S23": {
+      "description": "関節腫脹",
+      "states": [
+        "absent",
+        "monoarticular",
+        "polyarticular"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "monoarticular": 0.02,
+        "polyarticular": 0.01
+      },
+      "parent_effects": {
+        "D32": {
+          "absent": 0.05,
+          "monoarticular": 0.9,
+          "polyarticular": 0.05
+        },
+        "D59": {
+          "absent": 0.3,
+          "monoarticular": 0.1,
+          "polyarticular": 0.6
+        },
+        "D64": {
+          "absent": 0.1,
+          "monoarticular": 0.5,
+          "polyarticular": 0.4
+        },
+        "D65": {
+          "absent": 0.05,
+          "monoarticular": 0.9,
+          "polyarticular": 0.05
+        }
+      }
+    },
+    "S24": {
+      "description": "開口障害",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D33": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D34": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D85": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S25": {
+      "description": "嚥下困難",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D33": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D34": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D47": {
+          "absent": 0.5,
+          "present": 0.5
+        }
+      }
+    },
+    "S26": {
+      "description": "血便/粘血便",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D37": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D51": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D63": {
+          "absent": 0.25,
+          "present": 0.75
+        }
+      }
+    },
+    "S27": {
+      "description": "朝のこわばり",
+      "states": [
+        "absent",
+        "under_30min",
+        "over_30min"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "under_30min": 0.02,
+        "over_30min": 0.01
+      },
+      "parent_effects": {
+        "D61": {
+          "absent": 0.05,
+          "under_30min": 0.1,
+          "over_30min": 0.85
+        }
+      }
+    },
+    "S28": {
+      "description": "股関節/鼠径部痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D30": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D32": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S29": {
+      "description": "口腔内潰瘍",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D44": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D59": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D63": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D90": {
+          "absent": 0.05,
+          "present": 0.95
+        }
+      }
+    },
+    "S30": {
+      "description": "光線過敏",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D59": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S31": {
+      "description": "乾燥症状",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D62": {
+          "absent": 0.5,
+          "present": 0.5
+        }
+      }
+    },
+    "S32": {
+      "description": "発作性咳嗽",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D56": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S33": {
+      "description": "血尿",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D60": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D69": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D59": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D14": {
+          "absent": 0.7,
+          "present": 0.3
+        }
+      }
+    },
+    "S34": {
+      "description": "喀血",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D60": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D83": {
+          "absent": 0.5,
+          "present": 0.5
+        }
+      }
+    },
+    "S35": {
+      "description": "動悸",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D71": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D73": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S36": {
+      "description": "振戦",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D71": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D75": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D88": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S37": {
+      "description": "筋強剛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D74": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D89": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S38": {
+      "description": "陰嚢腫脹・疼痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D43": {
+          "absent": 0.05,
+          "present": 0.95
+        }
+      }
+    },
+    "S39": {
+      "description": "片側下肢腫脹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D77": {
+          "absent": 0.25,
+          "present": 0.75
+        }
+      }
+    },
+    "S40": {
+      "description": "顔面腫脹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D85": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D93": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S41": {
+      "description": "外陰部潰瘍",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.995,
+        "present": 0.005
+      },
+      "parent_effects": {
+        "D90": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S42": {
+      "description": "痙攣",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D84": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D88": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D95": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D14": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "M01": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "S43": {
+      "description": "手掌・足底の皮疹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D101": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S44": {
+      "description": "出血傾向（紫斑/歯肉出血/鼻出血）",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D68": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "S45": {
+      "description": "発汗異常",
+      "states": [
+        "normal",
+        "excessive",
+        "absent"
+      ],
+      "leak": {
+        "normal": 0.95,
+        "excessive": 0.04,
+        "absent": 0.01
+      },
+      "parent_effects": {
+        "D71": {
+          "normal": 0.05,
+          "excessive": 0.9,
+          "absent": 0.05
+        },
+        "D73": {
+          "normal": 0.1,
+          "excessive": 0.85,
+          "absent": 0.05
+        },
+        "D74": {
+          "normal": 0.1,
+          "excessive": 0.85,
+          "absent": 0.05
+        },
+        "D75": {
+          "normal": 0.1,
+          "excessive": 0.85,
+          "absent": 0.05
+        },
+        "D78": {
+          "normal": 0.05,
+          "excessive": 0.05,
+          "absent": 0.9
+        },
+        "D88": {
+          "normal": 0.1,
+          "excessive": 0.85,
+          "absent": 0.05
+        },
+        "D89": {
+          "normal": 0.1,
+          "excessive": 0.6,
+          "absent": 0.3
+        }
+      }
+    },
+    "S46": {
+      "description": "食欲不振",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D63": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D67": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D68": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D70": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D100": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D54": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D50": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D17": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D53": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "T01": {
+      "description": "発熱持続期間。13親",
+      "states": [
+        "under_3d",
+        "3d_to_1w",
+        "1w_to_3w",
+        "over_3w"
+      ],
+      "leak": {
+        "under_3d": 0.4,
+        "3d_to_1w": 0.35,
+        "1w_to_3w": 0.15,
+        "over_3w": 0.1
+      },
+      "parent_effects": {
+        "D01": {
+          "under_3d": 0.6,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D02": {
+          "under_3d": 0.3,
+          "3d_to_1w": 0.6,
+          "1w_to_3w": 0.09,
+          "over_3w": 0.01
+        },
+        "D03": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.45,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.05
+        },
+        "D04": {
+          "under_3d": 0.3,
+          "3d_to_1w": 0.6,
+          "1w_to_3w": 0.09,
+          "over_3w": 0.01
+        },
+        "D05": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.5,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.05
+        },
+        "D06": {
+          "under_3d": 0.35,
+          "3d_to_1w": 0.45,
+          "1w_to_3w": 0.18,
+          "over_3w": 0.02
+        },
+        "D07": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D09": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.6,
+          "1w_to_3w": 0.22,
+          "over_3w": 0.03
+        },
+        "D14": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.6
+        },
+        "D15": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.2
+        },
+        "D17": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.05,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.68
+        },
+        "D19": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.5,
+          "over_3w": 0.15
+        },
+        "D28": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.55,
+          "over_3w": 0.2
+        },
+        "D92": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D67": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
+        },
+        "D58": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D59": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D60": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D61": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D62": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D63": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D66": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D68": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D69": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D70": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D90": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D94": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D96": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D97": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D98": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D99": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.8
+        },
+        "D10": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D24": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D57": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D71": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D72": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D74": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D75": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D76": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D78": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D84": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D86": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D88": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D89": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D50": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.5
+        },
+        "D53": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.5
+        }
+      }
+    },
+    "T02": {
+      "description": "発症速度。10親",
+      "states": [
+        "sudden_hours",
+        "gradual_days"
+      ],
+      "leak": {
+        "gradual": 0.4,
+        "acute": 0.4,
+        "sudden": 0.2
+      },
+      "parent_effects": {
+        "D01": {
+          "gradual": 0.7,
+          "acute": 0.25,
+          "sudden": 0.05
+        },
+        "D02": {
+          "gradual": 0.05,
+          "acute": 0.25,
+          "sudden": 0.7
+        },
+        "D03": {
+          "gradual": 0.2,
+          "acute": 0.55,
+          "sudden": 0.25
+        },
+        "D05": {
+          "gradual": 0.15,
+          "acute": 0.55,
+          "sudden": 0.3
+        },
+        "D07": {
+          "gradual": 0.1,
+          "acute": 0.4,
+          "sudden": 0.5
+        },
+        "D13": {
+          "gradual": 0.05,
+          "acute": 0.15,
+          "sudden": 0.8
+        },
+        "D14": {
+          "gradual": 0.75,
+          "acute": 0.2,
+          "sudden": 0.05
+        },
+        "D15": {
+          "gradual": 0.15,
+          "acute": 0.55,
+          "sudden": 0.3
+        },
+        "D17": {
+          "gradual": 0.8,
+          "acute": 0.18,
+          "sudden": 0.02
+        },
+        "D24": {
+          "gradual": 0.02,
+          "acute": 0.08,
+          "sudden": 0.9
+        }
+      }
+    },
+    "T03": {
+      "description": "発熱パターン",
+      "states": [
+        "continuous",
+        "intermittent",
+        "periodic",
+        "double_quotidian"
+      ],
+      "leak": {
+        "continuous": 0.98,
+        "intermittent": 0.0067,
+        "periodic": 0.0067,
+        "double_quotidian": 0.0067
+      },
+      "parent_effects": {
+        "D58": {
+          "continuous": 0.05,
+          "intermittent": 0.1,
+          "periodic": 0.05,
+          "double_quotidian": 0.8
+        },
+        "D66": {
+          "continuous": 0.05,
+          "intermittent": 0.1,
+          "periodic": 0.8,
+          "double_quotidian": 0.05
+        },
+        "D15": {
+          "continuous": 0.1,
+          "intermittent": 0.7,
+          "periodic": 0.15,
+          "double_quotidian": 0.05
+        },
+        "D14": {
+          "continuous": 0.7,
+          "intermittent": 0.2,
+          "periodic": 0.05,
+          "double_quotidian": 0.05
+        },
+        "D19": {
+          "continuous": 0.4,
+          "intermittent": 0.4,
+          "periodic": 0.15,
+          "double_quotidian": 0.05
+        },
+        "D28": {
+          "continuous": 0.2,
+          "intermittent": 0.6,
+          "periodic": 0.15,
+          "double_quotidian": 0.05
+        },
+        "D67": {
+          "continuous": 0.3,
+          "intermittent": 0.25,
+          "periodic": 0.4,
+          "double_quotidian": 0.05
+        },
+        "D53": {
+          "continuous": 0.1,
+          "intermittent": 0.6,
+          "periodic": 0.25,
+          "double_quotidian": 0.05
+        }
+      }
+    }
+  },
+  "changelog": "v1→v2: 74新疾患の全CPT追加"
+}

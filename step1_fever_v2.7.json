@@ -1,0 +1,3849 @@
+{
+  "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
+  "version": "2.7",
+  "generated_by": "Claude Opus 4.6",
+  "changelog": "v2.3→v2.4: 重複変数3個削除(L42,L43,R41), L11 states拡張, S46食欲不振追加",
+  "note": "プライマリケア外来を想定。稀少疾患は含まず、common diseaseと見逃し危険疾患に絞る",
+  "variables": [
+    {
+      "id": "D01",
+      "name": "viral_URI",
+      "name_ja": "ウイルス性上気道炎（かぜ症候群）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "最も頻度が高い発熱原因",
+      "diagnostic_profile": {
+        "name_ja": "ウイルス性上気道炎（かぜ）",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          3,
+          7
+        ],
+        "key_timeline_note": "初日の鼻汁+咽頭痛+微熱で十分。3日以上続く場合は再評価。",
+        "onset_pattern": "gradual（数日かけて徐々に）",
+        "resolution_pattern": "5-7日で自然軽快",
+        "escalation_rule": {
+          "days": 5,
+          "action": "5日以上改善なし→副鼻腔炎・気管支炎・肺炎を考慮。胸部X線検討"
+        },
+        "red_flags": [
+          "5日以上の持続高熱",
+          "呼吸困難出現",
+          "膿性痰の悪化"
+        ]
+      }
+    },
+    {
+      "id": "D02",
+      "name": "influenza",
+      "name_ja": "インフルエンザ",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "インフルエンザ",
+        "diagnostic_speed": "very_fast",
+        "expected_certainty_day": 0,
+        "entropy_half_life_days": 0.25,
+        "typical_total_duration_days": [
+          3,
+          7
+        ],
+        "key_timeline_note": "突然発症の高熱+筋肉痛で数時間以内にほぼ確定。迅速検査で確認。",
+        "onset_pattern": "sudden（数時間で急激に発症）",
+        "resolution_pattern": "3-5日で解熱、咳は1-2週間残る",
+        "escalation_rule": {
+          "days": 5,
+          "action": "5日超の発熱→二次性細菌性肺炎を考慮"
+        },
+        "red_flags": [
+          "5日以上の持続高熱",
+          "一度解熱後の再発熱（二峰性）",
+          "呼吸困難"
+        ]
+      }
+    },
+    {
+      "id": "D03",
+      "name": "COVID19",
+      "name_ja": "新型コロナウイルス感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "COVID-19",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 4,
+        "entropy_half_life_days": 2,
+        "typical_total_duration_days": [
+          7,
+          14
+        ],
+        "key_timeline_note": "味覚嗅覚障害(Day2-4)で確信度急上昇。呼吸困難はDay5-7で遅発性。Day7-10が重症化の分岐点。",
+        "onset_pattern": "acute（1-2日で発症）",
+        "resolution_pattern": "軽症7-10日、重症2-4週間",
+        "escalation_rule": {
+          "days": 7,
+          "action": "Day7以降の呼吸困難増悪は重症化指標。SpO2モニタリング強化、ICU準備"
+        },
+        "red_flags": [
+          "Day5以降の呼吸困難新規出現",
+          "SpO2 93%未満",
+          "D-dimer上昇"
+        ]
+      }
+    },
+    {
+      "id": "D04",
+      "name": "acute_pharyngotonsillitis",
+      "name_ja": "急性咽頭扁桃炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "溶連菌含む",
+      "diagnostic_profile": {
+        "name_ja": "急性咽頭扁桃炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 0,
+        "entropy_half_life_days": 0.25,
+        "typical_total_duration_days": [
+          3,
+          7
+        ],
+        "key_timeline_note": "高熱+咽頭白苔+頸部リンパ節で即日診断。溶連菌迅速で確定。",
+        "onset_pattern": "acute（急性発症）",
+        "resolution_pattern": "抗菌薬で24-48時間で解熱",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日の抗菌薬で改善なし→扁桃周囲膿瘍・伝染性単核球症を考慮"
+        },
+        "red_flags": [
+          "開口障害",
+          "片側の著明な腫脹",
+          "呼吸困難"
+        ]
+      }
+    },
+    {
+      "id": "D05",
+      "name": "community_acquired_pneumonia",
+      "name_ja": "市中肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "細菌性・非定型含む",
+      "diagnostic_profile": {
+        "name_ja": "市中肺炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 2,
+        "entropy_half_life_days": 1,
+        "typical_total_duration_days": [
+          5,
+          14
+        ],
+        "key_timeline_note": "急性高熱+湿性咳嗽+聴診異常で2日以内。X線で確定。",
+        "onset_pattern": "acute（比較的急性）",
+        "resolution_pattern": "適切な抗菌薬で3-5日で解熱、X線改善は2-4週間",
+        "escalation_rule": {
+          "days": 5,
+          "action": "5日間の第一選択抗菌薬で改善なし→耐性菌・膿胸・肺膿瘍を考慮。CT検討"
+        },
+        "red_flags": [
+          "72時間以内の改善なし",
+          "SpO2低下進行",
+          "胸水増加"
+        ]
+      }
+    },
+    {
+      "id": "D06",
+      "name": "acute_bronchitis",
+      "name_ja": "急性気管支炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "急性気管支炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          7,
+          21
+        ],
+        "key_timeline_note": "咳嗽が主症状。発熱は軽度で短期間。咳は1-3週間続くのが正常経過。",
+        "onset_pattern": "gradual〜acute",
+        "resolution_pattern": "発熱は3-5日、咳嗽は1-3週間",
+        "escalation_rule": {
+          "days": 7,
+          "action": "高熱持続や呼吸困難出現→肺炎への進展を考慮。X線撮影"
+        },
+        "red_flags": [
+          "高熱の出現",
+          "SpO2低下",
+          "3週間以上の咳嗽（百日咳・結核を考慮）"
+        ]
+      }
+    },
+    {
+      "id": "D07",
+      "name": "acute_gastroenteritis",
+      "name_ja": "急性胃腸炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "ウイルス性・細菌性含む",
+      "diagnostic_profile": {
+        "name_ja": "急性胃腸炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 0.5,
+        "entropy_half_life_days": 0.25,
+        "typical_total_duration_days": [
+          1,
+          5
+        ],
+        "key_timeline_note": "嘔吐→下痢→腹痛の順。通常1-3日で自然軽快。",
+        "onset_pattern": "sudden（突然発症）",
+        "resolution_pattern": "ウイルス性1-3日、細菌性3-7日",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日以上の血性下痢or高熱→細菌性考慮、便培養提出"
+        },
+        "red_flags": [
+          "血性下痢",
+          "高熱持続",
+          "脱水徴候",
+          "腹膜刺激徴候（虫垂炎の除外）"
+        ]
+      }
+    },
+    {
+      "id": "D08",
+      "name": "lower_UTI",
+      "name_ja": "下部尿路感染症（膀胱炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "膀胱炎",
+        "diagnostic_speed": "very_fast",
+        "expected_certainty_day": 0,
+        "entropy_half_life_days": 0.25,
+        "typical_total_duration_days": [
+          3,
+          7
+        ],
+        "key_timeline_note": "排尿痛+頻尿で即日。尿検査で確定。発熱があれば腎盂腎炎を疑う。",
+        "onset_pattern": "acute",
+        "resolution_pattern": "抗菌薬で1-3日で症状改善",
+        "escalation_rule": {
+          "days": 2,
+          "action": "排尿症状+発熱→腎盂腎炎への上行感染を考慮"
+        },
+        "red_flags": [
+          "38℃以上の発熱",
+          "側腹部痛",
+          "悪寒戦慄"
+        ]
+      }
+    },
+    {
+      "id": "D09",
+      "name": "acute_pyelonephritis",
+      "name_ja": "急性腎盂腎炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "見逃し注意",
+      "diagnostic_profile": {
+        "name_ja": "急性腎盂腎炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          7,
+          14
+        ],
+        "key_timeline_note": "排尿痛→高熱+側腹部痛+CVA叩打痛で即日確定。",
+        "onset_pattern": "acute（膀胱炎症状が先行することが多い）",
+        "resolution_pattern": "適切な抗菌薬で2-3日で解熱",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日間の抗菌薬で改善なし→腎膿瘍・尿路閉塞を考慮。CT検討"
+        },
+        "red_flags": [
+          "72時間以内の解熱なし",
+          "ショック徴候",
+          "尿路閉塞の既往"
+        ]
+      }
+    },
+    {
+      "id": "D10",
+      "name": "appendicitis",
+      "name_ja": "急性虫垂炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "見逃し注意",
+      "diagnostic_profile": {
+        "name_ja": "急性虫垂炎",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 0.75,
+        "entropy_half_life_days": 0.3,
+        "typical_total_duration_days": [
+          1,
+          3
+        ],
+        "key_timeline_note": "心窩部痛→RLQ移動(6-12時間)が鍵。腹膜刺激徴候で確定。24時間以内に手術判断。",
+        "onset_pattern": "心窩部から開始→6-12時間でRLQに移動",
+        "resolution_pattern": "手術で根治。非手術的管理なら抗菌薬7-10日",
+        "escalation_rule": {
+          "days": 1,
+          "action": "24時間以上の腹痛持続+改善なし→穿孔リスク上昇。外科コンサルト"
+        },
+        "red_flags": [
+          "腹膜刺激徴候",
+          "高熱(>39℃)",
+          "全身状態の急激な悪化（穿孔を示唆）"
+        ]
+      }
+    },
+    {
+      "id": "D11",
+      "name": "cholecystitis",
+      "name_ja": "急性胆嚢炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "急性胆嚢炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          3,
+          10
+        ],
+        "key_timeline_note": "RUQ痛+Murphy徴候+発熱+エコー胆嚢壁肥厚で即日。Tokyo Guidelines準拠。",
+        "onset_pattern": "acute（食後、特に脂肪食後に発症）",
+        "resolution_pattern": "抗菌薬+手術（72時間以内が推奨）",
+        "escalation_rule": {
+          "days": 2,
+          "action": "48時間で改善なし→胆嚢壊疽・穿孔を考慮。緊急手術検討"
+        },
+        "red_flags": [
+          "黄疸出現（胆管炎合併）",
+          "全身状態悪化",
+          "Murphy陽性からの急激な消失（穿孔を示唆）"
+        ]
+      }
+    },
+    {
+      "id": "D12",
+      "name": "cellulitis",
+      "name_ja": "蜂窩織炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "diagnostic_profile": {
+        "name_ja": "蜂窩織炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          5,
+          14
+        ],
+        "key_timeline_note": "局所発赤・腫脹・熱感・疼痛+発熱で即日。境界をマーキングして進行を観察。",
+        "onset_pattern": "acute",
+        "resolution_pattern": "抗菌薬で2-3日で改善開始、完治まで1-2週間",
+        "escalation_rule": {
+          "days": 2,
+          "action": "48時間で境界拡大→壊死性筋膜炎を考慮。緊急外科コンサルト"
+        },
+        "red_flags": [
+          "急速な進行（時間単位）",
+          "水疱・壊死",
+          "ショック徴候（壊死性筋膜炎/TSS）",
+          "激烈な疼痛"
+        ]
+      }
+    },
+    {
+      "id": "D13",
+      "name": "meningitis",
+      "name_ja": "髄膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "viral",
+        "bacterial"
+      ],
+      "note": "脳炎を含む（髄膜脳炎）。bacterialは見逃し致死的。viralは予後良好だが初期鑑別が重要",
+      "diagnostic_profile": {
+        "name_ja": "髄膜炎",
+        "diagnostic_speed": "very_fast",
+        "expected_certainty_day": 0,
+        "entropy_half_life_days": 0.1,
+        "typical_total_duration_days": [
+          7,
+          21
+        ],
+        "key_timeline_note": "超急性。数時間以内に高熱+頭痛+項部硬直。「1時間以内」の抗菌薬が生死を分ける。",
+        "onset_pattern": "sudden（数時間で急激悪化）",
+        "resolution_pattern": "細菌性：抗菌薬2-3週間。ウイルス性：対症療法1-2週間",
+        "escalation_rule": {
+          "days": 0,
+          "action": "項部硬直を認めた時点で直ちに治療開始。確定診断を待たない"
+        },
+        "red_flags": [
+          "意識障害",
+          "紫斑（髄膜炎菌血症）",
+          "痙攣",
+          "急速な全身状態悪化"
+        ]
+      }
+    },
+    {
+      "id": "D14",
+      "name": "infective_endocarditis",
+      "name_ja": "感染性心内膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "見逃し致死的、不明熱の重要鑑別",
+      "diagnostic_profile": {
+        "name_ja": "感染性心内膜炎",
+        "diagnostic_speed": "very_slow",
+        "expected_certainty_day": 28,
+        "entropy_half_life_days": 14,
+        "typical_total_duration_days": [
+          28,
+          84
+        ],
+        "key_timeline_note": "数週間の不明熱。心雑音出現(2-4週後)で初めて疑われることが多い。IVDU/人工弁は早期に疑う手がかり。",
+        "onset_pattern": "insidious（緩徐、週単位で進行）",
+        "resolution_pattern": "抗菌薬4-6週間。弁破壊が進めば手術",
+        "escalation_rule": {
+          "days": 14,
+          "action": "2週間の不明熱+リスク因子(IVDU/人工弁/先天性心疾患)→心エコー+血培3セット"
+        },
+        "red_flags": [
+          "新規心雑音",
+          "塞栓症状（脳・脾・腎）",
+          "Osler結節・Janeway病変",
+          "急性心不全"
+        ]
+      }
+    },
+    {
+      "id": "D15",
+      "name": "malaria",
+      "name_ja": "マラリア",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "渡航歴ある場合の見逃し致死的",
+      "diagnostic_profile": {
+        "name_ja": "マラリア",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          7,
+          21
+        ],
+        "key_timeline_note": "渡航歴+高熱+悪寒戦慄で即日疑い。塗抹検査で確定。渡航歴の聴取が全て。",
+        "onset_pattern": "acute（潜伏期後に急性発症）",
+        "resolution_pattern": "適切な治療で2-3日で解熱",
+        "escalation_rule": {
+          "days": 0,
+          "action": "渡航歴+発熱→マラリア塗抹を直ちに提出。結果を待たずにP.falciparum疑いなら治療開始"
+        },
+        "red_flags": [
+          "意識障害（脳マラリア）",
+          "重症貧血",
+          "腎不全",
+          "ARDS"
+        ]
+      }
+    },
+    {
+      "id": "D16",
+      "name": "dengue",
+      "name_ja": "デング熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "渡航歴",
+      "diagnostic_profile": {
+        "name_ja": "デング熱",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 3,
+        "entropy_half_life_days": 1.5,
+        "typical_total_duration_days": [
+          5,
+          10
+        ],
+        "key_timeline_note": "渡航歴+高熱+激しい筋肉痛/関節痛+発疹。Day3-5の解熱期に血小板減少→出血リスク。",
+        "onset_pattern": "sudden（急性発症、breakbone fever）",
+        "resolution_pattern": "発熱期(Day1-3)→解熱危険期(Day3-5)→回復期(Day5-7)",
+        "escalation_rule": {
+          "days": 3,
+          "action": "解熱期(Day3-5)に血小板・Htのモニタリング強化。DHF/DSSに注意"
+        },
+        "red_flags": [
+          "血小板急減",
+          "Ht上昇（血漿漏出）",
+          "出血徴候",
+          "ショック"
+        ]
+      }
+    },
+    {
+      "id": "D17",
+      "name": "pulmonary_tuberculosis",
+      "name_ja": "肺結核",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "亜急性〜慢性発熱の鑑別",
+      "diagnostic_profile": {
+        "name_ja": "肺結核",
+        "diagnostic_speed": "very_slow",
+        "expected_certainty_day": 28,
+        "entropy_half_life_days": 10,
+        "typical_total_duration_days": [
+          180,
+          365
+        ],
+        "key_timeline_note": "週単位の緩徐な進行。盗汗+体重減少(2-3週後)で鑑別に上がる。喀痰培養に4-8週間。",
+        "onset_pattern": "insidious（週〜月単位で緩徐に進行）",
+        "resolution_pattern": "4剤6-9ヶ月の治療。培養陰性化に2-3ヶ月",
+        "escalation_rule": {
+          "days": 21,
+          "action": "3週間の不明熱+咳嗽→結核を積極的に除外（喀痰抗酸菌/IGRA/CT）"
+        },
+        "red_flags": [
+          "喀血",
+          "空洞形成",
+          "粟粒結核パターン（全身播種）"
+        ]
+      }
+    },
+    {
+      "id": "D18",
+      "name": "infectious_mononucleosis",
+      "name_ja": "伝染性単核球症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "若年者",
+      "diagnostic_profile": {
+        "name_ja": "伝染性単核球症",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 5,
+        "entropy_half_life_days": 2,
+        "typical_total_duration_days": [
+          14,
+          42
+        ],
+        "key_timeline_note": "若年者の咽頭痛+リンパ節腫脹+脾腫。溶連菌迅速陰性が手がかり。異型リンパ球+肝機能上昇で確定。",
+        "onset_pattern": "gradual〜acute（1週間かけて発症）",
+        "resolution_pattern": "発熱1-2週間、倦怠感は数週間〜数ヶ月",
+        "escalation_rule": {
+          "days": 7,
+          "action": "咽頭扁桃炎で抗菌薬無効+リンパ節腫脹→異好性抗体+末梢血検査"
+        },
+        "red_flags": [
+          "脾破裂（左上腹部痛・ショック）",
+          "気道閉塞（著明な扁桃腫大）",
+          "肝炎の悪化"
+        ]
+      }
+    },
+    {
+      "id": "D19",
+      "name": "drug_fever",
+      "name_ja": "薬剤熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "除外診断",
+      "diagnostic_profile": {
+        "name_ja": "薬剤熱",
+        "diagnostic_speed": "slow",
+        "expected_certainty_day": 14,
+        "entropy_half_life_days": 7,
+        "typical_total_duration_days": [
+          7,
+          28
+        ],
+        "key_timeline_note": "除外診断。好酸球増多+比較的元気+新規薬剤開始の時間的関連。原因薬中止→2-3日で解熱が確認手段。",
+        "onset_pattern": "新規薬剤開始後7-21日（ただし再投与では数時間で再燃）",
+        "resolution_pattern": "原因薬中止後48-72時間で解熱",
+        "escalation_rule": {
+          "days": 7,
+          "action": "不明熱+新規薬剤歴→疑わしい薬剤を1つずつ中止して経過観察"
+        },
+        "red_flags": [
+          "皮疹の悪化（Stevens-Johnson症候群）",
+          "肝機能の急激な悪化",
+          "腎機能障害"
+        ]
+      }
+    },
+    {
+      "id": "D20",
+      "name": "acute_sinusitis",
+      "name_ja": "急性副鼻腔炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "発熱+頭痛+膿性鼻漏",
+      "diagnostic_profile": {
+        "name_ja": "急性副鼻腔炎",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 3,
+        "entropy_half_life_days": 1.5,
+        "typical_total_duration_days": [
+          7,
+          28
+        ],
+        "key_timeline_note": "かぜの後に膿性鼻漏+顔面痛+微熱が持続。「かぜが10日以上続く」が疑うポイント。",
+        "onset_pattern": "かぜに続発（5-10日後に悪化）",
+        "resolution_pattern": "抗菌薬で3-5日で改善、完治まで10-14日",
+        "escalation_rule": {
+          "days": 10,
+          "action": "10日以上改善なし→慢性副鼻腔炎への移行。CT・耳鼻科紹介"
+        },
+        "red_flags": [
+          "眼窩周囲の腫脹・発赤（眼窩蜂窩織炎）",
+          "激しい頭痛（頭蓋内合併症）"
+        ]
+      }
+    },
+    {
+      "id": "D21",
+      "name": "herpes_zoster",
+      "name_ja": "帯状疱疹",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "発熱+片側皮疹+神経痛",
+      "diagnostic_profile": {
+        "name_ja": "帯状疱疹",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          14,
+          28
+        ],
+        "key_timeline_note": "片側性の帯状水疱+神経痛で即日確定。発疹出現前の疼痛期(2-3日)は診断困難。",
+        "onset_pattern": "疼痛→2-3日後に水疱出現",
+        "resolution_pattern": "水疱は2-3週間で痂皮化。PHN(帯状疱疹後神経痛)は数ヶ月〜",
+        "escalation_rule": {
+          "days": 0,
+          "action": "眼部帯状疱疹→緊急眼科紹介。Ramsay Hunt症候群→耳鼻科"
+        },
+        "red_flags": [
+          "眼部病変（角膜炎→失明）",
+          "顔面神経麻痺（Ramsay Hunt）",
+          "播種性帯状疱疹（免疫不全）"
+        ]
+      }
+    },
+    {
+      "id": "D22",
+      "name": "acute_prostatitis",
+      "name_ja": "急性前立腺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "男性の発熱+排尿障害、腎盂腎炎との鑑別",
+      "diagnostic_profile": {
+        "name_ja": "急性前立腺炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 1,
+        "entropy_half_life_days": 0.5,
+        "typical_total_duration_days": [
+          14,
+          28
+        ],
+        "key_timeline_note": "男性の発熱+排尿障害+会陰部痛。直腸診(圧痛著明)で疑い、尿培養で確定。",
+        "onset_pattern": "acute",
+        "resolution_pattern": "抗菌薬4-6週間。2-3日で解熱開始",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日間の抗菌薬で改善なし→前立腺膿瘍を考慮。CT/MRI検討"
+        },
+        "red_flags": [
+          "尿閉",
+          "膿瘍形成（直腸診で波動触知）"
+        ]
+      }
+    },
+    {
+      "id": "D23",
+      "name": "rickettsial_disease",
+      "name_ja": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "日本特有の見逃し致死的疾患。発熱+刺し口+発疹が3徴",
+      "diagnostic_profile": {
+        "name_ja": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 3,
+        "entropy_half_life_days": 1.5,
+        "typical_total_duration_days": [
+          7,
+          14
+        ],
+        "key_timeline_note": "秋〜初冬の高熱+発疹+刺し口（3徴）。刺し口は見逃しやすい（腋窩・鼠径等）。テトラサイクリンで速やかに解熱。",
+        "onset_pattern": "acute（ダニ刺咬後5-14日で発症）",
+        "resolution_pattern": "テトラサイクリン投与で24-48時間で解熱",
+        "escalation_rule": {
+          "days": 0,
+          "action": "秋の高熱+発疹→全身の刺し口検索。疑えば確定診断を待たず治療開始"
+        },
+        "red_flags": [
+          "DIC",
+          "多臓器不全",
+          "治療の遅れ（致死率上昇）"
+        ]
+      }
+    },
+    {
+      "id": "D24",
+      "name": "toxic_shock_syndrome",
+      "name_ja": "トキシックショック症候群（TSS/劇症型GAS含む）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "見逃し致死的。急速進行性。黄色ブドウ球菌性・劇症型溶血性レンサ球菌(iGAS)を含む",
+      "diagnostic_profile": {
+        "name_ja": "トキシックショック症候群(TSS)",
+        "diagnostic_speed": "very_fast",
+        "expected_certainty_day": 0,
+        "entropy_half_life_days": 0.05,
+        "typical_total_duration_days": [
+          3,
+          14
+        ],
+        "key_timeline_note": "数時間で急速進行。ショック+びまん性紅斑+高熱。「時間」が生死を分ける。",
+        "onset_pattern": "fulminant（電撃的、数時間で多臓器不全）",
+        "resolution_pattern": "集中治療で数日〜数週間",
+        "escalation_rule": {
+          "days": 0,
+          "action": "ショック+紅斑→直ちにICU+広域抗菌薬+必要なら外科的デブリードマン"
+        },
+        "red_flags": [
+          "急速進行するショック",
+          "多臓器不全",
+          "壊死性軟部組織感染の合併"
+        ]
+      }
+    },
+    {
+      "id": "D25",
+      "name": "acute_cholangitis",
+      "name_ja": "急性胆管炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "見逃し注意。Charcot三徴（発熱+黄疸+右上腹部痛）。Reynolds五徴で重症",
+      "diagnostic_profile": {
+        "name_ja": "急性胆管炎",
+        "diagnostic_speed": "fast",
+        "expected_certainty_day": 0.5,
+        "entropy_half_life_days": 0.25,
+        "typical_total_duration_days": [
+          3,
+          14
+        ],
+        "key_timeline_note": "Charcot三徴（発熱+黄疸+RUQ痛）で即日確定。Reynolds五徴なら緊急ドレナージ。",
+        "onset_pattern": "acute（総胆管結石嵌頓で急性発症）",
+        "resolution_pattern": "ドレナージ後24-48時間で改善",
+        "escalation_rule": {
+          "days": 0.5,
+          "action": "Charcot三徴+意識障害/低血圧(Reynolds五徴)→緊急ERCP"
+        },
+        "red_flags": [
+          "意識障害",
+          "ショック",
+          "Reynolds五徴は致死率30%以上"
+        ]
+      }
+    },
+    {
+      "id": "D26",
+      "name": "pelvic_inflammatory_disease",
+      "name_ja": "骨盤内炎症性疾患（PID）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "若年女性の発熱+下腹部痛。虫垂炎との鑑別が重要",
+      "diagnostic_profile": {
+        "name_ja": "骨盤内炎症性疾患(PID)",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 2,
+        "entropy_half_life_days": 1,
+        "typical_total_duration_days": [
+          7,
+          14
+        ],
+        "key_timeline_note": "若年女性の発熱+下腹部痛+子宮付属器圧痛。虫垂炎との鑑別が最重要。",
+        "onset_pattern": "acute〜subacute",
+        "resolution_pattern": "抗菌薬で2-3日で改善開始",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日間の抗菌薬で改善なし→卵管卵巣膿瘍を考慮。CT/経腟エコー"
+        },
+        "red_flags": [
+          "膿瘍形成",
+          "腹膜刺激徴候（穿孔）",
+          "妊娠の除外（子宮外妊娠との鑑別）"
+        ]
+      }
+    },
+    {
+      "id": "D27",
+      "name": "diverticulitis",
+      "name_ja": "憩室炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "高齢者の発熱+左下腹部痛。虫垂炎の鑑像として重要",
+      "diagnostic_profile": {
+        "name_ja": "憩室炎",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 2,
+        "entropy_half_life_days": 1,
+        "typical_total_duration_days": [
+          7,
+          14
+        ],
+        "key_timeline_note": "高齢者のLLQ痛+発熱。「左側の虫垂炎」と呼ばれる。CT・エコーで確定。",
+        "onset_pattern": "acute",
+        "resolution_pattern": "抗菌薬で3-5日で改善。重症・膿瘍はドレナージ/手術",
+        "escalation_rule": {
+          "days": 3,
+          "action": "3日間の抗菌薬で改善なし→膿瘍・穿孔を考慮。CT再検"
+        },
+        "red_flags": [
+          "遊離ガス（穿孔）",
+          "膿瘍形成",
+          "腸閉塞"
+        ]
+      }
+    },
+    {
+      "id": "D28",
+      "name": "typhoid_fever",
+      "name_ja": "腸チフス・パラチフス",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "渡航者発熱の重要鑑別。発熱+相対的徐脈+腹部症状+脾腫。南アジア・東南アジア",
+      "diagnostic_profile": {
+        "name_ja": "腸チフス",
+        "diagnostic_speed": "slow",
+        "expected_certainty_day": 7,
+        "entropy_half_life_days": 3,
+        "typical_total_duration_days": [
+          14,
+          28
+        ],
+        "key_timeline_note": "渡航歴+階段状発熱+白血球減少+脾腫。血培で確定だが結果に数日。",
+        "onset_pattern": "gradual（階段状に上昇する持続的高熱）",
+        "resolution_pattern": "適切な抗菌薬で3-5日で解熱",
+        "escalation_rule": {
+          "days": 5,
+          "action": "渡航帰り5日以上の持続的高熱→血液培養(複数セット)+骨髄培養検討"
+        },
+        "red_flags": [
+          "腸穿孔（第3病週）",
+          "消化管出血",
+          "意識障害（typhoid encephalopathy）"
+        ]
+      }
+    },
+    {
+      "id": "R01",
+      "name": "age_group",
+      "name_ja": "年齢層",
+      "category": "risk_factor",
+      "states": [
+        "18_39",
+        "40_64",
+        "65_plus"
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "sex",
+      "name_ja": "性別",
+      "category": "risk_factor",
+      "states": [
+        "male",
+        "female"
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "smoking",
+      "name_ja": "喫煙",
+      "category": "risk_factor",
+      "states": [
+        "never",
+        "former",
+        "current"
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "diabetes",
+      "name_ja": "糖尿病",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "immunosuppressed",
+      "name_ja": "免疫不全（ステロイド・化学療法・HIV等）",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "travel_tropical_2w",
+      "name_ja": "渡航歴（地域別）",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "tropical_endemic",
+        "developed",
+        "domestic"
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "recent_hospitalization_3m",
+      "name_ja": "3ヶ月以内の入院歴",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "new_medication_4w",
+      "name_ja": "4週間以内の新規薬剤開始",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "iv_drug_use",
+      "name_ja": "静脈注射薬物使用歴",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "prosthetic_valve_or_device",
+      "name_ja": "人工弁・人工関節等の体内デバイス",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R11",
+      "name": "close_contact_resp_illness",
+      "name_ja": "周囲の呼吸器感染流行・濃厚接触",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R12",
+      "name": "gallstone_history",
+      "name_ja": "胆石の既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R13",
+      "name": "urinary_catheter",
+      "name_ja": "尿道カテーテル留置",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R14",
+      "name": "skin_wound_or_trauma",
+      "name_ja": "皮膚外傷・創傷",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R15",
+      "name": "pregnancy",
+      "name_ja": "妊娠",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "UTI/腎盂腎炎リスク上昇、検査・治療方針に影響"
+    },
+    {
+      "id": "R16",
+      "name": "heavy_alcohol",
+      "name_ja": "大量飲酒習慣",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "誤嚥性肺炎、免疫低下"
+    },
+    {
+      "id": "R17",
+      "name": "influenza_vaccine_this_season",
+      "name_ja": "今季インフルエンザワクチン接種",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R18",
+      "name": "covid_vaccine_6m",
+      "name_ja": "6ヶ月以内のCOVIDワクチン接種",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R19",
+      "name": "current_season",
+      "name_ja": "現在の季節",
+      "category": "risk_factor",
+      "states": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "note": "インフルエンザ=冬、デング=夏、ツツガムシ=秋〜初冬"
+    },
+    {
+      "id": "R20",
+      "name": "tampon_or_vaginal_foreign_body",
+      "name_ja": "タンポン・腟内異物の使用",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "黄色ブドウ球菌性TSSのリスク因子。月経そのものはリスク因子ではない"
+    },
+    {
+      "id": "S01",
+      "name": "cough",
+      "name_ja": "咳嗽",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "dry",
+        "productive"
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "sore_throat",
+      "name_ja": "咽頭痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "nasal_symptoms",
+      "name_ja": "鼻汁・鼻閉",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "clear_rhinorrhea",
+        "purulent_rhinorrhea"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "dyspnea",
+      "name_ja": "呼吸困難",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "on_exertion",
+        "at_rest"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "headache",
+      "name_ja": "頭痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "myalgia",
+      "name_ja": "筋肉痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "fatigue",
+      "name_ja": "全身倦怠感",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "arthralgia",
+      "name_ja": "関節痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "rigors",
+      "name_ja": "悪寒戦慄",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "dysuria",
+      "name_ja": "排尿時痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S11",
+      "name": "urinary_frequency",
+      "name_ja": "頻尿",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S12",
+      "name": "abdominal_pain_location",
+      "name_ja": "腹痛の部位",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "epigastric",
+        "RUQ",
+        "RLQ",
+        "LLQ",
+        "suprapubic",
+        "diffuse"
+      ],
+      "note": "互斥：最も目立つ部位を1つ選択。LLQ=憩室炎、RLQ=虫垂炎、RUQ=胆嚢/胆管炎、suprapubic=膀胱炎/PID"
+    },
+    {
+      "id": "S13",
+      "name": "nausea_vomiting",
+      "name_ja": "悪心・嘔吐",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S14",
+      "name": "diarrhea",
+      "name_ja": "下痢",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "watery",
+        "bloody"
+      ]
+    },
+    {
+      "id": "S15",
+      "name": "flank_pain",
+      "name_ja": "側腹部痛・腰背部痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S16",
+      "name": "night_sweats",
+      "name_ja": "盗汗",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S17",
+      "name": "weight_loss",
+      "name_ja": "体重減少",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S18",
+      "name": "skin_complaint",
+      "name_ja": "皮膚の訴え",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "localized_pain_redness",
+        "rash_widespread"
+      ]
+    },
+    {
+      "id": "S19",
+      "name": "taste_smell_disorder",
+      "name_ja": "味覚・嗅覚障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "COVID-19鑑別に重要"
+    },
+    {
+      "id": "S20",
+      "name": "facial_pain_pressure",
+      "name_ja": "顔面痛・圧迫感",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "副鼻腔炎鑑別"
+    },
+    {
+      "id": "S21",
+      "name": "chest_pain",
+      "name_ja": "胸痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "pleuritic",
+        "constant"
+      ],
+      "note": "pleuritic=吸気時悪化（肺炎・胸膜炎）、constant=持続性（心膜炎等）"
+    },
+    {
+      "id": "T01",
+      "name": "fever_duration",
+      "name_ja": "発熱の持続期間",
+      "category": "temporal",
+      "states": [
+        "under_3d",
+        "3d_to_1w",
+        "1w_to_3w",
+        "over_3w"
+      ],
+      "note": "over_3wは不明熱(FUO)全般ではなく、心内膜炎(D14)・結核(D17)等の亜急性〜慢性感染の鑑別目的で含む"
+    },
+    {
+      "id": "T02",
+      "name": "onset_speed",
+      "name_ja": "発症の速さ",
+      "category": "temporal",
+      "states": [
+        "sudden_hours",
+        "gradual_days"
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "fever_pattern",
+      "name_ja": "発熱パターン",
+      "category": "temporal",
+      "states": [
+        "continuous",
+        "intermittent",
+        "periodic",
+        "double_quotidian"
+      ]
+    },
+    {
+      "id": "E01",
+      "name": "temperature",
+      "name_ja": "体温",
+      "category": "sign",
+      "states": [
+        "under_37.5",
+        "37.5_38.0",
+        "38.0_39.0",
+        "39.0_40.0",
+        "over_40.0"
+      ],
+      "note": "来院時解熱している場合にunder_37.5を使用"
+    },
+    {
+      "id": "E02",
+      "name": "heart_rate",
+      "name_ja": "心拍数",
+      "category": "sign",
+      "states": [
+        "under_100",
+        "100_120",
+        "over_120"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "blood_pressure_systolic",
+      "name_ja": "収縮期血圧",
+      "category": "sign",
+      "states": [
+        "normal_over_90",
+        "hypotension_under_90"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "respiratory_rate",
+      "name_ja": "呼吸数",
+      "category": "sign",
+      "states": [
+        "normal_under_20",
+        "tachypnea_20_30",
+        "severe_over_30"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "SpO2",
+      "name_ja": "酸素飽和度",
+      "category": "sign",
+      "states": [
+        "normal_over_96",
+        "mild_hypoxia_93_96",
+        "severe_hypoxia_under_93"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "neck_stiffness",
+      "name_ja": "項部硬直",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "lung_auscultation",
+      "name_ja": "肺聴診",
+      "category": "sign",
+      "states": [
+        "clear",
+        "crackles",
+        "wheezes"
+      ]
+    },
+    {
+      "id": "E08",
+      "name": "pharyngeal_exam",
+      "name_ja": "咽頭所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "erythema",
+        "exudate_or_white_patch"
+      ]
+    },
+    {
+      "id": "E09",
+      "name": "abdominal_exam",
+      "name_ja": "腹部触診",
+      "category": "sign",
+      "states": [
+        "soft_nontender",
+        "localized_tenderness",
+        "peritoneal_signs"
+      ]
+    },
+    {
+      "id": "E10",
+      "name": "murphy_sign",
+      "name_ja": "マーフィー徴候",
+      "category": "sign",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "E11",
+      "name": "CVA_tenderness",
+      "name_ja": "肋骨脊柱角叩打痛",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E12",
+      "name": "skin_exam",
+      "name_ja": "皮膚診察所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "localized_erythema_warmth_swelling",
+        "petechiae_purpura",
+        "maculopapular_rash",
+        "vesicular_dermatomal",
+        "diffuse_erythroderma",
+        "purpura",
+        "vesicle_bulla",
+        "skin_necrosis"
+      ],
+      "note": "互斥：最も目立つ所見を1つ選択。diffuse_erythroderma=TSS等でのびまん性紅斑"
+    },
+    {
+      "id": "E13",
+      "name": "lymphadenopathy",
+      "name_ja": "リンパ節腫脹",
+      "category": "sign",
+      "states": [
+        "absent",
+        "cervical",
+        "generalized"
+      ]
+    },
+    {
+      "id": "E14",
+      "name": "splenomegaly",
+      "name_ja": "脾腫",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E15",
+      "name": "heart_murmur_new",
+      "name_ja": "新規心雑音",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E16",
+      "name": "consciousness",
+      "name_ja": "意識レベル",
+      "category": "sign",
+      "states": [
+        "normal",
+        "confused",
+        "obtunded"
+      ],
+      "note": "髄膜炎・敗血症の鑑別、qSOFAに必要"
+    },
+    {
+      "id": "E17",
+      "name": "eschar",
+      "name_ja": "刺し口（痂皮を伴う潰瘍）",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "ツツガムシ病・日本紅斑熱の重要徴候"
+    },
+    {
+      "id": "E18",
+      "name": "jaundice",
+      "name_ja": "黄疸",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "胆管炎・溶血（マラリア）・肝炎の重要徴候"
+    },
+    {
+      "id": "L01",
+      "name": "WBC",
+      "name_ja": "白血球数",
+      "category": "lab",
+      "states": [
+        "low_under_4000",
+        "normal_4000_10000",
+        "high_10000_20000",
+        "very_high_over_20000"
+      ]
+    },
+    {
+      "id": "L02",
+      "name": "CRP",
+      "name_ja": "CRP",
+      "category": "lab",
+      "states": [
+        "normal_under_0.3",
+        "mild_0.3_3",
+        "moderate_3_10",
+        "high_over_10"
+      ]
+    },
+    {
+      "id": "L03",
+      "name": "procalcitonin",
+      "name_ja": "プロカルシトニン",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "low_under_0.25",
+        "gray_0.25_0.5",
+        "high_over_0.5"
+      ],
+      "note": "プライマリケアでは測定しないことも多い"
+    },
+    {
+      "id": "L04",
+      "name": "chest_xray",
+      "name_ja": "胸部X線",
+      "category": "lab",
+      "states": [
+        "normal",
+        "lobar_infiltrate",
+        "bilateral_infiltrate",
+        "BHL",
+        "pleural_effusion"
+      ],
+      "note": "併存所見あり得る（例：浸潤影+胸水）。主要所見を1つ選択。BHL=両側肺門リンパ節腫脹"
+    },
+    {
+      "id": "L05",
+      "name": "urinalysis",
+      "name_ja": "尿検査",
+      "category": "lab",
+      "states": [
+        "normal",
+        "pyuria_bacteriuria"
+      ]
+    },
+    {
+      "id": "L06",
+      "name": "rapid_influenza_test",
+      "name_ja": "迅速インフルエンザ検査",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive_A",
+        "positive_B"
+      ]
+    },
+    {
+      "id": "L07",
+      "name": "rapid_strep_test",
+      "name_ja": "迅速溶連菌検査",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L08",
+      "name": "COVID_antigen_test",
+      "name_ja": "COVID抗原検査",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L09",
+      "name": "blood_culture",
+      "name_ja": "血液培養",
+      "category": "lab",
+      "states": [
+        "not_done_or_pending",
+        "negative",
+        "gram_positive",
+        "gram_negative"
+      ]
+    },
+    {
+      "id": "L10",
+      "name": "malaria_smear",
+      "name_ja": "マラリア塗抹",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L11",
+      "name": "liver_enzymes",
+      "name_ja": "肝酵素（AST/ALT）",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mild_elevated",
+        "very_high"
+      ]
+    },
+    {
+      "id": "L12",
+      "name": "abdominal_ultrasound",
+      "name_ja": "腹部超音波",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "gallbladder_wall_thickening",
+        "appendix_swelling"
+      ]
+    },
+    {
+      "id": "L13",
+      "name": "heterophile_antibody",
+      "name_ja": "異好性抗体（EBV迅速検査）",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L14",
+      "name": "peripheral_blood_smear",
+      "name_ja": "末梢血液像",
+      "category": "lab",
+      "states": [
+        "normal",
+        "left_shift",
+        "atypical_lymphocytes",
+        "thrombocytopenia",
+        "eosinophilia"
+      ],
+      "note": "互斥でない場合あり（例：血小板減少+異型リンパ球）。最も目立つ所見を1つ選択"
+    },
+    {
+      "id": "D29",
+      "name": "liver_abscess",
+      "name_ja": "肝膿瘍（細菌性/アメーバ性）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K75.0",
+      "category_sub": "deep_abscess",
+      "severity": "high",
+      "key_features": "発熱+右上腹部痛+肝腫大。エコー/CTで膿瘍像。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D30",
+      "name": "psoas_abscess",
+      "name_ja": "腸腰筋膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M60.0",
+      "category_sub": "deep_abscess",
+      "severity": "high",
+      "key_features": "発熱+腰痛/股関節痛+腸腰筋徴候(股関節伸展痛)。CTで確定。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D31",
+      "name": "vertebral_osteomyelitis",
+      "name_ja": "化膿性脊椎炎/椎間板炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M46.2",
+      "category_sub": "bone_joint",
+      "severity": "high",
+      "key_features": "発熱+背部痛（安静時も持続）。MRIで椎体/椎間板の信号変化。血培陽性率50-70%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D32",
+      "name": "septic_arthritis",
+      "name_ja": "化膿性関節炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M00.9",
+      "category_sub": "bone_joint",
+      "severity": "high",
+      "key_features": "発熱+単関節の腫脹・発赤・疼痛（膝が最多）。関節穿刺でWBC>50000。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D33",
+      "name": "peritonsillar_abscess",
+      "name_ja": "扁桃周囲膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "J36",
+      "category_sub": "head_neck",
+      "severity": "moderate",
+      "key_features": "高熱+激しい咽頭痛+開口障害+流涎+片側の口蓋垂偏位。D04の合併症。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D34",
+      "name": "deep_neck_infection",
+      "name_ja": "深頸部感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "J39.0",
+      "category_sub": "head_neck",
+      "severity": "critical",
+      "key_features": "発熱+頸部腫脹+嚥下困難。気道閉塞・縦隔炎のリスク。CTで膿瘍確認。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D35",
+      "name": "lung_abscess",
+      "name_ja": "肺膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "J85.1",
+      "category_sub": "respiratory",
+      "severity": "high",
+      "key_features": "発熱+膿臭痰+体重減少。X線/CTで壁の厚い空洞+液面形成。誤嚥リスク因子。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D36",
+      "name": "empyema",
+      "name_ja": "膿胸",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "J86.9",
+      "category_sub": "respiratory",
+      "severity": "high",
+      "key_features": "肺炎に続発する発熱+胸痛+呼吸困難。胸部X線で胸水+CT。胸水穿刺で膿性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D37",
+      "name": "infective_diarrhea_bacterial",
+      "name_ja": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A04.9",
+      "category_sub": "gastrointestinal",
+      "severity": "moderate",
+      "key_features": "発熱+血性/粘液性下痢+腹痛。ウイルス性(D07)より高熱で血便。便培養で確定。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D38",
+      "name": "clostridium_difficile",
+      "name_ja": "Clostridioides difficile感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A04.7",
+      "category_sub": "gastrointestinal",
+      "severity": "moderate",
+      "key_features": "抗菌薬使用後の発熱+水様性下痢。毒素検査陽性。重症では中毒性巨大結腸。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D39",
+      "name": "perianal_abscess",
+      "name_ja": "肛門周囲膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K61.0",
+      "category_sub": "deep_abscess",
+      "severity": "moderate",
+      "key_features": "発熱+肛門周囲の腫脹・疼痛。視診/触診で確定。糖尿病やIBDが背景。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D40",
+      "name": "catheter_related_BSI",
+      "name_ja": "カテーテル関連血流感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T80.2",
+      "category_sub": "nosocomial",
+      "severity": "high",
+      "key_features": "中心静脈カテーテル留置中の発熱+悪寒。刺入部の発赤。血培でCNS/S.aureus。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D41",
+      "name": "surgical_site_infection",
+      "name_ja": "手術部位感染(SSI)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T81.4",
+      "category_sub": "nosocomial",
+      "severity": "moderate",
+      "key_features": "術後の発熱+創部の発赤・腫脹・排膿。術後3-5日以降に出現。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D42",
+      "name": "UTI_complicated",
+      "name_ja": "複雑性尿路感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "N39.0",
+      "category_sub": "urogenital",
+      "severity": "moderate",
+      "key_features": "尿路結石/カテーテル/前立腺肥大等を背景とする発熱+排尿症状。耐性菌リスク。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D43",
+      "name": "epididymitis",
+      "name_ja": "精巣上体炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "N45.1",
+      "category_sub": "urogenital",
+      "severity": "moderate",
+      "key_features": "発熱+陰嚢腫脹・疼痛。Prehn徴候陽性。若年者はSTD、高齢者はグラム陰性桿菌。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D44",
+      "name": "acute_HIV",
+      "name_ja": "急性HIV感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B23.0",
+      "category_sub": "viral",
+      "severity": "moderate",
+      "key_features": "リスク行動後2-4週の発熱+咽頭痛+リンパ節腫脹+発疹。単核球症様。抗体陰性期あり。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D45",
+      "name": "CMV_infection",
+      "name_ja": "サイトメガロウイルス感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B25.9",
+      "category_sub": "viral",
+      "severity": "moderate",
+      "key_features": "免疫正常者：単核球症様（異好性抗体陰性）。免疫不全者：網膜炎/肺炎/腸炎。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D46",
+      "name": "measles",
+      "name_ja": "麻疹",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B05",
+      "category_sub": "viral",
+      "severity": "high",
+      "key_features": "二峰性発熱+3C(cough/coryza/conjunctivitis)+Koplik斑→全身性発疹。ワクチン歴重要。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D47",
+      "name": "mumps",
+      "name_ja": "流行性耳下腺炎（ムンプス）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B26",
+      "category_sub": "viral",
+      "severity": "low",
+      "key_features": "発熱+耳下腺腫脹（両側or片側）。唾液腺管開口部発赤。アミラーゼ上昇。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D48",
+      "name": "rubella",
+      "name_ja": "風疹",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B06",
+      "category_sub": "viral",
+      "severity": "low",
+      "key_features": "微熱+淡い発疹（顔→全身、3日で消退）+頸部リンパ節腫脹。妊婦への曝露が問題。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D49",
+      "name": "candidemia",
+      "name_ja": "カンジダ血症/侵襲性カンジダ症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B37.7",
+      "category_sub": "fungal",
+      "severity": "critical",
+      "key_features": "広域抗菌薬無効の持続的発熱+中心静脈カテーテル+ICU。血培でカンジダ。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D50",
+      "name": "PCP",
+      "name_ja": "ニューモシスチス肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B59",
+      "category_sub": "fungal",
+      "severity": "critical",
+      "key_features": "免疫不全者の亜急性の発熱+乾性咳嗽+低酸素。X線でびまん性すりガラス影。LDH上昇。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D51",
+      "name": "amebiasis",
+      "name_ja": "アメーバ赤痢",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A06.0",
+      "category_sub": "parasitic",
+      "severity": "moderate",
+      "key_features": "渡航歴+発熱+粘血便+腹痛。イチゴゼリー状便。肝膿瘍合併あり。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D52",
+      "name": "leptospirosis",
+      "name_ja": "レプトスピラ症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A27",
+      "category_sub": "zoonotic",
+      "severity": "high",
+      "key_features": "汚染水曝露後の突然の高熱+筋肉痛+結膜充血+黄疸。重症型(Weil病)は肝腎不全。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D53",
+      "name": "brucellosis",
+      "name_ja": "ブルセラ症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A23",
+      "category_sub": "zoonotic",
+      "severity": "moderate",
+      "key_features": "波状熱+筋肉痛+関節痛+肝脾腫。乳製品/家畜接触歴。血培陽性だが培養に時間。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D54",
+      "name": "cat_scratch_disease",
+      "name_ja": "猫ひっかき病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A28.1",
+      "category_sub": "zoonotic",
+      "severity": "low",
+      "key_features": "猫との接触後の微熱+所属リンパ節腫脹（腋窩が多い）。自然治癒傾向。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D55",
+      "name": "Q_fever",
+      "name_ja": "Q熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A78",
+      "category_sub": "zoonotic",
+      "severity": "moderate",
+      "key_features": "畜産従事者の発熱+頭痛+非定型肺炎。テトラサイクリンに反応。慢性化すると心内膜炎。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D56",
+      "name": "pertussis",
+      "name_ja": "百日咳",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A37",
+      "category_sub": "respiratory",
+      "severity": "moderate",
+      "key_features": "2週間以上続く発作性咳嗽+吸気時whoop+咳嗽後嘔吐。成人では非典型（長引く咳のみ）。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D57",
+      "name": "necrotizing_fasciitis",
+      "name_ja": "壊死性筋膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M72.6",
+      "category_sub": "skin_soft_tissue",
+      "severity": "critical",
+      "key_features": "蜂窩織炎様だが不釣り合いな激痛+急速進行+皮膚壊死+ショック。外科的緊急。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D58",
+      "name": "adult_onset_still",
+      "name_ja": "成人Still病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M06.1",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "FUOの3大原因。弛張熱+サーモンピンク疹(一過性)+関節痛+咽頭痛+フェリチン著増+白血球増多。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D59",
+      "name": "SLE",
+      "name_ja": "全身性エリテマトーデス",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M32",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "若年女性の発熱+蝶形紅斑+関節痛+光線過敏+口腔潰瘍+漿膜炎。抗核抗体陽性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D60",
+      "name": "ANCA_vasculitis",
+      "name_ja": "ANCA関連血管炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M31.3",
+      "category_sub": "autoimmune",
+      "severity": "high",
+      "key_features": "発熱+体重減少+多臓器障害（腎・肺・皮膚）。ANCA陽性。紫斑+糸球体腎炎+肺出血。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D61",
+      "name": "PMR_GCA",
+      "name_ja": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M35.3/M31.6",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "50歳以上の発熱+肩・骨盤帯の著明な筋痛+朝のこわばり+ESR著増。GCA合併で頭痛+視力障害→緊急。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D62",
+      "name": "sarcoidosis",
+      "name_ja": "サルコイドーシス",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "D86",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "両側肺門リンパ節腫脹+皮膚病変（結節性紅斑等）+ぶどう膜炎。ACE上昇。非乾酪性肉芽腫。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D63",
+      "name": "IBD",
+      "name_ja": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K50/K51",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "発熱+慢性下痢（血性or非血性）+腹痛+体重減少。若年者。肛門病変（クローン）。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D64",
+      "name": "reactive_arthritis",
+      "name_ja": "反応性関節炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M02.9",
+      "category_sub": "autoimmune",
+      "severity": "low",
+      "key_features": "感染後1-4週の非対称性関節炎+結膜炎+尿道炎。HLA-B27関連。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D65",
+      "name": "gout_pseudogout",
+      "name_ja": "痛風/偽痛風発作",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M10/M11",
+      "category_sub": "crystal",
+      "severity": "low",
+      "key_features": "急性の単関節腫脹+発赤+激痛+発熱。痛風は第1MTP、偽痛風は膝が多い。関節液の結晶で確定。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D66",
+      "name": "familial_mediterranean_fever",
+      "name_ja": "家族性地中海熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E85.0",
+      "category_sub": "autoinflammatory",
+      "severity": "moderate",
+      "key_features": "反復する発熱+漿膜炎（腹膜炎/胸膜炎）。地中海沿岸/中東系。コルヒチンに反応。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D67",
+      "name": "malignant_lymphoma",
+      "name_ja": "悪性リンパ腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C85",
+      "category_sub": "malignancy",
+      "severity": "high",
+      "key_features": "FUOの3大原因。発熱+盗汗+体重減少(B症状)+リンパ節腫脹+肝脾腫。LDH上昇。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D68",
+      "name": "leukemia_acute",
+      "name_ja": "急性白血病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C95.0",
+      "category_sub": "malignancy",
+      "severity": "critical",
+      "key_features": "発熱+出血傾向（紫斑・歯肉出血）+貧血症状。末梢血で芽球出現。汎血球減少。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D69",
+      "name": "renal_cell_carcinoma",
+      "name_ja": "腎細胞癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C64",
+      "category_sub": "malignancy",
+      "severity": "high",
+      "key_features": "古典的3徴（血尿+側腹部痛+腹部腫瘤）は10%以下。FUOとして発見されることあり。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D70",
+      "name": "hepatocellular_carcinoma",
+      "name_ja": "肝細胞癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C22.0",
+      "category_sub": "malignancy",
+      "severity": "high",
+      "key_features": "肝硬変背景の発熱+体重減少+腹部膨満（腹水）。AFP上昇。腫瘍熱として発症。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D71",
+      "name": "thyroid_storm",
+      "name_ja": "甲状腺クリーゼ",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E05.5",
+      "category_sub": "endocrine",
+      "severity": "critical",
+      "key_features": "高熱+頻脈(>130)+意識障害+心不全。甲状腺腫大。感染症が誘因になることが多い。致死率20-30%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D72",
+      "name": "adrenal_crisis",
+      "name_ja": "副腎クリーゼ",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E27.2",
+      "category_sub": "endocrine",
+      "severity": "critical",
+      "key_features": "発熱+低血圧+ショック+意識障害。ステロイド長期使用者の急な中止、または敗血症時。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D73",
+      "name": "pheochromocytoma",
+      "name_ja": "褐色細胞腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "D35.0",
+      "category_sub": "endocrine",
+      "severity": "high",
+      "key_features": "発作性の高血圧+頻脈+発汗+頭痛。代謝亢進で微熱。カテコラミン上昇。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D74",
+      "name": "NMS",
+      "name_ja": "悪性症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "G21.0",
+      "category_sub": "iatrogenic",
+      "severity": "critical",
+      "key_features": "抗精神病薬使用中の高熱+筋強剛+意識障害+CK著増+自律神経不安定。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D75",
+      "name": "serotonin_syndrome",
+      "name_ja": "セロトニン症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "G25.79",
+      "category_sub": "iatrogenic",
+      "severity": "high",
+      "key_features": "セロトニン作動薬使用後の発熱+クローヌス+振戦+発汗+下痢。悪性症候群との鑑別。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D76",
+      "name": "transfusion_reaction",
+      "name_ja": "輸血関連発熱反応",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T80.6",
+      "category_sub": "iatrogenic",
+      "severity": "moderate",
+      "key_features": "輸血中/直後の発熱+悪寒。溶血性（重症）vs 非溶血性（軽症）の鑑別が重要。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D77",
+      "name": "DVT_PE",
+      "name_ja": "深部静脈血栓症/肺塞栓症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "I26/I82",
+      "category_sub": "vascular",
+      "severity": "critical",
+      "key_features": "発熱(低頻度)+突然の呼吸困難+胸痛+片側下肢腫脹。D-dimer上昇。造影CTで確定。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D78",
+      "name": "heat_stroke",
+      "name_ja": "熱中症（重症）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T67.0",
+      "category_sub": "environmental",
+      "severity": "critical",
+      "key_features": "高温環境曝露+40℃超の高体温+意識障害+発汗停止。DIC合併。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D79",
+      "name": "infective_endocarditis_prosthetic",
+      "name_ja": "人工弁心内膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T82.6",
+      "category_sub": "cardiovascular",
+      "severity": "critical",
+      "key_features": "人工弁置換術後の発熱。早期型(60日以内)はCNS/S.aureus、晩期型は連鎖球菌。D14と分離して管理。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D80",
+      "name": "acute_cholecystitis_acalculous",
+      "name_ja": "無石胆嚢炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K81.0",
+      "category_sub": "gastrointestinal",
+      "severity": "high",
+      "key_features": "ICU患者/重症患者の発熱+RUQ痛。胆石なし。エコーで胆嚢壁肥厚。壊疽性率高い。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D81",
+      "name": "spontaneous_bacterial_peritonitis",
+      "name_ja": "特発性細菌性腹膜炎(SBP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K65.9",
+      "category_sub": "gastrointestinal",
+      "severity": "high",
+      "key_features": "肝硬変+腹水の患者の発熱+腹痛。腹水穿刺で好中球>250/mm3。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D82",
+      "name": "bacterial_meningitis_nosocomial",
+      "name_ja": "院内髄膜炎（術後/外傷後）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "G00.9",
+      "category_sub": "nosocomial",
+      "severity": "critical",
+      "key_features": "脳神経外科術後/頭部外傷後の発熱+意識障害。起因菌がグラム陰性桿菌/MRSA。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D83",
+      "name": "aspergillosis_invasive",
+      "name_ja": "侵襲性アスペルギルス症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B44.0",
+      "category_sub": "fungal",
+      "severity": "critical",
+      "key_features": "好中球減少症患者の広域抗菌薬無効の持続的発熱。CTでhalo sign。ガラクトマンナン陽性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D84",
+      "name": "herpes_encephalitis",
+      "name_ja": "単純ヘルペス脳炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B00.4",
+      "category_sub": "viral",
+      "severity": "critical",
+      "key_features": "急性の発熱+意識障害+痙攣+人格変化。側頭葉に好発。髄液PCRで確定。アシクロビル早期投与。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "R21",
+      "name": "recent_surgery",
+      "name_ja": "最近の手術歴（30日以内）",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R22",
+      "name": "central_venous_catheter",
+      "name_ja": "中心静脈カテーテル留置",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R23",
+      "name": "neutropenia",
+      "name_ja": "好中球減少（化学療法後等）",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R24",
+      "name": "liver_cirrhosis",
+      "name_ja": "肝硬変の既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R25",
+      "name": "HIV_positive",
+      "name_ja": "HIV陽性/AIDS",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R26",
+      "name": "antipsychotic_use",
+      "name_ja": "抗精神病薬使用中",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R27",
+      "name": "serotonergic_drug",
+      "name_ja": "セロトニン作動薬使用中",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R28",
+      "name": "prosthetic_valve",
+      "name_ja": "人工弁置換術の既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R29",
+      "name": "steroid_chronic",
+      "name_ja": "ステロイド長期使用",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R30",
+      "name": "animal_contact",
+      "name_ja": "動物接触歴（家畜/猫/犬等）",
+      "category": "risk_factor",
+      "states": [
+        "none",
+        "livestock",
+        "pet_cat",
+        "wild_animal"
+      ]
+    },
+    {
+      "id": "R31",
+      "name": "contaminated_water",
+      "name_ja": "汚染水への曝露",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R32",
+      "name": "heat_exposure",
+      "name_ja": "高温環境への曝露",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R33",
+      "name": "blood_transfusion_recent",
+      "name_ja": "最近の輸血",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R34",
+      "name": "thyroid_disease",
+      "name_ja": "甲状腺疾患の既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R35",
+      "name": "IBD_history",
+      "name_ja": "炎症性腸疾患の既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R36",
+      "name": "high_risk_sexual",
+      "name_ja": "ハイリスク性行動歴",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "R37",
+      "name": "aspiration_risk",
+      "name_ja": "誤嚥リスク（嚥下障害/意識障害/アルコール）",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "id": "S22",
+      "name": "back_pain",
+      "name_ja": "背部痛（脊椎レベル）",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S23",
+      "name": "joint_swelling",
+      "name_ja": "関節腫脹",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "monoarticular",
+        "polyarticular"
+      ]
+    },
+    {
+      "id": "S24",
+      "name": "trismus",
+      "name_ja": "開口障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S25",
+      "name": "dysphagia",
+      "name_ja": "嚥下困難",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S26",
+      "name": "bloody_stool",
+      "name_ja": "血便/粘血便",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S27",
+      "name": "morning_stiffness",
+      "name_ja": "朝のこわばり",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "under_30min",
+        "over_30min"
+      ]
+    },
+    {
+      "id": "S28",
+      "name": "hip_pain",
+      "name_ja": "股関節/鼠径部痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S29",
+      "name": "oral_ulcer",
+      "name_ja": "口腔内潰瘍",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S30",
+      "name": "photosensitivity",
+      "name_ja": "光線過敏",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S31",
+      "name": "dry_eyes_mouth",
+      "name_ja": "乾燥症状（口腔/眼）",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S32",
+      "name": "paroxysmal_cough",
+      "name_ja": "発作性咳嗽",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S33",
+      "name": "hematuria",
+      "name_ja": "血尿",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S34",
+      "name": "hemoptysis",
+      "name_ja": "喀血",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S35",
+      "name": "palpitation",
+      "name_ja": "動悸",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S36",
+      "name": "tremor",
+      "name_ja": "振戦",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S37",
+      "name": "muscle_rigidity",
+      "name_ja": "筋強剛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S38",
+      "name": "scrotal_swelling",
+      "name_ja": "陰嚢腫脹・疼痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "S39",
+      "name": "unilateral_leg_swelling",
+      "name_ja": "片側下肢腫脹",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E19",
+      "name": "thyroid_enlargement",
+      "name_ja": "甲状腺腫大",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E20",
+      "name": "butterfly_rash",
+      "name_ja": "蝶形紅斑",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E21",
+      "name": "joint_redness_warmth",
+      "name_ja": "関節の発赤・熱感",
+      "category": "sign",
+      "states": [
+        "absent",
+        "monoarticular",
+        "polyarticular"
+      ]
+    },
+    {
+      "id": "E22",
+      "name": "uvula_deviation",
+      "name_ja": "口蓋垂偏位",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E23",
+      "name": "neck_swelling",
+      "name_ja": "頸部腫脹",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E24",
+      "name": "parotid_swelling",
+      "name_ja": "耳下腺腫脹",
+      "category": "sign",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ]
+    },
+    {
+      "id": "E25",
+      "name": "conjunctival_injection",
+      "name_ja": "結膜充血",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E26",
+      "name": "koplik_spot",
+      "name_ja": "Koplik斑",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E27",
+      "name": "psoas_sign",
+      "name_ja": "腸腰筋徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E28",
+      "name": "ascites",
+      "name_ja": "腹水",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E29",
+      "name": "anhidrosis",
+      "name_ja": "発汗停止",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E30",
+      "name": "clonus",
+      "name_ja": "クローヌス",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "E31",
+      "name": "drooling",
+      "name_ja": "流涎",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L15",
+      "name": "ferritin",
+      "name_ja": "フェリチン",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mild_elevated",
+        "very_high_over_1000",
+        "extreme_over_10000"
+      ]
+    },
+    {
+      "id": "L16",
+      "name": "LDH",
+      "name_ja": "LDH",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated"
+      ]
+    },
+    {
+      "id": "L17",
+      "name": "CK",
+      "name_ja": "CK(クレアチンキナーゼ)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high"
+      ]
+    },
+    {
+      "id": "L18",
+      "name": "ANA",
+      "name_ja": "抗核抗体",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L19",
+      "name": "ANCA",
+      "name_ja": "ANCA",
+      "category": "lab",
+      "states": [
+        "negative",
+        "c_ANCA",
+        "p_ANCA"
+      ]
+    },
+    {
+      "id": "L20",
+      "name": "D_dimer",
+      "name_ja": "D-dimer",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated"
+      ]
+    },
+    {
+      "id": "L21",
+      "name": "peripheral_blood_blast",
+      "name_ja": "末梢血芽球",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L22",
+      "name": "pancytopenia",
+      "name_ja": "汎血球減少",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L23",
+      "name": "uric_acid",
+      "name_ja": "尿酸値",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated"
+      ]
+    },
+    {
+      "id": "L24",
+      "name": "ACE",
+      "name_ja": "ACE(アンギオテンシン変換酵素)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated"
+      ]
+    },
+    {
+      "id": "L25",
+      "name": "AFP",
+      "name_ja": "AFP(αフェトプロテイン)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated"
+      ]
+    },
+    {
+      "id": "L26",
+      "name": "galactomannan",
+      "name_ja": "ガラクトマンナン抗原",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L27",
+      "name": "beta_D_glucan",
+      "name_ja": "β-Dグルカン",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L28",
+      "name": "ESR",
+      "name_ja": "赤沈(ESR)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high_over_100"
+      ]
+    },
+    {
+      "id": "L29",
+      "name": "ascitic_fluid",
+      "name_ja": "腹水検査（好中球数）",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated_over_250"
+      ]
+    },
+    {
+      "id": "L30",
+      "name": "joint_fluid",
+      "name_ja": "関節液検査",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "inflammatory",
+        "septic",
+        "crystals"
+      ]
+    },
+    {
+      "id": "L31",
+      "name": "CT_abdomen",
+      "name_ja": "腹部CT",
+      "category": "lab",
+      "states": [
+        "normal",
+        "abscess",
+        "mass",
+        "other_abnormal"
+      ]
+    },
+    {
+      "id": "L32",
+      "name": "thyroid_function",
+      "name_ja": "甲状腺機能検査",
+      "category": "lab",
+      "states": [
+        "normal",
+        "hyperthyroid",
+        "hypothyroid"
+      ]
+    },
+    {
+      "id": "L33",
+      "name": "HIV_test",
+      "name_ja": "HIV検査",
+      "category": "lab",
+      "states": [
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L34",
+      "name": "stool_culture",
+      "name_ja": "便培養/CDトキシン",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "pathogen_detected",
+        "CD_positive"
+      ]
+    },
+    {
+      "id": "L35",
+      "name": "CT_chest_detail",
+      "name_ja": "胸部CT詳細所見",
+      "category": "lab",
+      "states": [
+        "normal",
+        "consolidation",
+        "GGO",
+        "cavity",
+        "halo_sign",
+        "BHL",
+        "pleural_effusion"
+      ]
+    },
+    {
+      "id": "D85",
+      "name": "dental_infection",
+      "name_ja": "歯原性感染症（歯性膿瘍/Ludwig angina）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K04.7",
+      "category_sub": "head_neck",
+      "severity": "moderate",
+      "key_features": "発熱+歯痛/顔面腫脹。下顎臼歯が最多。Ludwig anginaは気道緊急。"
+    },
+    {
+      "id": "D86",
+      "name": "acute_pancreatitis",
+      "name_ja": "急性膵炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K85",
+      "category_sub": "gastrointestinal",
+      "severity": "high",
+      "key_features": "発熱+上腹部痛(背部放散)+嘔吐。アミラーゼ/リパーゼ上昇。胆石/アルコールが2大原因。"
+    },
+    {
+      "id": "D87",
+      "name": "subacute_thyroiditis",
+      "name_ja": "亜急性甲状腺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E06.1",
+      "category_sub": "endocrine",
+      "severity": "moderate",
+      "key_features": "感冒後の発熱+頸部前面の有痛性甲状腺腫大+一過性甲状腺中毒症。ESR著増。"
+    },
+    {
+      "id": "D88",
+      "name": "alcohol_withdrawal",
+      "name_ja": "アルコール離脱症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "F10.3",
+      "category_sub": "withdrawal",
+      "severity": "high",
+      "key_features": "大量飲酒中断後6-48時間の発熱+振戦+発汗+頻脈+不安/興奮。重症では痙攣/振戦せん妄。"
+    },
+    {
+      "id": "D89",
+      "name": "malignant_hyperthermia",
+      "name_ja": "悪性高熱症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T88.3",
+      "category_sub": "iatrogenic",
+      "severity": "critical",
+      "key_features": "吸入麻酔薬/脱分極性筋弛緩薬使用後の急激な高体温+筋強剛+CK著増+代謝性アシドーシス。"
+    },
+    {
+      "id": "D90",
+      "name": "behcet_disease",
+      "name_ja": "ベーチェット病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M35.2",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "反復性口腔潰瘍+外陰部潰瘍+ぶどう膜炎+皮膚症状（結節性紅斑等）。シルクロード沿いに多い。"
+    },
+    {
+      "id": "D91",
+      "name": "chikungunya",
+      "name_ja": "チクングニア熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A92.0",
+      "category_sub": "viral",
+      "severity": "moderate",
+      "key_features": "渡航歴+突然の高熱+激しい関節痛（手指/足趾の対称性）+発疹。デング熱に類似。"
+    },
+    {
+      "id": "D92",
+      "name": "tumor_fever",
+      "name_ja": "腫瘍熱（固形腫瘍）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "R50.81",
+      "category_sub": "malignancy",
+      "severity": "moderate",
+      "key_features": "悪性腫瘍患者の感染を除外した持続的発熱。ナプロキセンテストで解熱傾向。"
+    },
+    {
+      "id": "D93",
+      "name": "DRESS",
+      "name_ja": "DRESS症候群（薬剤性過敏症症候群）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "T88.7",
+      "category_sub": "iatrogenic",
+      "severity": "high",
+      "key_features": "薬剤開始2-6週後の高熱+広範な皮疹+顔面浮腫+好酸球増多+臓器障害（肝/腎/肺）。"
+    },
+    {
+      "id": "D94",
+      "name": "IgG4_related",
+      "name_ja": "IgG4関連疾患",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "D89.89",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "多臓器の腫脹・線維化。自己免疫性膵炎/唾液腺腫脹/後腹膜線維症。血清IgG4上昇。"
+    },
+    {
+      "id": "D95",
+      "name": "japanese_encephalitis",
+      "name_ja": "日本脳炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A83.0",
+      "category_sub": "viral",
+      "severity": "critical",
+      "key_features": "アジアの農村部(豚/水田)+蚊媒介。高熱+頭痛+意識障害+痙攣。ワクチン歴が重要。致死率20-30%。"
+    },
+    {
+      "id": "S40",
+      "name": "facial_swelling",
+      "name_ja": "顔面腫脹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "S41",
+      "name": "genital_ulcer",
+      "name_ja": "外陰部潰瘍",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "S42",
+      "name": "seizure",
+      "name_ja": "痙攣",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "L36",
+      "name": "amylase_lipase",
+      "name_ja": "アミラーゼ/リパーゼ",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "L37",
+      "name": "IgG4",
+      "name_ja": "血清IgG4",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "E32",
+      "name": "thyroid_tenderness",
+      "name_ja": "甲状腺圧痛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "sign"
+    },
+    {
+      "id": "R38",
+      "name": "general_anesthesia_recent",
+      "name_ja": "最近の全身麻酔",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "category": "risk_factor"
+    },
+    {
+      "id": "R39",
+      "name": "heavy_alcohol_recent_cessation",
+      "name_ja": "大量飲酒の急な中断",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "category": "risk_factor"
+    },
+    {
+      "id": "R40",
+      "name": "malignancy_known",
+      "name_ja": "悪性腫瘍の既往/治療中",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "category": "risk_factor"
+    },
+    {
+      "id": "D96",
+      "name": "kikuchi_disease",
+      "name_ja": "菊池病（壊死性リンパ節炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "I88.1",
+      "category_sub": "autoimmune",
+      "severity": "low",
+      "key_features": "若年女性に多い。発熱+有痛性頸部リンパ節腫脹+白血球減少。自然軽快するが不明熱の重要な鑑別。"
+    },
+    {
+      "id": "D97",
+      "name": "castleman_disease",
+      "name_ja": "キャッスルマン病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "D47.Z2",
+      "category_sub": "malignancy",
+      "severity": "moderate",
+      "key_features": "多中心性：発熱+リンパ節腫脹+肝脾腫+貧血+高ガンマグロブリン血症。IL-6上昇。不明熱の見逃しやすい疾患。"
+    },
+    {
+      "id": "D98",
+      "name": "takayasu_arteritis",
+      "name_ja": "高安動脈炎（大動脈炎症候群）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M31.4",
+      "category_sub": "autoimmune",
+      "severity": "high",
+      "key_features": "若年女性。発熱+倦怠感+上肢血圧左右差+脈なし+血管雑音。ESR著増。日本に多い。"
+    },
+    {
+      "id": "D99",
+      "name": "NTM",
+      "name_ja": "非結核性抗酸菌症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A31",
+      "category_sub": "respiratory",
+      "severity": "moderate",
+      "key_features": "中年女性/免疫不全者。慢性の微熱+咳嗽+体重減少。結核に類似。抗酸菌塗抹陽性だがTB-PCR陰性。増加傾向。"
+    },
+    {
+      "id": "D100",
+      "name": "hepatitis_A",
+      "name_ja": "A型急性肝炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B15",
+      "category_sub": "viral",
+      "severity": "moderate",
+      "key_features": "渡航者/生牡蠣。発熱+倦怠感→黄疸+肝酵素著増。IgM-HA抗体で確定。通常自然治癒。"
+    },
+    {
+      "id": "D101",
+      "name": "secondary_syphilis",
+      "name_ja": "梅毒（二期）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A51.3",
+      "category_sub": "viral",
+      "severity": "moderate",
+      "key_features": "感染後6-8週。発熱+全身性バラ疹（手掌・足底含む）+リンパ節腫脹。RPR/TPHA陽性。Great mimicker。"
+    },
+    {
+      "id": "D102",
+      "name": "legionella_pneumonia",
+      "name_ja": "レジオネラ肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A48.1",
+      "category_sub": "respiratory",
+      "severity": "high",
+      "key_features": "温泉/循環式浴槽。高熱+相対性徐脈+下痢+意識障害+低Na血症。X線はlobar。尿中抗原で迅速診断。市中肺炎の5-10%。"
+    },
+    {
+      "id": "L38",
+      "name": "RPR_TPHA",
+      "name_ja": "梅毒血清検査(RPR/TPHA)",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "L39",
+      "name": "hepatitis_serology",
+      "name_ja": "肝炎ウイルス血清検査",
+      "states": [
+        "negative",
+        "HAV_IgM",
+        "HBV",
+        "HCV"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "L40",
+      "name": "legionella_urinary_antigen",
+      "name_ja": "レジオネラ尿中抗原",
+      "states": [
+        "negative",
+        "positive"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "L41",
+      "name": "IL6_sIL2R",
+      "name_ja": "IL-6/sIL-2R",
+      "states": [
+        "normal",
+        "elevated"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "E33",
+      "name": "pulse_deficit",
+      "name_ja": "脈拍左右差/血管雑音",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "sign"
+    },
+    {
+      "id": "S43",
+      "name": "palm_sole_rash",
+      "name_ja": "手掌・足底の皮疹",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "E34",
+      "name": "hepatomegaly",
+      "name_ja": "肝腫大",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "sign"
+    },
+    {
+      "id": "E35",
+      "name": "eye_findings",
+      "name_ja": "眼症状（ぶどう膜炎/結膜炎）",
+      "states": [
+        "absent",
+        "conjunctivitis",
+        "uveitis"
+      ],
+      "category": "sign"
+    },
+    {
+      "id": "S44",
+      "name": "bleeding_tendency",
+      "name_ja": "出血傾向（紫斑/歯肉出血/鼻出血）",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "S45",
+      "name": "sweating_abnormality",
+      "name_ja": "発汗異常",
+      "states": [
+        "normal",
+        "excessive",
+        "absent"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "L44",
+      "name": "electrolytes",
+      "name_ja": "電解質（Na/K）",
+      "states": [
+        "normal",
+        "hyponatremia",
+        "hyperkalemia",
+        "other"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "R42",
+      "name": "prosthetic_joint",
+      "name_ja": "人工関節",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "category": "risk_factor"
+    },
+    {
+      "id": "R43",
+      "name": "vaccination_MMR",
+      "name_ja": "ワクチン歴(MMR等)",
+      "states": [
+        "unvaccinated",
+        "vaccinated",
+        "unknown"
+      ],
+      "category": "risk_factor"
+    },
+    {
+      "id": "S46",
+      "name": "anorexia",
+      "name_ja": "食欲不振",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "symptom"
+    },
+    {
+      "id": "L45",
+      "name": "CSF_analysis",
+      "name_ja": "髄液検査",
+      "states": [
+        "not_done",
+        "normal",
+        "viral_pattern",
+        "bacterial_pattern",
+        "HSV_PCR_positive"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "L46",
+      "name": "brain_MRI",
+      "name_ja": "頭部MRI",
+      "states": [
+        "normal",
+        "temporal_lobe_lesion",
+        "diffuse_abnormal",
+        "other"
+      ],
+      "category": "lab"
+    },
+    {
+      "id": "M01",
+      "name": "subarachnoid_hemorrhage",
+      "name_ja": "くも膜下出血(SAH)",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "category": "intermediate"
+    }
+  ]
+}

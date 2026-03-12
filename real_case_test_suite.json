@@ -1,0 +1,1505 @@
+{
+  "version": "1.0",
+  "date": "2025-03-12",
+  "description": "VeSMed Real Case Test Suite - ONLY real cases from literature",
+  "rule": "以后所有测试只能用这里的real case，不能用synthetic。国試也不行。",
+  "network_version": "step1_v2.7 + D53/D62/D67改善 (273変数, 102疾患, 993辺)",
+  "results_summary": {
+    "note": "bn_inference.py v1.0 (noisy-OR likelihood ratio) による全案例テスト結果",
+    "total_cases": 58,
+    "total_in_scope": 50,
+    "total_oos": 8,
+    "tested_in_scope": 50,
+    "tested_top1": "15/50 (30%)",
+    "tested_top3": "28/50 (56%)",
+    "confident_misdiagnosis": 9,
+    "untested": 0,
+    "gap_to_50": 0
+  },
+  "cases": [
+    {
+      "id": "R01",
+      "source": "BMJ 2006",
+      "pmcid": "PMC1557921",
+      "vignette": "19F 3w弛張熱39℃+咽頭痛+筋肉痛+手首/背中/下肢の斑丘疹(発熱時出現)。アモキシシリン後に発疹増悪。イタリア渡航歴。追加検査: 血培陰性,ANA陰性,エコー正常。double quotidian確認",
+      "final_diagnosis": "成人Still病",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T03": "double_quotidian",
+        "S02": "present",
+        "S06": "present",
+        "E12": "maculopapular_rash",
+        "T01": "over_3w",
+        "L09": "not_done_or_pending",
+        "E15": "absent",
+        "L18": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "Top-1 99% H=0.1",
+      "notes": "渡航歴(イタリア=developed)を外し、追加検査の陰性所見を入れることでStillに到達"
+    },
+    {
+      "id": "R02",
+      "source": "BMJ Case Reports 2018",
+      "pmcid": "PMC5990099",
+      "vignette": "31F 7w発熱+盗汗+関節痛+筋肉痛+鼻閉。後に発疹(血管炎)+上強膜炎+めまい+感音性難聴。ANA/ANCA陰性",
+      "final_diagnosis": "Cogan症候群",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S16": "present",
+        "S08": "present",
+        "S06": "present",
+        "T01": "over_3w",
+        "E12": "maculopapular_rash",
+        "E35": "conjunctivitis",
+        "L18": "negative",
+        "L19": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "OOS fallback→ブルセラ症 70% H=1.6",
+      "notes": "Cogan症候群はリスト外。H=3.1で「不確定」信号は正しい"
+    },
+    {
+      "id": "R03",
+      "source": "Cureus 2024",
+      "pmcid": "PMC11706331",
+      "vignette": "78F 4ヶ月倦怠感→発熱+下肢浮腫+低血圧96/55。重度貧血,血小板減少,LDH 1924 U/L,フェリチン1519 ng/mL,低Na 133 mEq/L",
+      "final_diagnosis": "DLBCL→HLH",
+      "expected_id": "D67",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "T01": "over_3w",
+        "L22": "present",
+        "L16": "elevated",
+        "L15": "very_high_over_1000",
+        "E03": "hypotension_under_90",
+        "L44": "hyponatremia",
+        "S46": "present"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "Top-3 rank2 (急性白血病 73%) H=0.9",
+      "notes": "自信的误诊。汎血球減少+LDH↑+フェリチン↑は白血病/リンパ腫の鑑別が困難。臨床でも骨髄生検まで区別できない"
+    },
+    {
+      "id": "R04",
+      "source": "Cancer Reports 2024",
+      "pmcid": "PMC11578651",
+      "vignette": "44M 1年超の発熱(Pel-Ebstein: 1-2w高熱→1-2w解熱繰返し)。7回抗菌薬無効。盗汗,15kg体重減少。両側頸部+鎖骨上LN腫大,脾腫。Hb9.0,PLT12万,LDH907,ALP910",
+      "final_diagnosis": "Hodgkinリンパ腫",
+      "expected_id": "D67",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T03": "periodic",
+        "T01": "over_3w",
+        "S16": "present",
+        "S17": "present",
+        "E13": "generalized",
+        "E14": "present",
+        "L16": "elevated",
+        "L22": "present",
+        "S07": "severe"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "Top-1 100% H=0.0",
+      "notes": "Pel-Ebstein pattern + B症状 + 全身LN腫脹。T03=periodic + E13=generalized が決め手"
+    },
+    {
+      "id": "R05",
+      "source": "CHEST 2024",
+      "pmcid": null,
+      "url": "https://journal.chestnet.org/article/S0012-3692(24)01459-4/fulltext",
+      "vignette": "71M 3ヶ月FUO(39-39.5℃),戦慄,盗汗,頭痛,乾性咳嗽,食欲不振,30lb体重減少。肺気腫,慢性汎血球減少(MDS疑い),ステロイド使用歴。PET-CT→BAL→PCP確定",
+      "final_diagnosis": "PCP(非HIV)",
+      "expected_id": "D50",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S01": "dry",
+        "S46": "present",
+        "S17": "present",
+        "T01": "over_3w",
+        "L22": "present",
+        "L35": "GGO",
+        "L27": "positive",
+        "S07": "severe"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R29": "yes"
+      },
+      "result": "Top-1 95% H=0.3",
+      "notes": "修正後に正解。修正前はリンパ腫77%に負けていた。S17/S46/T01への辺追加が決め手"
+    },
+    {
+      "id": "R06",
+      "source": "BMJ Case Reports 2021",
+      "pmid": "33602758",
+      "vignette": "39F 高熱+悪寒+筋肉痛+頭痛→敗血症進行。ALT著増。動物接触歴は不明確。Coxiella serology陽性でQ熱確定",
+      "final_diagnosis": "Q熱(急性肝炎型)",
+      "expected_id": "D55",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "S06": "present",
+        "S05": "severe",
+        "L11": "very_high",
+        "L02": "high_over_10",
+        "E03": "hypotension_under_90"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "FATAL rank20 (レプトスピラ症 81%) H=1.4",
+      "notes": "R30(動物接触)なしではQ熱は浮上不能。Q熱はgreat mimicker。確定にはCoxiella serology必須"
+    },
+    {
+      "id": "R07",
+      "source": "BMC Infectious Diseases 2025",
+      "doi": "10.1186/s12879-025-10699-8",
+      "vignette": "54M 屠畜場勤務。急性高熱+低血圧+全身浮腫+WBC上昇+肝酵素上昇+激しい頭痛",
+      "final_diagnosis": "Q熱+SCLS",
+      "expected_id": "D55",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S05": "severe",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "S01": "dry",
+        "L04": "lobar_infiltrate"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R30": "livestock"
+      },
+      "result": "Top-1 69% H=1.2",
+      "notes": "R30=livestockでQ熱が浮上するが、CXR lobar infiltrateが肺炎に強く効く"
+    },
+    {
+      "id": "R08",
+      "source": "NEJM Case 4-2024",
+      "doi": "10.1056/NEJMcpc2309382",
+      "vignette": "39M 夏。東アフリカ帰国後4日の発熱+悪寒戦慄+頭痛+倦怠感",
+      "final_diagnosis": "マラリア",
+      "expected_id": "D15",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "S05": "severe",
+        "S07": "severe",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R06": "tropical_endemic",
+        "R19": "summer"
+      },
+      "result": "Miss rank4 (インフルエンザ 49%) H=3.0",
+      "notes": "Top-1だがH高い。所見が非特異的(発熱+悪寒+頭痛のみ)"
+    },
+    {
+      "id": "R09",
+      "source": "NEJM Case 31-2024",
+      "doi": "10.1056/NEJMcpc2402493",
+      "vignette": "37M 発熱+筋肉痛+低酸素。WBC増多,急性腎不全,直接ビリルビン優位黄疸。結膜充血(conjunctival suffusion)あり",
+      "final_diagnosis": "レプトスピラ症(Weil病)",
+      "expected_id": "D52",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S06": "present",
+        "E18": "present",
+        "S04": "at_rest",
+        "E05": "severe_hypoxia_under_93",
+        "L01": "high_10000_20000",
+        "E25": "present",
+        "L11": "mild_elevated"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R31": "yes"
+      },
+      "result": "Top-1 96% H=0.4",
+      "notes": "結膜充血(E25)が鑑別の鍵。これなしではrank3だった"
+    },
+    {
+      "id": "R10",
+      "source": "NEJM Case 38-2024",
+      "doi": "10.1056/NEJMcpc2100279",
+      "vignette": "22F 頭痛+発熱→ICU搬送。頭部CTでSAH。経胸壁+経食道エコーで疣贅。呼吸不全",
+      "final_diagnosis": "IE→感染性脳動脈瘤→SAH",
+      "expected_id": "D14",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S05": "severe",
+        "E16": "confused",
+        "E06": "present",
+        "M01": "present",
+        "E15": "present",
+        "S04": "at_rest"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "Top-1 100% H=0.0",
+      "notes": "SAH中間変数(M01)追加後に正解。追加前はIE 0%だった。論文の核心事例"
+    },
+    {
+      "id": "R11",
+      "source": "NEJM Case 18-2021",
+      "doi": "10.1056/NEJMcpc2100283",
+      "vignette": "81M 3日咳嗽+発熱+呼吸困難→胸痛+呼吸窮迫急速進行。両側肺浸潤影。リンパ球減少,D-dimer上昇,フェリチン上昇,CRP上昇。2020年春ボストン(COVID大流行期)",
+      "final_diagnosis": "COVID-19",
+      "expected_id": "D03",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "S04": "at_rest",
+        "S21": "pleuritic",
+        "L04": "bilateral_infiltrate",
+        "E02": "over_120",
+        "L02": "high_over_10",
+        "L20": "elevated"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "FATAL rank6 (感染性心内膜炎 63%) H=1.7",
+      "notes": "COVID特異所見(味覚障害等)なし+D-dimer→PE側に引かれる。PCRなしでは不可能"
+    },
+    {
+      "id": "R12",
+      "source": "Clinical Practice and Cases in Emergency Medicine 2022",
+      "pmcid": "PMC9373758",
+      "vignette": "37M Texas。9日間の間歇的発熱+重度下痢+びまん性腹痛。RLQ圧痛。Cr軽度上昇,肝酵素軽度上昇,PLT軽度低下。CT:肝脾腫+腸管液貯留。入院2日目に体幹に淡い斑丘疹。ペット(犬猫鶏)+ノミ曝露歴",
+      "final_diagnosis": "Murine typhus (Rickettsia typhi)",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S14": "watery",
+        "S12": "RLQ",
+        "E34": "present",
+        "E14": "present",
+        "L11": "mild_elevated",
+        "L14": "thrombocytopenia",
+        "E12": "maculopapular_rash",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R30": "pet_cat"
+      },
+      "result": "OOS fallback→腸チフス・パラチフス 54% H=2.0",
+      "notes": "Murine typhusはリスト外。CMVへのfallbackは臨床的にまあまあ妥当(発熱+肝脾腫+血小板低下)"
+    },
+    {
+      "id": "R13",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10473233",
+      "vignette": "86F 脳出血入院中に間歇熱39.3℃出現。WBC正常,CRP正常。CT angiography→PE+両下肢DVT確認。ヘパリン投与で速やかに解熱",
+      "final_diagnosis": "PE/DVT(CRP正常の発熱)",
+      "expected_id": "D77",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T03": "intermittent",
+        "L01": "normal_4000_10000",
+        "L02": "normal_under_0.3",
+        "L20": "elevated"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R21": "yes"
+      },
+      "result": "Miss rank5 (マラリア 43%) H=2.6",
+      "notes": "WBC/CRP正常が非感染性を示唆。D-dimer上昇がPEの手がかり。H=4.5で不確定信号は正しい"
+    },
+    {
+      "id": "R14",
+      "source": "Medicine (Baltimore) 2024",
+      "pmcid": "PMC10798690",
+      "vignette": "28M 9ヶ月の持続的発熱+下肢脱力。HBV+HDV肝硬変,脾腫,腹水。WBC増多,貧血。ANA/RF/ANCA陰性。感染症検索全て陰性。ステロイドで一時解熱も再燃。PET-CT→腋窩LN生検→PTCL-TFH",
+      "final_diagnosis": "PTCL-TFH(末梢T細胞リンパ腫)",
+      "expected_id": "D67",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T01": "over_3w",
+        "E14": "present",
+        "E28": "present",
+        "L01": "high_10000_20000",
+        "L22": "present",
+        "E34": "present",
+        "S07": "severe",
+        "L18": "negative",
+        "L19": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R24": "yes"
+      },
+      "result": "Top-1 76% H=1.4",
+      "notes": "9ヶ月FUO+脾腫+腹水+肝硬変の複雑な背景からリンパ腫を拾えた"
+    },
+    {
+      "id": "R15",
+      "source": "Cureus 2024",
+      "pmcid": "PMC10936313",
+      "vignette": "PUO患者。発熱+盗汗+体重減少+脾腫。各種検査で感染症・膠原病を除外。脾摘→NHL確定",
+      "final_diagnosis": "脾NHL(非ホジキンリンパ腫)",
+      "expected_id": "D67",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S16": "present",
+        "S17": "present",
+        "T01": "over_3w",
+        "E14": "present",
+        "S07": "severe"
+      },
+      "risk_factors": {
+        "R01": "40_64"
+      },
+      "result": "Top-1 62% H=1.5",
+      "notes": "FUO三大原因(感染/悪性/膠原病)の典型的な悪性腫瘍パターン"
+    },
+    {
+      "id": "R16",
+      "source": "Cureus 2025",
+      "vignette": "60F 顔面紅斑+発熱+白血球減少+血小板減少+貧血+蛋白尿+リンパ節炎。LN生検:壊死性リンパ節炎。腎生検:class II LN。HCQ+anifrolumabで改善",
+      "final_diagnosis": "SLE",
+      "expected_id": "D59",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E20": "present",
+        "E13": "cervical",
+        "L22": "present",
+        "S07": "moderate",
+        "L02": "mild_0.3_3"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "Top-1 77% H=1.4",
+      "notes": "蝶形紅斑(E20)が決定的。汎血球減少も寄与"
+    },
+    {
+      "id": "R17",
+      "source": "Cureus 2025",
+      "vignette": "60M GCS9,Kernig陽性,項部硬直,左片麻痺,失語。右膝発赤熱感+可動域制限。CXR左下consolidation+両側胸水。WBC18000,CRP上昇。肺炎球菌による多臓器感染(肺炎+髄膜炎+化膿性関節炎+脳梗塞)。心内膜炎なし",
+      "final_diagnosis": "侵襲性肺炎球菌感染症(髄膜炎+肺炎+化膿性関節炎)",
+      "expected_id": "D13",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E06": "present",
+        "E16": "obtunded",
+        "S08": "present",
+        "E21": "monoarticular",
+        "L04": "lobar_infiltrate",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "Top-3 rank3 (化膿性関節炎 34%) H=2.6",
+      "notes": "多臓器同時感染。化膿性関節炎が1位になるのは単関節炎所見が強いため。合併症モデルなら全部説明可能"
+    },
+    {
+      "id": "R18",
+      "source": "Cureus 2025",
+      "vignette": "38M 5日間高熱39.2℃+筋肉痛+倦怠感。咳嗽/痰/胸痛/呼吸困難なし。HR110,SpO2 97%。初診時CXR正常。3日後に右下肺crackles出現。WBC 11.8,CRP 112,ESR 55。最終的にCXR+CTで右下肺consolidation確認→肺炎",
+      "final_diagnosis": "Occult pneumonia(潜在性肺炎)",
+      "expected_id": "D05",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S06": "present",
+        "S07": "severe",
+        "E02": "100_120",
+        "T01": "3d_to_1w",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "Miss rank20 (人工弁心内膜炎 21%) H=4.1",
+      "notes": "呼吸器症状なしの肺炎。E07(crackles)/L04(CXR infiltrate)なしでは肺炎が浮上しにくい。臨床的にも初診で見逃された症例"
+    },
+    {
+      "id": "R19",
+      "source": "Case Reports in Medicine 2017",
+      "pmcid": "PMC5726146",
+      "vignette": "88F 6日間39℃以上の発熱、広域抗菌薬無効。関節炎なし、皮疹なし。WBC好中球80%増多、軽度肝障害、血小板減少、D-dimer上昇、フェリチン78,662ng/mL。ANA陰性。脾腫あり。DIC合併",
+      "final_diagnosis": "成人Still病+血球貪食症候群(HPS)+DIC",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "L01": "high_10000_20000",
+        "L11": "mild_elevated",
+        "L14": "thrombocytopenia",
+        "L15": "extreme_over_10000",
+        "L18": "negative",
+        "L20": "elevated",
+        "E14": "present",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "Top-3 rank2 (マラリア 41%) H=2.3",
+      "notes": "88歳最高齢AOSD。フェリチン78,662が決定的。抗菌薬無効+ANA陰性+超高フェリチンでStillに到達"
+    },
+    {
+      "id": "R20",
+      "source": "Medicine 2018",
+      "pmcid": "PMC5908639",
+      "vignette": "30F 2年間の反復性発熱38℃+一過性蕁麻疹様皮疹（体幹・上肢）+両手PIP関節の多関節炎（1回3-4日持続）。MEFV遺伝子変異合併",
+      "final_diagnosis": "成人Still病（MEFV遺伝子変異合併）",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "maculopapular_rash",
+        "E21": "polyarticular",
+        "T01": "over_3w",
+        "T03": "periodic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "Top-3 rank2 (家族性地中海熱 24%) H=3.4",
+      "notes": "反復性周期熱+皮疹+多関節炎でStillに到達。MEFV変異合併は興味深いがBNには影響しない"
+    },
+    {
+      "id": "R21",
+      "source": "Archives of Rheumatology 2018",
+      "pmcid": "PMC6190957",
+      "vignette": "37M 7日間39℃以上の発熱。Hb 11g/dL（貧血）。AOSD診断後に腹痛・血性下痢出現→大腸内視鏡で潰瘍性大腸炎合併確認",
+      "final_diagnosis": "成人Still病+潰瘍性大腸炎",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "L22": "present",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "Miss rank88 (インフルエンザ 3%) H=6.4",
+      "notes": "発熱期のStill特異的所見が乏しい症例。UC合併が特徴だがBNには反映されない"
+    },
+    {
+      "id": "R22",
+      "source": "Case Reports in Rheumatology 2016",
+      "pmcid": "PMC4794578",
+      "vignette": "33M 4週間FUO。高熱+咽頭痛+乾性咳嗽+体幹の非掻痒性斑状皮疹+両側足関節・膝関節痛+筋肉痛+盗汗",
+      "final_diagnosis": "成人Still病",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S02": "present",
+        "S01": "dry",
+        "E12": "maculopapular_rash",
+        "S08": "present",
+        "S06": "present",
+        "S16": "present",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "Top-1 60% H=1.9",
+      "notes": "典型的AOSD: 4週FUO+高熱+咽頭痛+皮疹+関節痛+筋肉痛+盗汗"
+    },
+    {
+      "id": "R23",
+      "source": "Tuberküloz ve Toraks 2016",
+      "pmcid": "PMC5175095",
+      "vignette": "38F 発熱+咽頭炎（抗菌薬無効）+弛張熱パターン+サーモンピンク色皮疹（体幹・四肢）+関節痛+筋肉痛+倦怠感+悪心+体重減少+肝脾腫+リンパ節腫脹。好中球優位白血球増多、ANA陰性。両側胸水出現",
+      "final_diagnosis": "成人Still病+両側胸水",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T03": "intermittent",
+        "S02": "present",
+        "E12": "maculopapular_rash",
+        "S08": "present",
+        "S06": "present",
+        "S07": "severe",
+        "S13": "present",
+        "S17": "present",
+        "E14": "present",
+        "E34": "present",
+        "E13": "generalized",
+        "L01": "high_10000_20000",
+        "L18": "negative",
+        "L04": "pleural_effusion",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "Top-1 72% H=0.9",
+      "notes": "典型的AOSD+漿膜炎。肝脾腫+LN腫脹+皮疹+弛張熱+ANA陰性でStillに到達。胸水はStillの稀な合併症"
+    },
+    {
+      "id": "R24",
+      "source": "European Heart Journal - Case Reports 2020",
+      "pmcid": "PMC7501920",
+      "vignette": "18M 6ヶ月の労作時呼吸困難悪化+間欠的微熱+多関節痛（足首・膝・肘）。心原性+敗血症性ショックで搬送。心エコー:僧帽弁前尖flail+重度逆流。血培陰性持続。ステロイドで劇的改善",
+      "final_diagnosis": "非典型成人Still病（重度僧帽弁閉鎖不全合併）",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S04": "at_rest",
+        "S08": "present",
+        "E03": "hypotension_under_90",
+        "E15": "present",
+        "L09": "negative",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "Miss rank8 (感染性心内膜炎 41%) H=3.2",
+      "notes": "非典型: 心弁膜症でIEに酷似。血培陰性+ステロイド反応がStillの鍵。低体温+murmur+shock=IE mimicker"
+    },
+    {
+      "id": "R25",
+      "source": "Cureus 2021",
+      "pmcid": "PMC8293858",
+      "vignette": "48F 2週間の乾性咳嗽+発熱+結膜充血+悪寒+倦怠感+筋肉痛+全身脱力+1年で15ポンド体重減少。画像:片側肺門リンパ節腫脹（非典型的）。生検でサルコイドーシス確定",
+      "final_diagnosis": "肺サルコイドーシス（FUO型）",
+      "expected_id": "D62",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "dry",
+        "E35": "conjunctivitis",
+        "S09": "present",
+        "S07": "severe",
+        "S06": "present",
+        "S17": "present",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "Miss rank10 (感染性心内膜炎 37%) H=2.7",
+      "notes": "片側肺門LAD(非典型)でBHL非該当。ACE/BHL所見なしではD62浮上困難。D62改善後に再テスト要"
+    },
+    {
+      "id": "R26",
+      "source": "Cureus 2024",
+      "pmcid": "PMC11194037",
+      "vignette": "50F 鎌状赤血球症既往。発熱+無力感+嗜眠+下腹部痛。重度汎血球減少。フェリチン3,134。骨髄:血球貪食像。HLH 8基準中5基準充足",
+      "final_diagnosis": "HLH（尿路感染由来敗血症に続発）",
+      "expected_id": "D67",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "S12": "suprapubic",
+        "L22": "present",
+        "L14": "thrombocytopenia",
+        "L15": "very_high_over_1000"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "Top-3 rank2 (急性白血病 60%) H=2.0",
+      "notes": "自信的误诊。汎血球減少+高フェリチンは白血病/リンパ腫の鑑別困難。R03と同パターン"
+    },
+    {
+      "id": "R27",
+      "source": "Journal of Medical Case Reports 2024",
+      "pmcid": "PMC11162745",
+      "vignette": "34M ファロー四徴症術後・人工肺動脈弁。2018年IE既往。2年間フォロー脱落。畜産地域在住。軽度労作時呼吸困難のみ。PET-CT+Q熱血清学で慢性Q熱IE確定",
+      "final_diagnosis": "慢性Q熱心内膜炎",
+      "expected_id": "D55",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S04": "on_exertion",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R10": "yes",
+        "R30": "livestock"
+      },
+      "result": "Miss rank60 (悪性リンパ腫 5%) H=5.1",
+      "notes": "慢性Q熱は急性Q熱(D55)と病態が異なり発熱も軽微。特異的所見なしでBN捕捉困難"
+    },
+    {
+      "id": "R28",
+      "source": "Access Microbiology 2024",
+      "pmcid": "PMC10928401",
+      "vignette": "55M インド農村部の農夫。3週間の微熱+筋肉痛+関節痛→急性右片麻痺+見当識障害+項部硬直。炎症マーカー上昇、肝機能障害。髄液:リンパ球優位細胞増多・蛋白上昇。血培グラム陰性球桿菌→ブルセラ確定",
+      "final_diagnosis": "神経ブルセラ症",
+      "expected_id": "D53",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S06": "present",
+        "S08": "present",
+        "E16": "confused",
+        "E06": "present",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "L45": "viral_pattern",
+        "L09": "gram_negative",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R30": "livestock"
+      },
+      "result": "Top-1 68% H=1.5",
+      "notes": "髄膜炎症状が主体でD13に引き寄せられる。ブルセラ(D53)への辺が不足"
+    },
+    {
+      "id": "R29",
+      "source": "Cureus 2025",
+      "pmcid": "PMC11972107",
+      "vignette": "39F 溶連菌咽頭炎反復歴。3日間の発熱+咽頭痛+左手首痛+胸痛。Jones基準: 心炎+単関節炎+発熱+ESR/CRP上昇",
+      "final_diagnosis": "急性リウマチ熱",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S02": "present",
+        "S08": "present",
+        "S21": "pleuritic",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "OOS fallback→成人Still病 56% H=2.9",
+      "notes": "急性リウマチ熱はリスト外。H=4.1で不確定信号は正しい"
+    },
+    {
+      "id": "R30",
+      "source": "Cureus 2024",
+      "doi": "10.7759/cureus.70287",
+      "vignette": "48F 1ヶ月前に喀痰陽性肺結核診断、抗結核薬治療中。高熱+関節痛+血球数異常が持続。精査でStill病の併存と判明",
+      "final_diagnosis": "成人Still病+肺結核",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S08": "present",
+        "L22": "present",
+        "T01": "over_3w",
+        "S01": "productive"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "Top-3 rank3 (全身性エリテマトーデス 62%) H=2.5",
+      "notes": "TB治療中にStill発症。TB所見(咳嗽)とStill所見(高熱・関節痛)が混在。Still+TBの重複は稀"
+    },
+    {
+      "id": "R31",
+      "source": "BMJ Case Reports 2014",
+      "pmcid": "PMC4216889",
+      "vignette": "79F 4日間の発熱(37-39℃)+頭痛+食欲不振。2週前に山で山菜採取。顔面・四肢・体幹に紫色皮疹。左下肢にeschar。PLT7万、AST144、ALT444。ツツガムシ抗体陽性",
+      "final_diagnosis": "ツツガムシ病",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S05": "mild",
+        "S46": "present",
+        "E12": "maculopapular_rash",
+        "L14": "thrombocytopenia",
+        "L11": "very_high",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "OOS fallback→リケッチア症（ツツガムシ病・日本紅斑熱） 45% H=3.1",
+      "notes": "ツツガムシ病はリスト外。eschar(刺し口)がkey findingだが変数なし"
+    },
+    {
+      "id": "R32",
+      "source": "Journal of General and Family Medicine 2017",
+      "pmcid": "PMC5689425",
+      "vignette": "23F 5日間の発熱37.7℃+咽頭痛+アフタ性口内炎+両側頸部リンパ節腫脹。咽頭発赤、口蓋扁桃腫大。AST112、ALT92。周期的に反復。IgD 29.1上昇",
+      "final_diagnosis": "成人発症PFAPA症候群",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S02": "present",
+        "E13": "cervical",
+        "L11": "mild_elevated",
+        "T03": "periodic",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "OOS fallback→伝染性単核球症 59% H=2.4",
+      "notes": "PFAPAはリスト外。周期熱→FMFは臨床的に妥当なfallback"
+    },
+    {
+      "id": "R33",
+      "source": "World Journal of Clinical Cases 2019",
+      "pmcid": "PMC6940340",
+      "vignette": "65M 高熱+市中肺炎。醤油色尿（横紋筋融解）+急性腎障害。CK 10,486U/L。マイコプラズマ抗体陽性。25日間入院、治癒",
+      "final_diagnosis": "市中肺炎+横紋筋融解症",
+      "expected_id": "D05",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S01": "productive",
+        "L04": "bilateral_infiltrate",
+        "L17": "very_high",
+        "L02": "high_over_10",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "Miss rank6 (肺膿瘍 22%) H=3.6",
+      "notes": "CAP+横紋筋融解。CK著増は合併症だがBNでは肺炎所見(高熱+咳嗽+CXR浸潤影)で捕捉可能"
+    },
+    {
+      "id": "R34",
+      "source": "American Journal of Case Reports 2018",
+      "pmcid": "PMC6095065",
+      "vignette": "63F 1週間の労作時呼吸困難+起座呼吸+黄色痰。SpO2 71%（室内気）。両側粗い呼吸音。CXR:びまん性両側浸潤影。CT:びまん性GGO+縦隔リンパ節腫脹。HIV抗体新規陽性、CD4=47。気管支鏡GMS染色でPCP確定",
+      "final_diagnosis": "ニューモシスチス肺炎+新規HIV/AIDS診断",
+      "expected_id": "D50",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S04": "at_rest",
+        "S01": "productive",
+        "E05": "severe_hypoxia_under_93",
+        "L04": "bilateral_infiltrate",
+        "L35": "GGO",
+        "L01": "high_10000_20000"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R25": "yes"
+      },
+      "result": "Top-1 63% H=1.6",
+      "notes": "高齢女性の新規HIV→PCP。SpO2 71%+GGO+免疫不全でPCPに到達。HIV見逃しの典型例"
+    },
+    {
+      "id": "R35",
+      "source": "Frontiers in Surgery 2023",
+      "pmcid": "PMC9874219",
+      "vignette": "56M 頸椎術後。セフロキシム投与中、術後8日目から間欠熱38℃+胸部蕁麻疹様皮疹+相対的徐脈。WBC14.31、CRP99.8、PCT正常。血培3回陰性。胸部CT正常。抗菌薬中止48時間で解熱",
+      "final_diagnosis": "β-ラクタム系薬剤熱",
+      "expected_id": "D19",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T03": "intermittent",
+        "E12": "maculopapular_rash",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L09": "negative",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes",
+        "R07": "yes",
+        "R21": "yes"
+      },
+      "result": "Miss rank4 (DRESS症候群（薬剤性過敏症症候群） 28%) H=4.0",
+      "notes": "薬剤熱の典型: 間欠熱+皮疹+相対的徐脈+PCT正常+血培陰性。薬剤中止で解熱が確定的"
+    },
+    {
+      "id": "R36",
+      "source": "Journal of the Belgian Society of Radiology 2024",
+      "pmcid": "PMC11194543",
+      "vignette": "48F サブサハラアフリカ出身、欧州在住2年。数ヶ月の発熱+増悪する倦怠感+腹痛+体重減少+盗汗+間欠的下血。呼吸器症状なし。著明な貧血、低Na。CT:脾腫15cm、肝脾びまん性結節、腹腔内リンパ節腫脹、肺底部微小結節。BAL PCR結核菌陽性",
+      "final_diagnosis": "粟粒結核（肺・肝・脾・リンパ節）",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "S12": "diffuse",
+        "S17": "present",
+        "S16": "present",
+        "L22": "present",
+        "L44": "hyponatremia",
+        "L02": "high_over_10",
+        "E14": "present",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R06": "tropical_endemic"
+      },
+      "result": "Top-3 rank3 (悪性リンパ腫 66%) H=1.3",
+      "notes": "自信的误诊。B症状(盗汗+体重減少+倦怠感)+脾腫+リンパ節腫脹がリンパ腫と完全に重なる"
+    },
+    {
+      "id": "R37",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9581525",
+      "vignette": "49M DM/HTN/透析中ESRD/HF(EF30-35%)。6ヶ月の下痢+乾性咳嗽+主観的発熱。両側粗い断続性ラ音。Hb8.8、WBC2.84、PLT7.2万(汎血球減少)。CRP98.3。Na124。CXR:びまん性GGO。CT:両側GGO+consolidation+胸水+腹水。骨髄:多核巨細胞を伴う肉芽腫。培養:M.tuberculosis+M.avium。死亡",
+      "final_diagnosis": "粟粒結核（死後確定診断）",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S14": "watery",
+        "S01": "dry",
+        "L22": "present",
+        "L14": "thrombocytopenia",
+        "L02": "high_over_10",
+        "L35": "GGO",
+        "L04": "bilateral_infiltrate",
+        "E28": "present",
+        "L44": "hyponatremia",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      },
+      "result": "Top-1 56% H=1.6",
+      "notes": "診断が困難で死後に確定。QuantiFERON2回陰性（免疫不全で偽陰性）。汎血球減少+GGO+骨髄肉芽腫が鍵"
+    },
+    {
+      "id": "R38",
+      "source": "Proceedings (Baylor University Medical Center) 2022",
+      "pmcid": "PMC9980671",
+      "vignette": "48M 3ヶ月の腹部膨満増大+体重減少+微熱+盗汗。腹部に波動(腹水)。ESR34、CRP34.46。SAAG0.2(滲出性)、腹水リンパ球91.8%、ADA108.5(著増)。QuantiFERON陽性。AFB培養陰性。CT:腹膜びまん性肥厚+omental cake。腫瘍マーカー正常",
+      "final_diagnosis": "腹膜結核",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E28": "present",
+        "S17": "present",
+        "S16": "present",
+        "L28": "elevated",
+        "L02": "high_over_10",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "Miss rank4 (悪性リンパ腫 32%) H=2.9",
+      "notes": "腹膜結核はD17(肺外結核)でカバー。微熱+腹水+体重減少は非特異的で多疾患と競合"
+    },
+    {
+      "id": "R39",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10404127",
+      "vignette": "70M 2ヶ月の持続性高熱+体重減少+盗汗+喀血→3-4日前から意識障害。GCS E2V3M4。WBC13,000、CRP42。髄液:開放圧375、リンパ球優位910/mm3、蛋白275、乳酸7.2。GeneXpert陽性。MRI:両側前頭頂葉に多発結節+髄膜増強",
+      "final_diagnosis": "結核性髄膜炎+頭蓋内微小出血",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S17": "present",
+        "S16": "present",
+        "E16": "obtunded",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L45": "viral_pattern",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "Top-3 rank2 (感染性心内膜炎 98%) H=0.2",
+      "notes": "原案ではR06=tropical_endemicが入りマラリア優先。本症例はtropical記載なし。再テストで結果改善の可能性"
+    },
+    {
+      "id": "R40",
+      "source": "Journal of Brown Hospital Medicine 2025",
+      "pmcid": "PMC12224322",
+      "vignette": "51F RA/シェーグレン。MTX+HCQ+PSL5mg+ゴリムマブ(TNF阻害薬)3年。フィリピン3週間渡航後、2週間の反復性発熱(最高39.4℃)+腹部膨満進行。腹水、左腋窩LN腫大、左胸水。慢性リンパ球減少(0.57)。腹水ADA55、CA-125=497。腹腔鏡:大網に粟粒白色結節。LN生検:壊死性肉芽腫+AFB陽性。培養:M.tuberculosis(PZA耐性)",
+      "final_diagnosis": "腹膜結核（TNF阻害薬使用中）",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E28": "present",
+        "L04": "pleural_effusion",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R05": "yes",
+        "R06": "tropical_endemic"
+      },
+      "result": "Top-3 rank2 (特発性細菌性腹膜炎(SBP) 16%) H=4.9",
+      "notes": "TNF阻害薬使用中の結核再活性化。CA-125高値→卵巣癌mimickerだがBN変数なし"
+    },
+    {
+      "id": "R41",
+      "source": "Caspian Journal of Internal Medicine 2016",
+      "pmcid": "PMC4761126",
+      "vignette": "32F 3ヶ月の下腹部痛+不正性器出血+発熱38℃+悪寒+腹水+骨盤内腫瘤。US:左卵巣53x65mm嚢胞。CT:卵巣悪性腫瘤疑い。CA-125=268.9上昇。開腹:卵管腫大+両側卵巣癒着+多数の粟粒性腹膜沈着物。病理:子宮・卵管・大網・肝・腸管表面の結核",
+      "final_diagnosis": "粟粒性腹膜結核（卵巣癌mimicker）",
+      "expected_id": "D17",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S12": "suprapubic",
+        "E28": "present",
+        "L22": "present",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "Miss rank9 (肝細胞癌 16%) H=4.6",
+      "notes": "卵巣癌を疑って開腹→腹膜結核。CA-125高値は腹膜炎全般で上昇しうる"
+    },
+    {
+      "id": "R42",
+      "source": "Pathogens 2022",
+      "pmcid": "PMC9861199",
+      "vignette": "87M ハト飼育者。1週間の進行性呼吸困難+発熱+倦怠感。CRP47、WBC13.7、急性腎障害。CT:両側斑状浸潤影+肺気腫。C.psittaci PCR陽性、血清IgG 1/400",
+      "final_diagnosis": "オウム病(Chlamydia psittaci肺炎)",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S04": "at_rest",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "bilateral_infiltrate",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "OOS fallback→感染性心内膜炎 44% H=2.1",
+      "notes": "オウム病はリスト外。肺炎型なのでfallbackとして妥当。鳥接触歴が鑑別の鍵だがR30にbird選択肢なし"
+    },
+    {
+      "id": "R43",
+      "source": "American Journal of Case Reports 2015",
+      "pmcid": "PMC4573068",
+      "vignette": "76M ガイアナ出身。膜性腎症でシクロホスファミド100mgBID+PSL30mg使用中。免疫抑制開始6週後に下痢+びまん性腹痛+テネスムス。Hb9.1、WBC4.6(好酸球11%)。便検査:糞線虫幼虫陽性。CT胸部:両側胸水+微小結節+GGO。高炭酸ガス性呼吸不全→挿管。重症敗血症合併→死亡",
+      "final_diagnosis": "糞線虫過感染症候群+敗血症",
+      "expected_id": "OOS",
+      "in_scope": false,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S14": "watery",
+        "S12": "diffuse",
+        "S04": "at_rest",
+        "L22": "present",
+        "L04": "bilateral_infiltrate",
+        "L35": "GGO",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R05": "yes"
+      },
+      "result": "OOS fallback→ニューモシスチス肺炎 54% H=2.4",
+      "notes": "糞線虫はリスト外。H=3.7で不確定信号は正しい。免疫抑制下の消化器症状→IBDfallbackは部分的に妥当"
+    },
+    {
+      "id": "R44",
+      "source": "Annals of Medicine and Surgery 2025",
+      "pmcid": "PMC11918769",
+      "vignette": "36M 免疫正常、レストラン勤務。3週間の周期性発熱39.6℃+倦怠感+大量盗汗+食欲低下+乾性咳嗽+咽頭炎。両側手首・手の関節腫脹・圧痛。左頸部リンパ節腫脹。ドミニカ共和国で未殺菌乳製品摂取+生肉取扱い。WBC1.4(好中球減少)、ESR62、CRP3.5、AST131、ALT132。血培陰性。Brucella IgG陽性確認",
+      "final_diagnosis": "ブルセラ症（発熱性好中球減少）",
+      "expected_id": "D53",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S16": "present",
+        "S08": "present",
+        "S46": "present",
+        "S01": "dry",
+        "S02": "present",
+        "E13": "cervical",
+        "L01": "low_under_4000",
+        "L11": "very_high",
+        "L28": "elevated",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R30": "livestock"
+      },
+      "result": "FATAL rank4 (悪性リンパ腫 92%) H=0.5",
+      "notes": "ブルセラの典型: 周期性発熱+関節痛+発汗+動物接触。好中球減少はブルセラの特徴的所見"
+    },
+    {
+      "id": "R45",
+      "source": "The Permanente Journal 2023",
+      "pmcid": "PMC10502379",
+      "vignette": "21M 酪農家。1ヶ月の発熱(最高38.8℃、1日2-3回spike)+両側前頭側頭部頭痛+蒼白。著明な肝脾腫(脾は臍まで)。未殺菌ヤギ/牛乳摂取。CXR:粟粒影+肺門リンパ節腫脹(播種性TB mimicker)。WBC3.49、Hb7.6(重度貧血)、CRP54、LDH1880、フェリチン1248、AST397、ALT203。Brucella IgM陽性、凝集反応1:320",
+      "final_diagnosis": "急性ブルセラ症（播種性結核mimicker）",
+      "expected_id": "D53",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S05": "severe",
+        "E14": "present",
+        "E34": "present",
+        "L22": "present",
+        "L16": "elevated",
+        "L15": "very_high_over_1000",
+        "L11": "very_high",
+        "L01": "low_under_4000",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R30": "livestock"
+      },
+      "result": "Top-3 rank3 (急性白血病 61%) H=1.0",
+      "notes": "ブルセラが播種性TBに酷似。CXR粟粒影+肺門LAD+脾腫+汎血球減少=TBとの鑑別困難。動物接触が鍵"
+    },
+    {
+      "id": "R46",
+      "source": "Brown Hospital Medicine 2024",
+      "doi": "10.56305/001c.122941",
+      "vignette": "56M DM2/HTN/拡張型心筋症/AFib。吐血で入院。パントプラゾール開始5日目から間欠的発熱(最高39.4℃)、17日間持続。広範な感染症workup全て陰性（血培、C.diff、呼吸器パネル、β-Dグルカン、尿培養）。WBC初期26.6→正常化。CRP84.4。皮疹なし、好酸球増多なし。パントプラゾール中止48時間で解熱",
+      "final_diagnosis": "パントプラゾール誘発性薬剤熱",
+      "expected_id": "D19",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T03": "intermittent",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L09": "negative",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes",
+        "R07": "yes"
+      },
+      "result": "FATAL rank41 (成人Still病 84%) H=1.4",
+      "notes": "薬剤熱の難しいケース: 皮疹なし+好酸球増多なし。17日間のFUO。薬剤中止後の解熱が唯一の手がかり"
+    },
+    {
+      "id": "R47",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10501461",
+      "vignette": "46M 既往なし。2-3週間の高熱39.3℃+倦怠感+乾性咳嗽+軽度咽頭痛。HR121。前頸部軽度圧痛。レボフロキサシン無効。WBC11.4、CRP89.3、ESR62→129。ALT122、AST82。TSH<0.01、FT4上昇、FT3 8.3。甲状腺US:両側不均一結節。RAIU著減(4h:0.8%、24h:0.2%)",
+      "final_diagnosis": "亜急性甲状腺炎（FUO型）",
+      "expected_id": "D87",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "S01": "dry",
+        "E02": "over_120",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "L11": "mild_elevated",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "FATAL rank5 (成人Still病 75%) H=1.8",
+      "notes": "亜急性甲状腺炎がFUOとして発症。前頸部圧痛が鍵だがBN変数なし。頻脈がヒント"
+    },
+    {
+      "id": "R48",
+      "source": "Case Reports in Endocrinology 2018",
+      "pmcid": "PMC6222214",
+      "vignette": "80M 3週間の間欠的発熱38.6℃+後頭部頭痛+反復転倒/めまい+夜間悪寒+狭心症増悪。頸部痛・圧痛なし(painless variant)。WBC10.1、ESR86、CRP192。TSH0.01、FT4 2.55上昇。甲状腺US:腫大・不均一",
+      "final_diagnosis": "無痛性亜急性甲状腺炎（高齢FUO唯一の原因）",
+      "expected_id": "D87",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T03": "intermittent",
+        "S05": "severe",
+        "L28": "elevated",
+        "L02": "high_over_10",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "Miss rank19 (家族性地中海熱 23%) H=3.3",
+      "notes": "無痛性variant: 頸部所見なし。高齢男性のFUOで甲状腺炎は見逃されやすい。TSH/FT4がBN変数にないため困難"
+    },
+    {
+      "id": "R49",
+      "source": "Internal Medicine (Japan) 2024",
+      "pmcid": "PMC10937121",
+      "vignette": "70M 6ヶ月の高熱+関節痛(右肘→多関節へ拡大)。進行性倦怠感、食欲低下、2ヶ月で5kg体重減少、寝たきりに。両側腋窩LN触知。多関節腫脹・圧痛。右肺底部crackles。下肢浮腫。WBC2770(白血球減少)、Hb7.0(重度貧血)、CRP4.89、ACE35.4上昇、sIL-2R3839。ANA/RF/抗CCP陰性。LN生検:非乾酪性肉芽腫+巨細胞",
+      "final_diagnosis": "サルコイドーシス+進行性関節症",
+      "expected_id": "D62",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S08": "present",
+        "E13": "generalized",
+        "S17": "present",
+        "S07": "severe",
+        "S46": "present",
+        "L22": "present",
+        "L01": "low_under_4000",
+        "L24": "elevated",
+        "L18": "negative",
+        "E07": "crackles",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "FATAL rank5 (悪性リンパ腫 54%) H=1.1",
+      "notes": "D62改善後テスト: ACE上昇+全身LN+非乾酪性肉芽腫がサルコイドの鍵。L04/L35未記載だが肺底部cracklesあり"
+    },
+    {
+      "id": "R50",
+      "source": "Journal of the Korean Society of Radiology 2024",
+      "pmcid": "PMC11473985",
+      "vignette": "62M 30pack-year喫煙。1ヶ月の咳嗽+喀痰+胸痛+持続性微熱38℃+6kg体重減少。WBC9640(正常)、CRP85.04。CT:両肺びまん性粟粒状微小結節+気管支血管束肥厚+両側胸水+縦隔/肺門リンパ節腫脹。PET:高集積。生検:壊死性肉芽腫+血管炎",
+      "final_diagnosis": "壊死性サルコイド肉芽腫症",
+      "expected_id": "D62",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "S21": "pleuritic",
+        "S17": "present",
+        "T01": "over_3w",
+        "L04": "BHL",
+        "L02": "high_over_10",
+        "E13": "generalized"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R03": "current"
+      },
+      "result": "Top-3 rank2 (悪性リンパ腫 50%) H=1.9",
+      "notes": "D62改善後テスト: 縦隔/肺門LAD→L04=BHL。粟粒TB/リンパ腫との鑑別が重要。壊死性variantは稀"
+    },
+    {
+      "id": "R51",
+      "source": "Frontiers in Immunology 2024",
+      "pmcid": "PMC11757135",
+      "vignette": "32M 1週間の原因不明高熱(最高40℃)+悪寒+倦怠感+食欲不振。頸部・腋窩・鼠径部に多発リンパ節腫脹(最大右頸部、硬、有痛)。肝脾腫。BP96/63、HR102。WBC1.46(重度白血球減少)、CRP50.8。ANA陰性。骨髄:低形成+異型リンパ球。LN生検:傍皮質過形成+三日月型組織球+核破片+斑状壊死",
+      "final_diagnosis": "菊池病(壊死性リンパ節炎)",
+      "expected_id": "D96",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "S46": "present",
+        "S07": "severe",
+        "T01": "3d_to_1w",
+        "E13": "generalized",
+        "E14": "present",
+        "E34": "present",
+        "L01": "low_under_4000",
+        "L02": "high_over_10",
+        "L18": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "Miss rank14 (キャッスルマン病 42%) H=2.2",
+      "notes": "菊池病の典型: 若年+高熱+全身LN腫脹+白血球減少+ANA陰性。SLEとの鑑別が重要"
+    },
+    {
+      "id": "R52",
+      "source": "Annals of Medicine and Surgery 2025",
+      "pmcid": "PMC11918722",
+      "vignette": "42M パキスタン出身、DM(HbA1c8.5%)。1.5年のFUO: 高熱39℃(1日2-3回)が7-10日持続→2-3ヶ月無熱を繰返す。15-20kg体重減少、食欲不振、間欠的便秘、軽度咳嗽。後頭部に単発硬い非圧痛リンパ節1x1cm。Hb11.6、WBC3.6(白血球減少)、CRP正常、ESR62。LN生検:傍皮質淡明域+好酸性顆粒状物質+核崩壊残渣+組織球",
+      "final_diagnosis": "菊池病(1.5年FUO)",
+      "expected_id": "D96",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T03": "periodic",
+        "T01": "over_3w",
+        "S17": "present",
+        "S46": "present",
+        "E13": "cervical",
+        "L01": "low_under_4000",
+        "L28": "elevated",
+        "S07": "severe",
+        "S01": "dry"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      },
+      "result": "Top-3 rank2 (悪性リンパ腫 100%) H=0.0",
+      "notes": "1.5年のperiodic FUOは非常に長い。CRP正常+ESR上昇+白血球減少+周期性は菊池病に矛盾しない"
+    },
+    {
+      "id": "R53",
+      "source": "World Journal of Gastrointestinal Surgery 2024",
+      "pmcid": "PMC11577412",
+      "vignette": "55M 新規糖尿病診断。3日間の発熱(37.5-40.5℃)+悪寒+頭痛+腹部膨満+腹痛。HR113、BP107/74。結膜充血。心窩部/右上腹部圧痛。WBC3.76(白血球減少)、PLT8万、CRP145.76、PCT15.8。ALT57.2、AST48.4、TBil45.6、GGT247。D-dimer3.67。血培:Klebsiella pneumoniae。CT:右葉肝膿瘍+肝静脈血栓性静脈炎+両側肺炎+胸水",
+      "final_diagnosis": "侵襲性肝膿瘍症候群(Klebsiella)+白血球減少",
+      "expected_id": "D29",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "S05": "severe",
+        "S12": "RUQ",
+        "E02": "100_120",
+        "L14": "thrombocytopenia",
+        "L01": "low_under_4000",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "L20": "elevated",
+        "L09": "gram_negative",
+        "E25": "present"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      },
+      "result": "Top-3 rank2 (急性胆管炎 29%) H=2.3",
+      "notes": "Klebsiella肝膿瘍の典型: 高熱+悪寒+RUQ痛+グラム陰性菌血症。白血球減少は重症の徴候"
+    },
+    {
+      "id": "R54",
+      "source": "Journal of Clinical Medicine 2025",
+      "pmcid": "PMC12028053",
+      "vignette": "14F(発症時) 発熱(最高40℃)+倦怠感+2ヶ月で7kg体重減少。当初1-2週ごとの発熱が6ヶ月後に毎日spikeに。咳嗽/関節痛/皮疹/盗汗なし。小球性貧血、ESR90、CRP5.17、SAA507、PCT2.6、IL-6=45.5上昇、多クローン性高ガンマグロブリン血症+低アルブミン。MRI/US:傍大動脈LN80x35x23mm",
+      "final_diagnosis": "特発性多中心性キャッスルマン病(iMCD)",
+      "expected_id": "D97",
+      "in_scope": false,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T03": "periodic",
+        "T01": "over_3w",
+        "S17": "present",
+        "S07": "severe",
+        "L22": "present",
+        "L28": "very_high_over_100",
+        "E13": "generalized"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "OOS fallback→悪性リンパ腫 100% H=0.0",
+      "notes": "14歳で成人ネットワーク範囲外。臨床パターン(周期熱+LN腫脹+貧血+高IL-6)はiMCDの参考になる"
+    },
+    {
+      "id": "R55",
+      "source": "Clinical Medicine Insights: Case Reports 2021",
+      "pmcid": "PMC8558582",
+      "vignette": "64M ベトナム人、エビ漁師、喫煙者、既往なし。2020年4月から毎日発熱+発汗+数週間で4kg体重減少。身体所見に特記なし。IgG4 322mg/dL(基準4-86の約5倍)、ESR上昇、軽度トランスアミナーゼ上昇。ウイルス性肝炎/HIV/TB/マラリア陰性。US:肝臓多発低エコー病変。CT:右葉6cm多嚢胞性腫瘤。生検:線維炎症性病変+IgG4陽性形質細胞増多+storiform pattern+閉塞性静脈炎",
+      "final_diagnosis": "IgG4関連疾患(肝炎症性偽腫瘍)",
+      "expected_id": "D94",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S16": "present",
+        "S17": "present",
+        "T01": "over_3w",
+        "L11": "mild_elevated",
+        "L28": "elevated"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "FATAL rank26 (悪性リンパ腫 86%) H=1.0",
+      "notes": "IgG4関連疾患がFUOとして発症。非特異的所見(発熱+体重減少+肝腫瘤)で鑑別困難。IgG4血清値がBN変数にないため不利"
+    },
+    {
+      "id": "R56",
+      "source": "IDCases 2018",
+      "pmcid": "PMC5815747",
+      "vignette": "54F 農場労働者(野良猫との接触歴)。1ヶ月の間欠的発熱(>39℃)+悪寒+体重減少+倦怠感。新規拡張期心雑音+脾腫。汎血球減少、CRP4mg/dL、血培3セット陰性、トランスアミナーゼ軽度上昇。経食道エコー:二尖大動脈弁に5mm疣贅+バルサルバ洞瘤。Bartonella henselae血清陽性+弁組織PCR陽性",
+      "final_diagnosis": "Bartonella henselae感染性心内膜炎(血培陰性IE)",
+      "expected_id": "D14",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T01": "over_3w",
+        "T03": "intermittent",
+        "S09": "present",
+        "S17": "present",
+        "S07": "severe",
+        "E15": "present",
+        "E14": "present",
+        "L22": "present",
+        "L02": "moderate_3_10",
+        "L09": "negative",
+        "L11": "mild_elevated"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R30": "pet_cat"
+      },
+      "result": "Top-1 86% H=0.7",
+      "notes": "血培陰性IE。L09=negativeが不利だがE15(新規心雑音)+E14(脾腫)がIEの2大所見。R30=pet_catもBartonellaのリスク因子"
+    },
+    {
+      "id": "R57",
+      "source": "American Journal of Case Reports 2020",
+      "pmcid": "PMC7760320",
+      "vignette": "55F ガーナ帰国18日後。7日間の周期的発熱(48時間ごとに40℃)。悪寒戦慄+倦怠感+食欲不振+湿性咳嗽+水様性下痢+腹痛。入院時38.6℃、HR121、BP100/51、RR45、SpO2 93%。意識混濁(GCS14)。WBC19,800、PLT51K、LDH2714、AST1328/ALT542、Bil14.5、Cr7.52。マラリア塗抹:P.falciparum寄生率25%",
+      "final_diagnosis": "重症熱帯熱マラリア(脳マラリア+多臓器不全)",
+      "expected_id": "D15",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "T01": "3d_to_1w",
+        "T02": "sudden_hours",
+        "T03": "intermittent",
+        "S09": "present",
+        "S07": "severe",
+        "S46": "present",
+        "S01": "productive",
+        "S14": "watery",
+        "S12": "LLQ",
+        "E16": "confused",
+        "E02": "over_120",
+        "L01": "high_10000_20000",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "L11": "very_high",
+        "L10": "positive",
+        "L44": "hyponatremia"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R06": "tropical_endemic"
+      },
+      "result": "FATAL rank10 (レジオネラ肺炎 93%) H=0.4",
+      "notes": "重症マラリア。L10=positiveが決定的だが、多臓器不全(肝腎)+意識障害で敗血症との鑑別が論点。マラリア予防内服なしでガーナ渡航"
+    },
+    {
+      "id": "R58",
+      "source": "Case Reports in Immunology 2018",
+      "pmcid": "PMC6243398",
+      "vignette": "26F 既往なし(双極性障害でラモトリギン開始1週後)。2日間の発熱(38.6℃)+顔面・胸部のびまん性紅斑性斑丘疹。脱毛・関節炎・口腔潰瘍の間欠的既往あり。WBC1.7K、Hb10.3、PLT138K、LDH1767、フェリチン16,911ng/mL、ESR56、CRP23.5mg/L。ANA 1250(均質型)、抗dsDNA 344 IU/mL、C3=35/C4=9(低補体)。CT:頸部/腋窩/鎖骨上リンパ節腫脹。骨髄:血球貪食像",
+      "final_diagnosis": "SLE初発+マクロファージ活性化症候群(MAS)",
+      "expected_id": "D59",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T01": "under_3d",
+        "E12": "maculopapular_rash",
+        "S08": "present",
+        "L01": "low_under_4000",
+        "L22": "present",
+        "L28": "elevated",
+        "L02": "mild_0.3_3",
+        "L16": "elevated",
+        "L18": "positive",
+        "L15": "extreme_over_10000",
+        "E13": "generalized",
+        "L09": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "FATAL rank4 (成人Still病 73%) H=1.5",
+      "notes": "SLE初発がMASで発症。フェリチン16,911はStill/HLHと競合するが、L18=positive(ANA)+低補体がSLEの鑑別点。E20(蝶形紅斑)は記載なく不利"
+    }
+  ]
+}

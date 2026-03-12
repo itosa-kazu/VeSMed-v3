@@ -1,0 +1,716 @@
+{
+  "D08": {
+    "name": "下部尿路感染症（膀胱炎）",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 7,
+    "n_edges": 6
+  },
+  "D01": {
+    "name": "ウイルス性上気道炎（かぜ症候群）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 14,
+    "n_edges": 11
+  },
+  "D02": {
+    "name": "インフルエンザ",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 4,
+    "n_edges": 12
+  },
+  "D03": {
+    "name": "新型コロナウイルス感染症",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 10,
+    "n_edges": 15
+  },
+  "D04": {
+    "name": "急性咽頭扁桃炎",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 2,
+    "n_edges": 6
+  },
+  "D05": {
+    "name": "市中肺炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 7,
+    "n_edges": 14
+  },
+  "D06": {
+    "name": "急性気管支炎",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 4
+  },
+  "D07": {
+    "name": "急性胃腸炎",
+    "speed": "acute",
+    "median_typical_day": 0.25,
+    "max_latest_day": 1,
+    "n_edges": 7
+  },
+  "D09": {
+    "name": "急性腎盂腎炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 13
+  },
+  "D14": {
+    "name": "感染性心内膜炎",
+    "speed": "chronic",
+    "median_typical_day": 28,
+    "max_latest_day": 56,
+    "n_edges": 23
+  },
+  "D15": {
+    "name": "マラリア",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 14,
+    "n_edges": 14
+  },
+  "D17": {
+    "name": "肺結核",
+    "speed": "chronic",
+    "median_typical_day": 21,
+    "max_latest_day": 90,
+    "n_edges": 10
+  },
+  "D19": {
+    "name": "薬剤熱",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 21,
+    "n_edges": 6
+  },
+  "D28": {
+    "name": "腸チフス・パラチフス",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 21,
+    "n_edges": 11
+  },
+  "D13": {
+    "name": "髄膜炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 2,
+    "n_edges": 16
+  },
+  "D24": {
+    "name": "トキシックショック症候群（TSS/劇症型GAS含む）",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 12
+  },
+  "D18": {
+    "name": "伝染性単核球症",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 21,
+    "n_edges": 11
+  },
+  "D20": {
+    "name": "急性副鼻腔炎",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 14,
+    "n_edges": 4
+  },
+  "D16": {
+    "name": "デング熱",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 7,
+    "n_edges": 9
+  },
+  "D23": {
+    "name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 7,
+    "n_edges": 7
+  },
+  "D25": {
+    "name": "急性胆管炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 3,
+    "n_edges": 14
+  },
+  "D22": {
+    "name": "急性前立腺炎",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 6
+  },
+  "D10": {
+    "name": "急性虫垂炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 1,
+    "n_edges": 7
+  },
+  "D11": {
+    "name": "急性胆嚢炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 2,
+    "n_edges": 9
+  },
+  "D26": {
+    "name": "骨盤内炎症性疾患（PID）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 5
+  },
+  "D27": {
+    "name": "憩室炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 2,
+    "n_edges": 5
+  },
+  "D12": {
+    "name": "蜂窩織炎",
+    "speed": "acute",
+    "median_typical_day": 0.5,
+    "max_latest_day": 3,
+    "n_edges": 5
+  },
+  "D21": {
+    "name": "帯状疱疹",
+    "speed": "acute",
+    "median_typical_day": 2,
+    "max_latest_day": 7,
+    "n_edges": 7
+  },
+  "D29": {
+    "name": "肝膿瘍（細菌性/アメーバ性）",
+    "speed": "acute",
+    "median_typical_day": 2,
+    "max_latest_day": 14,
+    "n_edges": 10
+  },
+  "D30": {
+    "name": "腸腰筋膿瘍",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 7,
+    "n_edges": 9
+  },
+  "D31": {
+    "name": "化膿性脊椎炎/椎間板炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D32": {
+    "name": "化膿性関節炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 8
+  },
+  "D33": {
+    "name": "扁桃周囲膿瘍",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 9
+  },
+  "D34": {
+    "name": "深頸部感染症",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 5,
+    "n_edges": 8
+  },
+  "D35": {
+    "name": "肺膿瘍",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 28,
+    "n_edges": 8
+  },
+  "D36": {
+    "name": "膿胸",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D37": {
+    "name": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 5,
+    "n_edges": 8
+  },
+  "D38": {
+    "name": "Clostridioides difficile感染症",
+    "speed": "acute",
+    "median_typical_day": 2,
+    "max_latest_day": 7,
+    "n_edges": 6
+  },
+  "D39": {
+    "name": "肛門周囲膿瘍",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 4
+  },
+  "D40": {
+    "name": "カテーテル関連血流感染症",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 5
+  },
+  "D41": {
+    "name": "手術部位感染(SSI)",
+    "speed": "subacute",
+    "median_typical_day": 5,
+    "max_latest_day": 14,
+    "n_edges": 4
+  },
+  "D42": {
+    "name": "複雑性尿路感染症",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 7
+  },
+  "D43": {
+    "name": "精巣上体炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 5
+  },
+  "D44": {
+    "name": "急性HIV感染症",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 28,
+    "n_edges": 9
+  },
+  "D45": {
+    "name": "サイトメガロウイルス感染症",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D46": {
+    "name": "麻疹",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 5,
+    "n_edges": 6
+  },
+  "D47": {
+    "name": "流行性耳下腺炎（ムンプス）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 4
+  },
+  "D48": {
+    "name": "風疹",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 4
+  },
+  "D49": {
+    "name": "カンジダ血症/侵襲性カンジダ症",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 7,
+    "n_edges": 5
+  },
+  "D50": {
+    "name": "ニューモシスチス肺炎",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 21,
+    "n_edges": 7
+  },
+  "D51": {
+    "name": "アメーバ赤痢",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 7,
+    "n_edges": 5
+  },
+  "D52": {
+    "name": "レプトスピラ症",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 7,
+    "n_edges": 8
+  },
+  "D53": {
+    "name": "ブルセラ症",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 90,
+    "n_edges": 14
+  },
+  "D54": {
+    "name": "猫ひっかき病",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 21,
+    "n_edges": 5
+  },
+  "D55": {
+    "name": "Q熱",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 10,
+    "n_edges": 6
+  },
+  "D56": {
+    "name": "百日咳",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 21,
+    "n_edges": 5
+  },
+  "D57": {
+    "name": "壊死性筋膜炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 8
+  },
+  "D58": {
+    "name": "成人Still病",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 21,
+    "n_edges": 12
+  },
+  "D59": {
+    "name": "全身性エリテマトーデス",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 90,
+    "n_edges": 12
+  },
+  "D60": {
+    "name": "ANCA関連血管炎",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 60,
+    "n_edges": 9
+  },
+  "D61": {
+    "name": "リウマチ性多発筋痛症/巨細胞動脈炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 30,
+    "n_edges": 7
+  },
+  "D62": {
+    "name": "サルコイドーシス",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 180,
+    "n_edges": 13
+  },
+  "D63": {
+    "name": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 90,
+    "n_edges": 9
+  },
+  "D64": {
+    "name": "反応性関節炎",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 28,
+    "n_edges": 6
+  },
+  "D65": {
+    "name": "痛風/偽痛風発作",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 2,
+    "n_edges": 7
+  },
+  "D66": {
+    "name": "家族性地中海熱",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 7
+  },
+  "D67": {
+    "name": "悪性リンパ腫",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 90,
+    "n_edges": 16
+  },
+  "D68": {
+    "name": "急性白血病",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 30,
+    "n_edges": 9
+  },
+  "D69": {
+    "name": "腎細胞癌",
+    "speed": "chronic",
+    "median_typical_day": 30,
+    "max_latest_day": 180,
+    "n_edges": 5
+  },
+  "D70": {
+    "name": "肝細胞癌",
+    "speed": "chronic",
+    "median_typical_day": 30,
+    "max_latest_day": 180,
+    "n_edges": 7
+  },
+  "D71": {
+    "name": "甲状腺クリーゼ",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 9
+  },
+  "D72": {
+    "name": "副腎クリーゼ",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 6
+  },
+  "D73": {
+    "name": "褐色細胞腫",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 0,
+    "n_edges": 6
+  },
+  "D74": {
+    "name": "悪性症候群",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 7
+  },
+  "D75": {
+    "name": "セロトニン症候群",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 7
+  },
+  "D76": {
+    "name": "輸血関連発熱反応",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 5
+  },
+  "D77": {
+    "name": "深部静脈血栓症/肺塞栓症",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 7,
+    "n_edges": 7
+  },
+  "D78": {
+    "name": "熱中症（重症）",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 7
+  },
+  "D79": {
+    "name": "人工弁心内膜炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 30,
+    "n_edges": 7
+  },
+  "D80": {
+    "name": "無石胆嚢炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 3,
+    "n_edges": 6
+  },
+  "D81": {
+    "name": "特発性細菌性腹膜炎(SBP)",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 6
+  },
+  "D82": {
+    "name": "院内髄膜炎（術後/外傷後）",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D83": {
+    "name": "侵襲性アスペルギルス症",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 21,
+    "n_edges": 7
+  },
+  "D84": {
+    "name": "単純ヘルペス脳炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 7,
+    "n_edges": 7
+  },
+  "D85": {
+    "name": "歯原性感染症（歯性膿瘍/Ludwig angina）",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 5,
+    "n_edges": 6
+  },
+  "D86": {
+    "name": "急性膵炎",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 3,
+    "n_edges": 7
+  },
+  "D87": {
+    "name": "亜急性甲状腺炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D88": {
+    "name": "アルコール離脱症候群",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 5,
+    "n_edges": 7
+  },
+  "D89": {
+    "name": "悪性高熱症",
+    "speed": "hyperacute",
+    "median_typical_day": 0,
+    "max_latest_day": 1,
+    "n_edges": 6
+  },
+  "D90": {
+    "name": "ベーチェット病",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 90,
+    "n_edges": 6
+  },
+  "D91": {
+    "name": "チクングニア熱",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 5,
+    "n_edges": 5
+  },
+  "D92": {
+    "name": "腫瘍熱（固形腫瘍）",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 30,
+    "n_edges": 4
+  },
+  "D93": {
+    "name": "DRESS症候群（薬剤性過敏症症候群）",
+    "speed": "chronic",
+    "median_typical_day": 21,
+    "max_latest_day": 42,
+    "n_edges": 7
+  },
+  "D94": {
+    "name": "IgG4関連疾患",
+    "speed": "chronic",
+    "median_typical_day": 30,
+    "max_latest_day": 90,
+    "n_edges": 6
+  },
+  "D95": {
+    "name": "日本脳炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 10,
+    "n_edges": 7
+  },
+  "D96": {
+    "name": "菊池病（壊死性リンパ節炎）",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 14,
+    "n_edges": 6
+  },
+  "D97": {
+    "name": "キャッスルマン病",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 60,
+    "n_edges": 8
+  },
+  "D98": {
+    "name": "高安動脈炎（大動脈炎症候群）",
+    "speed": "subacute",
+    "median_typical_day": 7,
+    "max_latest_day": 90,
+    "n_edges": 6
+  },
+  "D99": {
+    "name": "非結核性抗酸菌症",
+    "speed": "subacute",
+    "median_typical_day": 14,
+    "max_latest_day": 180,
+    "n_edges": 5
+  },
+  "D100": {
+    "name": "A型急性肝炎",
+    "speed": "acute",
+    "median_typical_day": 1,
+    "max_latest_day": 14,
+    "n_edges": 7
+  },
+  "D101": {
+    "name": "梅毒（二期）",
+    "speed": "chronic",
+    "median_typical_day": 56,
+    "max_latest_day": 90,
+    "n_edges": 6
+  },
+  "D102": {
+    "name": "レジオネラ肺炎",
+    "speed": "acute",
+    "median_typical_day": 3,
+    "max_latest_day": 5,
+    "n_edges": 10
+  }
+}
