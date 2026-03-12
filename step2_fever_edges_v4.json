@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1080,
+  "total_edges": 1121,
   "edges": [
     {
       "from": "R01",
@@ -12175,7 +12175,376 @@
         "min": 1,
         "max": 14
       }
+    },
+    {
+      "from": "D103",
+      "to": "T01",
+      "reason": "リウマチ熱は1-3週の発熱",
+      "onset_day_range": {
+        "min": 7,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "T02",
+      "reason": "急性〜亜急性発症",
+      "onset_day_range": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S02",
+      "reason": "先行する咽頭痛(溶連菌感染)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S05",
+      "reason": "頭痛",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S07",
+      "reason": "全身倦怠感",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S08",
+      "reason": "関節痛/多関節炎(75%、遊走性)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S21",
+      "reason": "胸痛(心膜炎)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D103",
+      "to": "S23",
+      "reason": "関節腫脹",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D103",
+      "to": "E01",
+      "reason": "発熱38-39度",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "E02",
+      "reason": "頻脈(心炎時)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D103",
+      "to": "E12",
+      "reason": "輪状紅斑(5-10%)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "E15",
+      "reason": "新規心雑音(心炎、弁膜症)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "L02",
+      "reason": "CRP上昇(小基準)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D103",
+      "to": "L28",
+      "reason": "ESR上昇(小基準)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D104",
+      "to": "T01",
+      "reason": "オウム病は1-3週の発熱",
+      "onset_day_range": {
+        "min": 7,
+        "max": 21
+      }
+    },
+    {
+      "from": "D104",
+      "to": "T02",
+      "reason": "急性発症",
+      "onset_day_range": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S01",
+      "reason": "乾性咳嗽(50-80%)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S04",
+      "reason": "呼吸困難(重症例)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S05",
+      "reason": "激しい頭痛(70-90%)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S06",
+      "reason": "筋肉痛(40-60%)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S07",
+      "reason": "全身倦怠感",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "S09",
+      "reason": "悪寒戦慄",
+      "onset_day_range": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "from": "D104",
+      "to": "E01",
+      "reason": "高熱39-40度が典型",
+      "onset_day_range": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "from": "D104",
+      "to": "E02",
+      "reason": "相対的徐脈が特徴的",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "E05",
+      "reason": "低酸素(肺炎時)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "E14",
+      "reason": "脾腫(10-70%)",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "E34",
+      "reason": "肝腫大",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "L01",
+      "reason": "WBC正常〜軽度上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "L02",
+      "reason": "CRP上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "L04",
+      "reason": "胸部X線異常(肺炎)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D104",
+      "to": "L11",
+      "reason": "肝酵素上昇(50%)",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D97",
+      "to": "T03",
+      "reason": "iMCDで周期的発熱が典型",
+      "onset_day_range": {
+        "min": 7,
+        "max": 120
+      }
+    },
+    {
+      "from": "D97",
+      "to": "S17",
+      "reason": "iMCDで体重減少(消耗症状)",
+      "onset_day_range": {
+        "min": 14,
+        "max": 120
+      }
+    },
+    {
+      "from": "D97",
+      "to": "L22",
+      "reason": "iMCDで貧血(慢性炎症性貧血)",
+      "onset_day_range": {
+        "min": 14,
+        "max": 120
+      }
+    },
+    {
+      "from": "D97",
+      "to": "L01",
+      "reason": "iMCDでWBC上昇",
+      "onset_day_range": {
+        "min": 7,
+        "max": 60
+      }
+    },
+    {
+      "from": "D97",
+      "to": "L16",
+      "reason": "iMCDでLDH上昇",
+      "onset_day_range": {
+        "min": 7,
+        "max": 60
+      }
+    },
+    {
+      "from": "D23",
+      "to": "S14",
+      "reason": "リケッチアで消化器症状(下痢10-30%)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "S12",
+      "reason": "リケッチアで腹痛",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "E34",
+      "reason": "リケッチアで肝腫大",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "E14",
+      "reason": "リケッチアで脾腫",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "L01",
+      "reason": "リケッチアでWBC正常〜低下",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
     }
   ],
-  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02"
+  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
 }

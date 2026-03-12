@@ -7,8 +7,8 @@
   "results_summary": {
     "note": "bn_inference.py v1.0 (noisy-OR likelihood ratio) による全案例テスト結果",
     "total_cases": 76,
-    "total_in_scope": 68,
-    "total_oos": 8,
+    "total_in_scope": 73,
+    "total_oos": 3,
     "tested_in_scope": 50,
     "tested_top1": "15/50 (30%)",
     "tested_top3": "28/50 (56%)",
@@ -303,8 +303,8 @@
       "pmcid": "PMC9373758",
       "vignette": "37M Texas。9日間の間歇的発熱+重度下痢+びまん性腹痛。RLQ圧痛。Cr軽度上昇,肝酵素軽度上昇,PLT軽度低下。CT:肝脾腫+腸管液貯留。入院2日目に体幹に淡い斑丘疹。ペット(犬猫鶏)+ノミ曝露歴",
       "final_diagnosis": "Murine typhus (Rickettsia typhi)",
-      "expected_id": "OOS",
-      "in_scope": false,
+      "expected_id": "D23",
+      "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
         "S14": "watery",
@@ -721,8 +721,8 @@
       "pmcid": "PMC11972107",
       "vignette": "39F 溶連菌咽頭炎反復歴。3日間の発熱+咽頭痛+左手首痛+胸痛。Jones基準: 心炎+単関節炎+発熱+ESR/CRP上昇",
       "final_diagnosis": "急性リウマチ熱",
-      "expected_id": "OOS",
-      "in_scope": false,
+      "expected_id": "D103",
+      "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
         "S02": "present",
@@ -767,8 +767,8 @@
       "pmcid": "PMC4216889",
       "vignette": "79F 4日間の発熱(37-39℃)+頭痛+食欲不振。2週前に山で山菜採取。顔面・四肢・体幹に紫色皮疹。左下肢にeschar。PLT7万、AST144、ALT444。ツツガムシ抗体陽性",
       "final_diagnosis": "ツツガムシ病",
-      "expected_id": "OOS",
-      "in_scope": false,
+      "expected_id": "D23",
+      "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
         "S05": "mild",
@@ -1041,8 +1041,8 @@
       "pmcid": "PMC9861199",
       "vignette": "87M ハト飼育者。1週間の進行性呼吸困難+発熱+倦怠感。CRP47、WBC13.7、急性腎障害。CT:両側斑状浸潤影+肺気腫。C.psittaci PCR陽性、血清IgG 1/400",
       "final_diagnosis": "オウム病(Chlamydia psittaci肺炎)",
-      "expected_id": "OOS",
-      "in_scope": false,
+      "expected_id": "D104",
+      "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
         "S04": "at_rest",
@@ -1368,7 +1368,7 @@
       "vignette": "14F(発症時) 発熱(最高40℃)+倦怠感+2ヶ月で7kg体重減少。当初1-2週ごとの発熱が6ヶ月後に毎日spikeに。咳嗽/関節痛/皮疹/盗汗なし。小球性貧血、ESR90、CRP5.17、SAA507、PCT2.6、IL-6=45.5上昇、多クローン性高ガンマグロブリン血症+低アルブミン。MRI/US:傍大動脈LN80x35x23mm",
       "final_diagnosis": "特発性多中心性キャッスルマン病(iMCD)",
       "expected_id": "D97",
-      "in_scope": false,
+      "in_scope": true,
       "evidence": {
         "E01": "39.0_40.0",
         "T03": "periodic",

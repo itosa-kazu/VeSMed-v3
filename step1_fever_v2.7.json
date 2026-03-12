@@ -3846,6 +3846,64 @@
         "present"
       ],
       "category": "intermediate"
+    },
+    {
+      "id": "D103",
+      "name": "acute_rheumatic_fever",
+      "name_ja": "急性リウマチ熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "A群溶連菌感染後の自己免疫疾患。Jones基準: 心炎、多関節炎、舞踏病、輪状紅斑、皮下結節",
+      "diagnostic_profile": {
+        "name_ja": "急性リウマチ熱",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 7,
+        "entropy_half_life_days": 3,
+        "typical_total_duration_days": [
+          7,
+          42
+        ],
+        "key_timeline_note": "溶連菌感染2-4週後に発症。心炎が最も重要な合併症",
+        "onset_pattern": "subacute（溶連菌感染後2-4週）",
+        "resolution_pattern": "関節炎は数日-数週で自然軽快、心炎は数週-数ヶ月",
+        "red_flags": [
+          "心炎",
+          "弁膜症",
+          "心不全"
+        ]
+      }
+    },
+    {
+      "id": "D104",
+      "name": "psittacosis",
+      "name_ja": "オウム病（Chlamydia psittaci肺炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "鳥類との接触で感染。非定型肺炎の鑑別。高熱、乾性咳嗽、頭痛、肝脾腫",
+      "diagnostic_profile": {
+        "name_ja": "オウム病",
+        "diagnostic_speed": "moderate",
+        "expected_certainty_day": 7,
+        "entropy_half_life_days": 3,
+        "typical_total_duration_days": [
+          7,
+          21
+        ],
+        "key_timeline_note": "鳥との接触歴+高熱+乾性咳嗽+相対的徐脈が典型",
+        "onset_pattern": "acute to subacute（潜伏期1-2週）",
+        "resolution_pattern": "適切な抗菌薬で1-2週で改善",
+        "red_flags": [
+          "呼吸不全",
+          "多臓器不全",
+          "DIC"
+        ]
+      }
     }
   ]
 }
