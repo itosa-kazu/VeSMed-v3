@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeSMed V3 — 発熱鑑別診断</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #232733;
+  --border: #2d3248;
+  --text: #e4e6f0;
+  --text2: #8b8fa8;
+  --accent: #6c7bff;
+  --accent2: #4f5cd9;
+  --green: #3dd68c;
+  --orange: #f5a623;
+  --red: #f55;
+  --temporal: #f5a623;
+  --symptom: #6c7bff;
+  --sign: #3dd68c;
+  --lab: #c084fc;
+  --risk: #f87171;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Segoe UI', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+header h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+header p {
+  color: var(--text2);
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+/* Left: Evidence panel */
+.evidence-panel { }
+.cat-group {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cat-header {
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 0.95em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.cat-header .badge {
+  background: var(--surface2);
+  color: var(--text2);
+  font-size: 0.75em;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.cat-header .badge.active {
+  background: var(--accent);
+  color: #fff;
+}
+.cat-header .arrow {
+  transition: transform 0.2s;
+  font-size: 0.8em;
+  color: var(--text2);
+}
+.cat-group.collapsed .cat-header .arrow {
+  transform: rotate(-90deg);
+}
+.cat-group.collapsed .cat-body {
+  display: none;
+}
+.cat-temporal .cat-header { background: rgba(245,166,35,0.12); color: var(--temporal); border-left: 3px solid var(--temporal); }
+.cat-symptom .cat-header { background: rgba(108,123,255,0.12); color: var(--symptom); border-left: 3px solid var(--symptom); }
+.cat-sign .cat-header { background: rgba(61,214,140,0.12); color: var(--sign); border-left: 3px solid var(--sign); }
+.cat-lab .cat-header { background: rgba(192,132,252,0.12); color: var(--lab); border-left: 3px solid var(--lab); }
+.cat-risk .cat-header { background: rgba(248,113,113,0.12); color: var(--risk); border-left: 3px solid var(--risk); }
+
+.cat-body {
+  padding: 8px 12px;
+  background: var(--surface);
+}
+.var-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+.var-row:last-child { border-bottom: none; }
+.var-label {
+  min-width: 180px;
+  font-size: 0.85em;
+}
+.var-label .vid {
+  color: var(--text2);
+  font-size: 0.8em;
+  font-family: monospace;
+}
+.var-label .vname {
+  font-weight: 500;
+}
+.var-states {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.state-btn {
+  background: var(--surface2);
+  color: var(--text2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.78em;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.state-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.state-btn.selected {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Right: Results panel */
+.results-panel {
+  position: sticky;
+  top: 20px;
+}
+.results-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.results-header {
+  padding: 14px 16px;
+  background: var(--surface2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.results-header h2 {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+.stats {
+  display: flex;
+  gap: 16px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82em;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-item .val {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--accent);
+}
+.stat-item .lbl {
+  color: var(--text2);
+  font-size: 0.85em;
+}
+.results-list {
+  padding: 0;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+.result-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  gap: 10px;
+}
+.result-row:last-child { border-bottom: none; }
+.rank {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--text2);
+  min-width: 24px;
+  text-align: right;
+}
+.result-row:nth-child(1) .rank { color: var(--green); }
+.result-row:nth-child(2) .rank { color: var(--green); }
+.result-row:nth-child(3) .rank { color: var(--green); }
+.result-info {
+  flex: 1;
+  min-width: 0;
+}
+.result-name {
+  font-size: 0.88em;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.result-id {
+  font-size: 0.72em;
+  color: var(--text2);
+  font-family: monospace;
+}
+.result-bar-wrap {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.result-bar-bg {
+  flex: 1;
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.result-bar {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+.result-row:nth-child(1) .result-bar { background: var(--green); }
+.result-row:nth-child(2) .result-bar { background: var(--green); }
+.result-row:nth-child(3) .result-bar { background: var(--green); }
+.result-pct {
+  font-size: 0.82em;
+  font-weight: 600;
+  min-width: 48px;
+  text-align: right;
+}
+
+.toolbar {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  flex: 1;
+}
+.btn-primary:hover { background: var(--accent2); }
+.btn-secondary {
+  background: var(--surface2);
+  color: var(--text2);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { background: var(--border); color: var(--text); }
+
+.empty-state {
+  padding: 40px 16px;
+  text-align: center;
+  color: var(--text2);
+  font-size: 0.9em;
+}
+.empty-state .icon { font-size: 2em; margin-bottom: 8px; }
+
+.selected-summary {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  max-height: 120px;
+  overflow-y: auto;
+}
+.selected-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  margin: 2px;
+  cursor: pointer;
+}
+.selected-tag:hover { border-color: var(--red); }
+.selected-tag .x { color: var(--red); font-weight: 700; }
+
+.entropy-bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.entropy-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s;
+}
+
+.search-box {
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 0.88em;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.search-input::placeholder { color: var(--text2); }
+
+.var-row.hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>VeSMed V3</h1>
+    <p>発熱鑑別診断 Bayesian Network — 102疾患 / 993辺</p>
+  </header>
+
+  <div class="layout">
+    <!-- Left: Evidence input -->
+    <div class="evidence-panel">
+      <div class="search-box">
+        <input type="text" class="search-input" id="searchInput"
+               placeholder="搜索变量... (ID / 英文名 / 日文名)">
+      </div>
+
+      {% for group in groups %}
+      <div class="cat-group cat-{{ group.css_class }}" id="cat-{{ group.id }}">
+        <div class="cat-header" onclick="toggleCategory('{{ group.id }}')">
+          <span>{{ group.label }} ({{ group.variables|length }})</span>
+          <span>
+            <span class="badge" id="badge-{{ group.id }}">0</span>
+            <span class="arrow">▼</span>
+          </span>
+        </div>
+        <div class="cat-body">
+          {% for v in group.variables %}
+          <div class="var-row" data-search="{{ v.id }} {{ v.name }} {{ v.name_ja }}">
+            <div class="var-label">
+              <span class="vid">{{ v.id }}</span>
+              <span class="vname">{{ v.name_ja }}</span>
+            </div>
+            <div class="var-states">
+              {% for s in v.states %}
+              <button class="state-btn"
+                      data-var="{{ v.id }}" data-state="{{ s }}" data-cat="{{ group.id }}"
+                      onclick="selectState(this)">{{ s }}</button>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Right: Results -->
+    <div class="results-panel">
+      <div class="results-card">
+        <div class="results-header">
+          <h2>诊断结果</h2>
+          <span id="resultCount" style="color:var(--text2);font-size:0.85em"></span>
+        </div>
+
+        <div class="toolbar">
+          <button class="btn btn-primary" onclick="runInference()">推理 ▶</button>
+          <button class="btn btn-secondary" onclick="clearAll()">清空</button>
+        </div>
+
+        <div class="selected-summary" id="selectedSummary" style="display:none"></div>
+
+        <div class="stats" id="statsBar" style="display:none">
+          <div class="stat-item">
+            <div class="val" id="statEvidence">0</div>
+            <div class="lbl">证据数</div>
+          </div>
+          <div class="stat-item">
+            <div class="val" id="statEntropy">-</div>
+            <div class="lbl">Entropy</div>
+          </div>
+          <div class="stat-item">
+            <div class="val" id="statTop1">-</div>
+            <div class="lbl">Top-1</div>
+          </div>
+        </div>
+
+        <div class="results-list" id="resultsList">
+          <div class="empty-state">
+            <div class="icon">🔬</div>
+            <div>选择症状/检查结果后点击「推理」</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const selected = {};  // var_id -> state
+const RISK_VARS = new Set();
+document.querySelectorAll('#cat-risk_factor .state-btn').forEach(btn => {
+  RISK_VARS.add(btn.dataset.var);
+});
+
+function selectState(btn) {
+  const varId = btn.dataset.var;
+  const state = btn.dataset.state;
+  const cat = btn.dataset.cat;
+
+  // Deselect siblings
+  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => {
+    b.classList.remove('selected');
+  });
+
+  // Toggle
+  if (selected[varId] === state) {
+    delete selected[varId];
+  } else {
+    selected[varId] = state;
+    btn.classList.add('selected');
+  }
+
+  updateBadges();
+  updateSelectedSummary();
+}
+
+function updateBadges() {
+  const counts = {};
+  for (const [varId, state] of Object.entries(selected)) {
+    const btn = document.querySelector(`.state-btn[data-var="${varId}"][data-state="${state}"]`);
+    if (btn) {
+      const cat = btn.dataset.cat;
+      counts[cat] = (counts[cat] || 0) + 1;
+    }
+  }
+  document.querySelectorAll('.badge').forEach(badge => {
+    const catId = badge.id.replace('badge-', '');
+    const n = counts[catId] || 0;
+    badge.textContent = n;
+    badge.classList.toggle('active', n > 0);
+  });
+}
+
+function updateSelectedSummary() {
+  const div = document.getElementById('selectedSummary');
+  const entries = Object.entries(selected);
+  if (entries.length === 0) {
+    div.style.display = 'none';
+    return;
+  }
+  div.style.display = 'block';
+  div.innerHTML = entries.map(([varId, state]) => {
+    return `<span class="selected-tag" onclick="removeSelection('${varId}')">${varId}=${state} <span class="x">×</span></span>`;
+  }).join('');
+}
+
+function removeSelection(varId) {
+  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => {
+    b.classList.remove('selected');
+  });
+  delete selected[varId];
+  updateBadges();
+  updateSelectedSummary();
+}
+
+function clearAll() {
+  document.querySelectorAll('.state-btn.selected').forEach(b => {
+    b.classList.remove('selected');
+  });
+  for (const k in selected) delete selected[k];
+  updateBadges();
+  updateSelectedSummary();
+  document.getElementById('resultsList').innerHTML =
+    '<div class="empty-state"><div class="icon">🔬</div><div>选择症状/检查结果后点击「推理」</div></div>';
+  document.getElementById('statsBar').style.display = 'none';
+}
+
+async function runInference() {
+  const evidence = {};
+  const risk = {};
+  for (const [varId, state] of Object.entries(selected)) {
+    if (RISK_VARS.has(varId)) {
+      risk[varId] = state;
+    } else {
+      evidence[varId] = state;
+    }
+  }
+
+  if (Object.keys(evidence).length === 0 && Object.keys(risk).length === 0) {
+    alert('请先选择至少一个证据');
+    return;
+  }
+
+  const resp = await fetch('/api/infer', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ evidence, risk_factors: risk }),
+  });
+  const data = await resp.json();
+
+  // Stats
+  document.getElementById('statsBar').style.display = 'flex';
+  document.getElementById('statEvidence').textContent = data.n_evidence + data.n_risk;
+  document.getElementById('statEntropy').textContent = data.entropy.toFixed(1);
+  const top1 = data.results[0];
+  document.getElementById('statTop1').textContent = top1 ? top1.probability + '%' : '-';
+  document.getElementById('resultCount').textContent = `Top 20 / 102`;
+
+  // Entropy color
+  const hColor = data.entropy < 2 ? 'var(--green)' : data.entropy < 4 ? 'var(--orange)' : 'var(--red)';
+  document.getElementById('statEntropy').style.color = hColor;
+
+  // Results list
+  const maxP = data.results.length > 0 ? data.results[0].probability : 1;
+  const html = data.results.map((r, i) => {
+    const barW = maxP > 0 ? (r.probability / maxP * 100) : 0;
+    return `<div class="result-row">
+      <span class="rank">${i + 1}</span>
+      <div class="result-info">
+        <div class="result-name" title="${r.name}">${r.name_ja}</div>
+        <div class="result-id">${r.id} ${r.name}</div>
+      </div>
+      <div class="result-bar-wrap">
+        <div class="result-bar-bg"><div class="result-bar" style="width:${barW}%"></div></div>
+        <span class="result-pct">${r.probability}%</span>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('resultsList').innerHTML = html;
+}
+
+function toggleCategory(catId) {
+  document.getElementById('cat-' + catId).classList.toggle('collapsed');
+}
+
+// Search
+document.getElementById('searchInput').addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  document.querySelectorAll('.var-row').forEach(row => {
+    if (!q) {
+      row.classList.remove('hidden');
+      return;
+    }
+    const text = row.dataset.search.toLowerCase();
+    row.classList.toggle('hidden', !text.includes(q));
+  });
+  // Expand categories that have visible rows
+  if (q) {
+    document.querySelectorAll('.cat-group').forEach(g => {
+      const hasVisible = g.querySelector('.var-row:not(.hidden)');
+      if (hasVisible) g.classList.remove('collapsed');
+      else g.classList.add('collapsed');
+    });
+  }
+});
+
+// Collapse risk_factor by default
+document.getElementById('cat-risk_factor')?.classList.add('collapsed');
+
+// Keyboard shortcut: Enter to run inference
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.target.matches('input')) runInference();
+});
+</script>
+</body>
+</html>
