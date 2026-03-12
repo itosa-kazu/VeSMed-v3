@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1021,
+  "total_edges": 1028,
   "edges": [
     {
       "from": "R01",
@@ -11628,7 +11628,84 @@
         "typical": 3,
         "latest": 7
       }
+    },
+    {
+      "from": "D17",
+      "to": "L28",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "ESR",
+      "reason": "結核でESR上昇（活動性結核で高頻度）",
+      "onset_day_range": {
+        "min": 7,
+        "max": 90
+      }
+    },
+    {
+      "from": "D17",
+      "to": "L02",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "CRP",
+      "reason": "結核でCRP中等度上昇",
+      "onset_day_range": {
+        "min": 7,
+        "max": 90
+      }
+    },
+    {
+      "from": "D05",
+      "to": "S06",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "myalgia",
+      "reason": "肺炎の全身症状として筋肉痛",
+      "onset_day_range": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "from": "D05",
+      "to": "S07",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "fatigue",
+      "reason": "肺炎で全身倦怠感",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D05",
+      "to": "L28",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "ESR",
+      "reason": "細菌性肺炎でESR上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D55",
+      "to": "T01",
+      "from_name": "Q_fever",
+      "to_name": "fever_duration",
+      "reason": "Q熱の発熱は1-3週が典型",
+      "onset_day_range": {
+        "min": 14,
+        "max": 21
+      }
+    },
+    {
+      "from": "D77",
+      "to": "T03",
+      "from_name": "DVT_PE",
+      "to_name": "fever_pattern",
+      "reason": "PE関連発熱は持続性低熱が典型",
+      "onset_day_range": {
+        "min": 0,
+        "max": 14
+      }
     }
   ],
-  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺"
+  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03"
 }

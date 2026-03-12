@@ -4951,6 +4951,12 @@
           "mild_0.3_3": 0.1,
           "moderate_3_10": 0.45,
           "high_over_10": 0.4
+        },
+        "D17": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
         }
       }
     },
@@ -5866,6 +5872,16 @@
           "normal": 0.25,
           "elevated": 0.55,
           "very_high_over_100": 0.2
+        },
+        "D17": {
+          "normal": 0.05,
+          "elevated": 0.45,
+          "very_high_over_100": 0.5
+        },
+        "D05": {
+          "normal": 0.1,
+          "elevated": 0.5,
+          "very_high_over_100": 0.4
         }
       }
     },
@@ -6631,7 +6647,11 @@
           "absent": 0.15,
           "present": 0.85
         },
-        "D55": 0.65
+        "D55": 0.65,
+        "D05": {
+          "absent": 0.6,
+          "present": 0.4
+        }
       }
     },
     "S07": {
@@ -6782,6 +6802,11 @@
           "absent": 0.4,
           "mild": 0.45,
           "severe": 0.15
+        },
+        "D05": {
+          "absent": 0.25,
+          "mild": 0.4,
+          "severe": 0.35
         }
       }
     },
@@ -8304,6 +8329,12 @@
           "3d_to_1w": 0.08,
           "1w_to_3w": 0.4,
           "over_3w": 0.5
+        },
+        "D55": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.45,
+          "over_3w": 0.15
         }
       }
     },
@@ -8444,6 +8475,12 @@
           "continuous": 0.2,
           "intermittent": 0.45,
           "periodic": 0.3,
+          "double_quotidian": 0.05
+        },
+        "D77": {
+          "continuous": 0.6,
+          "intermittent": 0.3,
+          "periodic": 0.05,
           "double_quotidian": 0.05
         }
       }
