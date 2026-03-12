@@ -26,11 +26,11 @@ var_lookup = {v["id"]: v for v in step1["variables"]}
 
 # Category display order and labels
 CATEGORY_ORDER = [
-    ("temporal", "时间特征", "temporal"),
+    ("temporal", "時間的特徴", "temporal"),
     ("symptom", "症状", "symptom"),
-    ("sign", "身体所见", "sign"),
-    ("lab", "检查结果", "lab"),
-    ("risk_factor", "风险因子", "risk"),
+    ("sign", "身体所見", "sign"),
+    ("lab", "検査所見", "lab"),
+    ("risk_factor", "リスク因子", "risk"),
 ]
 
 
@@ -93,4 +93,4 @@ def api_infer():
 
 if __name__ == "__main__":
     print("VeSMed V3 Web UI: http://localhost:5000")
-    app.run(debug=True, port=5000)
+    app.run(debug=False, host="0.0.0.0", port=5000)

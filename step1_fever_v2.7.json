@@ -1561,13 +1561,15 @@
     },
     {
       "id": "E15",
-      "name": "heart_murmur_new",
-      "name_ja": "新規心雑音",
+      "name": "heart_murmur",
+      "name_ja": "心雑音",
       "category": "sign",
       "states": [
         "absent",
-        "present"
-      ]
+        "pre_existing",
+        "new"
+      ],
+      "note": "absent=なし, pre_existing=既存（弁膜症等）, new=新規（IE等を示唆）"
     },
     {
       "id": "E16",

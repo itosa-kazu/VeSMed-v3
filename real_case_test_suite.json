@@ -262,7 +262,7 @@
         "E16": "confused",
         "E06": "present",
         "M01": "present",
-        "E15": "present",
+        "E15": "new",
         "S04": "at_rest"
       },
       "risk_factors": {
@@ -606,7 +606,7 @@
         "S04": "at_rest",
         "S08": "present",
         "E03": "hypotension_under_90",
-        "E15": "present",
+        "E15": "new",
         "L09": "negative",
         "T01": "over_3w"
       },
@@ -1297,7 +1297,9 @@
         "R02": "male"
       },
       "result": "Miss rank14 (キャッスルマン病 42%) H=2.2",
-      "notes": "菊池病の典型: 若年+高熱+全身LN腫脹+白血球減少+ANA陰性。SLEとの鑑別が重要"
+      "notes": "菊池病の典型: 若年+高熱+全身LN腫脹+白血球減少+ANA陰性。SLEとの鑑別が重要",
+      "biopsy_dependent": true,
+      "biopsy_note": "菊池病は臨床所見のみで確定不可。リンパ節切除活検+病理が必須。リンパ腫/感染症との鑑別は症状レベルで不可能"
     },
     {
       "id": "R52",
@@ -1325,7 +1327,9 @@
         "R04": "yes"
       },
       "result": "Top-3 rank2 (悪性リンパ腫 100%) H=0.0",
-      "notes": "1.5年のperiodic FUOは非常に長い。CRP正常+ESR上昇+白血球減少+周期性は菊池病に矛盾しない"
+      "notes": "1.5年のperiodic FUOは非常に長い。CRP正常+ESR上昇+白血球減少+周期性は菊池病に矛盾しない",
+      "biopsy_dependent": true,
+      "biopsy_note": "菊池病は臨床所見のみで確定不可。リンパ節切除活検+病理が必須。リンパ腫/感染症との鑑別は症状レベルで不可能"
     },
     {
       "id": "R53",
@@ -1420,7 +1424,7 @@
         "S09": "present",
         "S17": "present",
         "S07": "severe",
-        "E15": "present",
+        "E15": "new",
         "E14": "present",
         "L22": "present",
         "L02": "moderate_3_10",

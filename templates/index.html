@@ -361,7 +361,7 @@ header p {
 <div class="container">
   <header>
     <h1>VeSMed V3</h1>
-    <p>発熱鑑別診断 Bayesian Network — 102疾患 / 993辺</p>
+    <p>発熱鑑別診断 ベイジアンネットワーク — 102疾患 / 1021辺</p>
   </header>
 
   <div class="layout">
@@ -369,7 +369,7 @@ header p {
     <div class="evidence-panel">
       <div class="search-box">
         <input type="text" class="search-input" id="searchInput"
-               placeholder="搜索变量... (ID / 英文名 / 日文名)">
+               placeholder="変数を検索... (ID / 英語名 / 日本語名)">
       </div>
 
       {% for group in groups %}
@@ -406,13 +406,13 @@ header p {
     <div class="results-panel">
       <div class="results-card">
         <div class="results-header">
-          <h2>诊断结果</h2>
+          <h2>診断結果</h2>
           <span id="resultCount" style="color:var(--text2);font-size:0.85em"></span>
         </div>
 
         <div class="toolbar">
-          <button class="btn btn-primary" onclick="runInference()">推理 ▶</button>
-          <button class="btn btn-secondary" onclick="clearAll()">清空</button>
+          <button class="btn btn-primary" onclick="runInference()">推論 ▶</button>
+          <button class="btn btn-secondary" onclick="clearAll()">クリア</button>
         </div>
 
         <div class="selected-summary" id="selectedSummary" style="display:none"></div>
@@ -420,7 +420,7 @@ header p {
         <div class="stats" id="statsBar" style="display:none">
           <div class="stat-item">
             <div class="val" id="statEvidence">0</div>
-            <div class="lbl">证据数</div>
+            <div class="lbl">エビデンス数</div>
           </div>
           <div class="stat-item">
             <div class="val" id="statEntropy">-</div>
@@ -435,7 +435,7 @@ header p {
         <div class="results-list" id="resultsList">
           <div class="empty-state">
             <div class="icon">🔬</div>
-            <div>选择症状/检查结果后点击「推理」</div>
+            <div>症状・検査所見を選択して「推論」をクリック</div>
           </div>
         </div>
       </div>
@@ -519,7 +519,7 @@ function clearAll() {
   updateBadges();
   updateSelectedSummary();
   document.getElementById('resultsList').innerHTML =
-    '<div class="empty-state"><div class="icon">🔬</div><div>选择症状/检查结果后点击「推理」</div></div>';
+    '<div class="empty-state"><div class="icon">🔬</div><div>症状・検査所見を選択して「推論」をクリック</div></div>';
   document.getElementById('statsBar').style.display = 'none';
 }
 
@@ -535,7 +535,7 @@ async function runInference() {
   }
 
   if (Object.keys(evidence).length === 0 && Object.keys(risk).length === 0) {
-    alert('请先选择至少一个证据');
+    alert('少なくとも1つのエビデンスを選択してください');
     return;
   }
 

@@ -3513,6 +3513,14 @@
           "purpura": 0.01,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.01
+        },
+        "D59": {
+          "absent": 0.2,
+          "maculopapular_rash": 0.5,
+          "petechiae_purpura": 0.15,
+          "erythema_nodosum": 0.05,
+          "vesicular": 0.05,
+          "erythroderma": 0.05
         }
       }
     },
@@ -3608,6 +3616,18 @@
           "absent": 0.5,
           "cervical": 0.4,
           "generalized": 0.1
+        },
+        "D53": {
+          "absent": 0.75,
+          "cervical": 0.12,
+          "generalized": 0.05,
+          "inguinal": 0.08
+        },
+        "D59": {
+          "absent": 0.5,
+          "cervical": 0.15,
+          "generalized": 0.3,
+          "inguinal": 0.05
         }
       }
     },
@@ -3665,27 +3685,32 @@
         "D17": {
           "absent": 0.75,
           "present": 0.25
-        }
+        },
+        "D96": 0.08
       }
     },
     "E15": {
       "description": "新規心雑音",
       "states": [
         "absent",
-        "present"
+        "pre_existing",
+        "new"
       ],
       "leak": {
-        "absent": 0.98,
-        "present": 0.02
+        "absent": 0.975,
+        "pre_existing": 0.02,
+        "new": 0.005
       },
       "parent_effects": {
         "D79": {
-          "absent": 0.2,
-          "present": 0.8
+          "absent": 0.1,
+          "pre_existing": 0.15,
+          "new": 0.75
         },
         "D14": {
-          "absent": 0.2,
-          "present": 0.8
+          "absent": 0.15,
+          "pre_existing": 0.1,
+          "new": 0.75
         }
       }
     },
@@ -4164,7 +4189,8 @@
         "D67": {
           "absent": 0.35,
           "present": 0.65
-        }
+        },
+        "D96": 0.05
       }
     },
     "E35": {
@@ -4470,6 +4496,18 @@
           "normal_4000_10000": 0.55,
           "high_10000_20000": 0.12,
           "very_high_over_20000": 0.03
+        },
+        "D19": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.15
+        },
+        "D87": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.5,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -4901,6 +4939,18 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.4,
           "high_over_10": 0.2
+        },
+        "D03": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.4,
+          "high_over_10": 0.2
+        },
+        "D19": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.45,
+          "high_over_10": 0.4
         }
       }
     },
@@ -5320,6 +5370,11 @@
           "normal": 0.35,
           "mild_elevated": 0.45,
           "very_high": 0.2
+        },
+        "D87": {
+          "normal": 0.55,
+          "mild_elevated": 0.35,
+          "very_high": 0.1
         }
       }
     },
@@ -5450,6 +5505,12 @@
           "normal": 0.2,
           "mild_elevated": 0.4,
           "very_high_over_1000": 0.3,
+          "extreme_over_10000": 0.1
+        },
+        "D59": {
+          "normal": 0.3,
+          "elevated_200_1000": 0.4,
+          "very_high_over_1000": 0.2,
           "extreme_over_10000": 0.1
         }
       }
@@ -5611,7 +5672,8 @@
         "D17": {
           "absent": 0.75,
           "present": 0.25
-        }
+        },
+        "D62": 0.15
       }
     },
     "L23": {
@@ -5794,6 +5856,16 @@
           "normal": 0.15,
           "elevated": 0.55,
           "very_high_over_100": 0.3
+        },
+        "D53": {
+          "normal": 0.25,
+          "elevated": 0.55,
+          "very_high_over_100": 0.2
+        },
+        "D94": {
+          "normal": 0.25,
+          "elevated": 0.55,
+          "very_high_over_100": 0.2
         }
       }
     },
@@ -6340,7 +6412,8 @@
           "absent": 0.5,
           "dry": 0.4,
           "productive": 0.1
-        }
+        },
+        "D53": 0.2
       }
     },
     "S02": {
@@ -6516,6 +6589,11 @@
           "absent": 0.45,
           "mild": 0.3,
           "severe": 0.25
+        },
+        "D87": {
+          "absent": 0.6,
+          "mild": 0.25,
+          "severe": 0.15
         }
       }
     },
@@ -6552,7 +6630,8 @@
         "D91": {
           "absent": 0.15,
           "present": 0.85
-        }
+        },
+        "D55": 0.65
       }
     },
     "S07": {
@@ -6838,7 +6917,8 @@
         "D35": {
           "absent": 0.3,
           "present": 0.7
-        }
+        },
+        "D55": 0.5
       }
     },
     "S12": {
@@ -7186,7 +7266,8 @@
         "D17": {
           "absent": 0.15,
           "present": 0.85
-        }
+        },
+        "D94": 0.25
       }
     },
     "S17": {
@@ -7247,7 +7328,10 @@
         "D50": {
           "absent": 0.3,
           "present": 0.7
-        }
+        },
+        "D62": 0.3,
+        "D94": 0.4,
+        "D96": 0.25
       }
     },
     "S18": {
@@ -7303,6 +7387,11 @@
           "absent": 0.3,
           "pleuritic": 0.6,
           "constant": 0.1
+        },
+        "D03": {
+          "absent": 0.7,
+          "pleuritic": 0.25,
+          "constant": 0.05
         }
       }
     },
@@ -7914,7 +8003,9 @@
         "D53": {
           "absent": 0.4,
           "present": 0.6
-        }
+        },
+        "D62": 0.3,
+        "D96": 0.4
       }
     },
     "T01": {
@@ -8207,6 +8298,12 @@
           "3d_to_1w": 0.08,
           "1w_to_3w": 0.4,
           "over_3w": 0.5
+        },
+        "D87": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.5
         }
       }
     },
@@ -8335,6 +8432,18 @@
           "continuous": 0.1,
           "intermittent": 0.6,
           "periodic": 0.25,
+          "double_quotidian": 0.05
+        },
+        "D87": {
+          "continuous": 0.15,
+          "intermittent": 0.5,
+          "periodic": 0.3,
+          "double_quotidian": 0.05
+        },
+        "D96": {
+          "continuous": 0.2,
+          "intermittent": 0.45,
+          "periodic": 0.3,
           "double_quotidian": 0.05
         }
       }

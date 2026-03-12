@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 326,
+  "total_edges": 1021,
   "edges": [
     {
       "from": "R01",
@@ -11292,7 +11292,343 @@
         "typical": 30,
         "latest": 90
       }
+    },
+    {
+      "from": "D55",
+      "to": "S06",
+      "from_name": "Q_fever",
+      "to_name": "myalgia",
+      "reason": "Q熱で筋肉痛(50-70%)",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 2,
+        "latest": 5
+      }
+    },
+    {
+      "from": "D55",
+      "to": "S09",
+      "from_name": "Q_fever",
+      "to_name": "chills",
+      "reason": "Q熱で悪寒戦慄",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 3
+      }
+    },
+    {
+      "from": "D03",
+      "to": "L02",
+      "from_name": "COVID19",
+      "to_name": "CRP",
+      "reason": "COVID-19でCRP上昇",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D03",
+      "to": "S21",
+      "from_name": "COVID19",
+      "to_name": "chest_pain",
+      "reason": "COVID肺炎で胸膜痛",
+      "onset_day_range": {
+        "earliest": 2,
+        "typical": 5,
+        "latest": 10
+      }
+    },
+    {
+      "from": "D53",
+      "to": "E13",
+      "from_name": "brucellosis",
+      "to_name": "lymphadenopathy",
+      "reason": "ブルセラ症でリンパ節腫大(10-20%)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 21
+      }
+    },
+    {
+      "from": "D53",
+      "to": "L28",
+      "from_name": "brucellosis",
+      "to_name": "ESR_CRP_ratio",
+      "reason": "ブルセラ症でESR上昇",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D53",
+      "to": "S01",
+      "from_name": "brucellosis",
+      "to_name": "cough",
+      "reason": "ブルセラ症で咳嗽(15-25%)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D19",
+      "to": "L01",
+      "from_name": "drug_fever",
+      "to_name": "WBC",
+      "reason": "薬剤熱でWBC変動",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D19",
+      "to": "L02",
+      "from_name": "drug_fever",
+      "to_name": "CRP",
+      "reason": "薬剤熱でCRP軽度上昇",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D87",
+      "to": "L01",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "WBC",
+      "reason": "亜急性甲状腺炎で軽度白血球増加",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D87",
+      "to": "L11",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "liver_enzymes",
+      "reason": "甲状腺中毒で肝酵素軽度上昇",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D62",
+      "to": "L22",
+      "from_name": "sarcoidosis",
+      "to_name": "pancytopenia",
+      "reason": "サルコイドーシスで骨髄浸潤/脾機能亢進による血球減少",
+      "onset_day_range": {
+        "earliest": 14,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D62",
+      "to": "S17",
+      "from_name": "sarcoidosis",
+      "to_name": "weight_loss",
+      "reason": "サルコイドーシスで体重減少(30%)",
+      "onset_day_range": {
+        "earliest": 14,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D62",
+      "to": "S46",
+      "from_name": "sarcoidosis",
+      "to_name": "anorexia",
+      "reason": "サルコイドーシスで食欲不振",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 14,
+        "latest": 60
+      }
+    },
+    {
+      "from": "D94",
+      "to": "L28",
+      "from_name": "IgG4_related_disease",
+      "to_name": "ESR_CRP_ratio",
+      "reason": "IgG4関連疾患でESR上昇",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D94",
+      "to": "S16",
+      "from_name": "IgG4_related_disease",
+      "to_name": "night_sweats",
+      "reason": "IgG4関連疾患で盗汗",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D94",
+      "to": "S17",
+      "from_name": "IgG4_related_disease",
+      "to_name": "weight_loss",
+      "reason": "IgG4関連疾患で体重減少",
+      "onset_day_range": {
+        "earliest": 14,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D59",
+      "to": "E12",
+      "from_name": "SLE",
+      "to_name": "skin_rash",
+      "reason": "SLEで皮疹(蝶形紅斑/斑丘疹)",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D59",
+      "to": "E13",
+      "from_name": "SLE",
+      "to_name": "lymphadenopathy",
+      "reason": "SLEでリンパ節腫大(50%)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D59",
+      "to": "L15",
+      "from_name": "SLE",
+      "to_name": "ferritin",
+      "reason": "SLEでフェリチン上昇(MAS合併時著増)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D87",
+      "to": "S05",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "headache",
+      "reason": "亜急性甲状腺炎で頭痛",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D87",
+      "to": "T01",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "fever_duration",
+      "reason": "亜急性甲状腺炎は4-8週間持続",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 14,
+        "latest": 56
+      }
+    },
+    {
+      "from": "D87",
+      "to": "T03",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "fever_pattern",
+      "reason": "亜急性甲状腺炎で間欠熱/波状熱",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D96",
+      "to": "E14",
+      "from_name": "Kikuchi_disease",
+      "to_name": "splenomegaly",
+      "reason": "菊池病で脾腫(稀だが報告あり)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 21
+      }
+    },
+    {
+      "from": "D96",
+      "to": "E34",
+      "from_name": "Kikuchi_disease",
+      "to_name": "hepatomegaly",
+      "reason": "菊池病で肝腫大(稀)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 21
+      }
+    },
+    {
+      "from": "D96",
+      "to": "S46",
+      "from_name": "Kikuchi_disease",
+      "to_name": "anorexia",
+      "reason": "菊池病で食欲不振",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D96",
+      "to": "S17",
+      "from_name": "Kikuchi_disease",
+      "to_name": "weight_loss",
+      "reason": "菊池病で体重減少(長期例)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 14,
+        "latest": 60
+      }
+    },
+    {
+      "from": "D96",
+      "to": "T03",
+      "from_name": "Kikuchi_disease",
+      "to_name": "fever_pattern",
+      "reason": "菊池病で間欠熱/反復熱",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 7
+      }
     }
   ],
-  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加"
+  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺"
 }
