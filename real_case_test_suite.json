@@ -409,7 +409,7 @@
         "E20": "present",
         "E13": "cervical",
         "L22": "present",
-        "S07": "moderate",
+        "S07": "mild",
         "L02": "mild_0.3_3"
       },
       "risk_factors": {
@@ -1519,11 +1519,11 @@
         "S08": "present",
         "E01": "38.0_39.0",
         "E12": "maculopapular_rash",
-        "L03": "mildly_elevated",
-        "L06": "thrombocytopenia"
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated"
       },
       "risk_factors": {
-        "R01": "yes"
+        "R01": "18_39"
       }
     },
     {
@@ -1539,11 +1539,11 @@
         "E16": "confused",
         "E17": "present",
         "E12": "maculopapular_rash",
-        "L03": "mildly_elevated",
-        "L06": "thrombocytopenia"
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated"
       },
       "risk_factors": {
-        "R06": "yes"
+        "R06": "domestic"
       }
     },
     {
@@ -1562,8 +1562,8 @@
         "E02": "over_120",
         "E12": "maculopapular_rash",
         "E18": "present",
-        "L03": "markedly_elevated",
-        "L06": "thrombocytopenia"
+        "L14": "thrombocytopenia",
+        "L11": "very_high"
       },
       "risk_factors": {}
     },
@@ -1585,7 +1585,7 @@
         "L10": "negative"
       },
       "risk_factors": {
-        "R01": "yes"
+        "R01": "18_39"
       }
     },
     {
@@ -1601,12 +1601,12 @@
         "S14": "watery",
         "E01": "39.0_40.0",
         "E03": "hypotension_under_90",
-        "L06": "thrombocytopenia",
         "L09": "negative",
-        "L10": "negative"
+        "L10": "negative",
+        "L14": "thrombocytopenia"
       },
       "risk_factors": {
-        "R01": "yes"
+        "R01": "18_39"
       }
     },
     {
@@ -1620,12 +1620,12 @@
         "S08": "present",
         "S09": "present",
         "E12": "maculopapular_rash",
-        "L06": "thrombocytopenia",
         "L09": "negative",
-        "L10": "negative"
+        "L10": "negative",
+        "L14": "thrombocytopenia"
       },
       "risk_factors": {
-        "R01": "yes"
+        "R01": "65_plus"
       }
     },
     {
@@ -1640,14 +1640,14 @@
         "S06": "present",
         "E01": "over_40.0",
         "E02": "over_120",
-        "L01": "normal_4000_12000",
+        "L01": "normal_4000_10000",
         "L02": "high_over_10",
-        "L03": "markedly_elevated",
         "L04": "normal",
-        "L09": "gram_negative"
+        "L09": "gram_negative",
+        "L11": "very_high"
       },
       "risk_factors": {
-        "R01": "yes"
+        "R01": "18_39"
       }
     },
     {
@@ -1670,10 +1670,10 @@
         "E16": "confused",
         "E18": "present",
         "E34": "present",
-        "L01": "normal_4000_12000",
+        "L01": "normal_4000_10000",
         "L02": "high_over_10",
-        "L03": "markedly_elevated",
-        "L09": "gram_negative"
+        "L09": "gram_negative",
+        "L11": "very_high"
       },
       "risk_factors": {}
     },
@@ -1701,13 +1701,13 @@
       "evidence": {
         "T01": "over_3w",
         "T03": "periodic",
-        "S04": "exertional",
+        "S04": "on_exertion",
         "S29": "present",
         "S39": "present",
         "E01": "38.0_39.0",
         "L02": "high_over_10",
         "L09": "negative",
-        "L15": "elevated",
+        "L15": "mild_elevated",
         "L28": "very_high_over_100"
       },
       "risk_factors": {}
@@ -1722,7 +1722,7 @@
         "T01": "under_3d",
         "E01": "39.0_40.0",
         "E12": "maculopapular_rash",
-        "L01": "leukocytosis_over_12000",
+        "L01": "very_high_over_20000",
         "L02": "high_over_10",
         "L09": "negative",
         "L28": "elevated"
@@ -1758,7 +1758,7 @@
         "T01": "1w_to_3w",
         "T03": "intermittent",
         "E01": "39.0_40.0",
-        "L01": "normal_4000_12000",
+        "L01": "normal_4000_10000",
         "L02": "normal_under_0.3",
         "L09": "negative",
         "L20": "elevated"
@@ -1792,7 +1792,7 @@
       "evidence": {
         "T01": "under_3d",
         "E01": "38.0_39.0",
-        "E16": "comatose",
+        "E16": "obtunded",
         "E06": "present",
         "L09": "negative"
       },
@@ -1823,7 +1823,7 @@
       "in_scope": true,
       "evidence": {
         "S08": "present",
-        "S23": "present",
+        "S23": "monoarticular",
         "E01": "38.0_39.0",
         "L02": "high_over_10",
         "L28": "elevated"
@@ -1843,7 +1843,7 @@
         "E01": "38.0_39.0",
         "E34": "present",
         "S12": "RUQ",
-        "L01": "leukocytosis_over_12000",
+        "L01": "high_10000_20000",
         "L02": "high_over_10"
       },
       "risk_factors": {}

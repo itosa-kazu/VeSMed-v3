@@ -2968,6 +2968,11 @@
           "under_100": 0.5,
           "100_120": 0.35,
           "over_120": 0.15
+        },
+        "D23": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
         }
       }
     },
@@ -2978,25 +2983,25 @@
         "hypotension"
       ],
       "leak": {
-        "normal": 0.95,
-        "hypotension": 0.05
+        "hypotension_under_90": 0.05,
+        "normal_over_90": 0.95
       },
       "parent_effects": {
         "D13": {
-          "normal": 0.5,
-          "hypotension": 0.5
+          "hypotension_under_90": 0.5,
+          "normal_over_90": 0.5
         },
         "D15": {
-          "normal": 0.7,
-          "hypotension": 0.3
+          "hypotension_under_90": 0.3,
+          "normal_over_90": 0.7
         },
         "D24": {
-          "normal": 0.15,
-          "hypotension": 0.85
+          "hypotension_under_90": 0.85,
+          "normal_over_90": 0.15
         },
         "D25": {
-          "normal": 0.6,
-          "hypotension": 0.4
+          "hypotension_under_90": 0.4,
+          "normal_over_90": 0.6
         },
         "D57": {
           "normal_over_90": 0.3,
@@ -3217,40 +3222,40 @@
         "peritoneal_signs"
       ],
       "leak": {
-        "normal": 0.9,
         "localized_tenderness": 0.07,
-        "peritoneal_signs": 0.03
+        "peritoneal_signs": 0.03,
+        "soft_nontender": 0.9
       },
       "parent_effects": {
         "D07": {
-          "normal": 0.3,
           "localized_tenderness": 0.65,
-          "peritoneal_signs": 0.05
+          "peritoneal_signs": 0.05,
+          "soft_nontender": 0.3
         },
         "D10": {
-          "normal": 0.05,
           "localized_tenderness": 0.4,
-          "peritoneal_signs": 0.55
+          "peritoneal_signs": 0.55,
+          "soft_nontender": 0.05
         },
         "D11": {
-          "normal": 0.08,
           "localized_tenderness": 0.75,
-          "peritoneal_signs": 0.17
+          "peritoneal_signs": 0.17,
+          "soft_nontender": 0.08
         },
         "D25": {
-          "normal": 0.1,
           "localized_tenderness": 0.7,
-          "peritoneal_signs": 0.2
+          "peritoneal_signs": 0.2,
+          "soft_nontender": 0.1
         },
         "D26": {
-          "normal": 0.1,
           "localized_tenderness": 0.75,
-          "peritoneal_signs": 0.15
+          "peritoneal_signs": 0.15,
+          "soft_nontender": 0.1
         },
         "D27": {
-          "normal": 0.08,
           "localized_tenderness": 0.7,
-          "peritoneal_signs": 0.22
+          "peritoneal_signs": 0.22,
+          "soft_nontender": 0.08
         },
         "D80": {
           "soft_nontender": 0.1,
@@ -3301,7 +3306,10 @@
         "petechiae_purpura": 0.01,
         "maculopapular_rash": 0.02,
         "vesicular_dermatomal": 0.01,
-        "diffuse_erythroderma": 0.01
+        "diffuse_erythroderma": 0.01,
+        "skin_necrosis": 0.0,
+        "purpura": 0.0,
+        "vesicle_bulla": 0.0
       },
       "parent_effects": {
         "D12": {
@@ -3310,7 +3318,10 @@
           "petechiae_purpura": 0.01,
           "maculopapular_rash": 0.02,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D13": {
           "normal": 0.5,
@@ -3318,7 +3329,10 @@
           "petechiae_purpura": 0.4,
           "maculopapular_rash": 0.05,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.02
+          "diffuse_erythroderma": 0.02,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D16": {
           "normal": 0.4,
@@ -3326,7 +3340,10 @@
           "petechiae_purpura": 0.08,
           "maculopapular_rash": 0.45,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D19": {
           "normal": 0.6,
@@ -3334,7 +3351,10 @@
           "petechiae_purpura": 0.03,
           "maculopapular_rash": 0.3,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D21": {
           "normal": 0.02,
@@ -3342,7 +3362,10 @@
           "petechiae_purpura": 0.01,
           "maculopapular_rash": 0.02,
           "vesicular_dermatomal": 0.9,
-          "diffuse_erythroderma": 0.02
+          "diffuse_erythroderma": 0.02,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D23": {
           "normal": 0.25,
@@ -3350,7 +3373,10 @@
           "petechiae_purpura": 0.03,
           "maculopapular_rash": 0.65,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D24": {
           "normal": 0.05,
@@ -3358,7 +3384,10 @@
           "petechiae_purpura": 0.02,
           "maculopapular_rash": 0.03,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.84
+          "diffuse_erythroderma": 0.84,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D28": {
           "normal": 0.7,
@@ -3366,7 +3395,10 @@
           "petechiae_purpura": 0.03,
           "maculopapular_rash": 0.2,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D14": {
           "normal": 0.6,
@@ -3374,18 +3406,21 @@
           "petechiae_purpura": 0.3,
           "maculopapular_rash": 0.05,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.02
+          "diffuse_erythroderma": 0.02,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D41": {
-          "normal": 0.2,
-          "localized_erythema_warmth_swelling": 0.75,
-          "petechiae_purpura": 0.01,
-          "maculopapular_rash": 0.01,
-          "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.01,
-          "purpura": 0.01,
-          "vesicle_bulla": 0.01,
-          "skin_necrosis": 0.01
+          "normal": 0.1961,
+          "localized_erythema_warmth_swelling": 0.7353,
+          "petechiae_purpura": 0.0098,
+          "maculopapular_rash": 0.0098,
+          "vesicular_dermatomal": 0.0098,
+          "diffuse_erythroderma": 0.0098,
+          "purpura": 0.0098,
+          "vesicle_bulla": 0.0098,
+          "skin_necrosis": 0.0098
         },
         "D44": {
           "normal": 0.3,
@@ -3520,12 +3555,15 @@
           "skin_necrosis": 0.01
         },
         "D59": {
-          "absent": 0.2,
           "maculopapular_rash": 0.5,
           "petechiae_purpura": 0.15,
-          "erythema_nodosum": 0.05,
-          "vesicular": 0.05,
-          "erythroderma": 0.05
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "normal": 0.25,
+          "vesicular_dermatomal": 0.05,
+          "diffuse_erythroderma": 0.05,
+          "localized_erythema_warmth_swelling": 0.0
         }
       }
     },
@@ -3625,14 +3663,12 @@
         "D53": {
           "absent": 0.75,
           "cervical": 0.12,
-          "generalized": 0.05,
-          "inguinal": 0.08
+          "generalized": 0.13
         },
         "D59": {
           "absent": 0.5,
           "cervical": 0.15,
-          "generalized": 0.3,
-          "inguinal": 0.05
+          "generalized": 0.35
         }
       }
     },
@@ -3816,6 +3852,11 @@
           "normal": 0.8,
           "confused": 0.15,
           "obtunded": 0.05
+        },
+        "D23": {
+          "normal": 0.8,
+          "confused": 0.15,
+          "obtunded": 0.05
         }
       }
     },
@@ -3857,6 +3898,10 @@
         "D28": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D23": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -4974,6 +5019,12 @@
           "mild_0.3_3": 0.15,
           "moderate_3_10": 0.35,
           "high_over_10": 0.45
+        },
+        "D23": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.5
         }
       }
     },
@@ -5311,38 +5362,38 @@
       "leak": {
         "normal": 0.85,
         "mild_elevated": 0.1,
-        "high_elevated": 0.05
+        "very_high": 0.05
       },
       "parent_effects": {
         "D11": {
           "normal": 0.4,
           "mild_elevated": 0.45,
-          "high_elevated": 0.15
+          "very_high": 0.15
         },
         "D16": {
           "normal": 0.3,
           "mild_elevated": 0.45,
-          "high_elevated": 0.25
+          "very_high": 0.25
         },
         "D18": {
           "normal": 0.2,
           "mild_elevated": 0.5,
-          "high_elevated": 0.3
+          "very_high": 0.3
         },
         "D25": {
           "normal": 0.1,
           "mild_elevated": 0.3,
-          "high_elevated": 0.6
+          "very_high": 0.6
         },
         "D15": {
           "normal": 0.35,
           "mild_elevated": 0.4,
-          "high_elevated": 0.25
+          "very_high": 0.25
         },
         "D28": {
           "normal": 0.4,
           "mild_elevated": 0.4,
-          "high_elevated": 0.2
+          "very_high": 0.2
         },
         "D29": {
           "normal": 0.15,
@@ -5398,6 +5449,11 @@
           "normal": 0.55,
           "mild_elevated": 0.35,
           "very_high": 0.1
+        },
+        "D23": {
+          "normal": 0.2,
+          "mild_elevated": 0.45,
+          "very_high": 0.35
         }
       }
     },
@@ -5532,9 +5588,9 @@
         },
         "D59": {
           "normal": 0.3,
-          "elevated_200_1000": 0.4,
           "very_high_over_1000": 0.2,
-          "extreme_over_10000": 0.1
+          "extreme_over_10000": 0.1,
+          "mild_elevated": 0.4
         }
       }
     },
@@ -6504,54 +6560,54 @@
       ],
       "leak": {
         "absent": 0.97,
-        "exertional": 0.02,
-        "at_rest": 0.01
+        "at_rest": 0.01,
+        "on_exertion": 0.02
       },
       "parent_effects": {
         "D05": {
           "absent": 0.2,
-          "exertional": 0.4,
-          "at_rest": 0.4
+          "at_rest": 0.4,
+          "on_exertion": 0.4
         },
         "D03": {
           "absent": 0.5,
-          "exertional": 0.35,
-          "at_rest": 0.15
+          "at_rest": 0.15,
+          "on_exertion": 0.35
         },
         "D17": {
           "absent": 0.4,
-          "exertional": 0.4,
-          "at_rest": 0.2
+          "at_rest": 0.2,
+          "on_exertion": 0.4
         },
         "D14": {
           "absent": 0.5,
-          "exertional": 0.3,
-          "at_rest": 0.2
+          "at_rest": 0.2,
+          "on_exertion": 0.3
         },
         "D34": {
           "absent": 0.4,
-          "exertional": 0.2,
-          "at_rest": 0.4
+          "at_rest": 0.4,
+          "on_exertion": 0.2
         },
         "D36": {
           "absent": 0.2,
-          "exertional": 0.5,
-          "at_rest": 0.3
+          "at_rest": 0.3,
+          "on_exertion": 0.5
         },
         "D50": {
           "absent": 0.1,
-          "exertional": 0.4,
-          "at_rest": 0.5
+          "at_rest": 0.5,
+          "on_exertion": 0.4
         },
         "D77": {
           "absent": 0.15,
-          "exertional": 0.25,
-          "at_rest": 0.6
+          "at_rest": 0.6,
+          "on_exertion": 0.25
         },
         "D62": {
           "absent": 0.55,
-          "exertional": 0.35,
-          "at_rest": 0.1
+          "at_rest": 0.1,
+          "on_exertion": 0.35
         }
       }
     },
@@ -6642,6 +6698,11 @@
           "absent": 0.6,
           "mild": 0.25,
           "severe": 0.15
+        },
+        "D23": {
+          "absent": 0.1,
+          "mild": 0.25,
+          "severe": 0.65
         }
       }
     },
@@ -6844,6 +6905,11 @@
           "absent": 0.1,
           "mild": 0.3,
           "severe": 0.6
+        },
+        "D23": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
         }
       }
     },
@@ -6980,7 +7046,8 @@
           "absent": 0.3,
           "present": 0.7
         },
-        "D55": 0.5
+        "D55": 0.5,
+        "D23": 0.7
       }
     },
     "S12": {
@@ -7180,8 +7247,9 @@
           "epigastric": 0.05,
           "RUQ": 0.05,
           "RLQ": 0.05,
-          "lower_abdominal": 0.05,
-          "diffuse_abdominal": 0.1
+          "LLQ": 0.05,
+          "diffuse": 0.1,
+          "suprapubic": 0.0
         },
         "D77": {
           "absent": 0.75,
@@ -7190,8 +7258,7 @@
           "RLQ": 0.02,
           "LLQ": 0.02,
           "suprapubic": 0.01,
-          "diffuse": 0.04,
-          "periumbilical": 0.01
+          "diffuse": 0.05
         }
       }
     },
@@ -8406,6 +8473,12 @@
           "3d_to_1w": 0.55,
           "1w_to_3w": 0.25,
           "over_3w": 0.05
+        },
+        "D23": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.45,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.1
         }
       }
     },
@@ -8416,60 +8489,49 @@
         "gradual_days"
       ],
       "leak": {
-        "gradual": 0.4,
-        "acute": 0.4,
-        "sudden": 0.2
+        "sudden_hours": 0.6000000000000001,
+        "gradual_days": 0.3999999999999999
       },
       "parent_effects": {
         "D01": {
-          "gradual": 0.7,
-          "acute": 0.25,
-          "sudden": 0.05
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
         },
         "D02": {
-          "gradual": 0.05,
-          "acute": 0.25,
-          "sudden": 0.7
+          "sudden_hours": 0.95,
+          "gradual_days": 0.050000000000000044
         },
         "D03": {
-          "gradual": 0.2,
-          "acute": 0.55,
-          "sudden": 0.25
+          "sudden_hours": 0.8,
+          "gradual_days": 0.19999999999999996
         },
         "D05": {
-          "gradual": 0.15,
-          "acute": 0.55,
-          "sudden": 0.3
+          "sudden_hours": 0.8500000000000001,
+          "gradual_days": 0.1499999999999999
         },
         "D07": {
-          "gradual": 0.1,
-          "acute": 0.4,
-          "sudden": 0.5
+          "sudden_hours": 0.9,
+          "gradual_days": 0.09999999999999998
         },
         "D13": {
-          "gradual": 0.05,
-          "acute": 0.15,
-          "sudden": 0.8
+          "sudden_hours": 0.9500000000000001,
+          "gradual_days": 0.04999999999999993
         },
         "D14": {
-          "gradual": 0.75,
-          "acute": 0.2,
-          "sudden": 0.05
+          "sudden_hours": 0.25,
+          "gradual_days": 0.75
         },
         "D15": {
-          "gradual": 0.15,
-          "acute": 0.55,
-          "sudden": 0.3
+          "sudden_hours": 0.8500000000000001,
+          "gradual_days": 0.1499999999999999
         },
         "D17": {
-          "gradual": 0.8,
-          "acute": 0.18,
-          "sudden": 0.02
+          "sudden_hours": 0.19999999999999998,
+          "gradual_days": 0.8
         },
         "D24": {
-          "gradual": 0.02,
-          "acute": 0.08,
-          "sudden": 0.9
+          "sudden_hours": 0.98,
+          "gradual_days": 0.020000000000000018
         }
       }
     },

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1042,
+  "total_edges": 1080,
   "edges": [
     {
       "from": "R01",
@@ -10368,13 +10368,6 @@
       "to_name": "heart_rate"
     },
     {
-      "from": "D19",
-      "to": "L14",
-      "reason": "薬剤熱の好酸球増多",
-      "from_name": "drug_fever",
-      "to_name": "peripheral_blood"
-    },
-    {
       "from": "R14",
       "to": "D19",
       "reason": "R14は薬剤熱のリスク因子",
@@ -11831,7 +11824,358 @@
         "min": 1,
         "max": 14
       }
+    },
+    {
+      "from": "D100",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D102",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D32",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D32",
+      "to": "S28",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D37",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D42",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D48",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D49",
+      "to": "L01",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D51",
+      "to": "S13",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D52",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D53",
+      "to": "T03",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D57",
+      "to": "S09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D58",
+      "to": "S07",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D62",
+      "to": "L28",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D63",
+      "to": "S07",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D64",
+      "to": "S08",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D67",
+      "to": "L22",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D68",
+      "to": "E12",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D68",
+      "to": "L01",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D68",
+      "to": "L15",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D69",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D80",
+      "to": "E09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D81",
+      "to": "E09",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D88",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D90",
+      "to": "S07",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D91",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D92",
+      "to": "S17",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D93",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D95",
+      "to": "L02",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D99",
+      "to": "S07",
+      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "from": "D23",
+      "to": "T01",
+      "reason": "リケッチア症の発熱は3日〜3週間",
+      "onset_day_range": {
+        "min": 3,
+        "max": 21
+      }
+    },
+    {
+      "from": "D23",
+      "to": "S05",
+      "reason": "リケッチア症で激しい頭痛(80-90%)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "from": "D23",
+      "to": "S07",
+      "reason": "リケッチア症で全身倦怠感",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "S09",
+      "reason": "リケッチア症で悪寒戦慄",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D23",
+      "to": "E02",
+      "reason": "リケッチア症重症で頻脈",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "E16",
+      "reason": "リケッチア症重症で意識障害",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "E18",
+      "reason": "リケッチア症重症肝障害で黄疸",
+      "onset_day_range": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "L11",
+      "reason": "リケッチア症で肝酵素上昇(60-80%)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "from": "D23",
+      "to": "L02",
+      "reason": "リケッチア症でCRP高値",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
     }
   ],
-  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1"
+  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02"
 }
