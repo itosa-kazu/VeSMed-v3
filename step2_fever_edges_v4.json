@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1028,
+  "total_edges": 1042,
   "edges": [
     {
       "from": "R01",
@@ -11705,7 +11705,133 @@
         "min": 0,
         "max": 14
       }
+    },
+    {
+      "from": "D16",
+      "to": "T01",
+      "reason": "デング熱は3-7日の急性発熱",
+      "onset_day_range": {
+        "min": 3,
+        "max": 7
+      }
+    },
+    {
+      "from": "D16",
+      "to": "S07",
+      "reason": "デング熱で強い倦怠感",
+      "onset_day_range": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "from": "D16",
+      "to": "S14",
+      "reason": "デング熱で下痢(15-30%)",
+      "onset_day_range": {
+        "min": 2,
+        "max": 7
+      }
+    },
+    {
+      "from": "D16",
+      "to": "S26",
+      "reason": "デング出血熱で消化管出血",
+      "onset_day_range": {
+        "min": 3,
+        "max": 10
+      }
+    },
+    {
+      "from": "D16",
+      "to": "L02",
+      "reason": "デング熱でCRP軽度上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "from": "D28",
+      "to": "E02",
+      "reason": "腸チフスで相対的徐脈もあるが重症で頻脈",
+      "onset_day_range": {
+        "min": 3,
+        "max": 21
+      }
+    },
+    {
+      "from": "D28",
+      "to": "L02",
+      "reason": "腸チフスでCRP上昇",
+      "onset_day_range": {
+        "min": 3,
+        "max": 21
+      }
+    },
+    {
+      "from": "D90",
+      "to": "T03",
+      "reason": "ベーチェット病で周期的発熱",
+      "onset_day_range": {
+        "min": 1,
+        "max": 365
+      }
+    },
+    {
+      "from": "D90",
+      "to": "L28",
+      "reason": "ベーチェット病でESR上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 365
+      }
+    },
+    {
+      "from": "D19",
+      "to": "L28",
+      "reason": "薬剤熱でESR上昇(非特異的)",
+      "onset_day_range": {
+        "min": 1,
+        "max": 30
+      }
+    },
+    {
+      "from": "D77",
+      "to": "S13",
+      "reason": "PE関連の悪心・嘔吐",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D77",
+      "to": "S14",
+      "reason": "PE関連の消化器症状",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D77",
+      "to": "S12",
+      "reason": "PE関連の腹痛(横隔膜刺激)",
+      "onset_day_range": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "from": "D32",
+      "to": "L28",
+      "reason": "化膿性関節炎でESR上昇",
+      "onset_day_range": {
+        "min": 1,
+        "max": 14
+      }
     }
   ],
-  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03"
+  "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1"
 }

@@ -2963,6 +2963,11 @@
           "under_100": 0.7,
           "100_120": 0.25,
           "over_120": 0.05
+        },
+        "D28": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
         }
       }
     },
@@ -4957,6 +4962,18 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.4,
           "high_over_10": 0.2
+        },
+        "D16": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.1
+        },
+        "D28": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.45
         }
       }
     },
@@ -5882,6 +5899,21 @@
           "normal": 0.1,
           "elevated": 0.5,
           "very_high_over_100": 0.4
+        },
+        "D90": {
+          "normal": 0.1,
+          "elevated": 0.4,
+          "very_high_over_100": 0.5
+        },
+        "D19": {
+          "normal": 0.3,
+          "elevated": 0.5,
+          "very_high_over_100": 0.2
+        },
+        "D32": {
+          "normal": 0.1,
+          "elevated": 0.55,
+          "very_high_over_100": 0.35
         }
       }
     },
@@ -6807,6 +6839,11 @@
           "absent": 0.25,
           "mild": 0.4,
           "severe": 0.35
+        },
+        "D16": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
         }
       }
     },
@@ -7145,6 +7182,16 @@
           "RLQ": 0.05,
           "lower_abdominal": 0.05,
           "diffuse_abdominal": 0.1
+        },
+        "D77": {
+          "absent": 0.75,
+          "epigastric": 0.1,
+          "RUQ": 0.05,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.04,
+          "periumbilical": 0.01
         }
       }
     },
@@ -7193,6 +7240,10 @@
         "D17": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D77": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -7258,6 +7309,16 @@
           "absent": 0.8,
           "watery": 0.15,
           "bloody": 0.05
+        },
+        "D16": {
+          "absent": 0.7,
+          "watery": 0.25,
+          "bloody": 0.05
+        },
+        "D77": {
+          "absent": 0.9,
+          "watery": 0.1,
+          "bloody": 0.0
         }
       }
     },
@@ -7552,6 +7613,10 @@
         "D63": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D16": {
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -8335,6 +8400,12 @@
           "3d_to_1w": 0.3,
           "1w_to_3w": 0.45,
           "over_3w": 0.15
+        },
+        "D16": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.55,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.05
         }
       }
     },
@@ -8481,6 +8552,12 @@
           "continuous": 0.6,
           "intermittent": 0.3,
           "periodic": 0.05,
+          "double_quotidian": 0.05
+        },
+        "D90": {
+          "continuous": 0.15,
+          "intermittent": 0.3,
+          "periodic": 0.5,
           "double_quotidian": 0.05
         }
       }
