@@ -360,6 +360,90 @@ def entropy(ranked):
     return h
 
 
+def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
+                   root_priors, disc=None, disc_power=0.0, cf_alpha=0.0,
+                   top_n=10):
+    """
+    次に行うべき検査を情報利得(IG)で推奨する。
+
+    各未観測変数vについて:
+      1. 現在のposteriorからP(v=s|evidence)を近似計算
+      2. evidence + {v=s} を仮定した場合のエントロピーH(v=s)を計算
+      3. 期待エントロピー E[H|v] = Σ_s P(v=s|evidence) × H(v=s)
+      4. 情報利得 IG(v) = H_now - E[H|v]
+    IG降順でtop_n件を返す。
+    """
+    # Current posterior and entropy
+    ranked_now = infer(evidence, risk, diseases, disease_children, noisy_or,
+                       root_priors, disc=disc, disc_power=disc_power,
+                       cf_alpha=cf_alpha)
+    h_now = entropy(ranked_now)
+    posterior = {d: p for d, p in ranked_now}
+
+    # Skip variables already in evidence, risk factors, and disease nodes
+    observed = set(evidence.keys()) | set(risk.keys())
+
+    results = []
+    for var_id, params in noisy_or.items():
+        if var_id in observed:
+            continue
+        # Skip risk factor variables (R-prefix)
+        if var_id.startswith("R"):
+            continue
+
+        states = params["states"]
+        leak = params["leak"]
+        pe = params["parent_effects"]
+
+        # Compute P(v=s|evidence) by marginalizing over diseases
+        marginal = {}
+        for s in states:
+            p_s = 0.0
+            for d in diseases:
+                if d == "M01":
+                    continue
+                p_d = posterior.get(d, 0.0)
+                if d in pe:
+                    p_vs_d = pe[d].get(s, 0.001)
+                else:
+                    p_vs_d = leak.get(s, 1.0 / len(states))
+                p_s += p_vs_d * p_d
+            marginal[s] = max(p_s, 1e-10)
+
+        # Normalize marginal
+        total_m = sum(marginal.values())
+        if total_m > 0:
+            for s in states:
+                marginal[s] /= total_m
+
+        # Compute expected entropy after observing v
+        expected_h = 0.0
+        for s in states:
+            p_s = marginal[s]
+            if p_s < 1e-8:
+                continue
+            # Hypothetical evidence with v=s added
+            ev_hypo = dict(evidence)
+            ev_hypo[var_id] = s
+            ranked_hypo = infer(ev_hypo, risk, diseases, disease_children,
+                                noisy_or, root_priors, disc=disc,
+                                disc_power=disc_power, cf_alpha=cf_alpha)
+            h_hypo = entropy(ranked_hypo)
+            expected_h += p_s * h_hypo
+
+        ig = h_now - expected_h
+        results.append({
+            "var_id": var_id,
+            "ig": ig,
+            "h_now": h_now,
+            "expected_h": expected_h,
+            "marginal": marginal,
+        })
+
+    results.sort(key=lambda x: -x["ig"])
+    return results[:top_n]
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="VeSMed BN Inference")

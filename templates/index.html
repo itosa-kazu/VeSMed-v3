@@ -288,12 +288,71 @@ header p {
   flex: 1;
 }
 .btn-primary:hover { background: var(--accent2); }
+.btn-recommend {
+  background: rgba(245,166,35,0.15);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+.btn-recommend:hover { background: rgba(245,166,35,0.3); }
+.btn-recommend.loading { opacity: 0.6; pointer-events: none; }
 .btn-secondary {
   background: var(--surface2);
   color: var(--text2);
   border: 1px solid var(--border);
 }
 .btn-secondary:hover { background: var(--border); color: var(--text); }
+
+.rec-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  gap: 10px;
+}
+.rec-row:last-child { border-bottom: none; }
+.rec-rank {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--orange);
+  min-width: 24px;
+  text-align: right;
+}
+.rec-info { flex: 1; min-width: 0; }
+.rec-name {
+  font-size: 0.88em;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rec-id {
+  font-size: 0.72em;
+  color: var(--text2);
+  font-family: monospace;
+}
+.rec-cat {
+  font-size: 0.65em;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.rec-cat-lab { background: rgba(192,132,252,0.2); color: var(--lab); }
+.rec-cat-sign { background: rgba(61,214,140,0.2); color: var(--sign); }
+.rec-cat-symptom { background: rgba(108,123,255,0.2); color: var(--symptom); }
+.rec-cat-temporal { background: rgba(245,166,35,0.2); color: var(--temporal); }
+.rec-ig {
+  font-size: 0.82em;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: right;
+  color: var(--orange);
+}
+.rec-entropy {
+  font-size: 0.7em;
+  color: var(--text2);
+  text-align: right;
+  min-width: 80px;
+}
 
 .empty-state {
   padding: 40px 16px;
@@ -412,6 +471,7 @@ header p {
 
         <div class="toolbar">
           <button class="btn btn-primary" onclick="runInference()">推論 ▶</button>
+          <button class="btn btn-recommend" onclick="runNextBest()">推奨検査</button>
           <button class="btn btn-secondary" onclick="clearAll()">クリア</button>
         </div>
 
@@ -438,6 +498,14 @@ header p {
             <div>症状・検査所見を選択して「推論」をクリック</div>
           </div>
         </div>
+      </div>
+
+      <div class="results-card" id="recommendCard" style="margin-top:16px;display:none">
+        <div class="results-header" style="background:rgba(245,166,35,0.15)">
+          <h2 style="color:var(--orange)">推奨検査</h2>
+          <span id="recommendStatus" style="color:var(--text2);font-size:0.85em"></span>
+        </div>
+        <div class="results-list" id="recommendList"></div>
       </div>
     </div>
   </div>
@@ -575,6 +643,76 @@ async function runInference() {
     </div>`;
   }).join('');
   document.getElementById('resultsList').innerHTML = html;
+}
+
+async function runNextBest() {
+  const evidence = {};
+  const risk = {};
+  for (const [varId, state] of Object.entries(selected)) {
+    if (RISK_VARS.has(varId)) {
+      risk[varId] = state;
+    } else {
+      evidence[varId] = state;
+    }
+  }
+
+  if (Object.keys(evidence).length === 0 && Object.keys(risk).length === 0) {
+    alert('少なくとも1つのエビデンスを選択してください');
+    return;
+  }
+
+  const btn = document.querySelector('.btn-recommend');
+  btn.classList.add('loading');
+  btn.textContent = '計算中...';
+  document.getElementById('recommendCard').style.display = 'block';
+  document.getElementById('recommendList').innerHTML =
+    '<div class="empty-state"><div>情報利得を計算中...</div></div>';
+  document.getElementById('recommendStatus').textContent = '';
+
+  try {
+    const resp = await fetch('/api/next_best_test', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ evidence, risk_factors: risk }),
+    });
+    const data = await resp.json();
+    const recs = data.recommendations;
+
+    if (recs.length === 0) {
+      document.getElementById('recommendList').innerHTML =
+        '<div class="empty-state"><div>推奨検査なし</div></div>';
+      return;
+    }
+
+    const CAT_LABELS = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'};
+    const CAT_CSS = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'};
+
+    const maxIG = recs[0].ig;
+    const html = recs.filter(r => r.ig > 0.01).map((r, i) => {
+      const catLabel = CAT_LABELS[r.category] || r.category;
+      const catCss = CAT_CSS[r.category] || '';
+      return `<div class="rec-row">
+        <span class="rec-rank">${i + 1}</span>
+        <div class="rec-info">
+          <div class="rec-name">${r.name_ja}</div>
+          <div class="rec-id">${r.id} ${r.name}</div>
+        </div>
+        <span class="rec-cat rec-cat-${catCss}">${catLabel}</span>
+        <div class="rec-ig">IG ${r.ig.toFixed(2)}</div>
+        <div class="rec-entropy">H ${r.h_now} → ${r.expected_h}</div>
+      </div>`;
+    }).join('');
+
+    document.getElementById('recommendList').innerHTML = html;
+    document.getElementById('recommendStatus').textContent =
+      `H=${recs[0].h_now} → 最良=${recs[0].expected_h}`;
+  } catch (e) {
+    document.getElementById('recommendList').innerHTML =
+      `<div class="empty-state"><div>エラー: ${e.message}</div></div>`;
+  } finally {
+    btn.classList.remove('loading');
+    btn.textContent = '推奨検査';
+  }
 }
 
 function toggleCategory(catId) {

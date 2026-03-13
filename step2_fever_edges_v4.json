@@ -13169,6 +13169,41 @@
       "reason": "TODO"
     },
     {
+      "from": "D24",
+      "to": "E04",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "respiratory_rate",
+      "reason": "TSS→ARDS/敗血症性ショック→頻呼吸(80%以上)"
+    },
+    {
+      "from": "D24",
+      "to": "E05",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "spo2",
+      "reason": "TSS→ARDS→低酸素血症(60%以上で酸素必要)"
+    },
+    {
+      "from": "D24",
+      "to": "L14",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "peripheral_blood_smear",
+      "reason": "TSS→DIC→血小板減少(80%以上)"
+    },
+    {
+      "from": "D24",
+      "to": "L17",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "CK",
+      "reason": "TSS→横紋筋融解/筋炎→CK上昇(50%以上)"
+    },
+    {
+      "from": "D24",
+      "to": "E25",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "conjunctival_injection",
+      "reason": "TSS診断基準:結膜充血(特にStaph TSS)"
+    },
+    {
       "from": "D25",
       "to": "E02",
       "from_name": "acute_cholangitis",

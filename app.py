@@ -6,7 +6,8 @@ VeSMed V3 — Web Frontend for BN Inference Engine
 import json
 import os
 from flask import Flask, render_template, request, jsonify
-from bn_inference import build_model, infer, entropy, load_json
+from bn_inference import (build_model, infer, entropy, load_json,
+                          next_best_test, compute_idf_disc)
 
 app = Flask(__name__)
 
@@ -20,6 +21,11 @@ step1 = load_json(STEP1)
 step2 = load_json(STEP2)
 step3 = load_json(STEP3)
 variables, diseases, disease_children, noisy_or, root_priors = build_model(step1, step2, step3)
+
+# IDF discriminative coefficients for V3.1 enhanced mode
+idf_disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
+IDF_DISC_POWER = 0.7
+CF_COVERAGE_ALPHA = 1.0
 
 # Build lookup dicts
 var_lookup = {v["id"]: v for v in step1["variables"]}
@@ -70,7 +76,9 @@ def api_infer():
     evidence = data.get("evidence", {})
     risk = data.get("risk_factors", {})
 
-    ranked = infer(evidence, risk, diseases, disease_children, noisy_or, root_priors)
+    ranked = infer(evidence, risk, diseases, disease_children, noisy_or,
+                   root_priors, disc=idf_disc, disc_power=IDF_DISC_POWER,
+                   cf_alpha=CF_COVERAGE_ALPHA)
     h = entropy(ranked)
 
     results = []
@@ -89,6 +97,35 @@ def api_infer():
         "n_risk": len(risk),
         "results": results,
     })
+
+
+@app.route("/api/next_best_test", methods=["POST"])
+def api_next_best_test():
+    data = request.get_json()
+    evidence = data.get("evidence", {})
+    risk = data.get("risk_factors", {})
+
+    recommendations = next_best_test(
+        evidence, risk, diseases, disease_children, noisy_or, root_priors,
+        disc=idf_disc, disc_power=IDF_DISC_POWER, cf_alpha=CF_COVERAGE_ALPHA,
+        top_n=15,
+    )
+
+    results = []
+    for rec in recommendations:
+        vid = rec["var_id"]
+        v = var_lookup.get(vid, {})
+        results.append({
+            "id": vid,
+            "name": v.get("name", vid),
+            "name_ja": v.get("name_ja", vid),
+            "category": v.get("category", ""),
+            "ig": round(rec["ig"], 3),
+            "h_now": round(rec["h_now"], 2),
+            "expected_h": round(rec["expected_h"], 2),
+        })
+
+    return jsonify({"recommendations": results})
 
 
 if __name__ == "__main__":

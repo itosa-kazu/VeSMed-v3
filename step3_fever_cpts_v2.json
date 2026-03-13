@@ -3312,6 +3312,11 @@
           "normal_under_20": 0.15,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.35
+        },
+        "D24": {
+          "normal_under_20": 0.15,
+          "tachypnea_20_30": 0.40,
+          "severe_over_30": 0.45
         }
       }
     },
@@ -3377,6 +3382,11 @@
           "normal_over_96": 0.2,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.4
+        },
+        "D24": {
+          "normal_over_96": 0.35,
+          "mild_hypoxia_93_96": 0.30,
+          "severe_hypoxia_under_93": 0.35
         }
       }
     },
@@ -3678,11 +3688,11 @@
         "D24": {
           "normal": 0.05,
           "localized_erythema_warmth_swelling": 0.05,
-          "petechiae_purpura": 0.02,
+          "petechiae_purpura": 0.10,
           "maculopapular_rash": 0.03,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.84,
-          "skin_necrosis": 0.0,
+          "diffuse_erythroderma": 0.73,
+          "skin_necrosis": 0.03,
           "purpura": 0.0,
           "vesicle_bulla": 0.0
         },
@@ -4441,6 +4451,10 @@
         "D64": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D24": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -6247,16 +6261,19 @@
           "very_high": 0.1
         },
         "D24": {
-          "normal": 0.2,
-          "elevated": 0.8
+          "normal": 0.10,
+          "mild_elevated": 0.50,
+          "very_high": 0.40
         },
         "D86": {
           "normal": 0.15,
-          "elevated": 0.85
+          "mild_elevated": 0.40,
+          "very_high": 0.45
         },
         "D102": {
-          "normal": 0.3,
-          "elevated": 0.7
+          "normal": 0.30,
+          "mild_elevated": 0.45,
+          "very_high": 0.25
         },
         "D74": {
           "normal": 0.3,
@@ -6398,6 +6415,13 @@
           "atypical_lymphocytes": 0.05,
           "thrombocytopenia": 0.35,
           "eosinophilia": 0.05
+        },
+        "D24": {
+          "normal": 0.20,
+          "left_shift": 0.35,
+          "atypical_lymphocytes": 0.02,
+          "thrombocytopenia": 0.40,
+          "eosinophilia": 0.03
         }
       }
     },
@@ -6515,6 +6539,11 @@
           "normal": 0.5,
           "elevated": 0.35,
           "very_high": 0.15
+        },
+        "D24": {
+          "normal": 0.35,
+          "elevated": 0.45,
+          "very_high": 0.20
         }
       }
     },
