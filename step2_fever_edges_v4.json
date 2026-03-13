@@ -13001,6 +13001,13 @@
       "reason": "TODO"
     },
     {
+      "from": "D17",
+      "to": "S09",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "rigors",
+      "reason": "結核（特に粟粒結核）で悪寒戦慄。粟粒結核の40-60%で悪寒を伴う"
+    },
+    {
       "from": "D18",
       "to": "E12",
       "from_name": "infectious_mononucleosis",

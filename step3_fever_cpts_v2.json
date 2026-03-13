@@ -8706,6 +8706,10 @@
         "D98": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D17": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -8902,13 +8906,13 @@
           "diffuse": 0.15
         },
         "D17": {
-          "absent": 0.7,
+          "absent": 0.65,
           "epigastric": 0.05,
           "RUQ": 0.05,
           "RLQ": 0.05,
           "LLQ": 0.05,
-          "diffuse": 0.1,
-          "suprapubic": 0.0
+          "diffuse": 0.10,
+          "suprapubic": 0.05
         },
         "D77": {
           "absent": 0.75,
