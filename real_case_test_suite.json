@@ -2543,6 +2543,630 @@
         "R02": "male",
         "R04": "yes"
       }
+    },
+    {
+      "id": "R112",
+      "source": "Cureus 2022 (PMC9645086)",
+      "pmcid": "PMC9645086",
+      "vignette": "35M ニューギニア出身。5日間の発熱+右上腹部激痛(右肩放散)+嘔吐+下痢。入院5日目に呼吸困難・喀血。肝膿瘍3個(6x5cm等)。アメーバ抗体陽性+胸水中trophozoites。",
+      "final_diagnosis": "アメーバ肝膿瘍",
+      "expected_id": "D51",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "normal_under_20",
+        "E05": "mild_hypoxia_93_96",
+        "E09": "localized_tenderness",
+        "S12": "RUQ",
+        "S13": "present",
+        "S14": "watery",
+        "L01": "high_10000_20000",
+        "L11": "very_high",
+        "L14": "thrombocytopenia",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R06": "tropical_endemic"
+      }
+    },
+    {
+      "id": "R113",
+      "source": "Cureus 2019 (PMC6368024)",
+      "pmcid": "PMC6368024",
+      "vignette": "66M 介護施設入所中。4日間の進行性腹部膨隆・びまん性腹痛・便秘。抗菌薬頻回投与歴。T 37.9, HR 104, BP 98/56, SpO2 95%(4L)。偽膜性全大腸炎。便PCR C.diff toxin B陽性。",
+      "final_diagnosis": "C.difficile偽膜性大腸炎",
+      "expected_id": "D38",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "S12": "diffuse",
+        "L01": "high_10000_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R07": "yes"
+      }
+    },
+    {
+      "id": "R114",
+      "source": "Case Rep Infect Dis 2017 (PMC5530416)",
+      "pmcid": "PMC5530416",
+      "vignette": "40F BMI41 DM2。4週間持続する発作性咳嗽+呼吸困難感+時折嘔吐。アモキシシリン無効。T 37.4, HR 95, SpO2 98%。CRP 3.2。胸部X線右上葉浸潤影。百日咳毒素IgG高力価。注:百日咳は典型的に発熱乏しい。",
+      "final_diagnosis": "百日咳+肺炎",
+      "expected_id": "D56",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "S01": "dry",
+        "S13": "present",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "L04": "lobar_infiltrate",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R115",
+      "source": "Nucl Med Mol Imaging 2015 (PMC4607773)",
+      "pmcid": "PMC4607773",
+      "vignette": "68F。2ヶ月間の持続性高熱(1日2-3回spike)+悪寒+頭痛。FUOとして入院。末梢脈拍保たれる(prepulseless期)。ESR 82, CRP 7.08, PLT 498K。FDG PET-CTで大動脈壁集積。ステロイドで消失。",
+      "final_diagnosis": "高安動脈炎(prepulseless期)",
+      "expected_id": "D98",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "S05": "mild",
+        "S09": "present",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "L28": "elevated",
+        "T01": "over_3w",
+        "T03": "intermittent",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R116",
+      "source": "Medicine 2022 (PMC9829286)",
+      "pmcid": "PMC9829286",
+      "vignette": "64F 免疫正常。PICC 6ヶ月以上留置。呼吸困難+発熱で救急搬送。T 38.0, HR 150(不整), RR 30, SpO2 88%。WBC 10,920, CRP 9.02。入院9日目四肢多発紅斑結節。血培PCRでM.massiliense播種性感染。死亡転帰。",
+      "final_diagnosis": "非結核性抗酸菌症(M.massiliense播種性)",
+      "expected_id": "D99",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "E05": "severe_hypoxia_under_93",
+        "S04": "present",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R07": "yes",
+        "R10": "yes"
+      }
+    },
+    {
+      "id": "R117",
+      "source": "Cureus 2022 (PMC9561487)",
+      "pmcid": "PMC9561487",
+      "vignette": "47M DM+高血圧。田舎キャンプ1週間後に高熱+意識変容2日間。GCS E4V1M5。項部硬直(+)。WBC 17,270(好中球91%), CRP 0.386。髄液WBC 173/蛋白365。MRI右視床T2高信号。髄液JEV IgM陽性。",
+      "final_diagnosis": "日本脳炎",
+      "expected_id": "D95",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E06": "present",
+        "E16": "obtunded",
+        "S05": "severe",
+        "L01": "high_10000_20000",
+        "L02": "mild_0.3_3",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R118",
+      "source": "Case Rep Med 2017 (PMC5586755)",
+      "pmcid": "PMC5586755",
+      "vignette": "48M 高血圧+脂質異常症。急性胸骨下痛(背部放散)+高熱39.9°C。WBC 23,520, CRP 0.71mg/dL, Troponin 4.3。冠動脈造影正常。4ヶ月後再発。24h尿エピネフリン22倍。左副腎6.7cm腫瘤。",
+      "final_diagnosis": "褐色細胞腫",
+      "expected_id": "D73",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "under_100",
+        "S21": "constant",
+        "S09": "present",
+        "L01": "very_high_over_20000",
+        "L02": "mild_0.3_3",
+        "L09": "negative",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R119",
+      "source": "Am J Case Rep 2019 (PMC6639086)",
+      "pmcid": "PMC6639086",
+      "vignette": "55M 長期大量飲酒。最終飲酒48時間後に意識変容+著明高体温41.9°C+HR 158。全身筋強剛、振戦、発汗。WBC 9,800, CK 1268, AST 356, 乳酸4.6。当初NMS疑い→抗精神病薬歴なし→アルコール離脱確定。",
+      "final_diagnosis": "アルコール離脱症候群",
+      "expected_id": "D88",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "E16": "confused",
+        "L01": "normal_4000_10000",
+        "L11": "very_high",
+        "L17": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R16": "yes"
+      }
+    },
+    {
+      "id": "R120",
+      "source": "Case Rep Cardiol 2019 (PMC6568196)",
+      "pmcid": "PMC6568196",
+      "vignette": "63F Graves病既往。重度呼吸困難+発汗+動悸+10lb体重減少。T 38.4, HR 124, BP 220/114, RR 42, SpO2 88%。甲状腺両側腫大、両側肺ラ音、下腿浮腫。TSH<0.01, FT3 10.2, FT4 2.7。Burch-Wartofsky 55点。挿管後心停止→蘇生。",
+      "final_diagnosis": "甲状腺クリーゼ",
+      "expected_id": "D71",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
+        "S04": "present",
+        "S17": "present",
+        "E07": "crackles",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R121",
+      "source": "Cureus 2021 (PMC8523265)",
+      "pmcid": "PMC8523265",
+      "vignette": "27F。7日間の発熱+悪心+嘔吐+水様下痢+湿性咳嗽。2ヶ月で10kg体重減少、18ヶ月無月経。昇圧剤抵抗性低血圧。歯肉色素沈着、手指/膝関節の皮膚色素沈着。早朝コルチゾール0.84。IV hydrocortisoneで劇的改善。",
+      "final_diagnosis": "副腎クリーゼ(Addison病)",
+      "expected_id": "D72",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E04": "tachypnea_20_30",
+        "S01": "productive",
+        "S13": "present",
+        "S14": "watery",
+        "S17": "present",
+        "L01": "very_high_over_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R122",
+      "source": "J Pharm Pract 2014 (PMC3956732)",
+      "pmcid": "PMC3956732",
+      "vignette": "25M B-ALL。化学療法誘導10日後に発熱+筋肉痛+嘔吐+咳嗽+呼吸困難+頭痛。T 38.6, HR 104, BP 98/64, RR 22, SpO2 93%。WBC 1.1K(ANC 300), Hb 7.1, PLT 17K。発熱性好中球減少。",
+      "final_diagnosis": "急性白血病(発熱性好中球減少)",
+      "expected_id": "D68",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "S01": "dry",
+        "S04": "present",
+        "S05": "mild",
+        "S06": "present",
+        "S13": "present",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R05": "yes"
+      }
+    },
+    {
+      "id": "R123",
+      "source": "Cureus 2023 (PMC10726209)",
+      "pmcid": "PMC10726209",
+      "vignette": "40M 健康。路上で意識不明で発見。T 42°C, HR 190, BP 110/57(昇圧剤下), RR 24。GCS 3。CK 1426, AST 1381, PLT 106→12K, Cr 270, 乳酸4.70, CRP 139.4。DIC+横紋筋融解+AKI+肝障害。",
+      "final_diagnosis": "熱中症(重症)",
+      "expected_id": "D78",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "E16": "obtunded",
+        "S14": "watery",
+        "L01": "normal_4000_10000",
+        "L11": "very_high",
+        "L14": "thrombocytopenia",
+        "L17": "very_high",
+        "L20": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R124",
+      "source": "Medicine 2025 (PMC11999390)",
+      "pmcid": "PMC11999390",
+      "vignette": "46F。Fluoxetine+Phentermine+Topiramate 1ヶ月使用。2日間の発熱40°C+発語困難+起立困難。HR 140, RR 25, SpO2 77%→50%。混乱+下肢自発性クローヌス。CK 5375, AST 4153, D-dimer 20.1。横紋筋融解+肺塞栓+心筋症+AKI。",
+      "final_diagnosis": "セロトニン症候群",
+      "expected_id": "D75",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "E05": "severe_hypoxia_under_93",
+        "E16": "confused",
+        "L11": "very_high",
+        "L17": "very_high",
+        "L20": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R125",
+      "source": "Ann Med Surg 2021 (PMC8343040)",
+      "pmcid": "PMC8343040",
+      "vignette": "39M。中隔矯正術中にEtCO2 130mmHgまで急上昇+頻脈+腋窩温39.5°C。Succinylcholine+Desflurane曝露後。K 7.2, pH 7.05, CK 30,930→112,860。ダントロレンで改善。RYR1遺伝子変異確認。",
+      "final_diagnosis": "悪性高熱症",
+      "expected_id": "D89",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "L17": "very_high",
+        "L11": "very_high",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R126",
+      "source": "Case Rep Gastroenterol 2014 (PMC4238151)",
+      "pmcid": "PMC4238151",
+      "vignette": "42M。メキシコ/ペルー/アルゼンチン渡航後1週間で悪心+嘔吐+間欠的発熱+食欲不振+黄疸。T 40°C, HR 89, BP 95/51, RR 20。強膜黄染。WBC 3.5→10.9K, Hb 6.2, PLT 134→59K, AST 410, ALT 315, T-Bil 21.1→39.8, LDH 2194。IgM anti-HAV陽性。",
+      "final_diagnosis": "A型急性肝炎(胆汁うっ滞型+溶血性貧血)",
+      "expected_id": "D100",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "S13": "present",
+        "L01": "low_under_4000",
+        "L11": "very_high",
+        "L14": "thrombocytopenia",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R06": "tropical_endemic"
+      }
+    },
+    {
+      "id": "R127",
+      "source": "J Clin Diagn Res 2014 (PMC4139578)",
+      "pmcid": "PMC4139578",
+      "vignette": "24F インド人、免疫正常。10日間の高熱+悪寒、続いて咳嗽+鼻汁+下痢+顔/体幹/四肢に斑丘疹。HR 116, BP 90/60, SpO2 78%(RA)→90%(O2)。WBC 7,100(好中球91%), PLT 126K。両側頸部リンパ節腫脹。P/F比145.8(ARDS)。麻疹IgM陽性+PCR陽性。死亡転帰。",
+      "final_diagnosis": "麻疹(ARDS合併→死亡)",
+      "expected_id": "D46",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "E12": "maculopapular_rash",
+        "E13": "cervical",
+        "S01": "productive",
+        "S09": "present",
+        "S14": "watery",
+        "L01": "normal_4000_10000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R128",
+      "source": "Urol Case Rep 2021 (PMC8196048)",
+      "pmcid": "PMC8196048",
+      "vignette": "52M DM(HbA1c 13.2%)。2週間の全身倦怠+咳嗽+発熱。T 39.8, HR 127, BP 102/91, SpO2 97%。右CVA叩打痛。WBC 19,860, CRP 23.6, Cr 2.17。血培C.glabrata陽性、beta-D glucan 84.8。尿道異物→カンジダ血症+敗血症性肺塞栓。",
+      "final_diagnosis": "カンジダ血症(C.glabrata)",
+      "expected_id": "D49",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E03": "normal_over_90",
+        "S01": "dry",
+        "S07": "severe",
+        "S15": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L27": "positive",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes",
+        "R13": "yes"
+      }
+    },
+    {
+      "id": "R129",
+      "source": "IDCases 2020 (PMC7167429)",
+      "pmcid": "PMC7167429",
+      "vignette": "60M 既往歴なし。2-3週間の毎日の高熱39-40°C+両前腕痛+乾性咳嗽。感染症・悪性腫瘍精査すべて陰性。CRP 385mg/L(=38.5mg/dL), ESR 110, フェリチン6591, PLT 733K, AST 85, ALT 189。PET-CTで大動脈〜四肢動脈にびまん性FDG集積。PSL著効。",
+      "final_diagnosis": "巨細胞動脈炎(大血管型GCA)",
+      "expected_id": "D61",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S01": "dry",
+        "S06": "present",
+        "S09": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "L15": "very_high_over_1000",
+        "L28": "very_high_over_100",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R130",
+      "source": "Cureus 2025 (PMC12037254)",
+      "pmcid": "PMC12037254",
+      "vignette": "70M 既往歴なし。1ヶ月の血便+間欠性水様下痢(4-5回/日)、1週間の高熱+盗汗+体幹/背部の有痛性紅斑性局面。T 39.5, HR 115。WBC 20K, CRP 17, ESR 100。大腸内視鏡:回腸末端アフタ性潰瘍+非乾酪性肉芽腫。Sweet症候群合併。",
+      "final_diagnosis": "クローン病(Sweet症候群合併)",
+      "expected_id": "D63",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E12": "maculopapular_rash",
+        "S12": "RUQ",
+        "S14": "watery",
+        "S16": "present",
+        "S18": "rash_widespread",
+        "S26": "present",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R131",
+      "source": "Intern Med 2021 (PMC8627796)",
+      "pmcid": "PMC8627796",
+      "vignette": "79M アルコール性肝硬変(Child-Pugh C, MELD 22)+DM+高血圧。5日間の発熱+腹痛+食欲不振+歩行困難。T 38.5, HR 146, BP 125/67。黄疸、腹部硬・びまん性圧痛。WBC 3,090(左方移動), CRP 22.3, PLT 57K, T-Bil 4.4, AST 105。腹水PMN 68,195/μL。Burkholderia cepacia検出。",
+      "final_diagnosis": "特発性細菌性腹膜炎(SBP)",
+      "expected_id": "D81",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E09": "peritoneal_signs",
+        "S12": "diffuse",
+        "L01": "low_under_4000",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "L14": "thrombocytopenia",
+        "L20": "elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R04": "yes",
+        "R16": "yes"
+      }
+    },
+    {
+      "id": "R132",
+      "source": "Case Rep Hematol 2018 (PMC6262695)",
+      "pmcid": "PMC6262695",
+      "vignette": "70F AML/MRC+NTM既往。Azacitidine後1週間の発熱+咳嗽。T 37.1, HR 92, BP 84/53, RR 22。結膜蒼白、全身紫斑、右上肺野粗ラ音。WBC 100(重度汎血球減少), CRP 34.3, beta-D glucan 36.5, ガラクトマンナン0.5, PCT 9.2。胸水A.fumigatus PCR陽性。硬膜外進展→対麻痺。",
+      "final_diagnosis": "侵襲性アスペルギルス症(肺+硬膜外)",
+      "expected_id": "D83",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E04": "tachypnea_20_30",
+        "E07": "crackles",
+        "E12": "purpura",
+        "L01": "low_under_4000",
+        "L02": "high_over_10",
+        "L03": "high_over_0.5",
+        "L22": "present",
+        "L26": "positive",
+        "L27": "positive",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R05": "yes"
+      }
+    },
+    {
+      "id": "R133",
+      "source": "Intern Med 2014 (PMC4064098)",
+      "pmcid": "PMC4064098",
+      "vignette": "25M。レストランで鶏レバー摂取3日後に右側腹部痛+水様下痢(20回/日以上)+発熱39.1°C。右側腹部圧痛あり反跳痛なし。WBC 13,120, CRP 11.58。4日目に膵アミラーゼ341+リパーゼ660(急性膵炎合併)。便培養C.jejuni/coli陽性。",
+      "final_diagnosis": "細菌性腸炎(カンピロバクター)+膵炎",
+      "expected_id": "D37",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E09": "localized_tenderness",
+        "S12": "RLQ",
+        "S14": "watery",
+        "S15": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R134",
+      "source": "Cureus 2023 (PMC10008777)",
+      "pmcid": "PMC10008777",
+      "vignette": "83F CPPD既往(関節穿刺でピロリン酸結晶確認済)。2日間の両下肢腫脹+灼熱痛(左足8/10)。T 37.7, HR 89, BP 134/59, RR 18, SpO2 96%。左足関節著明腫脹+熱感+発赤、足背に水疱。CRP 134.9mg/L, ESR 73。プレドニン+コルヒチンで即時改善。",
+      "final_diagnosis": "偽痛風(CPPD発作)",
+      "expected_id": "D65",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "under_100",
+        "S08": "present",
+        "S23": "monoarticular",
+        "E21": "present",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R135",
+      "source": "World J Gastroenterol 2016 (PMC5008568)",
+      "pmcid": "PMC5008568",
+      "vignette": "63M 喫煙者。2ヶ月間の毎日の発熱38°C+盗汗+食欲不振+疲労+5kg体重減少。感染症・自己免疫精査すべて陰性。CRP 173mg/L(=17.3mg/dL), ESR 118, PCT 0.11(正常:腫瘍熱の鑑別ポイント)。CT/PETで膵頭部腫瘤+後腹膜リンパ節腫大。切除後発熱消失。",
+      "final_diagnosis": "腫瘍熱(膵頭部未分化腺癌)",
+      "expected_id": "D92",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "S16": "present",
+        "S17": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L03": "low_under_0.25",
+        "L09": "negative",
+        "L28": "very_high_over_100",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R03": "current"
+      }
     }
   ],
   "total_cases": 110
