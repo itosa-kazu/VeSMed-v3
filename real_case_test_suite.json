@@ -1847,6 +1847,703 @@
         "L02": "high_over_10"
       },
       "risk_factors": {}
+    },
+    {
+      "id": "R77",
+      "source": "PMC11162253 Cureus 2024",
+      "source_summary": "69yo male with 10 days of progressive fever, SOB, dry cough, and diarrhea. CXR showed multifocal pneumonia. No improvement on empiric abx. Urine Legionella antigen positive. Elevated creatinine. History of possible contaminated water exposure.",
+      "expected_id": "D102",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S01": "dry",
+        "S04": "at_rest",
+        "S07": "severe",
+        "S14": "watery",
+        "S13": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "bilateral_infiltrate",
+        "T01": "1w_to_3w",
+        "E02": "100_120"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R78",
+      "source": "PMC7581213 Cureus 2020",
+      "source_summary": "68yo female kitchen worker presented with diarrhea, abdominal pain, and fever. No respiratory symptoms. CXR showed RML infiltrate. Urine Legionella antigen positive.",
+      "expected_id": "D102",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S14": "watery",
+        "S12": "diffuse",
+        "S07": "severe",
+        "L02": "high_over_10",
+        "L04": "lobar_infiltrate",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R79",
+      "source": "PMC8832690 BMC Infect Dis 2022",
+      "source_summary": "23yo healthy male with fever 38.3°C and pharyngitis. Bilateral posterior cervical lymphadenopathy, splenomegaly, liver dysfunction (AST 112, ALT 125). WBC 5000, atypical lymphocytes. CRP 6.2 mg/dL.",
+      "expected_id": "D18",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S02": "present",
+        "S07": "mild",
+        "E08": "exudate_or_white_patch",
+        "E13": "cervical",
+        "E14": "present",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "L11": "mild_elevated",
+        "L14": "atypical_lymphocytes",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R80",
+      "source": "PMC3002080 Indian J Hematol Blood Transfus 2009",
+      "source_summary": "11yo girl with high grade fever, weakness, anorexia for 2 weeks. Generalized lymphadenopathy, mild splenomegaly. WBC 22000 with 74.5% lymphocytes, 52% atypical lymphocytes mimicking lymphoma.",
+      "expected_id": "D18",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "S46": "present",
+        "E13": "generalized",
+        "E14": "present",
+        "L01": "high_10000_20000",
+        "L14": "atypical_lymphocytes",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {}
+    },
+    {
+      "id": "R81",
+      "source": "PMC10923698 Clin Case Rep 2024",
+      "source_summary": "38yo male with 7-week persistent fever, recurrent night sweats, chills, arthralgias, headache, chest tightness. CRP/ESR mildly elevated. Palmar rash developed later. RPR and FTA-ABS positive. Treated with penicillin G.",
+      "expected_id": "D101",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S16": "present",
+        "S08": "present",
+        "S05": "mild",
+        "S43": "present",
+        "L02": "mild_0.3_3",
+        "L28": "elevated",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R82",
+      "source": "PMC6659237 J Med Case Rep 2019",
+      "source_summary": "59yo male with 1-month progressive submental swelling, subjective fevers, chills. Diffuse skin rash, ulcerated hard palate lesion. Marked cervical lymphadenopathy. WBC 12500. RPR 1:512. Dysphagia and weight loss.",
+      "expected_id": "D101",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S17": "present",
+        "S25": "present",
+        "S29": "present",
+        "S02": "present",
+        "E12": "maculopapular_rash",
+        "E13": "cervical",
+        "L01": "high_10000_20000",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R83",
+      "source": "PMC7249777 Cureus 2020",
+      "source_summary": "Female patient with 1-week progressive right foot pain and swelling. Fever 101.6F (38.7C), dry cough. Right foot erythematous, swollen with severe pain. WBC 21K on day 2. Bulla formation at site. Blood culture grew H. influenzae type F. Required surgical debridement due to concern for necrotizing fasciitis.",
+      "expected_id": "D12",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "dry",
+        "E12": "localized_erythema_warmth_swelling",
+        "S18": "localized_pain_redness",
+        "L01": "high_10000_20000",
+        "L09": "gram_negative",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {}
+    },
+    {
+      "id": "R84",
+      "source": "PMC12396406 Front Med 2025",
+      "source_summary": "54yo female diabetic with 5-day history of fever 38.2C, chills, multiple episodes of non-bloody vomiting, left flank pain, and gross hematuria. HR 108, positive left CVA tenderness. Leukocytosis, anemia, thrombocytopenia, elevated inflammatory markers. Diagnosed complicated pyelonephritis with subcapsular hematoma.",
+      "expected_id": "D09",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S13": "present",
+        "S15": "present",
+        "E11": "present",
+        "E02": "100_120",
+        "S33": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R85",
+      "source": "PMC3094361 Int J Surg Case Rep 2011",
+      "source_summary": "82yo male with previous cholecystectomy 12 years ago. 3-day history of fever 39.0C, chills, progressive jaundice. BP 85/40 mmHg, HR 112. WBC 34100, CRP 311 mg/dL. Total bilirubin 210 umol/L, ALT 175, ALP 394. US: dilated biliary tract. CT: multiple stones in CBD. Developed septic shock requiring ICU admission.",
+      "expected_id": "D25",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "E18": "present",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E16": "confused",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R86",
+      "source": "PMC10999247 Cureus 2024",
+      "source_summary": "Male in late 40s initially presented with minor rash on right lower extremity and viral-like symptoms. Within 24 hours: rapidly worsening pain, hemorrhagic blisters, nausea, vomiting, diarrhea, tachycardia, tachypnea, fever 100.4F. Hypotensive BP 80/50. Erythematous rash with purple center. Lab: elevated creatinine, CRP, bilirubin, AST, ALT, lactate. Diagnosed NF with concurrent TSS.",
+      "expected_id": "D57",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "S13": "present",
+        "S14": "watery",
+        "S06": "present",
+        "E12": "localized_erythema_warmth_swelling",
+        "S18": "localized_pain_redness",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R88",
+      "source": "PMC12026385 Diagnostics 2025",
+      "source_summary": "33yo obese female with 3-day history of fever up to 41C, pruritic rash, severe sore throat, nausea, vomiting, diarrhea. Hypotensive 60/30, tachycardic 160, tachypneic 36. Generalized maculopapular rash with sandpaper texture. Red swollen tonsils with purulent exudate. Blood culture: Strep pyogenes. Palmar desquamation at day 7.",
+      "expected_id": "D24",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S09": "present",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "S13": "present",
+        "S14": "watery",
+        "S04": "at_rest",
+        "L09": "gram_positive",
+        "T01": "under_3d",
+        "E12": "diffuse_erythroderma",
+        "E08": "exudate_or_white_patch"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R89",
+      "source": "PMC10667022 Cureus 2023",
+      "source_summary": "24yo male immunocompetent with 3-week history of fever, chills, generalized weakness. Associated anorexia and dry cough. Fever not responsive to paracetamol or empiric antibiotics. Eventually serologically confirmed CMV+EBV co-infection with elevated liver enzymes.",
+      "expected_id": "D45",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S01": "dry",
+        "S06": "present",
+        "L11": "mild_elevated",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R90",
+      "source": "PMC9286925 Case Rep Hematol 2022",
+      "source_summary": "34yo male with previously good health. Prolonged febrile illness, jaundice, anemia. Extensive workup: intravascular hemolytic anemia, leukopenia, hepatosplenomegaly. Liver biopsy: lymphohistiocytic infiltration with hemophagocytosis. CMV IgM+/IgG-, low IgG avidity. Diagnosed primary CMV infection complicated by hemolytic anemia and possible HLH.",
+      "expected_id": "D45",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E18": "present",
+        "L01": "low_under_4000",
+        "L11": "mild_elevated",
+        "T01": "over_3w",
+        "E14": "present"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R91",
+      "source": "PMC9839978 Cureus 2022",
+      "source_summary": "65yo male with DM and PAD. 3-day history of fever 38.7C, pain and swelling left leg. Tachycardia 108, hypotension 85/52 mmHg. CRP 582, creatinine 3.0, metabolic acidosis. Left leg inflammatory signs. Blood culture: Streptococcus pyogenes. Progressed to multi-organ dysfunction requiring ICU, vasopressors, mechanical ventilation, renal replacement therapy.",
+      "expected_id": "D24",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "S18": "localized_pain_redness",
+        "E12": "localized_erythema_warmth_swelling",
+        "L02": "high_over_10",
+        "L09": "gram_positive",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R92",
+      "source": "PMC11549727 Cureus 2024",
+      "source_summary": "58yo male with DM/HTN. 1-day history of localized dull RLQ abdominal pain with 3 episodes of watery diarrhea, worsening from 4/10 to 7/10. Febrile 103F (39.4C), tachycardia, elevated BP. RLQ tenderness without distention. WBC 17K, lactate 4.4. CT: perforated appendicitis with moderate fluid in RLQ. Admitted to SICU for sepsis.",
+      "expected_id": "D10",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "S14": "watery",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "S12": "RLQ"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R93",
+      "source": "PMC10348392 Cureus 2023",
+      "source_summary": "31yo healthy male with worsening right flank abdominal pain over several days, nausea, vomiting, fever 38.4C (101.2F). HR 103. Non-distended abdomen with moderate-severe RUQ tenderness (Murphy+) and RLQ tenderness (McBurney+). WBC 12.17K with left shift, AST 91. CT/US: concurrent acute appendicitis and acute cholecystitis. Gangrenous appendicitis found at surgery.",
+      "expected_id": "D10",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "S13": "present",
+        "L01": "high_10000_20000",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "S12": "RLQ"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R94",
+      "source": "PMC11830414 Cureus 2025",
+      "source_summary": "83yo male with obesity/CAD/HTN. Acute-onset RLQ abdominal pain constant 7/10, exacerbated by food. Low-grade fever, nausea. Abdomen distended, diffusely tender, positive rebound in RLQ. Leukocytosis. CT confirmed acute appendicitis with micro-perforations. Underwent laparoscopic appendectomy.",
+      "expected_id": "D10",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S13": "present",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "S12": "RLQ"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R87",
+      "source": "PMC9828947 CMAJ 2023",
+      "source_summary": "39yo male MSM presented with 7-day history of fever and rash. No PrEP/PEP. T 38C, cervical lymphadenopathy, mucosal ulceration on tongue, maculopapular rash on face, neck and anterior chest. HIV-1 VL 4.79 million copies/mL, CD4 0.1x10^9/L. Diagnosed acute HIV infection.",
+      "expected_id": "D44",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "T01": "3d_to_1w",
+        "E13": "cervical",
+        "E12": "maculopapular_rash",
+        "S29": "present",
+        "S18": "rash_widespread",
+        "S02": "present"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R95",
+      "source": "PMC4825169 Korean J Gastroenterol 2016",
+      "source_summary": "62yo female on PEG-IFN for hep C. Severe epigastric pain radiating to back, nausea, vomiting, fever. Amylase 1057, lipase 1840. CT: diffuse pancreatic swelling, peripancreatic fat stranding and fluid.",
+      "expected_id": "D86",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S13": "present",
+        "T01": "under_3d",
+        "S12": "epigastric",
+        "S22": "present"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R96",
+      "source": "PMC11166073 Clin Pract Cases Emerg Med 2024",
+      "source_summary": "19yo male, 6-day progressive right-sided sore throat. Fever, chills, otalgia, odynophagia. Muffled voice. Swelling next to right tonsil with uvular deviation. CT: right PTA 23x32x45mm, level II/III LAD.",
+      "expected_id": "D33",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S02": "present",
+        "T01": "3d_to_1w",
+        "E13": "cervical",
+        "S24": "present",
+        "S25": "present",
+        "E22": "present",
+        "E08": "exudate_or_white_patch"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R97",
+      "source": "PMC12008993 Cureus 2025",
+      "source_summary": "64yo male with cirrhosis. RUQ pain, positive Murphy sign. Tachycardia HR 140s. WBC elevated. Blood culture: E. faecalis and K. pneumoniae. CT: GB wall thickening consistent with acute cholecystitis.",
+      "expected_id": "D11",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "over_120",
+        "L01": "high_10000_20000",
+        "L09": "gram_positive",
+        "T01": "under_3d",
+        "S12": "RUQ",
+        "E10": "positive",
+        "E09": "localized_tenderness"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R98",
+      "source": "PMC9476833 Ann Med Surg 2022",
+      "source_summary": "19yo male post-skateboard fall. LE abrasions -> blisters within 24h. Fever, hypotension SBP 50, tachycardia HR 110, desaturation. Left LE swollen, skin necrosis, crepitus. Septic shock requiring ICU.",
+      "expected_id": "D57",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E12": "localized_erythema_warmth_swelling",
+        "S18": "localized_pain_redness",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R99",
+      "source": "PMC11521529 Case Rep Neurol 2024",
+      "source_summary": "25yo female with 10-day high-grade fever, headache, vomiting. Progressed to irrelevant talk, unable to recognize family, visual hallucinations, drowsiness. GCS 11. MRI: bilateral temporal hyperintensity. CSF: lymphocytic pleocytosis, elevated protein. CSF HSV-1 PCR positive.",
+      "expected_id": "D84",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S05": "severe",
+        "S13": "present",
+        "E16": "confused",
+        "T01": "1w_to_3w",
+        "L45": "viral_pattern"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R100",
+      "source": "PMC11605251 Clin Case Rep 2024",
+      "source_summary": "28yo male with 5-day headache, fever, confusion, frequent generalized tonic-clonic seizures. Tachycardic, tachypnoeic, febrile, SpO2 75%. GCS 7. CSF PCR HSV positive. MRI: temporal/insular involvement. Complicated by CNS vasculitis with MCA infarct.",
+      "expected_id": "D84",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S05": "severe",
+        "E16": "confused",
+        "E02": "over_120",
+        "E05": "severe_hypoxia_under_93",
+        "T01": "3d_to_1w",
+        "L45": "HSV_PCR_positive",
+        "S42": "present"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R101",
+      "source": "PMC4336868 BMJ Case Rep 2015",
+      "source_summary": "51yo immunocompetent male. 6-day neck pain and severe right-sided throbbing headache. 3 days later developed fever and chills. 8 days after onset, photophobia and papular rash on forehead (V1 dermatome). CSF: aseptic meningitis, VZV PCR positive.",
+      "expected_id": "D21",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S09": "present",
+        "S05": "severe",
+        "E12": "vesicular_dermatomal",
+        "S18": "localized_pain_redness",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R102",
+      "source": "PMC3447017 CMAJ 2012",
+      "source_summary": "69yo male with unilateral right-sided T4 dermatomal vesicular rash with severe pain. Classic herpes zoster presentation with prodromal tingling/pain preceding rash by days.",
+      "expected_id": "D21",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E12": "vesicular_dermatomal",
+        "S18": "localized_pain_redness",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R103",
+      "source": "PMC5580171 GE Port J Gastroenterol 2017",
+      "source_summary": "22yo female, 3 weeks after starting sulfasalazine. Diffuse pruritic maculopapular rash, crampy abdominal pain, vomiting, diarrhea, fever. Eosinophilia 5.6K developed during admission. AST peaked at 3591, ALT 2102. Drug withdrawal and steroids led to resolution.",
+      "expected_id": "D93",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "maculopapular_rash",
+        "S18": "rash_widespread",
+        "S13": "present",
+        "S14": "watery",
+        "L01": "high_10000_20000",
+        "L14": "eosinophilia",
+        "L11": "very_high",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R104",
+      "source": "PMC12172554 Cureus 2025",
+      "source_summary": "25yo female, 6 days after TMP-SMX for pyelonephritis. Fever, diffuse maculopapular rash, facial edema, lymphadenopathy at >2 sites. Eosinophilia >1400, elevated AST/ALT 2-3x ULN, elevated creatinine. RegiSCAR score consistent with DRESS.",
+      "expected_id": "D93",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E12": "maculopapular_rash",
+        "S18": "rash_widespread",
+        "E13": "generalized",
+        "L01": "high_10000_20000",
+        "L14": "eosinophilia",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R105",
+      "source": "PMC7290261 Case Rep Infect Dis 2020",
+      "source_summary": "57yo male, 2-week history of on-off fever, initially dry cough becoming productive with brownish sputum, worsening shortness of breath for 2 days. Headaches, sore throat, myalgia. Fever not responsive to ibuprofen/paracetamol. Influenza A positive.",
+      "expected_id": "D02",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "S02": "present",
+        "S05": "mild",
+        "S06": "present",
+        "S04": "on_exertion",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R106",
+      "source": "PMC9056060 Cureus 2022",
+      "source_summary": "Patient given single dose quetiapine 300mg. Developed diaphoresis, tachycardia HR 130, tachypnea RR 30, AMS, extreme muscle rigidity, fever 101.6F. CPK 8271 U/L. Diagnosed NMS per DSM-5 criteria.",
+      "expected_id": "D74",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E16": "confused",
+        "L01": "high_10000_20000",
+        "T01": "under_3d"
+      },
+      "risk_factors": {
+        "R26": "yes"
+      }
+    },
+    {
+      "id": "R107",
+      "source": "PMC4054561 Shanghai Arch Psych 2014",
+      "source_summary": "Female treated with haloperidol 10mg bid + aripiprazole 10mg bid. After 1 week: fever 39.8C, HR 110, urinary retention, disoriented then LOC, muscle rigidity, no spontaneous movement. WBC 14.8K, CPK 1794, ALT 139.",
+      "expected_id": "D74",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E16": "confused",
+        "L01": "high_10000_20000",
+        "L11": "very_high",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R26": "yes"
+      }
+    },
+    {
+      "id": "R108",
+      "source": "PMC10822884 Front Cell Infect Microbiol 2024",
+      "source_summary": "Middle-aged male with fever, chills, anal distension, dizziness, muscle pain for 10 days. History of cat bite 1 month prior. Superficial lymphadenopathy and hypoimmunity. B. henselae detected by mNGS. Fever spiked to 40.4C during azithromycin treatment (Jarisch-Herxheimer).",
+      "expected_id": "D54",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S09": "present",
+        "S06": "present",
+        "S05": "mild",
+        "E13": "cervical",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R30": "pet_cat"
+      }
+    },
+    {
+      "id": "R110",
+      "source": "PMC8898073 Cureus 2022",
+      "source_summary": "99yo female with 1-week history of fever, cough, anemia, leukocytosis, elevated CRP. Developed RUQ tenderness with positive Murphy sign. Cholecystectomy revealed neutrophilic infiltration and fibrinoid necrosis of arterial walls. p-ANCA 263 U/ml. Diagnosed ANCA-associated vasculitis.",
+      "expected_id": "D60",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S01": "productive",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R111",
+      "source": "Cureus 2025 (Matsui et al, DOI:10.7759/cureus.96904)",
+      "source_summary": "47yo male with untreated DM2. 1-week high-grade fever max 39.2C, progressive fatigue, myalgia, decreased oral intake. Dysuria, urinary frequency, hesitancy for 3 days. Perineal discomfort. DRE: enlarged markedly tender prostate. WBC leukocytosis with neutrophilia, CRP markedly elevated. Blood/urine culture: MSSA.",
+      "expected_id": "D22",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S06": "present",
+        "S07": "severe",
+        "S10": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L09": "gram_positive",
+        "T01": "3d_to_1w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      }
     }
-  ]
+  ],
+  "total_cases": 110
 }

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1121,
+  "total_edges": 1410,
   "edges": [
     {
       "from": "R01",
@@ -12544,6 +12544,2174 @@
         "min": 1,
         "max": 14
       }
+    },
+    {
+      "from": "D01",
+      "to": "L01",
+      "from_name": "viral_URI",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D01",
+      "to": "S06",
+      "from_name": "viral_URI",
+      "to_name": "myalgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D01",
+      "to": "S46",
+      "from_name": "viral_URI",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D02",
+      "to": "E02",
+      "from_name": "influenza",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D02",
+      "to": "S46",
+      "from_name": "influenza",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D03",
+      "to": "L01",
+      "from_name": "COVID19",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D03",
+      "to": "L14",
+      "from_name": "COVID19",
+      "to_name": "peripheral_blood_smear",
+      "reason": "TODO"
+    },
+    {
+      "from": "D03",
+      "to": "L20",
+      "from_name": "COVID19",
+      "to_name": "D_dimer",
+      "reason": "TODO"
+    },
+    {
+      "from": "D03",
+      "to": "S14",
+      "from_name": "COVID19",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D03",
+      "to": "S46",
+      "from_name": "COVID19",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "L01",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "L02",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "S05",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "headache",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "S07",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "S09",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "S13",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "S46",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D04",
+      "to": "T02",
+      "from_name": "acute_pharyngotonsillitis",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D05",
+      "to": "L09",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "blood_culture",
+      "reason": "TODO"
+    },
+    {
+      "from": "R37",
+      "to": "D05",
+      "from_name": "aspiration_risk",
+      "to_name": "community_acquired_pneumonia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D05",
+      "to": "S09",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D05",
+      "to": "S46",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D06",
+      "to": "L01",
+      "from_name": "acute_bronchitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D06",
+      "to": "L02",
+      "from_name": "acute_bronchitis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D06",
+      "to": "S02",
+      "from_name": "acute_bronchitis",
+      "to_name": "sore_throat",
+      "reason": "TODO"
+    },
+    {
+      "from": "D06",
+      "to": "S07",
+      "from_name": "acute_bronchitis",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D06",
+      "to": "T02",
+      "from_name": "acute_bronchitis",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D07",
+      "to": "L01",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D07",
+      "to": "L02",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D07",
+      "to": "S06",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "myalgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D07",
+      "to": "S07",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D07",
+      "to": "S46",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D08",
+      "to": "L02",
+      "from_name": "lower_UTI",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D08",
+      "to": "S33",
+      "from_name": "lower_UTI",
+      "to_name": "hematuria",
+      "reason": "TODO"
+    },
+    {
+      "from": "D09",
+      "to": "E02",
+      "from_name": "acute_pyelonephritis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D09",
+      "to": "L01",
+      "from_name": "acute_pyelonephritis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D10",
+      "to": "L31",
+      "from_name": "appendicitis",
+      "to_name": "CT_abdomen",
+      "reason": "TODO"
+    },
+    {
+      "from": "D10",
+      "to": "S46",
+      "from_name": "appendicitis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D11",
+      "to": "S46",
+      "from_name": "cholecystitis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D11",
+      "to": "T01",
+      "from_name": "cholecystitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D12",
+      "to": "E02",
+      "from_name": "cellulitis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D12",
+      "to": "L01",
+      "from_name": "cellulitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D12",
+      "to": "L09",
+      "from_name": "cellulitis",
+      "to_name": "blood_culture",
+      "reason": "TODO"
+    },
+    {
+      "from": "D12",
+      "to": "S09",
+      "from_name": "cellulitis",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D12",
+      "to": "T01",
+      "from_name": "cellulitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D13",
+      "to": "S42",
+      "from_name": "meningitis",
+      "to_name": "seizure",
+      "reason": "TODO"
+    },
+    {
+      "from": "D13",
+      "to": "T01",
+      "from_name": "meningitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D14",
+      "to": "L28",
+      "from_name": "infective_endocarditis",
+      "to_name": "ESR",
+      "reason": "TODO"
+    },
+    {
+      "from": "D14",
+      "to": "S08",
+      "from_name": "infective_endocarditis",
+      "to_name": "arthralgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D14",
+      "to": "S46",
+      "from_name": "infective_endocarditis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "E02",
+      "from_name": "malaria",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "L01",
+      "from_name": "malaria",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "L02",
+      "from_name": "malaria",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "S07",
+      "from_name": "malaria",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "S13",
+      "from_name": "malaria",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "S14",
+      "from_name": "malaria",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D15",
+      "to": "S46",
+      "from_name": "malaria",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D16",
+      "to": "S09",
+      "from_name": "dengue",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D16",
+      "to": "S44",
+      "from_name": "dengue",
+      "to_name": "bleeding_tendency",
+      "reason": "TODO"
+    },
+    {
+      "from": "D16",
+      "to": "T02",
+      "from_name": "dengue",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D17",
+      "to": "L01",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D17",
+      "to": "L14",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "peripheral_blood_smear",
+      "reason": "TODO"
+    },
+    {
+      "from": "D17",
+      "to": "L35",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "CT_chest_detail",
+      "reason": "TODO"
+    },
+    {
+      "from": "R25",
+      "to": "D17",
+      "from_name": "HIV_positive",
+      "to_name": "pulmonary_tuberculosis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D17",
+      "to": "S34",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "hemoptysis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "E12",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "skin_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "E34",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "hepatomegaly",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "L02",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "S46",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "T01",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D18",
+      "to": "T02",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D19",
+      "to": "S18",
+      "from_name": "drug_fever",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D20",
+      "to": "L01",
+      "from_name": "acute_sinusitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D20",
+      "to": "L02",
+      "from_name": "acute_sinusitis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D20",
+      "to": "S01",
+      "from_name": "acute_sinusitis",
+      "to_name": "cough",
+      "reason": "TODO"
+    },
+    {
+      "from": "D20",
+      "to": "T01",
+      "from_name": "acute_sinusitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D21",
+      "to": "L01",
+      "from_name": "herpes_zoster",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D21",
+      "to": "T01",
+      "from_name": "herpes_zoster",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D22",
+      "to": "E02",
+      "from_name": "acute_prostatitis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D22",
+      "to": "L09",
+      "from_name": "acute_prostatitis",
+      "to_name": "blood_culture",
+      "reason": "TODO"
+    },
+    {
+      "from": "R13",
+      "to": "D22",
+      "from_name": "urinary_catheter",
+      "to_name": "acute_prostatitis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D22",
+      "to": "S09",
+      "from_name": "acute_prostatitis",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D22",
+      "to": "S15",
+      "from_name": "acute_prostatitis",
+      "to_name": "flank_pain",
+      "reason": "TODO"
+    },
+    {
+      "from": "D22",
+      "to": "T01",
+      "from_name": "acute_prostatitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D23",
+      "to": "T02",
+      "from_name": "rickettsial_disease",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D24",
+      "to": "L02",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D24",
+      "to": "L11",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "liver_enzymes",
+      "reason": "TODO"
+    },
+    {
+      "from": "D24",
+      "to": "S13",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D24",
+      "to": "S14",
+      "from_name": "toxic_shock_syndrome",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D25",
+      "to": "E02",
+      "from_name": "acute_cholangitis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D25",
+      "to": "T01",
+      "from_name": "acute_cholangitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "R36",
+      "to": "D26",
+      "from_name": "high_risk_sexual",
+      "to_name": "pelvic_inflammatory_disease",
+      "reason": "TODO"
+    },
+    {
+      "from": "D26",
+      "to": "S13",
+      "from_name": "pelvic_inflammatory_disease",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D26",
+      "to": "S46",
+      "from_name": "pelvic_inflammatory_disease",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D26",
+      "to": "T01",
+      "from_name": "pelvic_inflammatory_disease",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D27",
+      "to": "L31",
+      "from_name": "diverticulitis",
+      "to_name": "CT_abdomen",
+      "reason": "TODO"
+    },
+    {
+      "from": "D27",
+      "to": "S13",
+      "from_name": "diverticulitis",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D27",
+      "to": "S14",
+      "from_name": "diverticulitis",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D27",
+      "to": "T01",
+      "from_name": "diverticulitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D28",
+      "to": "S07",
+      "from_name": "typhoid_fever",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D28",
+      "to": "S12",
+      "from_name": "typhoid_fever",
+      "to_name": "abdominal_pain_location",
+      "reason": "TODO"
+    },
+    {
+      "from": "D28",
+      "to": "S13",
+      "from_name": "typhoid_fever",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D28",
+      "to": "S46",
+      "from_name": "typhoid_fever",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D28",
+      "to": "T02",
+      "from_name": "typhoid_fever",
+      "to_name": "onset_speed",
+      "reason": "TODO"
+    },
+    {
+      "from": "D29",
+      "to": "S07",
+      "from_name": "liver_abscess",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D29",
+      "to": "S46",
+      "from_name": "liver_abscess",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D29",
+      "to": "T01",
+      "from_name": "liver_abscess",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D30",
+      "to": "L28",
+      "from_name": "psoas_abscess",
+      "to_name": "ESR",
+      "reason": "TODO"
+    },
+    {
+      "from": "D30",
+      "to": "S15",
+      "from_name": "psoas_abscess",
+      "to_name": "flank_pain",
+      "reason": "TODO"
+    },
+    {
+      "from": "D30",
+      "to": "T01",
+      "from_name": "psoas_abscess",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D31",
+      "to": "T01",
+      "from_name": "vertebral_osteomyelitis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D32",
+      "to": "T01",
+      "from_name": "septic_arthritis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D33",
+      "to": "E13",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "lymphadenopathy",
+      "reason": "TODO"
+    },
+    {
+      "from": "D33",
+      "to": "T01",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D34",
+      "to": "L31",
+      "from_name": "deep_neck_infection",
+      "to_name": "CT_abdomen",
+      "reason": "TODO"
+    },
+    {
+      "from": "D34",
+      "to": "S02",
+      "from_name": "deep_neck_infection",
+      "to_name": "sore_throat",
+      "reason": "TODO"
+    },
+    {
+      "from": "D34",
+      "to": "T01",
+      "from_name": "deep_neck_infection",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D35",
+      "to": "S04",
+      "from_name": "lung_abscess",
+      "to_name": "dyspnea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D35",
+      "to": "S07",
+      "from_name": "lung_abscess",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D35",
+      "to": "S34",
+      "from_name": "lung_abscess",
+      "to_name": "hemoptysis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D35",
+      "to": "S46",
+      "from_name": "lung_abscess",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D35",
+      "to": "T01",
+      "from_name": "lung_abscess",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D36",
+      "to": "E05",
+      "from_name": "empyema",
+      "to_name": "SpO2",
+      "reason": "TODO"
+    },
+    {
+      "from": "D36",
+      "to": "E07",
+      "from_name": "empyema",
+      "to_name": "lung_auscultation",
+      "reason": "TODO"
+    },
+    {
+      "from": "D36",
+      "to": "S09",
+      "from_name": "empyema",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D36",
+      "to": "T01",
+      "from_name": "empyema",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D37",
+      "to": "E09",
+      "from_name": "infective_diarrhea_bacterial",
+      "to_name": "abdominal_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D37",
+      "to": "T01",
+      "from_name": "infective_diarrhea_bacterial",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D38",
+      "to": "E09",
+      "from_name": "clostridium_difficile",
+      "to_name": "abdominal_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D38",
+      "to": "S13",
+      "from_name": "clostridium_difficile",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D38",
+      "to": "T01",
+      "from_name": "clostridium_difficile",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "R35",
+      "to": "D39",
+      "from_name": "IBD_history",
+      "to_name": "perianal_abscess",
+      "reason": "TODO"
+    },
+    {
+      "from": "D39",
+      "to": "S18",
+      "from_name": "perianal_abscess",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D40",
+      "to": "E12",
+      "from_name": "catheter_related_BSI",
+      "to_name": "skin_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "R23",
+      "to": "D40",
+      "from_name": "neutropenia",
+      "to_name": "catheter_related_BSI",
+      "reason": "TODO"
+    },
+    {
+      "from": "D40",
+      "to": "T01",
+      "from_name": "catheter_related_BSI",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D41",
+      "to": "S18",
+      "from_name": "surgical_site_infection",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D41",
+      "to": "T01",
+      "from_name": "surgical_site_infection",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D42",
+      "to": "S15",
+      "from_name": "UTI_complicated",
+      "to_name": "flank_pain",
+      "reason": "TODO"
+    },
+    {
+      "from": "D42",
+      "to": "T01",
+      "from_name": "UTI_complicated",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D43",
+      "to": "L01",
+      "from_name": "epididymitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "R36",
+      "to": "D43",
+      "from_name": "high_risk_sexual",
+      "to_name": "epididymitis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "L01",
+      "from_name": "acute_HIV",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "S05",
+      "from_name": "acute_HIV",
+      "to_name": "headache",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "S08",
+      "from_name": "acute_HIV",
+      "to_name": "arthralgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "S14",
+      "from_name": "acute_HIV",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "S18",
+      "from_name": "acute_HIV",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D44",
+      "to": "T01",
+      "from_name": "acute_HIV",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D45",
+      "to": "L01",
+      "from_name": "CMV_infection",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D45",
+      "to": "T01",
+      "from_name": "CMV_infection",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D46",
+      "to": "L01",
+      "from_name": "measles",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D46",
+      "to": "S18",
+      "from_name": "measles",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D46",
+      "to": "T01",
+      "from_name": "measles",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D47",
+      "to": "L01",
+      "from_name": "mumps",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D47",
+      "to": "S05",
+      "from_name": "mumps",
+      "to_name": "headache",
+      "reason": "TODO"
+    },
+    {
+      "from": "D47",
+      "to": "T01",
+      "from_name": "mumps",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D48",
+      "to": "L01",
+      "from_name": "rubella",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D48",
+      "to": "S18",
+      "from_name": "rubella",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D48",
+      "to": "T01",
+      "from_name": "rubella",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D49",
+      "to": "E12",
+      "from_name": "candidemia",
+      "to_name": "skin_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D49",
+      "to": "T01",
+      "from_name": "candidemia",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D50",
+      "to": "E04",
+      "from_name": "PCP",
+      "to_name": "respiratory_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D50",
+      "to": "L02",
+      "from_name": "PCP",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D51",
+      "to": "L01",
+      "from_name": "amebiasis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D51",
+      "to": "T01",
+      "from_name": "amebiasis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D52",
+      "to": "L14",
+      "from_name": "leptospirosis",
+      "to_name": "peripheral_blood_smear",
+      "reason": "TODO"
+    },
+    {
+      "from": "D52",
+      "to": "T01",
+      "from_name": "leptospirosis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D52",
+      "to": "T03",
+      "from_name": "leptospirosis",
+      "to_name": "fever_pattern",
+      "reason": "TODO"
+    },
+    {
+      "from": "D53",
+      "to": "S09",
+      "from_name": "brucellosis",
+      "to_name": "rigors",
+      "reason": "TODO"
+    },
+    {
+      "from": "D53",
+      "to": "S17",
+      "from_name": "brucellosis",
+      "to_name": "weight_loss",
+      "reason": "TODO"
+    },
+    {
+      "from": "D53",
+      "to": "S22",
+      "from_name": "brucellosis",
+      "to_name": "back_pain",
+      "reason": "TODO"
+    },
+    {
+      "from": "D54",
+      "to": "L01",
+      "from_name": "cat_scratch_disease",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D54",
+      "to": "T01",
+      "from_name": "cat_scratch_disease",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D55",
+      "to": "E34",
+      "from_name": "Q_fever",
+      "to_name": "hepatomegaly",
+      "reason": "TODO"
+    },
+    {
+      "from": "D55",
+      "to": "S07",
+      "from_name": "Q_fever",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D56",
+      "to": "L02",
+      "from_name": "pertussis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D56",
+      "to": "T01",
+      "from_name": "pertussis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D57",
+      "to": "E16",
+      "from_name": "necrotizing_fasciitis",
+      "to_name": "consciousness",
+      "reason": "TODO"
+    },
+    {
+      "from": "D57",
+      "to": "L03",
+      "from_name": "necrotizing_fasciitis",
+      "to_name": "procalcitonin",
+      "reason": "TODO"
+    },
+    {
+      "from": "D57",
+      "to": "L09",
+      "from_name": "necrotizing_fasciitis",
+      "to_name": "blood_culture",
+      "reason": "TODO"
+    },
+    {
+      "from": "R14",
+      "to": "D57",
+      "from_name": "skin_wound_or_trauma",
+      "to_name": "necrotizing_fasciitis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D57",
+      "to": "S06",
+      "from_name": "necrotizing_fasciitis",
+      "to_name": "myalgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D58",
+      "to": "E34",
+      "from_name": "adult_onset_still",
+      "to_name": "hepatomegaly",
+      "reason": "TODO"
+    },
+    {
+      "from": "D58",
+      "to": "S06",
+      "from_name": "adult_onset_still",
+      "to_name": "myalgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D58",
+      "to": "S23",
+      "from_name": "adult_onset_still",
+      "to_name": "joint_swelling",
+      "reason": "TODO"
+    },
+    {
+      "from": "D58",
+      "to": "S46",
+      "from_name": "adult_onset_still",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D59",
+      "to": "L01",
+      "from_name": "SLE",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D59",
+      "to": "L14",
+      "from_name": "SLE",
+      "to_name": "peripheral_blood_smear",
+      "reason": "TODO"
+    },
+    {
+      "from": "D59",
+      "to": "S18",
+      "from_name": "SLE",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D59",
+      "to": "S34",
+      "from_name": "SLE",
+      "to_name": "hemoptysis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D60",
+      "to": "L01",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D60",
+      "to": "S01",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "cough",
+      "reason": "TODO"
+    },
+    {
+      "from": "D61",
+      "to": "L01",
+      "from_name": "PMR_GCA",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D61",
+      "to": "S17",
+      "from_name": "PMR_GCA",
+      "to_name": "weight_loss",
+      "reason": "TODO"
+    },
+    {
+      "from": "D61",
+      "to": "S46",
+      "from_name": "PMR_GCA",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D62",
+      "to": "S08",
+      "from_name": "sarcoidosis",
+      "to_name": "arthralgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D63",
+      "to": "E09",
+      "from_name": "IBD",
+      "to_name": "abdominal_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D63",
+      "to": "E35",
+      "from_name": "IBD",
+      "to_name": "eye_findings",
+      "reason": "TODO"
+    },
+    {
+      "from": "D63",
+      "to": "L01",
+      "from_name": "IBD",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D63",
+      "to": "S08",
+      "from_name": "IBD",
+      "to_name": "arthralgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D64",
+      "to": "L28",
+      "from_name": "reactive_arthritis",
+      "to_name": "ESR",
+      "reason": "TODO"
+    },
+    {
+      "from": "D64",
+      "to": "T01",
+      "from_name": "reactive_arthritis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D65",
+      "to": "L01",
+      "from_name": "gout_pseudogout",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D66",
+      "to": "L01",
+      "from_name": "familial_mediterranean_fever",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D67",
+      "to": "L01",
+      "from_name": "malignant_lymphoma",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D67",
+      "to": "L02",
+      "from_name": "malignant_lymphoma",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D68",
+      "to": "E34",
+      "from_name": "leukemia_acute",
+      "to_name": "hepatomegaly",
+      "reason": "TODO"
+    },
+    {
+      "from": "D68",
+      "to": "L02",
+      "from_name": "leukemia_acute",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D69",
+      "to": "L01",
+      "from_name": "renal_cell_carcinoma",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D69",
+      "to": "L31",
+      "from_name": "renal_cell_carcinoma",
+      "to_name": "CT_abdomen",
+      "reason": "TODO"
+    },
+    {
+      "from": "D70",
+      "to": "E18",
+      "from_name": "hepatocellular_carcinoma",
+      "to_name": "jaundice",
+      "reason": "TODO"
+    },
+    {
+      "from": "D70",
+      "to": "S07",
+      "from_name": "hepatocellular_carcinoma",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D70",
+      "to": "S12",
+      "from_name": "hepatocellular_carcinoma",
+      "to_name": "abdominal_pain_location",
+      "reason": "TODO"
+    },
+    {
+      "from": "D71",
+      "to": "E03",
+      "from_name": "thyroid_storm",
+      "to_name": "blood_pressure_systolic",
+      "reason": "TODO"
+    },
+    {
+      "from": "D72",
+      "to": "E02",
+      "from_name": "adrenal_crisis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D72",
+      "to": "S12",
+      "from_name": "adrenal_crisis",
+      "to_name": "abdominal_pain_location",
+      "reason": "TODO"
+    },
+    {
+      "from": "D74",
+      "to": "S36",
+      "from_name": "NMS",
+      "to_name": "tremor",
+      "reason": "TODO"
+    },
+    {
+      "from": "D75",
+      "to": "L17",
+      "from_name": "serotonin_syndrome",
+      "to_name": "CK",
+      "reason": "TODO"
+    },
+    {
+      "from": "D75",
+      "to": "S37",
+      "from_name": "serotonin_syndrome",
+      "to_name": "muscle_rigidity",
+      "reason": "TODO"
+    },
+    {
+      "from": "D77",
+      "to": "E04",
+      "from_name": "DVT_PE",
+      "to_name": "respiratory_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D77",
+      "to": "T01",
+      "from_name": "DVT_PE",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D78",
+      "to": "S13",
+      "from_name": "heat_stroke",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D78",
+      "to": "S42",
+      "from_name": "heat_stroke",
+      "to_name": "seizure",
+      "reason": "TODO"
+    },
+    {
+      "from": "D79",
+      "to": "L01",
+      "from_name": "infective_endocarditis_prosthetic",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D79",
+      "to": "T01",
+      "from_name": "infective_endocarditis_prosthetic",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "R07",
+      "to": "D80",
+      "from_name": "recent_hospitalization_3m",
+      "to_name": "acute_cholecystitis_acalculous",
+      "reason": "TODO"
+    },
+    {
+      "from": "D80",
+      "to": "S13",
+      "from_name": "acute_cholecystitis_acalculous",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D81",
+      "to": "E02",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D81",
+      "to": "E03",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "blood_pressure_systolic",
+      "reason": "TODO"
+    },
+    {
+      "from": "D81",
+      "to": "E16",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "consciousness",
+      "reason": "TODO"
+    },
+    {
+      "from": "D81",
+      "to": "L09",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "blood_culture",
+      "reason": "TODO"
+    },
+    {
+      "from": "D81",
+      "to": "S13",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D82",
+      "to": "S42",
+      "from_name": "bacterial_meningitis_nosocomial",
+      "to_name": "seizure",
+      "reason": "TODO"
+    },
+    {
+      "from": "D83",
+      "to": "E05",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "SpO2",
+      "reason": "TODO"
+    },
+    {
+      "from": "D83",
+      "to": "L01",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D83",
+      "to": "S04",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "dyspnea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D83",
+      "to": "T01",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D84",
+      "to": "L01",
+      "from_name": "herpes_encephalitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D85",
+      "to": "E23",
+      "from_name": "dental_infection",
+      "to_name": "neck_swelling",
+      "reason": "TODO"
+    },
+    {
+      "from": "D85",
+      "to": "S25",
+      "from_name": "dental_infection",
+      "to_name": "dysphagia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D86",
+      "to": "E09",
+      "from_name": "acute_pancreatitis",
+      "to_name": "abdominal_exam",
+      "reason": "TODO"
+    },
+    {
+      "from": "D86",
+      "to": "L11",
+      "from_name": "acute_pancreatitis",
+      "to_name": "liver_enzymes",
+      "reason": "TODO"
+    },
+    {
+      "from": "D87",
+      "to": "S35",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "palpitation",
+      "reason": "TODO"
+    },
+    {
+      "from": "D91",
+      "to": "L01",
+      "from_name": "chikungunya",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D91",
+      "to": "S18",
+      "from_name": "chikungunya",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D91",
+      "to": "S23",
+      "from_name": "chikungunya",
+      "to_name": "joint_swelling",
+      "reason": "TODO"
+    },
+    {
+      "from": "D91",
+      "to": "T01",
+      "from_name": "chikungunya",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D92",
+      "to": "L01",
+      "from_name": "tumor_fever",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D92",
+      "to": "L28",
+      "from_name": "tumor_fever",
+      "to_name": "ESR",
+      "reason": "TODO"
+    },
+    {
+      "from": "D92",
+      "to": "S46",
+      "from_name": "tumor_fever",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D92",
+      "to": "T03",
+      "from_name": "tumor_fever",
+      "to_name": "fever_pattern",
+      "reason": "TODO"
+    },
+    {
+      "from": "D93",
+      "to": "S18",
+      "from_name": "DRESS",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D93",
+      "to": "T01",
+      "from_name": "DRESS",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D94",
+      "to": "S07",
+      "from_name": "IgG4_related",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D95",
+      "to": "L01",
+      "from_name": "japanese_encephalitis",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D95",
+      "to": "S13",
+      "from_name": "japanese_encephalitis",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D97",
+      "to": "S46",
+      "from_name": "castleman_disease",
+      "to_name": "anorexia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D98",
+      "to": "E02",
+      "from_name": "takayasu_arteritis",
+      "to_name": "heart_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D98",
+      "to": "E03",
+      "from_name": "takayasu_arteritis",
+      "to_name": "blood_pressure_systolic",
+      "reason": "TODO"
+    },
+    {
+      "from": "D98",
+      "to": "S05",
+      "from_name": "takayasu_arteritis",
+      "to_name": "headache",
+      "reason": "TODO"
+    },
+    {
+      "from": "D98",
+      "to": "S06",
+      "from_name": "takayasu_arteritis",
+      "to_name": "myalgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D99",
+      "to": "L35",
+      "from_name": "NTM",
+      "to_name": "CT_chest_detail",
+      "reason": "TODO"
+    },
+    {
+      "from": "R05",
+      "to": "D99",
+      "from_name": "immunosuppressed",
+      "to_name": "NTM",
+      "reason": "TODO"
+    },
+    {
+      "from": "D99",
+      "to": "S04",
+      "from_name": "NTM",
+      "to_name": "dyspnea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D99",
+      "to": "S34",
+      "from_name": "NTM",
+      "to_name": "hemoptysis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D100",
+      "to": "E34",
+      "from_name": "hepatitis_A",
+      "to_name": "hepatomegaly",
+      "reason": "TODO"
+    },
+    {
+      "from": "D100",
+      "to": "S12",
+      "from_name": "hepatitis_A",
+      "to_name": "abdominal_pain_location",
+      "reason": "TODO"
+    },
+    {
+      "from": "D100",
+      "to": "S14",
+      "from_name": "hepatitis_A",
+      "to_name": "diarrhea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D100",
+      "to": "T01",
+      "from_name": "hepatitis_A",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "L02",
+      "from_name": "secondary_syphilis",
+      "to_name": "CRP",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "S02",
+      "from_name": "secondary_syphilis",
+      "to_name": "sore_throat",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "S08",
+      "from_name": "secondary_syphilis",
+      "to_name": "arthralgia",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "S18",
+      "from_name": "secondary_syphilis",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "S29",
+      "from_name": "secondary_syphilis",
+      "to_name": "oral_ulcer",
+      "reason": "TODO"
+    },
+    {
+      "from": "D101",
+      "to": "T01",
+      "from_name": "secondary_syphilis",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "E04",
+      "from_name": "legionella_pneumonia",
+      "to_name": "respiratory_rate",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "E05",
+      "from_name": "legionella_pneumonia",
+      "to_name": "SpO2",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "E07",
+      "from_name": "legionella_pneumonia",
+      "to_name": "lung_auscultation",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "L11",
+      "from_name": "legionella_pneumonia",
+      "to_name": "liver_enzymes",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "S04",
+      "from_name": "legionella_pneumonia",
+      "to_name": "dyspnea",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "S07",
+      "from_name": "legionella_pneumonia",
+      "to_name": "fatigue",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "S12",
+      "from_name": "legionella_pneumonia",
+      "to_name": "abdominal_pain_location",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "S13",
+      "from_name": "legionella_pneumonia",
+      "to_name": "nausea_vomiting",
+      "reason": "TODO"
+    },
+    {
+      "from": "D102",
+      "to": "T01",
+      "from_name": "legionella_pneumonia",
+      "to_name": "fever_duration",
+      "reason": "TODO"
+    },
+    {
+      "from": "D103",
+      "to": "E21",
+      "from_name": "acute_rheumatic_fever",
+      "to_name": "joint_redness_warmth",
+      "reason": "TODO"
+    },
+    {
+      "from": "D103",
+      "to": "L01",
+      "from_name": "acute_rheumatic_fever",
+      "to_name": "WBC",
+      "reason": "TODO"
+    },
+    {
+      "from": "D103",
+      "to": "S18",
+      "from_name": "acute_rheumatic_fever",
+      "to_name": "skin_complaint",
+      "reason": "TODO"
+    },
+    {
+      "from": "D103",
+      "to": "S42",
+      "from_name": "acute_rheumatic_fever",
+      "to_name": "seizure",
+      "reason": "TODO"
+    },
+    {
+      "from": "R30",
+      "to": "D104",
+      "from_name": "animal_contact",
+      "to_name": "psittacosis",
+      "reason": "TODO"
+    },
+    {
+      "from": "D09",
+      "to": "S33",
+      "note": "Hematuria in APN ~30-40%, StatPearls"
+    },
+    {
+      "from": "D10",
+      "to": "E02",
+      "note": "Tachycardia in appendicitis, especially if perforation"
+    },
+    {
+      "from": "D10",
+      "to": "S14",
+      "note": "Diarrhea in appendicitis ~10-20%, atypical presentation"
+    },
+    {
+      "from": "D45",
+      "to": "S09",
+      "note": "Chills in CMV infection common with fever"
+    },
+    {
+      "from": "D45",
+      "to": "S01",
+      "note": "Cough in CMV ~10-15%, usually mild"
+    },
+    {
+      "from": "D45",
+      "to": "S06",
+      "note": "Myalgia in CMV mononucleosis-like illness ~40%"
+    },
+    {
+      "from": "D87",
+      "to": "E02",
+      "note": "Tachycardia during thyrotoxic phase of subacute thyroiditis"
+    },
+    {
+      "from": "D29",
+      "to": "E02",
+      "note": "Tachycardia in liver abscess with systemic infection"
+    },
+    {
+      "from": "D28",
+      "to": "S06",
+      "note": "Myalgia in typhoid fever ~30-40%"
+    },
+    {
+      "from": "D84",
+      "to": "S13",
+      "note": "Nausea/vomiting in HSE ~30-40%, Gnann&Whitley"
+    },
+    {
+      "from": "D84",
+      "to": "E02",
+      "note": "Tachycardia in HSE with systemic infection/seizures"
+    },
+    {
+      "from": "D74",
+      "to": "L01",
+      "note": "Leukocytosis in NMS, StatPearls NBK482282"
+    },
+    {
+      "from": "D74",
+      "to": "L11",
+      "note": "AST/ALT elevation in NMS due to rhabdomyolysis/hepatotoxicity"
+    },
+    {
+      "from": "D54",
+      "to": "S09",
+      "note": "Chills in CSD ~30%, systemic CSD"
+    },
+    {
+      "from": "D54",
+      "to": "S06",
+      "note": "Myalgia in CSD, disseminated form"
+    },
+    {
+      "from": "D54",
+      "to": "S05",
+      "note": "Headache in CSD ~15-25%"
+    },
+    {
+      "from": "D58",
+      "to": "L22",
+      "note": "Pancytopenia/cytopenias can occur in Still (MAS complication)"
+    },
+    {
+      "from": "D58",
+      "to": "S01",
+      "note": "Cough in Still disease, serositis/pulmonary involvement"
+    },
+    {
+      "from": "D58",
+      "to": "E21",
+      "note": "Arthritis in Still disease ~70-90%"
+    },
+    {
+      "from": "D91",
+      "to": "S09",
+      "note": "Chills in chikungunya common with high fever"
+    },
+    {
+      "from": "D91",
+      "to": "S14",
+      "note": "Diarrhea in chikungunya ~15-20%"
+    },
+    {
+      "from": "D91",
+      "to": "L14",
+      "note": "Thrombocytopenia in chikungunya ~30-50%"
+    },
+    {
+      "from": "D19",
+      "to": "L09",
+      "note": "Blood culture typically negative in drug fever (key diagnostic clue)"
+    },
+    {
+      "from": "D45",
+      "to": "E18",
+      "note": "Jaundice in CMV infection with hepatitis, ~10-20%"
+    },
+    {
+      "from": "D77",
+      "to": "E03",
+      "note": "Hypotension in massive PE with RV failure"
+    },
+    {
+      "from": "D22",
+      "to": "S06",
+      "note": "Myalgia in acute prostatitis, systemic infection"
+    },
+    {
+      "from": "D22",
+      "to": "S07",
+      "note": "Malaise/fatigue in acute prostatitis common"
+    },
+    {
+      "from": "D94",
+      "to": "L11",
+      "note": "Liver enzyme elevation in IgG4-RD with hepatobiliary involvement"
+    },
+    {
+      "from": "D96",
+      "to": "S09",
+      "note": "Chills in Kikuchi disease with fever"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
