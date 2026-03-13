@@ -3262,6 +3262,10 @@
         "D77": {
           "normal_over_90": 0.7,
           "hypotension_under_90": 0.3
+        },
+        "D58": {
+          "normal_over_90": 0.9,
+          "hypotension_under_90": 0.1
         }
       }
     },
@@ -4098,6 +4102,11 @@
           "absent": 0.35,
           "pre_existing": 0.05,
           "new": 0.6
+        },
+        "D58": {
+          "absent": 0.8,
+          "pre_existing": 0.05,
+          "new": 0.15
         }
       }
     },
@@ -6430,6 +6439,12 @@
           "very_high_over_1000": 0.2,
           "extreme_over_10000": 0.1,
           "mild_elevated": 0.4
+        },
+        "D53": {
+          "normal": 0.4,
+          "mild_elevated": 0.35,
+          "very_high_over_1000": 0.2,
+          "extreme_over_10000": 0.05
         }
       }
     },
@@ -6459,7 +6474,8 @@
         "D97": {
           "normal": 0.3,
           "elevated": 0.7
-        }
+        },
+        "D53": 0.4
       }
     },
     "L17": {
@@ -6609,7 +6625,8 @@
         "D58": {
           "absent": 0.8,
           "present": 0.2
-        }
+        },
+        "D53": 0.25
       }
     },
     "L23": {
@@ -7595,6 +7612,11 @@
           "absent": 0.15,
           "exertional": 0.35,
           "at_rest": 0.5
+        },
+        "D58": {
+          "absent": 0.7,
+          "on_exertion": 0.2,
+          "at_rest": 0.1
         }
       }
     },
