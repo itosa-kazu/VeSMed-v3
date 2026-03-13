@@ -14777,6 +14777,331 @@
       "from": "D58",
       "to": "E03",
       "type": "noisy_or"
+    },
+    {
+      "from": "D88",
+      "to": "L01",
+      "note": "Leukocytosis in alcohol withdrawal"
+    },
+    {
+      "from": "D88",
+      "to": "L11",
+      "note": "AST/ALT elevated in alcohol withdrawal/liver disease"
+    },
+    {
+      "from": "D88",
+      "to": "L17",
+      "note": "CK elevation from seizures/rhabdomyolysis in DT"
+    },
+    {
+      "from": "D78",
+      "to": "L01",
+      "note": "WBC in heatstroke variable"
+    },
+    {
+      "from": "D78",
+      "to": "L11",
+      "note": "Liver injury hallmark of heatstroke"
+    },
+    {
+      "from": "D78",
+      "to": "L14",
+      "note": "DIC/thrombocytopenia in severe heatstroke"
+    },
+    {
+      "from": "D78",
+      "to": "S14",
+      "note": "Diarrhea in heatstroke ~20%"
+    },
+    {
+      "from": "D75",
+      "to": "L11",
+      "note": "Liver enzyme elevation in serotonin syndrome"
+    },
+    {
+      "from": "D46",
+      "to": "E13",
+      "note": "Cervical LAD in measles"
+    },
+    {
+      "from": "D46",
+      "to": "S09",
+      "note": "Chills in measles with high fever"
+    },
+    {
+      "from": "D46",
+      "to": "S14",
+      "note": "Diarrhea in measles ~10-20%"
+    },
+    {
+      "from": "D46",
+      "to": "E07",
+      "note": "Lung crackles in measles pneumonia"
+    },
+    {
+      "from": "D73",
+      "to": "S21",
+      "note": "Chest pain/palpitations in pheochromocytoma"
+    },
+    {
+      "from": "D73",
+      "to": "S09",
+      "note": "Diaphoresis/chills in pheo attacks"
+    },
+    {
+      "from": "D73",
+      "to": "L01",
+      "note": "WBC usually normal in pheo"
+    },
+    {
+      "from": "D73",
+      "to": "L02",
+      "note": "CRP may be mildly elevated in pheo"
+    },
+    {
+      "from": "D73",
+      "to": "T01",
+      "note": "Fever duration in pheo - episodic over weeks"
+    },
+    {
+      "from": "D68",
+      "to": "E02",
+      "note": "Tachycardia in leukemia with anemia/infection"
+    },
+    {
+      "from": "D68",
+      "to": "S01",
+      "note": "Cough in leukemia with pneumonia/pulmonary infiltrates"
+    },
+    {
+      "from": "D68",
+      "to": "S04",
+      "note": "Dyspnea in leukemia with anemia"
+    },
+    {
+      "from": "D68",
+      "to": "S05",
+      "note": "Headache in leukemia, meningeal involvement"
+    },
+    {
+      "from": "D68",
+      "to": "S06",
+      "note": "Myalgia/bone pain in leukemia"
+    },
+    {
+      "from": "D68",
+      "to": "S13",
+      "note": "Nausea in leukemia"
+    },
+    {
+      "from": "D68",
+      "to": "L14",
+      "note": "Blast cells/abnormal CBC in leukemia - hallmark"
+    },
+    {
+      "from": "D71",
+      "to": "S04",
+      "note": "Dyspnea in thyroid storm with heart failure"
+    },
+    {
+      "from": "D71",
+      "to": "S17",
+      "note": "Weight loss in thyrotoxicosis"
+    },
+    {
+      "from": "D71",
+      "to": "E07",
+      "note": "Crackles in thyroid storm with pulmonary edema"
+    },
+    {
+      "from": "D72",
+      "to": "S14",
+      "note": "Diarrhea in adrenal crisis ~20%"
+    },
+    {
+      "from": "D72",
+      "to": "S17",
+      "note": "Weight loss in adrenal insufficiency"
+    },
+    {
+      "from": "D72",
+      "to": "L01",
+      "note": "WBC in adrenal crisis - eosinophilia or normal"
+    },
+    {
+      "from": "D72",
+      "to": "S01",
+      "note": "Cough not typical but can occur"
+    },
+    {
+      "from": "D51",
+      "to": "E02",
+      "note": "Tachycardia in dysentery with dehydration"
+    },
+    {
+      "from": "D51",
+      "to": "E03",
+      "note": "Hypotension in severe dysentery"
+    },
+    {
+      "from": "D51",
+      "to": "E09",
+      "note": "Abdominal tenderness in amoebic dysentery"
+    },
+    {
+      "from": "D51",
+      "to": "L11",
+      "note": "Liver enzymes elevated if hepatic involvement"
+    },
+    {
+      "from": "D51",
+      "to": "L14",
+      "note": "Mild leukocytosis, no specific CBC pattern"
+    },
+    {
+      "from": "D83",
+      "to": "E02",
+      "note": "Tachycardia in invasive aspergillosis with sepsis"
+    },
+    {
+      "from": "D83",
+      "to": "E07",
+      "note": "Crackles in pulmonary aspergillosis"
+    },
+    {
+      "from": "D83",
+      "to": "E12",
+      "note": "Skin lesions in disseminated aspergillosis ~10%"
+    },
+    {
+      "from": "D83",
+      "to": "L22",
+      "note": "Pancytopenia common in immunocompromised host"
+    },
+    {
+      "from": "D83",
+      "to": "L03",
+      "note": "Procalcitonin can be elevated in IFI"
+    },
+    {
+      "from": "D49",
+      "to": "E02",
+      "note": "Tachycardia in candidemia/sepsis"
+    },
+    {
+      "from": "D49",
+      "to": "E03",
+      "note": "Hypotension in candidemia/septic shock"
+    },
+    {
+      "from": "D49",
+      "to": "S07",
+      "note": "Malaise in candidemia"
+    },
+    {
+      "from": "D61",
+      "to": "S09",
+      "note": "Chills in PMR/GCA with systemic inflammation"
+    },
+    {
+      "from": "D61",
+      "to": "L11",
+      "note": "Liver enzymes mildly elevated in GCA ~30%"
+    },
+    {
+      "from": "D61",
+      "to": "L15",
+      "note": "Ferritin elevated in PMR/GCA inflammatory"
+    },
+    {
+      "from": "D61",
+      "to": "S01",
+      "note": "Cough in GCA with large vessel involvement (rare)"
+    },
+    {
+      "from": "D100",
+      "to": "E02",
+      "note": "Tachycardia in hepatitis A with fever"
+    },
+    {
+      "from": "D100",
+      "to": "E03",
+      "note": "Hypotension rare unless fulminant"
+    },
+    {
+      "from": "D100",
+      "to": "L01",
+      "note": "WBC normal or mildly elevated in hep A"
+    },
+    {
+      "from": "D100",
+      "to": "L14",
+      "note": "Relative lymphocytosis in viral hepatitis"
+    },
+    {
+      "from": "D98",
+      "to": "S09",
+      "note": "Constitutional symptoms in Takayasu"
+    },
+    {
+      "from": "D98",
+      "to": "L01",
+      "note": "Leukocytosis in Takayasu active phase"
+    },
+    {
+      "from": "D67",
+      "to": "S12",
+      "note": "Abdominal pain in lymphoma with bulky abdominal LAD/organomegaly"
+    },
+    {
+      "from": "D67",
+      "to": "L14",
+      "note": "CBC abnormalities in lymphoma: cytopenias, atypical cells"
+    },
+    {
+      "from": "D29",
+      "to": "L14",
+      "note": "CBC in liver abscess: leukocytosis, occasionally thrombocytopenia"
+    },
+    {
+      "from": "D29",
+      "to": "L20",
+      "note": "D-dimer elevated in liver abscess with sepsis/DIC"
+    },
+    {
+      "from": "D28",
+      "to": "L04",
+      "note": "CXR usually normal in typhoid (distinguishes from pneumonia)"
+    },
+    {
+      "from": "D38",
+      "to": "E02",
+      "note": "Tachycardia in CDI with dehydration/sepsis"
+    },
+    {
+      "from": "D56",
+      "to": "E02",
+      "note": "HR in pertussis - usually normal unless severe"
+    },
+    {
+      "from": "D56",
+      "to": "L04",
+      "note": "CXR in pertussis: perihilar infiltrates or normal"
+    },
+    {
+      "from": "D68",
+      "to": "E03",
+      "note": "BP in leukemia: normal or hypotension if sepsis/DIC"
+    },
+    {
+      "from": "D68",
+      "to": "E04",
+      "note": "Tachypnea in leukemia with anemia/pneumonia"
+    },
+    {
+      "from": "D68",
+      "to": "E05",
+      "note": "Hypoxia in leukemia with pulmonary infiltrates/infection"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

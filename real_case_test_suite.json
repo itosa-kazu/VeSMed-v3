@@ -2660,7 +2660,7 @@
         "E02": "over_120",
         "E04": "tachypnea_20_30",
         "E05": "severe_hypoxia_under_93",
-        "S04": "present",
+        "S04": "at_rest",
         "L01": "high_10000_20000",
         "L02": "moderate_3_10",
         "T01": "under_3d",
@@ -2743,7 +2743,8 @@
       "risk_factors": {
         "R01": "40_64",
         "R02": "male",
-        "R16": "yes"
+        "R16": "yes",
+        "R39": "yes"
       }
     },
     {
@@ -2759,7 +2760,7 @@
         "E02": "over_120",
         "E04": "severe_over_30",
         "E05": "severe_hypoxia_under_93",
-        "S04": "present",
+        "S04": "at_rest",
         "S17": "present",
         "E07": "crackles",
         "T01": "under_3d",
@@ -2767,7 +2768,8 @@
       },
       "risk_factors": {
         "R01": "40_64",
-        "R02": "female"
+        "R02": "female",
+        "R34": "yes"
       }
     },
     {
@@ -2793,7 +2795,8 @@
       },
       "risk_factors": {
         "R01": "18_39",
-        "R02": "female"
+        "R02": "female",
+        "R29": "yes"
       }
     },
     {
@@ -2811,7 +2814,7 @@
         "E04": "tachypnea_20_30",
         "E05": "mild_hypoxia_93_96",
         "S01": "dry",
-        "S04": "present",
+        "S04": "at_rest",
         "S05": "mild",
         "S06": "present",
         "S13": "present",
@@ -2876,7 +2879,8 @@
       "risk_factors": {
         "R01": "40_64",
         "R02": "female",
-        "R08": "yes"
+        "R08": "yes",
+        "R27": "yes"
       }
     },
     {
@@ -2950,7 +2954,8 @@
       },
       "risk_factors": {
         "R01": "18_39",
-        "R02": "female"
+        "R02": "female",
+        "R43": "unvaccinated"
       }
     },
     {
@@ -2978,7 +2983,8 @@
         "R01": "40_64",
         "R02": "male",
         "R04": "yes",
-        "R13": "yes"
+        "R13": "yes",
+        "R22": "yes"
       }
     },
     {
@@ -3130,7 +3136,7 @@
         "E02": "under_100",
         "S08": "present",
         "S23": "monoarticular",
-        "E21": "present",
+        "E21": "monoarticular",
         "L02": "high_over_10",
         "L28": "elevated",
         "T01": "under_3d",
