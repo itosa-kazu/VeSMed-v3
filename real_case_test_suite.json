@@ -3173,6 +3173,203 @@
         "R02": "male",
         "R03": "current"
       }
+    },
+    {
+      "id": "R136",
+      "source": "Case Reports in Medicine 2015",
+      "pmcid": "PMC4327960",
+      "vignette": "32F 咽頭痛再発・悪化2日+嚥下痛+発熱38℃。左扁桃腫大・発赤+両側白苔+左軟口蓋膨隆+口蓋垂偏位+両側顎下リンパ節圧痛。WBC 15270, CRP 131mg/L。培養S.pyogenes。扁桃周囲膿瘍に進展",
+      "final_diagnosis": "急性咽頭扁桃炎（GAS）→扁桃周囲膿瘍",
+      "expected_id": "D04",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "S25": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E07": "clear",
+        "E08": "exudate_or_white_patch",
+        "E13": "cervical",
+        "E22": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R137",
+      "source": "BMJ Case Reports 2016",
+      "pmcid": "PMC5052756",
+      "vignette": "57M 3日水様性下痢(6回/日)+間欠性痙攣性腹痛+発熱38.2℃。カニケーキ摂食翌日に発症。脱水(粘膜乾燥)+頻脈110+RR22。CRP 83mg/L, WBC正常, AST/ALT上昇。便培養Campylobacter陽性。多形紅斑合併",
+      "final_diagnosis": "急性胃腸炎（Campylobacter）",
+      "expected_id": "D07",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S14": "watery",
+        "T01": "under_3d",
+        "T02": "sudden_hours",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E09": "localized_tenderness",
+        "E12": "maculopapular_rash",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L04": "normal",
+        "L09": "negative",
+        "L11": "mild_elevated",
+        "L34": "pathogen_detected"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R138",
+      "source": "BMJ Case Reports 2017",
+      "pmcid": "PMC5333716",
+      "vignette": "31M インフルエンザB後16日目に排尿痛+頻尿+肉眼的血尿(8時間持続)。BT 37.1℃, HR 97。WBC 8.7, CRP 129.9mg/L(先行感染の影響含む)。尿白血球245×10⁶/L, 尿培養E.coli >100×10⁶cfu/L",
+      "final_diagnosis": "下部尿路感染症（E.coli膀胱炎）",
+      "expected_id": "D08",
+      "in_scope": true,
+      "evidence": {
+        "S10": "present",
+        "S11": "present",
+        "S33": "present",
+        "T02": "sudden_hours",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E09": "soft_nontender",
+        "E11": "absent",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L05": "pyuria_bacteriuria"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "notes": "先行インフルエンザB感染後の膀胱炎。CRP高値は先行感染の残存影響あり。UTI症状のみでevidence構成"
+    },
+    {
+      "id": "R139",
+      "source": "BMJ Case Reports 2021",
+      "pmcid": "PMC7917423",
+      "vignette": "62M 慢性副鼻腔炎既往。5日前から両側耳痛→意識障害で発見。40℃高熱+HR120+RR25+GCS8。両側緑色膿性鼻漏+眼球突出+結膜浮腫。WBC 24700, CRP 335mg/L。副鼻腔全混濁+篩骨洞骨破壊。髄液:細菌性パターン。肺炎球菌培養陽性",
+      "final_diagnosis": "急性副鼻腔炎（細菌性髄膜炎合併）",
+      "expected_id": "D20",
+      "in_scope": true,
+      "evidence": {
+        "S03": "purulent_rhinorrhea",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E16": "obtunded",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L45": "bacterial_pattern"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "notes": "合併症ケース：副鼻腔炎→篩骨洞骨破壊→細菌性髄膜炎。D13(髄膜炎)が上位に来る可能性大"
+    },
+    {
+      "id": "R140",
+      "source": "J Med Case Rep 2018",
+      "pmcid": "PMC6157585",
+      "vignette": "44F 4日間増悪するLLQ腹痛+悪心嘔吐+下痢+全身倦怠感。無熱だが頻脈・軽度低血圧。膿性子宮頸管炎+chandelier sign陽性。WBC初期2300(低値)→13900, CRP 37.8mg/dL, ESR 120。血培GAS陽性。淋菌/クラミジアPCR陰性",
+      "final_diagnosis": "骨盤内炎症性疾患（GAS-PID）",
+      "expected_id": "D26",
+      "in_scope": true,
+      "evidence": {
+        "S12": "LLQ",
+        "S13": "present",
+        "S14": "watery",
+        "S07": "mild",
+        "T01": "under_3d",
+        "T02": "gradual_days",
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E09": "localized_tenderness",
+        "L01": "low_under_4000",
+        "L02": "high_over_10",
+        "L09": "gram_positive",
+        "L11": "mild_elevated",
+        "L28": "very_high_over_100"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R141",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9495291",
+      "vignette": "58M 1週間のLLQ腹痛。DM既往+2年前の非複雑性憩室炎。初診CT:uncomplicated diverticulitis。退院2日後に増悪再診、WBC 23000。CT:憩室膿瘍+小腸閉塞",
+      "final_diagnosis": "憩室炎（膿瘍形成・複雑性）",
+      "expected_id": "D27",
+      "in_scope": true,
+      "evidence": {
+        "S12": "LLQ",
+        "T01": "3d_to_1w",
+        "E09": "localized_tenderness",
+        "L01": "very_high_over_20000",
+        "L31": "abscess"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes"
+      }
+    },
+    {
+      "id": "R142",
+      "source": "J Emerg Med 2010",
+      "pmcid": "PMC2791736",
+      "vignette": "45F 3日前から左腰背部痛+左大腿前面放散痛→8日目に両側腰背部痛+間欠的発熱39.4℃。排尿障害+軽度腹痛。WBC正常8300, UA陰性。CT:両側腸腰筋膿瘍+L3-L5傍脊柱組織異常。ドレナージ培養MSSA",
+      "final_diagnosis": "両側腸腰筋膿瘍（MSSA）",
+      "expected_id": "D30",
+      "in_scope": true,
+      "evidence": {
+        "S10": "present",
+        "S12": "diffuse",
+        "S22": "present",
+        "S28": "present",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "E01": "39.0_40.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E09": "localized_tenderness",
+        "E11": "absent",
+        "E16": "normal",
+        "E27": "present",
+        "L01": "normal_4000_10000",
+        "L05": "normal",
+        "L09": "gram_positive",
+        "L31": "abscess"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
     }
   ],
   "total_cases": 110
