@@ -36,7 +36,8 @@
           "呼吸困難出現",
           "膿性痰の悪化"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D02",
@@ -68,7 +69,8 @@
           "一度解熱後の再発熱（二峰性）",
           "呼吸困難"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D03",
@@ -100,7 +102,8 @@
           "SpO2 93%未満",
           "D-dimer上昇"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D04",
@@ -133,7 +136,8 @@
           "片側の著明な腫脹",
           "呼吸困難"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D05",
@@ -166,7 +170,8 @@
           "SpO2低下進行",
           "胸水増加"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D06",
@@ -198,7 +203,8 @@
           "SpO2低下",
           "3週間以上の咳嗽（百日咳・結核を考慮）"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D07",
@@ -232,7 +238,8 @@
           "脱水徴候",
           "腹膜刺激徴候（虫垂炎の除外）"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D08",
@@ -264,7 +271,8 @@
           "側腹部痛",
           "悪寒戦慄"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D09",
@@ -297,7 +305,8 @@
           "ショック徴候",
           "尿路閉塞の既往"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D10",
@@ -330,7 +339,8 @@
           "高熱(>39℃)",
           "全身状態の急激な悪化（穿孔を示唆）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D11",
@@ -362,7 +372,8 @@
           "全身状態悪化",
           "Murphy陽性からの急激な消失（穿孔を示唆）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D12",
@@ -395,7 +406,8 @@
           "ショック徴候（壊死性筋膜炎/TSS）",
           "激烈な疼痛"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D13",
@@ -430,7 +442,8 @@
           "痙攣",
           "急速な全身状態悪化"
         ]
-      }
+      },
+      "severity": "critical"
     },
     {
       "id": "D14",
@@ -464,7 +477,8 @@
           "Osler結節・Janeway病変",
           "急性心不全"
         ]
-      }
+      },
+      "severity": "critical"
     },
     {
       "id": "D15",
@@ -498,7 +512,8 @@
           "腎不全",
           "ARDS"
         ]
-      }
+      },
+      "severity": "critical"
     },
     {
       "id": "D16",
@@ -532,7 +547,8 @@
           "出血徴候",
           "ショック"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D17",
@@ -565,7 +581,8 @@
           "空洞形成",
           "粟粒結核パターン（全身播種）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D18",
@@ -598,7 +615,8 @@
           "気道閉塞（著明な扁桃腫大）",
           "肝炎の悪化"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D19",
@@ -631,7 +649,8 @@
           "肝機能の急激な悪化",
           "腎機能障害"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D20",
@@ -663,7 +682,8 @@
           "眼窩周囲の腫脹・発赤（眼窩蜂窩織炎）",
           "激しい頭痛（頭蓋内合併症）"
         ]
-      }
+      },
+      "severity": "low"
     },
     {
       "id": "D21",
@@ -696,7 +716,8 @@
           "顔面神経麻痺（Ramsay Hunt）",
           "播種性帯状疱疹（免疫不全）"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D22",
@@ -728,7 +749,8 @@
           "尿閉",
           "膿瘍形成（直腸診で波動触知）"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D23",
@@ -761,7 +783,8 @@
           "多臓器不全",
           "治療の遅れ（致死率上昇）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D24",
@@ -794,7 +817,8 @@
           "多臓器不全",
           "壊死性軟部組織感染の合併"
         ]
-      }
+      },
+      "severity": "critical"
     },
     {
       "id": "D25",
@@ -827,7 +851,8 @@
           "ショック",
           "Reynolds五徴は致死率30%以上"
         ]
-      }
+      },
+      "severity": "critical"
     },
     {
       "id": "D26",
@@ -860,7 +885,8 @@
           "腹膜刺激徴候（穿孔）",
           "妊娠の除外（子宮外妊娠との鑑別）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D27",
@@ -893,7 +919,8 @@
           "膿瘍形成",
           "腸閉塞"
         ]
-      }
+      },
+      "severity": "moderate"
     },
     {
       "id": "D28",
@@ -926,7 +953,8 @@
           "消化管出血",
           "意識障害（typhoid encephalopathy）"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "R01",
@@ -1854,7 +1882,7 @@
       ],
       "icd10": "J39.0",
       "category_sub": "head_neck",
-      "severity": "critical",
+      "severity": "high",
       "key_features": "発熱+頸部腫脹+嚥下困難。気道閉塞・縦隔炎のリスク。CTで膿瘍確認。",
       "diagnostic_profile": {}
     },
@@ -1914,7 +1942,7 @@
       ],
       "icd10": "A04.7",
       "category_sub": "gastrointestinal",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "抗菌薬使用後の発熱+水様性下痢。毒素検査陽性。重症では中毒性巨大結腸。",
       "diagnostic_profile": {}
     },
@@ -1944,7 +1972,7 @@
       ],
       "icd10": "T80.2",
       "category_sub": "nosocomial",
-      "severity": "high",
+      "severity": "critical",
       "key_features": "中心静脈カテーテル留置中の発熱+悪寒。刺入部の発赤。血培でCNS/S.aureus。",
       "diagnostic_profile": {}
     },
@@ -1959,7 +1987,7 @@
       ],
       "icd10": "T81.4",
       "category_sub": "nosocomial",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "術後の発熱+創部の発赤・腫脹・排膿。術後3-5日以降に出現。",
       "diagnostic_profile": {}
     },
@@ -1974,7 +2002,7 @@
       ],
       "icd10": "N39.0",
       "category_sub": "urogenital",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "尿路結石/カテーテル/前立腺肥大等を背景とする発熱+排尿症状。耐性菌リスク。",
       "diagnostic_profile": {}
     },
@@ -2004,7 +2032,7 @@
       ],
       "icd10": "B23.0",
       "category_sub": "viral",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "リスク行動後2-4週の発熱+咽頭痛+リンパ節腫脹+発疹。単核球症様。抗体陰性期あり。",
       "diagnostic_profile": {}
     },
@@ -2109,7 +2137,7 @@
       ],
       "icd10": "A06.0",
       "category_sub": "parasitic",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "渡航歴+発熱+粘血便+腹痛。イチゴゼリー状便。肝膿瘍合併あり。",
       "diagnostic_profile": {}
     },
@@ -2124,7 +2152,7 @@
       ],
       "icd10": "A27",
       "category_sub": "zoonotic",
-      "severity": "high",
+      "severity": "critical",
       "key_features": "汚染水曝露後の突然の高熱+筋肉痛+結膜充血+黄疸。重症型(Weil病)は肝腎不全。",
       "diagnostic_profile": {}
     },
@@ -2139,7 +2167,7 @@
       ],
       "icd10": "A23",
       "category_sub": "zoonotic",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "波状熱+筋肉痛+関節痛+肝脾腫。乳製品/家畜接触歴。血培陽性だが培養に時間。",
       "diagnostic_profile": {}
     },
@@ -2169,7 +2197,7 @@
       ],
       "icd10": "A78",
       "category_sub": "zoonotic",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "畜産従事者の発熱+頭痛+非定型肺炎。テトラサイクリンに反応。慢性化すると心内膜炎。",
       "diagnostic_profile": {}
     },
@@ -2229,7 +2257,7 @@
       ],
       "icd10": "M32",
       "category_sub": "autoimmune",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "若年女性の発熱+蝶形紅斑+関節痛+光線過敏+口腔潰瘍+漿膜炎。抗核抗体陽性。",
       "diagnostic_profile": {}
     },
@@ -2469,7 +2497,7 @@
       ],
       "icd10": "G25.79",
       "category_sub": "iatrogenic",
-      "severity": "high",
+      "severity": "critical",
       "key_features": "セロトニン作動薬使用後の発熱+クローヌス+振戦+発汗+下痢。悪性症候群との鑑別。",
       "diagnostic_profile": {}
     },
@@ -3333,7 +3361,7 @@
       ],
       "icd10": "K04.7",
       "category_sub": "head_neck",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "発熱+歯痛/顔面腫脹。下顎臼歯が最多。Ludwig anginaは気道緊急。"
     },
     {
@@ -3347,7 +3375,7 @@
       ],
       "icd10": "K85",
       "category_sub": "gastrointestinal",
-      "severity": "high",
+      "severity": "critical",
       "key_features": "発熱+上腹部痛(背部放散)+嘔吐。アミラーゼ/リパーゼ上昇。胆石/アルコールが2大原因。"
     },
     {
@@ -3375,7 +3403,7 @@
       ],
       "icd10": "F10.3",
       "category_sub": "withdrawal",
-      "severity": "high",
+      "severity": "critical",
       "key_features": "大量飲酒中断後6-48時間の発熱+振戦+発汗+頻脈+不安/興奮。重症では痙攣/振戦せん妄。"
     },
     {
@@ -3417,7 +3445,7 @@
       ],
       "icd10": "A92.0",
       "category_sub": "viral",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "渡航歴+突然の高熱+激しい関節痛（手指/足趾の対称性）+発疹。デング熱に類似。"
     },
     {
@@ -3431,7 +3459,7 @@
       ],
       "icd10": "R50.81",
       "category_sub": "malignancy",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "悪性腫瘍患者の感染を除外した持続的発熱。ナプロキセンテストで解熱傾向。"
     },
     {
@@ -3578,7 +3606,7 @@
       ],
       "icd10": "I88.1",
       "category_sub": "autoimmune",
-      "severity": "low",
+      "severity": "moderate",
       "key_features": "若年女性に多い。発熱+有痛性頸部リンパ節腫脹+白血球減少。自然軽快するが不明熱の重要な鑑別。"
     },
     {
@@ -3606,7 +3634,7 @@
       ],
       "icd10": "M31.4",
       "category_sub": "autoimmune",
-      "severity": "high",
+      "severity": "moderate",
       "key_features": "若年女性。発熱+倦怠感+上肢血圧左右差+脈なし+血管雑音。ESR著増。日本に多い。"
     },
     {
@@ -3634,7 +3662,7 @@
       ],
       "icd10": "B15",
       "category_sub": "viral",
-      "severity": "moderate",
+      "severity": "high",
       "key_features": "渡航者/生牡蠣。発熱+倦怠感→黄疸+肝酵素著増。IgM-HA抗体で確定。通常自然治癒。"
     },
     {
@@ -3886,7 +3914,8 @@
           "弁膜症",
           "心不全"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "D104",
@@ -3915,7 +3944,8 @@
           "多臓器不全",
           "DIC"
         ]
-      }
+      },
+      "severity": "high"
     },
     {
       "id": "L47",

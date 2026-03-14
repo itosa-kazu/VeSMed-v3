@@ -82,7 +82,8 @@ def api_infer():
     h = entropy(ranked)
 
     results = []
-    for d_id, prob in ranked[:20]:
+    top3_ids = set()
+    for i, (d_id, prob) in enumerate(ranked[:20]):
         v = var_lookup.get(d_id, {})
         results.append({
             "id": d_id,
@@ -90,12 +91,30 @@ def api_infer():
             "name_ja": v.get("name_ja", d_id),
             "probability": round(prob * 100, 2),
         })
+        if i < 3:
+            top3_ids.add(d_id)
+
+    # 見逃し注意: critical/high severity, >0.5%, NOT in Top-3
+    dont_miss = []
+    for d_id, prob in ranked:
+        if d_id in top3_ids:
+            continue
+        v = var_lookup.get(d_id, {})
+        sev = v.get("severity", "")
+        if sev in ("critical", "high") and prob > 0.005:
+            dont_miss.append({
+                "id": d_id,
+                "name_ja": v.get("name_ja", d_id),
+                "probability": round(prob * 100, 2),
+                "severity": sev,
+            })
 
     return jsonify({
         "entropy": round(h, 2),
         "n_evidence": len(evidence),
         "n_risk": len(risk),
         "results": results,
+        "dont_miss": dont_miss,
     })
 
 
