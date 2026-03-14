@@ -11588,6 +11588,86 @@
           "present": 0.85
         }
       }
+    },
+    "M02": {
+      "description": "血行動態異常（ショック徴候）",
+      "states": [
+        "stable",
+        "compensated",
+        "shock"
+      ],
+      "leak": {
+        "stable": 0.95,
+        "compensated": 0.04,
+        "shock": 0.01
+      },
+      "parent_effects": {
+        "D24": {
+          "stable": 0.05,
+          "compensated": 0.15,
+          "shock": 0.8
+        },
+        "D57": {
+          "stable": 0.15,
+          "compensated": 0.25,
+          "shock": 0.6
+        },
+        "D72": {
+          "stable": 0.05,
+          "compensated": 0.15,
+          "shock": 0.8
+        },
+        "D77": {
+          "stable": 0.4,
+          "compensated": 0.3,
+          "shock": 0.3
+        },
+        "D78": {
+          "stable": 0.15,
+          "compensated": 0.25,
+          "shock": 0.6
+        },
+        "D73": {
+          "stable": 0.25,
+          "compensated": 0.35,
+          "shock": 0.4
+        },
+        "D74": {
+          "stable": 0.3,
+          "compensated": 0.4,
+          "shock": 0.3
+        },
+        "D15": {
+          "stable": 0.45,
+          "compensated": 0.3,
+          "shock": 0.25
+        },
+        "D89": {
+          "stable": 0.15,
+          "compensated": 0.25,
+          "shock": 0.6
+        },
+        "D25": {
+          "stable": 0.4,
+          "compensated": 0.3,
+          "shock": 0.3
+        },
+        "D40": {
+          "stable": 0.35,
+          "compensated": 0.35,
+          "shock": 0.3
+        },
+        "D13": {
+          "stable": 0.35,
+          "compensated": 0.3,
+          "shock": 0.35
+        },
+        "D71": {
+          "stable": 0.3,
+          "compensated": 0.35,
+          "shock": 0.35
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

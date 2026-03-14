@@ -3848,6 +3848,18 @@
       "category": "intermediate"
     },
     {
+      "id": "M02",
+      "name": "hemodynamic_compromise",
+      "name_ja": "血行動態異常（ショック徴候）",
+      "category": "sign",
+      "states": [
+        "stable",
+        "compensated",
+        "shock"
+      ],
+      "note": "臨床的ショック徴候の総合判断。compensated=頻脈あるがBP維持、shock=低血圧+臓器障害"
+    },
+    {
       "id": "D103",
       "name": "acute_rheumatic_fever",
       "name_ja": "急性リウマチ熱",

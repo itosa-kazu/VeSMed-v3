@@ -119,7 +119,7 @@ def build_model(step1, step2, step3):
     disease_children = defaultdict(set)
     for e in step2["edges"]:
         frm = e["from"]
-        if frm.startswith("D") or frm == "M01":
+        if frm.startswith("D") or frm.startswith("M"):
             disease_children[frm].add(e["to"])
 
     raw_noisy = step3.get("noisy_or_params", {})
@@ -198,7 +198,7 @@ def compute_idf_disc(step2, noisy_or, n_diseases=104):
     edge_count = defaultdict(int)
     for e in step2["edges"]:
         frm = e["from"]
-        if frm.startswith("D") or frm == "M01":
+        if frm.startswith("D") or frm.startswith("M"):
             edge_count[e["to"]] += 1
 
     disc = {}
@@ -416,7 +416,7 @@ def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
     log_posteriors = {}
 
     for d in diseases:
-        if d == "M01":
+        if d.startswith("M"):
             continue
 
         prior = get_prior(d, root_priors, risk)
@@ -541,7 +541,7 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
         for s in states:
             p_s = 0.0
             for d in diseases:
-                if d == "M01":
+                if d.startswith("M"):
                     continue
                 p_d = posterior.get(d, 0.0)
                 if d in pe:

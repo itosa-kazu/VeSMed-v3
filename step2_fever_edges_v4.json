@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1410,
+  "total_edges": 1613,
   "edges": [
     {
       "from": "R01",
@@ -15697,6 +15697,97 @@
       "from_name": "acute sinusitis",
       "to_name": "heart_rate",
       "reason": "重症/合併症を伴う副鼻腔炎で感染性頻脈(20-30%)"
+    },
+    {
+      "from": "D24",
+      "to": "M02",
+      "from_name": "TSS",
+      "to_name": "hemodynamic_compromise",
+      "reason": "TSS: 重症敗血症→ショック(80-90%)"
+    },
+    {
+      "from": "D57",
+      "to": "M02",
+      "from_name": "necrotizing fasciitis",
+      "to_name": "hemodynamic_compromise",
+      "reason": "壊死性筋膜炎: 敗血症性ショック(50-70%)"
+    },
+    {
+      "from": "D72",
+      "to": "M02",
+      "from_name": "adrenal crisis",
+      "to_name": "hemodynamic_compromise",
+      "reason": "副腎クリーゼ: 循環虚脱(80-90%)"
+    },
+    {
+      "from": "D77",
+      "to": "M02",
+      "from_name": "DVT/PE",
+      "to_name": "hemodynamic_compromise",
+      "reason": "大量PE: 右心不全→ショック(30-50%)"
+    },
+    {
+      "from": "D78",
+      "to": "M02",
+      "from_name": "heat stroke",
+      "to_name": "hemodynamic_compromise",
+      "reason": "重症熱中症: 循環不全(60-80%)"
+    },
+    {
+      "from": "D73",
+      "to": "M02",
+      "from_name": "pheochromocytoma",
+      "to_name": "hemodynamic_compromise",
+      "reason": "褐色細胞腫クリーゼ: 血行動態不安定(40-60%)"
+    },
+    {
+      "from": "D74",
+      "to": "M02",
+      "from_name": "NMS",
+      "to_name": "hemodynamic_compromise",
+      "reason": "悪性症候群: 自律神経障害→血行動態異常(30-50%)"
+    },
+    {
+      "from": "D15",
+      "to": "M02",
+      "from_name": "malaria",
+      "to_name": "hemodynamic_compromise",
+      "reason": "重症マラリア: ショック(20-40%)"
+    },
+    {
+      "from": "D89",
+      "to": "M02",
+      "from_name": "malignant hyperthermia",
+      "to_name": "hemodynamic_compromise",
+      "reason": "悪性高熱症: 循環虚脱(50-70%)"
+    },
+    {
+      "from": "D25",
+      "to": "M02",
+      "from_name": "cholangitis",
+      "to_name": "hemodynamic_compromise",
+      "reason": "急性胆管炎(Charcot→Reynolds): 敗血症性ショック(30-50%)"
+    },
+    {
+      "from": "D40",
+      "to": "M02",
+      "from_name": "CRBSI",
+      "to_name": "hemodynamic_compromise",
+      "reason": "カテーテル関連血流感染: 敗血症性ショック(30-50%)"
+    },
+    {
+      "from": "D13",
+      "to": "M02",
+      "from_name": "meningitis",
+      "to_name": "hemodynamic_compromise",
+      "reason": "細菌性髄膜炎: 敗血症性ショック(30-50%)"
+    },
+    {
+      "from": "D71",
+      "to": "M02",
+      "from_name": "thyroid storm",
+      "to_name": "hemodynamic_compromise",
+      "reason": "甲状腺クリーゼ: 高拍出性心不全→ショック(30-50%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
