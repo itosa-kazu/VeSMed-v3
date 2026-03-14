@@ -15606,6 +15606,62 @@
       "from_name": "empyema",
       "to_name": "electrolytes",
       "reason": "膿胸/肺感染によるSIADH→低Na血症"
+    },
+    {
+      "from": "D55",
+      "to": "S16",
+      "from_name": "Q fever",
+      "to_name": "night_sweats",
+      "reason": "Q熱で盗汗は40-60%に出現。ブルセラとの共通所見"
+    },
+    {
+      "from": "D55",
+      "to": "L01",
+      "from_name": "Q fever",
+      "to_name": "WBC",
+      "reason": "Q熱で白血球正常〜低下(白血球減少25-50%)"
+    },
+    {
+      "from": "D55",
+      "to": "L15",
+      "from_name": "Q fever",
+      "to_name": "ferritin",
+      "reason": "Q熱は高フェリチン血症の代表疾患。急性Q熱肝炎で>1000が30-50%"
+    },
+    {
+      "from": "D55",
+      "to": "L16",
+      "from_name": "Q fever",
+      "to_name": "LDH",
+      "reason": "Q熱肝炎でLDH上昇(40-60%)"
+    },
+    {
+      "from": "D55",
+      "to": "E02",
+      "from_name": "Q fever",
+      "to_name": "heart_rate",
+      "reason": "Q熱で相対的徐脈(高熱にもかかわらず頻脈少ない)が典型"
+    },
+    {
+      "from": "D23",
+      "to": "E25",
+      "from_name": "spotted fever group rickettsiosis",
+      "to_name": "conjunctival_injection",
+      "reason": "RMSF結膜充血30-40%。重要な臨床的手がかり"
+    },
+    {
+      "from": "D23",
+      "to": "L44",
+      "from_name": "spotted fever group rickettsiosis",
+      "to_name": "electrolytes",
+      "reason": "RMSF SIADH→低Na血症50-60%"
+    },
+    {
+      "from": "D23",
+      "to": "S01",
+      "from_name": "spotted fever group rickettsiosis",
+      "to_name": "cough",
+      "reason": "リケッチア症で乾性咳嗽15-25%"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

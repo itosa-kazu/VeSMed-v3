@@ -164,12 +164,21 @@
         "S06": "present",
         "S05": "severe",
         "L11": "very_high",
-        "L02": "high_over_10",
-        "E03": "hypotension_under_90"
+        "L02": "mild_0.3_3",
+        "E03": "normal_over_90",
+        "S07": "severe",
+        "S16": "present",
+        "L01": "low_under_4000",
+        "L15": "very_high_over_1000",
+        "L16": "elevated",
+        "E02": "100_120",
+        "T01": "over_3w"
       },
       "risk_factors": {
         "R01": "18_39",
-        "R02": "female"
+        "R02": "female",
+        "R30": "livestock",
+        "R06": "tropical_endemic"
       },
       "result": "FATAL rank20 (レプトスピラ症 81%) H=1.4",
       "notes": "R30(動物接触)なしではQ熱は浮上不能。Q熱はgreat mimicker。確定にはCoxiella serology必須"
@@ -525,8 +534,16 @@
       "in_scope": true,
       "evidence": {
         "E01": "39.0_40.0",
-        "L22": "present",
-        "T01": "3d_to_1w"
+        "T01": "1w_to_3w",
+        "S02": "present",
+        "S08": "present",
+        "E12": "maculopapular_rash",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "L11": "mild_elevated",
+        "L18": "negative",
+        "S05": "mild"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -776,11 +793,14 @@
         "E12": "maculopapular_rash",
         "L14": "thrombocytopenia",
         "L11": "very_high",
-        "T01": "under_3d"
+        "T01": "3d_to_1w",
+        "E17": "present",
+        "E05": "severe_hypoxia_under_93"
       },
       "risk_factors": {
         "R01": "65_plus",
-        "R02": "female"
+        "R02": "female",
+        "R06": "domestic"
       },
       "result": "OOS fallback→リケッチア症（ツツガムシ病・日本紅斑熱） 45% H=3.1",
       "notes": "ツツガムシ病はリスト外。eschar(刺し口)がkey findingだが変数なし"
@@ -1520,10 +1540,15 @@
         "E01": "38.0_39.0",
         "E12": "maculopapular_rash",
         "L14": "thrombocytopenia",
-        "L11": "mild_elevated"
+        "L11": "mild_elevated",
+        "S02": "present",
+        "E25": "present",
+        "L44": "hyponatremia"
       },
       "risk_factors": {
-        "R01": "18_39"
+        "R01": "18_39",
+        "R02": "male",
+        "R06": "domestic"
       }
     },
     {
@@ -1779,9 +1804,18 @@
         "E01": "39.0_40.0",
         "E03": "hypotension_under_90",
         "E05": "severe_hypoxia_under_93",
-        "L09": "negative"
+        "L09": "negative",
+        "S09": "present",
+        "S39": "present",
+        "E02": "100_120",
+        "S04": "at_rest"
       },
-      "risk_factors": {}
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R04": "yes",
+        "R25": "yes"
+      }
     },
     {
       "id": "R73",

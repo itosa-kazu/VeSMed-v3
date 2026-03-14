@@ -3426,6 +3426,11 @@
           "under_100": 0.3,
           "100_120": 0.45,
           "over_120": 0.25
+        },
+        "D55": {
+          "under_100": 0.6,
+          "100_120": 0.3,
+          "over_120": 0.1
         }
       }
     },
@@ -4831,6 +4836,10 @@
         "D48": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D23": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -5649,6 +5658,12 @@
           "normal_4000_10000": 0.35,
           "high_10000_20000": 0.45,
           "very_high_over_20000": 0.15
+        },
+        "D55": {
+          "low_under_4000": 0.3,
+          "normal_4000_10000": 0.5,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -7021,6 +7036,12 @@
           "mild_elevated": 0.5,
           "very_high_over_1000": 0.18,
           "extreme_over_10000": 0.02
+        },
+        "D55": {
+          "normal": 0.2,
+          "mild_elevated": 0.3,
+          "very_high_over_1000": 0.4,
+          "extreme_over_10000": 0.1
         }
       }
     },
@@ -7051,7 +7072,11 @@
           "normal": 0.3,
           "elevated": 0.7
         },
-        "D53": 0.4
+        "D53": 0.4,
+        "D55": {
+          "normal": 0.4,
+          "elevated": 0.6
+        }
       }
     },
     "L17": {
@@ -7897,6 +7922,12 @@
           "hyponatremia": 0.3,
           "hyperkalemia": 0.03,
           "other": 0.02
+        },
+        "D23": {
+          "normal": 0.4,
+          "hyponatremia": 0.55,
+          "hyperkalemia": 0.03,
+          "other": 0.02
         }
       }
     },
@@ -8127,6 +8158,11 @@
           "absent": 0.85,
           "dry": 0.13,
           "productive": 0.02
+        },
+        "D23": {
+          "absent": 0.75,
+          "dry": 0.2,
+          "productive": 0.05
         }
       }
     },
@@ -9560,7 +9596,11 @@
           "absent": 0.15,
           "present": 0.85
         },
-        "D94": 0.25
+        "D94": 0.25,
+        "D55": {
+          "absent": 0.45,
+          "present": 0.55
+        }
       }
     },
     "S17": {
