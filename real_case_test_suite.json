@@ -1985,7 +1985,8 @@
         "S43": "present",
         "L02": "mild_0.3_3",
         "L28": "elevated",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L38": "positive"
       },
       "risk_factors": {
         "R01": "18_39",
