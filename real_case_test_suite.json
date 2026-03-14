@@ -1485,7 +1485,8 @@
         "L16": "elevated",
         "L11": "very_high",
         "L10": "positive",
-        "L44": "hyponatremia"
+        "L44": "hyponatremia",
+        "M02": "compensated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1808,7 +1809,8 @@
         "S09": "present",
         "S39": "present",
         "E02": "100_120",
-        "S04": "at_rest"
+        "S04": "at_rest",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2070,7 +2072,8 @@
         "L01": "very_high_over_20000",
         "L02": "high_over_10",
         "L11": "mild_elevated",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -2094,7 +2097,8 @@
         "S18": "localized_pain_redness",
         "L02": "high_over_10",
         "L11": "mild_elevated",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2118,7 +2122,8 @@
         "L09": "gram_positive",
         "T01": "under_3d",
         "E12": "diffuse_erythroderma",
-        "E08": "exudate_or_white_patch"
+        "E08": "exudate_or_white_patch",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -2177,7 +2182,8 @@
         "E12": "localized_erythema_warmth_swelling",
         "L02": "high_over_10",
         "L09": "gram_positive",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -2336,7 +2342,8 @@
         "E03": "hypotension_under_90",
         "E12": "localized_erythema_warmth_swelling",
         "S18": "localized_pain_redness",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -2496,7 +2503,8 @@
         "E02": "over_120",
         "E16": "confused",
         "L01": "high_10000_20000",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "M02": "compensated"
       },
       "risk_factors": {
         "R26": "yes"
@@ -2798,7 +2806,8 @@
         "S17": "present",
         "E07": "crackles",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "M02": "compensated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2825,7 +2834,8 @@
         "S17": "present",
         "L01": "very_high_over_20000",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -2883,7 +2893,8 @@
         "L17": "very_high",
         "L20": "elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "M02": "compensated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2931,7 +2942,8 @@
         "L17": "very_high",
         "L11": "very_high",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "M02": "compensated"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -3540,7 +3552,8 @@
         "E04": "tachypnea_20_30",
         "L01": "low_under_4000",
         "L02": "moderate_3_10",
-        "L09": "gram_positive"
+        "L09": "gram_positive",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "18_39",
