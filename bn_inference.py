@@ -591,6 +591,8 @@ def main():
     parser.add_argument("--case", nargs="*", help="Case IDs to test")
     parser.add_argument("--classic", action="store_true",
                         help="旧版(改善なし)で実行")
+    parser.add_argument("--grid", action="store_true",
+                        help="Grid searchで最適(disc_power, cf_alpha)を探索")
     args = parser.parse_args()
 
     step1 = load_json(STEP1)
@@ -602,6 +604,69 @@ def main():
         build_model(step1, step2, step3)
 
     var_lookup = {v["id"]: v for v in step1["variables"]}
+
+    # --- Grid Search Mode ---
+    if args.grid:
+        print("=" * 80)
+        print("Grid Search: finding optimal (disc_power, cf_alpha)")
+        print("=" * 80)
+
+        in_scope_cases = [c for c in case_data["cases"]
+                          if c["in_scope"] and c.get("expected_id", "OOS") != "OOS"]
+
+        best_score = -1
+        best_params = (IDF_DISC_POWER, CF_COVERAGE_ALPHA)
+        results_table = []
+
+        dp_values = [0.0, 0.2, 0.3, 0.5, 0.7, 0.9, 1.0, 1.2, 1.5]
+        ca_values = [0.0, 0.3, 0.5, 0.7, 1.0, 1.3, 1.5, 2.0, 2.5]
+
+        for dp in dp_values:
+            for ca in ca_values:
+                d = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
+                t1, t3, fatal = 0, 0, 0
+
+                for case in in_scope_cases:
+                    ev = case.get("evidence", {})
+                    risk = case.get("risk_factors", {})
+                    expected = case["expected_id"]
+
+                    ranked = infer(ev, risk, diseases, disease_children,
+                                   noisy_or, root_priors,
+                                   disc=d, disc_power=dp, cf_alpha=ca)
+                    h = entropy(ranked)
+
+                    rank = None
+                    for i, (dd, p) in enumerate(ranked):
+                        if dd == expected:
+                            rank = i + 1
+                            break
+
+                    if rank == 1:
+                        t1 += 1
+                    if rank is not None and rank <= 3:
+                        t3 += 1
+                    if h < 2.0 and (rank is None or rank > 3):
+                        fatal += 1
+
+                score = t3 * 10000 + t1 * 100 - fatal * 50000
+                results_table.append((dp, ca, t1, t3, fatal, score))
+
+                if score > best_score:
+                    best_score = score
+                    best_params = (dp, ca)
+
+        print(f"\n{'dp':>5s} {'ca':>5s} {'T1':>5s} {'T3':>5s} {'FATAL':>5s} {'Score':>8s}")
+        print("-" * 40)
+        for dp, ca, t1, t3, fatal, score in sorted(results_table, key=lambda x: -x[5]):
+            marker = " <<<" if (dp, ca) == best_params else ""
+            print(f"{dp:5.1f} {ca:5.1f} {t1:5d} {t3:5d} {fatal:5d} {score:8d}{marker}")
+
+        print(f"\nBest: disc_power={best_params[0]}, cf_alpha={best_params[1]}")
+        best_row = [r for r in results_table if (r[0], r[1]) == best_params][0]
+        print(f"Top-1={best_row[2]}, Top-3={best_row[3]}, FATAL={best_row[4]}")
+        print(f"\nCurrent: disc_power={IDF_DISC_POWER}, cf_alpha={CF_COVERAGE_ALPHA}")
+        return
 
     # 改善パラメータ
     if args.classic:
