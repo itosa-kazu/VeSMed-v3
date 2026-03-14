@@ -11763,6 +11763,15 @@
           "castleman": 0.001,
           "granuloma": 0.001,
           "other": 0.067
+        },
+        "D17": {
+          "not_done": 0.4,
+          "reactive": 0.03,
+          "kikuchi_pattern": 0.001,
+          "lymphoma": 0.001,
+          "castleman": 0.001,
+          "granuloma": 0.55,
+          "other": 0.017
         }
       }
     }

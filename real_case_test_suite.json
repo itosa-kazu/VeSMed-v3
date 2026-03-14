@@ -374,7 +374,8 @@
         "E34": "present",
         "S07": "severe",
         "L18": "negative",
-        "L19": "negative"
+        "L19": "negative",
+        "L47": "lymphoma"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -650,7 +651,8 @@
         "S07": "severe",
         "S06": "present",
         "S17": "present",
-        "T01": "1w_to_3w"
+        "T01": "1w_to_3w",
+        "L47": "granuloma"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1021,7 +1023,8 @@
         "E01": "39.0_40.0",
         "E28": "present",
         "L04": "pleural_effusion",
-        "T01": "1w_to_3w"
+        "T01": "1w_to_3w",
+        "L47": "granuloma"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1256,7 +1259,8 @@
         "L24": "elevated",
         "L18": "negative",
         "E07": "crackles",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L47": "granuloma"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -1281,7 +1285,8 @@
         "T01": "over_3w",
         "L04": "BHL",
         "L02": "high_over_10",
-        "E13": "generalized"
+        "E13": "generalized",
+        "L47": "granuloma"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1340,7 +1345,8 @@
         "L01": "low_under_4000",
         "L28": "elevated",
         "S07": "severe",
-        "S01": "dry"
+        "S01": "dry",
+        "L47": "kikuchi_pattern"
       },
       "risk_factors": {
         "R01": "40_64",
