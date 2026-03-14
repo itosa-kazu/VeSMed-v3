@@ -15109,6 +15109,356 @@
       "from": "D68",
       "to": "E05",
       "note": "Hypoxia in leukemia with pulmonary infiltrates/infection"
+    },
+    {
+      "from": "D47",
+      "to": "S40",
+      "from_name": "mumps",
+      "to_name": "facial_swelling",
+      "reason": "耳下腺腫脹による顔面腫脹はムンプスの主症状"
+    },
+    {
+      "from": "D47",
+      "to": "E23",
+      "from_name": "mumps",
+      "to_name": "neck_swelling",
+      "reason": "顎下腺腫脹による頸部腫脹"
+    },
+    {
+      "from": "D47",
+      "to": "E13",
+      "from_name": "mumps",
+      "to_name": "lymphadenopathy",
+      "reason": "頸部リンパ節腫脹"
+    },
+    {
+      "from": "D47",
+      "to": "L02",
+      "from_name": "mumps",
+      "to_name": "CRP",
+      "reason": "ムンプスでCRP軽度上昇"
+    },
+    {
+      "from": "D47",
+      "to": "S07",
+      "from_name": "mumps",
+      "to_name": "fatigue",
+      "reason": "ムンプスで倦怠感"
+    },
+    {
+      "from": "D47",
+      "to": "E02",
+      "from_name": "mumps",
+      "to_name": "heart_rate",
+      "reason": "発熱に伴う頻脈"
+    },
+    {
+      "from": "D47",
+      "to": "S24",
+      "from_name": "mumps",
+      "to_name": "trismus",
+      "reason": "耳下腺腫脹による開口障害"
+    },
+    {
+      "from": "D47",
+      "to": "T02",
+      "from_name": "mumps",
+      "to_name": "onset_speed",
+      "reason": "急性発症"
+    },
+    {
+      "from": "D26",
+      "to": "L09",
+      "from_name": "PID",
+      "to_name": "blood_culture",
+      "reason": "PIDで菌血症"
+    },
+    {
+      "from": "D26",
+      "to": "L28",
+      "from_name": "PID",
+      "to_name": "ESR",
+      "reason": "PIDでESR上昇"
+    },
+    {
+      "from": "D26",
+      "to": "S07",
+      "from_name": "PID",
+      "to_name": "fatigue",
+      "reason": "PIDで倦怠感"
+    },
+    {
+      "from": "D26",
+      "to": "E02",
+      "from_name": "PID",
+      "to_name": "heart_rate",
+      "reason": "PIDで頻脈"
+    },
+    {
+      "from": "D26",
+      "to": "E03",
+      "from_name": "PID",
+      "to_name": "SBP",
+      "reason": "重症PIDで低血圧"
+    },
+    {
+      "from": "D26",
+      "to": "S14",
+      "from_name": "PID",
+      "to_name": "diarrhea",
+      "reason": "PIDで下痢（骨盤腹膜刺激）"
+    },
+    {
+      "from": "D26",
+      "to": "T02",
+      "from_name": "PID",
+      "to_name": "onset_speed",
+      "reason": "PIDの発症速さ"
+    },
+    {
+      "from": "D39",
+      "to": "S09",
+      "from_name": "perianal_abscess",
+      "to_name": "rigors",
+      "reason": "膿瘍形成で悪寒戦慄"
+    },
+    {
+      "from": "D39",
+      "to": "L31",
+      "from_name": "perianal_abscess",
+      "to_name": "abd_CT",
+      "reason": "CT膿瘍描出"
+    },
+    {
+      "from": "D39",
+      "to": "E12",
+      "from_name": "perianal_abscess",
+      "to_name": "skin_exam",
+      "reason": "肛門周囲の発赤腫脹"
+    },
+    {
+      "from": "D39",
+      "to": "T02",
+      "from_name": "perianal_abscess",
+      "to_name": "onset_speed",
+      "reason": "膿瘍は徐々に"
+    },
+    {
+      "from": "D40",
+      "to": "E02",
+      "from_name": "CRBSI",
+      "to_name": "heart_rate",
+      "reason": "敗血症で頻脈"
+    },
+    {
+      "from": "D40",
+      "to": "E03",
+      "from_name": "CRBSI",
+      "to_name": "SBP",
+      "reason": "CRBSIで低血圧/敗血症性ショック"
+    },
+    {
+      "from": "D40",
+      "to": "E04",
+      "from_name": "CRBSI",
+      "to_name": "respiratory_rate",
+      "reason": "敗血症で頻呼吸"
+    },
+    {
+      "from": "D40",
+      "to": "T02",
+      "from_name": "CRBSI",
+      "to_name": "onset_speed",
+      "reason": "CRBSI急性発症"
+    },
+    {
+      "from": "D41",
+      "to": "L28",
+      "from_name": "SSI",
+      "to_name": "ESR",
+      "reason": "SSIでESR上昇"
+    },
+    {
+      "from": "D41",
+      "to": "L03",
+      "from_name": "SSI",
+      "to_name": "procalcitonin",
+      "reason": "局所SSIでPCT低値"
+    },
+    {
+      "from": "D41",
+      "to": "T02",
+      "from_name": "SSI",
+      "to_name": "onset_speed",
+      "reason": "SSIは術後徐々に"
+    },
+    {
+      "from": "D42",
+      "to": "S33",
+      "from_name": "complicated_UTI",
+      "to_name": "hematuria",
+      "reason": "複雑性UTIで血尿"
+    },
+    {
+      "from": "D42",
+      "to": "E16",
+      "from_name": "complicated_UTI",
+      "to_name": "consciousness",
+      "reason": "高齢者UTIで意識変容"
+    },
+    {
+      "from": "D42",
+      "to": "E02",
+      "from_name": "complicated_UTI",
+      "to_name": "heart_rate",
+      "reason": "UTI敗血症で頻脈"
+    },
+    {
+      "from": "D42",
+      "to": "E11",
+      "from_name": "complicated_UTI",
+      "to_name": "CVA_tenderness",
+      "reason": "上部UTI波及でCVA叩打痛"
+    },
+    {
+      "from": "D42",
+      "to": "S07",
+      "from_name": "complicated_UTI",
+      "to_name": "fatigue",
+      "reason": "複雑性UTIで倦怠感"
+    },
+    {
+      "from": "D42",
+      "to": "T02",
+      "from_name": "complicated_UTI",
+      "to_name": "onset_speed",
+      "reason": "複雑性UTIは徐々に"
+    },
+    {
+      "from": "D43",
+      "to": "S11",
+      "from_name": "epididymitis",
+      "to_name": "frequency",
+      "reason": "精巣上体炎で頻尿"
+    },
+    {
+      "from": "D43",
+      "to": "S13",
+      "from_name": "epididymitis",
+      "to_name": "nausea",
+      "reason": "精巣上体炎で嘔気"
+    },
+    {
+      "from": "D43",
+      "to": "L09",
+      "from_name": "epididymitis",
+      "to_name": "blood_culture",
+      "reason": "精巣上体炎で菌血症は稀"
+    },
+    {
+      "from": "D43",
+      "to": "T01",
+      "from_name": "epididymitis",
+      "to_name": "fever_duration",
+      "reason": "精巣上体炎の発熱期間"
+    },
+    {
+      "from": "D43",
+      "to": "T02",
+      "from_name": "epididymitis",
+      "to_name": "onset_speed",
+      "reason": "精巣上体炎は徐々に"
+    },
+    {
+      "from": "D48",
+      "to": "S06",
+      "from_name": "rubella",
+      "to_name": "myalgia",
+      "reason": "風疹で筋肉痛"
+    },
+    {
+      "from": "D48",
+      "to": "S03",
+      "from_name": "rubella",
+      "to_name": "nasal",
+      "reason": "風疹で鼻汁"
+    },
+    {
+      "from": "D48",
+      "to": "E25",
+      "from_name": "rubella",
+      "to_name": "conjunctival_injection",
+      "reason": "風疹で結膜充血"
+    },
+    {
+      "from": "D48",
+      "to": "S02",
+      "from_name": "rubella",
+      "to_name": "sore_throat",
+      "reason": "風疹で咽頭痛"
+    },
+    {
+      "from": "D48",
+      "to": "S05",
+      "from_name": "rubella",
+      "to_name": "headache",
+      "reason": "風疹で頭痛"
+    },
+    {
+      "from": "D48",
+      "to": "E35",
+      "from_name": "rubella",
+      "to_name": "eye_findings",
+      "reason": "風疹で結膜炎"
+    },
+    {
+      "from": "D48",
+      "to": "T02",
+      "from_name": "rubella",
+      "to_name": "onset_speed",
+      "reason": "風疹は前駆期から徐々に"
+    },
+    {
+      "from": "D76",
+      "to": "L01",
+      "from_name": "FNHTR",
+      "to_name": "WBC",
+      "reason": "輸血反応でWBCは通常正常"
+    },
+    {
+      "from": "D76",
+      "to": "T02",
+      "from_name": "FNHTR",
+      "to_name": "onset_speed",
+      "reason": "輸血反応は急性発症"
+    },
+    {
+      "from": "D79",
+      "to": "E12",
+      "from_name": "PVE",
+      "to_name": "skin_exam",
+      "reason": "PVEでOsler結節/Janeway/線状出血"
+    },
+    {
+      "from": "D79",
+      "to": "E02",
+      "from_name": "PVE",
+      "to_name": "heart_rate",
+      "reason": "心内膜炎で頻脈"
+    },
+    {
+      "from": "D79",
+      "to": "E03",
+      "from_name": "PVE",
+      "to_name": "SBP",
+      "reason": "PVEで血行動態"
+    },
+    {
+      "from": "D79",
+      "to": "T02",
+      "from_name": "PVE",
+      "to_name": "onset_speed",
+      "reason": "PVEの発症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

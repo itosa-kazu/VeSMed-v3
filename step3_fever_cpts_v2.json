@@ -3334,6 +3334,31 @@
           "under_100": 0.65,
           "100_120": 0.25,
           "over_120": 0.1
+        },
+        "D47": {
+          "under_100": 0.5,
+          "100_120": 0.4,
+          "over_120": 0.1
+        },
+        "D26": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
+        },
+        "D40": {
+          "under_100": 0.2,
+          "100_120": 0.5,
+          "over_120": 0.3
+        },
+        "D42": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
+        },
+        "D79": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
         }
       }
     },
@@ -3431,6 +3456,18 @@
         "D68": {
           "normal_over_90": 0.65,
           "hypotension_under_90": 0.35
+        },
+        "D26": {
+          "normal_over_90": 0.75,
+          "hypotension_under_90": 0.25
+        },
+        "D40": {
+          "normal_over_90": 0.55,
+          "hypotension_under_90": 0.45
+        },
+        "D79": {
+          "normal_over_90": 0.7,
+          "hypotension_under_90": 0.3
         }
       }
     },
@@ -3486,6 +3523,11 @@
         "D68": {
           "normal_under_20": 0.35,
           "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.2
+        },
+        "D40": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.5,
           "severe_over_30": 0.2
         }
       }
@@ -4108,6 +4150,28 @@
           "petechiae_purpura": 0.05,
           "maculopapular_rash": 0.03,
           "vesicular_dermatomal": 0.02
+        },
+        "D39": {
+          "normal": 0.15,
+          "localized_erythema_warmth_swelling": 0.8,
+          "petechiae_purpura": 0.0,
+          "maculopapular_rash": 0.0,
+          "vesicular_dermatomal": 0.0,
+          "diffuse_erythroderma": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "skin_necrosis": 0.05
+        },
+        "D79": {
+          "normal": 0.4,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.45,
+          "maculopapular_rash": 0.05,
+          "vesicular_dermatomal": 0.0,
+          "diffuse_erythroderma": 0.0,
+          "purpura": 0.05,
+          "vesicle_bulla": 0.0,
+          "skin_necrosis": 0.0
         }
       }
     },
@@ -4223,6 +4287,11 @@
           "absent": 0.3,
           "cervical": 0.6,
           "generalized": 0.1
+        },
+        "D47": {
+          "absent": 0.5,
+          "cervical": 0.45,
+          "generalized": 0.05
         }
       }
     },
@@ -4439,6 +4508,11 @@
           "normal": 0.3,
           "confused": 0.45,
           "obtunded": 0.25
+        },
+        "D42": {
+          "normal": 0.6,
+          "confused": 0.35,
+          "obtunded": 0.05
         }
       }
     },
@@ -4608,6 +4682,10 @@
         "D85": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D47": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -4662,6 +4740,10 @@
         "D24": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D48": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -4906,6 +4988,11 @@
           "absent": 0.85,
           "conjunctivitis": 0.05,
           "uveitis": 0.1
+        },
+        "D48": {
+          "absent": 0.5,
+          "conjunctivitis": 0.45,
+          "uveitis": 0.05
         }
       }
     },
@@ -5463,6 +5550,12 @@
           "normal_4000_10000": 0.45,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.1
+        },
+        "D76": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.7,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -6026,6 +6119,12 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.15,
           "high_over_10": 0.05
+        },
+        "D47": {
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.4,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.05
         }
       }
     },
@@ -6091,6 +6190,12 @@
           "low_under_0.25": 0.2,
           "gray_0.25_0.5": 0.25,
           "high_over_0.5": 0.35
+        },
+        "D41": {
+          "not_done": 0.3,
+          "low_under_0.25": 0.4,
+          "gray_0.25_0.5": 0.2,
+          "high_over_0.5": 0.1
         }
       }
     },
@@ -6399,6 +6504,18 @@
           "negative": 0.92,
           "gram_positive": 0.04,
           "gram_negative": 0.04
+        },
+        "D26": {
+          "not_done_or_pending": 0.3,
+          "negative": 0.5,
+          "gram_positive": 0.1,
+          "gram_negative": 0.1
+        },
+        "D43": {
+          "not_done_or_pending": 0.3,
+          "negative": 0.55,
+          "gram_positive": 0.05,
+          "gram_negative": 0.1
         }
       }
     },
@@ -7253,6 +7370,16 @@
           "normal": 0.1,
           "elevated": 0.5,
           "very_high_over_100": 0.4
+        },
+        "D26": {
+          "normal": 0.15,
+          "elevated": 0.5,
+          "very_high_over_100": 0.35
+        },
+        "D41": {
+          "normal": 0.2,
+          "elevated": 0.6,
+          "very_high_over_100": 0.2
         }
       }
     },
@@ -7355,6 +7482,12 @@
           "abscess": 0.05,
           "mass": 0.7,
           "other_abnormal": 0.15
+        },
+        "D39": {
+          "normal": 0.1,
+          "abscess": 0.8,
+          "mass": 0.0,
+          "other_abnormal": 0.1
         }
       }
     },
@@ -7926,6 +8059,10 @@
         "D101": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D48": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -8161,6 +8298,11 @@
           "absent": 0.6,
           "mild": 0.3,
           "severe": 0.1
+        },
+        "D48": {
+          "absent": 0.5,
+          "mild": 0.4,
+          "severe": 0.1
         }
       }
     },
@@ -8243,6 +8385,10 @@
         "D68": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D48": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -8484,6 +8630,21 @@
           "absent": 0.15,
           "mild": 0.35,
           "severe": 0.5
+        },
+        "D47": {
+          "absent": 0.3,
+          "mild": 0.5,
+          "severe": 0.2
+        },
+        "D26": {
+          "absent": 0.3,
+          "mild": 0.5,
+          "severe": 0.2
+        },
+        "D42": {
+          "absent": 0.3,
+          "mild": 0.5,
+          "severe": 0.2
         }
       }
     },
@@ -8710,6 +8871,10 @@
         "D17": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D39": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -8911,7 +9076,7 @@
           "RUQ": 0.05,
           "RLQ": 0.05,
           "LLQ": 0.05,
-          "diffuse": 0.10,
+          "diffuse": 0.1,
           "suprapubic": 0.05
         },
         "D77": {
@@ -9093,6 +9258,10 @@
         "D68": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D43": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -9228,6 +9397,11 @@
           "absent": 0.75,
           "watery": 0.23,
           "bloody": 0.02
+        },
+        "D26": {
+          "absent": 0.6,
+          "watery": 0.35,
+          "bloody": 0.05
         }
       }
     },
@@ -9573,6 +9747,10 @@
         "D85": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D47": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -9793,6 +9971,10 @@
         "D09": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D42": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -9964,6 +10146,10 @@
         "D93": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D47": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -10832,6 +11018,12 @@
           "3d_to_1w": 0.2,
           "1w_to_3w": 0.35,
           "over_3w": 0.3
+        },
+        "D43": {
+          "under_3d": 0.3,
+          "3d_to_1w": 0.5,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.05
         }
       }
     },
@@ -10917,6 +11109,46 @@
         "D28": {
           "sudden_hours": 0.15,
           "gradual_days": 0.85
+        },
+        "D47": {
+          "sudden_hours": 0.6,
+          "gradual_days": 0.4
+        },
+        "D26": {
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
+        },
+        "D39": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
+        },
+        "D40": {
+          "sudden_hours": 0.8,
+          "gradual_days": 0.2
+        },
+        "D41": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
+        },
+        "D42": {
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
+        },
+        "D43": {
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
+        },
+        "D48": {
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
+        },
+        "D76": {
+          "sudden_hours": 0.95,
+          "gradual_days": 0.05
+        },
+        "D79": {
+          "sudden_hours": 0.5,
+          "gradual_days": 0.5
         }
       }
     },
@@ -11086,6 +11318,10 @@
         "D42": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D43": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
