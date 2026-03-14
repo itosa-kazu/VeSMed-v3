@@ -174,7 +174,15 @@ def build_model(step1, step2, step3):
             "parent_effects": norm_pe,
         }
 
-    root_priors = step3.get("root_priors", {})
+    # Merge priors: root_priors overrides, full_cpts as fallback
+    root_priors = dict(step3.get("root_priors", {}))
+    full_cpts = step3.get("full_cpts", {})
+    for did in diseases:
+        if did not in root_priors and did in full_cpts:
+            fc = full_cpts[did]
+            if isinstance(fc, dict) and "parents" in fc:
+                root_priors[did] = fc
+
     return variables, diseases, dict(disease_children), noisy_or, root_priors
 
 
@@ -207,29 +215,78 @@ def compute_idf_disc(step2, noisy_or, n_diseases=104):
     return disc
 
 
+def _cpt_val_to_prior(val):
+    """Convert a CPT value to a scalar prior.
+
+    Some full_cpts entries have nested dicts (e.g. D13 meningitis subtypes:
+    {"no": 0.994, "viral": 0.004, "bacterial": 0.002}).
+    Disease prior = 1 - P(no disease).
+    """
+    if isinstance(val, (int, float)):
+        return float(val)
+    if isinstance(val, dict):
+        no_val = val.get("no", 0)
+        return max(1.0 - float(no_val), 0.001)
+    return 0.01
+
+
 def get_prior(disease_id, root_priors, risk_evidence):
-    """Get disease prior, modulated by risk factor evidence."""
+    """Get disease prior, modulated by risk factor evidence.
+
+    Supports single-parent and multi-parent ("|"-delimited composite key) CPTs.
+    For unobserved parents, uses the most common state from root_priors distribution.
+    """
     rp = root_priors.get(disease_id)
     if rp is None:
         return 0.01
     if isinstance(rp, (int, float)):
         return float(rp)
-    if isinstance(rp, dict):
-        parents = rp.get("parents", [])
-        cpt = rp.get("cpt", {})
-        if not cpt:
-            return 0.01
-        for pid in parents:
-            if pid in risk_evidence:
-                state = risk_evidence[pid]
-                if state in cpt:
-                    return float(cpt[state])
-        for key in ("no", "none", "absent"):
-            if key in cpt:
-                return float(cpt[key])
-        vals = [float(v) for v in cpt.values() if isinstance(v, (int, float))]
-        return min(vals) if vals else 0.01
-    return 0.01
+    if not isinstance(rp, dict):
+        return 0.01
+
+    parents = rp.get("parents", [])
+    cpt = rp.get("cpt", {})
+    if not cpt:
+        return 0.01
+    if not parents:
+        if "" in cpt:
+            return _cpt_val_to_prior(cpt[""])
+        return 0.01
+
+    # Build state for each parent
+    parts = []
+    for pid in parents:
+        if pid in risk_evidence:
+            parts.append(risk_evidence[pid])
+        else:
+            # Default: most common state from root_priors distribution
+            dist_info = root_priors.get(pid)
+            if isinstance(dist_info, dict) and "distribution" in dist_info:
+                dist = dist_info["distribution"]
+                parts.append(max(dist, key=dist.get))
+            else:
+                parts.append("no")
+
+    # Try composite key (single parent: just the state; multi: "|"-joined)
+    key = "|".join(parts) if len(parts) > 1 else parts[0]
+    if key in cpt:
+        return _cpt_val_to_prior(cpt[key])
+
+    # Fallback: try each observed parent's state directly (backward compat)
+    for pid in parents:
+        if pid in risk_evidence:
+            state = risk_evidence[pid]
+            if state in cpt:
+                return _cpt_val_to_prior(cpt[state])
+
+    # Fallback: common default keys
+    for k in ("no", "none", "absent"):
+        if k in cpt:
+            return _cpt_val_to_prior(cpt[k])
+
+    # Final fallback: minimum value
+    vals = [_cpt_val_to_prior(v) for v in cpt.values()]
+    return min(vals) if vals else 0.01
 
 
 def resolve_state(obs_state, states):
