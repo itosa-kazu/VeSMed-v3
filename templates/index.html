@@ -41,410 +41,136 @@ header {
   border-bottom: 1px solid var(--border);
   margin-bottom: 24px;
 }
-header h1 {
-  font-size: 1.6em;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-header p {
-  color: var(--text2);
-  font-size: 0.9em;
-  margin-top: 4px;
-}
+header h1 { font-size: 1.6em; font-weight: 600; letter-spacing: 1px; }
+header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 .layout {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr 480px;
   gap: 24px;
   align-items: start;
 }
-@media (max-width: 900px) {
-  .layout { grid-template-columns: 1fr; }
-}
+@media (max-width: 960px) { .layout { grid-template-columns: 1fr; } }
 
 /* Left: Evidence panel */
-.evidence-panel { }
-.cat-group {
-  margin-bottom: 16px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-}
+.cat-group { margin-bottom: 16px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .cat-header {
-  padding: 10px 16px;
-  font-weight: 600;
-  font-size: 0.95em;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
+  padding: 10px 16px; font-weight: 600; font-size: 0.95em;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;
 }
-.cat-header .badge {
-  background: var(--surface2);
-  color: var(--text2);
-  font-size: 0.75em;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-weight: 400;
-}
-.cat-header .badge.active {
-  background: var(--accent);
-  color: #fff;
-}
-.cat-header .arrow {
-  transition: transform 0.2s;
-  font-size: 0.8em;
-  color: var(--text2);
-}
-.cat-group.collapsed .cat-header .arrow {
-  transform: rotate(-90deg);
-}
-.cat-group.collapsed .cat-body {
-  display: none;
-}
+.cat-header .badge { background: var(--surface2); color: var(--text2); font-size: 0.75em; padding: 2px 8px; border-radius: 10px; font-weight: 400; }
+.cat-header .badge.active { background: var(--accent); color: #fff; }
+.cat-header .arrow { transition: transform 0.2s; font-size: 0.8em; color: var(--text2); }
+.cat-group.collapsed .cat-header .arrow { transform: rotate(-90deg); }
+.cat-group.collapsed .cat-body { display: none; }
 .cat-temporal .cat-header { background: rgba(245,166,35,0.12); color: var(--temporal); border-left: 3px solid var(--temporal); }
 .cat-symptom .cat-header { background: rgba(108,123,255,0.12); color: var(--symptom); border-left: 3px solid var(--symptom); }
 .cat-sign .cat-header { background: rgba(61,214,140,0.12); color: var(--sign); border-left: 3px solid var(--sign); }
 .cat-lab .cat-header { background: rgba(192,132,252,0.12); color: var(--lab); border-left: 3px solid var(--lab); }
 .cat-risk .cat-header { background: rgba(248,113,113,0.12); color: var(--risk); border-left: 3px solid var(--risk); }
-
-.cat-body {
-  padding: 8px 12px;
-  background: var(--surface);
-}
-.var-row {
-  display: flex;
-  align-items: center;
-  padding: 4px 0;
-  border-bottom: 1px solid var(--border);
-  gap: 8px;
-}
+.cat-body { padding: 8px 12px; background: var(--surface); }
+.var-row { display: flex; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--border); gap: 8px; }
 .var-row:last-child { border-bottom: none; }
-.var-label {
-  min-width: 180px;
-  font-size: 0.85em;
-}
-.var-label .vid {
-  color: var(--text2);
-  font-size: 0.8em;
-  font-family: monospace;
-}
-.var-label .vname {
-  font-weight: 500;
-}
-.var-states {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-  flex: 1;
-}
+.var-label { min-width: 180px; font-size: 0.85em; }
+.var-label .vid { color: var(--text2); font-size: 0.8em; font-family: monospace; }
+.var-label .vname { font-weight: 500; }
+.var-states { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; }
 .state-btn {
-  background: var(--surface2);
-  color: var(--text2);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 3px 10px;
-  font-size: 0.78em;
-  cursor: pointer;
-  transition: all 0.15s;
-  white-space: nowrap;
+  background: var(--surface2); color: var(--text2); border: 1px solid var(--border);
+  border-radius: 4px; padding: 3px 10px; font-size: 0.78em; cursor: pointer;
+  transition: all 0.15s; white-space: nowrap;
 }
-.state-btn:hover {
-  border-color: var(--accent);
-  color: var(--text);
-}
-.state-btn.selected {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
+.state-btn:hover { border-color: var(--accent); color: var(--text); }
+.state-btn.selected { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 /* Right: Results panel */
-.results-panel {
-  position: sticky;
-  top: 20px;
-}
-.results-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.results-header {
-  padding: 14px 16px;
-  background: var(--surface2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.results-header h2 {
-  font-size: 1.05em;
-  font-weight: 600;
-}
-.stats {
-  display: flex;
-  gap: 16px;
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.82em;
-}
-.stat-item {
-  text-align: center;
-}
-.stat-item .val {
-  font-size: 1.3em;
-  font-weight: 700;
-  color: var(--accent);
-}
-.stat-item .lbl {
-  color: var(--text2);
-  font-size: 0.85em;
-}
-.results-list {
-  padding: 0;
-  max-height: 65vh;
-  overflow-y: auto;
-}
-.result-row {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px;
-  border-bottom: 1px solid var(--border);
-  gap: 10px;
-}
-.result-row:last-child { border-bottom: none; }
-.rank {
-  font-size: 0.8em;
-  font-weight: 700;
-  color: var(--text2);
-  min-width: 24px;
-  text-align: right;
-}
-.result-row:nth-child(1) .rank { color: var(--green); }
-.result-row:nth-child(2) .rank { color: var(--green); }
-.result-row:nth-child(3) .rank { color: var(--green); }
-.result-info {
-  flex: 1;
-  min-width: 0;
-}
-.result-name {
-  font-size: 0.88em;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.result-id {
-  font-size: 0.72em;
-  color: var(--text2);
-  font-family: monospace;
-}
-.result-bar-wrap {
-  width: 140px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.result-bar-bg {
-  flex: 1;
-  height: 6px;
-  background: var(--surface2);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.result-bar {
-  height: 100%;
-  border-radius: 3px;
-  background: var(--accent);
-  transition: width 0.4s ease;
-}
-.result-row:nth-child(1) .result-bar { background: var(--green); }
-.result-row:nth-child(2) .result-bar { background: var(--green); }
-.result-row:nth-child(3) .result-bar { background: var(--green); }
-.result-pct {
-  font-size: 0.82em;
-  font-weight: 600;
-  min-width: 48px;
-  text-align: right;
-}
-
-.toolbar {
-  padding: 12px 16px;
-  display: flex;
-  gap: 8px;
-}
-.btn {
-  padding: 8px 20px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9em;
-  font-weight: 600;
-  transition: all 0.15s;
-}
-.btn-primary {
-  background: var(--accent);
-  color: #fff;
-  flex: 1;
-}
+.results-panel { position: sticky; top: 20px; }
+.results-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.toolbar { padding: 12px 16px; display: flex; gap: 8px; }
+.btn { padding: 8px 20px; border-radius: 6px; border: none; cursor: pointer; font-size: 0.9em; font-weight: 600; transition: all 0.15s; }
+.btn-primary { background: var(--accent); color: #fff; flex: 1; }
 .btn-primary:hover { background: var(--accent2); }
-.btn-recommend {
-  background: rgba(245,166,35,0.15);
-  color: var(--orange);
-  border: 1px solid var(--orange);
-}
-.btn-recommend:hover { background: rgba(245,166,35,0.3); }
-.btn-recommend.loading { opacity: 0.6; pointer-events: none; }
-.btn-secondary {
-  background: var(--surface2);
-  color: var(--text2);
-  border: 1px solid var(--border);
-}
+.btn-primary.loading { opacity: 0.6; pointer-events: none; }
+.btn-secondary { background: var(--surface2); color: var(--text2); border: 1px solid var(--border); }
 .btn-secondary:hover { background: var(--border); color: var(--text); }
 
-.rec-row {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px;
-  border-bottom: 1px solid var(--border);
-  gap: 10px;
-}
-.rec-row:last-child { border-bottom: none; }
-.rec-rank {
-  font-size: 0.8em;
-  font-weight: 700;
-  color: var(--orange);
-  min-width: 24px;
-  text-align: right;
-}
-.rec-info { flex: 1; min-width: 0; }
-.rec-name {
-  font-size: 0.88em;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.rec-id {
-  font-size: 0.72em;
-  color: var(--text2);
-  font-family: monospace;
-}
-.rec-cat {
-  font-size: 0.65em;
-  padding: 1px 6px;
-  border-radius: 3px;
-  font-weight: 600;
-}
-.rec-cat-lab { background: rgba(192,132,252,0.2); color: var(--lab); }
-.rec-cat-sign { background: rgba(61,214,140,0.2); color: var(--sign); }
-.rec-cat-symptom { background: rgba(108,123,255,0.2); color: var(--symptom); }
-.rec-cat-temporal { background: rgba(245,166,35,0.2); color: var(--temporal); }
-.rec-ig {
-  font-size: 0.82em;
-  font-weight: 600;
-  min-width: 60px;
-  text-align: right;
-  color: var(--orange);
-}
-.rec-entropy {
-  font-size: 0.7em;
-  color: var(--text2);
-  text-align: right;
-  min-width: 80px;
-}
-
-.empty-state {
-  padding: 40px 16px;
-  text-align: center;
-  color: var(--text2);
-  font-size: 0.9em;
-}
-.empty-state .icon { font-size: 2em; margin-bottom: 8px; }
-
-.selected-summary {
-  padding: 8px 16px;
-  border-bottom: 1px solid var(--border);
-  max-height: 120px;
-  overflow-y: auto;
-}
+.selected-summary { padding: 8px 16px; border-bottom: 1px solid var(--border); max-height: 120px; overflow-y: auto; }
 .selected-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 0.75em;
-  margin: 2px;
-  cursor: pointer;
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--surface2); border: 1px solid var(--border); border-radius: 4px;
+  padding: 2px 8px; font-size: 0.75em; margin: 2px; cursor: pointer;
 }
 .selected-tag:hover { border-color: var(--red); }
 .selected-tag .x { color: var(--red); font-weight: 700; }
 
-.entropy-bar {
-  height: 4px;
-  background: var(--surface2);
-  border-radius: 2px;
-  overflow: hidden;
-  margin-top: 4px;
-}
-.entropy-fill {
-  height: 100%;
-  border-radius: 2px;
-  transition: width 0.4s;
-}
+.stats { display: flex; gap: 16px; padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 0.82em; }
+.stat-item { text-align: center; }
+.stat-item .val { font-size: 1.3em; font-weight: 700; color: var(--accent); }
+.stat-item .lbl { color: var(--text2); font-size: 0.85em; }
 
-.search-box {
-  padding: 8px 12px;
-  margin-bottom: 12px;
+/* Tabs */
+.tab-bar {
+  display: flex; border-bottom: 2px solid var(--border);
 }
-.search-input {
-  width: 100%;
-  padding: 8px 12px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--text);
-  font-size: 0.88em;
-  outline: none;
+.tab-btn {
+  flex: 1; padding: 10px 0; text-align: center;
+  font-size: 0.9em; font-weight: 600; cursor: pointer;
+  color: var(--text2); background: none; border: none;
+  border-bottom: 2px solid transparent; margin-bottom: -2px;
+  transition: all 0.15s;
 }
-.search-input:focus { border-color: var(--accent); }
-.search-input::placeholder { color: var(--text2); }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab-btn.active-rec { color: var(--orange); border-bottom-color: var(--orange); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
 
-.var-row.hidden { display: none; }
+.results-list { padding: 0; max-height: 60vh; overflow-y: auto; }
+.result-row { display: flex; align-items: center; padding: 8px 16px; border-bottom: 1px solid var(--border); gap: 10px; }
+.result-row:last-child { border-bottom: none; }
+.rank { font-size: 0.8em; font-weight: 700; color: var(--text2); min-width: 24px; text-align: right; }
+.result-row:nth-child(-n+3) .rank { color: var(--green); }
+.result-info { flex: 1; min-width: 0; }
+.result-name { font-size: 0.88em; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.result-id { font-size: 0.72em; color: var(--text2); font-family: monospace; }
+.result-bar-wrap { width: 140px; display: flex; align-items: center; gap: 6px; }
+.result-bar-bg { flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.result-bar { height: 100%; border-radius: 3px; background: var(--accent); transition: width 0.4s ease; }
+.result-row:nth-child(-n+3) .result-bar { background: var(--green); }
+.result-pct { font-size: 0.82em; font-weight: 600; min-width: 48px; text-align: right; }
 
-.rec-expected {
-  font-size: 0.72em;
-  color: var(--green);
-  margin-top: 2px;
-}
-.rec-states-detail {
-  display: none;
-  padding: 4px 16px 8px 50px;
-  border-bottom: 1px solid var(--border);
-}
+/* Recommendation rows */
+.rec-row { display: flex; align-items: center; padding: 8px 16px; border-bottom: 1px solid var(--border); gap: 10px; cursor: pointer; }
+.rec-row:hover { background: var(--surface2); }
+.rec-row:last-child { border-bottom: none; }
+.rec-rank { font-size: 0.8em; font-weight: 700; color: var(--orange); min-width: 24px; text-align: right; }
+.rec-info { flex: 1; min-width: 0; }
+.rec-name { font-size: 0.88em; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-id { font-size: 0.72em; color: var(--text2); font-family: monospace; }
+.rec-expected { font-size: 0.72em; color: var(--green); margin-top: 1px; }
+.rec-cat { font-size: 0.65em; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
+.rec-cat-lab { background: rgba(192,132,252,0.2); color: var(--lab); }
+.rec-cat-sign { background: rgba(61,214,140,0.2); color: var(--sign); }
+.rec-cat-symptom { background: rgba(108,123,255,0.2); color: var(--symptom); }
+.rec-cat-temporal { background: rgba(245,166,35,0.2); color: var(--temporal); }
+.rec-ig { font-size: 0.82em; font-weight: 600; min-width: 55px; text-align: right; color: var(--orange); }
+.rec-states-detail { display: none; padding: 4px 16px 8px 50px; border-bottom: 1px solid var(--border); }
 .rec-states-detail.show { display: block; }
-.rec-state-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 2px 0;
-  font-size: 0.75em;
-  color: var(--text2);
-}
+.rec-state-row { display: flex; align-items: center; gap: 8px; padding: 2px 0; font-size: 0.75em; color: var(--text2); }
 .rec-state-row .s-name { min-width: 120px; }
 .rec-state-row .s-prob { min-width: 50px; text-align: right; }
 .rec-state-row .s-h { min-width: 60px; text-align: right; }
 .rec-state-row.best { color: var(--green); font-weight: 600; }
-.rec-toggle {
-  cursor: pointer;
-  font-size: 0.7em;
-  color: var(--text2);
-  margin-left: 4px;
+
+.empty-state { padding: 40px 16px; text-align: center; color: var(--text2); font-size: 0.9em; }
+
+.search-box { padding: 8px 12px; margin-bottom: 12px; }
+.search-input {
+  width: 100%; padding: 8px 12px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text); font-size: 0.88em; outline: none;
 }
-.rec-toggle:hover { color: var(--text); }
+.search-input:focus { border-color: var(--accent); }
+.search-input::placeholder { color: var(--text2); }
+.var-row.hidden { display: none; }
 </style>
 </head>
 <body>
@@ -461,7 +187,6 @@ header p {
         <input type="text" class="search-input" id="searchInput"
                placeholder="変数を検索... (ID / 英語名 / 日本語名)">
       </div>
-
       {% for group in groups %}
       <div class="cat-group cat-{{ group.css_class }}" id="cat-{{ group.id }}">
         <div class="cat-header" onclick="toggleCategory('{{ group.id }}')">
@@ -495,14 +220,8 @@ header p {
     <!-- Right: Results -->
     <div class="results-panel">
       <div class="results-card">
-        <div class="results-header">
-          <h2>診断結果</h2>
-          <span id="resultCount" style="color:var(--text2);font-size:0.85em"></span>
-        </div>
-
         <div class="toolbar">
-          <button class="btn btn-primary" onclick="runInference()">推論 ▶</button>
-          <button class="btn btn-recommend" onclick="runNextBest()">推奨検査</button>
+          <button class="btn btn-primary" id="btnInfer" onclick="runAll()">推論</button>
           <button class="btn btn-secondary" onclick="clearAll()">クリア</button>
         </div>
 
@@ -511,7 +230,7 @@ header p {
         <div class="stats" id="statsBar" style="display:none">
           <div class="stat-item">
             <div class="val" id="statEvidence">0</div>
-            <div class="lbl">エビデンス数</div>
+            <div class="lbl">所見数</div>
           </div>
           <div class="stat-item">
             <div class="val" id="statEntropy">-</div>
@@ -523,99 +242,161 @@ header p {
           </div>
         </div>
 
-        <div class="results-list" id="resultsList">
-          <div class="empty-state">
-            <div class="icon">🔬</div>
-            <div>症状・検査所見を選択して「推論」をクリック</div>
+        <!-- Tabs -->
+        <div class="tab-bar">
+          <button class="tab-btn active" onclick="switchTab('diagnosis')">鑑別疾患</button>
+          <button class="tab-btn" onclick="switchTab('recommend')">推奨検査</button>
+        </div>
+
+        <!-- Tab: Diagnosis -->
+        <div class="tab-content active" id="tab-diagnosis">
+          <div class="results-list" id="resultsList">
+            <div class="empty-state">
+              症状・検査所見を選択して「推論」をクリック
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="results-card" id="recommendCard" style="margin-top:16px;display:none">
-        <div class="results-header" style="background:rgba(245,166,35,0.15)">
-          <h2 style="color:var(--orange)">推奨検査</h2>
-          <span id="recommendStatus" style="color:var(--text2);font-size:0.85em"></span>
+        <!-- Tab: Recommendations -->
+        <div class="tab-content" id="tab-recommend">
+          <div class="results-list" id="recommendList">
+            <div class="empty-state">推論実行後に推奨検査が表示されます</div>
+          </div>
         </div>
-        <div class="results-list" id="recommendList"></div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-// State name Japanese mapping
+// ═══ State Japanese mapping (complete) ═══
 const STATE_JA = {
   // Common
   absent:"なし", present:"あり", normal:"正常", yes:"あり", no:"なし",
   mild:"軽度", moderate:"中等度", severe:"重度", elevated:"上昇",
   negative:"陰性", positive:"陽性", not_done:"未実施", unknown:"不明",
+  none:"なし", other:"その他", new:"新規", current:"現在", former:"過去", never:"なし",
+  pre_existing:"既存",
   // Temperature
   "under_37.5":"<37.5°C", "37.5_38.0":"37.5-38°C", "38.0_39.0":"38-39°C",
   "39.0_40.0":"39-40°C", "over_40.0":">40°C",
   // Heart rate
-  under_100:"<100", "100_120":"100-120", over_120:">120",
+  under_100:"<100/分", "100_120":"100-120/分", over_120:">120/分",
   // Blood pressure
-  normal_over_90:">90正常", hypotension_under_90:"<90低血圧",
-  // Respiratory
-  normal_under_20:"<20正常", tachypnea_20_30:"20-30頻呼吸", severe_over_30:">30重度",
+  normal_over_90:"正常(>90)", hypotension_under_90:"低血圧(<90)",
+  // Respiratory rate
+  normal_under_20:"正常(<20)", tachypnea_20_30:"頻呼吸(20-30)", severe_over_30:"重度(>30)",
   // SpO2
-  normal_over_96:">96%正常", mild_hypoxia_93_96:"93-96%軽度低酸素",
-  severe_hypoxia_under_93:"<93%重度低酸素",
-  // Onset/Duration
-  sudden_hours:"急性(時間)", gradual_days:"亜急性(日)",
+  normal_over_96:"正常(>96%)", mild_hypoxia_93_96:"軽度低酸素(93-96%)",
+  severe_hypoxia_under_93:"重度低酸素(<93%)",
+  // Onset / Duration
+  sudden_hours:"急性(時間単位)", gradual_days:"亜急性(日単位)",
   under_3d:"<3日", "3d_to_1w":"3日~1週", "1w_to_3w":"1~3週", over_3w:">3週",
   // Fever pattern
-  continuous:"持続熱", intermittent:"間欠熱", remittent:"弛張熱", undulant:"波状熱",
-  // Cough
+  continuous:"持続熱", intermittent:"間欠熱", remittent:"弛張熱",
+  undulant:"波状熱", double_quotidian:"二峰性", periodic:"周期性",
+  // Cough / Nasal
   dry:"乾性", productive:"湿性",
-  // Nasal
   watery:"水様", purulent:"膿性",
+  clear_rhinorrhea:"水様鼻漏", purulent_rhinorrhea:"膿性鼻漏",
   // Dyspnea
   on_exertion:"労作時", at_rest:"安静時",
+  // Sex / Age
+  male:"男性", female:"女性",
+  "0_17":"0-17歳", "18_39":"18-39歳", "40_64":"40-64歳", "65_plus":"65歳以上",
   // WBC
-  low_under_4000:"<4000低値", normal_4000_10000:"4000-10000正常",
-  high_10000_20000:"10000-20000高値", very_high_over_20000:">20000著高",
+  low_under_4000:"低値(<4000)", normal_4000_10000:"正常(4000-10000)",
+  high_10000_20000:"高値(10000-20000)", very_high_over_20000:"著高(>20000)",
   // CRP
-  mild_0_3_3:"0.3-3軽度", "mild_0.3_3":"0.3-3軽度",
-  moderate_3_10:"3-10中等度", high_over_10:">10高値",
+  "normal_under_0.3":"正常(<0.3)", "mild_0.3_3":"軽度(0.3-3)",
+  moderate_3_10:"中等度(3-10)", high_over_10:"高値(>10)",
+  // Procalcitonin
+  "low_under_0.25":"低値(<0.25)", "gray_0.25_0.5":"灰色域(0.25-0.5)",
+  "high_over_0.5":"高値(>0.5)",
+  "moderate_0.25_2":"中等度(0.25-2)", "high_2_10":"高値(2-10)", "very_high_over_10":"著高(>10)",
   // Ferritin
-  mild_elevated:"軽度上昇", very_high_over_1000:">1000著高",
-  extreme_over_10000:">10000極高",
+  mild_elevated:"軽度上昇", very_high_over_1000:"著高(>1000)",
+  extreme_over_10000:"極高(>10000)",
+  // LDH / ESR
+  very_high:"著高", very_high_over_100:"著高(>100)",
+  elevated_over_250:"上昇(>250)",
+  // Chest X-ray
+  lobar_infiltrate:"大葉性浸潤", bilateral_infiltrate:"両側浸潤影",
+  BHL:"BHL(両側肺門腫脹)", pleural_effusion:"胸水",
+  GGO:"すりガラス影", cavity:"空洞", consolidation:"浸潤影",
+  halo_sign:"ハローサイン", mass:"腫瘤",
   // Skin
   maculopapular_rash:"斑丘疹", petechiae_purpura:"点状出血/紫斑",
   vesicular:"水疱性", erythroderma:"紅皮症", diffuse_erythema:"びまん性紅斑",
-  // Lymph
-  localized:"限局性", generalized:"全身性",
+  diffuse_erythroderma:"びまん性紅皮症",
+  vesicle_bulla:"水疱/大水疱", vesicular_dermatomal:"帯状水疱",
+  rash_widespread:"広範囲発疹", purpura:"紫斑", erythema:"紅斑",
+  skin_necrosis:"皮膚壊死",
+  localized_erythema_warmth_swelling:"限局性発赤・熱感・腫脹",
+  localized_pain_redness:"限局性疼痛・発赤",
+  // Lymph node
+  localized:"限局性", generalized:"全身性", cervical:"頸部",
   // Consciousness
   alert:"清明", confused:"混迷", obtunded:"傾眠", coma:"昏睡",
-  // Sex
-  male:"男性", female:"女性",
-  // Age
-  "0_17":"0-17歳", "18_39":"18-39歳", "40_64":"40-64歳", "65_plus":"65歳以上",
-  // Electrolytes
-  hyponatremia:"低Na血症", hyperkalemia:"高K血症", other:"その他",
-  // Procalcitonin
-  low_under_0_25:"<0.25低値", moderate_0_25_2:"0.25-2中等度",
-  high_2_10:"2-10高値", very_high_over_10:">10著高",
+  // Conjunctival
+  conjunctivitis:"結膜炎",
+  // Urine
+  pyuria_bacteriuria:"膿尿/細菌尿",
+  // Abdominal
+  soft_nontender:"軟・圧痛なし", localized_tenderness:"限局性圧痛",
+  peritoneal_signs:"腹膜刺激症状", diffuse:"びまん性",
+  RUQ:"右上腹部", RLQ:"右下腹部", LLQ:"左下腹部",
+  epigastric:"心窩部", suprapubic:"恥骨上部",
+  // Abdominal US
+  gallbladder_wall_thickening:"胆嚢壁肥厚", appendix_swelling:"虫垂腫大",
+  abscess:"膿瘍",
   // Blood culture
-  gram_positive:"グラム陽性", gram_negative:"グラム陰性", fungal:"真菌",
-  polymicrobial:"複数菌", not_done:"未実施",
+  gram_positive:"グラム陽性", gram_negative:"グラム陰性",
+  fungal:"真菌", polymicrobial:"複数菌",
+  not_done_or_pending:"未実施/判定中", pathogen_detected:"病原体検出",
+  // Peripheral blood smear
+  left_shift:"左方移動", atypical_lymphocytes:"異型リンパ球",
+  thrombocytopenia:"血小板減少", eosinophilia:"好酸球増多",
   // CSF
   viral_pattern:"ウイルスパターン", bacterial_pattern:"細菌パターン",
   tb_fungal_pattern:"結核/真菌パターン",
-  // Vaccination
-  vaccinated:"接種済", unvaccinated:"未接種",
-  // Travel/contact
-  tropical_endemic:"熱帯/流行地", developed:"先進国", domestic:"国内",
+  HSV_PCR_positive:"HSV PCR陽性",
+  // ANA / ANCA
+  CD_positive:"CD陽性", c_ANCA:"c-ANCA陽性", p_ANCA:"p-ANCA陽性",
+  // Influenza test
+  positive_A:"A型陽性", positive_B:"B型陽性",
+  // HAV/HBV/HCV
+  HAV_IgM:"HAV IgM陽性", HBV:"HBV", HCV:"HCV",
+  // Electrolytes
+  hyponatremia:"低Na血症", hyperkalemia:"高K血症",
   // Thyroid
   hyperthyroid:"甲状腺機能亢進", hypothyroid:"甲状腺機能低下",
+  // Vaccination
+  vaccinated:"接種済", unvaccinated:"未接種",
+  // Travel / Contact / Season
+  tropical_endemic:"熱帯/流行地", developed:"先進国", domestic:"国内",
+  livestock:"家畜接触", pet_cat:"猫接触", wild_animal:"野生動物接触",
+  spring:"春", summer:"夏", autumn:"秋", winter:"冬",
+  // Joint
+  monoarticular:"単関節", polyarticular:"多関節", crystals:"結晶", septic:"敗血症性",
+  inflammatory:"炎症性",
+  // Auscultation
+  crackles:"湿性ラ音", wheezes:"喘鳴", clear:"清明",
+  // Pain
+  pleuritic:"胸膜性疼痛", constant:"持続性",
+  // Duration misc
+  under_30min:"<30分", over_30min:">30分",
+  // Others
+  bilateral:"両側", unilateral:"片側", diffuse_abnormal:"びまん性異常",
+  other_abnormal:"その他異常", temporal_lobe_lesion:"側頭葉病変",
+  uveitis:"ぶどう膜炎", exudate_or_white_patch:"滲出物/白苔",
+  bloody:"血性", excessive:"過多",
 };
 
-function stateJa(s) {
-  return STATE_JA[s] || s;
-}
+function stateJa(s) { return STATE_JA[s] || s; }
 
-const selected = {};  // var_id -> state
+// ═══ State management ═══
+const selected = {};
 const RISK_VARS = new Set();
 document.querySelectorAll('#cat-risk_factor .state-btn').forEach(btn => {
   RISK_VARS.add(btn.dataset.var);
@@ -624,21 +405,13 @@ document.querySelectorAll('#cat-risk_factor .state-btn').forEach(btn => {
 function selectState(btn) {
   const varId = btn.dataset.var;
   const state = btn.dataset.state;
-  const cat = btn.dataset.cat;
-
-  // Deselect siblings
-  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => {
-    b.classList.remove('selected');
-  });
-
-  // Toggle
+  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => b.classList.remove('selected'));
   if (selected[varId] === state) {
     delete selected[varId];
   } else {
     selected[varId] = state;
     btn.classList.add('selected');
   }
-
   updateBadges();
   updateSelectedSummary();
 }
@@ -647,10 +420,7 @@ function updateBadges() {
   const counts = {};
   for (const [varId, state] of Object.entries(selected)) {
     const btn = document.querySelector(`.state-btn[data-var="${varId}"][data-state="${state}"]`);
-    if (btn) {
-      const cat = btn.dataset.cat;
-      counts[cat] = (counts[cat] || 0) + 1;
-    }
+    if (btn) counts[btn.dataset.cat] = (counts[btn.dataset.cat] || 0) + 1;
   }
   document.querySelectorAll('.badge').forEach(badge => {
     const catId = badge.id.replace('badge-', '');
@@ -663,171 +433,136 @@ function updateBadges() {
 function updateSelectedSummary() {
   const div = document.getElementById('selectedSummary');
   const entries = Object.entries(selected);
-  if (entries.length === 0) {
-    div.style.display = 'none';
-    return;
-  }
+  if (entries.length === 0) { div.style.display = 'none'; return; }
   div.style.display = 'block';
-  div.innerHTML = entries.map(([varId, state]) => {
-    return `<span class="selected-tag" onclick="removeSelection('${varId}')">${varId}=${stateJa(state)} <span class="x">×</span></span>`;
-  }).join('');
+  div.innerHTML = entries.map(([varId, state]) =>
+    `<span class="selected-tag" onclick="removeSelection('${varId}')">${varId}=${stateJa(state)} <span class="x">\u00d7</span></span>`
+  ).join('');
 }
 
 function removeSelection(varId) {
-  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => {
-    b.classList.remove('selected');
-  });
+  document.querySelectorAll(`.state-btn[data-var="${varId}"]`).forEach(b => b.classList.remove('selected'));
   delete selected[varId];
   updateBadges();
   updateSelectedSummary();
 }
 
 function clearAll() {
-  document.querySelectorAll('.state-btn.selected').forEach(b => {
-    b.classList.remove('selected');
-  });
+  document.querySelectorAll('.state-btn.selected').forEach(b => b.classList.remove('selected'));
   for (const k in selected) delete selected[k];
   updateBadges();
   updateSelectedSummary();
-  document.getElementById('resultsList').innerHTML =
-    '<div class="empty-state"><div class="icon">🔬</div><div>症状・検査所見を選択して「推論」をクリック</div></div>';
+  document.getElementById('resultsList').innerHTML = '<div class="empty-state">症状・検査所見を選択して「推論」をクリック</div>';
+  document.getElementById('recommendList').innerHTML = '<div class="empty-state">推論実行後に推奨検査が表示されます</div>';
   document.getElementById('statsBar').style.display = 'none';
 }
 
-async function runInference() {
-  const evidence = {};
-  const risk = {};
-  for (const [varId, state] of Object.entries(selected)) {
-    if (RISK_VARS.has(varId)) {
-      risk[varId] = state;
-    } else {
-      evidence[varId] = state;
-    }
-  }
-
-  if (Object.keys(evidence).length === 0 && Object.keys(risk).length === 0) {
-    alert('少なくとも1つのエビデンスを選択してください');
-    return;
-  }
-
-  const resp = await fetch('/api/infer', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ evidence, risk_factors: risk }),
+// ═══ Tab switching ═══
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    const isActive = (i === 0 && tabId === 'diagnosis') || (i === 1 && tabId === 'recommend');
+    btn.classList.toggle('active', isActive && tabId === 'diagnosis');
+    btn.classList.toggle('active-rec', isActive && tabId === 'recommend');
   });
-  const data = await resp.json();
-
-  // Stats
-  document.getElementById('statsBar').style.display = 'flex';
-  document.getElementById('statEvidence').textContent = data.n_evidence + data.n_risk;
-  document.getElementById('statEntropy').textContent = data.entropy.toFixed(1);
-  const top1 = data.results[0];
-  document.getElementById('statTop1').textContent = top1 ? top1.probability + '%' : '-';
-  document.getElementById('resultCount').textContent = `Top 20 / 102`;
-
-  // Entropy color
-  const hColor = data.entropy < 2 ? 'var(--green)' : data.entropy < 4 ? 'var(--orange)' : 'var(--red)';
-  document.getElementById('statEntropy').style.color = hColor;
-
-  // Results list
-  const maxP = data.results.length > 0 ? data.results[0].probability : 1;
-  const html = data.results.map((r, i) => {
-    const barW = maxP > 0 ? (r.probability / maxP * 100) : 0;
-    return `<div class="result-row">
-      <span class="rank">${i + 1}</span>
-      <div class="result-info">
-        <div class="result-name" title="${r.name}">${r.name_ja}</div>
-        <div class="result-id">${r.id} ${r.name}</div>
-      </div>
-      <div class="result-bar-wrap">
-        <div class="result-bar-bg"><div class="result-bar" style="width:${barW}%"></div></div>
-        <span class="result-pct">${r.probability}%</span>
-      </div>
-    </div>`;
-  }).join('');
-  document.getElementById('resultsList').innerHTML = html;
+  document.getElementById('tab-diagnosis').classList.toggle('active', tabId === 'diagnosis');
+  document.getElementById('tab-recommend').classList.toggle('active', tabId === 'recommend');
 }
 
-async function runNextBest() {
+// ═══ Run both inference + recommendations ═══
+async function runAll() {
   const evidence = {};
   const risk = {};
   for (const [varId, state] of Object.entries(selected)) {
-    if (RISK_VARS.has(varId)) {
-      risk[varId] = state;
-    } else {
-      evidence[varId] = state;
-    }
+    if (RISK_VARS.has(varId)) risk[varId] = state;
+    else evidence[varId] = state;
   }
-
   if (Object.keys(evidence).length === 0 && Object.keys(risk).length === 0) {
     alert('少なくとも1つのエビデンスを選択してください');
     return;
   }
 
-  const btn = document.querySelector('.btn-recommend');
+  const btn = document.getElementById('btnInfer');
   btn.classList.add('loading');
   btn.textContent = '計算中...';
-  document.getElementById('recommendCard').style.display = 'block';
-  document.getElementById('recommendList').innerHTML =
-    '<div class="empty-state"><div>情報利得を計算中...</div></div>';
-  document.getElementById('recommendStatus').textContent = '';
+  document.getElementById('recommendList').innerHTML = '<div class="empty-state">情報利得を計算中...</div>';
+
+  const body = JSON.stringify({ evidence, risk_factors: risk });
+  const headers = { 'Content-Type': 'application/json' };
 
   try {
-    const resp = await fetch('/api/next_best_test', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ evidence, risk_factors: risk }),
-    });
-    const data = await resp.json();
-    const recs = data.recommendations;
+    // Run both in parallel
+    const [inferResp, recResp] = await Promise.all([
+      fetch('/api/infer', { method: 'POST', headers, body }),
+      fetch('/api/next_best_test', { method: 'POST', headers, body }),
+    ]);
+    const inferData = await inferResp.json();
+    const recData = await recResp.json();
 
-    if (recs.length === 0) {
-      document.getElementById('recommendList').innerHTML =
-        '<div class="empty-state"><div>推奨検査なし</div></div>';
-      return;
-    }
+    // ── Diagnosis results ──
+    document.getElementById('statsBar').style.display = 'flex';
+    document.getElementById('statEvidence').textContent = inferData.n_evidence + inferData.n_risk;
+    document.getElementById('statEntropy').textContent = inferData.entropy.toFixed(1);
+    const top1 = inferData.results[0];
+    document.getElementById('statTop1').textContent = top1 ? top1.probability + '%' : '-';
+    const hColor = inferData.entropy < 2 ? 'var(--green)' : inferData.entropy < 4 ? 'var(--orange)' : 'var(--red)';
+    document.getElementById('statEntropy').style.color = hColor;
 
+    const maxP = inferData.results.length > 0 ? inferData.results[0].probability : 1;
+    document.getElementById('resultsList').innerHTML = inferData.results.map((r, i) => {
+      const barW = maxP > 0 ? (r.probability / maxP * 100) : 0;
+      return `<div class="result-row">
+        <span class="rank">${i + 1}</span>
+        <div class="result-info">
+          <div class="result-name" title="${r.name}">${r.name_ja}</div>
+          <div class="result-id">${r.id} ${r.name}</div>
+        </div>
+        <div class="result-bar-wrap">
+          <div class="result-bar-bg"><div class="result-bar" style="width:${barW}%"></div></div>
+          <span class="result-pct">${r.probability}%</span>
+        </div>
+      </div>`;
+    }).join('');
+
+    // ── Recommendations ──
+    const recs = recData.recommendations || [];
     const CAT_LABELS = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'};
     const CAT_CSS = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'};
 
-    const maxIG = recs[0].ig;
     const filtered = recs.filter(r => r.ig > 0.01);
-    const html = filtered.map((r, i) => {
-      const catLabel = CAT_LABELS[r.category] || r.category;
-      const catCss = CAT_CSS[r.category] || '';
-      const bestJa = stateJa(r.best_state);
-      // Per-state detail rows
-      const details = (r.state_details || []).map(sd => {
-        const isBest = sd.state === r.best_state;
-        return `<div class="rec-state-row${isBest ? ' best' : ''}">
-          <span class="s-name">${isBest ? '▶ ' : '  '}${stateJa(sd.state)}</span>
-          <span class="s-prob">P=${sd.prob}%</span>
-          <span class="s-h">H→${sd.h_after}</span>
-        </div>`;
-      }).join('');
-      return `<div class="rec-row" onclick="toggleDetail(${i})">
-        <span class="rec-rank">${i + 1}</span>
-        <div class="rec-info">
-          <div class="rec-name">${r.name_ja} <span class="rec-toggle">▶</span></div>
-          <div class="rec-id">${r.id} ${r.name}</div>
-          <div class="rec-expected">期待所見: ${bestJa} → H=${r.best_state_h}</div>
-        </div>
-        <span class="rec-cat rec-cat-${catCss}">${catLabel}</span>
-        <div class="rec-ig">IG ${r.ig.toFixed(2)}</div>
-        <div class="rec-entropy">H ${r.h_now} → ${r.expected_h}</div>
-      </div>
-      <div class="rec-states-detail" id="rec-detail-${i}">${details}</div>`;
-    }).join('');
+    document.getElementById('recommendList').innerHTML = filtered.length === 0
+      ? '<div class="empty-state">推奨検査なし</div>'
+      : filtered.map((r, i) => {
+          const catLabel = CAT_LABELS[r.category] || r.category;
+          const catCss = CAT_CSS[r.category] || '';
+          const bestJa = stateJa(r.best_state);
+          const details = (r.state_details || []).map(sd => {
+            const isBest = sd.state === r.best_state;
+            return `<div class="rec-state-row${isBest ? ' best' : ''}">
+              <span class="s-name">${isBest ? '\u25b6 ' : '  '}${stateJa(sd.state)}</span>
+              <span class="s-prob">P=${sd.prob}%</span>
+              <span class="s-h">H\u2192${sd.h_after}</span>
+            </div>`;
+          }).join('');
+          return `<div class="rec-row" onclick="toggleDetail(${i})">
+            <span class="rec-rank">${i + 1}</span>
+            <div class="rec-info">
+              <div class="rec-name">${r.name_ja}</div>
+              <div class="rec-id">${r.id} ${r.name}</div>
+              <div class="rec-expected">期待: ${bestJa} \u2192 H=${r.best_state_h}</div>
+            </div>
+            <span class="rec-cat rec-cat-${catCss}">${catLabel}</span>
+            <div class="rec-ig">IG ${r.ig.toFixed(2)}</div>
+          </div>
+          <div class="rec-states-detail" id="rec-detail-${i}">${details}</div>`;
+        }).join('');
 
-    document.getElementById('recommendList').innerHTML = html;
-    document.getElementById('recommendStatus').textContent =
-      `H=${recs[0].h_now} → 最良=${recs[0].expected_h}`;
+    // Auto-switch to diagnosis tab
+    switchTab('diagnosis');
   } catch (e) {
-    document.getElementById('recommendList').innerHTML =
-      `<div class="empty-state"><div>エラー: ${e.message}</div></div>`;
+    document.getElementById('resultsList').innerHTML = `<div class="empty-state">エラー: ${e.message}</div>`;
   } finally {
     btn.classList.remove('loading');
-    btn.textContent = '推奨検査';
+    btn.textContent = '推論';
   }
 }
 
@@ -840,40 +575,33 @@ function toggleCategory(catId) {
   document.getElementById('cat-' + catId).classList.toggle('collapsed');
 }
 
-// Search
+// ═══ Search ═══
 document.getElementById('searchInput').addEventListener('input', function() {
   const q = this.value.toLowerCase().trim();
   document.querySelectorAll('.var-row').forEach(row => {
-    if (!q) {
-      row.classList.remove('hidden');
-      return;
-    }
-    const text = row.dataset.search.toLowerCase();
-    row.classList.toggle('hidden', !text.includes(q));
+    if (!q) { row.classList.remove('hidden'); return; }
+    row.classList.toggle('hidden', !row.dataset.search.toLowerCase().includes(q));
   });
-  // Expand categories that have visible rows
   if (q) {
     document.querySelectorAll('.cat-group').forEach(g => {
-      const hasVisible = g.querySelector('.var-row:not(.hidden)');
-      if (hasVisible) g.classList.remove('collapsed');
+      if (g.querySelector('.var-row:not(.hidden)')) g.classList.remove('collapsed');
       else g.classList.add('collapsed');
     });
   }
 });
 
-// Collapse risk_factor by default
+// ═══ Init ═══
 document.getElementById('cat-risk_factor')?.classList.add('collapsed');
 
-// Apply Japanese state labels
+// Apply Japanese state labels to buttons
 document.querySelectorAll('.state-btn').forEach(btn => {
-  const s = btn.dataset.state;
   const ja = btn.querySelector('.s-ja');
-  if (ja) ja.textContent = stateJa(s);
+  if (ja) ja.textContent = stateJa(btn.dataset.state);
 });
 
-// Keyboard shortcut: Enter to run inference
+// Keyboard shortcut
 document.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.target.matches('input')) runInference();
+  if (e.key === 'Enter' && !e.target.matches('input')) runAll();
 });
 </script>
 </body>
