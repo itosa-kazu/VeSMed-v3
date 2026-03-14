@@ -4942,6 +4942,10 @@
         "D30": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D10": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -5001,6 +5005,14 @@
         "D75": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D74": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D89": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -7338,6 +7350,10 @@
         "D68": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D67": {
+          "absent": 0.92,
+          "present": 0.08
         }
       }
     },
@@ -10180,6 +10196,18 @@
           "absent": 0.05,
           "under_30min": 0.1,
           "over_30min": 0.85
+        },
+        "D58": {
+          "absent": 0.6,
+          "under_30min": 0.4
+        },
+        "D59": {
+          "absent": 0.7,
+          "under_30min": 0.3
+        },
+        "D105": {
+          "absent": 0.6,
+          "under_30min": 0.4
         }
       }
     },
@@ -10251,6 +10279,10 @@
         "D59": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D106": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -10584,6 +10616,14 @@
         "D101": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D14": {
+          "absent": 0.92,
+          "present": 0.08
+        },
+        "D23": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -10605,6 +10645,14 @@
         "D16": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D52": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D15": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
