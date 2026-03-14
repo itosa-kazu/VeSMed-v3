@@ -3967,6 +3967,19 @@
         "other"
       ],
       "note": "組織学的パターン。reactive=反応性過形成、kikuchi=壊死性リンパ節炎パターン、lymphoma=悪性リンパ腫、castleman=キャッスルマン病、granuloma=肉芽腫(サルコイドーシス/結核等)"
+    },
+    {
+      "id": "S47",
+      "name": "cough_duration",
+      "name_ja": "咳嗽の期間",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "acute_under_3w",
+        "subacute_3w_8w",
+        "chronic_over_8w"
+      ],
+      "note": "急性<3週(感染症), 亜急性3-8週(百日咳/感染後), 慢性>8週(結核/喘息/癌)"
     }
   ]
 }

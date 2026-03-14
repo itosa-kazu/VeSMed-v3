@@ -11774,6 +11774,95 @@
           "other": 0.017
         }
       }
+    },
+    "S47": {
+      "description": "咳嗽の期間。急性<3週、亜急性3-8週、慢性>8週",
+      "states": [
+        "absent",
+        "acute_under_3w",
+        "subacute_3w_8w",
+        "chronic_over_8w"
+      ],
+      "leak": {
+        "absent": 0.7,
+        "acute_under_3w": 0.2,
+        "subacute_3w_8w": 0.07,
+        "chronic_over_8w": 0.03
+      },
+      "parent_effects": {
+        "D17": {
+          "absent": 0.15,
+          "acute_under_3w": 0.1,
+          "subacute_3w_8w": 0.25,
+          "chronic_over_8w": 0.5
+        },
+        "D99": {
+          "absent": 0.15,
+          "acute_under_3w": 0.05,
+          "subacute_3w_8w": 0.2,
+          "chronic_over_8w": 0.6
+        },
+        "D67": {
+          "absent": 0.4,
+          "acute_under_3w": 0.1,
+          "subacute_3w_8w": 0.2,
+          "chronic_over_8w": 0.3
+        },
+        "D92": {
+          "absent": 0.3,
+          "acute_under_3w": 0.05,
+          "subacute_3w_8w": 0.15,
+          "chronic_over_8w": 0.5
+        },
+        "D62": {
+          "absent": 0.3,
+          "acute_under_3w": 0.05,
+          "subacute_3w_8w": 0.3,
+          "chronic_over_8w": 0.35
+        },
+        "D56": {
+          "absent": 0.05,
+          "acute_under_3w": 0.15,
+          "subacute_3w_8w": 0.6,
+          "chronic_over_8w": 0.2
+        },
+        "D50": {
+          "absent": 0.1,
+          "acute_under_3w": 0.15,
+          "subacute_3w_8w": 0.55,
+          "chronic_over_8w": 0.2
+        },
+        "D05": {
+          "absent": 0.1,
+          "acute_under_3w": 0.8,
+          "subacute_3w_8w": 0.08,
+          "chronic_over_8w": 0.02
+        },
+        "D02": {
+          "absent": 0.1,
+          "acute_under_3w": 0.82,
+          "subacute_3w_8w": 0.06,
+          "chronic_over_8w": 0.02
+        },
+        "D03": {
+          "absent": 0.1,
+          "acute_under_3w": 0.55,
+          "subacute_3w_8w": 0.3,
+          "chronic_over_8w": 0.05
+        },
+        "D102": {
+          "absent": 0.1,
+          "acute_under_3w": 0.8,
+          "subacute_3w_8w": 0.08,
+          "chronic_over_8w": 0.02
+        },
+        "D104": {
+          "absent": 0.1,
+          "acute_under_3w": 0.55,
+          "subacute_3w_8w": 0.3,
+          "chronic_over_8w": 0.05
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
