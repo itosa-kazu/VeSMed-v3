@@ -15459,6 +15459,153 @@
       "from_name": "PVE",
       "to_name": "onset_speed",
       "reason": "PVEの発症"
+    },
+    {
+      "from": "D96",
+      "to": "L18",
+      "from_name": "Kikuchi disease",
+      "to_name": "ANA",
+      "reason": "菊池病ではANA陰性が典型。SLE除外の重要鑑別点"
+    },
+    {
+      "from": "D98",
+      "to": "T02",
+      "from_name": "Takayasu arteritis",
+      "to_name": "onset_speed",
+      "reason": "高安動脈炎は緩徐発症が典型"
+    },
+    {
+      "from": "D98",
+      "to": "T03",
+      "from_name": "Takayasu arteritis",
+      "to_name": "fever_pattern",
+      "reason": "高安動脈炎は間欠熱パターンが典型"
+    },
+    {
+      "from": "D69",
+      "to": "S46",
+      "from_name": "renal cell carcinoma",
+      "to_name": "anorexia",
+      "reason": "腎細胞癌の悪液質で食欲不振は高頻度（40-50%）"
+    },
+    {
+      "from": "D69",
+      "to": "S13",
+      "from_name": "renal cell carcinoma",
+      "to_name": "nausea_vomiting",
+      "reason": "腎細胞癌の高Ca血症に伴う悪心嘔吐（20-30%）"
+    },
+    {
+      "from": "D69",
+      "to": "T02",
+      "from_name": "renal cell carcinoma",
+      "to_name": "onset_speed",
+      "reason": "腎細胞癌は緩徐発症"
+    },
+    {
+      "from": "D69",
+      "to": "S09",
+      "from_name": "renal cell carcinoma",
+      "to_name": "rigors",
+      "reason": "腫瘍熱で悪寒戦慄を伴うことがある（15-20%）"
+    },
+    {
+      "from": "D99",
+      "to": "L01",
+      "from_name": "NTM infection",
+      "to_name": "WBC",
+      "reason": "NTM感染で白血球上昇（感染に対する炎症反応）"
+    },
+    {
+      "from": "D99",
+      "to": "E02",
+      "from_name": "NTM infection",
+      "to_name": "heart_rate",
+      "reason": "NTM肺炎での呼吸不全・発熱に伴う頻脈"
+    },
+    {
+      "from": "D99",
+      "to": "E04",
+      "from_name": "NTM infection",
+      "to_name": "respiratory_rate",
+      "reason": "NTM肺炎で頻呼吸"
+    },
+    {
+      "from": "D99",
+      "to": "E05",
+      "from_name": "NTM infection",
+      "to_name": "SpO2",
+      "reason": "NTM肺炎で低酸素血症"
+    },
+    {
+      "from": "D13",
+      "to": "S08",
+      "from_name": "meningitis",
+      "to_name": "arthralgia",
+      "reason": "髄膜炎菌性髄膜炎で反応性関節炎の合併あり（10-15%）"
+    },
+    {
+      "from": "D13",
+      "to": "E21",
+      "from_name": "meningitis",
+      "to_name": "joint_redness_warmth",
+      "reason": "髄膜炎菌の血行性播種による化膿性関節炎（5-8%）"
+    },
+    {
+      "from": "D20",
+      "to": "T02",
+      "from_name": "acute sinusitis",
+      "to_name": "onset_speed",
+      "reason": "副鼻腔炎は数日かけて緩徐に発症"
+    },
+    {
+      "from": "R01",
+      "to": "D58",
+      "from_name": "R01",
+      "to_name": "D58",
+      "reason": "成人Still病。若年成人に好発（16-35歳ピーク）"
+    },
+    {
+      "from": "R01",
+      "to": "D60",
+      "from_name": "R01",
+      "to_name": "D60",
+      "reason": "ANCA関連血管炎。中高年に好発"
+    },
+    {
+      "from": "D36",
+      "to": "E04",
+      "from_name": "empyema",
+      "to_name": "respiratory_rate",
+      "reason": "膿胸による呼吸不全で頻呼吸"
+    },
+    {
+      "from": "D36",
+      "to": "E02",
+      "from_name": "empyema",
+      "to_name": "heart_rate",
+      "reason": "膿胸の感染/敗血症に伴う頻脈"
+    },
+    {
+      "from": "D36",
+      "to": "T02",
+      "from_name": "empyema",
+      "to_name": "onset_speed",
+      "reason": "膿胸は数日かけて発症（肺炎に続発）"
+    },
+    {
+      "from": "D36",
+      "to": "L35",
+      "from_name": "empyema",
+      "to_name": "CT_chest_detail",
+      "reason": "膿胸のCTで胸水貯留"
+    },
+    {
+      "from": "D36",
+      "to": "L44",
+      "from_name": "empyema",
+      "to_name": "electrolytes",
+      "reason": "膿胸/肺感染によるSIADH→低Na血症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

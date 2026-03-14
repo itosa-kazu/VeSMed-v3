@@ -349,6 +349,28 @@
         "no": 0.001,
         "yes": 0.06
       }
+    },
+    "D58": {
+      "parents": [
+        "R01"
+      ],
+      "description": "成人Still病。若年成人に好発（16-35歳ピーク）",
+      "cpt": {
+        "18_39": 0.008,
+        "40_64": 0.004,
+        "65_plus": 0.002
+      }
+    },
+    "D60": {
+      "parents": [
+        "R01"
+      ],
+      "description": "ANCA関連血管炎。中高年に好発",
+      "cpt": {
+        "18_39": 0.002,
+        "40_64": 0.007,
+        "65_plus": 0.008
+      }
     }
   },
   "full_cpts": {
@@ -3359,6 +3381,16 @@
           "under_100": 0.4,
           "100_120": 0.4,
           "over_120": 0.2
+        },
+        "D99": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
+        },
+        "D36": {
+          "under_100": 0.3,
+          "100_120": 0.45,
+          "over_120": 0.25
         }
       }
     },
@@ -3529,6 +3561,16 @@
           "normal_under_20": 0.3,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.2
+        },
+        "D99": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.2
+        },
+        "D36": {
+          "normal_under_20": 0.15,
+          "tachypnea_20_30": 0.55,
+          "severe_over_30": 0.3
         }
       }
     },
@@ -3604,6 +3646,11 @@
           "normal_over_96": 0.45,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.2
+        },
+        "D99": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.3
         }
       }
     },
@@ -4644,6 +4691,11 @@
           "absent": 0.15,
           "monoarticular": 0.1,
           "polyarticular": 0.75
+        },
+        "D13": {
+          "absent": 0.93,
+          "monoarticular": 0.05,
+          "polyarticular": 0.02
         }
       }
     },
@@ -5556,6 +5608,12 @@
           "normal_4000_10000": 0.7,
           "high_10000_20000": 0.15,
           "very_high_over_20000": 0.05
+        },
+        "D99": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.15
         }
       }
     },
@@ -7025,6 +7083,10 @@
         "D59": {
           "negative": 0.02,
           "positive": 0.98
+        },
+        "D96": {
+          "negative": 0.85,
+          "positive": 0.15
         }
       }
     },
@@ -7636,6 +7698,15 @@
           "halo_sign": 0.02,
           "BHL": 0.03,
           "pleural_effusion": 0.35
+        },
+        "D36": {
+          "normal": 0.02,
+          "consolidation": 0.1,
+          "GGO": 0.03,
+          "cavity": 0.05,
+          "halo_sign": 0.0,
+          "BHL": 0.0,
+          "pleural_effusion": 0.8
         }
       }
     },
@@ -7785,6 +7856,12 @@
           "hyponatremia": 0.7,
           "hyperkalemia": 0.05,
           "other": 0.05
+        },
+        "D36": {
+          "normal": 0.65,
+          "hyponatremia": 0.3,
+          "hyperkalemia": 0.03,
+          "other": 0.02
         }
       }
     },
@@ -8730,6 +8807,10 @@
         "D101": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D13": {
+          "absent": 0.88,
+          "present": 0.12
         }
       }
     },
@@ -8875,6 +8956,10 @@
         "D39": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D69": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -9262,6 +9347,10 @@
         "D43": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D69": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -10431,6 +10520,10 @@
         "D97": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D69": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -11149,6 +11242,22 @@
         "D79": {
           "sudden_hours": 0.5,
           "gradual_days": 0.5
+        },
+        "D98": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
+        },
+        "D69": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D20": {
+          "sudden_hours": 0.15,
+          "gradual_days": 0.85
+        },
+        "D36": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
         }
       }
     },
@@ -11256,6 +11365,12 @@
           "intermittent": 0.6,
           "periodic": 0.15,
           "double_quotidian": 0.05
+        },
+        "D98": {
+          "continuous": 0.2,
+          "intermittent": 0.5,
+          "periodic": 0.2,
+          "double_quotidian": 0.1
         }
       }
     },
