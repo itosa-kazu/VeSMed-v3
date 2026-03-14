@@ -3996,6 +3996,33 @@
         "R01": "40_64",
         "R02": "female"
       }
+    },
+    {
+      "id": "R164",
+      "source": "PMC12783567 Medicine 2025",
+      "source_summary": "64F. 2週間の持続性咳嗽(初期乾性→湿性膿性痰)+咽頭痛。無熱(36.5°C)。HR93, BP116/63, RR23, SpO2 96%。WBC12.3K→11.2K, CRP28.9, ESR88。CXR正常。BAL mNGSでBordetella pertussis検出(7497 reads)。",
+      "expected_id": "D56",
+      "expected_name": "pertussis",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E05": "normal_over_96",
+        "S01": "productive",
+        "S02": "present",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L28": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "S47": "subacute_3w_8w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
     }
   ],
   "total_cases": 110
