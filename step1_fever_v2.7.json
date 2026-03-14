@@ -3992,6 +3992,29 @@
       ],
       "severity": "moderate",
       "note": "成人:発熱+関節痛+蝶形紅斑。小児:りんご病。妊婦で胎児水腫リスク"
+    },
+    {
+      "id": "D106",
+      "name": "inflammatory_myopathy",
+      "name_ja": "炎症性筋疾患（皮膚筋炎/多発性筋炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "DM:heliotrope疹+Gottron丘疹+近位筋力低下。PM:皮膚所見なし。悪性腫瘍合併注意"
+    },
+    {
+      "id": "S48",
+      "name": "proximal_muscle_weakness",
+      "name_ja": "近位筋力低下",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "起立困難、階段昇降困難、腕挙上困難"
     }
   ]
 }

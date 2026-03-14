@@ -3183,6 +3183,13 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.08,
           "over_40.0": 0.02
+        },
+        "D106": {
+          "under_37.5": 0.45,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
         }
       }
     },
@@ -4299,6 +4306,14 @@
           "vesicular": 0.01,
           "erythroderma": 0.01,
           "diffuse_erythema": 0.06
+        },
+        "D106": {
+          "absent": 0.5,
+          "maculopapular_rash": 0.3,
+          "diffuse_erythema": 0.15,
+          "petechiae_purpura": 0.01,
+          "vesicular": 0.01,
+          "erythroderma": 0.03
         }
       }
     },
@@ -4735,6 +4750,10 @@
         "D105": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D106": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -6294,6 +6313,12 @@
           "mild_0.3_3": 0.5,
           "moderate_3_10": 0.15,
           "high_over_10": 0.05
+        },
+        "D106": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.1
         }
       }
     },
@@ -6531,6 +6556,14 @@
           "bilateral_infiltrate": 0.25,
           "BHL": 0.05,
           "pleural_effusion": 0.05
+        },
+        "D106": {
+          "normal": 0.6,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.25,
+          "BHL": 0.01,
+          "pleural_effusion": 0.05,
+          "GGO": 0.04
         }
       }
     },
@@ -7155,6 +7188,10 @@
         "D55": {
           "normal": 0.4,
           "elevated": 0.6
+        },
+        "D106": {
+          "normal": 0.2,
+          "elevated": 0.8
         }
       }
     },
@@ -7205,6 +7242,11 @@
           "normal": 0.4,
           "elevated": 0.4,
           "very_high": 0.2
+        },
+        "D106": {
+          "normal": 0.03,
+          "elevated": 0.27,
+          "very_high": 0.7
         }
       }
     },
@@ -7230,6 +7272,10 @@
         "D105": {
           "negative": 0.7,
           "positive": 0.3
+        },
+        "D106": {
+          "negative": 0.3,
+          "positive": 0.7
         }
       }
     },
@@ -7590,6 +7636,11 @@
           "normal": 0.5,
           "elevated": 0.4,
           "very_high_over_100": 0.1
+        },
+        "D106": {
+          "normal": 0.3,
+          "elevated": 0.5,
+          "very_high_over_100": 0.2
         }
       }
     },
@@ -8643,6 +8694,10 @@
         "D105": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D106": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -8904,6 +8959,11 @@
           "absent": 0.35,
           "mild": 0.4,
           "severe": 0.25
+        },
+        "D106": {
+          "absent": 0.25,
+          "mild": 0.35,
+          "severe": 0.4
         }
       }
     },
@@ -8997,6 +9057,10 @@
         "D105": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D106": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -9796,6 +9860,10 @@
         "D72": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D106": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -10059,6 +10127,10 @@
         "D85": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D106": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -11313,6 +11385,12 @@
           "3d_to_1w": 0.55,
           "1w_to_3w": 0.25,
           "over_3w": 0.05
+        },
+        "D106": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.6
         }
       }
     },
@@ -11466,6 +11544,10 @@
         "D105": {
           "sudden_hours": 0.1,
           "gradual_days": 0.9
+        },
+        "D106": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
         }
       }
     },
@@ -11970,6 +12052,23 @@
           "acute_under_3w": 0.55,
           "subacute_3w_8w": 0.3,
           "chronic_over_8w": 0.05
+        }
+      }
+    },
+    "S48": {
+      "description": "近位筋力低下(起立困難・腕挙上困難)",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D106": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     }

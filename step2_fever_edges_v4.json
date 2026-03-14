@@ -16068,6 +16068,125 @@
       "from_name": "parvovirus_B19",
       "to_name": "ferritin",
       "reason": "パルボB19: フェリチン正常〜軽度上昇が典型。Stillとの鑑別ポイント"
+    },
+    {
+      "from": "D106",
+      "to": "S48",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S48",
+      "reason": "DM/PM: 近位筋力低下(>90%)"
+    },
+    {
+      "from": "D106",
+      "to": "L17",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L17",
+      "reason": "DM/PM: CK上昇(>95%, 通常5-50倍)"
+    },
+    {
+      "from": "D106",
+      "to": "E01",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "E01",
+      "reason": "DM/PM: 発熱(20-50%)"
+    },
+    {
+      "from": "D106",
+      "to": "E12",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "E12",
+      "reason": "DM/PM: DM皮膚所見(heliotrope/Gottron)"
+    },
+    {
+      "from": "D106",
+      "to": "S25",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S25",
+      "reason": "DM/PM: 嚥下困難(30-40%)"
+    },
+    {
+      "from": "D106",
+      "to": "S08",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S08",
+      "reason": "DM/PM: 関節痛(20-50%)"
+    },
+    {
+      "from": "D106",
+      "to": "S07",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S07",
+      "reason": "DM/PM: 倦怠感(60-80%)"
+    },
+    {
+      "from": "D106",
+      "to": "S06",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S06",
+      "reason": "DM/PM: 筋肉痛(50-70%)"
+    },
+    {
+      "from": "D106",
+      "to": "L04",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L04",
+      "reason": "DM/PM: 間質性肺炎(20-40%)"
+    },
+    {
+      "from": "D106",
+      "to": "L02",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L02",
+      "reason": "DM/PM: CRP上昇(50-70%)"
+    },
+    {
+      "from": "D106",
+      "to": "L28",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L28",
+      "reason": "DM/PM: ESR上昇(50-70%)"
+    },
+    {
+      "from": "D106",
+      "to": "L16",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L16",
+      "reason": "DM/PM: LDH上昇(筋原性)"
+    },
+    {
+      "from": "D106",
+      "to": "S17",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "S17",
+      "reason": "DM/PM: 体重減少(30-50%)"
+    },
+    {
+      "from": "D106",
+      "to": "T01",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "T01",
+      "reason": "DM/PM: 亜急性〜慢性経過"
+    },
+    {
+      "from": "D106",
+      "to": "T02",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "T02",
+      "reason": "DM/PM: 緩徐発症"
+    },
+    {
+      "from": "D106",
+      "to": "L18",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "L18",
+      "reason": "DM/PM: ANA陽性(60-80%)"
+    },
+    {
+      "from": "D106",
+      "to": "E20",
+      "from_name": "inflammatory_myopathy",
+      "to_name": "E20",
+      "reason": "DM/PM: DM heliotrope疹(蝶形紅斑類似)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
