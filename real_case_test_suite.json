@@ -666,7 +666,7 @@
       "pmcid": "PMC11194037",
       "vignette": "50F 鎌状赤血球症既往。発熱+無力感+嗜眠+下腹部痛。重度汎血球減少。フェリチン3,134。骨髄:血球貪食像。HLH 8基準中5基準充足",
       "final_diagnosis": "HLH（尿路感染由来敗血症に続発）",
-      "expected_id": "D67",
+      "expected_id": "D107",
       "in_scope": true,
       "evidence": {
         "E01": "39.0_40.0",
@@ -681,7 +681,8 @@
         "R02": "female"
       },
       "result": "Top-3 rank2 (急性白血病 60%) H=2.0",
-      "notes": "自信的误诊。汎血球減少+高フェリチンは白血病/リンパ腫の鑑別困難。R03と同パターン"
+      "notes": "final_diagnosisがHLH。以前D67で登録されていたのは誤り",
+      "expected_name": "HLH"
     },
     {
       "id": "R27",
