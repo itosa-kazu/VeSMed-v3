@@ -3931,6 +3931,71 @@
         "R01": "18_39",
         "R02": "male"
       }
+    },
+    {
+      "id": "R161",
+      "source": "PMC12343192 Front Med 2025",
+      "source_summary": "49F UAE. Fatigue, weight loss, polyarthralgia(knees/fingers/hips), intermittent salmon-pink rash exacerbated by fever. Splenomegaly 14.7cm. WBC 22.7K, Hb 8.6, PLT 538K, ferritin 16286, ESR 80, LDH 331. ANA/ANCA negative. Yamaguchi criteria met.",
+      "expected_id": "D58",
+      "expected_name": "adult_onset_still_disease",
+      "in_scope": true,
+      "evidence": {
+        "S08": "present",
+        "S07": "severe",
+        "S17": "present",
+        "E12": "maculopapular_rash",
+        "E14": "present",
+        "L01": "very_high_over_20000",
+        "L15": "extreme_over_10000",
+        "L28": "elevated",
+        "L16": "elevated",
+        "L18": "negative"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R162",
+      "source": "PMC11343824 BMC Rheumatol 2024",
+      "source_summary": "37M previously healthy. 2-week intermittent fever, joint pain(bilateral knees/elbows), sore throat, diffuse salmon-colored rash(abdomen→arms/back/legs). AST 460, ALT 847, ferritin peak 92999. Infectious workup all negative. Yamaguchi criteria met.",
+      "expected_id": "D58",
+      "expected_name": "adult_onset_still_disease",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "S08": "present",
+        "E12": "maculopapular_rash",
+        "L11": "very_high",
+        "L15": "extreme_over_10000",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R163",
+      "source": "PMC10831924 Cureus 2024",
+      "source_summary": "45F DM/HTN. Retrosternal chest pain 4 days. Persistent fever 3+ weeks (100.5-103.2F). HR 105, BP 122/77. Conjunctival pallor. WBC 5.0K, Hb 7.5, PLT 45K, LDH>750, ferritin 4193, D-dimer 1146. Pericardial effusion day 2. Peripheral smear: immature myeloid cells. All infectious workup negative.",
+      "expected_id": "D68",
+      "expected_name": "acute_leukemia",
+      "in_scope": true,
+      "evidence": {
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "L01": "normal_4000_10000",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "L15": "very_high_over_1000",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
     }
   ],
   "total_cases": 110
