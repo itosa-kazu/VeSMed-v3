@@ -3442,108 +3442,134 @@
     "E03": {
       "description": "収縮期血圧。ショック・敗血症で低血圧",
       "states": [
-        "normal",
-        "hypotension"
+        "normal_over_100",
+        "borderline_90_100",
+        "hypotension_under_90"
       ],
       "leak": {
-        "hypotension_under_90": 0.05,
-        "normal_over_90": 0.95
+        "normal_over_100": 0.9,
+        "borderline_90_100": 0.07,
+        "hypotension_under_90": 0.03
       },
       "parent_effects": {
         "D13": {
-          "hypotension_under_90": 0.5,
-          "normal_over_90": 0.5
+          "normal_over_100": 0.25,
+          "borderline_90_100": 0.25,
+          "hypotension_under_90": 0.5
         },
         "D15": {
-          "hypotension_under_90": 0.3,
-          "normal_over_90": 0.7
+          "normal_over_100": 0.46,
+          "borderline_90_100": 0.24,
+          "hypotension_under_90": 0.3
         },
         "D24": {
-          "hypotension_under_90": 0.85,
-          "normal_over_90": 0.15
+          "normal_over_100": 0.08,
+          "borderline_90_100": 0.07,
+          "hypotension_under_90": 0.85
         },
         "D25": {
-          "hypotension_under_90": 0.4,
-          "normal_over_90": 0.6
+          "normal_over_100": 0.3,
+          "borderline_90_100": 0.3,
+          "hypotension_under_90": 0.4
         },
         "D57": {
-          "normal_over_90": 0.3,
+          "normal_over_100": 0.15,
+          "borderline_90_100": 0.15,
           "hypotension_under_90": 0.7
         },
         "D72": {
-          "normal_over_90": 0.15,
+          "normal_over_100": 0.08,
+          "borderline_90_100": 0.07,
           "hypotension_under_90": 0.85
         },
         "D76": {
-          "normal_over_90": 0.5,
+          "normal_over_100": 0.25,
+          "borderline_90_100": 0.25,
           "hypotension_under_90": 0.5
         },
         "D78": {
-          "normal_over_90": 0.3,
+          "normal_over_100": 0.15,
+          "borderline_90_100": 0.15,
           "hypotension_under_90": 0.7
         },
         "D74": {
-          "normal_over_90": 0.4,
+          "normal_over_100": 0.2,
+          "borderline_90_100": 0.2,
           "hypotension_under_90": 0.6
         },
         "D73": {
-          "normal_over_90": 0.3,
+          "normal_over_100": 0.15,
+          "borderline_90_100": 0.15,
           "hypotension_under_90": 0.7
         },
         "D88": {
-          "normal_over_90": 0.7,
+          "normal_over_100": 0.46,
+          "borderline_90_100": 0.24,
           "hypotension_under_90": 0.3
         },
         "D89": {
-          "normal_over_90": 0.4,
+          "normal_over_100": 0.2,
+          "borderline_90_100": 0.2,
           "hypotension_under_90": 0.6
         },
         "D71": {
-          "normal": 0.6,
-          "hypotension": 0.4
+          "normal_over_100": 0.3,
+          "borderline_90_100": 0.3,
+          "hypotension_under_90": 0.4
         },
         "D81": {
-          "normal": 0.55,
-          "hypotension": 0.45
+          "normal_over_100": 0.27,
+          "borderline_90_100": 0.28,
+          "hypotension_under_90": 0.45
         },
         "D98": {
-          "normal": 0.5,
-          "hypotension": 0.5
+          "normal_over_100": 0.25,
+          "borderline_90_100": 0.25,
+          "hypotension_under_90": 0.5
         },
         "D77": {
-          "normal_over_90": 0.7,
+          "normal_over_100": 0.46,
+          "borderline_90_100": 0.24,
           "hypotension_under_90": 0.3
         },
         "D58": {
-          "normal_over_90": 0.9,
+          "normal_over_100": 0.76,
+          "borderline_90_100": 0.14,
           "hypotension_under_90": 0.1
         },
         "D51": {
-          "normal_over_90": 0.7,
+          "normal_over_100": 0.46,
+          "borderline_90_100": 0.24,
           "hypotension_under_90": 0.3
         },
         "D49": {
-          "normal_over_90": 0.6,
+          "normal_over_100": 0.3,
+          "borderline_90_100": 0.3,
           "hypotension_under_90": 0.4
         },
         "D100": {
-          "normal_over_90": 0.9,
+          "normal_over_100": 0.76,
+          "borderline_90_100": 0.14,
           "hypotension_under_90": 0.1
         },
         "D68": {
-          "normal_over_90": 0.65,
+          "normal_over_100": 0.42,
+          "borderline_90_100": 0.23,
           "hypotension_under_90": 0.35
         },
         "D26": {
-          "normal_over_90": 0.75,
+          "normal_over_100": 0.49,
+          "borderline_90_100": 0.26,
           "hypotension_under_90": 0.25
         },
         "D40": {
-          "normal_over_90": 0.55,
+          "normal_over_100": 0.27,
+          "borderline_90_100": 0.28,
           "hypotension_under_90": 0.45
         },
         "D79": {
-          "normal_over_90": 0.7,
+          "normal_over_100": 0.46,
+          "borderline_90_100": 0.24,
           "hypotension_under_90": 0.3
         }
       }

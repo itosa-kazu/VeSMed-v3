@@ -1431,7 +1431,8 @@
       "name_ja": "収縮期血圧",
       "category": "sign",
       "states": [
-        "normal_over_90",
+        "normal_over_100",
+        "borderline_90_100",
         "hypotension_under_90"
       ]
     },
