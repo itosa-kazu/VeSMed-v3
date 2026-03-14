@@ -26,11 +26,11 @@ STEP2 = os.path.join(BASE, "step2_fever_edges_v4.json")
 STEP3 = os.path.join(BASE, "step3_fever_cpts_v2.json")
 CASES = os.path.join(BASE, "real_case_test_suite.json")
 
-# === 推論改善パラメータ ===
-# 方向C: IDF鑑別力係数のべき乗 (0=無効, 0.5=推奨, 1.0=強)
-IDF_DISC_POWER = 0.7
-# 反事実Coverage: 因果説明力の重み (0=無効, 1.0=推奨)
-CF_COVERAGE_ALPHA = 1.0
+# === 推論改善パラメータ (grid search最適化済み: dp=0.5, ca=0.3) ===
+# IDF鑑別力係数のべき乗 (0=無効, 0.5=最適, 1.0=強)
+IDF_DISC_POWER = 0.5
+# 反事実Coverage: 因果説明力の重み (0=無効, 0.3=最適, 1.0=強)
+CF_COVERAGE_ALPHA = 0.3
 
 
 def load_json(path):
