@@ -12069,6 +12069,34 @@
         "D106": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D74": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D89": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D75": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D59": {
+          "absent": 0.92,
+          "present": 0.08
+        },
+        "D88": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D71": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D68": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     }
