@@ -73,6 +73,12 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 .var-label { min-width: 180px; font-size: 0.85em; }
 .var-label .vid { color: var(--text2); font-size: 0.8em; font-family: monospace; }
 .var-label .vname { font-weight: 500; }
+.var-hint {
+  display: inline-block; width: 14px; height: 14px; line-height: 14px;
+  text-align: center; font-size: 0.65em; border-radius: 50%;
+  background: var(--surface2); color: var(--text2); cursor: help;
+  vertical-align: middle; margin-left: 2px;
+}
 .var-states { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; }
 .state-btn {
   background: var(--surface2); color: var(--text2); border: 1px solid var(--border);
@@ -211,10 +217,10 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
         </div>
         <div class="cat-body">
           {% for v in group.variables %}
-          <div class="var-row" data-search="{{ v.id }} {{ v.name }} {{ v.name_ja }}">
+          <div class="var-row" data-search="{{ v.id }} {{ v.name }} {{ v.name_ja }}"{% if v.note %} title="{{ v.note }}"{% endif %}>
             <div class="var-label">
               <span class="vid">{{ v.id }}</span>
-              <span class="vname">{{ v.name_ja }}</span>
+              <span class="vname">{{ v.name_ja }}{% if v.note %} <span class="var-hint">?</span>{% endif %}</span>
             </div>
             <div class="var-states">
               {% for s in v.states %}
@@ -298,11 +304,11 @@ const STATE_JA = {
   negative:"陰性", positive:"陽性", not_done:"未実施", unknown:"不明",
   none:"なし", other:"その他", new:"新規", current:"現在", former:"過去", never:"なし",
   pre_existing:"既存",
-  // Temperature
-  "under_37.5":"<37.5°C", "37.5_38.0":"37.5-38°C", "38.0_39.0":"38-39°C",
-  "39.0_40.0":"39-40°C", "over_40.0":">40°C",
-  // Heart rate
-  under_100:"<100/分", "100_120":"100-120/分", over_120:">120/分",
+  // Temperature (下限含む: 38.0→38-39に含む)
+  "under_37.5":"<37.5°C", "37.5_38.0":"37.5~38°C未満", "38.0_39.0":"38~39°C未満",
+  "39.0_40.0":"39~40°C未満", "over_40.0":"40°C以上",
+  // Heart rate (下限含む)
+  under_100:"<100/分", "100_120":"100~120/分未満", over_120:"120/分以上",
   // Blood pressure
   normal_over_90:"正常(>90)", hypotension_under_90:"低血圧(<90)",
   // Respiratory rate
@@ -325,9 +331,9 @@ const STATE_JA = {
   // Sex / Age
   male:"男性", female:"女性",
   "0_17":"0-17歳", "18_39":"18-39歳", "40_64":"40-64歳", "65_plus":"65歳以上",
-  // WBC
-  low_under_4000:"低値(<4000)", normal_4000_10000:"正常(4000-10000)",
-  high_10000_20000:"高値(10000-20000)", very_high_over_20000:"著高(>20000)",
+  // WBC (下限含む)
+  low_under_4000:"低値(<4000)", normal_4000_10000:"正常(4000~10000未満)",
+  high_10000_20000:"高値(10000~20000未満)", very_high_over_20000:"著高(20000以上)",
   // CRP
   "normal_under_0.3":"正常(<0.3)", "mild_0.3_3":"軽度(0.3-3)",
   moderate_3_10:"中等度(3-10)", high_over_10:"高値(>10)",
