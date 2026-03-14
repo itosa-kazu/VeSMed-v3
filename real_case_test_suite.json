@@ -4295,6 +4295,152 @@
         "R25": "yes"
       },
       "notes": "論文の全所見を忠実に反映。呼吸器+髄膜炎の両方の所見あり"
+    },
+    {
+      "id": "R176",
+      "source": "PMC6482719 J Clin Rheumatol 2019",
+      "source_summary": "65F. 10日間の高熱(38.9°C)+関節痛+朝のこわばり。対称性多関節炎(PIP/MCP/膝/足)。HR112。WBC11300,Hb10.9,PLT260K,ESR76,CRP60。RF陰性,ANA陰性。パルボB19 IgM陽性。",
+      "expected_id": "D105",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "S08": "present",
+        "S27": "present",
+        "E21": "polyarticular",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L18": "negative",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R177",
+      "source": "PMC9741541 Front Med 2022",
+      "source_summary": "68F. 1ヶ月の体重減少8kg+斑丘疹+倦怠感+食欲不振+動悸+頭痛+咳嗽(2週)。39.5°C。WBC3.97K,Hb96,PLT74K,ferritin33649,LDH999,CRP190,AST213,TG2.55,D-dimer71270。脾腫12.5cm。HScore209(93%)。全感染症・自己免疫陰性。",
+      "expected_id": "D107",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "S17": "present",
+        "S46": "present",
+        "S05": "mild",
+        "S01": "dry",
+        "E12": "maculopapular_rash",
+        "E14": "present",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L15": "extreme_over_10000",
+        "L16": "elevated",
+        "L02": "high_over_10",
+        "L11": "very_high",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R178",
+      "source": "PMC10824277 Cureus 2024",
+      "source_summary": "77F. 2週間の発熱+大量盗汗+全身脱力+体重減少。38°C。悪液質、肝脾腫。WBC2.1K,Hb9.8,PLT60K,ferritin1790→>6000,fibrinogen78,TG388。HScore224→284。Day5死亡。",
+      "expected_id": "D107",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "S16": "present",
+        "S17": "present",
+        "E14": "present",
+        "E34": "present",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L22": "present",
+        "L15": "very_high_over_1000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R179",
+      "source": "PMC10598787 Cureus 2023",
+      "source_summary": "70M HIV陰性、肺結核治療中。2日間の意識障害+間欠的微熱。100.2°F,HR108,BP110/70,GCS9。Kernig/Brudzinski陽性。WBC14K(リンパ45%),Hb12,PLT438K,ESR59。髄液:開放圧25cmH2O,蛋白48.8,糖<5(!),WBC95(リンパ80%)。墨汁染色陽性。",
+      "expected_id": "D109",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E16": "obtunded",
+        "E06": "present",
+        "L01": "high_10000_20000",
+        "L28": "elevated",
+        "L45": "tb_fungal_pattern",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R180",
+      "source": "PMC11009825 Cureus 2024",
+      "source_summary": "23F。2-3ヶ月の両下肢筋力低下+歩行困難。1ヶ月の顔面/上肢腫脹。15日の呼吸困難。8-10日の嚥下障害+構音障害。Heliotrope+Gottron+V-sign。HR120,BP100/60,RR27,SpO2 90%。Hb10,WBC8400,CK12800,LDH3042,AST652,ALT195,Albumin2.7。HRCT:びまん性GGO。",
+      "expected_id": "D106",
+      "in_scope": true,
+      "evidence": {
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "S48": "present",
+        "S25": "present",
+        "E12": "maculopapular_rash",
+        "L17": "very_high",
+        "L16": "elevated",
+        "L11": "very_high",
+        "L04": "bilateral_infiltrate",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R181",
+      "source": "PMC10032238 Cureus 2023",
+      "source_summary": "53F IVDU既往。1週間の黄疸+強膜黄染+右上腹部痛+高熱+悪寒。VS安定。AST2484,ALT1608,ALP235,T-Bil6.6,D-Bil5.3,ferritin1655,INR1.2。HBsAg(+),IgM-HBc(+),HBeAg(+),HBV DNA 910731IU/mL。HEV IgM(+)合併。",
+      "expected_id": "D108",
+      "in_scope": true,
+      "evidence": {
+        "S09": "present",
+        "E18": "present",
+        "S12": "RUQ",
+        "L11": "very_high",
+        "L15": "very_high_over_1000",
+        "L39": "HBV",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
     }
   ],
   "total_cases": 110
