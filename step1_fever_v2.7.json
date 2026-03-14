@@ -4015,6 +4015,18 @@
         "present"
       ],
       "note": "起立困難、階段昇降困難、腕挙上困難"
+    },
+    {
+      "id": "D107",
+      "name": "hemophagocytic_lymphohistiocytosis",
+      "name_ja": "血球貪食症候群(HLH/MAS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "HLH-2004基準: 発熱+脾腫+血球減少+高TG/低fibrinogen+高ferritin+高sIL-2R+NK活性低下+骨髄血球貪食"
     }
   ]
 }

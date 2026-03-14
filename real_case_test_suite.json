@@ -482,7 +482,7 @@
       "pmcid": "PMC5726146",
       "vignette": "88F 6日間39℃以上の発熱、広域抗菌薬無効。関節炎なし、皮疹なし。WBC好中球80%増多、軽度肝障害、血小板減少、D-dimer上昇、フェリチン78,662ng/mL。ANA陰性。脾腫あり。DIC合併",
       "final_diagnosis": "成人Still病+血球貪食症候群(HPS)+DIC",
-      "expected_id": "D58",
+      "expected_id": "D107",
       "in_scope": true,
       "evidence": {
         "E01": "39.0_40.0",
@@ -500,7 +500,8 @@
         "R02": "female"
       },
       "result": "Top-3 rank2 (マラリア 41%) H=2.3",
-      "notes": "88歳最高齢AOSD。フェリチン78,662が決定的。抗菌薬無効+ANA陰性+超高フェリチンでStillに到達"
+      "notes": "Still+HLH(MAS)合併。HLH認識が臨床的に最重要(治療が異なる)",
+      "expected_name": "HLH/MAS"
     },
     {
       "id": "R20",
@@ -4160,6 +4161,56 @@
       },
       "risk_factors": {
         "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R171",
+      "source": "PMC6125767 J Investig Med High Impact Case Rep 2018",
+      "source_summary": "51F. 2週間の発熱+倦怠感+食欲低下(15lb体重減少)+嘔気+黄疸+右上腹部痛+認知機能低下。来院時36.6°C。WBC1.4K,Hb10.3,PLT68K,ferritin51750,TG427,AST647,ALT194,T-Bil10.1。sIL-2R15790。EBV-PCR陽性。骨髄:血球貪食像。",
+      "expected_id": "D107",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S07": "severe",
+        "S17": "present",
+        "S13": "present",
+        "S12": "RUQ",
+        "E18": "present",
+        "E16": "confused",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L15": "extreme_over_10000",
+        "L11": "very_high",
+        "L41": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R172",
+      "source": "PMC11610629 Case Rep Med 2024",
+      "source_summary": "41F. 5年の反復性汎血球減少+倦怠感+筋肉痛+盗汗+呼吸困難。WBC2.0K,Hb9.0,PLT13K,ferritin1057,sIL-2R53999,fibrinogen60。骨髄+CSF:血球貪食組織球。遺伝子:UNC13D変異(原発性HLH)。",
+      "expected_id": "D107",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "S06": "present",
+        "S16": "present",
+        "S04": "on_exertion",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L22": "present",
+        "L15": "very_high_over_1000",
+        "L41": "elevated",
+        "T01": "over_3w"
+      },
+      "risk_factors": {
+        "R01": "18_39",
         "R02": "female"
       }
     }

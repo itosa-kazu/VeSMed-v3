@@ -16320,6 +16320,146 @@
       "from_name": "D67",
       "to_name": "L21",
       "reason": "悪性リンパ腫: 末梢血芽球出現(leukemic phase 5-10%)"
+    },
+    {
+      "from": "D107",
+      "to": "E01",
+      "from_name": "HLH",
+      "to_name": "E01",
+      "reason": "HLH: 持続性高熱(100%), 通常39-41°C"
+    },
+    {
+      "from": "D107",
+      "to": "E14",
+      "from_name": "HLH",
+      "to_name": "E14",
+      "reason": "HLH: 脾腫(80-90%)"
+    },
+    {
+      "from": "D107",
+      "to": "E34",
+      "from_name": "HLH",
+      "to_name": "E34",
+      "reason": "HLH: 肝腫大(60-80%)"
+    },
+    {
+      "from": "D107",
+      "to": "L01",
+      "from_name": "HLH",
+      "to_name": "L01",
+      "reason": "HLH: 白血球減少(70-80%)"
+    },
+    {
+      "from": "D107",
+      "to": "L14",
+      "from_name": "HLH",
+      "to_name": "L14",
+      "reason": "HLH: 血小板減少+貧血(80%+)"
+    },
+    {
+      "from": "D107",
+      "to": "L22",
+      "from_name": "HLH",
+      "to_name": "L22",
+      "reason": "HLH: 汎血球減少(60-70%)"
+    },
+    {
+      "from": "D107",
+      "to": "L15",
+      "from_name": "HLH",
+      "to_name": "L15",
+      "reason": "HLH: ferritin極高(>10000が70%以上, diagnostic)"
+    },
+    {
+      "from": "D107",
+      "to": "L16",
+      "from_name": "HLH",
+      "to_name": "L16",
+      "reason": "HLH: LDH上昇(80-90%, 組織破壊)"
+    },
+    {
+      "from": "D107",
+      "to": "L11",
+      "from_name": "HLH",
+      "to_name": "L11",
+      "reason": "HLH: 肝酵素上昇(70-80%)"
+    },
+    {
+      "from": "D107",
+      "to": "E18",
+      "from_name": "HLH",
+      "to_name": "E18",
+      "reason": "HLH: 黄疸(30-50%, 肝障害)"
+    },
+    {
+      "from": "D107",
+      "to": "E16",
+      "from_name": "HLH",
+      "to_name": "E16",
+      "reason": "HLH: 意識障害(30-50%, CNS浸潤)"
+    },
+    {
+      "from": "D107",
+      "to": "L02",
+      "from_name": "HLH",
+      "to_name": "L02",
+      "reason": "HLH: CRP上昇"
+    },
+    {
+      "from": "D107",
+      "to": "L28",
+      "from_name": "HLH",
+      "to_name": "L28",
+      "reason": "HLH: ESR(fibrinogen低下で正常化しうる)"
+    },
+    {
+      "from": "D107",
+      "to": "S44",
+      "from_name": "HLH",
+      "to_name": "S44",
+      "reason": "HLH: 出血傾向(DIC合併30-50%)"
+    },
+    {
+      "from": "D107",
+      "to": "T01",
+      "from_name": "HLH",
+      "to_name": "T01",
+      "reason": "HLH: 急性〜亜急性発症"
+    },
+    {
+      "from": "D107",
+      "to": "T02",
+      "from_name": "HLH",
+      "to_name": "T02",
+      "reason": "HLH: 急性発症が多い"
+    },
+    {
+      "from": "D107",
+      "to": "S07",
+      "from_name": "HLH",
+      "to_name": "S07",
+      "reason": "HLH: 倦怠感(90%+)"
+    },
+    {
+      "from": "D107",
+      "to": "L41",
+      "from_name": "HLH",
+      "to_name": "L41",
+      "reason": "HLH: sIL-2R上昇(diagnostic, >2400)"
+    },
+    {
+      "from": "D107",
+      "to": "E12",
+      "from_name": "HLH",
+      "to_name": "E12",
+      "reason": "HLH: 皮疹(10-30%)"
+    },
+    {
+      "from": "D107",
+      "to": "S17",
+      "from_name": "HLH",
+      "to_name": "S17",
+      "reason": "HLH: 体重減少(30-50%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
