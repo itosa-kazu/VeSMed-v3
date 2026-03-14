@@ -230,54 +230,16 @@ def _cpt_val_to_prior(val):
     return 0.01
 
 
-def get_prior(disease_id, root_priors, risk_evidence):
-    """Get disease prior, modulated by risk factor evidence.
-
-    Supports single-parent and multi-parent ("|"-delimited composite key) CPTs.
-    For unobserved parents, uses the most common state from root_priors distribution.
-    """
-    rp = root_priors.get(disease_id)
-    if rp is None:
-        return 0.01
-    if isinstance(rp, (int, float)):
-        return float(rp)
-    if not isinstance(rp, dict):
-        return 0.01
-
-    parents = rp.get("parents", [])
-    cpt = rp.get("cpt", {})
-    if not cpt:
-        return 0.01
-    if not parents:
-        if "" in cpt:
-            return _cpt_val_to_prior(cpt[""])
-        return 0.01
-
-    # Build state for each parent
-    parts = []
-    for pid in parents:
-        if pid in risk_evidence:
-            parts.append(risk_evidence[pid])
-        else:
-            # Default: most common state from root_priors distribution
-            dist_info = root_priors.get(pid)
-            if isinstance(dist_info, dict) and "distribution" in dist_info:
-                dist = dist_info["distribution"]
-                parts.append(max(dist, key=dist.get))
-            else:
-                parts.append("no")
-
-    # Try composite key (single parent: just the state; multi: "|"-joined)
+def _lookup_cpt(cpt, parents, parts):
+    """Look up a CPT value given parent states. Returns scalar or None."""
+    # Try composite key
     key = "|".join(parts) if len(parts) > 1 else parts[0]
     if key in cpt:
         return _cpt_val_to_prior(cpt[key])
 
-    # Fallback: try each observed parent's state directly (backward compat)
-    for pid in parents:
-        if pid in risk_evidence:
-            state = risk_evidence[pid]
-            if state in cpt:
-                return _cpt_val_to_prior(cpt[state])
+    # Fallback: try single parent state directly
+    if len(parts) == 1 and parts[0] in cpt:
+        return _cpt_val_to_prior(cpt[parts[0]])
 
     # Fallback: common default keys
     for k in ("no", "none", "absent"):
@@ -286,7 +248,129 @@ def get_prior(disease_id, root_priors, risk_evidence):
 
     # Final fallback: minimum value
     vals = [_cpt_val_to_prior(v) for v in cpt.values()]
-    return min(vals) if vals else 0.01
+    return min(vals) if vals else None
+
+
+BASE_PRIOR = 0.01
+
+
+def _compute_marginal(cpt, parents, root_priors):
+    """Compute population-weighted marginal P(d) = Σ P(d|RF=s) × P(RF=s).
+
+    This represents the average prior across the population, without
+    knowing any risk factor values. Used as the denominator in the
+    RF relative adjustment ratio.
+    """
+    # Get distribution for each RF parent
+    distributions = []
+    for pid in parents:
+        dist_info = root_priors.get(pid)
+        if isinstance(dist_info, dict) and "distribution" in dist_info:
+            distributions.append(list(dist_info["distribution"].items()))
+        else:
+            distributions.append([("no", 0.5), ("yes", 0.5)])
+
+    # For single parent: simple weighted average
+    if len(parents) == 1:
+        total = 0.0
+        for state, prob in distributions[0]:
+            val = cpt.get(state)
+            if val is not None:
+                total += _cpt_val_to_prior(val) * prob
+        return total if total > 0 else None
+
+    # For multi-parent: iterate over all state combinations
+    # Use itertools-style nested loop
+    from itertools import product
+    total = 0.0
+    for combo in product(*distributions):
+        states = [s for s, _ in combo]
+        weight = 1.0
+        for _, p in combo:
+            weight *= p
+        key = "|".join(states)
+        val = cpt.get(key)
+        if val is not None:
+            total += _cpt_val_to_prior(val) * weight
+    return total if total > 0 else None
+
+
+def get_prior(disease_id, root_priors, risk_evidence):
+    """Get disease prior: flat base + risk factor relative adjustment.
+
+    Clinical reasoning: all diseases start from the same baseline (BASE_PRIOR).
+    Risk factors provide a RELATIVE boost/penalty via ratio to marginal:
+
+        adjusted_prior = BASE × P(d|RF_observed) / P_marginal(d)
+
+    P_marginal = Σ_s P(d|RF=s) × P(RF=s)  (population-weighted average)
+
+    This preserves RF modulation (e.g. "female → SLE more likely") without
+    letting absolute prevalence dominate (e.g. "URI is 35% of fever").
+    """
+    rp = root_priors.get(disease_id)
+    if rp is None:
+        return BASE_PRIOR
+    if isinstance(rp, (int, float)):
+        return BASE_PRIOR
+    if not isinstance(rp, dict):
+        return BASE_PRIOR
+
+    parents = rp.get("parents", [])
+    cpt = rp.get("cpt", {})
+    if not cpt or not parents:
+        return BASE_PRIOR
+
+    # Only use risk factor parents (R-prefixed), skip disease parents (D-prefixed)
+    rf_parents = [p for p in parents if p.startswith("R")]
+    if not rf_parents:
+        return BASE_PRIOR
+
+    # Build observed state for each RF parent
+    obs_parts = []
+    for pid in rf_parents:
+        if pid in risk_evidence:
+            obs_parts.append(risk_evidence[pid])
+        else:
+            # Unobserved: use most common state
+            dist_info = root_priors.get(pid)
+            if isinstance(dist_info, dict) and "distribution" in dist_info:
+                dist = dist_info["distribution"]
+                obs_parts.append(max(dist, key=dist.get))
+            else:
+                obs_parts.append("no")
+
+    # For CPTs with mixed parents (RF + disease), fill disease parents with "no"
+    if len(rf_parents) < len(parents):
+        full_obs = []
+        rf_idx = 0
+        full_parents = parents
+        for pid in parents:
+            if pid.startswith("R"):
+                full_obs.append(obs_parts[rf_idx])
+                rf_idx += 1
+            else:
+                full_obs.append("no")
+        obs_parts = full_obs
+    else:
+        full_parents = rf_parents
+
+    # P(d | RF=observed)
+    p_observed = _lookup_cpt(cpt, full_parents, obs_parts)
+    if p_observed is None:
+        return BASE_PRIOR
+
+    # P_marginal(d) — population-weighted average
+    p_marginal = _compute_marginal(cpt, full_parents, root_priors)
+    if p_marginal is None or p_marginal <= 0:
+        return BASE_PRIOR
+
+    # Relative adjustment: BASE × (observed / marginal)
+    ratio = p_observed / p_marginal
+    adjusted = BASE_PRIOR * ratio
+
+    # Clamp to reasonable range
+    return max(min(adjusted, 0.5), 1e-6)
 
 
 def resolve_state(obs_state, states):
