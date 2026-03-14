@@ -3431,6 +3431,11 @@
           "under_100": 0.6,
           "100_120": 0.3,
           "over_120": 0.1
+        },
+        "D20": {
+          "under_100": 0.65,
+          "100_120": 0.25,
+          "over_120": 0.1
         }
       }
     },
@@ -3611,6 +3616,11 @@
           "normal_under_20": 0.15,
           "tachypnea_20_30": 0.55,
           "severe_over_30": 0.3
+        },
+        "D71": {
+          "normal_under_20": 0.1,
+          "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.45
         }
       }
     },
@@ -3691,6 +3701,11 @@
           "normal_over_96": 0.3,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D71": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.25,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -8311,6 +8326,11 @@
           "absent": 0.25,
           "on_exertion": 0.35,
           "at_rest": 0.4
+        },
+        "D02": {
+          "absent": 0.75,
+          "on_exertion": 0.15,
+          "at_rest": 0.1
         }
       }
     },
@@ -11333,6 +11353,10 @@
         "D36": {
           "sudden_hours": 0.1,
           "gradual_days": 0.9
+        },
+        "D71": {
+          "sudden_hours": 0.8,
+          "gradual_days": 0.2
         }
       }
     },
