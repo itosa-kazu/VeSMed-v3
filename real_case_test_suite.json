@@ -3637,6 +3637,249 @@
         "R02": "female",
         "R43": "vaccinated"
       }
+    },
+    {
+      "id": "R152",
+      "source": "CMAJ Open 2016",
+      "pmcid": "PMC4786391",
+      "vignette": "42M フィリピン渡航帰り。咽頭痛+鼻汁+頭痛+筋肉痛→4日目に発熱+関節痛(両側MCP)→5日目にびまん性斑丘疹。結膜充血あり。後耳介リンパ節腫脹なし(非典型)。MMRワクチン未接種。風疹IgM陽性",
+      "final_diagnosis": "風疹",
+      "expected_id": "D48",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "S03": "clear_rhinorrhea",
+        "S05": "mild",
+        "S06": "present",
+        "S08": "present",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "E01": "37.5_38.0",
+        "E12": "maculopapular_rash",
+        "E13": "absent",
+        "E25": "present",
+        "E35": "conjunctivitis"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R06": "tropical_endemic",
+        "R43": "unvaccinated"
+      }
+    },
+    {
+      "id": "R153",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9637938",
+      "vignette": "30M 1ヶ月前に尿道分泌物(無防備性交後)→20日間の炎症性関節痛(左膝+MCP/PIP+仙腸関節+指趾炎)。足底に角化性丘疹(keratoderma blennorrhagicum)。無熱。HLA-B27陽性。CRP 97mg/L, ESR 83。クラミジアPCR陰性",
+      "final_diagnosis": "反応性関節炎（尿道炎後）",
+      "expected_id": "D64",
+      "in_scope": true,
+      "evidence": {
+        "S08": "present",
+        "S10": "present",
+        "S23": "polyarticular",
+        "S27": "over_30min",
+        "S43": "present",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "E01": "under_37.5",
+        "E12": "maculopapular_rash",
+        "E21": "polyarticular",
+        "L02": "moderate_3_10",
+        "L28": "elevated"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R36": "yes"
+      }
+    },
+    {
+      "id": "R154",
+      "source": "J Med Case Rep 2007",
+      "pmcid": "PMC1894807",
+      "vignette": "61F 3週間の発熱+悪寒戦慄(3回)+嘔気+頭痛+食欲不振+体重減少。血尿・側腹部痛なし(非典型)。HR125,BT39.6℃。右下腹部〜腰部に腫瘤触知。エコー+CTで右腎腫瘤。腎摘出→腎細胞癌確定",
+      "final_diagnosis": "腎細胞癌（不明熱として発症）",
+      "expected_id": "D69",
+      "in_scope": true,
+      "evidence": {
+        "S05": "mild",
+        "S09": "present",
+        "S13": "present",
+        "S17": "present",
+        "S46": "present",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E03": "normal_over_90",
+        "L01": "high_10000_20000",
+        "L31": "mass"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R155",
+      "source": "Int J Surg Case Rep 2019",
+      "pmcid": "PMC6387664",
+      "vignette": "24M 2ヶ月のRUQ痛+発熱+食欲低下+体重減少+嘔吐。肝疾患既往なし。黄疸あり。肝10cm触知(硬・圧痛)。WBC 11300。AFP>1000。CT:多発性低吸収肝病変。病理で肝細胞癌確定",
+      "final_diagnosis": "肝細胞癌（腫瘍熱）",
+      "expected_id": "D70",
+      "in_scope": true,
+      "evidence": {
+        "S07": "mild",
+        "S12": "RUQ",
+        "S13": "present",
+        "S17": "present",
+        "S46": "present",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E09": "localized_tenderness",
+        "E18": "present",
+        "E34": "present",
+        "L01": "high_10000_20000",
+        "L11": "mild_elevated",
+        "L25": "elevated",
+        "L31": "mass"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R156",
+      "source": "Acad Pathol 2020",
+      "pmcid": "PMC7364804",
+      "vignette": "35F 鉄欠乏性貧血(Hb6.5)で赤血球輸血中、開始30分後に発熱(36.6→38.2℃)+悪寒戦慄。HR77,BP105/85。DAT陰性,溶血なし。アセトアミノフェンで速やかに解熱",
+      "final_diagnosis": "輸血関連発熱反応（FNHTR）",
+      "expected_id": "D76",
+      "in_scope": true,
+      "evidence": {
+        "S09": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours",
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "L01": "normal_4000_10000"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R33": "yes"
+      }
+    },
+    {
+      "id": "R157",
+      "source": "Eur Heart J Case Rep 2023",
+      "pmcid": "PMC10352255",
+      "vignette": "52F 三弁置換術後。発熱40.3℃+悪寒戦慄。Osler結節+Janeway病変+線状出血(両手)。HR74,BP105。心雑音なし。WBC 11300,CRP 30mg/L。血培6/6セットS.dysgalactiae陽性。FDG-PET:弁周囲集積",
+      "final_diagnosis": "人工弁心内膜炎（S.dysgalactiae）",
+      "expected_id": "D79",
+      "in_scope": true,
+      "evidence": {
+        "S09": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours",
+        "E01": "over_40.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E12": "petechiae_purpura",
+        "E15": "absent",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L09": "gram_positive"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R10": "yes",
+        "R28": "yes"
+      }
+    },
+    {
+      "id": "R158",
+      "source": "Surg Case Rep 2022",
+      "pmcid": "PMC8714611",
+      "vignette": "42M 維持透析中。COVID-19肺炎入院第13病日にRUQ痛+発熱38.1℃。WBC 21160,CRP 143.8mg/L。US:胆嚢壁肥厚+腫大,胆石なし。Murphy徴候陽性。PTGBD後に腹腔鏡下胆摘",
+      "final_diagnosis": "無石胆嚢炎（COVID-19合併）",
+      "expected_id": "D80",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E09": "localized_tenderness",
+        "E10": "positive",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L12": "gallbladder_wall_thickening"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R07": "yes"
+      }
+    },
+    {
+      "id": "R159",
+      "source": "Pan Afr Med J 2013",
+      "pmcid": "PMC3808047",
+      "vignette": "45M 右前頭側頭葉星細胞腫で再開頭術後6日目に頭蓋骨弁腫脹→急速に全頭皮へ拡大。意識混濁(confused/incoherent)。CT:びまん性気頭症+皮下気腫。創部培養A.baumannii。マラリア合併",
+      "final_diagnosis": "院内髄膜炎（開頭術後,A.baumannii）",
+      "expected_id": "D82",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S09": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E06": "present",
+        "E12": "localized_erythema_warmth_swelling",
+        "E16": "confused",
+        "L45": "bacterial_pattern"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R07": "yes",
+        "R21": "yes",
+        "R40": "yes"
+      }
+    },
+    {
+      "id": "R160",
+      "source": "J Nat Sci Biol Med 2012",
+      "pmcid": "PMC3510922",
+      "vignette": "25M 1日前から下顎痛+頸部腫脹+開口障害(1.5cm)+呼吸困難。右下第2大臼歯う蝕+排膿。38.8℃,HR106,RR25,BP140/90。両側顎下+舌下間隙のびまん性硬結性腫脹。緊急切開排膿+気管切開",
+      "final_diagnosis": "歯原性感染症（Ludwig angina）",
+      "expected_id": "D85",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "S24": "present",
+        "S25": "present",
+        "S40": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E16": "normal",
+        "E23": "present"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
     }
   ],
   "total_cases": 110
