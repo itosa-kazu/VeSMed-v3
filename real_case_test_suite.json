@@ -2969,7 +2969,8 @@
         "L11": "very_high",
         "L14": "thrombocytopenia",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L39": "HAV_IgM"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3108,7 +3109,8 @@
         "L14": "thrombocytopenia",
         "L20": "elevated",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L29": "elevated_over_250"
       },
       "risk_factors": {
         "R01": "65_plus",
