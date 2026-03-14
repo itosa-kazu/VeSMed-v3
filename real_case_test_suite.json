@@ -4083,6 +4083,85 @@
         "R01": "40_64",
         "R02": "male"
       }
+    },
+    {
+      "id": "R168",
+      "source": "PMC12487581 Ann Med Surg 2025",
+      "source_summary": "50F エチオピア。5ヶ月の手皮膚硬化→3ヶ月の進行性嚥下困難+筋力低下→寝たきり。Heliotrope疹+Gottron丘疹+V-sign+mechanic hands。36.4°C,HR80,RR22,SpO2 94%。CK1649,AST464,ALT114,ESR75,Hb10.3。ANA陰性。筋生検:筋線維萎縮。",
+      "expected_id": "D106",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "S48": "present",
+        "S25": "present",
+        "S06": "present",
+        "S07": "severe",
+        "E12": "maculopapular_rash",
+        "L17": "very_high",
+        "L11": "very_high",
+        "L28": "elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "L18": "negative"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R169",
+      "source": "PMC11082759 Rheumatol Adv Pract 2024",
+      "source_summary": "64F。COVID-19ワクチン3回目後にheliotrope疹+顔面浮腫+V-sign+Gottron丘疹。2週間の間欠的発熱(38.4°C)+倦怠感+体重減少。CK369,ESR58,CRP1.7,ferritin484。ANA陰性。抗MDA5強陽性。CT:びまん性GGO+間質性肺疾患。",
+      "expected_id": "D106",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "S17": "present",
+        "E12": "maculopapular_rash",
+        "E20": "present",
+        "L17": "elevated",
+        "L02": "mild_0.3_3",
+        "L28": "elevated",
+        "L15": "mild_elevated",
+        "L04": "bilateral_infiltrate",
+        "L18": "negative",
+        "T01": "1w_to_3w"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R170",
+      "source": "PMC9544567 Intern Med 2022",
+      "source_summary": "65F 高血圧。2ヶ月の全身筋痛+手背発疹→関節痛→拡大。Gottron sign+heliotrope疹。BP133/82,HR102,36.7°C,SpO2 97%。CK17495(!),AST406,ALT222,LDH965,ESR58,ANA≥1280,ferritin471。抗Mi-2抗体≥150。",
+      "expected_id": "D106",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "E05": "normal_over_96",
+        "S06": "present",
+        "S08": "present",
+        "E12": "maculopapular_rash",
+        "L17": "very_high",
+        "L11": "very_high",
+        "L16": "elevated",
+        "L28": "elevated",
+        "L15": "mild_elevated",
+        "L18": "positive",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
     }
   ],
   "total_cases": 110
