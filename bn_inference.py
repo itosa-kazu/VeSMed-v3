@@ -295,36 +295,43 @@ def _compute_marginal(cpt, parents, root_priors):
     return total if total > 0 else None
 
 
-def get_prior(disease_id, root_priors, risk_evidence):
-    """Get disease prior: flat base + risk factor relative adjustment.
+def get_prior(disease_id, root_priors, risk_evidence, n_evidence=1):
+    """Adaptive prevalence prior: prevalence^(1/n_evidence).
 
-    Clinical reasoning: all diseases start from the same baseline (BASE_PRIOR).
-    Risk factors provide a RELATIVE boost/penalty via ratio to marginal:
-
-        adjusted_prior = BASE × P(d|RF_observed) / P_marginal(d)
-
-    P_marginal = Σ_s P(d|RF=s) × P(RF=s)  (population-weighted average)
-
-    This preserves RF modulation (e.g. "female → SLE more likely") without
-    letting absolute prevalence dominate (e.g. "URI is 35% of fever").
+    With few findings, prevalence dominates (common things are common).
+    With many findings, prior flattens (evidence speaks for itself).
+    Zero additional hyperparameters — n_evidence IS the data.
     """
+    n = max(n_evidence, 1)
+
     rp = root_priors.get(disease_id)
     if rp is None:
-        return BASE_PRIOR
+        return BASE_PRIOR ** (1.0 / n)
+
+    # Scalar prevalence
     if isinstance(rp, (int, float)):
-        return BASE_PRIOR
+        raw = float(rp)
+        if raw <= 0:
+            return BASE_PRIOR ** (1.0 / n)
+        return max(min(raw ** (1.0 / n), 0.5), 1e-6)
+
     if not isinstance(rp, dict):
-        return BASE_PRIOR
+        return BASE_PRIOR ** (1.0 / n)
 
     parents = rp.get("parents", [])
     cpt = rp.get("cpt", {})
-    if not cpt or not parents:
-        return BASE_PRIOR
 
-    # Only use risk factor parents (R-prefixed), skip disease parents (D-prefixed)
+    if not cpt or not parents:
+        return BASE_PRIOR ** (1.0 / n)
+
+    # Only use risk factor parents (R-prefixed), skip disease parents
     rf_parents = [p for p in parents if p.startswith("R")]
     if not rf_parents:
-        return BASE_PRIOR
+        # Has parents but none are RF — compute marginal prevalence
+        marginal = _compute_marginal(cpt, parents, root_priors)
+        if marginal and marginal > 0:
+            return max(min(marginal ** (1.0 / n), 0.5), 1e-6)
+        return BASE_PRIOR ** (1.0 / n)
 
     # Build observed state for each RF parent
     obs_parts = []
@@ -332,7 +339,6 @@ def get_prior(disease_id, root_priors, risk_evidence):
         if pid in risk_evidence:
             obs_parts.append(risk_evidence[pid])
         else:
-            # Unobserved: use most common state
             dist_info = root_priors.get(pid)
             if isinstance(dist_info, dict) and "distribution" in dist_info:
                 dist = dist_info["distribution"]
@@ -344,7 +350,6 @@ def get_prior(disease_id, root_priors, risk_evidence):
     if len(rf_parents) < len(parents):
         full_obs = []
         rf_idx = 0
-        full_parents = parents
         for pid in parents:
             if pid.startswith("R"):
                 full_obs.append(obs_parts[rf_idx])
@@ -352,25 +357,17 @@ def get_prior(disease_id, root_priors, risk_evidence):
             else:
                 full_obs.append("no")
         obs_parts = full_obs
+        full_parents = parents
     else:
         full_parents = rf_parents
 
-    # P(d | RF=observed)
+    # P(d | RF=observed) — the conditional prevalence
     p_observed = _lookup_cpt(cpt, full_parents, obs_parts)
     if p_observed is None:
-        return BASE_PRIOR
+        return BASE_PRIOR ** (1.0 / n)
 
-    # P_marginal(d) — population-weighted average
-    p_marginal = _compute_marginal(cpt, full_parents, root_priors)
-    if p_marginal is None or p_marginal <= 0:
-        return BASE_PRIOR
-
-    # Relative adjustment: BASE × (observed / marginal)
-    ratio = p_observed / p_marginal
-    adjusted = BASE_PRIOR * ratio
-
-    # Clamp to reasonable range
-    return max(min(adjusted, 0.5), 1e-6)
+    # Adaptive compression
+    return max(min(p_observed ** (1.0 / n), 0.5), 1e-6)
 
 
 def resolve_state(obs_state, states):
@@ -419,7 +416,8 @@ def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
         if d == "M01":
             continue
 
-        prior = get_prior(d, root_priors, risk)
+        n_ev = len(evidence)
+        prior = get_prior(d, root_priors, risk, n_evidence=n_ev)
         if prior <= 0:
             prior = 1e-10
         log_post = math.log(prior)
@@ -685,7 +683,7 @@ def main():
         disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
         disc_power = IDF_DISC_POWER
         cf_alpha = CF_COVERAGE_ALPHA
-        mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha})"
+        mode_label = f"ADAPTIVE_PREV+IDF={disc_power}+CF={cf_alpha}"
 
     cases = case_data["cases"]
     if args.case:
