@@ -4039,6 +4039,18 @@
       ],
       "severity": "high",
       "note": "HBV急性感染+慢性キャリア急性増悪(再活性化含む)。発熱+黄疸+肝酵素著増。劇症化リスクあり"
+    },
+    {
+      "id": "D109",
+      "name": "cryptococcosis",
+      "name_ja": "クリプトコッカス症（髄膜炎/肺）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "免疫不全(HIV CD4<100,臓器移植,ステロイド)で好発。髄膜炎型(70-80%):頭痛+発熱+意識障害。肺型:咳嗽+胸部異常影。墨汁染色/CrAg陽性で確定"
     }
   ]
 }

@@ -4260,6 +4260,36 @@
         "R01": "18_39",
         "R02": "male"
       }
+    },
+    {
+      "id": "R175",
+      "source": "PMC11266633 Clin Case Rep 2024",
+      "source_summary": "67M HIV新規診断(CD4<50)。1.5ヶ月の呼吸困難+湿性咳嗽+食欲不振→15日前から発熱+体重減少。38.8°C,BP90/60,HR98,RR32,SpO2 76%,GCS13。口腔カンジダ。WBC10200(好中球95%),ESR63,CRP95,LDH831。髄液:細胞450(リンパ球優位),蛋白343,墨汁染色陽性。胸部CT:GGO+空洞性結節。",
+      "expected_id": "D109",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E16": "obtunded",
+        "S05": "severe",
+        "S01": "productive",
+        "S07": "severe",
+        "S17": "present",
+        "S46": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L16": "elevated",
+        "L28": "elevated",
+        "L45": "tb_fungal_pattern",
+        "L04": "bilateral_infiltrate",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R25": "yes"
+      },
+      "notes": "HIV+クリプト髄膜炎+肺型合併。呼吸器重症所見を減らし髄膜炎中心に"
     }
   ],
   "total_cases": 110
