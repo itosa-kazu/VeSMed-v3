@@ -4269,9 +4269,13 @@
       "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
         "E16": "obtunded",
-        "S05": "severe",
         "S01": "productive",
+        "S04": "at_rest",
         "S07": "severe",
         "S17": "present",
         "S46": "present",
@@ -4279,17 +4283,18 @@
         "L02": "high_over_10",
         "L16": "elevated",
         "L28": "elevated",
-        "L45": "tb_fungal_pattern",
         "L04": "bilateral_infiltrate",
+        "L45": "tb_fungal_pattern",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "M02": "shock"
       },
       "risk_factors": {
         "R01": "65_plus",
         "R02": "male",
         "R25": "yes"
       },
-      "notes": "HIV+クリプト髄膜炎+肺型合併。呼吸器重症所見を減らし髄膜炎中心に"
+      "notes": "論文の全所見を忠実に反映。呼吸器+髄膜炎の両方の所見あり"
     }
   ],
   "total_cases": 110
