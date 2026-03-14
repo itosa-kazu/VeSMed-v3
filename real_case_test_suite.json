@@ -4213,6 +4213,53 @@
         "R01": "18_39",
         "R02": "female"
       }
+    },
+    {
+      "id": "R173",
+      "source": "PMC10257541 Cureus 2023",
+      "source_summary": "24F. 10日前から嘔気嘔吐+食欲不振+倦怠感+筋肉痛→発熱+悪寒+黄疸+濃色尿。VS正常。強膜黄染+全身黄疸。AST2600,ALT3590,T-Bil15.8,INR1.51。HAV IgM(+),HBsAg(+),IgM-HBc(+)。HAV+HBV同時感染。",
+      "expected_id": "D108",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S46": "present",
+        "S07": "severe",
+        "S06": "present",
+        "S09": "present",
+        "E18": "present",
+        "L11": "very_high",
+        "L39": "HBV",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R174",
+      "source": "PMC4659086集計データベース(n=177)",
+      "source_summary": "典型HBV急性: 36M。倦怠感+黄疸+消化器症状+発熱。ALT1253,AST851,T-Bil177μmol/L。HBsAg(+)。文献集計の平均像に基づくシミュレーション案例。",
+      "expected_id": "D108",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S07": "severe",
+        "S46": "present",
+        "S13": "present",
+        "E18": "present",
+        "E34": "present",
+        "L11": "very_high",
+        "L01": "normal_4000_10000",
+        "L39": "HBV",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
     }
   ],
   "total_cases": 110

@@ -4027,6 +4027,18 @@
       ],
       "severity": "critical",
       "note": "HLH-2004基準: 発熱+脾腫+血球減少+高TG/低fibrinogen+高ferritin+高sIL-2R+NK活性低下+骨髄血球貪食"
+    },
+    {
+      "id": "D108",
+      "name": "acute_hepatitis_B",
+      "name_ja": "B型肝炎（急性/慢性増悪）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "HBV急性感染+慢性キャリア急性増悪(再活性化含む)。発熱+黄疸+肝酵素著増。劇症化リスクあり"
     }
   ]
 }
