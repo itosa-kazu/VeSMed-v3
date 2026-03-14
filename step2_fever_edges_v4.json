@@ -15956,6 +15956,90 @@
       "from_name": "pertussis",
       "to_name": "onset_speed",
       "reason": "百日咳: カタル期から徐々に発症"
+    },
+    {
+      "from": "D105",
+      "to": "E01",
+      "from_name": "parvovirus_B19",
+      "to_name": "temperature",
+      "reason": "パルボB19: 軽度〜中等度発熱(50-70%)"
+    },
+    {
+      "from": "D105",
+      "to": "S08",
+      "from_name": "parvovirus_B19",
+      "to_name": "arthralgia",
+      "reason": "パルボB19成人: 関節痛(60-80%)、対称性小関節"
+    },
+    {
+      "from": "D105",
+      "to": "E20",
+      "from_name": "parvovirus_B19",
+      "to_name": "butterfly_rash",
+      "reason": "パルボB19: 蝶形紅斑/slapped cheek(成人30-50%)"
+    },
+    {
+      "from": "D105",
+      "to": "E12",
+      "from_name": "parvovirus_B19",
+      "to_name": "skin_exam",
+      "reason": "パルボB19: レース状皮疹(reticular rash)(30-50%)"
+    },
+    {
+      "from": "D105",
+      "to": "S07",
+      "from_name": "parvovirus_B19",
+      "to_name": "fatigue",
+      "reason": "パルボB19: 倦怠感(50-70%)"
+    },
+    {
+      "from": "D105",
+      "to": "S05",
+      "from_name": "parvovirus_B19",
+      "to_name": "headache",
+      "reason": "パルボB19: 頭痛(30-50%)"
+    },
+    {
+      "from": "D105",
+      "to": "S06",
+      "from_name": "parvovirus_B19",
+      "to_name": "myalgia",
+      "reason": "パルボB19: 筋肉痛(30-50%)"
+    },
+    {
+      "from": "D105",
+      "to": "L01",
+      "from_name": "parvovirus_B19",
+      "to_name": "WBC",
+      "reason": "パルボB19: 白血球正常〜軽度低下"
+    },
+    {
+      "from": "D105",
+      "to": "L02",
+      "from_name": "parvovirus_B19",
+      "to_name": "CRP",
+      "reason": "パルボB19: CRP軽度上昇(通常<3)"
+    },
+    {
+      "from": "D105",
+      "to": "T01",
+      "from_name": "parvovirus_B19",
+      "to_name": "fever_duration",
+      "reason": "パルボB19: 発熱は3日〜1週程度"
+    },
+    {
+      "from": "D105",
+      "to": "L18",
+      "from_name": "parvovirus_B19",
+      "to_name": "ANA",
+      "reason": "パルボB19: ANA一過性陽性あり(SLE mimicker)"
+    },
+    {
+      "from": "D105",
+      "to": "L14",
+      "from_name": "parvovirus_B19",
+      "to_name": "peripheral_blood_smear",
+      "reason": "パルボB19: 貧血(aplastic crisis)、網状赤血球減少"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
