@@ -3370,6 +3370,273 @@
         "R01": "40_64",
         "R02": "female"
       }
+    },
+    {
+      "id": "R143",
+      "source": "IDCases 2020",
+      "pmcid": "PMC7093741",
+      "vignette": "32F 歯性膿瘍から発症。嚥下痛+左顎下浮腫+開口障害+上気道呼吸困難。無熱、SpO2 97%。WBC 14760, CRP 33.36mg/dL。CT:口腔→前縦隔まで蜂窩織炎+膿瘍+左内頸静脈血栓。培養S.anginosus",
+      "final_diagnosis": "深頸部感染症（不完全型Lemierre症候群）",
+      "expected_id": "D34",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "S04": "at_rest",
+        "S24": "present",
+        "S25": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E01": "under_37.5",
+        "E05": "normal_over_96",
+        "E16": "normal",
+        "E23": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L09": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R144",
+      "source": "BMJ Case Reports 2019",
+      "pmcid": "PMC6536180",
+      "vignette": "66M 3ヶ月の膿性咳嗽+右胸膜性胸痛+起座呼吸+微熱+15kg体重減少。元喫煙者(50pack-year)+歯周感染。38.2℃,HR112。右肺crackles。WBC 19700,CRP 33mg/dL。CXR:右胸水。CT:巨大空洞性病変+air-fluid level。培養S.constellatus",
+      "final_diagnosis": "肺膿瘍（巨大）",
+      "expected_id": "D35",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S04": "at_rest",
+        "S07": "severe",
+        "S17": "present",
+        "S21": "pleuritic",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E07": "crackles",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "pleural_effusion",
+        "L09": "negative",
+        "L14": "left_shift",
+        "L35": "cavity"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R03": "former",
+        "R37": "yes"
+      }
+    },
+    {
+      "id": "R145",
+      "source": "SAGE Open Med Case Rep 2022",
+      "pmcid": "PMC8855472",
+      "vignette": "26M IVDU(ヘロイン)+HIV/HCV新規診断。びまん性腹痛+呼吸困難+咳嗽。38.9℃,HR105-120,RR18-30,SpO2 92-98%。肺crackles。WBC 7600,Na132。胸水pH6.84,LDH13740→膿胸。CT:多巣性肺炎+左大量胸水。培養MRSA",
+      "final_diagnosis": "MRSA膿胸（両側）",
+      "expected_id": "D36",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S04": "at_rest",
+        "S12": "diffuse",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "L01": "normal_4000_10000",
+        "L04": "pleural_effusion",
+        "L09": "negative",
+        "L11": "mild_elevated",
+        "L35": "pleural_effusion",
+        "L44": "hyponatremia"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R09": "yes",
+        "R25": "yes"
+      }
+    },
+    {
+      "id": "R146",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9733662",
+      "vignette": "44M 免疫正常。痔核切除術後3日目に発熱+悪寒+頻脈。12日目に重度肛門痛+膿性排液で再診。WBC 13600。骨盤CT:右前方+左外側に肛門周囲膿瘍。排膿10cc",
+      "final_diagnosis": "肛門周囲膿瘍（術後）",
+      "expected_id": "D39",
+      "in_scope": true,
+      "evidence": {
+        "S09": "present",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "E02": "100_120",
+        "E12": "localized_erythema_warmth_swelling",
+        "L01": "high_10000_20000",
+        "L31": "abscess"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R21": "yes"
+      }
+    },
+    {
+      "id": "R147",
+      "source": "Case Rep Infect Dis 2021",
+      "pmcid": "PMC8052168",
+      "vignette": "8F AML維持化学療法9日後に発熱38.7℃+悪寒戦慄+toxic appearance。PICC留置69日。BP 88/48(低血圧),HR108,RR24。WBC<100(著明白血球減少)。CRP 3.58mg/dL。末梢+PICC血培: Brevibacterium casei陽性",
+      "final_diagnosis": "カテーテル関連血流感染症（PICC）",
+      "expected_id": "D40",
+      "in_scope": true,
+      "evidence": {
+        "S09": "present",
+        "T02": "sudden_hours",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E04": "tachypnea_20_30",
+        "L01": "low_under_4000",
+        "L02": "moderate_3_10",
+        "L09": "gram_positive"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R05": "yes",
+        "R22": "yes",
+        "R23": "yes",
+        "R40": "yes"
+      },
+      "notes": "小児(8歳)。R01は18_39で代用。AML化学療法後の著明好中球減少"
+    },
+    {
+      "id": "R148",
+      "source": "Int J Surg Case Rep 2022",
+      "pmcid": "PMC9108462",
+      "vignette": "73F 腰椎TLIF術後2週で創部自然離開+膿性排液。DM+高血圧。WBC 13200(好中球84%),CRP 172.4mg/L,ESR 41,PCT 0.055。培養MSSE",
+      "final_diagnosis": "手術部位感染（脊椎術後SSI）",
+      "expected_id": "D41",
+      "in_scope": true,
+      "evidence": {
+        "S22": "present",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "E12": "localized_erythema_warmth_swelling",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L03": "low_under_0.25",
+        "L28": "elevated"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R04": "yes",
+        "R07": "yes",
+        "R21": "yes"
+      }
+    },
+    {
+      "id": "R149",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9045790",
+      "vignette": "83M DM+前立腺癌骨転移。1週間の発熱+倦怠感+意識変容+排尿時痛+血尿。38.7℃,HR79,BP119/72,RR18,SpO2 99%。悪液質。WBC 2530(低値),Plt 106K。尿WBC13/hpf+尿培養P.mendocina>10万CFU/mL。血培陰性",
+      "final_diagnosis": "複雑性尿路感染症（P.mendocina）",
+      "expected_id": "D42",
+      "in_scope": true,
+      "evidence": {
+        "S07": "mild",
+        "S10": "present",
+        "S33": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E04": "normal_under_20",
+        "E05": "normal_over_96",
+        "E09": "soft_nontender",
+        "E11": "absent",
+        "E16": "confused",
+        "L01": "low_under_4000",
+        "L05": "pyuria_bacteriuria",
+        "L09": "negative",
+        "L14": "thrombocytopenia"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R04": "yes",
+        "R05": "yes",
+        "R40": "yes"
+      }
+    },
+    {
+      "id": "R150",
+      "source": "Eur J Case Rep Intern Med 2023",
+      "pmcid": "PMC10783462",
+      "vignette": "51M 4日間の右陰嚢痛+腫脹(鼠径部放散)+発熱38.8℃+嘔気嘔吐+排尿時痛+尿意切迫。複数性的パートナー。Prehn徴候陽性。WBC 13900, CRP 19.9mg/L。尿LE陽性+WBC>25/hpf。血培H.influenzae陽性(菌血症)",
+      "final_diagnosis": "精巣上体精巣炎（H.influenzae+菌血症）",
+      "expected_id": "D43",
+      "in_scope": true,
+      "evidence": {
+        "S10": "present",
+        "S11": "present",
+        "S13": "present",
+        "S38": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "E01": "38.0_39.0",
+        "L01": "high_10000_20000",
+        "L02": "mild_0.3_3",
+        "L05": "pyuria_bacteriuria",
+        "L09": "gram_negative"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R36": "yes"
+      }
+    },
+    {
+      "id": "R151",
+      "source": "BMJ Case Reports 2018",
+      "pmcid": "PMC6129064",
+      "vignette": "22F MMRワクチン接種済。2日間の急性片側顔面+頸部腫脹+発熱39.3℃+倦怠感。開口障害。左耳下腺+顎下腺著明腫大。頸部リンパ節腫大。WBC 3200(低値),CRP 33mg/L。ムンプスPCR陽性",
+      "final_diagnosis": "流行性耳下腺炎（片側性）",
+      "expected_id": "D47",
+      "in_scope": true,
+      "evidence": {
+        "S07": "mild",
+        "S24": "present",
+        "S40": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours",
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E05": "normal_over_96",
+        "E08": "normal",
+        "E13": "cervical",
+        "E23": "present",
+        "E24": "unilateral",
+        "L01": "low_under_4000",
+        "L02": "moderate_3_10",
+        "L09": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R43": "vaccinated"
+      }
     }
   ],
   "total_cases": 110
