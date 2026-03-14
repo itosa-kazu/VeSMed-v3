@@ -215,6 +215,61 @@ def compute_idf_disc(step2, noisy_or, n_diseases=104):
     return disc
 
 
+def compute_mi_weights(noisy_or, n_diseases=104):
+    """Compute mutual information MI(v; D) for each variable.
+
+    MI measures how much observing variable v reduces uncertainty about disease D.
+    Higher MI = more diagnostically valuable = higher weight.
+    Zero hyperparameters — fully derived from CPTs.
+    """
+    mi = {}
+    p_d = 1.0 / n_diseases  # uniform disease weight
+
+    for var_id, params in noisy_or.items():
+        states = params["states"]
+        leak = params["leak"]
+        pe = params["parent_effects"]
+        n_linked = len(pe)
+        n_unlinked = n_diseases - n_linked
+
+        # P(v=s) marginal
+        p_marginal = {}
+        for s in states:
+            total = 0.0
+            for d_cpt in pe.values():
+                total += d_cpt.get(s, leak.get(s, 1.0 / len(states)))
+            total += n_unlinked * leak.get(s, 1.0 / len(states))
+            p_marginal[s] = max(total / n_diseases, 1e-10)
+
+        # MI = Σ_d P(d) × Σ_s P(v=s|d) × log[P(v=s|d) / P(v=s)]
+        mi_val = 0.0
+
+        # Linked diseases
+        for d_cpt in pe.values():
+            for s in states:
+                p_vs_d = d_cpt.get(s, leak.get(s, 1.0 / len(states)))
+                p_vs = p_marginal[s]
+                if p_vs_d > 1e-10 and p_vs > 1e-10:
+                    mi_val += p_d * p_vs_d * math.log(p_vs_d / p_vs)
+
+        # Unlinked diseases (use leak as P(v|d))
+        for s in states:
+            p_vs_d = leak.get(s, 1.0 / len(states))
+            p_vs = p_marginal[s]
+            if p_vs_d > 1e-10 and p_vs > 1e-10:
+                mi_val += (n_unlinked * p_d) * p_vs_d * math.log(p_vs_d / p_vs)
+
+        mi[var_id] = max(mi_val, 0.0)
+
+    # Normalize to [0, 1]
+    max_mi = max(mi.values()) if mi else 1.0
+    if max_mi > 0:
+        for var_id in mi:
+            mi[var_id] /= max_mi
+
+    return mi
+
+
 def _cpt_val_to_prior(val):
     """Convert a CPT value to a scalar prior.
 
@@ -398,7 +453,7 @@ def resolve_state(obs_state, states):
 
 
 def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
-          disc=None, disc_power=0.0, cf_alpha=0.0):
+          disc=None, disc_power=0.0, cf_alpha=0.0, mi_weights=None):
     """
     Compute P(disease | evidence) for all diseases.
 
@@ -454,8 +509,11 @@ def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
 
             log_lr = math.log(p_d) - math.log(p_leak)
 
-            # 方向C: IDF鑑別力係数
-            if disc and disc_power > 0:
+            # Variable weighting (MI or IDF)
+            if mi_weights:
+                w = mi_weights.get(var_id, 1.0)
+                log_lr *= w
+            elif disc and disc_power > 0:
                 w = disc.get(var_id, 1.0) ** disc_power
                 log_lr *= w
 
@@ -608,12 +666,14 @@ def main():
         disc = None
         disc_power = 0.0
         cf_alpha = 0.0
+        mi_weights = None
         mode_label = "CLASSIC"
     else:
-        disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
-        disc_power = IDF_DISC_POWER
-        cf_alpha = CF_COVERAGE_ALPHA
-        mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha})"
+        disc = None
+        disc_power = 0.0
+        cf_alpha = 0.0
+        mi_weights = compute_mi_weights(noisy_or, n_diseases=len(diseases))
+        mode_label = "MI_WEIGHT (zero param)"
 
     cases = case_data["cases"]
     if args.case:
@@ -633,7 +693,8 @@ def main():
         risk = case.get("risk_factors", {})
 
         ranked = infer(ev, risk, diseases, disease_children, noisy_or, root_priors,
-                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha)
+                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
+                       mi_weights=mi_weights if not args.classic else None)
         h = entropy(ranked)
 
         rank = None
