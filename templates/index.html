@@ -414,13 +414,44 @@ header p {
 .search-input::placeholder { color: var(--text2); }
 
 .var-row.hidden { display: none; }
+
+.rec-expected {
+  font-size: 0.72em;
+  color: var(--green);
+  margin-top: 2px;
+}
+.rec-states-detail {
+  display: none;
+  padding: 4px 16px 8px 50px;
+  border-bottom: 1px solid var(--border);
+}
+.rec-states-detail.show { display: block; }
+.rec-state-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+  font-size: 0.75em;
+  color: var(--text2);
+}
+.rec-state-row .s-name { min-width: 120px; }
+.rec-state-row .s-prob { min-width: 50px; text-align: right; }
+.rec-state-row .s-h { min-width: 60px; text-align: right; }
+.rec-state-row.best { color: var(--green); font-weight: 600; }
+.rec-toggle {
+  cursor: pointer;
+  font-size: 0.7em;
+  color: var(--text2);
+  margin-left: 4px;
+}
+.rec-toggle:hover { color: var(--text); }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
     <h1>VeSMed V3</h1>
-    <p>発熱鑑別診断 ベイジアンネットワーク — 102疾患 / 1021辺</p>
+    <p>発熱鑑別診断 ベイジアンネットワーク — 104疾患 / 1600辺</p>
   </header>
 
   <div class="layout">
@@ -451,7 +482,7 @@ header p {
               {% for s in v.states %}
               <button class="state-btn"
                       data-var="{{ v.id }}" data-state="{{ s }}" data-cat="{{ group.id }}"
-                      onclick="selectState(this)">{{ s }}</button>
+                      onclick="selectState(this)"><span class="s-ja"></span></button>
               {% endfor %}
             </div>
           </div>
@@ -512,6 +543,78 @@ header p {
 </div>
 
 <script>
+// State name Japanese mapping
+const STATE_JA = {
+  // Common
+  absent:"なし", present:"あり", normal:"正常", yes:"あり", no:"なし",
+  mild:"軽度", moderate:"中等度", severe:"重度", elevated:"上昇",
+  negative:"陰性", positive:"陽性", not_done:"未実施", unknown:"不明",
+  // Temperature
+  "under_37.5":"<37.5°C", "37.5_38.0":"37.5-38°C", "38.0_39.0":"38-39°C",
+  "39.0_40.0":"39-40°C", "over_40.0":">40°C",
+  // Heart rate
+  under_100:"<100", "100_120":"100-120", over_120:">120",
+  // Blood pressure
+  normal_over_90:">90正常", hypotension_under_90:"<90低血圧",
+  // Respiratory
+  normal_under_20:"<20正常", tachypnea_20_30:"20-30頻呼吸", severe_over_30:">30重度",
+  // SpO2
+  normal_over_96:">96%正常", mild_hypoxia_93_96:"93-96%軽度低酸素",
+  severe_hypoxia_under_93:"<93%重度低酸素",
+  // Onset/Duration
+  sudden_hours:"急性(時間)", gradual_days:"亜急性(日)",
+  under_3d:"<3日", "3d_to_1w":"3日~1週", "1w_to_3w":"1~3週", over_3w:">3週",
+  // Fever pattern
+  continuous:"持続熱", intermittent:"間欠熱", remittent:"弛張熱", undulant:"波状熱",
+  // Cough
+  dry:"乾性", productive:"湿性",
+  // Nasal
+  watery:"水様", purulent:"膿性",
+  // Dyspnea
+  on_exertion:"労作時", at_rest:"安静時",
+  // WBC
+  low_under_4000:"<4000低値", normal_4000_10000:"4000-10000正常",
+  high_10000_20000:"10000-20000高値", very_high_over_20000:">20000著高",
+  // CRP
+  mild_0_3_3:"0.3-3軽度", "mild_0.3_3":"0.3-3軽度",
+  moderate_3_10:"3-10中等度", high_over_10:">10高値",
+  // Ferritin
+  mild_elevated:"軽度上昇", very_high_over_1000:">1000著高",
+  extreme_over_10000:">10000極高",
+  // Skin
+  maculopapular_rash:"斑丘疹", petechiae_purpura:"点状出血/紫斑",
+  vesicular:"水疱性", erythroderma:"紅皮症", diffuse_erythema:"びまん性紅斑",
+  // Lymph
+  localized:"限局性", generalized:"全身性",
+  // Consciousness
+  alert:"清明", confused:"混迷", obtunded:"傾眠", coma:"昏睡",
+  // Sex
+  male:"男性", female:"女性",
+  // Age
+  "0_17":"0-17歳", "18_39":"18-39歳", "40_64":"40-64歳", "65_plus":"65歳以上",
+  // Electrolytes
+  hyponatremia:"低Na血症", hyperkalemia:"高K血症", other:"その他",
+  // Procalcitonin
+  low_under_0_25:"<0.25低値", moderate_0_25_2:"0.25-2中等度",
+  high_2_10:"2-10高値", very_high_over_10:">10著高",
+  // Blood culture
+  gram_positive:"グラム陽性", gram_negative:"グラム陰性", fungal:"真菌",
+  polymicrobial:"複数菌", not_done:"未実施",
+  // CSF
+  viral_pattern:"ウイルスパターン", bacterial_pattern:"細菌パターン",
+  tb_fungal_pattern:"結核/真菌パターン",
+  // Vaccination
+  vaccinated:"接種済", unvaccinated:"未接種",
+  // Travel/contact
+  tropical_endemic:"熱帯/流行地", developed:"先進国", domestic:"国内",
+  // Thyroid
+  hyperthyroid:"甲状腺機能亢進", hypothyroid:"甲状腺機能低下",
+};
+
+function stateJa(s) {
+  return STATE_JA[s] || s;
+}
+
 const selected = {};  // var_id -> state
 const RISK_VARS = new Set();
 document.querySelectorAll('#cat-risk_factor .state-btn').forEach(btn => {
@@ -566,7 +669,7 @@ function updateSelectedSummary() {
   }
   div.style.display = 'block';
   div.innerHTML = entries.map(([varId, state]) => {
-    return `<span class="selected-tag" onclick="removeSelection('${varId}')">${varId}=${state} <span class="x">×</span></span>`;
+    return `<span class="selected-tag" onclick="removeSelection('${varId}')">${varId}=${stateJa(state)} <span class="x">×</span></span>`;
   }).join('');
 }
 
@@ -688,19 +791,32 @@ async function runNextBest() {
     const CAT_CSS = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'};
 
     const maxIG = recs[0].ig;
-    const html = recs.filter(r => r.ig > 0.01).map((r, i) => {
+    const filtered = recs.filter(r => r.ig > 0.01);
+    const html = filtered.map((r, i) => {
       const catLabel = CAT_LABELS[r.category] || r.category;
       const catCss = CAT_CSS[r.category] || '';
-      return `<div class="rec-row">
+      const bestJa = stateJa(r.best_state);
+      // Per-state detail rows
+      const details = (r.state_details || []).map(sd => {
+        const isBest = sd.state === r.best_state;
+        return `<div class="rec-state-row${isBest ? ' best' : ''}">
+          <span class="s-name">${isBest ? '▶ ' : '  '}${stateJa(sd.state)}</span>
+          <span class="s-prob">P=${sd.prob}%</span>
+          <span class="s-h">H→${sd.h_after}</span>
+        </div>`;
+      }).join('');
+      return `<div class="rec-row" onclick="toggleDetail(${i})">
         <span class="rec-rank">${i + 1}</span>
         <div class="rec-info">
-          <div class="rec-name">${r.name_ja}</div>
+          <div class="rec-name">${r.name_ja} <span class="rec-toggle">▶</span></div>
           <div class="rec-id">${r.id} ${r.name}</div>
+          <div class="rec-expected">期待所見: ${bestJa} → H=${r.best_state_h}</div>
         </div>
         <span class="rec-cat rec-cat-${catCss}">${catLabel}</span>
         <div class="rec-ig">IG ${r.ig.toFixed(2)}</div>
         <div class="rec-entropy">H ${r.h_now} → ${r.expected_h}</div>
-      </div>`;
+      </div>
+      <div class="rec-states-detail" id="rec-detail-${i}">${details}</div>`;
     }).join('');
 
     document.getElementById('recommendList').innerHTML = html;
@@ -713,6 +829,11 @@ async function runNextBest() {
     btn.classList.remove('loading');
     btn.textContent = '推奨検査';
   }
+}
+
+function toggleDetail(idx) {
+  const el = document.getElementById('rec-detail-' + idx);
+  if (el) el.classList.toggle('show');
 }
 
 function toggleCategory(catId) {
@@ -742,6 +863,13 @@ document.getElementById('searchInput').addEventListener('input', function() {
 
 // Collapse risk_factor by default
 document.getElementById('cat-risk_factor')?.classList.add('collapsed');
+
+// Apply Japanese state labels
+document.querySelectorAll('.state-btn').forEach(btn => {
+  const s = btn.dataset.state;
+  const ja = btn.querySelector('.s-ja');
+  if (ja) ja.textContent = stateJa(s);
+});
 
 // Keyboard shortcut: Enter to run inference
 document.addEventListener('keydown', e => {

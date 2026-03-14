@@ -24,8 +24,8 @@ variables, diseases, disease_children, noisy_or, root_priors = build_model(step1
 
 # IDF discriminative coefficients for V3.1 enhanced mode
 idf_disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
-IDF_DISC_POWER = 0.7
-CF_COVERAGE_ALPHA = 1.0
+IDF_DISC_POWER = 0.5
+CF_COVERAGE_ALPHA = 0.3
 
 # Build lookup dicts
 var_lookup = {v["id"]: v for v in step1["variables"]}
@@ -115,6 +115,14 @@ def api_next_best_test():
     for rec in recommendations:
         vid = rec["var_id"]
         v = var_lookup.get(vid, {})
+        # Per-state details for expected findings
+        state_details = []
+        for sd in rec.get("state_details", []):
+            state_details.append({
+                "state": sd["state"],
+                "prob": round(sd["prob"] * 100, 1),
+                "h_after": round(sd["h_after"], 2),
+            })
         results.append({
             "id": vid,
             "name": v.get("name", vid),
@@ -123,6 +131,9 @@ def api_next_best_test():
             "ig": round(rec["ig"], 3),
             "h_now": round(rec["h_now"], 2),
             "expected_h": round(rec["expected_h"], 2),
+            "best_state": rec.get("best_state", ""),
+            "best_state_h": round(rec.get("best_state_h", 0), 2),
+            "state_details": state_details,
         })
 
     return jsonify({"recommendations": results})

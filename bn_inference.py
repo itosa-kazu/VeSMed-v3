@@ -557,13 +557,14 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
             for s in states:
                 marginal[s] /= total_m
 
-        # Compute expected entropy after observing v
+        # Compute expected entropy after observing v (per-state tracking)
         expected_h = 0.0
+        state_details = []
         for s in states:
             p_s = marginal[s]
             if p_s < 1e-8:
+                state_details.append({"state": s, "prob": p_s, "h_after": h_now})
                 continue
-            # Hypothetical evidence with v=s added
             ev_hypo = dict(evidence)
             ev_hypo[var_id] = s
             ranked_hypo = infer(ev_hypo, risk, diseases, disease_children,
@@ -571,14 +572,20 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
                                 disc_power=disc_power, cf_alpha=cf_alpha)
             h_hypo = entropy(ranked_hypo)
             expected_h += p_s * h_hypo
+            state_details.append({"state": s, "prob": p_s, "h_after": h_hypo})
 
         ig = h_now - expected_h
+        # Best state = maximum entropy reduction
+        best = min(state_details, key=lambda x: x["h_after"])
         results.append({
             "var_id": var_id,
             "ig": ig,
             "h_now": h_now,
             "expected_h": expected_h,
             "marginal": marginal,
+            "best_state": best["state"],
+            "best_state_h": best["h_after"],
+            "state_details": state_details,
         })
 
     results.sort(key=lambda x: -x["ig"])
