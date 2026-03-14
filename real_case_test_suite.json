@@ -2486,7 +2486,8 @@
         "S05": "mild",
         "S06": "present",
         "S04": "on_exertion",
-        "T01": "1w_to_3w"
+        "T01": "1w_to_3w",
+        "L06": "positive_A"
       },
       "risk_factors": {
         "R01": "40_64",

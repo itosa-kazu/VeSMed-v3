@@ -11668,6 +11668,26 @@
           "shock": 0.35
         }
       }
+    },
+    "L06": {
+      "description": "迅速インフルエンザ検査（感度60-70%、特異度98%）",
+      "states": [
+        "negative",
+        "positive_A",
+        "positive_B"
+      ],
+      "leak": {
+        "negative": 0.98,
+        "positive_A": 0.01,
+        "positive_B": 0.01
+      },
+      "parent_effects": {
+        "D02": {
+          "negative": 0.25,
+          "positive_A": 0.5,
+          "positive_B": 0.25
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
