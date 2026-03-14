@@ -215,6 +215,34 @@ def compute_idf_disc(step2, noisy_or, n_diseases=104):
     return disc
 
 
+def compute_pop_leak(noisy_or, n_diseases=104):
+    """Population-weighted leak: average CPT across all diseases.
+
+    For each variable v and state s:
+      pop_leak(v,s) = [Σ_{d linked} CPT(d,v,s) + N_unlinked × leak(v,s)] / N_total
+
+    This automatically handles non-specific variables: if many diseases
+    cause a finding, pop_leak is high → LR shrinks → IDF effect emerges naturally.
+    """
+    pop = {}
+    for var_id, params in noisy_or.items():
+        states = params["states"]
+        leak = params["leak"]
+        pe = params["parent_effects"]
+        n_linked = len(pe)
+        n_unlinked = n_diseases - n_linked
+
+        pl = {}
+        for s in states:
+            total = 0.0
+            for d_cpt in pe.values():
+                total += d_cpt.get(s, leak.get(s, 1.0 / len(states)))
+            total += n_unlinked * leak.get(s, 1.0 / len(states))
+            pl[s] = max(total / n_diseases, 1e-10)
+        pop[var_id] = pl
+    return pop
+
+
 def _cpt_val_to_prior(val):
     """Convert a CPT value to a scalar prior.
 
@@ -398,7 +426,7 @@ def resolve_state(obs_state, states):
 
 
 def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
-          disc=None, disc_power=0.0, cf_alpha=0.0):
+          disc=None, disc_power=0.0, cf_alpha=0.0, pop_leak_map=None):
     """
     Compute P(disease | evidence) for all diseases.
 
@@ -440,7 +468,10 @@ def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
             if resolved is None:
                 continue
 
-            p_leak = leak.get(resolved, 1.0 / len(states))
+            if pop_leak_map and var_id in pop_leak_map:
+                p_leak = pop_leak_map[var_id].get(resolved, 1.0 / len(states))
+            else:
+                p_leak = leak.get(resolved, 1.0 / len(states))
             if p_leak <= 0:
                 p_leak = 1e-10
 
@@ -608,12 +639,14 @@ def main():
         disc = None
         disc_power = 0.0
         cf_alpha = 0.0
+        pop_leak_map = None
         mode_label = "CLASSIC"
     else:
-        disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
-        disc_power = IDF_DISC_POWER
-        cf_alpha = CF_COVERAGE_ALPHA
-        mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha})"
+        disc = None
+        disc_power = 0.0
+        cf_alpha = 0.0
+        pop_leak_map = compute_pop_leak(noisy_or, n_diseases=len(diseases))
+        mode_label = "POP_LEAK (zero param)"
 
     cases = case_data["cases"]
     if args.case:
@@ -633,7 +666,8 @@ def main():
         risk = case.get("risk_factors", {})
 
         ranked = infer(ev, risk, diseases, disease_children, noisy_or, root_priors,
-                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha)
+                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
+                       pop_leak_map=pop_leak_map if not args.classic else None)
         h = entropy(ranked)
 
         rank = None
