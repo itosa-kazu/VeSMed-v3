@@ -4023,6 +4023,66 @@
         "R01": "65_plus",
         "R02": "female"
       }
+    },
+    {
+      "id": "R165",
+      "source": "PMC11273075 Cureus 2024 Case1",
+      "source_summary": "38F. 倦怠感+全身掻痒→5日後にPIP/MCP関節腫脹・疼痛+四肢発疹。無熱(36.5°C), BP114/70, HR71。AST65, ALT191。パルボB19 IgM>200, PCR203600。",
+      "expected_id": "D105",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S07": "mild",
+        "S08": "present",
+        "E21": "polyarticular",
+        "E12": "maculopapular_rash",
+        "L11": "mild_elevated",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R166",
+      "source": "PMC11273075 Cureus 2024 Case2",
+      "source_summary": "25F. 倦怠感+筋肉痛+微熱(37.2°C)→1週後に重度関節痛+両側PIP腫脹。BP110/65, HR72。パルボB19 IgM>200, PCR121200。",
+      "expected_id": "D105",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S07": "mild",
+        "S06": "present",
+        "S08": "present",
+        "E21": "polyarticular",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R167",
+      "source": "PMC11273075 Cureus 2024 Case3",
+      "source_summary": "61M. 2週間前から発熱+倦怠感+筋肉痛。その後下肢紅斑性発疹+PIP関節腫脹・疼痛。来院時36.8°C, BP120/78, HR76。パルボB19 IgM>200, PCR71510。",
+      "expected_id": "D105",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S07": "mild",
+        "S06": "present",
+        "S08": "present",
+        "E21": "polyarticular",
+        "E12": "maculopapular_rash",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
     }
   ],
   "total_cases": 110

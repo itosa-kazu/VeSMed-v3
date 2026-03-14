@@ -4780,6 +4780,11 @@
           "absent": 0.93,
           "monoarticular": 0.05,
           "polyarticular": 0.02
+        },
+        "D105": {
+          "absent": 0.45,
+          "monoarticular": 0.05,
+          "polyarticular": 0.5
         }
       }
     },
@@ -6859,6 +6864,11 @@
           "normal": 0.65,
           "mild_elevated": 0.3,
           "very_high": 0.05
+        },
+        "D105": {
+          "normal": 0.65,
+          "mild_elevated": 0.25,
+          "very_high": 0.1
         }
       }
     },
@@ -11444,6 +11454,10 @@
           "gradual_days": 0.2
         },
         "D56": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
+        },
+        "D105": {
           "sudden_hours": 0.1,
           "gradual_days": 0.9
         }
