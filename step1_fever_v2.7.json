@@ -3916,6 +3916,22 @@
           "DIC"
         ]
       }
+    },
+    {
+      "id": "L47",
+      "name": "lymph_node_biopsy",
+      "name_ja": "リンパ節生検",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "reactive",
+        "kikuchi_pattern",
+        "lymphoma",
+        "castleman",
+        "granuloma",
+        "other"
+      ],
+      "note": "組織学的パターン。reactive=反応性過形成、kikuchi=壊死性リンパ節炎パターン、lymphoma=悪性リンパ腫、castleman=キャッスルマン病、granuloma=肉芽腫(サルコイドーシス/結核等)"
     }
   ]
 }

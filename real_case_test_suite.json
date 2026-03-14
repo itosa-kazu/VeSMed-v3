@@ -1310,7 +1310,8 @@
         "E34": "present",
         "L01": "low_under_4000",
         "L02": "high_over_10",
-        "L18": "negative"
+        "L18": "negative",
+        "L47": "kikuchi_pattern"
       },
       "risk_factors": {
         "R01": "18_39",

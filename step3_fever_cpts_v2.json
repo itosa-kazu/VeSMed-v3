@@ -11688,6 +11688,83 @@
           "positive_B": 0.25
         }
       }
+    },
+    "L47": {
+      "description": "リンパ節生検の組織学的パターン",
+      "states": [
+        "not_done",
+        "reactive",
+        "kikuchi_pattern",
+        "lymphoma",
+        "castleman",
+        "granuloma",
+        "other"
+      ],
+      "leak": {
+        "not_done": 0.85,
+        "reactive": 0.1,
+        "kikuchi_pattern": 0.001,
+        "lymphoma": 0.002,
+        "castleman": 0.001,
+        "granuloma": 0.003,
+        "other": 0.043
+      },
+      "parent_effects": {
+        "D96": {
+          "not_done": 0.3,
+          "reactive": 0.02,
+          "kikuchi_pattern": 0.65,
+          "lymphoma": 0.001,
+          "castleman": 0.001,
+          "granuloma": 0.001,
+          "other": 0.027
+        },
+        "D67": {
+          "not_done": 0.15,
+          "reactive": 0.03,
+          "kikuchi_pattern": 0.001,
+          "lymphoma": 0.78,
+          "castleman": 0.01,
+          "granuloma": 0.001,
+          "other": 0.027
+        },
+        "D97": {
+          "not_done": 0.2,
+          "reactive": 0.03,
+          "kikuchi_pattern": 0.001,
+          "lymphoma": 0.01,
+          "castleman": 0.72,
+          "granuloma": 0.001,
+          "other": 0.038
+        },
+        "D62": {
+          "not_done": 0.25,
+          "reactive": 0.05,
+          "kikuchi_pattern": 0.001,
+          "lymphoma": 0.001,
+          "castleman": 0.001,
+          "granuloma": 0.68,
+          "other": 0.017
+        },
+        "D68": {
+          "not_done": 0.2,
+          "reactive": 0.05,
+          "kikuchi_pattern": 0.001,
+          "lymphoma": 0.05,
+          "castleman": 0.001,
+          "granuloma": 0.001,
+          "other": 0.697
+        },
+        "D18": {
+          "not_done": 0.5,
+          "reactive": 0.42,
+          "kikuchi_pattern": 0.01,
+          "lymphoma": 0.001,
+          "castleman": 0.001,
+          "granuloma": 0.001,
+          "other": 0.067
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

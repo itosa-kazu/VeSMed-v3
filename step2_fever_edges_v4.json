@@ -15788,6 +15788,48 @@
       "from_name": "thyroid storm",
       "to_name": "hemodynamic_compromise",
       "reason": "甲状腺クリーゼ: 高拍出性心不全→ショック(30-50%)"
+    },
+    {
+      "from": "D96",
+      "to": "L47",
+      "from_name": "Kikuchi disease",
+      "to_name": "lymph_node_biopsy",
+      "reason": "菊池病: リンパ節生検で壊死性リンパ節炎パターン(確定診断)"
+    },
+    {
+      "from": "D67",
+      "to": "L47",
+      "from_name": "malignant_lymphoma",
+      "to_name": "lymph_node_biopsy",
+      "reason": "悪性リンパ腫: リンパ節生検で確定診断"
+    },
+    {
+      "from": "D97",
+      "to": "L47",
+      "from_name": "Castleman_disease",
+      "to_name": "lymph_node_biopsy",
+      "reason": "キャッスルマン病: リンパ節生検で確定診断"
+    },
+    {
+      "from": "D62",
+      "to": "L47",
+      "from_name": "sarcoidosis",
+      "to_name": "lymph_node_biopsy",
+      "reason": "サルコイドーシス: 非乾酪性肉芽腫"
+    },
+    {
+      "from": "D68",
+      "to": "L47",
+      "from_name": "acute_leukemia",
+      "to_name": "lymph_node_biopsy",
+      "reason": "急性白血病: リンパ節浸潤"
+    },
+    {
+      "from": "D18",
+      "to": "L47",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "lymph_node_biopsy",
+      "reason": "伝染性単核球症: 反応性過形成パターン"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
