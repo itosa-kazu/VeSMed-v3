@@ -7115,6 +7115,12 @@
           "mild_elevated": 0.3,
           "very_high_over_1000": 0.4,
           "extreme_over_10000": 0.1
+        },
+        "D105": {
+          "normal": 0.7,
+          "mild_elevated": 0.25,
+          "very_high_over_1000": 0.04,
+          "extreme_over_10000": 0.01
         }
       }
     },
