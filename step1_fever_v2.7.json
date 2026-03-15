@@ -5537,6 +5537,66 @@
       ],
       "severity": "critical",
       "note": "Na+チャネル遮断→QRS幅延長→不整脈. 抗コリン作用→頻脈/口渇/瞳孔散大/尿閉. 痙攣. 重炭酸Na治療"
+    },
+    {
+      "id": "D212",
+      "name": "restrictive_cardiomyopathy",
+      "name_ja": "拘束型心筋症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "心室壁硬化→拡張障害→うっ血性心不全。アミロイドーシス/サルコイドーシス/ヘモクロマトーシス等が原因"
+    },
+    {
+      "id": "D213",
+      "name": "constrictive_pericarditis",
+      "name_ja": "収縮性心膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "心膜肥厚/石灰化→心室充満障害→右心不全優位。結核/手術後/放射線後。Kussmaul sign"
+    },
+    {
+      "id": "D214",
+      "name": "PAH",
+      "name_ja": "肺動脈性肺高血圧症(PAH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "肺動脈圧上昇→右心不全。特発性/CTD関連/先天性心疾患後。労作時呼吸困難+失神+胸痛"
+    },
+    {
+      "id": "D215",
+      "name": "acute_aortic_regurgitation",
+      "name_ja": "急性大動脈弁閉鎖不全症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "IE/大動脈解離/外傷→急性AR→急性左心不全→肺水腫。慢性ARと異なり代償なし→緊急手術"
+    },
+    {
+      "id": "D216",
+      "name": "acute_mitral_regurgitation",
+      "name_ja": "急性僧帽弁閉鎖不全症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "腱索断裂(IE/MIなど)→急性肺水腫→心原性ショック。緊急手術"
     }
   ]
 }

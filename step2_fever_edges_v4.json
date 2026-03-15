@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3269,
+  "total_edges": 3312,
   "edges": [
     {
       "from": "R01",
@@ -27380,6 +27380,307 @@
       "from_name": "listeria_meningitis",
       "to_name": "L52",
       "reason": "リステリア: D-dimer上昇(DIC合併)"
+    },
+    {
+      "from": "D212",
+      "to": "S04",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "S04",
+      "reason": "拘束型心筋症: 呼吸困難(80%+)"
+    },
+    {
+      "from": "D212",
+      "to": "E36",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "E36",
+      "reason": "拘束型心筋症: 浮腫(右心不全, 60-70%)"
+    },
+    {
+      "from": "D212",
+      "to": "L51",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "L51",
+      "reason": "拘束型心筋症: BNP上昇(心不全, 80%+)"
+    },
+    {
+      "from": "D212",
+      "to": "S07",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "S07",
+      "reason": "拘束型心筋症: 倦怠感(80%+)"
+    },
+    {
+      "from": "D212",
+      "to": "E02",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "E02",
+      "reason": "拘束型心筋症: 頻脈/不整脈(AF多い)"
+    },
+    {
+      "from": "D212",
+      "to": "L04",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "L04",
+      "reason": "拘束型心筋症: CXR(うっ血/胸水)"
+    },
+    {
+      "from": "D212",
+      "to": "T01",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "T01",
+      "reason": "拘束型心筋症: 慢性"
+    },
+    {
+      "from": "D212",
+      "to": "T02",
+      "from_name": "restrictive_cardiomyopathy",
+      "to_name": "T02",
+      "reason": "拘束型心筋症: 緩徐"
+    },
+    {
+      "from": "D213",
+      "to": "S04",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "S04",
+      "reason": "収縮性心膜炎: 呼吸困難(80%+)"
+    },
+    {
+      "from": "D213",
+      "to": "E36",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "E36",
+      "reason": "収縮性心膜炎: 浮腫(右心不全, 70-80%)"
+    },
+    {
+      "from": "D213",
+      "to": "S07",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "S07",
+      "reason": "収縮性心膜炎: 倦怠感(70-80%)"
+    },
+    {
+      "from": "D213",
+      "to": "L51",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L51",
+      "reason": "収縮性心膜炎: BNP上昇(心不全, 70%+)"
+    },
+    {
+      "from": "D213",
+      "to": "L04",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L04",
+      "reason": "収縮性心膜炎: CXR(心膜石灰化/胸水)"
+    },
+    {
+      "from": "D213",
+      "to": "L11",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L11",
+      "reason": "収縮性心膜炎: 肝酵素(うっ血肝, 30-40%)"
+    },
+    {
+      "from": "D213",
+      "to": "T01",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "T01",
+      "reason": "収縮性心膜炎: 慢性"
+    },
+    {
+      "from": "D213",
+      "to": "T02",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "T02",
+      "reason": "収縮性心膜炎: 緩徐"
+    },
+    {
+      "from": "D214",
+      "to": "S04",
+      "from_name": "PAH",
+      "to_name": "S04",
+      "reason": "PAH: 呼吸困難(労作時, 100%)"
+    },
+    {
+      "from": "D214",
+      "to": "E36",
+      "from_name": "PAH",
+      "to_name": "E36",
+      "reason": "PAH: 浮腫(右心不全, 40-50%)"
+    },
+    {
+      "from": "D214",
+      "to": "S21",
+      "from_name": "PAH",
+      "to_name": "S21",
+      "reason": "PAH: 胸痛(労作時, 30-40%)"
+    },
+    {
+      "from": "D214",
+      "to": "S07",
+      "from_name": "PAH",
+      "to_name": "S07",
+      "reason": "PAH: 倦怠感(70-80%)"
+    },
+    {
+      "from": "D214",
+      "to": "E02",
+      "from_name": "PAH",
+      "to_name": "E02",
+      "reason": "PAH: 頻脈(右心不全代償)"
+    },
+    {
+      "from": "D214",
+      "to": "L51",
+      "from_name": "PAH",
+      "to_name": "L51",
+      "reason": "PAH: BNP上昇(右心不全, 80%+)"
+    },
+    {
+      "from": "D214",
+      "to": "E05",
+      "from_name": "PAH",
+      "to_name": "E05",
+      "reason": "PAH: 低酸素(40-50%)"
+    },
+    {
+      "from": "D214",
+      "to": "T01",
+      "from_name": "PAH",
+      "to_name": "T01",
+      "reason": "PAH: 慢性"
+    },
+    {
+      "from": "D214",
+      "to": "T02",
+      "from_name": "PAH",
+      "to_name": "T02",
+      "reason": "PAH: 緩徐"
+    },
+    {
+      "from": "D215",
+      "to": "S04",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "S04",
+      "reason": "急性AR: 呼吸困難(肺水腫, 100%)"
+    },
+    {
+      "from": "D215",
+      "to": "E02",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "E02",
+      "reason": "急性AR: 頻脈(代償, 90%+)"
+    },
+    {
+      "from": "D215",
+      "to": "E03",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "E03",
+      "reason": "急性AR: 低血圧(心拍出量低下)"
+    },
+    {
+      "from": "D215",
+      "to": "E07",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "E07",
+      "reason": "急性AR: 肺聴診(crackles/肺水腫)"
+    },
+    {
+      "from": "D215",
+      "to": "L04",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "L04",
+      "reason": "急性AR: CXR(肺うっ血/肺水腫)"
+    },
+    {
+      "from": "D215",
+      "to": "L51",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "L51",
+      "reason": "急性AR: BNP著高(急性心不全)"
+    },
+    {
+      "from": "D215",
+      "to": "E01",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "E01",
+      "reason": "急性AR: 発熱(IE原因時, 30-50%)"
+    },
+    {
+      "from": "D215",
+      "to": "T01",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "T01",
+      "reason": "急性AR: 超急性"
+    },
+    {
+      "from": "D215",
+      "to": "T02",
+      "from_name": "acute_aortic_regurgitation",
+      "to_name": "T02",
+      "reason": "急性AR: 突発"
+    },
+    {
+      "from": "D216",
+      "to": "S04",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "S04",
+      "reason": "急性MR: 呼吸困難(肺水腫, 100%)"
+    },
+    {
+      "from": "D216",
+      "to": "E02",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "E02",
+      "reason": "急性MR: 頻脈(90%+)"
+    },
+    {
+      "from": "D216",
+      "to": "E03",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "E03",
+      "reason": "急性MR: 低血圧(心原性ショック)"
+    },
+    {
+      "from": "D216",
+      "to": "E07",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "E07",
+      "reason": "急性MR: 肺聴診(crackles+収縮期雑音)"
+    },
+    {
+      "from": "D216",
+      "to": "L04",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "L04",
+      "reason": "急性MR: CXR(肺水腫/胸水)"
+    },
+    {
+      "from": "D216",
+      "to": "L51",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "L51",
+      "reason": "急性MR: BNP著高"
+    },
+    {
+      "from": "D216",
+      "to": "L53",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "L53",
+      "reason": "急性MR: トロポニン上昇(MI原因時)"
+    },
+    {
+      "from": "D216",
+      "to": "T01",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "T01",
+      "reason": "急性MR: 超急性"
+    },
+    {
+      "from": "D216",
+      "to": "T02",
+      "from_name": "acute_mitral_regurgitation",
+      "to_name": "T02",
+      "reason": "急性MR: 突発"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
