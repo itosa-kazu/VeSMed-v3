@@ -4352,6 +4352,30 @@
       ],
       "severity": "critical",
       "note": "突然の胸膜性胸痛+呼吸困難。若年痩身男性(原発性)/COPD(続発性)。呼吸音減弱(患側)、CXRで確定。緊張性気胸は緊急脱気"
+    },
+    {
+      "id": "D124",
+      "name": "cardiac_tamponade",
+      "name_ja": "心タンポナーデ",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Beck's triad(低血圧+JVD+心音減弱)。心嚢液による心臓圧迫。原因: 悪性腫瘍/心膜炎/尿毒症/外傷。Echo確定。緊急心嚢穿刺"
+    },
+    {
+      "id": "D125",
+      "name": "acute_arrhythmia",
+      "name_ja": "急性不整脈（AF/SVT/VT）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "原発性頻脈性不整脈。動悸+呼吸困難+めまい。HR>150が多い。ECGで確定。BNP/トロポニン軽度上昇。二次性(PE/敗血症/甲状腺)除外要"
     }
   ]
 }

@@ -12,4 +12,6 @@ type: feedback
 **Why:** 伝統テストは「全情報があれば正解できるか」、ナビゲーションテストは「システムの案内で正解に辿り着けるか」。後者が実臨床での真の価値であり、反証推奨論文のデータにもなる。
 **How to apply:** 案例追加時に両方のテストを実施し、ナビゲーション結果は必ず `navigation_test_log.json` に追記すること。毎回忘れずに更新。
 
-追加で：**疾患を追加したら `project_missing_diseases.md` と `project_vesmed_status.md` も必ず更新**すること。
+追加で：
+- **疾患を追加したら `project_missing_diseases.md` と `project_vesmed_status.md` も必ず更新**すること。
+- **各疾患につき3件以上のreal caseを目標**とする。1件だとrobustness検証が不十分。異なる臨床パターン（典型例/非典型例/無熱例など）を含めると理想的。

@@ -5162,6 +5162,78 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 典型的PSP: 若年男性+突然胸痛+呼吸音減弱+CXR気胸"
+    },
+    {
+      "id": "R208",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12774613",
+      "vignette": "45F 5年間の反復性動悸+めまい+呼吸困難(パニック障害と誤診). 今回5時間持続. HR 217-225, 狭QRS整脈. 電解質/甲状腺正常. Echo: EF 55-60%正常. IV diltiazem 20mgでSVT停止. EP study→AVNRT確認",
+      "final_diagnosis": "発作性上室性頻拍(AVNRT)",
+      "expected_id": "D125",
+      "in_scope": true,
+      "evidence": {
+        "S35": "present",
+        "S04": "on_exertion",
+        "E02": "over_120",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "純粋なSVT/AVNRT. パニック障害と5年間誤診. HR 225"
+    },
+    {
+      "id": "R209",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10105599",
+      "vignette": "41F 高血圧. 突然の動悸+呼吸困難+発汗. 最近の起座呼吸+労作時呼吸困難あり. HR 219-250, wide QRS単形性VT. トロポニン0.06, BNP 432. CXR: 心拡大+間質影. Echo: EF 30-35%. 心臓MRI: 心筋中層遅延造影(サルコイドーシスパターン). 電気的除細動+AICD+ステロイド",
+      "final_diagnosis": "心室頻拍(心臓サルコイドーシスによる)",
+      "expected_id": "D125",
+      "in_scope": true,
+      "evidence": {
+        "S35": "present",
+        "S04": "at_rest",
+        "S49": "present",
+        "E02": "over_120",
+        "L51": "very_high",
+        "L04": "bilateral_infiltrate",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "VT+心サルコイドーシス. BNP 432, EF 30%. 基盤はサルコイドーシスだが急性症状はVT"
+    },
+    {
+      "id": "R210",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9199450",
+      "vignette": "85M 高血圧, 過去DVT歴(apixaban非遵守). 1週間の進行性呼吸困難. 無熱, 胸痛なし, 動悸なし. HR>160(AF with RVR), BP 150/67, 低酸素(O2 3L要). BNP 325, D-dimer>20, 乳酸2.9. Echo: RV著明拡大(McConnell sign). CTA: 両側大量PE+左下肢DVT",
+      "final_diagnosis": "両側肺塞栓症(AF with RVRを伴う)",
+      "expected_id": "D77",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E02": "over_120",
+        "E01": "under_37.5",
+        "L51": "mildly_elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "AF with RVRに見えるが本体はPE. D-dimer>20, McConnell sign. 不整脈ではなくPEとして評価"
     }
   ],
   "total_cases": 110
