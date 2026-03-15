@@ -587,7 +587,7 @@ async function runAll() {
     const falsRecs = recData.falsification || [];
     const filteredFals = falsRecs.filter(r => r.h_increase > 0.01);
     document.getElementById('falsificationList').innerHTML = filteredFals.length === 0
-      ? '<div class="empty-state">反証推奨なし（現診断は安定）</div>'
+      ? '<div class="empty-state">反証推奨なし（現診断は十分安定）</div>'
       : filteredFals.map((r, i) => {
           const catLabel2 = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'}[r.category] || r.category;
           const catCss2 = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'}[r.category] || '';

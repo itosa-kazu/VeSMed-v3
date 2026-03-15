@@ -610,10 +610,11 @@ def next_best_falsification_test(evidence, risk, diseases, disease_children,
       - 正診の場合: 実際の結果が動揺方向と逆に出るため、確信が強まる
       - 確認バイアスを防ぎ、自己修正的な診断プロセスを実現
     """
-    # Reuse next_best_test computation (get ALL variables, not just top_n)
+    # Use RAW entropy (no IDF/CF correction) for falsification comparison.
+    # IDF/CF correction distorts entropy differences, causing false "no results".
     all_results = next_best_test(
         evidence, risk, diseases, disease_children, noisy_or, root_priors,
-        disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
+        disc=disc, disc_power=0.0, cf_alpha=0.0,
         top_n=9999
     )
 
