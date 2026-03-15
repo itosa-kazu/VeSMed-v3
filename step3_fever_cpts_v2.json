@@ -3098,6 +3098,35 @@
       "cpt": {
         "": 0.003
       }
+    },
+    "D183": {
+      "parents": [],
+      "description": "クリオグロブリン血症。HCV関連",
+      "cpt": {
+        "": 0.001
+      }
+    },
+    "D184": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "AS。若年男性に多い",
+      "cpt": {
+        "18_39,male": 0.003,
+        "18_39,female": 0.001,
+        "40_64,male": 0.002,
+        "40_64,female": 0.0005,
+        "65_plus,male": 0.001,
+        "65_plus,female": 0.0003
+      }
+    },
+    "D185": {
+      "parents": [],
+      "description": "HAE。C1-INH欠損",
+      "cpt": {
+        "": 0.001
+      }
     }
   },
   "noisy_or_params": {
@@ -4461,6 +4490,27 @@
           "38.0_39.0": 0.3,
           "39.0_40.0": 0.35,
           "over_40.0": 0.2
+        },
+        "D183": {
+          "under_37.5": 0.6,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
+        },
+        "D184": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
+        },
+        "D185": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.05,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.0
         }
       }
     },
@@ -6497,6 +6547,17 @@
           "purpura": 0.01,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.01
+        },
+        "D183": {
+          "normal": 0.08,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.15,
+          "maculopapular_rash": 0.02,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.65,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.05
         }
       }
     },
@@ -8670,6 +8731,12 @@
           "normal_4000_10000": 0.25,
           "high_10000_20000": 0.5,
           "very_high_over_20000": 0.22
+        },
+        "D185": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.1
         }
       }
     },
@@ -9587,6 +9654,18 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.35,
           "high_over_10": 0.3
+        },
+        "D183": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.2
+        },
+        "D184": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.15
         }
       }
     },
@@ -12769,6 +12848,11 @@
           "absent": 0.75,
           "on_exertion": 0.18,
           "at_rest": 0.07
+        },
+        "D185": {
+          "absent": 0.45,
+          "on_exertion": 0.2,
+          "at_rest": 0.35
         }
       }
     },
@@ -13645,6 +13729,16 @@
           "absent": 0.15,
           "mild": 0.45,
           "severe": 0.4
+        },
+        "D183": {
+          "absent": 0.08,
+          "mild": 0.32,
+          "severe": 0.6
+        },
+        "D184": {
+          "absent": 0.25,
+          "mild": 0.45,
+          "severe": 0.3
         }
       }
     },
@@ -13766,6 +13860,14 @@
         "D169": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D183": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D184": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -14380,6 +14482,15 @@
           "LLQ": 0.4,
           "suprapubic": 0.05,
           "diffuse": 0.4
+        },
+        "D185": {
+          "absent": 0.08,
+          "epigastric": 0.15,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.02,
+          "diffuse": 0.6
         }
       }
     },
@@ -14676,6 +14787,10 @@
         "D182": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D185": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -15496,6 +15611,11 @@
         "D105": {
           "absent": 0.6,
           "under_30min": 0.4
+        },
+        "D184": {
+          "absent": 0.1,
+          "under_30min": 0.1,
+          "over_30min": 0.8
         }
       }
     },
@@ -17279,6 +17399,24 @@
           "3d_to_1w": 0.4,
           "1w_to_3w": 0.08,
           "over_3w": 0.02
+        },
+        "D183": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.5
+        },
+        "D184": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
+        },
+        "D185": {
+          "under_3d": 0.6,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.08,
+          "over_3w": 0.02
         }
       }
     },
@@ -17740,6 +17878,18 @@
         "D182": {
           "sudden_hours": 0.4,
           "gradual_days": 0.6
+        },
+        "D183": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D184": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D185": {
+          "sudden_hours": 0.7,
+          "gradual_days": 0.3
         }
       }
     },
@@ -17976,6 +18126,10 @@
         "D168": {
           "normal": 0.05,
           "pyuria_bacteriuria": 0.95
+        },
+        "D183": {
+          "normal": 0.45,
+          "pyuria_bacteriuria": 0.55
         }
       }
     },
@@ -18033,6 +18187,10 @@
         "D174": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D184": {
+          "absent": 0.03,
+          "present": 0.97
         }
       }
     },
@@ -18633,6 +18791,11 @@
           "absent": 0.55,
           "unilateral": 0.35,
           "bilateral": 0.1
+        },
+        "D185": {
+          "absent": 0.1,
+          "unilateral": 0.4,
+          "bilateral": 0.5
         }
       }
     },
@@ -19676,6 +19839,11 @@
           "normal": 0.45,
           "mild_elevated": 0.3,
           "high_AKI": 0.25
+        },
+        "D183": {
+          "normal": 0.5,
+          "mild_elevated": 0.3,
+          "high_AKI": 0.2
         }
       }
     },

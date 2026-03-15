@@ -5189,6 +5189,42 @@
       ],
       "severity": "moderate",
       "note": "GAS咽頭炎+発疹(sandpaper rash)+苺舌。発熱+咽頭痛+全身性粗い紅斑。ペニシリン治療"
+    },
+    {
+      "id": "D183",
+      "name": "cryoglobulinemia",
+      "name_ja": "クリオグロブリン血症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "寒冷沈降免疫グロブリン。三徴:紫斑+関節痛+脱力。HCV関連が最多。腎障害(MPGN)+末梢神経障害"
+    },
+    {
+      "id": "D184",
+      "name": "ankylosing_spondylitis",
+      "name_ja": "強直性脊椎炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "HLA-B27関連。慢性腰背部痛(朝のこわばり>30分)+仙腸関節炎。若年男性に多い。ぶどう膜炎合併"
+    },
+    {
+      "id": "D185",
+      "name": "hereditary_angioedema",
+      "name_ja": "遺伝性血管性浮腫(HAE)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "C1-INH欠損/機能不全。反復性の顔面/四肢/消化管浮腫。喉頭浮腫は窒息リスク。蕁麻疹なし(アレルギーとの鑑別点)"
     }
   ]
 }

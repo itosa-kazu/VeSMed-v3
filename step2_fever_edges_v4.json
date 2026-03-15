@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2887,
+  "total_edges": 2912,
   "edges": [
     {
       "from": "R01",
@@ -24706,6 +24706,181 @@
       "from_name": "cerebral_hemorrhage",
       "to_name": "L53",
       "reason": "脳出血: トロポニン(神経原性心筋障害, 20-30%)"
+    },
+    {
+      "from": "D183",
+      "to": "E12",
+      "from_name": "cryoglobulinemia",
+      "to_name": "E12",
+      "reason": "クリオグロブリン: 紫斑(下肢, 80-90%)"
+    },
+    {
+      "from": "D183",
+      "to": "S08",
+      "from_name": "cryoglobulinemia",
+      "to_name": "S08",
+      "reason": "クリオグロブリン: 関節痛(70-80%)"
+    },
+    {
+      "from": "D183",
+      "to": "S07",
+      "from_name": "cryoglobulinemia",
+      "to_name": "S07",
+      "reason": "クリオグロブリン: 倦怠感(80-90%)"
+    },
+    {
+      "from": "D183",
+      "to": "E01",
+      "from_name": "cryoglobulinemia",
+      "to_name": "E01",
+      "reason": "クリオグロブリン: 発熱(20-30%)"
+    },
+    {
+      "from": "D183",
+      "to": "L55",
+      "from_name": "cryoglobulinemia",
+      "to_name": "L55",
+      "reason": "クリオグロブリン: AKI(MPGN, 30-40%)"
+    },
+    {
+      "from": "D183",
+      "to": "L05",
+      "from_name": "cryoglobulinemia",
+      "to_name": "L05",
+      "reason": "クリオグロブリン: 尿異常(蛋白尿/血尿, 40-50%)"
+    },
+    {
+      "from": "D183",
+      "to": "L02",
+      "from_name": "cryoglobulinemia",
+      "to_name": "L02",
+      "reason": "クリオグロブリン: CRP上昇"
+    },
+    {
+      "from": "D183",
+      "to": "T01",
+      "from_name": "cryoglobulinemia",
+      "to_name": "T01",
+      "reason": "クリオグロブリン: 慢性~亜急性"
+    },
+    {
+      "from": "D183",
+      "to": "T02",
+      "from_name": "cryoglobulinemia",
+      "to_name": "T02",
+      "reason": "クリオグロブリン: 緩徐"
+    },
+    {
+      "from": "D184",
+      "to": "S15",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "S15",
+      "reason": "AS: 腰背部痛(定義的, 90%+)"
+    },
+    {
+      "from": "D184",
+      "to": "S08",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "S08",
+      "reason": "AS: 関節痛(末梢, 30-40%)"
+    },
+    {
+      "from": "D184",
+      "to": "S27",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "S27",
+      "reason": "AS: 朝のこわばり(>30分, 80%+)"
+    },
+    {
+      "from": "D184",
+      "to": "S07",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "S07",
+      "reason": "AS: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D184",
+      "to": "E01",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "E01",
+      "reason": "AS: 発熱(急性増悪時, 10-20%)"
+    },
+    {
+      "from": "D184",
+      "to": "L02",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "L02",
+      "reason": "AS: CRP上昇(50-60%)"
+    },
+    {
+      "from": "D184",
+      "to": "T01",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "T01",
+      "reason": "AS: 慢性(>3ヶ月)"
+    },
+    {
+      "from": "D184",
+      "to": "T02",
+      "from_name": "ankylosing_spondylitis",
+      "to_name": "T02",
+      "reason": "AS: 緩徐"
+    },
+    {
+      "from": "D185",
+      "to": "S12",
+      "from_name": "hereditary_angioedema",
+      "to_name": "S12",
+      "reason": "HAE: 腹痛(消化管浮腫, 90%+の発作で)"
+    },
+    {
+      "from": "D185",
+      "to": "S13",
+      "from_name": "hereditary_angioedema",
+      "to_name": "S13",
+      "reason": "HAE: 嘔吐(消化管浮腫, 70-80%)"
+    },
+    {
+      "from": "D185",
+      "to": "S04",
+      "from_name": "hereditary_angioedema",
+      "to_name": "S04",
+      "reason": "HAE: 呼吸困難(喉頭浮腫, 30-50%)"
+    },
+    {
+      "from": "D185",
+      "to": "E36",
+      "from_name": "hereditary_angioedema",
+      "to_name": "E36",
+      "reason": "HAE: 四肢浮腫(顔面/四肢, 80%+)"
+    },
+    {
+      "from": "D185",
+      "to": "E01",
+      "from_name": "hereditary_angioedema",
+      "to_name": "E01",
+      "reason": "HAE: 通常無熱"
+    },
+    {
+      "from": "D185",
+      "to": "L01",
+      "from_name": "hereditary_angioedema",
+      "to_name": "L01",
+      "reason": "HAE: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D185",
+      "to": "T01",
+      "from_name": "hereditary_angioedema",
+      "to_name": "T01",
+      "reason": "HAE: 急性(発作は2-5日で自然軽快)"
+    },
+    {
+      "from": "D185",
+      "to": "T02",
+      "from_name": "hereditary_angioedema",
+      "to_name": "T02",
+      "reason": "HAE: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
