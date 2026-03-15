@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3036,
+  "total_edges": 3086,
   "edges": [
     {
       "from": "R01",
@@ -25749,6 +25749,356 @@
       "from_name": "hereditary_angioedema",
       "to_name": "L52",
       "reason": "HAE: D-dimer上昇(発作時, 報告あり)"
+    },
+    {
+      "from": "D192",
+      "to": "L14",
+      "from_name": "APL",
+      "to_name": "L14",
+      "reason": "APL: 血小板減少/DIC"
+    },
+    {
+      "from": "D192",
+      "to": "S44",
+      "from_name": "APL",
+      "to_name": "S44",
+      "reason": "APL: 出血傾向(DIC)"
+    },
+    {
+      "from": "D192",
+      "to": "L52",
+      "from_name": "APL",
+      "to_name": "L52",
+      "reason": "APL: D-dimer著高"
+    },
+    {
+      "from": "D192",
+      "to": "E12",
+      "from_name": "APL",
+      "to_name": "E12",
+      "reason": "APL: 紫斑"
+    },
+    {
+      "from": "D192",
+      "to": "E01",
+      "from_name": "APL",
+      "to_name": "E01",
+      "reason": "APL: 発熱"
+    },
+    {
+      "from": "D192",
+      "to": "S07",
+      "from_name": "APL",
+      "to_name": "S07",
+      "reason": "APL: 倦怠感"
+    },
+    {
+      "from": "D192",
+      "to": "L01",
+      "from_name": "APL",
+      "to_name": "L01",
+      "reason": "APL: WBC"
+    },
+    {
+      "from": "D192",
+      "to": "L16",
+      "from_name": "APL",
+      "to_name": "L16",
+      "reason": "APL: LDH"
+    },
+    {
+      "from": "D192",
+      "to": "T01",
+      "from_name": "APL",
+      "to_name": "T01",
+      "reason": "APL: 急性"
+    },
+    {
+      "from": "D192",
+      "to": "T02",
+      "from_name": "APL",
+      "to_name": "T02",
+      "reason": "APL: 亜急性"
+    },
+    {
+      "from": "D193",
+      "to": "S04",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "S04",
+      "reason": "過敏性肺炎: 呼吸困難"
+    },
+    {
+      "from": "D193",
+      "to": "S01",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "S01",
+      "reason": "過敏性肺炎: 咳嗽"
+    },
+    {
+      "from": "D193",
+      "to": "E01",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E01",
+      "reason": "過敏性肺炎: 発熱"
+    },
+    {
+      "from": "D193",
+      "to": "E07",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E07",
+      "reason": "過敏性肺炎: crackles"
+    },
+    {
+      "from": "D193",
+      "to": "E04",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E04",
+      "reason": "過敏性肺炎: 頻呼吸"
+    },
+    {
+      "from": "D193",
+      "to": "E05",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E05",
+      "reason": "過敏性肺炎: 低酸素"
+    },
+    {
+      "from": "D193",
+      "to": "L04",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "L04",
+      "reason": "過敏性肺炎: CXR"
+    },
+    {
+      "from": "D193",
+      "to": "S07",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "S07",
+      "reason": "過敏性肺炎: 倦怠感"
+    },
+    {
+      "from": "D193",
+      "to": "L01",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "L01",
+      "reason": "過敏性肺炎: WBC"
+    },
+    {
+      "from": "D193",
+      "to": "T01",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "T01",
+      "reason": "過敏性肺炎: 急性"
+    },
+    {
+      "from": "D193",
+      "to": "T02",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "T02",
+      "reason": "過敏性肺炎: 急性"
+    },
+    {
+      "from": "D194",
+      "to": "E12",
+      "from_name": "lyme_disease",
+      "to_name": "E12",
+      "reason": "ライム: 遊走性紅斑"
+    },
+    {
+      "from": "D194",
+      "to": "E01",
+      "from_name": "lyme_disease",
+      "to_name": "E01",
+      "reason": "ライム: 発熱"
+    },
+    {
+      "from": "D194",
+      "to": "S08",
+      "from_name": "lyme_disease",
+      "to_name": "S08",
+      "reason": "ライム: 関節痛"
+    },
+    {
+      "from": "D194",
+      "to": "S05",
+      "from_name": "lyme_disease",
+      "to_name": "S05",
+      "reason": "ライム: 頭痛"
+    },
+    {
+      "from": "D194",
+      "to": "S07",
+      "from_name": "lyme_disease",
+      "to_name": "S07",
+      "reason": "ライム: 倦怠感"
+    },
+    {
+      "from": "D194",
+      "to": "S06",
+      "from_name": "lyme_disease",
+      "to_name": "S06",
+      "reason": "ライム: 筋肉痛"
+    },
+    {
+      "from": "D194",
+      "to": "E06",
+      "from_name": "lyme_disease",
+      "to_name": "E06",
+      "reason": "ライム: 項部硬直(神経ライム)"
+    },
+    {
+      "from": "D194",
+      "to": "L01",
+      "from_name": "lyme_disease",
+      "to_name": "L01",
+      "reason": "ライム: WBC"
+    },
+    {
+      "from": "D194",
+      "to": "T01",
+      "from_name": "lyme_disease",
+      "to_name": "T01",
+      "reason": "ライム: 亜急性"
+    },
+    {
+      "from": "D194",
+      "to": "T02",
+      "from_name": "lyme_disease",
+      "to_name": "T02",
+      "reason": "ライム: 亜急性"
+    },
+    {
+      "from": "D195",
+      "to": "S04",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "S04",
+      "reason": "薬剤性肺炎: 呼吸困難"
+    },
+    {
+      "from": "D195",
+      "to": "S01",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "S01",
+      "reason": "薬剤性肺炎: 咳嗽"
+    },
+    {
+      "from": "D195",
+      "to": "E01",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "E01",
+      "reason": "薬剤性肺炎: 発熱"
+    },
+    {
+      "from": "D195",
+      "to": "E07",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "E07",
+      "reason": "薬剤性肺炎: crackles"
+    },
+    {
+      "from": "D195",
+      "to": "E05",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "E05",
+      "reason": "薬剤性肺炎: 低酸素"
+    },
+    {
+      "from": "D195",
+      "to": "L04",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "L04",
+      "reason": "薬剤性肺炎: CXR"
+    },
+    {
+      "from": "D195",
+      "to": "L14",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "L14",
+      "reason": "薬剤性肺炎: 好酸球増多"
+    },
+    {
+      "from": "D195",
+      "to": "L01",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "L01",
+      "reason": "薬剤性肺炎: WBC"
+    },
+    {
+      "from": "D195",
+      "to": "T01",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "T01",
+      "reason": "薬剤性肺炎: 亜急性"
+    },
+    {
+      "from": "D195",
+      "to": "T02",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "T02",
+      "reason": "薬剤性肺炎: 亜急性"
+    },
+    {
+      "from": "D196",
+      "to": "S02",
+      "from_name": "diphtheria",
+      "to_name": "S02",
+      "reason": "ジフテリア: 咽頭痛"
+    },
+    {
+      "from": "D196",
+      "to": "E08",
+      "from_name": "diphtheria",
+      "to_name": "E08",
+      "reason": "ジフテリア: 白苔/偽膜"
+    },
+    {
+      "from": "D196",
+      "to": "E01",
+      "from_name": "diphtheria",
+      "to_name": "E01",
+      "reason": "ジフテリア: 発熱"
+    },
+    {
+      "from": "D196",
+      "to": "S04",
+      "from_name": "diphtheria",
+      "to_name": "S04",
+      "reason": "ジフテリア: 呼吸困難(気道閉塞)"
+    },
+    {
+      "from": "D196",
+      "to": "S07",
+      "from_name": "diphtheria",
+      "to_name": "S07",
+      "reason": "ジフテリア: 倦怠感"
+    },
+    {
+      "from": "D196",
+      "to": "E02",
+      "from_name": "diphtheria",
+      "to_name": "E02",
+      "reason": "ジフテリア: 頻脈(心筋炎)"
+    },
+    {
+      "from": "D196",
+      "to": "L01",
+      "from_name": "diphtheria",
+      "to_name": "L01",
+      "reason": "ジフテリア: WBC"
+    },
+    {
+      "from": "D196",
+      "to": "T01",
+      "from_name": "diphtheria",
+      "to_name": "T01",
+      "reason": "ジフテリア: 急性"
+    },
+    {
+      "from": "D196",
+      "to": "T02",
+      "from_name": "diphtheria",
+      "to_name": "T02",
+      "reason": "ジフテリア: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

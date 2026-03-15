@@ -5297,6 +5297,66 @@
       ],
       "severity": "high",
       "note": "GAS咽頭炎/膿痂疹の1-3週後。血尿+蛋白尿+浮腫+高血圧+AKI。補体(C3)低下が特徴。小児に多いが成人もあり"
+    },
+    {
+      "id": "D192",
+      "name": "APL",
+      "name_ja": "急性前骨髄球性白血病(APL)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "AML-M3. DIC高率合併(80%+). ATRA+ATO治療"
+    },
+    {
+      "id": "D193",
+      "name": "hypersensitivity_pneumonitis",
+      "name_ja": "過敏性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "抗原吸入->肺アレルギー. 農夫肺/鳥飼い肺"
+    },
+    {
+      "id": "D194",
+      "name": "lyme_disease",
+      "name_ja": "ライム病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "Borrelia burgdorferi. ダニ->遊走性紅斑->関節炎/神経/心"
+    },
+    {
+      "id": "D195",
+      "name": "drug_induced_pneumonitis",
+      "name_ja": "薬剤性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "MTX/アミオダロン/CPI等->間質性肺炎"
+    },
+    {
+      "id": "D196",
+      "name": "diphtheria",
+      "name_ja": "ジフテリア",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "C.diphtheriae. 偽膜+bull neck. 心筋炎/神経麻痺が致死的"
     }
   ]
 }
