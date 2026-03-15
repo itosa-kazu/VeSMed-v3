@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3649,
+  "total_edges": 3647,
   "edges": [
     {
       "from": "R01",
@@ -4335,13 +4335,6 @@
       },
       "from_name": "deep_neck_infection",
       "to_name": "CRP"
-    },
-    {
-      "from": "R37",
-      "to": "D35",
-      "reason": "誤嚥リスクは肺膿瘍のリスク因子",
-      "from_name": "aspiration_risk",
-      "to_name": "lung_abscess"
     },
     {
       "from": "R16",
@@ -12676,13 +12669,6 @@
       "to": "L09",
       "from_name": "community_acquired_pneumonia",
       "to_name": "blood_culture",
-      "reason": "TODO"
-    },
-    {
-      "from": "R37",
-      "to": "D05",
-      "from_name": "aspiration_risk",
-      "to_name": "community_acquired_pneumonia",
       "reason": "TODO"
     },
     {
