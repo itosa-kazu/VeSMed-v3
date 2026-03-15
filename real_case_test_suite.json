@@ -8984,6 +8984,181 @@
       },
       "result": "",
       "notes": "非典型HUS. CFH変異+ワクチン誘発. C3低下. エクリズマブ投与"
+    },
+    {
+      "id": "R349",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10583122",
+      "vignette": "62M MuSK陽性MG既往. 嚥下障害+全身倦怠→呼吸不全. ABG: pH 7.07, pCO2 148(!)(重度呼吸性アシドーシス). 好中球8.94k, リンパ球0.55k, CRP 91.9, 血糖328, AST 48, ALT 78. CXR: 右下葉浸潤影. 喀痰培養: Burkholderia cepacia. 挿管12日→回復",
+      "final_diagnosis": "重症筋無力症クリーゼ(B.cepacia肺炎誘発)",
+      "expected_id": "D165",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S07": "severe",
+        "S53": "dysarthria",
+        "E01": "38.0_39.0",
+        "E07": "crackles",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L54": "hyperglycemia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "MuSK+MG. pCO2 148の重度呼吸性アシドーシス. B.cepacia肺炎が誘因"
+    },
+    {
+      "id": "R350",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8855020",
+      "vignette": "39M HIV+. 両側眼瞼下垂+完全眼球運動障害+嚥下障害+進行性筋力低下+易疲労性. 発熱, RR 40, 頻脈. 遠位筋力低下+筋緊張低下+全反射消失+手内筋萎縮. WBC 14.9k, CRP 22, PCT 0.01. CXR: 左下葉浸潤影. 喀痰培養: Raoultella planticola. 挿管4日→回復",
+      "final_diagnosis": "重症筋無力症クリーゼ(Raoultella肺炎誘発)",
+      "expected_id": "D165",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S07": "severe",
+        "S52": "bilateral",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E07": "crackles",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "HIV+. 完全眼球運動障害+眼瞼下垂+嚥下障害. RR 40. 肺炎誘発"
+    },
+    {
+      "id": "R351",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10227813",
+      "vignette": "57M COVID-19後10ヶ月+Mg補充2ヶ月+ステロイド開始1週後. 喘鳴性呼吸+頸部副筋使用+興奮. SpO2 80%(!), BP 160/120. 両側声帯麻痺(喉頭鏡). 軽度頸部伸展筋力低下. Anti-AChR 1.8nmol/L(陽性). 緊急気管切開→人工呼吸2日→回復",
+      "final_diagnosis": "重症筋無力症クリーゼ(ステロイド開始+COVID後)",
+      "expected_id": "D165",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S07": "mild",
+        "S53": "dysarthria",
+        "E05": "severe_hypoxia_under_93",
+        "E38": "elevated_140_180",
+        "E07": "wheezes",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 80%. 声帯麻痺→緊急気管切開. ステロイド開始が誘因"
+    },
+    {
+      "id": "R352",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6794177",
+      "vignette": "48M ホームレス+慢性アルコール依存+2日間絶食+BZD使用. 核心温26.4℃(膀胱)(!). HR 42(徐脈), BP 114/99, RR 25, GCS 8(E3V1M4)→グルコース後GCS 11. ECG: 洞性徐脈+Osborn波+QT延長. 血糖60(低血糖), 乳酸4.7, pH 7.202, 低Na血症, ケトン尿",
+      "final_diagnosis": "重度偶発性低体温症+アルコール性ケトアシドーシス",
+      "expected_id": "D167",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E16": "obtunded",
+        "L54": "hypoglycemia",
+        "L44": "hyponatremia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "核心温26.4. Osborn波. ホームレス+アルコール+BZD. 血液透析で復温"
+    },
+    {
+      "id": "R353",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6794177",
+      "vignette": "78M 寝たきり+在宅介護. 核心温27.3℃(膀胱)(!). HR 39(徐脈!), BP 78/40(重度低血圧), RR 18, GCS 3(E1V1M1)(深昏睡). ECG: 洞性徐脈+Osborn波. 血糖54(低血糖). 誤嚥性肺炎合併",
+      "final_diagnosis": "重度偶発性低体温症(室内, 高齢寝たきり)",
+      "expected_id": "D167",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E16": "obtunded",
+        "L54": "hypoglycemia",
+        "S07": "severe",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "核心温27.3. GCS 3. HR 39. BP 78/40. 室内低体温(寝たきり高齢者)"
+    },
+    {
+      "id": "R354",
+      "source": "Case Rep 2017",
+      "pmcid": "PMC5657076",
+      "vignette": "95M 冷たい地下室でずぶ濡れで発見. 核心温22.9℃(鼻咽頭)(!). HR 50→心室細動(VF). 覚醒しているが十分な応答なし+不穏. pH 6.9(!), K 5.5, 乳酸12.5. VF→蘇生→ECMO復温→3週後自宅退院(後遺症なし)",
+      "final_diagnosis": "重度偶発性低体温症+心停止(VF)",
+      "expected_id": "D167",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E16": "confused",
+        "L44": "hyperkalemia",
+        "S07": "severe",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "核心温22.9. pH 6.9(!). VF→ECMO復温→95歳で完全回復!"
+    },
+    {
+      "id": "R355",
+      "source": "Case Rep 2018",
+      "pmcid": "PMC6039984",
+      "vignette": "30M 外気温-5℃で屋外発見. アルコール中毒+薬物乱用. 核心温25.0℃(!). 意識消失+散瞳. 到着時VF. 収縮期BP 50. 除細動3回→心拍再開. ECLS復温. 脳CT: 低酸素性障害なし. 完全回復→退院(神経後遺症なし)",
+      "final_diagnosis": "重度偶発性低体温症+心停止(アルコール+薬物)",
+      "expected_id": "D167",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E03": "hypotension_under_90",
+        "E16": "obtunded",
+        "S07": "severe",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "核心温25.0. VF→ECLS. アルコール+薬物+外気温-5℃. 完全回復"
     }
   ],
   "total_cases": 110

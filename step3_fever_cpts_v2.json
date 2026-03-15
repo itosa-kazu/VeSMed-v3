@@ -10436,6 +10436,11 @@
           "normal": 0.25,
           "elevated": 0.5,
           "very_high": 0.25
+        },
+        "D167": {
+          "normal": 0.4,
+          "elevated": 0.4,
+          "very_high": 0.2
         }
       }
     },
@@ -11396,6 +11401,12 @@
           "hyponatremia": 0.6,
           "hyperkalemia": 0.02,
           "other": 0.03
+        },
+        "D167": {
+          "normal": 0.5,
+          "hyponatremia": 0.25,
+          "hyperkalemia": 0.2,
+          "other": 0.05
         }
       }
     },
@@ -18271,6 +18282,12 @@
         "D159": {
           "hypoglycemia": 0.35,
           "normal": 0.55,
+          "hyperglycemia": 0.08,
+          "very_high_over_500": 0.02
+        },
+        "D167": {
+          "hypoglycemia": 0.45,
+          "normal": 0.45,
           "hyperglycemia": 0.08,
           "very_high_over_500": 0.02
         }
