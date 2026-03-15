@@ -4492,7 +4492,8 @@
         "E18": "absent",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "L09": "negative"
+        "L09": "negative",
+        "L14": "lymphocyte_predominant"
       },
       "risk_factors": {
         "R01": "18_39",

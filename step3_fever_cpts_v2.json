@@ -7410,201 +7410,237 @@
         "eosinophilia"
       ],
       "leak": {
-        "normal": 0.85,
+        "normal": 0.82,
         "left_shift": 0.08,
         "atypical_lymphocytes": 0.03,
         "thrombocytopenia": 0.02,
-        "eosinophilia": 0.02
+        "eosinophilia": 0.02,
+        "lymphocyte_predominant": 0.03
       },
       "parent_effects": {
         "D05": {
-          "normal": 0.2,
-          "left_shift": 0.7,
-          "atypical_lymphocytes": 0.03,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.02
+          "normal": 0.194,
+          "left_shift": 0.6789999999999999,
+          "atypical_lymphocytes": 0.029099999999999997,
+          "thrombocytopenia": 0.0485,
+          "eosinophilia": 0.0194,
+          "lymphocyte_predominant": 0.03
         },
         "D13": {
-          "normal": 0.15,
-          "left_shift": 0.75,
-          "atypical_lymphocytes": 0.03,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.02
+          "normal": 0.1455,
+          "left_shift": 0.7275,
+          "atypical_lymphocytes": 0.029099999999999997,
+          "thrombocytopenia": 0.0485,
+          "eosinophilia": 0.0194,
+          "lymphocyte_predominant": 0.03
         },
         "D15": {
-          "normal": 0.2,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.6,
-          "eosinophilia": 0.05
+          "normal": 0.194,
+          "left_shift": 0.097,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.582,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D16": {
-          "normal": 0.15,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.7,
-          "eosinophilia": 0.05
+          "normal": 0.1455,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.6789999999999999,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D18": {
-          "normal": 0.1,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.75,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.05
+          "normal": 0.07500000000000001,
+          "left_shift": 0.037500000000000006,
+          "atypical_lymphocytes": 0.5625,
+          "thrombocytopenia": 0.037500000000000006,
+          "eosinophilia": 0.037500000000000006,
+          "lymphocyte_predominant": 0.25
         },
         "D19": {
-          "normal": 0.5,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.35
+          "normal": 0.485,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.0485,
+          "eosinophilia": 0.33949999999999997,
+          "lymphocyte_predominant": 0.03
         },
         "D23": {
-          "normal": 0.25,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.55,
-          "eosinophilia": 0.05
+          "normal": 0.2425,
+          "left_shift": 0.097,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.5335,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D14": {
-          "normal": 0.3,
-          "left_shift": 0.5,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.1,
-          "eosinophilia": 0.05
+          "normal": 0.291,
+          "left_shift": 0.485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.097,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D44": {
-          "normal": 0.3,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.55,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.05
+          "normal": 0.24,
+          "left_shift": 0.04000000000000001,
+          "atypical_lymphocytes": 0.44000000000000006,
+          "thrombocytopenia": 0.04000000000000001,
+          "eosinophilia": 0.04000000000000001,
+          "lymphocyte_predominant": 0.2
         },
         "D45": {
-          "normal": 0.2,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.65,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.05
+          "normal": 0.16000000000000003,
+          "left_shift": 0.04000000000000001,
+          "atypical_lymphocytes": 0.52,
+          "thrombocytopenia": 0.04000000000000001,
+          "eosinophilia": 0.04000000000000001,
+          "lymphocyte_predominant": 0.2
         },
         "D93": {
-          "normal": 0.1,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.1,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.7
+          "normal": 0.097,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.097,
+          "thrombocytopenia": 0.0485,
+          "eosinophilia": 0.6789999999999999,
+          "lymphocyte_predominant": 0.03
         },
         "D03": {
-          "normal": 0.3,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.55,
-          "eosinophilia": 0.05
+          "normal": 0.276,
+          "left_shift": 0.046000000000000006,
+          "atypical_lymphocytes": 0.046000000000000006,
+          "thrombocytopenia": 0.5060000000000001,
+          "eosinophilia": 0.046000000000000006,
+          "lymphocyte_predominant": 0.08
         },
         "D17": {
-          "normal": 0.5,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.3
+          "normal": 0.45,
+          "left_shift": 0.09000000000000001,
+          "atypical_lymphocytes": 0.045000000000000005,
+          "thrombocytopenia": 0.045000000000000005,
+          "eosinophilia": 0.27,
+          "lymphocyte_predominant": 0.1
         },
         "D52": {
-          "normal": 0.3,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.5,
-          "eosinophilia": 0.05
+          "normal": 0.291,
+          "left_shift": 0.097,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.485,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D59": {
-          "normal": 0.3,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.1,
-          "thrombocytopenia": 0.5,
-          "eosinophilia": 0.05
+          "normal": 0.291,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.097,
+          "thrombocytopenia": 0.485,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D91": {
-          "normal": 0.5,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.35,
-          "eosinophilia": 0.05
+          "normal": 0.485,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.33949999999999997,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D24": {
-          "normal": 0.2,
-          "left_shift": 0.35,
-          "atypical_lymphocytes": 0.02,
-          "thrombocytopenia": 0.4,
-          "eosinophilia": 0.03
+          "normal": 0.194,
+          "left_shift": 0.33949999999999997,
+          "atypical_lymphocytes": 0.0194,
+          "thrombocytopenia": 0.388,
+          "eosinophilia": 0.029099999999999997,
+          "lymphocyte_predominant": 0.03
         },
         "D78": {
-          "normal": 0.3,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.5,
-          "eosinophilia": 0.05
+          "normal": 0.291,
+          "left_shift": 0.097,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.485,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D68": {
-          "normal": 0.05,
-          "left_shift": 0.15,
-          "atypical_lymphocytes": 0.15,
-          "thrombocytopenia": 0.6,
-          "eosinophilia": 0.05
+          "normal": 0.0485,
+          "left_shift": 0.1455,
+          "atypical_lymphocytes": 0.1455,
+          "thrombocytopenia": 0.582,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D51": {
-          "normal": 0.5,
-          "left_shift": 0.25,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.1,
-          "eosinophilia": 0.1
+          "normal": 0.485,
+          "left_shift": 0.2425,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.097,
+          "eosinophilia": 0.097,
+          "lymphocyte_predominant": 0.03
         },
         "D100": {
-          "normal": 0.4,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.4,
-          "thrombocytopenia": 0.05,
-          "eosinophilia": 0.05
+          "normal": 0.34,
+          "left_shift": 0.085,
+          "atypical_lymphocytes": 0.34,
+          "thrombocytopenia": 0.0425,
+          "eosinophilia": 0.0425,
+          "lymphocyte_predominant": 0.15
         },
         "D67": {
-          "normal": 0.3,
-          "left_shift": 0.1,
-          "atypical_lymphocytes": 0.25,
-          "thrombocytopenia": 0.3,
-          "eosinophilia": 0.05
+          "normal": 0.291,
+          "left_shift": 0.097,
+          "atypical_lymphocytes": 0.2425,
+          "thrombocytopenia": 0.291,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D29": {
-          "normal": 0.4,
-          "left_shift": 0.35,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.15,
-          "eosinophilia": 0.05
+          "normal": 0.388,
+          "left_shift": 0.33949999999999997,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.1455,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
         },
         "D105": {
-          "normal": 0.6,
+          "normal": 0.5310344827586206,
+          "left_shift": 0.044252873563218394,
+          "atypical_lymphocytes": 0.08850574712643679,
+          "thrombocytopenia": 0.08850574712643679,
+          "eosinophilia": 0.017701149425287357,
+          "lymphocyte_predominant": 0.1
+        },
+        "D107": {
+          "normal": 0.097,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.7275,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
+        },
+        "D113": {
+          "normal": 0.33949999999999997,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0485,
+          "thrombocytopenia": 0.485,
+          "eosinophilia": 0.0485,
+          "lymphocyte_predominant": 0.03
+        },
+        "D114": {
+          "normal": 0.5335,
+          "left_shift": 0.0485,
+          "atypical_lymphocytes": 0.0194,
+          "thrombocytopenia": 0.33949999999999997,
+          "eosinophilia": 0.029099999999999997,
+          "lymphocyte_predominant": 0.03
+        },
+        "D110": {
+          "normal": 0.35,
           "left_shift": 0.05,
           "atypical_lymphocytes": 0.1,
           "thrombocytopenia": 0.1,
-          "eosinophilia": 0.02
-        },
-        "D107": {
-          "normal": 0.1,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.75,
-          "eosinophilia": 0.05
-        },
-        "D113": {
-          "normal": 0.35,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.05,
-          "thrombocytopenia": 0.5,
-          "eosinophilia": 0.05
-        },
-        "D114": {
-          "normal": 0.55,
-          "left_shift": 0.05,
-          "atypical_lymphocytes": 0.02,
-          "thrombocytopenia": 0.35,
-          "eosinophilia": 0.03
+          "eosinophilia": 0.05,
+          "lymphocyte_predominant": 0.35
         }
       }
     },

@@ -1797,7 +1797,8 @@
         "left_shift",
         "atypical_lymphocytes",
         "thrombocytopenia",
-        "eosinophilia"
+        "eosinophilia",
+        "lymphocyte_predominant"
       ],
       "note": "互斥でない場合あり（例：血小板減少+異型リンパ球）。最も目立つ所見を1つ選択"
     },
