@@ -12530,6 +12530,13 @@
           "sharp": 0.6,
           "pressure": 0.25,
           "tearing": 0.07
+        },
+        "D35": {
+          "absent": 0.55,
+          "burning": 0.03,
+          "sharp": 0.35,
+          "pressure": 0.05,
+          "tearing": 0.02
         }
       }
     },
@@ -15764,6 +15771,14 @@
           "breathing": 0.5,
           "position": 0.05,
           "meals": 0.17
+        },
+        "D35": {
+          "not_applicable": 0.55,
+          "none": 0.1,
+          "exertion": 0.03,
+          "breathing": 0.27,
+          "position": 0.03,
+          "meals": 0.02
         }
       }
     },
@@ -15889,6 +15904,12 @@
           "none": 0.9,
           "left_arm_jaw": 0.03,
           "back": 0.04
+        },
+        "D35": {
+          "not_applicable": 0.55,
+          "none": 0.4,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
         }
       }
     }
