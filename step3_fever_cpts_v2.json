@@ -2741,6 +2741,31 @@
         "40_64": 0.008,
         "65_plus": 0.004
       }
+    },
+    "D146": {
+      "parents": [],
+      "description": "高血圧緊急症",
+      "cpt": {
+        "": 0.005
+      }
+    },
+    "D147": {
+      "parents": [
+        "R01"
+      ],
+      "description": "精巣捻転。若年男性に多い",
+      "cpt": {
+        "18_39": 0.004,
+        "40_64": 0.001,
+        "65_plus": 0.001
+      }
+    },
+    "D148": {
+      "parents": [],
+      "description": "Boerhaave症候群",
+      "cpt": {
+        "": 0.001
+      }
     }
   },
   "noisy_or_params": {
@@ -3866,6 +3891,27 @@
           "38.0_39.0": 0.1,
           "39.0_40.0": 0.04,
           "over_40.0": 0.01
+        },
+        "D146": {
+          "under_37.5": 0.8,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.06,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.0
+        },
+        "D147": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.0
+        },
+        "D148": {
+          "under_37.5": 0.35,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.03
         }
       }
     },
@@ -4266,6 +4312,21 @@
           "under_100": 0.4,
           "100_120": 0.45,
           "over_120": 0.15
+        },
+        "D146": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
+        },
+        "D147": {
+          "under_100": 0.3,
+          "100_120": 0.5,
+          "over_120": 0.2
+        },
+        "D148": {
+          "under_100": 0.2,
+          "100_120": 0.5,
+          "over_120": 0.3
         }
       }
     },
@@ -4427,6 +4488,10 @@
         "D144": {
           "normal_over_90": 0.7,
           "hypotension_under_90": 0.3
+        },
+        "D148": {
+          "normal_over_90": 0.55,
+          "hypotension_under_90": 0.45
         }
       }
     },
@@ -5964,6 +6029,11 @@
           "normal": 0.4,
           "confused": 0.35,
           "obtunded": 0.25
+        },
+        "D146": {
+          "normal": 0.5,
+          "confused": 0.3,
+          "obtunded": 0.2
         }
       }
     },
@@ -7336,6 +7406,24 @@
           "normal_4000_10000": 0.7,
           "high_10000_20000": 0.22,
           "very_high_over_20000": 0.05
+        },
+        "D146": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.6,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.07
+        },
+        "D147": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.7,
+          "high_10000_20000": 0.22,
+          "very_high_over_20000": 0.05
+        },
+        "D148": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.32
         }
       }
     },
@@ -8145,6 +8233,18 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.15,
           "high_over_10": 0.05
+        },
+        "D147": {
+          "normal_under_0.3": 0.6,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.12,
+          "high_over_10": 0.03
+        },
+        "D148": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.55
         }
       }
     },
@@ -8587,6 +8687,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.15,
           "pneumothorax": 0.03
+        },
+        "D148": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.4,
+          "pneumothorax": 0.33
         }
       }
     },
@@ -10986,6 +11094,16 @@
           "absent": 0.6,
           "on_exertion": 0.2,
           "at_rest": 0.2
+        },
+        "D146": {
+          "absent": 0.5,
+          "on_exertion": 0.2,
+          "at_rest": 0.3
+        },
+        "D148": {
+          "absent": 0.3,
+          "on_exertion": 0.15,
+          "at_rest": 0.55
         }
       }
     },
@@ -11171,6 +11289,11 @@
           "absent": 0.2,
           "mild": 0.15,
           "severe": 0.65
+        },
+        "D146": {
+          "absent": 0.15,
+          "mild": 0.25,
+          "severe": 0.6
         }
       }
     },
@@ -12490,6 +12613,18 @@
         "D145": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D146": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D147": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D148": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -13037,6 +13172,20 @@
           "sharp": 0.35,
           "pressure": 0.05,
           "tearing": 0.02
+        },
+        "D146": {
+          "absent": 0.5,
+          "burning": 0.05,
+          "sharp": 0.1,
+          "pressure": 0.3,
+          "tearing": 0.05
+        },
+        "D148": {
+          "absent": 0.05,
+          "burning": 0.05,
+          "sharp": 0.55,
+          "pressure": 0.25,
+          "tearing": 0.1
         }
       }
     },
@@ -14773,6 +14922,24 @@
           "3d_to_1w": 0.15,
           "1w_to_3w": 0.04,
           "over_3w": 0.01
+        },
+        "D146": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.08,
+          "over_3w": 0.02
+        },
+        "D147": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
+        },
+        "D148": {
+          "under_3d": 0.9,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.0
         }
       }
     },
@@ -15086,6 +15253,18 @@
         "D145": {
           "sudden_hours": 0.85,
           "gradual_days": 0.15
+        },
+        "D146": {
+          "sudden_hours": 0.55,
+          "gradual_days": 0.45
+        },
+        "D147": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
+        },
+        "D148": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
         }
       }
     },
@@ -16230,6 +16409,12 @@
           "normal": 0.65,
           "mildly_elevated": 0.04,
           "very_high": 0.01
+        },
+        "D146": {
+          "not_done": 0.2,
+          "normal": 0.35,
+          "mildly_elevated": 0.3,
+          "very_high": 0.15
         }
       }
     },
@@ -16403,6 +16588,14 @@
           "breathing": 0.27,
           "position": 0.03,
           "meals": 0.02
+        },
+        "D148": {
+          "not_applicable": 0.05,
+          "none": 0.3,
+          "exertion": 0.05,
+          "breathing": 0.3,
+          "position": 0.05,
+          "meals": 0.25
         }
       }
     },
@@ -16534,6 +16727,12 @@
           "none": 0.4,
           "left_arm_jaw": 0.02,
           "back": 0.03
+        },
+        "D148": {
+          "not_applicable": 0.05,
+          "none": 0.6,
+          "left_arm_jaw": 0.05,
+          "back": 0.3
         }
       }
     },
@@ -16663,6 +16862,41 @@
           "absent": 0.55,
           "dysarthria": 0.2,
           "aphasia": 0.25
+        }
+      }
+    },
+    "E38": {
+      "description": "血圧高値。高血圧緊急症で>180",
+      "leak": {
+        "normal_under_140": 0.7,
+        "elevated_140_180": 0.25,
+        "crisis_over_180": 0.05
+      },
+      "parent_effects": {
+        "D146": {
+          "normal_under_140": 0.02,
+          "elevated_140_180": 0.08,
+          "crisis_over_180": 0.9
+        },
+        "D138": {
+          "normal_under_140": 0.3,
+          "elevated_140_180": 0.4,
+          "crisis_over_180": 0.3
+        },
+        "D139": {
+          "normal_under_140": 0.15,
+          "elevated_140_180": 0.3,
+          "crisis_over_180": 0.55
+        },
+        "D132": {
+          "normal_under_140": 0.25,
+          "elevated_140_180": 0.35,
+          "crisis_over_180": 0.4
+        },
+        "D131": {
+          "normal_under_140": 0.35,
+          "elevated_140_180": 0.4,
+          "crisis_over_180": 0.25
         }
       }
     }

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2397,
+  "total_edges": 2433,
   "edges": [
     {
       "from": "R01",
@@ -21276,6 +21276,258 @@
       "from_name": "ureteral_stone",
       "to_name": "T02",
       "reason": "尿管結石: 突然発症"
+    },
+    {
+      "from": "D146",
+      "to": "E38",
+      "from_name": "hypertensive_emergency",
+      "to_name": "E38",
+      "reason": "高血圧緊急症: BP>180/120(定義)"
+    },
+    {
+      "from": "D146",
+      "to": "S05",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S05",
+      "reason": "高血圧緊急症: 頭痛(60-80%)"
+    },
+    {
+      "from": "D146",
+      "to": "E16",
+      "from_name": "hypertensive_emergency",
+      "to_name": "E16",
+      "reason": "高血圧緊急症: 意識障害(脳症で30-40%)"
+    },
+    {
+      "from": "D146",
+      "to": "S04",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S04",
+      "reason": "高血圧緊急症: 呼吸困難(肺水腫で)"
+    },
+    {
+      "from": "D146",
+      "to": "S21",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S21",
+      "reason": "高血圧緊急症: 胸痛(解離/ACS合併)"
+    },
+    {
+      "from": "D146",
+      "to": "E02",
+      "from_name": "hypertensive_emergency",
+      "to_name": "E02",
+      "reason": "高血圧緊急症: 頻脈(40-50%)"
+    },
+    {
+      "from": "D146",
+      "to": "S13",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S13",
+      "reason": "高血圧緊急症: 嘔気(30-40%)"
+    },
+    {
+      "from": "D146",
+      "to": "E01",
+      "from_name": "hypertensive_emergency",
+      "to_name": "E01",
+      "reason": "高血圧緊急症: 通常無熱"
+    },
+    {
+      "from": "D146",
+      "to": "L01",
+      "from_name": "hypertensive_emergency",
+      "to_name": "L01",
+      "reason": "高血圧緊急症: WBC正常~軽度上昇"
+    },
+    {
+      "from": "D146",
+      "to": "L53",
+      "from_name": "hypertensive_emergency",
+      "to_name": "L53",
+      "reason": "高血圧緊急症: トロポニン(心筋障害で上昇)"
+    },
+    {
+      "from": "D146",
+      "to": "T01",
+      "from_name": "hypertensive_emergency",
+      "to_name": "T01",
+      "reason": "高血圧緊急症: 急性"
+    },
+    {
+      "from": "D146",
+      "to": "T02",
+      "from_name": "hypertensive_emergency",
+      "to_name": "T02",
+      "reason": "高血圧緊急症: 急性~亜急性"
+    },
+    {
+      "from": "D138",
+      "to": "E38",
+      "from_name": "D138",
+      "to_name": "E38",
+      "reason": "D138→血圧高値"
+    },
+    {
+      "from": "D139",
+      "to": "E38",
+      "from_name": "D139",
+      "to_name": "E38",
+      "reason": "D139→血圧高値"
+    },
+    {
+      "from": "D132",
+      "to": "E38",
+      "from_name": "D132",
+      "to_name": "E38",
+      "reason": "D132→血圧高値"
+    },
+    {
+      "from": "D131",
+      "to": "E38",
+      "from_name": "D131",
+      "to_name": "E38",
+      "reason": "D131→血圧高値"
+    },
+    {
+      "from": "D147",
+      "to": "S13",
+      "from_name": "testicular_torsion",
+      "to_name": "S13",
+      "reason": "精巣捻転: 嘔気嘔吐(60-70%)"
+    },
+    {
+      "from": "D147",
+      "to": "E01",
+      "from_name": "testicular_torsion",
+      "to_name": "E01",
+      "reason": "精巣捻転: 通常無熱"
+    },
+    {
+      "from": "D147",
+      "to": "E02",
+      "from_name": "testicular_torsion",
+      "to_name": "E02",
+      "reason": "精巣捻転: 頻脈(疼痛)"
+    },
+    {
+      "from": "D147",
+      "to": "L01",
+      "from_name": "testicular_torsion",
+      "to_name": "L01",
+      "reason": "精巣捻転: WBC正常~軽度上昇"
+    },
+    {
+      "from": "D147",
+      "to": "L02",
+      "from_name": "testicular_torsion",
+      "to_name": "L02",
+      "reason": "精巣捻転: CRP通常正常"
+    },
+    {
+      "from": "D147",
+      "to": "T01",
+      "from_name": "testicular_torsion",
+      "to_name": "T01",
+      "reason": "精巣捻転: 超急性(数時間)"
+    },
+    {
+      "from": "D147",
+      "to": "T02",
+      "from_name": "testicular_torsion",
+      "to_name": "T02",
+      "reason": "精巣捻転: 突然発症"
+    },
+    {
+      "from": "D148",
+      "to": "S21",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "S21",
+      "reason": "Boerhaave: 突然の激烈胸痛(90%+)"
+    },
+    {
+      "from": "D148",
+      "to": "S13",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "S13",
+      "reason": "Boerhaave: 嘔吐(先行, 90%+)"
+    },
+    {
+      "from": "D148",
+      "to": "S04",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "S04",
+      "reason": "Boerhaave: 呼吸困難(50-60%)"
+    },
+    {
+      "from": "D148",
+      "to": "E01",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "E01",
+      "reason": "Boerhaave: 発熱(感染合併で)"
+    },
+    {
+      "from": "D148",
+      "to": "E02",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "E02",
+      "reason": "Boerhaave: 頻脈(60-70%)"
+    },
+    {
+      "from": "D148",
+      "to": "E03",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "E03",
+      "reason": "Boerhaave: 低血圧(重症/敗血症で)"
+    },
+    {
+      "from": "D148",
+      "to": "L01",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "L01",
+      "reason": "Boerhaave: WBC上昇"
+    },
+    {
+      "from": "D148",
+      "to": "L02",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "L02",
+      "reason": "Boerhaave: CRP上昇"
+    },
+    {
+      "from": "D148",
+      "to": "L04",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "L04",
+      "reason": "Boerhaave: CXR — 縦隔気腫/胸水/皮下気腫"
+    },
+    {
+      "from": "D148",
+      "to": "T01",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "T01",
+      "reason": "Boerhaave: 超急性(数時間)"
+    },
+    {
+      "from": "D148",
+      "to": "T02",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "T02",
+      "reason": "Boerhaave: 突然発症"
+    },
+    {
+      "from": "D148",
+      "to": "S50",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "S50",
+      "reason": "Boerhaave→胸痛誘発"
+    },
+    {
+      "from": "D148",
+      "to": "S51",
+      "from_name": "boerhaave_syndrome",
+      "to_name": "S51",
+      "reason": "Boerhaave→胸痛放散(背部)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

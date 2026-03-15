@@ -4720,6 +4720,54 @@
       ],
       "severity": "moderate",
       "note": "突然の激烈側腹部痛(鼠径部放散)+血尿+嘔気。CT石が確定。自然排石or砕石術"
+    },
+    {
+      "id": "E38",
+      "name": "blood_pressure_high",
+      "name_ja": "血圧高値(収縮期)",
+      "category": "sign",
+      "states": [
+        "normal_under_140",
+        "elevated_140_180",
+        "crisis_over_180"
+      ],
+      "note": "高血圧の評価。正常<140, 高値140-180, クリーゼ>180。E03(低血圧)とは独立"
+    },
+    {
+      "id": "D146",
+      "name": "hypertensive_emergency",
+      "name_ja": "高血圧緊急症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "BP>180/120+臓器障害(脳/心/腎/眼)。頭痛+視力障害+意識障害+胸痛。IV降圧が必要"
+    },
+    {
+      "id": "D147",
+      "name": "testicular_torsion",
+      "name_ja": "精巣捻転",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "若年男性の突然の陰嚢痛。6h以内に手術必要。挙睾筋反射消失。Echo血流なし"
+    },
+    {
+      "id": "D148",
+      "name": "boerhaave_syndrome",
+      "name_ja": "特発性食道破裂(Boerhaave症候群)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "嘔吐後の突然胸痛+縦隔気腫+皮下気腫。Mackler triad(嘔吐+胸痛+皮下気腫)"
     }
   ]
 }
