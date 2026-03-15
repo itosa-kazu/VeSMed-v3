@@ -5137,6 +5137,31 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 喘息既往+喘鳴+CXR正常+CRP低値が鍵"
+    },
+    {
+      "id": "R207",
+      "source": "CHEST 2020",
+      "pmcid": "N/A_CHEST2020",
+      "vignette": "30M 健康, 非喫煙. ベンチプレス中にValsalva後に突然の呼吸困難+左胸膜性胸痛. バイタル正常範囲. 左肺尖部呼吸音減弱. CXR: 左肺尖部気胸(apical-pleural distance 7.7cm). 左胸腔ドレナージで改善",
+      "final_diagnosis": "原発性自然気胸(左)",
+      "expected_id": "D123",
+      "in_scope": true,
+      "evidence": {
+        "S21": "pleuritic",
+        "S04": "on_exertion",
+        "E07": "decreased_absent",
+        "L04": "pneumothorax",
+        "E01": "under_37.5",
+        "L02": "normal_under_0.3",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 典型的PSP: 若年男性+突然胸痛+呼吸音減弱+CXR気胸"
     }
   ],
   "total_cases": 110

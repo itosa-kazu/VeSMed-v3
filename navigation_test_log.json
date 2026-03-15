@@ -303,6 +303,24 @@
         }
       ],
       "conclusion": "喘息既往+喘鳴+呼吸困難+CRP低値+無熱で即確定。Top-2はCOPD増悪(鑑別として妥当)"
+    },
+    {
+      "case_id": "R207",
+      "pmcid": "N/A_CHEST2020",
+      "final_diagnosis": "原発性自然気胸",
+      "expected_id": "D123",
+      "traditional_result": "Top-1 98.6%",
+      "navigation_result": "Step0で即Top-1(胸痛+呼吸音減弱+CXR気胸→98.6%)",
+      "navigation_steps": [
+        {
+          "step": 0,
+          "D123_rank": 1,
+          "D123_prob": "98.6%",
+          "H": 0.15,
+          "note": "即Top-1確定"
+        }
+      ],
+      "conclusion": "突然の胸膜性胸痛+呼吸音減弱+CXR気胸像で一発確定。典型的PSP"
     }
   ]
 }

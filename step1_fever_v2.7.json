@@ -1508,7 +1508,8 @@
       "states": [
         "clear",
         "crackles",
-        "wheezes"
+        "wheezes",
+        "decreased_absent"
       ]
     },
     {
@@ -1685,7 +1686,8 @@
         "lobar_infiltrate",
         "bilateral_infiltrate",
         "BHL",
-        "pleural_effusion"
+        "pleural_effusion",
+        "pneumothorax"
       ],
       "note": "併存所見あり得る（例：浸潤影+胸水）。主要所見を1つ選択。BHL=両側肺門リンパ節腫脹"
     },
@@ -4338,6 +4340,18 @@
       ],
       "severity": "high",
       "note": "喘息既往患者の急性呼吸困難+喘鳴+咳嗽。CXR通常正常。BNP正常。COPDとの鑑別: 若年、可逆性、アレルギー歴"
+    },
+    {
+      "id": "D123",
+      "name": "pneumothorax",
+      "name_ja": "気胸",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の胸膜性胸痛+呼吸困難。若年痩身男性(原発性)/COPD(続発性)。呼吸音減弱(患側)、CXRで確定。緊張性気胸は緊急脱気"
     }
   ]
 }

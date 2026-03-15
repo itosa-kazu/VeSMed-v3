@@ -2513,6 +2513,17 @@
         "no": 0.002,
         "yes": 0.04
       }
+    },
+    "D123": {
+      "parents": [
+        "R01"
+      ],
+      "description": "気胸。若年男性(原発性)、高齢+COPD(続発性)",
+      "cpt": {
+        "18_39": 0.005,
+        "40_64": 0.003,
+        "65_plus": 0.003
+      }
     }
   },
   "noisy_or_params": {
@@ -3477,6 +3488,13 @@
           "38.0_39.0": 0.08,
           "39.0_40.0": 0.02,
           "over_40.0": 0.0
+        },
+        "D123": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.0
         }
       }
     },
@@ -3767,6 +3785,11 @@
           "under_100": 0.3,
           "100_120": 0.45,
           "over_120": 0.25
+        },
+        "D123": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
         }
       }
     },
@@ -3880,6 +3903,10 @@
         "D116": {
           "normal_over_90": 0.9,
           "hypotension_under_90": 0.1
+        },
+        "D123": {
+          "normal_over_90": 0.88,
+          "hypotension_under_90": 0.12
         }
       }
     },
@@ -3981,6 +4008,11 @@
           "normal_under_20": 0.15,
           "tachypnea_20_30": 0.55,
           "severe_over_30": 0.3
+        },
+        "D123": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.2
         }
       }
     },
@@ -4091,6 +4123,11 @@
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.25
+        },
+        "D123": {
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -4155,60 +4192,77 @@
         "wheezes"
       ],
       "leak": {
-        "clear": 0.92,
-        "crackles": 0.03,
-        "wheezes": 0.05
+        "clear": 0.88,
+        "crackles": 0.05,
+        "wheezes": 0.04,
+        "decreased_absent": 0.03
       },
       "parent_effects": {
         "D05": {
-          "clear": 0.15,
-          "crackles": 0.75,
-          "wheezes": 0.1
+          "clear": 0.1455,
+          "crackles": 0.7275,
+          "wheezes": 0.097,
+          "decreased_absent": 0.03
         },
         "D06": {
-          "clear": 0.3,
-          "crackles": 0.15,
-          "wheezes": 0.55
+          "clear": 0.291,
+          "crackles": 0.1455,
+          "wheezes": 0.5335,
+          "decreased_absent": 0.03
         },
         "D36": {
-          "clear": 0.1,
-          "crackles": 0.7,
-          "wheezes": 0.2
+          "clear": 0.07500000000000001,
+          "crackles": 0.5249999999999999,
+          "wheezes": 0.15000000000000002,
+          "decreased_absent": 0.25
         },
         "D102": {
-          "clear": 0.1,
-          "crackles": 0.75,
-          "wheezes": 0.15
+          "clear": 0.097,
+          "crackles": 0.7275,
+          "wheezes": 0.1455,
+          "decreased_absent": 0.03
         },
         "D46": {
-          "clear": 0.6,
-          "crackles": 0.35,
-          "wheezes": 0.05
+          "clear": 0.582,
+          "crackles": 0.33949999999999997,
+          "wheezes": 0.0485,
+          "decreased_absent": 0.03
         },
         "D71": {
-          "clear": 0.5,
-          "crackles": 0.45,
-          "wheezes": 0.05
+          "clear": 0.485,
+          "crackles": 0.4365,
+          "wheezes": 0.0485,
+          "decreased_absent": 0.03
         },
         "D83": {
-          "clear": 0.3,
-          "crackles": 0.6,
-          "wheezes": 0.1
+          "clear": 0.291,
+          "crackles": 0.582,
+          "wheezes": 0.097,
+          "decreased_absent": 0.03
         },
         "D120": {
-          "clear": 0.15,
-          "crackles": 0.75,
-          "wheezes": 0.1
+          "clear": 0.1455,
+          "crackles": 0.7275,
+          "wheezes": 0.097,
+          "decreased_absent": 0.03
         },
         "D121": {
-          "clear": 0.1,
-          "crackles": 0.15,
-          "wheezes": 0.75
+          "clear": 0.097,
+          "crackles": 0.1455,
+          "wheezes": 0.7275,
+          "decreased_absent": 0.03
         },
         "D122": {
+          "clear": 0.0485,
+          "crackles": 0.0485,
+          "wheezes": 0.873,
+          "decreased_absent": 0.03
+        },
+        "D123": {
           "clear": 0.05,
-          "crackles": 0.05,
-          "wheezes": 0.9
+          "crackles": 0.02,
+          "wheezes": 0.03,
+          "decreased_absent": 0.9
         }
       }
     },
@@ -6398,6 +6452,12 @@
           "normal_4000_10000": 0.5,
           "high_10000_20000": 0.37,
           "very_high_over_20000": 0.1
+        },
+        "D123": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.75,
+          "high_10000_20000": 0.18,
+          "very_high_over_20000": 0.04
         }
       }
     },
@@ -7075,6 +7135,12 @@
           "mild_0.3_3": 0.35,
           "moderate_3_10": 0.2,
           "high_over_10": 0.05
+        },
+        "D123": {
+          "normal_under_0.3": 0.6,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.08,
+          "high_over_10": 0.02
         }
       }
     },
@@ -7183,211 +7249,248 @@
         "pleural_effusion"
       ],
       "leak": {
-        "normal": 0.915,
+        "normal": 0.905,
         "lobar_infiltrate": 0.03,
         "bilateral_infiltrate": 0.03,
         "BHL": 0.005,
-        "pleural_effusion": 0.02
+        "pleural_effusion": 0.02,
+        "pneumothorax": 0.01
       },
       "parent_effects": {
         "D05": {
-          "normal": 0.05,
-          "lobar_infiltrate": 0.63,
-          "bilateral_infiltrate": 0.2,
-          "BHL": 0.02,
-          "pleural_effusion": 0.1
+          "normal": 0.0495,
+          "lobar_infiltrate": 0.6237,
+          "bilateral_infiltrate": 0.198,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D03": {
-          "normal": 0.3,
-          "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.53,
-          "BHL": 0.02,
-          "pleural_effusion": 0.05
+          "normal": 0.297,
+          "lobar_infiltrate": 0.099,
+          "bilateral_infiltrate": 0.5247,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.0495,
+          "pneumothorax": 0.01
         },
         "D17": {
-          "normal": 0.15,
-          "lobar_infiltrate": 0.45,
-          "bilateral_infiltrate": 0.2,
-          "BHL": 0.05,
-          "pleural_effusion": 0.15
+          "normal": 0.1485,
+          "lobar_infiltrate": 0.4455,
+          "bilateral_infiltrate": 0.198,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D14": {
-          "normal": 0.38,
-          "lobar_infiltrate": 0.15,
-          "bilateral_infiltrate": 0.35,
-          "BHL": 0.02,
-          "pleural_effusion": 0.1
+          "normal": 0.3762,
+          "lobar_infiltrate": 0.1485,
+          "bilateral_infiltrate": 0.3465,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D35": {
-          "normal": 0.1,
-          "lobar_infiltrate": 0.58,
-          "bilateral_infiltrate": 0.1,
-          "BHL": 0.02,
-          "pleural_effusion": 0.2
+          "normal": 0.099,
+          "lobar_infiltrate": 0.5741999999999999,
+          "bilateral_infiltrate": 0.099,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.198,
+          "pneumothorax": 0.01
         },
         "D36": {
-          "normal": 0.05,
-          "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.1,
-          "BHL": 0.02,
-          "pleural_effusion": 0.73
+          "normal": 0.0495,
+          "lobar_infiltrate": 0.099,
+          "bilateral_infiltrate": 0.099,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.7227,
+          "pneumothorax": 0.01
         },
         "D50": {
-          "normal": 0.38,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.02,
-          "pleural_effusion": 0.15
+          "normal": 0.3762,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D55": {
-          "normal": 0.28,
-          "lobar_infiltrate": 0.45,
-          "bilateral_infiltrate": 0.15,
-          "BHL": 0.02,
-          "pleural_effusion": 0.1
+          "normal": 0.2772,
+          "lobar_infiltrate": 0.4455,
+          "bilateral_infiltrate": 0.1485,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D77": {
-          "normal": 0.38,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.02,
-          "pleural_effusion": 0.15
+          "normal": 0.3762,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D83": {
-          "normal": 0.38,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.02,
-          "pleural_effusion": 0.15
+          "normal": 0.3762,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D99": {
-          "normal": 0.1,
-          "lobar_infiltrate": 0.46,
-          "bilateral_infiltrate": 0.3,
-          "BHL": 0.04,
-          "pleural_effusion": 0.1
+          "normal": 0.099,
+          "lobar_infiltrate": 0.4554,
+          "bilateral_infiltrate": 0.297,
+          "BHL": 0.0396,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D102": {
-          "normal": 0.05,
-          "lobar_infiltrate": 0.68,
-          "bilateral_infiltrate": 0.15,
-          "BHL": 0.02,
-          "pleural_effusion": 0.1
+          "normal": 0.0495,
+          "lobar_infiltrate": 0.6732,
+          "bilateral_infiltrate": 0.1485,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D92": {
-          "normal": 0.43,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.15,
-          "BHL": 0.07,
-          "pleural_effusion": 0.15
+          "normal": 0.42569999999999997,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.1485,
+          "BHL": 0.0693,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D67": {
-          "normal": 0.25,
-          "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.3,
-          "BHL": 0.15,
-          "pleural_effusion": 0.2
+          "normal": 0.2475,
+          "lobar_infiltrate": 0.099,
+          "bilateral_infiltrate": 0.297,
+          "BHL": 0.1485,
+          "pleural_effusion": 0.198,
+          "pneumothorax": 0.01
         },
         "D60": {
-          "normal": 0.38,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.02,
-          "pleural_effusion": 0.15
+          "normal": 0.3762,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D62": {
-          "normal": 0.1,
-          "lobar_infiltrate": 0.03,
-          "bilateral_infiltrate": 0.07,
-          "BHL": 0.7,
-          "pleural_effusion": 0.1
+          "normal": 0.099,
+          "lobar_infiltrate": 0.029699999999999997,
+          "bilateral_infiltrate": 0.0693,
+          "BHL": 0.693,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D68": {
-          "normal": 0.35,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.05,
-          "pleural_effusion": 0.15
+          "normal": 0.3465,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D69": {
-          "normal": 0.37,
-          "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.03,
-          "pleural_effusion": 0.15
+          "normal": 0.3663,
+          "lobar_infiltrate": 0.198,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.029699999999999997,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D104": {
-          "normal": 0.15,
-          "lobar_infiltrate": 0.15,
-          "bilateral_infiltrate": 0.45,
-          "BHL": 0.05,
-          "pleural_effusion": 0.2
+          "normal": 0.1485,
+          "lobar_infiltrate": 0.1485,
+          "bilateral_infiltrate": 0.4455,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.198,
+          "pneumothorax": 0.01
         },
         "D28": {
-          "normal": 0.85,
-          "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.03,
-          "BHL": 0.02,
-          "pleural_effusion": 0.05
+          "normal": 0.8415,
+          "lobar_infiltrate": 0.0495,
+          "bilateral_infiltrate": 0.029699999999999997,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.0495,
+          "pneumothorax": 0.01
         },
         "D56": {
-          "normal": 0.5,
-          "lobar_infiltrate": 0.15,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.05,
-          "pleural_effusion": 0.05
+          "normal": 0.495,
+          "lobar_infiltrate": 0.1485,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.0495,
+          "pneumothorax": 0.01
         },
         "D106": {
-          "normal": 0.6,
-          "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.01,
-          "pleural_effusion": 0.05,
-          "GGO": 0.04
+          "normal": 0.594,
+          "lobar_infiltrate": 0.0495,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0099,
+          "pleural_effusion": 0.0495,
+          "GGO": 0.0396,
+          "pneumothorax": 0.01
         },
         "D109": {
-          "normal": 0.5,
-          "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.15,
-          "BHL": 0.05,
-          "pleural_effusion": 0.05,
-          "GGO": 0.1,
-          "cavity": 0.05
+          "normal": 0.495,
+          "lobar_infiltrate": 0.099,
+          "bilateral_infiltrate": 0.1485,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.0495,
+          "GGO": 0.099,
+          "cavity": 0.0495,
+          "pneumothorax": 0.01
         },
         "D110": {
-          "normal": 0.5,
-          "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.25,
-          "BHL": 0.05,
-          "pleural_effusion": 0.1
+          "normal": 0.495,
+          "lobar_infiltrate": 0.099,
+          "bilateral_infiltrate": 0.2475,
+          "BHL": 0.0495,
+          "pleural_effusion": 0.099,
+          "pneumothorax": 0.01
         },
         "D113": {
-          "normal": 0.3,
-          "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.4,
-          "BHL": 0.1,
-          "pleural_effusion": 0.15
+          "normal": 0.297,
+          "lobar_infiltrate": 0.0495,
+          "bilateral_infiltrate": 0.396,
+          "BHL": 0.099,
+          "pleural_effusion": 0.1485,
+          "pneumothorax": 0.01
         },
         "D120": {
-          "normal": 0.1,
-          "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.45,
-          "BHL": 0.02,
-          "pleural_effusion": 0.38
+          "normal": 0.099,
+          "lobar_infiltrate": 0.0495,
+          "bilateral_infiltrate": 0.4455,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.3762,
+          "pneumothorax": 0.01
         },
         "D121": {
-          "normal": 0.55,
-          "lobar_infiltrate": 0.15,
-          "bilateral_infiltrate": 0.1,
-          "BHL": 0.02,
-          "pleural_effusion": 0.18
+          "normal": 0.5445,
+          "lobar_infiltrate": 0.1485,
+          "bilateral_infiltrate": 0.099,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1782,
+          "pneumothorax": 0.01
         },
         "D122": {
-          "normal": 0.7,
-          "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.05,
-          "BHL": 0.02,
-          "pleural_effusion": 0.18
+          "normal": 0.693,
+          "lobar_infiltrate": 0.0495,
+          "bilateral_infiltrate": 0.0495,
+          "BHL": 0.0198,
+          "pleural_effusion": 0.1782,
+          "pneumothorax": 0.01
+        },
+        "D123": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.02,
+          "BHL": 0.01,
+          "pleural_effusion": 0.05,
+          "pneumothorax": 0.85
         }
       }
     },
@@ -9630,6 +9733,11 @@
           "absent": 0.03,
           "on_exertion": 0.22,
           "at_rest": 0.75
+        },
+        "D123": {
+          "absent": 0.1,
+          "on_exertion": 0.3,
+          "at_rest": 0.6
         }
       }
     },
@@ -11396,6 +11504,11 @@
           "absent": 0.05,
           "pleuritic": 0.25,
           "constant": 0.7
+        },
+        "D123": {
+          "absent": 0.05,
+          "pleuritic": 0.8,
+          "constant": 0.15
         }
       }
     },
@@ -12966,6 +13079,12 @@
           "3d_to_1w": 0.35,
           "1w_to_3w": 0.12,
           "over_3w": 0.03
+        },
+        "D123": {
+          "under_3d": 0.8,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
         }
       }
     },
@@ -13187,6 +13306,10 @@
         "D122": {
           "sudden_hours": 0.6,
           "gradual_days": 0.4
+        },
+        "D123": {
+          "sudden_hours": 0.85,
+          "gradual_days": 0.15
         }
       }
     },
@@ -14029,6 +14152,10 @@
           "present": 0.2
         },
         "D24": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D123": {
           "absent": 0.85,
           "present": 0.15
         }
