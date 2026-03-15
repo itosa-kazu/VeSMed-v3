@@ -5117,6 +5117,78 @@
       ],
       "severity": "critical",
       "note": "若年女性に多い。前駆:発熱/頭痛→精神症状(幻覚/興奮)→痙攣→意識障害→不随意運動→自律神経障害。卵巣奇形腫が30-50%"
+    },
+    {
+      "id": "D177",
+      "name": "ischemic_colitis",
+      "name_ja": "虚血性腸炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "大腸の一過性虚血。左下腹部痛+血性下痢。高齢者+動脈硬化。多くは保存的治療で改善。壊疽型は手術要"
+    },
+    {
+      "id": "D178",
+      "name": "listeria_meningitis",
+      "name_ja": "リステリア髄膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Listeria monocytogenes。高齢者/免疫不全/妊婦/新生児。菱脳幹脳炎(rhombencephalitis)。アンピシリンが治療"
+    },
+    {
+      "id": "D179",
+      "name": "DILI",
+      "name_ja": "薬剤性肝障害(DILI)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "薬剤による肝細胞障害/胆汁うっ滞/混合型。原因薬剤中止が治療。重症はALF進展リスク。R値で分類"
+    },
+    {
+      "id": "D180",
+      "name": "sigmoid_volvulus",
+      "name_ja": "S状結腸捻転",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "S状結腸の軸捻転→閉塞→虚血。高齢者/施設入所者/便秘歴。腹部膨満+便秘+嘔吐。X線coffee bean sign"
+    },
+    {
+      "id": "D181",
+      "name": "adenovirus",
+      "name_ja": "アデノウイルス感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "咽頭結膜熱(プール熱)/気道感染/胃腸炎/出血性膀胱炎。高熱+咽頭炎+結膜炎が三徴"
+    },
+    {
+      "id": "D182",
+      "name": "scarlet_fever",
+      "name_ja": "猩紅熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "GAS咽頭炎+発疹(sandpaper rash)+苺舌。発熱+咽頭痛+全身性粗い紅斑。ペニシリン治療"
     }
   ]
 }

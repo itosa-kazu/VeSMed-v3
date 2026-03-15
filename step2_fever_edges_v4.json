@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2810,
+  "total_edges": 2869,
   "edges": [
     {
       "from": "R01",
@@ -24167,6 +24167,419 @@
       "from_name": "APS",
       "to_name": "S13",
       "reason": "APS: 嘔吐"
+    },
+    {
+      "from": "D177",
+      "to": "S12",
+      "from_name": "ischemic_colitis",
+      "to_name": "S12",
+      "reason": "虚血性腸炎: 腹痛(左下腹部が典型, 90%+)"
+    },
+    {
+      "from": "D177",
+      "to": "S14",
+      "from_name": "ischemic_colitis",
+      "to_name": "S14",
+      "reason": "虚血性腸炎: 血性下痢(70-80%)"
+    },
+    {
+      "from": "D177",
+      "to": "S13",
+      "from_name": "ischemic_colitis",
+      "to_name": "S13",
+      "reason": "虚血性腸炎: 嘔気/嘔吐(30-40%)"
+    },
+    {
+      "from": "D177",
+      "to": "E01",
+      "from_name": "ischemic_colitis",
+      "to_name": "E01",
+      "reason": "虚血性腸炎: 発熱(20-30%)"
+    },
+    {
+      "from": "D177",
+      "to": "E02",
+      "from_name": "ischemic_colitis",
+      "to_name": "E02",
+      "reason": "虚血性腸炎: 頻脈(脱水/ショック)"
+    },
+    {
+      "from": "D177",
+      "to": "L01",
+      "from_name": "ischemic_colitis",
+      "to_name": "L01",
+      "reason": "虚血性腸炎: WBC上昇(50-60%)"
+    },
+    {
+      "from": "D177",
+      "to": "L02",
+      "from_name": "ischemic_colitis",
+      "to_name": "L02",
+      "reason": "虚血性腸炎: CRP上昇"
+    },
+    {
+      "from": "D177",
+      "to": "L16",
+      "from_name": "ischemic_colitis",
+      "to_name": "L16",
+      "reason": "虚血性腸炎: LDH上昇(組織虚血)"
+    },
+    {
+      "from": "D177",
+      "to": "T01",
+      "from_name": "ischemic_colitis",
+      "to_name": "T01",
+      "reason": "虚血性腸炎: 急性"
+    },
+    {
+      "from": "D177",
+      "to": "T02",
+      "from_name": "ischemic_colitis",
+      "to_name": "T02",
+      "reason": "虚血性腸炎: 急性"
+    },
+    {
+      "from": "D178",
+      "to": "E01",
+      "from_name": "listeria_meningitis",
+      "to_name": "E01",
+      "reason": "リステリア: 発熱(90%+)"
+    },
+    {
+      "from": "D178",
+      "to": "E06",
+      "from_name": "listeria_meningitis",
+      "to_name": "E06",
+      "reason": "リステリア: 項部硬直(60-70%)"
+    },
+    {
+      "from": "D178",
+      "to": "E16",
+      "from_name": "listeria_meningitis",
+      "to_name": "E16",
+      "reason": "リステリア: 意識障害(50-70%)"
+    },
+    {
+      "from": "D178",
+      "to": "S05",
+      "from_name": "listeria_meningitis",
+      "to_name": "S05",
+      "reason": "リステリア: 頭痛(70-80%)"
+    },
+    {
+      "from": "D178",
+      "to": "S13",
+      "from_name": "listeria_meningitis",
+      "to_name": "S13",
+      "reason": "リステリア: 嘔吐(50-60%)"
+    },
+    {
+      "from": "D178",
+      "to": "S52",
+      "from_name": "listeria_meningitis",
+      "to_name": "S52",
+      "reason": "リステリア: 局所神経脱落(脳幹脳炎, 30-40%)"
+    },
+    {
+      "from": "D178",
+      "to": "S42",
+      "from_name": "listeria_meningitis",
+      "to_name": "S42",
+      "reason": "リステリア: 痙攣(20-30%)"
+    },
+    {
+      "from": "D178",
+      "to": "L01",
+      "from_name": "listeria_meningitis",
+      "to_name": "L01",
+      "reason": "リステリア: WBC上昇"
+    },
+    {
+      "from": "D178",
+      "to": "L02",
+      "from_name": "listeria_meningitis",
+      "to_name": "L02",
+      "reason": "リステリア: CRP上昇"
+    },
+    {
+      "from": "D178",
+      "to": "T01",
+      "from_name": "listeria_meningitis",
+      "to_name": "T01",
+      "reason": "リステリア: 急性~亜急性"
+    },
+    {
+      "from": "D178",
+      "to": "T02",
+      "from_name": "listeria_meningitis",
+      "to_name": "T02",
+      "reason": "リステリア: 亜急性"
+    },
+    {
+      "from": "D179",
+      "to": "L11",
+      "from_name": "DILI",
+      "to_name": "L11",
+      "reason": "DILI: 肝酵素上昇(定義的)"
+    },
+    {
+      "from": "D179",
+      "to": "E18",
+      "from_name": "DILI",
+      "to_name": "E18",
+      "reason": "DILI: 黄疸(胆汁うっ滞型/重症, 40-60%)"
+    },
+    {
+      "from": "D179",
+      "to": "S07",
+      "from_name": "DILI",
+      "to_name": "S07",
+      "reason": "DILI: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D179",
+      "to": "S13",
+      "from_name": "DILI",
+      "to_name": "S13",
+      "reason": "DILI: 嘔気(40-50%)"
+    },
+    {
+      "from": "D179",
+      "to": "S12",
+      "from_name": "DILI",
+      "to_name": "S12",
+      "reason": "DILI: 腹痛(RUQ, 20-30%)"
+    },
+    {
+      "from": "D179",
+      "to": "E01",
+      "from_name": "DILI",
+      "to_name": "E01",
+      "reason": "DILI: 発熱(薬剤アレルギー型, 20-30%)"
+    },
+    {
+      "from": "D179",
+      "to": "L01",
+      "from_name": "DILI",
+      "to_name": "L01",
+      "reason": "DILI: WBC(好酸球増多型もあり)"
+    },
+    {
+      "from": "D179",
+      "to": "T01",
+      "from_name": "DILI",
+      "to_name": "T01",
+      "reason": "DILI: 急性~亜急性(投薬開始数日~数週後)"
+    },
+    {
+      "from": "D179",
+      "to": "T02",
+      "from_name": "DILI",
+      "to_name": "T02",
+      "reason": "DILI: 亜急性"
+    },
+    {
+      "from": "D180",
+      "to": "S12",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "S12",
+      "reason": "S状結腸捻転: 腹痛(LLQ~びまん性)"
+    },
+    {
+      "from": "D180",
+      "to": "S13",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "S13",
+      "reason": "S状結腸捻転: 嘔吐(50-70%)"
+    },
+    {
+      "from": "D180",
+      "to": "E09",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "E09",
+      "reason": "S状結腸捻転: 腹部膨満+圧痛"
+    },
+    {
+      "from": "D180",
+      "to": "E01",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "E01",
+      "reason": "S状結腸捻転: 発熱(壊疽/穿孔時, 20-30%)"
+    },
+    {
+      "from": "D180",
+      "to": "E02",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "E02",
+      "reason": "S状結腸捻転: 頻脈(脱水/ショック)"
+    },
+    {
+      "from": "D180",
+      "to": "L01",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "L01",
+      "reason": "S状結腸捻転: WBC上昇(壊疽時)"
+    },
+    {
+      "from": "D180",
+      "to": "T01",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "T01",
+      "reason": "S状結腸捻転: 急性~亜急性"
+    },
+    {
+      "from": "D180",
+      "to": "T02",
+      "from_name": "sigmoid_volvulus",
+      "to_name": "T02",
+      "reason": "S状結腸捻転: 急性"
+    },
+    {
+      "from": "D181",
+      "to": "E01",
+      "from_name": "adenovirus",
+      "to_name": "E01",
+      "reason": "アデノウイルス: 高熱(90%+, 39-40℃, 5-7日持続)"
+    },
+    {
+      "from": "D181",
+      "to": "S02",
+      "from_name": "adenovirus",
+      "to_name": "S02",
+      "reason": "アデノウイルス: 咽頭痛(咽頭炎, 80%+)"
+    },
+    {
+      "from": "D181",
+      "to": "E08",
+      "from_name": "adenovirus",
+      "to_name": "E08",
+      "reason": "アデノウイルス: 咽頭所見(発赤/白苔)"
+    },
+    {
+      "from": "D181",
+      "to": "S01",
+      "from_name": "adenovirus",
+      "to_name": "S01",
+      "reason": "アデノウイルス: 咳嗽(50-60%)"
+    },
+    {
+      "from": "D181",
+      "to": "S14",
+      "from_name": "adenovirus",
+      "to_name": "S14",
+      "reason": "アデノウイルス: 下痢(胃腸炎型, 30-40%)"
+    },
+    {
+      "from": "D181",
+      "to": "S05",
+      "from_name": "adenovirus",
+      "to_name": "S05",
+      "reason": "アデノウイルス: 頭痛(40-50%)"
+    },
+    {
+      "from": "D181",
+      "to": "L01",
+      "from_name": "adenovirus",
+      "to_name": "L01",
+      "reason": "アデノウイルス: WBC(正常~やや上昇)"
+    },
+    {
+      "from": "D181",
+      "to": "L02",
+      "from_name": "adenovirus",
+      "to_name": "L02",
+      "reason": "アデノウイルス: CRP上昇(細菌様の上昇あり)"
+    },
+    {
+      "from": "D181",
+      "to": "T01",
+      "from_name": "adenovirus",
+      "to_name": "T01",
+      "reason": "アデノウイルス: 急性(5-7日)"
+    },
+    {
+      "from": "D181",
+      "to": "T02",
+      "from_name": "adenovirus",
+      "to_name": "T02",
+      "reason": "アデノウイルス: 急性"
+    },
+    {
+      "from": "D182",
+      "to": "E01",
+      "from_name": "scarlet_fever",
+      "to_name": "E01",
+      "reason": "猩紅熱: 高熱(90%+)"
+    },
+    {
+      "from": "D182",
+      "to": "S02",
+      "from_name": "scarlet_fever",
+      "to_name": "S02",
+      "reason": "猩紅熱: 咽頭痛(GAS咽頭炎, 95%+)"
+    },
+    {
+      "from": "D182",
+      "to": "E08",
+      "from_name": "scarlet_fever",
+      "to_name": "E08",
+      "reason": "猩紅熱: 咽頭(発赤/白苔)"
+    },
+    {
+      "from": "D182",
+      "to": "E12",
+      "from_name": "scarlet_fever",
+      "to_name": "E12",
+      "reason": "猩紅熱: 皮疹(sandpaper rash, 全身性粗い紅斑)"
+    },
+    {
+      "from": "D182",
+      "to": "S05",
+      "from_name": "scarlet_fever",
+      "to_name": "S05",
+      "reason": "猩紅熱: 頭痛(50-60%)"
+    },
+    {
+      "from": "D182",
+      "to": "S07",
+      "from_name": "scarlet_fever",
+      "to_name": "S07",
+      "reason": "猩紅熱: 倦怠感(70-80%)"
+    },
+    {
+      "from": "D182",
+      "to": "S13",
+      "from_name": "scarlet_fever",
+      "to_name": "S13",
+      "reason": "猩紅熱: 嘔吐(30-40%)"
+    },
+    {
+      "from": "D182",
+      "to": "L01",
+      "from_name": "scarlet_fever",
+      "to_name": "L01",
+      "reason": "猩紅熱: WBC上昇(好中球)"
+    },
+    {
+      "from": "D182",
+      "to": "L07",
+      "from_name": "scarlet_fever",
+      "to_name": "L07",
+      "reason": "猩紅熱: 迅速溶連菌検査陽性"
+    },
+    {
+      "from": "D182",
+      "to": "T01",
+      "from_name": "scarlet_fever",
+      "to_name": "T01",
+      "reason": "猩紅熱: 急性"
+    },
+    {
+      "from": "D182",
+      "to": "T02",
+      "from_name": "scarlet_fever",
+      "to_name": "T02",
+      "reason": "猩紅熱: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
