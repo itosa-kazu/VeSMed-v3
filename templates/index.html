@@ -432,6 +432,15 @@ const STATE_JA = {
   mildly_elevated:"軽度上昇",
   very_high:"著高",
   compression_fracture:"圧迫骨折",
+  // BNP (L51)
+  // uses existing: not_done, normal, mildly_elevated, very_high
+  // Orthopnea (S49) - uses absent/present
+  // Lower extremity edema (E36)
+  unilateral:"片側", bilateral:"両側",
+  // JVD (E37) - uses absent/present
+  // Cardiac history (R44) - uses no/yes
+  // Smoking (R45)
+  never:"なし", former:"過去", current:"現在",
 };
 
 function stateJa(s) { return STATE_JA[s] || s; }

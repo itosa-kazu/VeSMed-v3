@@ -9,6 +9,7 @@
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
+- [feedback_no_evidence_manipulation.md](feedback_no_evidence_manipulation.md) — 排名改善のための証拠操作禁止。原文所見は全保留、臆測値は除外
 - [feedback_memory_sync.md](feedback_memory_sync.md) — push前にsync_memory.shでmemoryをrepoに同期
 - [feedback_dual_test.md](feedback_dual_test.md) — 新案例は伝統Top-3テスト+ナビゲーションテスト(反証推奨)の2種を必ず実施
 
@@ -22,6 +23,7 @@
 - [project_inference_model_issue.md](project_inference_model_issue.md) — 解決済：超参数grid search + prevalence実験6種全て不採用
 - [project_m02_hemodynamic.md](project_m02_hemodynamic.md) — M02血行動態異常：並列sign変数として実装完了
 - [project_missing_diseases.md](project_missing_diseases.md) — 未追加の発熱疾患候補(ヒストプラズマ/骨髄腫以降)
+- [project_expansion_plan.md](project_expansion_plan.md) — 全疾患展開計画: 呼吸困難→胸痛→腹痛→意識障害。Prior再調整が将来必要
 - [project_navigation_test.md](project_navigation_test.md) — 新評価軸：推奨検査ナビでTop-1到達+維持できるか（手動テスト、論文ネタ）
 - [project_violation_mechanism.md](project_violation_mechanism.md) — 違和感メカニズム：尤度比で対抗仮説を検出→鑑別検査推奨。骨髄腫で検証、未解決課題あり
 

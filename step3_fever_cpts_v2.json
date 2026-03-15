@@ -371,6 +371,21 @@
         "40_64": 0.007,
         "65_plus": 0.008
       }
+    },
+    "R44": {
+      "description": "心疾患既往",
+      "distribution": {
+        "no": 0.85,
+        "yes": 0.15
+      }
+    },
+    "R45": {
+      "description": "喫煙歴",
+      "distribution": {
+        "never": 0.55,
+        "former": 0.25,
+        "current": 0.2
+      }
     }
   },
   "full_cpts": {
@@ -2444,6 +2459,21 @@
         "no": 0.003,
         "yes": 0.008
       }
+    },
+    "D120": {
+      "parents": [
+        "R44",
+        "R01"
+      ],
+      "description": "急性心不全。心疾患既往+高齢がリスク",
+      "cpt": {
+        "no|18_39": 0.002,
+        "no|40_64": 0.005,
+        "no|65_plus": 0.01,
+        "yes|18_39": 0.01,
+        "yes|40_64": 0.025,
+        "yes|65_plus": 0.05
+      }
     }
   },
   "noisy_or_params": {
@@ -3387,6 +3417,13 @@
           "38.0_39.0": 0.3,
           "39.0_40.0": 0.35,
           "over_40.0": 0.15
+        },
+        "D120": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.0
         }
       }
     },
@@ -3662,6 +3699,11 @@
           "under_100": 0.35,
           "100_120": 0.45,
           "over_120": 0.2
+        },
+        "D120": {
+          "under_100": 0.35,
+          "100_120": 0.4,
+          "over_120": 0.25
         }
       }
     },
@@ -3861,6 +3903,11 @@
           "normal_under_20": 0.5,
           "tachypnea_20_30": 0.35,
           "severe_over_30": 0.15
+        },
+        "D120": {
+          "normal_under_20": 0.25,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.25
         }
       }
     },
@@ -3956,6 +4003,11 @@
           "normal_over_96": 0.5,
           "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.2
+        },
+        "D120": {
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -4058,6 +4110,11 @@
         "D83": {
           "clear": 0.3,
           "crackles": 0.6,
+          "wheezes": 0.1
+        },
+        "D120": {
+          "clear": 0.15,
+          "crackles": 0.75,
           "wheezes": 0.1
         }
       }
@@ -6230,6 +6287,12 @@
           "normal_4000_10000": 0.1,
           "high_10000_20000": 0.5,
           "very_high_over_20000": 0.38
+        },
+        "D120": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.7,
+          "high_10000_20000": 0.2,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -6889,6 +6952,12 @@
           "mild_0.3_3": 0.05,
           "moderate_3_10": 0.2,
           "high_over_10": 0.73
+        },
+        "D120": {
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.4,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.05
         }
       }
     },
@@ -7175,6 +7244,13 @@
           "bilateral_infiltrate": 0.4,
           "BHL": 0.1,
           "pleural_effusion": 0.15
+        },
+        "D120": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.45,
+          "BHL": 0.02,
+          "pleural_effusion": 0.38
         }
       }
     },
@@ -9392,6 +9468,11 @@
           "absent": 0.35,
           "on_exertion": 0.4,
           "at_rest": 0.25
+        },
+        "D120": {
+          "absent": 0.05,
+          "on_exertion": 0.3,
+          "at_rest": 0.65
         }
       }
     },
@@ -9992,6 +10073,11 @@
           "absent": 0.25,
           "mild": 0.3,
           "severe": 0.45
+        },
+        "D120": {
+          "absent": 0.1,
+          "mild": 0.25,
+          "severe": 0.65
         }
       }
     },
@@ -10707,6 +10793,10 @@
         "D119": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D120": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -11562,6 +11652,10 @@
         "D116": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D120": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -12683,6 +12777,12 @@
           "3d_to_1w": 0.45,
           "1w_to_3w": 0.35,
           "over_3w": 0.1
+        },
+        "D120": {
+          "under_3d": 0.4,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.05
         }
       }
     },
@@ -12892,6 +12992,10 @@
         "D119": {
           "sudden_hours": 0.2,
           "gradual_days": 0.8
+        },
+        "D120": {
+          "sudden_hours": 0.45,
+          "gradual_days": 0.55
         }
       }
     },
@@ -13642,6 +13746,64 @@
         "D119": {
           "absent": 0.1,
           "present": 0.9
+        }
+      }
+    },
+    "S49": {
+      "description": "起座呼吸",
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D120": {
+          "absent": 0.35,
+          "present": 0.65
+        }
+      }
+    },
+    "E36": {
+      "description": "下腿浮腫",
+      "leak": {
+        "absent": 0.9,
+        "unilateral": 0.05,
+        "bilateral": 0.05
+      },
+      "parent_effects": {
+        "D120": {
+          "absent": 0.25,
+          "unilateral": 0.05,
+          "bilateral": 0.7
+        }
+      }
+    },
+    "E37": {
+      "description": "頸静脈怒張(JVD)",
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D120": {
+          "absent": 0.5,
+          "present": 0.5
+        }
+      }
+    },
+    "L51": {
+      "description": "BNP/NT-proBNP",
+      "leak": {
+        "not_done": 0.7,
+        "normal": 0.25,
+        "mildly_elevated": 0.04,
+        "very_high": 0.01
+      },
+      "parent_effects": {
+        "D120": {
+          "not_done": 0.1,
+          "normal": 0.03,
+          "mildly_elevated": 0.12,
+          "very_high": 0.75
         }
       }
     }

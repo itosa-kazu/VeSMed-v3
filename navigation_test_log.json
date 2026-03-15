@@ -207,6 +207,38 @@
         }
       ],
       "conclusion": "尿検査正常(血行性)→CT膿瘍で確定。反証推奨が正しい検査順序を提示"
+    },
+    {
+      "case_id": "R204",
+      "pmcid": "PMC11997898",
+      "final_diagnosis": "急性心不全(ADHF)",
+      "expected_id": "D120",
+      "traditional_result": "Top-1 100%",
+      "navigation_result": "Step0で即Top-1(49%), Step2で100%",
+      "navigation_steps": [
+        {
+          "step": 0,
+          "H": 3.45,
+          "D120_rank": 1,
+          "D120_prob": "49%",
+          "falsification_rec": "L04(CXR)→bilateral_infiltrate"
+        },
+        {
+          "step": 1,
+          "H": 1.38,
+          "D120_rank": 1,
+          "D120_prob": "83%",
+          "falsification_rec": "L51(BNP)→very_high"
+        },
+        {
+          "step": 2,
+          "H": 0.04,
+          "D120_rank": 1,
+          "D120_prob": "100%",
+          "note": "確定"
+        }
+      ],
+      "conclusion": "労作時呼吸困難+無熱+心疾患既往で即Top-1。CXR→BNPで確定。初の非発熱疾患追加成功"
     }
   ]
 }

@@ -4210,6 +4210,88 @@
       ],
       "severity": "high",
       "note": "腎盂腎炎の重症合併症。側腹部痛+発熱+CVA叩打痛。尿所見正常が30%(血行性)。CT造影で確定。DM/尿路結石がリスク"
+    },
+    {
+      "id": "L51",
+      "name": "BNP_NTproBNP",
+      "name_ja": "BNP/NT-proBNP",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mildly_elevated",
+        "very_high"
+      ],
+      "note": "心不全マーカー。正常<100pg/mL, 軽度100-400, 著高>400。心不全で著高、肺疾患では正常~軽度。PE/腎不全でも軽度上昇"
+    },
+    {
+      "id": "S49",
+      "name": "orthopnea",
+      "name_ja": "起座呼吸",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "臥位で呼吸困難が増悪し、座位で改善。心不全に特異的(感度50-60%, 特異度90%+)"
+    },
+    {
+      "id": "E36",
+      "name": "lower_extremity_edema",
+      "name_ja": "下腿浮腫",
+      "category": "sign",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "片側: DVT。両側: 心不全/腎不全/肝硬変。"
+    },
+    {
+      "id": "E37",
+      "name": "JVD",
+      "name_ja": "頸静脈怒張(JVD)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "右心不全/心タンポナーデ/緊張性気胸で陽性。心不全の感度40-50%"
+    },
+    {
+      "id": "R44",
+      "name": "cardiac_history",
+      "name_ja": "心疾患既往(心不全/虚血性心疾患)",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "心不全/虚血性心疾患の既往。心不全増悪のリスク"
+    },
+    {
+      "id": "R45",
+      "name": "smoking_history",
+      "name_ja": "喫煙歴",
+      "category": "risk_factor",
+      "states": [
+        "never",
+        "former",
+        "current"
+      ],
+      "note": "COPD/肺癌/虚血性心疾患のリスク。pack-years不問(あり/なし/現在)"
+    },
+    {
+      "id": "D120",
+      "name": "acute_heart_failure",
+      "name_ja": "急性心不全（ADHF）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "呼吸困難の最多原因。起座呼吸+湿性ラ音+下腿浮腫+JVD+BNP著高。胸部X線で肺うっ血/胸水。心疾患既往+高齢がリスク。"
     }
   ]
 }

@@ -5049,6 +5049,34 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 無熱! 5ヶ月の慢性経過. PCT 22.38著高. 腫瘍と誤診されかけた"
+    },
+    {
+      "id": "R204",
+      "source": "Cureus 2025",
+      "pmcid": "PMC11997898",
+      "vignette": "87F 心不全既往+心房細動. 1週間の進行性労作時呼吸困難(着替え・入浴で増悪). T=36.0, HR 83(不整), BP 129/76, RR 19, SpO2 98%(O2 2L). 両側下肺crackles, 両側下腿pit edema著明. NT-proBNP 6126. CXR: 肺うっ血. Echo: EF 57.9%. 甲状腺機能亢進(FT4 3.77, TSH<0.01)が増悪因子",
+      "final_diagnosis": "急性心不全（甲状腺中毒性結節性甲状腺腫による増悪）",
+      "expected_id": "D120",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S04": "on_exertion",
+        "E07": "crackles",
+        "E36": "bilateral",
+        "L51": "very_high",
+        "L04": "bilateral_infiltrate",
+        "E02": "under_100",
+        "E04": "normal_under_20",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R44": "yes"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 無熱(36.0). HR正常(83だがAfib). 甲状腺中毒が原因だが心不全として評価"
     }
   ],
   "total_cases": 110
