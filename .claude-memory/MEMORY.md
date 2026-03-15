@@ -27,6 +27,7 @@
 - [project_expansion_plan.md](project_expansion_plan.md) — 全疾患展開計画: 呼吸困難→胸痛→腹痛→意識障害。Prior再調整が将来必要
 - [project_navigation_test.md](project_navigation_test.md) — 新評価軸：推奨検査ナビでTop-1到達+維持できるか（手動テスト、論文ネタ）
 - [project_violation_mechanism.md](project_violation_mechanism.md) — 違和感メカニズム：尤度比で対抗仮説を検出→鑑別検査推奨。骨髄腫で検証、未解決課題あり
+- [project_navigation_test_results.md](project_navigation_test_results.md) — ナビテスト全案例結果: 153/228(67%)到達、75件未到達の分類
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）
