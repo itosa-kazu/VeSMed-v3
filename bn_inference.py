@@ -610,11 +610,10 @@ def next_best_falsification_test(evidence, risk, diseases, disease_children,
       - 正診の場合: 実際の結果が動揺方向と逆に出るため、確信が強まる
       - 確認バイアスを防ぎ、自己修正的な診断プロセスを実現
     """
-    # Use RAW entropy (no IDF/CF correction) for falsification comparison.
-    # IDF/CF correction distorts entropy differences, causing false "no results".
+    # Reuse next_best_test with same IDF/CF settings as the main system.
     all_results = next_best_test(
         evidence, risk, diseases, disease_children, noisy_or, root_priors,
-        disc=disc, disc_power=0.0, cf_alpha=0.0,
+        disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
         top_n=9999
     )
 
@@ -623,26 +622,27 @@ def next_best_falsification_test(evidence, risk, diseases, disease_children,
 
     h_now = all_results[0]["h_now"]
 
+    # Rank by max(H_after) — the state that produces the highest post-test entropy.
+    # No threshold needed: all tests are ranked by disruption potential.
     falsification_results = []
     for item in all_results:
-        # Find the state that MOST increases entropy
         max_h_state = max(item["state_details"], key=lambda x: x["h_after"])
         h_increase = max_h_state["h_after"] - h_now
 
-        if h_increase > 0:
-            falsification_results.append({
-                "var_id": item["var_id"],
-                "h_increase": h_increase,
-                "h_now": h_now,
-                "disruptive_state": max_h_state["state"],
-                "disruptive_h": max_h_state["h_after"],
-                "disruptive_prob": max_h_state["prob"],
-                "marginal": item["marginal"],
-                "state_details": item["state_details"],
-                "ig": item["ig"],
-            })
+        falsification_results.append({
+            "var_id": item["var_id"],
+            "h_increase": h_increase,
+            "h_now": h_now,
+            "disruptive_state": max_h_state["state"],
+            "disruptive_h": max_h_state["h_after"],
+            "disruptive_prob": max_h_state["prob"],
+            "marginal": item["marginal"],
+            "state_details": item["state_details"],
+            "ig": item["ig"],
+        })
 
-    falsification_results.sort(key=lambda x: -x["h_increase"])
+    # Sort by max(H_after) descending = most disruptive first
+    falsification_results.sort(key=lambda x: -x["disruptive_h"])
     return falsification_results[:top_n]
 
 
