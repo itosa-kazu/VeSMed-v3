@@ -298,7 +298,8 @@
         "E02": "over_120",
         "L02": "high_over_10",
         "L20": "elevated",
-        "S50": "breathing"
+        "S50": "breathing",
+        "L52": "very_high"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -468,7 +469,8 @@
         "T01": "3d_to_1w",
         "L01": "high_10000_20000",
         "L02": "high_over_10",
-        "L28": "elevated"
+        "L28": "elevated",
+        "E07": "crackles"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -494,7 +496,8 @@
         "L18": "negative",
         "L20": "elevated",
         "E14": "present",
-        "T01": "3d_to_1w"
+        "T01": "3d_to_1w",
+        "L52": "mildly_elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -954,7 +957,8 @@
         "L04": "bilateral_infiltrate",
         "E28": "present",
         "L44": "hyponatremia",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "E07": "crackles"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1128,7 +1132,8 @@
         "L01": "low_under_4000",
         "L11": "very_high",
         "L28": "elevated",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L09": "negative"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -1260,7 +1265,8 @@
         "L24": "elevated",
         "L18": "negative",
         "E07": "crackles",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "E36": "bilateral"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -1376,7 +1382,9 @@
         "L02": "high_over_10",
         "L20": "elevated",
         "L09": "gram_negative",
-        "E25": "present"
+        "E25": "present",
+        "L52": "mildly_elevated",
+        "L03": "high_over_0.5"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1402,7 +1410,8 @@
         "S07": "severe",
         "L22": "present",
         "L28": "very_high_over_100",
-        "E13": "generalized"
+        "E13": "generalized",
+        "L03": "high_over_0.5"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -2815,7 +2824,8 @@
         "E07": "crackles",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "M02": "compensated"
+        "M02": "compensated",
+        "E36": "bilateral"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2927,7 +2937,8 @@
         "L17": "very_high",
         "L20": "elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L52": "very_high"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3032,7 +3043,8 @@
         "L02": "high_over_10",
         "L27": "positive",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L09": "gram_positive"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -4583,7 +4595,8 @@
         "L19": "negative",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "S15": "present"
+        "S15": "present",
+        "E36": "bilateral"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -4877,7 +4890,8 @@
         "L04": "normal",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "S50": "position"
+        "S50": "position",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -4901,7 +4915,8 @@
         "S01": "productive",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "S50": "none"
+        "S50": "none",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5211,7 +5226,8 @@
         "L04": "bilateral_infiltrate",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L53": "mildly_elevated"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5479,7 +5495,8 @@
         "E01": "under_37.5",
         "L01": "normal_4000_10000",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -5652,7 +5669,8 @@
         "L01": "very_high_over_20000",
         "S09": "present",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E07": "wheezes"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -5725,7 +5743,8 @@
         "L04": "normal",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "S50": "none"
+        "S50": "none",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5943,7 +5962,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "S50": "none",
-        "S51": "back"
+        "S51": "back",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6363,7 +6383,8 @@
         "L02": "moderate_3_10",
         "L01": "normal_4000_10000",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L28": "normal"
       },
       "risk_factors": {
         "R01": "40_64",

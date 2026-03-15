@@ -15516,6 +15516,18 @@
           "normal": 0.05,
           "mildly_elevated": 0.25,
           "very_high": 0.5
+        },
+        "D03": {
+          "not_done": 0.25,
+          "normal": 0.25,
+          "mildly_elevated": 0.3,
+          "very_high": 0.2
+        },
+        "D05": {
+          "not_done": 0.3,
+          "normal": 0.35,
+          "mildly_elevated": 0.3,
+          "very_high": 0.05
         }
       }
     },
