@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2758,
+  "total_edges": 2779,
   "edges": [
     {
       "from": "R01",
@@ -23803,6 +23803,153 @@
       "from_name": "anti_NMDA",
       "to_name": "T02",
       "reason": "抗NMDA: 亜急性"
+    },
+    {
+      "from": "D174",
+      "to": "L14",
+      "from_name": "ruptured_AAA",
+      "to_name": "L14",
+      "reason": "AAA破裂: 消費性血小板減少(大量出血)"
+    },
+    {
+      "from": "D174",
+      "to": "L52",
+      "from_name": "ruptured_AAA",
+      "to_name": "L52",
+      "reason": "AAA破裂: D-dimer著高(出血/消費性凝固障害)"
+    },
+    {
+      "from": "D174",
+      "to": "L02",
+      "from_name": "ruptured_AAA",
+      "to_name": "L02",
+      "reason": "AAA破裂: CRP上昇(SIRS)"
+    },
+    {
+      "from": "D174",
+      "to": "L01",
+      "from_name": "ruptured_AAA",
+      "to_name": "L01",
+      "reason": "AAA破裂: WBC上昇(ストレス/SIRS)"
+    },
+    {
+      "from": "D174",
+      "to": "L55",
+      "from_name": "ruptured_AAA",
+      "to_name": "L55",
+      "reason": "AAA破裂: AKI(ショック/腎灌流低下)"
+    },
+    {
+      "from": "D173",
+      "to": "L14",
+      "from_name": "varicella",
+      "to_name": "L14",
+      "reason": "水痘: 血小板減少(重症/DIC合併, 20-30%)"
+    },
+    {
+      "from": "D173",
+      "to": "L15",
+      "from_name": "varicella",
+      "to_name": "L15",
+      "reason": "水痘: フェリチン上昇(重症肝壊死, 稀だが極高値可)"
+    },
+    {
+      "from": "D173",
+      "to": "L52",
+      "from_name": "varicella",
+      "to_name": "L52",
+      "reason": "水痘: D-dimer上昇(DIC合併時)"
+    },
+    {
+      "from": "D173",
+      "to": "L17",
+      "from_name": "varicella",
+      "to_name": "L17",
+      "reason": "水痘: CK上昇(横紋筋融解合併時)"
+    },
+    {
+      "from": "D173",
+      "to": "S13",
+      "from_name": "varicella",
+      "to_name": "S13",
+      "reason": "水痘: 嘔気/嘔吐(成人30-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "S12",
+      "from_name": "APS",
+      "to_name": "S12",
+      "reason": "APS: 腹痛(腸管血栓/脾梗塞, 30-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "S07",
+      "from_name": "APS",
+      "to_name": "S07",
+      "reason": "APS: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D171",
+      "to": "L02",
+      "from_name": "APS",
+      "to_name": "L02",
+      "reason": "APS: CRP上昇(CAPS時炎症)"
+    },
+    {
+      "from": "D144",
+      "to": "L02",
+      "from_name": "GBS",
+      "to_name": "L02",
+      "reason": "GBS: CRP上昇(感染誘因/軽度)"
+    },
+    {
+      "from": "D151",
+      "to": "L52",
+      "from_name": "acute_liver_failure",
+      "to_name": "L52",
+      "reason": "劇症肝炎: D-dimer上昇(DIC合併)"
+    },
+    {
+      "from": "D151",
+      "to": "L55",
+      "from_name": "acute_liver_failure",
+      "to_name": "L55",
+      "reason": "劇症肝炎: AKI(肝腎症候群)"
+    },
+    {
+      "from": "D171",
+      "to": "E03",
+      "from_name": "APS",
+      "to_name": "E03",
+      "reason": "APS: 低血圧(CAPSショック)"
+    },
+    {
+      "from": "D171",
+      "to": "E16",
+      "from_name": "APS",
+      "to_name": "E16",
+      "reason": "APS: 意識障害(脳血栓/CAPS)"
+    },
+    {
+      "from": "D105",
+      "to": "E12",
+      "from_name": "parvovirus_B19",
+      "to_name": "E12",
+      "reason": "パルボB19: 皮疹(slapped cheek/レース状, 60-70%)"
+    },
+    {
+      "from": "D176",
+      "to": "S13",
+      "from_name": "anti_NMDA",
+      "to_name": "S13",
+      "reason": "抗NMDA: 嘔気/嘔吐(前駆, 30-40%)"
+    },
+    {
+      "from": "D176",
+      "to": "L01",
+      "from_name": "anti_NMDA",
+      "to_name": "L01",
+      "reason": "抗NMDA: WBC(正常~軽度上昇)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

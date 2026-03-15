@@ -30,7 +30,7 @@ CASES = os.path.join(BASE, "real_case_test_suite.json")
 # IDF鑑別力係数のべき乗 (0=無効, 0.5=最適, 1.0=強)
 IDF_DISC_POWER = 0.5
 # 反事実Coverage: 因果説明力の重み (0=無効, 0.3=最適, 1.0=強)
-CF_COVERAGE_ALPHA = 1.3
+CF_COVERAGE_ALPHA = 2.0
 
 
 def load_json(path):
