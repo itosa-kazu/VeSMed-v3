@@ -501,16 +501,17 @@ function clearAll() {
 }
 
 // ═══ Tab switching ═══
-const TAB_STYLES = {diagnosis:'active', recommend:'active-rec', dontmiss:'active-warn'};
+const TAB_STYLES = {diagnosis:'active', recommend:'active-rec'};
 function switchTab(tabId) {
   document.querySelectorAll('.tab-btn').forEach((btn, i) => {
-    const tabs = ['diagnosis','recommend','dontmiss'];
+    const tabs = ['diagnosis','recommend'];
     const isActive = tabs[i] === tabId;
     btn.classList.remove('active','active-rec','active-warn');
     if (isActive) btn.classList.add(TAB_STYLES[tabId]);
   });
-  ['diagnosis','recommend','dontmiss'].forEach(t => {
-    document.getElementById('tab-' + t).classList.toggle('active', t === tabId);
+  ['diagnosis','recommend'].forEach(t => {
+    const el = document.getElementById('tab-' + t);
+    if (el) el.classList.toggle('active', t === tabId);
   });
 }
 
