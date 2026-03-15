@@ -13275,6 +13275,333 @@
       },
       "result": "",
       "notes": "錆色痰! フェリチン1071. COVID合併"
+    },
+    {
+      "id": "R519",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC10901703",
+      "vignette": "59M. 5年間の嚥下困難(1ヶ月増悪, 液体含む)+15kg体重減少+左肺crackles. BP 126/92, HR 93, T 36.9, RR 16, SpO2 94%. CRP 2.70. CT:著明食道拡張+食物残渣+両肺GGO. 食道造影:S字型蛇行",
+      "final_diagnosis": "食道アカラシア(sigmoid型)+脂質性肺炎",
+      "expected_id": "D272",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "S01": "dry",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5",
+        "L02": "mild_0.3_3",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "15kg減. sigmoid型. 脂質性肺炎合併"
+    },
+    {
+      "id": "R520",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8683483",
+      "vignette": "12M 26kg. 1年間の進行性嚥下困難(固形+液体)+食後未消化物逆流+胸骨後灼熱感+過度流涎+るいそう+中等度脱水. 低血糖. 食道造影:食道拡張+造影剤停滞+bird's beak sign(典型的)",
+      "final_diagnosis": "食道アカラシア(小児)",
+      "expected_id": "D272",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S07": "severe",
+        "S21": "burning",
+        "L54": "hypoglycemia",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "6_12",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "12歳. bird's beak sign. 低血糖"
+    },
+    {
+      "id": "R521",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC12570808",
+      "vignette": "44M. 1年間の固形食嚥下困難+嚥下後胸部不快感+誘発性嘔吐+手足痺れ(3年). 深部反射全消失. CBC/CMP/甲状腺正常. CSF:蛋白軽度上昇. 食道内圧検査:アカラシアII型(Chicago v4.0)",
+      "final_diagnosis": "アカラシアII型+特発性感覚ガングリオノパチー",
+      "expected_id": "D272",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S07": "severe",
+        "S52": "bilateral",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "アカラシアII型. 感覚ガングリオノパチー合併"
+    },
+    {
+      "id": "R522",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC7901177",
+      "vignette": "79M. 数日かけて尿/皮膚/眼の黄染進行. 無熱, バイタル正常. T-Bil 10, D-Bil 7.4, ALP 405, GGT 223, AST 75, ALT 95. 炎症マーカー正常. US:胆嚢壁肥厚+多発胆石+肝内外胆管拡張(CBD 1.1cm). CT:CBD内結石",
+      "final_diagnosis": "総胆管結石→閉塞性黄疸",
+      "expected_id": "D273",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "L11": "mild_elevated",
+        "E01": "under_37.5",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "T-Bil 10. CBD 1.1cm. 炎症なし"
+    },
+    {
+      "id": "R523",
+      "source": "Case Rep 2014",
+      "pmcid": "PMC4205470",
+      "vignette": "56F. 12時間の急性重度上腹部痛(背部放散)+嘔吐. 2日前から軽度RUQ痛. 無熱, 反跳痛/筋性防御なし. アミラーゼ2066, リパーゼ1980, D-Bil 5, GGT 303, ALP 135, 血糖127, WBC 6.8k. X線:RUQにendoclip3個. US:CBD拡張12mm+膵腫大. ERCP:遠位CBD結石12mm+クリップ嵌入",
+      "final_diagnosis": "総胆管結石(endoclip迷入)+急性胆石性膵炎",
+      "expected_id": "D273",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S15": "present",
+        "S13": "present",
+        "E01": "under_37.5",
+        "L11": "very_high",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "アミラーゼ2066. CBD 12mm結石. clip迷入"
+    },
+    {
+      "id": "R524",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9441063",
+      "vignette": "2ヶ月M. 1週間の黄疸+白色便+反復性嘔吐. AST 146, ALT 102, GGT 415, 直接Bil 3.5, 間接Bil 1.5, 胆汁酸160. ウイルスPCR全陰性. US正常→経皮的胆管造影:CBD拡張6mm+乳頭部充填欠損. MRCP:胆石+上流胆管拡張",
+      "final_diagnosis": "新生児総胆管結石→胆汁うっ滞",
+      "expected_id": "D273",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S13": "present",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "2ヶ月齢. 白色便. GGT 415. 新生児胆石"
+    },
+    {
+      "id": "R525",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7322177",
+      "vignette": "44F スーダン. 1年間の間欠性RUQ疝痛(脂肪食関連). 放散なし, 発熱なし, 黄疸なし. バイタル正常. WBC/LFT正常. US:正常胆嚢+巨大胆石(~6cm). 急性胆嚢炎所見なし",
+      "final_diagnosis": "胆石発作(巨大胆石6cm)",
+      "expected_id": "D274",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "E01": "under_37.5",
+        "E10": "negative",
+        "L01": "normal_4000_10000",
+        "T01": "over_3w",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "巨大胆石6cm. 慢性胆嚢炎. LFT正常"
+    },
+    {
+      "id": "R526",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12596752",
+      "vignette": "75F. 24時間の急性心窩部痛(RUQ放散)+嘔気+めまい. パラセタモール無効. HR 40(!)(徐脈), 体温/BP/RR正常. アミラーゼ2955(!), ALT 73, AST 101, 炎症マーカー正常. US:孤立性胆石, 胆嚢炎なし",
+      "final_diagnosis": "胆石発作+cardio-biliary reflex(徐脈)",
+      "expected_id": "D274",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "S13": "present",
+        "E02": "under_100",
+        "E01": "under_37.5",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "HR 40(cardio-biliary reflex)! アミラーゼ2955"
+    },
+    {
+      "id": "R527",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12929200",
+      "vignette": "48F. 食後20分の鋭いRUQ痛(背部放散, 10/10)+げっぷ+食後嘔気嘔吐+便秘+7ポンド体重減少(6週). 発熱/悪寒なし. 掻痒あり. T-Bil 0.7, AST 22, ALT 17, リパーゼ51, WBC 4.6k, Hb 12.4, PLT 286k — 全正常. CT:正常胆嚢, 結石なし",
+      "final_diagnosis": "胆道ジスキネジア(hyperkinetic型)",
+      "expected_id": "D274",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "S15": "present",
+        "S13": "present",
+        "S07": "mild",
+        "E01": "under_37.5",
+        "L01": "normal_4000_10000",
+        "T01": "over_3w",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "全検査正常. HIDA 98%排出. hyperkinetic dyskinesia"
+    },
+    {
+      "id": "R528",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12817597",
+      "vignette": "67F BMI17.9. 急性右下腹部痛(右内腿+膝放散)+嘔吐. Howship-Romberg sign陽性. T 36.7, HR 97, BP 117/80, SpO2 99%. Hb 92, WBC 3.0k, PLT 72k, Alb 34.2, ALT 52, AST 74.6, K 3.09. US:ヘルニア嚢内嵌頓腸管. X線:小腸拡張+鏡面像. CT:外閉鎖筋間液体",
+      "final_diagnosis": "嵌頓閉鎖孔ヘルニア(小腸絞扼)",
+      "expected_id": "D275",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RLQ",
+        "S13": "present",
+        "E09": "peritoneal_signs",
+        "E01": "under_37.5",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Howship-Romberg+. 閉鎖孔ヘルニア. 腸管切除"
+    },
+    {
+      "id": "R529",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC11318467",
+      "vignette": "26M 既往なし. 24時間の心窩部+RUQ痛(吸気増悪)+食欲不振+嘔気+胆汁性嘔吐. 1.5ヶ月前から食後軽度痛. 無熱. WBC 8.3k, 好中球81.4%, CRP 7.1, 乳酸1.0. CT:近位~中部小腸拡張(SBO), 十二指腸正中非交差, 十二指腸空腸移行部右側",
+      "final_diagnosis": "嵌頓右傍十二指腸ヘルニア+腸回転異常",
+      "expected_id": "D275",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "S13": "present",
+        "E01": "under_37.5",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "傍十二指腸ヘルニア+malrotation. 乳酸1.0(虚血なし)"
+    },
+    {
+      "id": "R530",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7568833",
+      "vignette": "2歳F. 下腹部痛+微熱+食後嘔吐. 前屈歩行+下腹部筋性防御. T 36.2, HR 97, BP 96/70, RR 24, SpO2 100%. WBC 14.7k(リンパ53%), CRP 42.6. 尿WBC 30-40+ケトン+. US:Douglas窩に5x2.5x3cm混合エコー腫瘤. MRI:右卵巣腫大+出血+濾胞拡大+造影不良. 卵巣摘出(壊疽)",
+      "final_diagnosis": "右卵巣捻転(壊疽性)",
+      "expected_id": "D276",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "2歳. CRP 42.6. 壊疽性. 卵巣摘出"
+    },
+    {
+      "id": "R531",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC7802186",
+      "vignette": "17F. 2時間前からの急性下腹部痛(右中央, 持続性, NSAIDs無効)+当日朝下痢. 右下腹部10cm腫瘤触知. 無熱, 血行動態安定. Hb 12.2, CRP 3.7(低), 妊娠検査陰性. 経腟US:右多房性充実性腫瘤10.8x10.2x12.5cm+血管増生+卵巣茎捻転",
+      "final_diagnosis": "卵巣境界悪性腫瘍+捻転",
+      "expected_id": "D276",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RLQ",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "17歳. 10cm腫瘤. 境界悪性. 付属器摘出"
+    },
+    {
+      "id": "R532",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8378778",
+      "vignette": "11F 初経前. 4日間の右腸骨窩痛+跛行+発熱. 腹部筋性防御+RLQ反跳痛+Rovsing sign+Dunphy sign(胃腸炎/虫垂炎と誤診). WBC 12.8k, 好中球65.9%. US:右卵巣嚢胞4.5x4cm+少量遊離液. CT:虫垂腫大10mm+中等量遊離液+右付属器嚢胞6.5x4.8cm",
+      "final_diagnosis": "卵巣捻転+急性虫垂炎合併",
+      "expected_id": "D276",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RLQ",
+        "E01": "38.0_39.0",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "6_12",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "11歳初経前. 虫垂炎と誤診. 出血性梗塞+壊死"
     }
   ],
   "total_cases": 110
