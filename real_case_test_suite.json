@@ -5449,6 +5449,62 @@
       },
       "result": "",
       "notes": "Aflutter+心腎症候群. JVD+著明浮腫+BNP 866. 具体BP/SpO2値は未報告"
+    },
+    {
+      "id": "R219",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9289406",
+      "vignette": "70M COPD既往(元喫煙者). 6時間の突然呼吸困難, tripod position, 2-3語文. HR 112, BP 140/90, RR 26, SpO2 78%. 両側喘鳴+呼気延長. CXR: 右気胸(胸膜線+肺虚脱)+両側過膨張. WBC 8800, Hb 13.6, トロポニン陰性",
+      "final_diagnosis": "続発性自然気胸(COPD急性増悪中)",
+      "expected_id": "D123",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "L04": "pneumothorax",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E04": "tachypnea_20_30",
+        "E01": "under_37.5",
+        "L01": "normal_4000_10000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R46": "yes"
+      },
+      "result": "",
+      "notes": "COPD上の続発性気胸. SpO2 78%著明低下. 喘鳴あり(COPDの所見)"
+    },
+    {
+      "id": "R220",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12411113",
+      "vignette": "33M 健康. 2階からの転落4時間後. 呼吸困難+胸痛. HR 140, BP 87/67→70/50, RR 45, SpO2 90%(低下中). 左呼吸音消失, 気管右偏位, 頸静脈怒張. CXR: 縦隔右偏位. 緊張性気胸→針減圧+胸腔ドレナージ+横隔膜ヘルニア修復",
+      "final_diagnosis": "緊張性気胸(外傷性, 横隔膜ヘルニア合併)",
+      "expected_id": "D123",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S21": "pleuritic",
+        "E07": "decreased_absent",
+        "L04": "pneumothorax",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E37": "present",
+        "E04": "severe_over_30",
+        "E05": "mild_hypoxia_93_96",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "緊張性気胸の古典的3徴(低血圧+呼吸音消失+気管偏位+JVD)が全揃い"
     }
   ],
   "total_cases": 110
