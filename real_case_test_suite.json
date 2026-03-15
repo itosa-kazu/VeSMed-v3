@@ -5315,6 +5315,81 @@
       },
       "result": "",
       "notes": "皮疹遅発(42分後)のため皮膚所見をevidenceに入れない. トリプターゼ174で確定"
+    },
+    {
+      "id": "R214",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9264372",
+      "vignette": "73M 2ヶ月の労作時呼吸困難悪化+乾性咳嗽+間欠性胸膜痛+嚥下困難+4.5kg体重減少. SpO2 88%(room air). ABG: PaO2 49. 両側胸水+肺塞栓合併. 胸水穿刺: 滲出性(LDH 1310), 細胞診で腺癌(CDX2+CK7+). PET: 骨転移",
+      "final_diagnosis": "悪性胸水(Stage IV胃腺癌)",
+      "expected_id": "D127",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "S01": "dry",
+        "S21": "pleuritic",
+        "S17": "present",
+        "E05": "severe_hypoxia_under_93",
+        "L04": "pleural_effusion",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "悪性胸水+PE合併. LDH 1310滲出性. 胃癌Stage IV"
+    },
+    {
+      "id": "R215",
+      "source": "Case Rep Pulmonol 2018",
+      "pmcid": "PMC6047586",
+      "vignette": "86F 2年間の反復性労作時呼吸困難+低酸素. 4/6駆出性雑音(RUSB). WBC 10.4k, BNP 69(正常). 右胸水(漏出性: 蛋白3.0, LDH 66). Echo: EF 75%だがAVA 0.67cm2(重症AS), 拡張障害grade II. 細胞診陰性, 培養陰性",
+      "final_diagnosis": "漏出性胸水(重症大動脈弁狭窄症)",
+      "expected_id": "D127",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "E15": "pre_existing",
+        "L04": "pleural_effusion",
+        "L01": "high_10000_20000",
+        "L51": "normal",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "BNP正常(69)なのに心臓性胸水. 拡張障害+重症AS"
+    },
+    {
+      "id": "R216",
+      "source": "Front Med 2023",
+      "pmcid": "PMC10037291",
+      "vignette": "48M 12日間の労作時呼吸困難+朝方の顔面浮腫+両下肢pit edema+乾性咳嗽. 発熱なし. T 36.3, BP 140/76, HR 70, RR 30. 総コレステロール11.68mmol/L, ESR 68. 尿蛋白21624mg/24h(ネフローゼ). 両側胸水(乳び胸: TG 2.68). 腎生検: I期膜性腎症. 抗PLA2R抗体陽性(1:320)",
+      "final_diagnosis": "乳び胸水(原発性膜性腎症/ネフローゼ症候群)",
+      "expected_id": "D127",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "S01": "dry",
+        "E36": "bilateral",
+        "E04": "tachypnea_20_30",
+        "L04": "pleural_effusion",
+        "L28": "elevated",
+        "E01": "under_37.5",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ネフローゼ→乳び胸水. RR 30, ESR 68. 両下肢浮腫+顔面浮腫"
     }
   ],
   "total_cases": 110

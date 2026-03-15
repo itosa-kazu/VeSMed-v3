@@ -4388,6 +4388,18 @@
       ],
       "severity": "critical",
       "note": "全身性過敏反応。蕁麻疹/血管浮腫+喘鳴/喉頭浮腫+低血圧/ショック。数分で発症。エピネフリンが第一選択。薬剤/食物/虫刺しが誘因"
+    },
+    {
+      "id": "D127",
+      "name": "pleural_effusion_noninfectious",
+      "name_ja": "胸水（非感染性）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "悪性腫瘍/心不全/ネフローゼ/膠原病による非感染性胸水。呼吸困難+呼吸音減弱+CXR胸水。Light's criteriaで分類"
     }
   ]
 }

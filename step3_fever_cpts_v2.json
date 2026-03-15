@@ -2551,6 +2551,13 @@
         "no": 0.001,
         "yes": 0.005
       }
+    },
+    "D127": {
+      "parents": [],
+      "description": "非感染性胸水。悪性腫瘍/心不全/ネフローゼ",
+      "cpt": {
+        "": 0.005
+      }
     }
   },
   "noisy_or_params": {
@@ -3543,6 +3550,13 @@
           "38.0_39.0": 0.04,
           "39.0_40.0": 0.01,
           "over_40.0": 0.0
+        },
+        "D127": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.1,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
         }
       }
     },
@@ -4093,6 +4107,11 @@
           "normal_under_20": 0.2,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.3
+        },
+        "D127": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.2
         }
       }
     },
@@ -4218,6 +4237,11 @@
           "normal_over_96": 0.3,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.35
+        },
+        "D127": {
+          "normal_over_96": 0.35,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -4359,6 +4383,12 @@
           "crackles": 0.05,
           "wheezes": 0.6,
           "decreased_absent": 0.05
+        },
+        "D127": {
+          "clear": 0.1,
+          "crackles": 0.1,
+          "wheezes": 0.05,
+          "decreased_absent": 0.75
         }
       }
     },
@@ -6598,6 +6628,12 @@
           "normal_4000_10000": 0.75,
           "high_10000_20000": 0.18,
           "very_high_over_20000": 0.04
+        },
+        "D127": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.65,
+          "high_10000_20000": 0.25,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -7299,6 +7335,12 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.12,
           "high_over_10": 0.03
+        },
+        "D127": {
+          "normal_under_0.3": 0.35,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.1
         }
       }
     },
@@ -7665,6 +7707,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.1,
           "pneumothorax": 0.05
+        },
+        "D127": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.75,
+          "pneumothorax": 0.03
         }
       }
     },
@@ -9711,6 +9761,11 @@
           "absent": 0.15,
           "dry": 0.6,
           "productive": 0.25
+        },
+        "D127": {
+          "absent": 0.4,
+          "dry": 0.45,
+          "productive": 0.15
         }
       }
     },
@@ -9927,6 +9982,11 @@
           "absent": 0.25,
           "on_exertion": 0.15,
           "at_rest": 0.6
+        },
+        "D127": {
+          "absent": 0.08,
+          "on_exertion": 0.35,
+          "at_rest": 0.57
         }
       }
     },
@@ -10552,6 +10612,11 @@
           "absent": 0.5,
           "mild": 0.3,
           "severe": 0.2
+        },
+        "D127": {
+          "absent": 0.25,
+          "mild": 0.35,
+          "severe": 0.4
         }
       }
     },
@@ -11566,6 +11631,10 @@
         "D114": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D127": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -11727,6 +11796,11 @@
           "absent": 0.55,
           "pleuritic": 0.05,
           "constant": 0.4
+        },
+        "D127": {
+          "absent": 0.5,
+          "pleuritic": 0.35,
+          "constant": 0.15
         }
       }
     },
@@ -13325,6 +13399,12 @@
           "3d_to_1w": 0.04,
           "1w_to_3w": 0.01,
           "over_3w": 0.0
+        },
+        "D127": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.35
         }
       }
     },
@@ -13562,6 +13642,10 @@
         "D126": {
           "sudden_hours": 0.95,
           "gradual_days": 0.05
+        },
+        "D127": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
         }
       }
     },
@@ -14345,6 +14429,10 @@
         "D124": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D127": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -14390,6 +14478,11 @@
           "absent": 0.55,
           "unilateral": 0.05,
           "bilateral": 0.4
+        },
+        "D127": {
+          "absent": 0.45,
+          "unilateral": 0.05,
+          "bilateral": 0.5
         }
       }
     },
@@ -14488,6 +14581,12 @@
           "normal": 0.2,
           "mildly_elevated": 0.35,
           "very_high": 0.15
+        },
+        "D127": {
+          "not_done": 0.25,
+          "normal": 0.3,
+          "mildly_elevated": 0.25,
+          "very_high": 0.2
         }
       }
     }
