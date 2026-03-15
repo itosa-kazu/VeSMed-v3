@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1910,
+  "total_edges": 1925,
   "edges": [
     {
       "from": "R01",
@@ -17867,6 +17867,111 @@
       "from_name": "spinal_epidural_abscess",
       "to_name": "S09",
       "reason": "硬膜外膿瘍: 悪寒戦慄(菌血症, 30-40%)"
+    },
+    {
+      "from": "D118",
+      "to": "E01",
+      "from_name": "brain_abscess",
+      "to_name": "E01",
+      "reason": "脳膿瘍: 発熱(45-60%, 古典的3徴の一部だが半数以下)"
+    },
+    {
+      "from": "D118",
+      "to": "S05",
+      "from_name": "brain_abscess",
+      "to_name": "S05",
+      "reason": "脳膿瘍: 頭痛(69-70%, 最多症状, 進行性)"
+    },
+    {
+      "from": "D118",
+      "to": "E16",
+      "from_name": "brain_abscess",
+      "to_name": "E16",
+      "reason": "脳膿瘍: 意識障害(30-50%, mass effectによる)"
+    },
+    {
+      "from": "D118",
+      "to": "S42",
+      "from_name": "brain_abscess",
+      "to_name": "S42",
+      "reason": "脳膿瘍: 痙攣(25-35%)"
+    },
+    {
+      "from": "D118",
+      "to": "S13",
+      "from_name": "brain_abscess",
+      "to_name": "S13",
+      "reason": "脳膿瘍: 嘔気嘔吐(40-50%, 頭蓋内圧亢進)"
+    },
+    {
+      "from": "D118",
+      "to": "E06",
+      "from_name": "brain_abscess",
+      "to_name": "E06",
+      "reason": "脳膿瘍: 項部硬直(20-30%, 髄膜刺激)"
+    },
+    {
+      "from": "D118",
+      "to": "L46",
+      "from_name": "brain_abscess",
+      "to_name": "L46",
+      "reason": "脳膿瘍: 頭部MRI/CT — 環状増強病変+浮腫(other)"
+    },
+    {
+      "from": "D118",
+      "to": "L01",
+      "from_name": "brain_abscess",
+      "to_name": "L01",
+      "reason": "脳膿瘍: WBC上昇(53%)"
+    },
+    {
+      "from": "D118",
+      "to": "L02",
+      "from_name": "brain_abscess",
+      "to_name": "L02",
+      "reason": "脳膿瘍: CRP上昇(中等度~高度)"
+    },
+    {
+      "from": "D118",
+      "to": "L28",
+      "from_name": "brain_abscess",
+      "to_name": "L28",
+      "reason": "脳膿瘍: ESR上昇"
+    },
+    {
+      "from": "D118",
+      "to": "L03",
+      "from_name": "brain_abscess",
+      "to_name": "L03",
+      "reason": "脳膿瘍: プロカルシトニン上昇(細菌感染)"
+    },
+    {
+      "from": "D118",
+      "to": "L09",
+      "from_name": "brain_abscess",
+      "to_name": "L09",
+      "reason": "脳膿瘍: 血培陽性(16%, 低い)"
+    },
+    {
+      "from": "D118",
+      "to": "T01",
+      "from_name": "brain_abscess",
+      "to_name": "T01",
+      "reason": "脳膿瘍: 亜急性(数日~数週)"
+    },
+    {
+      "from": "D118",
+      "to": "T02",
+      "from_name": "brain_abscess",
+      "to_name": "T02",
+      "reason": "脳膿瘍: 亜急性発症(日単位で進行)"
+    },
+    {
+      "from": "D118",
+      "to": "S07",
+      "from_name": "brain_abscess",
+      "to_name": "S07",
+      "reason": "脳膿瘍: 倦怠感(40-60%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

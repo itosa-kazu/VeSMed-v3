@@ -286,6 +286,38 @@
         }
       ],
       "conclusion": "背部痛+発熱ではTop-1だが、頭痛+項部硬直で髄膜炎/脳炎に奪われる。見逃し率56%の臨床実態を忠実に再現。反証推奨がMRI/ESRを提示"
+    },
+    {
+      "case_id": "R200",
+      "pmcid": "PMC11360464",
+      "final_diagnosis": "脳膿瘍(歯原性/副鼻腔原性)",
+      "expected_id": "D118",
+      "traditional_result": "Top-1 52.8%",
+      "navigation_result": "Step3(MRI)でTop-1到達(62.8%)",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "action": "亜急性重度頭痛(>3w)",
+          "D118_rank": 4,
+          "D118_prob": "4.3%",
+          "H": 5.0
+        },
+        {
+          "step": 2,
+          "action": "+意識障害(傾眠)",
+          "D118_rank": 2,
+          "D118_prob": "12.7%",
+          "H": 3.44
+        },
+        {
+          "step": 3,
+          "action": "+MRI環状増強病変",
+          "D118_rank": 1,
+          "D118_prob": "62.8%",
+          "H": 1.96
+        }
+      ],
+      "conclusion": "MRI所見で一気にTop-1。頭痛→意識障害→MRIの臨床フローに忠実"
     }
   ]
 }

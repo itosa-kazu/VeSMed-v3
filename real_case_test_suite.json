@@ -4954,6 +4954,50 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 無熱(96.5F)! DM+足壊死がリスク. 初診では筋骨格系疼痛と判断された"
+    },
+    {
+      "id": "R200",
+      "source": "Surg Neurol Int 2024",
+      "pmcid": "PMC11360464",
+      "vignette": "22F 免疫正常. 副鼻腔炎で治療中. 顔面痛1ヶ月→頭痛増悪→入院第3日に意識変動+傾眠. MRI: 左前頭葉膿瘍+正中偏位. 定位ドレナージ+洞手術. 多剤耐性S.sanguis. 歯科原性/副鼻腔原性の脳膿瘍",
+      "final_diagnosis": "脳膿瘍(歯原性/副鼻腔原性, S.sanguis)",
+      "expected_id": "D118",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "E16": "obtunded",
+        "L46": "other",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 発熱記載なし. 頭痛→意識障害の進行パターン. ラボデータ未報告"
+    },
+    {
+      "id": "R201",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10505261",
+      "vignette": "21M 免疫正常. 2週前に頭部外傷(木の棒). 頭痛+左片麻痺(上肢4/5, 下肢2/5). 発熱なし. WBC上昇. CT: 右傍脳室の1.2cm腫瘤+浮腫. MRI: 1.6x2.1cm環状増強病変+0.8cm正中偏位. 培養5日後にP.acnes確認",
+      "final_diagnosis": "脳膿瘍(外傷後, Propionibacterium acnes)",
+      "expected_id": "D118",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "L46": "other",
+        "L01": "high_10000_20000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 無熱. 外傷後2週の頭痛+片麻痺. MRI環状増強が鍵. ラボデータ限定的"
     }
   ],
   "total_cases": 110

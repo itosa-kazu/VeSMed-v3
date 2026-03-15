@@ -4186,6 +4186,18 @@
       ],
       "severity": "critical",
       "note": "ER見逃し率56%。背部痛+発熱(初期)+神経症状(進行期)。古典的3徴は8-15%のみ。S.aureus 62%。糖尿病/IVDU/免疫不全がリスク。ESR/CRP著高。血培陽性60%。MRIで確定。緊急手術が必要"
+    },
+    {
+      "id": "D118",
+      "name": "brain_abscess",
+      "name_ja": "脳膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "古典的3徴(発熱+頭痛+局所神経症状)は14%のみ。頭痛が最多(70%)。CT/MRI環状増強病変。副鼻腔/歯原性/心内膜炎が感染源。Streptococcus/Staphylococcus。緊急手術/ドレナージが必要"
     }
   ]
 }

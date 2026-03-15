@@ -2427,6 +2427,13 @@
         "yes|no": 0.005,
         "yes|yes": 0.012
       }
+    },
+    "D118": {
+      "parents": [],
+      "description": "脳膿瘍。副鼻腔/歯原性/心内膜炎由来",
+      "cpt": {
+        "": 0.003
+      }
     }
   },
   "noisy_or_params": {
@@ -3356,6 +3363,13 @@
           "38.0_39.0": 0.3,
           "39.0_40.0": 0.2,
           "over_40.0": 0.1
+        },
+        "D118": {
+          "under_37.5": 0.3,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.1
         }
       }
     },
@@ -3972,6 +3986,10 @@
           "present": 0.45
         },
         "D117": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D118": {
           "absent": 0.7,
           "present": 0.3
         }
@@ -4978,6 +4996,11 @@
           "normal": 0.8,
           "confused": 0.15,
           "obtunded": 0.05
+        },
+        "D118": {
+          "normal": 0.5,
+          "confused": 0.3,
+          "obtunded": 0.2
         }
       }
     },
@@ -6178,6 +6201,12 @@
           "normal_4000_10000": 0.2,
           "high_10000_20000": 0.5,
           "very_high_over_20000": 0.27
+        },
+        "D118": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.15
         }
       }
     },
@@ -6825,6 +6854,12 @@
           "mild_0.3_3": 0.05,
           "moderate_3_10": 0.25,
           "high_over_10": 0.68
+        },
+        "D118": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.4
         }
       }
     },
@@ -6902,6 +6937,12 @@
           "low_under_0.25": 0.05,
           "gray_0.25_0.5": 0.15,
           "high_over_0.5": 0.5
+        },
+        "D118": {
+          "not_done": 0.3,
+          "low_under_0.25": 0.1,
+          "gray_0.25_0.5": 0.2,
+          "high_over_0.5": 0.4
         }
       }
     },
@@ -7264,6 +7305,12 @@
           "not_done_or_pending": 0.15,
           "negative": 0.25,
           "gram_positive": 0.5,
+          "gram_negative": 0.1
+        },
+        "D118": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.55,
+          "gram_positive": 0.15,
           "gram_negative": 0.1
         }
       }
@@ -8390,6 +8437,11 @@
           "normal": 0.05,
           "elevated": 0.3,
           "very_high_over_100": 0.65
+        },
+        "D118": {
+          "normal": 0.15,
+          "elevated": 0.5,
+          "very_high_over_100": 0.35
         }
       }
     },
@@ -8941,6 +8993,12 @@
           "temporal_lobe_lesion": 0.05,
           "diffuse_abnormal": 0.15,
           "other": 0.5
+        },
+        "D118": {
+          "normal": 0.05,
+          "temporal_lobe_lesion": 0.1,
+          "diffuse_abnormal": 0.1,
+          "other": 0.75
         }
       }
     },
@@ -9442,6 +9500,11 @@
           "absent": 0.7,
           "mild": 0.2,
           "severe": 0.1
+        },
+        "D118": {
+          "absent": 0.25,
+          "mild": 0.25,
+          "severe": 0.5
         }
       }
     },
@@ -9867,6 +9930,11 @@
           "absent": 0.2,
           "mild": 0.3,
           "severe": 0.5
+        },
+        "D118": {
+          "absent": 0.35,
+          "mild": 0.3,
+          "severe": 0.35
         }
       }
     },
@@ -10570,6 +10638,10 @@
         "D114": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D118": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -11608,6 +11680,10 @@
         "D110": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D118": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -12530,6 +12606,12 @@
           "3d_to_1w": 0.45,
           "1w_to_3w": 0.3,
           "over_3w": 0.1
+        },
+        "D118": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.15
         }
       }
     },
@@ -12731,6 +12813,10 @@
         "D117": {
           "sudden_hours": 0.25,
           "gradual_days": 0.75
+        },
+        "D118": {
+          "sudden_hours": 0.15,
+          "gradual_days": 0.85
         }
       }
     },
