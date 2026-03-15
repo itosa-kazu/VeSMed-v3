@@ -8679,6 +8679,307 @@
       },
       "result": "",
       "notes": "ChE正常の10%. 犯罪的中毒. SpO2 60%. pH 7.08. カルボフラン+クロルメホス"
+    },
+    {
+      "id": "R337",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7580380",
+      "vignette": "76F 11日間の進行性頭痛+2日間の嘔吐+食欲低下+睡眠障害. 20年前にSDH手術歴(転倒後). BP 140/80, HR 80, RR 20, SpO2 98%, 無熱, GCS 15. 神経学的異常なし(筋力/感覚/反射正常). 検査正常. CT: 右急性on慢性SDH+左大型慢性SDH(側頭頭頂部)+軽度正中偏位",
+      "final_diagnosis": "両側慢性硬膜下血腫(急性増悪)",
+      "expected_id": "D164",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S13": "present",
+        "E16": "normal",
+        "E01": "under_37.5",
+        "E38": "elevated_140_180",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "20年前SDH手術歴. GCS 15, 神経学的正常. 頭痛+嘔吐のみ"
+    },
+    {
+      "id": "R338",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10788661",
+      "vignette": "70M DM+高血圧+虚血性心疾患(PCI 3回). 1ヶ月の頭痛(3日間増悪)+めまい+歩行不安定. 頭部外傷歴なし. HR 138(!), BP 112/89, SpO2 99%, GCS 15, 瞳孔3mm対光反射あり. 筋力5/5, 協調運動正常. Hb 8.1(3ヶ月前13.1). CT: 左急性on慢性SDH+mass effect+正中偏位",
+      "final_diagnosis": "慢性硬膜下血腫(急性増悪, 脳梗塞+PE合併)",
+      "expected_id": "D164",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "E16": "normal",
+        "E02": "over_120",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "1ヶ月の頭痛. Hb 8.1(貧血). HR 138. 外傷歴なし. GCS 15"
+    },
+    {
+      "id": "R339",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10426188",
+      "vignette": "84M 8ヶ月の進行性右半身脱力(下肢→上肢)+全般性頭痛. 頭部外傷歴なし. GCS 15, 瞳孔正円対光反射あり. 右上肢4/5筋緊張亢進, 右下肢3/5, 左5/5正常. 感覚/反射正常. 検査正常. CT: 右半球2.3cm硬膜下血腫(石灰化)+3mm正中偏位",
+      "final_diagnosis": "石灰化慢性硬膜下血腫",
+      "expected_id": "D164",
+      "in_scope": true,
+      "evidence": {
+        "S05": "mild",
+        "S52": "unilateral_weakness",
+        "E16": "normal",
+        "E01": "under_37.5",
+        "S07": "severe",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "8ヶ月の進行性片麻痺. 石灰化cSDH. 外傷歴なし"
+    },
+    {
+      "id": "R340",
+      "source": "BMC Surg 2020",
+      "pmcid": "PMC7369451",
+      "vignette": "83M 施設入所中. 2日間の構音障害+窒息感. 4日間の進行性左半身脱力. 慢性の左方偏位(歩行/座位). 3ヶ月前転倒+頭部打撲. GCS 15だが反応緩慢. 左片麻痺Grade I(上下肢). 構音障害. SpO2 91%低下+喘鳴→挿管. CT: 3.4x8.2cm石灰化cSDH+5mm正中偏位",
+      "final_diagnosis": "石灰化慢性硬膜下血腫",
+      "expected_id": "D164",
+      "in_scope": true,
+      "evidence": {
+        "S52": "unilateral_weakness",
+        "S53": "dysarthria",
+        "E16": "confused",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "3ヶ月前転倒. 左片麻痺+構音障害. SpO2 91%低下→挿管"
+    },
+    {
+      "id": "R341",
+      "source": "BMJ Case Rep 2023",
+      "pmcid": "PMC10729136",
+      "vignette": "70代M 重度アルコール依存(100g/日)+2ヶ月間の食欲不振. GCS 6(E1V1M4)→グルコース投与後GCS 14. HR 110, BP 110/76, RR 16, SpO2 98%, 無熱. 水平眼振+水平注視麻痺+体幹失調. チアミン99.7(正常!), 血糖0.61(低血糖!), Mg 0.58(低), 乳酸9.6, pH 7.27, HCO3 11.5, WBC 13.4, AST 276. MRI正常(!)",
+      "final_diagnosis": "ウェルニッケ脳症(アルコール性+ケトアシドーシス)",
+      "expected_id": "D163",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "S52": "bilateral",
+        "E02": "100_120",
+        "E01": "under_37.5",
+        "L54": "hypoglycemia",
+        "L01": "high_10000_20000",
+        "L11": "very_high",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "チアミン正常+MRI正常でも臨床的WE. 低血糖+ケトアシドーシス合併"
+    },
+    {
+      "id": "R342",
+      "source": "BMJ Case Rep 2013",
+      "pmcid": "PMC3962931",
+      "vignette": "35M 胃癌(幽門部腺癌+肝転移). 20日間の嘔吐+食欲不振+悪液質. 非飲酒者. HR 94, BP 100/60, 無熱. 見当識障害(時間/場所)+両側外転神経麻痺+水平眼振+歩行失調+体幹失調+構音障害. 口腔カンジダ. 一般検査正常. MRI: 両側正中視床T2高信号(典型的WE所見)",
+      "final_diagnosis": "ウェルニッケ脳症(胃癌→嘔吐→栄養不良)",
+      "expected_id": "D163",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "S52": "bilateral",
+        "S53": "dysarthria",
+        "S13": "present",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E01": "under_37.5",
+        "S07": "severe",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "完全三徴(意識障害+眼球運動障害+失調). MRI典型的. 胃癌→嘔吐→B1欠乏"
+    },
+    {
+      "id": "R343",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12456284",
+      "vignette": "26F 4ヶ月前に胃スリーブ手術(112→78kg, 34kg減). ビタミン補充中断. 混乱+眼球運動障害(外転-4/内転-4)+上方打ち上げ/水平眼振+視力20/200+乳頭浮腫+歩行困難+両下肢脱力4/5. HR 109, BP 124/101(前回171/118). チアミン21(著減!), ESR 58, CRP 12.8. MRI: PRES pattern",
+      "final_diagnosis": "ウェルニッケ脳症+PRES(減量手術後)",
+      "expected_id": "D163",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "S52": "bilateral",
+        "E02": "100_120",
+        "S07": "severe",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "チアミン21(著減). 減量手術後+ビタミン中断. PRES合併. 視力20/200"
+    },
+    {
+      "id": "R344",
+      "source": "BMC Neurol 2013",
+      "pmcid": "PMC3669948",
+      "vignette": "85F 独居+偏食+嘔吐+軽度認知障害. 見当識障害→意識消失. 右上肢麻痺+右共同偏視. BP 124/98, HR 62, SpO2 97%, T 36.5. チアミン14ng/mL(著減!), CK 2062, CK-MB 38, TnT 0.660(たこつぼ合併). WBC 7300, Hb 11.8",
+      "final_diagnosis": "ウェルニッケ脳症+たこつぼ心筋症",
+      "expected_id": "D163",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "S52": "unilateral_weakness",
+        "E02": "under_100",
+        "E01": "under_37.5",
+        "L17": "elevated",
+        "L53": "very_high",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "チアミン14(著減). たこつぼ合併(CK 2062, TnT 0.660). 独居高齢者の栄養不良"
+    },
+    {
+      "id": "R345",
+      "source": "World J Gastroenterol 2018",
+      "pmcid": "PMC5807679",
+      "vignette": "61F 5日間の血性下痢+びまん性腹部圧痛+上肢攣縮+下肢点状出血/斑状出血. バイタル正常範囲. Hb 12.3→6.8, PLT 250→11k(!), Cr 0.76→6.24(AKI), LDH 3182(!), D-dimer 4620, 破砕赤血球(+). ADAMTS13正常(TTP除外). ESBL産生E.coli. 血液透析7回+血漿交換7回→Day13退院",
+      "final_diagnosis": "溶血性尿毒症症候群(STEC-HUS)",
+      "expected_id": "D162",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S12": "diffuse",
+        "E12": "petechiae_purpura",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "L52": "very_high",
+        "E01": "under_37.5",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "PLT 11k, LDH 3182, Cr 6.24. ADAMTS13正常→TTP除外. 典型STEC-HUS"
+    },
+    {
+      "id": "R346",
+      "source": "J Med Case Rep 2016",
+      "pmcid": "PMC4908782",
+      "vignette": "86F 急性腹痛+鮮血便+呼吸困難+構音障害+失語+意識変容. Hb 11.1→6.4, PLT 30k, Cr 2.49→6.8(AKI), LDH 2391→4576, ハプトグロビン<3(!), 間接Bil 2.2, 網赤血球6.2%, 破砕赤血球(+), Coombs(-). ADAMTS13 92%(正常). 便: O157:H7+志賀毒素陽性. Day4死亡",
+      "final_diagnosis": "溶血性尿毒症症候群(O157:H7, 致死的)",
+      "expected_id": "D162",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S12": "diffuse",
+        "S04": "at_rest",
+        "E16": "confused",
+        "S53": "dysarthria",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "O157:H7. PLT 30k, LDH 4576, Cr 6.8. ハプトグロビン<3. Day4死亡"
+    },
+    {
+      "id": "R347",
+      "source": "J Med Case Rep 2016",
+      "pmcid": "PMC4765089",
+      "vignette": "26M DM既往(インスリン中断). 2回の新規痙攣+心窩部痛+嘔吐(非血性). T 38.5, HR 105, BP 149/87. Hb 9.1(baseline 11.8), PLT 150k(baseline 416k), Cr 3.4(baseline 1.4), LDH 1700, ハプトグロビン<15, 間接Bil 1.7, 破砕赤血球(+). ADAMTS13 81%(正常). 血糖520, pH 7.33, AG 20. 腎生検: TMA. 遺伝子: CFB p.K533R",
+      "final_diagnosis": "非典型HUS(補体因子B変異, DKA誘発)",
+      "expected_id": "D162",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "S12": "epigastric",
+        "S13": "present",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E38": "elevated_140_180",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "L54": "very_high_over_500",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "非典型HUS. DKA(血糖520)+補体因子B変異. ADAMTS13正常. ESRD→透析"
+    },
+    {
+      "id": "R348",
+      "source": "Front Immunol 2022",
+      "pmcid": "PMC9580272",
+      "vignette": "21F COVID-19 mRNAワクチン2回目接種24時間後. 強膜出血+血腫+血小板減少+下肢浮腫+重症高血圧. Hb 12.2→7.8(48h), PLT 26k, Cr 2.42, LDH 360, ハプトグロビン<6, 破砕赤血球42/1000(!), Bil 2.96, C3 55-65(低!). ADAMTS13 73%(正常), Coombs(-). 腎生検: TMA(7/16糸球体). 遺伝子: CFH変異",
+      "final_diagnosis": "非典型HUS(補体因子H変異, ワクチン誘発)",
+      "expected_id": "D162",
+      "in_scope": false,
+      "evidence": {
+        "S44": "present",
+        "E36": "bilateral",
+        "E38": "crisis_over_180",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "E18": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "非典型HUS. CFH変異+ワクチン誘発. C3低下. エクリズマブ投与. OOS: クレアチニン変数なしでTTPとaHUS鑑別不可"
     }
   ],
   "total_cases": 110

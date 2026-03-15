@@ -2891,6 +2891,39 @@
       "cpt": {
         "": 0.001
       }
+    },
+    "D162": {
+      "parents": [
+        "R01"
+      ],
+      "description": "HUS。小児に多いが成人もあり",
+      "cpt": {
+        "18_39": 0.001,
+        "40_64": 0.001,
+        "65_plus": 0.002
+      }
+    },
+    "D163": {
+      "parents": [],
+      "description": "ウェルニッケ脳症。アルコール依存/栄養不良",
+      "cpt": {
+        "": 0.001
+      }
+    },
+    "D164": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "慢性SDH。高齢男性に多い",
+      "cpt": {
+        "18_39,male": 0.0005,
+        "18_39,female": 0.0002,
+        "40_64,male": 0.001,
+        "40_64,female": 0.0005,
+        "65_plus,male": 0.004,
+        "65_plus,female": 0.002
+      }
     }
   },
   "noisy_or_params": {
@@ -4121,6 +4154,20 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.15,
           "over_40.0": 0.05
+        },
+        "D162": {
+          "under_37.5": 0.55,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.18,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.02
+        },
+        "D163": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.1,
+          "39.0_40.0": 0.05,
+          "over_40.0": 0.03
         }
       }
     },
@@ -4591,6 +4638,16 @@
           "under_100": 0.5,
           "100_120": 0.3,
           "over_120": 0.2
+        },
+        "D162": {
+          "under_100": 0.25,
+          "100_120": 0.45,
+          "over_120": 0.3
+        },
+        "D163": {
+          "under_100": 0.25,
+          "100_120": 0.45,
+          "over_120": 0.3
         }
       }
     },
@@ -4784,6 +4841,10 @@
         "D161": {
           "normal_over_90": 0.35,
           "hypotension_under_90": 0.65
+        },
+        "D163": {
+          "normal_over_90": 0.45,
+          "hypotension_under_90": 0.55
         }
       }
     },
@@ -6422,6 +6483,21 @@
           "normal": 0.3,
           "confused": 0.35,
           "obtunded": 0.35
+        },
+        "D162": {
+          "normal": 0.65,
+          "confused": 0.25,
+          "obtunded": 0.1
+        },
+        "D163": {
+          "normal": 0.08,
+          "confused": 0.55,
+          "obtunded": 0.37
+        },
+        "D164": {
+          "normal": 0.15,
+          "confused": 0.5,
+          "obtunded": 0.35
         }
       }
     },
@@ -6495,6 +6571,10 @@
         "D158": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D162": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -7894,6 +7974,12 @@
           "normal_4000_10000": 0.45,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.12
+        },
+        "D162": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.27
         }
       }
     },
@@ -9883,6 +9969,14 @@
           "thrombocytopenia": 0.9,
           "eosinophilia": 0.0,
           "lymphocyte_predominant": 0.05
+        },
+        "D162": {
+          "normal": 0.03,
+          "left_shift": 0.02,
+          "atypical_lymphocytes": 0.0,
+          "thrombocytopenia": 0.9,
+          "eosinophilia": 0.0,
+          "lymphocyte_predominant": 0.05
         }
       }
     },
@@ -10046,6 +10140,10 @@
           "elevated": 0.95
         },
         "D158": {
+          "normal": 0.05,
+          "elevated": 0.95
+        },
+        "D162": {
           "normal": 0.05,
           "elevated": 0.95
         }
@@ -11919,6 +12017,11 @@
           "absent": 0.45,
           "mild": 0.3,
           "severe": 0.25
+        },
+        "D164": {
+          "absent": 0.2,
+          "mild": 0.4,
+          "severe": 0.4
         }
       }
     },
@@ -12476,6 +12579,16 @@
           "absent": 0.15,
           "mild": 0.3,
           "severe": 0.55
+        },
+        "D163": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D164": {
+          "absent": 0.2,
+          "mild": 0.45,
+          "severe": 0.35
         }
       }
     },
@@ -13109,6 +13222,15 @@
           "LLQ": 0.05,
           "suprapubic": 0.02,
           "diffuse": 0.65
+        },
+        "D162": {
+          "absent": 0.25,
+          "epigastric": 0.1,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.05,
+          "diffuse": 0.45
         }
       }
     },
@@ -13349,6 +13471,14 @@
         "D161": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D162": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D163": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -13494,6 +13624,11 @@
           "absent": 0.2,
           "watery": 0.75,
           "bloody": 0.05
+        },
+        "D162": {
+          "absent": 0.1,
+          "watery": 0.2,
+          "bloody": 0.7
         }
       }
     },
@@ -15785,6 +15920,24 @@
           "3d_to_1w": 0.08,
           "1w_to_3w": 0.02,
           "over_3w": 0.0
+        },
+        "D162": {
+          "under_3d": 0.25,
+          "3d_to_1w": 0.45,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.05
+        },
+        "D163": {
+          "under_3d": 0.2,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.15
+        },
+        "D164": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.45
         }
       }
     },
@@ -16162,6 +16315,18 @@
         "D161": {
           "sudden_hours": 0.9,
           "gradual_days": 0.1
+        },
+        "D162": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
+        },
+        "D163": {
+          "sudden_hours": 0.15,
+          "gradual_days": 0.85
+        },
+        "D164": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
         }
       }
     },
@@ -17801,6 +17966,16 @@
           "absent": 0.65,
           "unilateral_weakness": 0.3,
           "bilateral": 0.05
+        },
+        "D163": {
+          "absent": 0.3,
+          "unilateral_weakness": 0.05,
+          "bilateral": 0.65
+        },
+        "D164": {
+          "absent": 0.4,
+          "unilateral_weakness": 0.55,
+          "bilateral": 0.05
         }
       }
     },
@@ -17831,6 +18006,11 @@
           "absent": 0.55,
           "dysarthria": 0.2,
           "aphasia": 0.25
+        },
+        "D164": {
+          "absent": 0.65,
+          "dysarthria": 0.3,
+          "aphasia": 0.05
         }
       }
     },

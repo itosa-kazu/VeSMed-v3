@@ -4925,6 +4925,42 @@
       ],
       "severity": "critical",
       "note": "コリンエステラーゼ阻害。SLUDGE(唾液分泌↑/流涙/排尿/下痢/消化管症状/眼(縮瞳))+気管支痙攣+徐脈+痙攣。農薬/殺虫剤暴露"
+    },
+    {
+      "id": "D162",
+      "name": "HUS",
+      "name_ja": "溶血性尿毒症症候群(HUS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "三徴: MAHA(破砕赤血球)+血小板減少+急性腎障害。典型:EHEC(O157:H7)→血性下痢5-10日後。非典型:補体異常。TTPとの鑑別重要"
+    },
+    {
+      "id": "D163",
+      "name": "wernicke_encephalopathy",
+      "name_ja": "ウェルニッケ脳症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "ビタミンB1(チアミン)欠乏。三徴:意識障害+眼球運動障害+失調。アルコール依存/栄養不良/妊娠悪阻。ブドウ糖投与前にB1!"
+    },
+    {
+      "id": "D164",
+      "name": "chronic_SDH",
+      "name_ja": "慢性硬膜下血腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "高齢者+頭部外傷歴(軽微でも)。1-3ヶ月後に進行性意識障害+片麻痺。認知症/脳卒中と誤診リスク。CT/MRIで三日月状血腫"
     }
   ]
 }
