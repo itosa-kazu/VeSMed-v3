@@ -6499,6 +6499,11 @@
           "under_100": 0.25,
           "100_120": 0.45,
           "over_120": 0.3
+        },
+        "D173": {
+          "under_100": 0.25,
+          "100_120": 0.4,
+          "over_120": 0.35
         }
       }
     },
@@ -7060,6 +7065,11 @@
           "normal_under_20": 0.4,
           "tachypnea_20_30": 0.4,
           "severe_over_30": 0.2
+        },
+        "D156": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.35,
+          "severe_over_30": 0.25
         }
       }
     },
@@ -7300,6 +7310,11 @@
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.35
+        },
+        "D156": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.25,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -7565,6 +7580,18 @@
           "crackles": 0.1,
           "wheezes": 0.05,
           "decreased_absent": 0.05
+        },
+        "D156": {
+          "clear": 0.4,
+          "crackles": 0.35,
+          "wheezes": 0.1,
+          "decreased_absent": 0.15
+        },
+        "D17": {
+          "clear": 0.3,
+          "crackles": 0.4,
+          "wheezes": 0.1,
+          "decreased_absent": 0.2
         }
       }
     },
@@ -7735,6 +7762,11 @@
           "soft_nontender": 0.1,
           "localized_tenderness": 0.55,
           "peritoneal_signs": 0.35
+        },
+        "D08": {
+          "soft_nontender": 0.15,
+          "localized_tenderness": 0.65,
+          "peritoneal_signs": 0.2
         }
       }
     },
@@ -9088,6 +9120,11 @@
           "normal": 0.35,
           "confused": 0.35,
           "obtunded": 0.3
+        },
+        "D173": {
+          "normal": 0.75,
+          "confused": 0.18,
+          "obtunded": 0.07
         }
       }
     },
@@ -9347,6 +9384,10 @@
         "D33": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D04": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -9497,6 +9538,10 @@
         "D17": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D67": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -12871,6 +12916,12 @@
           "negative": 0.4,
           "gram_positive": 0.25,
           "gram_negative": 0.2
+        },
+        "D209": {
+          "not_done_or_pending": 0.15,
+          "negative": 0.4,
+          "gram_positive": 0.2,
+          "gram_negative": 0.25
         }
       }
     },
@@ -14204,6 +14255,10 @@
         "D107": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D14": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -15202,6 +15257,14 @@
           "bacterial_pattern": 0.05,
           "HSV_PCR_positive": 0.0,
           "tb_fungal_pattern": 0.1
+        },
+        "D20": {
+          "not_done": 0.5,
+          "normal": 0.25,
+          "viral_pattern": 0.03,
+          "bacterial_pattern": 0.18,
+          "HSV_PCR_positive": 0.0,
+          "tb_fungal_pattern": 0.04
         }
       }
     },
@@ -15523,6 +15586,11 @@
           "absent": 0.65,
           "dry": 0.25,
           "productive": 0.1
+        },
+        "D156": {
+          "absent": 0.55,
+          "dry": 0.3,
+          "productive": 0.15
         }
       }
     },
@@ -16047,6 +16115,16 @@
         "D85": {
           "absent": 0.5,
           "on_exertion": 0.25,
+          "at_rest": 0.25
+        },
+        "D156": {
+          "absent": 0.45,
+          "on_exertion": 0.3,
+          "at_rest": 0.25
+        },
+        "D173": {
+          "absent": 0.55,
+          "on_exertion": 0.2,
           "at_rest": 0.25
         }
       }
@@ -19567,6 +19645,10 @@
         "D101": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D04": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -20127,6 +20209,10 @@
         "D246": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D200": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -22730,6 +22816,10 @@
         "D38": {
           "sudden_hours": 0.15,
           "gradual_days": 0.85
+        },
+        "D99": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
         }
       }
     },
@@ -23584,6 +23674,10 @@
         "D145": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D08": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -23621,6 +23715,10 @@
         "D127": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D125": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -24281,6 +24379,12 @@
           "normal": 0.5,
           "mildly_elevated": 0.25,
           "very_high": 0.05
+        },
+        "D148": {
+          "not_done": 0.2,
+          "normal": 0.7,
+          "mildly_elevated": 0.08,
+          "very_high": 0.02
         }
       }
     },

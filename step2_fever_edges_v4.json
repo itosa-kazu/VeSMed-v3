@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3709,
+  "total_edges": 3730,
   "edges": [
     {
       "from": "R01",
@@ -30460,6 +30460,153 @@
       "from_name": "IE",
       "to_name": "L11",
       "reason": "IE: 肝酵素(肝梗塞/うっ血肝)"
+    },
+    {
+      "from": "D14",
+      "to": "L22",
+      "from_name": "IE",
+      "to_name": "L22",
+      "reason": "IE: 脾腫(感染性塞栓, 30-40%)"
+    },
+    {
+      "from": "D04",
+      "to": "S25",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "S25",
+      "reason": "扁桃周囲膿瘍: 嚥下困難(90%+)"
+    },
+    {
+      "from": "D04",
+      "to": "E22",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "E22",
+      "reason": "扁桃周囲膿瘍: 口蓋垂偏位(70-80%)"
+    },
+    {
+      "from": "D148",
+      "to": "L53",
+      "from_name": "urolithiasis",
+      "to_name": "L53",
+      "reason": "尿管結石: トロポニン(通常正常)"
+    },
+    {
+      "from": "D125",
+      "to": "S49",
+      "from_name": "pneumothorax",
+      "to_name": "S49",
+      "reason": "気胸: 起座呼吸(20-30%)"
+    },
+    {
+      "from": "D67",
+      "to": "E28",
+      "from_name": "lymphoma",
+      "to_name": "E28",
+      "reason": "リンパ腫: 腹水(進行期, 20-30%)"
+    },
+    {
+      "from": "D209",
+      "to": "L09",
+      "from_name": "myelofibrosis",
+      "to_name": "L09",
+      "reason": "骨髄線維症: 血培(免疫不全→感染)"
+    },
+    {
+      "from": "D08",
+      "to": "E09",
+      "from_name": "cholangitis",
+      "to_name": "E09",
+      "reason": "胆管炎: 腹部(通常RUQ圧痛, 非典型では軟)"
+    },
+    {
+      "from": "D08",
+      "to": "E11",
+      "from_name": "cholangitis",
+      "to_name": "E11",
+      "reason": "胆管炎: CVA叩打痛(通常なし)"
+    },
+    {
+      "from": "D99",
+      "to": "T02",
+      "from_name": "NTM",
+      "to_name": "T02",
+      "reason": "NTM: 発症(慢性~亜急性)"
+    },
+    {
+      "from": "D200",
+      "to": "S42",
+      "from_name": "NPH",
+      "to_name": "S42",
+      "reason": "NPH: 痙攣(合併てんかん, 10-15%)"
+    },
+    {
+      "from": "D156",
+      "to": "E05",
+      "from_name": "TTP",
+      "to_name": "E05",
+      "reason": "TTP: 低酸素(肺出血/感染合併)"
+    },
+    {
+      "from": "D156",
+      "to": "E04",
+      "from_name": "TTP",
+      "to_name": "E04",
+      "reason": "TTP: 頻呼吸(感染合併時)"
+    },
+    {
+      "from": "D156",
+      "to": "S01",
+      "from_name": "TTP",
+      "to_name": "S01",
+      "reason": "TTP: 咳嗽(感染誘因時)"
+    },
+    {
+      "from": "D156",
+      "to": "S04",
+      "from_name": "TTP",
+      "to_name": "S04",
+      "reason": "TTP: 呼吸困難(感染/肺合併症)"
+    },
+    {
+      "from": "D156",
+      "to": "E07",
+      "from_name": "TTP",
+      "to_name": "E07",
+      "reason": "TTP: 肺聴診(感染合併時)"
+    },
+    {
+      "from": "D20",
+      "to": "L45",
+      "from_name": "sinusitis",
+      "to_name": "L45",
+      "reason": "副鼻腔炎: CSF(髄膜炎合併時)"
+    },
+    {
+      "from": "D17",
+      "to": "E07",
+      "from_name": "TB",
+      "to_name": "E07",
+      "reason": "肺結核: 肺聴診(crackles/呼吸音減弱)"
+    },
+    {
+      "from": "D173",
+      "to": "E02",
+      "from_name": "varicella",
+      "to_name": "E02",
+      "reason": "水痘: 頻脈(重症/肺炎合併)"
+    },
+    {
+      "from": "D173",
+      "to": "E16",
+      "from_name": "varicella",
+      "to_name": "E16",
+      "reason": "水痘: 意識障害(脳炎合併, 10-15%)"
+    },
+    {
+      "from": "D173",
+      "to": "S04",
+      "from_name": "varicella",
+      "to_name": "S04",
+      "reason": "水痘: 呼吸困難(肺炎合併, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
