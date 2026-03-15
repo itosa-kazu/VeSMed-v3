@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3133,
+  "total_edges": 3168,
   "edges": [
     {
       "from": "R01",
@@ -26428,6 +26428,251 @@
       "from_name": "ischemic_colitis",
       "to_name": "E09",
       "reason": "虚血性腸炎: 腹部(限局性圧痛)"
+    },
+    {
+      "from": "D89",
+      "to": "L11",
+      "from_name": "malignant_hyperthermia",
+      "to_name": "L11",
+      "reason": "悪性高熱: 肝酵素(横紋筋融解/肝障害)"
+    },
+    {
+      "from": "D192",
+      "to": "S01",
+      "from_name": "APL",
+      "to_name": "S01",
+      "reason": "APL: 咳嗽(感染合併)"
+    },
+    {
+      "from": "D194",
+      "to": "L11",
+      "from_name": "lyme_disease",
+      "to_name": "L11",
+      "reason": "ライム: 肝酵素上昇(ライム肝炎, 30-40%)"
+    },
+    {
+      "from": "D91",
+      "to": "E03",
+      "from_name": "chikungunya",
+      "to_name": "E03",
+      "reason": "チクングニア: 低血圧(重症, 10-20%)"
+    },
+    {
+      "from": "D57",
+      "to": "S14",
+      "from_name": "NF",
+      "to_name": "S14",
+      "reason": "壊死性筋膜炎: 下痢(毒素/敗血症, 15-20%)"
+    },
+    {
+      "from": "D78",
+      "to": "E04",
+      "from_name": "cellulitis",
+      "to_name": "E04",
+      "reason": "蜂窩織炎: 頻呼吸(重症/敗血症)"
+    },
+    {
+      "from": "D75",
+      "to": "E04",
+      "from_name": "DVT_PE",
+      "to_name": "E04",
+      "reason": "PE: 頻呼吸(60-80%)"
+    },
+    {
+      "from": "D75",
+      "to": "E05",
+      "from_name": "DVT_PE",
+      "to_name": "E05",
+      "reason": "PE: 低酸素(60-70%)"
+    },
+    {
+      "from": "D75",
+      "to": "L52",
+      "from_name": "DVT_PE",
+      "to_name": "L52",
+      "reason": "PE: D-dimer著高(95%+)"
+    },
+    {
+      "from": "D64",
+      "to": "S27",
+      "from_name": "reactive_arthritis",
+      "to_name": "S27",
+      "reason": "反応性関節炎: 朝のこわばり(50-60%)"
+    },
+    {
+      "from": "D64",
+      "to": "S43",
+      "from_name": "reactive_arthritis",
+      "to_name": "S43",
+      "reason": "反応性関節炎: 手掌足底皮疹(keratoderma, 15-20%)"
+    },
+    {
+      "from": "D82",
+      "to": "E12",
+      "from_name": "hospital_meningitis",
+      "to_name": "E12",
+      "reason": "院内髄膜炎: 皮膚(創部発赤/感染)"
+    },
+    {
+      "from": "D82",
+      "to": "S09",
+      "from_name": "hospital_meningitis",
+      "to_name": "S09",
+      "reason": "院内髄膜炎: 悪寒戦慄(菌血症)"
+    },
+    {
+      "from": "D107",
+      "to": "S04",
+      "from_name": "HLH",
+      "to_name": "S04",
+      "reason": "HLH: 呼吸困難(肺浸潤/胸水, 20-30%)"
+    },
+    {
+      "from": "D107",
+      "to": "S06",
+      "from_name": "HLH",
+      "to_name": "S06",
+      "reason": "HLH: 筋肉痛(20-30%)"
+    },
+    {
+      "from": "D114",
+      "to": "E12",
+      "from_name": "histoplasmosis",
+      "to_name": "E12",
+      "reason": "ヒストプラズマ: 皮疹(播種性, 30-40%)"
+    },
+    {
+      "from": "D114",
+      "to": "L15",
+      "from_name": "histoplasmosis",
+      "to_name": "L15",
+      "reason": "ヒストプラズマ: フェリチン上昇(播種性)"
+    },
+    {
+      "from": "D114",
+      "to": "S01",
+      "from_name": "histoplasmosis",
+      "to_name": "S01",
+      "reason": "ヒストプラズマ: 咳嗽(肺型, 60-70%)"
+    },
+    {
+      "from": "D124",
+      "to": "L15",
+      "from_name": "COPD_exacerbation",
+      "to_name": "L15",
+      "reason": "COPD増悪: フェリチン(炎症性上昇)"
+    },
+    {
+      "from": "D135",
+      "to": "S04",
+      "from_name": "tension_pneumothorax",
+      "to_name": "S04",
+      "reason": "緊張性気胸: 呼吸困難(100%)"
+    },
+    {
+      "from": "D135",
+      "to": "S05",
+      "from_name": "tension_pneumothorax",
+      "to_name": "S05",
+      "reason": "緊張性気胸: 頭痛(低酸素, 20-30%)"
+    },
+    {
+      "from": "D136",
+      "to": "L03",
+      "from_name": "peptic_ulcer_perf",
+      "to_name": "L03",
+      "reason": "消化性潰瘍穿孔: PCT上昇(腹膜炎/敗血症)"
+    },
+    {
+      "from": "D136",
+      "to": "S04",
+      "from_name": "peptic_ulcer_perf",
+      "to_name": "S04",
+      "reason": "消化性潰瘍穿孔: 呼吸困難(腹痛→呼吸制限)"
+    },
+    {
+      "from": "D152",
+      "to": "S13",
+      "from_name": "DIC",
+      "to_name": "S13",
+      "reason": "DIC: 嘔気(基礎疾患/臓器不全, 40-50%)"
+    },
+    {
+      "from": "D152",
+      "to": "S14",
+      "from_name": "DIC",
+      "to_name": "S14",
+      "reason": "DIC: 下痢(基礎疾患, 20-30%)"
+    },
+    {
+      "from": "D158",
+      "to": "S01",
+      "from_name": "AIHA",
+      "to_name": "S01",
+      "reason": "AIHA: 咳嗽(重度貧血/うっ血, 15-20%)"
+    },
+    {
+      "from": "D160",
+      "to": "E38",
+      "from_name": "tetanus",
+      "to_name": "E38",
+      "reason": "破傷風: 高血圧(自律神経障害)"
+    },
+    {
+      "from": "D171",
+      "to": "S14",
+      "from_name": "APS",
+      "to_name": "S14",
+      "reason": "APS: 下痢(腸管血栓, 20-30%)"
+    },
+    {
+      "from": "D183",
+      "to": "L11",
+      "from_name": "cryoglobulinemia",
+      "to_name": "L11",
+      "reason": "クリオグロブリン: 肝酵素(HCV肝炎合併)"
+    },
+    {
+      "from": "D183",
+      "to": "L14",
+      "from_name": "cryoglobulinemia",
+      "to_name": "L14",
+      "reason": "クリオグロブリン: 血小板減少(20-30%)"
+    },
+    {
+      "from": "D183",
+      "to": "S12",
+      "from_name": "cryoglobulinemia",
+      "to_name": "S12",
+      "reason": "クリオグロブリン: 腹痛(腸管血管炎, 20-30%)"
+    },
+    {
+      "from": "D183",
+      "to": "S14",
+      "from_name": "cryoglobulinemia",
+      "to_name": "S14",
+      "reason": "クリオグロブリン: 下痢(腸管血管炎, 15-20%)"
+    },
+    {
+      "from": "D192",
+      "to": "E05",
+      "from_name": "APL",
+      "to_name": "E05",
+      "reason": "APL: 低酸素(肺出血/感染)"
+    },
+    {
+      "from": "D193",
+      "to": "L02",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "L02",
+      "reason": "過敏性肺炎: CRP上昇(急性型)"
+    },
+    {
+      "from": "D195",
+      "to": "L02",
+      "from_name": "drug_induced_pneumonitis",
+      "to_name": "L02",
+      "reason": "薬剤性肺炎: CRP上昇"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
