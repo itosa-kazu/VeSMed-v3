@@ -528,8 +528,8 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
     for var_id, params in noisy_or.items():
         if var_id in observed:
             continue
-        # Skip risk factor variables (R-prefix)
-        if var_id.startswith("R"):
+        # Skip non-observation variables
+        if var_id.startswith("R") or var_id.startswith("D") or var_id.startswith("M"):
             continue
 
         states = params["states"]
