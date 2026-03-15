@@ -4684,6 +4684,42 @@
       ],
       "severity": "critical",
       "note": "5分以上持続する痙攣または反復。意識回復なし。即時ベンゾ+抗てんかん薬"
+    },
+    {
+      "id": "D143",
+      "name": "aspiration_pneumonia",
+      "name_ja": "誤嚥性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "高齢者/嚥下障害/脳卒中後/認知症。右下葉に多い。起炎菌:嫌気性菌+口腔内常在菌"
+    },
+    {
+      "id": "D144",
+      "name": "guillain_barre_syndrome",
+      "name_ja": "ギラン・バレー症候群(GBS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "急性上行性弛緩性麻痺。先行感染1-4週後。深部反射消失。呼吸筋麻痺リスク。CSF蛋白細胞解離"
+    },
+    {
+      "id": "D145",
+      "name": "ureteral_stone",
+      "name_ja": "尿管結石（腎疝痛）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "突然の激烈側腹部痛(鼠径部放散)+血尿+嘔気。CT石が確定。自然排石or砕石術"
     }
   ]
 }
