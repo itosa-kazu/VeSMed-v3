@@ -4703,6 +4703,11 @@
           "normal_under_20": 0.25,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.25
+        },
+        "D149": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.25
         }
       }
     },
@@ -4873,6 +4878,11 @@
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D149": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.2
         }
       }
     },
@@ -16470,6 +16480,12 @@
           "normal": 0.1,
           "mildly_elevated": 0.3,
           "very_high": 0.45
+        },
+        "D149": {
+          "not_done": 0.25,
+          "normal": 0.3,
+          "mildly_elevated": 0.25,
+          "very_high": 0.2
         }
       }
     },
@@ -16620,10 +16636,10 @@
           "very_high": 0.15
         },
         "D149": {
-          "not_done": 0.2,
-          "normal": 0.4,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
+          "not_done": 0.15,
+          "normal": 0.25,
+          "mildly_elevated": 0.35,
+          "very_high": 0.25
         },
         "D150": {
           "not_done": 0.1,
