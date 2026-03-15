@@ -12246,105 +12246,145 @@
         "constant"
       ],
       "leak": {
-        "absent": 0.97,
-        "pleuritic": 0.02,
-        "constant": 0.01
+        "absent": 0.85,
+        "burning": 0.05,
+        "sharp": 0.05,
+        "pressure": 0.03,
+        "tearing": 0.02
       },
       "parent_effects": {
         "D05": {
           "absent": 0.55,
-          "pleuritic": 0.4,
-          "constant": 0.05
+          "burning": 0.03,
+          "sharp": 0.35,
+          "pressure": 0.05,
+          "tearing": 0.02
         },
         "D36": {
           "absent": 0.3,
-          "pleuritic": 0.6,
-          "constant": 0.1
+          "burning": 0.03,
+          "sharp": 0.55,
+          "pressure": 0.1,
+          "tearing": 0.02
         },
         "D66": {
           "absent": 0.35,
-          "pleuritic": 0.55,
-          "constant": 0.1
+          "burning": 0.05,
+          "sharp": 0.45,
+          "pressure": 0.1,
+          "tearing": 0.05
         },
         "D77": {
           "absent": 0.3,
-          "pleuritic": 0.6,
-          "constant": 0.1
+          "burning": 0.03,
+          "sharp": 0.55,
+          "pressure": 0.1,
+          "tearing": 0.02
         },
         "D03": {
           "absent": 0.7,
-          "pleuritic": 0.25,
-          "constant": 0.05
+          "burning": 0.03,
+          "sharp": 0.2,
+          "pressure": 0.05,
+          "tearing": 0.02
         },
         "D103": {
           "absent": 0.7,
-          "pleuritic": 0.25,
-          "constant": 0.05
+          "burning": 0.03,
+          "sharp": 0.2,
+          "pressure": 0.05,
+          "tearing": 0.02
         },
         "D73": {
           "absent": 0.4,
-          "pleuritic": 0.05,
-          "constant": 0.55
+          "burning": 0.05,
+          "sharp": 0.1,
+          "pressure": 0.4,
+          "tearing": 0.05
         },
         "D116": {
           "absent": 0.05,
-          "pleuritic": 0.25,
-          "constant": 0.7
+          "burning": 0.05,
+          "sharp": 0.55,
+          "pressure": 0.3,
+          "tearing": 0.05
         },
         "D123": {
           "absent": 0.05,
-          "pleuritic": 0.8,
-          "constant": 0.15
+          "burning": 0.02,
+          "sharp": 0.8,
+          "pressure": 0.1,
+          "tearing": 0.03
         },
         "D124": {
           "absent": 0.45,
-          "pleuritic": 0.15,
-          "constant": 0.4
+          "burning": 0.03,
+          "sharp": 0.15,
+          "pressure": 0.3,
+          "tearing": 0.07
         },
         "D125": {
           "absent": 0.55,
-          "pleuritic": 0.05,
-          "constant": 0.4
+          "burning": 0.03,
+          "sharp": 0.1,
+          "pressure": 0.25,
+          "tearing": 0.07
         },
         "D127": {
           "absent": 0.5,
-          "pleuritic": 0.35,
-          "constant": 0.15
+          "burning": 0.03,
+          "sharp": 0.35,
+          "pressure": 0.1,
+          "tearing": 0.02
         },
         "D129": {
           "absent": 0.4,
-          "pleuritic": 0.1,
-          "constant": 0.5
+          "burning": 0.05,
+          "sharp": 0.1,
+          "pressure": 0.4,
+          "tearing": 0.05
         },
         "D131": {
           "absent": 0.05,
-          "pleuritic": 0.05,
-          "constant": 0.9
+          "burning": 0.03,
+          "sharp": 0.05,
+          "pressure": 0.8,
+          "tearing": 0.07
         },
         "D132": {
           "absent": 0.05,
-          "pleuritic": 0.1,
-          "constant": 0.85
+          "burning": 0.03,
+          "sharp": 0.07,
+          "pressure": 0.15,
+          "tearing": 0.7
         },
         "D21": {
           "absent": 0.55,
-          "pleuritic": 0.3,
-          "constant": 0.15
+          "burning": 0.2,
+          "sharp": 0.2,
+          "pressure": 0.03,
+          "tearing": 0.02
         },
         "D133": {
           "absent": 0.1,
-          "pleuritic": 0.05,
-          "constant": 0.85
+          "burning": 0.75,
+          "sharp": 0.05,
+          "pressure": 0.08,
+          "tearing": 0.02
         },
         "D134": {
           "absent": 0.05,
-          "pleuritic": 0.65,
-          "constant": 0.3
+          "burning": 0.03,
+          "sharp": 0.7,
+          "pressure": 0.15,
+          "tearing": 0.07
         },
         "D135": {
           "absent": 0.03,
-          "pleuritic": 0.55,
-          "constant": 0.42
+          "burning": 0.05,
+          "sharp": 0.6,
+          "pressure": 0.25,
+          "tearing": 0.07
         }
       }
     },
@@ -15376,6 +15416,296 @@
           "normal": 0.65,
           "mildly_elevated": 0.04,
           "very_high": 0.01
+        }
+      }
+    },
+    "S50": {
+      "description": "胸痛の誘発因子(Provocation)",
+      "leak": {
+        "not_applicable": 0.85,
+        "none": 0.08,
+        "exertion": 0.03,
+        "breathing": 0.02,
+        "position": 0.01,
+        "meals": 0.01
+      },
+      "parent_effects": {
+        "D05": {
+          "not_applicable": 0.55,
+          "none": 0.15,
+          "exertion": 0.05,
+          "breathing": 0.2,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D36": {
+          "not_applicable": 0.3,
+          "none": 0.15,
+          "exertion": 0.05,
+          "breathing": 0.45,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D66": {
+          "not_applicable": 0.35,
+          "none": 0.4,
+          "exertion": 0.05,
+          "breathing": 0.15,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D77": {
+          "not_applicable": 0.3,
+          "none": 0.15,
+          "exertion": 0.05,
+          "breathing": 0.45,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D03": {
+          "not_applicable": 0.7,
+          "none": 0.1,
+          "exertion": 0.03,
+          "breathing": 0.13,
+          "position": 0.02,
+          "meals": 0.02
+        },
+        "D103": {
+          "not_applicable": 0.7,
+          "none": 0.1,
+          "exertion": 0.03,
+          "breathing": 0.13,
+          "position": 0.02,
+          "meals": 0.02
+        },
+        "D73": {
+          "not_applicable": 0.4,
+          "none": 0.35,
+          "exertion": 0.15,
+          "breathing": 0.05,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D116": {
+          "not_applicable": 0.05,
+          "none": 0.15,
+          "exertion": 0.15,
+          "breathing": 0.15,
+          "position": 0.45,
+          "meals": 0.05
+        },
+        "D123": {
+          "not_applicable": 0.05,
+          "none": 0.1,
+          "exertion": 0.05,
+          "breathing": 0.75,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D124": {
+          "not_applicable": 0.45,
+          "none": 0.3,
+          "exertion": 0.05,
+          "breathing": 0.1,
+          "position": 0.08,
+          "meals": 0.02
+        },
+        "D125": {
+          "not_applicable": 0.55,
+          "none": 0.3,
+          "exertion": 0.08,
+          "breathing": 0.03,
+          "position": 0.02,
+          "meals": 0.02
+        },
+        "D127": {
+          "not_applicable": 0.5,
+          "none": 0.15,
+          "exertion": 0.05,
+          "breathing": 0.25,
+          "position": 0.03,
+          "meals": 0.02
+        },
+        "D129": {
+          "not_applicable": 0.4,
+          "none": 0.4,
+          "exertion": 0.05,
+          "breathing": 0.05,
+          "position": 0.05,
+          "meals": 0.05
+        },
+        "D131": {
+          "not_applicable": 0.05,
+          "none": 0.2,
+          "exertion": 0.55,
+          "breathing": 0.05,
+          "position": 0.03,
+          "meals": 0.12
+        },
+        "D132": {
+          "not_applicable": 0.05,
+          "none": 0.8,
+          "exertion": 0.03,
+          "breathing": 0.05,
+          "position": 0.02,
+          "meals": 0.05
+        },
+        "D21": {
+          "not_applicable": 0.55,
+          "none": 0.2,
+          "exertion": 0.03,
+          "breathing": 0.15,
+          "position": 0.05,
+          "meals": 0.02
+        },
+        "D133": {
+          "not_applicable": 0.1,
+          "none": 0.2,
+          "exertion": 0.05,
+          "breathing": 0.05,
+          "position": 0.1,
+          "meals": 0.5
+        },
+        "D134": {
+          "not_applicable": 0.05,
+          "none": 0.1,
+          "exertion": 0.05,
+          "breathing": 0.2,
+          "position": 0.55,
+          "meals": 0.05
+        },
+        "D135": {
+          "not_applicable": 0.03,
+          "none": 0.15,
+          "exertion": 0.1,
+          "breathing": 0.5,
+          "position": 0.05,
+          "meals": 0.17
+        }
+      }
+    },
+    "S51": {
+      "description": "胸痛の放散(Radiation)",
+      "leak": {
+        "not_applicable": 0.85,
+        "none": 0.1,
+        "left_arm_jaw": 0.03,
+        "back": 0.02
+      },
+      "parent_effects": {
+        "D05": {
+          "not_applicable": 0.55,
+          "none": 0.4,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
+        },
+        "D36": {
+          "not_applicable": 0.3,
+          "none": 0.65,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
+        },
+        "D66": {
+          "not_applicable": 0.35,
+          "none": 0.6,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
+        },
+        "D77": {
+          "not_applicable": 0.3,
+          "none": 0.65,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
+        },
+        "D03": {
+          "not_applicable": 0.7,
+          "none": 0.27,
+          "left_arm_jaw": 0.01,
+          "back": 0.02
+        },
+        "D103": {
+          "not_applicable": 0.7,
+          "none": 0.27,
+          "left_arm_jaw": 0.01,
+          "back": 0.02
+        },
+        "D73": {
+          "not_applicable": 0.4,
+          "none": 0.5,
+          "left_arm_jaw": 0.05,
+          "back": 0.05
+        },
+        "D116": {
+          "not_applicable": 0.05,
+          "none": 0.8,
+          "left_arm_jaw": 0.1,
+          "back": 0.05
+        },
+        "D123": {
+          "not_applicable": 0.05,
+          "none": 0.85,
+          "left_arm_jaw": 0.02,
+          "back": 0.08
+        },
+        "D124": {
+          "not_applicable": 0.45,
+          "none": 0.45,
+          "left_arm_jaw": 0.05,
+          "back": 0.05
+        },
+        "D125": {
+          "not_applicable": 0.55,
+          "none": 0.4,
+          "left_arm_jaw": 0.03,
+          "back": 0.02
+        },
+        "D127": {
+          "not_applicable": 0.5,
+          "none": 0.45,
+          "left_arm_jaw": 0.02,
+          "back": 0.03
+        },
+        "D129": {
+          "not_applicable": 0.4,
+          "none": 0.55,
+          "left_arm_jaw": 0.03,
+          "back": 0.02
+        },
+        "D131": {
+          "not_applicable": 0.05,
+          "none": 0.25,
+          "left_arm_jaw": 0.6,
+          "back": 0.1
+        },
+        "D132": {
+          "not_applicable": 0.05,
+          "none": 0.2,
+          "left_arm_jaw": 0.05,
+          "back": 0.7
+        },
+        "D21": {
+          "not_applicable": 0.55,
+          "none": 0.42,
+          "left_arm_jaw": 0.01,
+          "back": 0.02
+        },
+        "D133": {
+          "not_applicable": 0.1,
+          "none": 0.85,
+          "left_arm_jaw": 0.03,
+          "back": 0.02
+        },
+        "D134": {
+          "not_applicable": 0.05,
+          "none": 0.8,
+          "left_arm_jaw": 0.05,
+          "back": 0.1
+        },
+        "D135": {
+          "not_applicable": 0.03,
+          "none": 0.9,
+          "left_arm_jaw": 0.03,
+          "back": 0.04
         }
       }
     }

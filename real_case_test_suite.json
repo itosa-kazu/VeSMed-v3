@@ -293,11 +293,12 @@
         "E01": "38.0_39.0",
         "S01": "productive",
         "S04": "at_rest",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "L04": "bilateral_infiltrate",
         "E02": "over_120",
         "L02": "high_over_10",
-        "L20": "elevated"
+        "L20": "elevated",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -746,10 +747,11 @@
         "E01": "38.0_39.0",
         "S02": "present",
         "S08": "present",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "L02": "high_over_10",
         "L28": "elevated",
-        "T01": "under_3d"
+        "T01": "under_3d",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -1278,12 +1280,13 @@
       "evidence": {
         "E01": "38.0_39.0",
         "S01": "productive",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "S17": "present",
         "T01": "over_3w",
         "L04": "BHL",
         "L02": "high_over_10",
-        "E13": "generalized"
+        "E13": "generalized",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -2754,13 +2757,14 @@
       "evidence": {
         "E01": "39.0_40.0",
         "E02": "under_100",
-        "S21": "constant",
+        "S21": "pressure",
         "S09": "present",
         "L01": "very_high_over_20000",
         "L02": "mild_0.3_3",
         "L09": "negative",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3464,7 +3468,7 @@
         "S04": "at_rest",
         "S07": "severe",
         "S17": "present",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "T01": "over_3w",
         "T02": "gradual_days",
         "E01": "38.0_39.0",
@@ -3476,7 +3480,8 @@
         "L04": "pleural_effusion",
         "L09": "negative",
         "L14": "left_shift",
-        "L35": "cavity"
+        "L35": "cavity",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -4863,7 +4868,7 @@
       "in_scope": true,
       "evidence": {
         "E01": "under_37.5",
-        "S21": "constant",
+        "S21": "sharp",
         "S04": "on_exertion",
         "E02": "100_120",
         "L01": "normal_4000_10000",
@@ -4871,7 +4876,8 @@
         "L28": "elevated",
         "L04": "normal",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "position"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -4890,11 +4896,12 @@
       "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
-        "S21": "constant",
+        "S21": "sharp",
         "S02": "present",
         "S01": "productive",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5147,14 +5154,15 @@
       "expected_id": "D123",
       "in_scope": true,
       "evidence": {
-        "S21": "pleuritic",
+        "S21": "sharp",
         "S04": "on_exertion",
         "E07": "decreased_absent",
         "L04": "pneumothorax",
         "E01": "under_37.5",
         "L02": "normal_under_0.3",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5327,12 +5335,13 @@
       "evidence": {
         "S04": "on_exertion",
         "S01": "dry",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "S17": "present",
         "E05": "severe_hypoxia_under_93",
         "L04": "pleural_effusion",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -5488,7 +5497,7 @@
       "in_scope": true,
       "evidence": {
         "S04": "at_rest",
-        "S21": "pleuritic",
+        "S21": "sharp",
         "E07": "decreased_absent",
         "L04": "pneumothorax",
         "E02": "over_120",
@@ -5497,7 +5506,8 @@
         "E04": "severe_over_30",
         "E05": "mild_hypoxia_93_96",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5704,7 +5714,7 @@
       "in_scope": true,
       "evidence": {
         "S04": "at_rest",
-        "S21": "constant",
+        "S21": "pressure",
         "E02": "100_120",
         "E04": "tachypnea_20_30",
         "E05": "normal_over_96",
@@ -5712,7 +5722,8 @@
         "L02": "normal_under_0.3",
         "L04": "normal",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5862,7 +5873,7 @@
       "expected_id": "D132",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "pressure",
         "S04": "on_exertion",
         "E02": "100_120",
         "E15": "new",
@@ -5875,7 +5886,8 @@
         "T01": "3d_to_1w",
         "T02": "gradual_days",
         "L52": "very_high",
-        "L53": "very_high"
+        "L53": "very_high",
+        "S50": "exertion"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5893,7 +5905,7 @@
       "expected_id": "D132",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "pressure",
         "S04": "on_exertion",
         "E02": "under_100",
         "E01": "under_37.5",
@@ -5902,7 +5914,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "L52": "very_high",
-        "L53": "normal"
+        "L53": "normal",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -5920,13 +5933,15 @@
       "expected_id": "D132",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "tearing",
         "S22": "present",
         "E02": "under_100",
         "E01": "under_37.5",
         "L01": "high_10000_20000",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S50": "none",
+        "S51": "back"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -5945,7 +5960,7 @@
       "expected_id": "D131",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "pressure",
         "S04": "at_rest",
         "S13": "present",
         "E02": "over_120",
@@ -5958,7 +5973,9 @@
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "L53": "very_high"
+        "L53": "very_high",
+        "S50": "none",
+        "S51": "left_arm_jaw"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -5977,13 +5994,15 @@
       "expected_id": "D131",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "pressure",
         "E02": "under_100",
         "E05": "normal_over_96",
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "L53": "very_high"
+        "L53": "very_high",
+        "S50": "none",
+        "S51": "left_arm_jaw"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6001,13 +6020,14 @@
       "expected_id": "D131",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "pressure",
         "L17": "elevated",
         "L51": "very_high",
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "L53": "very_high"
+        "L53": "very_high",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6134,12 +6154,13 @@
       "expected_id": "D133",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "burning",
         "E01": "under_37.5",
         "L53": "normal",
         "L04": "normal",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S50": "none"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6157,14 +6178,15 @@
       "expected_id": "D133",
       "in_scope": true,
       "evidence": {
-        "S21": "constant",
+        "S21": "burning",
         "E02": "100_120",
         "E01": "under_37.5",
         "L53": "mildly_elevated",
         "L51": "normal",
         "L04": "normal",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S50": "exertion"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6182,14 +6204,15 @@
       "expected_id": "D133",
       "in_scope": true,
       "evidence": {
-        "S21": "pleuritic",
+        "S21": "burning",
         "E02": "under_100",
         "E01": "under_37.5",
         "L53": "normal",
         "L01": "normal_4000_10000",
         "L04": "normal",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "65_plus",

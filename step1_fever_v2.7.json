@@ -1389,10 +1389,12 @@
       "category": "symptom",
       "states": [
         "absent",
-        "pleuritic",
-        "constant"
+        "burning",
+        "sharp",
+        "pressure",
+        "tearing"
       ],
-      "note": "pleuritic=吸気時悪化（肺炎・胸膜炎）、constant=持続性（心膜炎等）"
+      "note": "胸痛の性質(Quality)。burning=GERD, sharp=胸膜性/心膜炎, pressure=ACS, tearing=解離"
     },
     {
       "id": "T01",
@@ -4522,6 +4524,34 @@
       ],
       "severity": "low",
       "note": "ER胸痛の最多原因(30-50%)。胸壁圧痛+体動で増悪。全検査正常。除外診断"
+    },
+    {
+      "id": "S50",
+      "name": "chest_pain_provocation",
+      "name_ja": "胸痛の誘発因子",
+      "category": "symptom",
+      "states": [
+        "not_applicable",
+        "none",
+        "exertion",
+        "breathing",
+        "position",
+        "meals"
+      ],
+      "note": "胸痛のProvocation。exertion=ACS, breathing=胸膜性, position=心膜炎(前傾改善), meals=GERD"
+    },
+    {
+      "id": "S51",
+      "name": "chest_pain_radiation",
+      "name_ja": "胸痛の放散",
+      "category": "symptom",
+      "states": [
+        "not_applicable",
+        "none",
+        "left_arm_jaw",
+        "back"
+      ],
+      "note": "胸痛のRadiation。left_arm_jaw=ACS, back=大動脈解離"
     }
   ]
 }

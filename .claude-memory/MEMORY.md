@@ -10,6 +10,7 @@
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
 - [feedback_no_evidence_manipulation.md](feedback_no_evidence_manipulation.md) — 排名改善のための証拠操作禁止。原文所見は全保留、臆測値は除外
+- [feedback_disease_addition_methodology.md](feedback_disease_addition_methodology.md) — 疾患追加の標準方法論(6ステップ)。回帰テストはFATALだけでなくTop-1/Top-3推移も確認
 - [feedback_memory_sync.md](feedback_memory_sync.md) — push前にsync_memory.shでmemoryをrepoに同期
 - [feedback_dual_test.md](feedback_dual_test.md) — 新案例は伝統Top-3テスト+ナビゲーションテスト(反証推奨)の2種を必ず実施
 
