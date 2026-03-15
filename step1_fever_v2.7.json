@@ -6082,6 +6082,66 @@
       ],
       "severity": "critical",
       "note": "先天性腸回転異常→Ladd靭帯/中腸軸捻転。新生児~乳児に多い。胆汁性嘔吐+腹部膨満+血便。緊急手術"
+    },
+    {
+      "id": "D257",
+      "name": "NEC",
+      "name_ja": "壊死性腸炎(NEC)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "早産児・低出生体重児に多い。腹部膨満+血便+胆汁性嘔吐+敗血症。X線:腸管壁内気腫(pneumatosis)"
+    },
+    {
+      "id": "D258",
+      "name": "RSV_infection",
+      "name_ja": "RSウイルス感染症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "乳幼児の上下気道感染。鼻汁→咳嗽→喘鳴。成人/高齢者でも重症化。冬季流行"
+    },
+    {
+      "id": "D259",
+      "name": "HFMD",
+      "name_ja": "手足口病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "コクサッキーA16/エンテロウイルス71。口腔内水疱+手掌/足底水疱。発熱は軽度。EV71は重症化(脳炎/肺水腫)"
+    },
+    {
+      "id": "D260",
+      "name": "herpangina",
+      "name_ja": "ヘルパンギーナ",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "コクサッキーA群。夏季。高熱+咽頭痛+口蓋弓/軟口蓋の小水疱。1-5歳に多い"
+    },
+    {
+      "id": "D261",
+      "name": "roseola",
+      "name_ja": "突発性発疹(ロゼオラ)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "HHV-6/7。6ヶ月~2歳。3-5日の高熱→解熱と同時に体幹の淡い紅斑性発疹。熱性痙攣合併あり"
     }
   ]
 }

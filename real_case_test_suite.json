@@ -12384,6 +12384,232 @@
       },
       "result": "",
       "notes": "RSV A + rhinovirus共感染. late preterm"
+    },
+    {
+      "id": "R484",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8442056",
+      "vignette": "18ヶ月M 既往なし. 発熱2日+騒音性呼吸1日+経口摂取低下. T 39.7, HR 210, RR 72, SpO2 76%(RA!). 双方向性喘鳴+深い肋間/肋弓下陥没+両側呼吸音減弱. WBC 14.7k, CRP 13.8. SARS-CoV-2+RSV陽性. 挿管7日",
+      "final_diagnosis": "クループ(COVID+RSV関連, MIS-C合併)",
+      "expected_id": "D254",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "dry",
+        "S04": "at_rest",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 76%! HR 210. RR 72. COVID+RSV. 挿管7日"
+    },
+    {
+      "id": "R485",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9247726",
+      "vignette": "9ヶ月F. 発熱+犬吠様咳嗽+胸壁陥没→チアノーゼ→心停止(CPR 2分). T 38.0, HR 180, RR 47, SpO2 100%(O2 5L). Westleyスコア16(呼吸不全切迫). WBC 13.3k, CRP 10.67, ABG: pH 7.11, pCO2 69.8. SARS-CoV-2陽性. 挿管112h",
+      "final_diagnosis": "クループ(Omicron BA.2, 重症)",
+      "expected_id": "D254",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "S01": "dry",
+        "S04": "at_rest",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Westley 16. 心停止→CPR. pH 7.11. 挿管112h"
+    },
+    {
+      "id": "R486",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9281414",
+      "vignette": "23ヶ月F 既往なし. 発熱3日+犬吠様咳嗽+騒音性呼吸1日+経口摂取低下. T 36.6, HR 130, RR 50, SpO2 90%(RA). 双方向性喘鳴+胸骨上窩/肋弓下陥没+啼泣時チアノーゼ. CRP 10.9. CXR: steeple sign陽性. SARS-CoV-2陽性. デキサメサゾン+吸入アドレナリン→3日退院",
+      "final_diagnosis": "クループ(COVID関連)",
+      "expected_id": "D254",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "S01": "dry",
+        "S04": "at_rest",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "steeple sign+. SpO2 90%. 3日で退院"
+    },
+    {
+      "id": "R487",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11439419",
+      "vignette": "2歳F 7.5kg. 先天性心疾患(ASD/VSD/PDA). 発熱2日+咳嗽+鼻汁+黄色痰→全身性強直間代発作(3分)+眼球上転+意識消失. T 39.5, HR 112, RR 27, SpO2 90%. 両側下肺野crackles+全収縮期雑音. WBC 16.9k, Hb 10.8. CXR:両側浸潤. ジアゼパム+抗菌薬",
+      "final_diagnosis": "熱性痙攣(気管支肺炎誘発)",
+      "expected_id": "D255",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "S01": "productive",
+        "S03": "purulent_rhinorrhea",
+        "E07": "crackles",
+        "E05": "mild_hypoxia_93_96",
+        "L01": "high_10000_20000",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "ASD/VSD/PDA合併. SpO2 90%. 発作3分"
+    },
+    {
+      "id": "R488",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6345087",
+      "vignette": "2歳M 12.8kg. 食欲低下2日+夜間啼泣+会陰部腫脹→全身性強直間代発作(20秒). T 39.5(自宅104F), HR 126, RR 27, BP 96/78, SpO2 100%. 病的外観+四肢斑状皮膚+会陰部紅斑/硬結/波動. WBC 18.9k, PLT 52.2万, Na 132. 創培養:MRSA. 切開排膿",
+      "final_diagnosis": "熱性痙攣(MRSA会陰部膿瘍誘発)",
+      "expected_id": "D255",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "L01": "high_10000_20000",
+        "L44": "hyponatremia",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "MRSA膿瘍. 発作20秒. Na 132"
+    },
+    {
+      "id": "R489",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7497292",
+      "vignette": "2歳F 既往なし+予防接種完了. 発熱+経口摂取低下→全身性強直間代発作(痙攣重積). T 39.9. WBC 17.7k(好中球優位), CRP 1.4, 乳酸5→正常化. CSF:有核細胞1, 蛋白12, 糖86(正常). 頭部CT正常. CXR:両側斑状浸潤. SARS-CoV-2 PCR陽性. レベチラセタム+ホスフェニトイン+挿管",
+      "final_diagnosis": "熱性痙攣重積(COVID-19)",
+      "expected_id": "D255",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E01": "39.0_40.0",
+        "E16": "obtunded",
+        "L01": "high_10000_20000",
+        "L02": "mild_0.3_3",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "COVID-19. 痙攣重積→挿管. CSF正常"
+    },
+    {
+      "id": "R490",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12372952",
+      "vignette": "日齢5 F 5.3kg. 胆汁性嘔吐+腹部膨満+48h排便なし. 腹膜刺激徴候なし. WBC 14k. X線:遠位腸管ガス欠如. 手術:腸管が腸間膜周囲に捻転+盲腸左上腹部(腸回転異常)+虚血性変化. Ladd手術+48h後second-look→腸管回復, 切除回避",
+      "final_diagnosis": "腸回転異常+中腸軸捻転",
+      "expected_id": "D256",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S12": "diffuse",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "日齢5. 胆汁性嘔吐. Ladd手術→second-look→切除回避"
+    },
+    {
+      "id": "R491",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12047603",
+      "vignette": "日齢40 M 3.4kg. 胆汁性嘔吐+便秘5日間. T 37.5, HR 165, RR 40, SpO2 98%. 病的外観+重度脱水+中等度腹部膨満+腸蠕動音消失. US: whirlpool sign+SMA-SMV逆転. 手術:完全型腸回転異常+中腸軸捻転+近位空腸25cm壊死→切除+吻合+Ladd手術",
+      "final_diagnosis": "完全型腸回転異常+中腸軸捻転(腸管壊死)",
+      "expected_id": "D256",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S12": "diffuse",
+        "E02": "over_120",
+        "E01": "37.5_38.0",
+        "S07": "severe",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "完全型. 空腸25cm壊死. whirlpool sign"
+    },
+    {
+      "id": "R492",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12313561",
+      "vignette": "日齢2 F 3.3kg 在胎40+6w Apgar10/10. 血便2回+コーヒー残渣様吐物+哺乳不良(胆汁性嘔吐・腹部膨満なし=非典型例). T 37.6, HR 124, RR 44, BP 69/39. 中等度黄疸. pH 7.41, BE -7.28, Lac 4.6, Hb 17.7, 便潜血+++. US: whirlpool sign(21x18mm). 手術:時計方向480度捻転→解除で回復",
+      "final_diagnosis": "先天性腸回転異常+急性中腸軸捻転(非典型)",
+      "expected_id": "D256",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S13": "present",
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E18": "present",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "非典型(胆汁性嘔吐なし). 血便+吐血. 480度捻転"
     }
   ],
   "total_cases": 110
