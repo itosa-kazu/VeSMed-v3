@@ -4460,6 +4460,32 @@
       ],
       "severity": "critical",
       "note": "胸痛(引き裂かれるような, 突然, 最初から最大)+背部痛。血圧左右差。CT造影で確定。Type A: 緊急手術。Type B: 降圧管理"
+    },
+    {
+      "id": "L52",
+      "name": "D_dimer",
+      "name_ja": "Dダイマー",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mildly_elevated",
+        "very_high"
+      ],
+      "note": "凝固線溶マーカー。正常<0.5ug/mL。PE/DVT/解離/DICで上昇。解離では著高(>20)。陰性でPE/解離除外に有用"
+    },
+    {
+      "id": "L53",
+      "name": "troponin",
+      "name_ja": "トロポニン(I/T)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mildly_elevated",
+        "very_high"
+      ],
+      "note": "心筋壊死マーカー。正常<0.04ng/mL。ACS: 著高(>1)。心筋炎/PE/敗血症で軽度上昇。大動脈解離の冠動脈巻込みでも上昇"
     }
   ]
 }

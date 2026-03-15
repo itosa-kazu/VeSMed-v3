@@ -5873,7 +5873,9 @@
         "L16": "elevated",
         "E01": "under_37.5",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L52": "very_high",
+        "L53": "very_high"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5898,7 +5900,9 @@
         "L01": "normal_4000_10000",
         "L02": "mild_0.3_3",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L52": "very_high",
+        "L53": "normal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -5953,7 +5957,8 @@
         "L01": "very_high_over_20000",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L53": "very_high"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -5977,7 +5982,8 @@
         "E05": "normal_over_96",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L53": "very_high"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6000,7 +6006,8 @@
         "L51": "very_high",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L53": "very_high"
       },
       "risk_factors": {
         "R01": "40_64",

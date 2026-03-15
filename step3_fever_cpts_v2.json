@@ -15016,6 +15016,112 @@
           "very_high": 0.25
         }
       }
+    },
+    "L52": {
+      "description": "Dダイマー。PE/解離/DICで上昇。陰性でPE/解離除外",
+      "leak": {
+        "not_done": 0.7,
+        "normal": 0.25,
+        "mildly_elevated": 0.04,
+        "very_high": 0.01
+      },
+      "parent_effects": {
+        "D132": {
+          "not_done": 0.1,
+          "normal": 0.03,
+          "mildly_elevated": 0.17,
+          "very_high": 0.7
+        },
+        "D77": {
+          "not_done": 0.15,
+          "normal": 0.05,
+          "mildly_elevated": 0.4,
+          "very_high": 0.4
+        },
+        "D24": {
+          "not_done": 0.2,
+          "normal": 0.1,
+          "mildly_elevated": 0.35,
+          "very_high": 0.35
+        },
+        "D57": {
+          "not_done": 0.2,
+          "normal": 0.1,
+          "mildly_elevated": 0.35,
+          "very_high": 0.35
+        },
+        "D15": {
+          "not_done": 0.25,
+          "normal": 0.15,
+          "mildly_elevated": 0.35,
+          "very_high": 0.25
+        },
+        "D131": {
+          "not_done": 0.25,
+          "normal": 0.4,
+          "mildly_elevated": 0.3,
+          "very_high": 0.05
+        },
+        "D107": {
+          "not_done": 0.2,
+          "normal": 0.1,
+          "mildly_elevated": 0.3,
+          "very_high": 0.4
+        }
+      }
+    },
+    "L53": {
+      "description": "トロポニン。ACS/心筋炎で著高。PE/タンポナーデで軽度上昇",
+      "leak": {
+        "not_done": 0.65,
+        "normal": 0.3,
+        "mildly_elevated": 0.04,
+        "very_high": 0.01
+      },
+      "parent_effects": {
+        "D131": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "mildly_elevated": 0.17,
+          "very_high": 0.75
+        },
+        "D116": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mildly_elevated": 0.3,
+          "very_high": 0.55
+        },
+        "D77": {
+          "not_done": 0.2,
+          "normal": 0.35,
+          "mildly_elevated": 0.35,
+          "very_high": 0.1
+        },
+        "D124": {
+          "not_done": 0.2,
+          "normal": 0.3,
+          "mildly_elevated": 0.4,
+          "very_high": 0.1
+        },
+        "D120": {
+          "not_done": 0.15,
+          "normal": 0.3,
+          "mildly_elevated": 0.4,
+          "very_high": 0.15
+        },
+        "D132": {
+          "not_done": 0.15,
+          "normal": 0.35,
+          "mildly_elevated": 0.3,
+          "very_high": 0.2
+        },
+        "D125": {
+          "not_done": 0.25,
+          "normal": 0.35,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

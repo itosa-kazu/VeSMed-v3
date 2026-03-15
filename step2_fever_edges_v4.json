@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2154,
+  "total_edges": 2168,
   "edges": [
     {
       "from": "R01",
@@ -19575,6 +19575,104 @@
       "from_name": "aortic_dissection",
       "to_name": "E15",
       "reason": "大動脈解離: 心雑音(大動脈弁閉鎖不全, Type Aで)"
+    },
+    {
+      "from": "D132",
+      "to": "L52",
+      "from_name": "D132",
+      "to_name": "L52",
+      "reason": "大動脈解離: D-dimer著高(>20ug/mLが多い, 感度97%)"
+    },
+    {
+      "from": "D77",
+      "to": "L52",
+      "from_name": "D77",
+      "to_name": "L52",
+      "reason": "PE/DVT: D-dimer上昇(感度95%+, 特異度低い)"
+    },
+    {
+      "from": "D24",
+      "to": "L52",
+      "from_name": "D24",
+      "to_name": "L52",
+      "reason": "TSS/敗血症: DICでD-dimer上昇"
+    },
+    {
+      "from": "D57",
+      "to": "L52",
+      "from_name": "D57",
+      "to_name": "L52",
+      "reason": "壊死性筋膜炎: DICでD-dimer上昇"
+    },
+    {
+      "from": "D15",
+      "to": "L52",
+      "from_name": "D15",
+      "to_name": "L52",
+      "reason": "マラリア: DICでD-dimer上昇"
+    },
+    {
+      "from": "D131",
+      "to": "L52",
+      "from_name": "D131",
+      "to_name": "L52",
+      "reason": "ACS: D-dimer通常正常~軽度上昇"
+    },
+    {
+      "from": "D107",
+      "to": "L52",
+      "from_name": "D107",
+      "to_name": "L52",
+      "reason": "HLH: DICでD-dimer上昇"
+    },
+    {
+      "from": "D131",
+      "to": "L53",
+      "from_name": "D131",
+      "to_name": "L53",
+      "reason": "ACS: トロポニン著高(>1ng/mL, 心筋壊死の核心マーカー)"
+    },
+    {
+      "from": "D116",
+      "to": "L53",
+      "from_name": "D116",
+      "to_name": "L53",
+      "reason": "心筋炎: トロポニン上昇(>90%, 心筋障害)"
+    },
+    {
+      "from": "D77",
+      "to": "L53",
+      "from_name": "D77",
+      "to_name": "L53",
+      "reason": "PE: トロポニン軽度上昇(右心負荷, 30-50%)"
+    },
+    {
+      "from": "D124",
+      "to": "L53",
+      "from_name": "D124",
+      "to_name": "L53",
+      "reason": "心タンポナーデ: トロポニン軽度上昇(心筋圧迫)"
+    },
+    {
+      "from": "D120",
+      "to": "L53",
+      "from_name": "D120",
+      "to_name": "L53",
+      "reason": "心不全: トロポニン軽度上昇(心筋ストレス, 40-60%)"
+    },
+    {
+      "from": "D132",
+      "to": "L53",
+      "from_name": "D132",
+      "to_name": "L53",
+      "reason": "大動脈解離: トロポニン上昇(冠動脈巻込みなら著高, なければ正常~軽度)"
+    },
+    {
+      "from": "D125",
+      "to": "L53",
+      "from_name": "D125",
+      "to_name": "L53",
+      "reason": "不整脈: トロポニン軽度上昇(頻脈性心筋障害)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -443,6 +443,7 @@ const STATE_JA = {
   never:"なし", former:"過去", current:"現在",
   // Lung auscultation (E07) + CXR (L04) new states
   decreased_absent:"呼吸音減弱/消失", pneumothorax:"気胸像",
+  // D-dimer/Troponin - uses existing: not_done, normal, mildly_elevated, very_high
 };
 
 function stateJa(s) { return STATE_JA[s] || s; }
