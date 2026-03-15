@@ -9415,6 +9415,359 @@
       },
       "result": "",
       "notes": "Zieve症候群(三徴: 肝炎+溶血+高脂血症). ハプトグロビン<30. エタノール322"
+    },
+    {
+      "id": "R366",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12833991",
+      "vignette": "70F 発熱+倦怠感+筋肉痛+体重減少+咳嗽+副鼻腔炎+両足浮腫+皮疹. HR 125, BP 179/95. Cr 1.35→5.80, eGFR 7, Hb 6.4. 尿:血尿3+蛋白2+. MPO-ANCA 202+PR3-ANCA 38(二重陽性). 腎生検:pauci-immune壊死性GN",
+      "final_diagnosis": "RPGN(ANCA関連GPA二重陽性)",
+      "expected_id": "D168",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "S06": "present",
+        "E02": "over_120",
+        "E38": "elevated_140_180",
+        "S01": "dry",
+        "E01": "under_37.5",
+        "E36": "bilateral",
+        "L55": "high_AKI",
+        "L05": "pyuria_bacteriuria",
+        "L01": "high_10000_20000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Cr 5.80, eGFR 7. 二重ANCA陽性"
+    },
+    {
+      "id": "R367",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6514513",
+      "vignette": "54F 8週間の肉眼的血尿+2週間の高熱. T 37.1, BP 146/96, HR 81. Cr 0.88→6.33, Hb 9.4, CRP 13.98. 抗GBM 3.2→87.3(遅発陽転). 腎生検:全糸球体半月体+IgG線状沈着",
+      "final_diagnosis": "RPGN(抗GBM型)",
+      "expected_id": "D168",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "L55": "high_AKI",
+        "L05": "pyuria_bacteriuria",
+        "L02": "high_over_10",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Cr 6.33. 抗GBM遅発陽転"
+    },
+    {
+      "id": "R368",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12173335",
+      "vignette": "60M 発熱+膿性痰+皮疹+両側下腿浮腫. Cr 1.03→4.00, WBC 24450, CRP 207.66. MPO-ANCA 73.7. 腎生検:pauci-immune血管炎",
+      "final_diagnosis": "RPGN(MPA, Hantavirus後)",
+      "expected_id": "D168",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "E36": "bilateral",
+        "L55": "high_AKI",
+        "L05": "pyuria_bacteriuria",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Cr 4.0, CRP 207, WBC 24k"
+    },
+    {
+      "id": "R369",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC11916154",
+      "vignette": "31F 尿毒症+発熱+倦怠感+湿性咳嗽. BP 130/80. Cr 5.7, K 6.0, CRP 68.5. 尿:血尿3+蛋白9.8g/日. ANCA/ANA/抗GBM全陰性. 腎生検:52%半月体. 肺結核合併",
+      "final_diagnosis": "RPGN(免疫複合体型, TB関連)",
+      "expected_id": "D168",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "S07": "severe",
+        "L55": "high_AKI",
+        "L05": "pyuria_bacteriuria",
+        "L44": "hyperkalemia",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Cr 5.7, K 6.0. TB関連"
+    },
+    {
+      "id": "R370",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9097937",
+      "vignette": "44M 耳痛+労作時呼吸困難+倦怠感. Cr 4.7, eGFR 10.85, Hb 6.8, ESR 130, CRP 17.78. 尿:UPCR 7.8. PR3-ANCA 54. 腎生検:壊死性半月体形成性GN",
+      "final_diagnosis": "RPGN(PR3-ANCA, GPA)",
+      "expected_id": "D168",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "S07": "severe",
+        "L55": "high_AKI",
+        "L05": "pyuria_bacteriuria",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Cr 4.7, Hb 6.8, ESR 130"
+    },
+    {
+      "id": "R371",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC9795117",
+      "vignette": "37F 2ヶ月の全身浮腫+心窩部痛+黄疸. T 36.1, BP 120/84, HR 86. AST 936, ALT 310, T-Bil 16.1, Alb 2.4, INR 1.58. SMA陽性. 肝生検:界面肝炎+形質細胞",
+      "final_diagnosis": "AIH 1型(肝硬変合併)",
+      "expected_id": "D169",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S12": "epigastric",
+        "E36": "bilateral",
+        "L11": "very_high",
+        "E01": "under_37.5",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST 936, T-Bil 16.1. SMA陽性"
+    },
+    {
+      "id": "R372",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9325281",
+      "vignette": "55F 全身脱力+5日間の黄疸. T 36.8, BP 114/67. AST 3864, ALT 4825, T-Bil 4.08, INR 1.92. ANA 1:160, IgG 2165. 肝生検:リンパ形質細胞浸潤. HAV誘発",
+      "final_diagnosis": "AIH(A型肝炎誘発)",
+      "expected_id": "D169",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "E01": "under_37.5",
+        "L11": "very_high",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST 3864, ALT 4825. ANA 1:160"
+    },
+    {
+      "id": "R373",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12125958",
+      "vignette": "32F 2週間RUQ痛+黄疸+暗色尿+嘔気. T 37.0, BP 138/75, HR 86, SpO2 99%. AST 771, ALT 1249, T-Bil 6.4, CRP 10.43. ANA+SMA 1:160陽性. 肝生検:リンパ形質細胞浸潤+架橋壊死",
+      "final_diagnosis": "AIH",
+      "expected_id": "D169",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S12": "RUQ",
+        "S13": "present",
+        "E01": "under_37.5",
+        "L11": "very_high",
+        "L02": "high_over_10",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "ANA+SMA両方陽性. ステロイドで改善"
+    },
+    {
+      "id": "R374",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12945422",
+      "vignette": "62F 2週間の黄疸+倦怠感+暗色尿. AST 781, ALT 1543, T-Bil 7.1, IgG 919(正常!). ANA弱陽性. 肝生検:emperipolesis+巣状壊死. Day2脾破裂→ショック",
+      "final_diagnosis": "急性発症型AIH(IgG正常型)+脾破裂",
+      "expected_id": "D169",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "L11": "very_high",
+        "E01": "under_37.5",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "IgG正常(急性発症型). 脾破裂合併"
+    },
+    {
+      "id": "R375",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12007933",
+      "vignette": "61F 9週間の腹痛/膨満+嘔気嘔吐+黄疸+暗色尿+呼吸困難. AST 732, ALT 755, T-Bil 6.9. ANA 1:40+SMA陽性. IgG>2500. クモ状血管腫+手掌紅斑",
+      "final_diagnosis": "AIH 1型",
+      "expected_id": "D169",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S12": "diffuse",
+        "S13": "present",
+        "S04": "on_exertion",
+        "S07": "severe",
+        "L11": "very_high",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "IgG>2500. 9週間の慢性経過"
+    },
+    {
+      "id": "R376",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC11999222",
+      "vignette": "37M IM注射24-30h後. 三角筋黒色変色+皮下気腫+コンパートメント症候群. 発熱, HR 106, BP 90, RR 24. WBC 18.5k, CRP 53, Cr 1.7. C.perfringens",
+      "final_diagnosis": "ガス壊疽(C.perfringens)",
+      "expected_id": "D172",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E12": "skin_necrosis",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L55": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "IM注射後24h. C.perfringens. 皮下気腫"
+    },
+    {
+      "id": "R377",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8088788",
+      "vignette": "60M エピネフリン自己注射(右大腿)10-11h後. 右大腿最悪の痛み+発汗. T 36.6→38.5, HR 112, BP 155/83. WBC 23.6k, CK 11603, 乳酸3.1, Cr 2.4. CT:大腿ガス. C.perfringens",
+      "final_diagnosis": "ガス壊疽(C.perfringens)",
+      "expected_id": "D172",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L17": "very_high",
+        "L55": "mild_elevated",
+        "S07": "severe",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK 11603. C.perfringens. 22回HBO"
+    },
+    {
+      "id": "R378",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6437822",
+      "vignette": "32M 開放骨折術後3日. 重度腫脹+褐色皮膚+右下腿捻髪音+悪臭壊死. T 38.9, 頻脈, 低血圧. WBC 24270, ESR 122, CRP 17.13. X線:筋膜間ガス. C.sordellii",
+      "final_diagnosis": "ガス壊疽(C.sordellii)",
+      "expected_id": "D172",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E12": "skin_necrosis",
+        "S07": "severe",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "C.sordellii. 術後3日. 捻髪音+悪臭壊死"
+    },
+    {
+      "id": "R379",
+      "source": "Case Rep 2011",
+      "pmcid": "PMC3181449",
+      "vignette": "26M Crohn病(AZA)+重度好中球減少(0.2). 左大腿痛+嘔吐+下痢→2h著明紅斑+膿疱. HR 150, 無熱→38.5. WBC 1.6(白血球減少). C.septicum. 股関節離断+半結腸切除",
+      "final_diagnosis": "ガス壊疽(C.septicum, 自発性)",
+      "expected_id": "D172",
+      "in_scope": true,
+      "evidence": {
+        "E02": "over_120",
+        "E01": "38.0_39.0",
+        "S13": "present",
+        "S14": "watery",
+        "S07": "severe",
+        "L01": "low_under_4000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "C.septicum. 自発性. 好中球減少. HR 150"
     }
   ],
   "total_cases": 110
