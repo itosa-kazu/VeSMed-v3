@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2650,
+  "total_edges": 2683,
   "edges": [
     {
       "from": "R01",
@@ -23047,6 +23047,237 @@
       "from_name": "pyelonephritis",
       "to_name": "L55",
       "reason": "腎盂腎炎: Cr軽度上昇"
+    },
+    {
+      "from": "D162",
+      "to": "E38",
+      "from_name": "HUS",
+      "to_name": "E38",
+      "reason": "HUS: 高血圧(腎不全→体液過剰, 60-80%)"
+    },
+    {
+      "from": "D162",
+      "to": "E36",
+      "from_name": "HUS",
+      "to_name": "E36",
+      "reason": "HUS: 浮腫(AKI→体液過剰, 40-60%)"
+    },
+    {
+      "from": "D168",
+      "to": "L55",
+      "from_name": "RPGN",
+      "to_name": "L55",
+      "reason": "RPGN: AKI(急速進行, 100%)"
+    },
+    {
+      "from": "D168",
+      "to": "L05",
+      "from_name": "RPGN",
+      "to_name": "L05",
+      "reason": "RPGN: 尿検査異常(血尿+蛋白尿, 90%+)"
+    },
+    {
+      "from": "D168",
+      "to": "E01",
+      "from_name": "RPGN",
+      "to_name": "E01",
+      "reason": "RPGN: 発熱(ANCA関連血管炎で50-60%)"
+    },
+    {
+      "from": "D168",
+      "to": "S07",
+      "from_name": "RPGN",
+      "to_name": "S07",
+      "reason": "RPGN: 全身倦怠感(80-90%)"
+    },
+    {
+      "from": "D168",
+      "to": "S08",
+      "from_name": "RPGN",
+      "to_name": "S08",
+      "reason": "RPGN: 関節痛(ANCA関連, 30-40%)"
+    },
+    {
+      "from": "D168",
+      "to": "L01",
+      "from_name": "RPGN",
+      "to_name": "L01",
+      "reason": "RPGN: WBC上昇(炎症)"
+    },
+    {
+      "from": "D168",
+      "to": "L02",
+      "from_name": "RPGN",
+      "to_name": "L02",
+      "reason": "RPGN: CRP上昇"
+    },
+    {
+      "from": "D168",
+      "to": "S04",
+      "from_name": "RPGN",
+      "to_name": "S04",
+      "reason": "RPGN: 呼吸困難(肺出血/肺腎症候群, 20-30%)"
+    },
+    {
+      "from": "D168",
+      "to": "T01",
+      "from_name": "RPGN",
+      "to_name": "T01",
+      "reason": "RPGN: 亜急性(週~月)"
+    },
+    {
+      "from": "D168",
+      "to": "T02",
+      "from_name": "RPGN",
+      "to_name": "T02",
+      "reason": "RPGN: 亜急性"
+    },
+    {
+      "from": "D169",
+      "to": "L11",
+      "from_name": "AIH",
+      "to_name": "L11",
+      "reason": "AIH: 肝酵素上昇(AST/ALT, 100%)"
+    },
+    {
+      "from": "D169",
+      "to": "E18",
+      "from_name": "AIH",
+      "to_name": "E18",
+      "reason": "AIH: 黄疸(急性発症で60-70%)"
+    },
+    {
+      "from": "D169",
+      "to": "S07",
+      "from_name": "AIH",
+      "to_name": "S07",
+      "reason": "AIH: 倦怠感(80-90%)"
+    },
+    {
+      "from": "D169",
+      "to": "S12",
+      "from_name": "AIH",
+      "to_name": "S12",
+      "reason": "AIH: 腹痛(RUQ, 30-40%)"
+    },
+    {
+      "from": "D169",
+      "to": "E01",
+      "from_name": "AIH",
+      "to_name": "E01",
+      "reason": "AIH: 発熱(急性発症で30-40%)"
+    },
+    {
+      "from": "D169",
+      "to": "S08",
+      "from_name": "AIH",
+      "to_name": "S08",
+      "reason": "AIH: 関節痛(20-30%)"
+    },
+    {
+      "from": "D169",
+      "to": "L01",
+      "from_name": "AIH",
+      "to_name": "L01",
+      "reason": "AIH: WBC(正常~軽度)"
+    },
+    {
+      "from": "D169",
+      "to": "L02",
+      "from_name": "AIH",
+      "to_name": "L02",
+      "reason": "AIH: CRP(正常~軽度)"
+    },
+    {
+      "from": "D169",
+      "to": "T01",
+      "from_name": "AIH",
+      "to_name": "T01",
+      "reason": "AIH: 急性~慢性"
+    },
+    {
+      "from": "D169",
+      "to": "T02",
+      "from_name": "AIH",
+      "to_name": "T02",
+      "reason": "AIH: 亜急性~慢性"
+    },
+    {
+      "from": "D170",
+      "to": "E18",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "E18",
+      "reason": "アルコール性肝炎: 黄疸(90%+)"
+    },
+    {
+      "from": "D170",
+      "to": "L11",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L11",
+      "reason": "アルコール性肝炎: 肝酵素上昇(AST>ALT, AST/ALT>2)"
+    },
+    {
+      "from": "D170",
+      "to": "E01",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "E01",
+      "reason": "アルコール性肝炎: 発熱(50-60%)"
+    },
+    {
+      "from": "D170",
+      "to": "S12",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "S12",
+      "reason": "アルコール性肝炎: 腹痛(RUQ, 50-60%)"
+    },
+    {
+      "from": "D170",
+      "to": "S07",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "S07",
+      "reason": "アルコール性肝炎: 倦怠感(80%+)"
+    },
+    {
+      "from": "D170",
+      "to": "S13",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "S13",
+      "reason": "アルコール性肝炎: 嘔気(50-60%)"
+    },
+    {
+      "from": "D170",
+      "to": "E16",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "E16",
+      "reason": "アルコール性肝炎: 意識障害(肝性脳症, 20-30%)"
+    },
+    {
+      "from": "D170",
+      "to": "L01",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L01",
+      "reason": "アルコール性肝炎: WBC上昇(50-60%)"
+    },
+    {
+      "from": "D170",
+      "to": "L02",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L02",
+      "reason": "アルコール性肝炎: CRP上昇"
+    },
+    {
+      "from": "D170",
+      "to": "T01",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "T01",
+      "reason": "アルコール性肝炎: 急性~亜急性"
+    },
+    {
+      "from": "D170",
+      "to": "T02",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "T02",
+      "reason": "アルコール性肝炎: 亜急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

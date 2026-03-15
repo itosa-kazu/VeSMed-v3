@@ -5009,6 +5009,42 @@
         "high_AKI"
       ],
       "note": "normal: <1.2mg/dL, mild_elevated: 1.2-3.0, high_AKI: >3.0mg/dL"
+    },
+    {
+      "id": "D168",
+      "name": "RPGN",
+      "name_ja": "急速進行性糸球体腎炎(RPGN)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "週~月単位で急速に腎機能が悪化。ANCA関連(GPA/MPA)/抗GBM(Goodpasture)/免疫複合体型。血尿+蛋白尿+AKI+全身症状"
+    },
+    {
+      "id": "D169",
+      "name": "autoimmune_hepatitis",
+      "name_ja": "自己免疫性肝炎(AIH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "自己免疫による肝細胞障害。若年女性に多い。ANA/SMA陽性+IgG高値+肝酵素上昇。急性発症(30%)は劇症化リスク"
+    },
+    {
+      "id": "D170",
+      "name": "alcoholic_hepatitis",
+      "name_ja": "アルコール性肝炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "大量飲酒歴+黄疸+肝腫大+発熱。AST/ALT比>2が特徴(通常<300)。重症はMaddrey score≧32でステロイド適応。死亡率20-50%"
     }
   ]
 }

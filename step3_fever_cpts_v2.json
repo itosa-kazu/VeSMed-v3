@@ -2952,6 +2952,37 @@
         "40_64": 0.001,
         "65_plus": 0.003
       }
+    },
+    "D168": {
+      "parents": [
+        "R01"
+      ],
+      "description": "RPGN。中高年に多い",
+      "cpt": {
+        "18_39": 0.001,
+        "40_64": 0.002,
+        "65_plus": 0.003
+      }
+    },
+    "D169": {
+      "parents": [
+        "R02"
+      ],
+      "description": "AIH。若年女性に多い(F:M≈4:1)",
+      "cpt": {
+        "male": 0.0005,
+        "female": 0.002
+      }
+    },
+    "D170": {
+      "parents": [
+        "R02"
+      ],
+      "description": "アルコール性肝炎。男性に多い",
+      "cpt": {
+        "male": 0.003,
+        "female": 0.001
+      }
     }
   },
   "noisy_or_params": {
@@ -4217,6 +4248,27 @@
           "38.0_39.0": 0.01,
           "39.0_40.0": 0.005,
           "over_40.0": 0.005
+        },
+        "D168": {
+          "under_37.5": 0.35,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.05
+        },
+        "D169": {
+          "under_37.5": 0.55,
+          "37.5_38.0": 0.18,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.02
+        },
+        "D170": {
+          "under_37.5": 0.35,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.05
         }
       }
     },
@@ -6577,6 +6629,11 @@
           "normal": 0.15,
           "confused": 0.4,
           "obtunded": 0.45
+        },
+        "D170": {
+          "normal": 0.65,
+          "confused": 0.25,
+          "obtunded": 0.1
         }
       }
     },
@@ -6658,6 +6715,14 @@
         "D166": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D169": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D170": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -8069,6 +8134,24 @@
           "normal_4000_10000": 0.5,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.1
+        },
+        "D168": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.3,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.2
+        },
+        "D169": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.1
+        },
+        "D170": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.27
         }
       }
     },
@@ -8932,6 +9015,24 @@
           "mild_0.3_3": 0.35,
           "moderate_3_10": 0.25,
           "high_over_10": 0.1
+        },
+        "D168": {
+          "normal_under_0.3": 0.08,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.37,
+          "high_over_10": 0.4
+        },
+        "D169": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.15
+        },
+        "D170": {
+          "normal_under_0.3": 0.08,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.37,
+          "high_over_10": 0.4
         }
       }
     },
@@ -9804,6 +9905,16 @@
           "normal": 0.1,
           "mild_elevated": 0.15,
           "very_high": 0.75
+        },
+        "D169": {
+          "normal": 0.03,
+          "mild_elevated": 0.25,
+          "very_high": 0.72
+        },
+        "D170": {
+          "normal": 0.05,
+          "mild_elevated": 0.65,
+          "very_high": 0.3
         }
       }
     },
@@ -11911,6 +12022,11 @@
           "absent": 0.02,
           "on_exertion": 0.18,
           "at_rest": 0.8
+        },
+        "D168": {
+          "absent": 0.65,
+          "on_exertion": 0.2,
+          "at_rest": 0.15
         }
       }
     },
@@ -12698,6 +12814,21 @@
           "absent": 0.05,
           "mild": 0.25,
           "severe": 0.7
+        },
+        "D168": {
+          "absent": 0.08,
+          "mild": 0.32,
+          "severe": 0.6
+        },
+        "D169": {
+          "absent": 0.08,
+          "mild": 0.42,
+          "severe": 0.5
+        },
+        "D170": {
+          "absent": 0.08,
+          "mild": 0.32,
+          "severe": 0.6
         }
       }
     },
@@ -12811,6 +12942,14 @@
         "D115": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D168": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D169": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -13349,6 +13488,24 @@
           "LLQ": 0.01,
           "suprapubic": 0.01,
           "diffuse": 0.02
+        },
+        "D169": {
+          "absent": 0.55,
+          "epigastric": 0.05,
+          "RUQ": 0.35,
+          "RLQ": 0.01,
+          "LLQ": 0.01,
+          "suprapubic": 0.01,
+          "diffuse": 0.02
+        },
+        "D170": {
+          "absent": 0.3,
+          "epigastric": 0.1,
+          "RUQ": 0.5,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.05
         }
       }
     },
@@ -13601,6 +13758,10 @@
         "D166": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D170": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -16078,6 +16239,24 @@
           "3d_to_1w": 0.2,
           "1w_to_3w": 0.04,
           "over_3w": 0.01
+        },
+        "D168": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.45,
+          "over_3w": 0.3
+        },
+        "D169": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.3
+        },
+        "D170": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.2
         }
       }
     },
@@ -16479,6 +16658,18 @@
         "D167": {
           "sudden_hours": 0.6,
           "gradual_days": 0.4
+        },
+        "D168": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
+        },
+        "D169": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
+        },
+        "D170": {
+          "sudden_hours": 0.1,
+          "gradual_days": 0.9
         }
       }
     },
@@ -16711,6 +16902,10 @@
         "D145": {
           "normal": 0.1,
           "pyuria_bacteriuria": 0.9
+        },
+        "D168": {
+          "normal": 0.05,
+          "pyuria_bacteriuria": 0.95
         }
       }
     },
@@ -17354,6 +17549,11 @@
           "absent": 0.25,
           "unilateral": 0.1,
           "bilateral": 0.65
+        },
+        "D162": {
+          "absent": 0.35,
+          "unilateral": 0.05,
+          "bilateral": 0.6
         }
       }
     },
@@ -18213,6 +18413,11 @@
           "normal_under_140": 0.25,
           "elevated_140_180": 0.4,
           "crisis_over_180": 0.35
+        },
+        "D162": {
+          "normal_under_140": 0.15,
+          "elevated_140_180": 0.35,
+          "crisis_over_180": 0.5
         }
       }
     },
@@ -18224,9 +18429,9 @@
       },
       "parent_effects": {
         "D162": {
-          "normal": 0.03,
-          "mild_elevated": 0.17,
-          "high_AKI": 0.8
+          "normal": 0.02,
+          "mild_elevated": 0.28,
+          "high_AKI": 0.7
         },
         "D156": {
           "normal": 0.45,
@@ -18257,6 +18462,11 @@
           "normal": 0.65,
           "mild_elevated": 0.3,
           "high_AKI": 0.05
+        },
+        "D168": {
+          "normal": 0.03,
+          "mild_elevated": 0.15,
+          "high_AKI": 0.82
         }
       }
     }
