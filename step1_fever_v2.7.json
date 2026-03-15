@@ -3859,7 +3859,8 @@
         "normal",
         "viral_pattern",
         "bacterial_pattern",
-        "HSV_PCR_positive"
+        "HSV_PCR_positive",
+        "tb_fungal_pattern"
       ],
       "category": "lab"
     },
@@ -4840,6 +4841,90 @@
       ],
       "severity": "high",
       "note": "腹痛(疝痛様)+嘔吐+腹部膨満+排ガス停止。手術既往(癒着)/ヘルニア/腫瘍が原因。絞扼性は緊急手術"
+    },
+    {
+      "id": "D155",
+      "name": "subarachnoid_hemorrhage",
+      "name_ja": "くも膜下出血(SAH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の激しい頭痛(雷鳴頭痛)+嘔吐+項部硬直+意識障害。脳動脈瘤破裂が80%。CT→LP。Hunt-Hess分類"
+    },
+    {
+      "id": "D156",
+      "name": "TTP",
+      "name_ja": "血栓性血小板減少性紫斑病(TTP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "五徴: 血小板減少+MAHA+発熱+神経症状+腎障害。ADAMTS13活性<10%。血漿交換が治療"
+    },
+    {
+      "id": "D157",
+      "name": "HHS",
+      "name_ja": "高浸透圧高血糖症候群(HHS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "著明な高血糖(>600mg/dL)+高浸透圧+重度脱水+意識障害。ケトアシドーシスなし/軽微。2型DM高齢者に多い"
+    },
+    {
+      "id": "D158",
+      "name": "AIHA",
+      "name_ja": "自己免疫性溶血性貧血(AIHA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "温式(IgG, 70%)/冷式(IgM). Coombs陽性+LDH↑+ハプトグロビン↓+間接Bil↑+網赤血球↑。黄疸+貧血+脾腫"
+    },
+    {
+      "id": "D159",
+      "name": "myxedema_coma",
+      "name_ja": "粘液水腫性昏睡",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "甲状腺機能低下症の究極形態。低体温+徐脈+低血圧+意識障害+低Na血症。死亡率30-60%。冬季・高齢女性に多い"
+    },
+    {
+      "id": "D160",
+      "name": "tetanus",
+      "name_ja": "破傷風",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "C.tetani毒素(tetanospasmin)。開口障害(trismus)+全身痙攣(opisthotonus)+自律神経障害。外傷/創傷歴。ワクチン未接種者"
+    },
+    {
+      "id": "D161",
+      "name": "organophosphate_poisoning",
+      "name_ja": "有機リン中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "コリンエステラーゼ阻害。SLUDGE(唾液分泌↑/流涙/排尿/下痢/消化管症状/眼(縮瞳))+気管支痙攣+徐脈+痙攣。農薬/殺虫剤暴露"
     }
   ]
 }

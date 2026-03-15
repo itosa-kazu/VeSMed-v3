@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2507,
+  "total_edges": 2590,
   "edges": [
     {
       "from": "R01",
@@ -22046,6 +22046,587 @@
       "from_name": "bowel_obstruction",
       "to_name": "T02",
       "reason": "腸閉塞: 急性~亜急性"
+    },
+    {
+      "from": "D155",
+      "to": "S05",
+      "from_name": "SAH",
+      "to_name": "S05",
+      "reason": "SAH: 雷鳴頭痛(人生最悪の頭痛, 95%+)"
+    },
+    {
+      "from": "D155",
+      "to": "S13",
+      "from_name": "SAH",
+      "to_name": "S13",
+      "reason": "SAH: 嘔吐(70-80%)"
+    },
+    {
+      "from": "D155",
+      "to": "E06",
+      "from_name": "SAH",
+      "to_name": "E06",
+      "reason": "SAH: 項部硬直(髄膜刺激, 50-70%)"
+    },
+    {
+      "from": "D155",
+      "to": "E16",
+      "from_name": "SAH",
+      "to_name": "E16",
+      "reason": "SAH: 意識障害(Hunt-Hess II以上, 40-60%)"
+    },
+    {
+      "from": "D155",
+      "to": "E38",
+      "from_name": "SAH",
+      "to_name": "E38",
+      "reason": "SAH: 高血圧(交感神経亢進, 50-70%)"
+    },
+    {
+      "from": "D155",
+      "to": "E02",
+      "from_name": "SAH",
+      "to_name": "E02",
+      "reason": "SAH: 頻脈(交感神経亢進)"
+    },
+    {
+      "from": "D155",
+      "to": "E01",
+      "from_name": "SAH",
+      "to_name": "E01",
+      "reason": "SAH: 発熱(血液髄膜刺激, 24-48h後, 30-40%)"
+    },
+    {
+      "from": "D155",
+      "to": "S52",
+      "from_name": "SAH",
+      "to_name": "S52",
+      "reason": "SAH: 局所神経脱落(動脈瘤圧迫/vasospasm, 20-30%)"
+    },
+    {
+      "from": "D155",
+      "to": "L01",
+      "from_name": "SAH",
+      "to_name": "L01",
+      "reason": "SAH: WBC上昇(ストレス反応)"
+    },
+    {
+      "from": "D155",
+      "to": "T01",
+      "from_name": "SAH",
+      "to_name": "T01",
+      "reason": "SAH: 超急性"
+    },
+    {
+      "from": "D155",
+      "to": "T02",
+      "from_name": "SAH",
+      "to_name": "T02",
+      "reason": "SAH: 突発(雷鳴様)"
+    },
+    {
+      "from": "D156",
+      "to": "L14",
+      "from_name": "TTP",
+      "to_name": "L14",
+      "reason": "TTP: 血小板減少(定義的, 100%)"
+    },
+    {
+      "from": "D156",
+      "to": "L16",
+      "from_name": "TTP",
+      "to_name": "L16",
+      "reason": "TTP: LDH上昇(溶血, 90%+)"
+    },
+    {
+      "from": "D156",
+      "to": "E01",
+      "from_name": "TTP",
+      "to_name": "E01",
+      "reason": "TTP: 発熱(五徴の一つ, 50-60%)"
+    },
+    {
+      "from": "D156",
+      "to": "E16",
+      "from_name": "TTP",
+      "to_name": "E16",
+      "reason": "TTP: 意識障害/神経症状(五徴, 60-70%)"
+    },
+    {
+      "from": "D156",
+      "to": "E12",
+      "from_name": "TTP",
+      "to_name": "E12",
+      "reason": "TTP: 紫斑/点状出血(血小板減少, 50-70%)"
+    },
+    {
+      "from": "D156",
+      "to": "S44",
+      "from_name": "TTP",
+      "to_name": "S44",
+      "reason": "TTP: 出血傾向(40-50%)"
+    },
+    {
+      "from": "D156",
+      "to": "S07",
+      "from_name": "TTP",
+      "to_name": "S07",
+      "reason": "TTP: 全身倦怠感(70-80%)"
+    },
+    {
+      "from": "D156",
+      "to": "S05",
+      "from_name": "TTP",
+      "to_name": "S05",
+      "reason": "TTP: 頭痛(神経症状, 40-50%)"
+    },
+    {
+      "from": "D156",
+      "to": "L01",
+      "from_name": "TTP",
+      "to_name": "L01",
+      "reason": "TTP: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D156",
+      "to": "L02",
+      "from_name": "TTP",
+      "to_name": "L02",
+      "reason": "TTP: CRP軽度上昇"
+    },
+    {
+      "from": "D156",
+      "to": "T01",
+      "from_name": "TTP",
+      "to_name": "T01",
+      "reason": "TTP: 急性~亜急性"
+    },
+    {
+      "from": "D156",
+      "to": "T02",
+      "from_name": "TTP",
+      "to_name": "T02",
+      "reason": "TTP: 亜急性"
+    },
+    {
+      "from": "D157",
+      "to": "L54",
+      "from_name": "HHS",
+      "to_name": "L54",
+      "reason": "HHS: 著明高血糖(>600mg/dL, 定義的)"
+    },
+    {
+      "from": "D157",
+      "to": "E16",
+      "from_name": "HHS",
+      "to_name": "E16",
+      "reason": "HHS: 意識障害(高浸透圧, 70-80%)"
+    },
+    {
+      "from": "D157",
+      "to": "S07",
+      "from_name": "HHS",
+      "to_name": "S07",
+      "reason": "HHS: 全身倦怠感(80-90%)"
+    },
+    {
+      "from": "D157",
+      "to": "E02",
+      "from_name": "HHS",
+      "to_name": "E02",
+      "reason": "HHS: 頻脈(脱水)"
+    },
+    {
+      "from": "D157",
+      "to": "E03",
+      "from_name": "HHS",
+      "to_name": "E03",
+      "reason": "HHS: 低血圧(重度脱水)"
+    },
+    {
+      "from": "D157",
+      "to": "S13",
+      "from_name": "HHS",
+      "to_name": "S13",
+      "reason": "HHS: 嘔気/嘔吐(30-40%)"
+    },
+    {
+      "from": "D157",
+      "to": "E01",
+      "from_name": "HHS",
+      "to_name": "E01",
+      "reason": "HHS: 発熱(感染誘因, 40-50%)"
+    },
+    {
+      "from": "D157",
+      "to": "L01",
+      "from_name": "HHS",
+      "to_name": "L01",
+      "reason": "HHS: WBC上昇(ストレス/感染)"
+    },
+    {
+      "from": "D157",
+      "to": "L02",
+      "from_name": "HHS",
+      "to_name": "L02",
+      "reason": "HHS: CRP上昇(感染誘因)"
+    },
+    {
+      "from": "D157",
+      "to": "T01",
+      "from_name": "HHS",
+      "to_name": "T01",
+      "reason": "HHS: 亜急性~急性"
+    },
+    {
+      "from": "D157",
+      "to": "T02",
+      "from_name": "HHS",
+      "to_name": "T02",
+      "reason": "HHS: 緩徐(数日)"
+    },
+    {
+      "from": "D156",
+      "to": "E18",
+      "from_name": "TTP",
+      "to_name": "E18",
+      "reason": "TTP: 黄疸(溶血性, 30-40%)"
+    },
+    {
+      "from": "D156",
+      "to": "S42",
+      "from_name": "TTP",
+      "to_name": "S42",
+      "reason": "TTP: 痙攣(神経症状, 10-20%)"
+    },
+    {
+      "from": "D156",
+      "to": "L11",
+      "from_name": "TTP",
+      "to_name": "L11",
+      "reason": "TTP: 肝酵素上昇(臓器障害)"
+    },
+    {
+      "from": "D156",
+      "to": "S13",
+      "from_name": "TTP",
+      "to_name": "S13",
+      "reason": "TTP: 嘔気/嘔吐(30-40%)"
+    },
+    {
+      "from": "D158",
+      "to": "S07",
+      "from_name": "AIHA",
+      "to_name": "S07",
+      "reason": "AIHA: 倦怠感(貧血, 80-90%)"
+    },
+    {
+      "from": "D158",
+      "to": "E18",
+      "from_name": "AIHA",
+      "to_name": "E18",
+      "reason": "AIHA: 黄疸(溶血, 60-70%)"
+    },
+    {
+      "from": "D158",
+      "to": "L16",
+      "from_name": "AIHA",
+      "to_name": "L16",
+      "reason": "AIHA: LDH上昇(溶血, 90%+)"
+    },
+    {
+      "from": "D158",
+      "to": "E01",
+      "from_name": "AIHA",
+      "to_name": "E01",
+      "reason": "AIHA: 発熱(20-30%, 溶血クリーゼ)"
+    },
+    {
+      "from": "D158",
+      "to": "E02",
+      "from_name": "AIHA",
+      "to_name": "E02",
+      "reason": "AIHA: 頻脈(貧血代償)"
+    },
+    {
+      "from": "D158",
+      "to": "S04",
+      "from_name": "AIHA",
+      "to_name": "S04",
+      "reason": "AIHA: 呼吸困難(重度貧血)"
+    },
+    {
+      "from": "D158",
+      "to": "L01",
+      "from_name": "AIHA",
+      "to_name": "L01",
+      "reason": "AIHA: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D158",
+      "to": "L02",
+      "from_name": "AIHA",
+      "to_name": "L02",
+      "reason": "AIHA: CRP(正常~軽度)"
+    },
+    {
+      "from": "D158",
+      "to": "L11",
+      "from_name": "AIHA",
+      "to_name": "L11",
+      "reason": "AIHA: 肝酵素(通常正常~軽度)"
+    },
+    {
+      "from": "D158",
+      "to": "T01",
+      "from_name": "AIHA",
+      "to_name": "T01",
+      "reason": "AIHA: 急性~亜急性"
+    },
+    {
+      "from": "D158",
+      "to": "T02",
+      "from_name": "AIHA",
+      "to_name": "T02",
+      "reason": "AIHA: 亜急性"
+    },
+    {
+      "from": "D159",
+      "to": "E16",
+      "from_name": "myxedema_coma",
+      "to_name": "E16",
+      "reason": "粘液水腫: 意識障害(定義的, 100%)"
+    },
+    {
+      "from": "D159",
+      "to": "E01",
+      "from_name": "myxedema_coma",
+      "to_name": "E01",
+      "reason": "粘液水腫: 低体温(80-90%)"
+    },
+    {
+      "from": "D159",
+      "to": "E02",
+      "from_name": "myxedema_coma",
+      "to_name": "E02",
+      "reason": "粘液水腫: 徐脈(70-80%)"
+    },
+    {
+      "from": "D159",
+      "to": "E03",
+      "from_name": "myxedema_coma",
+      "to_name": "E03",
+      "reason": "粘液水腫: 低血圧(50-60%)"
+    },
+    {
+      "from": "D159",
+      "to": "S07",
+      "from_name": "myxedema_coma",
+      "to_name": "S07",
+      "reason": "粘液水腫: 全身倦怠感(100%)"
+    },
+    {
+      "from": "D159",
+      "to": "L44",
+      "from_name": "myxedema_coma",
+      "to_name": "L44",
+      "reason": "粘液水腫: 低Na血症(50-60%)"
+    },
+    {
+      "from": "D159",
+      "to": "L54",
+      "from_name": "myxedema_coma",
+      "to_name": "L54",
+      "reason": "粘液水腫: 低血糖(30-40%)"
+    },
+    {
+      "from": "D159",
+      "to": "E36",
+      "from_name": "myxedema_coma",
+      "to_name": "E36",
+      "reason": "粘液水腫: 下肢浮腫(非圧痕性, 60-70%)"
+    },
+    {
+      "from": "D159",
+      "to": "T01",
+      "from_name": "myxedema_coma",
+      "to_name": "T01",
+      "reason": "粘液水腫: 亜急性~慢性"
+    },
+    {
+      "from": "D159",
+      "to": "T02",
+      "from_name": "myxedema_coma",
+      "to_name": "T02",
+      "reason": "粘液水腫: 緩徐(日~週)"
+    },
+    {
+      "from": "D160",
+      "to": "S42",
+      "from_name": "tetanus",
+      "to_name": "S42",
+      "reason": "破傷風: 痙攣(全身性強直間代, 80%+)"
+    },
+    {
+      "from": "D160",
+      "to": "E06",
+      "from_name": "tetanus",
+      "to_name": "E06",
+      "reason": "破傷風: 項部硬直(全身筋強直)"
+    },
+    {
+      "from": "D160",
+      "to": "E01",
+      "from_name": "tetanus",
+      "to_name": "E01",
+      "reason": "破傷風: 発熱(自律神経障害, 50-60%)"
+    },
+    {
+      "from": "D160",
+      "to": "E02",
+      "from_name": "tetanus",
+      "to_name": "E02",
+      "reason": "破傷風: 頻脈(自律神経障害, 70-80%)"
+    },
+    {
+      "from": "D160",
+      "to": "E03",
+      "from_name": "tetanus",
+      "to_name": "E03",
+      "reason": "破傷風: 血圧不安定(自律神経障害)"
+    },
+    {
+      "from": "D160",
+      "to": "E16",
+      "from_name": "tetanus",
+      "to_name": "E16",
+      "reason": "破傷風: 意識障害(重症, 意識は通常保たれる)"
+    },
+    {
+      "from": "D160",
+      "to": "S07",
+      "from_name": "tetanus",
+      "to_name": "S07",
+      "reason": "破傷風: 全身脱力(筋強直)"
+    },
+    {
+      "from": "D160",
+      "to": "L01",
+      "from_name": "tetanus",
+      "to_name": "L01",
+      "reason": "破傷風: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D160",
+      "to": "L17",
+      "from_name": "tetanus",
+      "to_name": "L17",
+      "reason": "破傷風: CK上昇(筋強直/横紋筋融解)"
+    },
+    {
+      "from": "D160",
+      "to": "T01",
+      "from_name": "tetanus",
+      "to_name": "T01",
+      "reason": "破傷風: 亜急性(潜伏7-14日)"
+    },
+    {
+      "from": "D160",
+      "to": "T02",
+      "from_name": "tetanus",
+      "to_name": "T02",
+      "reason": "破傷風: 亜急性"
+    },
+    {
+      "from": "D161",
+      "to": "S13",
+      "from_name": "organophosphate",
+      "to_name": "S13",
+      "reason": "有機リン: 嘔吐(ムスカリン作用, 80%+)"
+    },
+    {
+      "from": "D161",
+      "to": "S14",
+      "from_name": "organophosphate",
+      "to_name": "S14",
+      "reason": "有機リン: 下痢(ムスカリン作用, 70-80%)"
+    },
+    {
+      "from": "D161",
+      "to": "S04",
+      "from_name": "organophosphate",
+      "to_name": "S04",
+      "reason": "有機リン: 呼吸困難(気管支痙攣/分泌物, 60-70%)"
+    },
+    {
+      "from": "D161",
+      "to": "E02",
+      "from_name": "organophosphate",
+      "to_name": "E02",
+      "reason": "有機リン: 徐脈(ムスカリン)/頻脈(ニコチン)"
+    },
+    {
+      "from": "D161",
+      "to": "E03",
+      "from_name": "organophosphate",
+      "to_name": "E03",
+      "reason": "有機リン: 低血圧"
+    },
+    {
+      "from": "D161",
+      "to": "E16",
+      "from_name": "organophosphate",
+      "to_name": "E16",
+      "reason": "有機リン: 意識障害(重症, 40-60%)"
+    },
+    {
+      "from": "D161",
+      "to": "S42",
+      "from_name": "organophosphate",
+      "to_name": "S42",
+      "reason": "有機リン: 痙攣(重症, 20-30%)"
+    },
+    {
+      "from": "D161",
+      "to": "S07",
+      "from_name": "organophosphate",
+      "to_name": "S07",
+      "reason": "有機リン: 全身脱力(ニコチン作用, 60-70%)"
+    },
+    {
+      "from": "D161",
+      "to": "E07",
+      "from_name": "organophosphate",
+      "to_name": "E07",
+      "reason": "有機リン: 肺聴診(湿性ラ音/wheeze, 分泌物)"
+    },
+    {
+      "from": "D161",
+      "to": "T01",
+      "from_name": "organophosphate",
+      "to_name": "T01",
+      "reason": "有機リン: 超急性"
+    },
+    {
+      "from": "D161",
+      "to": "T02",
+      "from_name": "organophosphate",
+      "to_name": "T02",
+      "reason": "有機リン: 急性(暴露後30分~数時間)"
+    },
+    {
+      "from": "D158",
+      "to": "L15",
+      "from_name": "AIHA",
+      "to_name": "L15",
+      "reason": "AIHA: フェリチン上昇(溶血, 軽度~中等度)"
+    },
+    {
+      "from": "D158",
+      "to": "L52",
+      "from_name": "AIHA",
+      "to_name": "L52",
+      "reason": "AIHA: D-dimer(溶血/微小血栓で軽度上昇)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -4329,7 +4329,7 @@
         "E01": "38.0_39.0",
         "E02": "100_120",
         "S08": "present",
-        "S27": "present",
+        "S27": "over_30min",
         "E21": "polyarticular",
         "L01": "high_10000_20000",
         "L02": "high_over_10",
@@ -5725,7 +5725,9 @@
         "E03": "hypotension_under_90",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S13": "absent",
+        "S14": "absent"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -6857,7 +6859,6 @@
         "E16": "confused",
         "E01": "38.0_39.0",
         "S05": "mild",
-        "S01": "dry",
         "S04": "on_exertion",
         "L01": "normal_4000_10000",
         "L02": "high_over_10",
@@ -7759,6 +7760,925 @@
       },
       "result": "",
       "notes": "Broken heart syndrome. NT-proBNP 1346. MRIでLGEなし→梗塞除外"
+    },
+    {
+      "id": "R303",
+      "source": "Case Rep Nephrol 2020",
+      "pmcid": "PMC7262479",
+      "vignette": "22M 大麻使用+URI症状(鼻漏/咽頭痛/咳嗽). 重度全身筋肉痛+暗褐色尿. T 37.0, HR 109, RR 24, BP 152/87, SpO2 100%. CK>150000, Cr 0.77(正常!), K 4.2, AST 2299, LDH>12000. 尿: 潜血陽性+RBCなし(ミオグロビン尿). NS 250mL/h",
+      "final_diagnosis": "横紋筋融解症(薬物/ウイルス性, AKIなし)",
+      "expected_id": "D153",
+      "in_scope": true,
+      "evidence": {
+        "S06": "present",
+        "S07": "severe",
+        "S01": "dry",
+        "S02": "present",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E01": "under_37.5",
+        "L17": "very_high",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK>150000. 暗色尿(ミオグロビン尿). AKIなし. URI症状あり"
+    },
+    {
+      "id": "R304",
+      "source": "Case Rep Infect Dis 2017",
+      "pmcid": "PMC5507674",
+      "vignette": "36M コカイン/アルコール使用. 2日間の下痢+全身脱力(全肢3/5). T 38.9, HR 125, RR 20, BP 138/94, SpO2 98%. CK 701400(!), Cr 4.8(AKI), K 4.75, AST 2847, 尿酸15.2. 尿: 3+血液/3+蛋白. レジオネラ尿中抗原陽性. 挿管+CVVH+透析1ヶ月",
+      "final_diagnosis": "横紋筋融解症(レジオネラ+コカイン, AKI合併)",
+      "expected_id": "D153",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "L17": "very_high",
+        "L02": "high_over_10",
+        "L44": "other",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK 701400! レジオネラ+コカイン+アルコール多因子. Cr 4.8 AKI"
+    },
+    {
+      "id": "R305",
+      "source": "Cureus 2024",
+      "pmcid": "PMC11070983",
+      "vignette": "30M 4日前に氷上転倒(臀部打撲). 全身痛+脱力+変色尿. 無熱, HR 89, RR 18, BP 145/89. CK 4570630(史上最高レベル!), Cr 0.6-0.9(正常!), K 6.2(高K), AST 1474, CK-MB 17.8. 尿: 潜血陽性+RBC/WBCなし. NS+重炭酸+カリウム治療",
+      "final_diagnosis": "横紋筋融解症(外傷性, CK 457万, AKIなし)",
+      "expected_id": "D153",
+      "in_scope": true,
+      "evidence": {
+        "S06": "present",
+        "S07": "severe",
+        "E01": "under_37.5",
+        "L17": "very_high",
+        "L44": "hyperkalemia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK 457万(史上最高). K 6.2高K. 外傷→?潜在性ミオパチー. AKIなし"
+    },
+    {
+      "id": "R306",
+      "source": "BMJ Case Rep 2024",
+      "pmcid": "PMC11469642",
+      "vignette": "70代M 3日間の腹痛+嘔吐. 腹部膨満/軟/非圧痛. 左鼠径ヘルニア還納不能+圧痛. HR 113, BP 161/90, 無熱. WBC 19.0k, CRP 68, Cr 116(AKI stage1). CT: 小腸拡張40mm+左鼠径ヘルニア移行部. 緊急鼠径ヘルニア修復",
+      "final_diagnosis": "絞扼性鼠径ヘルニア(Richter型)",
+      "expected_id": "D154",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "E02": "100_120",
+        "E01": "under_37.5",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Richterヘルニア→SBO. WBC 19k, CRP 68. 排便は維持(特徴的)"
+    },
+    {
+      "id": "R307",
+      "source": "World J Surg 2016",
+      "pmcid": "PMC4956957",
+      "vignette": "75M 手術歴なし. 3日間の疝痛様腹痛+便秘+嘔吐. 腹部軽度膨満/非圧痛. HR 120, BP 111/60, 発熱あり. WBC 6.8k(正常!), 乳酸4.6(!). 腹部X線: 小腸拡張+多発鏡面像. CT: S状結腸間膜内ヘルニア+10cm虚血小腸. 緊急開腹→腸切除+吻合",
+      "final_diagnosis": "内ヘルニア(S状結腸間膜内)+絞扼性腸閉塞",
+      "expected_id": "D154",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E01": "38.0_39.0",
+        "L01": "normal_4000_10000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "内ヘルニア→絞扼性SBO. 乳酸4.6(虚血). WBC正常(偽陰性)"
+    },
+    {
+      "id": "R308",
+      "source": "Cureus 2018",
+      "pmcid": "PMC5965135",
+      "vignette": "37M 20年以上前に交通事故歴. 16時間の持続性心窩部痛(疝痛様, 増悪時嘔気). 口腔乾燥(脱水). 心窩部圧痛あり, 防御/膨満なし. HR 75, T 36.4, RR 14, SpO2 95%. WBC 12.1k(好中球82%). CT: 胃+小腸拡張+多発鏡面像+閉鎖ループ+周囲遊離液. 開腹: 大網-空腸間癒着バンド解除",
+      "final_diagnosis": "癒着性閉鎖ループ腸閉塞",
+      "expected_id": "D154",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S13": "present",
+        "E01": "under_37.5",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days",
+        "E02": "under_100",
+        "E09": "localized_tenderness"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "20年前外傷→癒着バンド→閉鎖ループ. WBC 12.1k"
+    },
+    {
+      "id": "R309",
+      "source": "BMC Infect Dis 2022",
+      "pmcid": "PMC9730593",
+      "vignette": "22F 発熱+嘔吐+下痢10日. T 38.5, HR 145, RR 40, BP 80/50. 皮膚紫斑/点状出血. WBC 18.7k, PLT 6k(!), INR 1.82, FDP 70.84, LDH 2794, D-dimer著高. 血培: Salmonella derby. DICスコア6点(overt DIC)",
+      "final_diagnosis": "DIC(サルモネラ敗血症)",
+      "expected_id": "D152",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "S44": "present",
+        "S13": "present",
+        "S14": "watery",
+        "E12": "petechiae_purpura",
+        "L01": "high_10000_20000",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "PLT 6k, INR 1.82, FDP 70.84. Salmonella derby敗血症→overt DIC"
+    },
+    {
+      "id": "R310",
+      "source": "Am J Case Rep 2019",
+      "pmcid": "PMC6861048",
+      "vignette": "47M 2日間の斑状紫斑(両下肢→全身). T 39.5, HR 120, RR 30, BP 93/60, SpO2 94%. 紫斑fulminans(広範). WBC 4.4k, PLT 27k, INR 2.1, APTT 151s, フィブリノゲン<80, 乳酸11.5, LDH 868, D-dimer著高. 骨髄: APL. DIC+敗血症性ショック",
+      "final_diagnosis": "DIC(APL急性前骨髄球性白血病+purpura fulminans)",
+      "expected_id": "D152",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "S44": "present",
+        "S13": "present",
+        "E12": "purpura",
+        "L01": "normal_4000_10000",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "APL→DIC+purpura fulminans. PLT 27k, APTT 151s, fibrinogen<80"
+    },
+    {
+      "id": "R311",
+      "source": "J Int Med Res 2026",
+      "pmcid": "PMC12833100",
+      "vignette": "40代F 経産婦(G5P1) 妊娠36+6w. 産後大量出血(1.5h で1500mL)+肉眼的血尿. 術前Hb 85→44. PT 30.4s, APTT 46.4s, フィブリノゲン0.6g/L(!), D-dimer>10. DICスコア8点以上. 子宮動脈塞栓+大量輸血",
+      "final_diagnosis": "DIC(産後出血+温式AIHA)",
+      "expected_id": "D152",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S44": "present",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "産後出血→DIC. フィブリノゲン0.6. AIHA合併. 無熱"
+    },
+    {
+      "id": "R312",
+      "source": "Oxford Medical Case Reports 2024",
+      "pmcid": "PMC11682489",
+      "vignette": "23M 喫煙23pack-year. 突然の重度前頭部頭痛(2h)+嘔吐+胸部圧迫感. BP 178/103, HR 87, RR 26, T 38.9, SpO2 94%. 意識清明, 項部硬直(+), 瞳孔散大. WBC 17.9k, CRP 12, Troponin 1.48(!). ECG: V2-V5 ST上昇→冠動脈造影正常. CT: 脳槽SAH. Day2心停止→死亡",
+      "final_diagnosis": "くも膜下出血(SAH)+神経原性心筋障害",
+      "expected_id": "D155",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E38": "elevated_140_180",
+        "S05": "severe",
+        "S13": "present",
+        "E06": "present",
+        "E16": "normal",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L53": "mildly_elevated",
+        "S52": "absent",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ST上昇→STEMI誤診リスク. Troponin上昇は神経原性. 冠動脈正常. 23歳で死亡"
+    },
+    {
+      "id": "R313",
+      "source": "Internal Medicine (Tokyo) 2016",
+      "pmcid": "PMC5069927",
+      "vignette": "39M 3日間の軽度頭痛+肩こり+めまい. 日常生活継続可能. BP 152/80, HR 46(徐脈!), T 35.9. 軽度項部硬直. 神経学的異常なし. 嘔吐なし. 検査正常. CT: 両側Sylvian裂に等~軽度高吸収血液+軽度水頭症. CTA: 左ACA A1-A2間3mm動脈瘤. 緊急クリッピング→後遺症なく退院",
+      "final_diagnosis": "くも膜下出血(SAH, 軽症型walk-in)",
+      "expected_id": "D155",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E38": "elevated_140_180",
+        "S05": "mild",
+        "S13": "absent",
+        "E06": "present",
+        "E16": "normal",
+        "S52": "absent",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "軽症walk-in SAH. 頭痛mild+項部硬直のみ. 緊張型頭痛と誤診リスク高"
+    },
+    {
+      "id": "R314",
+      "source": "SAGE Open Medical Case Reports 2024",
+      "pmcid": "PMC11179526",
+      "vignette": "37F 喫煙10年. 片頭痛既往(通常オーラあり). 1週間の軽い鈍痛→突然の激烈後頭部痛(前頭部へ放散)+嘔吐+羞明. オーラなし(普段と違う). BP 180/90, HR 74, T 36.7, SpO2 97%. 項部硬直なし(!), 右Babinski(+). CT: SAH(ACoA動脈瘤). 開頭→完全回復",
+      "final_diagnosis": "くも膜下出血(SAH, ACoA動脈瘤, 片頭痛mimicry)",
+      "expected_id": "D155",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E38": "crisis_over_180",
+        "S05": "severe",
+        "S13": "present",
+        "E06": "absent",
+        "E16": "normal",
+        "S52": "absent",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "片頭痛既往で項部硬直なし→misdiagnosisリスク. BP 180/90"
+    },
+    {
+      "id": "R315",
+      "source": "J Med Case Rep 2019",
+      "pmcid": "PMC6589168",
+      "vignette": "35M 全身倦怠感+発熱39.6℃+点状出血性発疹(手掌足底→求心性拡大)+咽頭痛+関節痛+水様下痢. HR 132, BP 132/77, RR 18. 入院後急性脳症+痙攣→挿管. PLT 10k, Hb 6.2, LDH 1172, ハプトグロビン0, 破砕赤血球(+), Cr 0.8(正常). ADAMTS13<3%. ジクロフェナク内服歴",
+      "final_diagnosis": "TTP(薬剤性, ジクロフェナク)",
+      "expected_id": "D156",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E12": "petechiae_purpura",
+        "E16": "obtunded",
+        "S42": "present",
+        "S44": "present",
+        "S07": "severe",
+        "S08": "present",
+        "S14": "watery",
+        "S02": "present",
+        "S43": "present",
+        "L16": "elevated",
+        "L14": "thrombocytopenia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ADAMTS13<3%. PLT 10k, LDH 1172, ハプトグロビン0. 五徴4/5(腎正常). 手掌足底発疹あり"
+    },
+    {
+      "id": "R316",
+      "source": "Am J Case Rep 2021",
+      "pmcid": "PMC8349569",
+      "vignette": "57F 1週間の乾性咳嗽+全身倦怠感+発熱39℃. 来院時T 36.7, HR 90, BP 105/77, RR 24, SpO2 76%. 湿性ラ音. GCS E3V4M6(不穏+せん妄). Day8にPLT 17k, LDH 2656, ハプトグロビン低下, 破砕赤血球(+), Cr 1.88. ADAMTS13<0.5%. インフルエンザA(H1N1)陽性",
+      "final_diagnosis": "TTP(インフルエンザH1N1誘発)",
+      "expected_id": "D156",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E04": "tachypnea_20_30",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "E16": "confused",
+        "S01": "dry",
+        "S07": "severe",
+        "S04": "at_rest",
+        "L16": "elevated",
+        "L14": "thrombocytopenia",
+        "L01": "high_10000_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "ADAMTS13<0.5%, 抗体陰性. 五徴5/5. SpO2 76%重度低酸素. インフル→TTP"
+    },
+    {
+      "id": "R317",
+      "source": "Infect Drug Resist 2023",
+      "pmcid": "PMC10423562",
+      "vignette": "53M 8日前から脱力+重度悪心+筋肉痛. 5日前から暗色尿+皮膚/強膜黄疸著明. 発熱39℃. 来院時意識清明, 出血点なし. Day2に突然意識消失+四肢痙攣→CPR. PLT 13k, 破砕赤血球>1%, Cr 1.68, T-Bil 15.76, AST 580, ALT 288, WBC 10.9k, CRP 84.9. ADAMTS13活性0%",
+      "final_diagnosis": "TTP(E型肝炎誘発)",
+      "expected_id": "D156",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E16": "normal",
+        "E18": "present",
+        "S42": "present",
+        "S07": "severe",
+        "S06": "present",
+        "S13": "present",
+        "L11": "very_high",
+        "L14": "thrombocytopenia",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ADAMTS13 0%. 五徴5/5. HEV関連. 黄疸著明+肝酵素著高"
+    },
+    {
+      "id": "R318",
+      "source": "Case Rep Med 2019",
+      "pmcid": "PMC6537048",
+      "vignette": "78F 2型DM+高血圧+甲状腺低下症. 3日間の呼吸困難→意識障害(GCS 9). HR 114, BP 142/67, T 36.7. 血糖635, Na 175(補正188!), 浸透圧410(!), pH 7.43, HCO3 29, BUN 76, Cr 1.61, WBC 18.3k, 尿ケトン陰性, HbA1c 9.9%. CXR左下葉浸潤影",
+      "final_diagnosis": "高浸透圧高血糖症候群(HHS)+肺炎",
+      "expected_id": "D157",
+      "in_scope": true,
+      "evidence": {
+        "L54": "very_high_over_500",
+        "E16": "obtunded",
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "S07": "severe",
+        "S04": "at_rest",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "浸透圧410, Na 175(補正188). 肺炎が誘因. GCS 9. 完全回復"
+    },
+    {
+      "id": "R319",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9293791",
+      "vignette": "75M 前立腺癌でレウプロリド投与中(2ヶ月前開始), DM歴なし(3ヶ月前FBS 90-100). 4日間の全身脱力+嘔気→1日前から意識障害. HR 115, BP 77/55(ショック!), 無熱. 口腔乾燥. 血糖996(!), 浸透圧330, pH 7.30, HCO3 24, AG 10, Cr 2.30, WBC 12.5k, ケトン0.6(微量), HbA1c 13.5%",
+      "final_diagnosis": "高浸透圧高血糖症候群(HHS, 薬剤性新規DM)",
+      "expected_id": "D157",
+      "in_scope": true,
+      "evidence": {
+        "L54": "very_high_over_500",
+        "E16": "confused",
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "S07": "severe",
+        "S13": "present",
+        "L01": "high_10000_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "血糖996! DM歴なし→レウプロリド誘発. BP 77/55ショック. 12h内に改善"
+    },
+    {
+      "id": "R320",
+      "source": "Medicine 2022",
+      "pmcid": "PMC9515717",
+      "vignette": "81M 精神科入院中(双極性障害), 2型DM既往. ルラシドン20mg開始3日後に嘔吐+意識レベル低下. HR 158(!), BP 123/65, T 36.7. 血糖698, 浸透圧343, pH 7.46, HCO3 29.8, Cr 0.68, WBC 9580, CRP<0.1, 尿ケトン陰性",
+      "final_diagnosis": "高浸透圧高血糖症候群(HHS, ルラシドン誘発)",
+      "expected_id": "D157",
+      "in_scope": true,
+      "evidence": {
+        "L54": "very_high_over_500",
+        "E16": "confused",
+        "E01": "under_37.5",
+        "E02": "over_120",
+        "S13": "present",
+        "S07": "severe",
+        "L01": "normal_4000_10000",
+        "L02": "normal_under_0.3",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "血糖698, HR 158. ルラシドン開始3日後. 翌日回復"
+    },
+    {
+      "id": "R321",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10698711",
+      "vignette": "76M 3日間の進行性呼吸困難+全身脱力+黄疸+発汗. HR 118, BP 113/64, RR 22, SpO2 98%, T 37.6. Hb 5.4(baseline 14-15), LDH 446(→1152), ハプトグロビン<10, 網赤血球4.3%, T-Bil 13.1, 間接Bil 12.0. DAT陽性(温式IgG). WBC 9.4k. 末梢血: 球状赤血球. 乳酸3.9",
+      "final_diagnosis": "自己免疫性溶血性貧血(AIHA, 温式, 腎細胞癌関連)",
+      "expected_id": "D158",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "E18": "present",
+        "S04": "on_exertion",
+        "E02": "100_120",
+        "E01": "37.5_38.0",
+        "L16": "elevated",
+        "L01": "normal_4000_10000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Hb 5.4, LDH 1152, ハプトグロビン<10, DAT(+). 腎細胞癌が基礎疾患"
+    },
+    {
+      "id": "R322",
+      "source": "BMC Case Rep 2024",
+      "pmcid": "PMC11245837",
+      "vignette": "69F COVID-19後. 暗褐色尿+全身黄疸+胸痛. T 36.7, HR 98, BP 115/75, RR 24, SpO2 90%. Hb 6.1(→4.4), LDH 445, ハプトグロビン検出限界以下, T-Bil 6.1(間接4.6), DAT C3 2+(IgG陰性). 寒冷凝集素1:4096. WBC 20.3k, フェリチン6218, CRP 31.7, D-dimer 8.94",
+      "final_diagnosis": "自己免疫性溶血性貧血(AIHA, 冷式, COVID後)",
+      "expected_id": "D158",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "L16": "elevated",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L52": "very_high",
+        "L15": "very_high_over_1000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "冷式AIHA. 寒冷凝集素1:4096. COVID後. 肺膿瘍合併. フェリチン6218"
+    },
+    {
+      "id": "R323",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10859778",
+      "vignette": "42M COVID-19後. 14日間の倦怠感+呼吸困難+発熱+黄疸+暗色尿. HR 116, BP 114/70, SpO2 94%(O2 2L), T 37.6. Hb 5.3(→2.8!), LDH 2970, ハプトグロビン<30, 網赤血球6.3%, DAT IgG 4+/C3d+. WBC 44.9k(!), フェリチン>7500, CRP 6.0. 骨髄: 血球貪食像",
+      "final_diagnosis": "自己免疫性溶血性貧血(AIHA, 温式)+HLH/MAS",
+      "expected_id": "D158",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "E18": "present",
+        "S04": "at_rest",
+        "E02": "100_120",
+        "E01": "37.5_38.0",
+        "L16": "elevated",
+        "L01": "very_high_over_20000",
+        "L02": "moderate_3_10",
+        "L15": "very_high_over_1000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Hb 2.8, LDH 2970, WBC 44.9k. HLH/MAS合併. フェリチン>7500"
+    },
+    {
+      "id": "R324",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8751182",
+      "vignette": "33M 1週間の発熱+悪寒+盗汗+倦怠感+味覚/嗅覚障害+咳嗽+呼吸困難. 黄疸(黄色い目)+暗色尿(オレンジ色)+嘔吐. T 39.1, HR 74, BP 134/74, RR 35. Hb 12.5→3.0(!), LDH 758, ハプトグロビン<10, 網赤血球2.33%, T-Bil 10.0, 間接Bil 13. DAT: IgG+C3d+. WBC 15k→74k(!), フェリチン4903. 骨髄: 血球貪食像. 死亡",
+      "final_diagnosis": "自己免疫性溶血性貧血(AIHA, 混合型, COVID関連)",
+      "expected_id": "D158",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "E18": "present",
+        "S04": "at_rest",
+        "S01": "dry",
+        "S13": "present",
+        "E01": "39.0_40.0",
+        "E02": "under_100",
+        "L16": "elevated",
+        "L01": "high_10000_20000",
+        "L15": "very_high_over_1000",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Hb 12.5→3.0の急激溶血. 混合型AIHA(IgG+C3d+). COVID関連. 骨髄で血球貪食像あり→死亡"
+    },
+    {
+      "id": "R325",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7753740",
+      "vignette": "33F 2日間の頭痛→意識障害+強膜黄疸. HR 120, RR 30. Hb 2.9(!), Hct 8%. LDH 731, ハプトグロビン<8, 網赤血球14.4%, T-Bil 2.0. DAT: IgG 4+/C3 3+. 末梢血: RBC凝集著明. ANA陰性. 10単位pRBC輸血+ステロイド+リツキシマブ→退院",
+      "final_diagnosis": "自己免疫性溶血性貧血(AIHA, 温式, COVID関連)",
+      "expected_id": "D158",
+      "in_scope": true,
+      "evidence": {
+        "S05": "mild",
+        "E16": "confused",
+        "E18": "present",
+        "E02": "over_120",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Hb 2.9. DAT IgG 4+/C3 3+. 頭痛→意識障害. WBC/CRP/発熱の記載なし"
+    },
+    {
+      "id": "R326",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8596363",
+      "vignette": "56F 自宅で意識不明で発見. GCS 6. T 32.4(低体温!), HR 55(徐脈), BP 86/51(低血圧), RR 21, SpO2 100%. 顔面浮腫+薄い眉毛+全身性非圧痕性浮腫+BMI 40. TSH 33.5, FT4 0.04(!), Na 125(低Na), CK 1649, LDH 483, Troponin 1159. ECG: 低電位+T波逆転. 心拡大+両側胸水+心嚢水",
+      "final_diagnosis": "粘液水腫性昏睡(未診断甲状腺機能低下症)",
+      "expected_id": "D159",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "S07": "severe",
+        "L44": "hyponatremia",
+        "E36": "bilateral",
+        "L17": "very_high",
+        "L16": "elevated",
+        "L53": "very_high",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "T 32.4, HR 55, GCS 6. TSH 33.5, FT4 0.04. CK 1649, Na 125. 心嚢水+胸水"
+    },
+    {
+      "id": "R327",
+      "source": "Case Rep 2018",
+      "pmcid": "PMC6166344",
+      "vignette": "47F 甲状腺摘出術後. 1ヶ月の進行性呼吸困難+脱力+悪寒+体重増加+脱毛. T 31.6(重度低体温!), HR 62→58(徐脈), BP 111/66→82/44(低血圧), RR 26. 傾眠→昏迷. 顔面浮腫+眼瞼浮腫+乾燥皮膚+脱毛+甲状腺摘出瘢痕. TSH 90.54, FT4 0.22, Na 129, WBC 3100(白血球減少), Hb 3.6(!)",
+      "final_diagnosis": "粘液水腫性昏睡(甲状腺摘出後)",
+      "expected_id": "D159",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "S07": "severe",
+        "S04": "at_rest",
+        "L44": "hyponatremia",
+        "E36": "bilateral",
+        "L01": "low_under_4000",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "T 31.6, TSH 90.54, Hb 3.6(重度貧血). 甲状腺摘出瘢痕がkey sign"
+    },
+    {
+      "id": "R328",
+      "source": "BMJ Case Rep 2014",
+      "pmcid": "PMC3926382",
+      "vignette": "73F 術後に意識消失(完全無反応). 肥満+乾燥粗い皮膚+小甲状腺腫+便秘歴. T 35.0(低体温), HR 58(徐脈), BP 98/60(低血圧), RR 16. 両側前脛骨非圧痕性浮腫. TSH 145(!), FT4 0.1, Na 120→112→101(進行性重度低Na!), 浸透圧216, pCO2 60.2(呼吸性アシドーシス)",
+      "final_diagnosis": "粘液水腫性昏睡(術後増悪, 未診断甲状腺機能低下症)",
+      "expected_id": "D159",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "S07": "severe",
+        "L44": "hyponatremia",
+        "E36": "bilateral",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "TSH 145, FT4 0.1. Na 120→101の進行性低Na. 術後ストレスで増悪. Day5意識回復"
+    },
+    {
+      "id": "R329",
+      "source": "Case Rep Endocrinol 2017",
+      "pmcid": "PMC5611947",
+      "vignette": "53F 3年間の全身脱力+倦怠+便秘+嗄声+slow speech. GCS 4(!). T 36.7(正常!), HR 48(徐脈), BP 70/50(重度低血圧), SpO2 81%. 非圧痕性浮腫(手足)+乾燥粗い皮膚+脱毛+顔面浮腫. TSH 138, FT4<5.1. Na 98(!)(重度低Na), Hb 6.5(重度貧血). 尿培養E.coli(UTI誘因). Day2意識回復→退院",
+      "final_diagnosis": "粘液水腫性昏睡+UTI誘因",
+      "expected_id": "D159",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "S07": "severe",
+        "L44": "hyponatremia",
+        "E36": "bilateral",
+        "L01": "high_10000_20000",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "GCS 4, Na 98(!), HR 48. T 36.7は正常(例外的). 3年間の症状+UTIで急性増悪"
+    },
+    {
+      "id": "R330",
+      "source": "CMAJ 2011",
+      "pmcid": "PMC3114896",
+      "vignette": "78F 2日間の嚥下困難+流涎+開口障害. 3週前に転倒(前腕擦過傷). ワクチン>10年前. T 37.8, HR>120(頻脈), BP不安定(高血圧⇔低血圧). Trismus→risus sardonicus→後弓反張(opisthotonos). WBC 21.9k. 重度自律神経障害(徐脈/頻脈交互). Day71死亡",
+      "final_diagnosis": "全身性破傷風(致死的)",
+      "expected_id": "D160",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E06": "present",
+        "E01": "37.5_38.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E16": "normal",
+        "L01": "very_high_over_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Ablett Grade IV. 重度自律神経障害. 擦過傷から発症. ワクチン失効"
+    },
+    {
+      "id": "R331",
+      "source": "Rev Inst Med Trop 2023",
+      "pmcid": "PMC10313328",
+      "vignette": "16M 咽頭痛→開口障害→全身性痙攣. 10日前に右手外傷(建設資材, 汚染創). 未接種. SpO2 98%, 頻脈. WBC 12.1k, CRP 6.6, CK 1363, AST 88, ALT 61. ペニシリンG+メトロニダゾール+抗破傷風IG+MgSO4→完全回復",
+      "final_diagnosis": "全身性破傷風",
+      "expected_id": "D160",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E06": "present",
+        "S02": "present",
+        "E02": "100_120",
+        "E16": "normal",
+        "L01": "high_10000_20000",
+        "L02": "mild_0.3_3",
+        "L17": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK 1363(筋強直). 汚染創+未接種. 完全回復"
+    },
+    {
+      "id": "R332",
+      "source": "BMJ Case Rep 2019",
+      "pmcid": "PMC6605951",
+      "vignette": "78F 4日間の重度頸部痛(肩/脚/背部放散)→顎強直+開口制限. 園芸家, 右示指に小創傷. ワクチン>10年前. T 37.0, HR 78(→spasm時160-170), BP 144/56. 全身性痙攣. spasm時SpO2 40%低下→BVM. 新規Af/RVR. 基本検査正常",
+      "final_diagnosis": "全身性破傷風(重度自律神経障害)",
+      "expected_id": "D160",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E06": "present",
+        "E01": "under_37.5",
+        "E16": "normal",
+        "E38": "elevated_140_180",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "spasm時HR 160-170, SpO2 40%. 園芸家の小創傷. Af発症. 入院21日→長期施設6週"
+    },
+    {
+      "id": "R333",
+      "source": "BMC Infect Dis 2021",
+      "pmcid": "PMC7792315",
+      "vignette": "60代F 乳癌皮膚潰瘍(20x20cm, 壊死, 自己処置). 開口障害(指1本分)+頸部過伸展. T 36.4, HR 120, BP 155/109, RR 16, SpO2 99%. Day7軽度後弓反張. 炎症反応軽度上昇. 挿管+深鎮静+MgSO4→ICU 25日→退院",
+      "final_diagnosis": "中等度破傷風(乳癌潰瘍が門戸)",
+      "expected_id": "D160",
+      "in_scope": true,
+      "evidence": {
+        "S42": "present",
+        "E06": "present",
+        "E01": "under_37.5",
+        "E02": "over_120",
+        "E38": "elevated_140_180",
+        "E16": "normal",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "乳癌皮膚潰瘍が門戸. 中等度(Ablett). HR 120, BP 155/109"
+    },
+    {
+      "id": "R334",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8132809",
+      "vignette": "46M 精神疾患既往. 6時間前に有機リン殺虫剤50mL経口摂取(自殺企図). HR 56(徐脈!), BP 110/60, GCS E3V2M6. 縮瞳+口腔分泌物過多+発汗+両肺湿性ラ音. WBC 27.2k(好中球88%). Day3嘔吐+心窩部痛→lipase 560(膵炎合併). AST 198, ALT 380. 挿管Day3→Day14退院",
+      "final_diagnosis": "有機リン中毒+急性膵炎合併",
+      "expected_id": "D161",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "E02": "under_100",
+        "S13": "present",
+        "S07": "severe",
+        "E07": "crackles",
+        "L01": "very_high_over_20000",
+        "L11": "very_high",
+        "S12": "epigastric",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "典型的ムスカリン症状(縮瞳+流涎+発汗+徐脈). 膵炎合併. WBC 27.2k"
+    },
+    {
+      "id": "R335",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12500516",
+      "vignette": "45M 配管工. ジアジノン50%乳剤を摂取(自殺企図). T 37.1, HR 109, BP 95/67, RR 25, SpO2 89%. GCS 10. 流涎+流涙+嘔吐+発汗+腸蠕動亢進+縮瞳+喘鳴+筋攣縮. 血清ChE 2370(著減). WBC 16.9k, K 2.54, 血糖15mmol/L, AST 71, CK上昇, 乳酸3.4, pH 7.06. アトロピン84.96mg/3日+プラリドキシム→Day7退院",
+      "final_diagnosis": "有機リン中毒(ジアジノン)",
+      "expected_id": "D161",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "E01": "under_37.5",
+        "S13": "present",
+        "S07": "severe",
+        "E07": "wheezes",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SLUDGE全揃い. ChE 2370著減. pH 7.06代謝性アシドーシス. SpO2 89%"
+    },
+    {
+      "id": "R336",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC7968493",
+      "vignette": "52M 朝コーヒーに混入された農薬摂取(配偶者による犯罪的中毒). RR 6(!), SpO2 60%(チアノーゼ). 意識消失+痙攣. 流涎+下痢+発汗+縮瞳. 血漿ChE 32ukat/L(正常の10%!). WBC 17.5k, 血糖14mmol/L, CK上昇, 乳酸3.0, pH 7.08. 尿/胃液: カルボフラン+クロルメホス検出. オビドキシム+挿管→Day5改善",
+      "final_diagnosis": "有機リン+カルバメート中毒(犯罪的)",
+      "expected_id": "D161",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "S42": "present",
+        "S14": "watery",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ChE正常の10%. 犯罪的中毒. SpO2 60%. pH 7.08. カルボフラン+クロルメホス"
     }
   ],
   "total_cases": 110
