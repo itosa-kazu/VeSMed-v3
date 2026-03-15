@@ -5657,6 +5657,66 @@
       ],
       "severity": "critical",
       "note": "MPO-ANCA陽性。RPGN+肺胞出血。GPA/EGPAと鑑別。肉芽腫なし"
+    },
+    {
+      "id": "D222",
+      "name": "rheumatoid_arthritis",
+      "name_ja": "関節リウマチ(RA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "対称性多関節炎(MCP/PIP/手関節). 朝のこわばり>1h. RF/抗CCP陽性. ILD/血管炎が腺外症状"
+    },
+    {
+      "id": "D223",
+      "name": "MCTD",
+      "name_ja": "混合性結合組織病(MCTD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "SLE+SSc+PM重複。抗U1-RNP抗体陽性。レイノー+手指腫脹+多関節炎+肺高血圧"
+    },
+    {
+      "id": "D224",
+      "name": "ATLL",
+      "name_ja": "成人T細胞白血病/リンパ腫(ATLL)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "HTLV-1。急性型:高Ca血症+皮疹+リンパ節腫脹+肝脾腫+日和見感染。九州/沖縄/カリブに多い"
+    },
+    {
+      "id": "D225",
+      "name": "MDS",
+      "name_ja": "骨髄異形成症候群(MDS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "無効造血→汎血球減少。高齢者。倦怠感+感染+出血。芽球増加でAML転化リスク"
+    },
+    {
+      "id": "D226",
+      "name": "polycythemia_vera",
+      "name_ja": "真性多血症(PV)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "JAK2 V617F(95%+)。赤血球増多→血栓症リスク。頭痛/めまい/掻痒(入浴後)/脾腫/血栓"
     }
   ]
 }
