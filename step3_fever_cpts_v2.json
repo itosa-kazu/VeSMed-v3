@@ -9974,6 +9974,12 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.2
+        },
+        "D101": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.5,
+          "very_high_over_20000": 0.32
         }
       }
     },
@@ -11755,6 +11761,18 @@
           "negative": 0.75,
           "gram_positive": 0.03,
           "gram_negative": 0.02
+        },
+        "D16": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.75,
+          "gram_positive": 0.03,
+          "gram_negative": 0.02
+        },
+        "D91": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.75,
+          "gram_positive": 0.03,
+          "gram_negative": 0.02
         }
       }
     },
@@ -11775,6 +11793,16 @@
           "not_done": 0.05,
           "negative": 0.05,
           "positive": 0.9
+        },
+        "D16": {
+          "not_done": 0.25,
+          "negative": 0.73,
+          "positive": 0.02
+        },
+        "D91": {
+          "not_done": 0.25,
+          "negative": 0.73,
+          "positive": 0.02
         }
       }
     },
@@ -12871,6 +12899,10 @@
         "D106": {
           "negative": 0.3,
           "positive": 0.7
+        },
+        "D151": {
+          "negative": 0.6,
+          "positive": 0.4
         }
       }
     },
@@ -14353,6 +14385,10 @@
         "D197": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D156": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -16030,6 +16066,10 @@
         "D223": {
           "absent": 0.08,
           "present": 0.92
+        },
+        "D156": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -17392,6 +17432,10 @@
         "D55": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D107": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -17971,6 +18015,10 @@
         "D106": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D101": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },

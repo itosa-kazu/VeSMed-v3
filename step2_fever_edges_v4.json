@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3450,
+  "total_edges": 3460,
   "edges": [
     {
       "from": "R01",
@@ -28647,6 +28647,76 @@
       "from_name": "GBS",
       "to_name": "L28",
       "reason": "GBS: ESR(通常正常~軽度)"
+    },
+    {
+      "from": "D101",
+      "to": "S25",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "S25",
+      "reason": "扁桃周囲膿瘍: 嚥下困難(90%+)"
+    },
+    {
+      "from": "D101",
+      "to": "L01",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "L01",
+      "reason": "扁桃周囲膿瘍: WBC上昇(細菌感染)"
+    },
+    {
+      "from": "D107",
+      "to": "S16",
+      "from_name": "HLH",
+      "to_name": "S16",
+      "reason": "HLH: 盗汗(40-50%)"
+    },
+    {
+      "from": "D16",
+      "to": "L09",
+      "from_name": "dengue",
+      "to_name": "L09",
+      "reason": "デング: 血液培養(陰性が期待)"
+    },
+    {
+      "from": "D16",
+      "to": "L10",
+      "from_name": "dengue",
+      "to_name": "L10",
+      "reason": "デング: マラリア塗抹(陰性)"
+    },
+    {
+      "from": "D91",
+      "to": "L09",
+      "from_name": "chikungunya",
+      "to_name": "L09",
+      "reason": "チクングニア: 血培陰性"
+    },
+    {
+      "from": "D91",
+      "to": "L10",
+      "from_name": "chikungunya",
+      "to_name": "L10",
+      "reason": "チクングニア: マラリア塗抹陰性"
+    },
+    {
+      "from": "D156",
+      "to": "S02",
+      "from_name": "TTP",
+      "to_name": "S02",
+      "reason": "TTP: 咽頭痛(前駆URI様, 20-30%)"
+    },
+    {
+      "from": "D156",
+      "to": "S08",
+      "from_name": "TTP",
+      "to_name": "S08",
+      "reason": "TTP: 関節痛(15-20%)"
+    },
+    {
+      "from": "D151",
+      "to": "L18",
+      "from_name": "acute_liver_failure",
+      "to_name": "L18",
+      "reason": "劇症肝炎: ANA(自免肝合併, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
