@@ -9159,6 +9159,135 @@
       },
       "result": "",
       "notes": "核心温25.0. VF→ECLS. アルコール+薬物+外気温-5℃. 完全回復"
+    },
+    {
+      "id": "R356",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC9900458",
+      "vignette": "36F 意図的APAP過量摂取. 傾眠→Grade IV肝性脳症→挿管. APAP 110, AST 1900, ALT 1900, INR>8.71, Bil 3.6, Cr 0.9, PLT 15.6万, フィブリノゲン116, D-dimer 10658. Factor V 7%(!). MELD 36. MARS 5日+CVVHD+ノルエピネフリン→Day7死亡(移植不適)",
+      "final_diagnosis": "アセトアミノフェン中毒(劇症肝不全)",
+      "expected_id": "D166",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "L11": "very_high",
+        "E18": "present",
+        "L52": "very_high",
+        "L54": "hypoglycemia",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "INR>8.71, Factor V 7%. MELD 36. 劇症肝不全→Day7死亡"
+    },
+    {
+      "id": "R357",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11157473",
+      "vignette": "47F 1週間APAP 6000-12000mg/日. 2ヶ月の心窩部痛(5日間増悪)+非血性嘔吐+黒色便. 軽度頻脈, BP正常. APAP 29, AST 1899→>10000(!), ALT 533→>5000, INR 1.0→3.08, T-Bil→22.5(!). 入院中黄疸出現. NAC 15mg/kg/hr 7日間→Day10完全回復",
+      "final_diagnosis": "アセトアミノフェン中毒(反復過量, 急性肝不全)",
+      "expected_id": "D166",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S13": "present",
+        "E18": "present",
+        "L11": "very_high",
+        "E02": "100_120",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST>10000, Bil 22.5. 反復過量(6-12g/日x1週). NAC 7日で完全回復"
+    },
+    {
+      "id": "R358",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8142301",
+      "vignette": "24F 8ヶ月間APAP/コデイン50-60錠/日. 嘔気+嘔吐+めまい+食欲不振+進行性傾眠+脱力+乏尿+吐血→意識消失. HR 110, BP 80/50(ショック!), RR 24, SpO2 97%. APAP 84.7, AST 1691, ALT 2030, INR 4.8, Cr 3.0(AKI), 血糖50(低血糖), pH 7.19(!), LDH 5400. 挿管+透析→24時間以内に死亡",
+      "final_diagnosis": "アセトアミノフェン中毒(慢性, 劇症肝腎症候群)",
+      "expected_id": "D166",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "E16": "obtunded",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "L11": "very_high",
+        "L16": "elevated",
+        "L55": "high_AKI",
+        "L54": "hypoglycemia",
+        "S44": "present",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "pH 7.19, INR 4.8, Cr 3.0. 慢性過量8ヶ月. 24時間以内死亡"
+    },
+    {
+      "id": "R359",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8810263",
+      "vignette": "46M 自殺企図. 4日間でAPAP約19600mg摂取. びまん性腹痛+嘔気+水様下痢+意識変容(傾眠+易怒性). BP 159/103, HR 84, 無熱. APAP 75, AST 24→484, ALT 42→520, INR 1.1, Cr 1.3, WBC 20000→23610, 乳酸5.9, PCT 8.48→31.29(!)(感染なし). CT: 腸壁肥厚. NAC 72h→Day5精神科転院",
+      "final_diagnosis": "アセトアミノフェン中毒(軽度肝障害+炎症反応)",
+      "expected_id": "D166",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "S14": "watery",
+        "E16": "confused",
+        "E38": "elevated_140_180",
+        "E01": "under_37.5",
+        "L11": "mild_elevated",
+        "L01": "very_high_over_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PCT 31.29(感染なし!). AST/ALT<1000(軽度). WBC 23k. 自殺企図"
+    },
+    {
+      "id": "R360",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12474660",
+      "vignette": "89F 34.3kg. APAP 1000mg q8h(体重あたり過量). 傾眠+びまん性腹痛+嘔吐+混乱(肝性脳症). T 36.3, BP 108/53. APAP 45, AST 931→4321, ALT 640→2541, INR→3.1, PT 32, Cr 1.75(AKI), WBC 12950, 乳酸2.8. NAC 12日→退院(完全回復)",
+      "final_diagnosis": "アセトアミノフェン中毒(医原性, 低体重)",
+      "expected_id": "D166",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "E16": "confused",
+        "E01": "under_37.5",
+        "L11": "very_high",
+        "L55": "mild_elevated",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST 4321, INR 3.1. 89歳34.3kg→体重あたり過量. NAC 12日で回復"
     }
   ],
   "total_cases": 110

@@ -10351,6 +10351,10 @@
         "D162": {
           "normal": 0.05,
           "elevated": 0.95
+        },
+        "D166": {
+          "normal": 0.15,
+          "elevated": 0.85
         }
       }
     },
@@ -13923,6 +13927,11 @@
           "absent": 0.1,
           "watery": 0.2,
           "bloody": 0.7
+        },
+        "D166": {
+          "absent": 0.65,
+          "watery": 0.3,
+          "bloody": 0.05
         }
       }
     },
@@ -17792,6 +17801,12 @@
           "normal": 0.25,
           "mildly_elevated": 0.4,
           "very_high": 0.15
+        },
+        "D166": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mildly_elevated": 0.25,
+          "very_high": 0.5
         }
       }
     },
@@ -18290,6 +18305,12 @@
           "normal": 0.45,
           "hyperglycemia": 0.08,
           "very_high_over_500": 0.02
+        },
+        "D166": {
+          "hypoglycemia": 0.35,
+          "normal": 0.5,
+          "hyperglycemia": 0.12,
+          "very_high_over_500": 0.03
         }
       }
     },
@@ -18484,6 +18505,11 @@
           "normal": 0.03,
           "mild_elevated": 0.15,
           "high_AKI": 0.82
+        },
+        "D166": {
+          "normal": 0.4,
+          "mild_elevated": 0.3,
+          "high_AKI": 0.3
         }
       }
     }
