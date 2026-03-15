@@ -386,6 +386,13 @@
         "former": 0.25,
         "current": 0.2
       }
+    },
+    "R46": {
+      "description": "COPD既往",
+      "distribution": {
+        "no": 0.9,
+        "yes": 0.1
+      }
     }
   },
   "full_cpts": {
@@ -2474,6 +2481,21 @@
         "yes|40_64": 0.025,
         "yes|65_plus": 0.05
       }
+    },
+    "D121": {
+      "parents": [
+        "R46",
+        "R45"
+      ],
+      "description": "COPD急性増悪。COPD既往+喫煙がリスク",
+      "cpt": {
+        "no|never": 0.001,
+        "no|former": 0.002,
+        "no|current": 0.003,
+        "yes|never": 0.02,
+        "yes|former": 0.035,
+        "yes|current": 0.05
+      }
     }
   },
   "noisy_or_params": {
@@ -3424,6 +3446,13 @@
           "38.0_39.0": 0.08,
           "39.0_40.0": 0.02,
           "over_40.0": 0.0
+        },
+        "D121": {
+          "under_37.5": 0.45,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
         }
       }
     },
@@ -3704,6 +3733,11 @@
           "under_100": 0.35,
           "100_120": 0.4,
           "over_120": 0.25
+        },
+        "D121": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
         }
       }
     },
@@ -3908,6 +3942,11 @@
           "normal_under_20": 0.25,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.25
+        },
+        "D121": {
+          "normal_under_20": 0.15,
+          "tachypnea_20_30": 0.55,
+          "severe_over_30": 0.3
         }
       }
     },
@@ -4008,6 +4047,11 @@
           "normal_over_96": 0.4,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.25
+        },
+        "D121": {
+          "normal_over_96": 0.25,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.35
         }
       }
     },
@@ -4116,6 +4160,11 @@
           "clear": 0.15,
           "crackles": 0.75,
           "wheezes": 0.1
+        },
+        "D121": {
+          "clear": 0.1,
+          "crackles": 0.15,
+          "wheezes": 0.75
         }
       }
     },
@@ -6293,6 +6342,12 @@
           "normal_4000_10000": 0.7,
           "high_10000_20000": 0.2,
           "very_high_over_20000": 0.05
+        },
+        "D121": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.45,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.12
         }
       }
     },
@@ -6958,6 +7013,12 @@
           "mild_0.3_3": 0.4,
           "moderate_3_10": 0.25,
           "high_over_10": 0.05
+        },
+        "D121": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.2
         }
       }
     },
@@ -7047,6 +7108,12 @@
           "low_under_0.25": 0.05,
           "gray_0.25_0.5": 0.1,
           "high_over_0.5": 0.6
+        },
+        "D121": {
+          "not_done": 0.3,
+          "low_under_0.25": 0.3,
+          "gray_0.25_0.5": 0.2,
+          "high_over_0.5": 0.2
         }
       }
     },
@@ -7251,6 +7318,13 @@
           "bilateral_infiltrate": 0.45,
           "BHL": 0.02,
           "pleural_effusion": 0.38
+        },
+        "D121": {
+          "normal": 0.55,
+          "lobar_infiltrate": 0.15,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.18
         }
       }
     },
@@ -9287,6 +9361,11 @@
           "absent": 0.45,
           "dry": 0.3,
           "productive": 0.25
+        },
+        "D121": {
+          "absent": 0.15,
+          "dry": 0.2,
+          "productive": 0.65
         }
       }
     },
@@ -9473,6 +9552,11 @@
           "absent": 0.05,
           "on_exertion": 0.3,
           "at_rest": 0.65
+        },
+        "D121": {
+          "absent": 0.05,
+          "on_exertion": 0.25,
+          "at_rest": 0.7
         }
       }
     },
@@ -10078,6 +10162,11 @@
           "absent": 0.1,
           "mild": 0.25,
           "severe": 0.65
+        },
+        "D121": {
+          "absent": 0.35,
+          "mild": 0.35,
+          "severe": 0.3
         }
       }
     },
@@ -10348,6 +10437,10 @@
         "D119": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D121": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -12783,6 +12876,12 @@
           "3d_to_1w": 0.35,
           "1w_to_3w": 0.2,
           "over_3w": 0.05
+        },
+        "D121": {
+          "under_3d": 0.35,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.05
         }
       }
     },
@@ -12996,6 +13095,10 @@
         "D120": {
           "sudden_hours": 0.45,
           "gradual_days": 0.55
+        },
+        "D121": {
+          "sudden_hours": 0.4,
+          "gradual_days": 0.6
         }
       }
     },
@@ -13881,6 +13984,12 @@
           "normal": 0.2,
           "mildly_elevated": 0.25,
           "very_high": 0.15
+        },
+        "D121": {
+          "not_done": 0.3,
+          "normal": 0.4,
+          "mildly_elevated": 0.25,
+          "very_high": 0.05
         }
       }
     }

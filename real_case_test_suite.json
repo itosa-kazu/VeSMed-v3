@@ -5077,6 +5077,36 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 無熱(36.0). HR正常(83だがAfib). 甲状腺中毒が原因だが心不全として評価"
+    },
+    {
+      "id": "R205",
+      "source": "Acquaint Publications 2023",
+      "pmcid": "N/A_acquaint",
+      "vignette": "68F COPD/DM/高血圧/虚血性心疾患既往. 1ヶ月の呼吸困難悪化+急性呼吸困難+意識混濁. BP 140/70, HR 80, SpO2 78%(room air). 胸部聴診: 喘鳴+両側crackles. ABG: pH 7.43, PaCO2 44.4, PaO2 51. WBC 9700, CRP 54.3. CXR: 肺過膨張(COPD所見). BiPAP+気管支拡張薬で改善",
+      "final_diagnosis": "COPD急性増悪",
+      "expected_id": "D121",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "E05": "severe_hypoxia_under_93",
+        "E16": "confused",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L04": "normal",
+        "E02": "under_100",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R46": "yes",
+        "R04": "yes",
+        "R44": "yes"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. SpO2 78%著明低下. CXR hyperinflation→normal mapping. CRP 54.3は感染性増悪を示唆. PMCIDなし(Acquaint Publications)"
     }
   ],
   "total_cases": 110

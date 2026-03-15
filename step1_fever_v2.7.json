@@ -4292,6 +4292,29 @@
       ],
       "severity": "critical",
       "note": "呼吸困難の最多原因。起座呼吸+湿性ラ音+下腿浮腫+JVD+BNP著高。胸部X線で肺うっ血/胸水。心疾患既往+高齢がリスク。"
+    },
+    {
+      "id": "R46",
+      "name": "COPD_history",
+      "name_ja": "COPD既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "COPD既往。COPD急性増悪のリスク"
+    },
+    {
+      "id": "D121",
+      "name": "COPD_exacerbation",
+      "name_ja": "COPD急性増悪",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "COPD既往患者の急性呼吸症状悪化。呼吸困難+咳嗽+膿性痰+喘鳴。感染が誘因50%。BNP正常~軽度(心不全との鑑別)。CXR過膨張"
     }
   ]
 }

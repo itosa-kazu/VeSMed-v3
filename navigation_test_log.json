@@ -239,6 +239,52 @@
         }
       ],
       "conclusion": "労作時呼吸困難+無熱+心疾患既往で即Top-1。CXR→BNPで確定。初の非発熱疾患追加成功"
+    },
+    {
+      "case_id": "R205",
+      "pmcid": "N/A_acquaint",
+      "final_diagnosis": "COPD急性増悪",
+      "expected_id": "D121",
+      "traditional_result": "Top-1 70.7%",
+      "navigation_result": "Step1で即Top-1(74%)→意識混濁/CRP高値でレジオネラに脱落→CXR正常で復帰(69%)",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "D121_rank": 1,
+          "D121_prob": "73.8%",
+          "H": 1.51,
+          "note": "来院時Top-1"
+        },
+        {
+          "step": 2,
+          "D121_rank": 2,
+          "D121_prob": "24.6%",
+          "H": 1.52,
+          "note": "+意識混濁→レジオネラに脱落"
+        },
+        {
+          "step": 3,
+          "D121_rank": 1,
+          "D121_prob": "42.9%",
+          "H": 2.0,
+          "note": "+WBC正常→復帰"
+        },
+        {
+          "step": 4,
+          "D121_rank": 2,
+          "D121_prob": "24.7%",
+          "H": 1.53,
+          "note": "+CRP高値→再びレジオネラに"
+        },
+        {
+          "step": 5,
+          "D121_rank": 1,
+          "D121_prob": "68.6%",
+          "H": 1.62,
+          "note": "+CXR正常→COPD増悪確定(浸潤影なし)"
+        }
+      ],
+      "conclusion": "COPD既往+喘鳴でTop-1。意識混濁/CRP高値はレジオネラとの鑑別課題だが、CXR正常が決定打。臨床的にリアルな動態"
     }
   ]
 }
