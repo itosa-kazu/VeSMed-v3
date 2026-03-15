@@ -4436,6 +4436,30 @@
       ],
       "severity": "high",
       "note": "慢性進行性呼吸困難+乾性咳嗽+fine crackles。HRCT蜂巣肺/GGO。KL-6上昇"
+    },
+    {
+      "id": "D131",
+      "name": "acute_coronary_syndrome",
+      "name_ja": "急性冠症候群（ACS/心筋梗塞）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "STEMI/NSTEMI/不安定狭心症。胸痛(圧迫感)+冷汗+呼吸困難。トロポニン/CK上昇。ECG ST変化。緊急PCI"
+    },
+    {
+      "id": "D132",
+      "name": "aortic_dissection",
+      "name_ja": "急性大動脈解離",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "胸痛(引き裂かれるような, 突然, 最初から最大)+背部痛。血圧左右差。CT造影で確定。Type A: 緊急手術。Type B: 降圧管理"
     }
   ]
 }
