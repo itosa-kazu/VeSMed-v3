@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1613,
+  "total_edges": 1864,
   "edges": [
     {
       "from": "R01",
@@ -16740,6 +16740,811 @@
       "from_name": "cryptococcosis",
       "to_name": "heart_rate",
       "reason": "クリプト: 重症感染時頻脈(PMC10598787:HR108)"
+    },
+    {
+      "from": "D110",
+      "to": "E01",
+      "from_name": "toxoplasmosis",
+      "to_name": "E01",
+      "reason": "トキソプラズマ: 発熱(免疫正常20-40%, 脳炎60-80%), 中等度"
+    },
+    {
+      "from": "D110",
+      "to": "S05",
+      "from_name": "toxoplasmosis",
+      "to_name": "S05",
+      "reason": "トキソプラズマ脳炎: 頭痛(50-80%), リンパ節型でも20-30%"
+    },
+    {
+      "from": "D110",
+      "to": "E13",
+      "from_name": "toxoplasmosis",
+      "to_name": "E13",
+      "reason": "トキソプラズマ: 頸部リンパ節腫脹(免疫正常80-90%), 全身性もあり"
+    },
+    {
+      "from": "D110",
+      "to": "S07",
+      "from_name": "toxoplasmosis",
+      "to_name": "S07",
+      "reason": "トキソプラズマ: 倦怠感(40-70%)"
+    },
+    {
+      "from": "D110",
+      "to": "S06",
+      "from_name": "toxoplasmosis",
+      "to_name": "S06",
+      "reason": "トキソプラズマ: 筋肉痛(20-40%)"
+    },
+    {
+      "from": "D110",
+      "to": "E16",
+      "from_name": "toxoplasmosis",
+      "to_name": "E16",
+      "reason": "トキソプラズマ脳炎: 意識障害(30-60%)"
+    },
+    {
+      "from": "D110",
+      "to": "S42",
+      "from_name": "toxoplasmosis",
+      "to_name": "S42",
+      "reason": "トキソプラズマ脳炎: 痙攣(20-30%)"
+    },
+    {
+      "from": "D110",
+      "to": "L46",
+      "from_name": "toxoplasmosis",
+      "to_name": "L46",
+      "reason": "トキソプラズマ脳炎: MRI環状増強病変(80-90%, 基底核に多発)"
+    },
+    {
+      "from": "D110",
+      "to": "E35",
+      "from_name": "toxoplasmosis",
+      "to_name": "E35",
+      "reason": "トキソプラズマ: 脈絡網膜炎(10-20%) → ぶどう膜炎"
+    },
+    {
+      "from": "D110",
+      "to": "L01",
+      "from_name": "toxoplasmosis",
+      "to_name": "L01",
+      "reason": "トキソプラズマ: WBC通常正常(免疫不全背景で低下もあり)"
+    },
+    {
+      "from": "D110",
+      "to": "L02",
+      "from_name": "toxoplasmosis",
+      "to_name": "L02",
+      "reason": "トキソプラズマ: CRP軽度~中等度上昇"
+    },
+    {
+      "from": "D110",
+      "to": "L11",
+      "from_name": "toxoplasmosis",
+      "to_name": "L11",
+      "reason": "トキソプラズマ: 肝酵素軽度上昇(播種性15-25%)"
+    },
+    {
+      "from": "D110",
+      "to": "E34",
+      "from_name": "toxoplasmosis",
+      "to_name": "E34",
+      "reason": "トキソプラズマ: 肝腫大(播種性10-20%)"
+    },
+    {
+      "from": "D110",
+      "to": "E14",
+      "from_name": "toxoplasmosis",
+      "to_name": "E14",
+      "reason": "トキソプラズマ: 脾腫(リンパ節型/播種性15-30%)"
+    },
+    {
+      "from": "D110",
+      "to": "T01",
+      "from_name": "toxoplasmosis",
+      "to_name": "T01",
+      "reason": "トキソプラズマ: 亜急性経過(1-3週)"
+    },
+    {
+      "from": "D110",
+      "to": "T02",
+      "from_name": "toxoplasmosis",
+      "to_name": "T02",
+      "reason": "トキソプラズマ: 緩徐発症"
+    },
+    {
+      "from": "D110",
+      "to": "L28",
+      "from_name": "toxoplasmosis",
+      "to_name": "L28",
+      "reason": "トキソプラズマ: ESR軽度上昇"
+    },
+    {
+      "from": "D110",
+      "to": "S13",
+      "from_name": "toxoplasmosis",
+      "to_name": "S13",
+      "reason": "トキソプラズマ脳炎: 嘔気嘔吐(頭蓋内圧亢進20-30%)"
+    },
+    {
+      "from": "R25",
+      "to": "D110",
+      "from_name": "R25",
+      "to_name": "toxoplasmosis",
+      "reason": "HIV陽性: トキソプラズマ脳炎の最大リスク因子(CD4<100で好発)"
+    },
+    {
+      "from": "R05",
+      "to": "D110",
+      "from_name": "R05",
+      "to_name": "toxoplasmosis",
+      "reason": "免疫不全(ステロイド/化学療法等): トキソプラズマ発症リスク上昇"
+    },
+    {
+      "from": "D110",
+      "to": "S01",
+      "from_name": "toxoplasmosis",
+      "to_name": "S01",
+      "reason": "トキソプラズマ肺型: 咳嗽(30-50%), 乾性咳嗽主体"
+    },
+    {
+      "from": "D110",
+      "to": "S04",
+      "from_name": "toxoplasmosis",
+      "to_name": "S04",
+      "reason": "トキソプラズマ肺型: 呼吸困難(20-40%), 重症例でat rest"
+    },
+    {
+      "from": "D110",
+      "to": "L04",
+      "from_name": "toxoplasmosis",
+      "to_name": "L04",
+      "reason": "トキソプラズマ肺型: 胸部X線異常(両側浸潤影/結節影30-50%)"
+    },
+    {
+      "from": "D111",
+      "to": "E01",
+      "from_name": "SJS_TEN",
+      "to_name": "E01",
+      "reason": "SJS/TEN: 発熱(80-100%), 前駆症状として出現, 中等度~高熱"
+    },
+    {
+      "from": "D111",
+      "to": "E12",
+      "from_name": "SJS_TEN",
+      "to_name": "E12",
+      "reason": "SJS/TEN: 皮膚所見 — 標的状紅斑→水疱(vesicle_bulla)→表皮壊死(skin_necrosis), Nikolsky sign+"
+    },
+    {
+      "from": "D111",
+      "to": "E35",
+      "from_name": "SJS_TEN",
+      "to_name": "E35",
+      "reason": "SJS/TEN: 眼症状 — 結膜炎(80-90%), 偽膜形成, 角膜びらん"
+    },
+    {
+      "from": "D111",
+      "to": "S18",
+      "from_name": "SJS_TEN",
+      "to_name": "S18",
+      "reason": "SJS/TEN: 皮膚の訴え — 広範囲の発疹/疼痛(rash_widespread)"
+    },
+    {
+      "from": "D111",
+      "to": "S02",
+      "from_name": "SJS_TEN",
+      "to_name": "S02",
+      "reason": "SJS/TEN: 咽頭痛/口腔粘膜びらん(90-100%), 嚥下困難"
+    },
+    {
+      "from": "D111",
+      "to": "S06",
+      "from_name": "SJS_TEN",
+      "to_name": "S06",
+      "reason": "SJS/TEN: 筋肉痛(前駆症状, 30-50%)"
+    },
+    {
+      "from": "D111",
+      "to": "S07",
+      "from_name": "SJS_TEN",
+      "to_name": "S07",
+      "reason": "SJS/TEN: 倦怠感(前駆症状, 60-80%)"
+    },
+    {
+      "from": "D111",
+      "to": "L01",
+      "from_name": "SJS_TEN",
+      "to_name": "L01",
+      "reason": "SJS/TEN: WBC正常~上昇, 好中球優位"
+    },
+    {
+      "from": "D111",
+      "to": "L02",
+      "from_name": "SJS_TEN",
+      "to_name": "L02",
+      "reason": "SJS/TEN: CRP上昇(中等度~高度)"
+    },
+    {
+      "from": "D111",
+      "to": "L11",
+      "from_name": "SJS_TEN",
+      "to_name": "L11",
+      "reason": "SJS/TEN: 肝酵素上昇(10-30%, 重症例)"
+    },
+    {
+      "from": "D111",
+      "to": "L28",
+      "from_name": "SJS_TEN",
+      "to_name": "L28",
+      "reason": "SJS/TEN: ESR上昇"
+    },
+    {
+      "from": "D111",
+      "to": "T01",
+      "from_name": "SJS_TEN",
+      "to_name": "T01",
+      "reason": "SJS/TEN: 薬剤開始1-3週後に発症, 皮膚症状は3d-1w進行"
+    },
+    {
+      "from": "D111",
+      "to": "T02",
+      "from_name": "SJS_TEN",
+      "to_name": "T02",
+      "reason": "SJS/TEN: 前駆→皮疹は数日で進行(gradual)"
+    },
+    {
+      "from": "D111",
+      "to": "S13",
+      "from_name": "SJS_TEN",
+      "to_name": "S13",
+      "reason": "SJS/TEN: 嘔気/嘔吐(粘膜障害, 20-30%)"
+    },
+    {
+      "from": "D111",
+      "to": "S05",
+      "from_name": "SJS_TEN",
+      "to_name": "S05",
+      "reason": "SJS/TEN: 頭痛(前駆症状, 20-30%)"
+    },
+    {
+      "from": "R08",
+      "to": "D111",
+      "from_name": "R08",
+      "to_name": "SJS_TEN",
+      "reason": "新規薬剤開始: SJS/TENの80%以上が薬剤性(抗てんかん薬/抗菌薬/アロプリノール)"
+    },
+    {
+      "from": "D112",
+      "to": "E01",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "E01",
+      "reason": "PAN: 発熱(52%), 通常微熱~中等度"
+    },
+    {
+      "from": "D112",
+      "to": "S06",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S06",
+      "reason": "PAN: 筋肉痛(70%, 圧痛を伴うことが多い, 特に下腿)"
+    },
+    {
+      "from": "D112",
+      "to": "S07",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S07",
+      "reason": "PAN: 倦怠感(60-80%)"
+    },
+    {
+      "from": "D112",
+      "to": "S08",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S08",
+      "reason": "PAN: 関節痛(30%, 非破壊性)"
+    },
+    {
+      "from": "D112",
+      "to": "S17",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S17",
+      "reason": "PAN: 体重減少(44%, 数kg/月)"
+    },
+    {
+      "from": "D112",
+      "to": "E12",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "E12",
+      "reason": "PAN: 皮膚所見(44%) — livedo reticularis/紫斑/皮膚壊死/皮下結節"
+    },
+    {
+      "from": "D112",
+      "to": "S12",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S12",
+      "reason": "PAN: 腹痛(33%, 腸間膜血管炎による虚血性腸炎)"
+    },
+    {
+      "from": "D112",
+      "to": "L01",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "L01",
+      "reason": "PAN: WBC正常~軽度上昇"
+    },
+    {
+      "from": "D112",
+      "to": "L02",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "L02",
+      "reason": "PAN: CRP上昇(中等度~高度)"
+    },
+    {
+      "from": "D112",
+      "to": "L28",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "L28",
+      "reason": "PAN: ESR著明上昇(90%, 平均60-80mm/h)"
+    },
+    {
+      "from": "D112",
+      "to": "L11",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "L11",
+      "reason": "PAN: 肝酵素上昇(HBV関連, 10-20%)"
+    },
+    {
+      "from": "D112",
+      "to": "L19",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "L19",
+      "reason": "PAN: ANCA通常陰性(80%), p-ANCA陽性が20%程度"
+    },
+    {
+      "from": "D112",
+      "to": "T01",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "T01",
+      "reason": "PAN: 慢性経過(数週~数ヶ月)"
+    },
+    {
+      "from": "D112",
+      "to": "T02",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "T02",
+      "reason": "PAN: 緩徐発症"
+    },
+    {
+      "from": "D112",
+      "to": "S13",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S13",
+      "reason": "PAN: 嘔気(消化器血管炎, 20-30%)"
+    },
+    {
+      "from": "D112",
+      "to": "S44",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S44",
+      "reason": "PAN: 出血傾向 — 紫斑/消化管出血(15-20%)"
+    },
+    {
+      "from": "D112",
+      "to": "S15",
+      "from_name": "polyarteritis_nodosa",
+      "to_name": "S15",
+      "reason": "PAN: 側腹部痛(腎梗塞/腎動脈瘤, 15-25%)"
+    },
+    {
+      "from": "D113",
+      "to": "E01",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "E01",
+      "reason": "ヒストプラズマ播種性: 発熱(95%), 中等度~高熱, 持続性"
+    },
+    {
+      "from": "D113",
+      "to": "S17",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "S17",
+      "reason": "ヒストプラズマ播種性: 体重減少(70%)"
+    },
+    {
+      "from": "D113",
+      "to": "E34",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "E34",
+      "reason": "ヒストプラズマ播種性: 肝腫大(60-80%)"
+    },
+    {
+      "from": "D113",
+      "to": "E14",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "E14",
+      "reason": "ヒストプラズマ播種性: 脾腫(60-80%)"
+    },
+    {
+      "from": "D113",
+      "to": "E13",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "E13",
+      "reason": "ヒストプラズマ播種性: リンパ節腫脹(30-50%, 全身性が多い)"
+    },
+    {
+      "from": "D113",
+      "to": "S01",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "S01",
+      "reason": "ヒストプラズマ播種性: 咳嗽(40-60%, 肺病変)"
+    },
+    {
+      "from": "D113",
+      "to": "S04",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "S04",
+      "reason": "ヒストプラズマ播種性: 呼吸困難(20-40%, 肺病変重症時)"
+    },
+    {
+      "from": "D113",
+      "to": "L01",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L01",
+      "reason": "ヒストプラズマ播種性: WBC低下(汎血球減少50-70%)"
+    },
+    {
+      "from": "D113",
+      "to": "L14",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L14",
+      "reason": "ヒストプラズマ播種性: 血小板減少(汎血球減少の一部)"
+    },
+    {
+      "from": "D113",
+      "to": "L16",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L16",
+      "reason": "ヒストプラズマ播種性: LDH著明上昇(80-90%, 診断的)"
+    },
+    {
+      "from": "D113",
+      "to": "L15",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L15",
+      "reason": "ヒストプラズマ播種性: フェリチン上昇(60-80%, >500が多い)"
+    },
+    {
+      "from": "D113",
+      "to": "L11",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L11",
+      "reason": "ヒストプラズマ播種性: 肝酵素上昇(40-60%, 肝浸潤)"
+    },
+    {
+      "from": "D113",
+      "to": "L02",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L02",
+      "reason": "ヒストプラズマ播種性: CRP上昇(中等度~高度)"
+    },
+    {
+      "from": "D113",
+      "to": "L28",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L28",
+      "reason": "ヒストプラズマ播種性: ESR上昇"
+    },
+    {
+      "from": "D113",
+      "to": "L04",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "L04",
+      "reason": "ヒストプラズマ播種性: CXR異常(粟粒影/びまん性浸潤影50-70%)"
+    },
+    {
+      "from": "D113",
+      "to": "S07",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "S07",
+      "reason": "ヒストプラズマ播種性: 倦怠感(80-90%)"
+    },
+    {
+      "from": "D113",
+      "to": "E12",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "E12",
+      "reason": "ヒストプラズマ播種性: 皮膚病変(10-20% HIV, 丘疹/潰瘍/紫斑)"
+    },
+    {
+      "from": "D113",
+      "to": "T01",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "T01",
+      "reason": "ヒストプラズマ播種性: 亜急性~慢性(数週~数ヶ月)"
+    },
+    {
+      "from": "D113",
+      "to": "T02",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "T02",
+      "reason": "ヒストプラズマ播種性: 緩徐発症"
+    },
+    {
+      "from": "D113",
+      "to": "S13",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "S13",
+      "reason": "ヒストプラズマ播種性: 嘔気/下痢(消化管浸潤20-30%)"
+    },
+    {
+      "from": "R25",
+      "to": "D113",
+      "from_name": "R25",
+      "to_name": "disseminated_histoplasmosis",
+      "reason": "HIV陽性: ヒストプラズマ播種性の最大リスク(CD4<150)"
+    },
+    {
+      "from": "R05",
+      "to": "D113",
+      "from_name": "R05",
+      "to_name": "disseminated_histoplasmosis",
+      "reason": "免疫不全(臓器移植/ステロイド): ヒストプラズマ播種性リスク"
+    },
+    {
+      "from": "D114",
+      "to": "E01",
+      "from_name": "multiple_myeloma",
+      "to_name": "E01",
+      "reason": "骨髄腫: 発熱(10-20%が初発, 感染合併or腫瘍熱), 通常微熱"
+    },
+    {
+      "from": "D114",
+      "to": "S07",
+      "from_name": "multiple_myeloma",
+      "to_name": "S07",
+      "reason": "骨髄腫: 倦怠感(>80%, 貧血+腫瘍負荷)"
+    },
+    {
+      "from": "D114",
+      "to": "S17",
+      "from_name": "multiple_myeloma",
+      "to_name": "S17",
+      "reason": "骨髄腫: 体重減少(24%)"
+    },
+    {
+      "from": "D114",
+      "to": "S08",
+      "from_name": "multiple_myeloma",
+      "to_name": "S08",
+      "reason": "骨髄腫: 骨痛→関節痛(58-70%, 腰椎/肋骨/骨盤が多い)"
+    },
+    {
+      "from": "D114",
+      "to": "S15",
+      "from_name": "multiple_myeloma",
+      "to_name": "S15",
+      "reason": "骨髄腫: 腰背部痛(40-50%, 椎体圧迫骨折)"
+    },
+    {
+      "from": "D114",
+      "to": "L01",
+      "from_name": "multiple_myeloma",
+      "to_name": "L01",
+      "reason": "骨髄腫: WBC通常正常, 進行期で低下(免疫不全)"
+    },
+    {
+      "from": "D114",
+      "to": "L02",
+      "from_name": "multiple_myeloma",
+      "to_name": "L02",
+      "reason": "骨髄腫: CRP軽度~中等度上昇(IL-6関連)"
+    },
+    {
+      "from": "D114",
+      "to": "L28",
+      "from_name": "multiple_myeloma",
+      "to_name": "L28",
+      "reason": "骨髄腫: ESR著明上昇(>100mm/hが多い, M蛋白によるrouleaux)"
+    },
+    {
+      "from": "D114",
+      "to": "L16",
+      "from_name": "multiple_myeloma",
+      "to_name": "L16",
+      "reason": "骨髄腫: LDH上昇(腫瘍負荷)"
+    },
+    {
+      "from": "D114",
+      "to": "L11",
+      "from_name": "multiple_myeloma",
+      "to_name": "L11",
+      "reason": "骨髄腫: 肝酵素通常正常"
+    },
+    {
+      "from": "D114",
+      "to": "L44",
+      "from_name": "multiple_myeloma",
+      "to_name": "L44",
+      "reason": "骨髄腫: 電解質異常(高Ca血症28% → other)"
+    },
+    {
+      "from": "D114",
+      "to": "L14",
+      "from_name": "multiple_myeloma",
+      "to_name": "L14",
+      "reason": "骨髄腫: 血小板減少(進行期, 骨髄浸潤)"
+    },
+    {
+      "from": "D114",
+      "to": "T01",
+      "from_name": "multiple_myeloma",
+      "to_name": "T01",
+      "reason": "骨髄腫: 慢性経過(数ヶ月~)"
+    },
+    {
+      "from": "D114",
+      "to": "T02",
+      "from_name": "multiple_myeloma",
+      "to_name": "T02",
+      "reason": "骨髄腫: 緩徐発症"
+    },
+    {
+      "from": "D114",
+      "to": "E16",
+      "from_name": "multiple_myeloma",
+      "to_name": "E16",
+      "reason": "骨髄腫: 意識障害(高Ca血症による, 5-10%)"
+    },
+    {
+      "from": "D114",
+      "to": "S13",
+      "from_name": "multiple_myeloma",
+      "to_name": "S13",
+      "reason": "骨髄腫: 嘔気(高Ca血症/腎不全, 15-20%)"
+    },
+    {
+      "from": "D114",
+      "to": "L48",
+      "from_name": "D114",
+      "to_name": "L48",
+      "reason": "骨髄腫: M蛋白(monoclonal IgG/IgA/light chain, 90%以上)"
+    },
+    {
+      "from": "D67",
+      "to": "L48",
+      "from_name": "D67",
+      "to_name": "L48",
+      "reason": "悪性リンパ腫: M蛋白(monoclonal, 5-10%)"
+    },
+    {
+      "from": "D97",
+      "to": "L48",
+      "from_name": "D97",
+      "to_name": "L48",
+      "reason": "キャッスルマン病: ポリクローナル高γグロブリン血症"
+    },
+    {
+      "from": "D62",
+      "to": "L48",
+      "from_name": "D62",
+      "to_name": "L48",
+      "reason": "サルコイドーシス: ポリクローナル高γグロブリン血症(20-30%)"
+    },
+    {
+      "from": "D59",
+      "to": "L48",
+      "from_name": "D59",
+      "to_name": "L48",
+      "reason": "SLE: ポリクローナル高γグロブリン血症(30-50%)"
+    },
+    {
+      "from": "D45",
+      "to": "L48",
+      "from_name": "D45",
+      "to_name": "L48",
+      "reason": "CMV: ポリクローナル高γグロブリン血症(急性期)"
+    },
+    {
+      "from": "D114",
+      "to": "L49",
+      "from_name": "D114",
+      "to_name": "L49",
+      "reason": "骨髄腫: 打ち抜き像/溶骨性病変(80%), 圧迫骨折(30%)"
+    },
+    {
+      "from": "D67",
+      "to": "L49",
+      "from_name": "D67",
+      "to_name": "L49",
+      "reason": "悪性リンパ腫: 骨浸潤/溶骨性病変(10-20%)"
+    },
+    {
+      "from": "D31",
+      "to": "L49",
+      "from_name": "D31",
+      "to_name": "L49",
+      "reason": "椎体骨髄炎: 椎体破壊/圧迫骨折"
+    },
+    {
+      "from": "D68",
+      "to": "L49",
+      "from_name": "D68",
+      "to_name": "L49",
+      "reason": "急性白血病: 骨浸潤/溶骨性病変(稀)"
+    },
+    {
+      "from": "D69",
+      "to": "L49",
+      "from_name": "D69",
+      "to_name": "L49",
+      "reason": "腎細胞癌: 転移性溶骨性病変"
+    },
+    {
+      "from": "D114",
+      "to": "L50",
+      "from_name": "D114",
+      "to_name": "L50",
+      "reason": "骨髄腫: M蛋白によりTP著明上昇(>10g/dL, 75-80%)"
+    },
+    {
+      "from": "D97",
+      "to": "L50",
+      "from_name": "D97",
+      "to_name": "L50",
+      "reason": "キャッスルマン病: ポリクローナル高γでTP上昇(40%)"
+    },
+    {
+      "from": "D67",
+      "to": "L50",
+      "from_name": "D67",
+      "to_name": "L50",
+      "reason": "悪性リンパ腫: Waldenstrom等でM蛋白/高γ(10-15%)"
+    },
+    {
+      "from": "D94",
+      "to": "L50",
+      "from_name": "D94",
+      "to_name": "L50",
+      "reason": "IgG4関連疾患: IgG4高値によるTP上昇(40%)"
+    },
+    {
+      "from": "D59",
+      "to": "L50",
+      "from_name": "D59",
+      "to_name": "L50",
+      "reason": "SLE: ポリクローナル高γグロブリン血症(30-40%)"
+    },
+    {
+      "from": "D62",
+      "to": "L50",
+      "from_name": "D62",
+      "to_name": "L50",
+      "reason": "サルコイドーシス: ポリクローナル高γ(20-30%)"
+    },
+    {
+      "from": "D107",
+      "to": "L50",
+      "from_name": "D107",
+      "to_name": "L50",
+      "reason": "HLH: 炎症性高γグロブリン血症(25-35%)"
+    },
+    {
+      "from": "D44",
+      "to": "L50",
+      "from_name": "D44",
+      "to_name": "L50",
+      "reason": "急性HIV: ポリクローナルB細胞活性化(20-30%)"
+    },
+    {
+      "from": "D17",
+      "to": "L50",
+      "from_name": "D17",
+      "to_name": "L50",
+      "reason": "肺結核: 慢性炎症による高γ(15-25%)"
+    },
+    {
+      "from": "D113",
+      "to": "L50",
+      "from_name": "D113",
+      "to_name": "L50",
+      "reason": "播種性ヒストプラズマ: 慢性感染による高γ(15-25%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

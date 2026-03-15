@@ -592,6 +592,59 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
     return results[:top_n]
 
 
+def next_best_falsification_test(evidence, risk, diseases, disease_children,
+                                  noisy_or, root_priors, disc=None,
+                                  disc_power=0.0, cf_alpha=0.0, top_n=5):
+    """
+    反証推奨: 現在のTop-1診断を最も動揺させる検査を推奨する。
+
+    通常のnext_best_testがエントロピーを最小化する検査(確認方向)を選ぶのに対し、
+    この関数はエントロピーを最大化する状態を持つ検査(反証方向)を選ぶ。
+
+    原理:
+      各未観測変数vの各状態sについてH_after(v=s)を計算。
+      max_s(H_after(v=s)) が最大の変数 = 最も現診断を動揺させうる検査。
+
+    臨床的意義:
+      - 誤診の場合: 反証検査が正しい診断への道を開く
+      - 正診の場合: 実際の結果が動揺方向と逆に出るため、確信が強まる
+      - 確認バイアスを防ぎ、自己修正的な診断プロセスを実現
+    """
+    # Reuse next_best_test computation (get ALL variables, not just top_n)
+    all_results = next_best_test(
+        evidence, risk, diseases, disease_children, noisy_or, root_priors,
+        disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
+        top_n=9999
+    )
+
+    if not all_results:
+        return []
+
+    h_now = all_results[0]["h_now"]
+
+    falsification_results = []
+    for item in all_results:
+        # Find the state that MOST increases entropy
+        max_h_state = max(item["state_details"], key=lambda x: x["h_after"])
+        h_increase = max_h_state["h_after"] - h_now
+
+        if h_increase > 0:
+            falsification_results.append({
+                "var_id": item["var_id"],
+                "h_increase": h_increase,
+                "h_now": h_now,
+                "disruptive_state": max_h_state["state"],
+                "disruptive_h": max_h_state["h_after"],
+                "disruptive_prob": max_h_state["prob"],
+                "marginal": item["marginal"],
+                "state_details": item["state_details"],
+                "ig": item["ig"],
+            })
+
+    falsification_results.sort(key=lambda x: -x["h_increase"])
+    return falsification_results[:top_n]
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="VeSMed BN Inference")

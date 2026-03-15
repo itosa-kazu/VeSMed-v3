@@ -4442,6 +4442,325 @@
         "R01": "40_64",
         "R02": "female"
       }
+    },
+    {
+      "id": "R182",
+      "source": "J Med Case Rep 2017",
+      "pmcid": "PMC5263040",
+      "vignette": "34M HIV+/CD4=186. 7日前から頭痛, 2日前から発熱+意識変容+嘔吐, 全身性強直間代性痙攣で搬送. T=38.5, 傾眠+見当識障害(時間/場所/人), 局所神経脱落なし, 項部硬直なし. CBC正常, ESR 23. 髄液: 蛋白1.08g/L↑, 糖4.2正常, 細菌陰性. MRI: 左中脳/蓋板に環状増強病変+閉塞性水頭症",
+      "final_diagnosis": "トキソプラズマ脳炎(HIV/AIDS合併)",
+      "expected_id": "D110",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S05": "severe",
+        "E16": "confused",
+        "S42": "present",
+        "S13": "present",
+        "L46": "other",
+        "L28": "elevated",
+        "E06": "absent",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "L45": "viral_pattern"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R25": "yes",
+        "R05": "yes"
+      },
+      "result": "",
+      "notes": "HIV+ CD4<200. MRI環状増強病変が鍵. CSF蛋白↑は viral_pattern に近い"
+    },
+    {
+      "id": "R183",
+      "source": "IDCases 2021",
+      "pmcid": "PMC7893395",
+      "vignette": "38M 免疫正常. 1週間の高熱(40℃)+乾性咳嗽+進行性呼吸困難(MMRC II). SpO2 88%. 肝腫大(18cm), 両側鼠径リンパ節腫脹. WBC 10400(リンパ球64%), Hb 10.7. AST 235/ALT 397, T-Bil 2.4. CXR: 両側中下野浸潤影. HIV陰性. Toxo IgM>160陽性",
+      "final_diagnosis": "トキソプラズマ肺炎(免疫正常)",
+      "expected_id": "D110",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S01": "dry",
+        "S04": "at_rest",
+        "L04": "bilateral_infiltrate",
+        "E34": "present",
+        "L11": "very_high",
+        "L01": "high_10000_20000",
+        "E18": "absent",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days",
+        "L09": "negative"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R25": "no"
+      },
+      "result": "",
+      "notes": "免疫正常のトキソプラズマ肺炎(稀). 高熱+肝酵素著明上昇+両側浸潤影. リンパ球優位WBC"
+    },
+    {
+      "id": "R184",
+      "source": "Case Rep Dermatol 2018",
+      "pmcid": "PMC6118827",
+      "vignette": "66F シプロフロキサシン8日間使用後. 2日間の発疹(体幹→頸部→四肢進行)+嚥下困難+排尿時痛. T=38.2, 口腔+陰部粘膜びらん, Nikolsky sign陽性. WBC 9.6k, CRP 110.1, ESR 85. 皮膚生検: 経表皮壊死+血管周囲慢性炎症",
+      "final_diagnosis": "スティーブンス・ジョンソン症候群(シプロフロキサシン誘発)",
+      "expected_id": "D111",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "vesicle_bulla",
+        "E35": "conjunctivitis",
+        "S18": "rash_widespread",
+        "S02": "present",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "シプロフロキサシン8日使用後に発症. 口腔+陰部粘膜びらん+Nikolsky+. CRP 110, ESR 85"
+    },
+    {
+      "id": "R185",
+      "source": "Int J Environ Res Public Health 2022",
+      "pmcid": "PMC8851886",
+      "vignette": "30F てんかん+DM, フェニトイン15日間使用後. 1週間の皮膚病変+39℃発熱+口腔潰瘍(嚥下困難)+排尿時痛. 斑丘疹(顔面/体幹/四肢), 両側結膜充血+膿性分泌物, Nikolsky sign陽性(顔面/頸部/手首), 20%BSA. WBC 13110, CRP 96, ESR 64",
+      "final_diagnosis": "SJS/TEN overlap(フェニトイン誘発)",
+      "expected_id": "D111",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E12": "vesicle_bulla",
+        "E35": "conjunctivitis",
+        "S18": "rash_widespread",
+        "S02": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "フェニトイン15日使用後. SJS/TEN overlap(20%BSA). 結膜充血+Nikolsky+. CRP 96, ESR 64"
+    },
+    {
+      "id": "R186",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10108896",
+      "vignette": "78M 3ヶ月の微熱+進行性倦怠感+両側下肢浮腫+精巣痛+腰背部痛. T=37.8, BP 156/96. 両大腿にlivedo reticularis, 両側アキレス/膝蓋腱反射消失. WBC 11.2k(好中球70%), CRP 10.16, ESR 78, Hb 9.8. HBsAg陰性/HBc抗体陽性. ANCA陰性, ANA陰性. CT: 腸間膜動脈拡張+精巣腫大",
+      "final_diagnosis": "結節性多発動脈炎(PAN)",
+      "expected_id": "D112",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S07": "severe",
+        "S06": "present",
+        "E12": "purpura",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L19": "negative",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "S15": "present"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "典型的PAN: 3ヶ月FUO+livedo+多発神経炎+精巣痛+ESR/CRP著明上昇+ANCA陰性. HBc抗体陽性(既感染)"
+    },
+    {
+      "id": "R187",
+      "source": "Cureus 2021",
+      "pmcid": "PMC8716131",
+      "vignette": "21F 15日間の微熱+食欲低下+体重減少5kg/2ヶ月. 2年間の足底灼熱感+関節痛. BP 160/100, 蒼白+黄疸, 両足壊疽, 手指関節腫脹, 左足背動脈微弱. Hb 7.5, ESR 70, T-Bil 3.1, 尿素/Cr上昇. p-ANCA陽性, 肝腫大. 皮膚生検: 白血球破砕性血管炎",
+      "final_diagnosis": "結節性多発動脈炎(PAN, 多臓器障害)",
+      "expected_id": "D112",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S17": "present",
+        "S08": "present",
+        "S06": "present",
+        "E12": "skin_necrosis",
+        "E18": "present",
+        "E34": "present",
+        "S12": "diffuse",
+        "L28": "elevated",
+        "L19": "p_ANCA",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "S07": "severe"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "若年女性の重症PAN: 壊疽+多臓器障害+p-ANCA陽性(20%で陽性). 術後2日目死亡"
+    },
+    {
+      "id": "R188",
+      "source": "Medicine 2018",
+      "pmcid": "PMC6086525",
+      "vignette": "45F 免疫正常(HIV/肝炎陰性). 6ヶ月の間欠熱(39.7℃)+倦怠感+盗汗+黄疸+暗色尿. 両側頸部/鎖骨上/鼠径リンパ節腫脹(1-2cm). 巨大肝脾腫(脾臍下). WBC 3.66k(好中球79%), Hb 6.5, PLT 58k, CRP 129. T-Bil 125umol/L↑. 胸部CT: 両側GGO. 骨髄: Histoplasma capsulatum確認",
+      "final_diagnosis": "播種性ヒストプラズマ症(免疫正常)",
+      "expected_id": "D113",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "E34": "present",
+        "E14": "present",
+        "E13": "generalized",
+        "E18": "present",
+        "L01": "low_under_4000",
+        "L02": "high_over_10",
+        "L14": "thrombocytopenia",
+        "L04": "bilateral_infiltrate",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "免疫正常の播種性ヒストプラズマ(稀). 6ヶ月FUO+巨大肝脾腫+汎血球減少+CRP129が鍵"
+    },
+    {
+      "id": "R189",
+      "source": "BMJ Case Rep 2014",
+      "pmcid": "PMC4139563",
+      "vignette": "29F HIV+(CD4=1, HAART不良). 1ヶ月の倦怠感+盗汗+悪寒+体重減少+心窩部痛+湿性咳嗽. SpO2 90%. Hb 7.5, WBC 10k(ANC 1000, bands 21%), PLT 78k. AST 466, ALT 80, LDH 724, フェリチン 27960. CXR正常, CT: 両側下葉GGO+大動脈周囲リンパ節腫脹",
+      "final_diagnosis": "播種性ヒストプラズマ症(HIV/AIDS)",
+      "expected_id": "D113",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S07": "severe",
+        "S17": "present",
+        "S01": "productive",
+        "S04": "on_exertion",
+        "S12": "epigastric",
+        "L01": "high_10000_20000",
+        "L14": "thrombocytopenia",
+        "L11": "very_high",
+        "L16": "elevated",
+        "L15": "extreme_over_10000",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R25": "yes",
+        "R05": "yes"
+      },
+      "result": "",
+      "notes": "HIV+ CD4=1. 入院時無熱だが悪寒/盗汗歴. フェリチン27960+LDH724+AST466が鍵. CXR正常"
+    },
+    {
+      "id": "R190",
+      "source": "World J Gastroenterol 2004",
+      "pmcid": "PMC419768",
+      "vignette": "61M 4ヶ月のFUO. 午後~夕方の高熱スパイク(39-40℃)+脱力+咳嗽+大量発汗+紅斑性皮疹. ESR上昇, フェリチン上昇, 軽度正球性貧血. Ca正常, 肝酵素正常, Bil正常. 骨格X線/CT/MRI正常. 血清蛋白電気泳動: IgG-κモノクローナル成分. 骨髄: 35%多形性リンパ球(κ鎖陽性)",
+      "final_diagnosis": "多発性骨髄腫（低悪性度結節型, IgG-κ）",
+      "expected_id": "D114",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S07": "severe",
+        "S01": "dry",
+        "L28": "very_high_over_100",
+        "L15": "mild_elevated",
+        "L11": "normal",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "L09": "negative",
+        "L48": "monoclonal_gammopathy",
+        "L49": "normal",
+        "L50": "very_high"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "4ヶ月FUO+ESR著明上昇+M蛋白. 骨病変なし(低悪性度). ESR>100を推定(文献にelevatedとのみ). E12削除(erythematous rashは非特異的で誤解を招く). 血培陰性追加(4ヶ月FUO精査)"
+    },
+    {
+      "id": "R191",
+      "source": "Cureus 2020",
+      "pmcid": "PMC7491784",
+      "vignette": "34M 3日間の発熱+湿性咳嗽+長期の全身疼痛+倦怠感+食欲低下. 6ヶ月前に右大腿骨病的骨折歴(軽微外傷). 左肩甲下水泡音. Hb 9.7, WBC 5460, ESR 11(正常!), CRP 3.38, Cr 1.79. Alb 2.03, Glob 10(!), β2-MG 9988. 骨髄: 61%形質細胞",
+      "final_diagnosis": "多発性骨髄腫（Stage 3, IgG-κ）",
+      "expected_id": "D114",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "productive",
+        "S07": "severe",
+        "S08": "present",
+        "L01": "normal_4000_10000",
+        "L02": "mild_0.3_3",
+        "L28": "normal",
+        "T01": "under_3d",
+        "T02": "gradual_days",
+        "L48": "monoclonal_gammopathy",
+        "L49": "compression_fracture",
+        "L50": "very_high"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ESR正常(11mm)は非典型的. 発熱は感染合併の可能性. 全身骨痛+Glob 10が鍵だが変数に乏しい"
+    },
+    {
+      "id": "R192",
+      "source": "Case Rep Oncol 2008",
+      "pmcid": "PMC2596496",
+      "vignette": "56M 急性腎不全で発見後, 数ヶ月の遷延する発熱(38.9-39.7℃). WBC 9000-33400(左方移動bands 10-38%). M蛋白3.0g/dL(IgG-κ), IL-6 322.7, G-CSF 113. 骨溶解なし, 骨痛なし, リンパ節腫脹なし, 脾腫なし. 感染精査全て陰性. 自己免疫マーカー全て陰性. 骨髄: 40-50%異型形質細胞",
+      "final_diagnosis": "多発性骨髄腫(Stage IIIB, IgG-κ, G-CSF産生型)",
+      "expected_id": "D114",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "L01": "very_high_over_20000",
+        "L14": "left_shift",
+        "L09": "negative",
+        "T01": "over_3w",
+        "T02": "gradual_days",
+        "L19": "negative",
+        "L48": "monoclonal_gammopathy",
+        "L49": "normal",
+        "L50": "very_high"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "G-CSF/IL-6産生型骨髄腫. WBC著明上昇+左方移動は非典型的(通常の骨髄腫はWBC低下). ESR記載なし"
     }
   ],
   "total_cases": 110

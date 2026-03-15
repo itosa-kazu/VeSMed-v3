@@ -7,7 +7,8 @@ import json
 import os
 from flask import Flask, render_template, request, jsonify
 from bn_inference import (build_model, infer, entropy, load_json,
-                          next_best_test, compute_idf_disc)
+                          next_best_test, next_best_falsification_test,
+                          compute_idf_disc)
 
 app = Flask(__name__)
 
@@ -155,7 +156,41 @@ def api_next_best_test():
             "state_details": state_details,
         })
 
-    return jsonify({"recommendations": results})
+    # Falsification recommendations (反証推奨)
+    falsification = next_best_falsification_test(
+        evidence, risk, diseases, disease_children, noisy_or, root_priors,
+        disc=idf_disc, disc_power=IDF_DISC_POWER, cf_alpha=CF_COVERAGE_ALPHA,
+        top_n=5,
+    )
+
+    falsification_results = []
+    for rec in falsification:
+        vid = rec["var_id"]
+        v = var_lookup.get(vid, {})
+        state_details = []
+        for sd in rec.get("state_details", []):
+            state_details.append({
+                "state": sd["state"],
+                "prob": round(sd["prob"] * 100, 1),
+                "h_after": round(sd["h_after"], 2),
+            })
+        falsification_results.append({
+            "id": vid,
+            "name": v.get("name", vid),
+            "name_ja": v.get("name_ja", vid),
+            "category": v.get("category", ""),
+            "h_increase": round(rec["h_increase"], 3),
+            "h_now": round(rec["h_now"], 2),
+            "disruptive_state": rec.get("disruptive_state", ""),
+            "disruptive_h": round(rec.get("disruptive_h", 0), 2),
+            "state_details": state_details,
+            "ig": round(rec["ig"], 3),
+        })
+
+    return jsonify({
+        "recommendations": results,
+        "falsification": falsification_results,
+    })
 
 
 if __name__ == "__main__":

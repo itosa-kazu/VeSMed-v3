@@ -4051,6 +4051,104 @@
       ],
       "severity": "critical",
       "note": "免疫不全(HIV CD4<100,臓器移植,ステロイド)で好発。髄膜炎型(70-80%):頭痛+発熱+意識障害。肺型:咳嗽+胸部異常影。墨汁染色/CrAg陽性で確定"
+    },
+    {
+      "id": "D110",
+      "name": "toxoplasmosis",
+      "name_ja": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Toxoplasma gondii。免疫正常: 頸部リンパ節腫脹+微熱(自己限定)。免疫不全(HIV CD4<100): 脳炎(環状増強病変)+発熱+意識障害+痙攣。脈絡網膜炎(10-20%)。診断: IgG/IgM血清学, MRI, PCR"
+    },
+    {
+      "id": "D111",
+      "name": "SJS_TEN",
+      "name_ja": "スティーブンス・ジョンソン症候群/TEN",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "薬剤性(>80%): 抗てんかん薬/抗菌薬/アロプリノール/NSAIDs。前駆: 発熱+倦怠感+咽頭痛(1-3日)→標的状紅斑→水疱/表皮壊死+粘膜びらん(口腔90%,眼80%,陰部40%)。Nikolsky sign陽性。SJS<10%BSA, TEN>30%BSA。死亡率SJS 1-5%, TEN 25-35%"
+    },
+    {
+      "id": "D112",
+      "name": "polyarteritis_nodosa",
+      "name_ja": "結節性多発動脈炎（PAN）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "中型血管炎。肺を除く全臓器を侵す。発熱+体重減少+筋痛+紫斑/皮膚壊死+腹痛+末梢神経障害。ESR著明上昇, ANCA通常陰性。HBV関連あり。診断: 血管造影(微小動脈瘤)+生検"
+    },
+    {
+      "id": "D113",
+      "name": "disseminated_histoplasmosis",
+      "name_ja": "播種性ヒストプラズマ症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Histoplasma capsulatum。免疫不全(HIV CD4<150)で播種性。発熱+体重減少+肝脾腫+汎血球減少+LDH/フェリチン著明上昇。CXR: 粟粒影/びまん性浸潤影。流行地渡航歴。診断: 尿/血清抗原, 骨髄培養"
+    },
+    {
+      "id": "D114",
+      "name": "multiple_myeloma",
+      "name_ja": "多発性骨髄腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "形質細胞腫瘍。高齢者のFUO。CRAB(Ca↑/腎不全/貧血/骨病変)。骨痛(58-70%)+倦怠感+体重減少。ESR著明上昇(>100)が診断手がかり。繰り返す感染(免疫不全)。診断: 血清蛋白電気泳動/骨髄生検"
+    },
+    {
+      "id": "L48",
+      "name": "SPEP_immunofixation",
+      "name_ja": "血清蛋白電気泳動/免疫固定",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "monoclonal_gammopathy",
+        "polyclonal_gammopathy"
+      ],
+      "note": "M蛋白検出。骨髄腫(monoclonal 90%+), リンパ腫(5-10%), サルコイドーシス/SLE/感染症(polyclonal高γ)"
+    },
+    {
+      "id": "L49",
+      "name": "skeletal_survey",
+      "name_ja": "骨X線（骨溶解性病変）",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "lytic_lesions",
+        "compression_fracture"
+      ],
+      "note": "骨髄腫(打ち抜き像80%), リンパ腫(骨浸潤), 椎体骨髄炎(圧迫骨折), 急性白血病(骨浸潤), 腎細胞癌(転移性骨病変)"
+    },
+    {
+      "id": "L50",
+      "name": "total_serum_protein",
+      "name_ja": "血清総蛋白(TP)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mildly_elevated",
+        "very_high"
+      ],
+      "note": "基本血液検査(肝機能パネル含)。正常6.5-8.0g/dL。骨髄腫ではM蛋白により10g/dL超(very_high)が多い。ポリクローナル高γ(SLE/サルコイドーシス/HIV等)ではmild上昇。"
     }
   ]
 }

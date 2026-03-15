@@ -279,6 +279,15 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 
         <!-- Tab: Recommendations -->
         <div class="tab-content" id="tab-recommend">
+          <div style="background:#fff3e0;border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:12px;line-height:1.5;">
+            <b>反証推奨（主）:</b> 現在の診断を覆す可能性がある検査。鑑別疾患の除外(rule-out)に有効。<br>
+            <b>確認推奨（副）:</b> 現在の診断をさらに絞り込む検査。確定診断(rule-in)に有効。
+          </div>
+          <div style="font-weight:bold;font-size:13px;color:#e65100;margin:8px 0 4px;">反証推奨 — 鑑別除外</div>
+          <div class="results-list" id="falsificationList">
+            <div class="empty-state">推論実行後に表示されます</div>
+          </div>
+          <div style="font-weight:bold;font-size:13px;color:#1565c0;margin:12px 0 4px;">確認推奨 — 診断絞込</div>
           <div class="results-list" id="recommendList">
             <div class="empty-state">推論実行後に推奨検査が表示されます</div>
           </div>
@@ -426,6 +435,15 @@ const STATE_JA = {
   other_abnormal:"その他異常", temporal_lobe_lesion:"側頭葉病変",
   uveitis:"ぶどう膜炎", exudate_or_white_patch:"滲出物/白苔",
   bloody:"血性", excessive:"過多",
+  // SPEP (L48)
+  monoclonal_gammopathy:"単クローン性γグロブリン血症(M蛋白)",
+  polyclonal_gammopathy:"多クローン性γグロブリン血症",
+  // Skeletal survey (L49)
+  lytic_lesions:"溶骨性病変(打ち抜き像)",
+  // Total protein (L50)
+  mildly_elevated:"軽度上昇",
+  very_high:"著高",
+  compression_fracture:"圧迫骨折",
 };
 
 function stateJa(s) { return STATE_JA[s] || s; }
@@ -488,6 +506,7 @@ function clearAll() {
   updateBadges();
   updateSelectedSummary();
   document.getElementById('resultsList').innerHTML = '<div class="empty-state">症状・検査所見を選択して「推論」をクリック</div>';
+  document.getElementById('falsificationList').innerHTML = '<div class="empty-state">推論実行後に表示されます</div>';
   document.getElementById('recommendList').innerHTML = '<div class="empty-state">推論実行後に推奨検査が表示されます</div>';
   document.getElementById('dontMissList').innerHTML = '<div class="empty-state">推論実行後に見逃し注意疾患が表示されます</div>';
   document.getElementById('warnCount').style.display = 'none';
@@ -524,6 +543,7 @@ async function runAll() {
   const btn = document.getElementById('btnInfer');
   btn.classList.add('loading');
   btn.textContent = '計算中...';
+  document.getElementById('falsificationList').innerHTML = '<div class="empty-state">反証推奨を計算中...</div>';
   document.getElementById('recommendList').innerHTML = '<div class="empty-state">情報利得を計算中...</div>';
 
   const body = JSON.stringify({ evidence, risk_factors: risk });
@@ -563,7 +583,37 @@ async function runAll() {
       </div>`;
     }).join('');
 
-    // ── Recommendations ──
+    // ── Falsification recommendations (反証推奨) ──
+    const falsRecs = recData.falsification || [];
+    const filteredFals = falsRecs.filter(r => r.h_increase > 0.01);
+    document.getElementById('falsificationList').innerHTML = filteredFals.length === 0
+      ? '<div class="empty-state">反証推奨なし（現診断は安定）</div>'
+      : filteredFals.map((r, i) => {
+          const catLabel2 = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'}[r.category] || r.category;
+          const catCss2 = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'}[r.category] || '';
+          const disruptJa = stateJa(r.disruptive_state);
+          const details2 = (r.state_details || []).map(sd => {
+            const isDisrupt = sd.state === r.disruptive_state;
+            return `<div class="rec-state-row${isDisrupt ? ' best' : ''}">
+              <span class="s-name">${isDisrupt ? '\u26a0 ' : '  '}${stateJa(sd.state)}</span>
+              <span class="s-prob">P=${sd.prob}%</span>
+              <span class="s-h">H\u2192${sd.h_after}</span>
+            </div>`;
+          }).join('');
+          return `<div class="rec-row" style="border-left:3px solid #e65100;" onclick="toggleDetail('f${i}')">
+            <span class="rec-rank" style="background:#e65100;">${i + 1}</span>
+            <div class="rec-info">
+              <div class="rec-name">${r.name_ja}</div>
+              <div class="rec-id">${r.id} ${r.name}</div>
+              <div class="rec-expected" style="color:#e65100;">もし${disruptJa} \u2192 H=${r.disruptive_h} (+${r.h_increase.toFixed(2)})</div>
+            </div>
+            <span class="rec-cat rec-cat-${catCss2}">${catLabel2}</span>
+            <div class="rec-ig" style="color:#e65100;">\u0394H +${r.h_increase.toFixed(2)}</div>
+          </div>
+          <div class="rec-states-detail" id="rec-detail-f${i}">${details2}</div>`;
+        }).join('');
+
+    // ── Confirmation recommendations (確認推奨) ──
     const recs = recData.recommendations || [];
     const CAT_LABELS = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'};
     const CAT_CSS = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'};
