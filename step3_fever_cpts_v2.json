@@ -2541,6 +2541,16 @@
         "no": 0.003,
         "yes": 0.015
       }
+    },
+    "D126": {
+      "parents": [
+        "R08"
+      ],
+      "description": "アナフィラキシー。薬剤が最多誘因",
+      "cpt": {
+        "no": 0.001,
+        "yes": 0.005
+      }
     }
   },
   "noisy_or_params": {
@@ -3526,6 +3536,13 @@
           "38.0_39.0": 0.04,
           "39.0_40.0": 0.01,
           "over_40.0": 0.0
+        },
+        "D126": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.0
         }
       }
     },
@@ -3831,6 +3848,11 @@
           "under_100": 0.03,
           "100_120": 0.17,
           "over_120": 0.8
+        },
+        "D126": {
+          "under_100": 0.08,
+          "100_120": 0.32,
+          "over_120": 0.6
         }
       }
     },
@@ -3956,6 +3978,10 @@
         "D125": {
           "normal_over_90": 0.7,
           "hypotension_under_90": 0.3
+        },
+        "D126": {
+          "normal_over_90": 0.45,
+          "hypotension_under_90": 0.55
         }
       }
     },
@@ -4187,6 +4213,11 @@
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.25
+        },
+        "D126": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.35
         }
       }
     },
@@ -4322,6 +4353,12 @@
           "crackles": 0.02,
           "wheezes": 0.03,
           "decreased_absent": 0.9
+        },
+        "D126": {
+          "clear": 0.3,
+          "crackles": 0.05,
+          "wheezes": 0.6,
+          "decreased_absent": 0.05
         }
       }
     },
@@ -4886,6 +4923,17 @@
           "purpura": 0.02,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.02
+        },
+        "D126": {
+          "normal": 0.08,
+          "localized_erythema_warmth_swelling": 0.1,
+          "petechiae_purpura": 0.02,
+          "maculopapular_rash": 0.15,
+          "vesicular_dermatomal": 0.02,
+          "diffuse_erythroderma": 0.5,
+          "purpura": 0.03,
+          "vesicle_bulla": 0.05,
+          "skin_necrosis": 0.05
         }
       }
     },
@@ -5291,6 +5339,11 @@
           "normal": 0.8,
           "confused": 0.12,
           "obtunded": 0.08
+        },
+        "D126": {
+          "normal": 0.65,
+          "confused": 0.2,
+          "obtunded": 0.15
         }
       }
     },
@@ -6539,6 +6592,12 @@
           "normal_4000_10000": 0.75,
           "high_10000_20000": 0.18,
           "very_high_over_20000": 0.04
+        },
+        "D126": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.75,
+          "high_10000_20000": 0.18,
+          "very_high_over_20000": 0.04
         }
       }
     },
@@ -7232,6 +7291,12 @@
         "D125": {
           "normal_under_0.3": 0.55,
           "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.12,
+          "high_over_10": 0.03
+        },
+        "D126": {
+          "normal_under_0.3": 0.6,
+          "mild_0.3_3": 0.25,
           "moderate_3_10": 0.12,
           "high_over_10": 0.03
         }
@@ -9857,6 +9922,11 @@
           "absent": 0.3,
           "on_exertion": 0.3,
           "at_rest": 0.4
+        },
+        "D126": {
+          "absent": 0.25,
+          "on_exertion": 0.15,
+          "at_rest": 0.6
         }
       }
     },
@@ -11205,6 +11275,10 @@
         "D120": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D126": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -11578,6 +11652,11 @@
           "absent": 0.3,
           "localized_pain_redness": 0.25,
           "rash_widespread": 0.45
+        },
+        "D126": {
+          "absent": 0.08,
+          "localized_pain_redness": 0.12,
+          "rash_widespread": 0.8
         }
       }
     },
@@ -13240,6 +13319,12 @@
           "3d_to_1w": 0.2,
           "1w_to_3w": 0.08,
           "over_3w": 0.02
+        },
+        "D126": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
         }
       }
     },
@@ -13473,6 +13558,10 @@
         "D125": {
           "sudden_hours": 0.75,
           "gradual_days": 0.25
+        },
+        "D126": {
+          "sudden_hours": 0.95,
+          "gradual_days": 0.05
         }
       }
     },

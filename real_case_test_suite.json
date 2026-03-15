@@ -5234,6 +5234,87 @@
       },
       "result": "",
       "notes": "AF with RVRに見えるが本体はPE. D-dimer>20, McConnell sign. 不整脈ではなくPEとして評価"
+    },
+    {
+      "id": "R211",
+      "source": "Clin Pract Cases Emerg Med 2020",
+      "pmcid": "PMC7219999",
+      "vignette": "76M PEG内服後に急性呼吸困難(2語文)+全身紅斑+激しい掻痒+血管浮腫(軟口蓋・舌). HR 163→173, BP 177/143→63/42, RR 23→34, SpO2 93→78%. 両肺野全域で喘鳴. エピネフリン0.3mg IM+気管挿管. アナフィラキシーショック",
+      "final_diagnosis": "アナフィラキシーショック(PEG誘発)",
+      "expected_id": "D126",
+      "in_scope": true,
+      "evidence": {
+        "E12": "diffuse_erythroderma",
+        "S18": "rash_widespread",
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "E03": "hypotension_under_90",
+        "E02": "over_120",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "PEG経口摂取後の重症アナフィラキシー. BP 63/42, SpO2 78%"
+    },
+    {
+      "id": "R212",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10247291",
+      "vignette": "69F 眼科手術中にパントプラゾール40mg IV後. 一過性意識消失(GCS 4)+顔面/頸部/胸部の紅斑+散在性喘鳴+低血圧(80/45→40/20). SpO2 85%, HR 110→121. トリプターゼ54.5(45分後). エピネフリン0.5mg IM+ノルアドレナリン持続",
+      "final_diagnosis": "アナフィラキシーショック(パントプラゾール誘発)",
+      "expected_id": "D126",
+      "in_scope": true,
+      "evidence": {
+        "E12": "maculopapular_rash",
+        "S18": "rash_widespread",
+        "E16": "obtunded",
+        "E07": "wheezes",
+        "E03": "hypotension_under_90",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "パントプラゾールIV後のアナフィラキシー. トリプターゼ54.5で確定"
+    },
+    {
+      "id": "R213",
+      "source": "J Anesth 2020",
+      "pmcid": "PMC7142184",
+      "vignette": "63F GI内視鏡中にブチルスコポラミン10mg IV後4分で急変. 顔面チアノーゼ+意識消失+SpO2 82→72→測定不能. HR 69→144, BP 95/51→70/42→測定不能. 軽度全身皮疹(遅発). トリプターゼ174, ヒスタミン271.7. エピネフリン0.3mg IM x2+気管挿管",
+      "final_diagnosis": "アナフィラキシー Grade III(ブチルスコポラミン誘発)",
+      "expected_id": "D126",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E05": "severe_hypoxia_under_93",
+        "E03": "hypotension_under_90",
+        "E02": "over_120",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "皮疹遅発(42分後)のため皮膚所見をevidenceに入れない. トリプターゼ174で確定"
     }
   ],
   "total_cases": 110
