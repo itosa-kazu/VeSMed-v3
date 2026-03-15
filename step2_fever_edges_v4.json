@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1896,
+  "total_edges": 1910,
   "edges": [
     {
       "from": "R01",
@@ -17769,6 +17769,104 @@
       "from_name": "acute_myocarditis",
       "to_name": "S06",
       "reason": "心筋炎: 筋肉痛(先行URI症状の残存, 20-30%)"
+    },
+    {
+      "from": "D117",
+      "to": "E01",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "E01",
+      "reason": "硬膜外膿瘍: 発熱(50-70%, Stage 1で出現, 進行後は消退もあり)"
+    },
+    {
+      "from": "D117",
+      "to": "S22",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "S22",
+      "reason": "硬膜外膿瘍: 背部痛(90-95%, 最も早い症状, 限局性+圧痛)"
+    },
+    {
+      "from": "D117",
+      "to": "S15",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "S15",
+      "reason": "硬膜外膿瘍: 側腹部痛/腰背部痛(50-70%, 放散痛Stage 2)"
+    },
+    {
+      "from": "D117",
+      "to": "E06",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "E06",
+      "reason": "硬膜外膿瘍: 項部硬直(20-30%, Stage 2, 頸椎病変で多い)"
+    },
+    {
+      "from": "D117",
+      "to": "S06",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "S06",
+      "reason": "硬膜外膿瘍: 筋肉痛/圧痛(30-40%, 傍脊柱筋)"
+    },
+    {
+      "from": "D117",
+      "to": "E16",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "E16",
+      "reason": "硬膜外膿瘍: 意識障害(10-20%, 敗血症合併時)"
+    },
+    {
+      "from": "D117",
+      "to": "L01",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "L01",
+      "reason": "硬膜外膿瘍: WBC上昇(60-80%)"
+    },
+    {
+      "from": "D117",
+      "to": "L02",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "L02",
+      "reason": "硬膜外膿瘍: CRP著高(80-95%)"
+    },
+    {
+      "from": "D117",
+      "to": "L28",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "L28",
+      "reason": "硬膜外膿瘍: ESR著高(>90%, 平均70-100mm/h)"
+    },
+    {
+      "from": "D117",
+      "to": "L03",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "L03",
+      "reason": "硬膜外膿瘍: プロカルシトニン上昇(細菌感染)"
+    },
+    {
+      "from": "D117",
+      "to": "L09",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "L09",
+      "reason": "硬膜外膿瘍: 血培陽性(50-60%, グラム陽性=S.aureus)"
+    },
+    {
+      "from": "D117",
+      "to": "T01",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "T01",
+      "reason": "硬膜外膿瘍: 急性(数日)~亜急性(1-2週)"
+    },
+    {
+      "from": "D117",
+      "to": "T02",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "T02",
+      "reason": "硬膜外膿瘍: 急性~亜急性発症"
+    },
+    {
+      "from": "D117",
+      "to": "S09",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "S09",
+      "reason": "硬膜外膿瘍: 悪寒戦慄(菌血症, 30-40%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

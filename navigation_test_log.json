@@ -253,6 +253,39 @@
         }
       ],
       "conclusion": "Step 1で即Top-1。急性胸痛+呼吸困難が心筋炎に特異的。無熱でも安定。反証推奨Step4で自然消滅"
+    },
+    {
+      "case_id": "R198",
+      "pmcid": "PMC4202809",
+      "final_diagnosis": "脊椎硬膜外膿瘍(Th3-Th6)",
+      "expected_id": "D117",
+      "traditional_result": "Top-1 51.9%",
+      "navigation_result": "Step1でTop-1(33.5%), Step2で頭痛+項部硬直追加→rank2に脱落(髄膜炎/脳炎が浮上)",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "action": "背部痛+40℃高熱",
+          "D117_rank": 1,
+          "D117_prob": "33.5%",
+          "H": 3.9
+        },
+        {
+          "step": 2,
+          "action": "+頭痛+項部硬直",
+          "D117_rank": 2,
+          "D117_prob": "16.4%",
+          "H": 2.39,
+          "note": "ヘルペス脳炎(D84)がTop-1に。髄膜炎との鑑別が課題"
+        },
+        {
+          "step": 3,
+          "action": "+CRP 128",
+          "D117_rank": 2,
+          "D117_prob": "30.0%",
+          "H": 2.39
+        }
+      ],
+      "conclusion": "背部痛+発熱ではTop-1だが、頭痛+項部硬直で髄膜炎/脳炎に奪われる。見逃し率56%の臨床実態を忠実に再現。反証推奨がMRI/ESRを提示"
     }
   ]
 }

@@ -4902,6 +4902,58 @@
       },
       "result": "",
       "notes": "伝統+ナビ両方テスト. 咽頭炎→心筋炎. 検査値の詳細少ない. 咽頭痛+胸痛+発熱が鍵"
+    },
+    {
+      "id": "R198",
+      "source": "Case Rep Med 2014",
+      "pmcid": "PMC4202809",
+      "vignette": "26F 喘息(長期ステロイド). 3週前に細菌性扁桃炎. 3日間の胸椎背部痛+40℃高熱+頭痛+項部硬直+Kernig徴候陽性. 左上肢・心窩部への放散痛. 第6病日に弛緩性下肢麻痺+Th6以下感覚鈍麻+膀胱直腸障害出現. CRP 128. MRI: Th3-Th6後方硬膜外膿瘍(厚さ8mm, 脊髄圧排2mm). S.aureus確認",
+      "final_diagnosis": "脊椎硬膜外膿瘍(Th3-Th6, S.aureus)",
+      "expected_id": "D117",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S22": "present",
+        "S05": "severe",
+        "E06": "present",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R05": "yes"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 初期は肋間神経痛と誤診. Stage 2→3に急速進行(6日目に麻痺)"
+    },
+    {
+      "id": "R199",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10470477",
+      "vignette": "62F DM(HbA1c 11.5). 1週間の腰背部痛(重労働後)+進行性下肢筋力低下→転倒. 混乱(家族指摘). T=96.5°F(無熱), HR 100. WBC 21.5k(好中球84%). 左第3趾壊死創. 血培: GBS陽性. MRI: T10-S2の広範硬膜外膿瘍+馬尾圧迫. 緊急椎弓切除術",
+      "final_diagnosis": "脊椎硬膜外膿瘍(T10-S2, GBS, 多発性)",
+      "expected_id": "D117",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S22": "present",
+        "S15": "present",
+        "E16": "confused",
+        "E02": "100_120",
+        "L01": "very_high_over_20000",
+        "L09": "gram_positive",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R04": "yes"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 無熱(96.5F)! DM+足壊死がリスク. 初診では筋骨格系疼痛と判断された"
     }
   ],
   "total_cases": 110
