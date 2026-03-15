@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2994,
+  "total_edges": 3036,
   "edges": [
     {
       "from": "R01",
@@ -25455,6 +25455,300 @@
       "from_name": "TTP",
       "to_name": "S06",
       "reason": "TTP: 筋肉痛(20-30%)"
+    },
+    {
+      "from": "D05",
+      "to": "L17",
+      "from_name": "pneumonia",
+      "to_name": "L17",
+      "reason": "肺炎: CK上昇(横紋筋融解合併, Legionellaで特に)"
+    },
+    {
+      "from": "D11",
+      "to": "E02",
+      "from_name": "pericarditis",
+      "to_name": "E02",
+      "reason": "心膜炎: 頻脈(50-70%)"
+    },
+    {
+      "from": "D28",
+      "to": "E16",
+      "from_name": "typhoid",
+      "to_name": "E16",
+      "reason": "腸チフス: 意識障害(typhoid encephalopathy, 10-20%)"
+    },
+    {
+      "from": "D28",
+      "to": "S09",
+      "from_name": "typhoid",
+      "to_name": "S09",
+      "reason": "腸チフス: 悪寒戦慄(50-60%)"
+    },
+    {
+      "from": "D29",
+      "to": "L03",
+      "from_name": "liver_abscess",
+      "to_name": "L03",
+      "reason": "肝膿瘍: PCT上昇(細菌性)"
+    },
+    {
+      "from": "D29",
+      "to": "S05",
+      "from_name": "liver_abscess",
+      "to_name": "S05",
+      "reason": "肝膿瘍: 頭痛(20-30%)"
+    },
+    {
+      "from": "D37",
+      "to": "S15",
+      "from_name": "campylobacter",
+      "to_name": "S15",
+      "reason": "カンピロ腸炎: 側腹部痛(まれ, 10-15%)"
+    },
+    {
+      "from": "D57",
+      "to": "L11",
+      "from_name": "NF",
+      "to_name": "L11",
+      "reason": "壊死性筋膜炎: 肝酵素上昇(敗血症/MOF)"
+    },
+    {
+      "from": "D57",
+      "to": "S13",
+      "from_name": "NF",
+      "to_name": "S13",
+      "reason": "壊死性筋膜炎: 嘔気(毒素/敗血症, 40-50%)"
+    },
+    {
+      "from": "D58",
+      "to": "L16",
+      "from_name": "Still",
+      "to_name": "L16",
+      "reason": "Still病: LDH上昇(活動期, 60-70%)"
+    },
+    {
+      "from": "D67",
+      "to": "E03",
+      "from_name": "lymphoma",
+      "to_name": "E03",
+      "reason": "悪性リンパ腫: 低血圧(進行期/SVC症候群)"
+    },
+    {
+      "from": "D96",
+      "to": "S01",
+      "from_name": "Kikuchi",
+      "to_name": "S01",
+      "reason": "菊池病: 咳嗽(URI様前駆, 15-20%)"
+    },
+    {
+      "from": "D107",
+      "to": "S12",
+      "from_name": "HLH",
+      "to_name": "S12",
+      "reason": "HLH: 腹痛(肝脾腫, 30-40%)"
+    },
+    {
+      "from": "D130",
+      "to": "L15",
+      "from_name": "ILD",
+      "to_name": "L15",
+      "reason": "ILD: フェリチン上昇(肺線維化/炎症)"
+    },
+    {
+      "from": "D142",
+      "to": "L44",
+      "from_name": "seizure",
+      "to_name": "L44",
+      "reason": "てんかん: 電解質異常(誘因/結果)"
+    },
+    {
+      "from": "D142",
+      "to": "S52",
+      "from_name": "seizure",
+      "to_name": "S52",
+      "reason": "てんかん: 局所神経脱落(Todd麻痺, 20-30%)"
+    },
+    {
+      "from": "D142",
+      "to": "S04",
+      "from_name": "seizure",
+      "to_name": "S04",
+      "reason": "てんかん: 呼吸困難(SE後)"
+    },
+    {
+      "from": "D142",
+      "to": "S05",
+      "from_name": "seizure",
+      "to_name": "S05",
+      "reason": "てんかん: 頭痛(発作後, 40-50%)"
+    },
+    {
+      "from": "D145",
+      "to": "S12",
+      "from_name": "testicular_torsion",
+      "to_name": "S12",
+      "reason": "精巣捻転: 腹痛(関連痛/下腹部, 30-40%)"
+    },
+    {
+      "from": "D146",
+      "to": "L02",
+      "from_name": "hypertensive_emergency",
+      "to_name": "L02",
+      "reason": "高血圧緊急症: CRP上昇(臓器障害)"
+    },
+    {
+      "from": "D149",
+      "to": "S12",
+      "from_name": "CO_poisoning",
+      "to_name": "S12",
+      "reason": "CO中毒: 腹痛(30-40%)"
+    },
+    {
+      "from": "D149",
+      "to": "S04",
+      "from_name": "CO_poisoning",
+      "to_name": "S04",
+      "reason": "CO中毒: 呼吸困難(低酸素)"
+    },
+    {
+      "from": "D153",
+      "to": "S02",
+      "from_name": "rhabdomyolysis",
+      "to_name": "S02",
+      "reason": "横紋筋融解: 咽頭痛(感染誘因, 20-30%)"
+    },
+    {
+      "from": "D158",
+      "to": "S13",
+      "from_name": "AIHA",
+      "to_name": "S13",
+      "reason": "AIHA: 嘔気(30-40%)"
+    },
+    {
+      "from": "D161",
+      "to": "L01",
+      "from_name": "organophosphate",
+      "to_name": "L01",
+      "reason": "有機リン: WBC(ストレス応答)"
+    },
+    {
+      "from": "D162",
+      "to": "E12",
+      "from_name": "HUS",
+      "to_name": "E12",
+      "reason": "HUS: 皮膚(点状出血/紫斑, 30-40%)"
+    },
+    {
+      "from": "D162",
+      "to": "L52",
+      "from_name": "HUS",
+      "to_name": "L52",
+      "reason": "HUS: D-dimer上昇(TMA/DIC様)"
+    },
+    {
+      "from": "D164",
+      "to": "E38",
+      "from_name": "chronic_SDH",
+      "to_name": "E38",
+      "reason": "慢性SDH: 高血圧(頭蓋内圧亢進, 30-40%)"
+    },
+    {
+      "from": "D164",
+      "to": "S13",
+      "from_name": "chronic_SDH",
+      "to_name": "S13",
+      "reason": "慢性SDH: 嘔吐(頭蓋内圧亢進, 40-50%)"
+    },
+    {
+      "from": "D164",
+      "to": "E02",
+      "from_name": "chronic_SDH",
+      "to_name": "E02",
+      "reason": "慢性SDH: 頻脈(Cushing response後期, 20-30%)"
+    },
+    {
+      "from": "D168",
+      "to": "E02",
+      "from_name": "RPGN",
+      "to_name": "E02",
+      "reason": "RPGN: 頻脈(炎症/貧血)"
+    },
+    {
+      "from": "D168",
+      "to": "E36",
+      "from_name": "RPGN",
+      "to_name": "E36",
+      "reason": "RPGN: 浮腫(体液過剰/AKI)"
+    },
+    {
+      "from": "D168",
+      "to": "E38",
+      "from_name": "RPGN",
+      "to_name": "E38",
+      "reason": "RPGN: 高血圧(腎性, 50-60%)"
+    },
+    {
+      "from": "D170",
+      "to": "S44",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "S44",
+      "reason": "アルコール性肝炎: 出血傾向(凝固障害, 30-40%)"
+    },
+    {
+      "from": "D175",
+      "to": "L02",
+      "from_name": "AIP",
+      "to_name": "L02",
+      "reason": "AIP: CRP上昇(炎症反応)"
+    },
+    {
+      "from": "D177",
+      "to": "E03",
+      "from_name": "ischemic_colitis",
+      "to_name": "E03",
+      "reason": "虚血性腸炎: 低血圧(ショック型)"
+    },
+    {
+      "from": "D177",
+      "to": "L52",
+      "from_name": "ischemic_colitis",
+      "to_name": "L52",
+      "reason": "虚血性腸炎: D-dimer上昇(血栓/虚血)"
+    },
+    {
+      "from": "D177",
+      "to": "L55",
+      "from_name": "ischemic_colitis",
+      "to_name": "L55",
+      "reason": "虚血性腸炎: AKI(脱水/ショック)"
+    },
+    {
+      "from": "D178",
+      "to": "E38",
+      "from_name": "listeria_meningitis",
+      "to_name": "E38",
+      "reason": "リステリア: 高血圧(髄膜炎性, 30-40%)"
+    },
+    {
+      "from": "D178",
+      "to": "L11",
+      "from_name": "listeria_meningitis",
+      "to_name": "L11",
+      "reason": "リステリア: 肝酵素(敗血症性, 20-30%)"
+    },
+    {
+      "from": "D185",
+      "to": "S14",
+      "from_name": "hereditary_angioedema",
+      "to_name": "S14",
+      "reason": "HAE: 下痢(消化管浮腫, 40-50%)"
+    },
+    {
+      "from": "D185",
+      "to": "L52",
+      "from_name": "hereditary_angioedema",
+      "to_name": "L52",
+      "reason": "HAE: D-dimer上昇(発作時, 報告あり)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
