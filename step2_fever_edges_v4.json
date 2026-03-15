@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3647,
+  "total_edges": 3686,
   "edges": [
     {
       "from": "R01",
@@ -30026,6 +30026,279 @@
       "from_name": "AIP",
       "to_name": "S08",
       "reason": "AIP: 関節痛(Sjogren合併時)"
+    },
+    {
+      "from": "D195",
+      "to": "E04",
+      "from_name": "drug_pneumonitis",
+      "to_name": "E04",
+      "reason": "薬剤性肺炎: 頻呼吸"
+    },
+    {
+      "from": "D195",
+      "to": "L55",
+      "from_name": "drug_pneumonitis",
+      "to_name": "L55",
+      "reason": "薬剤性肺炎: AKI"
+    },
+    {
+      "from": "D207",
+      "to": "S12",
+      "from_name": "HIT",
+      "to_name": "S12",
+      "reason": "HIT: 腹痛"
+    },
+    {
+      "from": "D207",
+      "to": "E01",
+      "from_name": "HIT",
+      "to_name": "E01",
+      "reason": "HIT: 発熱"
+    },
+    {
+      "from": "D207",
+      "to": "E03",
+      "from_name": "HIT",
+      "to_name": "E03",
+      "reason": "HIT: 低血圧"
+    },
+    {
+      "from": "D207",
+      "to": "L53",
+      "from_name": "HIT",
+      "to_name": "L53",
+      "reason": "HIT: トロポニン"
+    },
+    {
+      "from": "D146",
+      "to": "S12",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S12",
+      "reason": "高血圧緊急症: 腹痛"
+    },
+    {
+      "from": "D250",
+      "to": "L14",
+      "from_name": "PBC",
+      "to_name": "L14",
+      "reason": "PBC: 汎血球減少"
+    },
+    {
+      "from": "D250",
+      "to": "L01",
+      "from_name": "PBC",
+      "to_name": "L01",
+      "reason": "PBC: WBC低下"
+    },
+    {
+      "from": "D234",
+      "to": "S08",
+      "from_name": "CML",
+      "to_name": "S08",
+      "reason": "CML: 関節痛"
+    },
+    {
+      "from": "D234",
+      "to": "E18",
+      "from_name": "CML",
+      "to_name": "E18",
+      "reason": "CML: 黄疸"
+    },
+    {
+      "from": "D234",
+      "to": "E12",
+      "from_name": "CML",
+      "to_name": "E12",
+      "reason": "CML: 皮疹"
+    },
+    {
+      "from": "D234",
+      "to": "E36",
+      "from_name": "CML",
+      "to_name": "E36",
+      "reason": "CML: 浮腫"
+    },
+    {
+      "from": "D199",
+      "to": "S13",
+      "from_name": "rabies",
+      "to_name": "S13",
+      "reason": "狂犬病: 嘔吐"
+    },
+    {
+      "from": "D209",
+      "to": "L14",
+      "from_name": "myelofibrosis",
+      "to_name": "L14",
+      "reason": "骨髄線維症: 血小板減少"
+    },
+    {
+      "from": "D209",
+      "to": "S15",
+      "from_name": "myelofibrosis",
+      "to_name": "S15",
+      "reason": "骨髄線維症: 背部痛"
+    },
+    {
+      "from": "D209",
+      "to": "S14",
+      "from_name": "myelofibrosis",
+      "to_name": "S14",
+      "reason": "骨髄線維症: 下痢"
+    },
+    {
+      "from": "D246",
+      "to": "E03",
+      "from_name": "EHEC",
+      "to_name": "E03",
+      "reason": "EHEC: 低血圧"
+    },
+    {
+      "from": "D246",
+      "to": "L14",
+      "from_name": "EHEC",
+      "to_name": "L14",
+      "reason": "EHEC: 血小板減少"
+    },
+    {
+      "from": "D246",
+      "to": "E16",
+      "from_name": "EHEC",
+      "to_name": "E16",
+      "reason": "EHEC: 意識障害"
+    },
+    {
+      "from": "D246",
+      "to": "S42",
+      "from_name": "EHEC",
+      "to_name": "S42",
+      "reason": "EHEC: 痙攣"
+    },
+    {
+      "from": "D203",
+      "to": "E36",
+      "from_name": "systemic_sclerosis",
+      "to_name": "E36",
+      "reason": "強皮症: 浮腫"
+    },
+    {
+      "from": "D232",
+      "to": "L54",
+      "from_name": "AKA",
+      "to_name": "L54",
+      "reason": "AKA: 低血糖"
+    },
+    {
+      "from": "D232",
+      "to": "L11",
+      "from_name": "AKA",
+      "to_name": "L11",
+      "reason": "AKA: 肝酵素"
+    },
+    {
+      "from": "D232",
+      "to": "L01",
+      "from_name": "AKA",
+      "to_name": "L01",
+      "reason": "AKA: WBC"
+    },
+    {
+      "from": "D232",
+      "to": "L17",
+      "from_name": "AKA",
+      "to_name": "L17",
+      "reason": "AKA: CK"
+    },
+    {
+      "from": "D232",
+      "to": "E01",
+      "from_name": "AKA",
+      "to_name": "E01",
+      "reason": "AKA: 体温"
+    },
+    {
+      "from": "D232",
+      "to": "L55",
+      "from_name": "AKA",
+      "to_name": "L55",
+      "reason": "AKA: AKI"
+    },
+    {
+      "from": "D202",
+      "to": "L28",
+      "from_name": "sjogren",
+      "to_name": "L28",
+      "reason": "シェーグレン: ESR"
+    },
+    {
+      "from": "D202",
+      "to": "E02",
+      "from_name": "sjogren",
+      "to_name": "E02",
+      "reason": "シェーグレン: 頻脈"
+    },
+    {
+      "from": "D205",
+      "to": "L44",
+      "from_name": "EG",
+      "to_name": "L44",
+      "reason": "EG: 電解質"
+    },
+    {
+      "from": "D205",
+      "to": "E03",
+      "from_name": "EG",
+      "to_name": "E03",
+      "reason": "EG: 低血圧"
+    },
+    {
+      "from": "D197",
+      "to": "S12",
+      "from_name": "agranulocytosis",
+      "to_name": "S12",
+      "reason": "無顆粒球症: 腹痛"
+    },
+    {
+      "from": "D249",
+      "to": "L02",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "L02",
+      "reason": "慢性膵炎: CRP"
+    },
+    {
+      "from": "D249",
+      "to": "L01",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "L01",
+      "reason": "慢性膵炎: WBC"
+    },
+    {
+      "from": "D249",
+      "to": "S04",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S04",
+      "reason": "慢性膵炎: 呼吸困難"
+    },
+    {
+      "from": "D138",
+      "to": "L51",
+      "from_name": "acute_stroke",
+      "to_name": "L51",
+      "reason": "脳梗塞: BNP"
+    },
+    {
+      "from": "D20",
+      "to": "E16",
+      "from_name": "sinusitis",
+      "to_name": "E16",
+      "reason": "副鼻腔炎: 意識障害"
+    },
+    {
+      "from": "D208",
+      "to": "L53",
+      "from_name": "ITP",
+      "to_name": "L53",
+      "reason": "ITP: トロポニン"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
