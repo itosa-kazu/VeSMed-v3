@@ -8893,7 +8893,8 @@
         "L52": "very_high",
         "E01": "under_37.5",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L55": "high_AKI"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -8919,7 +8920,8 @@
         "L14": "thrombocytopenia",
         "L16": "elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L55": "high_AKI"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -8947,7 +8949,8 @@
         "L16": "elevated",
         "L54": "very_high_over_500",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L55": "high_AKI"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -8963,7 +8966,7 @@
       "vignette": "21F COVID-19 mRNAワクチン2回目接種24時間後. 強膜出血+血腫+血小板減少+下肢浮腫+重症高血圧. Hb 12.2→7.8(48h), PLT 26k, Cr 2.42, LDH 360, ハプトグロビン<6, 破砕赤血球42/1000(!), Bil 2.96, C3 55-65(低!). ADAMTS13 73%(正常), Coombs(-). 腎生検: TMA(7/16糸球体). 遺伝子: CFH変異",
       "final_diagnosis": "非典型HUS(補体因子H変異, ワクチン誘発)",
       "expected_id": "D162",
-      "in_scope": false,
+      "in_scope": true,
       "evidence": {
         "S44": "present",
         "E36": "bilateral",
@@ -8972,14 +8975,15 @@
         "L16": "elevated",
         "E18": "present",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L55": "mild_elevated"
       },
       "risk_factors": {
         "R01": "18_39",
         "R02": "female"
       },
       "result": "",
-      "notes": "非典型HUS. CFH変異+ワクチン誘発. C3低下. エクリズマブ投与. OOS: クレアチニン変数なしでTTPとaHUS鑑別不可"
+      "notes": "非典型HUS. CFH変異+ワクチン誘発. C3低下. エクリズマブ投与"
     }
   ],
   "total_cases": 110
