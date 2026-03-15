@@ -6090,6 +6090,11 @@
           "under_100": 0.35,
           "100_120": 0.4,
           "over_120": 0.25
+        },
+        "D233": {
+          "under_100": 0.3,
+          "100_120": 0.45,
+          "over_120": 0.25
         }
       }
     },
@@ -6835,6 +6840,11 @@
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D233": {
+          "normal_over_96": 0.35,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.35
         }
       }
     },
@@ -15337,6 +15347,11 @@
           "absent": 0.6,
           "on_exertion": 0.25,
           "at_rest": 0.15
+        },
+        "D233": {
+          "absent": 0.4,
+          "on_exertion": 0.25,
+          "at_rest": 0.35
         }
       }
     },

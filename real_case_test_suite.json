@@ -11915,6 +11915,347 @@
       },
       "result": "",
       "notes": "アミトリプチリン3700mg. 心停止→ROSC. 24h抜管"
+    },
+    {
+      "id": "R465",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC9771289",
+      "vignette": "76F 動悸+胸部不快+心窩部痛+食欲低下+8kg体重減少. HR 106. 血糖25(!)(重度低血糖), pH 7.141, HCO3 9.5, AG 23.5, ケトン体5165.4, 乳酸6.27, WBC 17.3k, ALT 135, Cr 1.19",
+      "final_diagnosis": "アルコール性ケトアシドーシス(重度低血糖)",
+      "expected_id": "D232",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "E02": "100_120",
+        "L54": "hypoglycemia",
+        "L01": "high_10000_20000",
+        "L11": "mild_elevated",
+        "S07": "severe",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "血糖25. pH 7.141. ケトン体5165.4"
+    },
+    {
+      "id": "R466",
+      "source": "Case Rep 2009",
+      "pmcid": "PMC2658323",
+      "vignette": "60代F 意識不明で発見. 大量飲酒. T 26.6(!)(重度低体温), BP 139/103, HR 44(徐脈), RR 22, GCS 10. 血糖1.1(!), pH 7.13, BE -20.0, AG 41, Cr 298, CK 4066→26833(横紋筋融解), アミラーゼ503(膵炎)",
+      "final_diagnosis": "AKA+低体温+低血糖+急性膵炎+横紋筋融解",
+      "expected_id": "D232",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "E01": "under_37.5",
+        "E02": "under_100",
+        "L54": "hypoglycemia",
+        "L17": "very_high",
+        "L55": "high_AKI",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "T 26.6. 血糖1.1. CK 26833. AG 41. 多臓器障害"
+    },
+    {
+      "id": "R467",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8689536",
+      "vignette": "55F COVID-19 15日後. めまい+口渇+胸部圧迫感+複視+歩行不安定+感覚異常. BP 178/92(臥位)→136/74(立位), HR 108→114. 両側外転神経麻痺+全身性腱反射消失+失調性歩行+体位性低血圧. CSF蛋白245, WBC 3. 抗GQ1b-IgG+抗GD1b-IgG陽性",
+      "final_diagnosis": "フィッシャー症候群(COVID後)+自律神経障害",
+      "expected_id": "D233",
+      "in_scope": true,
+      "evidence": {
+        "S52": "bilateral",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "S05": "mild",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "抗GQ1b+GD1b+. 体位性低血圧. COVID後"
+    },
+    {
+      "id": "R468",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7029460",
+      "vignette": "76M 歩行不安定+食事量低下+構音障害+めまい+呼吸困難. T 37, HR 100-110, BP 141/82, SpO2 82%(RA!). 両側腱反射減弱+協調運動障害+測定障害+両側声帯麻痺. WBC 13.8k, CSF蛋白62, 抗GQ1b陰性",
+      "final_diagnosis": "フィッシャー症候群(両側声帯麻痺)",
+      "expected_id": "D233",
+      "in_scope": true,
+      "evidence": {
+        "S52": "bilateral",
+        "S53": "dysarthria",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "S04": "at_rest",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 82%. 両側声帯麻痺. 抗GQ1b陰性"
+    },
+    {
+      "id": "R469",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9716981",
+      "vignette": "40代F 3ヶ月の発熱+有痛性紅斑性水疱性皮膚病変+全四肢浮腫. 巨脾. WBC 75k, Hb 8.4, PLT 694k, 骨髄芽球4%, 骨髄球24%, 後骨髄球25%. BCR-ABL1 95%陽性, Ph染色体+",
+      "final_diagnosis": "慢性骨髄性白血病(加速期)+水疱性Sweet症候群",
+      "expected_id": "D234",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "vesicle_bulla",
+        "E36": "bilateral",
+        "S07": "severe",
+        "L01": "very_high_over_20000",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "WBC 75k. BCR-ABL 95%+. Sweet症候群"
+    },
+    {
+      "id": "R470",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11444546",
+      "vignette": "17M 突然の両眼視力低下+倦怠感+脱力+関節痛+左上腹部痛. 両眼VA 2/20, 黄疸, 蒼白, 巨脾(肋弓下15cm), 網膜出血. WBC 378k(!), Hb 8.8, PLT 99k, 骨髄芽球22%, 尿酸11.3, LDH 880. BCR-ABL 100%陽性",
+      "final_diagnosis": "CML(AML転化)",
+      "expected_id": "D234",
+      "in_scope": true,
+      "evidence": {
+        "S08": "present",
+        "S07": "severe",
+        "S12": "LLQ",
+        "E18": "present",
+        "L01": "very_high_over_20000",
+        "L16": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "WBC 378k(!). 骨髄芽球22%. 両眼視力低下. 巨脾15cm"
+    },
+    {
+      "id": "R471",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6739590",
+      "vignette": "32F びまん性腹痛+当初非血性下痢→血性下痢. 無熱. HR 105, BP 110/67. WBC 18k, Na 129, HCO3 19, Cr 0.66, Bil 1.6. 志賀毒素遺伝子+, O157培養陰性. S状結腸鏡:15-40cmの重度大腸炎(暗い粘膜)",
+      "final_diagnosis": "EHEC(志賀毒素産生菌)→虚血性大腸炎",
+      "expected_id": "D246",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S14": "bloody",
+        "E01": "under_37.5",
+        "E02": "100_120",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "志賀毒素+. WBC 18k. 重度大腸炎"
+    },
+    {
+      "id": "R472",
+      "source": "Case Rep 2014",
+      "pmcid": "PMC3999577",
+      "vignette": "81M 血性下痢+下腹部痛→痙攣+意識混濁. T 38.0, BP 140/92→60/40(ショック), HR 95→115. 重度炎症反応+貧血+血小板減少+腎機能障害. 便O157+ベロ毒素陽性",
+      "final_diagnosis": "EHEC O157+出血性大腸炎+HUS",
+      "expected_id": "D246",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S12": "diffuse",
+        "S42": "present",
+        "E16": "confused",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "L14": "thrombocytopenia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "O157+ベロ毒素+. HUS合併. ショック"
+    },
+    {
+      "id": "R473",
+      "source": "Case Rep 2014",
+      "pmcid": "PMC3987506",
+      "vignette": "47M 重度飲酒者, 膵炎3回既往. 2日間の呼吸困難+右胸痛+軽度心窩部圧痛. HR 92. アミラーゼ1360(血清), 6078(胸水!), WBC 11.6k, CRP 245. CT:慢性膵炎+仮性嚢胞",
+      "final_diagnosis": "慢性膵炎+膵胸膜瘻",
+      "expected_id": "D249",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S12": "epigastric",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "胸水アミラーゼ6078. 膵胸膜瘻"
+    },
+    {
+      "id": "R474",
+      "source": "Case Rep 2017",
+      "pmcid": "PMC5654180",
+      "vignette": "60F 2ヶ月の慢性下痢+食欲低下+体重減少+泡沫便+6ヶ月の上腹部痛+6ヶ月のDM. アミラーゼ516, リパーゼ912, 便エラスターゼ低下, 便脂肪陽性. CT/MRI:膵臓完全脂肪置換(-76HU)",
+      "final_diagnosis": "膵臓完全脂肪置換+慢性膵炎(外分泌不全)",
+      "expected_id": "D249",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S14": "watery",
+        "S07": "severe",
+        "L54": "hyperglycemia",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "アミラーゼ516, リパーゼ912. 膵臓完全脂肪置換"
+    },
+    {
+      "id": "R475",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7144777",
+      "vignette": "56F 2ヶ月の無痛性黄疸+掻痒+体重減少+盗汗. Bil 107umol/L, ALT 113, GGT 1333, ALP 1461, CA19-9 219, AMA>1:2560. 肝23cm(腫大), 脾14cm. 生検:小葉炎症+胆管反応+大結節性肝硬変",
+      "final_diagnosis": "原発性胆汁性胆管炎+肝硬変",
+      "expected_id": "D250",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "L11": "mild_elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AMA>1:2560. ALP 1461. 肝硬変"
+    },
+    {
+      "id": "R476",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7220456",
+      "vignette": "60F 5年のドライマウス+3年の掻痒+3ヶ月の肝機能異常. ALT 220, AST 182, ALP 779, GGT 618, IgM 7.04, AMA 1:1000, AMA-M2 124, 抗gp210+. RBC 3.03, WBC 2.28k, Hb 98, PLT 88k(汎血球減少)",
+      "final_diagnosis": "PBC+シェーグレン症候群",
+      "expected_id": "D250",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "L11": "very_high",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AMA 1:1000. ALP 779. 汎血球減少. Sjogren合併"
+    },
+    {
+      "id": "R477",
+      "source": "Case Rep 2014",
+      "pmcid": "PMC4134630",
+      "vignette": "65M 1ヶ月の進行性黄疸+脱力+腹水増大. WBC 11.8k(好中球78%), Bil 39.7(直接20.7), Alb 3.0, Cr 3.8, BUN 169, INR 2.1, アンモニア180, ALT 44. CTP 10, MELD 37",
+      "final_diagnosis": "非代償性HBV肝硬変",
+      "expected_id": "D251",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "E36": "bilateral",
+        "E16": "confused",
+        "S07": "severe",
+        "L11": "mild_elevated",
+        "L55": "high_AKI",
+        "S44": "present",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "MELD 37. アンモニア180. Cr 3.8"
+    },
+    {
+      "id": "R478",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8175418",
+      "vignette": "63M 48時間の腹部膨満増大+黄疸増悪+両下肢浮腫. 強膜黄疸+緊満性腹水+両側圧痕性浮腫. WBC 18.8k, Hb 11.3, PLT 200k, INR 1.9, Na 123, K 5.5, Alb 1.6, CRP 70, AST 129, ALT 71, Bil 6.3, アンモニア58. 腹水PMN 2983. MELD-Na 29",
+      "final_diagnosis": "非代償性HCV肝硬変+SBP",
+      "expected_id": "D251",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "E36": "bilateral",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "L44": "hyponatremia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "MELD-Na 29. 腹水PMN 2983(SBP). Na 123"
     }
   ],
   "total_cases": 110
