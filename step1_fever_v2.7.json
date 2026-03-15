@@ -5837,6 +5837,66 @@
       ],
       "severity": "high",
       "note": "CNS脱髄。時間的・空間的多発。視力障害+感覚障害+運動障害+膀胱障害。若年女性に多い"
+    },
+    {
+      "id": "D237",
+      "name": "intussusception",
+      "name_ja": "腸重積症(成人)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "成人は器質的先進部(腫瘍/ポリープ)が多い。間欠性腹痛+嘔吐+血便。小児のcurrant jelly stoolは稀"
+    },
+    {
+      "id": "D238",
+      "name": "colorectal_cancer",
+      "name_ja": "大腸癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "血便+便通変化+体重減少+貧血。左側:狭窄症状、右側:貧血。閉塞/穿孔で緊急手術"
+    },
+    {
+      "id": "D239",
+      "name": "IgA_nephropathy_flare",
+      "name_ja": "IgA腎症(急性増悪)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "IgA沈着性GN。URI後の肉眼的血尿(synpharyngitic hematuria)が特徴。慢性経過→CKD進行"
+    },
+    {
+      "id": "D240",
+      "name": "acute_interstitial_nephritis",
+      "name_ja": "急性間質性腎炎(AIN)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "薬剤性(70%+)/感染性/自己免疫性。三徴:発熱+皮疹+AKI(+好酸球増多)。NSAIDs/抗菌薬が原因薬"
+    },
+    {
+      "id": "D241",
+      "name": "renovascular_hypertension",
+      "name_ja": "腎血管性高血圧",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "腎動脈狭窄→RAAS活性化→高血圧。動脈硬化性(高齢)/線維筋性異形成(若年女性)。治療抵抗性高血圧"
     }
   ]
 }

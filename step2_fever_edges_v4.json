@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3511,
+  "total_edges": 3547,
   "edges": [
     {
       "from": "R01",
@@ -29074,6 +29074,258 @@
       "from_name": "pericarditis",
       "to_name": "L09",
       "reason": "心膜炎: 血培(細菌性なら陽性)"
+    },
+    {
+      "from": "D237",
+      "to": "S12",
+      "from_name": "intussusception",
+      "to_name": "S12",
+      "reason": "腸重積: 腹痛(間欠性/疝痛様)"
+    },
+    {
+      "from": "D237",
+      "to": "S13",
+      "from_name": "intussusception",
+      "to_name": "S13",
+      "reason": "腸重積: 嘔吐(70-80%)"
+    },
+    {
+      "from": "D237",
+      "to": "S14",
+      "from_name": "intussusception",
+      "to_name": "S14",
+      "reason": "腸重積: 血便(30-40%)"
+    },
+    {
+      "from": "D237",
+      "to": "E09",
+      "from_name": "intussusception",
+      "to_name": "E09",
+      "reason": "腸重積: 腹部圧痛/腫瘤触知"
+    },
+    {
+      "from": "D237",
+      "to": "L01",
+      "from_name": "intussusception",
+      "to_name": "L01",
+      "reason": "腸重積: WBC上昇(腸管虚血時)"
+    },
+    {
+      "from": "D237",
+      "to": "T01",
+      "from_name": "intussusception",
+      "to_name": "T01",
+      "reason": "腸重積: 急性"
+    },
+    {
+      "from": "D237",
+      "to": "T02",
+      "from_name": "intussusception",
+      "to_name": "T02",
+      "reason": "腸重積: 急性"
+    },
+    {
+      "from": "D238",
+      "to": "S14",
+      "from_name": "colorectal_cancer",
+      "to_name": "S14",
+      "reason": "大腸癌: 血便(60-70%)"
+    },
+    {
+      "from": "D238",
+      "to": "S12",
+      "from_name": "colorectal_cancer",
+      "to_name": "S12",
+      "reason": "大腸癌: 腹痛(40-50%)"
+    },
+    {
+      "from": "D238",
+      "to": "S07",
+      "from_name": "colorectal_cancer",
+      "to_name": "S07",
+      "reason": "大腸癌: 倦怠感/体重減少(60-70%)"
+    },
+    {
+      "from": "D238",
+      "to": "E01",
+      "from_name": "colorectal_cancer",
+      "to_name": "E01",
+      "reason": "大腸癌: 発熱(穿孔/感染時, 10-20%)"
+    },
+    {
+      "from": "D238",
+      "to": "L02",
+      "from_name": "colorectal_cancer",
+      "to_name": "L02",
+      "reason": "大腸癌: CRP上昇(腫瘍/閉塞)"
+    },
+    {
+      "from": "D238",
+      "to": "T01",
+      "from_name": "colorectal_cancer",
+      "to_name": "T01",
+      "reason": "大腸癌: 慢性"
+    },
+    {
+      "from": "D238",
+      "to": "T02",
+      "from_name": "colorectal_cancer",
+      "to_name": "T02",
+      "reason": "大腸癌: 緩徐"
+    },
+    {
+      "from": "D239",
+      "to": "L05",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "L05",
+      "reason": "IgA腎症: 尿異常(血尿+蛋白尿, 100%)"
+    },
+    {
+      "from": "D239",
+      "to": "L55",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "L55",
+      "reason": "IgA腎症: AKI(急性増悪時, 30-50%)"
+    },
+    {
+      "from": "D239",
+      "to": "S02",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "S02",
+      "reason": "IgA腎症: 咽頭痛(先行URI, 50-60%)"
+    },
+    {
+      "from": "D239",
+      "to": "E01",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "E01",
+      "reason": "IgA腎症: 発熱(先行URI, 30-40%)"
+    },
+    {
+      "from": "D239",
+      "to": "S15",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "S15",
+      "reason": "IgA腎症: 腰背部痛(腎腫大, 20-30%)"
+    },
+    {
+      "from": "D239",
+      "to": "E38",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "E38",
+      "reason": "IgA腎症: 高血圧(30-40%)"
+    },
+    {
+      "from": "D239",
+      "to": "T01",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "T01",
+      "reason": "IgA腎症: 急性~亜急性"
+    },
+    {
+      "from": "D239",
+      "to": "T02",
+      "from_name": "IgA_nephropathy_flare",
+      "to_name": "T02",
+      "reason": "IgA腎症: 亜急性"
+    },
+    {
+      "from": "D240",
+      "to": "L55",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "L55",
+      "reason": "AIN: AKI(定義的)"
+    },
+    {
+      "from": "D240",
+      "to": "E01",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "E01",
+      "reason": "AIN: 発熱(50-60%)"
+    },
+    {
+      "from": "D240",
+      "to": "E12",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "E12",
+      "reason": "AIN: 皮疹(薬疹, 25-35%)"
+    },
+    {
+      "from": "D240",
+      "to": "L14",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "L14",
+      "reason": "AIN: 好酸球増多(30-40%)"
+    },
+    {
+      "from": "D240",
+      "to": "L05",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "L05",
+      "reason": "AIN: 尿異常(白血球円柱/好酸球尿, 80%+)"
+    },
+    {
+      "from": "D240",
+      "to": "S08",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "S08",
+      "reason": "AIN: 関節痛(薬剤アレルギー, 15-20%)"
+    },
+    {
+      "from": "D240",
+      "to": "T01",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "T01",
+      "reason": "AIN: 亜急性(投薬1-3週後)"
+    },
+    {
+      "from": "D240",
+      "to": "T02",
+      "from_name": "acute_interstitial_nephritis",
+      "to_name": "T02",
+      "reason": "AIN: 亜急性"
+    },
+    {
+      "from": "D241",
+      "to": "E38",
+      "from_name": "renovascular_hypertension",
+      "to_name": "E38",
+      "reason": "腎血管性高血圧: 高血圧(定義的, 重症)"
+    },
+    {
+      "from": "D241",
+      "to": "S05",
+      "from_name": "renovascular_hypertension",
+      "to_name": "S05",
+      "reason": "腎血管性高血圧: 頭痛(高血圧, 50-60%)"
+    },
+    {
+      "from": "D241",
+      "to": "L55",
+      "from_name": "renovascular_hypertension",
+      "to_name": "L55",
+      "reason": "腎血管性高血圧: AKI(ACEi開始後/両側狭窄, 20-30%)"
+    },
+    {
+      "from": "D241",
+      "to": "S04",
+      "from_name": "renovascular_hypertension",
+      "to_name": "S04",
+      "reason": "腎血管性高血圧: 呼吸困難(flash pulmonary edema, 20-30%)"
+    },
+    {
+      "from": "D241",
+      "to": "T01",
+      "from_name": "renovascular_hypertension",
+      "to_name": "T01",
+      "reason": "腎血管性高血圧: 慢性"
+    },
+    {
+      "from": "D241",
+      "to": "T02",
+      "from_name": "renovascular_hypertension",
+      "to_name": "T02",
+      "reason": "腎血管性高血圧: 慢性~急性増悪"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
