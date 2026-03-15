@@ -12,7 +12,7 @@ $ARGUMENTS に疾患ID(D###)または疾患名を指定。
 Agent toolでバックグラウンド検索:
 - 各疾患3件以上、できれば5件
 - 異なる臨床像（典型/非典型/合併症）を含む
-- 成人症例のみ（小児は除外、ただし16歳以上は可）
+- 小児・成人問わず使用可（R01は18_39を最近似値として使用）
 
 検索URL: `https://www.ncbi.nlm.nih.gov/pmc/?term={disease}+case+report`
 
