@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3582,
+  "total_edges": 3616,
   "edges": [
     {
       "from": "R01",
@@ -29571,6 +29571,244 @@
       "from_name": "EHEC",
       "to_name": "T02",
       "reason": "EHEC: 急性"
+    },
+    {
+      "from": "D247",
+      "to": "S12",
+      "from_name": "gastric_cancer",
+      "to_name": "S12",
+      "reason": "胃癌: 心窩部痛(60-70%)"
+    },
+    {
+      "from": "D247",
+      "to": "S07",
+      "from_name": "gastric_cancer",
+      "to_name": "S07",
+      "reason": "胃癌: 倦怠感/体重減少(70-80%)"
+    },
+    {
+      "from": "D247",
+      "to": "S13",
+      "from_name": "gastric_cancer",
+      "to_name": "S13",
+      "reason": "胃癌: 嘔気(50-60%)"
+    },
+    {
+      "from": "D247",
+      "to": "S44",
+      "from_name": "gastric_cancer",
+      "to_name": "S44",
+      "reason": "胃癌: 出血(吐血/黒色便, 20-30%)"
+    },
+    {
+      "from": "D247",
+      "to": "E01",
+      "from_name": "gastric_cancer",
+      "to_name": "E01",
+      "reason": "胃癌: 通常無熱"
+    },
+    {
+      "from": "D247",
+      "to": "T01",
+      "from_name": "gastric_cancer",
+      "to_name": "T01",
+      "reason": "胃癌: 慢性"
+    },
+    {
+      "from": "D247",
+      "to": "T02",
+      "from_name": "gastric_cancer",
+      "to_name": "T02",
+      "reason": "胃癌: 緩徐"
+    },
+    {
+      "from": "D248",
+      "to": "S07",
+      "from_name": "esophageal_cancer",
+      "to_name": "S07",
+      "reason": "食道癌: 倦怠感/体重減少(80%+)"
+    },
+    {
+      "from": "D248",
+      "to": "S21",
+      "from_name": "esophageal_cancer",
+      "to_name": "S21",
+      "reason": "食道癌: 胸痛/嚥下痛(30-40%)"
+    },
+    {
+      "from": "D248",
+      "to": "S13",
+      "from_name": "esophageal_cancer",
+      "to_name": "S13",
+      "reason": "食道癌: 嘔気(30-40%)"
+    },
+    {
+      "from": "D248",
+      "to": "T01",
+      "from_name": "esophageal_cancer",
+      "to_name": "T01",
+      "reason": "食道癌: 慢性"
+    },
+    {
+      "from": "D248",
+      "to": "T02",
+      "from_name": "esophageal_cancer",
+      "to_name": "T02",
+      "reason": "食道癌: 緩徐進行"
+    },
+    {
+      "from": "D249",
+      "to": "S12",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S12",
+      "reason": "慢性膵炎: 心窩部痛(食後増悪, 80%+)"
+    },
+    {
+      "from": "D249",
+      "to": "S15",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S15",
+      "reason": "慢性膵炎: 背部放散痛(50-60%)"
+    },
+    {
+      "from": "D249",
+      "to": "S13",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S13",
+      "reason": "慢性膵炎: 嘔気(40-50%)"
+    },
+    {
+      "from": "D249",
+      "to": "S07",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S07",
+      "reason": "慢性膵炎: 倦怠感/体重減少(60-70%)"
+    },
+    {
+      "from": "D249",
+      "to": "L54",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "L54",
+      "reason": "慢性膵炎: 血糖(DM合併, 30-40%)"
+    },
+    {
+      "from": "D249",
+      "to": "T01",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "T01",
+      "reason": "慢性膵炎: 慢性(急性増悪で来院)"
+    },
+    {
+      "from": "D249",
+      "to": "T02",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "T02",
+      "reason": "慢性膵炎: 急性増悪~慢性"
+    },
+    {
+      "from": "D250",
+      "to": "E18",
+      "from_name": "PBC",
+      "to_name": "E18",
+      "reason": "PBC: 黄疸(進行期, 40-60%)"
+    },
+    {
+      "from": "D250",
+      "to": "S07",
+      "from_name": "PBC",
+      "to_name": "S07",
+      "reason": "PBC: 倦怠感(80%+)"
+    },
+    {
+      "from": "D250",
+      "to": "L11",
+      "from_name": "PBC",
+      "to_name": "L11",
+      "reason": "PBC: 肝酵素(ALP優位上昇)"
+    },
+    {
+      "from": "D250",
+      "to": "S12",
+      "from_name": "PBC",
+      "to_name": "S12",
+      "reason": "PBC: 腹痛(RUQ, 20-30%)"
+    },
+    {
+      "from": "D250",
+      "to": "T01",
+      "from_name": "PBC",
+      "to_name": "T01",
+      "reason": "PBC: 慢性"
+    },
+    {
+      "from": "D250",
+      "to": "T02",
+      "from_name": "PBC",
+      "to_name": "T02",
+      "reason": "PBC: 緩徐"
+    },
+    {
+      "from": "D251",
+      "to": "E18",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "E18",
+      "reason": "肝硬変: 黄疸(90%+)"
+    },
+    {
+      "from": "D251",
+      "to": "E36",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "E36",
+      "reason": "肝硬変: 浮腫/腹水(80%+)"
+    },
+    {
+      "from": "D251",
+      "to": "E16",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "E16",
+      "reason": "肝硬変: 肝性脳症(40-50%)"
+    },
+    {
+      "from": "D251",
+      "to": "S07",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "S07",
+      "reason": "肝硬変: 倦怠感(90%+)"
+    },
+    {
+      "from": "D251",
+      "to": "L11",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L11",
+      "reason": "肝硬変: 肝酵素"
+    },
+    {
+      "from": "D251",
+      "to": "S44",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "S44",
+      "reason": "肝硬変: 出血傾向(凝固障害, 40-50%)"
+    },
+    {
+      "from": "D251",
+      "to": "E01",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "E01",
+      "reason": "肝硬変: 発熱(SBP/感染, 20-30%)"
+    },
+    {
+      "from": "D251",
+      "to": "T01",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "T01",
+      "reason": "肝硬変: 慢性"
+    },
+    {
+      "from": "D251",
+      "to": "T02",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "T02",
+      "reason": "肝硬変: 慢性~急性増悪"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -5957,6 +5957,66 @@
       ],
       "severity": "critical",
       "note": "志賀毒素産生性大腸菌(O157:H7等)。水様便→血性下痢。HUS合併リスク(5-10%)。抗菌薬禁忌論争"
+    },
+    {
+      "id": "D247",
+      "name": "gastric_cancer",
+      "name_ja": "胃癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "心窩部痛+体重減少+貧血+嚥下困難(噴門部)。進行癌で閉塞/出血/穿孔"
+    },
+    {
+      "id": "D248",
+      "name": "esophageal_cancer",
+      "name_ja": "食道癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "嚥下困難(進行性)+体重減少。扁平上皮癌(飲酒+喫煙)/腺癌(Barrett食道)"
+    },
+    {
+      "id": "D249",
+      "name": "chronic_pancreatitis",
+      "name_ja": "慢性膵炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "反復性腹痛(心窩部→背部放散)+脂肪便+DM。アルコール性が最多。膵石/膵管拡張"
+    },
+    {
+      "id": "D250",
+      "name": "PBC",
+      "name_ja": "原発性胆汁性胆管炎(PBC)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "抗ミトコンドリア抗体(AMA)陽性。慢性進行性胆汁うっ滞→肝硬変。掻痒+黄疸+倦怠感。中年女性"
+    },
+    {
+      "id": "D251",
+      "name": "decompensated_cirrhosis",
+      "name_ja": "非代償性肝硬変",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "黄疸+腹水+肝性脳症+食道静脈瘤。Child-Pugh B/C。感染(SBP)/出血リスク"
     }
   ]
 }
