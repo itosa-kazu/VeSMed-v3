@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3929,
+  "total_edges": 3968,
   "edges": [
     {
       "from": "R01",
@@ -32000,6 +32000,279 @@
       "from_name": "eosinophilic_esophagitis",
       "to_name": "T02",
       "reason": "EoE: 慢性"
+    },
+    {
+      "from": "D272",
+      "to": "S21",
+      "from_name": "achalasia",
+      "to_name": "S21",
+      "reason": "アカラシア: 胸痛(食道痙攣, 30-40%)"
+    },
+    {
+      "from": "D272",
+      "to": "S13",
+      "from_name": "achalasia",
+      "to_name": "S13",
+      "reason": "アカラシア: 嘔吐/逆流(60-70%)"
+    },
+    {
+      "from": "D272",
+      "to": "S07",
+      "from_name": "achalasia",
+      "to_name": "S07",
+      "reason": "アカラシア: 体重減少(50-60%)"
+    },
+    {
+      "from": "D272",
+      "to": "S01",
+      "from_name": "achalasia",
+      "to_name": "S01",
+      "reason": "アカラシア: 咳嗽(夜間誤嚥, 20-30%)"
+    },
+    {
+      "from": "D272",
+      "to": "T01",
+      "from_name": "achalasia",
+      "to_name": "T01",
+      "reason": "アカラシア: 慢性"
+    },
+    {
+      "from": "D272",
+      "to": "T02",
+      "from_name": "achalasia",
+      "to_name": "T02",
+      "reason": "アカラシア: 緩徐"
+    },
+    {
+      "from": "D273",
+      "to": "S12",
+      "from_name": "choledocholithiasis",
+      "to_name": "S12",
+      "reason": "CBD結石: RUQ痛(80%+)"
+    },
+    {
+      "from": "D273",
+      "to": "E18",
+      "from_name": "choledocholithiasis",
+      "to_name": "E18",
+      "reason": "CBD結石: 黄疸(60-70%)"
+    },
+    {
+      "from": "D273",
+      "to": "S13",
+      "from_name": "choledocholithiasis",
+      "to_name": "S13",
+      "reason": "CBD結石: 嘔気/嘔吐(50-60%)"
+    },
+    {
+      "from": "D273",
+      "to": "E01",
+      "from_name": "choledocholithiasis",
+      "to_name": "E01",
+      "reason": "CBD結石: 発熱(胆管炎合併時, 30-40%)"
+    },
+    {
+      "from": "D273",
+      "to": "L11",
+      "from_name": "choledocholithiasis",
+      "to_name": "L11",
+      "reason": "CBD結石: 肝酵素上昇(胆汁うっ滞)"
+    },
+    {
+      "from": "D273",
+      "to": "L01",
+      "from_name": "choledocholithiasis",
+      "to_name": "L01",
+      "reason": "CBD結石: WBC上昇(胆管炎時)"
+    },
+    {
+      "from": "D273",
+      "to": "L02",
+      "from_name": "choledocholithiasis",
+      "to_name": "L02",
+      "reason": "CBD結石: CRP上昇"
+    },
+    {
+      "from": "D273",
+      "to": "E10",
+      "from_name": "choledocholithiasis",
+      "to_name": "E10",
+      "reason": "CBD結石: Murphy徴候(胆嚢炎合併時)"
+    },
+    {
+      "from": "D273",
+      "to": "T01",
+      "from_name": "choledocholithiasis",
+      "to_name": "T01",
+      "reason": "CBD結石: 急性"
+    },
+    {
+      "from": "D273",
+      "to": "T02",
+      "from_name": "choledocholithiasis",
+      "to_name": "T02",
+      "reason": "CBD結石: 急性"
+    },
+    {
+      "from": "D274",
+      "to": "S12",
+      "from_name": "biliary_colic",
+      "to_name": "S12",
+      "reason": "胆石: RUQ痛(90%+)"
+    },
+    {
+      "from": "D274",
+      "to": "S13",
+      "from_name": "biliary_colic",
+      "to_name": "S13",
+      "reason": "胆石: 嘔気/嘔吐(60-70%)"
+    },
+    {
+      "from": "D274",
+      "to": "E01",
+      "from_name": "biliary_colic",
+      "to_name": "E01",
+      "reason": "胆石: 無熱(胆嚢炎なし)"
+    },
+    {
+      "from": "D274",
+      "to": "E10",
+      "from_name": "biliary_colic",
+      "to_name": "E10",
+      "reason": "胆石: Murphy陰性(胆嚢炎なし)"
+    },
+    {
+      "from": "D274",
+      "to": "L01",
+      "from_name": "biliary_colic",
+      "to_name": "L01",
+      "reason": "胆石: WBC正常"
+    },
+    {
+      "from": "D274",
+      "to": "T01",
+      "from_name": "biliary_colic",
+      "to_name": "T01",
+      "reason": "胆石: 急性(発作は30分~数時間)"
+    },
+    {
+      "from": "D274",
+      "to": "T02",
+      "from_name": "biliary_colic",
+      "to_name": "T02",
+      "reason": "胆石: 突発(食後)"
+    },
+    {
+      "from": "D275",
+      "to": "S12",
+      "from_name": "incarcerated_hernia",
+      "to_name": "S12",
+      "reason": "嵌頓ヘルニア: 腹痛(局所→びまん性)"
+    },
+    {
+      "from": "D275",
+      "to": "S13",
+      "from_name": "incarcerated_hernia",
+      "to_name": "S13",
+      "reason": "嵌頓ヘルニア: 嘔吐(腸閉塞, 70-80%)"
+    },
+    {
+      "from": "D275",
+      "to": "E09",
+      "from_name": "incarcerated_hernia",
+      "to_name": "E09",
+      "reason": "嵌頓ヘルニア: 腹部(圧痛+膨満+腹膜刺激)"
+    },
+    {
+      "from": "D275",
+      "to": "E01",
+      "from_name": "incarcerated_hernia",
+      "to_name": "E01",
+      "reason": "嵌頓ヘルニア: 発熱(絞扼時, 30-40%)"
+    },
+    {
+      "from": "D275",
+      "to": "E02",
+      "from_name": "incarcerated_hernia",
+      "to_name": "E02",
+      "reason": "嵌頓ヘルニア: 頻脈(ショック)"
+    },
+    {
+      "from": "D275",
+      "to": "L01",
+      "from_name": "incarcerated_hernia",
+      "to_name": "L01",
+      "reason": "嵌頓ヘルニア: WBC上昇(絞扼時)"
+    },
+    {
+      "from": "D275",
+      "to": "L02",
+      "from_name": "incarcerated_hernia",
+      "to_name": "L02",
+      "reason": "嵌頓ヘルニア: CRP上昇"
+    },
+    {
+      "from": "D275",
+      "to": "T01",
+      "from_name": "incarcerated_hernia",
+      "to_name": "T01",
+      "reason": "嵌頓ヘルニア: 急性"
+    },
+    {
+      "from": "D275",
+      "to": "T02",
+      "from_name": "incarcerated_hernia",
+      "to_name": "T02",
+      "reason": "嵌頓ヘルニア: 急性"
+    },
+    {
+      "from": "D276",
+      "to": "S12",
+      "from_name": "ovarian_torsion",
+      "to_name": "S12",
+      "reason": "卵巣捻転: 下腹部痛(突然, 片側性)"
+    },
+    {
+      "from": "D276",
+      "to": "S13",
+      "from_name": "ovarian_torsion",
+      "to_name": "S13",
+      "reason": "卵巣捻転: 嘔吐(70-80%)"
+    },
+    {
+      "from": "D276",
+      "to": "E01",
+      "from_name": "ovarian_torsion",
+      "to_name": "E01",
+      "reason": "卵巣捻転: 発熱(壊死時, 20-30%)"
+    },
+    {
+      "from": "D276",
+      "to": "E02",
+      "from_name": "ovarian_torsion",
+      "to_name": "E02",
+      "reason": "卵巣捻転: 頻脈(疼痛)"
+    },
+    {
+      "from": "D276",
+      "to": "L01",
+      "from_name": "ovarian_torsion",
+      "to_name": "L01",
+      "reason": "卵巣捻転: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D276",
+      "to": "T01",
+      "from_name": "ovarian_torsion",
+      "to_name": "T01",
+      "reason": "卵巣捻転: 超急性"
+    },
+    {
+      "from": "D276",
+      "to": "T02",
+      "from_name": "ovarian_torsion",
+      "to_name": "T02",
+      "reason": "卵巣捻転: 突発"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

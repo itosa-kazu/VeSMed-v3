@@ -6262,6 +6262,66 @@
       ],
       "severity": "moderate",
       "note": "食道好酸球浸潤→嚥下困難+食物つかえ感+胸痛。若年男性+アトピー素因に多い。PPIで改善しない"
+    },
+    {
+      "id": "D272",
+      "name": "achalasia",
+      "name_ja": "食道アカラシア",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "LES弛緩不全+食道蠕動消失。嚥下困難(固形+液体)+regurgitation+体重減少+胸痛"
+    },
+    {
+      "id": "D273",
+      "name": "choledocholithiasis",
+      "name_ja": "総胆管結石",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "胆石がCBDに嵌頓。疝痛様RUQ痛+黄疸+発熱(Charcot三徴は胆管炎合併時)。ERCP治療"
+    },
+    {
+      "id": "D274",
+      "name": "biliary_colic",
+      "name_ja": "胆石発作(胆石疝痛)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "胆石嵌頓→RUQ疝痛(食後30分~数時間)。発熱なし(胆嚢炎との鑑別)。Murphy陰性"
+    },
+    {
+      "id": "D275",
+      "name": "incarcerated_hernia",
+      "name_ja": "嵌頓ヘルニア",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "鼠径/大腿/臍/腹壁瘢痕ヘルニアが還納不能。腸閉塞→絞扼→壊死。緊急手術"
+    },
+    {
+      "id": "D276",
+      "name": "ovarian_torsion",
+      "name_ja": "卵巣捻転",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "卵巣/卵管が靭帯軸で捻転→血流途絶→壊死。突然のLLQ/RLQ痛+嘔吐。緊急手術"
     }
   ]
 }
