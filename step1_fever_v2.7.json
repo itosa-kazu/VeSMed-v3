@@ -4486,6 +4486,42 @@
         "very_high"
       ],
       "note": "心筋壊死マーカー。正常<0.04ng/mL。ACS: 著高(>1)。心筋炎/PE/敗血症で軽度上昇。大動脈解離の冠動脈巻込みでも上昇"
+    },
+    {
+      "id": "D133",
+      "name": "GERD",
+      "name_ja": "逆流性食道炎(GERD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "非心臓性胸痛の最多原因。胸骨下灼熱感/圧迫感。ACSと誤診されやすい。トロポニン正常+ECG正常+PPI反応が鍵。内視鏡で食道炎確認"
+    },
+    {
+      "id": "D134",
+      "name": "acute_pericarditis",
+      "name_ja": "急性心膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "胸痛(前傾で改善/臥位で増悪)+心膜摩擦音+ST上昇(びまん性)。ウイルス性が最多。心筋炎(D116)との鑑別: 心膜炎はEF保持/トロポニン正常~軽度"
+    },
+    {
+      "id": "D135",
+      "name": "costochondritis",
+      "name_ja": "肋軟骨炎（筋骨格系胸痛）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "ER胸痛の最多原因(30-50%)。胸壁圧痛+体動で増悪。全検査正常。除外診断"
     }
   ]
 }

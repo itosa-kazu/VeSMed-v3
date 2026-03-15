@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2177,
+  "total_edges": 2209,
   "edges": [
     {
       "from": "R01",
@@ -19736,6 +19736,230 @@
       "from_name": "herpes_zoster",
       "to_name": "T01",
       "reason": "帯状疱疹: 亜急性(皮疹は3-5日で出現, 痛みは先行)"
+    },
+    {
+      "from": "D133",
+      "to": "S21",
+      "from_name": "GERD",
+      "to_name": "S21",
+      "reason": "GERD: 胸痛(80%+, 胸骨下灼熱/圧迫, ACS様)"
+    },
+    {
+      "from": "D133",
+      "to": "S13",
+      "from_name": "GERD",
+      "to_name": "S13",
+      "reason": "GERD: 嘔気(30-40%)"
+    },
+    {
+      "from": "D133",
+      "to": "S07",
+      "from_name": "GERD",
+      "to_name": "S07",
+      "reason": "GERD: 倦怠感(20-30%)"
+    },
+    {
+      "from": "D133",
+      "to": "E01",
+      "from_name": "GERD",
+      "to_name": "E01",
+      "reason": "GERD: 無熱"
+    },
+    {
+      "from": "D133",
+      "to": "L01",
+      "from_name": "GERD",
+      "to_name": "L01",
+      "reason": "GERD: WBC正常"
+    },
+    {
+      "from": "D133",
+      "to": "L02",
+      "from_name": "GERD",
+      "to_name": "L02",
+      "reason": "GERD: CRP正常"
+    },
+    {
+      "from": "D133",
+      "to": "L53",
+      "from_name": "GERD",
+      "to_name": "L53",
+      "reason": "GERD: トロポニン正常(ACSとの鑑別に重要)"
+    },
+    {
+      "from": "D133",
+      "to": "L04",
+      "from_name": "GERD",
+      "to_name": "L04",
+      "reason": "GERD: CXR正常"
+    },
+    {
+      "from": "D133",
+      "to": "L51",
+      "from_name": "GERD",
+      "to_name": "L51",
+      "reason": "GERD: BNP正常"
+    },
+    {
+      "from": "D133",
+      "to": "T01",
+      "from_name": "GERD",
+      "to_name": "T01",
+      "reason": "GERD: 慢性/反復性"
+    },
+    {
+      "from": "D133",
+      "to": "T02",
+      "from_name": "GERD",
+      "to_name": "T02",
+      "reason": "GERD: 緩徐(慢性反復)"
+    },
+    {
+      "from": "D134",
+      "to": "S21",
+      "from_name": "acute_pericarditis",
+      "to_name": "S21",
+      "reason": "心膜炎: 胸痛(90%+, 前傾改善/臥位増悪, pleuritic)"
+    },
+    {
+      "from": "D134",
+      "to": "E15",
+      "from_name": "acute_pericarditis",
+      "to_name": "E15",
+      "reason": "心膜炎: 心膜摩擦音(30-50%)"
+    },
+    {
+      "from": "D134",
+      "to": "E01",
+      "from_name": "acute_pericarditis",
+      "to_name": "E01",
+      "reason": "心膜炎: 発熱(30-50%, ウイルス性)"
+    },
+    {
+      "from": "D134",
+      "to": "S04",
+      "from_name": "acute_pericarditis",
+      "to_name": "S04",
+      "reason": "心膜炎: 呼吸困難(20-30%)"
+    },
+    {
+      "from": "D134",
+      "to": "E02",
+      "from_name": "acute_pericarditis",
+      "to_name": "E02",
+      "reason": "心膜炎: 頻脈(30-40%)"
+    },
+    {
+      "from": "D134",
+      "to": "L02",
+      "from_name": "acute_pericarditis",
+      "to_name": "L02",
+      "reason": "心膜炎: CRP上昇(60-80%)"
+    },
+    {
+      "from": "D134",
+      "to": "L53",
+      "from_name": "acute_pericarditis",
+      "to_name": "L53",
+      "reason": "心膜炎: トロポニン正常~軽度(心筋炎合併なら上昇)"
+    },
+    {
+      "from": "D134",
+      "to": "L01",
+      "from_name": "acute_pericarditis",
+      "to_name": "L01",
+      "reason": "心膜炎: WBC正常~軽度上昇"
+    },
+    {
+      "from": "D134",
+      "to": "L28",
+      "from_name": "acute_pericarditis",
+      "to_name": "L28",
+      "reason": "心膜炎: ESR上昇(60-70%)"
+    },
+    {
+      "from": "D134",
+      "to": "L04",
+      "from_name": "acute_pericarditis",
+      "to_name": "L04",
+      "reason": "心膜炎: CXR通常正常(大量心嚢液なら心拡大)"
+    },
+    {
+      "from": "D134",
+      "to": "T01",
+      "from_name": "acute_pericarditis",
+      "to_name": "T01",
+      "reason": "心膜炎: 急性(数日)"
+    },
+    {
+      "from": "D134",
+      "to": "T02",
+      "from_name": "acute_pericarditis",
+      "to_name": "T02",
+      "reason": "心膜炎: 急性~亜急性"
+    },
+    {
+      "from": "D135",
+      "to": "S21",
+      "from_name": "costochondritis",
+      "to_name": "S21",
+      "reason": "肋軟骨炎: 胸痛(95%+, 限局性, 圧痛, 体動で増悪)"
+    },
+    {
+      "from": "D135",
+      "to": "E01",
+      "from_name": "costochondritis",
+      "to_name": "E01",
+      "reason": "肋軟骨炎: 無熱"
+    },
+    {
+      "from": "D135",
+      "to": "L01",
+      "from_name": "costochondritis",
+      "to_name": "L01",
+      "reason": "肋軟骨炎: WBC正常"
+    },
+    {
+      "from": "D135",
+      "to": "L02",
+      "from_name": "costochondritis",
+      "to_name": "L02",
+      "reason": "肋軟骨炎: CRP正常"
+    },
+    {
+      "from": "D135",
+      "to": "L53",
+      "from_name": "costochondritis",
+      "to_name": "L53",
+      "reason": "肋軟骨炎: トロポニン正常"
+    },
+    {
+      "from": "D135",
+      "to": "L04",
+      "from_name": "costochondritis",
+      "to_name": "L04",
+      "reason": "肋軟骨炎: CXR正常"
+    },
+    {
+      "from": "D135",
+      "to": "L51",
+      "from_name": "costochondritis",
+      "to_name": "L51",
+      "reason": "肋軟骨炎: BNP正常"
+    },
+    {
+      "from": "D135",
+      "to": "T01",
+      "from_name": "costochondritis",
+      "to_name": "T01",
+      "reason": "肋軟骨炎: 急性~慢性(様々)"
+    },
+    {
+      "from": "D135",
+      "to": "T02",
+      "from_name": "costochondritis",
+      "to_name": "T02",
+      "reason": "肋軟骨炎: 急性~緩徐"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
