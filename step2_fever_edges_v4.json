@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2941,
+  "total_edges": 2994,
   "edges": [
     {
       "from": "R01",
@@ -25084,6 +25084,377 @@
       "from_name": "eosinophilic_pneumonia",
       "to_name": "T02",
       "reason": "好酸球性肺炎: 亜急性"
+    },
+    {
+      "from": "D189",
+      "to": "E16",
+      "from_name": "methanol_poisoning",
+      "to_name": "E16",
+      "reason": "メタノール: 意識障害(50-70%)"
+    },
+    {
+      "from": "D189",
+      "to": "S05",
+      "from_name": "methanol_poisoning",
+      "to_name": "S05",
+      "reason": "メタノール: 頭痛(60-70%)"
+    },
+    {
+      "from": "D189",
+      "to": "S13",
+      "from_name": "methanol_poisoning",
+      "to_name": "S13",
+      "reason": "メタノール: 嘔気/嘔吐(70-80%)"
+    },
+    {
+      "from": "D189",
+      "to": "S04",
+      "from_name": "methanol_poisoning",
+      "to_name": "S04",
+      "reason": "メタノール: 呼吸困難(Kussmaul呼吸, アシドーシス代償)"
+    },
+    {
+      "from": "D189",
+      "to": "E04",
+      "from_name": "methanol_poisoning",
+      "to_name": "E04",
+      "reason": "メタノール: 頻呼吸(Kussmaul)"
+    },
+    {
+      "from": "D189",
+      "to": "E02",
+      "from_name": "methanol_poisoning",
+      "to_name": "E02",
+      "reason": "メタノール: 頻脈"
+    },
+    {
+      "from": "D189",
+      "to": "S12",
+      "from_name": "methanol_poisoning",
+      "to_name": "S12",
+      "reason": "メタノール: 腹痛(膵炎合併, 30-40%)"
+    },
+    {
+      "from": "D189",
+      "to": "T01",
+      "from_name": "methanol_poisoning",
+      "to_name": "T01",
+      "reason": "メタノール: 超急性(12-24h後に症状出現)"
+    },
+    {
+      "from": "D189",
+      "to": "T02",
+      "from_name": "methanol_poisoning",
+      "to_name": "T02",
+      "reason": "メタノール: 急性"
+    },
+    {
+      "from": "D190",
+      "to": "L44",
+      "from_name": "SIADH",
+      "to_name": "L44",
+      "reason": "SIADH: 低Na血症(定義的)"
+    },
+    {
+      "from": "D190",
+      "to": "E16",
+      "from_name": "SIADH",
+      "to_name": "E16",
+      "reason": "SIADH: 意識障害(Na<120で, 40-60%)"
+    },
+    {
+      "from": "D190",
+      "to": "S42",
+      "from_name": "SIADH",
+      "to_name": "S42",
+      "reason": "SIADH: 痙攣(重度低Na, 20-30%)"
+    },
+    {
+      "from": "D190",
+      "to": "S05",
+      "from_name": "SIADH",
+      "to_name": "S05",
+      "reason": "SIADH: 頭痛(30-40%)"
+    },
+    {
+      "from": "D190",
+      "to": "S13",
+      "from_name": "SIADH",
+      "to_name": "S13",
+      "reason": "SIADH: 嘔気(40-50%)"
+    },
+    {
+      "from": "D190",
+      "to": "S07",
+      "from_name": "SIADH",
+      "to_name": "S07",
+      "reason": "SIADH: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D190",
+      "to": "T01",
+      "from_name": "SIADH",
+      "to_name": "T01",
+      "reason": "SIADH: 亜急性~慢性"
+    },
+    {
+      "from": "D190",
+      "to": "T02",
+      "from_name": "SIADH",
+      "to_name": "T02",
+      "reason": "SIADH: 緩徐"
+    },
+    {
+      "from": "D191",
+      "to": "L05",
+      "from_name": "PSGN",
+      "to_name": "L05",
+      "reason": "PSGN: 尿異常(血尿+蛋白尿, 100%)"
+    },
+    {
+      "from": "D191",
+      "to": "L55",
+      "from_name": "PSGN",
+      "to_name": "L55",
+      "reason": "PSGN: AKI(Cr上昇, 50-70%)"
+    },
+    {
+      "from": "D191",
+      "to": "E36",
+      "from_name": "PSGN",
+      "to_name": "E36",
+      "reason": "PSGN: 浮腫(顔面/下肢, 80%+)"
+    },
+    {
+      "from": "D191",
+      "to": "E38",
+      "from_name": "PSGN",
+      "to_name": "E38",
+      "reason": "PSGN: 高血圧(体液過剰, 60-80%)"
+    },
+    {
+      "from": "D191",
+      "to": "S05",
+      "from_name": "PSGN",
+      "to_name": "S05",
+      "reason": "PSGN: 頭痛(高血圧, 30-40%)"
+    },
+    {
+      "from": "D191",
+      "to": "E01",
+      "from_name": "PSGN",
+      "to_name": "E01",
+      "reason": "PSGN: 発熱(先行感染の残存, 20-30%)"
+    },
+    {
+      "from": "D191",
+      "to": "S07",
+      "from_name": "PSGN",
+      "to_name": "S07",
+      "reason": "PSGN: 倦怠感"
+    },
+    {
+      "from": "D191",
+      "to": "T01",
+      "from_name": "PSGN",
+      "to_name": "T01",
+      "reason": "PSGN: 亜急性(感染1-3週後)"
+    },
+    {
+      "from": "D191",
+      "to": "T02",
+      "from_name": "PSGN",
+      "to_name": "T02",
+      "reason": "PSGN: 亜急性"
+    },
+    {
+      "from": "D138",
+      "to": "E05",
+      "from_name": "acute_stroke",
+      "to_name": "E05",
+      "reason": "脳梗塞: 酸素(通常正常)"
+    },
+    {
+      "from": "D138",
+      "to": "L53",
+      "from_name": "acute_stroke",
+      "to_name": "L53",
+      "reason": "脳梗塞: トロポニン(心原性/ストレス性, 20-30%)"
+    },
+    {
+      "from": "D153",
+      "to": "E04",
+      "from_name": "rhabdomyolysis",
+      "to_name": "E04",
+      "reason": "横紋筋融解: 頻呼吸(代謝性アシドーシス)"
+    },
+    {
+      "from": "D162",
+      "to": "S44",
+      "from_name": "HUS",
+      "to_name": "S44",
+      "reason": "HUS: 出血傾向(血小板減少, 30-40%)"
+    },
+    {
+      "from": "D163",
+      "to": "L01",
+      "from_name": "wernicke",
+      "to_name": "L01",
+      "reason": "ウェルニッケ: WBC(ストレス/感染)"
+    },
+    {
+      "from": "D163",
+      "to": "L11",
+      "from_name": "wernicke",
+      "to_name": "L11",
+      "reason": "ウェルニッケ: 肝酵素(アルコール性, 30-40%)"
+    },
+    {
+      "from": "D163",
+      "to": "L54",
+      "from_name": "wernicke",
+      "to_name": "L54",
+      "reason": "ウェルニッケ: 低血糖(B1欠乏+栄養不良, 30-40%)"
+    },
+    {
+      "from": "D173",
+      "to": "E06",
+      "from_name": "varicella",
+      "to_name": "E06",
+      "reason": "水痘: 項部硬直(脳炎合併時, 10-15%)"
+    },
+    {
+      "from": "D173",
+      "to": "S12",
+      "from_name": "varicella",
+      "to_name": "S12",
+      "reason": "水痘: 腹痛(肝炎/膵炎, 20-30%)"
+    },
+    {
+      "from": "D173",
+      "to": "E18",
+      "from_name": "varicella",
+      "to_name": "E18",
+      "reason": "水痘: 黄疸(肝炎合併, 20-30%)"
+    },
+    {
+      "from": "D177",
+      "to": "E38",
+      "from_name": "ischemic_colitis",
+      "to_name": "E38",
+      "reason": "虚血性腸炎: 血圧(動脈硬化, 40-50%高血圧合併)"
+    },
+    {
+      "from": "D177",
+      "to": "L14",
+      "from_name": "ischemic_colitis",
+      "to_name": "L14",
+      "reason": "虚血性腸炎: 血小板(消費性, TMA合併時)"
+    },
+    {
+      "from": "D174",
+      "to": "L53",
+      "from_name": "ruptured_AAA",
+      "to_name": "L53",
+      "reason": "AAA破裂: トロポニン(ショック/需要増大, 30-40%)"
+    },
+    {
+      "from": "D176",
+      "to": "S14",
+      "from_name": "anti_NMDA",
+      "to_name": "S14",
+      "reason": "抗NMDA: 下痢(前駆消化管症状, 20-30%)"
+    },
+    {
+      "from": "D116",
+      "to": "L04",
+      "from_name": "myocarditis",
+      "to_name": "L04",
+      "reason": "心筋炎: CXR(肺うっ血/胸水, 40-50%)"
+    },
+    {
+      "from": "D157",
+      "to": "S04",
+      "from_name": "HHS",
+      "to_name": "S04",
+      "reason": "HHS: 呼吸困難(Kussmaul/脱水)"
+    },
+    {
+      "from": "D170",
+      "to": "E36",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "E36",
+      "reason": "アルコール性肝炎: 浮腫(腹水/低Alb)"
+    },
+    {
+      "from": "D169",
+      "to": "E36",
+      "from_name": "AIH",
+      "to_name": "E36",
+      "reason": "AIH: 浮腫(低Alb/腹水)"
+    },
+    {
+      "from": "D168",
+      "to": "L44",
+      "from_name": "RPGN",
+      "to_name": "L44",
+      "reason": "RPGN: 電解質(高K/AKI)"
+    },
+    {
+      "from": "D152",
+      "to": "L16",
+      "from_name": "DIC",
+      "to_name": "L16",
+      "reason": "DIC: LDH上昇(溶血/臓器障害)"
+    },
+    {
+      "from": "D113",
+      "to": "E18",
+      "from_name": "histoplasmosis",
+      "to_name": "E18",
+      "reason": "ヒストプラズマ: 黄疸(肝障害, 15-20%)"
+    },
+    {
+      "from": "D164",
+      "to": "E01",
+      "from_name": "chronic_SDH",
+      "to_name": "E01",
+      "reason": "慢性SDH: 体温(通常無熱)"
+    },
+    {
+      "from": "D139",
+      "to": "E04",
+      "from_name": "cerebral_hemorrhage",
+      "to_name": "E04",
+      "reason": "脳出血: 呼吸パターン(中枢性異常)"
+    },
+    {
+      "from": "D166",
+      "to": "E03",
+      "from_name": "acetaminophen_OD",
+      "to_name": "E03",
+      "reason": "APAP: 低血圧(肝不全ショック)"
+    },
+    {
+      "from": "D166",
+      "to": "S44",
+      "from_name": "acetaminophen_OD",
+      "to_name": "S44",
+      "reason": "APAP: 出血傾向(凝固障害)"
+    },
+    {
+      "from": "D172",
+      "to": "L55",
+      "from_name": "gas_gangrene",
+      "to_name": "L55",
+      "reason": "ガス壊疽: AKI(毒素性/ショック)"
+    },
+    {
+      "from": "D156",
+      "to": "S06",
+      "from_name": "TTP",
+      "to_name": "S06",
+      "reason": "TTP: 筋肉痛(20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

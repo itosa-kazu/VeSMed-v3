@@ -5261,6 +5261,42 @@
       ],
       "severity": "high",
       "note": "急性(AEP):数日で呼吸不全、喫煙開始が誘因。慢性(CEP):数週~月、末梢浸潤(photonegative of PE)。BAL好酸球>25%"
+    },
+    {
+      "id": "D189",
+      "name": "methanol_poisoning",
+      "name_ja": "メタノール中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "メタノール→蟻酸(formate)→代謝性アシドーシス+視神経障害。AG開大+浸透圧gap。視力障害が特徴的"
+    },
+    {
+      "id": "D190",
+      "name": "SIADH",
+      "name_ja": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "ADH過剰→希釈性低Na血症。原因:肺疾患/CNS疾患/薬剤/悪性腫瘍。Na<120で痙攣/昏睡リスク"
+    },
+    {
+      "id": "D191",
+      "name": "PSGN",
+      "name_ja": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "GAS咽頭炎/膿痂疹の1-3週後。血尿+蛋白尿+浮腫+高血圧+AKI。補体(C3)低下が特徴。小児に多いが成人もあり"
     }
   ]
 }
