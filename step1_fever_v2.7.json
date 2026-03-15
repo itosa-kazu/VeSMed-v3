@@ -5897,6 +5897,66 @@
       ],
       "severity": "high",
       "note": "腎動脈狭窄→RAAS活性化→高血圧。動脈硬化性(高齢)/線維筋性異形成(若年女性)。治療抵抗性高血圧"
+    },
+    {
+      "id": "D242",
+      "name": "peptic_ulcer",
+      "name_ja": "消化性潰瘍(非穿孔性)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "H.pylori/NSAIDs。心窩部痛(食後増悪=胃/空腹時増悪=十二指腸)。出血(吐血/黒色便)リスク"
+    },
+    {
+      "id": "D243",
+      "name": "variceal_bleeding",
+      "name_ja": "食道静脈瘤破裂",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "肝硬変門脈圧亢進→食道/胃静脈瘤破裂→大量吐血。致死率20-30%。EVL/TIPS/SBT"
+    },
+    {
+      "id": "D244",
+      "name": "mallory_weiss",
+      "name_ja": "マロリー・ワイス症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "嘔吐→食道胃接合部裂傷→吐血。アルコール/妊娠悪阻が原因。多くは自然止血"
+    },
+    {
+      "id": "D245",
+      "name": "AGML",
+      "name_ja": "急性胃粘膜病変(AGML)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "ストレス/NSAIDs/アルコール→急性びらん/出血。心窩部痛+嘔気+吐血/黒色便"
+    },
+    {
+      "id": "D246",
+      "name": "EHEC",
+      "name_ja": "腸管出血性大腸菌感染症(EHEC/O157)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "志賀毒素産生性大腸菌(O157:H7等)。水様便→血性下痢。HUS合併リスク(5-10%)。抗菌薬禁忌論争"
     }
   ]
 }

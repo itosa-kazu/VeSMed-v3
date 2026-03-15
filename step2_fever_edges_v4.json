@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3547,
+  "total_edges": 3582,
   "edges": [
     {
       "from": "R01",
@@ -29326,6 +29326,251 @@
       "from_name": "renovascular_hypertension",
       "to_name": "T02",
       "reason": "腎血管性高血圧: 慢性~急性増悪"
+    },
+    {
+      "from": "D242",
+      "to": "S12",
+      "from_name": "peptic_ulcer",
+      "to_name": "S12",
+      "reason": "消化性潰瘍: 心窩部痛(90%+)"
+    },
+    {
+      "from": "D242",
+      "to": "S13",
+      "from_name": "peptic_ulcer",
+      "to_name": "S13",
+      "reason": "消化性潰瘍: 嘔気(50-60%)"
+    },
+    {
+      "from": "D242",
+      "to": "S44",
+      "from_name": "peptic_ulcer",
+      "to_name": "S44",
+      "reason": "消化性潰瘍: 出血(吐血/黒色便, 15-20%)"
+    },
+    {
+      "from": "D242",
+      "to": "E01",
+      "from_name": "peptic_ulcer",
+      "to_name": "E01",
+      "reason": "消化性潰瘍: 通常無熱"
+    },
+    {
+      "from": "D242",
+      "to": "L01",
+      "from_name": "peptic_ulcer",
+      "to_name": "L01",
+      "reason": "消化性潰瘍: WBC(出血時上昇)"
+    },
+    {
+      "from": "D242",
+      "to": "T01",
+      "from_name": "peptic_ulcer",
+      "to_name": "T01",
+      "reason": "消化性潰瘍: 急性~慢性"
+    },
+    {
+      "from": "D242",
+      "to": "T02",
+      "from_name": "peptic_ulcer",
+      "to_name": "T02",
+      "reason": "消化性潰瘍: 亜急性"
+    },
+    {
+      "from": "D243",
+      "to": "S44",
+      "from_name": "variceal_bleeding",
+      "to_name": "S44",
+      "reason": "静脈瘤破裂: 大量吐血(100%)"
+    },
+    {
+      "from": "D243",
+      "to": "E03",
+      "from_name": "variceal_bleeding",
+      "to_name": "E03",
+      "reason": "静脈瘤破裂: 低血圧(出血性ショック)"
+    },
+    {
+      "from": "D243",
+      "to": "E02",
+      "from_name": "variceal_bleeding",
+      "to_name": "E02",
+      "reason": "静脈瘤破裂: 頻脈(出血)"
+    },
+    {
+      "from": "D243",
+      "to": "E16",
+      "from_name": "variceal_bleeding",
+      "to_name": "E16",
+      "reason": "静脈瘤破裂: 意識障害(肝性脳症+ショック)"
+    },
+    {
+      "from": "D243",
+      "to": "L11",
+      "from_name": "variceal_bleeding",
+      "to_name": "L11",
+      "reason": "静脈瘤破裂: 肝酵素(肝硬変baseline)"
+    },
+    {
+      "from": "D243",
+      "to": "E18",
+      "from_name": "variceal_bleeding",
+      "to_name": "E18",
+      "reason": "静脈瘤破裂: 黄疸(肝硬変)"
+    },
+    {
+      "from": "D243",
+      "to": "T01",
+      "from_name": "variceal_bleeding",
+      "to_name": "T01",
+      "reason": "静脈瘤破裂: 超急性"
+    },
+    {
+      "from": "D243",
+      "to": "T02",
+      "from_name": "variceal_bleeding",
+      "to_name": "T02",
+      "reason": "静脈瘤破裂: 突発"
+    },
+    {
+      "from": "D244",
+      "to": "S44",
+      "from_name": "mallory_weiss",
+      "to_name": "S44",
+      "reason": "Mallory-Weiss: 吐血(定義的)"
+    },
+    {
+      "from": "D244",
+      "to": "S13",
+      "from_name": "mallory_weiss",
+      "to_name": "S13",
+      "reason": "Mallory-Weiss: 嘔吐(先行, 90%+)"
+    },
+    {
+      "from": "D244",
+      "to": "S12",
+      "from_name": "mallory_weiss",
+      "to_name": "S12",
+      "reason": "Mallory-Weiss: 心窩部痛(50-60%)"
+    },
+    {
+      "from": "D244",
+      "to": "E02",
+      "from_name": "mallory_weiss",
+      "to_name": "E02",
+      "reason": "Mallory-Weiss: 頻脈(出血時)"
+    },
+    {
+      "from": "D244",
+      "to": "T01",
+      "from_name": "mallory_weiss",
+      "to_name": "T01",
+      "reason": "Mallory-Weiss: 超急性"
+    },
+    {
+      "from": "D244",
+      "to": "T02",
+      "from_name": "mallory_weiss",
+      "to_name": "T02",
+      "reason": "Mallory-Weiss: 突発"
+    },
+    {
+      "from": "D245",
+      "to": "S12",
+      "from_name": "AGML",
+      "to_name": "S12",
+      "reason": "AGML: 心窩部痛(80%+)"
+    },
+    {
+      "from": "D245",
+      "to": "S13",
+      "from_name": "AGML",
+      "to_name": "S13",
+      "reason": "AGML: 嘔気/嘔吐(60-70%)"
+    },
+    {
+      "from": "D245",
+      "to": "S44",
+      "from_name": "AGML",
+      "to_name": "S44",
+      "reason": "AGML: 出血(30-40%)"
+    },
+    {
+      "from": "D245",
+      "to": "E01",
+      "from_name": "AGML",
+      "to_name": "E01",
+      "reason": "AGML: 通常無熱"
+    },
+    {
+      "from": "D245",
+      "to": "T01",
+      "from_name": "AGML",
+      "to_name": "T01",
+      "reason": "AGML: 急性"
+    },
+    {
+      "from": "D245",
+      "to": "T02",
+      "from_name": "AGML",
+      "to_name": "T02",
+      "reason": "AGML: 急性"
+    },
+    {
+      "from": "D246",
+      "to": "S14",
+      "from_name": "EHEC",
+      "to_name": "S14",
+      "reason": "EHEC: 血性下痢(90%+)"
+    },
+    {
+      "from": "D246",
+      "to": "S12",
+      "from_name": "EHEC",
+      "to_name": "S12",
+      "reason": "EHEC: 腹痛(びまん性/疝痛様, 90%+)"
+    },
+    {
+      "from": "D246",
+      "to": "S13",
+      "from_name": "EHEC",
+      "to_name": "S13",
+      "reason": "EHEC: 嘔吐(50-60%)"
+    },
+    {
+      "from": "D246",
+      "to": "E01",
+      "from_name": "EHEC",
+      "to_name": "E01",
+      "reason": "EHEC: 発熱(30-40%, 軽度)"
+    },
+    {
+      "from": "D246",
+      "to": "L01",
+      "from_name": "EHEC",
+      "to_name": "L01",
+      "reason": "EHEC: WBC上昇(50-60%)"
+    },
+    {
+      "from": "D246",
+      "to": "L02",
+      "from_name": "EHEC",
+      "to_name": "L02",
+      "reason": "EHEC: CRP上昇"
+    },
+    {
+      "from": "D246",
+      "to": "T01",
+      "from_name": "EHEC",
+      "to_name": "T01",
+      "reason": "EHEC: 急性(食品摂取3-8日後)"
+    },
+    {
+      "from": "D246",
+      "to": "T02",
+      "from_name": "EHEC",
+      "to_name": "T02",
+      "reason": "EHEC: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
