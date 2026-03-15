@@ -5777,6 +5777,66 @@
       ],
       "severity": "critical",
       "note": "肝内/肝門部/遠位胆管。閉塞性黄疸+体重減少+腹痛。PSC/肝吸虫がリスク"
+    },
+    {
+      "id": "D232",
+      "name": "alcoholic_ketoacidosis",
+      "name_ja": "アルコール性ケトアシドーシス(AKA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "大量飲酒後の絶食→ケトアシドーシス。嘔吐+脱水+腹痛。AG開大+ケトン体。血糖は正常~低"
+    },
+    {
+      "id": "D233",
+      "name": "miller_fisher",
+      "name_ja": "フィッシャー症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "GBS亜型。三徴:眼球運動障害+運動失調+腱反射消失。抗GQ1b抗体陽性。先行感染後1-3週"
+    },
+    {
+      "id": "D234",
+      "name": "CML",
+      "name_ja": "慢性骨髄性白血病(CML)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "Ph染色体/BCR-ABL。慢性期:著明白血球増多+脾腫+倦怠感。急性転化でblast crisis"
+    },
+    {
+      "id": "D235",
+      "name": "CLL",
+      "name_ja": "慢性リンパ性白血病(CLL)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "B細胞リンパ増殖。リンパ球増多+リンパ節腫脹+脾腫。高齢者。感染リスク(低γ)"
+    },
+    {
+      "id": "D236",
+      "name": "multiple_sclerosis",
+      "name_ja": "多発性硬化症(MS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "CNS脱髄。時間的・空間的多発。視力障害+感覚障害+運動障害+膀胱障害。若年女性に多い"
     }
   ]
 }
