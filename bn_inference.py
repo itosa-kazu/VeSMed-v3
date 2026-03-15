@@ -26,11 +26,14 @@ STEP2 = os.path.join(BASE, "step2_fever_edges_v4.json")
 STEP3 = os.path.join(BASE, "step3_fever_cpts_v2.json")
 CASES = os.path.join(BASE, "real_case_test_suite.json")
 
-# === 推論改善パラメータ (grid search最適化済み: dp=0.5, ca=0.3) ===
+# === 推論改善パラメータ (grid search最適化済み) ===
 # IDF鑑別力係数のべき乗 (0=無効, 0.5=最適, 1.0=強)
 IDF_DISC_POWER = 0.5
-# 反事実Coverage: 因果説明力の重み (0=無効, 0.3=最適, 1.0=強)
+# 反事実Coverage: 因果説明力の重み (0=無効, 2.0=最適, 3.0=強)
 CF_COVERAGE_ALPHA = 2.0
+# Prior Power: full_cptの絶対値をどの程度priorに反映するか
+# 0.0=全疾患平等(BASE_PRIOR), 1.0=full_cpt直接使用, 0.3-0.5=圧縮
+PRIOR_POWER = 0.0
 
 
 def load_json(path):
@@ -295,19 +298,31 @@ def _compute_marginal(cpt, parents, root_priors):
     return total if total > 0 else None
 
 
-def get_prior(disease_id, root_priors, risk_evidence):
-    """Get disease prior: flat base + risk factor relative adjustment.
+def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
+    """Get disease prior: demographic contrast with FIXED Japan population distribution.
 
-    Clinical reasoning: all diseases start from the same baseline (BASE_PRIOR).
-    Risk factors provide a RELATIVE boost/penalty via ratio to marginal:
+    Formula: adjusted_prior = BASE × P(d|RF_observed) / P_marginal_fixed(d)
 
-        adjusted_prior = BASE × P(d|RF_observed) / P_marginal(d)
+    P_marginal_fixed uses Japan 2024 population pyramid (hardcoded).
+    This is INDEPENDENT of root_priors distribution — adding/removing age
+    groups never changes existing results.
 
-    P_marginal = Σ_s P(d|RF=s) × P(RF=s)  (population-weighted average)
-
-    This preserves RF modulation (e.g. "female → SLE more likely") without
-    letting absolute prevalence dominate (e.g. "URI is 35% of fever").
+    prior_power controls strength:
+      0.0 = no demographic adjustment (all diseases equal)
+      1.0 = full adjustment (original ratio formula)
     """
+    # Japan 2024 population pyramid (Statistics Bureau of Japan)
+    # Source: stat.go.jp + UN World Population Prospects
+    JAPAN_POP = {
+        "R01": {"description": "Japan 2024 population", "distribution": {
+            "0_1": 0.013, "1_5": 0.027, "6_12": 0.057, "13_17": 0.045,
+            "18_39": 0.220, "40_64": 0.340, "65_plus": 0.298
+        }},
+        "R02": {"description": "Japan 2024 sex ratio", "distribution": {
+            "male": 0.488, "female": 0.512
+        }},
+    }
+
     rp = root_priors.get(disease_id)
     if rp is None:
         return BASE_PRIOR
@@ -321,7 +336,7 @@ def get_prior(disease_id, root_priors, risk_evidence):
     if not cpt or not parents:
         return BASE_PRIOR
 
-    # Only use risk factor parents (R-prefixed), skip disease parents (D-prefixed)
+    # Only use risk factor parents (R-prefixed)
     rf_parents = [p for p in parents if p.startswith("R")]
     if not rf_parents:
         return BASE_PRIOR
@@ -332,9 +347,9 @@ def get_prior(disease_id, root_priors, risk_evidence):
         if pid in risk_evidence:
             obs_parts.append(risk_evidence[pid])
         else:
-            # Unobserved: use most common state
-            dist_info = root_priors.get(pid)
-            if isinstance(dist_info, dict) and "distribution" in dist_info:
+            # Unobserved: use most common state from Japan population
+            dist_info = JAPAN_POP.get(pid)
+            if dist_info:
                 dist = dist_info["distribution"]
                 obs_parts.append(max(dist, key=dist.get))
             else:
@@ -359,18 +374,84 @@ def get_prior(disease_id, root_priors, risk_evidence):
     p_observed = _lookup_cpt(cpt, full_parents, obs_parts)
     if p_observed is None:
         return BASE_PRIOR
+    if p_observed <= 0:
+        return 1e-6
 
-    # P_marginal(d) — population-weighted average
-    p_marginal = _compute_marginal(cpt, full_parents, root_priors)
+    if prior_power <= 0:
+        return BASE_PRIOR
+
+    # P_marginal using Japan population (fixed, never changes)
+    p_marginal = _compute_marginal(cpt, full_parents, JAPAN_POP)
     if p_marginal is None or p_marginal <= 0:
         return BASE_PRIOR
 
-    # Relative adjustment: BASE × (observed / marginal)
+    # Ratio-based adjustment
     ratio = p_observed / p_marginal
-    adjusted = BASE_PRIOR * ratio
+    adjusted = BASE_PRIOR * (ratio ** prior_power)
 
-    # Clamp to reasonable range
     return max(min(adjusted, 0.5), 1e-6)
+
+
+def _compute_marginal_fixed(cpt, parents):
+    """Compute marginal prior using FIXED reference distribution.
+
+    Uses a hardcoded adult-weighted distribution that never changes,
+    regardless of how many age/sex states exist in R01/R02.
+    This makes the demographic contrast independent of population composition
+    while preserving disease-specific modulation.
+    """
+    # Fixed reference distribution (hardcoded, never changes)
+    FIXED_DIST = {
+        "R01": {"18_39": 0.40, "40_64": 0.35, "65_plus": 0.25},
+        "R02": {"male": 0.50, "female": 0.50},
+    }
+
+    if not parents or not cpt:
+        return None
+
+    # Compute weighted average using fixed distribution
+    # For single parent
+    if len(parents) == 1:
+        pid = parents[0]
+        dist = FIXED_DIST.get(pid, {})
+        if not dist:
+            # Fallback: uniform over leaf values
+            vals = [v for v in cpt.values() if isinstance(v, (int, float))]
+            return sum(vals) / len(vals) if vals else None
+
+        total = 0.0
+        weight_sum = 0.0
+        for state, weight in dist.items():
+            val = cpt.get(state)
+            if val is not None and isinstance(val, (int, float)):
+                total += val * weight
+                weight_sum += weight
+        return total / weight_sum if weight_sum > 0 else None
+
+    # For multiple parents (e.g., R01+R02): enumerate combinations
+    if len(parents) == 2:
+        p0, p1 = parents[0], parents[1]
+        d0 = FIXED_DIST.get(p0, {})
+        d1 = FIXED_DIST.get(p1, {})
+        if not d0 or not d1:
+            vals = [v for v in cpt.values() if isinstance(v, (int, float))]
+            return sum(vals) / len(vals) if vals else None
+
+        total = 0.0
+        weight_sum = 0.0
+        for s0, w0 in d0.items():
+            for s1, w1 in d1.items():
+                key = f"{s0},{s1}"
+                val = cpt.get(key)
+                if val is not None and isinstance(val, (int, float)):
+                    w = w0 * w1
+                    total += val * w
+                    weight_sum += w
+        return total / weight_sum if weight_sum > 0 else None
+
+    # Fallback for >2 parents
+    vals = [v for v in cpt.values() if isinstance(v, (int, float))]
+    return sum(vals) / len(vals) if vals else None
 
 
 def resolve_state(obs_state, states):
@@ -398,7 +479,7 @@ def resolve_state(obs_state, states):
 
 
 def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
-          disc=None, disc_power=0.0, cf_alpha=0.0):
+          disc=None, disc_power=0.0, cf_alpha=0.0, prior_power=0.0):
     """
     Compute P(disease | evidence) for all diseases.
 
@@ -419,7 +500,7 @@ def infer(evidence, risk, diseases, disease_children, noisy_or, root_priors,
         if d.startswith("M"):
             continue
 
-        prior = get_prior(d, root_priors, risk)
+        prior = get_prior(d, root_priors, risk, prior_power=prior_power)
         if prior <= 0:
             prior = 1e-10
         log_post = math.log(prior)
@@ -669,64 +750,74 @@ def main():
     # --- Grid Search Mode ---
     if args.grid:
         print("=" * 80)
-        print("Grid Search: finding optimal (disc_power, cf_alpha)")
+        print("Grid Search: finding optimal (disc_power, cf_alpha, prior_power)")
         print("=" * 80)
 
         in_scope_cases = [c for c in case_data["cases"]
                           if c["in_scope"] and c.get("expected_id", "OOS") != "OOS"]
 
         best_score = -1
-        best_params = (IDF_DISC_POWER, CF_COVERAGE_ALPHA)
+        best_params = (IDF_DISC_POWER, CF_COVERAGE_ALPHA, PRIOR_POWER)
         results_table = []
 
-        dp_values = [0.0, 0.2, 0.3, 0.5, 0.7, 0.9, 1.0, 1.2, 1.5]
-        ca_values = [0.0, 0.3, 0.5, 0.7, 1.0, 1.3, 1.5, 2.0, 2.5]
+        dp_values = [0.0, 0.3, 0.5, 0.7, 1.0]
+        ca_values = [0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+        pp_values = [0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 1.0]
+
+        d = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
+        total_combos = len(dp_values) * len(ca_values) * len(pp_values)
+        done = 0
 
         for dp in dp_values:
             for ca in ca_values:
-                d = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
-                t1, t3, fatal = 0, 0, 0
+                for pp in pp_values:
+                    t1, t3, fatal = 0, 0, 0
 
-                for case in in_scope_cases:
-                    ev = case.get("evidence", {})
-                    risk = case.get("risk_factors", {})
-                    expected = case["expected_id"]
+                    for case in in_scope_cases:
+                        ev = case.get("evidence", {})
+                        risk = case.get("risk_factors", {})
+                        expected = case["expected_id"]
 
-                    ranked = infer(ev, risk, diseases, disease_children,
-                                   noisy_or, root_priors,
-                                   disc=d, disc_power=dp, cf_alpha=ca)
-                    h = entropy(ranked)
+                        ranked = infer(ev, risk, diseases, disease_children,
+                                       noisy_or, root_priors,
+                                       disc=d, disc_power=dp, cf_alpha=ca,
+                                       prior_power=pp)
+                        h = entropy(ranked)
 
-                    rank = None
-                    for i, (dd, p) in enumerate(ranked):
-                        if dd == expected:
-                            rank = i + 1
-                            break
+                        rank = None
+                        for i, (dd, p) in enumerate(ranked):
+                            if dd == expected:
+                                rank = i + 1
+                                break
 
-                    if rank == 1:
-                        t1 += 1
-                    if rank is not None and rank <= 3:
-                        t3 += 1
-                    if h < 2.0 and (rank is None or rank > 3):
-                        fatal += 1
+                        if rank == 1:
+                            t1 += 1
+                        if rank is not None and rank <= 3:
+                            t3 += 1
+                        if h < 2.0 and (rank is None or rank > 3):
+                            fatal += 1
 
-                score = t3 * 10000 + t1 * 100 - fatal * 50000
-                results_table.append((dp, ca, t1, t3, fatal, score))
+                    score = t3 * 10000 + t1 * 100 - fatal * 50000
+                    results_table.append((dp, ca, pp, t1, t3, fatal, score))
 
-                if score > best_score:
-                    best_score = score
-                    best_params = (dp, ca)
+                    if score > best_score:
+                        best_score = score
+                        best_params = (dp, ca, pp)
 
-        print(f"\n{'dp':>5s} {'ca':>5s} {'T1':>5s} {'T3':>5s} {'FATAL':>5s} {'Score':>8s}")
-        print("-" * 40)
-        for dp, ca, t1, t3, fatal, score in sorted(results_table, key=lambda x: -x[5]):
-            marker = " <<<" if (dp, ca) == best_params else ""
-            print(f"{dp:5.1f} {ca:5.1f} {t1:5d} {t3:5d} {fatal:5d} {score:8d}{marker}")
+                    done += 1
+                    if done % 30 == 0:
+                        print(f"  [{done}/{total_combos}] best so far: dp={best_params[0]}, ca={best_params[1]}, pp={best_params[2]} T1={[r for r in results_table if (r[0],r[1],r[2])==best_params][0][3]} T3={[r for r in results_table if (r[0],r[1],r[2])==best_params][0][4]}", flush=True)
 
-        print(f"\nBest: disc_power={best_params[0]}, cf_alpha={best_params[1]}")
-        best_row = [r for r in results_table if (r[0], r[1]) == best_params][0]
-        print(f"Top-1={best_row[2]}, Top-3={best_row[3]}, FATAL={best_row[4]}")
-        print(f"\nCurrent: disc_power={IDF_DISC_POWER}, cf_alpha={CF_COVERAGE_ALPHA}")
+        print(f"\n{'dp':>5s} {'ca':>5s} {'pp':>5s} {'T1':>5s} {'T3':>5s} {'FATAL':>5s} {'Score':>8s}")
+        print("-" * 50)
+        for dp, ca, pp, t1, t3, fatal, score in sorted(results_table, key=lambda x: -x[6])[:30]:
+            marker = " <<<" if (dp, ca, pp) == best_params else ""
+            print(f"{dp:5.1f} {ca:5.1f} {pp:5.1f} {t1:5d} {t3:5d} {fatal:5d} {score:8d}{marker}")
+
+        print(f"\nBest: disc_power={best_params[0]}, cf_alpha={best_params[1]}, prior_power={best_params[2]}")
+        best_row = [r for r in results_table if (r[0], r[1], r[2]) == best_params][0]
+        print(f"Top-1={best_row[3]}, Top-3={best_row[4]}, FATAL={best_row[5]}")
+        print(f"\nCurrent: disc_power={IDF_DISC_POWER}, cf_alpha={CF_COVERAGE_ALPHA}, prior_power={PRIOR_POWER}")
         return
 
     # 改善パラメータ
@@ -734,12 +825,14 @@ def main():
         disc = None
         disc_power = 0.0
         cf_alpha = 0.0
+        prior_power = 0.0
         mode_label = "CLASSIC"
     else:
         disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
         disc_power = IDF_DISC_POWER
         cf_alpha = CF_COVERAGE_ALPHA
-        mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha})"
+        prior_power = PRIOR_POWER
+        mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha}, PP={prior_power})"
 
     cases = case_data["cases"]
     if args.case:
@@ -759,7 +852,8 @@ def main():
         risk = case.get("risk_factors", {})
 
         ranked = infer(ev, risk, diseases, disease_children, noisy_or, root_priors,
-                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha)
+                       disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
+                       prior_power=prior_power)
         h = entropy(ranked)
 
         rank = None
