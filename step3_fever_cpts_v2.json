@@ -2659,6 +2659,59 @@
         "yes|40_64": 0.01,
         "yes|65_plus": 0.02
       }
+    },
+    "D138": {
+      "parents": [
+        "R48",
+        "R01"
+      ],
+      "description": "脳梗塞。AF+高齢がリスク",
+      "cpt": {
+        "no|18_39": 0.002,
+        "no|40_64": 0.005,
+        "no|65_plus": 0.01,
+        "yes|18_39": 0.008,
+        "yes|40_64": 0.015,
+        "yes|65_plus": 0.03
+      }
+    },
+    "D139": {
+      "parents": [
+        "R01"
+      ],
+      "description": "脳出血。高齢+高血圧がリスク",
+      "cpt": {
+        "18_39": 0.002,
+        "40_64": 0.005,
+        "65_plus": 0.01
+      }
+    },
+    "D140": {
+      "parents": [
+        "R04"
+      ],
+      "description": "DKA。糖尿病がリスク",
+      "cpt": {
+        "no": 0.001,
+        "yes": 0.015
+      }
+    },
+    "D141": {
+      "parents": [
+        "R04"
+      ],
+      "description": "低血糖。糖尿病(インスリン/SU剤)がリスク",
+      "cpt": {
+        "no": 0.002,
+        "yes": 0.01
+      }
+    },
+    "D142": {
+      "parents": [],
+      "description": "てんかん重積",
+      "cpt": {
+        "": 0.003
+      }
     }
   },
   "noisy_or_params": {
@@ -3728,6 +3781,41 @@
           "38.0_39.0": 0.2,
           "39.0_40.0": 0.1,
           "over_40.0": 0.05
+        },
+        "D138": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.0
+        },
+        "D139": {
+          "under_37.5": 0.65,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.12,
+          "39.0_40.0": 0.03,
+          "over_40.0": 0.0
+        },
+        "D140": {
+          "under_37.5": 0.45,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.03
+        },
+        "D141": {
+          "under_37.5": 0.9,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.0,
+          "over_40.0": 0.0
+        },
+        "D142": {
+          "under_37.5": 0.3,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.05
         }
       }
     },
@@ -4088,6 +4176,31 @@
           "under_100": 0.3,
           "100_120": 0.5,
           "over_120": 0.2
+        },
+        "D138": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
+        },
+        "D139": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
+        },
+        "D140": {
+          "under_100": 0.1,
+          "100_120": 0.5,
+          "over_120": 0.4
+        },
+        "D141": {
+          "under_100": 0.15,
+          "100_120": 0.55,
+          "over_120": 0.3
+        },
+        "D142": {
+          "under_100": 0.05,
+          "100_120": 0.4,
+          "over_120": 0.55
         }
       }
     },
@@ -4241,6 +4354,10 @@
         "D137": {
           "normal_over_90": 0.5,
           "hypotension_under_90": 0.5
+        },
+        "D140": {
+          "normal_over_90": 0.55,
+          "hypotension_under_90": 0.45
         }
       }
     },
@@ -4382,6 +4499,11 @@
           "normal_under_20": 0.65,
           "tachypnea_20_30": 0.3,
           "severe_over_30": 0.05
+        },
+        "D140": {
+          "normal_under_20": 0.1,
+          "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.45
         }
       }
     },
@@ -4542,6 +4664,11 @@
           "normal_over_96": 0.7,
           "mild_hypoxia_93_96": 0.2,
           "severe_hypoxia_under_93": 0.1
+        },
+        "D142": {
+          "normal_over_96": 0.25,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.35
         }
       }
     },
@@ -5722,6 +5849,31 @@
           "normal": 0.8,
           "confused": 0.12,
           "obtunded": 0.08
+        },
+        "D138": {
+          "normal": 0.45,
+          "confused": 0.35,
+          "obtunded": 0.2
+        },
+        "D139": {
+          "normal": 0.2,
+          "confused": 0.3,
+          "obtunded": 0.5
+        },
+        "D140": {
+          "normal": 0.4,
+          "confused": 0.35,
+          "obtunded": 0.25
+        },
+        "D141": {
+          "normal": 0.1,
+          "confused": 0.4,
+          "obtunded": 0.5
+        },
+        "D142": {
+          "normal": 0.05,
+          "confused": 0.25,
+          "obtunded": 0.7
         }
       }
     },
@@ -7046,6 +7198,36 @@
           "normal_4000_10000": 0.15,
           "high_10000_20000": 0.45,
           "very_high_over_20000": 0.38
+        },
+        "D138": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.6,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.07
+        },
+        "D139": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.17
+        },
+        "D140": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.28
+        },
+        "D141": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.85,
+          "high_10000_20000": 0.1,
+          "very_high_over_20000": 0.02
+        },
+        "D142": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.3,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.23
         }
       }
     },
@@ -7813,6 +7995,30 @@
           "mild_0.3_3": 0.1,
           "moderate_3_10": 0.3,
           "high_over_10": 0.55
+        },
+        "D138": {
+          "normal_under_0.3": 0.5,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.15,
+          "high_over_10": 0.05
+        },
+        "D140": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.2
+        },
+        "D141": {
+          "normal_under_0.3": 0.8,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.04,
+          "high_over_10": 0.01
+        },
+        "D142": {
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.15
         }
       }
     },
@@ -10620,6 +10826,11 @@
           "absent": 0.55,
           "on_exertion": 0.3,
           "at_rest": 0.15
+        },
+        "D140": {
+          "absent": 0.25,
+          "on_exertion": 0.2,
+          "at_rest": 0.55
         }
       }
     },
@@ -10795,6 +11006,16 @@
           "absent": 0.65,
           "mild": 0.25,
           "severe": 0.1
+        },
+        "D138": {
+          "absent": 0.65,
+          "mild": 0.2,
+          "severe": 0.15
+        },
+        "D139": {
+          "absent": 0.2,
+          "mild": 0.15,
+          "severe": 0.65
         }
       }
     },
@@ -11289,6 +11510,16 @@
           "absent": 0.45,
           "mild": 0.3,
           "severe": 0.25
+        },
+        "D140": {
+          "absent": 0.05,
+          "mild": 0.2,
+          "severe": 0.75
+        },
+        "D141": {
+          "absent": 0.1,
+          "mild": 0.25,
+          "severe": 0.65
         }
       }
     },
@@ -11895,6 +12126,15 @@
           "LLQ": 0.05,
           "suprapubic": 0.02,
           "diffuse": 0.65
+        },
+        "D140": {
+          "absent": 0.4,
+          "epigastric": 0.15,
+          "RUQ": 0.05,
+          "RLQ": 0.03,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.33
         }
       }
     },
@@ -12075,6 +12315,18 @@
         "D137": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D138": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D139": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D140": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -13252,6 +13504,22 @@
         "D118": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D138": {
+          "absent": 0.9,
+          "present": 0.1
+        },
+        "D139": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "D141": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D142": {
+          "absent": 0.02,
+          "present": 0.98
         }
       }
     },
@@ -14294,6 +14562,36 @@
           "3d_to_1w": 0.15,
           "1w_to_3w": 0.04,
           "over_3w": 0.01
+        },
+        "D138": {
+          "under_3d": 0.9,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.0
+        },
+        "D139": {
+          "under_3d": 0.9,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.0
+        },
+        "D140": {
+          "under_3d": 0.75,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
+        },
+        "D141": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
+        },
+        "D142": {
+          "under_3d": 0.9,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.0
         }
       }
     },
@@ -14575,6 +14873,26 @@
         "D137": {
           "sudden_hours": 0.75,
           "gradual_days": 0.25
+        },
+        "D138": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
+        },
+        "D139": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
+        },
+        "D140": {
+          "sudden_hours": 0.5,
+          "gradual_days": 0.5
+        },
+        "D141": {
+          "sudden_hours": 0.85,
+          "gradual_days": 0.15
+        },
+        "D142": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
         }
       }
     },
@@ -16011,6 +16329,130 @@
           "none": 0.4,
           "left_arm_jaw": 0.02,
           "back": 0.03
+        }
+      }
+    },
+    "L54": {
+      "description": "血糖値。DKA/HHSで著高、低血糖で低値",
+      "leak": {
+        "hypoglycemia": 0.02,
+        "normal": 0.9,
+        "hyperglycemia": 0.06,
+        "very_high_over_500": 0.02
+      },
+      "parent_effects": {
+        "D138": {
+          "hypoglycemia": 0.02,
+          "normal": 0.55,
+          "hyperglycemia": 0.38,
+          "very_high_over_500": 0.05
+        },
+        "D139": {
+          "hypoglycemia": 0.02,
+          "normal": 0.45,
+          "hyperglycemia": 0.45,
+          "very_high_over_500": 0.08
+        },
+        "D140": {
+          "hypoglycemia": 0.01,
+          "normal": 0.02,
+          "hyperglycemia": 0.22,
+          "very_high_over_500": 0.75
+        },
+        "D141": {
+          "hypoglycemia": 0.9,
+          "normal": 0.08,
+          "hyperglycemia": 0.01,
+          "very_high_over_500": 0.01
+        },
+        "D142": {
+          "hypoglycemia": 0.05,
+          "normal": 0.4,
+          "hyperglycemia": 0.45,
+          "very_high_over_500": 0.1
+        },
+        "D71": {
+          "hypoglycemia": 0.02,
+          "normal": 0.3,
+          "hyperglycemia": 0.5,
+          "very_high_over_500": 0.18
+        },
+        "D72": {
+          "hypoglycemia": 0.4,
+          "normal": 0.45,
+          "hyperglycemia": 0.12,
+          "very_high_over_500": 0.03
+        },
+        "D24": {
+          "hypoglycemia": 0.15,
+          "normal": 0.35,
+          "hyperglycemia": 0.35,
+          "very_high_over_500": 0.15
+        }
+      }
+    },
+    "S52": {
+      "description": "局所神経症状。脳卒中に特異的",
+      "leak": {
+        "absent": 0.95,
+        "unilateral_weakness": 0.03,
+        "bilateral": 0.02
+      },
+      "parent_effects": {
+        "D138": {
+          "absent": 0.15,
+          "unilateral_weakness": 0.8,
+          "bilateral": 0.05
+        },
+        "D139": {
+          "absent": 0.25,
+          "unilateral_weakness": 0.65,
+          "bilateral": 0.1
+        },
+        "D13": {
+          "absent": 0.8,
+          "unilateral_weakness": 0.15,
+          "bilateral": 0.05
+        },
+        "D118": {
+          "absent": 0.3,
+          "unilateral_weakness": 0.6,
+          "bilateral": 0.1
+        },
+        "D110": {
+          "absent": 0.25,
+          "unilateral_weakness": 0.65,
+          "bilateral": 0.1
+        }
+      }
+    },
+    "S53": {
+      "description": "構音障害/失語。脳卒中に特異的",
+      "leak": {
+        "absent": 0.95,
+        "dysarthria": 0.03,
+        "aphasia": 0.02
+      },
+      "parent_effects": {
+        "D138": {
+          "absent": 0.35,
+          "dysarthria": 0.3,
+          "aphasia": 0.35
+        },
+        "D139": {
+          "absent": 0.55,
+          "dysarthria": 0.25,
+          "aphasia": 0.2
+        },
+        "D13": {
+          "absent": 0.9,
+          "dysarthria": 0.08,
+          "aphasia": 0.02
+        },
+        "D118": {
+          "absent": 0.55,
+          "dysarthria": 0.2,
+          "aphasia": 0.25
         }
       }
     }

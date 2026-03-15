@@ -4587,6 +4587,103 @@
       ],
       "severity": "critical",
       "note": "SMA塞栓/血栓。激烈腹痛なのに腹部所見が乏しい(pain out of proportion)。AF既往がリスク。乳酸アシドーシス+LDH上昇。致死率50-80%(診断遅延時)"
+    },
+    {
+      "id": "L54",
+      "name": "blood_glucose",
+      "name_ja": "血糖値",
+      "category": "lab",
+      "states": [
+        "hypoglycemia",
+        "normal",
+        "hyperglycemia",
+        "very_high_over_500"
+      ],
+      "note": "低血糖<70mg/dL, 正常70-140, 高血糖140-500, 著高>500(DKA/HHS)"
+    },
+    {
+      "id": "S52",
+      "name": "focal_neuro_deficit",
+      "name_ja": "局所神経症状（片麻痺）",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "unilateral_weakness",
+        "bilateral"
+      ],
+      "note": "片側運動麻痺/感覚障害。脳梗塞/脳出血に特異的"
+    },
+    {
+      "id": "S53",
+      "name": "speech_disturbance",
+      "name_ja": "構音障害/失語",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "dysarthria",
+        "aphasia"
+      ],
+      "note": "構音障害(小脳/脳幹), 失語(左大脳半球)。脳卒中に特異的"
+    },
+    {
+      "id": "D138",
+      "name": "acute_ischemic_stroke",
+      "name_ja": "急性脳梗塞",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の局所神経症状(片麻痺/失語)。tPA(4.5h以内)/血栓回収術。AF既往が塞栓リスク"
+    },
+    {
+      "id": "D139",
+      "name": "intracerebral_hemorrhage",
+      "name_ja": "脳出血",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の頭痛+嘔吐+意識障害+片麻痺。高血圧が最大リスク。CTで高吸収域"
+    },
+    {
+      "id": "D140",
+      "name": "diabetic_ketoacidosis",
+      "name_ja": "糖尿病性ケトアシドーシス(DKA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "高血糖+代謝性アシドーシス+ケトン体上昇。Kussmaul呼吸+脱水+意識障害"
+    },
+    {
+      "id": "D141",
+      "name": "severe_hypoglycemia",
+      "name_ja": "重症低血糖",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "血糖<50mg/dL。意識障害/痙攣/発汗/振戦。即時ブドウ糖投与で回復"
+    },
+    {
+      "id": "D142",
+      "name": "status_epilepticus",
+      "name_ja": "てんかん重積状態",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "5分以上持続する痙攣または反復。意識回復なし。即時ベンゾ+抗てんかん薬"
     }
   ]
 }

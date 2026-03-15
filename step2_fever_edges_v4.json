@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2296,
+  "total_edges": 2363,
   "edges": [
     {
       "from": "R01",
@@ -20569,6 +20569,475 @@
       "from_name": "D20",
       "to_name": "E04",
       "reason": "副鼻腔炎: 頻呼吸(鼻閉で20-30%)"
+    },
+    {
+      "from": "D138",
+      "to": "S52",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "S52",
+      "reason": "脳梗塞: 片麻痺(70-80%)"
+    },
+    {
+      "from": "D138",
+      "to": "S53",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "S53",
+      "reason": "脳梗塞: 構音障害/失語(40-60%)"
+    },
+    {
+      "from": "D138",
+      "to": "E16",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "E16",
+      "reason": "脳梗塞: 意識障害(30-50%)"
+    },
+    {
+      "from": "D138",
+      "to": "S05",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "S05",
+      "reason": "脳梗塞: 頭痛(20-30%)"
+    },
+    {
+      "from": "D138",
+      "to": "S42",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "S42",
+      "reason": "脳梗塞: 痙攣(5-10%)"
+    },
+    {
+      "from": "D138",
+      "to": "E02",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "E02",
+      "reason": "脳梗塞: 頻脈/徐脈(変動)"
+    },
+    {
+      "from": "D138",
+      "to": "S13",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "S13",
+      "reason": "脳梗塞: 嘔気嘔吐(20-30%)"
+    },
+    {
+      "from": "D138",
+      "to": "E01",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "E01",
+      "reason": "脳梗塞: 通常無熱"
+    },
+    {
+      "from": "D138",
+      "to": "L01",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "L01",
+      "reason": "脳梗塞: WBC通常正常~軽度上昇"
+    },
+    {
+      "from": "D138",
+      "to": "L02",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "L02",
+      "reason": "脳梗塞: CRP通常正常"
+    },
+    {
+      "from": "D138",
+      "to": "L54",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "L54",
+      "reason": "脳梗塞: 血糖正常(ストレス高血糖もあり)"
+    },
+    {
+      "from": "D138",
+      "to": "T01",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "T01",
+      "reason": "脳梗塞: 超急性"
+    },
+    {
+      "from": "D138",
+      "to": "T02",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "T02",
+      "reason": "脳梗塞: 突然発症"
+    },
+    {
+      "from": "D139",
+      "to": "S05",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "S05",
+      "reason": "脳出血: 突然の激しい頭痛(60-70%)"
+    },
+    {
+      "from": "D139",
+      "to": "S13",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "S13",
+      "reason": "脳出血: 嘔吐(50-60%)"
+    },
+    {
+      "from": "D139",
+      "to": "E16",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "E16",
+      "reason": "脳出血: 意識障害(50-70%)"
+    },
+    {
+      "from": "D139",
+      "to": "S52",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "S52",
+      "reason": "脳出血: 片麻痺(60-70%)"
+    },
+    {
+      "from": "D139",
+      "to": "S53",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "S53",
+      "reason": "脳出血: 構音障害/失語(30-40%)"
+    },
+    {
+      "from": "D139",
+      "to": "S42",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "S42",
+      "reason": "脳出血: 痙攣(10-20%)"
+    },
+    {
+      "from": "D139",
+      "to": "E02",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "E02",
+      "reason": "脳出血: 頻脈/徐脈"
+    },
+    {
+      "from": "D139",
+      "to": "E01",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "E01",
+      "reason": "脳出血: 通常無熱(中枢性発熱あり)"
+    },
+    {
+      "from": "D139",
+      "to": "L01",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "L01",
+      "reason": "脳出血: WBC上昇(ストレス)"
+    },
+    {
+      "from": "D139",
+      "to": "L54",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "L54",
+      "reason": "脳出血: 血糖(ストレス高血糖)"
+    },
+    {
+      "from": "D139",
+      "to": "T01",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "T01",
+      "reason": "脳出血: 超急性"
+    },
+    {
+      "from": "D139",
+      "to": "T02",
+      "from_name": "intracerebral_hemorrhage",
+      "to_name": "T02",
+      "reason": "脳出血: 突然発症"
+    },
+    {
+      "from": "D140",
+      "to": "L54",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "L54",
+      "reason": "DKA: 血糖著高(>500mg/dL)"
+    },
+    {
+      "from": "D140",
+      "to": "S13",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "S13",
+      "reason": "DKA: 嘔気嘔吐(60-80%)"
+    },
+    {
+      "from": "D140",
+      "to": "S12",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "S12",
+      "reason": "DKA: 腹痛(40-60%)"
+    },
+    {
+      "from": "D140",
+      "to": "E16",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "E16",
+      "reason": "DKA: 意識障害(30-50%)"
+    },
+    {
+      "from": "D140",
+      "to": "E04",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "E04",
+      "reason": "DKA: Kussmaul呼吸(頻呼吸+深呼吸, 60-80%)"
+    },
+    {
+      "from": "D140",
+      "to": "S04",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "S04",
+      "reason": "DKA: 呼吸困難(代償性過換気)"
+    },
+    {
+      "from": "D140",
+      "to": "E02",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "E02",
+      "reason": "DKA: 頻脈(脱水)"
+    },
+    {
+      "from": "D140",
+      "to": "E03",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "E03",
+      "reason": "DKA: 低血圧(脱水で30-40%)"
+    },
+    {
+      "from": "D140",
+      "to": "S07",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "S07",
+      "reason": "DKA: 倦怠感(80%+)"
+    },
+    {
+      "from": "D140",
+      "to": "E01",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "E01",
+      "reason": "DKA: 発熱(感染誘因なら)"
+    },
+    {
+      "from": "D140",
+      "to": "L01",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "L01",
+      "reason": "DKA: WBC上昇(ストレス/感染)"
+    },
+    {
+      "from": "D140",
+      "to": "L02",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "L02",
+      "reason": "DKA: CRP(感染合併で上昇)"
+    },
+    {
+      "from": "D140",
+      "to": "T01",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "T01",
+      "reason": "DKA: 急性(数時間~1日)"
+    },
+    {
+      "from": "D140",
+      "to": "T02",
+      "from_name": "diabetic_ketoacidosis",
+      "to_name": "T02",
+      "reason": "DKA: 急性~亜急性"
+    },
+    {
+      "from": "D141",
+      "to": "L54",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "L54",
+      "reason": "低血糖: 血糖著明低下(<50mg/dL)"
+    },
+    {
+      "from": "D141",
+      "to": "E16",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "E16",
+      "reason": "低血糖: 意識障害(70-90%)"
+    },
+    {
+      "from": "D141",
+      "to": "S42",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "S42",
+      "reason": "低血糖: 痙攣(20-30%)"
+    },
+    {
+      "from": "D141",
+      "to": "E02",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "E02",
+      "reason": "低血糖: 頻脈(交感神経活性化)"
+    },
+    {
+      "from": "D141",
+      "to": "S07",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "S07",
+      "reason": "低血糖: 倦怠感/脱力"
+    },
+    {
+      "from": "D141",
+      "to": "E01",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "E01",
+      "reason": "低血糖: 通常無熱"
+    },
+    {
+      "from": "D141",
+      "to": "L01",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "L01",
+      "reason": "低血糖: WBC通常正常"
+    },
+    {
+      "from": "D141",
+      "to": "L02",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "L02",
+      "reason": "低血糖: CRP通常正常"
+    },
+    {
+      "from": "D141",
+      "to": "T01",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "T01",
+      "reason": "低血糖: 超急性(数分~数時間)"
+    },
+    {
+      "from": "D141",
+      "to": "T02",
+      "from_name": "severe_hypoglycemia",
+      "to_name": "T02",
+      "reason": "低血糖: 突然発症"
+    },
+    {
+      "from": "D142",
+      "to": "S42",
+      "from_name": "status_epilepticus",
+      "to_name": "S42",
+      "reason": "てんかん重積: 持続性痙攣(定義上100%)"
+    },
+    {
+      "from": "D142",
+      "to": "E16",
+      "from_name": "status_epilepticus",
+      "to_name": "E16",
+      "reason": "てんかん重積: 意識障害(90%+)"
+    },
+    {
+      "from": "D142",
+      "to": "E02",
+      "from_name": "status_epilepticus",
+      "to_name": "E02",
+      "reason": "てんかん重積: 頻脈(80%+)"
+    },
+    {
+      "from": "D142",
+      "to": "E01",
+      "from_name": "status_epilepticus",
+      "to_name": "E01",
+      "reason": "てんかん重積: 発熱(痙攣後/感染誘因)"
+    },
+    {
+      "from": "D142",
+      "to": "L01",
+      "from_name": "status_epilepticus",
+      "to_name": "L01",
+      "reason": "てんかん重積: WBC上昇(ストレス)"
+    },
+    {
+      "from": "D142",
+      "to": "L54",
+      "from_name": "status_epilepticus",
+      "to_name": "L54",
+      "reason": "てんかん重積: 血糖(ストレス高血糖)"
+    },
+    {
+      "from": "D142",
+      "to": "E05",
+      "from_name": "status_epilepticus",
+      "to_name": "E05",
+      "reason": "てんかん重積: 低酸素(呼吸抑制)"
+    },
+    {
+      "from": "D142",
+      "to": "L02",
+      "from_name": "status_epilepticus",
+      "to_name": "L02",
+      "reason": "てんかん重積: CRP(感染誘因で上昇)"
+    },
+    {
+      "from": "D142",
+      "to": "T01",
+      "from_name": "status_epilepticus",
+      "to_name": "T01",
+      "reason": "てんかん重積: 超急性"
+    },
+    {
+      "from": "D142",
+      "to": "T02",
+      "from_name": "status_epilepticus",
+      "to_name": "T02",
+      "reason": "てんかん重積: 突然発症"
+    },
+    {
+      "from": "D71",
+      "to": "L54",
+      "from_name": "D71",
+      "to_name": "L54",
+      "reason": "甲状腺クリーゼ: 高血糖(40-60%)"
+    },
+    {
+      "from": "D72",
+      "to": "L54",
+      "from_name": "D72",
+      "to_name": "L54",
+      "reason": "副腎クリーゼ: 低血糖(30-50%)"
+    },
+    {
+      "from": "D24",
+      "to": "L54",
+      "from_name": "D24",
+      "to_name": "L54",
+      "reason": "TSS/敗血症: 血糖変動"
+    },
+    {
+      "from": "D13",
+      "to": "S52",
+      "from_name": "D13",
+      "to_name": "S52",
+      "reason": "髄膜炎: 局所神経症状(10-20%)"
+    },
+    {
+      "from": "D118",
+      "to": "S52",
+      "from_name": "D118",
+      "to_name": "S52",
+      "reason": "脳膿瘍: 局所神経症状(50-65%)"
+    },
+    {
+      "from": "D110",
+      "to": "S52",
+      "from_name": "D110",
+      "to_name": "S52",
+      "reason": "トキソプラズマ脳炎: 局所神経症状(50-70%)"
+    },
+    {
+      "from": "D13",
+      "to": "S53",
+      "from_name": "D13",
+      "to_name": "S53",
+      "reason": "髄膜炎: 構音障害(5-10%)"
+    },
+    {
+      "from": "D118",
+      "to": "S53",
+      "from_name": "D118",
+      "to_name": "S53",
+      "reason": "脳膿瘍: 構音/失語(30-40%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
