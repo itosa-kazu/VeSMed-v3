@@ -1,141 +1,40 @@
 {
-  "description": "ナビゲーションテスト記録: 臨床時間順に証拠を段階投入し、反証推奨+確認推奨の動態を記録",
-  "protocol": "各ステップで (1)確認推奨Top-3(IG), (2)反証推奨Top-3(max H_after) を記録",
+  "description": "ナビゲーションテスト記録: 反証推奨(max H_after降順)に従って検査を順次実施し、正解Top-1到達を検証",
+  "protocol": "next_best_falsification_test(disc_power=0.5, cf_alpha=0.3)の推奨1位を順次実施。原病例に結果がある検査のみ。",
+  "implementation_version": "final: IDF/CF corrected, no threshold, sorted by max(H_after) desc",
   "cases": [
+    {
+      "case_id": "R190",
+      "pmcid": "PMC419768",
+      "final_diagnosis": "多発性骨髄腫(IgG-κ)",
+      "expected_id": "D114",
+      "traditional_result": "Top-1 50.8%",
+      "navigation_result": "3ステップでTop-1到達(52.7%)",
+      "navigation_steps": [
+        {"step": 0, "H": 5.49, "top1": "D58(6%)", "D114_rank": 10, "D114_prob": "3.1%", "falsification_rec": "L01(WBC)→normal"},
+        {"step": 1, "H": 5.37, "top1": "D62(9%)", "D114_rank": 5, "D114_prob": "4.0%", "falsification_rec": "S17(体重減少)→absent"},
+        {"step": 2, "H": 5.35, "top1": "D62(10%)", "D114_rank": 5, "D114_prob": "4.7%", "falsification_rec": "L50(TP)→very_high"},
+        {"step": 3, "H": 3.31, "top1": "D114(53%)", "D114_rank": 1, "D114_prob": "52.7%", "note": "Top-1到達!"}
+      ],
+      "conclusion": "最終版では3ステップでTop-1到達。Step2でTP(血清総蛋白)が自動推奨される。通常IG推奨では到達不能だった案例。"
+    },
     {
       "case_id": "R193",
       "pmcid": "PMC10727603",
-      "source": "World J Clin Cases 2023",
       "final_diagnosis": "成人Still病(AOSD)",
       "expected_id": "D58",
       "traditional_result": "Top-1 97.2%",
-      "navigation_result": "Step 2でTop-1到達(71.4%), Step 4で99.3%, 反証推奨はStep 4以降自然消滅",
+      "navigation_result": "6ステップでTop-1到達(93%→100%)",
       "navigation_steps": [
-        {
-          "step": 1,
-          "action": "初診: 42M 12日発熱39-40°C+筋痛+咽痛+倦怠",
-          "evidence_added": [
-            "E01=39.0_40.0",
-            "S06=present",
-            "S02=present",
-            "S07=severe",
-            "T01=1w_to_3w",
-            "T02=gradual_days"
-          ],
-          "H": 3.47,
-          "top1": "D44(28.8%)",
-          "D58_rank": 3,
-          "D58_prob": "15.1%",
-          "ig_top3": [
-            "E12 皮膚所見",
-            "L28 ESR",
-            "T03 発熱パターン"
-          ],
-          "fals_top3": [
-            "S17 体重減少",
-            "S09 悪寒戦慄",
-            "E12 皮膚所見"
-          ]
-        },
-        {
-          "step": 2,
-          "action": "+基本採血: WBC 22.7k, CRP 198, PCT 0.33",
-          "evidence_added": [
-            "L01=very_high_over_20000",
-            "L02=high_over_10",
-            "L03=gray_0.25_0.5"
-          ],
-          "H": 1.92,
-          "top1": "D58(71.4%)",
-          "D58_rank": 1,
-          "D58_prob": "71.4%",
-          "ig_top3": [
-            "T03 発熱パターン",
-            "L15 フェリチン",
-            "E12 皮膚所見"
-          ],
-          "fals_top3": [
-            "L28 ESR(+2.12)",
-            "S09 悪寒戦慄(+2.04)",
-            "E12 皮膚所見(+1.94)"
-          ],
-          "note": "Top-1到達! 基本採血だけで正解"
-        },
-        {
-          "step": 3,
-          "action": "+皮疹(頭孢後)+新規薬剤+ESR 120",
-          "evidence_added": [
-            "E12=maculopapular_rash",
-            "S18=rash_widespread",
-            "R08=yes",
-            "L28=very_high_over_100"
-          ],
-          "H": 1.05,
-          "top1": "D58(68.2%)",
-          "D58_rank": 1,
-          "D58_prob": "68.2%",
-          "ig_top3": [
-            "L15 フェリチン",
-            "T03 発熱パターン",
-            "E35 眼症状"
-          ],
-          "fals_top3": [
-            "S21 胸痛(+0.43)",
-            "S14 下痢(+0.38)",
-            "S42 痙攣(+0.38)"
-          ],
-          "note": "Top-1維持。反証推奨のH増加量が減少傾向"
-        },
-        {
-          "step": 4,
-          "action": "+フェリチン7585, AST 60, 血培陰性",
-          "evidence_added": [
-            "L15=very_high_over_1000",
-            "L11=mild_elevated",
-            "L09=negative"
-          ],
-          "H": 0.06,
-          "top1": "D58(99.3%)",
-          "D58_rank": 1,
-          "D58_prob": "99.3%",
-          "ig_top3": [
-            "E35 眼症状",
-            "T03 発熱パターン",
-            "S08 関節痛"
-          ],
-          "fals_top3": [
-            "E35 眼症状(+0.77)",
-            "S27 こわばり(+0.65)",
-            "T03 発熱パターン(+0.52)"
-          ],
-          "note": "フェリチン著高でH→0.06。診断確定レベル"
-        },
-        {
-          "step": 5,
-          "action": "+ANA陰性, 肝脾腫, 全身リンパ節腫脹",
-          "evidence_added": [
-            "L18=negative",
-            "E34=present",
-            "E13=generalized"
-          ],
-          "H": 0.0,
-          "top1": "D58(100.0%)",
-          "D58_rank": 1,
-          "D58_prob": "100.0%",
-          "ig_top3": [
-            "T03(IG≈0)",
-            "S08(IG≈0)",
-            "E21(IG≈0)"
-          ],
-          "fals_top3": [
-            "S17(+0.01)",
-            "T03(+0.008)",
-            "L14(+0.008)"
-          ],
-          "note": "H=0.00。反証推奨のH増加量→0(自然消滅)。正診時の反証安定性を実証"
-        }
+        {"step": 0, "H": 1.96, "D58_rank": 3, "falsification_rec": "E12(皮膚)→maculopapular"},
+        {"step": 1, "H": 2.15, "D58_rank": 3, "falsification_rec": "S18(皮膚訴え)→widespread"},
+        {"step": 2, "H": 1.29, "D58_rank": 4, "falsification_rec": "L14(血液像)→left_shift"},
+        {"step": 3, "H": 1.18, "D58_rank": 4, "falsification_rec": "E13(リンパ節)→generalized"},
+        {"step": 4, "H": 0.75, "D58_rank": 4, "falsification_rec": "E34(肝腫大)→present"},
+        {"step": 5, "H": 1.37, "D58_rank": 2, "falsification_rec": "L15(フェリチン)→very_high_over_1000"},
+        {"step": 6, "H": 0.45, "D58_rank": 1, "D58_prob": "93%", "note": "Top-1到達!"}
       ],
-      "conclusion": "反証推奨は正診時に自然消滅する(H増加量→0)。Step2の基本採血でTop-1到達、原病例の12日入院より遥かに速い診断。確認推奨(IG)もStep2で正しい方向(フェリチン)を推奨しており、この案例では両戦略とも有効"
+      "conclusion": "反証推奨で6ステップ。Step5のフェリチン著高でStillが浮上、Step6で93%。"
     },
     {
       "case_id": "R194",
@@ -143,77 +42,11 @@
       "final_diagnosis": "播種性淋菌感染症(DGI)",
       "expected_id": "D115",
       "traditional_result": "Top-1 97.1%",
-      "navigation_result": "Step 1(初診情報)で即Top-1(76.7%), Step 2で99.3%",
+      "navigation_result": "Step0で即Top-1(77%)",
       "navigation_steps": [
-        {
-          "step": 1,
-          "action": "初診: 発熱39.9+皮疹+多関節痛",
-          "D115_rank": 1,
-          "D115_prob": "76.7%",
-          "H": 1.42
-        },
-        {
-          "step": 2,
-          "action": "+多関節腫脹発赤",
-          "D115_rank": 1,
-          "D115_prob": "99.3%",
-          "H": 0.07
-        },
-        {
-          "step": 3,
-          "action": "+WBC 21000",
-          "D115_rank": 1,
-          "D115_prob": "99.7%",
-          "H": 0.03
-        },
-        {
-          "step": 4,
-          "action": "+血培陰性",
-          "D115_rank": 1,
-          "D115_prob": "99.8%",
-          "H": 0.03
-        },
-        {
-          "step": 5,
-          "action": "+関節液培養陽性",
-          "D115_rank": 1,
-          "D115_prob": "100%",
-          "H": 0.01
-        }
+        {"step": 0, "H": 1.43, "D115_rank": 1, "D115_prob": "77%", "note": "即Top-1"}
       ],
-      "conclusion": "Step 1で即Top-1。発熱+皮疹+多関節痛の組み合わせがDGIに特異的"
-    },
-    {
-      "case_id": "R195",
-      "pmcid": "PMC8390630",
-      "final_diagnosis": "播種性淋菌感染症(DGI, 無熱)",
-      "expected_id": "D115",
-      "traditional_result": "Top-1 62.1%",
-      "navigation_result": "Step 1(初診)で即Top-1(96.8%), 無熱でも安定",
-      "navigation_steps": [
-        {
-          "step": 1,
-          "action": "初診: 無熱+排尿痛+足首痛+点状出血",
-          "D115_rank": 1,
-          "D115_prob": "96.8%",
-          "H": 0.31
-        },
-        {
-          "step": 2,
-          "action": "+CRP 11",
-          "D115_rank": 1,
-          "D115_prob": "97.3%",
-          "H": 0.26
-        },
-        {
-          "step": 3,
-          "action": "+血培陰性",
-          "D115_rank": 1,
-          "D115_prob": "97.7%",
-          "H": 0.22
-        }
-      ],
-      "conclusion": "無熱でもStep 1でTop-1 96.8%。排尿痛+関節痛+点状出血がDGIに特異的"
+      "conclusion": "初診情報(発熱+皮疹+多関節痛)だけでTop-1。反証推奨→関節腫脹で82%に強化。"
     },
     {
       "case_id": "R196",
@@ -221,38 +54,12 @@
       "final_diagnosis": "急性心筋心膜炎",
       "expected_id": "D116",
       "traditional_result": "Top-1 90.9%",
-      "navigation_result": "Step 1で即Top-1(88.2%), Step 4で100%",
+      "navigation_result": "Step0で即Top-1(88%)",
       "navigation_steps": [
-        {
-          "step": 1,
-          "action": "胸痛+呼吸困難(急性6h)",
-          "D116_rank": 1,
-          "D116_prob": "88.2%",
-          "H": 0.93
-        },
-        {
-          "step": 2,
-          "action": "+T=37.1(無熱)+HR100",
-          "D116_rank": 1,
-          "D116_prob": "99.2%",
-          "H": 0.1
-        },
-        {
-          "step": 3,
-          "action": "+WBC正常+CRP78",
-          "D116_rank": 1,
-          "D116_prob": "99.8%",
-          "H": 0.03
-        },
-        {
-          "step": 4,
-          "action": "+ESR上昇+CXR正常",
-          "D116_rank": 1,
-          "D116_prob": "100%",
-          "H": 0.0
-        }
+        {"step": 0, "H": 0.94, "D116_rank": 1, "D116_prob": "88%", "falsification_rec": "E01(体温)"},
+        {"step": 1, "H": 0.15, "D116_rank": 1, "D116_prob": "99%", "note": "+体温→99%"}
       ],
-      "conclusion": "Step 1で即Top-1。急性胸痛+呼吸困難が心筋炎に特異的。無熱でも安定。反証推奨Step4で自然消滅"
+      "conclusion": "胸痛+呼吸困難の急性発症で即Top-1。反証推奨→体温確認で99%に強化。"
     },
     {
       "case_id": "R198",
@@ -260,64 +67,13 @@
       "final_diagnosis": "脊椎硬膜外膿瘍(Th3-Th6)",
       "expected_id": "D117",
       "traditional_result": "Top-1 51.9%",
-      "navigation_result": "Step1でTop-1(33.5%), Step2で頭痛+項部硬直追加→rank2に脱落(髄膜炎/脳炎が浮上)",
+      "navigation_result": "Step0でTop-1(33%)→Step1で脱落→Step2で復帰(26%)",
       "navigation_steps": [
-        {
-          "step": 1,
-          "action": "背部痛+40℃高熱",
-          "D117_rank": 1,
-          "D117_prob": "33.5%",
-          "H": 3.9
-        },
-        {
-          "step": 2,
-          "action": "+頭痛+項部硬直",
-          "D117_rank": 2,
-          "D117_prob": "16.4%",
-          "H": 2.39,
-          "note": "ヘルペス脳炎(D84)がTop-1に。髄膜炎との鑑別が課題"
-        },
-        {
-          "step": 3,
-          "action": "+CRP 128",
-          "D117_rank": 2,
-          "D117_prob": "30.0%",
-          "H": 2.39
-        }
+        {"step": 0, "H": 3.92, "D117_rank": 1, "D117_prob": "33%", "falsification_rec": "S05(頭痛)→severe"},
+        {"step": 1, "H": 4.41, "D117_rank": 2, "D117_prob": "17%", "falsification_rec": "L02(CRP)→high", "note": "頭痛追加で脳炎に奪われる"},
+        {"step": 2, "H": 4.12, "D117_rank": 1, "D117_prob": "26%", "note": "CRP高値でTop-1復帰"}
       ],
-      "conclusion": "背部痛+発熱ではTop-1だが、頭痛+項部硬直で髄膜炎/脳炎に奪われる。見逃し率56%の臨床実態を忠実に再現。反証推奨がMRI/ESRを提示"
-    },
-    {
-      "case_id": "R200",
-      "pmcid": "PMC11360464",
-      "final_diagnosis": "脳膿瘍(歯原性/副鼻腔原性)",
-      "expected_id": "D118",
-      "traditional_result": "Top-1 52.8%",
-      "navigation_result": "Step3(MRI)でTop-1到達(62.8%)",
-      "navigation_steps": [
-        {
-          "step": 1,
-          "action": "亜急性重度頭痛(>3w)",
-          "D118_rank": 4,
-          "D118_prob": "4.3%",
-          "H": 5.0
-        },
-        {
-          "step": 2,
-          "action": "+意識障害(傾眠)",
-          "D118_rank": 2,
-          "D118_prob": "12.7%",
-          "H": 3.44
-        },
-        {
-          "step": 3,
-          "action": "+MRI環状増強病変",
-          "D118_rank": 1,
-          "D118_prob": "62.8%",
-          "H": 1.96
-        }
-      ],
-      "conclusion": "MRI所見で一気にTop-1。頭痛→意識障害→MRIの臨床フローに忠実"
+      "conclusion": "背部痛+高熱→Top-1。頭痛追加で脳炎に脱落(見逃し率56%の再現)。CRP高値で復帰。"
     }
   ]
 }
