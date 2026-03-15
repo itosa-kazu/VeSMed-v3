@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3086,
+  "total_edges": 3132,
   "edges": [
     {
       "from": "R01",
@@ -26099,6 +26099,328 @@
       "from_name": "diphtheria",
       "to_name": "T02",
       "reason": "ジフテリア: 急性"
+    },
+    {
+      "from": "D197",
+      "to": "E01",
+      "from_name": "agranulocytosis",
+      "to_name": "E01",
+      "reason": "無顆粒球症: 高熱(90%+)"
+    },
+    {
+      "from": "D197",
+      "to": "S02",
+      "from_name": "agranulocytosis",
+      "to_name": "S02",
+      "reason": "無顆粒球症: 咽頭痛(口腔/咽頭潰瘍, 70-80%)"
+    },
+    {
+      "from": "D197",
+      "to": "E08",
+      "from_name": "agranulocytosis",
+      "to_name": "E08",
+      "reason": "無顆粒球症: 咽頭(潰瘍/壊死, 60-70%)"
+    },
+    {
+      "from": "D197",
+      "to": "S07",
+      "from_name": "agranulocytosis",
+      "to_name": "S07",
+      "reason": "無顆粒球症: 倦怠感(80%+)"
+    },
+    {
+      "from": "D197",
+      "to": "L01",
+      "from_name": "agranulocytosis",
+      "to_name": "L01",
+      "reason": "無顆粒球症: WBC著減(定義的)"
+    },
+    {
+      "from": "D197",
+      "to": "L02",
+      "from_name": "agranulocytosis",
+      "to_name": "L02",
+      "reason": "無顆粒球症: CRP上昇(感染合併)"
+    },
+    {
+      "from": "D197",
+      "to": "S09",
+      "from_name": "agranulocytosis",
+      "to_name": "S09",
+      "reason": "無顆粒球症: 悪寒戦慄(菌血症, 50-60%)"
+    },
+    {
+      "from": "D197",
+      "to": "T01",
+      "from_name": "agranulocytosis",
+      "to_name": "T01",
+      "reason": "無顆粒球症: 急性"
+    },
+    {
+      "from": "D197",
+      "to": "T02",
+      "from_name": "agranulocytosis",
+      "to_name": "T02",
+      "reason": "無顆粒球症: 急性"
+    },
+    {
+      "from": "D198",
+      "to": "E12",
+      "from_name": "IgA_vasculitis",
+      "to_name": "E12",
+      "reason": "IgA血管炎: 紫斑(下肢, 100%)"
+    },
+    {
+      "from": "D198",
+      "to": "S08",
+      "from_name": "IgA_vasculitis",
+      "to_name": "S08",
+      "reason": "IgA血管炎: 関節痛(60-80%)"
+    },
+    {
+      "from": "D198",
+      "to": "S12",
+      "from_name": "IgA_vasculitis",
+      "to_name": "S12",
+      "reason": "IgA血管炎: 腹痛(50-70%)"
+    },
+    {
+      "from": "D198",
+      "to": "L05",
+      "from_name": "IgA_vasculitis",
+      "to_name": "L05",
+      "reason": "IgA血管炎: 尿異常(腎炎, 30-50%)"
+    },
+    {
+      "from": "D198",
+      "to": "E01",
+      "from_name": "IgA_vasculitis",
+      "to_name": "E01",
+      "reason": "IgA血管炎: 発熱(20-30%)"
+    },
+    {
+      "from": "D198",
+      "to": "S14",
+      "from_name": "IgA_vasculitis",
+      "to_name": "S14",
+      "reason": "IgA血管炎: 消化管出血(20-30%)"
+    },
+    {
+      "from": "D198",
+      "to": "L01",
+      "from_name": "IgA_vasculitis",
+      "to_name": "L01",
+      "reason": "IgA血管炎: WBC(正常~軽度)"
+    },
+    {
+      "from": "D198",
+      "to": "T01",
+      "from_name": "IgA_vasculitis",
+      "to_name": "T01",
+      "reason": "IgA血管炎: 急性~亜急性"
+    },
+    {
+      "from": "D198",
+      "to": "T02",
+      "from_name": "IgA_vasculitis",
+      "to_name": "T02",
+      "reason": "IgA血管炎: 亜急性"
+    },
+    {
+      "from": "D199",
+      "to": "E01",
+      "from_name": "rabies",
+      "to_name": "E01",
+      "reason": "狂犬病: 発熱(80-90%)"
+    },
+    {
+      "from": "D199",
+      "to": "E16",
+      "from_name": "rabies",
+      "to_name": "E16",
+      "reason": "狂犬病: 意識障害(進行性, 80%+)"
+    },
+    {
+      "from": "D199",
+      "to": "S42",
+      "from_name": "rabies",
+      "to_name": "S42",
+      "reason": "狂犬病: 痙攣(恐水/恐風誘発, 50-60%)"
+    },
+    {
+      "from": "D199",
+      "to": "S07",
+      "from_name": "rabies",
+      "to_name": "S07",
+      "reason": "狂犬病: 倦怠感(前駆, 70-80%)"
+    },
+    {
+      "from": "D199",
+      "to": "S05",
+      "from_name": "rabies",
+      "to_name": "S05",
+      "reason": "狂犬病: 頭痛(前駆, 50-60%)"
+    },
+    {
+      "from": "D199",
+      "to": "E02",
+      "from_name": "rabies",
+      "to_name": "E02",
+      "reason": "狂犬病: 頻脈(自律神経障害)"
+    },
+    {
+      "from": "D199",
+      "to": "E03",
+      "from_name": "rabies",
+      "to_name": "E03",
+      "reason": "狂犬病: 低血圧(末期)"
+    },
+    {
+      "from": "D199",
+      "to": "T01",
+      "from_name": "rabies",
+      "to_name": "T01",
+      "reason": "狂犬病: 亜急性~慢性(潜伏1-3ヶ月)"
+    },
+    {
+      "from": "D199",
+      "to": "T02",
+      "from_name": "rabies",
+      "to_name": "T02",
+      "reason": "狂犬病: 緩徐→急速進行"
+    },
+    {
+      "from": "D200",
+      "to": "E16",
+      "from_name": "NPH",
+      "to_name": "E16",
+      "reason": "NPH: 認知障害(90%+)"
+    },
+    {
+      "from": "D200",
+      "to": "S52",
+      "from_name": "NPH",
+      "to_name": "S52",
+      "reason": "NPH: 歩行障害(磁性歩行, 90%+)"
+    },
+    {
+      "from": "D200",
+      "to": "S05",
+      "from_name": "NPH",
+      "to_name": "S05",
+      "reason": "NPH: 頭痛(30-40%)"
+    },
+    {
+      "from": "D200",
+      "to": "T01",
+      "from_name": "NPH",
+      "to_name": "T01",
+      "reason": "NPH: 慢性(数ヶ月~年)"
+    },
+    {
+      "from": "D200",
+      "to": "T02",
+      "from_name": "NPH",
+      "to_name": "T02",
+      "reason": "NPH: 緩徐進行"
+    },
+    {
+      "from": "D201",
+      "to": "E01",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "E01",
+      "reason": "VHF: 高熱(100%)"
+    },
+    {
+      "from": "D201",
+      "to": "S44",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S44",
+      "reason": "VHF: 出血傾向(50-80%)"
+    },
+    {
+      "from": "D201",
+      "to": "S07",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S07",
+      "reason": "VHF: 倦怠感(90%+)"
+    },
+    {
+      "from": "D201",
+      "to": "S05",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S05",
+      "reason": "VHF: 頭痛(70-80%)"
+    },
+    {
+      "from": "D201",
+      "to": "S06",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S06",
+      "reason": "VHF: 筋肉痛(60-70%)"
+    },
+    {
+      "from": "D201",
+      "to": "S13",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S13",
+      "reason": "VHF: 嘔吐(60-70%)"
+    },
+    {
+      "from": "D201",
+      "to": "S14",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "S14",
+      "reason": "VHF: 下痢(50-60%)"
+    },
+    {
+      "from": "D201",
+      "to": "E03",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "E03",
+      "reason": "VHF: 低血圧(ショック)"
+    },
+    {
+      "from": "D201",
+      "to": "E02",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "E02",
+      "reason": "VHF: 頻脈"
+    },
+    {
+      "from": "D201",
+      "to": "L01",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "L01",
+      "reason": "VHF: WBC(初期低下→後に上昇)"
+    },
+    {
+      "from": "D201",
+      "to": "L14",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "L14",
+      "reason": "VHF: 血小板減少(DIC)"
+    },
+    {
+      "from": "D201",
+      "to": "L11",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "L11",
+      "reason": "VHF: 肝酵素著高"
+    },
+    {
+      "from": "D201",
+      "to": "T01",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "T01",
+      "reason": "VHF: 急性"
+    },
+    {
+      "from": "D201",
+      "to": "T02",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "T02",
+      "reason": "VHF: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

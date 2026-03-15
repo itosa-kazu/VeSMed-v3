@@ -5357,6 +5357,66 @@
       ],
       "severity": "critical",
       "note": "C.diphtheriae. 偽膜+bull neck. 心筋炎/神経麻痺が致死的"
+    },
+    {
+      "id": "D197",
+      "name": "agranulocytosis",
+      "name_ja": "無顆粒球症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "好中球<500. 薬剤性(抗甲状腺薬/クロザピン等)が最多. 発熱+咽頭痛+口腔潰瘍が三徴. 敗血症リスク"
+    },
+    {
+      "id": "D198",
+      "name": "IgA_vasculitis",
+      "name_ja": "IgA血管炎(HSP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "IgA沈着性小血管炎. 四徴:触知可能紫斑(下肢)+関節痛+腹痛+腎炎. 小児に多いが成人もあり(腎障害重症化)"
+    },
+    {
+      "id": "D199",
+      "name": "rabies",
+      "name_ja": "狂犬病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "狂犬病ウイルス. 動物咬傷後1-3ヶ月で発症. 狂躁型(興奮/恐水/恐風)+麻痺型. 発症後ほぼ100%致死"
+    },
+    {
+      "id": "D200",
+      "name": "NPH",
+      "name_ja": "正常圧水頭症(NPH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "三徴:歩行障害+認知障害+尿失禁(Hakim triad). 高齢者. 治療可能な認知症. VP shuntで改善"
+    },
+    {
+      "id": "D201",
+      "name": "viral_hemorrhagic_fever",
+      "name_ja": "ウイルス性出血熱",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "エボラ/マールブルグ/ラッサ/クリミア・コンゴ等. 高熱+出血傾向+多臓器不全. 致死率30-90%. 流行地渡航歴"
     }
   ]
 }
