@@ -4768,6 +4768,42 @@
       ],
       "severity": "critical",
       "note": "嘔吐後の突然胸痛+縦隔気腫+皮下気腫。Mackler triad(嘔吐+胸痛+皮下気腫)"
+    },
+    {
+      "id": "D149",
+      "name": "carbon_monoxide_poisoning",
+      "name_ja": "一酸化炭素中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "頭痛+嘔気+意識障害。SpO2偽正常(パルスオキシメータはCOHbを区別できない)。COHb測定で確定。高濃度O2/HBO治療"
+    },
+    {
+      "id": "D150",
+      "name": "takotsubo_cardiomyopathy",
+      "name_ja": "たこつぼ心筋症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "ストレス誘発性心筋症。ACS様の胸痛+ST上昇+トロポニン軽度上昇。冠動脈正常。心尖部バルーニング。閉経後女性に多い"
+    },
+    {
+      "id": "D151",
+      "name": "acute_liver_failure",
+      "name_ja": "急性肝不全（劇症肝炎）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "急性肝障害+肝性脳症+凝固障害。AST/ALT著高+黄疸+PT延長。ウイルス/薬剤/自己免疫。肝移植が必要なことも"
     }
   ]
 }

@@ -2766,6 +2766,31 @@
       "cpt": {
         "": 0.001
       }
+    },
+    "D149": {
+      "parents": [],
+      "description": "CO中毒",
+      "cpt": {
+        "": 0.002
+      }
+    },
+    "D150": {
+      "parents": [
+        "R01"
+      ],
+      "description": "たこつぼ。閉経後女性に多い",
+      "cpt": {
+        "18_39": 0.001,
+        "40_64": 0.003,
+        "65_plus": 0.005
+      }
+    },
+    "D151": {
+      "parents": [],
+      "description": "急性肝不全",
+      "cpt": {
+        "": 0.002
+      }
     }
   },
   "noisy_or_params": {
@@ -3912,6 +3937,27 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.12,
           "over_40.0": 0.03
+        },
+        "D149": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.0
+        },
+        "D150": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.0
+        },
+        "D151": {
+          "under_37.5": 0.4,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.03
         }
       }
     },
@@ -4327,6 +4373,16 @@
           "under_100": 0.2,
           "100_120": 0.5,
           "over_120": 0.3
+        },
+        "D149": {
+          "under_100": 0.3,
+          "100_120": 0.5,
+          "over_120": 0.2
+        },
+        "D150": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
         }
       }
     },
@@ -4492,6 +4548,10 @@
         "D148": {
           "normal_over_90": 0.55,
           "hypotension_under_90": 0.45
+        },
+        "D150": {
+          "normal_over_90": 0.85,
+          "hypotension_under_90": 0.15
         }
       }
     },
@@ -6034,6 +6094,16 @@
           "normal": 0.5,
           "confused": 0.3,
           "obtunded": 0.2
+        },
+        "D149": {
+          "normal": 0.3,
+          "confused": 0.4,
+          "obtunded": 0.3
+        },
+        "D151": {
+          "normal": 0.25,
+          "confused": 0.4,
+          "obtunded": 0.35
         }
       }
     },
@@ -6095,6 +6165,10 @@
         "D108": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D151": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -6546,6 +6620,10 @@
         "D113": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D151": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -7424,6 +7502,24 @@
           "normal_4000_10000": 0.2,
           "high_10000_20000": 0.45,
           "very_high_over_20000": 0.32
+        },
+        "D149": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.6,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.07
+        },
+        "D150": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.07
+        },
+        "D151": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.15
         }
       }
     },
@@ -8245,6 +8341,12 @@
           "mild_0.3_3": 0.1,
           "moderate_3_10": 0.3,
           "high_over_10": 0.55
+        },
+        "D151": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.25
         }
       }
     },
@@ -9097,6 +9199,11 @@
           "normal": 0.85,
           "mild_elevated": 0.12,
           "very_high": 0.03
+        },
+        "D151": {
+          "normal": 0.02,
+          "mild_elevated": 0.08,
+          "very_high": 0.9
         }
       }
     },
@@ -9558,6 +9665,11 @@
           "normal": 0.45,
           "elevated": 0.35,
           "very_high": 0.2
+        },
+        "D150": {
+          "normal": 0.4,
+          "elevated": 0.45,
+          "very_high": 0.15
         }
       }
     },
@@ -11104,6 +11216,11 @@
           "absent": 0.3,
           "on_exertion": 0.15,
           "at_rest": 0.55
+        },
+        "D150": {
+          "absent": 0.35,
+          "on_exertion": 0.25,
+          "at_rest": 0.4
         }
       }
     },
@@ -11294,6 +11411,11 @@
           "absent": 0.15,
           "mild": 0.25,
           "severe": 0.6
+        },
+        "D149": {
+          "absent": 0.05,
+          "mild": 0.25,
+          "severe": 0.7
         }
       }
     },
@@ -11802,6 +11924,16 @@
           "absent": 0.1,
           "mild": 0.25,
           "severe": 0.65
+        },
+        "D149": {
+          "absent": 0.1,
+          "mild": 0.3,
+          "severe": 0.6
+        },
+        "D151": {
+          "absent": 0.05,
+          "mild": 0.2,
+          "severe": 0.75
         }
       }
     },
@@ -12417,6 +12549,15 @@
           "LLQ": 0.02,
           "suprapubic": 0.02,
           "diffuse": 0.33
+        },
+        "D151": {
+          "absent": 0.55,
+          "epigastric": 0.05,
+          "RUQ": 0.3,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.05
         }
       }
     },
@@ -12625,6 +12766,14 @@
         "D148": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D149": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D151": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -13185,6 +13334,20 @@
           "burning": 0.05,
           "sharp": 0.55,
           "pressure": 0.25,
+          "tearing": 0.1
+        },
+        "D149": {
+          "absent": 0.65,
+          "burning": 0.05,
+          "sharp": 0.05,
+          "pressure": 0.2,
+          "tearing": 0.05
+        },
+        "D150": {
+          "absent": 0.1,
+          "burning": 0.05,
+          "sharp": 0.1,
+          "pressure": 0.65,
           "tearing": 0.1
         }
       }
@@ -13832,6 +13995,10 @@
         "D142": {
           "absent": 0.02,
           "present": 0.98
+        },
+        "D149": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -14940,6 +15107,24 @@
           "3d_to_1w": 0.08,
           "1w_to_3w": 0.02,
           "over_3w": 0.0
+        },
+        "D149": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
+        },
+        "D150": {
+          "under_3d": 0.85,
+          "3d_to_1w": 0.12,
+          "1w_to_3w": 0.03,
+          "over_3w": 0.0
+        },
+        "D151": {
+          "under_3d": 0.25,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.05
         }
       }
     },
@@ -15265,6 +15450,18 @@
         "D148": {
           "sudden_hours": 0.9,
           "gradual_days": 0.1
+        },
+        "D149": {
+          "sudden_hours": 0.8,
+          "gradual_days": 0.2
+        },
+        "D150": {
+          "sudden_hours": 0.8,
+          "gradual_days": 0.2
+        },
+        "D151": {
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
         }
       }
     },
@@ -16267,6 +16464,12 @@
           "normal": 0.55,
           "mildly_elevated": 0.04,
           "very_high": 0.01
+        },
+        "D150": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mildly_elevated": 0.3,
+          "very_high": 0.45
         }
       }
     },
@@ -16415,6 +16618,18 @@
           "normal": 0.35,
           "mildly_elevated": 0.3,
           "very_high": 0.15
+        },
+        "D149": {
+          "not_done": 0.2,
+          "normal": 0.4,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
+        },
+        "D150": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mildly_elevated": 0.6,
+          "very_high": 0.2
         }
       }
     },
@@ -16596,6 +16811,14 @@
           "breathing": 0.3,
           "position": 0.05,
           "meals": 0.25
+        },
+        "D150": {
+          "not_applicable": 0.1,
+          "none": 0.4,
+          "exertion": 0.15,
+          "breathing": 0.05,
+          "position": 0.05,
+          "meals": 0.25
         }
       }
     },
@@ -16733,6 +16956,12 @@
           "none": 0.6,
           "left_arm_jaw": 0.05,
           "back": 0.3
+        },
+        "D150": {
+          "not_applicable": 0.1,
+          "none": 0.5,
+          "left_arm_jaw": 0.3,
+          "back": 0.1
         }
       }
     },
