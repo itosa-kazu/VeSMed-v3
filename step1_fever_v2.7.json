@@ -4149,6 +4149,18 @@
         "very_high"
       ],
       "note": "基本血液検査(肝機能パネル含)。正常6.5-8.0g/dL。骨髄腫ではM蛋白により10g/dL超(very_high)が多い。ポリクローナル高γ(SLE/サルコイドーシス/HIV等)ではmild上昇。"
+    },
+    {
+      "id": "D115",
+      "name": "disseminated_gonococcal_infection",
+      "name_ja": "播種性淋菌感染症（DGI）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "淋菌菌血症。関節炎-皮膚炎症候群(遊走性多関節痛+膿疱性皮疹+腱鞘炎)が特徴的。若年性活動活発な成人、女性に多い。診断: 血培/関節液培養/NAAT"
     }
   ]
 }

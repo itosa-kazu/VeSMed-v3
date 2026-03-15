@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1864,
+  "total_edges": 1880,
   "edges": [
     {
       "from": "R01",
@@ -17545,6 +17545,118 @@
       "from_name": "D113",
       "to_name": "L50",
       "reason": "播種性ヒストプラズマ: 慢性感染による高γ(15-25%)"
+    },
+    {
+      "from": "D115",
+      "to": "E01",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "E01",
+      "reason": "DGI: 発熱(60-80%), 中等度~高熱"
+    },
+    {
+      "from": "D115",
+      "to": "S08",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "S08",
+      "reason": "DGI: 多関節痛(80-90%, 遊走性, 膝/手首/足首)"
+    },
+    {
+      "from": "D115",
+      "to": "S23",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "S23",
+      "reason": "DGI: 関節腫脹(60-70%, 多関節型が多い)"
+    },
+    {
+      "from": "D115",
+      "to": "E21",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "E21",
+      "reason": "DGI: 関節発赤・熱感(50-60%)"
+    },
+    {
+      "from": "D115",
+      "to": "E12",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "E12",
+      "reason": "DGI: 皮膚(50-75%) — 膿疱/点状出血, 四肢遠位に多い"
+    },
+    {
+      "from": "D115",
+      "to": "S18",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "S18",
+      "reason": "DGI: 皮膚の訴え(50-70%, 発疹)"
+    },
+    {
+      "from": "D115",
+      "to": "S10",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "S10",
+      "reason": "DGI: 排尿時痛(30-50%, 原発巣の尿道炎/子宮頸管炎)"
+    },
+    {
+      "from": "D115",
+      "to": "L01",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "L01",
+      "reason": "DGI: WBC軽度上昇"
+    },
+    {
+      "from": "D115",
+      "to": "L02",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "L02",
+      "reason": "DGI: CRP軽度~中等度上昇"
+    },
+    {
+      "from": "D115",
+      "to": "L09",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "L09",
+      "reason": "DGI: 血培陽性(10-30%, グラム陰性双球菌)"
+    },
+    {
+      "from": "D115",
+      "to": "L30",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "L30",
+      "reason": "DGI: 関節液 — 炎症性~敗血症性(WBC高値, 培養20-50%陽性)"
+    },
+    {
+      "from": "D115",
+      "to": "L28",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "L28",
+      "reason": "DGI: ESR軽度上昇"
+    },
+    {
+      "from": "D115",
+      "to": "T01",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "T01",
+      "reason": "DGI: 急性~亜急性(3日~1週)"
+    },
+    {
+      "from": "D115",
+      "to": "T02",
+      "from_name": "disseminated_gonococcal_infection",
+      "to_name": "T02",
+      "reason": "DGI: 亜急性発症(数日)"
+    },
+    {
+      "from": "D64",
+      "to": "S10",
+      "from_name": "D64",
+      "to_name": "S10",
+      "reason": "反応性関節炎: 先行する尿道炎/子宮頸管炎(30-50%, 特にChlamydia後)"
+    },
+    {
+      "from": "D64",
+      "to": "E12",
+      "from_name": "D64",
+      "to_name": "E12",
+      "reason": "反応性関節炎: keratoderma blennorrhagicum/circinate balanitis(10-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

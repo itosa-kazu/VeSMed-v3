@@ -14,64 +14,206 @@
         {
           "step": 1,
           "action": "初診: 42M 12日発熱39-40°C+筋痛+咽痛+倦怠",
-          "evidence_added": ["E01=39.0_40.0", "S06=present", "S02=present", "S07=severe", "T01=1w_to_3w", "T02=gradual_days"],
+          "evidence_added": [
+            "E01=39.0_40.0",
+            "S06=present",
+            "S02=present",
+            "S07=severe",
+            "T01=1w_to_3w",
+            "T02=gradual_days"
+          ],
           "H": 3.47,
           "top1": "D44(28.8%)",
           "D58_rank": 3,
           "D58_prob": "15.1%",
-          "ig_top3": ["E12 皮膚所見", "L28 ESR", "T03 発熱パターン"],
-          "fals_top3": ["S17 体重減少", "S09 悪寒戦慄", "E12 皮膚所見"]
+          "ig_top3": [
+            "E12 皮膚所見",
+            "L28 ESR",
+            "T03 発熱パターン"
+          ],
+          "fals_top3": [
+            "S17 体重減少",
+            "S09 悪寒戦慄",
+            "E12 皮膚所見"
+          ]
         },
         {
           "step": 2,
           "action": "+基本採血: WBC 22.7k, CRP 198, PCT 0.33",
-          "evidence_added": ["L01=very_high_over_20000", "L02=high_over_10", "L03=gray_0.25_0.5"],
+          "evidence_added": [
+            "L01=very_high_over_20000",
+            "L02=high_over_10",
+            "L03=gray_0.25_0.5"
+          ],
           "H": 1.92,
           "top1": "D58(71.4%)",
           "D58_rank": 1,
           "D58_prob": "71.4%",
-          "ig_top3": ["T03 発熱パターン", "L15 フェリチン", "E12 皮膚所見"],
-          "fals_top3": ["L28 ESR(+2.12)", "S09 悪寒戦慄(+2.04)", "E12 皮膚所見(+1.94)"],
+          "ig_top3": [
+            "T03 発熱パターン",
+            "L15 フェリチン",
+            "E12 皮膚所見"
+          ],
+          "fals_top3": [
+            "L28 ESR(+2.12)",
+            "S09 悪寒戦慄(+2.04)",
+            "E12 皮膚所見(+1.94)"
+          ],
           "note": "Top-1到達! 基本採血だけで正解"
         },
         {
           "step": 3,
           "action": "+皮疹(頭孢後)+新規薬剤+ESR 120",
-          "evidence_added": ["E12=maculopapular_rash", "S18=rash_widespread", "R08=yes", "L28=very_high_over_100"],
+          "evidence_added": [
+            "E12=maculopapular_rash",
+            "S18=rash_widespread",
+            "R08=yes",
+            "L28=very_high_over_100"
+          ],
           "H": 1.05,
           "top1": "D58(68.2%)",
           "D58_rank": 1,
           "D58_prob": "68.2%",
-          "ig_top3": ["L15 フェリチン", "T03 発熱パターン", "E35 眼症状"],
-          "fals_top3": ["S21 胸痛(+0.43)", "S14 下痢(+0.38)", "S42 痙攣(+0.38)"],
+          "ig_top3": [
+            "L15 フェリチン",
+            "T03 発熱パターン",
+            "E35 眼症状"
+          ],
+          "fals_top3": [
+            "S21 胸痛(+0.43)",
+            "S14 下痢(+0.38)",
+            "S42 痙攣(+0.38)"
+          ],
           "note": "Top-1維持。反証推奨のH増加量が減少傾向"
         },
         {
           "step": 4,
           "action": "+フェリチン7585, AST 60, 血培陰性",
-          "evidence_added": ["L15=very_high_over_1000", "L11=mild_elevated", "L09=negative"],
+          "evidence_added": [
+            "L15=very_high_over_1000",
+            "L11=mild_elevated",
+            "L09=negative"
+          ],
           "H": 0.06,
           "top1": "D58(99.3%)",
           "D58_rank": 1,
           "D58_prob": "99.3%",
-          "ig_top3": ["E35 眼症状", "T03 発熱パターン", "S08 関節痛"],
-          "fals_top3": ["E35 眼症状(+0.77)", "S27 こわばり(+0.65)", "T03 発熱パターン(+0.52)"],
+          "ig_top3": [
+            "E35 眼症状",
+            "T03 発熱パターン",
+            "S08 関節痛"
+          ],
+          "fals_top3": [
+            "E35 眼症状(+0.77)",
+            "S27 こわばり(+0.65)",
+            "T03 発熱パターン(+0.52)"
+          ],
           "note": "フェリチン著高でH→0.06。診断確定レベル"
         },
         {
           "step": 5,
           "action": "+ANA陰性, 肝脾腫, 全身リンパ節腫脹",
-          "evidence_added": ["L18=negative", "E34=present", "E13=generalized"],
-          "H": 0.00,
+          "evidence_added": [
+            "L18=negative",
+            "E34=present",
+            "E13=generalized"
+          ],
+          "H": 0.0,
           "top1": "D58(100.0%)",
           "D58_rank": 1,
           "D58_prob": "100.0%",
-          "ig_top3": ["T03(IG≈0)", "S08(IG≈0)", "E21(IG≈0)"],
-          "fals_top3": ["S17(+0.01)", "T03(+0.008)", "L14(+0.008)"],
+          "ig_top3": [
+            "T03(IG≈0)",
+            "S08(IG≈0)",
+            "E21(IG≈0)"
+          ],
+          "fals_top3": [
+            "S17(+0.01)",
+            "T03(+0.008)",
+            "L14(+0.008)"
+          ],
           "note": "H=0.00。反証推奨のH増加量→0(自然消滅)。正診時の反証安定性を実証"
         }
       ],
       "conclusion": "反証推奨は正診時に自然消滅する(H増加量→0)。Step2の基本採血でTop-1到達、原病例の12日入院より遥かに速い診断。確認推奨(IG)もStep2で正しい方向(フェリチン)を推奨しており、この案例では両戦略とも有効"
+    },
+    {
+      "case_id": "R194",
+      "pmcid": "PMC10564561",
+      "final_diagnosis": "播種性淋菌感染症(DGI)",
+      "expected_id": "D115",
+      "traditional_result": "Top-1 97.1%",
+      "navigation_result": "Step 1(初診情報)で即Top-1(76.7%), Step 2で99.3%",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "action": "初診: 発熱39.9+皮疹+多関節痛",
+          "D115_rank": 1,
+          "D115_prob": "76.7%",
+          "H": 1.42
+        },
+        {
+          "step": 2,
+          "action": "+多関節腫脹発赤",
+          "D115_rank": 1,
+          "D115_prob": "99.3%",
+          "H": 0.07
+        },
+        {
+          "step": 3,
+          "action": "+WBC 21000",
+          "D115_rank": 1,
+          "D115_prob": "99.7%",
+          "H": 0.03
+        },
+        {
+          "step": 4,
+          "action": "+血培陰性",
+          "D115_rank": 1,
+          "D115_prob": "99.8%",
+          "H": 0.03
+        },
+        {
+          "step": 5,
+          "action": "+関節液培養陽性",
+          "D115_rank": 1,
+          "D115_prob": "100%",
+          "H": 0.01
+        }
+      ],
+      "conclusion": "Step 1で即Top-1。発熱+皮疹+多関節痛の組み合わせがDGIに特異的"
+    },
+    {
+      "case_id": "R195",
+      "pmcid": "PMC8390630",
+      "final_diagnosis": "播種性淋菌感染症(DGI, 無熱)",
+      "expected_id": "D115",
+      "traditional_result": "Top-1 62.1%",
+      "navigation_result": "Step 1(初診)で即Top-1(96.8%), 無熱でも安定",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "action": "初診: 無熱+排尿痛+足首痛+点状出血",
+          "D115_rank": 1,
+          "D115_prob": "96.8%",
+          "H": 0.31
+        },
+        {
+          "step": 2,
+          "action": "+CRP 11",
+          "D115_rank": 1,
+          "D115_prob": "97.3%",
+          "H": 0.26
+        },
+        {
+          "step": 3,
+          "action": "+血培陰性",
+          "D115_rank": 1,
+          "D115_prob": "97.7%",
+          "H": 0.22
+        }
+      ],
+      "conclusion": "無熱でもStep 1でTop-1 96.8%。排尿痛+関節痛+点状出血がDGIに特異的"
     }
   ]
 }

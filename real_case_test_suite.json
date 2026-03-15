@@ -4798,6 +4798,59 @@
       },
       "result": "",
       "notes": "伝統テスト用(全所見一括). ナビゲーションテスト: Step2(基本採血)でTop-1到達(71%), Step4でH=0.06(99.3%). 反証推奨はStep4以降H増加量→0で自然消滅(正診の証拠)"
+    },
+    {
+      "id": "R194",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10564561",
+      "vignette": "42F 新パートナーと無防備性交1週間後. 4日間の発熱(103.9°F=39.9℃)+下肢の水疱膿疱性皮疹+右足/両膝の多関節腫脹・発赤. WBC 21000. 血培陰性. 膝関節穿刺: グラム陰性双球菌培養陽性(尿酸結晶も共存)",
+      "final_diagnosis": "播種性淋菌感染症(関節炎-皮膚炎症候群)",
+      "expected_id": "D115",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S08": "present",
+        "S23": "polyarticular",
+        "E21": "polyarticular",
+        "E12": "petechiae_purpura",
+        "S18": "rash_widespread",
+        "L01": "very_high_over_20000",
+        "L09": "negative",
+        "L30": "septic",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "伝統+ナビ両方テスト. 膝関節液からGN diplococci培養陽性で確定(血培は陰性)"
+    },
+    {
+      "id": "R195",
+      "source": "J Med Case Rep 2021",
+      "pmcid": "PMC8390630",
+      "vignette": "36F IV drug use歴. 新パートナーと無防備性交2ヶ月前. 6週間の膣分泌物+排尿時痛, 3日間の両側足首痛+下肢点状出血性皮疹. 入院時無熱(36.8℃), HR 101. 両側足首腱鞘炎+浮腫. CRP 11. 血培陰性. 尿NAAT: 淋菌陽性",
+      "final_diagnosis": "播種性淋菌感染症(関節炎-皮膚炎症候群, 点状出血型)",
+      "expected_id": "D115",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S08": "present",
+        "E12": "petechiae_purpura",
+        "S10": "present",
+        "L02": "moderate_3_10",
+        "L09": "negative",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "伝統+ナビ両方テスト. 入院時無熱(36.8℃). 尿NAATで淋菌確定. 点状出血型は非典型"
     }
   ],
   "total_cases": 110

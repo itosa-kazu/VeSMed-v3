@@ -2392,6 +2392,17 @@
         "40_64": 0.003,
         "65_plus": 0.008
       }
+    },
+    "D115": {
+      "parents": [
+        "R01"
+      ],
+      "description": "DGI。15-35歳の性活動活発な成人に好発",
+      "cpt": {
+        "18_39": 0.005,
+        "40_64": 0.002,
+        "65_plus": 0.001
+      }
     }
   },
   "noisy_or_params": {
@@ -3300,6 +3311,13 @@
           "38.0_39.0": 0.2,
           "39.0_40.0": 0.08,
           "over_40.0": 0.02
+        },
+        "D115": {
+          "under_37.5": 0.15,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.35,
+          "39.0_40.0": 0.25,
+          "over_40.0": 0.05
         }
       }
     },
@@ -4497,6 +4515,28 @@
           "purpura": 0.03,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.02
+        },
+        "D115": {
+          "normal": 0.3,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.25,
+          "maculopapular_rash": 0.15,
+          "vesicular_dermatomal": 0.05,
+          "diffuse_erythroderma": 0.02,
+          "purpura": 0.1,
+          "vesicle_bulla": 0.05,
+          "skin_necrosis": 0.03
+        },
+        "D64": {
+          "normal": 0.65,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.05,
+          "maculopapular_rash": 0.15,
+          "vesicular_dermatomal": 0.02,
+          "diffuse_erythroderma": 0.03,
+          "purpura": 0.02,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.02
         }
       }
     },
@@ -5039,6 +5079,11 @@
           "absent": 0.45,
           "monoarticular": 0.05,
           "polyarticular": 0.5
+        },
+        "D115": {
+          "absent": 0.4,
+          "monoarticular": 0.25,
+          "polyarticular": 0.35
         }
       }
     },
@@ -6059,6 +6104,12 @@
           "normal_4000_10000": 0.55,
           "high_10000_20000": 0.15,
           "very_high_over_20000": 0.05
+        },
+        "D115": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.15
         }
       }
     },
@@ -6688,6 +6739,12 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.35,
           "high_over_10": 0.2
+        },
+        "D115": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.2
         }
       }
     },
@@ -7110,6 +7167,12 @@
           "negative": 0.55,
           "gram_positive": 0.05,
           "gram_negative": 0.1
+        },
+        "D115": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.5,
+          "gram_positive": 0.02,
+          "gram_negative": 0.28
         }
       }
     },
@@ -8175,6 +8238,11 @@
           "normal": 0.05,
           "elevated": 0.25,
           "very_high_over_100": 0.7
+        },
+        "D115": {
+          "normal": 0.3,
+          "elevated": 0.55,
+          "very_high_over_100": 0.15
         }
       }
     },
@@ -8224,6 +8292,12 @@
           "inflammatory": 0.1,
           "septic": 0.05,
           "crystals": 0.75
+        },
+        "D115": {
+          "not_done": 0.3,
+          "inflammatory": 0.3,
+          "septic": 0.35,
+          "crystals": 0.05
         }
       }
     },
@@ -9737,6 +9811,10 @@
         "D114": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D115": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -10691,6 +10769,11 @@
           "absent": 0.05,
           "localized_pain_redness": 0.1,
           "rash_widespread": 0.85
+        },
+        "D115": {
+          "absent": 0.3,
+          "localized_pain_redness": 0.25,
+          "rash_widespread": 0.45
         }
       }
     },
@@ -10820,6 +10903,11 @@
           "absent": 0.05,
           "monoarticular": 0.1,
           "polyarticular": 0.85
+        },
+        "D115": {
+          "absent": 0.3,
+          "monoarticular": 0.25,
+          "polyarticular": 0.45
         }
       }
     },
@@ -12242,6 +12330,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.15,
           "over_3w": 0.8
+        },
+        "D115": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.55,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.05
         }
       }
     },
@@ -12431,6 +12525,10 @@
         "D114": {
           "sudden_hours": 0.05,
           "gradual_days": 0.95
+        },
+        "D115": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
         }
       }
     },
@@ -12577,6 +12675,14 @@
         "D43": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D115": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D64": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
