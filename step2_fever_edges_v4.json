@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3312,
+  "total_edges": 3366,
   "edges": [
     {
       "from": "R01",
@@ -27681,6 +27681,384 @@
       "from_name": "acute_mitral_regurgitation",
       "to_name": "T02",
       "reason": "急性MR: 突発"
+    },
+    {
+      "from": "D217",
+      "to": "E02",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "E02",
+      "reason": "急性動脈閉塞: 頻脈(AF/塞栓源)"
+    },
+    {
+      "from": "D217",
+      "to": "E03",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "E03",
+      "reason": "急性動脈閉塞: 低血圧(ショック型)"
+    },
+    {
+      "from": "D217",
+      "to": "L16",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "L16",
+      "reason": "急性動脈閉塞: LDH上昇(虚血)"
+    },
+    {
+      "from": "D217",
+      "to": "L17",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "L17",
+      "reason": "急性動脈閉塞: CK上昇(筋虚血)"
+    },
+    {
+      "from": "D217",
+      "to": "L55",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "L55",
+      "reason": "急性動脈閉塞: AKI(腎灌流低下/横紋筋融解)"
+    },
+    {
+      "from": "D217",
+      "to": "L44",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "L44",
+      "reason": "急性動脈閉塞: 高K(横紋筋融解)"
+    },
+    {
+      "from": "D217",
+      "to": "T01",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "T01",
+      "reason": "急性動脈閉塞: 超急性"
+    },
+    {
+      "from": "D217",
+      "to": "T02",
+      "from_name": "acute_arterial_occlusion",
+      "to_name": "T02",
+      "reason": "急性動脈閉塞: 突発"
+    },
+    {
+      "from": "D218",
+      "to": "L11",
+      "from_name": "wilson_disease",
+      "to_name": "L11",
+      "reason": "ウィルソン: 肝酵素上昇"
+    },
+    {
+      "from": "D218",
+      "to": "E18",
+      "from_name": "wilson_disease",
+      "to_name": "E18",
+      "reason": "ウィルソン: 黄疸(溶血性/肝性)"
+    },
+    {
+      "from": "D218",
+      "to": "E16",
+      "from_name": "wilson_disease",
+      "to_name": "E16",
+      "reason": "ウィルソン: 精神神経症状(30-40%)"
+    },
+    {
+      "from": "D218",
+      "to": "S07",
+      "from_name": "wilson_disease",
+      "to_name": "S07",
+      "reason": "ウィルソン: 倦怠感"
+    },
+    {
+      "from": "D218",
+      "to": "L16",
+      "from_name": "wilson_disease",
+      "to_name": "L16",
+      "reason": "ウィルソン: LDH上昇(溶血)"
+    },
+    {
+      "from": "D218",
+      "to": "S53",
+      "from_name": "wilson_disease",
+      "to_name": "S53",
+      "reason": "ウィルソン: 構音障害(神経型, 30-40%)"
+    },
+    {
+      "from": "D218",
+      "to": "T01",
+      "from_name": "wilson_disease",
+      "to_name": "T01",
+      "reason": "ウィルソン: 急性~慢性"
+    },
+    {
+      "from": "D218",
+      "to": "T02",
+      "from_name": "wilson_disease",
+      "to_name": "T02",
+      "reason": "ウィルソン: 亜急性~慢性"
+    },
+    {
+      "from": "D219",
+      "to": "E01",
+      "from_name": "GPA",
+      "to_name": "E01",
+      "reason": "GPA: 発熱(60-70%)"
+    },
+    {
+      "from": "D219",
+      "to": "S01",
+      "from_name": "GPA",
+      "to_name": "S01",
+      "reason": "GPA: 咳嗽(肺病変, 50-60%)"
+    },
+    {
+      "from": "D219",
+      "to": "S04",
+      "from_name": "GPA",
+      "to_name": "S04",
+      "reason": "GPA: 呼吸困難(肺出血/ILD, 30-40%)"
+    },
+    {
+      "from": "D219",
+      "to": "L05",
+      "from_name": "GPA",
+      "to_name": "L05",
+      "reason": "GPA: 尿異常(腎炎, 60-70%)"
+    },
+    {
+      "from": "D219",
+      "to": "L55",
+      "from_name": "GPA",
+      "to_name": "L55",
+      "reason": "GPA: AKI(RPGN, 40-60%)"
+    },
+    {
+      "from": "D219",
+      "to": "S07",
+      "from_name": "GPA",
+      "to_name": "S07",
+      "reason": "GPA: 倦怠感(80%+)"
+    },
+    {
+      "from": "D219",
+      "to": "S08",
+      "from_name": "GPA",
+      "to_name": "S08",
+      "reason": "GPA: 関節痛(40-50%)"
+    },
+    {
+      "from": "D219",
+      "to": "L01",
+      "from_name": "GPA",
+      "to_name": "L01",
+      "reason": "GPA: WBC上昇"
+    },
+    {
+      "from": "D219",
+      "to": "L02",
+      "from_name": "GPA",
+      "to_name": "L02",
+      "reason": "GPA: CRP上昇"
+    },
+    {
+      "from": "D219",
+      "to": "L04",
+      "from_name": "GPA",
+      "to_name": "L04",
+      "reason": "GPA: CXR(肺結節/浸潤/空洞)"
+    },
+    {
+      "from": "D219",
+      "to": "T01",
+      "from_name": "GPA",
+      "to_name": "T01",
+      "reason": "GPA: 亜急性~慢性"
+    },
+    {
+      "from": "D219",
+      "to": "T02",
+      "from_name": "GPA",
+      "to_name": "T02",
+      "reason": "GPA: 亜急性"
+    },
+    {
+      "from": "D220",
+      "to": "S04",
+      "from_name": "EGPA",
+      "to_name": "S04",
+      "reason": "EGPA: 呼吸困難(喘息, 90%+)"
+    },
+    {
+      "from": "D220",
+      "to": "E07",
+      "from_name": "EGPA",
+      "to_name": "E07",
+      "reason": "EGPA: 肺聴診(wheezes, 喘息)"
+    },
+    {
+      "from": "D220",
+      "to": "E01",
+      "from_name": "EGPA",
+      "to_name": "E01",
+      "reason": "EGPA: 発熱(50-60%)"
+    },
+    {
+      "from": "D220",
+      "to": "L14",
+      "from_name": "EGPA",
+      "to_name": "L14",
+      "reason": "EGPA: 好酸球著増(定義的)"
+    },
+    {
+      "from": "D220",
+      "to": "E12",
+      "from_name": "EGPA",
+      "to_name": "E12",
+      "reason": "EGPA: 紫斑/結節(皮膚血管炎, 40-50%)"
+    },
+    {
+      "from": "D220",
+      "to": "S07",
+      "from_name": "EGPA",
+      "to_name": "S07",
+      "reason": "EGPA: 倦怠感"
+    },
+    {
+      "from": "D220",
+      "to": "L53",
+      "from_name": "EGPA",
+      "to_name": "L53",
+      "reason": "EGPA: トロポニン上昇(心筋炎, 30-40%)"
+    },
+    {
+      "from": "D220",
+      "to": "L01",
+      "from_name": "EGPA",
+      "to_name": "L01",
+      "reason": "EGPA: WBC上昇(好酸球優位)"
+    },
+    {
+      "from": "D220",
+      "to": "L02",
+      "from_name": "EGPA",
+      "to_name": "L02",
+      "reason": "EGPA: CRP上昇"
+    },
+    {
+      "from": "D220",
+      "to": "T01",
+      "from_name": "EGPA",
+      "to_name": "T01",
+      "reason": "EGPA: 亜急性~慢性"
+    },
+    {
+      "from": "D220",
+      "to": "T02",
+      "from_name": "EGPA",
+      "to_name": "T02",
+      "reason": "EGPA: 亜急性"
+    },
+    {
+      "from": "D221",
+      "to": "E01",
+      "from_name": "MPA",
+      "to_name": "E01",
+      "reason": "MPA: 発熱(60-70%)"
+    },
+    {
+      "from": "D221",
+      "to": "L05",
+      "from_name": "MPA",
+      "to_name": "L05",
+      "reason": "MPA: 尿異常(RPGN, 80%+)"
+    },
+    {
+      "from": "D221",
+      "to": "L55",
+      "from_name": "MPA",
+      "to_name": "L55",
+      "reason": "MPA: AKI(RPGN, 70-80%)"
+    },
+    {
+      "from": "D221",
+      "to": "S04",
+      "from_name": "MPA",
+      "to_name": "S04",
+      "reason": "MPA: 呼吸困難(肺胞出血, 30-40%)"
+    },
+    {
+      "from": "D221",
+      "to": "S07",
+      "from_name": "MPA",
+      "to_name": "S07",
+      "reason": "MPA: 倦怠感(80%+)"
+    },
+    {
+      "from": "D221",
+      "to": "S08",
+      "from_name": "MPA",
+      "to_name": "S08",
+      "reason": "MPA: 関節痛(40-50%)"
+    },
+    {
+      "from": "D221",
+      "to": "S01",
+      "from_name": "MPA",
+      "to_name": "S01",
+      "reason": "MPA: 咳嗽(肺出血/咳血, 30-40%)"
+    },
+    {
+      "from": "D221",
+      "to": "L01",
+      "from_name": "MPA",
+      "to_name": "L01",
+      "reason": "MPA: WBC上昇"
+    },
+    {
+      "from": "D221",
+      "to": "L02",
+      "from_name": "MPA",
+      "to_name": "L02",
+      "reason": "MPA: CRP上昇"
+    },
+    {
+      "from": "D221",
+      "to": "T01",
+      "from_name": "MPA",
+      "to_name": "T01",
+      "reason": "MPA: 亜急性"
+    },
+    {
+      "from": "D221",
+      "to": "T02",
+      "from_name": "MPA",
+      "to_name": "T02",
+      "reason": "MPA: 亜急性"
+    },
+    {
+      "from": "D147",
+      "to": "L05",
+      "from_name": "urolithiasis",
+      "to_name": "L05",
+      "reason": "尿管結石: 尿異常(血尿, 80%+)"
+    },
+    {
+      "from": "D175",
+      "to": "E03",
+      "from_name": "AIP",
+      "to_name": "E03",
+      "reason": "AIP: 低血圧(重症ARDS)"
+    },
+    {
+      "from": "D175",
+      "to": "L52",
+      "from_name": "AIP",
+      "to_name": "L52",
+      "reason": "AIP: D-dimer上昇(DAD)"
+    },
+    {
+      "from": "D185",
+      "to": "L02",
+      "from_name": "hereditary_angioedema",
+      "to_name": "L02",
+      "reason": "HAE: CRP(通常正常)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

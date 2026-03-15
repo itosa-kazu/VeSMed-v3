@@ -5597,6 +5597,66 @@
       ],
       "severity": "critical",
       "note": "腱索断裂(IE/MIなど)→急性肺水腫→心原性ショック。緊急手術"
+    },
+    {
+      "id": "D217",
+      "name": "acute_arterial_occlusion",
+      "name_ja": "急性動脈閉塞症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "6P:Pain/Pallor/Pulselessness/Paresthesia/Paralysis/Poikilothermia。塞栓(AF/IE)か血栓。6h以内に血行再建"
+    },
+    {
+      "id": "D218",
+      "name": "wilson_disease",
+      "name_ja": "ウィルソン病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "銅代謝異常(ATP7B変異)。肝障害+神経精神症状+Kayser-Fleischer輪。急性肝不全で発症も"
+    },
+    {
+      "id": "D219",
+      "name": "GPA",
+      "name_ja": "多発血管炎性肉芽腫症(GPA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "PR3-ANCA陽性。上気道(副鼻腔炎/鞍鼻)+下気道(肺結節/肺出血)+腎(RPGN)。E/L/K triad"
+    },
+    {
+      "id": "D220",
+      "name": "EGPA",
+      "name_ja": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "MPO-ANCA(40%)。喘息+好酸球増多+血管炎。心筋炎(致死的)。末梢神経障害(多発単神経炎)"
+    },
+    {
+      "id": "D221",
+      "name": "MPA",
+      "name_ja": "顕微鏡的多発血管炎(MPA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "MPO-ANCA陽性。RPGN+肺胞出血。GPA/EGPAと鑑別。肉芽腫なし"
     }
   ]
 }
