@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2729,
+  "total_edges": 2758,
   "edges": [
     {
       "from": "R01",
@@ -23600,6 +23600,209 @@
       "from_name": "APS",
       "to_name": "L11",
       "reason": "APS: 肝酵素上昇(肝TMA)"
+    },
+    {
+      "from": "D174",
+      "to": "S12",
+      "from_name": "ruptured_AAA",
+      "to_name": "S12",
+      "reason": "AAA破裂: 腹痛(突然, びまん性/腰背部, 90%+)"
+    },
+    {
+      "from": "D174",
+      "to": "S15",
+      "from_name": "ruptured_AAA",
+      "to_name": "S15",
+      "reason": "AAA破裂: 腰背部痛(後腹膜出血, 70-80%)"
+    },
+    {
+      "from": "D174",
+      "to": "E03",
+      "from_name": "ruptured_AAA",
+      "to_name": "E03",
+      "reason": "AAA破裂: 低血圧/ショック(出血, 80%+)"
+    },
+    {
+      "from": "D174",
+      "to": "E02",
+      "from_name": "ruptured_AAA",
+      "to_name": "E02",
+      "reason": "AAA破裂: 頻脈(出血)"
+    },
+    {
+      "from": "D174",
+      "to": "E16",
+      "from_name": "ruptured_AAA",
+      "to_name": "E16",
+      "reason": "AAA破裂: 意識障害(ショック)"
+    },
+    {
+      "from": "D174",
+      "to": "E09",
+      "from_name": "ruptured_AAA",
+      "to_name": "E09",
+      "reason": "AAA破裂: 腹部(膨満+圧痛)"
+    },
+    {
+      "from": "D174",
+      "to": "S44",
+      "from_name": "ruptured_AAA",
+      "to_name": "S44",
+      "reason": "AAA破裂: 出血傾向(消費性)"
+    },
+    {
+      "from": "D174",
+      "to": "T01",
+      "from_name": "ruptured_AAA",
+      "to_name": "T01",
+      "reason": "AAA破裂: 超急性"
+    },
+    {
+      "from": "D174",
+      "to": "T02",
+      "from_name": "ruptured_AAA",
+      "to_name": "T02",
+      "reason": "AAA破裂: 突発"
+    },
+    {
+      "from": "D175",
+      "to": "S04",
+      "from_name": "AIP",
+      "to_name": "S04",
+      "reason": "AIP: 呼吸困難(急速進行, 100%)"
+    },
+    {
+      "from": "D175",
+      "to": "S01",
+      "from_name": "AIP",
+      "to_name": "S01",
+      "reason": "AIP: 咳嗽(乾性, 80%+)"
+    },
+    {
+      "from": "D175",
+      "to": "E01",
+      "from_name": "AIP",
+      "to_name": "E01",
+      "reason": "AIP: 発熱(前駆URI症状, 50-60%)"
+    },
+    {
+      "from": "D175",
+      "to": "E07",
+      "from_name": "AIP",
+      "to_name": "E07",
+      "reason": "AIP: 肺聴診(crackles両側)"
+    },
+    {
+      "from": "D175",
+      "to": "E04",
+      "from_name": "AIP",
+      "to_name": "E04",
+      "reason": "AIP: 頻呼吸"
+    },
+    {
+      "from": "D175",
+      "to": "E05",
+      "from_name": "AIP",
+      "to_name": "E05",
+      "reason": "AIP: 低酸素(重度)"
+    },
+    {
+      "from": "D175",
+      "to": "L04",
+      "from_name": "AIP",
+      "to_name": "L04",
+      "reason": "AIP: CXR(両側浸潤)"
+    },
+    {
+      "from": "D175",
+      "to": "E02",
+      "from_name": "AIP",
+      "to_name": "E02",
+      "reason": "AIP: 頻脈"
+    },
+    {
+      "from": "D175",
+      "to": "L01",
+      "from_name": "AIP",
+      "to_name": "L01",
+      "reason": "AIP: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D175",
+      "to": "T01",
+      "from_name": "AIP",
+      "to_name": "T01",
+      "reason": "AIP: 急性(1-3週)"
+    },
+    {
+      "from": "D175",
+      "to": "T02",
+      "from_name": "AIP",
+      "to_name": "T02",
+      "reason": "AIP: 亜急性"
+    },
+    {
+      "from": "D176",
+      "to": "E16",
+      "from_name": "anti_NMDA",
+      "to_name": "E16",
+      "reason": "抗NMDA: 意識障害(80-90%)"
+    },
+    {
+      "from": "D176",
+      "to": "S42",
+      "from_name": "anti_NMDA",
+      "to_name": "S42",
+      "reason": "抗NMDA: 痙攣(70-80%)"
+    },
+    {
+      "from": "D176",
+      "to": "S05",
+      "from_name": "anti_NMDA",
+      "to_name": "S05",
+      "reason": "抗NMDA: 頭痛(前駆, 50-60%)"
+    },
+    {
+      "from": "D176",
+      "to": "E01",
+      "from_name": "anti_NMDA",
+      "to_name": "E01",
+      "reason": "抗NMDA: 発熱(前駆/自律神経障害, 60-70%)"
+    },
+    {
+      "from": "D176",
+      "to": "E02",
+      "from_name": "anti_NMDA",
+      "to_name": "E02",
+      "reason": "抗NMDA: 頻脈(自律神経障害)"
+    },
+    {
+      "from": "D176",
+      "to": "S53",
+      "from_name": "anti_NMDA",
+      "to_name": "S53",
+      "reason": "抗NMDA: 構音障害/失語(50-60%)"
+    },
+    {
+      "from": "D176",
+      "to": "S07",
+      "from_name": "anti_NMDA",
+      "to_name": "S07",
+      "reason": "抗NMDA: 全身脱力"
+    },
+    {
+      "from": "D176",
+      "to": "T01",
+      "from_name": "anti_NMDA",
+      "to_name": "T01",
+      "reason": "抗NMDA: 亜急性(1-3週)"
+    },
+    {
+      "from": "D176",
+      "to": "T02",
+      "from_name": "anti_NMDA",
+      "to_name": "T02",
+      "reason": "抗NMDA: 亜急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

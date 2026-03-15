@@ -3007,6 +3007,43 @@
       "cpt": {
         "": 0.002
       }
+    },
+    "D174": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "AAA破裂。高齢男性に多い",
+      "cpt": {
+        "18_39,male": 0.0001,
+        "18_39,female": 5e-05,
+        "40_64,male": 0.001,
+        "40_64,female": 0.0003,
+        "65_plus,male": 0.004,
+        "65_plus,female": 0.001
+      }
+    },
+    "D175": {
+      "parents": [],
+      "description": "AIP。特発性、年齢問わず",
+      "cpt": {
+        "": 0.001
+      }
+    },
+    "D176": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "抗NMDA受容体脳炎。若年女性に多い",
+      "cpt": {
+        "18_39,male": 0.0005,
+        "18_39,female": 0.002,
+        "40_64,male": 0.0003,
+        "40_64,female": 0.001,
+        "65_plus,male": 0.0001,
+        "65_plus,female": 0.0003
+      }
     }
   },
   "noisy_or_params": {
@@ -4314,6 +4351,20 @@
           "38.0_39.0": 0.35,
           "39.0_40.0": 0.3,
           "over_40.0": 0.12
+        },
+        "D175": {
+          "under_37.5": 0.35,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.05
+        },
+        "D176": {
+          "under_37.5": 0.25,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.18,
+          "over_40.0": 0.07
         }
       }
     },
@@ -4814,6 +4865,21 @@
           "under_100": 0.05,
           "100_120": 0.3,
           "over_120": 0.65
+        },
+        "D174": {
+          "under_100": 0.05,
+          "100_120": 0.3,
+          "over_120": 0.65
+        },
+        "D175": {
+          "under_100": 0.05,
+          "100_120": 0.35,
+          "over_120": 0.6
+        },
+        "D176": {
+          "under_100": 0.15,
+          "100_120": 0.4,
+          "over_120": 0.45
         }
       }
     },
@@ -5019,6 +5085,10 @@
         "D172": {
           "normal_over_90": 0.2,
           "hypotension_under_90": 0.8
+        },
+        "D174": {
+          "normal_over_90": 0.1,
+          "hypotension_under_90": 0.9
         }
       }
     },
@@ -5180,6 +5250,11 @@
           "normal_under_20": 0.55,
           "tachypnea_20_30": 0.3,
           "severe_over_30": 0.15
+        },
+        "D175": {
+          "normal_under_20": 0.05,
+          "tachypnea_20_30": 0.35,
+          "severe_over_30": 0.6
         }
       }
     },
@@ -5360,6 +5435,11 @@
           "normal_over_96": 0.55,
           "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.2
+        },
+        "D175": {
+          "normal_over_96": 0.05,
+          "mild_hypoxia_93_96": 0.2,
+          "severe_hypoxia_under_93": 0.75
         }
       }
     },
@@ -5557,6 +5637,12 @@
           "crackles": 0.25,
           "wheezes": 0.15,
           "decreased_absent": 0.05
+        },
+        "D175": {
+          "clear": 0.05,
+          "crackles": 0.8,
+          "wheezes": 0.1,
+          "decreased_absent": 0.05
         }
       }
     },
@@ -5687,6 +5773,11 @@
           "soft_nontender": 0.1,
           "localized_tenderness": 0.45,
           "peritoneal_signs": 0.45
+        },
+        "D174": {
+          "soft_nontender": 0.05,
+          "localized_tenderness": 0.3,
+          "peritoneal_signs": 0.65
         }
       }
     },
@@ -6747,6 +6838,16 @@
           "normal": 0.25,
           "confused": 0.4,
           "obtunded": 0.35
+        },
+        "D174": {
+          "normal": 0.3,
+          "confused": 0.35,
+          "obtunded": 0.35
+        },
+        "D176": {
+          "normal": 0.08,
+          "confused": 0.45,
+          "obtunded": 0.47
         }
       }
     },
@@ -8277,6 +8378,12 @@
           "normal_4000_10000": 0.55,
           "high_10000_20000": 0.25,
           "very_high_over_20000": 0.05
+        },
+        "D175": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.15
         }
       }
     },
@@ -9622,6 +9729,14 @@
           "BHL": 0.01,
           "pleural_effusion": 0.03,
           "pneumothorax": 0.03
+        },
+        "D175": {
+          "normal": 0.03,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.9,
+          "BHL": 0.01,
+          "pleural_effusion": 0.02,
+          "pneumothorax": 0.02
         }
       }
     },
@@ -11899,6 +12014,11 @@
           "absent": 0.65,
           "dry": 0.25,
           "productive": 0.1
+        },
+        "D175": {
+          "absent": 0.1,
+          "dry": 0.75,
+          "productive": 0.15
         }
       }
     },
@@ -12218,6 +12338,11 @@
           "absent": 0.5,
           "on_exertion": 0.3,
           "at_rest": 0.2
+        },
+        "D175": {
+          "absent": 0.02,
+          "on_exertion": 0.15,
+          "at_rest": 0.83
         }
       }
     },
@@ -12433,6 +12558,11 @@
           "absent": 0.35,
           "mild": 0.4,
           "severe": 0.25
+        },
+        "D176": {
+          "absent": 0.3,
+          "mild": 0.35,
+          "severe": 0.35
         }
       }
     },
@@ -13035,6 +13165,11 @@
           "absent": 0.1,
           "mild": 0.5,
           "severe": 0.4
+        },
+        "D176": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
         }
       }
     },
@@ -13712,6 +13847,15 @@
           "LLQ": 0.02,
           "suprapubic": 0.01,
           "diffuse": 0.05
+        },
+        "D174": {
+          "absent": 0.05,
+          "epigastric": 0.1,
+          "RUQ": 0.03,
+          "RLQ": 0.03,
+          "LLQ": 0.03,
+          "suprapubic": 0.01,
+          "diffuse": 0.75
         }
       }
     },
@@ -15220,6 +15364,10 @@
         "D161": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D176": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -15288,6 +15436,10 @@
           "present": 0.8
         },
         "D156": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D174": {
           "absent": 0.5,
           "present": 0.5
         }
@@ -16486,6 +16638,24 @@
           "3d_to_1w": 0.5,
           "1w_to_3w": 0.18,
           "over_3w": 0.02
+        },
+        "D174": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
+        },
+        "D175": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.1
+        },
+        "D176": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.45,
+          "over_3w": 0.15
         }
       }
     },
@@ -16911,6 +17081,18 @@
         "D173": {
           "sudden_hours": 0.3,
           "gradual_days": 0.7
+        },
+        "D174": {
+          "sudden_hours": 0.95,
+          "gradual_days": 0.05
+        },
+        "D175": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
+        },
+        "D176": {
+          "sudden_hours": 0.15,
+          "gradual_days": 0.85
         }
       }
     },
@@ -17200,6 +17382,10 @@
         "D145": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D174": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -18648,6 +18834,11 @@
           "absent": 0.15,
           "dysarthria": 0.75,
           "aphasia": 0.1
+        },
+        "D176": {
+          "absent": 0.3,
+          "dysarthria": 0.35,
+          "aphasia": 0.35
         }
       }
     },

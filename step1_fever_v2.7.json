@@ -5081,6 +5081,42 @@
       ],
       "severity": "moderate",
       "note": "VZV初感染。発熱+全身性水疱性発疹(各段階混在:紅斑→丘疹→水疱→痂皮)。成人は重症化リスク(肺炎/脳炎)"
+    },
+    {
+      "id": "D174",
+      "name": "ruptured_AAA",
+      "name_ja": "腹部大動脈瘤破裂",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の腹痛/背部痛+ショック+拍動性腹部腫瘤。高齢男性+喫煙+高血圧がリスク。緊急手術。死亡率50-80%"
+    },
+    {
+      "id": "D175",
+      "name": "acute_interstitial_pneumonia",
+      "name_ja": "急性間質性肺炎(AIP/Hamman-Rich)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "特発性の急速進行性間質性肺炎→DAD(diffuse alveolar damage)→ARDS。前駆:URI様症状→1-2週で呼吸不全。50-70%死亡"
+    },
+    {
+      "id": "D176",
+      "name": "anti_NMDA_receptor_encephalitis",
+      "name_ja": "抗NMDA受容体脳炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "若年女性に多い。前駆:発熱/頭痛→精神症状(幻覚/興奮)→痙攣→意識障害→不随意運動→自律神経障害。卵巣奇形腫が30-50%"
     }
   ]
 }
