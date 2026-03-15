@@ -5505,6 +5505,122 @@
       },
       "result": "",
       "notes": "緊張性気胸の古典的3徴(低血圧+呼吸音消失+気管偏位+JVD)が全揃い"
+    },
+    {
+      "id": "R221",
+      "source": "StatPearls/PMC",
+      "pmcid": "PMC7121203",
+      "vignette": "73M 50pack-year現喫煙者, COPD(在宅O2). 1週間の労作時呼吸困難悪化+膿性痰増加→安静時呼吸困難. 無熱, HR 110, RR 36, BP 178/90, SpO2 85%(O2 4L). 呼吸補助筋使用, 両側呼気性喘鳴. ABG: pH 7.24, pCO2 60, pO2 55. CXR: 過膨張, 陰影なし",
+      "final_diagnosis": "COPD急性増悪(高炭酸ガス性呼吸不全)",
+      "expected_id": "D121",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S01": "productive",
+        "E07": "wheezes",
+        "E04": "severe_over_30",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "L04": "normal",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R46": "yes",
+        "R45": "current"
+      },
+      "result": "",
+      "notes": "ABG pH 7.24 高炭酸ガス血症. WBC/CRP未報告"
+    },
+    {
+      "id": "R222",
+      "source": "PMC 2013",
+      "pmcid": "PMC3815613",
+      "vignette": "81M 50+pack-year, COPD 10年(在宅O2 7年). 急性呼吸困難悪化, 発語困難. T 36.9, HR 114, RR 30, BP 169/80, SpO2 80%. 両側呼気性喘鳴, air movement不良. WBC 23300. ABG: pH 7.19, pCO2 66, pO2 56. CXR: 過膨張, 浸潤影なし",
+      "final_diagnosis": "COPD急性増悪(重症, 高炭酸ガス血症)",
+      "expected_id": "D121",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "E04": "tachypnea_20_30",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "L01": "very_high_over_20000",
+        "L04": "normal",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R46": "yes",
+        "R45": "former",
+        "R04": "yes",
+        "R44": "yes"
+      },
+      "result": "",
+      "notes": "pH 7.19重症. WBC 23300(感染誘因). CRP未報告"
+    },
+    {
+      "id": "R223",
+      "source": "Cureus 2023",
+      "pmcid": "PMC9949361",
+      "vignette": "38M 慢性喘息(サルブタモール定期). 寒冷曝露後2日間の進行性呼吸困難+喘鳴+軽度咳嗽. 文章完結不能. T 37.3, HR 145, RR 35, BP 145/91, SpO2 99%(NRB 10L). ABG: pH 7.31, pCO2 72(高炭酸ガス). CXR正常. NIV失敗→挿管+セボフルラン吸入",
+      "final_diagnosis": "重症喘息発作(高炭酸ガス性呼吸不全)",
+      "expected_id": "D122",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "S01": "dry",
+        "E04": "severe_over_30",
+        "E02": "over_120",
+        "E01": "under_37.5",
+        "L04": "normal",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R47": "yes"
+      },
+      "result": "",
+      "notes": "pCO2 72の重症喘息. セボフルラン使用の稀な案例. WBC未報告"
+    },
+    {
+      "id": "R224",
+      "source": "BMJ Case Rep 2018",
+      "pmcid": "PMC6010635",
+      "vignette": "42F 幼少期からの喘息(ICS+LABA). 3週間ダミー吸入器を誤使用→乾性咳嗽+呼吸困難増悪+レスキュー無効. T 39.0(発熱), HR 140, RR 23, BP 112/72, SpO2 98→93%. WBC 11.5k, CRP 35. CXR: 過膨張+両側喘鳴. PEFR 270L/min",
+      "final_diagnosis": "喘息急性増悪(ダミー吸入器誤使用)",
+      "expected_id": "D122",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "E07": "wheezes",
+        "S01": "dry",
+        "E04": "tachypnea_20_30",
+        "E02": "over_120",
+        "E01": "39.0_40.0",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L04": "normal",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R47": "yes"
+      },
+      "result": "",
+      "notes": "39度発熱あり(感染合併?). CRP 35中等度. 3週間の経過"
     }
   ],
   "total_cases": 110
