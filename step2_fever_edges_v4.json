@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1991,
+  "total_edges": 2005,
   "edges": [
     {
       "from": "R01",
@@ -18434,6 +18434,104 @@
       "from_name": "COPD_exacerbation",
       "to_name": "T02",
       "reason": "COPD増悪: 急性~亜急性"
+    },
+    {
+      "from": "D122",
+      "to": "S04",
+      "from_name": "asthma_exacerbation",
+      "to_name": "S04",
+      "reason": "喘息発作: 呼吸困難(95%+, 発作的)"
+    },
+    {
+      "from": "D122",
+      "to": "E07",
+      "from_name": "asthma_exacerbation",
+      "to_name": "E07",
+      "reason": "喘息発作: 喘鳴/wheezes(90%+, 呼気優位)"
+    },
+    {
+      "from": "D122",
+      "to": "S01",
+      "from_name": "asthma_exacerbation",
+      "to_name": "S01",
+      "reason": "喘息発作: 咳嗽(80%+, 乾性が多い)"
+    },
+    {
+      "from": "D122",
+      "to": "E04",
+      "from_name": "asthma_exacerbation",
+      "to_name": "E04",
+      "reason": "喘息発作: 頻呼吸(70-80%)"
+    },
+    {
+      "from": "D122",
+      "to": "E02",
+      "from_name": "asthma_exacerbation",
+      "to_name": "E02",
+      "reason": "喘息発作: 頻脈(50-60%)"
+    },
+    {
+      "from": "D122",
+      "to": "E05",
+      "from_name": "asthma_exacerbation",
+      "to_name": "E05",
+      "reason": "喘息発作: 低酸素(中等度~重症で)"
+    },
+    {
+      "from": "D122",
+      "to": "E01",
+      "from_name": "asthma_exacerbation",
+      "to_name": "E01",
+      "reason": "喘息発作: 通常無熱(感染誘因なら微熱10-20%)"
+    },
+    {
+      "from": "D122",
+      "to": "L01",
+      "from_name": "asthma_exacerbation",
+      "to_name": "L01",
+      "reason": "喘息発作: WBC正常~軽度上昇(ステロイド/ストレスで)"
+    },
+    {
+      "from": "D122",
+      "to": "L02",
+      "from_name": "asthma_exacerbation",
+      "to_name": "L02",
+      "reason": "喘息発作: CRP通常正常~軽度"
+    },
+    {
+      "from": "D122",
+      "to": "L04",
+      "from_name": "asthma_exacerbation",
+      "to_name": "L04",
+      "reason": "喘息発作: CXR通常正常(過膨張のみ)"
+    },
+    {
+      "from": "D122",
+      "to": "L51",
+      "from_name": "asthma_exacerbation",
+      "to_name": "L51",
+      "reason": "喘息発作: BNP正常(心不全との鑑別に重要)"
+    },
+    {
+      "from": "D122",
+      "to": "S07",
+      "from_name": "asthma_exacerbation",
+      "to_name": "S07",
+      "reason": "喘息発作: 倦怠感(30-40%)"
+    },
+    {
+      "from": "D122",
+      "to": "T01",
+      "from_name": "asthma_exacerbation",
+      "to_name": "T01",
+      "reason": "喘息発作: 急性(数時間~数日)"
+    },
+    {
+      "from": "D122",
+      "to": "T02",
+      "from_name": "asthma_exacerbation",
+      "to_name": "T02",
+      "reason": "喘息発作: 急性発症(時間単位が多い)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -4315,6 +4315,29 @@
       ],
       "severity": "high",
       "note": "COPD既往患者の急性呼吸症状悪化。呼吸困難+咳嗽+膿性痰+喘鳴。感染が誘因50%。BNP正常~軽度(心不全との鑑別)。CXR過膨張"
+    },
+    {
+      "id": "R47",
+      "name": "asthma_history",
+      "name_ja": "喘息既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "喘息既往。喘息発作のリスク"
+    },
+    {
+      "id": "D122",
+      "name": "asthma_exacerbation",
+      "name_ja": "喘息発作（急性増悪）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "喘息既往患者の急性呼吸困難+喘鳴+咳嗽。CXR通常正常。BNP正常。COPDとの鑑別: 若年、可逆性、アレルギー歴"
     }
   ]
 }

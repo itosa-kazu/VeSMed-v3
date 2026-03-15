@@ -285,6 +285,24 @@
         }
       ],
       "conclusion": "COPD既往+喘鳴でTop-1。意識混濁/CRP高値はレジオネラとの鑑別課題だが、CXR正常はレジオネラよりCOPD増悪に整合的(COPD増悪の55%はCXR正常)。ただしCOPD増悪+肺炎合併なら浸潤影も出うる"
+    },
+    {
+      "case_id": "R206",
+      "pmcid": "PMC4885350",
+      "final_diagnosis": "喘息急性増悪",
+      "expected_id": "D122",
+      "traditional_result": "Top-1 93%",
+      "navigation_result": "Step0で即Top-1(96%)",
+      "navigation_steps": [
+        {
+          "step": 0,
+          "D122_rank": 1,
+          "D122_prob": "96%",
+          "H": 0.26,
+          "note": "即Top-1確定"
+        }
+      ],
+      "conclusion": "喘息既往+喘鳴+呼吸困難+CRP低値+無熱で即確定。Top-2はCOPD増悪(鑑別として妥当)"
     }
   ]
 }

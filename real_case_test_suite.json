@@ -5107,6 +5107,36 @@
       },
       "result": "",
       "notes": "伝統+ナビ. SpO2 78%著明低下. CXR hyperinflation→normal mapping. CRP 54.3は感染性増悪を示唆. PMCIDなし(Acquaint Publications)"
+    },
+    {
+      "id": "R206",
+      "source": "BMJ Case Rep 2016",
+      "pmcid": "PMC4885350",
+      "vignette": "66M 長年の喘息既往(サルブタモールのみ). 3日間の咳嗽+喘鳴+呼吸困難増悪(サルブタモール無効)+膿性痰. 発熱なし. RR 23, HR 104, SpO2 94%(O2 2L). 両側多音性喘鳴, 呼吸補助筋使用. WBC 11.3k, CRP 6. CXR正常. 気管支拡張薬+ステロイドで改善",
+      "final_diagnosis": "喘息急性増悪(サルブタモール誘発性乳酸アシドーシス合併)",
+      "expected_id": "D122",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E07": "wheezes",
+        "S01": "productive",
+        "E04": "tachypnea_20_30",
+        "E02": "100_120",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5",
+        "L01": "high_10000_20000",
+        "L02": "mild_0.3_3",
+        "L04": "normal",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R47": "yes"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 喘息既往+喘鳴+CXR正常+CRP低値が鍵"
     }
   ],
   "total_cases": 110
