@@ -12610,6 +12610,311 @@
       },
       "result": "",
       "notes": "非典型(胆汁性嘔吐なし). 血便+吐血. 480度捻転"
+    },
+    {
+      "id": "R493",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8703157",
+      "vignette": "34週M 2065g. 哺乳不耐+胃残(90%)+腹部膨満. T 35.8(低体温), RR 80. WBC 12.3k, CRP 77, I:T ratio 0.39, Bands 17%. X線:pneumatosis intestinalis+pneumoperitoneum. SARS-CoV-2 PCR+",
+      "final_diagnosis": "壊死性腸炎(NEC)+COVID",
+      "expected_id": "D257",
+      "in_scope": true,
+      "evidence": {
+        "S13": "present",
+        "S12": "diffuse",
+        "E01": "under_37.5",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L09": "negative",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "pneumatosis+pneumoperitoneum. CRP 77. 内科的管理で生存"
+    },
+    {
+      "id": "R494",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC8986761",
+      "vignette": "7日F 正期産3300g. 哺乳不良+血便(Day6)+意識消失(Day7)+腹部膨満. T 35.6, HR 170, RR 65, BP 35/23. WBC 38.5k, Hb 14.6→5.1(大量溶血!), CRP 37, K 8.7(!), PT>180s, APTT>120s(DIC). CT: pneumatosis+門脈ガス. mNGS: C.perfringens",
+      "final_diagnosis": "NEC+C.perfringens敗血症+大量溶血+DIC(致死的)",
+      "expected_id": "D257",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S12": "diffuse",
+        "E01": "under_37.5",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E16": "obtunded",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L14": "thrombocytopenia",
+        "L44": "hyperkalemia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Hb 5.1(大量溶血). K 8.7. DIC. C.perfringens. 20h後死亡"
+    },
+    {
+      "id": "R495",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC7791759",
+      "vignette": "2日F 39週3450g. Day1暗色悪臭便10回+Day2血便+55h胆汁性嘔吐. HR 180, T 38.3. WBC 8.8k, CRP 21.5→83, 乳酸4.2, INR 1.44. X線:pneumoperitoneum(55h). 手術:横行結腸2cm全層穿孔+盲腸までの壊死→拡大右半結腸切除+回腸瘻",
+      "final_diagnosis": "NEC Stage IIIB(結腸穿孔)",
+      "expected_id": "D257",
+      "in_scope": true,
+      "evidence": {
+        "S14": "bloody",
+        "S13": "present",
+        "S12": "diffuse",
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "2日齢正期産. 横行結腸穿孔. 拡大右半結腸切除"
+    },
+    {
+      "id": "R496",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12620777",
+      "vignette": "26日M 正期産40週. 発熱+咳嗽+鼻汁→進行性呼吸窮迫+嗜眠+哺乳不良. T 37.8, HR 165, RR 68, SpO2 86-88%(NC 3L). WBC 15.4k(リンパ優位), CRP 32.6, トロポニン0.17, CK-MB 60.5. CXR:両側浸潤+心拡大(CTR>70%). Echo:EF 45-50%, MR. RSV+",
+      "final_diagnosis": "RSV心筋炎",
+      "expected_id": "D258",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S03": "clear_rhinorrhea",
+        "S04": "at_rest",
+        "E01": "37.5_38.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L53": "mildly_elevated",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "RSV心筋炎. EF 45%. CTR>70%. CK-MB 60.5"
+    },
+    {
+      "id": "R497",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10858791",
+      "vignette": "22日M 35週2kg. 咳嗽+哺乳不良2日→重度咳嗽+チアノーゼ+嗜眠+蒼白. HR 120, RR 68, SpO2 99%(O2 4L)→82-91%. BP 110/70. 中等度呼吸窮迫+陥没+呻吟+右胸呼吸音減弱+両側crackles. Hb 12, WBC 21k, PLT 127k, Na 146, K 3.1. CXR:右上葉無気肺→左気胸. 気管吸引RSV+",
+      "final_diagnosis": "重症RSV肺炎/細気管支炎(早産児)",
+      "expected_id": "D258",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S04": "at_rest",
+        "E04": "severe_over_30",
+        "E07": "crackles",
+        "L01": "very_high_over_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "35週早産. WBC 21k. 左気胸合併. PICU"
+    },
+    {
+      "id": "R498",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8142759",
+      "vignette": "7日M 37週帝切. 発熱38.5+頻呼吸+呼吸困難+蒼白+胸郭陥没. WBC 11.9k→23.2k, CRP正常→15.2. RSV A PCR+. 血培Day7:肺炎球菌serotype3. CXR:両側肺陰影",
+      "final_diagnosis": "RSV細気管支炎+肺炎球菌敗血症",
+      "expected_id": "D258",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E01": "38.0_39.0",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L09": "gram_positive",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "生後7日. RSV+肺炎球菌敗血症"
+    },
+    {
+      "id": "R499",
+      "source": "Case Rep 2016",
+      "pmcid": "PMC4791924",
+      "vignette": "23M. 口腔不快感+掻痒/灼熱感+嚥下痛+倦怠感. 2歳児(HFMD)と接触7-10日前. T 37.8. 硬口蓋小紅斑+口蓋弓/頬粘膜潰瘍+手足丘疹状水疱. 検査異常なし",
+      "final_diagnosis": "手足口病(成人)",
+      "expected_id": "D259",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "E12": "vesicle_bulla",
+        "S43": "present",
+        "E01": "37.5_38.0",
+        "S07": "mild",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "成人HFMD. 小児からの感染"
+    },
+    {
+      "id": "R500",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC8085469",
+      "vignette": "3歳M 慢性腎疾患. 発熱38→39+腹痛+手足口耳水疱+咳嗽+呼吸困難. SpO2 85-88%, BP>200/110(!). RT-PCR:EV-D68(鼻咽頭)+CVA6(水疱液). Echo:重度LV/RV機能不全(急性心筋炎). 人工呼吸14日+血液透析",
+      "final_diagnosis": "HFMD(CVA6)+重症呼吸器感染(EV-D68)+心筋炎",
+      "expected_id": "D259",
+      "in_scope": true,
+      "evidence": {
+        "E12": "vesicle_bulla",
+        "S43": "present",
+        "S01": "dry",
+        "S04": "at_rest",
+        "E01": "39.0_40.0",
+        "E05": "severe_hypoxia_under_93",
+        "E38": "crisis_over_180",
+        "S12": "diffuse",
+        "L53": "very_high",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CKD. EV-D68+CVA6. 心筋炎+AKI. 人工呼吸14日"
+    },
+    {
+      "id": "R501",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11633925",
+      "vignette": "4歳M. 3-4日前から発熱+倦怠感+脱力+頭痛→手掌に発疹→膝/足/口に拡大. 手掌/膝/足に水疱(2-5mm)+口蓋/頬粘膜に潰瘍(2mm, 赤暈)",
+      "final_diagnosis": "手足口病",
+      "expected_id": "D259",
+      "in_scope": true,
+      "evidence": {
+        "E12": "vesicle_bulla",
+        "S43": "present",
+        "S02": "present",
+        "E01": "38.0_39.0",
+        "S07": "mild",
+        "S05": "mild",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "4歳. 手掌/足底/口腔水疱. 臨床診断"
+    },
+    {
+      "id": "R502",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12199967",
+      "vignette": "18ヶ月M タイ. T 40.0(!). 咽頭痛+軟口蓋潰瘍(当初ヘルパンギーナ診断). 両側頸部リンパ節腫脹2.5cm+口唇乾燥/亀裂+両側結膜充血+苺舌+手掌足底紅斑/浮腫+体幹斑状丘疹. WBC 18.9k, CRP 22.17→64, ESR 109. CVA6 PCR+. Echo:軽度心嚢液. IVIG投与",
+      "final_diagnosis": "ヘルパンギーナ(CVA6)→川崎病誘発",
+      "expected_id": "D260",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S02": "present",
+        "E08": "exudate_or_white_patch",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CVA6. T 40. 川崎病合併(IVIG)"
+    },
+    {
+      "id": "R503",
+      "source": "Case Rep 2016",
+      "pmcid": "PMC5131235",
+      "vignette": "11ヶ月F. 2日間の高熱38.9. 発疹なし. WBC 3.0k(低!), 好中球0.4k(低!), PLT 76k(低!), CRP<5, AST上昇. 回復期:WBC 8.9k, PLT 261k(正常化). HHV-6 DNA PCR+, IgM/IgG陽転",
+      "final_diagnosis": "突発性発疹(発疹なし型)+血小板減少+白血球減少",
+      "expected_id": "D261",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "発疹なし型. 汎血球減少. HHV-6確認"
+    },
+    {
+      "id": "R504",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC11890355",
+      "vignette": "1歳F. 4日間高熱→急速解熱+発疹出現→胸部不快(服をつかむ). T 37.1(解熱後), HR 124, SpO2 100%. WBC 5.8k, CRP 0.17, BNP 95.1, トロポニン0.010, AST 53, LDH 427. Echo:心嚢液6.6mm. HHV-6 qPCR 53600 copies/mL, IgG 8→256倍上昇",
+      "final_diagnosis": "突発性発疹+HHV-6心膜炎",
+      "expected_id": "D261",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E12": "maculopapular_rash",
+        "E02": "100_120",
+        "L51": "mildly_elevated",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "0_1",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "HHV-6 53600copies. 心嚢液6.6mm. 4日高熱→解熱後発疹"
     }
   ],
   "total_cases": 110
