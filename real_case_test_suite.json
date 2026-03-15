@@ -5234,7 +5234,9 @@
         "E01": "under_37.5",
         "L51": "mildly_elevated",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L52": "very_high",
+        "E05": "severe_hypoxia_under_93"
       },
       "risk_factors": {
         "R01": "65_plus",
