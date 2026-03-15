@@ -1,0 +1,3064 @@
+{
+  "experiment": "falsification_vs_ig",
+  "date": "2026-03-15T09:03:59.795103",
+  "protocol": {
+    "initial": "S+E+T+R (symptoms, signs, temporal, risk factors)",
+    "pool": "L (lab tests) from case evidence",
+    "max_steps": 15,
+    "ig_strategy": "follow top-1 IG recommendation in pool",
+    "fals_strategy": "follow top-1 max-entropy-increase recommendation in pool"
+  },
+  "summary": {
+    "n_cases": 169,
+    "ig_reached": 118,
+    "fals_reached": 118,
+    "both": 118,
+    "ig_only": 0,
+    "fals_only": 0,
+    "neither": 51
+  },
+  "cases": [
+    {
+      "case_id": "R01",
+      "expected_id": "D58",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 92.83
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 92.83
+      }
+    },
+    {
+      "case_id": "R03",
+      "expected_id": "D67",
+      "n_initial": 5,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 11.39
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 11.39
+      }
+    },
+    {
+      "case_id": "R04",
+      "expected_id": "D67",
+      "n_initial": 8,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 87.22
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 87.22
+      }
+    },
+    {
+      "case_id": "R05",
+      "expected_id": "D50",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 89.66
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 89.66
+      }
+    },
+    {
+      "case_id": "R06",
+      "expected_id": "D55",
+      "n_initial": 9,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 68.55
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 68.55
+      }
+    },
+    {
+      "case_id": "R07",
+      "expected_id": "D55",
+      "n_initial": 3,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 67.04
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 67.04
+      }
+    },
+    {
+      "case_id": "R09",
+      "expected_id": "D52",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 53.45
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 53.45
+      }
+    },
+    {
+      "case_id": "R11",
+      "expected_id": "D03",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 13.87
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 13.87
+      }
+    },
+    {
+      "case_id": "R12",
+      "expected_id": "D23",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 64.59
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 64.59
+      }
+    },
+    {
+      "case_id": "R13",
+      "expected_id": "D77",
+      "n_initial": 2,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 29.58
+      },
+      "fals": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 29.58
+      }
+    },
+    {
+      "case_id": "R14",
+      "expected_id": "D67",
+      "n_initial": 6,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 13.39
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 13.39
+      }
+    },
+    {
+      "case_id": "R16",
+      "expected_id": "D59",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 92.3
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 92.3
+      }
+    },
+    {
+      "case_id": "R17",
+      "expected_id": "D13",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 32.32
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 32.32
+      }
+    },
+    {
+      "case_id": "R18",
+      "expected_id": "D05",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 6.92
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 6.92
+      }
+    },
+    {
+      "case_id": "R19",
+      "expected_id": "D107",
+      "n_initial": 3,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 80.8
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 80.8
+      }
+    },
+    {
+      "case_id": "R21",
+      "expected_id": "D58",
+      "n_initial": 6,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 73.16
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 73.16
+      }
+    },
+    {
+      "case_id": "R23",
+      "expected_id": "D58",
+      "n_initial": 13,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 86.18
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 86.18
+      }
+    },
+    {
+      "case_id": "R24",
+      "expected_id": "D58",
+      "n_initial": 6,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 51.79
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 51.79
+      }
+    },
+    {
+      "case_id": "R26",
+      "expected_id": "D107",
+      "n_initial": 3,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.22
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.22
+      }
+    },
+    {
+      "case_id": "R28",
+      "expected_id": "D53",
+      "n_initial": 6,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 47.04
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 47.04
+      }
+    },
+    {
+      "case_id": "R29",
+      "expected_id": "D103",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 52.19
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 52.19
+      }
+    },
+    {
+      "case_id": "R30",
+      "expected_id": "D58",
+      "n_initial": 4,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 8.88
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 8.88
+      }
+    },
+    {
+      "case_id": "R31",
+      "expected_id": "D23",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 2.82
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 2.82
+      }
+    },
+    {
+      "case_id": "R33",
+      "expected_id": "D05",
+      "n_initial": 3,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 4.64
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 4.64
+      }
+    },
+    {
+      "case_id": "R34",
+      "expected_id": "D50",
+      "n_initial": 4,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 51.73
+      },
+      "fals": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 51.73
+      }
+    },
+    {
+      "case_id": "R35",
+      "expected_id": "D19",
+      "n_initial": 4,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 63.74
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 63.74
+      }
+    },
+    {
+      "case_id": "R36",
+      "expected_id": "D17",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 12.16
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 12.16
+      }
+    },
+    {
+      "case_id": "R37",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 51.94
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 51.94
+      }
+    },
+    {
+      "case_id": "R38",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 55.03
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 55.03
+      }
+    },
+    {
+      "case_id": "R39",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 27.4
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 27.4
+      }
+    },
+    {
+      "case_id": "R40",
+      "expected_id": "D17",
+      "n_initial": 3,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 14.59
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 14.59
+      }
+    },
+    {
+      "case_id": "R41",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 38.46
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 38.46
+      }
+    },
+    {
+      "case_id": "R42",
+      "expected_id": "D104",
+      "n_initial": 4,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 10.05
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 10.05
+      }
+    },
+    {
+      "case_id": "R44",
+      "expected_id": "D53",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 90.11
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 90.11
+      }
+    },
+    {
+      "case_id": "R45",
+      "expected_id": "D53",
+      "n_initial": 5,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 72.53
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 72.53
+      }
+    },
+    {
+      "case_id": "R46",
+      "expected_id": "D19",
+      "n_initial": 3,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 39.55
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 39.55
+      }
+    },
+    {
+      "case_id": "R47",
+      "expected_id": "D87",
+      "n_initial": 5,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 6,
+        "final_prob": 5.9
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 6,
+        "final_prob": 5.9
+      }
+    },
+    {
+      "case_id": "R48",
+      "expected_id": "D87",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 12.56
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 12.56
+      }
+    },
+    {
+      "case_id": "R49",
+      "expected_id": "D62",
+      "n_initial": 8,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.05
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.05
+      }
+    },
+    {
+      "case_id": "R50",
+      "expected_id": "D62",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 35.26
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 35.26
+      }
+    },
+    {
+      "case_id": "R51",
+      "expected_id": "D96",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 12,
+        "final_prob": 0.67
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 12,
+        "final_prob": 0.67
+      }
+    },
+    {
+      "case_id": "R52",
+      "expected_id": "D96",
+      "n_initial": 8,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 8.56
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 8.56
+      }
+    },
+    {
+      "case_id": "R53",
+      "expected_id": "D29",
+      "n_initial": 6,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 72.02
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 72.02
+      }
+    },
+    {
+      "case_id": "R54",
+      "expected_id": "D97",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.66
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.66
+      }
+    },
+    {
+      "case_id": "R55",
+      "expected_id": "D94",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 13.8
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 13.8
+      }
+    },
+    {
+      "case_id": "R56",
+      "expected_id": "D14",
+      "n_initial": 8,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 44.99
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 44.99
+      }
+    },
+    {
+      "case_id": "R57",
+      "expected_id": "D15",
+      "n_initial": 13,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 100.0
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 100.0
+      }
+    },
+    {
+      "case_id": "R58",
+      "expected_id": "D59",
+      "n_initial": 5,
+      "n_pool": 8,
+      "ig": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 89.6
+      },
+      "fals": {
+        "reached": true,
+        "step": 7,
+        "final_rank": 1,
+        "final_prob": 89.6
+      }
+    },
+    {
+      "case_id": "R59",
+      "expected_id": "D23",
+      "n_initial": 9,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 82.66
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 82.66
+      }
+    },
+    {
+      "case_id": "R60",
+      "expected_id": "D23",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 9.14
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 9.14
+      }
+    },
+    {
+      "case_id": "R61",
+      "expected_id": "D23",
+      "n_initial": 9,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 45.45
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 45.45
+      }
+    },
+    {
+      "case_id": "R62",
+      "expected_id": "D16",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.18
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.18
+      }
+    },
+    {
+      "case_id": "R63",
+      "expected_id": "D91",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 24.66
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 24.66
+      }
+    },
+    {
+      "case_id": "R64",
+      "expected_id": "D91",
+      "n_initial": 4,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 36.32
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 36.32
+      }
+    },
+    {
+      "case_id": "R65",
+      "expected_id": "D28",
+      "n_initial": 5,
+      "n_pool": 5,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 7.63
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 7.63
+      }
+    },
+    {
+      "case_id": "R66",
+      "expected_id": "D28",
+      "n_initial": 13,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 24.31
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 24.31
+      }
+    },
+    {
+      "case_id": "R67",
+      "expected_id": "D66",
+      "n_initial": 3,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 14.05
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 14.05
+      }
+    },
+    {
+      "case_id": "R68",
+      "expected_id": "D90",
+      "n_initial": 6,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 42.61
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 42.61
+      }
+    },
+    {
+      "case_id": "R69",
+      "expected_id": "D19",
+      "n_initial": 3,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 33.39
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 33.39
+      }
+    },
+    {
+      "case_id": "R70",
+      "expected_id": "D19",
+      "n_initial": 2,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 13.75
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 13.75
+      }
+    },
+    {
+      "case_id": "R71",
+      "expected_id": "D77",
+      "n_initial": 3,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 29.77
+      },
+      "fals": {
+        "reached": true,
+        "step": 4,
+        "final_rank": 1,
+        "final_prob": 29.77
+      }
+    },
+    {
+      "case_id": "R72",
+      "expected_id": "D77",
+      "n_initial": 12,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.89
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.89
+      }
+    },
+    {
+      "case_id": "R73",
+      "expected_id": "D13",
+      "n_initial": 4,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 3,
+        "final_prob": 18.07
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 3,
+        "final_prob": 18.07
+      }
+    },
+    {
+      "case_id": "R74",
+      "expected_id": "D31",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 5.3
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 5.3
+      }
+    },
+    {
+      "case_id": "R75",
+      "expected_id": "D32",
+      "n_initial": 3,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 36.96
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 36.96
+      }
+    },
+    {
+      "case_id": "R76",
+      "expected_id": "D29",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 20.38
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 20.38
+      }
+    },
+    {
+      "case_id": "R77",
+      "expected_id": "D102",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 71.31
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 71.31
+      }
+    },
+    {
+      "case_id": "R78",
+      "expected_id": "D102",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 49.6
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 49.6
+      }
+    },
+    {
+      "case_id": "R79",
+      "expected_id": "D18",
+      "n_initial": 7,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.0
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.0
+      }
+    },
+    {
+      "case_id": "R80",
+      "expected_id": "D18",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 58.72
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 58.72
+      }
+    },
+    {
+      "case_id": "R81",
+      "expected_id": "D101",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 18.22
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 18.22
+      }
+    },
+    {
+      "case_id": "R82",
+      "expected_id": "D101",
+      "n_initial": 9,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 8.11
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 8.11
+      }
+    },
+    {
+      "case_id": "R83",
+      "expected_id": "D12",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 9.0
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 9.0
+      }
+    },
+    {
+      "case_id": "R84",
+      "expected_id": "D09",
+      "n_initial": 8,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 76.81
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 76.81
+      }
+    },
+    {
+      "case_id": "R85",
+      "expected_id": "D25",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 41.96
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 41.96
+      }
+    },
+    {
+      "case_id": "R86",
+      "expected_id": "D57",
+      "n_initial": 10,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 3.69
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 3.69
+      }
+    },
+    {
+      "case_id": "R88",
+      "expected_id": "D24",
+      "n_initial": 11,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.73
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.73
+      }
+    },
+    {
+      "case_id": "R89",
+      "expected_id": "D45",
+      "n_initial": 5,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 5,
+        "final_prob": 4.62
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 5,
+        "final_prob": 4.62
+      }
+    },
+    {
+      "case_id": "R90",
+      "expected_id": "D45",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 6.99
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 6.99
+      }
+    },
+    {
+      "case_id": "R91",
+      "expected_id": "D24",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 10.62
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 10.62
+      }
+    },
+    {
+      "case_id": "R92",
+      "expected_id": "D10",
+      "n_initial": 5,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 18.14
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 18.14
+      }
+    },
+    {
+      "case_id": "R93",
+      "expected_id": "D10",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 20.34
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 20.34
+      }
+    },
+    {
+      "case_id": "R94",
+      "expected_id": "D10",
+      "n_initial": 4,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 7.45
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 7.45
+      }
+    },
+    {
+      "case_id": "R97",
+      "expected_id": "D11",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 38.83
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 38.83
+      }
+    },
+    {
+      "case_id": "R99",
+      "expected_id": "D84",
+      "n_initial": 5,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 6.94
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 6.94
+      }
+    },
+    {
+      "case_id": "R100",
+      "expected_id": "D84",
+      "n_initial": 7,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 78.82
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 78.82
+      }
+    },
+    {
+      "case_id": "R103",
+      "expected_id": "D93",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 64.59
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 64.59
+      }
+    },
+    {
+      "case_id": "R104",
+      "expected_id": "D93",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 93.72
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 93.72
+      }
+    },
+    {
+      "case_id": "R105",
+      "expected_id": "D02",
+      "n_initial": 7,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 72.27
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 72.27
+      }
+    },
+    {
+      "case_id": "R106",
+      "expected_id": "D74",
+      "n_initial": 5,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 87.85
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 87.85
+      }
+    },
+    {
+      "case_id": "R107",
+      "expected_id": "D74",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.54
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.54
+      }
+    },
+    {
+      "case_id": "R110",
+      "expected_id": "D60",
+      "n_initial": 3,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 4.43
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 4.43
+      }
+    },
+    {
+      "case_id": "R111",
+      "expected_id": "D22",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 40.51
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 40.51
+      }
+    },
+    {
+      "case_id": "R112",
+      "expected_id": "D51",
+      "n_initial": 11,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 7.06
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 7.06
+      }
+    },
+    {
+      "case_id": "R113",
+      "expected_id": "D38",
+      "n_initial": 6,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 48.05
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 48.05
+      }
+    },
+    {
+      "case_id": "R114",
+      "expected_id": "D56",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 15.91
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 15.91
+      }
+    },
+    {
+      "case_id": "R115",
+      "expected_id": "D98",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 45.66
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 45.66
+      }
+    },
+    {
+      "case_id": "R116",
+      "expected_id": "D99",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 12.51
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 12.51
+      }
+    },
+    {
+      "case_id": "R117",
+      "expected_id": "D95",
+      "n_initial": 6,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 27.19
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 27.19
+      }
+    },
+    {
+      "case_id": "R118",
+      "expected_id": "D73",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 23.49
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 23.49
+      }
+    },
+    {
+      "case_id": "R119",
+      "expected_id": "D88",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 90.52
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 90.52
+      }
+    },
+    {
+      "case_id": "R121",
+      "expected_id": "D72",
+      "n_initial": 11,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 98.1
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 98.1
+      }
+    },
+    {
+      "case_id": "R122",
+      "expected_id": "D68",
+      "n_initial": 12,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 65.05
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 65.05
+      }
+    },
+    {
+      "case_id": "R123",
+      "expected_id": "D78",
+      "n_initial": 8,
+      "n_pool": 5,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 7.63
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 7.63
+      }
+    },
+    {
+      "case_id": "R124",
+      "expected_id": "D75",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 43.59
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 43.59
+      }
+    },
+    {
+      "case_id": "R125",
+      "expected_id": "D89",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 20.86
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 20.86
+      }
+    },
+    {
+      "case_id": "R126",
+      "expected_id": "D100",
+      "n_initial": 6,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 36.54
+      },
+      "fals": {
+        "reached": true,
+        "step": 4,
+        "final_rank": 1,
+        "final_prob": 36.54
+      }
+    },
+    {
+      "case_id": "R127",
+      "expected_id": "D46",
+      "n_initial": 12,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 94.23
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 94.23
+      }
+    },
+    {
+      "case_id": "R128",
+      "expected_id": "D49",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.37
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.37
+      }
+    },
+    {
+      "case_id": "R129",
+      "expected_id": "D61",
+      "n_initial": 6,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 39.18
+      },
+      "fals": {
+        "reached": true,
+        "step": 4,
+        "final_rank": 1,
+        "final_prob": 39.18
+      }
+    },
+    {
+      "case_id": "R130",
+      "expected_id": "D63",
+      "n_initial": 10,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 27.04
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 27.04
+      }
+    },
+    {
+      "case_id": "R131",
+      "expected_id": "D81",
+      "n_initial": 6,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.75
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 66.75
+      }
+    },
+    {
+      "case_id": "R132",
+      "expected_id": "D83",
+      "n_initial": 8,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.97
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.97
+      }
+    },
+    {
+      "case_id": "R133",
+      "expected_id": "D37",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 12.75
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 12.75
+      }
+    },
+    {
+      "case_id": "R134",
+      "expected_id": "D65",
+      "n_initial": 7,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 3,
+        "final_prob": 8.62
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 3,
+        "final_prob": 8.62
+      }
+    },
+    {
+      "case_id": "R135",
+      "expected_id": "D92",
+      "n_initial": 6,
+      "n_pool": 5,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 12.64
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 12.64
+      }
+    },
+    {
+      "case_id": "R136",
+      "expected_id": "D04",
+      "n_initial": 12,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 0.02
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 0.02
+      }
+    },
+    {
+      "case_id": "R137",
+      "expected_id": "D07",
+      "n_initial": 10,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 13.7
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 13.7
+      }
+    },
+    {
+      "case_id": "R138",
+      "expected_id": "D08",
+      "n_initial": 9,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 14.42
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 14.42
+      }
+    },
+    {
+      "case_id": "R139",
+      "expected_id": "D20",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 38,
+        "final_prob": 0.13
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 38,
+        "final_prob": 0.13
+      }
+    },
+    {
+      "case_id": "R140",
+      "expected_id": "D26",
+      "n_initial": 10,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 84.33
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 84.33
+      }
+    },
+    {
+      "case_id": "R141",
+      "expected_id": "D27",
+      "n_initial": 3,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 40.36
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 40.36
+      }
+    },
+    {
+      "case_id": "R142",
+      "expected_id": "D30",
+      "n_initial": 13,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.93
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.93
+      }
+    },
+    {
+      "case_id": "R143",
+      "expected_id": "D34",
+      "n_initial": 10,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 96.29
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 96.29
+      }
+    },
+    {
+      "case_id": "R144",
+      "expected_id": "D35",
+      "n_initial": 11,
+      "n_pool": 6,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 13.91
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 13.91
+      }
+    },
+    {
+      "case_id": "R145",
+      "expected_id": "D36",
+      "n_initial": 10,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 71.87
+      },
+      "fals": {
+        "reached": true,
+        "step": 5,
+        "final_rank": 1,
+        "final_prob": 71.87
+      }
+    },
+    {
+      "case_id": "R146",
+      "expected_id": "D39",
+      "n_initial": 5,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 29.94
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 29.94
+      }
+    },
+    {
+      "case_id": "R147",
+      "expected_id": "D40",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 47.28
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 47.28
+      }
+    },
+    {
+      "case_id": "R148",
+      "expected_id": "D41",
+      "n_initial": 4,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 19.44
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 19.44
+      }
+    },
+    {
+      "case_id": "R149",
+      "expected_id": "D42",
+      "n_initial": 13,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 83.82
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 83.82
+      }
+    },
+    {
+      "case_id": "R150",
+      "expected_id": "D43",
+      "n_initial": 7,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 91.03
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 91.03
+      }
+    },
+    {
+      "case_id": "R151",
+      "expected_id": "D47",
+      "n_initial": 13,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.8
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.8
+      }
+    },
+    {
+      "case_id": "R153",
+      "expected_id": "D64",
+      "n_initial": 10,
+      "n_pool": 2,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 16.26
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 16.26
+      }
+    },
+    {
+      "case_id": "R154",
+      "expected_id": "D69",
+      "n_initial": 10,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 45.29
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 45.29
+      }
+    },
+    {
+      "case_id": "R155",
+      "expected_id": "D70",
+      "n_initial": 11,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 88.19
+      },
+      "fals": {
+        "reached": true,
+        "step": 4,
+        "final_rank": 1,
+        "final_prob": 88.19
+      }
+    },
+    {
+      "case_id": "R156",
+      "expected_id": "D76",
+      "n_initial": 6,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 3.9
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 3.9
+      }
+    },
+    {
+      "case_id": "R157",
+      "expected_id": "D79",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 5.89
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 5.89
+      }
+    },
+    {
+      "case_id": "R158",
+      "expected_id": "D80",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 50.17
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 50.17
+      }
+    },
+    {
+      "case_id": "R159",
+      "expected_id": "D82",
+      "n_initial": 7,
+      "n_pool": 1,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 48.7
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 48.7
+      }
+    },
+    {
+      "case_id": "R161",
+      "expected_id": "D58",
+      "n_initial": 5,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 21.63
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 2,
+        "final_prob": 21.63
+      }
+    },
+    {
+      "case_id": "R162",
+      "expected_id": "D58",
+      "n_initial": 4,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 93.4
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 93.4
+      }
+    },
+    {
+      "case_id": "R163",
+      "expected_id": "D68",
+      "n_initial": 3,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 40.01
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 40.01
+      }
+    },
+    {
+      "case_id": "R164",
+      "expected_id": "D56",
+      "n_initial": 10,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 50.18
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 50.18
+      }
+    },
+    {
+      "case_id": "R165",
+      "expected_id": "D105",
+      "n_initial": 6,
+      "n_pool": 1,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.66
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 23.66
+      }
+    },
+    {
+      "case_id": "R168",
+      "expected_id": "D106",
+      "n_initial": 10,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.28
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.28
+      }
+    },
+    {
+      "case_id": "R169",
+      "expected_id": "D106",
+      "n_initial": 6,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 85.21
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 85.21
+      }
+    },
+    {
+      "case_id": "R170",
+      "expected_id": "D106",
+      "n_initial": 8,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 94.58
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 94.58
+      }
+    },
+    {
+      "case_id": "R171",
+      "expected_id": "D107",
+      "n_initial": 9,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 99.21
+      },
+      "fals": {
+        "reached": true,
+        "step": 4,
+        "final_rank": 1,
+        "final_prob": 99.21
+      }
+    },
+    {
+      "case_id": "R172",
+      "expected_id": "D107",
+      "n_initial": 5,
+      "n_pool": 5,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 7.59
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 7.59
+      }
+    },
+    {
+      "case_id": "R173",
+      "expected_id": "D108",
+      "n_initial": 8,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 78.16
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 78.16
+      }
+    },
+    {
+      "case_id": "R174",
+      "expected_id": "D108",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 95.04
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 95.04
+      }
+    },
+    {
+      "case_id": "R175",
+      "expected_id": "D109",
+      "n_initial": 14,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 51.3
+      },
+      "fals": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 51.3
+      }
+    },
+    {
+      "case_id": "R176",
+      "expected_id": "D105",
+      "n_initial": 7,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 21.19
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 2,
+        "final_prob": 21.19
+      }
+    },
+    {
+      "case_id": "R177",
+      "expected_id": "D107",
+      "n_initial": 9,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 78.96
+      },
+      "fals": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 78.96
+      }
+    },
+    {
+      "case_id": "R178",
+      "expected_id": "D107",
+      "n_initial": 8,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 19.29
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 2,
+        "final_prob": 19.29
+      }
+    },
+    {
+      "case_id": "R179",
+      "expected_id": "D109",
+      "n_initial": 6,
+      "n_pool": 3,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 16.18
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 3,
+        "final_prob": 16.18
+      }
+    },
+    {
+      "case_id": "R180",
+      "expected_id": "D106",
+      "n_initial": 9,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.07
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.07
+      }
+    },
+    {
+      "case_id": "R181",
+      "expected_id": "D108",
+      "n_initial": 5,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 74.68
+      },
+      "fals": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 74.68
+      }
+    },
+    {
+      "case_id": "R182",
+      "expected_id": "D110",
+      "n_initial": 8,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 84.3
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 84.3
+      }
+    },
+    {
+      "case_id": "R183",
+      "expected_id": "D110",
+      "n_initial": 7,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 10,
+        "final_prob": 2.04
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 10,
+        "final_prob": 2.04
+      }
+    },
+    {
+      "case_id": "R184",
+      "expected_id": "D111",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.85
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.85
+      }
+    },
+    {
+      "case_id": "R185",
+      "expected_id": "D111",
+      "n_initial": 7,
+      "n_pool": 3,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.9
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 99.9
+      }
+    },
+    {
+      "case_id": "R186",
+      "expected_id": "D112",
+      "n_initial": 7,
+      "n_pool": 4,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.2
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 74.2
+      }
+    },
+    {
+      "case_id": "R187",
+      "expected_id": "D112",
+      "n_initial": 11,
+      "n_pool": 2,
+      "ig": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.01
+      },
+      "fals": {
+        "reached": true,
+        "step": 0,
+        "final_rank": 1,
+        "final_prob": 97.01
+      }
+    },
+    {
+      "case_id": "R188",
+      "expected_id": "D113",
+      "n_initial": 8,
+      "n_pool": 4,
+      "ig": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 13.87
+      },
+      "fals": {
+        "reached": false,
+        "step": null,
+        "final_rank": 4,
+        "final_prob": 13.87
+      }
+    },
+    {
+      "case_id": "R189",
+      "expected_id": "D113",
+      "n_initial": 8,
+      "n_pool": 5,
+      "ig": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 92.14
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 92.14
+      }
+    },
+    {
+      "case_id": "R190",
+      "expected_id": "D114",
+      "n_initial": 5,
+      "n_pool": 7,
+      "ig": {
+        "reached": true,
+        "step": 5,
+        "final_rank": 1,
+        "final_prob": 51.04
+      },
+      "fals": {
+        "reached": true,
+        "step": 1,
+        "final_rank": 1,
+        "final_prob": 51.04
+      }
+    },
+    {
+      "case_id": "R191",
+      "expected_id": "D114",
+      "n_initial": 6,
+      "n_pool": 6,
+      "ig": {
+        "reached": true,
+        "step": 2,
+        "final_rank": 1,
+        "final_prob": 93.42
+      },
+      "fals": {
+        "reached": true,
+        "step": 5,
+        "final_rank": 1,
+        "final_prob": 93.42
+      }
+    },
+    {
+      "case_id": "R192",
+      "expected_id": "D114",
+      "n_initial": 3,
+      "n_pool": 7,
+      "ig": {
+        "reached": true,
+        "step": 5,
+        "final_rank": 1,
+        "final_prob": 72.95
+      },
+      "fals": {
+        "reached": true,
+        "step": 3,
+        "final_rank": 1,
+        "final_prob": 72.95
+      }
+    }
+  ]
+}

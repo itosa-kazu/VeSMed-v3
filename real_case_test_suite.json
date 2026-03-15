@@ -4761,6 +4761,43 @@
       },
       "result": "",
       "notes": "G-CSF/IL-6産生型骨髄腫. WBC著明上昇+左方移動は非典型的(通常の骨髄腫はWBC低下). ESR記載なし"
+    },
+    {
+      "id": "R193",
+      "source": "World J Clin Cases 2023",
+      "pmcid": "PMC10727603",
+      "vignette": "42M 12日間の持続発熱(38.5→40℃)+筋肉痛+咽頭痛+倦怠感. 頭孢使用後に広範囲紅斑性皮疹. WBC 22.68k(好中球90%), CRP 197.52, ESR 120, フェリチン7585, AST 60, PCT 0.33. 血培陰性, ANA陰性, RF陰性. 肝脾腫+全身リンパ節腫脹. 末梢血: 好中球左方移動+中毒性顆粒. ステロイド+シクロスポリンで改善",
+      "final_diagnosis": "成人Still病(AOSD) + 薬剤性過敏症の合併",
+      "expected_id": "D58",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S06": "present",
+        "S02": "present",
+        "S07": "severe",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L03": "gray_0.25_0.5",
+        "E12": "maculopapular_rash",
+        "S18": "rash_widespread",
+        "L28": "very_high_over_100",
+        "L15": "very_high_over_1000",
+        "L11": "mild_elevated",
+        "L09": "negative",
+        "L18": "negative",
+        "E34": "present",
+        "E13": "generalized",
+        "L14": "left_shift"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes"
+      },
+      "result": "",
+      "notes": "伝統テスト用(全所見一括). ナビゲーションテスト: Step2(基本採血)でTop-1到達(71%), Step4でH=0.06(99.3%). 反証推奨はStep4以降H増加量→0で自然消滅(正診の証拠)"
     }
   ],
   "total_cases": 110
