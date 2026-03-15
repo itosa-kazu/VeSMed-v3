@@ -3507,6 +3507,61 @@
         "40_64": 0.001,
         "65_plus": 0.002
       }
+    },
+    "D227": {
+      "parents": [
+        "R01"
+      ],
+      "description": "胸腺腫",
+      "cpt": {
+        "18_39": 0.0005,
+        "40_64": 0.001,
+        "65_plus": 0.001
+      }
+    },
+    "D228": {
+      "parents": [],
+      "description": "PNH",
+      "cpt": {
+        "": 0.0005
+      }
+    },
+    "D229": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "AIP. 中高年男性に多い",
+      "cpt": {
+        "18_39,male": 0.0005,
+        "18_39,female": 0.0002,
+        "40_64,male": 0.002,
+        "40_64,female": 0.0005,
+        "65_plus,male": 0.002,
+        "65_plus,female": 0.0005
+      }
+    },
+    "D230": {
+      "parents": [
+        "R01"
+      ],
+      "description": "膵癌. 中高年",
+      "cpt": {
+        "18_39": 0.0003,
+        "40_64": 0.002,
+        "65_plus": 0.004
+      }
+    },
+    "D231": {
+      "parents": [
+        "R01"
+      ],
+      "description": "胆管癌",
+      "cpt": {
+        "18_39": 0.0002,
+        "40_64": 0.001,
+        "65_plus": 0.003
+      }
     }
   },
   "noisy_or_params": {
@@ -5073,6 +5128,20 @@
           "38.0_39.0": 0.18,
           "39.0_40.0": 0.12,
           "over_40.0": 0.05
+        },
+        "D229": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
+        },
+        "D231": {
+          "under_37.5": 0.6,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
         }
       }
     },
@@ -8251,6 +8320,22 @@
         "D218": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D228": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D229": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D230": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D231": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -9878,6 +9963,12 @@
           "normal_4000_10000": 0.35,
           "high_10000_20000": 0.1,
           "very_high_over_20000": 0.05
+        },
+        "D231": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -11461,6 +11552,14 @@
           "BHL": 0.03,
           "pleural_effusion": 0.08,
           "pneumothorax": 0.04
+        },
+        "D227": {
+          "normal": 0.15,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.05,
+          "BHL": 0.1,
+          "pleural_effusion": 0.08,
+          "pneumothorax": 0.6
         }
       }
     },
@@ -11980,6 +12079,21 @@
           "normal": 0.3,
           "mild_elevated": 0.4,
           "very_high": 0.3
+        },
+        "D229": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "very_high": 0.3
+        },
+        "D230": {
+          "normal": 0.15,
+          "mild_elevated": 0.45,
+          "very_high": 0.4
+        },
+        "D231": {
+          "normal": 0.05,
+          "mild_elevated": 0.35,
+          "very_high": 0.6
         }
       }
     },
@@ -12604,6 +12718,10 @@
         "D226": {
           "normal": 0.25,
           "elevated": 0.75
+        },
+        "D228": {
+          "normal": 0.05,
+          "elevated": 0.95
         }
       }
     },
@@ -14137,6 +14255,11 @@
           "absent": 0.55,
           "dry": 0.2,
           "productive": 0.25
+        },
+        "D227": {
+          "absent": 0.65,
+          "dry": 0.25,
+          "productive": 0.1
         }
       }
     },
@@ -14608,6 +14731,16 @@
           "at_rest": 0.25
         },
         "D223": {
+          "absent": 0.5,
+          "on_exertion": 0.35,
+          "at_rest": 0.15
+        },
+        "D227": {
+          "absent": 0.5,
+          "on_exertion": 0.3,
+          "at_rest": 0.2
+        },
+        "D228": {
           "absent": 0.5,
           "on_exertion": 0.35,
           "at_rest": 0.15
@@ -15702,6 +15835,31 @@
           "absent": 0.3,
           "mild": 0.4,
           "severe": 0.3
+        },
+        "D227": {
+          "absent": 0.4,
+          "mild": 0.35,
+          "severe": 0.25
+        },
+        "D228": {
+          "absent": 0.08,
+          "mild": 0.25,
+          "severe": 0.67
+        },
+        "D229": {
+          "absent": 0.3,
+          "mild": 0.4,
+          "severe": 0.3
+        },
+        "D230": {
+          "absent": 0.08,
+          "mild": 0.25,
+          "severe": 0.67
+        },
+        "D231": {
+          "absent": 0.12,
+          "mild": 0.3,
+          "severe": 0.58
         }
       }
     },
@@ -16597,6 +16755,42 @@
           "LLQ": 0.03,
           "suprapubic": 0.03,
           "diffuse": 0.75
+        },
+        "D228": {
+          "absent": 0.5,
+          "epigastric": 0.1,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.02,
+          "diffuse": 0.23
+        },
+        "D229": {
+          "absent": 0.4,
+          "epigastric": 0.4,
+          "RUQ": 0.1,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.05
+        },
+        "D230": {
+          "absent": 0.2,
+          "epigastric": 0.45,
+          "RUQ": 0.1,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.2
+        },
+        "D231": {
+          "absent": 0.4,
+          "epigastric": 0.15,
+          "RUQ": 0.35,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.05
         }
       }
     },
@@ -17607,6 +17801,13 @@
           "sharp": 0.1,
           "pressure": 0.28,
           "tearing": 0.04
+        },
+        "D227": {
+          "absent": 0.65,
+          "burning": 0.03,
+          "sharp": 0.15,
+          "pressure": 0.12,
+          "tearing": 0.05
         }
       }
     },
@@ -19955,6 +20156,36 @@
           "3d_to_1w": 0.1,
           "1w_to_3w": 0.2,
           "over_3w": 0.65
+        },
+        "D227": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.1,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.65
+        },
+        "D228": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.3
+        },
+        "D229": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.1,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.55
+        },
+        "D230": {
+          "under_3d": 0.03,
+          "3d_to_1w": 0.07,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.7
+        },
+        "D231": {
+          "under_3d": 0.03,
+          "3d_to_1w": 0.07,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.7
         }
       }
     },
@@ -20624,6 +20855,26 @@
         "D226": {
           "sudden_hours": 0.05,
           "gradual_days": 0.95
+        },
+        "D227": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D228": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
+        },
+        "D229": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D230": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D231": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
         }
       }
     },
@@ -20961,6 +21212,10 @@
         "D37": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D230": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -21963,6 +22218,18 @@
           "normal": 0.15,
           "mildly_elevated": 0.3,
           "very_high": 0.4
+        },
+        "D228": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mildly_elevated": 0.25,
+          "very_high": 0.5
+        },
+        "D230": {
+          "not_done": 0.15,
+          "normal": 0.15,
+          "mildly_elevated": 0.3,
+          "very_high": 0.4
         }
       }
     },
@@ -22539,6 +22806,12 @@
           "normal": 0.5,
           "hyperglycemia": 0.12,
           "very_high_over_500": 0.03
+        },
+        "D230": {
+          "hypoglycemia": 0.02,
+          "normal": 0.4,
+          "hyperglycemia": 0.45,
+          "very_high_over_500": 0.13
         }
       }
     },

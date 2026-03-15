@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3408,
+  "total_edges": 3447,
   "edges": [
     {
       "from": "R01",
@@ -28353,6 +28353,279 @@
       "from_name": "polycythemia_vera",
       "to_name": "T02",
       "reason": "PV: 緩徐"
+    },
+    {
+      "from": "D227",
+      "to": "S04",
+      "from_name": "thymoma",
+      "to_name": "S04",
+      "reason": "胸腺腫: 呼吸困難(圧迫/MG, 30-40%)"
+    },
+    {
+      "from": "D227",
+      "to": "S21",
+      "from_name": "thymoma",
+      "to_name": "S21",
+      "reason": "胸腺腫: 胸痛(圧迫, 20-30%)"
+    },
+    {
+      "from": "D227",
+      "to": "S01",
+      "from_name": "thymoma",
+      "to_name": "S01",
+      "reason": "胸腺腫: 咳嗽(圧迫, 20-30%)"
+    },
+    {
+      "from": "D227",
+      "to": "S07",
+      "from_name": "thymoma",
+      "to_name": "S07",
+      "reason": "胸腺腫: 倦怠感(40-50%)"
+    },
+    {
+      "from": "D227",
+      "to": "L04",
+      "from_name": "thymoma",
+      "to_name": "L04",
+      "reason": "胸腺腫: CXR(前縦隔腫瘤)"
+    },
+    {
+      "from": "D227",
+      "to": "T01",
+      "from_name": "thymoma",
+      "to_name": "T01",
+      "reason": "胸腺腫: 慢性"
+    },
+    {
+      "from": "D227",
+      "to": "T02",
+      "from_name": "thymoma",
+      "to_name": "T02",
+      "reason": "胸腺腫: 緩徐"
+    },
+    {
+      "from": "D228",
+      "to": "S07",
+      "from_name": "PNH",
+      "to_name": "S07",
+      "reason": "PNH: 倦怠感(貧血, 80%+)"
+    },
+    {
+      "from": "D228",
+      "to": "E18",
+      "from_name": "PNH",
+      "to_name": "E18",
+      "reason": "PNH: 黄疸(溶血, 40-50%)"
+    },
+    {
+      "from": "D228",
+      "to": "L16",
+      "from_name": "PNH",
+      "to_name": "L16",
+      "reason": "PNH: LDH上昇(溶血, 90%+)"
+    },
+    {
+      "from": "D228",
+      "to": "S12",
+      "from_name": "PNH",
+      "to_name": "S12",
+      "reason": "PNH: 腹痛(腸間膜血栓, 30-40%)"
+    },
+    {
+      "from": "D228",
+      "to": "S04",
+      "from_name": "PNH",
+      "to_name": "S04",
+      "reason": "PNH: 呼吸困難(貧血/PE, 30-40%)"
+    },
+    {
+      "from": "D228",
+      "to": "L52",
+      "from_name": "PNH",
+      "to_name": "L52",
+      "reason": "PNH: D-dimer上昇(血栓, 50-60%)"
+    },
+    {
+      "from": "D228",
+      "to": "T01",
+      "from_name": "PNH",
+      "to_name": "T01",
+      "reason": "PNH: 慢性(急性増悪も)"
+    },
+    {
+      "from": "D228",
+      "to": "T02",
+      "from_name": "PNH",
+      "to_name": "T02",
+      "reason": "PNH: 亜急性"
+    },
+    {
+      "from": "D229",
+      "to": "E18",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "E18",
+      "reason": "AIP: 閉塞性黄疸(60-70%)"
+    },
+    {
+      "from": "D229",
+      "to": "S12",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "S12",
+      "reason": "AIP: 腹痛(心窩部, 40-50%)"
+    },
+    {
+      "from": "D229",
+      "to": "S07",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "S07",
+      "reason": "AIP: 倦怠感(50-60%)"
+    },
+    {
+      "from": "D229",
+      "to": "L11",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "L11",
+      "reason": "AIP: 肝酵素上昇(胆汁うっ滞)"
+    },
+    {
+      "from": "D229",
+      "to": "E01",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "E01",
+      "reason": "AIP: 通常無熱"
+    },
+    {
+      "from": "D229",
+      "to": "T01",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "T01",
+      "reason": "AIP: 亜急性~慢性"
+    },
+    {
+      "from": "D229",
+      "to": "T02",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "T02",
+      "reason": "AIP: 緩徐"
+    },
+    {
+      "from": "D230",
+      "to": "E18",
+      "from_name": "pancreatic_cancer",
+      "to_name": "E18",
+      "reason": "膵癌: 黄疸(膵頭部, 70-80%)"
+    },
+    {
+      "from": "D230",
+      "to": "S12",
+      "from_name": "pancreatic_cancer",
+      "to_name": "S12",
+      "reason": "膵癌: 腹痛(心窩部/背部, 60-70%)"
+    },
+    {
+      "from": "D230",
+      "to": "S15",
+      "from_name": "pancreatic_cancer",
+      "to_name": "S15",
+      "reason": "膵癌: 背部痛(40-50%)"
+    },
+    {
+      "from": "D230",
+      "to": "S07",
+      "from_name": "pancreatic_cancer",
+      "to_name": "S07",
+      "reason": "膵癌: 倦怠感/体重減少(80%+)"
+    },
+    {
+      "from": "D230",
+      "to": "L11",
+      "from_name": "pancreatic_cancer",
+      "to_name": "L11",
+      "reason": "膵癌: 肝酵素上昇(胆汁うっ滞)"
+    },
+    {
+      "from": "D230",
+      "to": "L54",
+      "from_name": "pancreatic_cancer",
+      "to_name": "L54",
+      "reason": "膵癌: 血糖(新規DM, 30-40%)"
+    },
+    {
+      "from": "D230",
+      "to": "L52",
+      "from_name": "pancreatic_cancer",
+      "to_name": "L52",
+      "reason": "膵癌: D-dimer上昇(Trousseau, 40-50%)"
+    },
+    {
+      "from": "D230",
+      "to": "T01",
+      "from_name": "pancreatic_cancer",
+      "to_name": "T01",
+      "reason": "膵癌: 慢性"
+    },
+    {
+      "from": "D230",
+      "to": "T02",
+      "from_name": "pancreatic_cancer",
+      "to_name": "T02",
+      "reason": "膵癌: 緩徐"
+    },
+    {
+      "from": "D231",
+      "to": "E18",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "E18",
+      "reason": "胆管癌: 黄疸(80%+)"
+    },
+    {
+      "from": "D231",
+      "to": "S12",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "S12",
+      "reason": "胆管癌: 腹痛(RUQ/心窩部, 40-50%)"
+    },
+    {
+      "from": "D231",
+      "to": "S07",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "S07",
+      "reason": "胆管癌: 倦怠感/体重減少(70-80%)"
+    },
+    {
+      "from": "D231",
+      "to": "L11",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "L11",
+      "reason": "胆管癌: 肝酵素上昇(胆汁うっ滞)"
+    },
+    {
+      "from": "D231",
+      "to": "E01",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "E01",
+      "reason": "胆管癌: 発熱(胆管炎合併, 20-30%)"
+    },
+    {
+      "from": "D231",
+      "to": "L01",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "L01",
+      "reason": "胆管癌: WBC上昇(胆管炎時)"
+    },
+    {
+      "from": "D231",
+      "to": "T01",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "T01",
+      "reason": "胆管癌: 慢性"
+    },
+    {
+      "from": "D231",
+      "to": "T02",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "T02",
+      "reason": "胆管癌: 緩徐"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

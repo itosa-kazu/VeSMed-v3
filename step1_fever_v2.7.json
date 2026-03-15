@@ -5717,6 +5717,66 @@
       ],
       "severity": "moderate",
       "note": "JAK2 V617F(95%+)。赤血球増多→血栓症リスク。頭痛/めまい/掻痒(入浴後)/脾腫/血栓"
+    },
+    {
+      "id": "D227",
+      "name": "thymoma",
+      "name_ja": "胸腺腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "前縦隔腫瘍。MG合併(30-50%)。赤芽球癆/低γグロブリン血症/SLE/重症筋無力症"
+    },
+    {
+      "id": "D228",
+      "name": "PNH",
+      "name_ja": "発作性夜間ヘモグロビン尿症(PNH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "GPI-AP欠損→補体介在性溶血+血栓+骨髄不全。暗色尿(朝)+貧血+血栓。エクリズマブ治療"
+    },
+    {
+      "id": "D229",
+      "name": "autoimmune_pancreatitis",
+      "name_ja": "自己免疫性膵炎(AIP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "IgG4関連(1型)/非IgG4(2型)。閉塞性黄疸+膵腫大+IgG4高値。膵癌との鑑別重要。ステロイド著効"
+    },
+    {
+      "id": "D230",
+      "name": "pancreatic_cancer",
+      "name_ja": "膵癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "無痛性閉塞性黄疸(膵頭部)+体重減少+背部痛+新規DM。5年生存率<10%"
+    },
+    {
+      "id": "D231",
+      "name": "cholangiocarcinoma",
+      "name_ja": "胆管癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "肝内/肝門部/遠位胆管。閉塞性黄疸+体重減少+腹痛。PSC/肝吸虫がリスク"
     }
   ]
 }
