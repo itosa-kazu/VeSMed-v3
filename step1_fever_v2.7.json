@@ -4400,6 +4400,42 @@
       ],
       "severity": "moderate",
       "note": "悪性腫瘍/心不全/ネフローゼ/膠原病による非感染性胸水。呼吸困難+呼吸音減弱+CXR胸水。Light's criteriaで分類"
+    },
+    {
+      "id": "D128",
+      "name": "upper_airway_obstruction",
+      "name_ja": "上気道閉塞（喉頭蓋炎/血管浮腫/異物）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "喉頭蓋炎/血管浮腫/異物。吸気性喘鳴+呼吸困難+嚥下困難。緊急気道確保"
+    },
+    {
+      "id": "D129",
+      "name": "hyperventilation_syndrome",
+      "name_ja": "過換気症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "心因性過換気。SpO2正常+CXR正常+呼吸性アルカローシス。除外診断"
+    },
+    {
+      "id": "D130",
+      "name": "interstitial_lung_disease",
+      "name_ja": "間質性肺疾患(ILD/IPF)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "慢性進行性呼吸困難+乾性咳嗽+fine crackles。HRCT蜂巣肺/GGO。KL-6上昇"
     }
   ]
 }

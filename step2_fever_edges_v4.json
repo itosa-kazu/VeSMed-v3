@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2082,
+  "total_edges": 2121,
   "edges": [
     {
       "from": "R01",
@@ -19071,6 +19071,279 @@
       "from_name": "pleural_effusion_noninfectious",
       "to_name": "E36",
       "reason": "胸水: 下腿浮腫(心不全/ネフローゼで両側)"
+    },
+    {
+      "from": "D128",
+      "to": "S04",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "S04",
+      "reason": "上気道閉塞: 呼吸困難(90%+)"
+    },
+    {
+      "from": "D128",
+      "to": "S02",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "S02",
+      "reason": "上気道閉塞: 咽頭痛(60-80%)"
+    },
+    {
+      "from": "D128",
+      "to": "E02",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "E02",
+      "reason": "上気道閉塞: 頻脈(70-80%)"
+    },
+    {
+      "from": "D128",
+      "to": "E04",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "E04",
+      "reason": "上気道閉塞: 頻呼吸(60-70%)"
+    },
+    {
+      "from": "D128",
+      "to": "E05",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "E05",
+      "reason": "上気道閉塞: 低酸素"
+    },
+    {
+      "from": "D128",
+      "to": "E01",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "E01",
+      "reason": "上気道閉塞: 発熱(喉頭蓋炎50-70%)"
+    },
+    {
+      "from": "D128",
+      "to": "L01",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "L01",
+      "reason": "上気道閉塞: WBC上昇(喉頭蓋炎)"
+    },
+    {
+      "from": "D128",
+      "to": "L02",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "L02",
+      "reason": "上気道閉塞: CRP上昇(喉頭蓋炎)"
+    },
+    {
+      "from": "D128",
+      "to": "T01",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "T01",
+      "reason": "上気道閉塞: 超急性~急性"
+    },
+    {
+      "from": "D128",
+      "to": "T02",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "T02",
+      "reason": "上気道閉塞: 急性発症"
+    },
+    {
+      "from": "D128",
+      "to": "E16",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "E16",
+      "reason": "上気道閉塞: 意識障害(窒息)"
+    },
+    {
+      "from": "D128",
+      "to": "S09",
+      "from_name": "upper_airway_obstruction",
+      "to_name": "S09",
+      "reason": "上気道閉塞: 悪寒(喉頭蓋炎)"
+    },
+    {
+      "from": "D129",
+      "to": "S04",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "S04",
+      "reason": "過換気: 呼吸困難(90%+)"
+    },
+    {
+      "from": "D129",
+      "to": "E04",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "E04",
+      "reason": "過換気: 頻呼吸(90%+)"
+    },
+    {
+      "from": "D129",
+      "to": "E02",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "E02",
+      "reason": "過換気: 頻脈(50-60%)"
+    },
+    {
+      "from": "D129",
+      "to": "S21",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "S21",
+      "reason": "過換気: 胸痛(40-60%)"
+    },
+    {
+      "from": "D129",
+      "to": "S05",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "S05",
+      "reason": "過換気: めまい(40-50%)"
+    },
+    {
+      "from": "D129",
+      "to": "E05",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "E05",
+      "reason": "過換気: SpO2正常(95%+)"
+    },
+    {
+      "from": "D129",
+      "to": "E01",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "E01",
+      "reason": "過換気: 無熱"
+    },
+    {
+      "from": "D129",
+      "to": "L01",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "L01",
+      "reason": "過換気: WBC正常"
+    },
+    {
+      "from": "D129",
+      "to": "L02",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "L02",
+      "reason": "過換気: CRP正常"
+    },
+    {
+      "from": "D129",
+      "to": "L04",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "L04",
+      "reason": "過換気: CXR正常"
+    },
+    {
+      "from": "D129",
+      "to": "T01",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "T01",
+      "reason": "過換気: 超急性"
+    },
+    {
+      "from": "D129",
+      "to": "T02",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "T02",
+      "reason": "過換気: 突然発症"
+    },
+    {
+      "from": "D129",
+      "to": "S07",
+      "from_name": "hyperventilation_syndrome",
+      "to_name": "S07",
+      "reason": "過換気: 倦怠感(30-40%)"
+    },
+    {
+      "from": "D130",
+      "to": "S04",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "S04",
+      "reason": "ILD: 労作時呼吸困難(90%+)"
+    },
+    {
+      "from": "D130",
+      "to": "S01",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "S01",
+      "reason": "ILD: 乾性咳嗽(70-80%)"
+    },
+    {
+      "from": "D130",
+      "to": "E07",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "E07",
+      "reason": "ILD: fine crackles(70-80%)"
+    },
+    {
+      "from": "D130",
+      "to": "E05",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "E05",
+      "reason": "ILD: 低酸素"
+    },
+    {
+      "from": "D130",
+      "to": "E04",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "E04",
+      "reason": "ILD: 頻呼吸(50-60%)"
+    },
+    {
+      "from": "D130",
+      "to": "L04",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "L04",
+      "reason": "ILD: CXR両側浸潤影"
+    },
+    {
+      "from": "D130",
+      "to": "L16",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "L16",
+      "reason": "ILD: LDH上昇(50-60%)"
+    },
+    {
+      "from": "D130",
+      "to": "L02",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "L02",
+      "reason": "ILD: CRP正常~軽度"
+    },
+    {
+      "from": "D130",
+      "to": "L01",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "L01",
+      "reason": "ILD: WBC通常正常"
+    },
+    {
+      "from": "D130",
+      "to": "E01",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "E01",
+      "reason": "ILD: 通常無熱"
+    },
+    {
+      "from": "D130",
+      "to": "S07",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "S07",
+      "reason": "ILD: 倦怠感(50-60%)"
+    },
+    {
+      "from": "D130",
+      "to": "S17",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "S17",
+      "reason": "ILD: 体重減少(進行期)"
+    },
+    {
+      "from": "D130",
+      "to": "T01",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "T01",
+      "reason": "ILD: 慢性(数ヶ月~)"
+    },
+    {
+      "from": "D130",
+      "to": "T02",
+      "from_name": "interstitial_lung_disease",
+      "to_name": "T02",
+      "reason": "ILD: 緩徐発症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
