@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3833,
+  "total_edges": 3889,
   "edges": [
     {
       "from": "R01",
@@ -31328,6 +31328,398 @@
       "from_name": "febrile_seizure",
       "to_name": "E05",
       "reason": "熱性痙攣: SpO2(肺炎合併時低下)"
+    },
+    {
+      "from": "D262",
+      "to": "E12",
+      "from_name": "impetigo",
+      "to_name": "E12",
+      "reason": "膿痂疹: 皮疹(痂皮/水疱)"
+    },
+    {
+      "from": "D262",
+      "to": "E01",
+      "from_name": "impetigo",
+      "to_name": "E01",
+      "reason": "膿痂疹: 発熱(軽度, 20-30%)"
+    },
+    {
+      "from": "D262",
+      "to": "L01",
+      "from_name": "impetigo",
+      "to_name": "L01",
+      "reason": "膿痂疹: WBC(正常~軽度)"
+    },
+    {
+      "from": "D262",
+      "to": "T01",
+      "from_name": "impetigo",
+      "to_name": "T01",
+      "reason": "膿痂疹: 急性~亜急性"
+    },
+    {
+      "from": "D262",
+      "to": "T02",
+      "from_name": "impetigo",
+      "to_name": "T02",
+      "reason": "膿痂疹: 亜急性"
+    },
+    {
+      "from": "D263",
+      "to": "S01",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "S01",
+      "reason": "マイコプラズマ: 頑固な乾性咳嗽(90%+)"
+    },
+    {
+      "from": "D263",
+      "to": "E01",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "E01",
+      "reason": "マイコプラズマ: 発熱(中等度, 80%+)"
+    },
+    {
+      "from": "D263",
+      "to": "S07",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "S07",
+      "reason": "マイコプラズマ: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D263",
+      "to": "S05",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "S05",
+      "reason": "マイコプラズマ: 頭痛(40-50%)"
+    },
+    {
+      "from": "D263",
+      "to": "E07",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "E07",
+      "reason": "マイコプラズマ: 肺聴診(所見乏しいことが多い)"
+    },
+    {
+      "from": "D263",
+      "to": "L04",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "L04",
+      "reason": "マイコプラズマ: CXR(斑状浸潤/GGO)"
+    },
+    {
+      "from": "D263",
+      "to": "L01",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "L01",
+      "reason": "マイコプラズマ: WBC(正常~軽度)"
+    },
+    {
+      "from": "D263",
+      "to": "L02",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "L02",
+      "reason": "マイコプラズマ: CRP上昇(中等度)"
+    },
+    {
+      "from": "D263",
+      "to": "S02",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "S02",
+      "reason": "マイコプラズマ: 咽頭痛(30-40%)"
+    },
+    {
+      "from": "D263",
+      "to": "S04",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "S04",
+      "reason": "マイコプラズマ: 呼吸困難(20-30%)"
+    },
+    {
+      "from": "D263",
+      "to": "T01",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "T01",
+      "reason": "マイコプラズマ: 急性~亜急性(1-3週)"
+    },
+    {
+      "from": "D263",
+      "to": "T02",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "T02",
+      "reason": "マイコプラズマ: 亜急性"
+    },
+    {
+      "from": "D264",
+      "to": "S01",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "S01",
+      "reason": "クラミジア肺炎: 咳嗽(遷延性, 80%+)"
+    },
+    {
+      "from": "D264",
+      "to": "E01",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "E01",
+      "reason": "クラミジア肺炎: 発熱(60-70%)"
+    },
+    {
+      "from": "D264",
+      "to": "S02",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "S02",
+      "reason": "クラミジア肺炎: 咽頭痛(嗄声, 40-50%)"
+    },
+    {
+      "from": "D264",
+      "to": "E07",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "E07",
+      "reason": "クラミジア肺炎: 肺聴診(crackles)"
+    },
+    {
+      "from": "D264",
+      "to": "L04",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "L04",
+      "reason": "クラミジア肺炎: CXR(両側浸潤/斑状)"
+    },
+    {
+      "from": "D264",
+      "to": "S07",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "S07",
+      "reason": "クラミジア肺炎: 倦怠感"
+    },
+    {
+      "from": "D264",
+      "to": "L01",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "L01",
+      "reason": "クラミジア肺炎: WBC(正常)"
+    },
+    {
+      "from": "D264",
+      "to": "L02",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "L02",
+      "reason": "クラミジア肺炎: CRP上昇"
+    },
+    {
+      "from": "D264",
+      "to": "T01",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "T01",
+      "reason": "クラミジア肺炎: 亜急性(2-4週)"
+    },
+    {
+      "from": "D264",
+      "to": "T02",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "T02",
+      "reason": "クラミジア肺炎: 亜急性"
+    },
+    {
+      "from": "D265",
+      "to": "S01",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "S01",
+      "reason": "H.flu肺炎: 湿性咳嗽(80%+)"
+    },
+    {
+      "from": "D265",
+      "to": "E01",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E01",
+      "reason": "H.flu肺炎: 高熱(80%+)"
+    },
+    {
+      "from": "D265",
+      "to": "E07",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E07",
+      "reason": "H.flu肺炎: crackles"
+    },
+    {
+      "from": "D265",
+      "to": "L04",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "L04",
+      "reason": "H.flu肺炎: CXR(肺葉浸潤)"
+    },
+    {
+      "from": "D265",
+      "to": "S04",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "S04",
+      "reason": "H.flu肺炎: 呼吸困難(60-70%)"
+    },
+    {
+      "from": "D265",
+      "to": "E04",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E04",
+      "reason": "H.flu肺炎: 頻呼吸"
+    },
+    {
+      "from": "D265",
+      "to": "E05",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E05",
+      "reason": "H.flu肺炎: 低酸素"
+    },
+    {
+      "from": "D265",
+      "to": "L01",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "L01",
+      "reason": "H.flu肺炎: WBC上昇"
+    },
+    {
+      "from": "D265",
+      "to": "L02",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "L02",
+      "reason": "H.flu肺炎: CRP著高"
+    },
+    {
+      "from": "D265",
+      "to": "L09",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "L09",
+      "reason": "H.flu肺炎: 血培(グラム陰性)"
+    },
+    {
+      "from": "D265",
+      "to": "E02",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E02",
+      "reason": "H.flu肺炎: 頻脈"
+    },
+    {
+      "from": "D265",
+      "to": "T01",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "T01",
+      "reason": "H.flu肺炎: 急性"
+    },
+    {
+      "from": "D265",
+      "to": "T02",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "T02",
+      "reason": "H.flu肺炎: 急性"
+    },
+    {
+      "from": "D266",
+      "to": "S01",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "S01",
+      "reason": "肺炎球菌: 膿性痰(70-80%)"
+    },
+    {
+      "from": "D266",
+      "to": "E01",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "E01",
+      "reason": "肺炎球菌: 高熱+悪寒(90%+)"
+    },
+    {
+      "from": "D266",
+      "to": "S09",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "S09",
+      "reason": "肺炎球菌: 悪寒戦慄(70-80%)"
+    },
+    {
+      "from": "D266",
+      "to": "E07",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "E07",
+      "reason": "肺炎球菌: crackles(限局性)"
+    },
+    {
+      "from": "D266",
+      "to": "L04",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "L04",
+      "reason": "肺炎球菌: CXR(大葉性浸潤)"
+    },
+    {
+      "from": "D266",
+      "to": "S04",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "S04",
+      "reason": "肺炎球菌: 呼吸困難"
+    },
+    {
+      "from": "D266",
+      "to": "E04",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "E04",
+      "reason": "肺炎球菌: 頻呼吸"
+    },
+    {
+      "from": "D266",
+      "to": "E05",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "E05",
+      "reason": "肺炎球菌: 低酸素"
+    },
+    {
+      "from": "D266",
+      "to": "L01",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "L01",
+      "reason": "肺炎球菌: WBC著増(好中球左方移動)"
+    },
+    {
+      "from": "D266",
+      "to": "L02",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "L02",
+      "reason": "肺炎球菌: CRP著高"
+    },
+    {
+      "from": "D266",
+      "to": "L03",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "L03",
+      "reason": "肺炎球菌: PCT上昇(細菌性)"
+    },
+    {
+      "from": "D266",
+      "to": "L09",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "L09",
+      "reason": "肺炎球菌: 血培(グラム陽性球菌)"
+    },
+    {
+      "from": "D266",
+      "to": "E02",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "E02",
+      "reason": "肺炎球菌: 頻脈"
+    },
+    {
+      "from": "D266",
+      "to": "S21",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "S21",
+      "reason": "肺炎球菌: 胸膜痛(30-40%)"
+    },
+    {
+      "from": "D266",
+      "to": "T01",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "T01",
+      "reason": "肺炎球菌: 急性"
+    },
+    {
+      "from": "D266",
+      "to": "T02",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "T02",
+      "reason": "肺炎球菌: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -6142,6 +6142,66 @@
       ],
       "severity": "low",
       "note": "HHV-6/7。6ヶ月~2歳。3-5日の高熱→解熱と同時に体幹の淡い紅斑性発疹。熱性痙攣合併あり"
+    },
+    {
+      "id": "D262",
+      "name": "impetigo",
+      "name_ja": "伝染性膿痂疹(とびひ)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "GAS/S.aureus。蜂蜜色痂皮(非水疱型)/水疱(水疱型)。小児に多い。PSGN合併リスク"
+    },
+    {
+      "id": "D263",
+      "name": "mycoplasma_pneumonia",
+      "name_ja": "マイコプラズマ肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "若年成人/学童に多い。乾性咳嗽(頑固)+微熱+倦怠感。聴診所見乏しい(walking pneumonia)。CXR:斑状浸潤"
+    },
+    {
+      "id": "D264",
+      "name": "chlamydia_pneumonia",
+      "name_ja": "クラミジア肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "C. pneumoniae。嗄声+咽頭痛→遷延性咳嗽。マイコプラズマと類似だが嗄声が特徴的"
+    },
+    {
+      "id": "D265",
+      "name": "h_influenzae_pneumonia",
+      "name_ja": "インフルエンザ菌性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "COPD/高齢者に多い。急性発症の発熱+湿性咳嗽+膿性痰。グラム陰性短桿菌"
+    },
+    {
+      "id": "D266",
+      "name": "pneumococcal_pneumonia",
+      "name_ja": "肺炎球菌性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "S. pneumoniae。市中肺炎の最多原因菌。突然の高熱+悪寒戦慄+膿性痰+胸膜痛。典型的大葉性肺炎"
     }
   ]
 }
