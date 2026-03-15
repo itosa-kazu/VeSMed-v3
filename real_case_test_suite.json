@@ -11678,6 +11678,243 @@
       },
       "result": "",
       "notes": "中隔20mm. 中間部圧較差42. 心尖部瘤. SCD risk 5.22%"
+    },
+    {
+      "id": "R455",
+      "source": "Crit Care Med 2011",
+      "pmcid": "PMC3101312",
+      "vignette": "69M 術後Day11に腹痛/側腹部痛+乏尿+血行動態崩壊. 頻呼吸+頻脈+低血圧. PLT 252→60k(76%低下). トロポニン3.99(NSTEMI). コルチゾール基礎6.1(cosyntropin無反応). CT:両側副腎腫大(副腎出血)",
+      "final_diagnosis": "HIT+両側副腎出血+副腎不全",
+      "expected_id": "D207",
+      "in_scope": true,
+      "evidence": {
+        "L14": "thrombocytopenia",
+        "L53": "mildly_elevated",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "S12": "diffuse",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PLT 76%低下. 副腎出血→副腎不全"
+    },
+    {
+      "id": "R456",
+      "source": "BMJ Case Rep 2021",
+      "pmcid": "PMC8634289",
+      "vignette": "68F HTN+甲状腺低下. 術後Day4発熱39℃+呼吸困難→Day12全身性腹痛→Day16右下肢虚血. PLT 255→20k(!). PT 13.1, APTT 23.5, フィブリノゲン463. CTA:胸部大動脈血栓+左腎静脈血栓+左副腎静脈血栓+左副腎出血. HIT血小板活性化試験陽性",
+      "final_diagnosis": "自然発症型HIT(動静脈血栓+副腎出血)",
+      "expected_id": "D207",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S04": "on_exertion",
+        "L14": "thrombocytopenia",
+        "S12": "diffuse",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "PLT 20k. 大動脈+腎静脈+副腎血栓. 自然発症HIT"
+    },
+    {
+      "id": "R457",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10628603",
+      "vignette": "22M 1日間の歯肉出血+4日間の四肢/体幹/顔面丘疹状発疹+紫斑+斑状出血. BP 118/76, HR 78, T 37.6. PLT 7k(!), Hb 14.9, WBC 9.4k, PT 14, INR 1.0, D-dimer陰性. HIV/HBV/HCV/H.pylori全陰性",
+      "final_diagnosis": "特発性血小板減少性紫斑病(ITP)",
+      "expected_id": "D208",
+      "in_scope": true,
+      "evidence": {
+        "S44": "present",
+        "E12": "petechiae_purpura",
+        "E01": "37.5_38.0",
+        "L14": "thrombocytopenia",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PLT 7k. HIV/HBV/HCV陰性. mPSL→PLT 200k回復"
+    },
+    {
+      "id": "R458",
+      "source": "J Med Case Rep 2014",
+      "pmcid": "PMC4077221",
+      "vignette": "51M 喫煙. 15年間ITP既往(無治療). 胸骨後部痛(突然発症, 持続20分). 紫斑/点状出血なし. PLT 14k, トロポニンI 1.89, CK-MB 69. ECG:前壁双相T波. Echo:心尖部/中隔低運動. 冠動脈造影:LAD 90%血栓性閉塞",
+      "final_diagnosis": "慢性ITP+急性冠症候群(LAD血栓)",
+      "expected_id": "D208",
+      "in_scope": true,
+      "evidence": {
+        "S21": "pressure",
+        "L14": "thrombocytopenia",
+        "L53": "mildly_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PLT 14k+LAD血栓. IVIG+輸血→PCI+BMS"
+    },
+    {
+      "id": "R459",
+      "source": "Am J Case Rep 2017",
+      "pmcid": "PMC5551928",
+      "vignette": "50M 既往なし. 1週間の発熱+下痢+重度腰痛+左下肢運動不能. WBC 9k, Hb 10, PLT 173k. 末梢血:leukoerythroblastic picture. 血培:Salmonella type D. US:巨脾20cm. JAK2 V617F陽性. 骨髄:MF grade 2-3. MRI:L4-5脊椎椎間板炎+傍脊椎膿瘍",
+      "final_diagnosis": "原発性骨髄線維症+サルモネラ脊椎膿瘍",
+      "expected_id": "D209",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S15": "present",
+        "S14": "watery",
+        "S07": "severe",
+        "L01": "normal_4000_10000",
+        "L09": "gram_negative",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "JAK2+. 巨脾20cm. サルモネラ脊椎膿瘍"
+    },
+    {
+      "id": "R460",
+      "source": "BMJ Case Rep 2019",
+      "pmcid": "PMC6557368",
+      "vignette": "51M 突然の右眼視力喪失(3日)+2ヶ月の体重減少+食欲不振+倦怠感. るいそう+爪蒼白. WBC 14.4k, PLT 16k(!), 網赤血球7.06%, LDH 798. 末梢血:涙滴赤血球+正球性+多染性. JAK2変異陽性. 骨髄:著明低形成+高度線維化",
+      "final_diagnosis": "原発性骨髄線維症+網膜中心静脈閉塞",
+      "expected_id": "D209",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PLT 16k. LDH 798. 涙滴赤血球. 右眼CRVO"
+    },
+    {
+      "id": "R461",
+      "source": "BMC Res Notes 2018",
+      "pmcid": "PMC6071335",
+      "vignette": "33M BMI 20. 反復性重度腹痛+嘔気嘔吐+便秘+両下肢痺れ(2年で6回目). 四肢筋力4/5. BP 160/90. Na 115(!), 浸透圧255, 尿浸透圧460. Hb 8.2, フェリチン646. Watson-Schwartz陽性. 尿ポルフィリン5505.5(正常<300). HMBS c.517C>T",
+      "final_diagnosis": "急性間欠性ポルフィリン症",
+      "expected_id": "D210",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "E38": "elevated_140_180",
+        "L44": "hyponatremia",
+        "S52": "bilateral",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Na 115. Watson-Schwartz+. 尿ポルフィリン5505"
+    },
+    {
+      "id": "R462",
+      "source": "Medicine 2023",
+      "pmcid": "PMC10727566",
+      "vignette": "20F 3年間の反復性腹痛. 重度腹痛+嘔気嘔吐+間欠性痙攣+17歳から顔面発疹. T 37.2, HR 130, RR 25, BP 140/100. Na 125, WBC 11.65k(好中球10.95), アミラーゼ211, CK 551. 頭部MRI:PRES. 腎CT:両側Ca沈着. 尿:日光乾燥で赤変",
+      "final_diagnosis": "急性間欠性ポルフィリン症(痙攣+PRES)",
+      "expected_id": "D210",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S13": "present",
+        "S42": "present",
+        "E02": "over_120",
+        "E38": "elevated_140_180",
+        "L44": "hyponatremia",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "HR 130, BP 140/100. Na 125. PRES合併"
+    },
+    {
+      "id": "R463",
+      "source": "Int J Emerg Med 2012",
+      "pmcid": "PMC3395873",
+      "vignette": "51M 75kg. 興奮→無反応, 全身性痙攣. 散瞳4mm. GCS 3. T 37.6, HR 150, BP 112/82. 血糖14.0, Na 141, K 3.4, pH 7.51. アミトリプチリン>3225mg(>43mg/kg)+quetiapine+citalopram+metoprolol摂取. ECG:広QRS頻拍(QRS 180ms), aVR R波. NaHCO3→QRS 96msに改善. 脂肪乳剤→Day3抜管→Day7退院",
+      "final_diagnosis": "三環系抗うつ薬中毒(多剤)",
+      "expected_id": "D211",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "over_120",
+        "S42": "present",
+        "E01": "37.5_38.0",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "QRS 180ms. アミトリプチリン>3225mg. Day7退院"
+    },
+    {
+      "id": "R464",
+      "source": "Am J Case Rep 2020",
+      "pmcid": "PMC7274498",
+      "vignette": "28F 60kg. アミトリプチリン3700mg意図的摂取. 痙攣→心停止(5分ACLS/CPR→ROSC)→昏睡+全身性ミオクローヌス. BP 111/53, HR 103, RR 25, T 36. 乳酸2.6, ALT 198, AST 235. ECG:QRS>100ms, QTc 475, aVR終末R波. 脂肪乳剤→QRS正常化. 24h内に抜管→神経学的後遺症なし",
+      "final_diagnosis": "三環系抗うつ薬中毒(心停止→蘇生)",
+      "expected_id": "D211",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "100_120",
+        "S42": "present",
+        "E03": "hypotension_under_90",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "アミトリプチリン3700mg. 心停止→ROSC. 24h抜管"
     }
   ],
   "total_cases": 110
