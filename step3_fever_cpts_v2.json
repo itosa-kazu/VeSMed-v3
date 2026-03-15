@@ -4078,6 +4078,11 @@
           "under_100": 0.15,
           "100_120": 0.45,
           "over_120": 0.4
+        },
+        "D31": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
         }
       }
     },
@@ -4511,6 +4516,11 @@
         "D131": {
           "normal_over_96": 0.55,
           "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.15
+        },
+        "D31": {
+          "normal_over_96": 0.6,
+          "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.15
         }
       }
@@ -10306,6 +10316,21 @@
           "absent": 0.2,
           "dry": 0.65,
           "productive": 0.15
+        },
+        "D116": {
+          "absent": 0.55,
+          "dry": 0.3,
+          "productive": 0.15
+        },
+        "D134": {
+          "absent": 0.7,
+          "dry": 0.2,
+          "productive": 0.1
+        },
+        "D124": {
+          "absent": 0.65,
+          "dry": 0.25,
+          "productive": 0.1
         }
       }
     },
@@ -10366,6 +10391,10 @@
         "D128": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D116": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -10560,6 +10589,11 @@
         "D134": {
           "absent": 0.65,
           "on_exertion": 0.2,
+          "at_rest": 0.15
+        },
+        "D55": {
+          "absent": 0.55,
+          "on_exertion": 0.3,
           "at_rest": 0.15
         }
       }
@@ -11216,6 +11250,11 @@
           "absent": 0.65,
           "mild": 0.25,
           "severe": 0.1
+        },
+        "D134": {
+          "absent": 0.45,
+          "mild": 0.3,
+          "severe": 0.25
         }
       }
     },
@@ -12289,6 +12328,10 @@
         "D130": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D124": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
