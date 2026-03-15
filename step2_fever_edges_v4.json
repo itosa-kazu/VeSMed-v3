@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 1881,
+  "total_edges": 1896,
   "edges": [
     {
       "from": "R01",
@@ -17664,6 +17664,111 @@
       "from_name": "toxoplasmosis",
       "to_name": "L14",
       "reason": "トキソプラズマ: リンパ球優位(免疫正常でリンパ球増多, 免疫不全で血小板減少もあり)"
+    },
+    {
+      "from": "D116",
+      "to": "E01",
+      "from_name": "acute_myocarditis",
+      "to_name": "E01",
+      "reason": "心筋炎: 発熱は軽度~なし(先行感染からは回復していることが多い)"
+    },
+    {
+      "from": "D116",
+      "to": "S21",
+      "from_name": "acute_myocarditis",
+      "to_name": "S21",
+      "reason": "心筋炎: 胸痛(85-95%, 定常性/前傾で改善, 臥位で増悪)"
+    },
+    {
+      "from": "D116",
+      "to": "S04",
+      "from_name": "acute_myocarditis",
+      "to_name": "S04",
+      "reason": "心筋炎: 呼吸困難(50-70%, 心不全)"
+    },
+    {
+      "from": "D116",
+      "to": "S35",
+      "from_name": "acute_myocarditis",
+      "to_name": "S35",
+      "reason": "心筋炎: 動悸(40-60%, 不整脈)"
+    },
+    {
+      "from": "D116",
+      "to": "E02",
+      "from_name": "acute_myocarditis",
+      "to_name": "E02",
+      "reason": "心筋炎: 頻脈(50-70%)"
+    },
+    {
+      "from": "D116",
+      "to": "S07",
+      "from_name": "acute_myocarditis",
+      "to_name": "S07",
+      "reason": "心筋炎: 倦怠感(60-80%)"
+    },
+    {
+      "from": "D116",
+      "to": "L17",
+      "from_name": "acute_myocarditis",
+      "to_name": "L17",
+      "reason": "心筋炎: CK上昇(30-50%, 心筋逸脱酵素)"
+    },
+    {
+      "from": "D116",
+      "to": "L02",
+      "from_name": "acute_myocarditis",
+      "to_name": "L02",
+      "reason": "心筋炎: CRP上昇(60-80%)"
+    },
+    {
+      "from": "D116",
+      "to": "L16",
+      "from_name": "acute_myocarditis",
+      "to_name": "L16",
+      "reason": "心筋炎: LDH上昇(50-70%)"
+    },
+    {
+      "from": "D116",
+      "to": "L01",
+      "from_name": "acute_myocarditis",
+      "to_name": "L01",
+      "reason": "心筋炎: WBC正常~軽度上昇"
+    },
+    {
+      "from": "D116",
+      "to": "L28",
+      "from_name": "acute_myocarditis",
+      "to_name": "L28",
+      "reason": "心筋炎: ESR軽度上昇"
+    },
+    {
+      "from": "D116",
+      "to": "T01",
+      "from_name": "acute_myocarditis",
+      "to_name": "T01",
+      "reason": "心筋炎: 急性発症(先行感染1-2週後, 胸痛は急性)"
+    },
+    {
+      "from": "D116",
+      "to": "T02",
+      "from_name": "acute_myocarditis",
+      "to_name": "T02",
+      "reason": "心筋炎: 急性発症(時間~日単位)"
+    },
+    {
+      "from": "D116",
+      "to": "E03",
+      "from_name": "acute_myocarditis",
+      "to_name": "E03",
+      "reason": "心筋炎: 重症例で低血圧(心原性ショック5-10%)"
+    },
+    {
+      "from": "D116",
+      "to": "S06",
+      "from_name": "acute_myocarditis",
+      "to_name": "S06",
+      "reason": "心筋炎: 筋肉痛(先行URI症状の残存, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -4852,6 +4852,56 @@
       },
       "result": "",
       "notes": "伝統+ナビ両方テスト. 入院時無熱(36.8℃). 尿NAATで淋菌確定. 点状出血型は非典型"
+    },
+    {
+      "id": "R196",
+      "source": "Cureus 2024",
+      "pmcid": "PMC10783203",
+      "vignette": "24M 10日前にURI症状. 6時間の重度胸骨後部痛(臥位増悪,前傾改善)+軽度呼吸困難. T=37.1, HR 100, BP 118/60. 心尖部摩擦音. WBC 5.9k, CRP 78, ESR 21, トロポニンI 13564(著高). CXR正常. Echo: EF>60%正常, 微量心嚢液. CMR: 心外膜下遅延造影(心筋炎パターン)",
+      "final_diagnosis": "急性心筋心膜炎(myopericarditis)",
+      "expected_id": "D116",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S21": "constant",
+        "S04": "on_exertion",
+        "E02": "100_120",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L04": "normal",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ両方テスト. T=37.1(ほぼ無熱), 先行URI 10日前. トロポニン著高だが変量なし(CKも未報告). 胸痛+頻脈+CRP高値が鍵"
+    },
+    {
+      "id": "R197",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12061197",
+      "vignette": "19M 咽頭痛+咳嗽+発熱+左胸痛(背部・歯に放散). 咽頭PCR: G群溶連菌陽性. ECG: 洞性徐脈+非特異的ST-T変化. トロポニン上昇(ピーク後低下). 冠動脈CT正常. CMR(4週後): 心外膜下遅延造影(心筋炎確認)",
+      "final_diagnosis": "急性心筋炎(G群溶連菌咽頭炎後)",
+      "expected_id": "D116",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S21": "constant",
+        "S02": "present",
+        "S01": "productive",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ両方テスト. 咽頭炎→心筋炎. 検査値の詳細少ない. 咽頭痛+胸痛+発熱が鍵"
     }
   ],
   "total_cases": 110

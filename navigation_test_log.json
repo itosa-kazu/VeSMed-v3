@@ -214,6 +214,45 @@
         }
       ],
       "conclusion": "無熱でもStep 1でTop-1 96.8%。排尿痛+関節痛+点状出血がDGIに特異的"
+    },
+    {
+      "case_id": "R196",
+      "pmcid": "PMC10783203",
+      "final_diagnosis": "急性心筋心膜炎",
+      "expected_id": "D116",
+      "traditional_result": "Top-1 90.9%",
+      "navigation_result": "Step 1で即Top-1(88.2%), Step 4で100%",
+      "navigation_steps": [
+        {
+          "step": 1,
+          "action": "胸痛+呼吸困難(急性6h)",
+          "D116_rank": 1,
+          "D116_prob": "88.2%",
+          "H": 0.93
+        },
+        {
+          "step": 2,
+          "action": "+T=37.1(無熱)+HR100",
+          "D116_rank": 1,
+          "D116_prob": "99.2%",
+          "H": 0.1
+        },
+        {
+          "step": 3,
+          "action": "+WBC正常+CRP78",
+          "D116_rank": 1,
+          "D116_prob": "99.8%",
+          "H": 0.03
+        },
+        {
+          "step": 4,
+          "action": "+ESR上昇+CXR正常",
+          "D116_rank": 1,
+          "D116_prob": "100%",
+          "H": 0.0
+        }
+      ],
+      "conclusion": "Step 1で即Top-1。急性胸痛+呼吸困難が心筋炎に特異的。無熱でも安定。反証推奨Step4で自然消滅"
     }
   ]
 }
