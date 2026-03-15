@@ -9768,6 +9768,285 @@
       },
       "result": "",
       "notes": "C.septicum. 自発性. 好中球減少. HR 150"
+    },
+    {
+      "id": "R380",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7148402",
+      "vignette": "40M 高熱7日+悪寒+戦慄+手足/鼻尖壊疽+両側下腿浮腫+嘔吐+下痢. BP 129/73, HR 90, T 37.0, RR 18. Hb 6.4, WBC 27.7k, PLT 29k, Cr 11.16(!), BUN 324, LDH 1149, T-Bil 3.2, AST 135, ALT 190. LAC+抗β2GP1+aCL三重陽性. 腎生検:TMA",
+      "final_diagnosis": "CAPS(catastrophic APS, 一次性)",
+      "expected_id": "D171",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "skin_necrosis",
+        "E36": "bilateral",
+        "S13": "present",
+        "S14": "watery",
+        "L14": "thrombocytopenia",
+        "L16": "elevated",
+        "L55": "high_AKI",
+        "L01": "very_high_over_20000",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Cr 11.16, PLT 29k. 三重aPL陽性. 手足壊疽+腎TMA"
+    },
+    {
+      "id": "R381",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC10838564",
+      "vignette": "59F SLE+APS既往. 意識変容+びまん性脱力+びまん性点状出血/斑状出血+上肢非圧痕性浮腫. BP 200/100, HR 110. Hb 7.7, WBC 2.24k, PLT 36k, APTT 66, D-dimer 5976. 多発DVT(上腕/鎖骨下/大腿/腸骨)+SVC血栓+多発脳梗塞+腎TMA. β2GP1 IgG 1868",
+      "final_diagnosis": "CAPS(SLE+APS)",
+      "expected_id": "D171",
+      "in_scope": true,
+      "evidence": {
+        "E16": "confused",
+        "S07": "severe",
+        "E38": "crisis_over_180",
+        "E02": "100_120",
+        "E12": "petechiae_purpura",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L05": "pyuria_bacteriuria",
+        "S52": "unilateral_weakness",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "β2GP1 1868(!). 多発DVT+SVC血栓+脳梗塞+腎TMA. BP 200/100"
+    },
+    {
+      "id": "R382",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12958737",
+      "vignette": "46M 5日間の心窩部痛+持続発熱+多発紅斑性皮疹+掻痒+倦怠感. PLT 24k, D-dimer 29.6, FDP 47, フィブリノゲン614, CRP 37.2, LDH 634, AST 71, ALT 319, ALP 682, Alb 2.3. LAC+aCL+β2GP1三重陽性. 門脈血栓+肝小血管血栓+腸管微小血栓+両側副腎出血→結腸穿孔",
+      "final_diagnosis": "probable CAPS+好酸球増多+DIC",
+      "expected_id": "D171",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S12": "epigastric",
+        "E12": "maculopapular_rash",
+        "S07": "severe",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L16": "elevated",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "D-dimer 29.6. 門脈+肝+腸管+副腎の多臓器血栓. 好酸球32.5%"
+    },
+    {
+      "id": "R383",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC10916160",
+      "vignette": "10代後半F URI後. 心原性ショック+呼吸困難+発汗+口腔乾燥+蒼白+下肢livedo reticularis. BP 60(ショック!), HR 110, RR 26, SpO2 84%. Hb 7.5, WBC 27.9k, PLT 31k(→13k), INR 1.4, APTT 75, D-dimer>20, Cr 7.3(!), K 6.1, LDH 992, トロポニン2296→5014, CRP 437, C3 0.5/C4 0.03(低!). 多発PE+脾/腎梗塞+脳微小梗塞. LVEF 31%. 三重aPL陽性",
+      "final_diagnosis": "probable CAPS(一次性, 三重陽性)",
+      "expected_id": "D171",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E03": "hypotension_under_90",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "L14": "thrombocytopenia",
+        "L52": "very_high",
+        "L55": "high_AKI",
+        "L16": "elevated",
+        "L53": "very_high",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "LVEF 31%. Cr 7.3, トロポニン5014. C3/C4著減. 三重aPL陽性"
+    },
+    {
+      "id": "R384",
+      "source": "Case Rep 2015",
+      "pmcid": "PMC4385561",
+      "vignette": "50M 4日間の発熱+鈍い左下腹部痛+嘔吐. BP 210/62, HR 124, RR 22, T 38.6. WBC 22.1k(好中球92%), PLT 52k. aCL IgM 54+β2GP1 35陽性. CT:小腸壁肥厚. 手術:20cm腸管壊死(小血管血栓). Day22死亡(肺感染)",
+      "final_diagnosis": "APS(腸管小血管血栓)",
+      "expected_id": "D171",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E38": "crisis_over_180",
+        "S12": "LLQ",
+        "S13": "present",
+        "L14": "thrombocytopenia",
+        "L01": "very_high_over_20000",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "BP 210/62. 腸管壊死20cm. Day22死亡"
+    },
+    {
+      "id": "R385",
+      "source": "Case Rep 2018",
+      "pmcid": "PMC5912273",
+      "vignette": "34F 喫煙者. 発熱+全身水疱性発疹4日→進行性呼吸困難+咳嗽. T 39.6, BP 130/60, HR 120, RR 30, SpO2 96%(5L NC). 水疱(顔/体幹/四肢, 一部痂皮化)+両側ラ音/rhonchi. CXR:両側間質浸潤→ARDS. IV acyclovir+CPAP→Day10退院",
+      "final_diagnosis": "水痘肺炎/ARDS",
+      "expected_id": "D173",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E05": "mild_hypoxia_93_96",
+        "E07": "crackles",
+        "E12": "vesicle_bulla",
+        "S01": "dry",
+        "S04": "at_rest",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "水痘肺炎→ARDS. SpO2 96%(5L). 喫煙者"
+    },
+    {
+      "id": "R386",
+      "source": "Case Rep 2021",
+      "pmcid": "PMC7983319",
+      "vignette": "20M 10日間の前頭部頭痛+5日間の掻痒性水疱性発疹(顔→体幹→四肢)+3日間の主観的発熱+めまい+嘔気嘔吐. T 37.0, BP 140/90, HR 80, RR 18, SpO2 97%, GCS 15. 散在する丘疹/水疱(大部分痂皮化)+軽度項部硬直. WBC 7.1k, CRP 11.5. VZV IgM+. CSF:圧28cmH2O. CT静脈造影:SSS/横S/S状静脈洞+左IJV血栓. 局所痙攣",
+      "final_diagnosis": "水痘+脳静脈洞血栓症",
+      "expected_id": "D173",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S05": "severe",
+        "E12": "vesicle_bulla",
+        "S13": "present",
+        "E06": "present",
+        "L02": "moderate_3_10",
+        "S42": "present",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SSS/横S/S状洞+IJV血栓. LAC一過性陽性. 8週で完全回復"
+    },
+    {
+      "id": "R387",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12090692",
+      "vignette": "26M 免疫正常. 重度心窩部/RUQ痛(9/10)+嘔気+食欲不振. 4日前に同僚水痘接触. プレドニゾロン5mg/日x2週(腰痛). Day1:T 36.8, BP 118/72, HR 72. Day2全身水疱出現→出血性変化. Day3:WBC 128k(!), ALT 2020, AST 6045, CK 2821, INR 3.5-4.9, フィブリノゲン<0.3, Cr 171. Day4:Hb 3.6, PLT 23k, フェリチン64653. CXR:ARDS. Day6死亡",
+      "final_diagnosis": "播種性水痘(劇症肝炎+DIC+ARDS+AKI)",
+      "expected_id": "D173",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "S13": "present",
+        "E12": "vesicle_bulla",
+        "E01": "under_37.5",
+        "L11": "very_high",
+        "L17": "very_high",
+        "L52": "very_high",
+        "L14": "thrombocytopenia",
+        "L15": "extreme_over_10000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "WBC 128k, AST 6045, フェリチン64653. ステロイド使用中. Day6死亡"
+    },
+    {
+      "id": "R388",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12042312",
+      "vignette": "27F G6PD欠損. 6日間の全身丘疹/水疱+発熱+掻痒+48h心窩部痛+嘔気嘔吐. T 38.9, HR 92, RR 18, BP 118/76, SpO2 98%. 全身黄疸+強膜黄疸+心窩部/RUQ圧痛+全身各段階水疱. ALT 2001, AST 6332, ALP 681, T-Bil 4.2, VZV PCR強陽性. 肝生検:広範壊死. 肝移植待機中に死亡",
+      "final_diagnosis": "水痘劇症肝炎(G6PD欠損)",
+      "expected_id": "D173",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "vesicle_bulla",
+        "E18": "present",
+        "S12": "RUQ",
+        "S13": "present",
+        "L11": "very_high",
+        "L01": "high_10000_20000",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST 6332, ALP 681. G6PD欠損. VZV PCR強陽性. 肝移植前死亡"
+    },
+    {
+      "id": "R389",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12241698",
+      "vignette": "21M 免疫正常+未接種. 倦怠感+発熱+掻痒性斑状発疹(Day1)→乾性咳嗽(Day5)→突然の呼吸困難+胸痛+難治性咳嗽(Day6). T 39.6, HR 124, BP 110/80, RR 32, SpO2 75%(60% FiO2), GCS 12. 両側crackles+wheezing+呼吸補助筋使用. Hb 9.8, WBC 18k(リンパ55%). VZV IgM+. PaO2/FiO2=80(重症ARDS). CXR:びまん性両側肺胞浸潤",
+      "final_diagnosis": "水痘肺炎+重症ARDS",
+      "expected_id": "D173",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "E12": "vesicle_bulla",
+        "S01": "dry",
+        "S04": "at_rest",
+        "E16": "confused",
+        "L01": "high_10000_20000",
+        "L04": "bilateral_infiltrate",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "P/F=80(重症ARDS). SpO2 75%. GCS 12. Day5抜管→Day9退院"
     }
   ],
   "total_cases": 110

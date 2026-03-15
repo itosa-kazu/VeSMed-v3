@@ -5175,6 +5175,11 @@
           "normal_under_20": 0.3,
           "tachypnea_20_30": 0.45,
           "severe_over_30": 0.25
+        },
+        "D173": {
+          "normal_under_20": 0.55,
+          "tachypnea_20_30": 0.3,
+          "severe_over_30": 0.15
         }
       }
     },
@@ -5349,6 +5354,11 @@
         "D149": {
           "normal_over_96": 0.5,
           "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.2
+        },
+        "D173": {
+          "normal_over_96": 0.55,
+          "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.2
         }
       }
@@ -5541,6 +5551,12 @@
           "crackles": 0.1,
           "wheezes": 0.05,
           "decreased_absent": 0.7
+        },
+        "D173": {
+          "clear": 0.55,
+          "crackles": 0.25,
+          "wheezes": 0.15,
+          "decreased_absent": 0.05
         }
       }
     },
@@ -9598,6 +9614,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.4,
           "pneumothorax": 0.33
+        },
+        "D173": {
+          "normal": 0.6,
+          "lobar_infiltrate": 0.03,
+          "bilateral_infiltrate": 0.3,
+          "BHL": 0.01,
+          "pleural_effusion": 0.03,
+          "pneumothorax": 0.03
         }
       }
     },
@@ -10035,6 +10059,11 @@
           "normal": 0.55,
           "mild_elevated": 0.35,
           "very_high": 0.1
+        },
+        "D171": {
+          "normal": 0.45,
+          "mild_elevated": 0.4,
+          "very_high": 0.15
         }
       }
     },
@@ -10483,6 +10512,10 @@
         "D166": {
           "normal": 0.15,
           "elevated": 0.85
+        },
+        "D171": {
+          "normal": 0.3,
+          "elevated": 0.7
         }
       }
     },
