@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2876,
+  "total_edges": 2887,
   "edges": [
     {
       "from": "R01",
@@ -24629,6 +24629,83 @@
       "from_name": "listeria_meningitis",
       "to_name": "S09",
       "reason": "リステリア: 悪寒戦慄(菌血症)"
+    },
+    {
+      "from": "D23",
+      "to": "E05",
+      "from_name": "rickettsia",
+      "to_name": "E05",
+      "reason": "リケッチア: 低酸素(重症肺炎合併時)"
+    },
+    {
+      "from": "D92",
+      "to": "L03",
+      "from_name": "tumor_fever",
+      "to_name": "L03",
+      "reason": "腫瘍熱: PCT(通常低値, 腫瘍熱の鑑別点)"
+    },
+    {
+      "from": "D92",
+      "to": "L09",
+      "from_name": "tumor_fever",
+      "to_name": "L09",
+      "reason": "腫瘍熱: 血液培養(陰性が鑑別点)"
+    },
+    {
+      "from": "D07",
+      "to": "E02",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "E02",
+      "reason": "急性胃腸炎: 頻脈(脱水)"
+    },
+    {
+      "from": "D07",
+      "to": "E03",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "E03",
+      "reason": "急性胃腸炎: 低血圧(重度脱水)"
+    },
+    {
+      "from": "D07",
+      "to": "E04",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "E04",
+      "reason": "急性胃腸炎: 頻呼吸(代謝性アシドーシス)"
+    },
+    {
+      "from": "D07",
+      "to": "L11",
+      "from_name": "acute_gastroenteritis",
+      "to_name": "L11",
+      "reason": "急性胃腸炎: 肝酵素(通常正常~軽度)"
+    },
+    {
+      "from": "D124",
+      "to": "S06",
+      "from_name": "COPD_exacerbation",
+      "to_name": "S06",
+      "reason": "COPD増悪: 筋肉痛(呼吸筋疲労, 10-20%)"
+    },
+    {
+      "from": "D166",
+      "to": "E02",
+      "from_name": "acetaminophen_OD",
+      "to_name": "E02",
+      "reason": "APAP中毒: 頻脈(肝不全/SIRS)"
+    },
+    {
+      "from": "D139",
+      "to": "E05",
+      "from_name": "cerebral_hemorrhage",
+      "to_name": "E05",
+      "reason": "脳出血: 酸素飽和度(通常正常, 重症で低下)"
+    },
+    {
+      "from": "D139",
+      "to": "L53",
+      "from_name": "cerebral_hemorrhage",
+      "to_name": "L53",
+      "reason": "脳出血: トロポニン(神経原性心筋障害, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
