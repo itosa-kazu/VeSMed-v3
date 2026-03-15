@@ -4510,7 +4510,7 @@
       "vignette": "66F シプロフロキサシン8日間使用後. 2日間の発疹(体幹→頸部→四肢進行)+嚥下困難+排尿時痛. T=38.2, 口腔+陰部粘膜びらん, Nikolsky sign陽性. WBC 9.6k, CRP 110.1, ESR 85. 皮膚生検: 経表皮壊死+血管周囲慢性炎症",
       "final_diagnosis": "スティーブンス・ジョンソン症候群(シプロフロキサシン誘発)",
       "expected_id": "D111",
-      "in_scope": true,
+      "in_scope": false,
       "evidence": {
         "E01": "38.0_39.0",
         "E12": "vesicle_bulla",
@@ -4529,7 +4529,7 @@
         "R08": "yes"
       },
       "result": "",
-      "notes": "シプロフロキサシン8日使用後に発症. 口腔+陰部粘膜びらん+Nikolsky+. CRP 110, ESR 85"
+      "notes": "DELETED: PMC6118827をWebFetch未実施。データ出典不確実のため除外"
     },
     {
       "id": "R185",
@@ -4690,7 +4690,6 @@
         "E01": "39.0_40.0",
         "S07": "severe",
         "S01": "dry",
-        "L28": "very_high_over_100",
         "L15": "mild_elevated",
         "L11": "normal",
         "T01": "over_3w",
@@ -4698,14 +4697,15 @@
         "L09": "negative",
         "L48": "monoclonal_gammopathy",
         "L49": "normal",
-        "L50": "very_high"
+        "L50": "very_high",
+        "E12": "maculopapular_rash"
       },
       "risk_factors": {
         "R01": "40_64",
         "R02": "male"
       },
-      "result": "",
-      "notes": "4ヶ月FUO+ESR著明上昇+M蛋白. 骨病変なし(低悪性度). ESR>100を推定(文献にelevatedとのみ). E12削除(erythematous rashは非特異的で誤解を招く). 血培陰性追加(4ヶ月FUO精査)"
+      "result": "rank 2 (14.2%) L28なし",
+      "notes": "PMC419768. E12=maculopapular_rash復元(原文erythematous rash). L28: 原文elevated具体値不明→除外. L28全state検証: normal→r3, elevated→r2, very_high→r2. E12復元によりD114はTop-1→Top-2/3に低下(リンパ腫がTop-1). 骨髄腫に皮疹は非典型→臨床的に妥当"
     },
     {
       "id": "R191",
@@ -4988,7 +4988,6 @@
       "evidence": {
         "S05": "severe",
         "L46": "other",
-        "L01": "high_10000_20000",
         "T01": "1w_to_3w",
         "T02": "gradual_days"
       },
@@ -4996,8 +4995,8 @@
         "R01": "18_39",
         "R02": "male"
       },
-      "result": "",
-      "notes": "伝統+ナビ. 無熱. 外傷後2週の頭痛+片麻痺. MRI環状増強が鍵. ラボデータ限定的"
+      "result": "Top-1 64.0% (L01なし)",
+      "notes": "PMC10505261. L01: 原文WBC elevated具体値不明→除外. 全state検証: low→r1(36%), normal→r1(59%), high→r1(73%), very_high→r1(77%). L01なしでもr1(64%). 完全にrobust"
     },
     {
       "id": "R202",
