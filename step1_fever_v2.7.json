@@ -4552,6 +4552,41 @@
         "back"
       ],
       "note": "胸痛のRadiation。left_arm_jaw=ACS, back=大動脈解離"
+    },
+    {
+      "id": "R48",
+      "name": "atrial_fibrillation_history",
+      "name_ja": "心房細動既往",
+      "category": "risk_factor",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "心房細動既往。塞栓リスク(腸間膜虚血/PE/脳卒中)"
+    },
+    {
+      "id": "D136",
+      "name": "peptic_ulcer_perforation",
+      "name_ja": "消化性潰瘍穿孔",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "突然の心窩部激痛+板状硬。NSAIDs/H.pyloriがリスク。CXR free air。緊急手術"
+    },
+    {
+      "id": "D137",
+      "name": "acute_mesenteric_ischemia",
+      "name_ja": "急性腸間膜虚血",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "SMA塞栓/血栓。激烈腹痛なのに腹部所見が乏しい(pain out of proportion)。AF既往がリスク。乳酸アシドーシス+LDH上昇。致死率50-80%(診断遅延時)"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2247,
+  "total_edges": 2272,
   "edges": [
     {
       "from": "R01",
@@ -20226,6 +20226,181 @@
       "from_name": "D135",
       "to_name": "S51",
       "reason": "D135→胸痛放散"
+    },
+    {
+      "from": "D136",
+      "to": "S12",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "S12",
+      "reason": "穿孔: 腹痛(95%+, 心窩部→びまん性, 突然発症)"
+    },
+    {
+      "from": "D136",
+      "to": "E09",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "E09",
+      "reason": "穿孔: 腹部触診 — 板状硬/腹膜刺激徴候(90%+)"
+    },
+    {
+      "from": "D136",
+      "to": "E01",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "E01",
+      "reason": "穿孔: 発熱(腹膜炎で30-50%)"
+    },
+    {
+      "from": "D136",
+      "to": "E02",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "E02",
+      "reason": "穿孔: 頻脈(60-70%, 腹膜炎/ショック)"
+    },
+    {
+      "from": "D136",
+      "to": "E03",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "E03",
+      "reason": "穿孔: 低血圧(重症/遅延例で30-40%)"
+    },
+    {
+      "from": "D136",
+      "to": "S13",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "S13",
+      "reason": "穿孔: 嘔気嘔吐(40-50%)"
+    },
+    {
+      "from": "D136",
+      "to": "L01",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "L01",
+      "reason": "穿孔: WBC上昇(80-90%)"
+    },
+    {
+      "from": "D136",
+      "to": "L02",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "L02",
+      "reason": "穿孔: CRP上昇(腹膜炎)"
+    },
+    {
+      "from": "D136",
+      "to": "L04",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "L04",
+      "reason": "穿孔: CXR — free air(横隔膜下遊離ガス, 80%)"
+    },
+    {
+      "from": "D136",
+      "to": "L31",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "L31",
+      "reason": "穿孔: 腹部CT — 遊離ガス+腹水"
+    },
+    {
+      "from": "D136",
+      "to": "T01",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "T01",
+      "reason": "穿孔: 超急性(数時間)"
+    },
+    {
+      "from": "D136",
+      "to": "T02",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "T02",
+      "reason": "穿孔: 突然発症(最初から最大)"
+    },
+    {
+      "from": "D137",
+      "to": "S12",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "S12",
+      "reason": "腸間膜虚血: 激烈腹痛(90%+, びまん性/臍周囲)"
+    },
+    {
+      "from": "D137",
+      "to": "E09",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "E09",
+      "reason": "腸間膜虚血: 腹部触診 — 初期はsoft(pain out of proportion!), 後期は腹膜刺激"
+    },
+    {
+      "from": "D137",
+      "to": "S13",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "S13",
+      "reason": "腸間膜虚血: 嘔気嘔吐(60-70%)"
+    },
+    {
+      "from": "D137",
+      "to": "E01",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "E01",
+      "reason": "腸間膜虚血: 発熱(壊死後30-40%)"
+    },
+    {
+      "from": "D137",
+      "to": "E02",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "E02",
+      "reason": "腸間膜虚血: 頻脈(70-80%)"
+    },
+    {
+      "from": "D137",
+      "to": "E03",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "E03",
+      "reason": "腸間膜虚血: 低血圧(重症/壊死後)"
+    },
+    {
+      "from": "D137",
+      "to": "L01",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "L01",
+      "reason": "腸間膜虚血: WBC上昇(70-80%)"
+    },
+    {
+      "from": "D137",
+      "to": "L02",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "L02",
+      "reason": "腸間膜虚血: CRP上昇"
+    },
+    {
+      "from": "D137",
+      "to": "L16",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "L16",
+      "reason": "腸間膜虚血: LDH著明上昇(腸管壊死)"
+    },
+    {
+      "from": "D137",
+      "to": "L52",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "L52",
+      "reason": "腸間膜虚血: D-dimer上昇(血栓)"
+    },
+    {
+      "from": "D137",
+      "to": "L31",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "L31",
+      "reason": "腸間膜虚血: 腹部CT — 腸管壁肥厚/門脈ガス"
+    },
+    {
+      "from": "D137",
+      "to": "T01",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "T01",
+      "reason": "腸間膜虚血: 急性(数時間)"
+    },
+    {
+      "from": "D137",
+      "to": "T02",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "T02",
+      "reason": "腸間膜虚血: 突然発症(塞栓型)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

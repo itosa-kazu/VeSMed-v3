@@ -400,6 +400,13 @@
         "no": 0.9,
         "yes": 0.1
       }
+    },
+    "R48": {
+      "description": "心房細動既往",
+      "distribution": {
+        "no": 0.9,
+        "yes": 0.1
+      }
     }
   },
   "full_cpts": {
@@ -2630,6 +2637,28 @@
       "cpt": {
         "": 0.015
       }
+    },
+    "D136": {
+      "parents": [],
+      "description": "消化性潰瘍穿孔",
+      "cpt": {
+        "": 0.003
+      }
+    },
+    "D137": {
+      "parents": [
+        "R48",
+        "R01"
+      ],
+      "description": "急性腸間膜虚血。AF既往+高齢がリスク",
+      "cpt": {
+        "no|18_39": 0.001,
+        "no|40_64": 0.002,
+        "no|65_plus": 0.003,
+        "yes|18_39": 0.005,
+        "yes|40_64": 0.01,
+        "yes|65_plus": 0.02
+      }
     }
   },
   "noisy_or_params": {
@@ -3685,6 +3714,20 @@
           "38.0_39.0": 0.01,
           "39.0_40.0": 0.0,
           "over_40.0": 0.0
+        },
+        "D136": {
+          "under_37.5": 0.4,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.02
+        },
+        "D137": {
+          "under_37.5": 0.45,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.05
         }
       }
     },
@@ -4025,6 +4068,16 @@
           "under_100": 0.55,
           "100_120": 0.35,
           "over_120": 0.1
+        },
+        "D136": {
+          "under_100": 0.25,
+          "100_120": 0.5,
+          "over_120": 0.25
+        },
+        "D137": {
+          "under_100": 0.15,
+          "100_120": 0.45,
+          "over_120": 0.4
         }
       }
     },
@@ -4170,6 +4223,14 @@
         "D128": {
           "normal_over_90": 0.7,
           "hypotension_under_90": 0.3
+        },
+        "D136": {
+          "normal_over_90": 0.6,
+          "hypotension_under_90": 0.4
+        },
+        "D137": {
+          "normal_over_90": 0.5,
+          "hypotension_under_90": 0.5
         }
       }
     },
@@ -4731,6 +4792,16 @@
           "soft_nontender": 0.15,
           "localized_tenderness": 0.65,
           "peritoneal_signs": 0.2
+        },
+        "D136": {
+          "soft_nontender": 0.03,
+          "localized_tenderness": 0.12,
+          "peritoneal_signs": 0.85
+        },
+        "D137": {
+          "soft_nontender": 0.4,
+          "localized_tenderness": 0.3,
+          "peritoneal_signs": 0.3
         }
       }
     },
@@ -6933,6 +7004,18 @@
           "normal_4000_10000": 0.9,
           "high_10000_20000": 0.06,
           "very_high_over_20000": 0.01
+        },
+        "D136": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.1,
+          "high_10000_20000": 0.5,
+          "very_high_over_20000": 0.38
+        },
+        "D137": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.38
         }
       }
     },
@@ -7688,6 +7771,18 @@
           "mild_0.3_3": 0.12,
           "moderate_3_10": 0.03,
           "high_over_10": 0.0
+        },
+        "D136": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.55
+        },
+        "D137": {
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.55
         }
       }
     },
@@ -8108,6 +8203,14 @@
           "BHL": 0.01,
           "pleural_effusion": 0.02,
           "pneumothorax": 0.02
+        },
+        "D136": {
+          "normal": 0.15,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.03,
+          "BHL": 0.01,
+          "pleural_effusion": 0.05,
+          "pneumothorax": 0.74
         }
       }
     },
@@ -8897,6 +9000,10 @@
         "D132": {
           "normal": 0.35,
           "elevated": 0.65
+        },
+        "D137": {
+          "normal": 0.15,
+          "elevated": 0.85
         }
       }
     },
@@ -9564,6 +9671,18 @@
           "abscess": 0.85,
           "mass": 0.05,
           "other_abnormal": 0.05
+        },
+        "D136": {
+          "normal": 0.05,
+          "abscess": 0.1,
+          "mass": 0.05,
+          "other_abnormal": 0.8
+        },
+        "D137": {
+          "normal": 0.1,
+          "abscess": 0.05,
+          "mass": 0.05,
+          "other_abnormal": 0.8
         }
       }
     },
@@ -11677,6 +11796,24 @@
           "LLQ": 0.02,
           "suprapubic": 0.01,
           "diffuse": 0.22
+        },
+        "D136": {
+          "absent": 0.03,
+          "epigastric": 0.45,
+          "RUQ": 0.05,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.42
+        },
+        "D137": {
+          "absent": 0.03,
+          "epigastric": 0.15,
+          "RUQ": 0.05,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.02,
+          "diffuse": 0.65
         }
       }
     },
@@ -11849,6 +11986,14 @@
         "D133": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D136": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D137": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -14045,6 +14190,18 @@
           "3d_to_1w": 0.3,
           "1w_to_3w": 0.25,
           "over_3w": 0.15
+        },
+        "D136": {
+          "under_3d": 0.85,
+          "3d_to_1w": 0.12,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.01
+        },
+        "D137": {
+          "under_3d": 0.8,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
         }
       }
     },
@@ -14318,6 +14475,14 @@
         "D135": {
           "sudden_hours": 0.35,
           "gradual_days": 0.65
+        },
+        "D136": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
+        },
+        "D137": {
+          "sudden_hours": 0.75,
+          "gradual_days": 0.25
         }
       }
     },
@@ -15345,6 +15510,12 @@
           "normal": 0.1,
           "mildly_elevated": 0.3,
           "very_high": 0.4
+        },
+        "D137": {
+          "not_done": 0.2,
+          "normal": 0.05,
+          "mildly_elevated": 0.25,
+          "very_high": 0.5
         }
       }
     },
