@@ -16637,9 +16637,9 @@
         },
         "D149": {
           "not_done": 0.15,
-          "normal": 0.25,
+          "normal": 0.4,
           "mildly_elevated": 0.35,
-          "very_high": 0.25
+          "very_high": 0.1
         },
         "D150": {
           "not_done": 0.1,
