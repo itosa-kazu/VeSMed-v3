@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import json, os
+BASE = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE, "real_case_test_suite.json"), "r", encoding="utf-8") as f:
+    suite = json.load(f)
+cases = [
+    {"id":"R410","source":"Case Rep 2020","pmcid":"PMC7364255","vignette":"55F 献血後に血管迷走神経反射. 左側腹痛→9h後水様下痢→16h後血性下痢+嘔吐. T 36.7, HR 85, BP 126/68. WBC 15.3k, CRP 0.02(正常!), LDH 198, 乳酸32mg/dL, D-dimer 0.4. CT: 脾弯曲壁肥厚+thumbprinting","final_diagnosis":"虚血性腸炎(血管迷走神経反射後)","expected_id":"D177","in_scope":True,"evidence":{"S12":"LLQ","S14":"bloody","S13":"present","E01":"under_37.5","E02":"under_100","L01":"high_10000_20000","L02":"normal_under_0.3","T01":"under_3d","T02":"sudden_hours"},"risk_factors":{"R01":"40_64","R02":"female"},"result":"","notes":"CRP正常! LDH 198. 献血後低血圧→虚血. thumbprinting"},
+    {"id":"R411","source":"Case Rep 2023","pmcid":"PMC10589005","vignette":"64F 急性臍周囲腹痛+嘔気嘔吐2日→大量非血性下痢→血性下痢. T 36.4, HR 78, BP 65/34(ショック!), SpO2 96%. WBC 19.9k, CRP 24, 乳酸3.4, Cr 2.65, ESR 105, D-dimer>20. CT: 汎大腸壁肥厚. 内視鏡: 散在深い潰瘍. 血培: Fusobacterium necrophorum","final_diagnosis":"汎大腸虚血+Fusobacterium菌血症","expected_id":"D177","in_scope":True,"evidence":{"S12":"diffuse","S14":"bloody","S13":"present","E01":"under_37.5","E03":"hypotension_under_90","L01":"high_10000_20000","L02":"high_over_10","L55":"mild_elevated","L52":"very_high","T01":"under_3d","T02":"gradual_days"},"risk_factors":{"R01":"40_64","R02":"female"},"result":"","notes":"BP 65/34ショック. CRP 24, D-dimer>20. Fusobacterium菌血症"},
+    {"id":"R412","source":"Case Rep 2013","pmcid":"PMC3662170","vignette":"70F 2週間のめまい+嘔気嘔吐, 2日間の血性下痢12回+びまん性腹痛+発熱悪寒. T 37.1, HR 117, RR 26, BP 171/96. WBC 18.7k, LDH 961(!), Plt 206k→39k(!), 間接Bil 1.5, AST 75. CT: 上行~横行結腸腸炎像. 内視鏡: 横行~S状結腸に虚血性変化. TTP合併","final_diagnosis":"虚血性腸炎(TTP合併)","expected_id":"D177","in_scope":True,"evidence":{"S12":"diffuse","S14":"bloody","S13":"present","E01":"under_37.5","E02":"over_120","E38":"elevated_140_180","L01":"high_10000_20000","L16":"elevated","L14":"thrombocytopenia","T01":"1w_to_3w","T02":"gradual_days"},"risk_factors":{"R01":"65_plus","R02":"female"},"result":"","notes":"LDH 961. PLT 206→39k(TTP合併). HR 117, BP 171/96"},
+    {"id":"R413","source":"Case Rep 2013","pmcid":"PMC3547564","vignette":"54F BMI 23.2. ルビプロストン内服開始後. 嘔気嘔吐2h+痙攣性腹痛(心窩部~左上腹部)+3日便秘後に水様血便6回. T 36.5, HR 61, BP 134/70, RR 16, SpO2 97%. CBC/CMP正常. 便培養陰性, 便潜血陽性. CT: 横行~下行結腸壁肥厚. 内視鏡+病理: 虚血性crypt脱落","final_diagnosis":"虚血性腸炎(ルビプロストン誘発性)","expected_id":"D177","in_scope":True,"evidence":{"S12":"LLQ","S14":"bloody","S13":"present","E01":"under_37.5","E02":"under_100","T01":"under_3d","T02":"gradual_days"},"risk_factors":{"R01":"40_64","R02":"female"},"result":"","notes":"ルビプロストン誘発. CBC/CMP正常. 病理確認"},
+    {"id":"R414","source":"Case Rep 2008","pmcid":"PMC2615353","vignette":"40M BMI 25.7. 麻黄サプリメント使用. 水様下痢3日→血性下痢(来院3h前)+臍周囲軽度圧痛. T 36.5, HR 73, BP 110/70, RR 20. WBC 7.5k, Hb 15.6, Plt 21.4万, Cr 1.2. 便潜血陽性. CT: 上行~下行結腸全周性壁肥厚. SMA開存. 内視鏡: 分節性腸炎→8日改善","final_diagnosis":"虚血性腸炎(麻黄サプリメント関連)","expected_id":"D177","in_scope":True,"evidence":{"S12":"diffuse","S14":"bloody","E01":"under_37.5","E02":"under_100","L01":"normal_4000_10000","T01":"under_3d","T02":"gradual_days"},"risk_factors":{"R01":"18_39","R02":"male"},"result":"","notes":"麻黄(エフェドラ)誘発. WBC正常. 8日で改善"},
+]
+for c in cases:
+    suite["cases"].append(c)
+with open(os.path.join(BASE, "real_case_test_suite.json"), "w", encoding="utf-8") as f:
+    json.dump(suite, f, ensure_ascii=False, indent=2)
+print(f"Added {len(cases)} cases (R410-R414). Total: {len(suite['cases'])}")
