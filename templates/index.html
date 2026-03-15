@@ -89,7 +89,7 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 .state-btn.selected { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 /* Right: Results panel */
-.results-panel { position: sticky; top: 20px; }
+.results-panel { position: sticky; top: 20px; max-height: 95vh; overflow-y: auto; }
 .results-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .toolbar { padding: 12px 16px; display: flex; gap: 8px; }
 .btn { padding: 8px 20px; border-radius: 6px; border: none; cursor: pointer; font-size: 0.9em; font-weight: 600; transition: all 0.15s; }
@@ -265,7 +265,6 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
         <div class="tab-bar">
           <button class="tab-btn active" onclick="switchTab('diagnosis')">鑑別疾患</button>
           <button class="tab-btn" onclick="switchTab('recommend')">推奨検査</button>
-          <button class="tab-btn" onclick="switchTab('dontmiss')">見逃し注意 <span class="warn-count" id="warnCount" style="display:none">0</span></button>
         </div>
 
         <!-- Tab: Diagnosis -->
@@ -279,24 +278,13 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 
         <!-- Tab: Recommendations -->
         <div class="tab-content" id="tab-recommend">
-          <div style="background:#fff3e0;border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:12px;line-height:1.5;">
-            <b>反証推奨（主）:</b> 現在の診断を覆す可能性がある検査。鑑別疾患の除外(rule-out)に有効。<br>
-            <b>確認推奨（副）:</b> 現在の診断をさらに絞り込む検査。確定診断(rule-in)に有効。
-          </div>
-          <div style="font-weight:bold;font-size:13px;color:#e65100;margin:8px 0 4px;">反証推奨 — 鑑別除外</div>
-          <div class="results-list" id="falsificationList">
+          <div style="font-weight:bold;font-size:13px;color:#e65100;margin:4px 0;">反証推奨 — 鑑別除外 <span title="現在の診断を覆す可能性がある検査。鑑別疾患の除外(rule-out)に有効。&#10;max(H_after)が高い順にランキング。" style="cursor:help;color:#999;font-weight:normal;font-size:12px;">&#x2753;</span></div>
+          <div class="results-list" id="falsificationList" style="max-height:30vh;">
             <div class="empty-state">推論実行後に表示されます</div>
           </div>
-          <div style="font-weight:bold;font-size:13px;color:#1565c0;margin:12px 0 4px;">確認推奨 — 診断絞込</div>
-          <div class="results-list" id="recommendList">
+          <div style="font-weight:bold;font-size:13px;color:#1565c0;margin:8px 0 4px;">確認推奨 — 診断絞込 <span title="現在の診断をさらに絞り込む検査。確定診断(rule-in)に有効。&#10;情報利得(IG)が高い順にランキング。" style="cursor:help;color:#999;font-weight:normal;font-size:12px;">&#x2753;</span></div>
+          <div class="results-list" id="recommendList" style="max-height:30vh;">
             <div class="empty-state">推論実行後に推奨検査が表示されます</div>
-          </div>
-        </div>
-
-        <!-- Tab: Don't Miss -->
-        <div class="tab-content" id="tab-dontmiss">
-          <div class="results-list" id="dontMissList">
-            <div class="empty-state">推論実行後に見逃し注意疾患が表示されます</div>
           </div>
         </div>
       </div>
@@ -508,8 +496,7 @@ function clearAll() {
   document.getElementById('resultsList').innerHTML = '<div class="empty-state">症状・検査所見を選択して「推論」をクリック</div>';
   document.getElementById('falsificationList').innerHTML = '<div class="empty-state">推論実行後に表示されます</div>';
   document.getElementById('recommendList').innerHTML = '<div class="empty-state">推論実行後に推奨検査が表示されます</div>';
-  document.getElementById('dontMissList').innerHTML = '<div class="empty-state">推論実行後に見逃し注意疾患が表示されます</div>';
-  document.getElementById('warnCount').style.display = 'none';
+  // dontMiss tab removed from UI
   document.getElementById('statsBar').style.display = 'none';
 }
 
@@ -645,32 +632,6 @@ async function runAll() {
           </div>
           <div class="rec-states-detail" id="rec-detail-${i}">${details}</div>`;
         }).join('');
-
-    // ── Don't-miss warnings ──
-    const dontMiss = inferData.dont_miss || [];
-    const warnBadge = document.getElementById('warnCount');
-    if (dontMiss.length > 0) {
-      warnBadge.textContent = dontMiss.length;
-      warnBadge.style.display = 'inline';
-      const SEV_LABELS = {critical:'緊急', high:'重要'};
-      document.getElementById('dontMissList').innerHTML = dontMiss.map(w => {
-        const sevCss = w.severity === 'critical' ? 'critical' : 'high';
-        const sevLabel = SEV_LABELS[w.severity] || w.severity;
-        return `<div class="warn-row">
-          <span class="warn-icon">\u26a0\ufe0f</span>
-          <div class="warn-info">
-            <div class="warn-name">${w.name_ja}</div>
-            <div class="result-id">${w.id}</div>
-          </div>
-          <span class="warn-sev warn-sev-${sevCss}">${sevLabel}</span>
-          <span class="warn-pct">${w.probability}%</span>
-        </div>`;
-      }).join('');
-    } else {
-      warnBadge.style.display = 'none';
-      document.getElementById('dontMissList').innerHTML =
-        '<div class="empty-state">Top-3以外に危険疾患なし</div>';
-    }
 
     // Auto-switch to diagnosis tab
     switchTab('diagnosis');
