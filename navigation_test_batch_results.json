@@ -1,0 +1,8321 @@
+{
+  "date": "2026-03-15T14:07:00.051567",
+  "protocol": "falsification-guided navigation (disc_power=0.5, cf_alpha=0.3)",
+  "summary": {
+    "total": 228,
+    "reached": 153,
+    "not_reached": 75,
+    "reach_rate": 67.1,
+    "avg_steps": 0.4
+  },
+  "cases": [
+    {
+      "case_id": "R01",
+      "expected_id": "D58",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D58",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R03",
+      "expected_id": "D67",
+      "n_initial": 5,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 5.0,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.75,
+          "exp_rank": 3,
+          "exp_prob": 5.6,
+          "top1": "D68",
+          "test": "L15"
+        },
+        {
+          "step": 1,
+          "H": 1.73,
+          "exp_rank": 3,
+          "exp_prob": 8.2,
+          "top1": "D68",
+          "test": "L22"
+        },
+        {
+          "step": 2,
+          "H": 0.64,
+          "exp_rank": 2,
+          "exp_prob": 5.1,
+          "top1": "D68",
+          "test": "L16"
+        },
+        {
+          "step": 3,
+          "H": 0.4,
+          "exp_rank": 2,
+          "exp_prob": 5.0,
+          "top1": "D68",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R04",
+      "expected_id": "D67",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 93.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.36,
+          "exp_rank": 1,
+          "exp_prob": 94.4,
+          "top1": "D67",
+          "test": "L16"
+        },
+        {
+          "step": 1,
+          "H": 0.29,
+          "exp_rank": 1,
+          "exp_prob": 95.7,
+          "top1": "D67",
+          "test": "L22"
+        },
+        {
+          "step": 2,
+          "H": 0.38,
+          "exp_rank": 1,
+          "exp_prob": 93.3,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R05",
+      "expected_id": "D50",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 95.5,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.98,
+          "exp_rank": 1,
+          "exp_prob": 36.0,
+          "top1": "D50",
+          "test": "L27"
+        },
+        {
+          "step": 1,
+          "H": 0.75,
+          "exp_rank": 1,
+          "exp_prob": 90.5,
+          "top1": "D50",
+          "test": "L35"
+        },
+        {
+          "step": 2,
+          "H": 0.08,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D50",
+          "test": "L22"
+        },
+        {
+          "step": 3,
+          "H": 0.36,
+          "exp_rank": 1,
+          "exp_prob": 95.5,
+          "top1": "D50",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R06",
+      "expected_id": "D55",
+      "n_initial": 9,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 75.1,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.65,
+          "exp_rank": 1,
+          "exp_prob": 42.3,
+          "top1": "D55",
+          "test": "L15"
+        },
+        {
+          "step": 1,
+          "H": 1.0,
+          "exp_rank": 1,
+          "exp_prob": 66.3,
+          "top1": "D55",
+          "test": "L16"
+        },
+        {
+          "step": 2,
+          "H": 0.83,
+          "exp_rank": 1,
+          "exp_prob": 75.1,
+          "top1": "D55",
+          "test": "L11"
+        },
+        {
+          "step": 3,
+          "H": 0.6,
+          "exp_rank": 1,
+          "exp_prob": 85.8,
+          "top1": "D55",
+          "test": "L02"
+        },
+        {
+          "step": 4,
+          "H": 0.82,
+          "exp_rank": 1,
+          "exp_prob": 75.1,
+          "top1": "D55",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R07",
+      "expected_id": "D55",
+      "n_initial": 3,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 83.1,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.19,
+          "exp_rank": 1,
+          "exp_prob": 67.5,
+          "top1": "D55",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.67,
+          "exp_rank": 1,
+          "exp_prob": 73.0,
+          "top1": "D55",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 0.91,
+          "exp_rank": 1,
+          "exp_prob": 83.1,
+          "top1": "D55",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R09",
+      "expected_id": "D52",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 71.4,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.04,
+          "exp_rank": 1,
+          "exp_prob": 41.6,
+          "top1": "D52",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 2.19,
+          "exp_rank": 1,
+          "exp_prob": 62.4,
+          "top1": "D52",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.7,
+          "exp_rank": 1,
+          "exp_prob": 71.4,
+          "top1": "D52",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R11",
+      "expected_id": "D03",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 1.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.45,
+          "exp_rank": 9,
+          "exp_prob": 0.6,
+          "top1": "D36",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 1.58,
+          "exp_rank": 4,
+          "exp_prob": 2.6,
+          "top1": "D36",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 0.82,
+          "exp_rank": 5,
+          "exp_prob": 1.2,
+          "top1": "D36",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R12",
+      "expected_id": "D23",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.01,
+          "exp_rank": 1,
+          "exp_prob": 81.7,
+          "top1": "D23",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 0.91,
+          "exp_rank": 1,
+          "exp_prob": 83.3,
+          "top1": "D23",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 0.24,
+          "exp_rank": 1,
+          "exp_prob": 97.2,
+          "top1": "D23",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R13",
+      "expected_id": "D77",
+      "n_initial": 2,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 62.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.18,
+          "exp_rank": 5,
+          "exp_prob": 6.9,
+          "top1": "D15",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.88,
+          "exp_rank": 3,
+          "exp_prob": 12.8,
+          "top1": "D15",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.51,
+          "exp_rank": 1,
+          "exp_prob": 62.8,
+          "top1": "D77",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R14",
+      "expected_id": "D67",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 22.6,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.94,
+          "exp_rank": 3,
+          "exp_prob": 18.1,
+          "top1": "D70",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.74,
+          "exp_rank": 2,
+          "exp_prob": 22.6,
+          "top1": "D97",
+          "test": "L19"
+        },
+        {
+          "step": 2,
+          "H": 2.74,
+          "exp_rank": 2,
+          "exp_prob": 22.6,
+          "top1": "D97",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R16",
+      "expected_id": "D59",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 96.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.18,
+          "exp_rank": 1,
+          "exp_prob": 86.2,
+          "top1": "D59",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 0.36,
+          "exp_rank": 1,
+          "exp_prob": 96.1,
+          "top1": "D59",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R17",
+      "expected_id": "D13",
+      "n_initial": 5,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 32.4,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.14,
+          "exp_rank": 1,
+          "exp_prob": 38.3,
+          "top1": "D13",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 3.09,
+          "exp_rank": 2,
+          "exp_prob": 27.1,
+          "top1": "D14",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.5,
+          "exp_rank": 1,
+          "exp_prob": 37.3,
+          "top1": "D13",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 2.36,
+          "exp_rank": 2,
+          "exp_prob": 32.4,
+          "top1": "D14",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R18",
+      "expected_id": "D05",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 36.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.97,
+          "exp_rank": 2,
+          "exp_prob": 20.5,
+          "top1": "D22",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.34,
+          "exp_rank": 2,
+          "exp_prob": 28.9,
+          "top1": "D22",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 3.09,
+          "exp_rank": 1,
+          "exp_prob": 36.8,
+          "top1": "D05",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R19",
+      "expected_id": "D107",
+      "n_initial": 3,
+      "n_pool": 7,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.3,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.48,
+          "exp_rank": 1,
+          "exp_prob": 22.7,
+          "top1": "D107",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 2.13,
+          "exp_rank": 1,
+          "exp_prob": 50.9,
+          "top1": "D107",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 0.17,
+          "exp_rank": 1,
+          "exp_prob": 98.3,
+          "top1": "D107",
+          "test": "L52"
+        },
+        {
+          "step": 3,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D107",
+          "test": "L11"
+        },
+        {
+          "step": 4,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D107",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R21",
+      "expected_id": "D58",
+      "n_initial": 6,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 98.2,
+      "n_steps": 6,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.43,
+          "exp_rank": 2,
+          "exp_prob": 11.8,
+          "top1": "D44",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 2.65,
+          "exp_rank": 1,
+          "exp_prob": 30.2,
+          "top1": "D58",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.39,
+          "exp_rank": 1,
+          "exp_prob": 73.9,
+          "top1": "D58",
+          "test": "L28"
+        },
+        {
+          "step": 3,
+          "H": 0.26,
+          "exp_rank": 1,
+          "exp_prob": 96.6,
+          "top1": "D58",
+          "test": "L02"
+        },
+        {
+          "step": 4,
+          "H": 0.15,
+          "exp_rank": 1,
+          "exp_prob": 98.2,
+          "top1": "D58",
+          "test": "L18"
+        },
+        {
+          "step": 5,
+          "H": 0.15,
+          "exp_rank": 1,
+          "exp_prob": 98.2,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R23",
+      "expected_id": "D58",
+      "n_initial": 13,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.12,
+          "exp_rank": 1,
+          "exp_prob": 98.5,
+          "top1": "D58",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.15,
+          "exp_rank": 1,
+          "exp_prob": 98.2,
+          "top1": "D58",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R24",
+      "expected_id": "D58",
+      "n_initial": 6,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 15.1,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.37,
+          "exp_rank": 2,
+          "exp_prob": 15.1,
+          "top1": "D14",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R26",
+      "expected_id": "D107",
+      "n_initial": 3,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 6,
+      "final_prob": 2.5,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.4,
+          "exp_rank": 6,
+          "exp_prob": 2.5,
+          "top1": "D26",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R28",
+      "expected_id": "D53",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 92.6,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.19,
+          "exp_rank": 1,
+          "exp_prob": 66.5,
+          "top1": "D53",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.67,
+          "exp_rank": 1,
+          "exp_prob": 90.1,
+          "top1": "D53",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.26,
+          "exp_rank": 1,
+          "exp_prob": 97.2,
+          "top1": "D53",
+          "test": "L45"
+        },
+        {
+          "step": 3,
+          "H": 0.52,
+          "exp_rank": 1,
+          "exp_prob": 92.6,
+          "top1": "D53",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R29",
+      "expected_id": "D103",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 58.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.28,
+          "exp_rank": 1,
+          "exp_prob": 54.6,
+          "top1": "D103",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.58,
+          "exp_rank": 1,
+          "exp_prob": 58.6,
+          "top1": "D103",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R30",
+      "expected_id": "D58",
+      "n_initial": 4,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 25.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.22,
+          "exp_rank": 1,
+          "exp_prob": 19.4,
+          "top1": "D58",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 2.91,
+          "exp_rank": 2,
+          "exp_prob": 25.2,
+          "top1": "D59",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R31",
+      "expected_id": "D23",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 2.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.51,
+          "exp_rank": 6,
+          "exp_prob": 1.6,
+          "top1": "D28",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 2.05,
+          "exp_rank": 4,
+          "exp_prob": 2.8,
+          "top1": "D28",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R33",
+      "expected_id": "D05",
+      "n_initial": 3,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 2,
+      "final_prob": 12.1,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.81,
+          "exp_rank": 3,
+          "exp_prob": 6.0,
+          "top1": "D36",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 5.39,
+          "exp_rank": 2,
+          "exp_prob": 9.1,
+          "top1": "D36",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 4.3,
+          "exp_rank": 1,
+          "exp_prob": 19.5,
+          "top1": "D05",
+          "test": "L17"
+        },
+        {
+          "step": 3,
+          "H": 4.29,
+          "exp_rank": 2,
+          "exp_prob": 12.1,
+          "top1": "D57",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R34",
+      "expected_id": "D50",
+      "n_initial": 4,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 15.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.73,
+          "exp_rank": 2,
+          "exp_prob": 14.1,
+          "top1": "D99",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 3.5,
+          "exp_rank": 2,
+          "exp_prob": 15.4,
+          "top1": "D99",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R35",
+      "expected_id": "D19",
+      "n_initial": 4,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 92.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.36,
+          "exp_rank": 1,
+          "exp_prob": 82.5,
+          "top1": "D19",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.74,
+          "exp_rank": 1,
+          "exp_prob": 92.2,
+          "top1": "D19",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R36",
+      "expected_id": "D17",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 7.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.84,
+          "exp_rank": 2,
+          "exp_prob": 11.5,
+          "top1": "D67",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 0.52,
+          "exp_rank": 2,
+          "exp_prob": 7.7,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R37",
+      "expected_id": "D17",
+      "n_initial": 6,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 46.3,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.27,
+          "exp_rank": 1,
+          "exp_prob": 47.1,
+          "top1": "D17",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 2.15,
+          "exp_rank": 1,
+          "exp_prob": 47.6,
+          "top1": "D17",
+          "test": "L44"
+        },
+        {
+          "step": 2,
+          "H": 1.17,
+          "exp_rank": 2,
+          "exp_prob": 14.0,
+          "top1": "D102",
+          "test": "L14"
+        },
+        {
+          "step": 3,
+          "H": 2.05,
+          "exp_rank": 2,
+          "exp_prob": 22.7,
+          "top1": "D102",
+          "test": "L22"
+        },
+        {
+          "step": 4,
+          "H": 2.06,
+          "exp_rank": 1,
+          "exp_prob": 46.3,
+          "top1": "D17",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R38",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 75.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.61,
+          "exp_rank": 1,
+          "exp_prob": 72.9,
+          "top1": "D17",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.41,
+          "exp_rank": 1,
+          "exp_prob": 75.4,
+          "top1": "D17",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R39",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 32.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.13,
+          "exp_rank": 3,
+          "exp_prob": 13.2,
+          "top1": "D14",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 1.62,
+          "exp_rank": 2,
+          "exp_prob": 32.3,
+          "top1": "D14",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R40",
+      "expected_id": "D17",
+      "n_initial": 3,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 6.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.56,
+          "exp_rank": 6,
+          "exp_prob": 2.1,
+          "top1": "D28",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 3.53,
+          "exp_rank": 4,
+          "exp_prob": 6.5,
+          "top1": "D28",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R41",
+      "expected_id": "D17",
+      "n_initial": 5,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 84.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.37,
+          "exp_rank": 1,
+          "exp_prob": 53.4,
+          "top1": "D17",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 1.39,
+          "exp_rank": 1,
+          "exp_prob": 84.1,
+          "top1": "D17",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R42",
+      "expected_id": "D104",
+      "n_initial": 4,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 11.9,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.67,
+          "exp_rank": 7,
+          "exp_prob": 4.2,
+          "top1": "D102",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 3.87,
+          "exp_rank": 5,
+          "exp_prob": 9.9,
+          "top1": "D120",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 3.49,
+          "exp_rank": 3,
+          "exp_prob": 16.2,
+          "top1": "D05",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 2.97,
+          "exp_rank": 3,
+          "exp_prob": 11.9,
+          "top1": "D05",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R44",
+      "expected_id": "D53",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 90.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.23,
+          "exp_rank": 1,
+          "exp_prob": 49.2,
+          "top1": "D53",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.23,
+          "exp_rank": 2,
+          "exp_prob": 46.3,
+          "top1": "D58",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.56,
+          "exp_rank": 1,
+          "exp_prob": 90.8,
+          "top1": "D53",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R45",
+      "expected_id": "D53",
+      "n_initial": 5,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 91.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.76,
+          "exp_rank": 1,
+          "exp_prob": 90.5,
+          "top1": "D53",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 0.62,
+          "exp_rank": 1,
+          "exp_prob": 91.2,
+          "top1": "D53",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R46",
+      "expected_id": "D19",
+      "n_initial": 3,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 29.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.05,
+          "exp_rank": 1,
+          "exp_prob": 16.5,
+          "top1": "D19",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 3.7,
+          "exp_rank": 1,
+          "exp_prob": 30.3,
+          "top1": "D19",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 3.58,
+          "exp_rank": 1,
+          "exp_prob": 29.9,
+          "top1": "D19",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R47",
+      "expected_id": "D87",
+      "n_initial": 5,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 16,
+      "final_prob": 1.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.23,
+          "exp_rank": 25,
+          "exp_prob": 0.6,
+          "top1": "D104",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 4.06,
+          "exp_rank": 22,
+          "exp_prob": 0.8,
+          "top1": "D104",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 3.69,
+          "exp_rank": 16,
+          "exp_prob": 1.0,
+          "top1": "D104",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R48",
+      "expected_id": "D87",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 24.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.85,
+          "exp_rank": 1,
+          "exp_prob": 17.4,
+          "top1": "D87",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 3.59,
+          "exp_rank": 1,
+          "exp_prob": 24.8,
+          "top1": "D87",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R49",
+      "expected_id": "D62",
+      "n_initial": 9,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 90.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.56,
+          "exp_rank": 1,
+          "exp_prob": 40.4,
+          "top1": "D62",
+          "test": "L24"
+        },
+        {
+          "step": 1,
+          "H": 0.71,
+          "exp_rank": 1,
+          "exp_prob": 90.5,
+          "top1": "D62",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R50",
+      "expected_id": "D62",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 34.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.0,
+          "exp_rank": 5,
+          "exp_prob": 2.9,
+          "top1": "D35",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 2.07,
+          "exp_rank": 2,
+          "exp_prob": 34.4,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R51",
+      "expected_id": "D96",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 16,
+      "final_prob": 0.1,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.86,
+          "exp_rank": 16,
+          "exp_prob": 0.1,
+          "top1": "D45",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R52",
+      "expected_id": "D96",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 1.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.6,
+          "exp_rank": 3,
+          "exp_prob": 1.5,
+          "top1": "D67",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 0.56,
+          "exp_rank": 3,
+          "exp_prob": 1.8,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R53",
+      "expected_id": "D29",
+      "n_initial": 6,
+      "n_pool": 8,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 3,
+      "final_prob": 15.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.19,
+          "exp_rank": 2,
+          "exp_prob": 28.9,
+          "top1": "D23",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 2.59,
+          "exp_rank": 1,
+          "exp_prob": 34.4,
+          "top1": "D29",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 1.92,
+          "exp_rank": 3,
+          "exp_prob": 15.2,
+          "top1": "D23",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R54",
+      "expected_id": "D97",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 77.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.27,
+          "exp_rank": 1,
+          "exp_prob": 56.0,
+          "top1": "D97",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 0.91,
+          "exp_rank": 1,
+          "exp_prob": 71.9,
+          "top1": "D97",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 0.8,
+          "exp_rank": 1,
+          "exp_prob": 77.9,
+          "top1": "D97",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R55",
+      "expected_id": "D94",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 17.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.81,
+          "exp_rank": 5,
+          "exp_prob": 6.3,
+          "top1": "D67",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 2.63,
+          "exp_rank": 5,
+          "exp_prob": 7.5,
+          "top1": "D67",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 2.78,
+          "exp_rank": 3,
+          "exp_prob": 17.9,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R56",
+      "expected_id": "D14",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 12.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.47,
+          "exp_rank": 1,
+          "exp_prob": 93.7,
+          "top1": "D14",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.24,
+          "exp_rank": 1,
+          "exp_prob": 78.0,
+          "top1": "D14",
+          "test": "L22"
+        },
+        {
+          "step": 2,
+          "H": 2.04,
+          "exp_rank": 2,
+          "exp_prob": 32.3,
+          "top1": "D53",
+          "test": "L11"
+        },
+        {
+          "step": 3,
+          "H": 1.41,
+          "exp_rank": 2,
+          "exp_prob": 12.8,
+          "top1": "D53",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R57",
+      "expected_id": "D15",
+      "n_initial": 13,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D15",
+          "test": "L10"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D15",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D15",
+          "test": "L44"
+        },
+        {
+          "step": 3,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D15",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D15",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R58",
+      "expected_id": "D59",
+      "n_initial": 5,
+      "n_pool": 8,
+      "reached": true,
+      "reached_step": 5,
+      "final_rank": 1,
+      "final_prob": 96.1,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.97,
+          "exp_rank": 5,
+          "exp_prob": 13.8,
+          "top1": "D18",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 2.97,
+          "exp_rank": 5,
+          "exp_prob": 13.8,
+          "top1": "D18",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 1.42,
+          "exp_rank": 2,
+          "exp_prob": 27.4,
+          "top1": "D58",
+          "test": "L28"
+        },
+        {
+          "step": 3,
+          "H": 1.22,
+          "exp_rank": 2,
+          "exp_prob": 40.0,
+          "top1": "D58",
+          "test": "L16"
+        },
+        {
+          "step": 4,
+          "H": 1.3,
+          "exp_rank": 2,
+          "exp_prob": 39.7,
+          "top1": "D58",
+          "test": "L02"
+        },
+        {
+          "step": 5,
+          "H": 1.26,
+          "exp_rank": 1,
+          "exp_prob": 73.8,
+          "top1": "D59",
+          "test": "L01"
+        },
+        {
+          "step": 6,
+          "H": 0.35,
+          "exp_rank": 1,
+          "exp_prob": 96.1,
+          "top1": "D59",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R59",
+      "expected_id": "D23",
+      "n_initial": 9,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 94.7,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.73,
+          "exp_rank": 1,
+          "exp_prob": 55.6,
+          "top1": "D23",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.02,
+          "exp_rank": 1,
+          "exp_prob": 68.8,
+          "top1": "D23",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.93,
+          "exp_rank": 1,
+          "exp_prob": 69.6,
+          "top1": "D23",
+          "test": "L44"
+        },
+        {
+          "step": 3,
+          "H": 0.31,
+          "exp_rank": 1,
+          "exp_prob": 94.7,
+          "top1": "D23",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R60",
+      "expected_id": "D23",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 33.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.7,
+          "exp_rank": 2,
+          "exp_prob": 29.4,
+          "top1": "D15",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.75,
+          "exp_rank": 2,
+          "exp_prob": 33.4,
+          "top1": "D15",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R61",
+      "expected_id": "D23",
+      "n_initial": 9,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 85.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.07,
+          "exp_rank": 1,
+          "exp_prob": 80.1,
+          "top1": "D23",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 0.93,
+          "exp_rank": 1,
+          "exp_prob": 79.2,
+          "top1": "D23",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.7,
+          "exp_rank": 1,
+          "exp_prob": 85.2,
+          "top1": "D23",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R62",
+      "expected_id": "D16",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 25.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.39,
+          "exp_rank": 2,
+          "exp_prob": 25.1,
+          "top1": "D63",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.37,
+          "exp_rank": 2,
+          "exp_prob": 25.2,
+          "top1": "D63",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R63",
+      "expected_id": "D91",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 16.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.42,
+          "exp_rank": 3,
+          "exp_prob": 19.7,
+          "top1": "D24",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.88,
+          "exp_rank": 3,
+          "exp_prob": 16.2,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R64",
+      "expected_id": "D91",
+      "n_initial": 4,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 53.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.96,
+          "exp_rank": 1,
+          "exp_prob": 60.9,
+          "top1": "D91",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.86,
+          "exp_rank": 1,
+          "exp_prob": 62.3,
+          "top1": "D91",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 1.41,
+          "exp_rank": 1,
+          "exp_prob": 53.0,
+          "top1": "D91",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R65",
+      "expected_id": "D28",
+      "n_initial": 5,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 3.9,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.05,
+          "exp_rank": 36,
+          "exp_prob": 0.4,
+          "top1": "D57",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 3.26,
+          "exp_rank": 32,
+          "exp_prob": 0.3,
+          "top1": "D24",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 2.56,
+          "exp_rank": 9,
+          "exp_prob": 1.3,
+          "top1": "D57",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 3.05,
+          "exp_rank": 3,
+          "exp_prob": 4.1,
+          "top1": "D57",
+          "test": "L04"
+        },
+        {
+          "step": 4,
+          "H": 2.89,
+          "exp_rank": 3,
+          "exp_prob": 3.9,
+          "top1": "D57",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R66",
+      "expected_id": "D28",
+      "n_initial": 13,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 14.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.39,
+          "exp_rank": 3,
+          "exp_prob": 0.5,
+          "top1": "D23",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.89,
+          "exp_rank": 2,
+          "exp_prob": 14.2,
+          "top1": "D23",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R67",
+      "expected_id": "D66",
+      "n_initial": 3,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 15.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.23,
+          "exp_rank": 5,
+          "exp_prob": 3.8,
+          "top1": "D15",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 4.65,
+          "exp_rank": 1,
+          "exp_prob": 15.8,
+          "top1": "D66",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R68",
+      "expected_id": "D90",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 72.0,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.95,
+          "exp_rank": 1,
+          "exp_prob": 70.2,
+          "top1": "D90",
+          "test": "L15"
+        },
+        {
+          "step": 1,
+          "H": 2.38,
+          "exp_rank": 1,
+          "exp_prob": 59.7,
+          "top1": "D90",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 1.82,
+          "exp_rank": 1,
+          "exp_prob": 70.6,
+          "top1": "D90",
+          "test": "L09"
+        },
+        {
+          "step": 3,
+          "H": 1.73,
+          "exp_rank": 1,
+          "exp_prob": 72.0,
+          "top1": "D90",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R69",
+      "expected_id": "D19",
+      "n_initial": 3,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 9.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.07,
+          "exp_rank": 4,
+          "exp_prob": 6.7,
+          "top1": "D93",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 4.48,
+          "exp_rank": 3,
+          "exp_prob": 6.3,
+          "top1": "D93",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 4.06,
+          "exp_rank": 5,
+          "exp_prob": 4.3,
+          "top1": "D93",
+          "test": "L09"
+        },
+        {
+          "step": 3,
+          "H": 3.95,
+          "exp_rank": 3,
+          "exp_prob": 9.8,
+          "top1": "D93",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R70",
+      "expected_id": "D19",
+      "n_initial": 2,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 9,
+      "final_prob": 2.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.48,
+          "exp_rank": 35,
+          "exp_prob": 0.9,
+          "top1": "D57",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 5.73,
+          "exp_rank": 9,
+          "exp_prob": 2.3,
+          "top1": "D57",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R71",
+      "expected_id": "D77",
+      "n_initial": 3,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 55.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.62,
+          "exp_rank": 6,
+          "exp_prob": 4.5,
+          "top1": "D28",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.37,
+          "exp_rank": 4,
+          "exp_prob": 8.5,
+          "top1": "D28",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.63,
+          "exp_rank": 1,
+          "exp_prob": 55.8,
+          "top1": "D77",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R72",
+      "expected_id": "D77",
+      "n_initial": 12,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 95.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.42,
+          "exp_rank": 1,
+          "exp_prob": 93.5,
+          "top1": "D77",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.31,
+          "exp_rank": 1,
+          "exp_prob": 95.3,
+          "top1": "D77",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R73",
+      "expected_id": "D13",
+      "n_initial": 4,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 22.0,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.34,
+          "exp_rank": 3,
+          "exp_prob": 22.0,
+          "top1": "D95",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R74",
+      "expected_id": "D31",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 36.5,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.69,
+          "exp_rank": 2,
+          "exp_prob": 16.6,
+          "top1": "D124",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 2.29,
+          "exp_rank": 2,
+          "exp_prob": 38.9,
+          "top1": "D24",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 1.79,
+          "exp_rank": 2,
+          "exp_prob": 36.5,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R75",
+      "expected_id": "D32",
+      "n_initial": 3,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 22.6,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.91,
+          "exp_rank": 2,
+          "exp_prob": 22.6,
+          "top1": "D65",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R76",
+      "expected_id": "D29",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 36.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.95,
+          "exp_rank": 2,
+          "exp_prob": 23.6,
+          "top1": "D100",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 2.21,
+          "exp_rank": 2,
+          "exp_prob": 36.1,
+          "top1": "D100",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R77",
+      "expected_id": "D102",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.4,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.24,
+          "exp_rank": 1,
+          "exp_prob": 97.7,
+          "top1": "D102",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.3,
+          "exp_rank": 1,
+          "exp_prob": 96.8,
+          "top1": "D102",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 0.16,
+          "exp_rank": 1,
+          "exp_prob": 98.5,
+          "top1": "D102",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.4,
+          "top1": "D102",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R78",
+      "expected_id": "D102",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 20.0,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.02,
+          "exp_rank": 2,
+          "exp_prob": 20.0,
+          "top1": "D07",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R79",
+      "expected_id": "D18",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.5,
+          "top1": "D18",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D18",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D18",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D18",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R80",
+      "expected_id": "D18",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 83.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.47,
+          "exp_rank": 1,
+          "exp_prob": 46.0,
+          "top1": "D18",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.07,
+          "exp_rank": 1,
+          "exp_prob": 83.0,
+          "top1": "D18",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R81",
+      "expected_id": "D101",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 12.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.15,
+          "exp_rank": 3,
+          "exp_prob": 8.7,
+          "top1": "D14",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.25,
+          "exp_rank": 3,
+          "exp_prob": 12.3,
+          "top1": "D14",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R82",
+      "expected_id": "D101",
+      "n_initial": 9,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 75.7,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.51,
+          "exp_rank": 1,
+          "exp_prob": 75.7,
+          "top1": "D101",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R83",
+      "expected_id": "D12",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 27.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.55,
+          "exp_rank": 2,
+          "exp_prob": 26.4,
+          "top1": "D39",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.25,
+          "exp_rank": 2,
+          "exp_prob": 27.6,
+          "top1": "D39",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R84",
+      "expected_id": "D09",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 95.9,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.3,
+          "exp_rank": 1,
+          "exp_prob": 95.9,
+          "top1": "D09",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R85",
+      "expected_id": "D25",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 62.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.79,
+          "exp_rank": 1,
+          "exp_prob": 58.5,
+          "top1": "D25",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.61,
+          "exp_rank": 1,
+          "exp_prob": 62.5,
+          "top1": "D25",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R86",
+      "expected_id": "D57",
+      "n_initial": 10,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 0.1,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.08,
+          "exp_rank": 2,
+          "exp_prob": 0.9,
+          "top1": "D24",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 0.02,
+          "exp_rank": 2,
+          "exp_prob": 0.2,
+          "top1": "D24",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 0.02,
+          "exp_rank": 2,
+          "exp_prob": 0.1,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R88",
+      "expected_id": "D24",
+      "n_initial": 11,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D24",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R89",
+      "expected_id": "D45",
+      "n_initial": 5,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 5.0,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.58,
+          "exp_rank": 5,
+          "exp_prob": 5.0,
+          "top1": "D104",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R90",
+      "expected_id": "D45",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 3.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.22,
+          "exp_rank": 5,
+          "exp_prob": 4.1,
+          "top1": "D107",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 2.93,
+          "exp_rank": 5,
+          "exp_prob": 6.5,
+          "top1": "D107",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 2.07,
+          "exp_rank": 4,
+          "exp_prob": 3.3,
+          "top1": "D107",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R91",
+      "expected_id": "D24",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 3.2,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.29,
+          "exp_rank": 2,
+          "exp_prob": 3.2,
+          "top1": "D57",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R92",
+      "expected_id": "D10",
+      "n_initial": 5,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 65.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.05,
+          "exp_rank": 1,
+          "exp_prob": 51.8,
+          "top1": "D10",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.36,
+          "exp_rank": 1,
+          "exp_prob": 65.9,
+          "top1": "D10",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R93",
+      "expected_id": "D10",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 73.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.4,
+          "exp_rank": 1,
+          "exp_prob": 65.0,
+          "top1": "D10",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 1.9,
+          "exp_rank": 1,
+          "exp_prob": 73.2,
+          "top1": "D10",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R94",
+      "expected_id": "D10",
+      "n_initial": 4,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 65.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.82,
+          "exp_rank": 1,
+          "exp_prob": 57.4,
+          "top1": "D10",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.35,
+          "exp_rank": 1,
+          "exp_prob": 65.7,
+          "top1": "D10",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R97",
+      "expected_id": "D11",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 55.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.44,
+          "exp_rank": 1,
+          "exp_prob": 60.2,
+          "top1": "D11",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.72,
+          "exp_rank": 1,
+          "exp_prob": 55.6,
+          "top1": "D11",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R99",
+      "expected_id": "D84",
+      "n_initial": 5,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 6,
+      "final_prob": 1.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.74,
+          "exp_rank": 7,
+          "exp_prob": 1.8,
+          "top1": "D102",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 1.91,
+          "exp_rank": 6,
+          "exp_prob": 1.8,
+          "top1": "D95",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R100",
+      "expected_id": "D84",
+      "n_initial": 7,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 94.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.89,
+          "exp_rank": 2,
+          "exp_prob": 27.4,
+          "top1": "D13",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 0.47,
+          "exp_rank": 1,
+          "exp_prob": 94.1,
+          "top1": "D84",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R103",
+      "expected_id": "D93",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 69.9,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.33,
+          "exp_rank": 9,
+          "exp_prob": 2.7,
+          "top1": "D24",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 2.96,
+          "exp_rank": 1,
+          "exp_prob": 35.3,
+          "top1": "D93",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 1.97,
+          "exp_rank": 1,
+          "exp_prob": 54.9,
+          "top1": "D93",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.39,
+          "exp_rank": 1,
+          "exp_prob": 69.9,
+          "top1": "D93",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R104",
+      "expected_id": "D93",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.6,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.18,
+          "exp_rank": 1,
+          "exp_prob": 55.6,
+          "top1": "D93",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 0.36,
+          "exp_rank": 1,
+          "exp_prob": 95.9,
+          "top1": "D93",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.12,
+          "exp_rank": 1,
+          "exp_prob": 98.9,
+          "top1": "D93",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.6,
+          "top1": "D93",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R105",
+      "expected_id": "D02",
+      "n_initial": 7,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 2.2,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.82,
+          "exp_rank": 4,
+          "exp_prob": 2.2,
+          "top1": "D03",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R106",
+      "expected_id": "D74",
+      "n_initial": 5,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 93.5,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.58,
+          "exp_rank": 1,
+          "exp_prob": 93.5,
+          "top1": "D74",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R107",
+      "expected_id": "D74",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 84.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.15,
+          "exp_rank": 1,
+          "exp_prob": 72.5,
+          "top1": "D74",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.29,
+          "exp_rank": 1,
+          "exp_prob": 84.2,
+          "top1": "D74",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R110",
+      "expected_id": "D60",
+      "n_initial": 3,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 7,
+      "final_prob": 3.5,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.8,
+          "exp_rank": 20,
+          "exp_prob": 0.9,
+          "top1": "D20",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 4.84,
+          "exp_rank": 14,
+          "exp_prob": 1.5,
+          "top1": "D20",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 5.18,
+          "exp_rank": 7,
+          "exp_prob": 3.5,
+          "top1": "D05",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R111",
+      "expected_id": "D22",
+      "n_initial": 5,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 86.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.87,
+          "exp_rank": 1,
+          "exp_prob": 76.3,
+          "top1": "D22",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 1.18,
+          "exp_rank": 1,
+          "exp_prob": 86.8,
+          "top1": "D22",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R112",
+      "expected_id": "D51",
+      "n_initial": 11,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 66.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.94,
+          "exp_rank": 2,
+          "exp_prob": 39.7,
+          "top1": "D28",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.68,
+          "exp_rank": 1,
+          "exp_prob": 66.9,
+          "top1": "D51",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R113",
+      "expected_id": "D38",
+      "n_initial": 6,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 60.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.1,
+          "exp_rank": 1,
+          "exp_prob": 54.8,
+          "top1": "D38",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.65,
+          "exp_rank": 1,
+          "exp_prob": 60.5,
+          "top1": "D38",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R114",
+      "expected_id": "D56",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 52.1,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.32,
+          "exp_rank": 1,
+          "exp_prob": 82.0,
+          "top1": "D56",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.55,
+          "exp_rank": 1,
+          "exp_prob": 52.5,
+          "top1": "D56",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 2.04,
+          "exp_rank": 1,
+          "exp_prob": 61.7,
+          "top1": "D56",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 2.32,
+          "exp_rank": 1,
+          "exp_prob": 52.1,
+          "top1": "D56",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R115",
+      "expected_id": "D98",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 68.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.06,
+          "exp_rank": 1,
+          "exp_prob": 83.9,
+          "top1": "D98",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.49,
+          "exp_rank": 1,
+          "exp_prob": 68.7,
+          "top1": "D98",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R116",
+      "expected_id": "D99",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 11,
+      "final_prob": 0.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.17,
+          "exp_rank": 13,
+          "exp_prob": 0.4,
+          "top1": "D128",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 1.82,
+          "exp_rank": 11,
+          "exp_prob": 0.7,
+          "top1": "D128",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R117",
+      "expected_id": "D95",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 34.1,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.03,
+          "exp_rank": 1,
+          "exp_prob": 34.1,
+          "top1": "D95",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R118",
+      "expected_id": "D73",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 28.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.99,
+          "exp_rank": 1,
+          "exp_prob": 26.0,
+          "top1": "D73",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 3.84,
+          "exp_rank": 1,
+          "exp_prob": 28.2,
+          "top1": "D73",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R119",
+      "expected_id": "D88",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 65.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.76,
+          "exp_rank": 1,
+          "exp_prob": 60.7,
+          "top1": "D88",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.2,
+          "exp_rank": 1,
+          "exp_prob": 66.8,
+          "top1": "D88",
+          "test": "L17"
+        },
+        {
+          "step": 2,
+          "H": 1.02,
+          "exp_rank": 1,
+          "exp_prob": 65.9,
+          "top1": "D88",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R121",
+      "expected_id": "D72",
+      "n_initial": 11,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.9,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D72",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R122",
+      "expected_id": "D68",
+      "n_initial": 12,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 30.2,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.48,
+          "exp_rank": 1,
+          "exp_prob": 30.2,
+          "top1": "D68",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R123",
+      "expected_id": "D78",
+      "n_initial": 8,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 14.3,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.5,
+          "exp_rank": 3,
+          "exp_prob": 0.6,
+          "top1": "D24",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 0.2,
+          "exp_rank": 2,
+          "exp_prob": 0.9,
+          "top1": "D24",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 0.13,
+          "exp_rank": 2,
+          "exp_prob": 1.1,
+          "top1": "D24",
+          "test": "L17"
+        },
+        {
+          "step": 3,
+          "H": 0.25,
+          "exp_rank": 2,
+          "exp_prob": 4.0,
+          "top1": "D24",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 0.61,
+          "exp_rank": 2,
+          "exp_prob": 14.3,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R124",
+      "expected_id": "D75",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 8.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.97,
+          "exp_rank": 3,
+          "exp_prob": 3.5,
+          "top1": "D24",
+          "test": "L17"
+        },
+        {
+          "step": 1,
+          "H": 0.55,
+          "exp_rank": 2,
+          "exp_prob": 8.3,
+          "top1": "D24",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R125",
+      "expected_id": "D89",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 11.2,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.88,
+          "exp_rank": 3,
+          "exp_prob": 11.2,
+          "top1": "D13",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R126",
+      "expected_id": "D100",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 5.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.04,
+          "exp_rank": 6,
+          "exp_prob": 1.3,
+          "top1": "D28",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.76,
+          "exp_rank": 3,
+          "exp_prob": 5.2,
+          "top1": "D28",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R127",
+      "expected_id": "D46",
+      "n_initial": 12,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.3,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D46",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R128",
+      "expected_id": "D49",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 95.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.49,
+          "exp_rank": 2,
+          "exp_prob": 13.1,
+          "top1": "D104",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 2.69,
+          "exp_rank": 1,
+          "exp_prob": 59.7,
+          "top1": "D49",
+          "test": "L27"
+        },
+        {
+          "step": 2,
+          "H": 0.48,
+          "exp_rank": 1,
+          "exp_prob": 95.2,
+          "top1": "D49",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R129",
+      "expected_id": "D61",
+      "n_initial": 6,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 4.4,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.08,
+          "exp_rank": 10,
+          "exp_prob": 2.0,
+          "top1": "D104",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 2.82,
+          "exp_rank": 6,
+          "exp_prob": 3.4,
+          "top1": "D104",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 2.96,
+          "exp_rank": 5,
+          "exp_prob": 4.4,
+          "top1": "D104",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R130",
+      "expected_id": "D63",
+      "n_initial": 10,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 49.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.29,
+          "exp_rank": 8,
+          "exp_prob": 5.5,
+          "top1": "D28",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 2.91,
+          "exp_rank": 1,
+          "exp_prob": 49.1,
+          "top1": "D63",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R131",
+      "expected_id": "D81",
+      "n_initial": 6,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 26.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.43,
+          "exp_rank": 1,
+          "exp_prob": 35.0,
+          "top1": "D81",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.8,
+          "exp_rank": 2,
+          "exp_prob": 22.3,
+          "top1": "D51",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 3.36,
+          "exp_rank": 2,
+          "exp_prob": 26.2,
+          "top1": "D51",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R132",
+      "expected_id": "D83",
+      "n_initial": 8,
+      "n_pool": 6,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 10.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.48,
+          "exp_rank": 4,
+          "exp_prob": 4.1,
+          "top1": "D112",
+          "test": "L22"
+        },
+        {
+          "step": 1,
+          "H": 1.25,
+          "exp_rank": 2,
+          "exp_prob": 13.0,
+          "top1": "D68",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.61,
+          "exp_rank": 2,
+          "exp_prob": 10.0,
+          "top1": "D68",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R133",
+      "expected_id": "D37",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 15.7,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.24,
+          "exp_rank": 3,
+          "exp_prob": 15.7,
+          "top1": "D10",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R134",
+      "expected_id": "D65",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 80.1,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.86,
+          "exp_rank": 1,
+          "exp_prob": 80.1,
+          "top1": "D65",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R135",
+      "expected_id": "D92",
+      "n_initial": 6,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 14.6,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.68,
+          "exp_rank": 4,
+          "exp_prob": 13.7,
+          "top1": "D67",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 2.49,
+          "exp_rank": 4,
+          "exp_prob": 12.3,
+          "top1": "D67",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 2.38,
+          "exp_rank": 3,
+          "exp_prob": 14.6,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R136",
+      "expected_id": "D04",
+      "n_initial": 12,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 0.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.01,
+          "exp_rank": 3,
+          "exp_prob": 0.0,
+          "top1": "D33",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 3,
+          "exp_prob": 0.0,
+          "top1": "D33",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 3,
+          "exp_prob": 0.0,
+          "top1": "D33",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R137",
+      "expected_id": "D07",
+      "n_initial": 10,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 26.9,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.81,
+          "exp_rank": 1,
+          "exp_prob": 74.1,
+          "top1": "D07",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.77,
+          "exp_rank": 1,
+          "exp_prob": 74.5,
+          "top1": "D07",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.63,
+          "exp_rank": 1,
+          "exp_prob": 76.3,
+          "top1": "D07",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 3.22,
+          "exp_rank": 1,
+          "exp_prob": 26.9,
+          "top1": "D07",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R138",
+      "expected_id": "D08",
+      "n_initial": 9,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 33.6,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.9,
+          "exp_rank": 1,
+          "exp_prob": 89.4,
+          "top1": "D08",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 3.07,
+          "exp_rank": 1,
+          "exp_prob": 28.5,
+          "top1": "D08",
+          "test": "L05"
+        },
+        {
+          "step": 2,
+          "H": 2.36,
+          "exp_rank": 1,
+          "exp_prob": 33.6,
+          "top1": "D08",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R139",
+      "expected_id": "D20",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 34,
+      "final_prob": 0.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.66,
+          "exp_rank": 34,
+          "exp_prob": 0.4,
+          "top1": "D84",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 3.11,
+          "exp_rank": 34,
+          "exp_prob": 0.1,
+          "top1": "D82",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R140",
+      "expected_id": "D26",
+      "n_initial": 10,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.0,
+          "exp_rank": 1,
+          "exp_prob": 85.9,
+          "top1": "D26",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.5,
+          "top1": "D26",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D26",
+          "test": "L09"
+        },
+        {
+          "step": 3,
+          "H": 0.03,
+          "exp_rank": 1,
+          "exp_prob": 99.8,
+          "top1": "D26",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R141",
+      "expected_id": "D27",
+      "n_initial": 3,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 79.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.26,
+          "exp_rank": 1,
+          "exp_prob": 69.0,
+          "top1": "D27",
+          "test": "L31"
+        },
+        {
+          "step": 1,
+          "H": 1.34,
+          "exp_rank": 1,
+          "exp_prob": 83.5,
+          "top1": "D27",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.51,
+          "exp_rank": 1,
+          "exp_prob": 79.9,
+          "top1": "D27",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R142",
+      "expected_id": "D30",
+      "n_initial": 13,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.11,
+          "exp_rank": 1,
+          "exp_prob": 99.1,
+          "top1": "D30",
+          "test": "L31"
+        },
+        {
+          "step": 1,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D30",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D30",
+          "test": "L05"
+        },
+        {
+          "step": 3,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D30",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R143",
+      "expected_id": "D34",
+      "n_initial": 10,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D34",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D34",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D34",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R144",
+      "expected_id": "D35",
+      "n_initial": 13,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 90.7,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.44,
+          "exp_rank": 1,
+          "exp_prob": 64.5,
+          "top1": "D35",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 1.62,
+          "exp_rank": 2,
+          "exp_prob": 34.1,
+          "top1": "D36",
+          "test": "L35"
+        },
+        {
+          "step": 2,
+          "H": 0.63,
+          "exp_rank": 1,
+          "exp_prob": 88.4,
+          "top1": "D35",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 0.49,
+          "exp_rank": 1,
+          "exp_prob": 90.5,
+          "top1": "D35",
+          "test": "L14"
+        },
+        {
+          "step": 4,
+          "H": 0.5,
+          "exp_rank": 1,
+          "exp_prob": 90.4,
+          "top1": "D35",
+          "test": "L09"
+        },
+        {
+          "step": 5,
+          "H": 0.5,
+          "exp_rank": 1,
+          "exp_prob": 90.4,
+          "top1": "D35",
+          "test": "L01"
+        },
+        {
+          "step": 6,
+          "H": 0.48,
+          "exp_rank": 1,
+          "exp_prob": 90.7,
+          "top1": "D35",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R145",
+      "expected_id": "D36",
+      "n_initial": 10,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 85.0,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.79,
+          "exp_rank": 2,
+          "exp_prob": 29.7,
+          "top1": "D102",
+          "test": "L44"
+        },
+        {
+          "step": 1,
+          "H": 0.87,
+          "exp_rank": 2,
+          "exp_prob": 18.0,
+          "top1": "D102",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.08,
+          "exp_rank": 1,
+          "exp_prob": 61.4,
+          "top1": "D36",
+          "test": "L09"
+        },
+        {
+          "step": 3,
+          "H": 1.06,
+          "exp_rank": 1,
+          "exp_prob": 61.5,
+          "top1": "D36",
+          "test": "L11"
+        },
+        {
+          "step": 4,
+          "H": 0.89,
+          "exp_rank": 2,
+          "exp_prob": 26.6,
+          "top1": "D102",
+          "test": "L35"
+        },
+        {
+          "step": 5,
+          "H": 0.62,
+          "exp_rank": 1,
+          "exp_prob": 85.2,
+          "top1": "D36",
+          "test": "L01"
+        },
+        {
+          "step": 6,
+          "H": 0.65,
+          "exp_rank": 1,
+          "exp_prob": 85.0,
+          "top1": "D36",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R146",
+      "expected_id": "D39",
+      "n_initial": 5,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 9.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.59,
+          "exp_rank": 4,
+          "exp_prob": 8.5,
+          "top1": "D12",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 4.27,
+          "exp_rank": 4,
+          "exp_prob": 9.6,
+          "top1": "D12",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R147",
+      "expected_id": "D40",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 68.6,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.2,
+          "exp_rank": 1,
+          "exp_prob": 46.6,
+          "top1": "D40",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 1.58,
+          "exp_rank": 1,
+          "exp_prob": 55.8,
+          "top1": "D40",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 1.42,
+          "exp_rank": 1,
+          "exp_prob": 68.6,
+          "top1": "D40",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R148",
+      "expected_id": "D41",
+      "n_initial": 4,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 44.7,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.77,
+          "exp_rank": 1,
+          "exp_prob": 24.4,
+          "top1": "D41",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 2.72,
+          "exp_rank": 1,
+          "exp_prob": 43.1,
+          "top1": "D41",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.39,
+          "exp_rank": 1,
+          "exp_prob": 44.7,
+          "top1": "D41",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R149",
+      "expected_id": "D42",
+      "n_initial": 13,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 67.9,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.58,
+          "exp_rank": 1,
+          "exp_prob": 94.1,
+          "top1": "D42",
+          "test": "L05"
+        },
+        {
+          "step": 1,
+          "H": 0.24,
+          "exp_rank": 1,
+          "exp_prob": 97.7,
+          "top1": "D42",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 0.2,
+          "exp_rank": 1,
+          "exp_prob": 98.1,
+          "top1": "D42",
+          "test": "L14"
+        },
+        {
+          "step": 3,
+          "H": 0.39,
+          "exp_rank": 1,
+          "exp_prob": 96.0,
+          "top1": "D42",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 1.62,
+          "exp_rank": 1,
+          "exp_prob": 67.9,
+          "top1": "D42",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R150",
+      "expected_id": "D43",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 96.7,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D43",
+          "test": "L05"
+        },
+        {
+          "step": 1,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D43",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 0.2,
+          "exp_rank": 1,
+          "exp_prob": 97.6,
+          "top1": "D43",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 0.25,
+          "exp_rank": 1,
+          "exp_prob": 96.9,
+          "top1": "D43",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 0.26,
+          "exp_rank": 1,
+          "exp_prob": 96.7,
+          "top1": "D43",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R151",
+      "expected_id": "D47",
+      "n_initial": 13,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D47",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D47",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D47",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R153",
+      "expected_id": "D64",
+      "n_initial": 10,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 44.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.68,
+          "exp_rank": 2,
+          "exp_prob": 35.5,
+          "top1": "D115",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.55,
+          "exp_rank": 2,
+          "exp_prob": 39.0,
+          "top1": "D115",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 1.43,
+          "exp_rank": 2,
+          "exp_prob": 44.3,
+          "top1": "D115",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R154",
+      "expected_id": "D69",
+      "n_initial": 10,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 69.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.02,
+          "exp_rank": 3,
+          "exp_prob": 14.1,
+          "top1": "D14",
+          "test": "L31"
+        },
+        {
+          "step": 1,
+          "H": 1.74,
+          "exp_rank": 1,
+          "exp_prob": 69.8,
+          "top1": "D69",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R155",
+      "expected_id": "D70",
+      "n_initial": 11,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 54.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.96,
+          "exp_rank": 2,
+          "exp_prob": 21.0,
+          "top1": "D108",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.17,
+          "exp_rank": 1,
+          "exp_prob": 61.4,
+          "top1": "D70",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.4,
+          "exp_rank": 1,
+          "exp_prob": 54.8,
+          "top1": "D70",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R156",
+      "expected_id": "D76",
+      "n_initial": 6,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 20.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.04,
+          "exp_rank": 2,
+          "exp_prob": 9.2,
+          "top1": "D37",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 4.89,
+          "exp_rank": 1,
+          "exp_prob": 20.3,
+          "top1": "D76",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R157",
+      "expected_id": "D79",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 1.9,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.27,
+          "exp_rank": 11,
+          "exp_prob": 0.7,
+          "top1": "D13",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 2.72,
+          "exp_rank": 13,
+          "exp_prob": 0.9,
+          "top1": "D13",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 1.44,
+          "exp_rank": 5,
+          "exp_prob": 1.6,
+          "top1": "D13",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.57,
+          "exp_rank": 5,
+          "exp_prob": 1.9,
+          "top1": "D13",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R158",
+      "expected_id": "D80",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 53.5,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.39,
+          "exp_rank": 1,
+          "exp_prob": 53.5,
+          "top1": "D80",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R159",
+      "expected_id": "D82",
+      "n_initial": 7,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 53.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.64,
+          "exp_rank": 1,
+          "exp_prob": 17.9,
+          "top1": "D82",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 1.52,
+          "exp_rank": 1,
+          "exp_prob": 53.7,
+          "top1": "D82",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R161",
+      "expected_id": "D58",
+      "n_initial": 5,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 93.6,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.14,
+          "exp_rank": 1,
+          "exp_prob": 38.7,
+          "top1": "D58",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 2.95,
+          "exp_rank": 1,
+          "exp_prob": 33.4,
+          "top1": "D58",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 1.42,
+          "exp_rank": 1,
+          "exp_prob": 58.5,
+          "top1": "D58",
+          "test": "L18"
+        },
+        {
+          "step": 3,
+          "H": 1.34,
+          "exp_rank": 1,
+          "exp_prob": 59.3,
+          "top1": "D58",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 0.4,
+          "exp_rank": 1,
+          "exp_prob": 93.6,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R162",
+      "expected_id": "D58",
+      "n_initial": 4,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 98.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.46,
+          "exp_rank": 2,
+          "exp_prob": 34.0,
+          "top1": "D18",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.65,
+          "exp_rank": 2,
+          "exp_prob": 44.1,
+          "top1": "D18",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 0.15,
+          "exp_rank": 1,
+          "exp_prob": 98.3,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R163",
+      "expected_id": "D68",
+      "n_initial": 3,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 7,
+      "final_prob": 3.3,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.77,
+          "exp_rank": 3,
+          "exp_prob": 5.4,
+          "top1": "D99",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 5.74,
+          "exp_rank": 7,
+          "exp_prob": 3.3,
+          "top1": "D99",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R164",
+      "expected_id": "D56",
+      "n_initial": 10,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 88.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.99,
+          "exp_rank": 1,
+          "exp_prob": 88.5,
+          "top1": "D56",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 1.25,
+          "exp_rank": 1,
+          "exp_prob": 84.9,
+          "top1": "D56",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.98,
+          "exp_rank": 1,
+          "exp_prob": 88.9,
+          "top1": "D56",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R165",
+      "expected_id": "D105",
+      "n_initial": 6,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 61.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.18,
+          "exp_rank": 1,
+          "exp_prob": 72.7,
+          "top1": "D105",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.14,
+          "exp_rank": 1,
+          "exp_prob": 61.0,
+          "top1": "D105",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R168",
+      "expected_id": "D106",
+      "n_initial": 10,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.4,
+          "top1": "D106",
+          "test": "L17"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D106",
+          "test": "L18"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D106",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R169",
+      "expected_id": "D106",
+      "n_initial": 6,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 86.6,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.68,
+          "exp_rank": 1,
+          "exp_prob": 62.9,
+          "top1": "D106",
+          "test": "L18"
+        },
+        {
+          "step": 1,
+          "H": 2.29,
+          "exp_rank": 1,
+          "exp_prob": 67.3,
+          "top1": "D106",
+          "test": "L17"
+        },
+        {
+          "step": 2,
+          "H": 0.64,
+          "exp_rank": 1,
+          "exp_prob": 93.3,
+          "top1": "D106",
+          "test": "L15"
+        },
+        {
+          "step": 3,
+          "H": 1.03,
+          "exp_rank": 1,
+          "exp_prob": 86.6,
+          "top1": "D106",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R170",
+      "expected_id": "D106",
+      "n_initial": 8,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 48.8,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.2,
+          "exp_rank": 1,
+          "exp_prob": 48.8,
+          "top1": "D106",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R171",
+      "expected_id": "D107",
+      "n_initial": 9,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 1.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.14,
+          "exp_rank": 5,
+          "exp_prob": 0.1,
+          "top1": "D108",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 0.05,
+          "exp_rank": 4,
+          "exp_prob": 0.1,
+          "top1": "D108",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 0.21,
+          "exp_rank": 2,
+          "exp_prob": 1.9,
+          "top1": "D108",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R172",
+      "expected_id": "D107",
+      "n_initial": 5,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 6,
+      "final_prob": 0.1,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.43,
+          "exp_rank": 49,
+          "exp_prob": 0.0,
+          "top1": "D17",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.65,
+          "exp_rank": 30,
+          "exp_prob": 0.0,
+          "top1": "D68",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 1.78,
+          "exp_rank": 13,
+          "exp_prob": 0.0,
+          "top1": "D68",
+          "test": "L14"
+        },
+        {
+          "step": 3,
+          "H": 0.49,
+          "exp_rank": 9,
+          "exp_prob": 0.1,
+          "top1": "D68",
+          "test": "L22"
+        },
+        {
+          "step": 4,
+          "H": 0.15,
+          "exp_rank": 6,
+          "exp_prob": 0.1,
+          "top1": "D68",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R173",
+      "expected_id": "D108",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 3.9,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.26,
+          "exp_rank": 3,
+          "exp_prob": 3.9,
+          "top1": "D15",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R174",
+      "expected_id": "D108",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.27,
+          "exp_rank": 1,
+          "exp_prob": 50.0,
+          "top1": "D108",
+          "test": "L39"
+        },
+        {
+          "step": 1,
+          "H": 0.22,
+          "exp_rank": 1,
+          "exp_prob": 96.9,
+          "top1": "D108",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 0.18,
+          "exp_rank": 1,
+          "exp_prob": 97.4,
+          "top1": "D108",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 0.19,
+          "exp_rank": 1,
+          "exp_prob": 97.2,
+          "top1": "D108",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R175",
+      "expected_id": "D109",
+      "n_initial": 14,
+      "n_pool": 6,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 23.6,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.79,
+          "exp_rank": 2,
+          "exp_prob": 30.5,
+          "top1": "D50",
+          "test": "L16"
+        },
+        {
+          "step": 1,
+          "H": 1.11,
+          "exp_rank": 2,
+          "exp_prob": 29.1,
+          "top1": "D50",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.02,
+          "exp_rank": 2,
+          "exp_prob": 19.6,
+          "top1": "D50",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.53,
+          "exp_rank": 2,
+          "exp_prob": 23.6,
+          "top1": "D50",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R176",
+      "expected_id": "D105",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 24.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.5,
+          "exp_rank": 2,
+          "exp_prob": 21.3,
+          "top1": "D103",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 1.54,
+          "exp_rank": 2,
+          "exp_prob": 24.7,
+          "top1": "D103",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R177",
+      "expected_id": "D107",
+      "n_initial": 9,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 94.6,
+      "n_steps": 6,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.46,
+          "exp_rank": 7,
+          "exp_prob": 4.4,
+          "top1": "D14",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 3.13,
+          "exp_rank": 1,
+          "exp_prob": 22.7,
+          "top1": "D107",
+          "test": "L11"
+        },
+        {
+          "step": 2,
+          "H": 2.54,
+          "exp_rank": 1,
+          "exp_prob": 46.2,
+          "top1": "D107",
+          "test": "L16"
+        },
+        {
+          "step": 3,
+          "H": 1.57,
+          "exp_rank": 1,
+          "exp_prob": 70.8,
+          "top1": "D107",
+          "test": "L15"
+        },
+        {
+          "step": 4,
+          "H": 0.41,
+          "exp_rank": 1,
+          "exp_prob": 93.5,
+          "top1": "D107",
+          "test": "L01"
+        },
+        {
+          "step": 5,
+          "H": 0.34,
+          "exp_rank": 1,
+          "exp_prob": 94.6,
+          "top1": "D107",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R178",
+      "expected_id": "D107",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 27.5,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.68,
+          "exp_rank": 3,
+          "exp_prob": 3.6,
+          "top1": "D67",
+          "test": "L15"
+        },
+        {
+          "step": 1,
+          "H": 1.42,
+          "exp_rank": 4,
+          "exp_prob": 3.4,
+          "top1": "D67",
+          "test": "L14"
+        },
+        {
+          "step": 2,
+          "H": 1.22,
+          "exp_rank": 2,
+          "exp_prob": 11.9,
+          "top1": "D67",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.74,
+          "exp_rank": 2,
+          "exp_prob": 27.5,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R179",
+      "expected_id": "D109",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 19.6,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.45,
+          "exp_rank": 9,
+          "exp_prob": 0.6,
+          "top1": "D84",
+          "test": "L45"
+        },
+        {
+          "step": 1,
+          "H": 2.45,
+          "exp_rank": 9,
+          "exp_prob": 0.6,
+          "top1": "D84",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 3.32,
+          "exp_rank": 3,
+          "exp_prob": 19.6,
+          "top1": "D84",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R180",
+      "expected_id": "D106",
+      "n_initial": 9,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.43,
+          "exp_rank": 1,
+          "exp_prob": 79.7,
+          "top1": "D106",
+          "test": "L17"
+        },
+        {
+          "step": 1,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.6,
+          "top1": "D106",
+          "test": "L16"
+        },
+        {
+          "step": 2,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D106",
+          "test": "L04"
+        },
+        {
+          "step": 3,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.8,
+          "top1": "D106",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R181",
+      "expected_id": "D108",
+      "n_initial": 5,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 4,
+      "final_prob": 3.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.74,
+          "exp_rank": 4,
+          "exp_prob": 2.1,
+          "top1": "D25",
+          "test": "L11"
+        },
+        {
+          "step": 1,
+          "H": 1.57,
+          "exp_rank": 4,
+          "exp_prob": 3.9,
+          "top1": "D25",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 1.65,
+          "exp_rank": 4,
+          "exp_prob": 3.9,
+          "top1": "D25",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R182",
+      "expected_id": "D110",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 22.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.93,
+          "exp_rank": 1,
+          "exp_prob": 46.7,
+          "top1": "D110",
+          "test": "L46"
+        },
+        {
+          "step": 1,
+          "H": 1.28,
+          "exp_rank": 1,
+          "exp_prob": 51.9,
+          "top1": "D110",
+          "test": "L45"
+        },
+        {
+          "step": 2,
+          "H": 1.5,
+          "exp_rank": 2,
+          "exp_prob": 22.8,
+          "top1": "D95",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R183",
+      "expected_id": "D110",
+      "n_initial": 7,
+      "n_pool": 5,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 6.3,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.84,
+          "exp_rank": 10,
+          "exp_prob": 1.0,
+          "top1": "D104",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 2.81,
+          "exp_rank": 10,
+          "exp_prob": 1.0,
+          "top1": "D104",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.75,
+          "exp_rank": 8,
+          "exp_prob": 0.9,
+          "top1": "D104",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.64,
+          "exp_rank": 8,
+          "exp_prob": 0.6,
+          "top1": "D104",
+          "test": "L14"
+        },
+        {
+          "step": 4,
+          "H": 1.88,
+          "exp_rank": 3,
+          "exp_prob": 6.3,
+          "top1": "D104",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R185",
+      "expected_id": "D111",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D111",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D111",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R186",
+      "expected_id": "D112",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 90.4,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.19,
+          "exp_rank": 1,
+          "exp_prob": 69.3,
+          "top1": "D112",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 1.15,
+          "exp_rank": 1,
+          "exp_prob": 72.3,
+          "top1": "D112",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 0.56,
+          "exp_rank": 1,
+          "exp_prob": 90.4,
+          "top1": "D112",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R187",
+      "expected_id": "D112",
+      "n_initial": 11,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.9,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.23,
+          "exp_rank": 1,
+          "exp_prob": 97.2,
+          "top1": "D112",
+          "test": "L19"
+        },
+        {
+          "step": 1,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.8,
+          "top1": "D112",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D112",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R188",
+      "expected_id": "D113",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 19.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.79,
+          "exp_rank": 6,
+          "exp_prob": 7.7,
+          "top1": "D97",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 2.32,
+          "exp_rank": 4,
+          "exp_prob": 16.5,
+          "top1": "D68",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.96,
+          "exp_rank": 3,
+          "exp_prob": 19.8,
+          "top1": "D68",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R189",
+      "expected_id": "D113",
+      "n_initial": 8,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 99.1,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.06,
+          "exp_rank": 2,
+          "exp_prob": 6.8,
+          "top1": "D17",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.48,
+          "exp_rank": 2,
+          "exp_prob": 43.3,
+          "top1": "D17",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 0.35,
+          "exp_rank": 1,
+          "exp_prob": 95.3,
+          "top1": "D113",
+          "test": "L16"
+        },
+        {
+          "step": 3,
+          "H": 0.18,
+          "exp_rank": 1,
+          "exp_prob": 98.1,
+          "top1": "D113",
+          "test": "L11"
+        },
+        {
+          "step": 4,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.1,
+          "top1": "D113",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R190",
+      "expected_id": "D114",
+      "n_initial": 6,
+      "n_pool": 6,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 6,
+      "final_prob": 1.8,
+      "n_steps": 6,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.36,
+          "exp_rank": 37,
+          "exp_prob": 0.1,
+          "top1": "D58",
+          "test": "L15"
+        },
+        {
+          "step": 1,
+          "H": 2.85,
+          "exp_rank": 39,
+          "exp_prob": 0.1,
+          "top1": "D58",
+          "test": "L48"
+        },
+        {
+          "step": 2,
+          "H": 2.73,
+          "exp_rank": 4,
+          "exp_prob": 2.8,
+          "top1": "D67",
+          "test": "L49"
+        },
+        {
+          "step": 3,
+          "H": 2.14,
+          "exp_rank": 7,
+          "exp_prob": 1.5,
+          "top1": "D67",
+          "test": "L09"
+        },
+        {
+          "step": 4,
+          "H": 2.11,
+          "exp_rank": 7,
+          "exp_prob": 1.5,
+          "top1": "D67",
+          "test": "L11"
+        },
+        {
+          "step": 5,
+          "H": 1.78,
+          "exp_rank": 6,
+          "exp_prob": 1.8,
+          "top1": "D67",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R191",
+      "expected_id": "D114",
+      "n_initial": 6,
+      "n_pool": 6,
+      "reached": true,
+      "reached_step": 5,
+      "final_rank": 1,
+      "final_prob": 93.9,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.07,
+          "exp_rank": 37,
+          "exp_prob": 0.5,
+          "top1": "D01",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 4.77,
+          "exp_rank": 78,
+          "exp_prob": 0.0,
+          "top1": "D01",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 4.08,
+          "exp_rank": 61,
+          "exp_prob": 0.0,
+          "top1": "D01",
+          "test": "L49"
+        },
+        {
+          "step": 3,
+          "H": 4.12,
+          "exp_rank": 25,
+          "exp_prob": 0.5,
+          "top1": "D01",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 3.93,
+          "exp_rank": 23,
+          "exp_prob": 0.6,
+          "top1": "D01",
+          "test": "L48"
+        },
+        {
+          "step": 5,
+          "H": 3.62,
+          "exp_rank": 1,
+          "exp_prob": 31.1,
+          "top1": "D114",
+          "test": "L50"
+        },
+        {
+          "step": 6,
+          "H": 0.58,
+          "exp_rank": 1,
+          "exp_prob": 93.9,
+          "top1": "D114",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R192",
+      "expected_id": "D114",
+      "n_initial": 3,
+      "n_pool": 7,
+      "reached": true,
+      "reached_step": 3,
+      "final_rank": 1,
+      "final_prob": 63.5,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.99,
+          "exp_rank": 18,
+          "exp_prob": 1.8,
+          "top1": "D69",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 5.46,
+          "exp_rank": 36,
+          "exp_prob": 0.6,
+          "top1": "D58",
+          "test": "L49"
+        },
+        {
+          "step": 2,
+          "H": 5.3,
+          "exp_rank": 42,
+          "exp_prob": 0.5,
+          "top1": "D69",
+          "test": "L48"
+        },
+        {
+          "step": 3,
+          "H": 4.38,
+          "exp_rank": 1,
+          "exp_prob": 20.6,
+          "top1": "D114",
+          "test": "L50"
+        },
+        {
+          "step": 4,
+          "H": 1.45,
+          "exp_rank": 1,
+          "exp_prob": 75.8,
+          "top1": "D114",
+          "test": "L14"
+        },
+        {
+          "step": 5,
+          "H": 1.99,
+          "exp_rank": 1,
+          "exp_prob": 62.5,
+          "top1": "D114",
+          "test": "L09"
+        },
+        {
+          "step": 6,
+          "H": 1.9,
+          "exp_rank": 1,
+          "exp_prob": 63.5,
+          "top1": "D114",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R193",
+      "expected_id": "D58",
+      "n_initial": 10,
+      "n_pool": 9,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 9,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.05,
+          "exp_rank": 2,
+          "exp_prob": 16.9,
+          "top1": "D44",
+          "test": "L14"
+        },
+        {
+          "step": 1,
+          "H": 1.37,
+          "exp_rank": 2,
+          "exp_prob": 27.8,
+          "top1": "D44",
+          "test": "L15"
+        },
+        {
+          "step": 2,
+          "H": 0.45,
+          "exp_rank": 1,
+          "exp_prob": 92.6,
+          "top1": "D58",
+          "test": "L28"
+        },
+        {
+          "step": 3,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.6,
+          "top1": "D58",
+          "test": "L11"
+        },
+        {
+          "step": 4,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D58",
+          "test": "L01"
+        },
+        {
+          "step": 5,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D58",
+          "test": "L09"
+        },
+        {
+          "step": 6,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D58",
+          "test": "L18"
+        },
+        {
+          "step": 7,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D58",
+          "test": "L02"
+        },
+        {
+          "step": 8,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D58",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R194",
+      "expected_id": "D115",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.1,
+          "top1": "D115",
+          "test": "L30"
+        },
+        {
+          "step": 1,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D115",
+          "test": "L09"
+        },
+        {
+          "step": 2,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D115",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D115",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R195",
+      "expected_id": "D115",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.32,
+          "exp_rank": 1,
+          "exp_prob": 96.6,
+          "top1": "D115",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.28,
+          "exp_rank": 1,
+          "exp_prob": 97.1,
+          "top1": "D115",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R196",
+      "expected_id": "D116",
+      "n_initial": 8,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 31.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.69,
+          "exp_rank": 1,
+          "exp_prob": 51.0,
+          "top1": "D116",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 1.77,
+          "exp_rank": 3,
+          "exp_prob": 12.8,
+          "top1": "D123",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 0.95,
+          "exp_rank": 2,
+          "exp_prob": 25.6,
+          "top1": "D134",
+          "test": "L04"
+        },
+        {
+          "step": 3,
+          "H": 0.93,
+          "exp_rank": 2,
+          "exp_prob": 31.2,
+          "top1": "D134",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R197",
+      "expected_id": "D116",
+      "n_initial": 8,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 3,
+      "final_prob": 9.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.04,
+          "exp_rank": 1,
+          "exp_prob": 39.9,
+          "top1": "D116",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 3.54,
+          "exp_rank": 3,
+          "exp_prob": 9.4,
+          "top1": "D36",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R198",
+      "expected_id": "D117",
+      "n_initial": 6,
+      "n_pool": 1,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 29.4,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.49,
+          "exp_rank": 2,
+          "exp_prob": 16.1,
+          "top1": "D84",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 2.49,
+          "exp_rank": 2,
+          "exp_prob": 29.4,
+          "top1": "D13",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R199",
+      "expected_id": "D117",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 98.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.71,
+          "exp_rank": 1,
+          "exp_prob": 92.6,
+          "top1": "D117",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 0.15,
+          "exp_rank": 1,
+          "exp_prob": 98.7,
+          "top1": "D117",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R200",
+      "expected_id": "D118",
+      "n_initial": 4,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 62.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.5,
+          "exp_rank": 2,
+          "exp_prob": 12.6,
+          "top1": "D109",
+          "test": "L46"
+        },
+        {
+          "step": 1,
+          "H": 1.97,
+          "exp_rank": 1,
+          "exp_prob": 62.7,
+          "top1": "D118",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R201",
+      "expected_id": "D118",
+      "n_initial": 3,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 63.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 5.23,
+          "exp_rank": 2,
+          "exp_prob": 9.3,
+          "top1": "D109",
+          "test": "L46"
+        },
+        {
+          "step": 1,
+          "H": 2.59,
+          "exp_rank": 1,
+          "exp_prob": 63.5,
+          "top1": "D118",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R202",
+      "expected_id": "D119",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 86.7,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.98,
+          "exp_rank": 2,
+          "exp_prob": 27.8,
+          "top1": "D09",
+          "test": "L05"
+        },
+        {
+          "step": 1,
+          "H": 2.69,
+          "exp_rank": 1,
+          "exp_prob": 46.4,
+          "top1": "D119",
+          "test": "L31"
+        },
+        {
+          "step": 2,
+          "H": 0.93,
+          "exp_rank": 1,
+          "exp_prob": 86.7,
+          "top1": "D119",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R203",
+      "expected_id": "D119",
+      "n_initial": 4,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 3,
+      "final_rank": 1,
+      "final_prob": 95.0,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.84,
+          "exp_rank": 12,
+          "exp_prob": 1.3,
+          "top1": "D114",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.77,
+          "exp_rank": 6,
+          "exp_prob": 5.1,
+          "top1": "D56",
+          "test": "L05"
+        },
+        {
+          "step": 2,
+          "H": 3.8,
+          "exp_rank": 2,
+          "exp_prob": 19.2,
+          "top1": "D56",
+          "test": "L03"
+        },
+        {
+          "step": 3,
+          "H": 2.51,
+          "exp_rank": 1,
+          "exp_prob": 54.8,
+          "top1": "D119",
+          "test": "L31"
+        },
+        {
+          "step": 4,
+          "H": 0.47,
+          "exp_rank": 1,
+          "exp_prob": 95.0,
+          "top1": "D119",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R204",
+      "expected_id": "D120",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.5,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.86,
+          "exp_rank": 1,
+          "exp_prob": 86.1,
+          "top1": "D120",
+          "test": "L51"
+        },
+        {
+          "step": 1,
+          "H": 0.28,
+          "exp_rank": 1,
+          "exp_prob": 96.1,
+          "top1": "D120",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.5,
+          "top1": "D120",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R205",
+      "expected_id": "D121",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 64.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.74,
+          "exp_rank": 2,
+          "exp_prob": 23.9,
+          "top1": "D102",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 1.91,
+          "exp_rank": 1,
+          "exp_prob": 64.6,
+          "top1": "D121",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R206",
+      "expected_id": "D122",
+      "n_initial": 9,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.31,
+          "exp_rank": 1,
+          "exp_prob": 95.4,
+          "top1": "D122",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.25,
+          "exp_rank": 1,
+          "exp_prob": 96.4,
+          "top1": "D122",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 0.22,
+          "exp_rank": 1,
+          "exp_prob": 97.0,
+          "top1": "D122",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R207",
+      "expected_id": "D123",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.03,
+          "exp_rank": 1,
+          "exp_prob": 99.8,
+          "top1": "D123",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D123",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D123",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R209",
+      "expected_id": "D125",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 8.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.25,
+          "exp_rank": 1,
+          "exp_prob": 46.9,
+          "top1": "D125",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 1.79,
+          "exp_rank": 1,
+          "exp_prob": 46.6,
+          "top1": "D125",
+          "test": "L51"
+        },
+        {
+          "step": 2,
+          "H": 1.24,
+          "exp_rank": 2,
+          "exp_prob": 19.2,
+          "top1": "D120",
+          "test": "L04"
+        },
+        {
+          "step": 3,
+          "H": 0.52,
+          "exp_rank": 2,
+          "exp_prob": 8.2,
+          "top1": "D120",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R210",
+      "expected_id": "D77",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 3.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.64,
+          "exp_rank": 7,
+          "exp_prob": 2.5,
+          "top1": "D124",
+          "test": "L51"
+        },
+        {
+          "step": 1,
+          "H": 1.8,
+          "exp_rank": 5,
+          "exp_prob": 3.2,
+          "top1": "D124",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R214",
+      "expected_id": "D127",
+      "n_initial": 9,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 92.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.65,
+          "exp_rank": 1,
+          "exp_prob": 89.8,
+          "top1": "D127",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.47,
+          "exp_rank": 1,
+          "exp_prob": 92.1,
+          "top1": "D127",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R215",
+      "expected_id": "D127",
+      "n_initial": 4,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 21.3,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 4.12,
+          "exp_rank": 5,
+          "exp_prob": 5.5,
+          "top1": "D14",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 3.51,
+          "exp_rank": 5,
+          "exp_prob": 4.1,
+          "top1": "D14",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 2.93,
+          "exp_rank": 3,
+          "exp_prob": 17.9,
+          "top1": "D36",
+          "test": "L51"
+        },
+        {
+          "step": 3,
+          "H": 2.85,
+          "exp_rank": 3,
+          "exp_prob": 21.3,
+          "top1": "D36",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R216",
+      "expected_id": "D127",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 84.4,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.17,
+          "exp_rank": 1,
+          "exp_prob": 79.8,
+          "top1": "D127",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.57,
+          "exp_rank": 1,
+          "exp_prob": 90.9,
+          "top1": "D127",
+          "test": "L28"
+        },
+        {
+          "step": 2,
+          "H": 1.06,
+          "exp_rank": 1,
+          "exp_prob": 84.4,
+          "top1": "D127",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R217",
+      "expected_id": "D120",
+      "n_initial": 10,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 81.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.6,
+          "exp_rank": 3,
+          "exp_prob": 16.4,
+          "top1": "D127",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 1.66,
+          "exp_rank": 1,
+          "exp_prob": 48.5,
+          "top1": "D120",
+          "test": "L51"
+        },
+        {
+          "step": 2,
+          "H": 0.88,
+          "exp_rank": 1,
+          "exp_prob": 80.0,
+          "top1": "D120",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 0.81,
+          "exp_rank": 1,
+          "exp_prob": 81.8,
+          "top1": "D120",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R218",
+      "expected_id": "D120",
+      "n_initial": 10,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.16,
+          "exp_rank": 1,
+          "exp_prob": 97.9,
+          "top1": "D120",
+          "test": "L51"
+        },
+        {
+          "step": 1,
+          "H": 0.05,
+          "exp_rank": 1,
+          "exp_prob": 99.4,
+          "top1": "D120",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 0.07,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D120",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R219",
+      "expected_id": "D123",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 62.8,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.92,
+          "exp_rank": 6,
+          "exp_prob": 2.0,
+          "top1": "D121",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 1.9,
+          "exp_rank": 6,
+          "exp_prob": 2.0,
+          "top1": "D121",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.66,
+          "exp_rank": 1,
+          "exp_prob": 62.8,
+          "top1": "D123",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R220",
+      "expected_id": "D123",
+      "n_initial": 12,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.39,
+          "exp_rank": 1,
+          "exp_prob": 93.5,
+          "top1": "D123",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.02,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D123",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R221",
+      "expected_id": "D121",
+      "n_initial": 9,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 98.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.11,
+          "exp_rank": 1,
+          "exp_prob": 98.7,
+          "top1": "D121",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.12,
+          "exp_rank": 1,
+          "exp_prob": 98.5,
+          "top1": "D121",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R222",
+      "expected_id": "D121",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 58.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.79,
+          "exp_rank": 1,
+          "exp_prob": 62.5,
+          "top1": "D121",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 1.73,
+          "exp_rank": 1,
+          "exp_prob": 58.0,
+          "top1": "D121",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R223",
+      "expected_id": "D122",
+      "n_initial": 8,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.11,
+          "exp_rank": 1,
+          "exp_prob": 98.9,
+          "top1": "D122",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.09,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D122",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R224",
+      "expected_id": "D122",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 63.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.88,
+          "exp_rank": 2,
+          "exp_prob": 20.2,
+          "top1": "D36",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 2.14,
+          "exp_rank": 1,
+          "exp_prob": 63.1,
+          "top1": "D122",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R225",
+      "expected_id": "D128",
+      "n_initial": 10,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 98.3,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.16,
+          "exp_rank": 1,
+          "exp_prob": 98.3,
+          "top1": "D128",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R228",
+      "expected_id": "D129",
+      "n_initial": 10,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.7,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.23,
+          "exp_rank": 1,
+          "exp_prob": 97.3,
+          "top1": "D129",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 0.21,
+          "exp_rank": 1,
+          "exp_prob": 97.5,
+          "top1": "D129",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 0.08,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D129",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 0.04,
+          "exp_rank": 1,
+          "exp_prob": 99.7,
+          "top1": "D129",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R231",
+      "expected_id": "D130",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 47.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.98,
+          "exp_rank": 2,
+          "exp_prob": 25.4,
+          "top1": "D127",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 2.21,
+          "exp_rank": 1,
+          "exp_prob": 61.7,
+          "top1": "D130",
+          "test": "L16"
+        },
+        {
+          "step": 2,
+          "H": 1.21,
+          "exp_rank": 1,
+          "exp_prob": 80.3,
+          "top1": "D130",
+          "test": "L01"
+        },
+        {
+          "step": 3,
+          "H": 1.75,
+          "exp_rank": 1,
+          "exp_prob": 47.2,
+          "top1": "D130",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R232",
+      "expected_id": "D130",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 94.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.27,
+          "exp_rank": 1,
+          "exp_prob": 72.9,
+          "top1": "D130",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.51,
+          "exp_rank": 1,
+          "exp_prob": 93.0,
+          "top1": "D130",
+          "test": "L16"
+        },
+        {
+          "step": 2,
+          "H": 0.28,
+          "exp_rank": 1,
+          "exp_prob": 96.8,
+          "top1": "D130",
+          "test": "L02"
+        },
+        {
+          "step": 3,
+          "H": 0.41,
+          "exp_rank": 1,
+          "exp_prob": 94.8,
+          "top1": "D130",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R233",
+      "expected_id": "D130",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 98.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.38,
+          "exp_rank": 1,
+          "exp_prob": 95.0,
+          "top1": "D130",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.11,
+          "exp_rank": 1,
+          "exp_prob": 98.9,
+          "top1": "D130",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R234",
+      "expected_id": "D132",
+      "n_initial": 9,
+      "n_pool": 7,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 35.1,
+      "n_steps": 8,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.3,
+          "exp_rank": 8,
+          "exp_prob": 0.1,
+          "top1": "D124",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 1.71,
+          "exp_rank": 5,
+          "exp_prob": 0.2,
+          "top1": "D124",
+          "test": "L52"
+        },
+        {
+          "step": 2,
+          "H": 2.2,
+          "exp_rank": 5,
+          "exp_prob": 8.8,
+          "top1": "D124",
+          "test": "L51"
+        },
+        {
+          "step": 3,
+          "H": 1.93,
+          "exp_rank": 4,
+          "exp_prob": 9.6,
+          "top1": "D124",
+          "test": "L02"
+        },
+        {
+          "step": 4,
+          "H": 1.84,
+          "exp_rank": 4,
+          "exp_prob": 10.7,
+          "top1": "D116",
+          "test": "L16"
+        },
+        {
+          "step": 5,
+          "H": 1.33,
+          "exp_rank": 2,
+          "exp_prob": 18.4,
+          "top1": "D116",
+          "test": "L17"
+        },
+        {
+          "step": 6,
+          "H": 1.13,
+          "exp_rank": 2,
+          "exp_prob": 24.9,
+          "top1": "D116",
+          "test": "L01"
+        },
+        {
+          "step": 7,
+          "H": 1.27,
+          "exp_rank": 2,
+          "exp_prob": 35.1,
+          "top1": "D116",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R235",
+      "expected_id": "D132",
+      "n_initial": 8,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 96.8,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.26,
+          "exp_rank": 2,
+          "exp_prob": 23.4,
+          "top1": "D131",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 2.4,
+          "exp_rank": 1,
+          "exp_prob": 44.3,
+          "top1": "D132",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.39,
+          "exp_rank": 1,
+          "exp_prob": 44.5,
+          "top1": "D132",
+          "test": "L52"
+        },
+        {
+          "step": 3,
+          "H": 0.27,
+          "exp_rank": 1,
+          "exp_prob": 96.8,
+          "top1": "D132",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R236",
+      "expected_id": "D132",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D132",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D132",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D132",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R237",
+      "expected_id": "D131",
+      "n_initial": 12,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.08,
+          "exp_rank": 1,
+          "exp_prob": 99.2,
+          "top1": "D131",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 0.01,
+          "exp_rank": 1,
+          "exp_prob": 99.9,
+          "top1": "D131",
+          "test": "L17"
+        },
+        {
+          "step": 2,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D131",
+          "test": "L51"
+        },
+        {
+          "step": 3,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D131",
+          "test": "L01"
+        },
+        {
+          "step": 4,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D131",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R238",
+      "expected_id": "D131",
+      "n_initial": 8,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 92.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.4,
+          "exp_rank": 1,
+          "exp_prob": 70.0,
+          "top1": "D131",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 0.44,
+          "exp_rank": 1,
+          "exp_prob": 92.9,
+          "top1": "D131",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R239",
+      "expected_id": "D131",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 11.7,
+      "n_steps": 1,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.29,
+          "exp_rank": 3,
+          "exp_prob": 11.7,
+          "top1": "D129",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R240",
+      "expected_id": "D111",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 100.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D111",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 0.0,
+          "exp_rank": 1,
+          "exp_prob": 100.0,
+          "top1": "D111",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R241",
+      "expected_id": "D112",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 40.1,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.49,
+          "exp_rank": 13,
+          "exp_prob": 0.5,
+          "top1": "D137",
+          "test": "L28"
+        },
+        {
+          "step": 1,
+          "H": 3.04,
+          "exp_rank": 4,
+          "exp_prob": 14.2,
+          "top1": "D137",
+          "test": "L03"
+        },
+        {
+          "step": 2,
+          "H": 2.82,
+          "exp_rank": 1,
+          "exp_prob": 45.0,
+          "top1": "D112",
+          "test": "L19"
+        },
+        {
+          "step": 3,
+          "H": 2.96,
+          "exp_rank": 1,
+          "exp_prob": 40.1,
+          "top1": "D112",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R242",
+      "expected_id": "D115",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 1,
+      "final_rank": 1,
+      "final_prob": 60.2,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.22,
+          "exp_rank": 2,
+          "exp_prob": 12.4,
+          "top1": "D44",
+          "test": "L09"
+        },
+        {
+          "step": 1,
+          "H": 2.44,
+          "exp_rank": 1,
+          "exp_prob": 60.2,
+          "top1": "D115",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R243",
+      "expected_id": "D118",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 2.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.96,
+          "exp_rank": 4,
+          "exp_prob": 3.2,
+          "top1": "D109",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.38,
+          "exp_rank": 5,
+          "exp_prob": 2.9,
+          "top1": "D102",
+          "test": "L02"
+        },
+        {
+          "step": 2,
+          "H": 2.04,
+          "exp_rank": 5,
+          "exp_prob": 2.2,
+          "top1": "D102",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R244",
+      "expected_id": "D133",
+      "n_initial": 6,
+      "n_pool": 2,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.55,
+          "exp_rank": 1,
+          "exp_prob": 94.1,
+          "top1": "D133",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.39,
+          "exp_rank": 1,
+          "exp_prob": 96.0,
+          "top1": "D133",
+          "test": "L53"
+        },
+        {
+          "step": 2,
+          "H": 0.25,
+          "exp_rank": 1,
+          "exp_prob": 97.3,
+          "top1": "D133",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R245",
+      "expected_id": "D133",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 88.7,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.17,
+          "exp_rank": 1,
+          "exp_prob": 85.8,
+          "top1": "D133",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 1.84,
+          "exp_rank": 1,
+          "exp_prob": 71.3,
+          "top1": "D133",
+          "test": "L51"
+        },
+        {
+          "step": 2,
+          "H": 1.09,
+          "exp_rank": 1,
+          "exp_prob": 85.8,
+          "top1": "D133",
+          "test": "L04"
+        },
+        {
+          "step": 3,
+          "H": 0.86,
+          "exp_rank": 1,
+          "exp_prob": 88.7,
+          "top1": "D133",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R246",
+      "expected_id": "D133",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 81.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.3,
+          "exp_rank": 1,
+          "exp_prob": 74.6,
+          "top1": "D133",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 1.12,
+          "exp_rank": 1,
+          "exp_prob": 77.0,
+          "top1": "D133",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 0.88,
+          "exp_rank": 1,
+          "exp_prob": 80.3,
+          "top1": "D133",
+          "test": "L53"
+        },
+        {
+          "step": 3,
+          "H": 0.78,
+          "exp_rank": 1,
+          "exp_prob": 81.2,
+          "top1": "D133",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R247",
+      "expected_id": "D124",
+      "n_initial": 11,
+      "n_pool": 5,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 99.3,
+      "n_steps": 5,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.23,
+          "exp_rank": 1,
+          "exp_prob": 97.1,
+          "top1": "D124",
+          "test": "L51"
+        },
+        {
+          "step": 1,
+          "H": 0.08,
+          "exp_rank": 1,
+          "exp_prob": 99.1,
+          "top1": "D124",
+          "test": "L53"
+        },
+        {
+          "step": 2,
+          "H": 0.06,
+          "exp_rank": 1,
+          "exp_prob": 99.4,
+          "top1": "D124",
+          "test": "L03"
+        },
+        {
+          "step": 3,
+          "H": 0.06,
+          "exp_rank": 1,
+          "exp_prob": 99.4,
+          "top1": "D124",
+          "test": "L02"
+        },
+        {
+          "step": 4,
+          "H": 0.06,
+          "exp_rank": 1,
+          "exp_prob": 99.3,
+          "top1": "D124",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R248",
+      "expected_id": "D124",
+      "n_initial": 7,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 12.9,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.75,
+          "exp_rank": 6,
+          "exp_prob": 5.0,
+          "top1": "D130",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 2.27,
+          "exp_rank": 2,
+          "exp_prob": 12.9,
+          "top1": "D127",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R249",
+      "expected_id": "D124",
+      "n_initial": 13,
+      "n_pool": 6,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 1.8,
+      "n_steps": 7,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.71,
+          "exp_rank": 4,
+          "exp_prob": 2.8,
+          "top1": "D36",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.85,
+          "exp_rank": 4,
+          "exp_prob": 3.1,
+          "top1": "D36",
+          "test": "L51"
+        },
+        {
+          "step": 2,
+          "H": 1.73,
+          "exp_rank": 2,
+          "exp_prob": 20.9,
+          "top1": "D36",
+          "test": "L28"
+        },
+        {
+          "step": 3,
+          "H": 1.57,
+          "exp_rank": 3,
+          "exp_prob": 7.4,
+          "top1": "D05",
+          "test": "L15"
+        },
+        {
+          "step": 4,
+          "H": 1.58,
+          "exp_rank": 3,
+          "exp_prob": 7.4,
+          "top1": "D05",
+          "test": "L02"
+        },
+        {
+          "step": 5,
+          "H": 1.13,
+          "exp_rank": 3,
+          "exp_prob": 2.8,
+          "top1": "D05",
+          "test": "L01"
+        },
+        {
+          "step": 6,
+          "H": 1.01,
+          "exp_rank": 3,
+          "exp_prob": 1.8,
+          "top1": "D05",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R250",
+      "expected_id": "D134",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 80.5,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.83,
+          "exp_rank": 2,
+          "exp_prob": 25.5,
+          "top1": "D116",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 1.36,
+          "exp_rank": 2,
+          "exp_prob": 31.7,
+          "top1": "D116",
+          "test": "L53"
+        },
+        {
+          "step": 2,
+          "H": 1.22,
+          "exp_rank": 1,
+          "exp_prob": 76.1,
+          "top1": "D134",
+          "test": "L28"
+        },
+        {
+          "step": 3,
+          "H": 0.74,
+          "exp_rank": 1,
+          "exp_prob": 80.5,
+          "top1": "D134",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R251",
+      "expected_id": "D134",
+      "n_initial": 9,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 15.7,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 2.0,
+          "exp_rank": 3,
+          "exp_prob": 7.2,
+          "top1": "D116",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 2.11,
+          "exp_rank": 2,
+          "exp_prob": 15.7,
+          "top1": "D124",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R252",
+      "expected_id": "D135",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 2,
+      "final_rank": 1,
+      "final_prob": 76.2,
+      "n_steps": 4,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.91,
+          "exp_rank": 2,
+          "exp_prob": 9.8,
+          "top1": "D123",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 0.87,
+          "exp_rank": 2,
+          "exp_prob": 11.7,
+          "top1": "D123",
+          "test": "L04"
+        },
+        {
+          "step": 2,
+          "H": 1.79,
+          "exp_rank": 1,
+          "exp_prob": 59.3,
+          "top1": "D135",
+          "test": "L53"
+        },
+        {
+          "step": 3,
+          "H": 1.23,
+          "exp_rank": 1,
+          "exp_prob": 76.2,
+          "top1": "D135",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R253",
+      "expected_id": "D135",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 83.0,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.92,
+          "exp_rank": 1,
+          "exp_prob": 62.5,
+          "top1": "D135",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 1.03,
+          "exp_rank": 1,
+          "exp_prob": 83.0,
+          "top1": "D135",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R254",
+      "expected_id": "D135",
+      "n_initial": 8,
+      "n_pool": 2,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 3,
+      "final_prob": 9.5,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.03,
+          "exp_rank": 6,
+          "exp_prob": 3.2,
+          "top1": "D116",
+          "test": "L53"
+        },
+        {
+          "step": 1,
+          "H": 3.41,
+          "exp_rank": 3,
+          "exp_prob": 9.5,
+          "top1": "D127",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R255",
+      "expected_id": "D136",
+      "n_initial": 8,
+      "n_pool": 3,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 5,
+      "final_prob": 5.7,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.07,
+          "exp_rank": 12,
+          "exp_prob": 0.8,
+          "top1": "D56",
+          "test": "L02"
+        },
+        {
+          "step": 1,
+          "H": 3.79,
+          "exp_rank": 8,
+          "exp_prob": 3.0,
+          "top1": "D51",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 3.24,
+          "exp_rank": 5,
+          "exp_prob": 5.7,
+          "top1": "D56",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R256",
+      "expected_id": "D136",
+      "n_initial": 8,
+      "n_pool": 1,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 97.1,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.7,
+          "exp_rank": 1,
+          "exp_prob": 61.9,
+          "top1": "D136",
+          "test": "L04"
+        },
+        {
+          "step": 1,
+          "H": 0.24,
+          "exp_rank": 1,
+          "exp_prob": 97.1,
+          "top1": "D136",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R257",
+      "expected_id": "D136",
+      "n_initial": 6,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 41.8,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 3.25,
+          "exp_rank": 1,
+          "exp_prob": 32.8,
+          "top1": "D136",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 2.86,
+          "exp_rank": 1,
+          "exp_prob": 41.8,
+          "top1": "D136",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R258",
+      "expected_id": "D137",
+      "n_initial": 7,
+      "n_pool": 4,
+      "reached": false,
+      "reached_step": null,
+      "final_rank": 2,
+      "final_prob": 30.6,
+      "n_steps": 2,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.47,
+          "exp_rank": 2,
+          "exp_prob": 32.9,
+          "top1": "D136",
+          "test": "L01"
+        },
+        {
+          "step": 1,
+          "H": 1.45,
+          "exp_rank": 2,
+          "exp_prob": 30.6,
+          "top1": "D136",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R259",
+      "expected_id": "D137",
+      "n_initial": 7,
+      "n_pool": 3,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 2,
+      "final_prob": 48.3,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 1.35,
+          "exp_rank": 1,
+          "exp_prob": 68.0,
+          "top1": "D137",
+          "test": "L52"
+        },
+        {
+          "step": 1,
+          "H": 0.96,
+          "exp_rank": 1,
+          "exp_prob": 65.2,
+          "top1": "D137",
+          "test": "L01"
+        },
+        {
+          "step": 2,
+          "H": 1.05,
+          "exp_rank": 2,
+          "exp_prob": 48.3,
+          "top1": "D132",
+          "test": null
+        }
+      ]
+    },
+    {
+      "case_id": "R260",
+      "expected_id": "D137",
+      "n_initial": 6,
+      "n_pool": 4,
+      "reached": true,
+      "reached_step": 0,
+      "final_rank": 1,
+      "final_prob": 81.2,
+      "n_steps": 3,
+      "steps": [
+        {
+          "step": 0,
+          "H": 0.98,
+          "exp_rank": 1,
+          "exp_prob": 82.0,
+          "top1": "D137",
+          "test": "L52"
+        },
+        {
+          "step": 1,
+          "H": 0.72,
+          "exp_rank": 1,
+          "exp_prob": 81.2,
+          "top1": "D137",
+          "test": "L03"
+        },
+        {
+          "step": 2,
+          "H": 0.73,
+          "exp_rank": 1,
+          "exp_prob": 81.2,
+          "top1": "D137",
+          "test": null
+        }
+      ]
+    }
+  ]
+}
