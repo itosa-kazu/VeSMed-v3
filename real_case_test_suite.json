@@ -5390,6 +5390,65 @@
       },
       "result": "",
       "notes": "ネフローゼ→乳び胸水. RR 30, ESR 68. 両下肢浮腫+顔面浮腫"
+    },
+    {
+      "id": "R217",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9747626",
+      "vignette": "43M 喫煙者/喘息既往. 10日間の進行性呼吸困難+非生産性咳嗽+PND+起座呼吸. 発熱なし. HR 108, BP 100/53, SpO2 90%. 両側下肺crackles, 両側下腿pit edema. BNP 2979, WBC 5.0k, トロポニン61, 乳酸3.3. CXR: 心拡大+肺血管うっ血. Echo: EF 17%",
+      "final_diagnosis": "急性心不全(拡張型心筋症, 心原性ショック)",
+      "expected_id": "D120",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S49": "present",
+        "S01": "dry",
+        "E07": "crackles",
+        "E36": "bilateral",
+        "E02": "100_120",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5",
+        "L51": "very_high",
+        "L04": "bilateral_infiltrate",
+        "L01": "normal_4000_10000",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "EF 17%, BNP 2979, 心原性ショック. 若年でも心不全"
+    },
+    {
+      "id": "R218",
+      "source": "Cureus 2022",
+      "pmcid": "PMC9464109",
+      "vignette": "45F 病的肥満(156kg). 2週間の呼吸困難悪化+起座呼吸+動悸+著明下肢浮腫(体幹まで)+2ヶ月で9kg体重増加. Aflutter HR 157, 低血圧, 低酸素. JVD陽性, 両側crackles, 著明両側浮腫. BNP 866, Cr 1.7(baseline 0.80), K 5.5. CXR: 心拡大+両側胸水+肺うっ血. Echo: EF 35%",
+      "final_diagnosis": "急性心不全(心腎症候群Type I合併)",
+      "expected_id": "D120",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S49": "present",
+        "S35": "present",
+        "E07": "crackles",
+        "E36": "bilateral",
+        "E37": "present",
+        "E02": "over_120",
+        "L51": "very_high",
+        "L04": "pleural_effusion",
+        "E01": "under_37.5",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "Aflutter+心腎症候群. JVD+著明浮腫+BNP 866. 具体BP/SpO2値は未報告"
     }
   ],
   "total_cases": 110
