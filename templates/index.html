@@ -585,7 +585,7 @@ async function runAll() {
 
     // ── Falsification recommendations (反証推奨) ──
     const falsRecs = recData.falsification || [];
-    const filteredFals = falsRecs.filter(r => r.h_increase > 0.01);
+    const filteredFals = falsRecs;
     document.getElementById('falsificationList').innerHTML = filteredFals.length === 0
       ? '<div class="empty-state">反証推奨なし（現診断は十分安定）</div>'
       : filteredFals.map((r, i) => {
