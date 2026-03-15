@@ -6022,6 +6022,66 @@
       ],
       "severity": "critical",
       "note": "黄疸+腹水+肝性脳症+食道静脈瘤。Child-Pugh B/C。感染(SBP)/出血リスク"
+    },
+    {
+      "id": "D252",
+      "name": "kawasaki_disease",
+      "name_ja": "川崎病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "5日以上の発熱+5主要症状のうち4つ: 両側結膜充血/口唇紅潮・苺舌/多形性発疹/四肢末端変化/非化膿性頸部リンパ節腫脹。冠動脈瘤リスク"
+    },
+    {
+      "id": "D253",
+      "name": "acute_bronchiolitis",
+      "name_ja": "急性細気管支炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "RSV等。2歳未満の乳児。鼻汁→咳嗽→喘鳴→呼吸困難。多呼吸+陥没呼吸+SpO2低下"
+    },
+    {
+      "id": "D254",
+      "name": "croup",
+      "name_ja": "クループ(急性喉頭気管炎)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "パラインフルエンザ等。6ヶ月~3歳。犬吠様咳嗽+嗄声+吸気性喘鳴。夜間増悪。Westleyスコア"
+    },
+    {
+      "id": "D255",
+      "name": "febrile_seizure",
+      "name_ja": "熱性痙攣",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "6ヶ月~5歳。発熱時の全身性強直間代痙攣(<15分)。単純型/複雑型。良性だが初回は髄膜炎除外必要"
+    },
+    {
+      "id": "D256",
+      "name": "midgut_volvulus",
+      "name_ja": "腸回転異常症(中腸軸捻転)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "先天性腸回転異常→Ladd靭帯/中腸軸捻転。新生児~乳児に多い。胆汁性嘔吐+腹部膨満+血便。緊急手術"
     }
   ]
 }

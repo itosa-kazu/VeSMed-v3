@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3730,
+  "total_edges": 3783,
   "edges": [
     {
       "from": "R01",
@@ -30607,6 +30607,377 @@
       "from_name": "varicella",
       "to_name": "S04",
       "reason": "水痘: 呼吸困難(肺炎合併, 20-30%)"
+    },
+    {
+      "from": "D252",
+      "to": "E01",
+      "from_name": "kawasaki_disease",
+      "to_name": "E01",
+      "reason": "川崎: 高熱5日以上(定義的)"
+    },
+    {
+      "from": "D252",
+      "to": "E12",
+      "from_name": "kawasaki_disease",
+      "to_name": "E12",
+      "reason": "川崎: 多形性発疹(紅斑+丘疹)"
+    },
+    {
+      "from": "D252",
+      "to": "E02",
+      "from_name": "kawasaki_disease",
+      "to_name": "E02",
+      "reason": "川崎: 頻脈(高熱)"
+    },
+    {
+      "from": "D252",
+      "to": "S09",
+      "from_name": "kawasaki_disease",
+      "to_name": "S09",
+      "reason": "川崎: 易刺激性(特徴的)"
+    },
+    {
+      "from": "D252",
+      "to": "S08",
+      "from_name": "kawasaki_disease",
+      "to_name": "S08",
+      "reason": "川崎: 関節痛(30-40%)"
+    },
+    {
+      "from": "D252",
+      "to": "L01",
+      "from_name": "kawasaki_disease",
+      "to_name": "L01",
+      "reason": "川崎: WBC上昇(好中球優位)"
+    },
+    {
+      "from": "D252",
+      "to": "L02",
+      "from_name": "kawasaki_disease",
+      "to_name": "L02",
+      "reason": "川崎: CRP著高"
+    },
+    {
+      "from": "D252",
+      "to": "L14",
+      "from_name": "kawasaki_disease",
+      "to_name": "L14",
+      "reason": "川崎: 血小板増多(回復期400k+)"
+    },
+    {
+      "from": "D252",
+      "to": "L11",
+      "from_name": "kawasaki_disease",
+      "to_name": "L11",
+      "reason": "川崎: 肝酵素上昇(30-40%)"
+    },
+    {
+      "from": "D252",
+      "to": "S13",
+      "from_name": "kawasaki_disease",
+      "to_name": "S13",
+      "reason": "川崎: 嘔吐(30-40%)"
+    },
+    {
+      "from": "D252",
+      "to": "S14",
+      "from_name": "kawasaki_disease",
+      "to_name": "S14",
+      "reason": "川崎: 下痢(20-30%)"
+    },
+    {
+      "from": "D252",
+      "to": "T01",
+      "from_name": "kawasaki_disease",
+      "to_name": "T01",
+      "reason": "川崎: 急性(5日以上の発熱)"
+    },
+    {
+      "from": "D252",
+      "to": "T02",
+      "from_name": "kawasaki_disease",
+      "to_name": "T02",
+      "reason": "川崎: 急性"
+    },
+    {
+      "from": "D253",
+      "to": "S01",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "S01",
+      "reason": "細気管支炎: 咳嗽(90%+)"
+    },
+    {
+      "from": "D253",
+      "to": "S04",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "S04",
+      "reason": "細気管支炎: 呼吸困難(60-80%)"
+    },
+    {
+      "from": "D253",
+      "to": "E07",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "E07",
+      "reason": "細気管支炎: 肺聴診(wheezes+crackles)"
+    },
+    {
+      "from": "D253",
+      "to": "E04",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "E04",
+      "reason": "細気管支炎: 多呼吸"
+    },
+    {
+      "from": "D253",
+      "to": "E05",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "E05",
+      "reason": "細気管支炎: SpO2低下(40-60%)"
+    },
+    {
+      "from": "D253",
+      "to": "E01",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "E01",
+      "reason": "細気管支炎: 発熱(50-70%)"
+    },
+    {
+      "from": "D253",
+      "to": "E02",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "E02",
+      "reason": "細気管支炎: 頻脈"
+    },
+    {
+      "from": "D253",
+      "to": "L01",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "L01",
+      "reason": "細気管支炎: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D253",
+      "to": "T01",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "T01",
+      "reason": "細気管支炎: 急性"
+    },
+    {
+      "from": "D253",
+      "to": "T02",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "T02",
+      "reason": "細気管支炎: 急性"
+    },
+    {
+      "from": "D254",
+      "to": "S01",
+      "from_name": "croup",
+      "to_name": "S01",
+      "reason": "クループ: 犬吠様咳嗽(90%+)"
+    },
+    {
+      "from": "D254",
+      "to": "S04",
+      "from_name": "croup",
+      "to_name": "S04",
+      "reason": "クループ: 呼吸困難(50-70%)"
+    },
+    {
+      "from": "D254",
+      "to": "E01",
+      "from_name": "croup",
+      "to_name": "E01",
+      "reason": "クループ: 発熱(50-70%)"
+    },
+    {
+      "from": "D254",
+      "to": "E04",
+      "from_name": "croup",
+      "to_name": "E04",
+      "reason": "クループ: 多呼吸(中等度以上)"
+    },
+    {
+      "from": "D254",
+      "to": "E02",
+      "from_name": "croup",
+      "to_name": "E02",
+      "reason": "クループ: 頻脈"
+    },
+    {
+      "from": "D254",
+      "to": "L01",
+      "from_name": "croup",
+      "to_name": "L01",
+      "reason": "クループ: WBC(正常~軽度)"
+    },
+    {
+      "from": "D254",
+      "to": "L04",
+      "from_name": "croup",
+      "to_name": "L04",
+      "reason": "クループ: CXR(steeple sign/正常)"
+    },
+    {
+      "from": "D254",
+      "to": "T01",
+      "from_name": "croup",
+      "to_name": "T01",
+      "reason": "クループ: 急性(2-5日)"
+    },
+    {
+      "from": "D254",
+      "to": "T02",
+      "from_name": "croup",
+      "to_name": "T02",
+      "reason": "クループ: 急性"
+    },
+    {
+      "from": "D255",
+      "to": "S42",
+      "from_name": "febrile_seizure",
+      "to_name": "S42",
+      "reason": "熱性痙攣: 痙攣(定義的)"
+    },
+    {
+      "from": "D255",
+      "to": "E01",
+      "from_name": "febrile_seizure",
+      "to_name": "E01",
+      "reason": "熱性痙攣: 高熱(定義的, 38℃以上)"
+    },
+    {
+      "from": "D255",
+      "to": "E16",
+      "from_name": "febrile_seizure",
+      "to_name": "E16",
+      "reason": "熱性痙攣: 意識(発作後一過性傾眠, 通常30分以内回復)"
+    },
+    {
+      "from": "D255",
+      "to": "E02",
+      "from_name": "febrile_seizure",
+      "to_name": "E02",
+      "reason": "熱性痙攣: 頻脈(発熱)"
+    },
+    {
+      "from": "D255",
+      "to": "S01",
+      "from_name": "febrile_seizure",
+      "to_name": "S01",
+      "reason": "熱性痙攣: 咳嗽(URI先行)"
+    },
+    {
+      "from": "D255",
+      "to": "L01",
+      "from_name": "febrile_seizure",
+      "to_name": "L01",
+      "reason": "熱性痙攣: WBC(感染による上昇)"
+    },
+    {
+      "from": "D255",
+      "to": "T01",
+      "from_name": "febrile_seizure",
+      "to_name": "T01",
+      "reason": "熱性痙攣: 急性"
+    },
+    {
+      "from": "D255",
+      "to": "T02",
+      "from_name": "febrile_seizure",
+      "to_name": "T02",
+      "reason": "熱性痙攣: 急性(発熱初日に多い)"
+    },
+    {
+      "from": "D256",
+      "to": "S13",
+      "from_name": "midgut_volvulus",
+      "to_name": "S13",
+      "reason": "中腸軸捻転: 胆汁性嘔吐(90%+)"
+    },
+    {
+      "from": "D256",
+      "to": "S12",
+      "from_name": "midgut_volvulus",
+      "to_name": "S12",
+      "reason": "中腸軸捻転: 腹痛/腹部膨満"
+    },
+    {
+      "from": "D256",
+      "to": "S14",
+      "from_name": "midgut_volvulus",
+      "to_name": "S14",
+      "reason": "中腸軸捻転: 血便(腸管虚血, 30-50%)"
+    },
+    {
+      "from": "D256",
+      "to": "E03",
+      "from_name": "midgut_volvulus",
+      "to_name": "E03",
+      "reason": "中腸軸捻転: 低血圧(ショック)"
+    },
+    {
+      "from": "D256",
+      "to": "E02",
+      "from_name": "midgut_volvulus",
+      "to_name": "E02",
+      "reason": "中腸軸捻転: 頻脈"
+    },
+    {
+      "from": "D256",
+      "to": "L01",
+      "from_name": "midgut_volvulus",
+      "to_name": "L01",
+      "reason": "中腸軸捻転: WBC上昇(壊死時)"
+    },
+    {
+      "from": "D256",
+      "to": "L16",
+      "from_name": "midgut_volvulus",
+      "to_name": "L16",
+      "reason": "中腸軸捻転: LDH上昇(腸管虚血)"
+    },
+    {
+      "from": "D256",
+      "to": "T01",
+      "from_name": "midgut_volvulus",
+      "to_name": "T01",
+      "reason": "中腸軸捻転: 超急性"
+    },
+    {
+      "from": "D256",
+      "to": "T02",
+      "from_name": "midgut_volvulus",
+      "to_name": "T02",
+      "reason": "中腸軸捻転: 急性"
+    },
+    {
+      "from": "D253",
+      "to": "L02",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "L02",
+      "reason": "細気管支炎: CRP(二次感染時上昇)"
+    },
+    {
+      "from": "D253",
+      "to": "L04",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "L04",
+      "reason": "細気管支炎: CXR(過膨張/浸潤)"
+    },
+    {
+      "from": "D253",
+      "to": "L09",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "L09",
+      "reason": "細気管支炎: 血培(通常陰性, 二次感染時)"
+    },
+    {
+      "from": "D253",
+      "to": "S13",
+      "from_name": "acute_bronchiolitis",
+      "to_name": "S13",
+      "reason": "細気管支炎: 嘔吐(哺乳困難, 30-40%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
