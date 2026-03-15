@@ -4198,6 +4198,18 @@
       ],
       "severity": "critical",
       "note": "古典的3徴(発熱+頭痛+局所神経症状)は14%のみ。頭痛が最多(70%)。CT/MRI環状増強病変。副鼻腔/歯原性/心内膜炎が感染源。Streptococcus/Staphylococcus。緊急手術/ドレナージが必要"
+    },
+    {
+      "id": "D119",
+      "name": "perinephric_abscess",
+      "name_ja": "腎/腎周囲膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "腎盂腎炎の重症合併症。側腹部痛+発熱+CVA叩打痛。尿所見正常が30%(血行性)。CT造影で確定。DM/尿路結石がリスク"
     }
   ]
 }

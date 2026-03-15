@@ -11,10 +11,38 @@
       "traditional_result": "Top-1 50.8%",
       "navigation_result": "3ステップでTop-1到達(52.7%)",
       "navigation_steps": [
-        {"step": 0, "H": 5.49, "top1": "D58(6%)", "D114_rank": 10, "D114_prob": "3.1%", "falsification_rec": "L01(WBC)→normal"},
-        {"step": 1, "H": 5.37, "top1": "D62(9%)", "D114_rank": 5, "D114_prob": "4.0%", "falsification_rec": "S17(体重減少)→absent"},
-        {"step": 2, "H": 5.35, "top1": "D62(10%)", "D114_rank": 5, "D114_prob": "4.7%", "falsification_rec": "L50(TP)→very_high"},
-        {"step": 3, "H": 3.31, "top1": "D114(53%)", "D114_rank": 1, "D114_prob": "52.7%", "note": "Top-1到達!"}
+        {
+          "step": 0,
+          "H": 5.49,
+          "top1": "D58(6%)",
+          "D114_rank": 10,
+          "D114_prob": "3.1%",
+          "falsification_rec": "L01(WBC)→normal"
+        },
+        {
+          "step": 1,
+          "H": 5.37,
+          "top1": "D62(9%)",
+          "D114_rank": 5,
+          "D114_prob": "4.0%",
+          "falsification_rec": "S17(体重減少)→absent"
+        },
+        {
+          "step": 2,
+          "H": 5.35,
+          "top1": "D62(10%)",
+          "D114_rank": 5,
+          "D114_prob": "4.7%",
+          "falsification_rec": "L50(TP)→very_high"
+        },
+        {
+          "step": 3,
+          "H": 3.31,
+          "top1": "D114(53%)",
+          "D114_rank": 1,
+          "D114_prob": "52.7%",
+          "note": "Top-1到達!"
+        }
       ],
       "conclusion": "最終版では3ステップでTop-1到達。Step2でTP(血清総蛋白)が自動推奨される。通常IG推奨では到達不能だった案例。"
     },
@@ -26,13 +54,49 @@
       "traditional_result": "Top-1 97.2%",
       "navigation_result": "6ステップでTop-1到達(93%→100%)",
       "navigation_steps": [
-        {"step": 0, "H": 1.96, "D58_rank": 3, "falsification_rec": "E12(皮膚)→maculopapular"},
-        {"step": 1, "H": 2.15, "D58_rank": 3, "falsification_rec": "S18(皮膚訴え)→widespread"},
-        {"step": 2, "H": 1.29, "D58_rank": 4, "falsification_rec": "L14(血液像)→left_shift"},
-        {"step": 3, "H": 1.18, "D58_rank": 4, "falsification_rec": "E13(リンパ節)→generalized"},
-        {"step": 4, "H": 0.75, "D58_rank": 4, "falsification_rec": "E34(肝腫大)→present"},
-        {"step": 5, "H": 1.37, "D58_rank": 2, "falsification_rec": "L15(フェリチン)→very_high_over_1000"},
-        {"step": 6, "H": 0.45, "D58_rank": 1, "D58_prob": "93%", "note": "Top-1到達!"}
+        {
+          "step": 0,
+          "H": 1.96,
+          "D58_rank": 3,
+          "falsification_rec": "E12(皮膚)→maculopapular"
+        },
+        {
+          "step": 1,
+          "H": 2.15,
+          "D58_rank": 3,
+          "falsification_rec": "S18(皮膚訴え)→widespread"
+        },
+        {
+          "step": 2,
+          "H": 1.29,
+          "D58_rank": 4,
+          "falsification_rec": "L14(血液像)→left_shift"
+        },
+        {
+          "step": 3,
+          "H": 1.18,
+          "D58_rank": 4,
+          "falsification_rec": "E13(リンパ節)→generalized"
+        },
+        {
+          "step": 4,
+          "H": 0.75,
+          "D58_rank": 4,
+          "falsification_rec": "E34(肝腫大)→present"
+        },
+        {
+          "step": 5,
+          "H": 1.37,
+          "D58_rank": 2,
+          "falsification_rec": "L15(フェリチン)→very_high_over_1000"
+        },
+        {
+          "step": 6,
+          "H": 0.45,
+          "D58_rank": 1,
+          "D58_prob": "93%",
+          "note": "Top-1到達!"
+        }
       ],
       "conclusion": "反証推奨で6ステップ。Step5のフェリチン著高でStillが浮上、Step6で93%。"
     },
@@ -44,7 +108,13 @@
       "traditional_result": "Top-1 97.1%",
       "navigation_result": "Step0で即Top-1(77%)",
       "navigation_steps": [
-        {"step": 0, "H": 1.43, "D115_rank": 1, "D115_prob": "77%", "note": "即Top-1"}
+        {
+          "step": 0,
+          "H": 1.43,
+          "D115_rank": 1,
+          "D115_prob": "77%",
+          "note": "即Top-1"
+        }
       ],
       "conclusion": "初診情報(発熱+皮疹+多関節痛)だけでTop-1。反証推奨→関節腫脹で82%に強化。"
     },
@@ -56,8 +126,20 @@
       "traditional_result": "Top-1 90.9%",
       "navigation_result": "Step0で即Top-1(88%)",
       "navigation_steps": [
-        {"step": 0, "H": 0.94, "D116_rank": 1, "D116_prob": "88%", "falsification_rec": "E01(体温)"},
-        {"step": 1, "H": 0.15, "D116_rank": 1, "D116_prob": "99%", "note": "+体温→99%"}
+        {
+          "step": 0,
+          "H": 0.94,
+          "D116_rank": 1,
+          "D116_prob": "88%",
+          "falsification_rec": "E01(体温)"
+        },
+        {
+          "step": 1,
+          "H": 0.15,
+          "D116_rank": 1,
+          "D116_prob": "99%",
+          "note": "+体温→99%"
+        }
       ],
       "conclusion": "胸痛+呼吸困難の急性発症で即Top-1。反証推奨→体温確認で99%に強化。"
     },
@@ -69,11 +151,62 @@
       "traditional_result": "Top-1 51.9%",
       "navigation_result": "Step0でTop-1(33%)→Step1で脱落→Step2で復帰(26%)",
       "navigation_steps": [
-        {"step": 0, "H": 3.92, "D117_rank": 1, "D117_prob": "33%", "falsification_rec": "S05(頭痛)→severe"},
-        {"step": 1, "H": 4.41, "D117_rank": 2, "D117_prob": "17%", "falsification_rec": "L02(CRP)→high", "note": "頭痛追加で脳炎に奪われる"},
-        {"step": 2, "H": 4.12, "D117_rank": 1, "D117_prob": "26%", "note": "CRP高値でTop-1復帰"}
+        {
+          "step": 0,
+          "H": 3.92,
+          "D117_rank": 1,
+          "D117_prob": "33%",
+          "falsification_rec": "S05(頭痛)→severe"
+        },
+        {
+          "step": 1,
+          "H": 4.41,
+          "D117_rank": 2,
+          "D117_prob": "17%",
+          "falsification_rec": "L02(CRP)→high",
+          "note": "頭痛追加で脳炎に奪われる"
+        },
+        {
+          "step": 2,
+          "H": 4.12,
+          "D117_rank": 1,
+          "D117_prob": "26%",
+          "note": "CRP高値でTop-1復帰"
+        }
       ],
       "conclusion": "背部痛+高熱→Top-1。頭痛追加で脳炎に脱落(見逃し率56%の再現)。CRP高値で復帰。"
+    },
+    {
+      "case_id": "R202",
+      "pmcid": "PMC8463828",
+      "final_diagnosis": "腎膿瘍(腎周囲腔破裂)",
+      "expected_id": "D119",
+      "traditional_result": "Top-1 80.3%",
+      "navigation_result": "Step1でTop-1(52%), Step2で93%",
+      "navigation_steps": [
+        {
+          "step": 0,
+          "H": 1.69,
+          "D119_rank": 2,
+          "D119_prob": "34%",
+          "falsification_rec": "L05(尿検査)→normal"
+        },
+        {
+          "step": 1,
+          "H": 2.41,
+          "D119_rank": 1,
+          "D119_prob": "52%",
+          "falsification_rec": "L31(腹部CT)→abscess"
+        },
+        {
+          "step": 2,
+          "H": 0.62,
+          "D119_rank": 1,
+          "D119_prob": "93%",
+          "note": "Top-1安定"
+        }
+      ],
+      "conclusion": "尿検査正常(血行性)→CT膿瘍で確定。反証推奨が正しい検査順序を提示"
     }
   ]
 }

@@ -4998,6 +4998,58 @@
       },
       "result": "",
       "notes": "伝統+ナビ. 無熱. 外傷後2週の頭痛+片麻痺. MRI環状増強が鍵. ラボデータ限定的"
+    },
+    {
+      "id": "R202",
+      "source": "Radiol Case Rep 2021",
+      "pmcid": "PMC8463828",
+      "vignette": "34M 再発性皮膚感染歴. 5日間の右側腹部痛+39.5℃発熱+悪寒. 下部尿路症状なし. WBC 15000, CRP 200, 尿検査正常(血行性播種). CT: 右腎中下極に>5cm膿瘍, 腎周囲腔に破裂. 膿培養: コアグラーゼ陰性ブドウ球菌",
+      "final_diagnosis": "腎膿瘍(腎周囲腔破裂)",
+      "expected_id": "D119",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S15": "present",
+        "E11": "present",
+        "S09": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L05": "normal",
+        "L31": "abscess",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 尿所見正常(血行性). CRP 200著高"
+    },
+    {
+      "id": "R203",
+      "source": "Int J Surg Case Rep 2018",
+      "pmcid": "PMC5958932",
+      "vignette": "64M 5ヶ月の右側腹部鈍痛(無熱). 右側腹部に非圧痛腫瘤. WBC 23.47k, PCT 22.38, Cr 2.30, eGFR 28.9. 尿: 白血球尿+細菌尿, 培養E.coli. Echo: 右腎被膜下膿瘍+III度水腎症+鋳型結石. CT: 右腎16x13x12.5cm",
+      "final_diagnosis": "慢性腎盂腎炎+腎周囲膿瘍",
+      "expected_id": "D119",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "S15": "present",
+        "L01": "very_high_over_20000",
+        "L03": "high_over_0.5",
+        "L05": "pyuria_bacteriuria",
+        "L31": "abscess",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "伝統+ナビ. 無熱! 5ヶ月の慢性経過. PCT 22.38著高. 腫瘍と誤診されかけた"
     }
   ],
   "total_cases": 110

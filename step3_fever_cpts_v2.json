@@ -2434,6 +2434,16 @@
       "cpt": {
         "": 0.003
       }
+    },
+    "D119": {
+      "parents": [
+        "R04"
+      ],
+      "description": "腎周囲膿瘍。糖尿病がリスク",
+      "cpt": {
+        "no": 0.003,
+        "yes": 0.008
+      }
     }
   },
   "noisy_or_params": {
@@ -3370,6 +3380,13 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.15,
           "over_40.0": 0.1
+        },
+        "D119": {
+          "under_37.5": 0.1,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.35,
+          "over_40.0": 0.15
         }
       }
     },
@@ -6207,6 +6224,12 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.15
+        },
+        "D119": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.1,
+          "high_10000_20000": 0.5,
+          "very_high_over_20000": 0.38
         }
       }
     },
@@ -6860,6 +6883,12 @@
           "mild_0.3_3": 0.15,
           "moderate_3_10": 0.35,
           "high_over_10": 0.4
+        },
+        "D119": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.05,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.73
         }
       }
     },
@@ -6943,6 +6972,12 @@
           "low_under_0.25": 0.1,
           "gray_0.25_0.5": 0.2,
           "high_over_0.5": 0.4
+        },
+        "D119": {
+          "not_done": 0.25,
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.1,
+          "high_over_0.5": 0.6
         }
       }
     },
@@ -7312,6 +7347,12 @@
           "negative": 0.55,
           "gram_positive": 0.15,
           "gram_negative": 0.1
+        },
+        "D119": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.4,
+          "gram_positive": 0.1,
+          "gram_negative": 0.3
         }
       }
     },
@@ -8442,6 +8483,11 @@
           "normal": 0.15,
           "elevated": 0.5,
           "very_high_over_100": 0.35
+        },
+        "D119": {
+          "normal": 0.1,
+          "elevated": 0.5,
+          "very_high_over_100": 0.4
         }
       }
     },
@@ -8556,6 +8602,12 @@
           "abscess": 0.8,
           "mass": 0.0,
           "other_abnormal": 0.1
+        },
+        "D119": {
+          "normal": 0.05,
+          "abscess": 0.85,
+          "mass": 0.05,
+          "other_abnormal": 0.05
         }
       }
     },
@@ -9935,6 +9987,11 @@
           "absent": 0.35,
           "mild": 0.3,
           "severe": 0.35
+        },
+        "D119": {
+          "absent": 0.25,
+          "mild": 0.3,
+          "severe": 0.45
         }
       }
     },
@@ -10201,6 +10258,10 @@
         "D117": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D119": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -10642,6 +10703,10 @@
         "D118": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D119": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -12612,6 +12677,12 @@
           "3d_to_1w": 0.35,
           "1w_to_3w": 0.4,
           "over_3w": 0.15
+        },
+        "D119": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.45,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.1
         }
       }
     },
@@ -12817,6 +12888,10 @@
         "D118": {
           "sudden_hours": 0.15,
           "gradual_days": 0.85
+        },
+        "D119": {
+          "sudden_hours": 0.2,
+          "gradual_days": 0.8
         }
       }
     },
@@ -12971,6 +13046,10 @@
         "D64": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D119": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -13033,6 +13112,10 @@
         "D42": {
           "normal": 0.08,
           "pyuria_bacteriuria": 0.92
+        },
+        "D119": {
+          "normal": 0.3,
+          "pyuria_bacteriuria": 0.7
         }
       }
     },
@@ -13066,6 +13149,10 @@
         "D117": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D119": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -13534,6 +13621,27 @@
           "normal": 0.7,
           "mildly_elevated": 0.25,
           "very_high": 0.05
+        }
+      }
+    },
+    "E11": {
+      "description": "CVA叩打痛。腎盂腎炎/腎周囲膿瘍で陽性。",
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D09": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D42": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D119": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     }
