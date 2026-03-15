@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2779,
+  "total_edges": 2810,
   "edges": [
     {
       "from": "R01",
@@ -23950,6 +23950,223 @@
       "from_name": "anti_NMDA",
       "to_name": "L01",
       "reason": "抗NMDA: WBC(正常~軽度上昇)"
+    },
+    {
+      "from": "D151",
+      "to": "E02",
+      "from_name": "acute_liver_failure",
+      "to_name": "E02",
+      "reason": "劇症肝炎: 頻脈"
+    },
+    {
+      "from": "D151",
+      "to": "E03",
+      "from_name": "acute_liver_failure",
+      "to_name": "E03",
+      "reason": "劇症肝炎: 低血圧"
+    },
+    {
+      "from": "D151",
+      "to": "E04",
+      "from_name": "acute_liver_failure",
+      "to_name": "E04",
+      "reason": "劇症肝炎: 頻呼吸"
+    },
+    {
+      "from": "D151",
+      "to": "L54",
+      "from_name": "acute_liver_failure",
+      "to_name": "L54",
+      "reason": "劇症肝炎: 低血糖"
+    },
+    {
+      "from": "D158",
+      "to": "E16",
+      "from_name": "AIHA",
+      "to_name": "E16",
+      "reason": "AIHA: 意識障害"
+    },
+    {
+      "from": "D158",
+      "to": "S05",
+      "from_name": "AIHA",
+      "to_name": "S05",
+      "reason": "AIHA: 頭痛"
+    },
+    {
+      "from": "D166",
+      "to": "E38",
+      "from_name": "acetaminophen_OD",
+      "to_name": "E38",
+      "reason": "APAP: 血圧"
+    },
+    {
+      "from": "D149",
+      "to": "S53",
+      "from_name": "CO_poisoning",
+      "to_name": "S53",
+      "reason": "CO中毒: 構音障害"
+    },
+    {
+      "from": "D110",
+      "to": "E18",
+      "from_name": "toxoplasmosis",
+      "to_name": "E18",
+      "reason": "トキソプラズマ: 黄疸"
+    },
+    {
+      "from": "D144",
+      "to": "E16",
+      "from_name": "GBS",
+      "to_name": "E16",
+      "reason": "GBS: 意識障害"
+    },
+    {
+      "from": "D144",
+      "to": "S05",
+      "from_name": "GBS",
+      "to_name": "S05",
+      "reason": "GBS: 頭痛"
+    },
+    {
+      "from": "D146",
+      "to": "S42",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S42",
+      "reason": "高血圧緊急症: 痙攣"
+    },
+    {
+      "from": "D146",
+      "to": "S52",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S52",
+      "reason": "高血圧緊急症: 局所神経脱落"
+    },
+    {
+      "from": "D161",
+      "to": "L11",
+      "from_name": "organophosphate",
+      "to_name": "L11",
+      "reason": "有機リン: 肝酵素"
+    },
+    {
+      "from": "D161",
+      "to": "S12",
+      "from_name": "organophosphate",
+      "to_name": "S12",
+      "reason": "有機リン: 腹痛"
+    },
+    {
+      "from": "D169",
+      "to": "S13",
+      "from_name": "AIH",
+      "to_name": "S13",
+      "reason": "AIH: 嘔気"
+    },
+    {
+      "from": "D175",
+      "to": "S07",
+      "from_name": "AIP",
+      "to_name": "S07",
+      "reason": "AIP: 倦怠感"
+    },
+    {
+      "from": "D87",
+      "to": "S01",
+      "from_name": "subacute_thyroiditis",
+      "to_name": "S01",
+      "reason": "亜急性甲状腺炎: 咳嗽"
+    },
+    {
+      "from": "D170",
+      "to": "E03",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "E03",
+      "reason": "アルコール性肝炎: 低血圧"
+    },
+    {
+      "from": "D170",
+      "to": "L16",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L16",
+      "reason": "アルコール性肝炎: LDH"
+    },
+    {
+      "from": "D170",
+      "to": "L55",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L55",
+      "reason": "アルコール性肝炎: AKI"
+    },
+    {
+      "from": "D169",
+      "to": "S04",
+      "from_name": "AIH",
+      "to_name": "S04",
+      "reason": "AIH: 呼吸困難"
+    },
+    {
+      "from": "D165",
+      "to": "E05",
+      "from_name": "myasthenic_crisis",
+      "to_name": "E05",
+      "reason": "MGクリーゼ: 低酸素"
+    },
+    {
+      "from": "D165",
+      "to": "E38",
+      "from_name": "myasthenic_crisis",
+      "to_name": "E38",
+      "reason": "MGクリーゼ: 血圧"
+    },
+    {
+      "from": "D163",
+      "to": "L17",
+      "from_name": "wernicke",
+      "to_name": "L17",
+      "reason": "ウェルニッケ: CK"
+    },
+    {
+      "from": "D163",
+      "to": "L53",
+      "from_name": "wernicke",
+      "to_name": "L53",
+      "reason": "ウェルニッケ: トロポニン"
+    },
+    {
+      "from": "D172",
+      "to": "S13",
+      "from_name": "gas_gangrene",
+      "to_name": "S13",
+      "reason": "ガス壊疽: 嘔気"
+    },
+    {
+      "from": "D172",
+      "to": "S14",
+      "from_name": "gas_gangrene",
+      "to_name": "S14",
+      "reason": "ガス壊疽: 下痢"
+    },
+    {
+      "from": "D171",
+      "to": "L01",
+      "from_name": "APS",
+      "to_name": "L01",
+      "reason": "APS: WBC"
+    },
+    {
+      "from": "D171",
+      "to": "E38",
+      "from_name": "APS",
+      "to_name": "E38",
+      "reason": "APS: 高血圧"
+    },
+    {
+      "from": "D171",
+      "to": "S13",
+      "from_name": "APS",
+      "to_name": "S13",
+      "reason": "APS: 嘔吐"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
