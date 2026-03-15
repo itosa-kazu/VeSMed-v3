@@ -5225,6 +5225,42 @@
       ],
       "severity": "critical",
       "note": "C1-INH欠損/機能不全。反復性の顔面/四肢/消化管浮腫。喉頭浮腫は窒息リスク。蕁麻疹なし(アレルギーとの鑑別点)"
+    },
+    {
+      "id": "D186",
+      "name": "renal_infarction",
+      "name_ja": "腎梗塞",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "腎動脈塞栓/血栓→側腹部痛+LDH著高+AKI。AF/IE/大動脈解離が塞栓源。虫垂炎/腎盂腎炎と誤診多い"
+    },
+    {
+      "id": "D187",
+      "name": "splenic_infarction",
+      "name_ja": "脾梗塞",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "脾動脈塞栓→左上腹部痛/左肩放散痛(Kehr sign)。IE/AF/血液疾患が原因。LDH上昇"
+    },
+    {
+      "id": "D188",
+      "name": "eosinophilic_pneumonia",
+      "name_ja": "好酸球性肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "急性(AEP):数日で呼吸不全、喫煙開始が誘因。慢性(CEP):数週~月、末梢浸潤(photonegative of PE)。BAL好酸球>25%"
     }
   ]
 }
