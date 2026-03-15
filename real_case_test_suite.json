@@ -3497,8 +3497,7 @@
         "L09": "negative",
         "L14": "left_shift",
         "L35": "cavity",
-        "S50": "breathing",
-        "S51": "none"
+        "S50": "breathing"
       },
       "risk_factors": {
         "R01": "65_plus",
