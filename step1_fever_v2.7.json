@@ -5477,6 +5477,66 @@
       ],
       "severity": "high",
       "note": "非対称性中隔肥大. 労作時呼吸困難+失神+胸痛+突然死リスク. LVOT obstruction. 若年突然死の原因"
+    },
+    {
+      "id": "D207",
+      "name": "HIT",
+      "name_ja": "ヘパリン起因性血小板減少症(HIT)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "ヘパリン投与5-14日後. PLT50%以上低下+血栓症(DVT/PE/動脈). 4Tスコア. アルガトロバン治療"
+    },
+    {
+      "id": "D208",
+      "name": "ITP",
+      "name_ja": "特発性血小板減少性紫斑病(ITP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "自己免疫性血小板破壊. 出血症状(紫斑/点状出血/歯肉出血). PLT<100k. 他の原因除外で診断"
+    },
+    {
+      "id": "D209",
+      "name": "myelofibrosis",
+      "name_ja": "骨髄線維症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "JAK2/CALR/MPL変異. 巨脾+貧血+leukoerythroblastic picture. 涙滴赤血球. 全身症状(倦怠感/盗汗/体重減少)"
+    },
+    {
+      "id": "D210",
+      "name": "acute_porphyria",
+      "name_ja": "急性間欠性ポルフィリン症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "ALA/PBG蓄積. 五徴:腹痛+嘔吐+便秘+頻脈+精神症状. 暗赤色尿. 薬剤/月経/絶食が誘因. 女性に多い"
+    },
+    {
+      "id": "D211",
+      "name": "TCA_overdose",
+      "name_ja": "三環系抗うつ薬中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Na+チャネル遮断→QRS幅延長→不整脈. 抗コリン作用→頻脈/口渇/瞳孔散大/尿閉. 痙攣. 重炭酸Na治療"
     }
   ]
 }

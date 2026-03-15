@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3209,
+  "total_edges": 3248,
   "edges": [
     {
       "from": "R01",
@@ -26960,6 +26960,279 @@
       "from_name": "HCM",
       "to_name": "T02",
       "reason": "HCM: 急性~慢性"
+    },
+    {
+      "from": "D207",
+      "to": "L14",
+      "from_name": "HIT",
+      "to_name": "L14",
+      "reason": "HIT: 血小板減少(定義的)"
+    },
+    {
+      "from": "D207",
+      "to": "L52",
+      "from_name": "HIT",
+      "to_name": "L52",
+      "reason": "HIT: D-dimer上昇(血栓)"
+    },
+    {
+      "from": "D207",
+      "to": "S04",
+      "from_name": "HIT",
+      "to_name": "S04",
+      "reason": "HIT: 呼吸困難(PE, 30-40%)"
+    },
+    {
+      "from": "D207",
+      "to": "E36",
+      "from_name": "HIT",
+      "to_name": "E36",
+      "reason": "HIT: 下肢浮腫(DVT, 30-40%)"
+    },
+    {
+      "from": "D207",
+      "to": "E02",
+      "from_name": "HIT",
+      "to_name": "E02",
+      "reason": "HIT: 頻脈(PE/血栓)"
+    },
+    {
+      "from": "D207",
+      "to": "E12",
+      "from_name": "HIT",
+      "to_name": "E12",
+      "reason": "HIT: 皮膚(注射部位壊死, 10-20%)"
+    },
+    {
+      "from": "D207",
+      "to": "T01",
+      "from_name": "HIT",
+      "to_name": "T01",
+      "reason": "HIT: 亜急性(ヘパリン開始5-14日後)"
+    },
+    {
+      "from": "D207",
+      "to": "T02",
+      "from_name": "HIT",
+      "to_name": "T02",
+      "reason": "HIT: 亜急性"
+    },
+    {
+      "from": "D208",
+      "to": "L14",
+      "from_name": "ITP",
+      "to_name": "L14",
+      "reason": "ITP: 血小板減少(定義的)"
+    },
+    {
+      "from": "D208",
+      "to": "S44",
+      "from_name": "ITP",
+      "to_name": "S44",
+      "reason": "ITP: 出血傾向(60-80%)"
+    },
+    {
+      "from": "D208",
+      "to": "E12",
+      "from_name": "ITP",
+      "to_name": "E12",
+      "reason": "ITP: 紫斑/点状出血(70-80%)"
+    },
+    {
+      "from": "D208",
+      "to": "S07",
+      "from_name": "ITP",
+      "to_name": "S07",
+      "reason": "ITP: 倦怠感(30-40%)"
+    },
+    {
+      "from": "D208",
+      "to": "E01",
+      "from_name": "ITP",
+      "to_name": "E01",
+      "reason": "ITP: 通常無熱"
+    },
+    {
+      "from": "D208",
+      "to": "T01",
+      "from_name": "ITP",
+      "to_name": "T01",
+      "reason": "ITP: 急性~慢性"
+    },
+    {
+      "from": "D208",
+      "to": "T02",
+      "from_name": "ITP",
+      "to_name": "T02",
+      "reason": "ITP: 亜急性"
+    },
+    {
+      "from": "D209",
+      "to": "S07",
+      "from_name": "myelofibrosis",
+      "to_name": "S07",
+      "reason": "骨髄線維症: 倦怠感(80%+)"
+    },
+    {
+      "from": "D209",
+      "to": "E01",
+      "from_name": "myelofibrosis",
+      "to_name": "E01",
+      "reason": "骨髄線維症: 発熱(20-30%)"
+    },
+    {
+      "from": "D209",
+      "to": "S12",
+      "from_name": "myelofibrosis",
+      "to_name": "S12",
+      "reason": "骨髄線維症: 腹痛(脾腫, LUQ, 40-50%)"
+    },
+    {
+      "from": "D209",
+      "to": "L01",
+      "from_name": "myelofibrosis",
+      "to_name": "L01",
+      "reason": "骨髄線維症: WBC(変動: 低~著高)"
+    },
+    {
+      "from": "D209",
+      "to": "L16",
+      "from_name": "myelofibrosis",
+      "to_name": "L16",
+      "reason": "骨髄線維症: LDH上昇(骨髄外造血)"
+    },
+    {
+      "from": "D209",
+      "to": "T01",
+      "from_name": "myelofibrosis",
+      "to_name": "T01",
+      "reason": "骨髄線維症: 慢性"
+    },
+    {
+      "from": "D209",
+      "to": "T02",
+      "from_name": "myelofibrosis",
+      "to_name": "T02",
+      "reason": "骨髄線維症: 緩徐"
+    },
+    {
+      "from": "D210",
+      "to": "S12",
+      "from_name": "acute_porphyria",
+      "to_name": "S12",
+      "reason": "ポルフィリン: 腹痛(びまん性, 90%+)"
+    },
+    {
+      "from": "D210",
+      "to": "S13",
+      "from_name": "acute_porphyria",
+      "to_name": "S13",
+      "reason": "ポルフィリン: 嘔吐(60-70%)"
+    },
+    {
+      "from": "D210",
+      "to": "E02",
+      "from_name": "acute_porphyria",
+      "to_name": "E02",
+      "reason": "ポルフィリン: 頻脈(自律神経障害, 70-80%)"
+    },
+    {
+      "from": "D210",
+      "to": "E38",
+      "from_name": "acute_porphyria",
+      "to_name": "E38",
+      "reason": "ポルフィリン: 高血圧(自律神経障害, 40-50%)"
+    },
+    {
+      "from": "D210",
+      "to": "E16",
+      "from_name": "acute_porphyria",
+      "to_name": "E16",
+      "reason": "ポルフィリン: 精神症状/意識障害(20-30%)"
+    },
+    {
+      "from": "D210",
+      "to": "S42",
+      "from_name": "acute_porphyria",
+      "to_name": "S42",
+      "reason": "ポルフィリン: 痙攣(低Na, 10-20%)"
+    },
+    {
+      "from": "D210",
+      "to": "L44",
+      "from_name": "acute_porphyria",
+      "to_name": "L44",
+      "reason": "ポルフィリン: 低Na血症(SIADH, 30-40%)"
+    },
+    {
+      "from": "D210",
+      "to": "S52",
+      "from_name": "acute_porphyria",
+      "to_name": "S52",
+      "reason": "ポルフィリン: 四肢脱力(神経障害, 40-50%)"
+    },
+    {
+      "from": "D210",
+      "to": "T01",
+      "from_name": "acute_porphyria",
+      "to_name": "T01",
+      "reason": "ポルフィリン: 急性(発作は数日~数週)"
+    },
+    {
+      "from": "D210",
+      "to": "T02",
+      "from_name": "acute_porphyria",
+      "to_name": "T02",
+      "reason": "ポルフィリン: 急性"
+    },
+    {
+      "from": "D211",
+      "to": "E16",
+      "from_name": "TCA_overdose",
+      "to_name": "E16",
+      "reason": "TCA: 意識障害(昏睡, 60-70%)"
+    },
+    {
+      "from": "D211",
+      "to": "E02",
+      "from_name": "TCA_overdose",
+      "to_name": "E02",
+      "reason": "TCA: 頻脈(抗コリン+Na遮断, 80%+)"
+    },
+    {
+      "from": "D211",
+      "to": "S42",
+      "from_name": "TCA_overdose",
+      "to_name": "S42",
+      "reason": "TCA: 痙攣(30-40%)"
+    },
+    {
+      "from": "D211",
+      "to": "E03",
+      "from_name": "TCA_overdose",
+      "to_name": "E03",
+      "reason": "TCA: 低血圧(α遮断, 40-50%)"
+    },
+    {
+      "from": "D211",
+      "to": "E01",
+      "from_name": "TCA_overdose",
+      "to_name": "E01",
+      "reason": "TCA: 体温(高体温/抗コリン, 30-40%)"
+    },
+    {
+      "from": "D211",
+      "to": "T01",
+      "from_name": "TCA_overdose",
+      "to_name": "T01",
+      "reason": "TCA: 超急性"
+    },
+    {
+      "from": "D211",
+      "to": "T02",
+      "from_name": "TCA_overdose",
+      "to_name": "T02",
+      "reason": "TCA: 突発"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
