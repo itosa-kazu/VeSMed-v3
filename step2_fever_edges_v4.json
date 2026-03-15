@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3686,
+  "total_edges": 3709,
   "edges": [
     {
       "from": "R01",
@@ -30299,6 +30299,167 @@
       "from_name": "ITP",
       "to_name": "L53",
       "reason": "ITP: トロポニン"
+    },
+    {
+      "from": "D53",
+      "to": "L45",
+      "from_name": "brucella",
+      "to_name": "L45",
+      "reason": "ブルセラ: CSF(リンパ球優位)"
+    },
+    {
+      "from": "D53",
+      "to": "E16",
+      "from_name": "brucella",
+      "to_name": "E16",
+      "reason": "ブルセラ: 意識障害(神経ブルセラ)"
+    },
+    {
+      "from": "D53",
+      "to": "E06",
+      "from_name": "brucella",
+      "to_name": "E06",
+      "reason": "ブルセラ: 項部硬直(髄膜炎)"
+    },
+    {
+      "from": "D53",
+      "to": "S02",
+      "from_name": "brucella",
+      "to_name": "S02",
+      "reason": "ブルセラ: 咽頭痛(20-30%)"
+    },
+    {
+      "from": "D50",
+      "to": "L01",
+      "from_name": "PCP",
+      "to_name": "L01",
+      "reason": "PCP: WBC(HIV+で低値, HIV-で上昇)"
+    },
+    {
+      "from": "D21",
+      "to": "S09",
+      "from_name": "perianal_abscess",
+      "to_name": "S09",
+      "reason": "肛門周囲膿瘍: 悪寒戦慄(菌血症)"
+    },
+    {
+      "from": "D85",
+      "to": "S04",
+      "from_name": "odontogenic",
+      "to_name": "S04",
+      "reason": "歯原性感染: 呼吸困難(Ludwig angina→気道)"
+    },
+    {
+      "from": "D85",
+      "to": "E02",
+      "from_name": "odontogenic",
+      "to_name": "E02",
+      "reason": "歯原性感染: 頻脈(敗血症)"
+    },
+    {
+      "from": "D85",
+      "to": "E03",
+      "from_name": "odontogenic",
+      "to_name": "E03",
+      "reason": "歯原性感染: 血圧(通常正常)"
+    },
+    {
+      "from": "D85",
+      "to": "E16",
+      "from_name": "odontogenic",
+      "to_name": "E16",
+      "reason": "歯原性感染: 意識(通常正常)"
+    },
+    {
+      "from": "D85",
+      "to": "E04",
+      "from_name": "odontogenic",
+      "to_name": "E04",
+      "reason": "歯原性感染: 頻呼吸(気道閉塞時)"
+    },
+    {
+      "from": "D85",
+      "to": "T01",
+      "from_name": "odontogenic",
+      "to_name": "T01",
+      "reason": "歯原性感染: 急性"
+    },
+    {
+      "from": "D85",
+      "to": "T02",
+      "from_name": "odontogenic",
+      "to_name": "T02",
+      "reason": "歯原性感染: 急性"
+    },
+    {
+      "from": "D110",
+      "to": "L45",
+      "from_name": "toxoplasmosis",
+      "to_name": "L45",
+      "reason": "トキソプラズマ: CSF(リンパ球優位)"
+    },
+    {
+      "from": "D110",
+      "to": "E06",
+      "from_name": "toxoplasmosis",
+      "to_name": "E06",
+      "reason": "トキソプラズマ: 項部硬直(脳炎)"
+    },
+    {
+      "from": "D121",
+      "to": "E16",
+      "from_name": "tamponade",
+      "to_name": "E16",
+      "reason": "心タンポナーデ: 意識障害(ショック)"
+    },
+    {
+      "from": "D77",
+      "to": "T02",
+      "from_name": "DVT_PE",
+      "to_name": "T02",
+      "reason": "PE: 発症(突発~亜急性)"
+    },
+    {
+      "from": "D143",
+      "to": "S13",
+      "from_name": "aspiration_pneumonia",
+      "to_name": "S13",
+      "reason": "誤嚥性肺炎: 嘔吐(誤嚥のリスク因子)"
+    },
+    {
+      "from": "D38",
+      "to": "E03",
+      "from_name": "C_diff",
+      "to_name": "E03",
+      "reason": "C.diff: 血圧(通常正常)"
+    },
+    {
+      "from": "D38",
+      "to": "T02",
+      "from_name": "C_diff",
+      "to_name": "T02",
+      "reason": "C.diff: 発症(亜急性)"
+    },
+    {
+      "from": "D202",
+      "to": "L01",
+      "from_name": "sjogren",
+      "to_name": "L01",
+      "reason": "シェーグレン: WBC低下(リンパ球減少)"
+    },
+    {
+      "from": "D208",
+      "to": "S21",
+      "from_name": "ITP",
+      "to_name": "S21",
+      "reason": "ITP: 胸痛(冠動脈血栓合併時)"
+    },
+    {
+      "from": "D14",
+      "to": "L11",
+      "from_name": "IE",
+      "to_name": "L11",
+      "reason": "IE: 肝酵素(肝梗塞/うっ血肝)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

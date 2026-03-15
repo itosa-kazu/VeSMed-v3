@@ -28,12 +28,12 @@ CASES = os.path.join(BASE, "real_case_test_suite.json")
 
 # === 推論改善パラメータ (grid search最適化済み) ===
 # IDF鑑別力係数のべき乗 (0=無効, 0.5=最適, 1.0=強)
-IDF_DISC_POWER = 0.5
-# 反事実Coverage: 因果説明力の重み (0=無効, 2.0=最適, 3.0=強)
-CF_COVERAGE_ALPHA = 2.0
-# Prior Power: full_cptの絶対値をどの程度priorに反映するか
-# 0.0=全疾患平等(BASE_PRIOR), 1.0=full_cpt直接使用, 0.3-0.5=圧縮
-PRIOR_POWER = 0.0
+IDF_DISC_POWER = 0.3
+# 反事実Coverage: 因果説明力の重み (0=無効, 1.5=最適, 3.0=強)
+CF_COVERAGE_ALPHA = 1.5
+# Prior Power: デモグラフィック調整の強さ (0=無効, 0.5=最適, 1.0=フル)
+# 日本人口ピラミッド(2024)を固定参照分布として使用
+PRIOR_POWER = 0.5
 
 
 def load_json(path):
