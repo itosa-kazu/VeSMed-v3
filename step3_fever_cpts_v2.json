@@ -14714,6 +14714,10 @@
         "D119": {
           "normal": 0.3,
           "pyuria_bacteriuria": 0.7
+        },
+        "D43": {
+          "normal": 0.3,
+          "pyuria_bacteriuria": 0.7
         }
       }
     },
@@ -14751,6 +14755,18 @@
         "D119": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D30": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D42": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D69": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
