@@ -6202,6 +6202,66 @@
       ],
       "severity": "high",
       "note": "S. pneumoniae。市中肺炎の最多原因菌。突然の高熱+悪寒戦慄+膿性痰+胸膜痛。典型的大葉性肺炎"
+    },
+    {
+      "id": "D267",
+      "name": "moraxella_pneumonia",
+      "name_ja": "モラクセラ肺炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "COPD/高齢者に多い第3の市中肺炎菌。湿性咳嗽+膿性痰。βラクタマーゼ産生"
+    },
+    {
+      "id": "D268",
+      "name": "norovirus",
+      "name_ja": "ノロウイルス胃腸炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "冬季流行。突然の嘔吐+水様下痢。高度感染性(10-100粒子で感染)。自然軽快(1-3日)"
+    },
+    {
+      "id": "D269",
+      "name": "rotavirus",
+      "name_ja": "ロタウイルス胃腸炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "乳幼児(6ヶ月~2歳)。白色水様便が特徴。嘔吐→下痢→脱水。ワクチンで減少"
+    },
+    {
+      "id": "D270",
+      "name": "AERD",
+      "name_ja": "アスピリン喘息(NSAIDs不耐症)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "NSAIDs服用→30分~2時間で喘息発作+鼻閉+結膜充血。鼻ポリープ合併。Samter triad"
+    },
+    {
+      "id": "D271",
+      "name": "eosinophilic_esophagitis",
+      "name_ja": "好酸球性食道炎(EoE)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "食道好酸球浸潤→嚥下困難+食物つかえ感+胸痛。若年男性+アトピー素因に多い。PPIで改善しない"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3889,
+  "total_edges": 3929,
   "edges": [
     {
       "from": "R01",
@@ -31720,6 +31720,286 @@
       "from_name": "pneumococcal_pneumonia",
       "to_name": "T02",
       "reason": "肺炎球菌: 急性"
+    },
+    {
+      "from": "D267",
+      "to": "S01",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "S01",
+      "reason": "モラクセラ: 湿性咳嗽"
+    },
+    {
+      "from": "D267",
+      "to": "E01",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "E01",
+      "reason": "モラクセラ: 発熱(70-80%)"
+    },
+    {
+      "from": "D267",
+      "to": "E07",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "E07",
+      "reason": "モラクセラ: crackles"
+    },
+    {
+      "from": "D267",
+      "to": "L04",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "L04",
+      "reason": "モラクセラ: CXR(斑状浸潤)"
+    },
+    {
+      "from": "D267",
+      "to": "S04",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "S04",
+      "reason": "モラクセラ: 呼吸困難"
+    },
+    {
+      "from": "D267",
+      "to": "E04",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "E04",
+      "reason": "モラクセラ: 頻呼吸"
+    },
+    {
+      "from": "D267",
+      "to": "L01",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "L01",
+      "reason": "モラクセラ: WBC上昇"
+    },
+    {
+      "from": "D267",
+      "to": "L02",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "L02",
+      "reason": "モラクセラ: CRP上昇"
+    },
+    {
+      "from": "D267",
+      "to": "T01",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "T01",
+      "reason": "モラクセラ: 急性"
+    },
+    {
+      "from": "D267",
+      "to": "T02",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "T02",
+      "reason": "モラクセラ: 急性"
+    },
+    {
+      "from": "D268",
+      "to": "S13",
+      "from_name": "norovirus",
+      "to_name": "S13",
+      "reason": "ノロ: 嘔吐(90%+)"
+    },
+    {
+      "from": "D268",
+      "to": "S14",
+      "from_name": "norovirus",
+      "to_name": "S14",
+      "reason": "ノロ: 水様下痢(70-80%)"
+    },
+    {
+      "from": "D268",
+      "to": "S12",
+      "from_name": "norovirus",
+      "to_name": "S12",
+      "reason": "ノロ: 腹痛(50-60%)"
+    },
+    {
+      "from": "D268",
+      "to": "E01",
+      "from_name": "norovirus",
+      "to_name": "E01",
+      "reason": "ノロ: 発熱(軽度, 40-50%)"
+    },
+    {
+      "from": "D268",
+      "to": "S07",
+      "from_name": "norovirus",
+      "to_name": "S07",
+      "reason": "ノロ: 倦怠感(50-60%)"
+    },
+    {
+      "from": "D268",
+      "to": "S05",
+      "from_name": "norovirus",
+      "to_name": "S05",
+      "reason": "ノロ: 頭痛(30-40%)"
+    },
+    {
+      "from": "D268",
+      "to": "T01",
+      "from_name": "norovirus",
+      "to_name": "T01",
+      "reason": "ノロ: 急性(1-3日)"
+    },
+    {
+      "from": "D268",
+      "to": "T02",
+      "from_name": "norovirus",
+      "to_name": "T02",
+      "reason": "ノロ: 突発"
+    },
+    {
+      "from": "D269",
+      "to": "S14",
+      "from_name": "rotavirus",
+      "to_name": "S14",
+      "reason": "ロタ: 白色水様便(特徴的)"
+    },
+    {
+      "from": "D269",
+      "to": "S13",
+      "from_name": "rotavirus",
+      "to_name": "S13",
+      "reason": "ロタ: 嘔吐(80-90%)"
+    },
+    {
+      "from": "D269",
+      "to": "E01",
+      "from_name": "rotavirus",
+      "to_name": "E01",
+      "reason": "ロタ: 発熱(60-70%)"
+    },
+    {
+      "from": "D269",
+      "to": "S12",
+      "from_name": "rotavirus",
+      "to_name": "S12",
+      "reason": "ロタ: 腹痛"
+    },
+    {
+      "from": "D269",
+      "to": "E02",
+      "from_name": "rotavirus",
+      "to_name": "E02",
+      "reason": "ロタ: 頻脈(脱水)"
+    },
+    {
+      "from": "D269",
+      "to": "E03",
+      "from_name": "rotavirus",
+      "to_name": "E03",
+      "reason": "ロタ: 低血圧(重度脱水)"
+    },
+    {
+      "from": "D269",
+      "to": "L01",
+      "from_name": "rotavirus",
+      "to_name": "L01",
+      "reason": "ロタ: WBC(正常~軽度)"
+    },
+    {
+      "from": "D269",
+      "to": "T01",
+      "from_name": "rotavirus",
+      "to_name": "T01",
+      "reason": "ロタ: 急性(3-8日)"
+    },
+    {
+      "from": "D269",
+      "to": "T02",
+      "from_name": "rotavirus",
+      "to_name": "T02",
+      "reason": "ロタ: 急性"
+    },
+    {
+      "from": "D270",
+      "to": "S04",
+      "from_name": "AERD",
+      "to_name": "S04",
+      "reason": "AERD: 呼吸困難(急性発作, 90%+)"
+    },
+    {
+      "from": "D270",
+      "to": "E07",
+      "from_name": "AERD",
+      "to_name": "E07",
+      "reason": "AERD: wheezes(90%+)"
+    },
+    {
+      "from": "D270",
+      "to": "E04",
+      "from_name": "AERD",
+      "to_name": "E04",
+      "reason": "AERD: 頻呼吸"
+    },
+    {
+      "from": "D270",
+      "to": "E05",
+      "from_name": "AERD",
+      "to_name": "E05",
+      "reason": "AERD: SpO2低下"
+    },
+    {
+      "from": "D270",
+      "to": "E02",
+      "from_name": "AERD",
+      "to_name": "E02",
+      "reason": "AERD: 頻脈"
+    },
+    {
+      "from": "D270",
+      "to": "T01",
+      "from_name": "AERD",
+      "to_name": "T01",
+      "reason": "AERD: 超急性(NSAIDs後30分~2h)"
+    },
+    {
+      "from": "D270",
+      "to": "T02",
+      "from_name": "AERD",
+      "to_name": "T02",
+      "reason": "AERD: 突発"
+    },
+    {
+      "from": "D271",
+      "to": "S21",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "S21",
+      "reason": "EoE: 胸痛/嚥下痛(40-50%)"
+    },
+    {
+      "from": "D271",
+      "to": "S13",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "S13",
+      "reason": "EoE: 嘔気(30-40%)"
+    },
+    {
+      "from": "D271",
+      "to": "S07",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "S07",
+      "reason": "EoE: 倦怠感(20-30%)"
+    },
+    {
+      "from": "D271",
+      "to": "L14",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "L14",
+      "reason": "EoE: 末梢血好酸球増多(40-50%)"
+    },
+    {
+      "from": "D271",
+      "to": "T01",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "T01",
+      "reason": "EoE: 慢性(反復性)"
+    },
+    {
+      "from": "D271",
+      "to": "T02",
+      "from_name": "eosinophilic_esophagitis",
+      "to_name": "T02",
+      "reason": "EoE: 慢性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
