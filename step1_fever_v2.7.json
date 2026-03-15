@@ -5417,6 +5417,66 @@
       ],
       "severity": "critical",
       "note": "エボラ/マールブルグ/ラッサ/クリミア・コンゴ等. 高熱+出血傾向+多臓器不全. 致死率30-90%. 流行地渡航歴"
+    },
+    {
+      "id": "D202",
+      "name": "sjogren_syndrome",
+      "name_ja": "シェーグレン症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "乾燥症候群(sicca). 乾燥性角結膜炎+口腔乾燥+関節痛. 腺外症状:ILD/腎/神経. 抗SSA/SSB抗体"
+    },
+    {
+      "id": "D203",
+      "name": "systemic_sclerosis",
+      "name_ja": "全身性強皮症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "皮膚硬化+レイノー現象+ILD+肺高血圧+腎クリーゼ. 抗Scl-70/抗セントロメア抗体"
+    },
+    {
+      "id": "D204",
+      "name": "amyloidosis",
+      "name_ja": "アミロイドーシス",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "異常蛋白沈着. AL型(形質細胞)/AA型(炎症性). 心不全+腎症候群+神経障害+肝腫大+巨舌"
+    },
+    {
+      "id": "D205",
+      "name": "ethylene_glycol_poisoning",
+      "name_ja": "エチレングリコール中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "不凍液. 代謝性アシドーシス(AG開大)+浸透圧gap+AKI(蓚酸カルシウム結晶). メタノールと鑑別"
+    },
+    {
+      "id": "D206",
+      "name": "HCM",
+      "name_ja": "肥大型心筋症(HCM)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "非対称性中隔肥大. 労作時呼吸困難+失神+胸痛+突然死リスク. LVOT obstruction. 若年突然死の原因"
     }
   ]
 }

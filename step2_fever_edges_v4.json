@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3168,
+  "total_edges": 3209,
   "edges": [
     {
       "from": "R01",
@@ -26673,6 +26673,293 @@
       "from_name": "drug_induced_pneumonitis",
       "to_name": "L02",
       "reason": "薬剤性肺炎: CRP上昇"
+    },
+    {
+      "from": "D202",
+      "to": "S08",
+      "from_name": "sjogren_syndrome",
+      "to_name": "S08",
+      "reason": "シェーグレン: 関節痛(50-60%)"
+    },
+    {
+      "from": "D202",
+      "to": "S07",
+      "from_name": "sjogren_syndrome",
+      "to_name": "S07",
+      "reason": "シェーグレン: 倦怠感(70-80%)"
+    },
+    {
+      "from": "D202",
+      "to": "E01",
+      "from_name": "sjogren_syndrome",
+      "to_name": "E01",
+      "reason": "シェーグレン: 発熱(腺外症状時, 15-20%)"
+    },
+    {
+      "from": "D202",
+      "to": "S01",
+      "from_name": "sjogren_syndrome",
+      "to_name": "S01",
+      "reason": "シェーグレン: 咳嗽(ILD合併, 20-30%)"
+    },
+    {
+      "from": "D202",
+      "to": "L02",
+      "from_name": "sjogren_syndrome",
+      "to_name": "L02",
+      "reason": "シェーグレン: CRP(通常正常~軽度)"
+    },
+    {
+      "from": "D202",
+      "to": "L05",
+      "from_name": "sjogren_syndrome",
+      "to_name": "L05",
+      "reason": "シェーグレン: 尿異常(間質性腎炎, 10-20%)"
+    },
+    {
+      "from": "D202",
+      "to": "T01",
+      "from_name": "sjogren_syndrome",
+      "to_name": "T01",
+      "reason": "シェーグレン: 慢性"
+    },
+    {
+      "from": "D202",
+      "to": "T02",
+      "from_name": "sjogren_syndrome",
+      "to_name": "T02",
+      "reason": "シェーグレン: 緩徐"
+    },
+    {
+      "from": "D203",
+      "to": "S04",
+      "from_name": "systemic_sclerosis",
+      "to_name": "S04",
+      "reason": "強皮症: 呼吸困難(ILD, 40-60%)"
+    },
+    {
+      "from": "D203",
+      "to": "S07",
+      "from_name": "systemic_sclerosis",
+      "to_name": "S07",
+      "reason": "強皮症: 倦怠感(70-80%)"
+    },
+    {
+      "from": "D203",
+      "to": "S08",
+      "from_name": "systemic_sclerosis",
+      "to_name": "S08",
+      "reason": "強皮症: 関節痛(40-50%)"
+    },
+    {
+      "from": "D203",
+      "to": "E38",
+      "from_name": "systemic_sclerosis",
+      "to_name": "E38",
+      "reason": "強皮症: 高血圧(腎クリーゼ, 10-20%)"
+    },
+    {
+      "from": "D203",
+      "to": "L04",
+      "from_name": "systemic_sclerosis",
+      "to_name": "L04",
+      "reason": "強皮症: CXR(ILD, 40-60%)"
+    },
+    {
+      "from": "D203",
+      "to": "L55",
+      "from_name": "systemic_sclerosis",
+      "to_name": "L55",
+      "reason": "強皮症: AKI(腎クリーゼ, 5-10%)"
+    },
+    {
+      "from": "D203",
+      "to": "T01",
+      "from_name": "systemic_sclerosis",
+      "to_name": "T01",
+      "reason": "強皮症: 慢性"
+    },
+    {
+      "from": "D203",
+      "to": "T02",
+      "from_name": "systemic_sclerosis",
+      "to_name": "T02",
+      "reason": "強皮症: 緩徐"
+    },
+    {
+      "from": "D204",
+      "to": "S04",
+      "from_name": "amyloidosis",
+      "to_name": "S04",
+      "reason": "アミロイドーシス: 呼吸困難(心不全, 40-50%)"
+    },
+    {
+      "from": "D204",
+      "to": "S07",
+      "from_name": "amyloidosis",
+      "to_name": "S07",
+      "reason": "アミロイドーシス: 倦怠感(80%+)"
+    },
+    {
+      "from": "D204",
+      "to": "E36",
+      "from_name": "amyloidosis",
+      "to_name": "E36",
+      "reason": "アミロイドーシス: 浮腫(ネフローゼ/心不全, 50-60%)"
+    },
+    {
+      "from": "D204",
+      "to": "L05",
+      "from_name": "amyloidosis",
+      "to_name": "L05",
+      "reason": "アミロイドーシス: 尿異常(蛋白尿, 60-70%)"
+    },
+    {
+      "from": "D204",
+      "to": "L55",
+      "from_name": "amyloidosis",
+      "to_name": "L55",
+      "reason": "アミロイドーシス: AKI(腎アミロイド, 30-40%)"
+    },
+    {
+      "from": "D204",
+      "to": "L51",
+      "from_name": "amyloidosis",
+      "to_name": "L51",
+      "reason": "アミロイドーシス: BNP上昇(心アミロイド, 50-60%)"
+    },
+    {
+      "from": "D204",
+      "to": "L53",
+      "from_name": "amyloidosis",
+      "to_name": "L53",
+      "reason": "アミロイドーシス: トロポニン上昇(心, 40-50%)"
+    },
+    {
+      "from": "D204",
+      "to": "T01",
+      "from_name": "amyloidosis",
+      "to_name": "T01",
+      "reason": "アミロイドーシス: 慢性"
+    },
+    {
+      "from": "D204",
+      "to": "T02",
+      "from_name": "amyloidosis",
+      "to_name": "T02",
+      "reason": "アミロイドーシス: 緩徐"
+    },
+    {
+      "from": "D205",
+      "to": "E16",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "E16",
+      "reason": "エチレングリコール: 意識障害(酩酊→昏睡)"
+    },
+    {
+      "from": "D205",
+      "to": "S13",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "S13",
+      "reason": "エチレングリコール: 嘔気/嘔吐(70-80%)"
+    },
+    {
+      "from": "D205",
+      "to": "E04",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "E04",
+      "reason": "エチレングリコール: 頻呼吸(Kussmaul, アシドーシス代償)"
+    },
+    {
+      "from": "D205",
+      "to": "L55",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "L55",
+      "reason": "エチレングリコール: AKI(蓚酸腎, Stage II-III)"
+    },
+    {
+      "from": "D205",
+      "to": "E02",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "E02",
+      "reason": "エチレングリコール: 頻脈"
+    },
+    {
+      "from": "D205",
+      "to": "S42",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "S42",
+      "reason": "エチレングリコール: 痙攣(低Ca, 20-30%)"
+    },
+    {
+      "from": "D205",
+      "to": "T01",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "T01",
+      "reason": "エチレングリコール: 超急性"
+    },
+    {
+      "from": "D205",
+      "to": "T02",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "T02",
+      "reason": "エチレングリコール: 急性"
+    },
+    {
+      "from": "D206",
+      "to": "S04",
+      "from_name": "HCM",
+      "to_name": "S04",
+      "reason": "HCM: 呼吸困難(労作時, 60-70%)"
+    },
+    {
+      "from": "D206",
+      "to": "S21",
+      "from_name": "HCM",
+      "to_name": "S21",
+      "reason": "HCM: 胸痛(40-50%)"
+    },
+    {
+      "from": "D206",
+      "to": "E02",
+      "from_name": "HCM",
+      "to_name": "E02",
+      "reason": "HCM: 頻脈/不整脈(30-40%)"
+    },
+    {
+      "from": "D206",
+      "to": "E03",
+      "from_name": "HCM",
+      "to_name": "E03",
+      "reason": "HCM: 低血圧(LVOT閉塞時)"
+    },
+    {
+      "from": "D206",
+      "to": "L53",
+      "from_name": "HCM",
+      "to_name": "L53",
+      "reason": "HCM: トロポニン上昇(心筋障害, 20-30%)"
+    },
+    {
+      "from": "D206",
+      "to": "L51",
+      "from_name": "HCM",
+      "to_name": "L51",
+      "reason": "HCM: BNP上昇(拡張障害, 50-60%)"
+    },
+    {
+      "from": "D206",
+      "to": "T01",
+      "from_name": "HCM",
+      "to_name": "T01",
+      "reason": "HCM: 慢性(急性増悪で来院)"
+    },
+    {
+      "from": "D206",
+      "to": "T02",
+      "from_name": "HCM",
+      "to_name": "T02",
+      "reason": "HCM: 急性~慢性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
