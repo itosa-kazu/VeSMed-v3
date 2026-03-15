@@ -6095,6 +6095,26 @@
           "under_100": 0.3,
           "100_120": 0.45,
           "over_120": 0.25
+        },
+        "D246": {
+          "under_100": 0.25,
+          "100_120": 0.45,
+          "over_120": 0.3
+        },
+        "D197": {
+          "under_100": 0.15,
+          "100_120": 0.4,
+          "over_120": 0.45
+        },
+        "D08": {
+          "under_100": 0.2,
+          "100_120": 0.4,
+          "over_120": 0.4
+        },
+        "D04": {
+          "under_100": 0.3,
+          "100_120": 0.45,
+          "over_120": 0.25
         }
       }
     },
@@ -6384,6 +6404,22 @@
         "D243": {
           "normal_over_90": 0.15,
           "hypotension_under_90": 0.85
+        },
+        "D233": {
+          "normal_over_90": 0.45,
+          "hypotension_under_90": 0.55
+        },
+        "D197": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        },
+        "D08": {
+          "normal_over_90": 0.35,
+          "hypotension_under_90": 0.65
+        },
+        "D04": {
+          "normal_over_90": 0.85,
+          "hypotension_under_90": 0.15
         }
       }
     },
@@ -6605,6 +6641,11 @@
           "normal_under_20": 0.1,
           "tachypnea_20_30": 0.35,
           "severe_over_30": 0.55
+        },
+        "D04": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.15
         }
       }
     },
@@ -7096,6 +7137,12 @@
           "crackles": 0.15,
           "wheezes": 0.7,
           "decreased_absent": 0.1
+        },
+        "D04": {
+          "clear": 0.8,
+          "crackles": 0.1,
+          "wheezes": 0.05,
+          "decreased_absent": 0.05
         }
       }
     },
@@ -10389,6 +10436,30 @@
           "normal_4000_10000": 0.25,
           "high_10000_20000": 0.45,
           "very_high_over_20000": 0.27
+        },
+        "D165": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.3,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.25
+        },
+        "D251": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.25
+        },
+        "D205": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.25
+        },
+        "D08": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.15,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.37
         }
       }
     },
@@ -11414,6 +11485,24 @@
           "mild_0.3_3": 0.2,
           "moderate_3_10": 0.4,
           "high_over_10": 0.3
+        },
+        "D165": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.2,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.3
+        },
+        "D251": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.15,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.35
+        },
+        "D198": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.25
         }
       }
     },
@@ -12278,6 +12367,12 @@
           "negative": 0.4,
           "gram_positive": 0.35,
           "gram_negative": 0.1
+        },
+        "D197": {
+          "not_done_or_pending": 0.15,
+          "negative": 0.4,
+          "gram_positive": 0.25,
+          "gram_negative": 0.2
         }
       }
     },
@@ -12647,6 +12742,16 @@
           "normal": 0.15,
           "mild_elevated": 0.55,
           "very_high": 0.3
+        },
+        "D211": {
+          "normal": 0.3,
+          "mild_elevated": 0.45,
+          "very_high": 0.25
+        },
+        "D205": {
+          "normal": 0.35,
+          "mild_elevated": 0.4,
+          "very_high": 0.25
         }
       }
     },
@@ -13908,6 +14013,10 @@
         "D144": {
           "normal": 0.6,
           "elevated": 0.4
+        },
+        "D65": {
+          "normal": 0.15,
+          "elevated": 0.85
         }
       }
     },
@@ -14440,6 +14549,12 @@
           "hyponatremia": 0.03,
           "hyperkalemia": 0.02,
           "other": 0.8
+        },
+        "D251": {
+          "normal": 0.3,
+          "hyponatremia": 0.6,
+          "hyperkalemia": 0.05,
+          "other": 0.05
         }
       }
     },
@@ -14937,6 +15052,10 @@
         "D239": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D115": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -15812,6 +15931,10 @@
         "D223": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D115": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -16697,6 +16820,10 @@
         "D240": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D175": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -18171,6 +18298,11 @@
           "absent": 0.03,
           "watery": 0.07,
           "bloody": 0.9
+        },
+        "D249": {
+          "absent": 0.45,
+          "watery": 0.5,
+          "bloody": 0.05
         }
       }
     },
@@ -21940,6 +22072,10 @@
         "D251": {
           "sudden_hours": 0.1,
           "gradual_days": 0.9
+        },
+        "D08": {
+          "sudden_hours": 0.4,
+          "gradual_days": 0.6
         }
       }
     },
@@ -23910,6 +24046,12 @@
           "normal": 0.45,
           "hyperglycemia": 0.4,
           "very_high_over_500": 0.13
+        },
+        "D165": {
+          "hypoglycemia": 0.03,
+          "normal": 0.5,
+          "hyperglycemia": 0.4,
+          "very_high_over_500": 0.07
         }
       }
     },
@@ -24339,6 +24481,16 @@
           "normal": 0.55,
           "mild_elevated": 0.3,
           "high_AKI": 0.15
+        },
+        "D251": {
+          "normal": 0.4,
+          "mild_elevated": 0.3,
+          "high_AKI": 0.3
+        },
+        "D198": {
+          "normal": 0.4,
+          "mild_elevated": 0.3,
+          "high_AKI": 0.3
         }
       }
     },

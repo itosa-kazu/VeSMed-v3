@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3619,
+  "total_edges": 3649,
   "edges": [
     {
       "from": "R01",
@@ -29830,6 +29830,216 @@
       "from_name": "miller_fisher",
       "to_name": "E02",
       "reason": "フィッシャー: 頻脈(自律神経障害)"
+    },
+    {
+      "from": "D165",
+      "to": "L02",
+      "from_name": "myasthenic_crisis",
+      "to_name": "L02",
+      "reason": "MGクリーゼ: CRP上昇(感染誘因)"
+    },
+    {
+      "from": "D165",
+      "to": "L01",
+      "from_name": "myasthenic_crisis",
+      "to_name": "L01",
+      "reason": "MGクリーゼ: WBC(感染誘因)"
+    },
+    {
+      "from": "D165",
+      "to": "L54",
+      "from_name": "myasthenic_crisis",
+      "to_name": "L54",
+      "reason": "MGクリーゼ: 血糖(ストレス性上昇)"
+    },
+    {
+      "from": "D251",
+      "to": "L44",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L44",
+      "reason": "肝硬変: 低Na(希釈性, 50-60%)"
+    },
+    {
+      "from": "D251",
+      "to": "L55",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L55",
+      "reason": "肝硬変: AKI(肝腎症候群, 30-40%)"
+    },
+    {
+      "from": "D251",
+      "to": "L02",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L02",
+      "reason": "肝硬変: CRP上昇(SBP/感染)"
+    },
+    {
+      "from": "D251",
+      "to": "L01",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L01",
+      "reason": "肝硬変: WBC(SBP/感染時上昇)"
+    },
+    {
+      "from": "D211",
+      "to": "L11",
+      "from_name": "TCA_overdose",
+      "to_name": "L11",
+      "reason": "TCA: 肝酵素上昇(中毒性/低灌流)"
+    },
+    {
+      "from": "D198",
+      "to": "L02",
+      "from_name": "IgA_vasculitis",
+      "to_name": "L02",
+      "reason": "IgA血管炎: CRP上昇(炎症)"
+    },
+    {
+      "from": "D198",
+      "to": "L55",
+      "from_name": "IgA_vasculitis",
+      "to_name": "L55",
+      "reason": "IgA血管炎: AKI(腎炎, 30-50%)"
+    },
+    {
+      "from": "D115",
+      "to": "S02",
+      "from_name": "DGI",
+      "to_name": "S02",
+      "reason": "DGI: 咽頭痛(淋菌性咽頭炎, 20-30%)"
+    },
+    {
+      "from": "D115",
+      "to": "S06",
+      "from_name": "DGI",
+      "to_name": "S06",
+      "reason": "DGI: 筋肉痛(20-30%)"
+    },
+    {
+      "from": "D246",
+      "to": "E02",
+      "from_name": "EHEC",
+      "to_name": "E02",
+      "reason": "EHEC: 頻脈(脱水/ショック)"
+    },
+    {
+      "from": "D205",
+      "to": "L11",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "L11",
+      "reason": "EG: 肝酵素上昇(中毒性)"
+    },
+    {
+      "from": "D205",
+      "to": "L01",
+      "from_name": "ethylene_glycol_poisoning",
+      "to_name": "L01",
+      "reason": "EG: WBC上昇(ストレス)"
+    },
+    {
+      "from": "D233",
+      "to": "E03",
+      "from_name": "miller_fisher",
+      "to_name": "E03",
+      "reason": "フィッシャー: 低血圧(自律神経障害)"
+    },
+    {
+      "from": "D249",
+      "to": "S14",
+      "from_name": "chronic_pancreatitis",
+      "to_name": "S14",
+      "reason": "慢性膵炎: 脂肪便/下痢(外分泌不全, 40-50%)"
+    },
+    {
+      "from": "D197",
+      "to": "L09",
+      "from_name": "agranulocytosis",
+      "to_name": "L09",
+      "reason": "無顆粒球症: 血培(感染合併時)"
+    },
+    {
+      "from": "D197",
+      "to": "E02",
+      "from_name": "agranulocytosis",
+      "to_name": "E02",
+      "reason": "無顆粒球症: 頻脈(敗血症)"
+    },
+    {
+      "from": "D197",
+      "to": "E03",
+      "from_name": "agranulocytosis",
+      "to_name": "E03",
+      "reason": "無顆粒球症: 低血圧(敗血症性ショック)"
+    },
+    {
+      "from": "D08",
+      "to": "E02",
+      "from_name": "cholangitis",
+      "to_name": "E02",
+      "reason": "胆管炎: 頻脈(敗血症)"
+    },
+    {
+      "from": "D08",
+      "to": "E03",
+      "from_name": "cholangitis",
+      "to_name": "E03",
+      "reason": "胆管炎: 低血圧(敗血症)"
+    },
+    {
+      "from": "D08",
+      "to": "L01",
+      "from_name": "cholangitis",
+      "to_name": "L01",
+      "reason": "胆管炎: WBC上昇"
+    },
+    {
+      "from": "D08",
+      "to": "T02",
+      "from_name": "cholangitis",
+      "to_name": "T02",
+      "reason": "胆管炎: 突発~急性"
+    },
+    {
+      "from": "D04",
+      "to": "E02",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "E02",
+      "reason": "扁桃周囲膿瘍: 頻脈(感染)"
+    },
+    {
+      "from": "D04",
+      "to": "E03",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "E03",
+      "reason": "扁桃周囲膿瘍: 血圧(通常正常)"
+    },
+    {
+      "from": "D04",
+      "to": "E04",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "E04",
+      "reason": "扁桃周囲膿瘍: 呼吸数"
+    },
+    {
+      "from": "D04",
+      "to": "E07",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "E07",
+      "reason": "扁桃周囲膿瘍: 肺(通常clear)"
+    },
+    {
+      "from": "D65",
+      "to": "L28",
+      "from_name": "FMF",
+      "to_name": "L28",
+      "reason": "FMF: ESR上昇(発作時)"
+    },
+    {
+      "from": "D175",
+      "to": "S08",
+      "from_name": "AIP",
+      "to_name": "S08",
+      "reason": "AIP: 関節痛(Sjogren合併時)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
