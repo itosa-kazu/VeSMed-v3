@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2691,
+  "total_edges": 2722,
   "edges": [
     {
       "from": "R01",
@@ -23334,6 +23334,223 @@
       "from_name": "acetaminophen_OD",
       "to_name": "S14",
       "reason": "APAP中毒: 下痢(腸管粘膜障害, 20-30%)"
+    },
+    {
+      "from": "D171",
+      "to": "L52",
+      "from_name": "APS",
+      "to_name": "L52",
+      "reason": "APS: D-dimer上昇(血栓症, 80%+)"
+    },
+    {
+      "from": "D171",
+      "to": "L14",
+      "from_name": "APS",
+      "to_name": "L14",
+      "reason": "APS: 血小板減少(20-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "S52",
+      "from_name": "APS",
+      "to_name": "S52",
+      "reason": "APS: 局所神経脱落(脳梗塞, 20-30%)"
+    },
+    {
+      "from": "D171",
+      "to": "S04",
+      "from_name": "APS",
+      "to_name": "S04",
+      "reason": "APS: 呼吸困難(PE, 30-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "E36",
+      "from_name": "APS",
+      "to_name": "E36",
+      "reason": "APS: 下肢浮腫(DVT, 30-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "E12",
+      "from_name": "APS",
+      "to_name": "E12",
+      "reason": "APS: 皮膚(網状皮斑/紫斑, 30-50%)"
+    },
+    {
+      "from": "D171",
+      "to": "E01",
+      "from_name": "APS",
+      "to_name": "E01",
+      "reason": "APS: 発熱(CAPS, 30-40%)"
+    },
+    {
+      "from": "D171",
+      "to": "E02",
+      "from_name": "APS",
+      "to_name": "E02",
+      "reason": "APS: 頻脈(PE/血栓)"
+    },
+    {
+      "from": "D171",
+      "to": "L55",
+      "from_name": "APS",
+      "to_name": "L55",
+      "reason": "APS: AKI(腎血栓, CAPS)"
+    },
+    {
+      "from": "D171",
+      "to": "T01",
+      "from_name": "APS",
+      "to_name": "T01",
+      "reason": "APS: 急性~亜急性"
+    },
+    {
+      "from": "D171",
+      "to": "T02",
+      "from_name": "APS",
+      "to_name": "T02",
+      "reason": "APS: 急性~亜急性"
+    },
+    {
+      "from": "D172",
+      "to": "E01",
+      "from_name": "gas_gangrene",
+      "to_name": "E01",
+      "reason": "ガス壊疽: 発熱(80-90%)"
+    },
+    {
+      "from": "D172",
+      "to": "E02",
+      "from_name": "gas_gangrene",
+      "to_name": "E02",
+      "reason": "ガス壊疽: 頻脈(毒素性ショック)"
+    },
+    {
+      "from": "D172",
+      "to": "E03",
+      "from_name": "gas_gangrene",
+      "to_name": "E03",
+      "reason": "ガス壊疽: 低血圧(毒素性ショック)"
+    },
+    {
+      "from": "D172",
+      "to": "E12",
+      "from_name": "gas_gangrene",
+      "to_name": "E12",
+      "reason": "ガス壊疽: 皮膚(壊死/水疱/暗赤色変色)"
+    },
+    {
+      "from": "D172",
+      "to": "E16",
+      "from_name": "gas_gangrene",
+      "to_name": "E16",
+      "reason": "ガス壊疽: 意識障害(毒素性)"
+    },
+    {
+      "from": "D172",
+      "to": "S07",
+      "from_name": "gas_gangrene",
+      "to_name": "S07",
+      "reason": "ガス壊疽: 全身脱力"
+    },
+    {
+      "from": "D172",
+      "to": "L01",
+      "from_name": "gas_gangrene",
+      "to_name": "L01",
+      "reason": "ガス壊疽: WBC上昇(重度感染)"
+    },
+    {
+      "from": "D172",
+      "to": "L02",
+      "from_name": "gas_gangrene",
+      "to_name": "L02",
+      "reason": "ガス壊疽: CRP著高"
+    },
+    {
+      "from": "D172",
+      "to": "L17",
+      "from_name": "gas_gangrene",
+      "to_name": "L17",
+      "reason": "ガス壊疽: CK上昇(筋壊死)"
+    },
+    {
+      "from": "D172",
+      "to": "T01",
+      "from_name": "gas_gangrene",
+      "to_name": "T01",
+      "reason": "ガス壊疽: 超急性(6-24時間)"
+    },
+    {
+      "from": "D172",
+      "to": "T02",
+      "from_name": "gas_gangrene",
+      "to_name": "T02",
+      "reason": "ガス壊疽: 超急性"
+    },
+    {
+      "from": "D173",
+      "to": "E01",
+      "from_name": "varicella",
+      "to_name": "E01",
+      "reason": "水痘: 発熱(90%+)"
+    },
+    {
+      "from": "D173",
+      "to": "E12",
+      "from_name": "varicella",
+      "to_name": "E12",
+      "reason": "水痘: 水疱性発疹(全身, 各段階混在)"
+    },
+    {
+      "from": "D173",
+      "to": "S05",
+      "from_name": "varicella",
+      "to_name": "S05",
+      "reason": "水痘: 頭痛(50-60%)"
+    },
+    {
+      "from": "D173",
+      "to": "S07",
+      "from_name": "varicella",
+      "to_name": "S07",
+      "reason": "水痘: 倦怠感(80%+)"
+    },
+    {
+      "from": "D173",
+      "to": "S01",
+      "from_name": "varicella",
+      "to_name": "S01",
+      "reason": "水痘: 咳嗽(成人水痘肺炎, 20-30%)"
+    },
+    {
+      "from": "D173",
+      "to": "L01",
+      "from_name": "varicella",
+      "to_name": "L01",
+      "reason": "水痘: WBC(正常~軽度)"
+    },
+    {
+      "from": "D173",
+      "to": "L11",
+      "from_name": "varicella",
+      "to_name": "L11",
+      "reason": "水痘: 肝酵素(軽度上昇, 成人30-40%)"
+    },
+    {
+      "from": "D173",
+      "to": "T01",
+      "from_name": "varicella",
+      "to_name": "T01",
+      "reason": "水痘: 急性"
+    },
+    {
+      "from": "D173",
+      "to": "T02",
+      "from_name": "varicella",
+      "to_name": "T02",
+      "reason": "水痘: 急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -9288,6 +9288,133 @@
       },
       "result": "",
       "notes": "AST 4321, INR 3.1. 89歳34.3kg→体重あたり過量. NAC 12日で回復"
+    },
+    {
+      "id": "R361",
+      "source": "Cureus 2024",
+      "pmcid": "PMC10934003",
+      "vignette": "35M 10年間慢性飲酒(2杯/日). 下血2回+腹痛+食欲不振+黄疸. BP 120/70, HR 88, RR 16. 肝腫大(右肋弓下2cm)+圧痛. AST 390, ALT 152(比2.6), T-Bil 18.2, WBC 68000(!)(類白血病反応), Hb 9.0, INR 2.8, CRP 22. Maddrey DF 48",
+      "final_diagnosis": "アルコール性肝炎(重症)+類白血病反応",
+      "expected_id": "D170",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S12": "RUQ",
+        "S44": "present",
+        "L11": "mild_elevated",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "AST/ALT比2.6. WBC 68000(類白血病反応!). Maddrey 48. T-Bil 18.2"
+    },
+    {
+      "id": "R362",
+      "source": "Case Rep 2018",
+      "pmcid": "PMC5790716",
+      "vignette": "49F 47歳から170g/日飲酒. 3ヶ月の倦怠感+食欲不振+体重減少10kg. 黄疸+腹部膨隆(腹水)+暗色尿+発熱+肝腫大(硬い). AST 220, ALT 27(比8.1!), T-Bil 21.8, WBC 21700, Hb 9.1, PT-INR 1.61, ALP 669, GGT 693, CRP 10.64. Maddrey 54",
+      "final_diagnosis": "アルコール性肝炎(重症)",
+      "expected_id": "D170",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "E01": "38.0_39.0",
+        "L11": "mild_elevated",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST/ALT比8.1. Maddrey 54. 170g/日飲酒. 腹水あり"
+    },
+    {
+      "id": "R363",
+      "source": "Case Rep Gastroenterol 2025",
+      "pmcid": "PMC12503534",
+      "vignette": "56M アルコール性肝硬変(Child C11). 1週間の急性腹部膨隆+黄疸+暗色便/尿+食欲低下. ビール3本摂取後. BP 102/61, GCS 15. 深い黄疸+腹水(波動+)+下肢浮腫. AST 139, ALT 46(比3.0), T-Bil 421umol/L(≒24.6), WBC 15k, INR 2.1, Cr 380umol/L(≒4.3)(AKI!), CRP 133, PCT 2.54. Maddrey 67.9(!)",
+      "final_diagnosis": "アルコール性肝炎(重症, ACLF Grade 3)",
+      "expected_id": "D170",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S12": "diffuse",
+        "E36": "bilateral",
+        "L11": "mild_elevated",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L55": "high_AKI",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Maddrey 67.9. MELD 39. Cr 4.3(AKI). 肝硬変ベース+ACLF"
+    },
+    {
+      "id": "R364",
+      "source": "Intern Med 2023",
+      "pmcid": "PMC11239256",
+      "vignette": "57F 37年間大量飲酒(140g/日). 倦怠感+食欲低下+発熱. T 38.2, BP 93/53(低血圧), HR 87, SpO2 99%. AST 688, ALT 623(比1.1), T-Bil 16.6, WBC 13300(好中球93%), Hb 14.6, PT-INR 1.64, Cr 2.12, LDH 443. Maddrey 37.8. 血培: Bacillus cereus",
+      "final_diagnosis": "アルコール性肝炎+Bacillus cereus敗血症",
+      "expected_id": "D170",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "S07": "severe",
+        "E01": "38.0_39.0",
+        "E03": "hypotension_under_90",
+        "L11": "very_high",
+        "L01": "high_10000_20000",
+        "L16": "elevated",
+        "L55": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST/ALT比1.1(非典型, 敗血症合併). Maddrey 37.8. Cr 2.12"
+    },
+    {
+      "id": "R365",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10163960",
+      "vignette": "50M 30年間飲酒(毎日ウォッカ470mL). 12時間の意識変容(傾眠/混乱)+2週間の暗色尿+黄疸. バイタル正常. AST 291, ALT 91(比3.2), T-Bil 14.6→21.3, Hb 12→9.9, ハプトグロビン<30(溶血!), 網赤血球5.5%, 血中エタノール322, 総コレステロール416, TG 394. Maddrey 26→32",
+      "final_diagnosis": "Zieve症候群(アルコール性肝炎+非免疫性溶血性貧血+高脂血症)",
+      "expected_id": "D170",
+      "in_scope": true,
+      "evidence": {
+        "E18": "present",
+        "E16": "confused",
+        "S07": "severe",
+        "L11": "mild_elevated",
+        "L16": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Zieve症候群(三徴: 肝炎+溶血+高脂血症). ハプトグロビン<30. エタノール322"
     }
   ],
   "total_cases": 110

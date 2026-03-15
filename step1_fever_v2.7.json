@@ -5045,6 +5045,42 @@
       ],
       "severity": "high",
       "note": "大量飲酒歴+黄疸+肝腫大+発熱。AST/ALT比>2が特徴(通常<300)。重症はMaddrey score≧32でステロイド適応。死亡率20-50%"
+    },
+    {
+      "id": "D171",
+      "name": "antiphospholipid_syndrome",
+      "name_ja": "抗リン脂質抗体症候群(APS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "動静脈血栓+流産。catastrophic APS(CAPS)は多臓器血栓→MOF。aPL/LAC/抗β2GP1抗体陽性。SLE合併多い"
+    },
+    {
+      "id": "D172",
+      "name": "gas_gangrene",
+      "name_ja": "ガス壊疽",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Clostridium perfringens等による筋壊死。外傷/手術後。激痛+浮腫+捻髪音(皮下気腫)+毒素性ショック。数時間で致死的"
+    },
+    {
+      "id": "D173",
+      "name": "varicella",
+      "name_ja": "水痘",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "VZV初感染。発熱+全身性水疱性発疹(各段階混在:紅斑→丘疹→水疱→痂皮)。成人は重症化リスク(肺炎/脳炎)"
     }
   ]
 }
