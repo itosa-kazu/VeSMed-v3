@@ -6384,6 +6384,11 @@
           "soft_nontender": 0.05,
           "localized_tenderness": 0.4,
           "peritoneal_signs": 0.55
+        },
+        "D177": {
+          "soft_nontender": 0.1,
+          "localized_tenderness": 0.6,
+          "peritoneal_signs": 0.3
         }
       }
     },
