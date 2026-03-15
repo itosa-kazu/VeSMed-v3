@@ -13759,6 +13759,22 @@
         "D120": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D05": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D50": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D36": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D77": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -13774,6 +13790,31 @@
           "absent": 0.25,
           "unilateral": 0.05,
           "bilateral": 0.7
+        },
+        "D77": {
+          "absent": 0.2,
+          "unilateral": 0.7,
+          "bilateral": 0.1
+        },
+        "D12": {
+          "absent": 0.3,
+          "unilateral": 0.65,
+          "bilateral": 0.05
+        },
+        "D57": {
+          "absent": 0.25,
+          "unilateral": 0.7,
+          "bilateral": 0.05
+        },
+        "D59": {
+          "absent": 0.65,
+          "unilateral": 0.05,
+          "bilateral": 0.3
+        },
+        "D108": {
+          "absent": 0.8,
+          "unilateral": 0.03,
+          "bilateral": 0.17
         }
       }
     },
@@ -13787,6 +13828,18 @@
         "D120": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D77": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D116": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "D24": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -13804,6 +13857,30 @@
           "normal": 0.03,
           "mildly_elevated": 0.12,
           "very_high": 0.75
+        },
+        "D77": {
+          "not_done": 0.4,
+          "normal": 0.2,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
+        },
+        "D116": {
+          "not_done": 0.3,
+          "normal": 0.15,
+          "mildly_elevated": 0.3,
+          "very_high": 0.25
+        },
+        "D71": {
+          "not_done": 0.4,
+          "normal": 0.15,
+          "mildly_elevated": 0.3,
+          "very_high": 0.15
+        },
+        "D24": {
+          "not_done": 0.4,
+          "normal": 0.2,
+          "mildly_elevated": 0.25,
+          "very_high": 0.15
         }
       }
     }
