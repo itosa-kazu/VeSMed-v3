@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2869,
+  "total_edges": 2876,
   "edges": [
     {
       "from": "R01",
@@ -24580,6 +24580,55 @@
       "from_name": "scarlet_fever",
       "to_name": "T02",
       "reason": "猩紅熱: 急性"
+    },
+    {
+      "from": "D178",
+      "to": "L45",
+      "from_name": "listeria_meningitis",
+      "to_name": "L45",
+      "reason": "リステリア: CSF(細菌パターン)"
+    },
+    {
+      "from": "D178",
+      "to": "L09",
+      "from_name": "listeria_meningitis",
+      "to_name": "L09",
+      "reason": "リステリア: 血液培養(グラム陽性桿菌)"
+    },
+    {
+      "from": "D178",
+      "to": "L03",
+      "from_name": "listeria_meningitis",
+      "to_name": "L03",
+      "reason": "リステリア: PCT上昇(細菌性)"
+    },
+    {
+      "from": "D178",
+      "to": "E02",
+      "from_name": "listeria_meningitis",
+      "to_name": "E02",
+      "reason": "リステリア: 頻脈(敗血症)"
+    },
+    {
+      "from": "D178",
+      "to": "E03",
+      "from_name": "listeria_meningitis",
+      "to_name": "E03",
+      "reason": "リステリア: 低血圧(敗血症性ショック)"
+    },
+    {
+      "from": "D178",
+      "to": "S53",
+      "from_name": "listeria_meningitis",
+      "to_name": "S53",
+      "reason": "リステリア: 構音障害(脳幹脳炎)"
+    },
+    {
+      "from": "D178",
+      "to": "S09",
+      "from_name": "listeria_meningitis",
+      "to_name": "S09",
+      "reason": "リステリア: 悪寒戦慄(菌血症)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

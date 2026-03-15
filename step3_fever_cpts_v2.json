@@ -4991,6 +4991,11 @@
           "under_100": 0.25,
           "100_120": 0.45,
           "over_120": 0.3
+        },
+        "D178": {
+          "under_100": 0.2,
+          "100_120": 0.45,
+          "over_120": 0.35
         }
       }
     },
@@ -5210,6 +5215,10 @@
           "hypotension_under_90": 0.65
         },
         "D170": {
+          "normal_over_90": 0.5,
+          "hypotension_under_90": 0.5
+        },
+        "D178": {
           "normal_over_90": 0.5,
           "hypotension_under_90": 0.5
         }
@@ -9656,6 +9665,12 @@
           "low_under_0.25": 0.1,
           "gray_0.25_0.5": 0.2,
           "high_over_0.5": 0.45
+        },
+        "D178": {
+          "not_done": 0.15,
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.1,
+          "high_over_0.5": 0.7
         }
       }
     },
@@ -10193,6 +10208,12 @@
           "negative": 0.4,
           "gram_positive": 0.1,
           "gram_negative": 0.3
+        },
+        "D178": {
+          "not_done_or_pending": 0.15,
+          "negative": 0.3,
+          "gram_positive": 0.5,
+          "gram_negative": 0.05
         }
       }
     },
@@ -12096,6 +12117,14 @@
           "bacterial_pattern": 0.08421052631578949,
           "tb_fungal_pattern": 0.7368421052631579,
           "HSV_PCR_positive": 0.0
+        },
+        "D178": {
+          "not_done": 0.1,
+          "normal": 0.03,
+          "viral_pattern": 0.05,
+          "bacterial_pattern": 0.75,
+          "HSV_PCR_positive": 0.0,
+          "tb_fungal_pattern": 0.07
         }
       }
     },
@@ -13860,6 +13889,10 @@
         "D62": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D178": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -19445,6 +19478,11 @@
           "aphasia": 0.35
         },
         "D149": {
+          "absent": 0.55,
+          "dysarthria": 0.35,
+          "aphasia": 0.1
+        },
+        "D178": {
           "absent": 0.55,
           "dysarthria": 0.35,
           "aphasia": 0.1
