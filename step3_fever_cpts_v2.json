@@ -6342,6 +6342,13 @@
           "38.0_39.0": 0.15,
           "39.0_40.0": 0.08,
           "over_40.0": 0.02
+        },
+        "D256": {
+          "under_37.5": 0.3,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.15,
+          "over_40.0": 0.05
         }
       }
     },
@@ -7102,6 +7109,11 @@
           "under_100": 0.2,
           "100_120": 0.45,
           "over_120": 0.35
+        },
+        "D261": {
+          "under_100": 0.15,
+          "100_120": 0.45,
+          "over_120": 0.4
         }
       }
     },
@@ -7439,6 +7451,10 @@
         "D269": {
           "normal_over_90": 0.5,
           "hypotension_under_90": 0.5
+        },
+        "D266": {
+          "normal_over_90": 0.35,
+          "hypotension_under_90": 0.65
         }
       }
     },
@@ -10071,6 +10087,10 @@
         "D273": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D256": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -13043,6 +13063,12 @@
           "mild_0.3_3": 0.15,
           "moderate_3_10": 0.35,
           "high_over_10": 0.42
+        },
+        "D260": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.25
         }
       }
     },
@@ -14406,6 +14432,11 @@
           "normal": 0.1,
           "mild_elevated": 0.4,
           "very_high": 0.5
+        },
+        "D261": {
+          "normal": 0.6,
+          "mild_elevated": 0.3,
+          "very_high": 0.1
         }
       }
     },
@@ -14948,6 +14979,12 @@
           "mild_elevated": 0.35,
           "very_high_over_1000": 0.25,
           "extreme_over_10000": 0.05
+        },
+        "D266": {
+          "normal": 0.2,
+          "mild_elevated": 0.3,
+          "very_high_over_1000": 0.4,
+          "extreme_over_10000": 0.1
         }
       }
     },
@@ -16280,6 +16317,24 @@
           "hyponatremia": 0.05,
           "hyperkalemia": 0.1,
           "other": 0.6
+        },
+        "D255": {
+          "normal": 0.55,
+          "hyponatremia": 0.35,
+          "hyperkalemia": 0.05,
+          "other": 0.05
+        },
+        "D266": {
+          "normal": 0.5,
+          "hyponatremia": 0.4,
+          "hyperkalemia": 0.05,
+          "other": 0.05
+        },
+        "D140": {
+          "normal": 0.2,
+          "hyponatremia": 0.1,
+          "hyperkalemia": 0.6,
+          "other": 0.1
         }
       }
     },
@@ -17829,6 +17884,10 @@
         "D115": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D266": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -18580,6 +18639,11 @@
           "absent": 0.3,
           "mild": 0.4,
           "severe": 0.3
+        },
+        "D256": {
+          "absent": 0.15,
+          "mild": 0.3,
+          "severe": 0.55
         }
       }
     },
@@ -25782,6 +25846,12 @@
           "normal": 0.25,
           "mildly_elevated": 0.35,
           "very_high": 0.25
+        },
+        "D261": {
+          "not_done": 0.3,
+          "normal": 0.45,
+          "mildly_elevated": 0.2,
+          "very_high": 0.05
         }
       }
     },
@@ -25955,6 +26025,12 @@
           "normal": 0.15,
           "mildly_elevated": 0.3,
           "very_high": 0.4
+        },
+        "D266": {
+          "not_done": 0.1,
+          "normal": 0.15,
+          "mildly_elevated": 0.3,
+          "very_high": 0.45
         }
       }
     },
