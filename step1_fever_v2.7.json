@@ -4804,6 +4804,42 @@
       ],
       "severity": "critical",
       "note": "急性肝障害+肝性脳症+凝固障害。AST/ALT著高+黄疸+PT延長。ウイルス/薬剤/自己免疫。肝移植が必要なことも"
+    },
+    {
+      "id": "D152",
+      "name": "DIC",
+      "name_ja": "播種性血管内凝固症候群(DIC)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "敗血症/悪性腫瘍/外傷等が基礎疾患。出血+臓器不全。PLT低下+PT延長+D-dimer著高+フィブリノゲン低下"
+    },
+    {
+      "id": "D153",
+      "name": "rhabdomyolysis",
+      "name_ja": "横紋筋融解症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "筋肉痛+暗色尿(ミオグロビン尿)+CK著高(>10000)。原因:外傷/圧挫/過度運動/薬剤/感染。AKIリスク"
+    },
+    {
+      "id": "D154",
+      "name": "bowel_obstruction",
+      "name_ja": "腸閉塞（イレウス）",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "腹痛(疝痛様)+嘔吐+腹部膨満+排ガス停止。手術既往(癒着)/ヘルニア/腫瘍が原因。絞扼性は緊急手術"
     }
   ]
 }

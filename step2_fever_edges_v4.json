@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 2473,
+  "total_edges": 2507,
   "edges": [
     {
       "from": "R01",
@@ -21808,6 +21808,244 @@
       "from_name": "carbon_monoxide_poisoning",
       "to_name": "E05",
       "reason": "CO中毒: SpO2は偽正常のことが多いが、重症で低下もあり"
+    },
+    {
+      "from": "D152",
+      "to": "S44",
+      "from_name": "DIC",
+      "to_name": "S44",
+      "reason": "DIC: 出血傾向(紫斑/歯肉出血/消化管出血, 60-80%)"
+    },
+    {
+      "from": "D152",
+      "to": "E12",
+      "from_name": "DIC",
+      "to_name": "E12",
+      "reason": "DIC: 皮膚(紫斑/点状出血, 50-70%)"
+    },
+    {
+      "from": "D152",
+      "to": "E01",
+      "from_name": "DIC",
+      "to_name": "E01",
+      "reason": "DIC: 発熱(基礎疾患による, 60-70%)"
+    },
+    {
+      "from": "D152",
+      "to": "E02",
+      "from_name": "DIC",
+      "to_name": "E02",
+      "reason": "DIC: 頻脈(ショック/敗血症)"
+    },
+    {
+      "from": "D152",
+      "to": "E03",
+      "from_name": "DIC",
+      "to_name": "E03",
+      "reason": "DIC: 低血圧(ショック)"
+    },
+    {
+      "from": "D152",
+      "to": "E16",
+      "from_name": "DIC",
+      "to_name": "E16",
+      "reason": "DIC: 意識障害(臓器不全)"
+    },
+    {
+      "from": "D152",
+      "to": "L01",
+      "from_name": "DIC",
+      "to_name": "L01",
+      "reason": "DIC: WBC(基礎疾患による)"
+    },
+    {
+      "from": "D152",
+      "to": "L02",
+      "from_name": "DIC",
+      "to_name": "L02",
+      "reason": "DIC: CRP上昇(敗血症)"
+    },
+    {
+      "from": "D152",
+      "to": "L52",
+      "from_name": "DIC",
+      "to_name": "L52",
+      "reason": "DIC: D-dimer著高"
+    },
+    {
+      "from": "D152",
+      "to": "L14",
+      "from_name": "DIC",
+      "to_name": "L14",
+      "reason": "DIC: 血小板減少"
+    },
+    {
+      "from": "D152",
+      "to": "T01",
+      "from_name": "DIC",
+      "to_name": "T01",
+      "reason": "DIC: 急性"
+    },
+    {
+      "from": "D152",
+      "to": "T02",
+      "from_name": "DIC",
+      "to_name": "T02",
+      "reason": "DIC: 急性~亜急性"
+    },
+    {
+      "from": "D153",
+      "to": "S06",
+      "from_name": "rhabdomyolysis",
+      "to_name": "S06",
+      "reason": "横紋筋融解: 筋肉痛(70-80%)"
+    },
+    {
+      "from": "D153",
+      "to": "L17",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L17",
+      "reason": "横紋筋融解: CK著高(>10000, 定義的)"
+    },
+    {
+      "from": "D153",
+      "to": "S07",
+      "from_name": "rhabdomyolysis",
+      "to_name": "S07",
+      "reason": "横紋筋融解: 全身脱力(60-70%)"
+    },
+    {
+      "from": "D153",
+      "to": "S13",
+      "from_name": "rhabdomyolysis",
+      "to_name": "S13",
+      "reason": "横紋筋融解: 嘔気(30-40%)"
+    },
+    {
+      "from": "D153",
+      "to": "E01",
+      "from_name": "rhabdomyolysis",
+      "to_name": "E01",
+      "reason": "横紋筋融解: 発熱(感染性なら)"
+    },
+    {
+      "from": "D153",
+      "to": "E02",
+      "from_name": "rhabdomyolysis",
+      "to_name": "E02",
+      "reason": "横紋筋融解: 頻脈(脱水)"
+    },
+    {
+      "from": "D153",
+      "to": "L01",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L01",
+      "reason": "横紋筋融解: WBC上昇(ストレス/感染)"
+    },
+    {
+      "from": "D153",
+      "to": "L02",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L02",
+      "reason": "横紋筋融解: CRP上昇"
+    },
+    {
+      "from": "D153",
+      "to": "L16",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L16",
+      "reason": "横紋筋融解: LDH上昇"
+    },
+    {
+      "from": "D153",
+      "to": "L44",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L44",
+      "reason": "横紋筋融解: 高K血症"
+    },
+    {
+      "from": "D153",
+      "to": "T01",
+      "from_name": "rhabdomyolysis",
+      "to_name": "T01",
+      "reason": "横紋筋融解: 急性"
+    },
+    {
+      "from": "D153",
+      "to": "T02",
+      "from_name": "rhabdomyolysis",
+      "to_name": "T02",
+      "reason": "横紋筋融解: 急性~亜急性"
+    },
+    {
+      "from": "D154",
+      "to": "S12",
+      "from_name": "bowel_obstruction",
+      "to_name": "S12",
+      "reason": "腸閉塞: 腹痛(疝痛様, 90%+)"
+    },
+    {
+      "from": "D154",
+      "to": "S13",
+      "from_name": "bowel_obstruction",
+      "to_name": "S13",
+      "reason": "腸閉塞: 嘔吐(80-90%)"
+    },
+    {
+      "from": "D154",
+      "to": "E09",
+      "from_name": "bowel_obstruction",
+      "to_name": "E09",
+      "reason": "腸閉塞: 腹部触診(膨満+圧痛, 絞扼性で腹膜刺激)"
+    },
+    {
+      "from": "D154",
+      "to": "E01",
+      "from_name": "bowel_obstruction",
+      "to_name": "E01",
+      "reason": "腸閉塞: 発熱(絞扼性/感染で30-40%)"
+    },
+    {
+      "from": "D154",
+      "to": "E02",
+      "from_name": "bowel_obstruction",
+      "to_name": "E02",
+      "reason": "腸閉塞: 頻脈(脱水/ショック)"
+    },
+    {
+      "from": "D154",
+      "to": "E03",
+      "from_name": "bowel_obstruction",
+      "to_name": "E03",
+      "reason": "腸閉塞: 低血圧(脱水/絞扼性ショック)"
+    },
+    {
+      "from": "D154",
+      "to": "L01",
+      "from_name": "bowel_obstruction",
+      "to_name": "L01",
+      "reason": "腸閉塞: WBC上昇(絞扼性/感染)"
+    },
+    {
+      "from": "D154",
+      "to": "L02",
+      "from_name": "bowel_obstruction",
+      "to_name": "L02",
+      "reason": "腸閉塞: CRP上昇(絞扼性)"
+    },
+    {
+      "from": "D154",
+      "to": "T01",
+      "from_name": "bowel_obstruction",
+      "to_name": "T01",
+      "reason": "腸閉塞: 急性~亜急性"
+    },
+    {
+      "from": "D154",
+      "to": "T02",
+      "from_name": "bowel_obstruction",
+      "to_name": "T02",
+      "reason": "腸閉塞: 急性~亜急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
