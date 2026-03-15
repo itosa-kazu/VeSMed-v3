@@ -11,6 +11,14 @@ from bn_inference import (build_model, infer, entropy, load_json,
                           compute_idf_disc)
 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+
+@app.after_request
+def add_no_cache(response):
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    return response
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 STEP1 = os.path.join(BASE, "step1_fever_v2.7.json")
