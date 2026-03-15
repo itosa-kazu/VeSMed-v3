@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3248,
+  "total_edges": 3269,
   "edges": [
     {
       "from": "R01",
@@ -27233,6 +27233,153 @@
       "from_name": "TCA_overdose",
       "to_name": "T02",
       "reason": "TCA: 突発"
+    },
+    {
+      "from": "D67",
+      "to": "L44",
+      "from_name": "lymphoma",
+      "to_name": "L44",
+      "reason": "リンパ腫: 低Na(SIADH/腫瘍溶解)"
+    },
+    {
+      "from": "D17",
+      "to": "L44",
+      "from_name": "TB",
+      "to_name": "L44",
+      "reason": "肺結核: 低Na(SIADH/副腎不全)"
+    },
+    {
+      "from": "D62",
+      "to": "S21",
+      "from_name": "sarcoidosis",
+      "to_name": "S21",
+      "reason": "サルコイドーシス: 胸痛(肺門リンパ節/胸膜, 20-30%)"
+    },
+    {
+      "from": "D62",
+      "to": "S50",
+      "from_name": "sarcoidosis",
+      "to_name": "S50",
+      "reason": "サルコイドーシス: 胸痛誘発(呼吸で, 20-30%)"
+    },
+    {
+      "from": "D62",
+      "to": "S51",
+      "from_name": "sarcoidosis",
+      "to_name": "S51",
+      "reason": "サルコイドーシス: 胸痛放散(なし)"
+    },
+    {
+      "from": "D12",
+      "to": "S01",
+      "from_name": "peritonsillar_abscess",
+      "to_name": "S01",
+      "reason": "扁桃周囲膿瘍: 咳嗽(咽頭刺激, 20-30%)"
+    },
+    {
+      "from": "D92",
+      "to": "T02",
+      "from_name": "tumor_fever",
+      "to_name": "T02",
+      "reason": "腫瘍熱: 発症の速さ"
+    },
+    {
+      "from": "D100",
+      "to": "T02",
+      "from_name": "hepatitis_A",
+      "to_name": "T02",
+      "reason": "A型肝炎: 発症の速さ"
+    },
+    {
+      "from": "D80",
+      "to": "T01",
+      "from_name": "SBP",
+      "to_name": "T01",
+      "reason": "SBP: 発熱期間"
+    },
+    {
+      "from": "D80",
+      "to": "T02",
+      "from_name": "SBP",
+      "to_name": "T02",
+      "reason": "SBP: 発症の速さ"
+    },
+    {
+      "from": "D95",
+      "to": "T01",
+      "from_name": "JE",
+      "to_name": "T01",
+      "reason": "日本脳炎: 発熱期間"
+    },
+    {
+      "from": "D95",
+      "to": "T02",
+      "from_name": "JE",
+      "to_name": "T02",
+      "reason": "日本脳炎: 発症の速さ"
+    },
+    {
+      "from": "D73",
+      "to": "T02",
+      "from_name": "pheochromocytoma",
+      "to_name": "T02",
+      "reason": "褐色細胞腫: 発症の速さ"
+    },
+    {
+      "from": "D78",
+      "to": "T02",
+      "from_name": "cellulitis",
+      "to_name": "T02",
+      "reason": "蜂窩織炎: 発症の速さ"
+    },
+    {
+      "from": "D51",
+      "to": "T02",
+      "from_name": "amebic_dysentery",
+      "to_name": "T02",
+      "reason": "アメーバ赤痢: 発症の速さ"
+    },
+    {
+      "from": "D65",
+      "to": "T01",
+      "from_name": "FMF",
+      "to_name": "T01",
+      "reason": "FMF: 発熱期間"
+    },
+    {
+      "from": "D65",
+      "to": "T02",
+      "from_name": "FMF",
+      "to_name": "T02",
+      "reason": "FMF: 発症の速さ"
+    },
+    {
+      "from": "D65",
+      "to": "E02",
+      "from_name": "FMF",
+      "to_name": "E02",
+      "reason": "FMF: 頻脈(発作時)"
+    },
+    {
+      "from": "D193",
+      "to": "E02",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E02",
+      "reason": "過敏性肺炎: 頻脈(低酸素)"
+    },
+    {
+      "from": "D193",
+      "to": "E03",
+      "from_name": "hypersensitivity_pneumonitis",
+      "to_name": "E03",
+      "reason": "過敏性肺炎: 低血圧(重症)"
+    },
+    {
+      "from": "D178",
+      "to": "L52",
+      "from_name": "listeria_meningitis",
+      "to_name": "L52",
+      "reason": "リステリア: D-dimer上昇(DIC合併)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
