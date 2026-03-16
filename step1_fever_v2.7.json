@@ -6694,6 +6694,66 @@
       ],
       "severity": "critical",
       "note": "架橋静脈断裂→三日月状血腫。高齢者/抗凝固薬/外傷。意識障害進行性。死亡率40-60%"
+    },
+    {
+      "id": "D307",
+      "name": "transverse_myelitis",
+      "name_ja": "横断性脊髄炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "脊髄の急性炎症→対麻痺+膀胱直腸障害+感覚レベル。感染後/MS/NMOSD/SLE/特発性"
+    },
+    {
+      "id": "D308",
+      "name": "cauda_equina",
+      "name_ja": "馬尾症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "馬尾神経圧迫→両下肢脱力+膀胱直腸障害+会陰部感覚低下(鞍型麻痺)。椎間板ヘルニア/腫瘍。48h以内手術"
+    },
+    {
+      "id": "D309",
+      "name": "AVM",
+      "name_ja": "脳動静脈奇形(AVM)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "先天性脳血管奇形。頭蓋内出血/痙攣/頭痛で発症。20-40歳に多い。Spetzler-Martin分類"
+    },
+    {
+      "id": "D310",
+      "name": "TIA",
+      "name_ja": "一過性脳虚血発作(TIA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "一過性の局所神経症状(<24h, 多くは<1h)。脳梗塞の前駆。ABCD2スコアで脳卒中リスク評価"
+    },
+    {
+      "id": "D311",
+      "name": "glioblastoma",
+      "name_ja": "膠芽腫(GBM)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "最も悪性の脳腫瘍。頭痛+嘔吐+局所神経症状+痙攣。中央生存期間15ヶ月"
     }
   ]
 }
