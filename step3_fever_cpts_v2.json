@@ -7870,6 +7870,20 @@
           "38.0_39.0": 0.08,
           "39.0_40.0": 0.04,
           "over_40.0": 0.01
+        },
+        "D305": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.1,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
+        },
+        "D317": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01
         }
       }
     },
@@ -8845,6 +8859,26 @@
           "under_100": 0.3,
           "100_120": 0.35,
           "over_120": 0.35
+        },
+        "D325": {
+          "under_100": 0.3,
+          "100_120": 0.35,
+          "over_120": 0.35
+        },
+        "D344": {
+          "under_100": 0.4,
+          "100_120": 0.35,
+          "over_120": 0.25
+        },
+        "D347": {
+          "under_100": 0.35,
+          "100_120": 0.35,
+          "over_120": 0.3
+        },
+        "D285": {
+          "under_100": 0.35,
+          "100_120": 0.35,
+          "over_120": 0.3
         }
       }
     },
@@ -9879,6 +9913,11 @@
           "normal_over_96": 0.6,
           "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.15
+        },
+        "D279": {
+          "normal_over_96": 0.35,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.3
         }
       }
     },
@@ -9964,6 +10003,10 @@
         "D324": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D315": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -10262,6 +10305,12 @@
           "crackles": 0.12,
           "wheezes": 0.05,
           "decreased_absent": 0.75
+        },
+        "D331": {
+          "clear": 0.2,
+          "crackles": 0.55,
+          "wheezes": 0.1,
+          "decreased_absent": 0.15
         }
       }
     },
@@ -12055,6 +12104,21 @@
           "normal": 0.3,
           "confused": 0.35,
           "obtunded": 0.35
+        },
+        "D279": {
+          "normal": 0.5,
+          "confused": 0.3,
+          "obtunded": 0.2
+        },
+        "D285": {
+          "normal": 0.5,
+          "confused": 0.3,
+          "obtunded": 0.2
+        },
+        "D321": {
+          "normal": 0.7,
+          "confused": 0.15,
+          "obtunded": 0.15
         }
       }
     },
@@ -14173,6 +14237,18 @@
           "normal_4000_10000": 0.2,
           "high_10000_20000": 0.3,
           "very_high_over_20000": 0.4
+        },
+        "D331": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.3,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.25
+        },
+        "D285": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -16092,6 +16168,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.08,
           "pneumothorax": 0.05
+        },
+        "D348": {
+          "normal": 0.65,
+          "lobar_infiltrate": 0.1,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.02,
+          "pleural_effusion": 0.08,
+          "pneumothorax": 0.05
         }
       }
     },
@@ -16892,6 +16976,11 @@
           "normal": 0.55,
           "mild_elevated": 0.3,
           "very_high": 0.15
+        },
+        "D321": {
+          "normal": 0.65,
+          "mild_elevated": 0.2,
+          "very_high": 0.15
         }
       }
     },
@@ -17662,6 +17751,10 @@
         "D326": {
           "normal": 0.05,
           "elevated": 0.95
+        },
+        "D323": {
+          "normal": 0.4,
+          "elevated": 0.6
         }
       }
     },
@@ -18935,6 +19028,18 @@
           "hyponatremia": 0.45,
           "hyperkalemia": 0.03,
           "other": 0.07
+        },
+        "D342": {
+          "normal": 0.45,
+          "hyponatremia": 0.1,
+          "hyperkalemia": 0.05,
+          "other": 0.4
+        },
+        "D348": {
+          "normal": 0.6,
+          "hyponatremia": 0.25,
+          "hyperkalemia": 0.05,
+          "other": 0.1
         }
       }
     },
@@ -19472,6 +19577,11 @@
           "absent": 0.3,
           "dry": 0.25,
           "productive": 0.45
+        },
+        "D279": {
+          "absent": 0.6,
+          "dry": 0.25,
+          "productive": 0.15
         }
       }
     },
@@ -23630,6 +23740,14 @@
         "D333": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D342": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D348": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -25221,6 +25339,14 @@
         "D327": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D321": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D345": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -29353,6 +29479,10 @@
         "D350": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D321": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -30066,6 +30196,11 @@
           "absent": 0.55,
           "unilateral": 0.1,
           "bilateral": 0.35
+        },
+        "D325": {
+          "absent": 0.55,
+          "unilateral": 0.05,
+          "bilateral": 0.4
         }
       }
     },
@@ -31145,6 +31280,12 @@
           "normal": 0.55,
           "hyperglycemia": 0.15,
           "very_high_over_500": 0.05
+        },
+        "D325": {
+          "normal": 0.5,
+          "hyperglycemia": 0.35,
+          "hypoglycemia": 0.05,
+          "very_high_over_500": 0.1
         }
       }
     },
@@ -31360,6 +31501,11 @@
           "absent": 0.5,
           "unilateral_weakness": 0.35,
           "bilateral": 0.15
+        },
+        "D321": {
+          "absent": 0.55,
+          "unilateral_weakness": 0.15,
+          "bilateral": 0.3
         }
       }
     },
@@ -31470,6 +31616,11 @@
           "absent": 0.55,
           "dysarthria": 0.25,
           "aphasia": 0.2
+        },
+        "D304": {
+          "absent": 0.5,
+          "dysarthria": 0.35,
+          "aphasia": 0.15
         }
       }
     },
@@ -31695,6 +31846,11 @@
           "normal_under_140": 0.3,
           "elevated_140_180": 0.35,
           "crisis_over_180": 0.35
+        },
+        "D342": {
+          "normal_under_140": 0.6,
+          "elevated_140_180": 0.25,
+          "crisis_over_180": 0.15
         }
       }
     },
@@ -31924,6 +32080,11 @@
           "normal": 0.5,
           "mild_elevated": 0.25,
           "high_AKI": 0.25
+        },
+        "D323": {
+          "normal": 0.55,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.2
         }
       }
     },

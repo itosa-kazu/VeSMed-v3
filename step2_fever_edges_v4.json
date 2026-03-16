@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4680,
+  "total_edges": 4711,
   "edges": [
     {
       "from": "R01",
@@ -37257,6 +37257,223 @@
       "from_name": "brugada",
       "to_name": "E05",
       "reason": "Brugada: SpO2(VF後に低下あり)"
+    },
+    {
+      "from": "D325",
+      "to": "E02",
+      "from_name": "PRES",
+      "to_name": "E02",
+      "reason": "PRES: 頻脈(痙攣/高血圧クリーゼ, 30-40%)"
+    },
+    {
+      "from": "D325",
+      "to": "L54",
+      "from_name": "PRES",
+      "to_name": "L54",
+      "reason": "PRES: 血糖(DM合併で高血糖あり)"
+    },
+    {
+      "from": "D325",
+      "to": "E36",
+      "from_name": "PRES",
+      "to_name": "E36",
+      "reason": "PRES: 浮腫(腎障害/子癇, 20-30%)"
+    },
+    {
+      "from": "D321",
+      "to": "S15",
+      "from_name": "primary_aldosteronism",
+      "to_name": "S15",
+      "reason": "アルドステロン症: 腰背部痛(副腎腫瘤/低K性筋痛, 20-30%)"
+    },
+    {
+      "from": "D305",
+      "to": "E01",
+      "from_name": "acute_epidural_hematoma",
+      "to_name": "E01",
+      "reason": "急性EDH: 体温(通常正常)"
+    },
+    {
+      "from": "D317",
+      "to": "E01",
+      "from_name": "PAP",
+      "to_name": "E01",
+      "reason": "PAP: 体温(通常無熱)"
+    },
+    {
+      "from": "D331",
+      "to": "E07",
+      "from_name": "fat_embolism",
+      "to_name": "E07",
+      "reason": "脂肪塞栓: 肺聴診(ラ音/水泡音, 50-60%)"
+    },
+    {
+      "from": "D331",
+      "to": "L01",
+      "from_name": "fat_embolism",
+      "to_name": "L01",
+      "reason": "脂肪塞栓: WBC上昇(炎症反応, 40-50%)"
+    },
+    {
+      "from": "D304",
+      "to": "S53",
+      "from_name": "DLB",
+      "to_name": "S53",
+      "reason": "DLB: 構音障害/失語(30-40%)"
+    },
+    {
+      "from": "D344",
+      "to": "E02",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "E02",
+      "reason": "収縮性心膜炎: 徐脈~頻脈(40-50%)"
+    },
+    {
+      "from": "D315",
+      "to": "E06",
+      "from_name": "CVST",
+      "to_name": "E06",
+      "reason": "CVST: 項部硬直(出血合併/頭蓋内圧, 20-30%)"
+    },
+    {
+      "from": "D347",
+      "to": "E02",
+      "from_name": "neuroblastoma",
+      "to_name": "E02",
+      "reason": "神経芽腫: 頻脈(カテコラミン/貧血/発熱, 30-40%)"
+    },
+    {
+      "from": "D321",
+      "to": "S52",
+      "from_name": "primary_aldosteronism",
+      "to_name": "S52",
+      "reason": "アルドステロン症: 四肢脱力(低K, 20-30%)"
+    },
+    {
+      "from": "D321",
+      "to": "L11",
+      "from_name": "primary_aldosteronism",
+      "to_name": "L11",
+      "reason": "アルドステロン症: AST上昇(横紋筋融解合併, 15-20%)"
+    },
+    {
+      "from": "D323",
+      "to": "L16",
+      "from_name": "placental_abruption",
+      "to_name": "L16",
+      "reason": "胎盤早期剥離: LDH上昇(溶血/DIC, 30-40%)"
+    },
+    {
+      "from": "D323",
+      "to": "L55",
+      "from_name": "placental_abruption",
+      "to_name": "L55",
+      "reason": "胎盤早期剥離: AKI(出血性ショック/DIC, 20-30%)"
+    },
+    {
+      "from": "D342",
+      "to": "S13",
+      "from_name": "LQTS",
+      "to_name": "S13",
+      "reason": "LQTS: 嘔気嘔吐(TdP後, 20-30%)"
+    },
+    {
+      "from": "D342",
+      "to": "E38",
+      "from_name": "LQTS",
+      "to_name": "E38",
+      "reason": "LQTS: 血圧(TdP時低下~正常)"
+    },
+    {
+      "from": "D342",
+      "to": "L44",
+      "from_name": "LQTS",
+      "to_name": "L44",
+      "reason": "LQTS: 電解質異常(低K/低Mgで誘発, 30-40%)"
+    },
+    {
+      "from": "D279",
+      "to": "S01",
+      "from_name": "mediastinitis",
+      "to_name": "S01",
+      "reason": "縦隔炎: 咳嗽(20-30%)"
+    },
+    {
+      "from": "D279",
+      "to": "E05",
+      "from_name": "mediastinitis",
+      "to_name": "E05",
+      "reason": "縦隔炎: SpO2低下(呼吸障害, 30-40%)"
+    },
+    {
+      "from": "D279",
+      "to": "E16",
+      "from_name": "mediastinitis",
+      "to_name": "E16",
+      "reason": "縦隔炎: 意識障害(敗血症, 20-30%)"
+    },
+    {
+      "from": "D285",
+      "to": "E16",
+      "from_name": "DCS",
+      "to_name": "E16",
+      "reason": "減圧症: 意識障害(脳型, 20-30%)"
+    },
+    {
+      "from": "D285",
+      "to": "E02",
+      "from_name": "DCS",
+      "to_name": "E02",
+      "reason": "減圧症: 頻脈(ショック/疼痛, 30-40%)"
+    },
+    {
+      "from": "D285",
+      "to": "L01",
+      "from_name": "DCS",
+      "to_name": "L01",
+      "reason": "減圧症: WBC上昇(ストレス反応, 30-40%)"
+    },
+    {
+      "from": "D321",
+      "to": "S42",
+      "from_name": "primary_aldosteronism",
+      "to_name": "S42",
+      "reason": "アルドステロン症: 失神/痙攣(低K→VT/VF, 10-20%)"
+    },
+    {
+      "from": "D321",
+      "to": "E16",
+      "from_name": "primary_aldosteronism",
+      "to_name": "E16",
+      "reason": "アルドステロン症: 意識障害(低K→VT→心停止, 10-15%)"
+    },
+    {
+      "from": "D345",
+      "to": "S42",
+      "from_name": "sheehan",
+      "to_name": "S42",
+      "reason": "Sheehan: 痙攣(低Na/低血糖→痙攣, 15-20%)"
+    },
+    {
+      "from": "D348",
+      "to": "S13",
+      "from_name": "wilms_tumor",
+      "to_name": "S13",
+      "reason": "ウィルムス: 嘔気嘔吐(腹部圧迫, 20-30%)"
+    },
+    {
+      "from": "D348",
+      "to": "L04",
+      "from_name": "wilms_tumor",
+      "to_name": "L04",
+      "reason": "ウィルムス: CXR(肺転移, 15-20%)"
+    },
+    {
+      "from": "D348",
+      "to": "L44",
+      "from_name": "wilms_tumor",
+      "to_name": "L44",
+      "reason": "ウィルムス: 電解質異常(Na/Ca低下, 15-20%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
