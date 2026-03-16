@@ -12760,7 +12760,9 @@
         "T01": "under_3d",
         "T02": "gradual_days",
         "E02": "100_120",
-        "E05": "normal_over_96"
+        "E05": "normal_over_96",
+        "E01": "under_37.5",
+        "L04": "pneumothorax"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -13106,7 +13108,8 @@
         "L01": "normal_4000_10000",
         "L02": "normal_under_0.3",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L04": "lobar_infiltrate"
       },
       "risk_factors": {
         "R01": "6_12",
@@ -13392,7 +13395,8 @@
         "L11": "mild_elevated",
         "E01": "under_37.5",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L02": "normal_under_0.3"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -15276,7 +15280,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "S05": "mild",
-        "S42": "present"
+        "S42": "present",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -16331,7 +16336,8 @@
         "E16": "confused",
         "S05": "severe",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S42": "absent"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17375,7 +17381,8 @@
         "T02": "gradual_days",
         "E40": "AF",
         "E39": "valvular_abnormal",
-        "E43": "present"
+        "E43": "present",
+        "E02": "over_120"
       },
       "risk_factors": {
         "R01": "40_64",
