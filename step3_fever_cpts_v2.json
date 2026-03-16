@@ -7627,11 +7627,11 @@
           "over_40.0": 0.02
         },
         "D280": {
-          "under_37.5": 0.35,
+          "under_37.5": 0.5,
           "37.5_38.0": 0.15,
-          "38.0_39.0": 0.25,
-          "39.0_40.0": 0.18,
-          "over_40.0": 0.07
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.08
         },
         "D287": {
           "under_37.5": 0.6,
@@ -9255,8 +9255,8 @@
           "hypotension_under_90": 0.75
         },
         "D280": {
-          "normal_over_90": 0.4,
-          "hypotension_under_90": 0.6
+          "normal_over_90": 0.6,
+          "hypotension_under_90": 0.4
         },
         "D281": {
           "normal_over_90": 0.3,
@@ -9891,9 +9891,9 @@
           "severe_hypoxia_under_93": 0.35
         },
         "D280": {
-          "normal_over_96": 0.2,
-          "mild_hypoxia_93_96": 0.35,
-          "severe_hypoxia_under_93": 0.45
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.3
         },
         "D281": {
           "normal_over_96": 0.1,
@@ -10066,8 +10066,8 @@
           "present": 0.85
         },
         "D315": {
-          "absent": 0.65,
-          "present": 0.35
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -10332,10 +10332,10 @@
           "decreased_absent": 0.1
         },
         "D319": {
-          "clear": 0.08,
-          "crackles": 0.55,
-          "wheezes": 0.25,
-          "decreased_absent": 0.12
+          "clear": 0.05,
+          "crackles": 0.75,
+          "wheezes": 0.15,
+          "decreased_absent": 0.05
         },
         "D328": {
           "clear": 0.05,
@@ -12023,9 +12023,9 @@
           "obtunded": 0.15
         },
         "D280": {
-          "normal": 0.05,
-          "confused": 0.35,
-          "obtunded": 0.6
+          "normal": 0.25,
+          "confused": 0.4,
+          "obtunded": 0.35
         },
         "D281": {
           "normal": 0.03,
@@ -23884,8 +23884,8 @@
           "present": 0.9
         },
         "D293": {
-          "absent": 0.35,
-          "present": 0.65
+          "absent": 0.4,
+          "present": 0.6
         },
         "D294": {
           "absent": 0.15,
@@ -25540,8 +25540,8 @@
           "present": 0.85
         },
         "D304": {
-          "absent": 0.55,
-          "present": 0.45
+          "absent": 0.95,
+          "present": 0.05
         },
         "D305": {
           "absent": 0.7,
@@ -25750,8 +25750,8 @@
           "present": 0.75
         },
         "D319": {
-          "absent": 0.65,
-          "present": 0.35
+          "absent": 0.3,
+          "present": 0.7
         },
         "D322": {
           "absent": 0.45,
