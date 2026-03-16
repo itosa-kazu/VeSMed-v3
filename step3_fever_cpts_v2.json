@@ -7839,6 +7839,13 @@
           "38.0_39.0": 0.13,
           "39.0_40.0": 0.08,
           "over_40.0": 0.04
+        },
+        "D308": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.1,
+          "39.0_40.0": 0.06,
+          "over_40.0": 0.02
         }
       }
     },
@@ -11397,6 +11404,11 @@
           "absent": 0.5,
           "cervical": 0.1,
           "generalized": 0.4
+        },
+        "D262": {
+          "absent": 0.5,
+          "cervical": 0.4,
+          "generalized": 0.1
         }
       }
     },
@@ -12122,6 +12134,11 @@
           "normal": 0.7,
           "confused": 0.15,
           "obtunded": 0.15
+        },
+        "D310": {
+          "normal": 0.85,
+          "confused": 0.12,
+          "obtunded": 0.03
         }
       }
     },
@@ -12484,6 +12501,10 @@
         "D23": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D295": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -19678,6 +19699,11 @@
           "absent": 0.4,
           "dry": 0.4,
           "productive": 0.2
+        },
+        "D270": {
+          "absent": 0.2,
+          "dry": 0.5,
+          "productive": 0.3
         }
       }
     },
@@ -20885,6 +20911,11 @@
           "absent": 0.55,
           "mild": 0.3,
           "severe": 0.15
+        },
+        "D300": {
+          "absent": 0.6,
+          "mild": 0.25,
+          "severe": 0.15
         }
       }
     },
@@ -22039,6 +22070,16 @@
           "absent": 0.35,
           "mild": 0.35,
           "severe": 0.3
+        },
+        "D292": {
+          "absent": 0.3,
+          "mild": 0.4,
+          "severe": 0.3
+        },
+        "D294": {
+          "absent": 0.4,
+          "mild": 0.35,
+          "severe": 0.25
         }
       }
     },
@@ -23882,6 +23923,10 @@
         "D94": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D309": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -24411,6 +24456,11 @@
           "absent": 0.08,
           "localized_pain_redness": 0.12,
           "rash_widespread": 0.8
+        },
+        "D262": {
+          "absent": 0.1,
+          "localized_pain_redness": 0.8,
+          "rash_widespread": 0.1
         }
       }
     },
@@ -25522,6 +25572,10 @@
         "D345": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D331": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -32462,6 +32516,11 @@
           "absent": 0.55,
           "clear_rhinorrhea": 0.3,
           "purulent_rhinorrhea": 0.15
+        },
+        "D270": {
+          "absent": 0.1,
+          "clear_rhinorrhea": 0.3,
+          "purulent_rhinorrhea": 0.6
         }
       }
     },
@@ -32835,6 +32894,12 @@
           "hemianopia": 0.1,
           "central_scotoma": 0.1,
           "visual_loss": 0.3
+        },
+        "D350": {
+          "absent": 0.25,
+          "hemianopia": 0.05,
+          "central_scotoma": 0.15,
+          "visual_loss": 0.55
         }
       }
     },

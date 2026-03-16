@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4954,
+  "total_edges": 4967,
   "edges": [
     {
       "from": "R01",
@@ -39175,6 +39175,97 @@
       "from_name": "bladder_cancer",
       "to_name": "S33",
       "reason": "膀胱癌: 血尿(定義的, 80%+)"
+    },
+    {
+      "from": "D262",
+      "to": "E13",
+      "from_name": "impetigo",
+      "to_name": "E13",
+      "reason": "膿痂疹: 所属リンパ節腫脹(30-40%)"
+    },
+    {
+      "from": "D262",
+      "to": "S18",
+      "from_name": "impetigo",
+      "to_name": "S18",
+      "reason": "膿痂疹: 皮膚の訴え(痂皮+掻痒, 80%+)"
+    },
+    {
+      "from": "D270",
+      "to": "S03",
+      "from_name": "AERD",
+      "to_name": "S03",
+      "reason": "AERD: 鼻閉/鼻漏(Samter triad, 80%+)"
+    },
+    {
+      "from": "D270",
+      "to": "S01",
+      "from_name": "AERD",
+      "to_name": "S01",
+      "reason": "AERD: 咳嗽(喘息発作, 60-70%)"
+    },
+    {
+      "from": "D292",
+      "to": "S07",
+      "from_name": "VN",
+      "to_name": "S07",
+      "reason": "前庭神経炎: 倦怠感(めまい+嘔吐, 50-60%)"
+    },
+    {
+      "from": "D300",
+      "to": "S05",
+      "from_name": "CJD",
+      "to_name": "S05",
+      "reason": "CJD: 頭痛(20-30%)"
+    },
+    {
+      "from": "D308",
+      "to": "E01",
+      "from_name": "cauda_equina",
+      "to_name": "E01",
+      "reason": "馬尾症候群: 通常無熱(腫瘍/ヘルニア)"
+    },
+    {
+      "from": "D309",
+      "to": "S13",
+      "from_name": "AVM",
+      "to_name": "S13",
+      "reason": "AVM: 嘔吐(出血時頭蓋内圧亢進, 30-40%)"
+    },
+    {
+      "from": "D310",
+      "to": "E16",
+      "from_name": "TIA",
+      "to_name": "E16",
+      "reason": "TIA: 意識正常(定義的に意識消失なし)"
+    },
+    {
+      "from": "D294",
+      "to": "S07",
+      "from_name": "migraine",
+      "to_name": "S07",
+      "reason": "片頭痛: 倦怠(prodrome/postdrome, 40-50%)"
+    },
+    {
+      "from": "D295",
+      "to": "E25",
+      "from_name": "cluster",
+      "to_name": "E25",
+      "reason": "群発頭痛: 結膜充血(同側自律神経症状, 70-80%)"
+    },
+    {
+      "from": "D350",
+      "to": "S54",
+      "from_name": "marfan",
+      "to_name": "S54",
+      "reason": "マルファン: 視野障害(水晶体亜脱臼, 50-80%)"
+    },
+    {
+      "from": "D331",
+      "to": "S42",
+      "from_name": "fat_embolism",
+      "to_name": "S42",
+      "reason": "脂肪塞栓: 痙攣(脳脂肪塞栓, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
