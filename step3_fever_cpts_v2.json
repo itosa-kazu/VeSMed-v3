@@ -18859,6 +18859,11 @@
           "absent": 0.2,
           "mild": 0.3,
           "severe": 0.5
+        },
+        "D274": {
+          "absent": 0.4,
+          "mild": 0.4,
+          "severe": 0.2
         }
       }
     },
@@ -25266,6 +25271,14 @@
         "D209": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D273": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D274": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -26943,6 +26956,12 @@
         "D232": {
           "hypoglycemia": 0.4,
           "normal": 0.4,
+          "hyperglycemia": 0.15,
+          "very_high_over_500": 0.05
+        },
+        "D272": {
+          "hypoglycemia": 0.25,
+          "normal": 0.55,
           "hyperglycemia": 0.15,
           "very_high_over_500": 0.05
         }
