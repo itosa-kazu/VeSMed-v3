@@ -12288,7 +12288,8 @@
         "E01": "under_37.5",
         "L01": "high_10000_20000",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L02": "high_over_10"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12364,7 +12365,8 @@
         "L01": "normal_4000_10000",
         "L04": "bilateral_infiltrate",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12391,7 +12393,8 @@
         "E01": "under_37.5",
         "L04": "bilateral_infiltrate",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L02": "mild_0.3_3"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12444,7 +12447,8 @@
         "L01": "high_10000_20000",
         "L02": "moderate_3_10",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12522,7 +12526,8 @@
         "L01": "high_10000_20000",
         "L44": "hyponatremia",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "1_5",
@@ -12696,7 +12701,8 @@
         "E02": "over_120",
         "L02": "high_over_10",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L01": "normal_4000_10000"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12751,7 +12757,8 @@
         "L01": "very_high_over_20000",
         "T01": "under_3d",
         "T02": "gradual_days",
-        "E02": "100_120"
+        "E02": "100_120",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -12923,7 +12930,8 @@
         "L51": "mildly_elevated",
         "L11": "mild_elevated",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L01": "normal_4000_10000"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -13068,7 +13076,8 @@
         "L11": "mild_elevated",
         "L04": "bilateral_infiltrate",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -13200,7 +13209,9 @@
         "L09": "gram_negative",
         "L55": "mild_elevated",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -13254,7 +13265,8 @@
         "L44": "hyponatremia",
         "L09": "gram_positive",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E05": "mild_hypoxia_93_96"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13283,7 +13295,8 @@
         "L52": "very_high",
         "L04": "bilateral_infiltrate",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L01": "normal_4000_10000"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -13398,7 +13411,8 @@
         "E01": "under_37.5",
         "L11": "very_high",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L01": "normal_4000_10000"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13492,7 +13506,8 @@
         "E01": "under_37.5",
         "L01": "normal_4000_10000",
         "T01": "over_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L11": "normal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13590,7 +13605,8 @@
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "L62": "adnexal_mass"
+        "L62": "adnexal_mass",
+        "L02": "moderate_3_10"
       },
       "risk_factors": {
         "R01": "13_17",
@@ -13906,7 +13922,8 @@
         "L55": "high_AKI",
         "L01": "high_10000_20000",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14205,7 +14222,8 @@
         "L55": "mild_elevated",
         "L44": "other",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15216,7 +15234,8 @@
         "E02": "over_120",
         "L54": "very_high_over_500",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15711,7 +15730,8 @@
         "E07": "crackles",
         "L04": "bilateral_infiltrate",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -16436,7 +16456,8 @@
         "E02": "100_120",
         "L55": "mild_elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -16856,7 +16877,8 @@
         "L02": "high_over_10",
         "L04": "bilateral_infiltrate",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L11": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17942,7 +17964,8 @@
         "L02": "moderate_3_10",
         "L04": "pleural_effusion",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E05": "normal_over_96"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17995,7 +18018,9 @@
         "L04": "pleural_effusion",
         "S07": "severe",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5"
       },
       "risk_factors": {
         "R01": "18_39",
