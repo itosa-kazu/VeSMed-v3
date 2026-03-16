@@ -17111,6 +17111,11 @@
           "normal": 0.5,
           "mild_elevated": 0.3,
           "very_high": 0.2
+        },
+        "D345": {
+          "normal": 0.65,
+          "mild_elevated": 0.25,
+          "very_high": 0.1
         }
       }
     },
@@ -23957,6 +23962,10 @@
         "D295": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D335": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
