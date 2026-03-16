@@ -14312,7 +14312,8 @@
         "L11": "mild_elevated",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "L63": "liver"
+        "L63": "liver",
+        "S15": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14335,7 +14336,8 @@
         "S13": "present",
         "L11": "very_high",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E18": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14496,7 +14498,8 @@
         "S07": "mild",
         "L55": "high_AKI",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S15": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15175,7 +15178,8 @@
         "S13": "present",
         "E01": "under_37.5",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S42": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15271,7 +15275,8 @@
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "S05": "mild"
+        "S05": "mild",
+        "S42": "present"
       },
       "risk_factors": {
         "R01": "0_1",
