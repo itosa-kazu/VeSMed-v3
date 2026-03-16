@@ -33558,6 +33558,36 @@
           "normal": 0.45,
           "pre_DIC": 0.25,
           "overt_DIC": 0.2
+        },
+        "D24": {
+          "not_done": 0.1,
+          "normal": 0.25,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.35
+        },
+        "D57": {
+          "not_done": 0.1,
+          "normal": 0.35,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.25
+        },
+        "D107": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.45
+        },
+        "D201": {
+          "not_done": 0.1,
+          "normal": 0.15,
+          "pre_DIC": 0.2,
+          "overt_DIC": 0.55
+        },
+        "D326": {
+          "not_done": 0.1,
+          "normal": 0.4,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.25
         }
       }
     },
@@ -33647,6 +33677,18 @@
           "absent": 0.45,
           "mild_NYHA2": 0.25,
           "severe_NYHA3_4": 0.25
+        },
+        "D215": {
+          "not_assessed": 0.05,
+          "absent": 0.05,
+          "mild_NYHA2": 0.15,
+          "severe_NYHA3_4": 0.75
+        },
+        "D150": {
+          "not_assessed": 0.05,
+          "absent": 0.2,
+          "mild_NYHA2": 0.3,
+          "severe_NYHA3_4": 0.45
         }
       }
     }
