@@ -7210,6 +7210,116 @@
       ],
       "severity": "high",
       "note": "FBN1変異→結合組織障害。高身長+くも状指+水晶体偏位+大動脈基部拡張→解離。僧帽弁逸脱。Ghent基準で診断"
+    },
+    {
+      "id": "E39",
+      "name": "echocardiography",
+      "name_ja": "心エコー所見",
+      "category": "sign",
+      "states": [
+        "not_done",
+        "normal",
+        "wall_motion_abnormal",
+        "valvular_abnormal",
+        "pericardial_effusion",
+        "LVH",
+        "dilated_chamber"
+      ],
+      "note": "心エコー: 壁運動異常(ACS/心筋炎/たこつぼ)/弁膜症/心嚢液/LVH/腔拡大"
+    },
+    {
+      "id": "E40",
+      "name": "ECG",
+      "name_ja": "ECG所見",
+      "category": "sign",
+      "states": [
+        "not_done",
+        "normal",
+        "ST_elevation",
+        "ST_depression",
+        "AF",
+        "QT_prolongation",
+        "Brugada_pattern",
+        "RVH_strain",
+        "LVH_pattern"
+      ],
+      "note": "ECG: ST変化/AF/QT延長/Brugada/右室負荷/左室肥大"
+    },
+    {
+      "id": "L57",
+      "name": "ADAMTS13",
+      "name_ja": "ADAMTS13活性",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "low",
+        "very_low_under_10"
+      ],
+      "note": "TTP鑑別の決め手。<10%→TTP, 正常→HUS/DIC/HELLP"
+    },
+    {
+      "id": "L58",
+      "name": "IGF1_GH",
+      "name_ja": "IGF-1/GH",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated",
+        "low"
+      ],
+      "note": "先端巨大症でIGF-1/GH上昇、下垂体機能低下で低下"
+    },
+    {
+      "id": "S54",
+      "name": "visual_field_defect",
+      "name_ja": "視野障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "hemianopia",
+        "central_scotoma",
+        "visual_loss"
+      ],
+      "note": "両耳側半盲(下垂体腫瘍)/中心暗点(視神経炎)/視力消失(網膜剥離/CRAO)"
+    },
+    {
+      "id": "L59",
+      "name": "CSF_opening_pressure",
+      "name_ja": "髄液開放圧",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated",
+        "very_high"
+      ],
+      "note": "正常<20cmH2O。髄膜炎/水頭症で上昇。NPHでは正常~軽度上昇"
+    },
+    {
+      "id": "L60",
+      "name": "urine_VMA_HVA",
+      "name_ja": "尿中VMA/HVA",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated"
+      ],
+      "note": "神経芽腫/褐色細胞腫のスクリーニング"
+    },
+    {
+      "id": "E41",
+      "name": "ABI",
+      "name_ja": "ABI(足関節上腕血圧比)",
+      "category": "sign",
+      "states": [
+        "not_done",
+        "normal_over_0.9",
+        "low_under_0.9"
+      ],
+      "note": "PAD: ABI<0.9で診断。<0.4は重症"
     }
   ]
 }

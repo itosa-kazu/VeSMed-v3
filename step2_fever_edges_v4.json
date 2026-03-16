@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4772,
+  "total_edges": 4824,
   "edges": [
     {
       "from": "R01",
@@ -37901,6 +37901,370 @@
       "from_name": "chlamydia_pneumoniae",
       "to_name": "L28",
       "reason": "クラミジア肺炎: ESR上昇(感染炎症, 50-60%)"
+    },
+    {
+      "from": "D131",
+      "to": "E39",
+      "from_name": "ACS",
+      "to_name": "E39",
+      "reason": "ACS: 壁運動異常(80%+)"
+    },
+    {
+      "from": "D116",
+      "to": "E39",
+      "from_name": "acute_myocarditis",
+      "to_name": "E39",
+      "reason": "心筋炎: 壁運動異常+EF低下(60-70%)"
+    },
+    {
+      "from": "D134",
+      "to": "E39",
+      "from_name": "acute_pericarditis",
+      "to_name": "E39",
+      "reason": "心膜炎: 心嚢液(50-60%)"
+    },
+    {
+      "from": "D124",
+      "to": "E39",
+      "from_name": "cardiac_tamponade",
+      "to_name": "E39",
+      "reason": "心タンポナーデ: 心嚢液(定義的)"
+    },
+    {
+      "from": "D120",
+      "to": "E39",
+      "from_name": "ADHF",
+      "to_name": "E39",
+      "reason": "心不全: 腔拡大/壁運動異常(70-80%)"
+    },
+    {
+      "from": "D327",
+      "to": "E39",
+      "from_name": "aortic_stenosis",
+      "to_name": "E39",
+      "reason": "AS: 弁膜症(定義的)+LVH"
+    },
+    {
+      "from": "D340",
+      "to": "E39",
+      "from_name": "mitral_stenosis",
+      "to_name": "E39",
+      "reason": "MS: 弁膜症(定義的)"
+    },
+    {
+      "from": "D343",
+      "to": "E39",
+      "from_name": "takotsubo",
+      "to_name": "E39",
+      "reason": "たこつぼ: apical ballooning(定義的)"
+    },
+    {
+      "from": "D344",
+      "to": "E39",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "E39",
+      "reason": "収縮性心膜炎: 心膜肥厚+中隔バウンス"
+    },
+    {
+      "from": "D346",
+      "to": "E39",
+      "from_name": "HCM",
+      "to_name": "E39",
+      "reason": "HCM: LVH+SAM(定義的)"
+    },
+    {
+      "from": "D150",
+      "to": "E39",
+      "from_name": "takotsubo_old",
+      "to_name": "E39",
+      "reason": "たこつぼ(旧): apical ballooning"
+    },
+    {
+      "from": "D345",
+      "to": "E39",
+      "from_name": "sheehan",
+      "to_name": "E39",
+      "reason": "Sheehan: 心嚢液(甲状腺低下, 30-40%)"
+    },
+    {
+      "from": "D131",
+      "to": "E40",
+      "from_name": "ACS",
+      "to_name": "E40",
+      "reason": "ACS: ST上昇/低下(80%+)"
+    },
+    {
+      "from": "D134",
+      "to": "E40",
+      "from_name": "acute_pericarditis",
+      "to_name": "E40",
+      "reason": "心膜炎: びまん性ST上昇(80%+)"
+    },
+    {
+      "from": "D116",
+      "to": "E40",
+      "from_name": "acute_myocarditis",
+      "to_name": "E40",
+      "reason": "心筋炎: ST-T変化(70-80%)"
+    },
+    {
+      "from": "D341",
+      "to": "E40",
+      "from_name": "brugada",
+      "to_name": "E40",
+      "reason": "Brugada: coved型ST上昇V1-V3(定義的)"
+    },
+    {
+      "from": "D342",
+      "to": "E40",
+      "from_name": "LQTS",
+      "to_name": "E40",
+      "reason": "LQTS: QT延長(定義的)"
+    },
+    {
+      "from": "D343",
+      "to": "E40",
+      "from_name": "takotsubo",
+      "to_name": "E40",
+      "reason": "たこつぼ: ST上昇→T波逆転(80%+)"
+    },
+    {
+      "from": "D327",
+      "to": "E40",
+      "from_name": "aortic_stenosis",
+      "to_name": "E40",
+      "reason": "AS: LVH pattern(60-70%)"
+    },
+    {
+      "from": "D340",
+      "to": "E40",
+      "from_name": "mitral_stenosis",
+      "to_name": "E40",
+      "reason": "MS: AF(40-50%)+左房負荷"
+    },
+    {
+      "from": "D346",
+      "to": "E40",
+      "from_name": "HCM",
+      "to_name": "E40",
+      "reason": "HCM: LVH+ST-T変化(80%+)"
+    },
+    {
+      "from": "D125",
+      "to": "E40",
+      "from_name": "arrhythmia",
+      "to_name": "E40",
+      "reason": "不整脈: AF/SVT/VT(定義的)"
+    },
+    {
+      "from": "D318",
+      "to": "E40",
+      "from_name": "CTEPH",
+      "to_name": "E40",
+      "reason": "CTEPH: 右室負荷(70-80%)"
+    },
+    {
+      "from": "D156",
+      "to": "L57",
+      "from_name": "TTP",
+      "to_name": "L57",
+      "reason": "TTP: ADAMTS13<10%(定義的)"
+    },
+    {
+      "from": "D162",
+      "to": "L57",
+      "from_name": "HUS",
+      "to_name": "L57",
+      "reason": "HUS: ADAMTS13正常(定義的鑑別)"
+    },
+    {
+      "from": "D152",
+      "to": "L57",
+      "from_name": "DIC",
+      "to_name": "L57",
+      "reason": "DIC: ADAMTS13正常~軽度低下"
+    },
+    {
+      "from": "D322",
+      "to": "L57",
+      "from_name": "HELLP",
+      "to_name": "L57",
+      "reason": "HELLP: ADAMTS13正常~軽度低下"
+    },
+    {
+      "from": "D333",
+      "to": "L58",
+      "from_name": "acromegaly",
+      "to_name": "L58",
+      "reason": "先端巨大症: IGF-1/GH上昇(定義的)"
+    },
+    {
+      "from": "D332",
+      "to": "L58",
+      "from_name": "hypopituitarism",
+      "to_name": "L58",
+      "reason": "下垂体機能低下: GH/IGF-1低下(50-60%)"
+    },
+    {
+      "from": "D333",
+      "to": "S54",
+      "from_name": "acromegaly",
+      "to_name": "S54",
+      "reason": "先端巨大症: 両耳側半盲(視交叉圧迫, 30-40%)"
+    },
+    {
+      "from": "D332",
+      "to": "S54",
+      "from_name": "hypopituitarism",
+      "to_name": "S54",
+      "reason": "下垂体機能低下: 視野障害(腫瘍性, 20-30%)"
+    },
+    {
+      "from": "D301",
+      "to": "S54",
+      "from_name": "NMOSD",
+      "to_name": "S54",
+      "reason": "NMOSD: 視神経炎→中心暗点/視力消失(70-80%)"
+    },
+    {
+      "from": "D312",
+      "to": "S54",
+      "from_name": "meningioma",
+      "to_name": "S54",
+      "reason": "髄膜腫: 視野障害(鞍上部/蝶形骨, 20-30%)"
+    },
+    {
+      "from": "D311",
+      "to": "S54",
+      "from_name": "glioblastoma",
+      "to_name": "S54",
+      "reason": "GBM: 視野障害(後頭葉, 15-20%)"
+    },
+    {
+      "from": "D339",
+      "to": "S54",
+      "from_name": "retinal_detachment",
+      "to_name": "S54",
+      "reason": "網膜剥離: 視野欠損→視力消失(定義的)"
+    },
+    {
+      "from": "D325",
+      "to": "S54",
+      "from_name": "PRES",
+      "to_name": "S54",
+      "reason": "PRES: 視力障害(30-40%)"
+    },
+    {
+      "from": "D13",
+      "to": "L59",
+      "from_name": "meningitis",
+      "to_name": "L59",
+      "reason": "髄膜炎: 髄液圧上昇(80%+)"
+    },
+    {
+      "from": "D324",
+      "to": "L59",
+      "from_name": "TB_meningitis",
+      "to_name": "L59",
+      "reason": "結核性髄膜炎: 髄液圧上昇(70-80%)"
+    },
+    {
+      "from": "D314",
+      "to": "L59",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "L59",
+      "reason": "急性水頭症: 髄液圧著明上昇(定義的)"
+    },
+    {
+      "from": "D315",
+      "to": "L59",
+      "from_name": "CVST",
+      "to_name": "L59",
+      "reason": "CVST: 髄液圧上昇(80%+)"
+    },
+    {
+      "from": "D200",
+      "to": "L59",
+      "from_name": "NPH",
+      "to_name": "L59",
+      "reason": "NPH: 髄液圧正常~軽度上昇(定義的)"
+    },
+    {
+      "from": "D109",
+      "to": "L59",
+      "from_name": "cryptococcosis",
+      "to_name": "L59",
+      "reason": "クリプトコッカス: 髄液圧上昇(60-70%)"
+    },
+    {
+      "from": "D347",
+      "to": "L60",
+      "from_name": "neuroblastoma",
+      "to_name": "L60",
+      "reason": "神経芽腫: VMA/HVA上昇(90%+)"
+    },
+    {
+      "from": "D196",
+      "to": "L60",
+      "from_name": "pheochromocytoma",
+      "to_name": "L60",
+      "reason": "褐色細胞腫: VMA上昇(80%+)"
+    },
+    {
+      "from": "D335",
+      "to": "E41",
+      "from_name": "PAD",
+      "to_name": "E41",
+      "reason": "PAD: ABI<0.9(定義的)"
+    },
+    {
+      "from": "D322",
+      "to": "R15",
+      "from_name": "HELLP",
+      "to_name": "R15",
+      "reason": "HELLP: 妊娠中(定義的)"
+    },
+    {
+      "from": "D323",
+      "to": "R15",
+      "from_name": "placental_abruption",
+      "to_name": "R15",
+      "reason": "胎盤早期剥離: 妊娠中(定義的)"
+    },
+    {
+      "from": "D291",
+      "to": "R15",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "R15",
+      "reason": "子宮外妊娠: 妊娠(定義的)"
+    },
+    {
+      "from": "D345",
+      "to": "R15",
+      "from_name": "sheehan",
+      "to_name": "R15",
+      "reason": "Sheehan: 産後(妊娠関連)"
+    },
+    {
+      "from": "D325",
+      "to": "R15",
+      "from_name": "PRES",
+      "to_name": "R15",
+      "reason": "PRES: 子癇関連(30-40%)"
+    },
+    {
+      "from": "D156",
+      "to": "R15",
+      "from_name": "TTP",
+      "to_name": "R15",
+      "reason": "TTP: 非妊娠性(通常)"
+    },
+    {
+      "from": "D152",
+      "to": "R15",
+      "from_name": "DIC",
+      "to_name": "R15",
+      "reason": "DIC: 非妊娠性(通常)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

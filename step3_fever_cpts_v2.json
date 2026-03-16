@@ -32510,6 +32510,495 @@
           "purulent_rhinorrhea": 0.15
         }
       }
+    },
+    "E39": {
+      "description": "心エコー所見",
+      "leak": {
+        "not_done": 0.3,
+        "normal": 0.5,
+        "wall_motion_abnormal": 0.05,
+        "valvular_abnormal": 0.05,
+        "pericardial_effusion": 0.03,
+        "LVH": 0.04,
+        "dilated_chamber": 0.03
+      },
+      "parent_effects": {
+        "D131": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "wall_motion_abnormal": 0.8,
+          "valvular_abnormal": 0.02,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.03,
+          "dilated_chamber": 0.03
+        },
+        "D116": {
+          "not_done": 0.05,
+          "normal": 0.1,
+          "wall_motion_abnormal": 0.65,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.1,
+          "LVH": 0.02,
+          "dilated_chamber": 0.05
+        },
+        "D134": {
+          "not_done": 0.05,
+          "normal": 0.2,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.6,
+          "LVH": 0.03,
+          "dilated_chamber": 0.04
+        },
+        "D124": {
+          "not_done": 0.03,
+          "normal": 0.02,
+          "wall_motion_abnormal": 0.03,
+          "valvular_abnormal": 0.02,
+          "pericardial_effusion": 0.85,
+          "LVH": 0.02,
+          "dilated_chamber": 0.03
+        },
+        "D120": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "wall_motion_abnormal": 0.3,
+          "valvular_abnormal": 0.1,
+          "pericardial_effusion": 0.05,
+          "LVH": 0.15,
+          "dilated_chamber": 0.3
+        },
+        "D327": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.55,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.25,
+          "dilated_chamber": 0.05
+        },
+        "D340": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.7,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.05,
+          "dilated_chamber": 0.1
+        },
+        "D343": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.8,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.03,
+          "dilated_chamber": 0.04
+        },
+        "D344": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "wall_motion_abnormal": 0.1,
+          "valvular_abnormal": 0.05,
+          "pericardial_effusion": 0.15,
+          "LVH": 0.05,
+          "dilated_chamber": 0.55
+        },
+        "D346": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.1,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.65,
+          "dilated_chamber": 0.1
+        },
+        "D150": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.8,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.03,
+          "dilated_chamber": 0.04
+        },
+        "D345": {
+          "not_done": 0.1,
+          "normal": 0.35,
+          "wall_motion_abnormal": 0.1,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.35,
+          "LVH": 0.03,
+          "dilated_chamber": 0.04
+        }
+      }
+    },
+    "E40": {
+      "description": "ECG所見",
+      "leak": {
+        "not_done": 0.15,
+        "normal": 0.55,
+        "ST_elevation": 0.05,
+        "ST_depression": 0.05,
+        "AF": 0.05,
+        "QT_prolongation": 0.03,
+        "Brugada_pattern": 0.01,
+        "RVH_strain": 0.05,
+        "LVH_pattern": 0.06
+      },
+      "parent_effects": {
+        "D131": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.45,
+          "ST_depression": 0.35,
+          "AF": 0.03,
+          "QT_prolongation": 0.03,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.02,
+          "LVH_pattern": 0.03
+        },
+        "D134": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.75,
+          "ST_depression": 0.03,
+          "AF": 0.05,
+          "QT_prolongation": 0.03,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.02,
+          "LVH_pattern": 0.03
+        },
+        "D116": {
+          "not_done": 0.03,
+          "normal": 0.08,
+          "ST_elevation": 0.35,
+          "ST_depression": 0.25,
+          "AF": 0.1,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.03,
+          "LVH_pattern": 0.1
+        },
+        "D341": {
+          "not_done": 0.03,
+          "normal": 0.02,
+          "ST_elevation": 0.05,
+          "ST_depression": 0.02,
+          "AF": 0.03,
+          "QT_prolongation": 0.02,
+          "Brugada_pattern": 0.8,
+          "RVH_strain": 0.01,
+          "LVH_pattern": 0.02
+        },
+        "D342": {
+          "not_done": 0.03,
+          "normal": 0.02,
+          "ST_elevation": 0.02,
+          "ST_depression": 0.05,
+          "AF": 0.03,
+          "QT_prolongation": 0.8,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.02,
+          "LVH_pattern": 0.02
+        },
+        "D343": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.4,
+          "ST_depression": 0.3,
+          "AF": 0.05,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.03,
+          "LVH_pattern": 0.08
+        },
+        "D327": {
+          "not_done": 0.05,
+          "normal": 0.1,
+          "ST_elevation": 0.03,
+          "ST_depression": 0.1,
+          "AF": 0.05,
+          "QT_prolongation": 0.03,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.03,
+          "LVH_pattern": 0.6
+        },
+        "D340": {
+          "not_done": 0.05,
+          "normal": 0.1,
+          "ST_elevation": 0.03,
+          "ST_depression": 0.05,
+          "AF": 0.55,
+          "QT_prolongation": 0.03,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.1,
+          "LVH_pattern": 0.08
+        },
+        "D346": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.03,
+          "ST_depression": 0.2,
+          "AF": 0.05,
+          "QT_prolongation": 0.03,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.02,
+          "LVH_pattern": 0.58
+        },
+        "D125": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.03,
+          "ST_depression": 0.1,
+          "AF": 0.55,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.02,
+          "RVH_strain": 0.07,
+          "LVH_pattern": 0.1
+        },
+        "D318": {
+          "not_done": 0.05,
+          "normal": 0.08,
+          "ST_elevation": 0.02,
+          "ST_depression": 0.05,
+          "AF": 0.05,
+          "QT_prolongation": 0.02,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.65,
+          "LVH_pattern": 0.07
+        }
+      }
+    },
+    "L57": {
+      "description": "ADAMTS13活性",
+      "leak": {
+        "not_done": 0.7,
+        "normal": 0.25,
+        "low": 0.03,
+        "very_low_under_10": 0.02
+      },
+      "parent_effects": {
+        "D156": {
+          "not_done": 0.1,
+          "normal": 0.03,
+          "low": 0.07,
+          "very_low_under_10": 0.8
+        },
+        "D162": {
+          "not_done": 0.15,
+          "normal": 0.7,
+          "low": 0.1,
+          "very_low_under_10": 0.05
+        },
+        "D152": {
+          "not_done": 0.15,
+          "normal": 0.55,
+          "low": 0.25,
+          "very_low_under_10": 0.05
+        },
+        "D322": {
+          "not_done": 0.15,
+          "normal": 0.5,
+          "low": 0.3,
+          "very_low_under_10": 0.05
+        }
+      }
+    },
+    "L58": {
+      "description": "IGF-1/GH",
+      "leak": {
+        "not_done": 0.75,
+        "normal": 0.2,
+        "elevated": 0.03,
+        "low": 0.02
+      },
+      "parent_effects": {
+        "D333": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "elevated": 0.9,
+          "low": 0.02
+        },
+        "D332": {
+          "not_done": 0.15,
+          "normal": 0.2,
+          "elevated": 0.02,
+          "low": 0.63
+        }
+      }
+    },
+    "S54": {
+      "description": "視野障害",
+      "leak": {
+        "absent": 0.9,
+        "hemianopia": 0.03,
+        "central_scotoma": 0.03,
+        "visual_loss": 0.04
+      },
+      "parent_effects": {
+        "D333": {
+          "absent": 0.5,
+          "hemianopia": 0.35,
+          "central_scotoma": 0.05,
+          "visual_loss": 0.1
+        },
+        "D332": {
+          "absent": 0.6,
+          "hemianopia": 0.25,
+          "central_scotoma": 0.05,
+          "visual_loss": 0.1
+        },
+        "D301": {
+          "absent": 0.15,
+          "hemianopia": 0.05,
+          "central_scotoma": 0.3,
+          "visual_loss": 0.5
+        },
+        "D312": {
+          "absent": 0.6,
+          "hemianopia": 0.2,
+          "central_scotoma": 0.05,
+          "visual_loss": 0.15
+        },
+        "D311": {
+          "absent": 0.7,
+          "hemianopia": 0.15,
+          "central_scotoma": 0.05,
+          "visual_loss": 0.1
+        },
+        "D339": {
+          "absent": 0.05,
+          "hemianopia": 0.1,
+          "central_scotoma": 0.1,
+          "visual_loss": 0.75
+        },
+        "D325": {
+          "absent": 0.5,
+          "hemianopia": 0.1,
+          "central_scotoma": 0.1,
+          "visual_loss": 0.3
+        }
+      }
+    },
+    "L59": {
+      "description": "髄液開放圧",
+      "leak": {
+        "not_done": 0.6,
+        "normal": 0.3,
+        "elevated": 0.07,
+        "very_high": 0.03
+      },
+      "parent_effects": {
+        "D13": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D324": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "elevated": 0.45,
+          "very_high": 0.35
+        },
+        "D314": {
+          "not_done": 0.1,
+          "normal": 0.03,
+          "elevated": 0.17,
+          "very_high": 0.7
+        },
+        "D315": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D200": {
+          "not_done": 0.1,
+          "normal": 0.55,
+          "elevated": 0.3,
+          "very_high": 0.05
+        },
+        "D109": {
+          "not_done": 0.1,
+          "normal": 0.15,
+          "elevated": 0.4,
+          "very_high": 0.35
+        }
+      }
+    },
+    "L60": {
+      "description": "尿中VMA/HVA",
+      "leak": {
+        "not_done": 0.85,
+        "normal": 0.13,
+        "elevated": 0.02
+      },
+      "parent_effects": {
+        "D347": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "elevated": 0.92
+        },
+        "D196": {
+          "not_done": 0.05,
+          "normal": 0.08,
+          "elevated": 0.87
+        }
+      }
+    },
+    "E41": {
+      "description": "ABI",
+      "leak": {
+        "not_done": 0.7,
+        "normal_over_0.9": 0.25,
+        "low_under_0.9": 0.05
+      },
+      "parent_effects": {
+        "D335": {
+          "not_done": 0.05,
+          "normal_over_0.9": 0.05,
+          "low_under_0.9": 0.9
+        }
+      }
+    },
+    "R15": {
+      "description": "妊娠",
+      "leak": {
+        "no": 0.95,
+        "yes": 0.05
+      },
+      "parent_effects": {
+        "D322": {
+          "no": 0.02,
+          "yes": 0.98
+        },
+        "D323": {
+          "no": 0.02,
+          "yes": 0.98
+        },
+        "D291": {
+          "no": 0.02,
+          "yes": 0.98
+        },
+        "D345": {
+          "no": 0.3,
+          "yes": 0.7
+        },
+        "D325": {
+          "no": 0.55,
+          "yes": 0.45
+        },
+        "D156": {
+          "no": 0.85,
+          "yes": 0.15
+        },
+        "D152": {
+          "no": 0.8,
+          "yes": 0.2
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
