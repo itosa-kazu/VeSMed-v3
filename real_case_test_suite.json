@@ -9199,7 +9199,8 @@
         "L52": "very_high",
         "L54": "hypoglycemia",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -9223,7 +9224,8 @@
         "L11": "very_high",
         "E02": "100_120",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13407,7 +13409,8 @@
         "E01": "under_37.5",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "L02": "normal_under_0.3"
+        "L02": "normal_under_0.3",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -13454,7 +13457,8 @@
         "S13": "present",
         "L11": "mild_elevated",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -14355,7 +14359,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "E18": "present",
-        "L61": "elevated"
+        "L61": "elevated",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14379,7 +14384,8 @@
         "L11": "mild_elevated",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "L61": "elevated"
+        "L61": "elevated",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14450,7 +14456,8 @@
         "T01": "1w_to_3w",
         "T02": "gradual_days",
         "L63": "bone",
-        "L61": "elevated"
+        "L61": "elevated",
+        "L67": "postrenal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14522,7 +14529,8 @@
         "L55": "high_AKI",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "S15": "present"
+        "S15": "present",
+        "L67": "postrenal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15337,7 +15345,8 @@
         "T02": "sudden_hours",
         "S44": "present",
         "R15": "yes",
-        "L64": "overt_DIC"
+        "L64": "overt_DIC",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15368,7 +15377,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "R15": "yes",
-        "L64": "overt_DIC"
+        "L64": "overt_DIC",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15400,7 +15410,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "R15": "yes",
-        "L64": "overt_DIC"
+        "L64": "overt_DIC",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15734,7 +15745,8 @@
         "L01": "normal_4000_10000",
         "E28": "present",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L67": "renal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16628,7 +16640,8 @@
         "S07": "severe",
         "L11": "very_high",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16650,7 +16663,8 @@
         "L11": "very_high",
         "S07": "severe",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -16751,7 +16765,8 @@
         "L01": "high_10000_20000",
         "L44": "hyponatremia",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L67": "renal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16780,7 +16795,8 @@
         "L44": "hyponatremia",
         "L55": "high_AKI",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L67": "renal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17091,7 +17107,8 @@
         "L55": "high_AKI",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "E02": "under_100"
+        "E02": "under_100",
+        "L67": "renal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17665,7 +17682,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "E39": "dilated_chamber",
-        "L65": "severe_NYHA3_4"
+        "L65": "severe_NYHA3_4",
+        "L66": "congestive"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17714,7 +17732,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "E39": "dilated_chamber",
-        "L65": "severe_NYHA3_4"
+        "L65": "severe_NYHA3_4",
+        "L66": "congestive"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17769,7 +17788,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "E39": "pericardial_effusion",
-        "S57": "present"
+        "S57": "present",
+        "L66": "hepatocellular"
       },
       "risk_factors": {
         "R01": "18_39",

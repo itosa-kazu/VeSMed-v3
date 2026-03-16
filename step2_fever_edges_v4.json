@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4895,
+  "total_edges": 4926,
   "edges": [
     {
       "from": "R01",
@@ -38762,6 +38762,223 @@
       "from_name": "HCM",
       "to_name": "L53",
       "reason": "HCM: トロポニン上昇(心筋障害, 20-30%)"
+    },
+    {
+      "from": "D100",
+      "to": "L66",
+      "from_name": "acute_hep_A",
+      "to_name": "L66",
+      "reason": "A型肝炎: 肝細胞型(AST/ALT著明上昇)"
+    },
+    {
+      "from": "D108",
+      "to": "L66",
+      "from_name": "hep_B",
+      "to_name": "L66",
+      "reason": "B型肝炎: 肝細胞型"
+    },
+    {
+      "from": "D169",
+      "to": "L66",
+      "from_name": "AIH",
+      "to_name": "L66",
+      "reason": "自己免疫性肝炎: 肝細胞型"
+    },
+    {
+      "from": "D170",
+      "to": "L66",
+      "from_name": "alcoholic_hepatitis",
+      "to_name": "L66",
+      "reason": "アルコール性肝炎: 肝細胞型(AST/ALT比>2)"
+    },
+    {
+      "from": "D166",
+      "to": "L66",
+      "from_name": "APAP",
+      "to_name": "L66",
+      "reason": "アセトアミノフェン中毒: 肝細胞型(AST著明上昇)"
+    },
+    {
+      "from": "D151",
+      "to": "L66",
+      "from_name": "acute_liver_failure",
+      "to_name": "L66",
+      "reason": "急性肝不全: 肝細胞型"
+    },
+    {
+      "from": "D322",
+      "to": "L66",
+      "from_name": "HELLP",
+      "to_name": "L66",
+      "reason": "HELLP: 肝細胞型(AST/ALT/LDH上昇)"
+    },
+    {
+      "from": "D282",
+      "to": "L66",
+      "from_name": "mushroom_poison",
+      "to_name": "L66",
+      "reason": "キノコ中毒: 肝細胞型(遅発性肝障害)"
+    },
+    {
+      "from": "D273",
+      "to": "L66",
+      "from_name": "CBD_stone",
+      "to_name": "L66",
+      "reason": "総胆管結石: 胆汁うっ滞型(ALP/GGT/Bil上昇)"
+    },
+    {
+      "from": "D287",
+      "to": "L66",
+      "from_name": "gallbladder_cancer",
+      "to_name": "L66",
+      "reason": "胆嚢癌: 胆汁うっ滞型"
+    },
+    {
+      "from": "D231",
+      "to": "L66",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "L66",
+      "reason": "胆管癌: 胆汁うっ滞型"
+    },
+    {
+      "from": "D230",
+      "to": "L66",
+      "from_name": "pancreatic_cancer",
+      "to_name": "L66",
+      "reason": "膵癌: 胆汁うっ滞型(閉塞性黄疸)"
+    },
+    {
+      "from": "D250",
+      "to": "L66",
+      "from_name": "PBC",
+      "to_name": "L66",
+      "reason": "PBC: 胆汁うっ滞型(ALP/GGT優位)"
+    },
+    {
+      "from": "D94",
+      "to": "L66",
+      "from_name": "IgG4_RD",
+      "to_name": "L66",
+      "reason": "IgG4: 胆汁うっ滞型(硬化性胆管炎)"
+    },
+    {
+      "from": "D251",
+      "to": "L66",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "L66",
+      "reason": "非代償性肝硬変: うっ血型(低Alb+Bil上昇)"
+    },
+    {
+      "from": "D344",
+      "to": "L66",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L66",
+      "reason": "収縮性心膜炎: うっ血肝(右心不全→肝うっ血)"
+    },
+    {
+      "from": "D120",
+      "to": "L66",
+      "from_name": "ADHF",
+      "to_name": "L66",
+      "reason": "急性心不全: うっ血肝(30-40%)"
+    },
+    {
+      "from": "D345",
+      "to": "L66",
+      "from_name": "sheehan",
+      "to_name": "L66",
+      "reason": "Sheehan: ショック肝(肝細胞型寄り)"
+    },
+    {
+      "from": "D140",
+      "to": "L67",
+      "from_name": "DKA",
+      "to_name": "L67",
+      "reason": "DKA: 腎前性AKI(脱水, 30-40%)"
+    },
+    {
+      "from": "D141",
+      "to": "L67",
+      "from_name": "HHS",
+      "to_name": "L67",
+      "reason": "HHS: 腎前性AKI(重度脱水, 50-60%)"
+    },
+    {
+      "from": "D174",
+      "to": "L67",
+      "from_name": "AAA_rupture",
+      "to_name": "L67",
+      "reason": "AAA破裂: 腎前性AKI(出血性ショック, 30-40%)"
+    },
+    {
+      "from": "D332",
+      "to": "L67",
+      "from_name": "hypopituitarism",
+      "to_name": "L67",
+      "reason": "下垂体機能低下: 腎前性AKI(副腎不全→低血圧, 15-20%)"
+    },
+    {
+      "from": "D345",
+      "to": "L67",
+      "from_name": "sheehan",
+      "to_name": "L67",
+      "reason": "Sheehan: 腎前性AKI(副腎クリーゼ, 20-30%)"
+    },
+    {
+      "from": "D78",
+      "to": "L67",
+      "from_name": "heatstroke_severe",
+      "to_name": "L67",
+      "reason": "熱中症: 腎前性→腎性AKI(横紋筋融解合併)"
+    },
+    {
+      "from": "D153",
+      "to": "L67",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L67",
+      "reason": "横紋筋融解: 腎性AKI(ミオグロビン腎症, 30-50%)"
+    },
+    {
+      "from": "D168",
+      "to": "L67",
+      "from_name": "RPGN",
+      "to_name": "L67",
+      "reason": "RPGN: 腎性AKI(定義的)"
+    },
+    {
+      "from": "D326",
+      "to": "L67",
+      "from_name": "TLS",
+      "to_name": "L67",
+      "reason": "TLS: 腎性AKI(尿酸結晶, 50-60%)"
+    },
+    {
+      "from": "D162",
+      "to": "L67",
+      "from_name": "HUS",
+      "to_name": "L67",
+      "reason": "HUS: 腎性AKI(TMA, 70-80%)"
+    },
+    {
+      "from": "D290",
+      "to": "L67",
+      "from_name": "bladder_cancer",
+      "to_name": "L67",
+      "reason": "膀胱癌: 腎後性AKI(尿路閉塞, 20-30%)"
+    },
+    {
+      "from": "D289",
+      "to": "L67",
+      "from_name": "prostate_cancer",
+      "to_name": "L67",
+      "reason": "前立腺癌: 腎後性AKI(尿路閉塞, 20-30%)"
+    },
+    {
+      "from": "D336",
+      "to": "L67",
+      "from_name": "ADPKD",
+      "to_name": "L67",
+      "reason": "ADPKD: 腎性AKI(嚢胞→腎実質破壊)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

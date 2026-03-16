@@ -7397,6 +7397,34 @@
         "severe_NYHA3_4"
       ],
       "note": "臨床評価: BNP+CXR+ラ音+浮腫+JVDから総合判定。NYHA/Killip分類"
+    },
+    {
+      "id": "L66",
+      "name": "liver_injury_pattern",
+      "name_ja": "肝障害パターン",
+      "category": "lab",
+      "states": [
+        "not_assessed",
+        "normal",
+        "hepatocellular",
+        "cholestatic",
+        "congestive"
+      ],
+      "note": "肝細胞型:AST/ALT優位(肝炎/薬剤性/ショック肝)。胆汁うっ滞型:ALP/GGT/Bil優位(胆石/胆管癌/PBC)。うっ血型:軽度AST+Bil+低Alb(心不全/肝硬変)"
+    },
+    {
+      "id": "L67",
+      "name": "AKI_etiology",
+      "name_ja": "AKI原因分類(検査所見)",
+      "category": "lab",
+      "states": [
+        "not_assessed",
+        "no_AKI",
+        "prerenal",
+        "renal",
+        "postrenal"
+      ],
+      "note": "腎前性:BUN/Cr比>20+FENa<1%+尿Na<20。腎性:FENa>2%+尿沈渣異常。腎後性:水腎症+尿閉"
     }
   ]
 }

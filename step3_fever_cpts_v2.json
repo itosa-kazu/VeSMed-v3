@@ -33502,6 +33502,247 @@
           "severe_NYHA3_4": 0.45
         }
       }
+    },
+    "L66": {
+      "description": "肝障害パターン",
+      "leak": {
+        "not_assessed": 0.4,
+        "normal": 0.5,
+        "hepatocellular": 0.04,
+        "cholestatic": 0.03,
+        "congestive": 0.03
+      },
+      "parent_effects": {
+        "D100": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.85,
+          "cholestatic": 0.05,
+          "congestive": 0.02
+        },
+        "D108": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.82,
+          "cholestatic": 0.08,
+          "congestive": 0.02
+        },
+        "D169": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.8,
+          "cholestatic": 0.1,
+          "congestive": 0.02
+        },
+        "D170": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.78,
+          "cholestatic": 0.08,
+          "congestive": 0.04
+        },
+        "D166": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.85,
+          "cholestatic": 0.05,
+          "congestive": 0.02
+        },
+        "D151": {
+          "not_assessed": 0.03,
+          "normal": 0.02,
+          "hepatocellular": 0.85,
+          "cholestatic": 0.07,
+          "congestive": 0.03
+        },
+        "D322": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.75,
+          "cholestatic": 0.1,
+          "congestive": 0.05
+        },
+        "D282": {
+          "not_assessed": 0.05,
+          "normal": 0.1,
+          "hepatocellular": 0.75,
+          "cholestatic": 0.05,
+          "congestive": 0.05
+        },
+        "D273": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.8,
+          "congestive": 0.02
+        },
+        "D287": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.75,
+          "congestive": 0.05
+        },
+        "D231": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.07,
+          "cholestatic": 0.82,
+          "congestive": 0.03
+        },
+        "D230": {
+          "not_assessed": 0.05,
+          "normal": 0.1,
+          "hepatocellular": 0.05,
+          "cholestatic": 0.75,
+          "congestive": 0.05
+        },
+        "D250": {
+          "not_assessed": 0.05,
+          "normal": 0.03,
+          "hepatocellular": 0.08,
+          "cholestatic": 0.82,
+          "congestive": 0.02
+        },
+        "D94": {
+          "not_assessed": 0.05,
+          "normal": 0.15,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.65,
+          "congestive": 0.05
+        },
+        "D251": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.15,
+          "cholestatic": 0.1,
+          "congestive": 0.65
+        },
+        "D344": {
+          "not_assessed": 0.05,
+          "normal": 0.15,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.1,
+          "congestive": 0.6
+        },
+        "D120": {
+          "not_assessed": 0.1,
+          "normal": 0.3,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.05,
+          "congestive": 0.45
+        },
+        "D345": {
+          "not_assessed": 0.1,
+          "normal": 0.3,
+          "hepatocellular": 0.4,
+          "cholestatic": 0.05,
+          "congestive": 0.15
+        }
+      }
+    },
+    "L67": {
+      "description": "AKI原因分類",
+      "leak": {
+        "not_assessed": 0.5,
+        "no_AKI": 0.4,
+        "prerenal": 0.04,
+        "renal": 0.03,
+        "postrenal": 0.03
+      },
+      "parent_effects": {
+        "D140": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.3,
+          "prerenal": 0.45,
+          "renal": 0.1,
+          "postrenal": 0.05
+        },
+        "D141": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.15,
+          "prerenal": 0.6,
+          "renal": 0.1,
+          "postrenal": 0.05
+        },
+        "D174": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.3,
+          "prerenal": 0.45,
+          "renal": 0.1,
+          "postrenal": 0.05
+        },
+        "D332": {
+          "not_assessed": 0.15,
+          "no_AKI": 0.5,
+          "prerenal": 0.25,
+          "renal": 0.05,
+          "postrenal": 0.05
+        },
+        "D345": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.4,
+          "prerenal": 0.35,
+          "renal": 0.1,
+          "postrenal": 0.05
+        },
+        "D78": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.2,
+          "prerenal": 0.3,
+          "renal": 0.35,
+          "postrenal": 0.05
+        },
+        "D153": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.25,
+          "prerenal": 0.1,
+          "renal": 0.5,
+          "postrenal": 0.05
+        },
+        "D168": {
+          "not_assessed": 0.05,
+          "no_AKI": 0.03,
+          "prerenal": 0.05,
+          "renal": 0.85,
+          "postrenal": 0.02
+        },
+        "D326": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.15,
+          "prerenal": 0.1,
+          "renal": 0.6,
+          "postrenal": 0.05
+        },
+        "D162": {
+          "not_assessed": 0.05,
+          "no_AKI": 0.05,
+          "prerenal": 0.05,
+          "renal": 0.8,
+          "postrenal": 0.05
+        },
+        "D290": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.4,
+          "prerenal": 0.05,
+          "renal": 0.05,
+          "postrenal": 0.4
+        },
+        "D289": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.35,
+          "prerenal": 0.05,
+          "renal": 0.05,
+          "postrenal": 0.45
+        },
+        "D336": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.15,
+          "prerenal": 0.05,
+          "renal": 0.65,
+          "postrenal": 0.05
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
