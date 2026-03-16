@@ -12787,7 +12787,8 @@
         "L02": "high_over_10",
         "L09": "gram_positive",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L04": "bilateral_infiltrate"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -13594,7 +13595,8 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L62": "adnexal_mass"
       },
       "risk_factors": {
         "R01": "1_5",
@@ -14343,7 +14345,8 @@
         "L11": "very_high",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "E18": "present"
+        "E18": "present",
+        "L61": "elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14366,7 +14369,8 @@
         "S07": "severe",
         "L11": "mild_elevated",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L61": "elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14387,7 +14391,8 @@
         "S07": "mild",
         "L16": "elevated",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L61": "elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14408,7 +14413,8 @@
         "L16": "elevated",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "L63": "absent"
+        "L63": "absent",
+        "L61": "normal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14434,7 +14440,8 @@
         "L55": "mild_elevated",
         "T01": "1w_to_3w",
         "T02": "gradual_days",
-        "L63": "bone"
+        "L63": "bone",
+        "L61": "elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14461,7 +14468,8 @@
         "L11": "very_high",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "L63": "multiple"
+        "L63": "multiple",
+        "L61": "elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15071,7 +15079,8 @@
         "S05": "mild",
         "S42": "present",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16488,7 +16497,9 @@
         "L55": "mild_elevated",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E01": "under_37.5"
+        "E01": "under_37.5",
+        "L44": "normal",
+        "L58": "low"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17410,7 +17421,8 @@
         "E02": "over_120",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E40": "Brugada_pattern"
+        "E40": "Brugada_pattern",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17435,7 +17447,9 @@
         "E05": "mild_hypoxia_93_96",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E40": "Brugada_pattern"
+        "E40": "Brugada_pattern",
+        "E01": "under_37.5",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17459,7 +17473,8 @@
         "E05": "mild_hypoxia_93_96",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E40": "Brugada_pattern"
+        "E40": "Brugada_pattern",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -18104,7 +18119,8 @@
         "S04": "at_rest",
         "E02": "over_120",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "18_39",
