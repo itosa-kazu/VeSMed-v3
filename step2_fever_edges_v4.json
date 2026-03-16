@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4878,
+  "total_edges": 4890,
   "edges": [
     {
       "from": "R01",
@@ -38643,6 +38643,90 @@
       "from_name": "tumor_fever",
       "to_name": "L63",
       "reason": "腫瘍熱: 進行/転移癌で多い(50-60%)"
+    },
+    {
+      "from": "D159",
+      "to": "L58",
+      "from_name": "myxedema_coma",
+      "to_name": "L58",
+      "reason": "粘液水腫性昏睡: GH低下(甲状腺低下→下垂体抑制)"
+    },
+    {
+      "from": "D196",
+      "to": "L58",
+      "from_name": "pheochromocytoma",
+      "to_name": "L58",
+      "reason": "褐色細胞腫: GH上昇(カテコラミン→GH分泌刺激, 10-20%)"
+    },
+    {
+      "from": "D146",
+      "to": "L60",
+      "from_name": "hypertensive_emergency",
+      "to_name": "L60",
+      "reason": "高血圧緊急症: VMA正常(褐色細胞腫除外)"
+    },
+    {
+      "from": "D137",
+      "to": "E41",
+      "from_name": "AMI_mesenteric",
+      "to_name": "E41",
+      "reason": "急性腸間膜虚血: ABI(全身動脈硬化合併で低下あり)"
+    },
+    {
+      "from": "D174",
+      "to": "E41",
+      "from_name": "AAA_rupture",
+      "to_name": "E41",
+      "reason": "AAA破裂: ABI(大動脈疾患→下肢虚血あり)"
+    },
+    {
+      "from": "D40",
+      "to": "L62",
+      "from_name": "PID",
+      "to_name": "L62",
+      "reason": "PID: 骨盤超音波(卵管膿瘍/液体貯留, 40-50%)"
+    },
+    {
+      "from": "D308",
+      "to": "S56",
+      "from_name": "cauda_equina",
+      "to_name": "S56",
+      "reason": "馬尾症候群: 神経性間欠性跛行(鑑別, 30-40%)"
+    },
+    {
+      "from": "D137",
+      "to": "S56",
+      "from_name": "AMI_mesenteric",
+      "to_name": "S56",
+      "reason": "急性腸間膜虚血: 腸間膜間欠性跛行(postprandial pain)"
+    },
+    {
+      "from": "D79",
+      "to": "E43",
+      "from_name": "prosthetic_valve_endocarditis",
+      "to_name": "E43",
+      "reason": "人工弁心内膜炎: 新規弁逆流→拡張期雑音(30-40%)"
+    },
+    {
+      "from": "D31",
+      "to": "E43",
+      "from_name": "IE",
+      "to_name": "E43",
+      "reason": "感染性心内膜炎: 新規弁逆流(40-50%)"
+    },
+    {
+      "from": "D333",
+      "to": "S57",
+      "from_name": "acromegaly",
+      "to_name": "S57",
+      "reason": "先端巨大症: 無月経(高PRL合併/ゴナドトロピン抑制, 30-40%)"
+    },
+    {
+      "from": "D291",
+      "to": "E41",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "E41",
+      "reason": "子宮外妊娠: ABI正常(非動脈疾患)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
