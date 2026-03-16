@@ -14245,6 +14245,280 @@
       },
       "result": "",
       "notes": "Ca 5.21! iPTH>5000! T 40. トロポニン7.541. CRRT"
+    },
+    {
+      "id": "R558",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7069262",
+      "vignette": "87M 痴呆+胆石+脳卒中後アスピリン. 右上腹痛+発熱48h. WBC上昇, CRP上昇, 転氨酶上昇, ALP上昇, Bil正常. US+CT:胆嚢膨満+壁肥厚+出血性高吸収. 手術:低分化癌pT1a",
+      "final_diagnosis": "胆嚢癌(出血性胆嚢炎として発症)",
+      "expected_id": "D287",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "E01": "38.0_39.0",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "pT1a. 出血性胆嚢炎として発症"
+    },
+    {
+      "id": "R559",
+      "source": "Case Rep 2018",
+      "pmcid": "PMC6120602",
+      "vignette": "58F. 1ヶ月の急性上腹痛(背部放散)+毎日嘔吐4-6回. 血行動態安定, 無黄疸, 腹部圧痛+防御. ALT 364, AST 527, ALP 364, Bil 13.4, CA19-9 125, アミラーゼ239. US:2.6cm胆石+胆嚢腫瘤6.3x5.9cm→肝S5浸潤",
+      "final_diagnosis": "胆嚢原発性扁平上皮癌 Stage IVB",
+      "expected_id": "D287",
+      "in_scope": true,
+      "evidence": {
+        "S12": "epigastric",
+        "S15": "present",
+        "S13": "present",
+        "L11": "very_high",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "AST 527. CA19-9 125. 6cm腫瘤→肝浸潤"
+    },
+    {
+      "id": "R560",
+      "source": "Case Rep 2023",
+      "pmcid": "PMC10208007",
+      "vignette": "47F ヒスパニック. 3ヶ月の右上腹+心窩部間欠痛→黄疸+掻痒出現. RUQ圧痛. CEA 3.27, CA19-9 64→536→1012. CT:胆石+不規則胆嚢壁肥厚. MRI:胆嚢底局所壁肥厚16mm",
+      "final_diagnosis": "胆嚢腺鳞癌 Stage IIIA",
+      "expected_id": "D287",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RUQ",
+        "E18": "present",
+        "S07": "severe",
+        "L11": "mild_elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "CA19-9 1012. 3ヶ月で黄疸出現"
+    },
+    {
+      "id": "R561",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6906820",
+      "vignette": "56M. 右睾丸疼痛3週+進行性腫脹. 右睾丸増大+質硬+触痛. AFP 2.31(正常), β-hCG 9.91(軽度上昇), LDH 801(上昇). US:低回声異質性腫瘤5.7x3.1x4.1cm. CT:多発後腹膜リンパ節腫大(max 3x5cm)",
+      "final_diagnosis": "経典的精上皮腫 pT2 Stage IIB",
+      "expected_id": "D288",
+      "in_scope": true,
+      "evidence": {
+        "S07": "mild",
+        "L16": "elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "LDH 801. 後腹膜リンパ節転移"
+    },
+    {
+      "id": "R562",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7545890",
+      "vignette": "90M シリア農民 喫煙55年. 右陰嚢無痛性腫大6年(最近軽度痛). 巨大無痛腫瘤, 透光試験陰性. AFP 3.1(正常), β-hCG 2.38(正常), LDH 420(軽度上昇). US:10cm低回声充実性腫瘤. CT:後腹膜転移なし",
+      "final_diagnosis": "経典的精上皮腫 pT2(90歳!)",
+      "expected_id": "D288",
+      "in_scope": true,
+      "evidence": {
+        "L16": "elevated",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "90歳! 6年間の緩徐腫大. LDH 420"
+    },
+    {
+      "id": "R563",
+      "source": "Case Rep 2012",
+      "pmcid": "PMC3448762",
+      "vignette": "65M. 3日間の呼吸困難増悪+喀血+発熱+5週間の左下肢腫脹+運動耐力低下+起座呼吸. PSA 244.7, AKI, PO2 7.51(I型呼吸不全). CTPA:右主肺動脈大量PE. Echo:右心負荷. CT:左盆腔3.3x4.2cm腫瘤→重度水腎症. 骨シンチ:びまん性骨転移",
+      "final_diagnosis": "転移性前立腺癌+閉塞性腎症+肺塞栓",
+      "expected_id": "D289",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S44": "present",
+        "E01": "38.0_39.0",
+        "E36": "bilateral",
+        "S15": "present",
+        "L55": "mild_elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PSA 244.7. PE+骨転移+水腎症"
+    },
+    {
+      "id": "R564",
+      "source": "Case Rep 2017",
+      "pmcid": "PMC5649842",
+      "vignette": "60M. 2日間の呼吸困難増悪+3ヶ月の咳嗽+乏力+悪心嘔吐+盗汗+15ポンド体重減少. DRE:前立腺結節. PSA 132, CEA 165, RBC 9.7(重度貧血), WBC 3(白血球減少), PLT 48(血小板減少), AST 314, ALT 71, ALP 469. CT:肺GGO+縦隔リンパ節+肝低密度. 骨シンチ:全身骨転移",
+      "final_diagnosis": "転移性前立腺癌 Gleason9(肺/十二指腸/結腸/骨髄/肝)",
+      "expected_id": "D289",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S01": "productive",
+        "S07": "severe",
+        "S13": "present",
+        "L01": "low_under_4000",
+        "L14": "thrombocytopenia",
+        "L11": "very_high",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "PSA 132. 汎血球減少(骨髄浸潤). 全身転移"
+    },
+    {
+      "id": "R565",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9107804",
+      "vignette": "66M. 6ヶ月の無痛性間欠性肉眼的血尿+尿流減弱+排尿困難. 膀胱触知可能. Hb 12.1, 腎機能正常. 尿:大量RBC+1-2 WBC/HPF, 培養陰性. US:膀胱憩室10.5x8.9cm内息肉様病変2.2x1.2cm. CT:膀胱壁肥厚10.7mm",
+      "final_diagnosis": "膀胱憩室内高悪性度浸潤性尿路上皮癌",
+      "expected_id": "D290",
+      "in_scope": true,
+      "evidence": {
+        "S10": "present",
+        "L05": "pyuria_bacteriuria",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "膀胱憩室内癌. 6ヶ月血尿"
+    },
+    {
+      "id": "R566",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6827777",
+      "vignette": "60M 元喫煙者. 間欠性肉眼的血尿, 排尿困難/腰痛/全身症状なし. 全身所見異常なし. DRE:前立腺I度腫大. Hb 88(貧血), Cr 6(!), 尿:全視野RBC+非典型尿路上皮細胞3回. CT:6.7x6.5x4.8cm異質性息肉状腫瘤(膀胱前壁/前上壁)",
+      "final_diagnosis": "高悪性度透明細胞型尿路上皮癌 pT2N1M0",
+      "expected_id": "D290",
+      "in_scope": true,
+      "evidence": {
+        "L05": "pyuria_bacteriuria",
+        "S07": "mild",
+        "L55": "high_AKI",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Cr 6! 6.7cm膀胱腫瘤. 透明細胞型"
+    },
+    {
+      "id": "R567",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC10953172",
+      "vignette": "36F G4P3 黒人. 突発劇烈腹痛+膣点滴出血+悪心嘔吐+全身脱力+頭痛. BP 80/50, HR 138. 意識清明+抗痛体位+ショック+蒼白+腹膨満+腹膜刺激徴候+子宮口少量出血. 妊娠検査陽性, Hb 7.7. 術中:大量血腹+500g女児+800g胎盤+左卵管間質部破裂",
+      "final_diagnosis": "間質部異所性妊娠破裂(22-23週)",
+      "expected_id": "D291",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "S44": "present",
+        "S13": "present",
+        "E03": "hypotension_under_90",
+        "E02": "over_120",
+        "E09": "peritoneal_signs",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "HR 138. Hb 7.7. 間質部破裂. 22-23週"
+    },
+    {
+      "id": "R568",
+      "source": "Case Rep 2014",
+      "pmcid": "PMC4154024",
+      "vignette": "19F 未産 喫煙. 15週妊娠. 排尿後突発劇烈骨盤痛, 膣出血なし. BP 95/58, HR 63. 蒼白+起立不耐+腹部圧痛+防御+反跳痛(板状腹). Hb 7.6. US:胎児心拍なし+子宮底外左卵管付近+遊離液>500cc. 術中:血腹1800cc",
+      "final_diagnosis": "左間質部子宮破裂(15週)",
+      "expected_id": "D291",
+      "in_scope": true,
+      "evidence": {
+        "S12": "diffuse",
+        "E03": "hypotension_under_90",
+        "E09": "peritoneal_signs",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "15週. 板状腹. Hb 7.6. 血腹1800cc"
+    },
+    {
+      "id": "R569",
+      "source": "Case Rep 2011",
+      "pmcid": "PMC3229317",
+      "vignette": "25F 孕10週. 1日間の膣出血+下腹部不快感, 頭暈/失神/嘔吐なし. バイタル全正常範囲. 腹部軟+右腰/右腸骨窩/恥骨上軽度圧痛. β-hCG 8538. Hb 11.3→9.9. 経腟US:右卵巣旁4.0x3.8x5.5cm腫瘤+16mm嚢胞. 腹腔鏡:右卵巣異所性妊娠破裂",
+      "final_diagnosis": "右卵巣異所性妊娠破裂",
+      "expected_id": "D291",
+      "in_scope": true,
+      "evidence": {
+        "S12": "RLQ",
+        "S44": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "β-hCG 8538. 卵巣異所性妊娠(稀)"
     }
   ],
   "total_cases": 110
