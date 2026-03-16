@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4992,
+  "total_edges": 5009,
   "edges": [
     {
       "from": "R01",
@@ -39441,6 +39441,125 @@
       "from_name": "PRES",
       "to_name": "S60",
       "reason": "PRES: 頭痛(50-60%, progressive)"
+    },
+    {
+      "from": "D125",
+      "to": "S59",
+      "from_name": "arrhythmia",
+      "to_name": "S59",
+      "reason": "不整脈: めまい(低灌流→ふらつき, 40-50%)"
+    },
+    {
+      "from": "D149",
+      "to": "S59",
+      "from_name": "CO_poisoning",
+      "to_name": "S59",
+      "reason": "CO中毒: めまい(80%+, ふらつき)"
+    },
+    {
+      "from": "D163",
+      "to": "S59",
+      "from_name": "Wernicke",
+      "to_name": "S59",
+      "reason": "ウェルニッケ: 失調/めまい(定義的23%+)"
+    },
+    {
+      "from": "D285",
+      "to": "S59",
+      "from_name": "DCS",
+      "to_name": "S59",
+      "reason": "減圧症: めまい(前庭型DCS, 20-30%)"
+    },
+    {
+      "from": "D310",
+      "to": "S59",
+      "from_name": "TIA",
+      "to_name": "S59",
+      "reason": "TIA: めまい(後方循環TIA, 30-40%)"
+    },
+    {
+      "from": "D316",
+      "to": "S59",
+      "from_name": "moyamoya",
+      "to_name": "S59",
+      "reason": "もやもや: めまい(TIA/脳梗塞, 20-30%)"
+    },
+    {
+      "from": "D200",
+      "to": "S59",
+      "from_name": "NPH",
+      "to_name": "S59",
+      "reason": "NPH: ふらつき/歩行障害(定義的三徴の一つ)"
+    },
+    {
+      "from": "D95",
+      "to": "S60",
+      "from_name": "JE",
+      "to_name": "S60",
+      "reason": "日本脳炎: 進行性頭痛(80-85%)+局所神経症状"
+    },
+    {
+      "from": "D84",
+      "to": "S60",
+      "from_name": "HSV_encephalitis",
+      "to_name": "S60",
+      "reason": "HSV脳炎: 急性進行性頭痛+局所神経症状"
+    },
+    {
+      "from": "D324",
+      "to": "S60",
+      "from_name": "TB_meningitis",
+      "to_name": "S60",
+      "reason": "結核性髄膜炎: 亜急性進行性頭痛"
+    },
+    {
+      "from": "D109",
+      "to": "S60",
+      "from_name": "crypto",
+      "to_name": "S60",
+      "reason": "クリプトコッカス髄膜炎: 亜急性進行性頭痛"
+    },
+    {
+      "from": "D118",
+      "to": "S60",
+      "from_name": "brain_abscess",
+      "to_name": "S60",
+      "reason": "脳膿瘍: 進行性頭痛(70%)+局所神経症状"
+    },
+    {
+      "from": "D305",
+      "to": "S60",
+      "from_name": "EDH",
+      "to_name": "S60",
+      "reason": "EDH: thunderclap頭痛(急性, 80%+)"
+    },
+    {
+      "from": "D306",
+      "to": "S60",
+      "from_name": "acute_SDH",
+      "to_name": "S60",
+      "reason": "急性SDH: thunderclap/急性頭痛(60-70%)"
+    },
+    {
+      "from": "D314",
+      "to": "S60",
+      "from_name": "hydrocephalus",
+      "to_name": "S60",
+      "reason": "急性水頭症: 進行性激烈頭痛(80%+)"
+    },
+    {
+      "from": "D61",
+      "to": "S60",
+      "from_name": "GCA",
+      "to_name": "S60",
+      "reason": "巨細胞動脈炎: 側頭部頭痛(bilateral pressing, 70-80%)"
+    },
+    {
+      "from": "D82",
+      "to": "S60",
+      "from_name": "nosocomial_meningitis",
+      "to_name": "S60",
+      "reason": "院内髄膜炎: 頭痛+局所神経症状"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

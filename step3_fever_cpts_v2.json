@@ -34049,6 +34049,55 @@
           "continuous_rotatory": 0.05,
           "episodic_with_hearing": 0.02,
           "non_rotatory_disequilibrium": 0.68
+        },
+        "D125": {
+          "absent": 0.35,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.05,
+          "episodic_with_hearing": 0.03,
+          "non_rotatory_disequilibrium": 0.52
+        },
+        "D149": {
+          "absent": 0.1,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.07,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.78
+        },
+        "D163": {
+          "absent": 0.4,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.1,
+          "episodic_with_hearing": 0.03,
+          "non_rotatory_disequilibrium": 0.42
+        },
+        "D285": {
+          "absent": 0.5,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.2,
+          "episodic_with_hearing": 0.05,
+          "non_rotatory_disequilibrium": 0.2
+        },
+        "D310": {
+          "absent": 0.45,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.15,
+          "episodic_with_hearing": 0.05,
+          "non_rotatory_disequilibrium": 0.3
+        },
+        "D316": {
+          "absent": 0.55,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.1,
+          "episodic_with_hearing": 0.03,
+          "non_rotatory_disequilibrium": 0.27
+        },
+        "D200": {
+          "absent": 0.1,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.05,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.8
         }
       }
     },
@@ -34197,6 +34246,96 @@
           "periorbital_stabbing": 0.02,
           "thunderclap": 0.08,
           "progressive_with_neuro": 0.37,
+          "electric_triggered": 0.03
+        },
+        "D95": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.05,
+          "progressive_with_neuro": 0.72,
+          "electric_triggered": 0.03
+        },
+        "D84": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.1,
+          "progressive_with_neuro": 0.72,
+          "electric_triggered": 0.03
+        },
+        "D324": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.05,
+          "progressive_with_neuro": 0.72,
+          "electric_triggered": 0.03
+        },
+        "D109": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.05,
+          "progressive_with_neuro": 0.72,
+          "electric_triggered": 0.03
+        },
+        "D118": {
+          "absent": 0.1,
+          "bilateral_pressing": 0.08,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.05,
+          "progressive_with_neuro": 0.69,
+          "electric_triggered": 0.03
+        },
+        "D305": {
+          "absent": 0.08,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.72,
+          "progressive_with_neuro": 0.07,
+          "electric_triggered": 0.03
+        },
+        "D306": {
+          "absent": 0.15,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.6,
+          "progressive_with_neuro": 0.12,
+          "electric_triggered": 0.03
+        },
+        "D314": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.15,
+          "progressive_with_neuro": 0.67,
+          "electric_triggered": 0.03
+        },
+        "D61": {
+          "absent": 0.1,
+          "bilateral_pressing": 0.65,
+          "unilateral_pulsating": 0.1,
+          "periorbital_stabbing": 0.03,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.07,
+          "electric_triggered": 0.03
+        },
+        "D82": {
+          "absent": 0.1,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.1,
+          "progressive_with_neuro": 0.62,
           "electric_triggered": 0.03
         }
       }
