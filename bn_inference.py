@@ -26,11 +26,11 @@ STEP2 = os.path.join(BASE, "step2_fever_edges_v4.json")
 STEP3 = os.path.join(BASE, "step3_fever_cpts_v2.json")
 CASES = os.path.join(BASE, "real_case_test_suite.json")
 
-# === 推論改善パラメータ (grid search最適化済み) ===
-# IDF鑑別力係数のべき乗 (0=無効, 0.5=最適, 1.0=強)
+# === 推論改善パラメータ (grid search最適化済み: 350疾患/712案例) ===
+# IDF鑑別力係数のべき乗 (0=無効, 0.3=最適, 1.0=強)
 IDF_DISC_POWER = 0.3
-# 反事実Coverage: 因果説明力の重み (0=無効, 1.5=最適, 3.0=強)
-CF_COVERAGE_ALPHA = 1.5
+# 反事実Coverage: 因果説明力の重み (0=無効, 2.0=最適, 3.0=強)
+CF_COVERAGE_ALPHA = 2.0
 # Prior Power: デモグラフィック調整の強さ (0=無効, 0.5=最適, 1.0=フル)
 # 日本人口ピラミッド(2024)を固定参照分布として使用
 PRIOR_POWER = 0.5
