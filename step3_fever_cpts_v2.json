@@ -9951,9 +9951,9 @@
           "severe_hypoxia_under_93": 0.3
         },
         "D319": {
-          "normal_over_96": 0.3,
-          "mild_hypoxia_93_96": 0.35,
-          "severe_hypoxia_under_93": 0.35
+          "normal_over_96": 0.25,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.45
         },
         "D336": {
           "normal_over_96": 0.4,
@@ -12128,9 +12128,9 @@
           "obtunded": 0.3
         },
         "D322": {
-          "normal": 0.7,
-          "confused": 0.2,
-          "obtunded": 0.1
+          "normal": 0.55,
+          "confused": 0.3,
+          "obtunded": 0.15
         },
         "D324": {
           "normal": 0.2,
@@ -20434,9 +20434,9 @@
           "at_rest": 0.43
         },
         "D319": {
-          "absent": 0.35,
+          "absent": 0.2,
           "on_exertion": 0.4,
-          "at_rest": 0.25
+          "at_rest": 0.4
         },
         "D320": {
           "absent": 0.5,
@@ -25568,8 +25568,8 @@
           "present": 0.4
         },
         "D315": {
-          "absent": 0.55,
-          "present": 0.45
+          "absent": 0.45,
+          "present": 0.55
         },
         "D316": {
           "absent": 0.75,
@@ -25754,8 +25754,8 @@
           "present": 0.35
         },
         "D322": {
-          "absent": 0.65,
-          "present": 0.35
+          "absent": 0.45,
+          "present": 0.55
         },
         "D323": {
           "absent": 0.15,
@@ -25786,8 +25786,8 @@
           "present": 0.3
         },
         "D306": {
-          "absent": 0.2,
-          "present": 0.8
+          "absent": 0.1,
+          "present": 0.9
         },
         "D345": {
           "absent": 0.1,
@@ -27744,10 +27744,10 @@
           "over_3w": 0.05
         },
         "D296": {
-          "under_3d": 0.4,
-          "3d_to_1w": 0.3,
-          "1w_to_3w": 0.15,
-          "over_3w": 0.15
+          "under_3d": 0.1,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.55
         },
         "D297": {
           "under_3d": 0.25,
@@ -27894,10 +27894,10 @@
           "over_3w": 0.75
         },
         "D321": {
-          "under_3d": 0.03,
-          "3d_to_1w": 0.07,
+          "under_3d": 0.2,
+          "3d_to_1w": 0.15,
           "1w_to_3w": 0.15,
-          "over_3w": 0.75
+          "over_3w": 0.5
         },
         "D322": {
           "under_3d": 0.55,
@@ -29141,8 +29141,8 @@
           "gradual_days": 0.97
         },
         "D321": {
-          "sudden_hours": 0.05,
-          "gradual_days": 0.95
+          "sudden_hours": 0.3,
+          "gradual_days": 0.7
         },
         "D322": {
           "sudden_hours": 0.4,
@@ -31708,9 +31708,9 @@
           "bilateral": 0.47
         },
         "D304": {
-          "absent": 0.25,
-          "unilateral_weakness": 0.3,
-          "bilateral": 0.45
+          "absent": 0.2,
+          "unilateral_weakness": 0.25,
+          "bilateral": 0.55
         },
         "D305": {
           "absent": 0.3,
