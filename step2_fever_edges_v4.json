@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 3982,
+  "total_edges": 4025,
   "edges": [
     {
       "from": "R01",
@@ -32371,6 +32371,307 @@
       "from_name": "DKA",
       "to_name": "L44",
       "reason": "DKA: 高K血症(アシドーシス)"
+    },
+    {
+      "from": "D277",
+      "to": "S01",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "S01",
+      "reason": "肺腺癌: 咳嗽(60-70%)"
+    },
+    {
+      "from": "D277",
+      "to": "S04",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "S04",
+      "reason": "肺腺癌: 呼吸困難(40-50%)"
+    },
+    {
+      "from": "D277",
+      "to": "S07",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "S07",
+      "reason": "肺腺癌: 体重減少(50-60%)"
+    },
+    {
+      "from": "D277",
+      "to": "S21",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "S21",
+      "reason": "肺腺癌: 胸痛(30-40%)"
+    },
+    {
+      "from": "D277",
+      "to": "E01",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "E01",
+      "reason": "肺腺癌: 発熱(閉塞性肺炎合併, 20-30%)"
+    },
+    {
+      "from": "D277",
+      "to": "L04",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L04",
+      "reason": "肺腺癌: CXR(腫瘤/浸潤/胸水)"
+    },
+    {
+      "from": "D277",
+      "to": "L02",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L02",
+      "reason": "肺腺癌: CRP上昇"
+    },
+    {
+      "from": "D277",
+      "to": "T01",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "T01",
+      "reason": "肺腺癌: 慢性"
+    },
+    {
+      "from": "D277",
+      "to": "T02",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "T02",
+      "reason": "肺腺癌: 緩徐"
+    },
+    {
+      "from": "D278",
+      "to": "S04",
+      "from_name": "mesothelioma",
+      "to_name": "S04",
+      "reason": "中皮腫: 呼吸困難(70-80%)"
+    },
+    {
+      "from": "D278",
+      "to": "S21",
+      "from_name": "mesothelioma",
+      "to_name": "S21",
+      "reason": "中皮腫: 胸痛(持続性, 60-70%)"
+    },
+    {
+      "from": "D278",
+      "to": "S07",
+      "from_name": "mesothelioma",
+      "to_name": "S07",
+      "reason": "中皮腫: 体重減少(60-70%)"
+    },
+    {
+      "from": "D278",
+      "to": "S01",
+      "from_name": "mesothelioma",
+      "to_name": "S01",
+      "reason": "中皮腫: 咳嗽(30-40%)"
+    },
+    {
+      "from": "D278",
+      "to": "L04",
+      "from_name": "mesothelioma",
+      "to_name": "L04",
+      "reason": "中皮腫: CXR(大量片側胸水)"
+    },
+    {
+      "from": "D278",
+      "to": "E05",
+      "from_name": "mesothelioma",
+      "to_name": "E05",
+      "reason": "中皮腫: 低酸素(胸水)"
+    },
+    {
+      "from": "D278",
+      "to": "T01",
+      "from_name": "mesothelioma",
+      "to_name": "T01",
+      "reason": "中皮腫: 慢性"
+    },
+    {
+      "from": "D278",
+      "to": "T02",
+      "from_name": "mesothelioma",
+      "to_name": "T02",
+      "reason": "中皮腫: 緩徐"
+    },
+    {
+      "from": "D279",
+      "to": "S21",
+      "from_name": "mediastinitis",
+      "to_name": "S21",
+      "reason": "縦隔炎: 胸痛(激烈, 90%+)"
+    },
+    {
+      "from": "D279",
+      "to": "E01",
+      "from_name": "mediastinitis",
+      "to_name": "E01",
+      "reason": "縦隔炎: 高熱(90%+)"
+    },
+    {
+      "from": "D279",
+      "to": "E02",
+      "from_name": "mediastinitis",
+      "to_name": "E02",
+      "reason": "縦隔炎: 頻脈(敗血症)"
+    },
+    {
+      "from": "D279",
+      "to": "E03",
+      "from_name": "mediastinitis",
+      "to_name": "E03",
+      "reason": "縦隔炎: 低血圧(敗血症性ショック)"
+    },
+    {
+      "from": "D279",
+      "to": "S04",
+      "from_name": "mediastinitis",
+      "to_name": "S04",
+      "reason": "縦隔炎: 呼吸困難(60-70%)"
+    },
+    {
+      "from": "D279",
+      "to": "L01",
+      "from_name": "mediastinitis",
+      "to_name": "L01",
+      "reason": "縦隔炎: WBC著増"
+    },
+    {
+      "from": "D279",
+      "to": "L02",
+      "from_name": "mediastinitis",
+      "to_name": "L02",
+      "reason": "縦隔炎: CRP著高"
+    },
+    {
+      "from": "D279",
+      "to": "S02",
+      "from_name": "mediastinitis",
+      "to_name": "S02",
+      "reason": "縦隔炎: 咽頭痛/嚥下困難(40-50%)"
+    },
+    {
+      "from": "D279",
+      "to": "T01",
+      "from_name": "mediastinitis",
+      "to_name": "T01",
+      "reason": "縦隔炎: 急性"
+    },
+    {
+      "from": "D279",
+      "to": "T02",
+      "from_name": "mediastinitis",
+      "to_name": "T02",
+      "reason": "縦隔炎: 急性"
+    },
+    {
+      "from": "D280",
+      "to": "E16",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E16",
+      "reason": "BZD: 意識障害(90%+)"
+    },
+    {
+      "from": "D280",
+      "to": "E02",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E02",
+      "reason": "BZD: 徐脈(呼吸抑制)"
+    },
+    {
+      "from": "D280",
+      "to": "E03",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E03",
+      "reason": "BZD: 低血圧(中枢抑制)"
+    },
+    {
+      "from": "D280",
+      "to": "E04",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E04",
+      "reason": "BZD: 呼吸抑制(徐呼吸)"
+    },
+    {
+      "from": "D280",
+      "to": "E05",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E05",
+      "reason": "BZD: 低酸素(呼吸抑制)"
+    },
+    {
+      "from": "D280",
+      "to": "T01",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "T01",
+      "reason": "BZD: 超急性"
+    },
+    {
+      "from": "D280",
+      "to": "T02",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "T02",
+      "reason": "BZD: 突発"
+    },
+    {
+      "from": "D281",
+      "to": "E16",
+      "from_name": "opioid_OD",
+      "to_name": "E16",
+      "reason": "オピオイド: 意識障害(定義的)"
+    },
+    {
+      "from": "D281",
+      "to": "E02",
+      "from_name": "opioid_OD",
+      "to_name": "E02",
+      "reason": "オピオイド: 徐脈"
+    },
+    {
+      "from": "D281",
+      "to": "E03",
+      "from_name": "opioid_OD",
+      "to_name": "E03",
+      "reason": "オピオイド: 低血圧"
+    },
+    {
+      "from": "D281",
+      "to": "E04",
+      "from_name": "opioid_OD",
+      "to_name": "E04",
+      "reason": "オピオイド: 呼吸抑制(徐呼吸/無呼吸)"
+    },
+    {
+      "from": "D281",
+      "to": "E05",
+      "from_name": "opioid_OD",
+      "to_name": "E05",
+      "reason": "オピオイド: 低酸素"
+    },
+    {
+      "from": "D281",
+      "to": "E01",
+      "from_name": "opioid_OD",
+      "to_name": "E01",
+      "reason": "オピオイド: 低体温(中枢抑制)"
+    },
+    {
+      "from": "D281",
+      "to": "S13",
+      "from_name": "opioid_OD",
+      "to_name": "S13",
+      "reason": "オピオイド: 嘔吐(30-40%)"
+    },
+    {
+      "from": "D281",
+      "to": "T01",
+      "from_name": "opioid_OD",
+      "to_name": "T01",
+      "reason": "オピオイド: 超急性"
+    },
+    {
+      "from": "D281",
+      "to": "T02",
+      "from_name": "opioid_OD",
+      "to_name": "T02",
+      "reason": "オピオイド: 突発"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

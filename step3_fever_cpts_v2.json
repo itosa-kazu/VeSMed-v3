@@ -4524,6 +4524,65 @@
         "65_plus,male": 0.0,
         "65_plus,female": 0.001
       }
+    },
+    "D277": {
+      "parents": [
+        "R01"
+      ],
+      "description": "肺腺癌",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0001,
+        "13_17": 0.0002,
+        "18_39": 0.001,
+        "40_64": 0.004,
+        "65_plus": 0.006
+      }
+    },
+    "D278": {
+      "parents": [
+        "R01",
+        "R02"
+      ],
+      "description": "中皮腫。男性+高齢者",
+      "cpt": {
+        "0_1,male": 0.0,
+        "0_1,female": 0.0,
+        "1_5,male": 0.0,
+        "1_5,female": 0.0,
+        "6_12,male": 0.0,
+        "6_12,female": 0.0,
+        "13_17,male": 0.0,
+        "13_17,female": 0.0,
+        "18_39,male": 0.0002,
+        "18_39,female": 0.0001,
+        "40_64,male": 0.001,
+        "40_64,female": 0.0003,
+        "65_plus,male": 0.003,
+        "65_plus,female": 0.001
+      }
+    },
+    "D279": {
+      "parents": [],
+      "description": "縦隔炎",
+      "cpt": {
+        "": 0.001
+      }
+    },
+    "D280": {
+      "parents": [],
+      "description": "BZD中毒",
+      "cpt": {
+        "": 0.002
+      }
+    },
+    "D281": {
+      "parents": [],
+      "description": "オピオイド中毒",
+      "cpt": {
+        "": 0.002
+      }
     }
   },
   "noisy_or_params": {
@@ -6349,6 +6408,27 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.15,
           "over_40.0": 0.05
+        },
+        "D277": {
+          "under_37.5": 0.6,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.03
+        },
+        "D279": {
+          "under_37.5": 0.05,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.22,
+          "39.0_40.0": 0.35,
+          "over_40.0": 0.3
+        },
+        "D281": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.12,
+          "38.0_39.0": 0.1,
+          "39.0_40.0": 0.06,
+          "over_40.0": 0.02
         }
       }
     },
@@ -7114,6 +7194,21 @@
           "under_100": 0.15,
           "100_120": 0.45,
           "over_120": 0.4
+        },
+        "D279": {
+          "under_100": 0.05,
+          "100_120": 0.25,
+          "over_120": 0.7
+        },
+        "D280": {
+          "under_100": 0.55,
+          "100_120": 0.3,
+          "over_120": 0.15
+        },
+        "D281": {
+          "under_100": 0.65,
+          "100_120": 0.25,
+          "over_120": 0.1
         }
       }
     },
@@ -7455,6 +7550,18 @@
         "D266": {
           "normal_over_90": 0.35,
           "hypotension_under_90": 0.65
+        },
+        "D279": {
+          "normal_over_90": 0.25,
+          "hypotension_under_90": 0.75
+        },
+        "D280": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        },
+        "D281": {
+          "normal_over_90": 0.3,
+          "hypotension_under_90": 0.7
         }
       }
     },
@@ -7731,6 +7838,16 @@
           "normal_under_20": 0.05,
           "tachypnea_20_30": 0.3,
           "severe_over_30": 0.65
+        },
+        "D280": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.3,
+          "severe_over_30": 0.3
+        },
+        "D281": {
+          "normal_under_20": 0.5,
+          "tachypnea_20_30": 0.25,
+          "severe_over_30": 0.25
         }
       }
     },
@@ -8011,6 +8128,21 @@
           "normal_over_96": 0.1,
           "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.6
+        },
+        "D278": {
+          "normal_over_96": 0.25,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.35
+        },
+        "D280": {
+          "normal_over_96": 0.2,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.45
+        },
+        "D281": {
+          "normal_over_96": 0.1,
+          "mild_hypoxia_93_96": 0.25,
+          "severe_hypoxia_under_93": 0.65
         }
       }
     },
@@ -9942,6 +10074,16 @@
           "normal": 0.4,
           "confused": 0.45,
           "obtunded": 0.15
+        },
+        "D280": {
+          "normal": 0.05,
+          "confused": 0.35,
+          "obtunded": 0.6
+        },
+        "D281": {
+          "normal": 0.03,
+          "confused": 0.2,
+          "obtunded": 0.77
         }
       }
     },
@@ -11948,6 +12090,12 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.15
+        },
+        "D279": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.07,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.6
         }
       }
     },
@@ -13069,6 +13217,18 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.35,
           "high_over_10": 0.25
+        },
+        "D277": {
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.25
+        },
+        "D279": {
+          "normal_under_0.3": 0.02,
+          "mild_0.3_3": 0.03,
+          "moderate_3_10": 0.15,
+          "high_over_10": 0.8
         }
       }
     },
@@ -13716,6 +13876,22 @@
           "bilateral_infiltrate": 0.45,
           "BHL": 0.02,
           "pleural_effusion": 0.1,
+          "pneumothorax": 0.05
+        },
+        "D277": {
+          "normal": 0.08,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.05,
+          "pleural_effusion": 0.45,
+          "pneumothorax": 0.07
+        },
+        "D278": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.08,
+          "BHL": 0.02,
+          "pleural_effusion": 0.75,
           "pneumothorax": 0.05
         }
       }
@@ -16819,6 +16995,16 @@
           "absent": 0.65,
           "dry": 0.25,
           "productive": 0.1
+        },
+        "D277": {
+          "absent": 0.2,
+          "dry": 0.45,
+          "productive": 0.35
+        },
+        "D278": {
+          "absent": 0.55,
+          "dry": 0.3,
+          "productive": 0.15
         }
       }
     },
@@ -16935,6 +17121,10 @@
         "D264": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D279": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -17410,6 +17600,21 @@
           "absent": 0.03,
           "on_exertion": 0.12,
           "at_rest": 0.85
+        },
+        "D277": {
+          "absent": 0.4,
+          "on_exertion": 0.4,
+          "at_rest": 0.2
+        },
+        "D278": {
+          "absent": 0.12,
+          "on_exertion": 0.4,
+          "at_rest": 0.48
+        },
+        "D279": {
+          "absent": 0.2,
+          "on_exertion": 0.25,
+          "at_rest": 0.55
         }
       }
     },
@@ -18644,6 +18849,16 @@
           "absent": 0.15,
           "mild": 0.3,
           "severe": 0.55
+        },
+        "D277": {
+          "absent": 0.25,
+          "mild": 0.35,
+          "severe": 0.4
+        },
+        "D278": {
+          "absent": 0.2,
+          "mild": 0.3,
+          "severe": 0.5
         }
       }
     },
@@ -20253,6 +20468,10 @@
         "D276": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D281": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -21020,6 +21239,27 @@
           "sharp": 0.1,
           "pressure": 0.15,
           "tearing": 0.05
+        },
+        "D277": {
+          "absent": 0.55,
+          "burning": 0.03,
+          "sharp": 0.2,
+          "pressure": 0.15,
+          "tearing": 0.07
+        },
+        "D278": {
+          "absent": 0.25,
+          "burning": 0.05,
+          "sharp": 0.25,
+          "pressure": 0.35,
+          "tearing": 0.1
+        },
+        "D279": {
+          "absent": 0.03,
+          "burning": 0.03,
+          "sharp": 0.3,
+          "pressure": 0.5,
+          "tearing": 0.14
         }
       }
     },
@@ -23726,6 +23966,36 @@
           "3d_to_1w": 0.12,
           "1w_to_3w": 0.02,
           "over_3w": 0.01
+        },
+        "D277": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.67
+        },
+        "D278": {
+          "under_3d": 0.03,
+          "3d_to_1w": 0.07,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.7
+        },
+        "D279": {
+          "under_3d": 0.5,
+          "3d_to_1w": 0.35,
+          "1w_to_3w": 0.12,
+          "over_3w": 0.03
+        },
+        "D280": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
+        },
+        "D281": {
+          "under_3d": 0.95,
+          "3d_to_1w": 0.04,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.0
         }
       }
     },
@@ -24615,6 +24885,26 @@
         "D276": {
           "sudden_hours": 0.85,
           "gradual_days": 0.15
+        },
+        "D277": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D278": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D279": {
+          "sudden_hours": 0.4,
+          "gradual_days": 0.6
+        },
+        "D280": {
+          "sudden_hours": 0.85,
+          "gradual_days": 0.15
+        },
+        "D281": {
+          "sudden_hours": 0.9,
+          "gradual_days": 0.1
         }
       }
     },

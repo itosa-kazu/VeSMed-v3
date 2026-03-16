@@ -6322,6 +6322,66 @@
       ],
       "severity": "critical",
       "note": "卵巣/卵管が靭帯軸で捻転→血流途絶→壊死。突然のLLQ/RLQ痛+嘔吐。緊急手術"
+    },
+    {
+      "id": "D277",
+      "name": "lung_adenocarcinoma",
+      "name_ja": "肺腺癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "非喫煙者にも多い。咳嗽+体重減少+呼吸困難+胸痛。末梢発生が多い。胸水合併"
+    },
+    {
+      "id": "D278",
+      "name": "mesothelioma",
+      "name_ja": "悪性胸膜中皮腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "アスベスト曝露歴。胸痛(持続性)+呼吸困難+大量胸水+体重減少。予後不良(中央値12ヶ月)"
+    },
+    {
+      "id": "D279",
+      "name": "mediastinitis",
+      "name_ja": "縦隔炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "食道穿孔/歯原性/術後。激しい胸痛+発熱+頸部腫脹+敗血症。死亡率20-40%"
+    },
+    {
+      "id": "D280",
+      "name": "benzodiazepine_OD",
+      "name_ja": "ベンゾジアゼピン中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "中枢神経抑制→意識障害+呼吸抑制。混合(アルコール/オピオイド)でリスク増大。フルマゼニル拮抗"
+    },
+    {
+      "id": "D281",
+      "name": "opioid_OD",
+      "name_ja": "オピオイド中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "三徴:意識障害+呼吸抑制+縮瞳。ヘロイン/フェンタニル/処方オピオイド。ナロキソン拮抗"
     }
   ]
 }
