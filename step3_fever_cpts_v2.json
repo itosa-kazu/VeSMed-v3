@@ -8903,6 +8903,11 @@
           "under_100": 0.45,
           "100_120": 0.3,
           "over_120": 0.25
+        },
+        "D332": {
+          "under_100": 0.35,
+          "100_120": 0.35,
+          "over_120": 0.3
         }
       }
     },
@@ -9594,6 +9599,11 @@
           "normal_under_20": 0.1,
           "tachypnea_20_30": 0.4,
           "severe_over_30": 0.5
+        },
+        "D277": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.4,
+          "severe_over_30": 0.3
         }
       }
     },
@@ -23382,6 +23392,24 @@
           "LLQ": 0.05,
           "suprapubic": 0.05,
           "diffuse": 0.1
+        },
+        "D263": {
+          "absent": 0.8,
+          "epigastric": 0.08,
+          "RUQ": 0.02,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.04
+        },
+        "D301": {
+          "absent": 0.7,
+          "epigastric": 0.15,
+          "RUQ": 0.03,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.06
         }
       }
     },
@@ -23964,6 +23992,10 @@
           "present": 0.45
         },
         "D335": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D341": {
           "absent": 0.65,
           "present": 0.35
         }
@@ -29712,6 +29744,10 @@
         "D287": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D341": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -32374,6 +32410,11 @@
           "normal": 0.5,
           "mild_elevated": 0.3,
           "high_AKI": 0.2
+        },
+        "D332": {
+          "normal": 0.6,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.15
         }
       }
     },
