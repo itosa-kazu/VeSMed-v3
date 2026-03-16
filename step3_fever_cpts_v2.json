@@ -32439,6 +32439,26 @@
           "not_done": 0.2,
           "negative": 0.6,
           "positive": 0.2
+        },
+        "D156": {
+          "not_done": 0.15,
+          "negative": 0.8,
+          "positive": 0.05
+        },
+        "D162": {
+          "not_done": 0.15,
+          "negative": 0.8,
+          "positive": 0.05
+        },
+        "D152": {
+          "not_done": 0.15,
+          "negative": 0.75,
+          "positive": 0.1
+        },
+        "D166": {
+          "not_done": 0.15,
+          "negative": 0.8,
+          "positive": 0.05
         }
       }
     }
