@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4087,
+  "total_edges": 4102,
   "edges": [
     {
       "from": "R01",
@@ -33106,6 +33106,111 @@
       "from_name": "opioid_OD",
       "to_name": "E07",
       "reason": "オピオイド: 肺聴診(肺水腫)"
+    },
+    {
+      "from": "D31",
+      "to": "E03",
+      "from_name": "psoas_abscess",
+      "to_name": "E03",
+      "reason": "腸腰筋膿瘍: 低血圧(敗血症)"
+    },
+    {
+      "from": "D158",
+      "to": "E04",
+      "from_name": "AIHA",
+      "to_name": "E04",
+      "reason": "AIHA: 頻呼吸(重度貧血)"
+    },
+    {
+      "from": "D158",
+      "to": "E05",
+      "from_name": "AIHA",
+      "to_name": "E05",
+      "reason": "AIHA: 低酸素(重度貧血)"
+    },
+    {
+      "from": "D259",
+      "to": "S12",
+      "from_name": "HFMD",
+      "to_name": "S12",
+      "reason": "HFMD: 腹痛(EV-D68合併)"
+    },
+    {
+      "from": "D259",
+      "to": "S04",
+      "from_name": "HFMD",
+      "to_name": "S04",
+      "reason": "HFMD: 呼吸困難(EV-D68合併)"
+    },
+    {
+      "from": "D259",
+      "to": "E05",
+      "from_name": "HFMD",
+      "to_name": "E05",
+      "reason": "HFMD: 低酸素(心筋炎/肺炎合併)"
+    },
+    {
+      "from": "D259",
+      "to": "E38",
+      "from_name": "HFMD",
+      "to_name": "E38",
+      "reason": "HFMD: 高血圧(脳幹脳炎合併)"
+    },
+    {
+      "from": "D259",
+      "to": "L53",
+      "from_name": "HFMD",
+      "to_name": "L53",
+      "reason": "HFMD: トロポニン(心筋炎)"
+    },
+    {
+      "from": "D265",
+      "to": "E03",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "E03",
+      "reason": "H.flu: 低血圧(敗血症)"
+    },
+    {
+      "from": "D265",
+      "to": "L55",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "L55",
+      "reason": "H.flu: AKI(敗血症)"
+    },
+    {
+      "from": "D265",
+      "to": "S02",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "S02",
+      "reason": "H.flu: 咽頭痛(上気道先行)"
+    },
+    {
+      "from": "D274",
+      "to": "L11",
+      "from_name": "biliary_colic",
+      "to_name": "L11",
+      "reason": "胆石: 肝酵素(一過性上昇)"
+    },
+    {
+      "from": "D274",
+      "to": "E02",
+      "from_name": "biliary_colic",
+      "to_name": "E02",
+      "reason": "胆石: 徐脈(cardio-biliary reflex)"
+    },
+    {
+      "from": "D275",
+      "to": "L14",
+      "from_name": "incarcerated_hernia",
+      "to_name": "L14",
+      "reason": "嵌頓ヘルニア: 血小板減少(DIC合併時)"
+    },
+    {
+      "from": "D275",
+      "to": "L11",
+      "from_name": "incarcerated_hernia",
+      "to_name": "L11",
+      "reason": "嵌頓ヘルニア: 肝酵素(絞扼時)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

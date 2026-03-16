@@ -7274,6 +7274,11 @@
           "under_100": 0.35,
           "100_120": 0.4,
           "over_120": 0.25
+        },
+        "D274": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
         }
       }
     },
@@ -7635,6 +7640,14 @@
         "D283": {
           "normal_over_90": 0.35,
           "hypotension_under_90": 0.65
+        },
+        "D31": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        },
+        "D265": {
+          "normal_over_90": 0.35,
+          "hypotension_under_90": 0.65
         }
       }
     },
@@ -7920,6 +7933,11 @@
         "D281": {
           "normal_under_20": 0.5,
           "tachypnea_20_30": 0.25,
+          "severe_over_30": 0.25
+        },
+        "D158": {
+          "normal_under_20": 0.35,
+          "tachypnea_20_30": 0.4,
           "severe_over_30": 0.25
         }
       }
@@ -8216,6 +8234,16 @@
           "normal_over_96": 0.1,
           "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.65
+        },
+        "D158": {
+          "normal_over_96": 0.35,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.25
+        },
+        "D259": {
+          "normal_over_96": 0.45,
+          "mild_hypoxia_93_96": 0.3,
+          "severe_hypoxia_under_93": 0.25
         }
       }
     },
@@ -14771,6 +14799,16 @@
           "normal": 0.3,
           "mild_elevated": 0.35,
           "very_high": 0.35
+        },
+        "D274": {
+          "normal": 0.35,
+          "mild_elevated": 0.5,
+          "very_high": 0.15
+        },
+        "D275": {
+          "normal": 0.45,
+          "mild_elevated": 0.35,
+          "very_high": 0.2
         }
       }
     },
@@ -15212,6 +15250,14 @@
           "left_shift": 0.05,
           "atypical_lymphocytes": 0.0,
           "thrombocytopenia": 0.45,
+          "eosinophilia": 0.0,
+          "lymphocyte_predominant": 0.05
+        },
+        "D275": {
+          "normal": 0.55,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.0,
+          "thrombocytopenia": 0.35,
           "eosinophilia": 0.0,
           "lymphocyte_predominant": 0.05
         }
@@ -17323,6 +17369,10 @@
         "D279": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D265": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -17828,6 +17878,11 @@
           "absent": 0.25,
           "on_exertion": 0.2,
           "at_rest": 0.55
+        },
+        "D259": {
+          "absent": 0.5,
+          "on_exertion": 0.2,
+          "at_rest": 0.3
         }
       }
     },
@@ -20279,6 +20334,15 @@
           "LLQ": 0.05,
           "suprapubic": 0.02,
           "diffuse": 0.18
+        },
+        "D259": {
+          "absent": 0.55,
+          "epigastric": 0.05,
+          "RUQ": 0.02,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.32
         }
       }
     },
@@ -26816,6 +26880,12 @@
           "normal": 0.7,
           "mildly_elevated": 0.08,
           "very_high": 0.02
+        },
+        "D259": {
+          "not_done": 0.25,
+          "normal": 0.35,
+          "mildly_elevated": 0.25,
+          "very_high": 0.15
         }
       }
     },
@@ -27585,6 +27655,11 @@
           "normal_under_140": 0.05,
           "elevated_140_180": 0.3,
           "crisis_over_180": 0.65
+        },
+        "D259": {
+          "normal_under_140": 0.55,
+          "elevated_140_180": 0.25,
+          "crisis_over_180": 0.2
         }
       }
     },
@@ -27774,6 +27849,11 @@
           "normal": 0.3,
           "mild_elevated": 0.3,
           "high_AKI": 0.4
+        },
+        "D265": {
+          "normal": 0.4,
+          "mild_elevated": 0.35,
+          "high_AKI": 0.25
         }
       }
     },
