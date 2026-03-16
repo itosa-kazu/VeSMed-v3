@@ -6502,6 +6502,66 @@
       ],
       "severity": "critical",
       "note": "妊娠可能年齢女性。下腹部痛+性器出血+無月経。破裂で出血性ショック。緊急手術"
+    },
+    {
+      "id": "D292",
+      "name": "vestibular_neuritis",
+      "name_ja": "急性前庭神経炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "突然の回転性めまい+嘔吐+歩行障害。聴力正常(メニエールとの鑑別)。ウイルス感染先行。1-2週で改善"
+    },
+    {
+      "id": "D293",
+      "name": "BPPV",
+      "name_ja": "良性発作性頭位めまい症(BPPV)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "頭位変換で誘発される短時間(30秒)の回転性めまい+嘔気。後半規管型が最多。Dix-Hallpike陽性"
+    },
+    {
+      "id": "D294",
+      "name": "migraine",
+      "name_ja": "片頭痛",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "片側性拍動性頭痛+嘔気/嘔吐+光過敏/音過敏。前兆(aura)あり/なし。4-72時間持続"
+    },
+    {
+      "id": "D295",
+      "name": "cluster_headache",
+      "name_ja": "群発頭痛",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "片眼窩周囲の激烈頭痛+流涙+鼻閉/鼻漏+発汗。15-180分持続。群発期(数週~数月)+寛解期。男性に多い"
+    },
+    {
+      "id": "D296",
+      "name": "tension_headache",
+      "name_ja": "緊張型頭痛",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "low",
+      "note": "両側性の圧迫感/締め付け感。嘔気なし(片頭痛との鑑別)。日常動作で増悪しない。最も頻度が高い頭痛"
     }
   ]
 }
