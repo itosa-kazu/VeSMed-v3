@@ -9273,6 +9273,14 @@
         "D286": {
           "normal_over_90": 0.8,
           "hypotension_under_90": 0.2
+        },
+        "D323": {
+          "normal_over_90": 0.4,
+          "hypotension_under_90": 0.6
+        },
+        "D285": {
+          "normal_over_90": 0.55,
+          "hypotension_under_90": 0.45
         }
       }
     },
@@ -18515,6 +18523,10 @@
         "D202": {
           "normal": 0.15,
           "elevated": 0.85
+        },
+        "D264": {
+          "normal": 0.25,
+          "elevated": 0.75
         }
       }
     },
@@ -32311,6 +32323,11 @@
           "normal": 0.5,
           "mild_elevated": 0.3,
           "high_AKI": 0.2
+        },
+        "D285": {
+          "normal": 0.6,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.15
         }
       }
     },
