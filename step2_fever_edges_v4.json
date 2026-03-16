@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4766,
+  "total_edges": 4768,
   "edges": [
     {
       "from": "R01",
@@ -27424,62 +27424,6 @@
       "reason": "拘束型心筋症: 緩徐"
     },
     {
-      "from": "D213",
-      "to": "S04",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "S04",
-      "reason": "収縮性心膜炎: 呼吸困難(80%+)"
-    },
-    {
-      "from": "D213",
-      "to": "E36",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "E36",
-      "reason": "収縮性心膜炎: 浮腫(右心不全, 70-80%)"
-    },
-    {
-      "from": "D213",
-      "to": "S07",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "S07",
-      "reason": "収縮性心膜炎: 倦怠感(70-80%)"
-    },
-    {
-      "from": "D213",
-      "to": "L51",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "L51",
-      "reason": "収縮性心膜炎: BNP上昇(心不全, 70%+)"
-    },
-    {
-      "from": "D213",
-      "to": "L04",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "L04",
-      "reason": "収縮性心膜炎: CXR(心膜石灰化/胸水)"
-    },
-    {
-      "from": "D213",
-      "to": "L11",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "L11",
-      "reason": "収縮性心膜炎: 肝酵素(うっ血肝, 30-40%)"
-    },
-    {
-      "from": "D213",
-      "to": "T01",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "T01",
-      "reason": "収縮性心膜炎: 慢性"
-    },
-    {
-      "from": "D213",
-      "to": "T02",
-      "from_name": "constrictive_pericarditis",
-      "to_name": "T02",
-      "reason": "収縮性心膜炎: 緩徐"
-    },
-    {
       "from": "D214",
       "to": "S04",
       "from_name": "PAH",
@@ -37859,6 +37803,76 @@
       "from_name": "APAP",
       "to_name": "L56",
       "reason": "アセトアミノフェン中毒: β-hCG(通常陰性)"
+    },
+    {
+      "from": "D344",
+      "to": "L04",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L04",
+      "reason": "収縮性心膜炎: CXR(心膜石灰化/胸水)"
+    },
+    {
+      "from": "D258",
+      "to": "S03",
+      "from_name": "RSV",
+      "to_name": "S03",
+      "reason": "RSV: 鼻汁(90%+, 最も特徴的症状)"
+    },
+    {
+      "from": "D295",
+      "to": "S03",
+      "from_name": "cluster_headache",
+      "to_name": "S03",
+      "reason": "群発頭痛: 鼻汁/鼻閉(自律神経症状, 70-80%)"
+    },
+    {
+      "from": "D265",
+      "to": "S03",
+      "from_name": "H_influenzae",
+      "to_name": "S03",
+      "reason": "H.flu肺炎: 鼻汁(上気道症状, 40-50%)"
+    },
+    {
+      "from": "D02",
+      "to": "S03",
+      "from_name": "influenza",
+      "to_name": "S03",
+      "reason": "インフルエンザ: 鼻汁(30-40%)"
+    },
+    {
+      "from": "D253",
+      "to": "S03",
+      "from_name": "bronchiolitis",
+      "to_name": "S03",
+      "reason": "急性細気管支炎: 鼻汁(80%+, 初期症状)"
+    },
+    {
+      "from": "D254",
+      "to": "S03",
+      "from_name": "croup",
+      "to_name": "S03",
+      "reason": "クループ: 鼻汁(50-60%)"
+    },
+    {
+      "from": "D257",
+      "to": "S03",
+      "from_name": "pertussis",
+      "to_name": "S03",
+      "reason": "百日咳: 鼻汁(カタル期, 60-70%)"
+    },
+    {
+      "from": "D255",
+      "to": "S03",
+      "from_name": "adenovirus",
+      "to_name": "S03",
+      "reason": "アデノウイルス: 鼻汁(50-60%)"
+    },
+    {
+      "from": "D256",
+      "to": "S03",
+      "from_name": "erythema_infectiosum",
+      "to_name": "S03",
+      "reason": "伝染性紅斑: 鼻汁(かぜ様前駆期, 30-40%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

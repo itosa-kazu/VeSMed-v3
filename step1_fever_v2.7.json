@@ -5556,18 +5556,6 @@
       "note": "心室壁硬化→拡張障害→うっ血性心不全。アミロイドーシス/サルコイドーシス/ヘモクロマトーシス等が原因"
     },
     {
-      "id": "D213",
-      "name": "constrictive_pericarditis",
-      "name_ja": "収縮性心膜炎",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "severity": "high",
-      "note": "心膜肥厚/石灰化→心室充満障害→右心不全優位。結核/手術後/放射線後。Kussmaul sign"
-    },
-    {
       "id": "D214",
       "name": "PAH",
       "name_ja": "肺動脈性肺高血圧症(PAH)",

@@ -3597,13 +3597,6 @@
         "65_plus": 0.002
       }
     },
-    "D213": {
-      "parents": [],
-      "description": "収縮性心膜炎",
-      "cpt": {
-        "": 0.001
-      }
-    },
     "D214": {
       "parents": [
         "R02"
@@ -16089,14 +16082,6 @@
           "pleural_effusion": 0.48,
           "pneumothorax": 0.03
         },
-        "D213": {
-          "normal": 0.25,
-          "lobar_infiltrate": 0.02,
-          "bilateral_infiltrate": 0.15,
-          "BHL": 0.02,
-          "pleural_effusion": 0.53,
-          "pneumothorax": 0.03
-        },
         "D215": {
           "normal": 0.05,
           "lobar_infiltrate": 0.02,
@@ -16272,6 +16257,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.08,
           "pneumothorax": 0.05
+        },
+        "D344": {
+          "normal": 0.25,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.02,
+          "pleural_effusion": 0.53,
+          "pneumothorax": 0.03
         }
       }
     },
@@ -16912,11 +16905,6 @@
           "normal": 0.35,
           "mild_elevated": 0.45,
           "very_high": 0.2
-        },
-        "D213": {
-          "normal": 0.5,
-          "mild_elevated": 0.35,
-          "very_high": 0.15
         },
         "D218": {
           "normal": 0.1,
@@ -20215,11 +20203,6 @@
           "on_exertion": 0.5,
           "at_rest": 0.4
         },
-        "D213": {
-          "absent": 0.1,
-          "on_exertion": 0.55,
-          "at_rest": 0.35
-        },
         "D214": {
           "absent": 0.02,
           "on_exertion": 0.58,
@@ -21698,11 +21681,6 @@
           "absent": 0.08,
           "mild": 0.3,
           "severe": 0.62
-        },
-        "D213": {
-          "absent": 0.12,
-          "mild": 0.35,
-          "severe": 0.53
         },
         "D214": {
           "absent": 0.15,
@@ -27187,12 +27165,6 @@
           "1w_to_3w": 0.25,
           "over_3w": 0.5
         },
-        "D213": {
-          "under_3d": 0.05,
-          "3d_to_1w": 0.1,
-          "1w_to_3w": 0.2,
-          "over_3w": 0.65
-        },
         "D214": {
           "under_3d": 0.05,
           "3d_to_1w": 0.1,
@@ -28639,10 +28611,6 @@
         "D212": {
           "sudden_hours": 0.15,
           "gradual_days": 0.85
-        },
-        "D213": {
-          "sudden_hours": 0.1,
-          "gradual_days": 0.9
         },
         "D214": {
           "sudden_hours": 0.1,
@@ -30350,11 +30318,6 @@
           "unilateral": 0.05,
           "bilateral": 0.75
         },
-        "D213": {
-          "absent": 0.15,
-          "unilateral": 0.05,
-          "bilateral": 0.8
-        },
         "D214": {
           "absent": 0.4,
           "unilateral": 0.05,
@@ -30591,12 +30554,6 @@
           "normal": 0.05,
           "mildly_elevated": 0.3,
           "very_high": 0.55
-        },
-        "D213": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mildly_elevated": 0.4,
-          "very_high": 0.4
         },
         "D214": {
           "not_done": 0.1,
@@ -32459,6 +32416,81 @@
           "not_done": 0.15,
           "negative": 0.8,
           "positive": 0.05
+        }
+      }
+    },
+    "S03": {
+      "description": "鼻汁・鼻閉",
+      "leak": {
+        "absent": 0.7,
+        "clear_rhinorrhea": 0.2,
+        "purulent_rhinorrhea": 0.1
+      },
+      "parent_effects": {
+        "D01": {
+          "absent": 0.05,
+          "clear_rhinorrhea": 0.55,
+          "purulent_rhinorrhea": 0.4
+        },
+        "D20": {
+          "absent": 0.08,
+          "clear_rhinorrhea": 0.12,
+          "purulent_rhinorrhea": 0.8
+        },
+        "D46": {
+          "absent": 0.15,
+          "clear_rhinorrhea": 0.55,
+          "purulent_rhinorrhea": 0.3
+        },
+        "D48": {
+          "absent": 0.5,
+          "clear_rhinorrhea": 0.35,
+          "purulent_rhinorrhea": 0.15
+        },
+        "D258": {
+          "absent": 0.05,
+          "clear_rhinorrhea": 0.6,
+          "purulent_rhinorrhea": 0.35
+        },
+        "D295": {
+          "absent": 0.15,
+          "clear_rhinorrhea": 0.6,
+          "purulent_rhinorrhea": 0.25
+        },
+        "D265": {
+          "absent": 0.4,
+          "clear_rhinorrhea": 0.35,
+          "purulent_rhinorrhea": 0.25
+        },
+        "D02": {
+          "absent": 0.5,
+          "clear_rhinorrhea": 0.35,
+          "purulent_rhinorrhea": 0.15
+        },
+        "D253": {
+          "absent": 0.1,
+          "clear_rhinorrhea": 0.55,
+          "purulent_rhinorrhea": 0.35
+        },
+        "D254": {
+          "absent": 0.3,
+          "clear_rhinorrhea": 0.45,
+          "purulent_rhinorrhea": 0.25
+        },
+        "D257": {
+          "absent": 0.25,
+          "clear_rhinorrhea": 0.5,
+          "purulent_rhinorrhea": 0.25
+        },
+        "D255": {
+          "absent": 0.3,
+          "clear_rhinorrhea": 0.4,
+          "purulent_rhinorrhea": 0.3
+        },
+        "D256": {
+          "absent": 0.55,
+          "clear_rhinorrhea": 0.3,
+          "purulent_rhinorrhea": 0.15
         }
       }
     }
