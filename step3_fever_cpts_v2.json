@@ -7022,11 +7022,11 @@
           "over_40.0": 0.03
         },
         "D172": {
-          "under_37.5": 0.08,
+          "under_37.5": 0.15,
           "37.5_38.0": 0.1,
           "38.0_39.0": 0.25,
-          "39.0_40.0": 0.35,
-          "over_40.0": 0.22
+          "39.0_40.0": 0.3,
+          "over_40.0": 0.2
         },
         "D173": {
           "under_37.5": 0.08,
@@ -16106,11 +16106,11 @@
         },
         "D265": {
           "normal": 0.05,
-          "lobar_infiltrate": 0.5,
-          "bilateral_infiltrate": 0.3,
-          "BHL": 0.01,
-          "pleural_effusion": 0.1,
-          "pneumothorax": 0.04
+          "lobar_infiltrate": 0.35,
+          "bilateral_infiltrate": 0.15,
+          "BHL": 0.02,
+          "pleural_effusion": 0.35,
+          "pneumothorax": 0.08
         },
         "D266": {
           "normal": 0.03,
@@ -17519,10 +17519,10 @@
         "D261": {
           "normal": 0.2,
           "left_shift": 0.05,
-          "atypical_lymphocytes": 0.15,
-          "thrombocytopenia": 0.1,
+          "atypical_lymphocytes": 0.1,
+          "thrombocytopenia": 0.3,
           "eosinophilia": 0.02,
-          "lymphocyte_predominant": 0.48
+          "lymphocyte_predominant": 0.33
         }
       }
     },
@@ -20257,9 +20257,9 @@
           "at_rest": 0.15
         },
         "D265": {
-          "absent": 0.2,
+          "absent": 0.25,
           "on_exertion": 0.35,
-          "at_rest": 0.45
+          "at_rest": 0.4
         },
         "D266": {
           "absent": 0.15,
@@ -20737,9 +20737,9 @@
           "severe": 0.15
         },
         "D285": {
-          "absent": 0.5,
-          "mild": 0.3,
-          "severe": 0.2
+          "absent": 0.35,
+          "mild": 0.25,
+          "severe": 0.4
         },
         "D292": {
           "absent": 0.85,
@@ -22841,13 +22841,13 @@
           "diffuse": 0.25
         },
         "D177": {
-          "absent": 0.03,
-          "epigastric": 0.02,
-          "RUQ": 0.02,
-          "RLQ": 0.05,
+          "absent": 0.05,
+          "epigastric": 0.05,
+          "RUQ": 0.03,
+          "RLQ": 0.07,
           "LLQ": 0.55,
-          "suprapubic": 0.03,
-          "diffuse": 0.3
+          "suprapubic": 0.1,
+          "diffuse": 0.15
         },
         "D179": {
           "absent": 0.6,
@@ -24034,14 +24034,14 @@
           "bloody": 0.7
         },
         "D166": {
-          "absent": 0.65,
-          "watery": 0.3,
+          "absent": 0.8,
+          "watery": 0.15,
           "bloody": 0.05
         },
         "D172": {
-          "absent": 0.65,
-          "watery": 0.3,
-          "bloody": 0.05
+          "absent": 0.7,
+          "watery": 0.2,
+          "bloody": 0.1
         },
         "D177": {
           "absent": 0.1,
@@ -26884,9 +26884,9 @@
           "over_3w": 0.0
         },
         "D175": {
-          "under_3d": 0.15,
+          "under_3d": 0.3,
           "3d_to_1w": 0.35,
-          "1w_to_3w": 0.4,
+          "1w_to_3w": 0.25,
           "over_3w": 0.1
         },
         "D176": {
@@ -27820,10 +27820,10 @@
           "over_3w": 0.02
         },
         "D329": {
-          "under_3d": 0.15,
+          "under_3d": 0.1,
           "3d_to_1w": 0.25,
-          "1w_to_3w": 0.3,
-          "over_3w": 0.3
+          "1w_to_3w": 0.4,
+          "over_3w": 0.25
         },
         "D331": {
           "under_3d": 0.8,
@@ -28377,8 +28377,8 @@
           "gradual_days": 0.85
         },
         "D177": {
-          "sudden_hours": 0.6,
-          "gradual_days": 0.4
+          "sudden_hours": 0.65,
+          "gradual_days": 0.35
         },
         "D178": {
           "sudden_hours": 0.25,
@@ -28757,8 +28757,8 @@
           "gradual_days": 0.6
         },
         "D261": {
-          "sudden_hours": 0.3,
-          "gradual_days": 0.7
+          "sudden_hours": 0.6,
+          "gradual_days": 0.4
         },
         "D262": {
           "sudden_hours": 0.1,
