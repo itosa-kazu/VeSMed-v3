@@ -6562,6 +6562,66 @@
       ],
       "severity": "low",
       "note": "両側性の圧迫感/締め付け感。嘔気なし(片頭痛との鑑別)。日常動作で増悪しない。最も頻度が高い頭痛"
+    },
+    {
+      "id": "D297",
+      "name": "trigeminal_neuralgia",
+      "name_ja": "三叉神経痛",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "電撃様の片側顔面痛(V2/V3領域)。トリガーポイント(洗顔/咀嚼/風)で誘発。発作間は無痛"
+    },
+    {
+      "id": "D298",
+      "name": "bell_palsy",
+      "name_ja": "顔面神経麻痺(Bell麻痺)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "急性片側末梢性顔面神経麻痺。前額皺寄せ不可(中枢性との鑑別)。耳後部痛先行。HSV-1再活性化説"
+    },
+    {
+      "id": "D299",
+      "name": "ramsay_hunt",
+      "name_ja": "Ramsay Hunt症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "VZV再活性化→耳介帯状疱疹+顔面神経麻痺+聴覚障害(三徴)。Bell麻痺より予後不良"
+    },
+    {
+      "id": "D300",
+      "name": "CJD",
+      "name_ja": "クロイツフェルト・ヤコブ病(CJD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "プリオン病。急速進行性認知症+ミオクローヌス+小脳失調+錐体路/錐体外路徴候。MRI DWI高信号。致死的"
+    },
+    {
+      "id": "D301",
+      "name": "NMOSD",
+      "name_ja": "視神経脊髄炎(NMOSD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "AQP4抗体陽性。重度視神経炎(失明)+横断性脊髄炎(対麻痺/四肢麻痺)。MSとの鑑別重要。女性に多い"
     }
   ]
 }
