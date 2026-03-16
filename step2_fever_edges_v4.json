@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4102,
+  "total_edges": 4136,
   "edges": [
     {
       "from": "R01",
@@ -33211,6 +33211,244 @@
       "from_name": "incarcerated_hernia",
       "to_name": "L11",
       "reason": "嵌頓ヘルニア: 肝酵素(絞扼時)"
+    },
+    {
+      "from": "D287",
+      "to": "S12",
+      "from_name": "gallbladder_cancer",
+      "to_name": "S12",
+      "reason": "胆嚢癌: RUQ痛(60-70%)"
+    },
+    {
+      "from": "D287",
+      "to": "E18",
+      "from_name": "gallbladder_cancer",
+      "to_name": "E18",
+      "reason": "胆嚢癌: 黄疸(40-50%)"
+    },
+    {
+      "from": "D287",
+      "to": "S07",
+      "from_name": "gallbladder_cancer",
+      "to_name": "S07",
+      "reason": "胆嚢癌: 体重減少(50-60%)"
+    },
+    {
+      "from": "D287",
+      "to": "S13",
+      "from_name": "gallbladder_cancer",
+      "to_name": "S13",
+      "reason": "胆嚢癌: 嘔気(30-40%)"
+    },
+    {
+      "from": "D287",
+      "to": "L11",
+      "from_name": "gallbladder_cancer",
+      "to_name": "L11",
+      "reason": "胆嚢癌: 肝酵素上昇(胆管浸潤)"
+    },
+    {
+      "from": "D287",
+      "to": "E01",
+      "from_name": "gallbladder_cancer",
+      "to_name": "E01",
+      "reason": "胆嚢癌: 発熱(胆管炎合併, 20-30%)"
+    },
+    {
+      "from": "D287",
+      "to": "T01",
+      "from_name": "gallbladder_cancer",
+      "to_name": "T01",
+      "reason": "胆嚢癌: 慢性"
+    },
+    {
+      "from": "D287",
+      "to": "T02",
+      "from_name": "gallbladder_cancer",
+      "to_name": "T02",
+      "reason": "胆嚢癌: 緩徐"
+    },
+    {
+      "from": "D288",
+      "to": "S07",
+      "from_name": "testicular_cancer",
+      "to_name": "S07",
+      "reason": "精巣腫瘍: 倦怠感(30-40%)"
+    },
+    {
+      "from": "D288",
+      "to": "S15",
+      "from_name": "testicular_cancer",
+      "to_name": "S15",
+      "reason": "精巣腫瘍: 腰背部痛(後腹膜転移, 20-30%)"
+    },
+    {
+      "from": "D288",
+      "to": "S04",
+      "from_name": "testicular_cancer",
+      "to_name": "S04",
+      "reason": "精巣腫瘍: 呼吸困難(肺転移, 10-20%)"
+    },
+    {
+      "from": "D288",
+      "to": "L16",
+      "from_name": "testicular_cancer",
+      "to_name": "L16",
+      "reason": "精巣腫瘍: LDH上昇(腫瘍マーカー, 50-60%)"
+    },
+    {
+      "from": "D288",
+      "to": "T01",
+      "from_name": "testicular_cancer",
+      "to_name": "T01",
+      "reason": "精巣腫瘍: 慢性"
+    },
+    {
+      "from": "D288",
+      "to": "T02",
+      "from_name": "testicular_cancer",
+      "to_name": "T02",
+      "reason": "精巣腫瘍: 緩徐"
+    },
+    {
+      "from": "D289",
+      "to": "S10",
+      "from_name": "prostate_cancer",
+      "to_name": "S10",
+      "reason": "前立腺癌: 排尿障害(30-40%)"
+    },
+    {
+      "from": "D289",
+      "to": "S15",
+      "from_name": "prostate_cancer",
+      "to_name": "S15",
+      "reason": "前立腺癌: 骨転移痛(20-30%)"
+    },
+    {
+      "from": "D289",
+      "to": "S07",
+      "from_name": "prostate_cancer",
+      "to_name": "S07",
+      "reason": "前立腺癌: 倦怠感(30-40%)"
+    },
+    {
+      "from": "D289",
+      "to": "L16",
+      "from_name": "prostate_cancer",
+      "to_name": "L16",
+      "reason": "前立腺癌: LDH上昇(転移時)"
+    },
+    {
+      "from": "D289",
+      "to": "T01",
+      "from_name": "prostate_cancer",
+      "to_name": "T01",
+      "reason": "前立腺癌: 慢性"
+    },
+    {
+      "from": "D289",
+      "to": "T02",
+      "from_name": "prostate_cancer",
+      "to_name": "T02",
+      "reason": "前立腺癌: 緩徐"
+    },
+    {
+      "from": "D290",
+      "to": "S10",
+      "from_name": "bladder_cancer",
+      "to_name": "S10",
+      "reason": "膀胱癌: 排尿障害(30-40%)"
+    },
+    {
+      "from": "D290",
+      "to": "S15",
+      "from_name": "bladder_cancer",
+      "to_name": "S15",
+      "reason": "膀胱癌: 側腹部痛(水腎症, 10-20%)"
+    },
+    {
+      "from": "D290",
+      "to": "S07",
+      "from_name": "bladder_cancer",
+      "to_name": "S07",
+      "reason": "膀胱癌: 倦怠感"
+    },
+    {
+      "from": "D290",
+      "to": "L05",
+      "from_name": "bladder_cancer",
+      "to_name": "L05",
+      "reason": "膀胱癌: 尿異常(血尿, 80%+)"
+    },
+    {
+      "from": "D290",
+      "to": "T01",
+      "from_name": "bladder_cancer",
+      "to_name": "T01",
+      "reason": "膀胱癌: 慢性"
+    },
+    {
+      "from": "D290",
+      "to": "T02",
+      "from_name": "bladder_cancer",
+      "to_name": "T02",
+      "reason": "膀胱癌: 慢性~間欠"
+    },
+    {
+      "from": "D291",
+      "to": "S12",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "S12",
+      "reason": "子宮外妊娠: 下腹部痛(90%+)"
+    },
+    {
+      "from": "D291",
+      "to": "S44",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "S44",
+      "reason": "子宮外妊娠: 性器出血(60-70%)"
+    },
+    {
+      "from": "D291",
+      "to": "E03",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "E03",
+      "reason": "子宮外妊娠: 低血圧(破裂時ショック)"
+    },
+    {
+      "from": "D291",
+      "to": "E02",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "E02",
+      "reason": "子宮外妊娠: 頻脈(出血)"
+    },
+    {
+      "from": "D291",
+      "to": "E16",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "E16",
+      "reason": "子宮外妊娠: 意識障害(ショック時)"
+    },
+    {
+      "from": "D291",
+      "to": "S13",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "S13",
+      "reason": "子宮外妊娠: 嘔気(30-40%)"
+    },
+    {
+      "from": "D291",
+      "to": "T01",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "T01",
+      "reason": "子宮外妊娠: 急性"
+    },
+    {
+      "from": "D291",
+      "to": "T02",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "T02",
+      "reason": "子宮外妊娠: 急性~突発(破裂時)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

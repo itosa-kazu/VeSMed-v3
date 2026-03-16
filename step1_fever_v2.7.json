@@ -6442,6 +6442,66 @@
       ],
       "severity": "high",
       "note": "原発性副甲状腺機能亢進症/悪性腫瘍が二大原因。Stones/Bones/Groans/Moans/Psychic overtones"
+    },
+    {
+      "id": "D287",
+      "name": "gallbladder_cancer",
+      "name_ja": "胆嚢癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "胆石合併が多い。RUQ痛+黄疸+体重減少。早期は無症状。進行で胆管浸潤→閉塞性黄疸"
+    },
+    {
+      "id": "D288",
+      "name": "testicular_cancer",
+      "name_ja": "精巣腫瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "若年男性(15-35歳)。無痛性陰嚢腫大。セミノーマ/非セミノーマ。LDH/AFP/hCG上昇"
+    },
+    {
+      "id": "D289",
+      "name": "prostate_cancer",
+      "name_ja": "前立腺癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "高齢男性。初期無症状→進行で排尿障害+血尿+骨転移痛。PSA上昇"
+    },
+    {
+      "id": "D290",
+      "name": "bladder_cancer",
+      "name_ja": "膀胱癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "無痛性肉眼的血尿が初発症状(80%+)。喫煙がリスク。高齢男性に多い"
+    },
+    {
+      "id": "D291",
+      "name": "ectopic_pregnancy",
+      "name_ja": "子宮外妊娠",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "妊娠可能年齢女性。下腹部痛+性器出血+無月経。破裂で出血性ショック。緊急手術"
     }
   ]
 }
