@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4298,
+  "total_edges": 4336,
   "edges": [
     {
       "from": "R01",
@@ -34583,6 +34583,272 @@
       "from_name": "glioblastoma",
       "to_name": "T02",
       "reason": "GBM: 亜急性"
+    },
+    {
+      "from": "D312",
+      "to": "S05",
+      "from_name": "meningioma",
+      "to_name": "S05",
+      "reason": "髄膜腫: 頭痛(40-60%)"
+    },
+    {
+      "from": "D312",
+      "to": "S42",
+      "from_name": "meningioma",
+      "to_name": "S42",
+      "reason": "髄膜腫: 痙攣(25-40%)"
+    },
+    {
+      "from": "D312",
+      "to": "S52",
+      "from_name": "meningioma",
+      "to_name": "S52",
+      "reason": "髄膜腫: 局所神経脱落(30-40%)"
+    },
+    {
+      "from": "D312",
+      "to": "E16",
+      "from_name": "meningioma",
+      "to_name": "E16",
+      "reason": "髄膜腫: 認知変化(20-30%)"
+    },
+    {
+      "from": "D312",
+      "to": "S07",
+      "from_name": "meningioma",
+      "to_name": "S07",
+      "reason": "髄膜腫: 倦怠感"
+    },
+    {
+      "from": "D312",
+      "to": "T01",
+      "from_name": "meningioma",
+      "to_name": "T01",
+      "reason": "髄膜腫: 慢性"
+    },
+    {
+      "from": "D312",
+      "to": "T02",
+      "from_name": "meningioma",
+      "to_name": "T02",
+      "reason": "髄膜腫: 緩徐"
+    },
+    {
+      "from": "D313",
+      "to": "S05",
+      "from_name": "brain_metastasis",
+      "to_name": "S05",
+      "reason": "脳転移: 頭痛(40-50%)"
+    },
+    {
+      "from": "D313",
+      "to": "S42",
+      "from_name": "brain_metastasis",
+      "to_name": "S42",
+      "reason": "脳転移: 痙攣(20-35%)"
+    },
+    {
+      "from": "D313",
+      "to": "S52",
+      "from_name": "brain_metastasis",
+      "to_name": "S52",
+      "reason": "脳転移: 局所神経脱落(40-50%)"
+    },
+    {
+      "from": "D313",
+      "to": "E16",
+      "from_name": "brain_metastasis",
+      "to_name": "E16",
+      "reason": "脳転移: 意識障害(30-40%)"
+    },
+    {
+      "from": "D313",
+      "to": "S13",
+      "from_name": "brain_metastasis",
+      "to_name": "S13",
+      "reason": "脳転移: 嘔吐(頭蓋内圧亢進, 25-35%)"
+    },
+    {
+      "from": "D313",
+      "to": "S07",
+      "from_name": "brain_metastasis",
+      "to_name": "S07",
+      "reason": "脳転移: 倦怠感/体重減少"
+    },
+    {
+      "from": "D313",
+      "to": "T01",
+      "from_name": "brain_metastasis",
+      "to_name": "T01",
+      "reason": "脳転移: 亜急性~慢性"
+    },
+    {
+      "from": "D313",
+      "to": "T02",
+      "from_name": "brain_metastasis",
+      "to_name": "T02",
+      "reason": "脳転移: 亜急性"
+    },
+    {
+      "from": "D314",
+      "to": "S05",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "S05",
+      "reason": "急性水頭症: 頭痛(激烈, 80%+)"
+    },
+    {
+      "from": "D314",
+      "to": "S13",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "S13",
+      "reason": "急性水頭症: 嘔吐(噴射性, 70-80%)"
+    },
+    {
+      "from": "D314",
+      "to": "E16",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "E16",
+      "reason": "急性水頭症: 意識障害(急速進行)"
+    },
+    {
+      "from": "D314",
+      "to": "E02",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "E02",
+      "reason": "急性水頭症: 徐脈(Cushing反応)"
+    },
+    {
+      "from": "D314",
+      "to": "E38",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "E38",
+      "reason": "急性水頭症: 高血圧(Cushing)"
+    },
+    {
+      "from": "D314",
+      "to": "T01",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "T01",
+      "reason": "急性水頭症: 超急性"
+    },
+    {
+      "from": "D314",
+      "to": "T02",
+      "from_name": "acute_hydrocephalus",
+      "to_name": "T02",
+      "reason": "急性水頭症: 急性"
+    },
+    {
+      "from": "D315",
+      "to": "S05",
+      "from_name": "CVST",
+      "to_name": "S05",
+      "reason": "CVST: 頭痛(90%+, 進行性)"
+    },
+    {
+      "from": "D315",
+      "to": "S42",
+      "from_name": "CVST",
+      "to_name": "S42",
+      "reason": "CVST: 痙攣(30-40%)"
+    },
+    {
+      "from": "D315",
+      "to": "S52",
+      "from_name": "CVST",
+      "to_name": "S52",
+      "reason": "CVST: 局所神経脱落(30-40%)"
+    },
+    {
+      "from": "D315",
+      "to": "E16",
+      "from_name": "CVST",
+      "to_name": "E16",
+      "reason": "CVST: 意識障害(30-50%)"
+    },
+    {
+      "from": "D315",
+      "to": "S13",
+      "from_name": "CVST",
+      "to_name": "S13",
+      "reason": "CVST: 嘔吐(30-40%)"
+    },
+    {
+      "from": "D315",
+      "to": "L52",
+      "from_name": "CVST",
+      "to_name": "L52",
+      "reason": "CVST: D-dimer上昇(80%+)"
+    },
+    {
+      "from": "D315",
+      "to": "E01",
+      "from_name": "CVST",
+      "to_name": "E01",
+      "reason": "CVST: 発熱(感染性CVSTで, 20-30%)"
+    },
+    {
+      "from": "D315",
+      "to": "T01",
+      "from_name": "CVST",
+      "to_name": "T01",
+      "reason": "CVST: 急性~亜急性"
+    },
+    {
+      "from": "D315",
+      "to": "T02",
+      "from_name": "CVST",
+      "to_name": "T02",
+      "reason": "CVST: 亜急性"
+    },
+    {
+      "from": "D316",
+      "to": "S52",
+      "from_name": "moyamoya",
+      "to_name": "S52",
+      "reason": "もやもや: 局所神経脱落(TIA/梗塞/出血)"
+    },
+    {
+      "from": "D316",
+      "to": "S05",
+      "from_name": "moyamoya",
+      "to_name": "S05",
+      "reason": "もやもや: 頭痛(30-50%)"
+    },
+    {
+      "from": "D316",
+      "to": "S42",
+      "from_name": "moyamoya",
+      "to_name": "S42",
+      "reason": "もやもや: 痙攣(10-20%)"
+    },
+    {
+      "from": "D316",
+      "to": "E16",
+      "from_name": "moyamoya",
+      "to_name": "E16",
+      "reason": "もやもや: 意識障害(出血時, 30-40%)"
+    },
+    {
+      "from": "D316",
+      "to": "S53",
+      "from_name": "moyamoya",
+      "to_name": "S53",
+      "reason": "もやもや: 構音障害/失語(30-40%)"
+    },
+    {
+      "from": "D316",
+      "to": "T01",
+      "from_name": "moyamoya",
+      "to_name": "T01",
+      "reason": "もやもや: 急性(TIA/梗塞/出血)"
+    },
+    {
+      "from": "D316",
+      "to": "T02",
+      "from_name": "moyamoya",
+      "to_name": "T02",
+      "reason": "もやもや: 突発~亜急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -6754,6 +6754,66 @@
       ],
       "severity": "critical",
       "note": "最も悪性の脳腫瘍。頭痛+嘔吐+局所神経症状+痙攣。中央生存期間15ヶ月"
+    },
+    {
+      "id": "D312",
+      "name": "meningioma",
+      "name_ja": "髄膜腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "最も頻度の高い脳腫瘍(良性多い)。無症状~頭痛/痙攣/局所神経症状。中年女性に多い"
+    },
+    {
+      "id": "D313",
+      "name": "brain_metastasis",
+      "name_ja": "転移性脳腫瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "肺癌/乳癌/腎癌/大腸癌/黒色腫が原発巣として多い。頭痛+痙攣+局所神経症状+認知障害"
+    },
+    {
+      "id": "D314",
+      "name": "acute_hydrocephalus",
+      "name_ja": "急性閉塞性水頭症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "脳室系閉塞→急速な頭蓋内圧亢進。頭痛+嘔吐+意識障害+上方注視麻痺。緊急脳室ドレナージ"
+    },
+    {
+      "id": "D315",
+      "name": "CVST",
+      "name_ja": "脳静脈洞血栓症(CVST)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "経口避妊薬/妊娠/脱水/感染/凝固異常。頭痛(最多)+痙攣+局所神経症状+乳頭浮腫"
+    },
+    {
+      "id": "D316",
+      "name": "moyamoya",
+      "name_ja": "もやもや病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "内頸動脈遠位部の進行性狭窄+異常血管網。日本人に多い。小児:TIA/脳梗塞、成人:脳出血"
     }
   ]
 }
