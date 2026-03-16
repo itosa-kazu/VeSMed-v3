@@ -8898,6 +8898,11 @@
           "under_100": 0.25,
           "100_120": 0.45,
           "over_120": 0.3
+        },
+        "D335": {
+          "under_100": 0.45,
+          "100_120": 0.3,
+          "over_120": 0.25
         }
       }
     },
@@ -9271,6 +9276,10 @@
         "D291": {
           "normal_over_90": 0.3,
           "hypotension_under_90": 0.7
+        },
+        "D286": {
+          "normal_over_90": 0.8,
+          "hypotension_under_90": 0.2
         }
       }
     },
@@ -9944,6 +9953,11 @@
           "severe_hypoxia_under_93": 0.3
         },
         "D349": {
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.25
+        },
+        "D340": {
           "normal_over_96": 0.4,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.25
@@ -14295,6 +14309,24 @@
           "normal_4000_10000": 0.35,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.2
+        },
+        "D334": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.15
+        },
+        "D287": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.3,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.25
+        },
+        "D343": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.22
         }
       }
     },
@@ -15500,6 +15532,18 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.25,
           "high_over_10": 0.25
+        },
+        "D334": {
+          "normal_under_0.3": 0.15,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.25
+        },
+        "D287": {
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.2,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.35
         }
       }
     },
@@ -17043,6 +17087,11 @@
           "normal": 0.4,
           "mild_elevated": 0.3,
           "very_high": 0.3
+        },
+        "D340": {
+          "normal": 0.55,
+          "mild_elevated": 0.3,
+          "very_high": 0.15
         }
       }
     },
@@ -19678,6 +19727,11 @@
           "absent": 0.6,
           "dry": 0.25,
           "productive": 0.15
+        },
+        "D340": {
+          "absent": 0.4,
+          "dry": 0.4,
+          "productive": 0.2
         }
       }
     },
@@ -22064,6 +22118,11 @@
           "absent": 0.3,
           "mild": 0.35,
           "severe": 0.35
+        },
+        "D301": {
+          "absent": 0.35,
+          "mild": 0.35,
+          "severe": 0.3
         }
       }
     },
@@ -23873,6 +23932,18 @@
         "D348": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D128": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D334": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D295": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -29621,6 +29692,10 @@
         "D303": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D287": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -29701,6 +29776,11 @@
           "stable": 0.3,
           "compensated": 0.35,
           "shock": 0.35
+        },
+        "D323": {
+          "stable": 0.3,
+          "compensated": 0.4,
+          "shock": 0.3
         }
       }
     },
@@ -30344,6 +30424,11 @@
           "absent": 0.65,
           "unilateral": 0.15,
           "bilateral": 0.2
+        },
+        "D345": {
+          "absent": 0.45,
+          "unilateral": 0.05,
+          "bilateral": 0.5
         }
       }
     },
@@ -32005,6 +32090,11 @@
           "normal_under_140": 0.7,
           "elevated_140_180": 0.15,
           "crisis_over_180": 0.15
+        },
+        "D340": {
+          "normal_under_140": 0.35,
+          "elevated_140_180": 0.4,
+          "crisis_over_180": 0.25
         }
       }
     },
@@ -32249,6 +32339,21 @@
           "normal": 0.55,
           "mild_elevated": 0.3,
           "high_AKI": 0.15
+        },
+        "D345": {
+          "normal": 0.65,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.1
+        },
+        "D335": {
+          "normal": 0.3,
+          "mild_elevated": 0.35,
+          "high_AKI": 0.35
+        },
+        "D290": {
+          "normal": 0.5,
+          "mild_elevated": 0.3,
+          "high_AKI": 0.2
         }
       }
     },

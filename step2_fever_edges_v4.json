@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4741,
+  "total_edges": 4762,
   "edges": [
     {
       "from": "R01",
@@ -37684,6 +37684,153 @@
       "from_name": "bronchiectasis",
       "to_name": "S07",
       "reason": "気管支拡張: 倦怠感(慢性消耗/感染, 40-50%)"
+    },
+    {
+      "from": "D286",
+      "to": "E03",
+      "from_name": "hypercalcemia",
+      "to_name": "E03",
+      "reason": "高Ca: 高血圧→低血圧(脱水時)"
+    },
+    {
+      "from": "D323",
+      "to": "M02",
+      "from_name": "placental_abruption",
+      "to_name": "M02",
+      "reason": "胎盤早期剥離: 出血性ショック(30-40%)"
+    },
+    {
+      "from": "D128",
+      "to": "S13",
+      "from_name": "epiglottitis",
+      "to_name": "S13",
+      "reason": "喉頭蓋炎: 嘔気(嚥下困難, 20-30%)"
+    },
+    {
+      "from": "D340",
+      "to": "S01",
+      "from_name": "mitral_stenosis",
+      "to_name": "S01",
+      "reason": "僧帽弁狭窄: 咳嗽(肺うっ血, 40-50%)"
+    },
+    {
+      "from": "D340",
+      "to": "E38",
+      "from_name": "mitral_stenosis",
+      "to_name": "E38",
+      "reason": "僧帽弁狭窄: 高血圧(合併, 40-50%)"
+    },
+    {
+      "from": "D340",
+      "to": "E05",
+      "from_name": "mitral_stenosis",
+      "to_name": "E05",
+      "reason": "僧帽弁狭窄: SpO2低下(肺うっ血, 30-40%)"
+    },
+    {
+      "from": "D340",
+      "to": "L11",
+      "from_name": "mitral_stenosis",
+      "to_name": "L11",
+      "reason": "僧帽弁狭窄: 肝酵素上昇(うっ血肝, 20-30%)"
+    },
+    {
+      "from": "D334",
+      "to": "S13",
+      "from_name": "IgG4_RD",
+      "to_name": "S13",
+      "reason": "IgG4: 嘔気嘔吐(膵炎, 30-40%)"
+    },
+    {
+      "from": "D334",
+      "to": "L01",
+      "from_name": "IgG4_RD",
+      "to_name": "L01",
+      "reason": "IgG4: WBC上昇(炎症, 30-40%)"
+    },
+    {
+      "from": "D334",
+      "to": "L02",
+      "from_name": "IgG4_RD",
+      "to_name": "L02",
+      "reason": "IgG4: CRP上昇(炎症, 40-50%)"
+    },
+    {
+      "from": "D287",
+      "to": "L01",
+      "from_name": "gallbladder_cancer",
+      "to_name": "L01",
+      "reason": "胆嚢癌: WBC上昇(閉塞性胆管炎, 40-50%)"
+    },
+    {
+      "from": "D287",
+      "to": "L02",
+      "from_name": "gallbladder_cancer",
+      "to_name": "L02",
+      "reason": "胆嚢癌: CRP上昇(閉塞性胆管炎, 40-50%)"
+    },
+    {
+      "from": "D287",
+      "to": "S15",
+      "from_name": "gallbladder_cancer",
+      "to_name": "S15",
+      "reason": "胆嚢癌: 右上腹部/腰背部痛(60-70%)"
+    },
+    {
+      "from": "D345",
+      "to": "E36",
+      "from_name": "sheehan",
+      "to_name": "E36",
+      "reason": "Sheehan: 浮腫(甲状腺低下→粘液水腫, 30-40%)"
+    },
+    {
+      "from": "D345",
+      "to": "L55",
+      "from_name": "sheehan",
+      "to_name": "L55",
+      "reason": "Sheehan: Cr上昇(副腎不全→腎前性AKI, 15-20%)"
+    },
+    {
+      "from": "D343",
+      "to": "L01",
+      "from_name": "takotsubo",
+      "to_name": "L01",
+      "reason": "たこつぼ: WBC上昇(カテコラミンストレス, 40-50%)"
+    },
+    {
+      "from": "D335",
+      "to": "L55",
+      "from_name": "PAD",
+      "to_name": "L55",
+      "reason": "PAD: Cr上昇(DM/CKD背景, 40-50%)"
+    },
+    {
+      "from": "D335",
+      "to": "E02",
+      "from_name": "PAD",
+      "to_name": "E02",
+      "reason": "PAD: 頻脈(急性虚血/疼痛, 20-30%)"
+    },
+    {
+      "from": "D295",
+      "to": "S13",
+      "from_name": "cluster_headache",
+      "to_name": "S13",
+      "reason": "群発頭痛: 嘔気(30-40%)"
+    },
+    {
+      "from": "D301",
+      "to": "S07",
+      "from_name": "NMOSD",
+      "to_name": "S07",
+      "reason": "NMOSD: 倦怠感(慢性消耗, 40-50%)"
+    },
+    {
+      "from": "D290",
+      "to": "L55",
+      "from_name": "bladder_cancer",
+      "to_name": "L55",
+      "reason": "膀胱癌: Cr上昇(尿路閉塞→腎後性AKI, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
