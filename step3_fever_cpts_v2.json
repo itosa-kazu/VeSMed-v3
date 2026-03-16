@@ -12025,6 +12025,11 @@
           "normal": 0.5,
           "confused": 0.3,
           "obtunded": 0.2
+        },
+        "D328": {
+          "normal": 0.3,
+          "confused": 0.35,
+          "obtunded": 0.35
         }
       }
     },
@@ -31796,6 +31801,11 @@
           "normal": 0.25,
           "mild_elevated": 0.35,
           "high_AKI": 0.4
+        },
+        "D328": {
+          "normal": 0.4,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.35
         }
       }
     },
