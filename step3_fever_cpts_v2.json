@@ -7884,6 +7884,13 @@
           "38.0_39.0": 0.08,
           "39.0_40.0": 0.04,
           "over_40.0": 0.01
+        },
+        "D286": {
+          "under_37.5": 0.5,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.08
         }
       }
     },
@@ -14249,6 +14256,12 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.2
+        },
+        "D286": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -15448,6 +15461,12 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.25,
           "high_over_10": 0.2
+        },
+        "D286": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.25
         }
       }
     },
@@ -16981,6 +17000,11 @@
           "normal": 0.65,
           "mild_elevated": 0.2,
           "very_high": 0.15
+        },
+        "D329": {
+          "normal": 0.6,
+          "mild_elevated": 0.25,
+          "very_high": 0.15
         }
       }
     },
@@ -17456,6 +17480,14 @@
           "thrombocytopenia": 0.4,
           "eosinophilia": 0.02,
           "lymphocyte_predominant": 0.06
+        },
+        "D261": {
+          "normal": 0.2,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.15,
+          "thrombocytopenia": 0.1,
+          "eosinophilia": 0.02,
+          "lymphocyte_predominant": 0.48
         }
       }
     },
@@ -17755,6 +17787,10 @@
         "D323": {
           "normal": 0.4,
           "elevated": 0.6
+        },
+        "D278": {
+          "normal": 0.3,
+          "elevated": 0.7
         }
       }
     },
@@ -19038,6 +19074,18 @@
         "D348": {
           "normal": 0.6,
           "hyponatremia": 0.25,
+          "hyperkalemia": 0.05,
+          "other": 0.1
+        },
+        "D322": {
+          "normal": 0.6,
+          "hyponatremia": 0.1,
+          "hyperkalemia": 0.2,
+          "other": 0.1
+        },
+        "D329": {
+          "normal": 0.55,
+          "hyponatremia": 0.3,
           "hyperkalemia": 0.05,
           "other": 0.1
         }
@@ -20794,6 +20842,11 @@
           "absent": 0.6,
           "mild": 0.3,
           "severe": 0.1
+        },
+        "D350": {
+          "absent": 0.55,
+          "mild": 0.3,
+          "severe": 0.15
         }
       }
     },
@@ -24018,6 +24071,11 @@
           "absent": 0.1,
           "watery": 0.75,
           "bloody": 0.15
+        },
+        "D263": {
+          "absent": 0.8,
+          "non_bloody": 0.15,
+          "bloody": 0.05
         }
       }
     },
@@ -24541,6 +24599,10 @@
           "sharp": 0.3,
           "pressure": 0.5,
           "tearing": 0.14
+        },
+        "D264": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -30201,6 +30263,11 @@
           "absent": 0.55,
           "unilateral": 0.05,
           "bilateral": 0.4
+        },
+        "D329": {
+          "absent": 0.65,
+          "unilateral": 0.15,
+          "bilateral": 0.2
         }
       }
     },
@@ -31286,6 +31353,12 @@
           "hyperglycemia": 0.35,
           "hypoglycemia": 0.05,
           "very_high_over_500": 0.1
+        },
+        "D316": {
+          "normal": 0.4,
+          "hyperglycemia": 0.4,
+          "hypoglycemia": 0.05,
+          "very_high_over_500": 0.15
         }
       }
     },
@@ -32085,6 +32158,11 @@
           "normal": 0.55,
           "mild_elevated": 0.25,
           "high_AKI": 0.2
+        },
+        "D329": {
+          "normal": 0.5,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.25
         }
       }
     },
