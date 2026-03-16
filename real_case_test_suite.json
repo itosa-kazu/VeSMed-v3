@@ -13341,7 +13341,8 @@
         "E01": "under_37.5",
         "L02": "mild_0.3_3",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S25": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13386,7 +13387,8 @@
         "S07": "severe",
         "S52": "bilateral",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S25": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14407,7 +14409,8 @@
         "L16": "elevated",
         "T01": "1w_to_3w",
         "T02": "gradual_days",
-        "L61": "elevated"
+        "L61": "elevated",
+        "S38": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14429,7 +14432,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "L63": "absent",
-        "L61": "normal"
+        "L61": "normal",
+        "S38": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14506,7 +14510,8 @@
         "S10": "present",
         "L05": "pyuria_bacteriuria",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S33": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14530,7 +14535,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "S15": "present",
-        "L67": "postrenal"
+        "L67": "postrenal",
+        "S33": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16197,7 +16203,8 @@
         "S52": "unilateral_weakness",
         "S07": "severe",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S36": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -16219,7 +16226,8 @@
         "S53": "dysarthria",
         "S07": "mild",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S36": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16241,7 +16249,8 @@
         "S07": "severe",
         "S15": "present",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S36": "present"
       },
       "risk_factors": {
         "R01": "65_plus",

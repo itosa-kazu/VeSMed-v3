@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4945,
+  "total_edges": 4954,
   "edges": [
     {
       "from": "R01",
@@ -39112,6 +39112,69 @@
       "from_name": "HAE",
       "to_name": "E09",
       "reason": "HAE: 腹部軟(腸管浮腫だが腹膜刺激なし, 70-80%)"
+    },
+    {
+      "from": "D271",
+      "to": "S25",
+      "from_name": "EoE",
+      "to_name": "S25",
+      "reason": "EoE: 嚥下困難(定義的, 70-80%)"
+    },
+    {
+      "from": "D272",
+      "to": "S25",
+      "from_name": "achalasia",
+      "to_name": "S25",
+      "reason": "アカラシア: 嚥下困難(定義的, 90%+)"
+    },
+    {
+      "from": "D303",
+      "to": "S36",
+      "from_name": "PD",
+      "to_name": "S36",
+      "reason": "パーキンソン: 安静時振戦(定義的, 70-80%)"
+    },
+    {
+      "from": "D304",
+      "to": "S36",
+      "from_name": "DLB",
+      "to_name": "S36",
+      "reason": "DLB: 振戦(PDより少ない, 30-40%)"
+    },
+    {
+      "from": "D307",
+      "to": "S10",
+      "from_name": "TM",
+      "to_name": "S10",
+      "reason": "横断性脊髄炎: 排尿障害(膀胱直腸障害, 60-80%)"
+    },
+    {
+      "from": "D320",
+      "to": "S25",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S25",
+      "reason": "喉頭癌: 嚥下困難(進行期, 30-40%)"
+    },
+    {
+      "from": "D338",
+      "to": "S26",
+      "from_name": "intussusception",
+      "to_name": "S26",
+      "reason": "腸重積: 血便(イチゴゼリー便, 50-60%)"
+    },
+    {
+      "from": "D288",
+      "to": "S38",
+      "from_name": "testicular",
+      "to_name": "S38",
+      "reason": "精巣腫瘍: 陰嚢腫脹(定義的)"
+    },
+    {
+      "from": "D290",
+      "to": "S33",
+      "from_name": "bladder_cancer",
+      "to_name": "S33",
+      "reason": "膀胱癌: 血尿(定義的, 80%+)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
