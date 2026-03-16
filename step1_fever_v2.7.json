@@ -7425,6 +7425,17 @@
         "postrenal"
       ],
       "note": "腎前性:BUN/Cr比>20+FENa<1%+尿Na<20。腎性:FENa>2%+尿沈渣異常。腎後性:水腎症+尿閉"
+    },
+    {
+      "id": "S58",
+      "name": "floaters_photopsia",
+      "name_ja": "飛蚊症/光視症",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "網膜剥離の前駆症状(飛蚊症→光視症→視野欠損)。硝子体出血/後部硝子体剥離でも"
     }
   ]
 }

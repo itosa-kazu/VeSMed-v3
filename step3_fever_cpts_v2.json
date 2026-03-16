@@ -33969,6 +33969,27 @@
           "postrenal": 0.05
         }
       }
+    },
+    "S58": {
+      "description": "飛蚊症/光視症",
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D339": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D301": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D294": {
+          "absent": 0.65,
+          "present": 0.35
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
