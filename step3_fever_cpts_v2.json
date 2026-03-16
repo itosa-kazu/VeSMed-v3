@@ -8825,6 +8825,26 @@
           "under_100": 0.3,
           "100_120": 0.35,
           "over_120": 0.35
+        },
+        "D322": {
+          "under_100": 0.35,
+          "100_120": 0.35,
+          "over_120": 0.3
+        },
+        "D321": {
+          "under_100": 0.4,
+          "100_120": 0.3,
+          "over_120": 0.3
+        },
+        "D345": {
+          "under_100": 0.3,
+          "100_120": 0.35,
+          "over_120": 0.35
+        },
+        "D348": {
+          "under_100": 0.3,
+          "100_120": 0.35,
+          "over_120": 0.35
         }
       }
     },
@@ -9854,6 +9874,11 @@
           "normal_over_96": 0.4,
           "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D341": {
+          "normal_over_96": 0.6,
+          "mild_hypoxia_93_96": 0.25,
+          "severe_hypoxia_under_93": 0.15
         }
       }
     },
@@ -14130,6 +14155,24 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.2
+        },
+        "D322": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.22
+        },
+        "D323": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.27
+        },
+        "D326": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.4
         }
       }
     },
@@ -16839,6 +16882,16 @@
           "normal": 0.4,
           "mild_elevated": 0.3,
           "very_high": 0.3
+        },
+        "D326": {
+          "normal": 0.3,
+          "mild_elevated": 0.3,
+          "very_high": 0.4
+        },
+        "D348": {
+          "normal": 0.55,
+          "mild_elevated": 0.3,
+          "very_high": 0.15
         }
       }
     },
@@ -17306,6 +17359,14 @@
           "thrombocytopenia": 0.8,
           "eosinophilia": 0.02,
           "lymphocyte_predominant": 0.06
+        },
+        "D323": {
+          "normal": 0.4,
+          "left_shift": 0.1,
+          "atypical_lymphocytes": 0.02,
+          "thrombocytopenia": 0.4,
+          "eosinophilia": 0.02,
+          "lymphocyte_predominant": 0.06
         }
       }
     },
@@ -17595,6 +17656,10 @@
           "elevated": 0.9
         },
         "D322": {
+          "normal": 0.05,
+          "elevated": 0.95
+        },
+        "D326": {
           "normal": 0.05,
           "elevated": 0.95
         }
@@ -17901,6 +17966,10 @@
         "D65": {
           "normal": 0.2,
           "elevated": 0.8
+        },
+        "D326": {
+          "normal": 0.05,
+          "elevated": 0.95
         }
       }
     },
@@ -19398,6 +19467,11 @@
           "absent": 0.3,
           "dry": 0.5,
           "productive": 0.2
+        },
+        "D328": {
+          "absent": 0.3,
+          "dry": 0.25,
+          "productive": 0.45
         }
       }
     },
@@ -20140,6 +20214,11 @@
           "absent": 0.35,
           "on_exertion": 0.35,
           "at_rest": 0.3
+        },
+        "D348": {
+          "absent": 0.55,
+          "on_exertion": 0.25,
+          "at_rest": 0.2
         }
       }
     },
@@ -22982,6 +23061,15 @@
           "LLQ": 0.02,
           "suprapubic": 0.02,
           "diffuse": 0.04
+        },
+        "D323": {
+          "absent": 0.08,
+          "epigastric": 0.05,
+          "RUQ": 0.02,
+          "RLQ": 0.05,
+          "LLQ": 0.05,
+          "suprapubic": 0.4,
+          "diffuse": 0.35
         }
       }
     },
@@ -23534,6 +23622,14 @@
         "D336": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D327": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D333": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -25121,6 +25217,10 @@
         "D346": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D327": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -25299,6 +25399,14 @@
         "D348": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D306": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D345": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -31247,6 +31355,11 @@
           "absent": 0.5,
           "unilateral_weakness": 0.35,
           "bilateral": 0.15
+        },
+        "D333": {
+          "absent": 0.5,
+          "unilateral_weakness": 0.35,
+          "bilateral": 0.15
         }
       }
     },
@@ -31806,6 +31919,11 @@
           "normal": 0.4,
           "mild_elevated": 0.25,
           "high_AKI": 0.35
+        },
+        "D322": {
+          "normal": 0.5,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.25
         }
       }
     },
