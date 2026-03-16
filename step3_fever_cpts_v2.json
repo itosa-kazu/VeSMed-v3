@@ -28663,6 +28663,60 @@
           "positive": 0.7
         }
       }
+    },
+    "L56": {
+      "leak": {
+        "not_done": 0.6,
+        "negative": 0.35,
+        "positive": 0.05
+      },
+      "parent_effects": {
+        "D291": {
+          "not_done": 0.05,
+          "negative": 0.02,
+          "positive": 0.93
+        },
+        "D174": {
+          "not_done": 0.2,
+          "negative": 0.78,
+          "positive": 0.02
+        },
+        "D136": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D137": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D154": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D86": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D27": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D275": {
+          "not_done": 0.25,
+          "negative": 0.7,
+          "positive": 0.05
+        },
+        "D276": {
+          "not_done": 0.2,
+          "negative": 0.6,
+          "positive": 0.2
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

@@ -6622,6 +6622,18 @@
       ],
       "severity": "critical",
       "note": "AQP4抗体陽性。重度視神経炎(失明)+横断性脊髄炎(対麻痺/四肢麻痺)。MSとの鑑別重要。女性に多い"
+    },
+    {
+      "id": "L56",
+      "name": "beta_hCG",
+      "name_ja": "β-hCG(妊娠検査)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "not_done=未検査, negative=陰性, positive=陽性"
     }
   ]
 }
