@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4029,
+  "total_edges": 4073,
   "edges": [
     {
       "from": "R01",
@@ -32700,6 +32700,314 @@
       "from_name": "biliary_colic",
       "to_name": "S15",
       "reason": "胆石: 背部放散痛(50-60%)"
+    },
+    {
+      "from": "D282",
+      "to": "S13",
+      "from_name": "mushroom_poisoning",
+      "to_name": "S13",
+      "reason": "キノコ中毒: 嘔吐(90%+)"
+    },
+    {
+      "from": "D282",
+      "to": "S14",
+      "from_name": "mushroom_poisoning",
+      "to_name": "S14",
+      "reason": "キノコ中毒: 下痢(80%+)"
+    },
+    {
+      "from": "D282",
+      "to": "S12",
+      "from_name": "mushroom_poisoning",
+      "to_name": "S12",
+      "reason": "キノコ中毒: 腹痛(70-80%)"
+    },
+    {
+      "from": "D282",
+      "to": "L11",
+      "from_name": "mushroom_poisoning",
+      "to_name": "L11",
+      "reason": "キノコ中毒: 肝酵素(ドクツルタケ型→著高)"
+    },
+    {
+      "from": "D282",
+      "to": "E16",
+      "from_name": "mushroom_poisoning",
+      "to_name": "E16",
+      "reason": "キノコ中毒: 意識障害(重症, 30-40%)"
+    },
+    {
+      "from": "D282",
+      "to": "L55",
+      "from_name": "mushroom_poisoning",
+      "to_name": "L55",
+      "reason": "キノコ中毒: AKI(肝腎症候群)"
+    },
+    {
+      "from": "D282",
+      "to": "E02",
+      "from_name": "mushroom_poisoning",
+      "to_name": "E02",
+      "reason": "キノコ中毒: 頻脈(脱水)"
+    },
+    {
+      "from": "D282",
+      "to": "E03",
+      "from_name": "mushroom_poisoning",
+      "to_name": "E03",
+      "reason": "キノコ中毒: 低血圧(脱水/ショック)"
+    },
+    {
+      "from": "D282",
+      "to": "T01",
+      "from_name": "mushroom_poisoning",
+      "to_name": "T01",
+      "reason": "キノコ中毒: 急性(6-24h後)"
+    },
+    {
+      "from": "D282",
+      "to": "T02",
+      "from_name": "mushroom_poisoning",
+      "to_name": "T02",
+      "reason": "キノコ中毒: 急性"
+    },
+    {
+      "from": "D283",
+      "to": "S52",
+      "from_name": "tetrodotoxin",
+      "to_name": "S52",
+      "reason": "フグ中毒: 四肢麻痺(上行性, 60-80%)"
+    },
+    {
+      "from": "D283",
+      "to": "S53",
+      "from_name": "tetrodotoxin",
+      "to_name": "S53",
+      "reason": "フグ中毒: 構音障害(口唇/舌痺れ, 80%+)"
+    },
+    {
+      "from": "D283",
+      "to": "S13",
+      "from_name": "tetrodotoxin",
+      "to_name": "S13",
+      "reason": "フグ中毒: 嘔吐(50-60%)"
+    },
+    {
+      "from": "D283",
+      "to": "S04",
+      "from_name": "tetrodotoxin",
+      "to_name": "S04",
+      "reason": "フグ中毒: 呼吸困難(呼吸筋麻痺, 40-60%)"
+    },
+    {
+      "from": "D283",
+      "to": "E03",
+      "from_name": "tetrodotoxin",
+      "to_name": "E03",
+      "reason": "フグ中毒: 低血圧(重症)"
+    },
+    {
+      "from": "D283",
+      "to": "E16",
+      "from_name": "tetrodotoxin",
+      "to_name": "E16",
+      "reason": "フグ中毒: 意識(通常保たれる, 重症で消失)"
+    },
+    {
+      "from": "D283",
+      "to": "T01",
+      "from_name": "tetrodotoxin",
+      "to_name": "T01",
+      "reason": "フグ中毒: 超急性(20分~3h)"
+    },
+    {
+      "from": "D283",
+      "to": "T02",
+      "from_name": "tetrodotoxin",
+      "to_name": "T02",
+      "reason": "フグ中毒: 突発"
+    },
+    {
+      "from": "D284",
+      "to": "E12",
+      "from_name": "pit_viper_bite",
+      "to_name": "E12",
+      "reason": "マムシ: 咬傷部腫脹/発赤"
+    },
+    {
+      "from": "D284",
+      "to": "S44",
+      "from_name": "pit_viper_bite",
+      "to_name": "S44",
+      "reason": "マムシ: 出血傾向(DIC, 30-40%)"
+    },
+    {
+      "from": "D284",
+      "to": "E02",
+      "from_name": "pit_viper_bite",
+      "to_name": "E02",
+      "reason": "マムシ: 頻脈(疼痛/ショック)"
+    },
+    {
+      "from": "D284",
+      "to": "L17",
+      "from_name": "pit_viper_bite",
+      "to_name": "L17",
+      "reason": "マムシ: CK上昇(横紋筋融解)"
+    },
+    {
+      "from": "D284",
+      "to": "L14",
+      "from_name": "pit_viper_bite",
+      "to_name": "L14",
+      "reason": "マムシ: 血小板減少(DIC)"
+    },
+    {
+      "from": "D284",
+      "to": "L55",
+      "from_name": "pit_viper_bite",
+      "to_name": "L55",
+      "reason": "マムシ: AKI(横紋筋融解/DIC)"
+    },
+    {
+      "from": "D284",
+      "to": "L01",
+      "from_name": "pit_viper_bite",
+      "to_name": "L01",
+      "reason": "マムシ: WBC上昇(ストレス)"
+    },
+    {
+      "from": "D284",
+      "to": "T01",
+      "from_name": "pit_viper_bite",
+      "to_name": "T01",
+      "reason": "マムシ: 超急性"
+    },
+    {
+      "from": "D284",
+      "to": "T02",
+      "from_name": "pit_viper_bite",
+      "to_name": "T02",
+      "reason": "マムシ: 突発"
+    },
+    {
+      "from": "D285",
+      "to": "S08",
+      "from_name": "decompression_sickness",
+      "to_name": "S08",
+      "reason": "減圧症: 関節痛(I型, 70-80%)"
+    },
+    {
+      "from": "D285",
+      "to": "S52",
+      "from_name": "decompression_sickness",
+      "to_name": "S52",
+      "reason": "減圧症: 神経症状(II型, 30-40%)"
+    },
+    {
+      "from": "D285",
+      "to": "E12",
+      "from_name": "decompression_sickness",
+      "to_name": "E12",
+      "reason": "減圧症: 皮膚(marbling/cutis marmorata, 10-20%)"
+    },
+    {
+      "from": "D285",
+      "to": "S05",
+      "from_name": "decompression_sickness",
+      "to_name": "S05",
+      "reason": "減圧症: 頭痛(30-40%)"
+    },
+    {
+      "from": "D285",
+      "to": "S07",
+      "from_name": "decompression_sickness",
+      "to_name": "S07",
+      "reason": "減圧症: 倦怠感(50-60%)"
+    },
+    {
+      "from": "D285",
+      "to": "S04",
+      "from_name": "decompression_sickness",
+      "to_name": "S04",
+      "reason": "減圧症: 呼吸困難(chokes, 重症, 10-20%)"
+    },
+    {
+      "from": "D285",
+      "to": "T01",
+      "from_name": "decompression_sickness",
+      "to_name": "T01",
+      "reason": "減圧症: 超急性(浮上後24h以内)"
+    },
+    {
+      "from": "D285",
+      "to": "T02",
+      "from_name": "decompression_sickness",
+      "to_name": "T02",
+      "reason": "減圧症: 急性"
+    },
+    {
+      "from": "D286",
+      "to": "S13",
+      "from_name": "hypercalcemia",
+      "to_name": "S13",
+      "reason": "高Ca: 嘔気/嘔吐(40-50%)"
+    },
+    {
+      "from": "D286",
+      "to": "S12",
+      "from_name": "hypercalcemia",
+      "to_name": "S12",
+      "reason": "高Ca: 腹痛(便秘/膵炎, 30-40%)"
+    },
+    {
+      "from": "D286",
+      "to": "E16",
+      "from_name": "hypercalcemia",
+      "to_name": "E16",
+      "reason": "高Ca: 意識障害(Ca>14で, 30-40%)"
+    },
+    {
+      "from": "D286",
+      "to": "S07",
+      "from_name": "hypercalcemia",
+      "to_name": "S07",
+      "reason": "高Ca: 倦怠感(60-70%)"
+    },
+    {
+      "from": "D286",
+      "to": "L55",
+      "from_name": "hypercalcemia",
+      "to_name": "L55",
+      "reason": "高Ca: AKI(脱水/Ca腎毒性)"
+    },
+    {
+      "from": "D286",
+      "to": "E02",
+      "from_name": "hypercalcemia",
+      "to_name": "E02",
+      "reason": "高Ca: 徐脈or頻脈(QT短縮/不整脈)"
+    },
+    {
+      "from": "D286",
+      "to": "L44",
+      "from_name": "hypercalcemia",
+      "to_name": "L44",
+      "reason": "高Ca: 電解質異常(Ca上昇→other)"
+    },
+    {
+      "from": "D286",
+      "to": "T01",
+      "from_name": "hypercalcemia",
+      "to_name": "T01",
+      "reason": "高Ca: 急性~亜急性"
+    },
+    {
+      "from": "D286",
+      "to": "T02",
+      "from_name": "hypercalcemia",
+      "to_name": "T02",
+      "reason": "高Ca: 亜急性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

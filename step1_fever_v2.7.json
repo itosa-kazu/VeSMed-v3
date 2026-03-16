@@ -6382,6 +6382,66 @@
       ],
       "severity": "critical",
       "note": "三徴:意識障害+呼吸抑制+縮瞳。ヘロイン/フェンタニル/処方オピオイド。ナロキソン拮抗"
+    },
+    {
+      "id": "D282",
+      "name": "mushroom_poisoning",
+      "name_ja": "キノコ中毒",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "テングタケ→ムスカリン症状(SLUDGE)。ドクツルタケ→6h後嘔吐下痢→肝不全(24-72h)。早期vs遅発型で予後異なる"
+    },
+    {
+      "id": "D283",
+      "name": "tetrodotoxin",
+      "name_ja": "フグ中毒(テトロドトキシン)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "Na+チャネル遮断→口唇/舌の痺れ→四肢麻痺→呼吸筋麻痺。摂取後20分~3時間で発症。解毒薬なし"
+    },
+    {
+      "id": "D284",
+      "name": "pit_viper_bite",
+      "name_ja": "マムシ咬傷",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "咬傷部の激痛+腫脹+出血(DIC)+横紋筋融解+AKI。局所→全身へ進展。抗毒素血清治療"
+    },
+    {
+      "id": "D285",
+      "name": "decompression_sickness",
+      "name_ja": "減圧症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "ダイビング後の急速浮上→窒素気泡→関節痛(I型)/神経症状(II型)。高圧酸素治療"
+    },
+    {
+      "id": "D286",
+      "name": "hypercalcemia",
+      "name_ja": "高カルシウム血症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "原発性副甲状腺機能亢進症/悪性腫瘍が二大原因。Stones/Bones/Groans/Moans/Psychic overtones"
     }
   ]
 }
