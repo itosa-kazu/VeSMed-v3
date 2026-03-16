@@ -13602,6 +13602,325 @@
       },
       "result": "",
       "notes": "11歳初経前. 虫垂炎と誤診. 出血性梗塞+壊死"
+    },
+    {
+      "id": "R533",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11324266",
+      "vignette": "72M 25PY喫煙. 1ヶ月の咳嗽(白色痰)+進行性呼吸困難+20ポンド体重減少. BP 126/72, HR 110, RR 16, T 36.5. K 5.7, Na 132, Cr 1.5, AST 43, ALT 87, WBC 9.4k. CXR:右下葉腫瘤. CT:中等量心嚢液+右胸水+リンパ節腫大. MRI:小脳転移",
+      "final_diagnosis": "転移性肺腺癌(心タンポナーデ+脳転移)",
+      "expected_id": "D277",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S04": "at_rest",
+        "S07": "severe",
+        "E02": "100_120",
+        "E01": "under_37.5",
+        "L01": "normal_4000_10000",
+        "L11": "mild_elevated",
+        "L44": "hyperkalemia",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "心タンポナーデ+右胸水+小脳転移. Na 132"
+    },
+    {
+      "id": "R534",
+      "source": "Case Rep 2020",
+      "pmcid": "PMC7273546",
+      "vignette": "46F HIV+(CD4 116). 2週間の進行性呼吸困難+起座呼吸+足関節腫脹. 頻脈+低酸素. WBC 13.5k, D-dimer 20, トロポニン0.286. CXR:心拡大. Echo:中等量心嚢液. CT:右肺門腫瘤+胸水+副腎結節. 脳MRI:2個の転移巣. 右下肢DVT",
+      "final_diagnosis": "転移性肺腺癌(TTF-1+)+心嚢液+DVT",
+      "expected_id": "D277",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "E36": "bilateral",
+        "E02": "100_120",
+        "L01": "high_10000_20000",
+        "L52": "very_high",
+        "L53": "mildly_elevated",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "HIV+CD4 116. D-dimer 20. DVT合併"
+    },
+    {
+      "id": "R535",
+      "source": "Case Rep 2017",
+      "pmcid": "PMC5552382",
+      "vignette": "53F 非喫煙. DM+HTN. 2週間の進行性呼吸困難+最小量湿性咳嗽+主観的発熱悪寒. HR 110, RR 25, SpO2 92%, BP 135/82. 両側底部ラ音. WBC 11.8k(PMN79%). CT:両側びまん性小結節性陰影+LUL腫瘤様浸潤+縦隔リンパ節",
+      "final_diagnosis": "肺腺癌(腺房型, TTF-1+, EGFR L858R+)",
+      "expected_id": "D277",
+      "in_scope": true,
+      "evidence": {
+        "S01": "productive",
+        "S04": "at_rest",
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "E07": "crackles",
+        "L01": "high_10000_20000",
+        "L04": "bilateral_infiltrate",
+        "T01": "1w_to_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "非喫煙. EGFR L858R+. 両側結節性陰影"
+    },
+    {
+      "id": "R536",
+      "source": "Case Rep 2019",
+      "pmcid": "PMC6954772",
+      "vignette": "73M ヒスパニック. 1ヶ月の左胸鋭痛(転倒後)+吸気/仰臥位増悪+労作時呼吸困難+大量盗汗+著明体重減少. 左肺聴診:下方減弱/上方消失, 打診:下方濁音/上方鼓音. CT:大量左水気胸+6x14x12cm頂部胸膜肥厚+Th12破壊",
+      "final_diagnosis": "びまん性上皮型悪性胸膜中皮腫(Stage IV)",
+      "expected_id": "D278",
+      "in_scope": true,
+      "evidence": {
+        "S21": "sharp",
+        "S04": "on_exertion",
+        "S07": "severe",
+        "E07": "decreased_absent",
+        "L04": "pleural_effusion",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "水気胸+胸膜肥厚14cm+脊椎破壊"
+    },
+    {
+      "id": "R537",
+      "source": "Case Rep 2016",
+      "pmcid": "PMC5174885",
+      "vignette": "77M 建設業(1980年以前, アスベスト曝露確認). 3ヶ月の全身脱力+倦怠感+10kg体重減少+盗汗+呼吸困難. T 37.5, HR 105, RR 22, SpO2 84%(RA!). 左肺crackles+両側下腿浮腫. CRP 142, LDH 421, Cr 5.75, eGFR 10, Alb 30, 蛋白尿6.4g/L",
+      "final_diagnosis": "悪性上皮型中皮腫+微小変化型ネフローゼ+ATN",
+      "expected_id": "D278",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S07": "severe",
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "E36": "bilateral",
+        "L02": "high_over_10",
+        "L16": "elevated",
+        "L55": "high_AKI",
+        "L04": "pleural_effusion",
+        "T01": "over_3w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 84%. Cr 5.75. アスベスト曝露確認"
+    },
+    {
+      "id": "R538",
+      "source": "Case Rep 2008",
+      "pmcid": "PMC2693698",
+      "vignette": "52M 5日前に鶏骨摂取. 3日間の重度嚥下困難+胸骨後痛+T 40℃(!). 頸部両側圧痛+皮膚炎症+浮腫+捻髪音(!). 両側疎なラ音. WBC 20k(好中球80%), CRP 120. CT:上部食道に骨片+咽頭後隙~後縦隔に遊離ガス+深部皮下膿瘍",
+      "final_diagnosis": "上部食道穿孔→頸部蜂窩織炎+縦隔炎",
+      "expected_id": "D279",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S02": "present",
+        "S21": "pressure",
+        "E07": "crackles",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "鶏骨. T 40. 頸部捻髪音. CRP 120"
+    },
+    {
+      "id": "R539",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12987540",
+      "vignette": "38M 14PY喫煙. 5日前鶏骨摂取. 進行性嚥下困難(固形→液体)+心窩部痛+湿性咳嗽. BP 85/35(ショック!), HR 132, RR 25, SpO2 88%, 混乱. WBC 13.6k, CRP 329(!), 乳酸3.0, pH 7.22. CT:食道壁びまん性肥厚+縦隔内多発遊離ガス+右傍縦隔浸潤+両側吸入性肺炎",
+      "final_diagnosis": "食道穿孔→急性縦隔炎+敗血症性ショック",
+      "expected_id": "D279",
+      "in_scope": true,
+      "evidence": {
+        "S02": "present",
+        "S01": "productive",
+        "S04": "at_rest",
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E04": "tachypnea_20_30",
+        "E05": "severe_hypoxia_under_93",
+        "E16": "confused",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "T01": "3d_to_1w",
+        "T02": "gradual_days"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CRP 329. pH 7.22. 敗血症性ショック"
+    },
+    {
+      "id": "R540",
+      "source": "Case Rep 2015",
+      "pmcid": "PMC4418099",
+      "vignette": "19M アルプラゾラム空包装発見. 意識不明+不規則騒音性呼吸+泡沫性流涎. T 38.8, HR 132, SBP 70-80, RR 23, SpO2 71%(!). GCS 3, 両側縮瞳(無反応), 全身低緊張+深部反射減弱. pH 7.1, pCO2 64.2, pO2 57.8, WBC 27.5k, Cr 206, AST/ALT 326, CPK 4858, INR 2.0. BZD 56.5ng/mL",
+      "final_diagnosis": "アルプラゾラム中毒→低酸素性白質脳症(致死的)",
+      "expected_id": "D280",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "38.0_39.0",
+        "L01": "very_high_over_20000",
+        "L55": "mild_elevated",
+        "L11": "very_high",
+        "L17": "very_high",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 71%. GCS 3. CPK 4858. 致死的"
+    },
+    {
+      "id": "R541",
+      "source": "Case Rep 2022",
+      "pmcid": "PMC9092135",
+      "vignette": "70F 公園で意識不明発見(SMS 1.5h後). GCS 6(E1V1M4), 固定縮瞳1mm, 角膜/頭眼/前庭反射消失, 筋緊張軽度亢進. T 35(低体温), BP 90/60, HR 70, RR 16(浅い), SpO2 85%. 血中:アルプラゾラム268, ロラゼパム861, ノルジアゼパム481. CT正常",
+      "final_diagnosis": "重症BZD中毒(アルプラゾラム+ロラゼパム80錠)",
+      "expected_id": "D280",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "GCS 6. 脳幹反射消失. BZD 80錠"
+    },
+    {
+      "id": "R542",
+      "source": "Case Rep 2007",
+      "pmcid": "PMC2151854",
+      "vignette": "44M 屋外で意識不明発見. BP 118/71, HR 117, RR 10(!), SpO2 75%, T 36.5, GCS 3. 低緊張性昏睡+深部反射消失+縮瞳. pH 7.30, PaO2 56, PaCO2 48. 血中メサドン1204ng/mL(治療域の3倍). ナロキソン持続静注31h(計9.1mg)→GCS 15回復",
+      "final_diagnosis": "メサドン+フルニトラゼパム中毒",
+      "expected_id": "D281",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "RR 10. SpO2 75%. メサドン3倍濃度. ナロキソン31h"
+    },
+    {
+      "id": "R543",
+      "source": "Case Rep 2024",
+      "pmcid": "PMC11199886",
+      "vignette": "38M ヘロイン吸入→中庭で意識不明発見. EMS:縮瞳+最小反応→ナロキソン後覚醒. T 96.7F, HR 57(徐脈), BP 100/52, RR 14, SpO2 98%(RA). 3h後:右下肢感覚異常→麻痺+緊満/圧痛/腫脹+足背動脈消失. CK 212845(!), K 8.0(!), Cr 3.0, WBC 19.4k",
+      "final_diagnosis": "ヘロイン中毒→コンパートメント症候群+横紋筋融解+AKI",
+      "expected_id": "D281",
+      "in_scope": true,
+      "evidence": {
+        "E16": "obtunded",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E01": "under_37.5",
+        "L17": "very_high",
+        "L44": "hyperkalemia",
+        "L55": "high_AKI",
+        "L01": "high_10000_20000",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CK 212845! K 8.0! コンパートメント症候群"
+    },
+    {
+      "id": "R544",
+      "source": "Case Rep 2025",
+      "pmcid": "PMC12044322",
+      "vignette": "33M IV heroin+HTN. ヘロイン使用数時間後に意識消失→ナロキソンで覚醒→胸痛+窒息感+喀血+咳嗽+呼吸困難. SpO2 66%(RA!), 頻脈, 頻呼吸, 両側ラ音. pH 7.20, pCO2 71, 乳酸4.5, PCT 15.84. CXR:びまん性両側斑状陰影. CTA:PE陰性",
+      "final_diagnosis": "ヘロイン誘発性非心原性肺水腫",
+      "expected_id": "D281",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S01": "productive",
+        "S44": "present",
+        "E16": "confused",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "E07": "crackles",
+        "L04": "bilateral_infiltrate",
+        "L02": "high_over_10",
+        "T01": "under_3d",
+        "T02": "sudden_hours"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "SpO2 66%. 非心原性肺水腫. PCT 15.84"
     }
   ],
   "total_cases": 110

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4073,
+  "total_edges": 4087,
   "edges": [
     {
       "from": "R01",
@@ -33008,6 +33008,104 @@
       "from_name": "hypercalcemia",
       "to_name": "T02",
       "reason": "高Ca: 亜急性"
+    },
+    {
+      "from": "D280",
+      "to": "E01",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "E01",
+      "reason": "BZD: 発熱(誤嚥性肺炎合併)"
+    },
+    {
+      "from": "D280",
+      "to": "L01",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "L01",
+      "reason": "BZD: WBC上昇(ストレス/誤嚥)"
+    },
+    {
+      "from": "D280",
+      "to": "L55",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "L55",
+      "reason": "BZD: AKI(横紋筋融解/低灌流)"
+    },
+    {
+      "from": "D280",
+      "to": "L11",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "L11",
+      "reason": "BZD: 肝酵素(低酸素性肝障害)"
+    },
+    {
+      "from": "D280",
+      "to": "L17",
+      "from_name": "benzodiazepine_OD",
+      "to_name": "L17",
+      "reason": "BZD: CK上昇(横紋筋融解/圧迫)"
+    },
+    {
+      "from": "D281",
+      "to": "L17",
+      "from_name": "opioid_OD",
+      "to_name": "L17",
+      "reason": "オピオイド: CK著高(横紋筋融解)"
+    },
+    {
+      "from": "D281",
+      "to": "L44",
+      "from_name": "opioid_OD",
+      "to_name": "L44",
+      "reason": "オピオイド: 高K(横紋筋融解)"
+    },
+    {
+      "from": "D281",
+      "to": "L55",
+      "from_name": "opioid_OD",
+      "to_name": "L55",
+      "reason": "オピオイド: AKI"
+    },
+    {
+      "from": "D281",
+      "to": "L01",
+      "from_name": "opioid_OD",
+      "to_name": "L01",
+      "reason": "オピオイド: WBC上昇"
+    },
+    {
+      "from": "D281",
+      "to": "L04",
+      "from_name": "opioid_OD",
+      "to_name": "L04",
+      "reason": "オピオイド: CXR(肺水腫)"
+    },
+    {
+      "from": "D281",
+      "to": "L02",
+      "from_name": "opioid_OD",
+      "to_name": "L02",
+      "reason": "オピオイド: CRP上昇(肺炎合併)"
+    },
+    {
+      "from": "D281",
+      "to": "S04",
+      "from_name": "opioid_OD",
+      "to_name": "S04",
+      "reason": "オピオイド: 呼吸困難(肺水腫)"
+    },
+    {
+      "from": "D281",
+      "to": "S01",
+      "from_name": "opioid_OD",
+      "to_name": "S01",
+      "reason": "オピオイド: 咳嗽(肺水腫)"
+    },
+    {
+      "from": "D281",
+      "to": "E07",
+      "from_name": "opioid_OD",
+      "to_name": "E07",
+      "reason": "オピオイド: 肺聴診(肺水腫)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
