@@ -10494,6 +10494,11 @@
           "soft_nontender": 0.1,
           "localized_tenderness": 0.3,
           "peritoneal_signs": 0.6
+        },
+        "D185": {
+          "soft_nontender": 0.7,
+          "localized_tenderness": 0.2,
+          "peritoneal_signs": 0.1
         }
       }
     },
@@ -12260,8 +12265,8 @@
           "present": 0.35
         },
         "D273": {
-          "absent": 0.25,
-          "present": 0.75
+          "absent": 0.1,
+          "present": 0.9
         },
         "D256": {
           "absent": 0.5,
@@ -28364,8 +28369,8 @@
           "gradual_days": 0.05
         },
         "D175": {
-          "sudden_hours": 0.2,
-          "gradual_days": 0.8
+          "sudden_hours": 0.4,
+          "gradual_days": 0.6
         },
         "D176": {
           "sudden_hours": 0.15,
@@ -28800,8 +28805,8 @@
           "gradual_days": 0.95
         },
         "D273": {
-          "sudden_hours": 0.5,
-          "gradual_days": 0.5
+          "sudden_hours": 0.7,
+          "gradual_days": 0.3
         },
         "D274": {
           "sudden_hours": 0.7,
