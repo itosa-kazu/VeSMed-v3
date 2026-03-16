@@ -12750,7 +12750,8 @@
         "E07": "crackles",
         "L01": "very_high_over_20000",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E02": "100_120"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -13517,7 +13518,8 @@
         "L14": "thrombocytopenia",
         "L11": "mild_elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14102,7 +14104,8 @@
         "L16": "elevated",
         "L52": "very_high",
         "T01": "3d_to_1w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14177,7 +14180,8 @@
         "E16": "confused",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14487,7 +14491,6 @@
         "S44": "present",
         "S13": "present",
         "E03": "hypotension_under_90",
-        "E02": "over_120",
         "E09": "peritoneal_signs",
         "T01": "under_3d",
         "T02": "sudden_hours",
@@ -14518,7 +14521,8 @@
         "T02": "sudden_hours",
         "L56": "positive",
         "R15": "yes",
-        "L62": "free_fluid"
+        "L62": "free_fluid",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14566,7 +14570,8 @@
         "E01": "under_37.5",
         "L02": "moderate_3_10",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14657,7 +14662,8 @@
         "E01": "under_37.5",
         "L11": "mild_elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14679,7 +14685,8 @@
         "S13": "present",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15825,7 +15832,8 @@
         "L02": "moderate_3_10",
         "L04": "bilateral_infiltrate",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16015,7 +16023,8 @@
         "L44": "other",
         "L11": "very_high",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -16375,7 +16384,8 @@
         "L44": "hyponatremia",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "L58": "low"
+        "L58": "low",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -16400,7 +16410,8 @@
         "L44": "hyponatremia",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "L58": "low"
+        "L58": "low",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -16971,7 +16982,8 @@
         "L11": "very_high",
         "L55": "normal",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -16996,7 +17008,8 @@
         "L44": "hyperkalemia",
         "L55": "high_AKI",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17704,7 +17717,8 @@
         "T01": "over_3w",
         "T02": "gradual_days",
         "E40": "ST_depression",
-        "E39": "LVH"
+        "E39": "LVH",
+        "E02": "under_100"
       },
       "risk_factors": {
         "R01": "18_39",
