@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 5009,
+  "total_edges": 5025,
   "edges": [
     {
       "from": "R01",
@@ -39560,6 +39560,118 @@
       "from_name": "nosocomial_meningitis",
       "to_name": "S60",
       "reason": "院内髄膜炎: 頭痛+局所神経症状"
+    },
+    {
+      "from": "D94",
+      "to": "E34",
+      "from_name": "IgG4",
+      "to_name": "E34",
+      "reason": "IgG4: 肝腫大(肝病変/胆管狭窄, 30-40%)"
+    },
+    {
+      "from": "D94",
+      "to": "L36",
+      "from_name": "IgG4",
+      "to_name": "L36",
+      "reason": "IgG4: アミラーゼ上昇(自己免疫性膵炎, 40-50%)"
+    },
+    {
+      "from": "D94",
+      "to": "S04",
+      "from_name": "IgG4",
+      "to_name": "S04",
+      "reason": "IgG4: 呼吸困難(肺病変, 15-20%)"
+    },
+    {
+      "from": "D94",
+      "to": "S25",
+      "from_name": "IgG4",
+      "to_name": "S25",
+      "reason": "IgG4: 嚥下困難(食道/胆管病変, 10-15%)"
+    },
+    {
+      "from": "D301",
+      "to": "S10",
+      "from_name": "NMOSD",
+      "to_name": "S10",
+      "reason": "NMOSD: 排尿障害(膀胱直腸障害, 60-80%!)"
+    },
+    {
+      "from": "D301",
+      "to": "S22",
+      "from_name": "NMOSD",
+      "to_name": "S22",
+      "reason": "NMOSD: 背部痛(脊髄炎, 40-50%)"
+    },
+    {
+      "from": "D276",
+      "to": "E09",
+      "from_name": "ovarian_torsion",
+      "to_name": "E09",
+      "reason": "卵巣捻転: 腹部圧痛(80%+)"
+    },
+    {
+      "from": "D337",
+      "to": "E03",
+      "from_name": "pyloric_stenosis",
+      "to_name": "E03",
+      "reason": "幽門狭窄: 低血圧(重度脱水, 30-40%)"
+    },
+    {
+      "from": "D312",
+      "to": "E01",
+      "from_name": "meningioma",
+      "to_name": "E01",
+      "reason": "髄膜腫: 通常無熱"
+    },
+    {
+      "from": "D276",
+      "to": "L11",
+      "from_name": "ovarian_torsion",
+      "to_name": "L11",
+      "reason": "卵巣捻転: 肝酵素正常(腹腔内疾患で上昇なし)"
+    },
+    {
+      "from": "D301",
+      "to": "E07",
+      "from_name": "NMOSD",
+      "to_name": "E07",
+      "reason": "NMOSD: 肺聴診正常(神経疾患)"
+    },
+    {
+      "from": "D301",
+      "to": "L04",
+      "from_name": "NMOSD",
+      "to_name": "L04",
+      "reason": "NMOSD: CXR正常(神経疾患)"
+    },
+    {
+      "from": "D337",
+      "to": "E16",
+      "from_name": "pyloric_stenosis",
+      "to_name": "E16",
+      "reason": "幽門狭窄: 意識(脱水で嗜眠あるが通常清明)"
+    },
+    {
+      "from": "D337",
+      "to": "S04",
+      "from_name": "pyloric_stenosis",
+      "to_name": "S04",
+      "reason": "幽門狭窄: 呼吸困難なし(消化器疾患)"
+    },
+    {
+      "from": "D337",
+      "to": "L01",
+      "from_name": "pyloric_stenosis",
+      "to_name": "L01",
+      "reason": "幽門狭窄: WBC(脱水で軽度上昇あり)"
+    },
+    {
+      "from": "D312",
+      "to": "S13",
+      "from_name": "meningioma",
+      "to_name": "S13",
+      "reason": "髄膜腫: 嘔吐(頭蓋内圧亢進, 25-35%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

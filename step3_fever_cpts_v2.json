@@ -7846,6 +7846,13 @@
           "38.0_39.0": 0.1,
           "39.0_40.0": 0.06,
           "over_40.0": 0.02
+        },
+        "D312": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.05,
+          "39.0_40.0": 0.01,
+          "over_40.0": 0.01
         }
       }
     },
@@ -9226,6 +9233,10 @@
         "D346": {
           "normal_over_90": 0.6,
           "hypotension_under_90": 0.4
+        },
+        "D337": {
+          "normal_over_90": 0.5,
+          "hypotension_under_90": 0.5
         }
       }
     },
@@ -10311,6 +10322,12 @@
           "crackles": 0.45,
           "wheezes": 0.1,
           "decreased_absent": 0.1
+        },
+        "D301": {
+          "clear": 0.85,
+          "crackles": 0.08,
+          "wheezes": 0.03,
+          "decreased_absent": 0.04
         }
       }
     },
@@ -10506,6 +10523,11 @@
           "soft_nontender": 0.7,
           "localized_tenderness": 0.2,
           "peritoneal_signs": 0.1
+        },
+        "D276": {
+          "soft_nontender": 0.1,
+          "localized_tenderness": 0.75,
+          "peritoneal_signs": 0.15
         }
       }
     },
@@ -12139,6 +12161,11 @@
           "normal": 0.85,
           "confused": 0.12,
           "obtunded": 0.03
+        },
+        "D337": {
+          "normal": 0.6,
+          "confused": 0.3,
+          "obtunded": 0.1
         }
       }
     },
@@ -12759,6 +12786,10 @@
         "D151": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D94": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -14297,6 +14328,12 @@
           "normal_4000_10000": 0.4,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.15
+        },
+        "D337": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.1
         }
       }
     },
@@ -16236,6 +16273,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.53,
           "pneumothorax": 0.03
+        },
+        "D301": {
+          "normal": 0.9,
+          "lobar_infiltrate": 0.03,
+          "bilateral_infiltrate": 0.02,
+          "BHL": 0.01,
+          "pleural_effusion": 0.02,
+          "pneumothorax": 0.02
         }
       }
     },
@@ -17061,6 +17106,11 @@
           "normal": 0.05,
           "mild_elevated": 0.2,
           "very_high": 0.75
+        },
+        "D276": {
+          "normal": 0.95,
+          "mild_elevated": 0.04,
+          "very_high": 0.01
         }
       }
     },
@@ -18814,6 +18864,11 @@
           "normal": 0.02,
           "elevated": 0.18,
           "very_high": 0.8
+        },
+        "D94": {
+          "normal": 0.35,
+          "elevated": 0.45,
+          "very_high": 0.2
         }
       }
     },
@@ -20441,6 +20496,16 @@
           "absent": 0.65,
           "on_exertion": 0.2,
           "at_rest": 0.15
+        },
+        "D94": {
+          "absent": 0.65,
+          "on_exertion": 0.25,
+          "at_rest": 0.1
+        },
+        "D337": {
+          "absent": 0.9,
+          "on_exertion": 0.07,
+          "at_rest": 0.03
         }
       }
     },
@@ -23927,6 +23992,10 @@
         "D309": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D312": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -24771,6 +24840,10 @@
         "D132": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D301": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -24908,6 +24981,10 @@
         "D320": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D94": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -29375,6 +29452,10 @@
         "D307": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D301": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
