@@ -8716,7 +8716,8 @@
         "E01": "under_37.5",
         "E38": "elevated_140_180",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -8739,7 +8740,8 @@
         "E02": "over_120",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -8763,7 +8765,8 @@
         "E01": "under_37.5",
         "S07": "severe",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -8786,7 +8789,8 @@
         "E16": "confused",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14643,7 +14647,8 @@
         "L02": "moderate_3_10",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E02": "under_100"
+        "E02": "under_100",
+        "S59": "continuous_rotatory"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14667,7 +14672,8 @@
         "E01": "38.0_39.0",
         "E02": "under_100",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S59": "continuous_rotatory"
       },
       "risk_factors": {
         "R01": "6_12",
@@ -14689,7 +14695,8 @@
         "S05": "mild",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S59": "positional_brief"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14710,7 +14717,8 @@
         "S13": "present",
         "E01": "under_37.5",
         "T01": "1w_to_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S59": "positional_brief"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14735,7 +14743,8 @@
         "L11": "mild_elevated",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E02": "under_100"
+        "E02": "under_100",
+        "S60": "unilateral_pulsating"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14758,7 +14767,8 @@
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E02": "under_100"
+        "E02": "under_100",
+        "S60": "unilateral_pulsating"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14781,7 +14791,8 @@
         "E01": "under_37.5",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "S13": "present"
+        "S13": "present",
+        "S60": "periorbital_stabbing"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14804,7 +14815,8 @@
         "S13": "present",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S60": "periorbital_stabbing"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14825,7 +14837,8 @@
         "S05": "mild",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "bilateral_pressing"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14847,7 +14860,8 @@
         "S07": "mild",
         "E01": "under_37.5",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "bilateral_pressing"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14869,7 +14883,8 @@
         "E01": "37.5_38.0",
         "E38": "elevated_140_180",
         "T01": "over_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S60": "electric_triggered"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -15220,7 +15235,8 @@
         "E01": "under_37.5",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "S42": "present"
+        "S42": "present",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15243,7 +15259,8 @@
         "E16": "confused",
         "E38": "crisis_over_180",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S60": "progressive_with_neuro"
       },
       "risk_factors": {
         "R01": "18_39",

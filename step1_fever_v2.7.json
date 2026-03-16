@@ -7436,6 +7436,36 @@
         "present"
       ],
       "note": "網膜剥離の前駆症状(飛蚊症→光視症→視野欠損)。硝子体出血/後部硝子体剥離でも"
+    },
+    {
+      "id": "S59",
+      "name": "vertigo_pattern",
+      "name_ja": "めまいの性状",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "positional_brief",
+        "continuous_rotatory",
+        "episodic_with_hearing",
+        "non_rotatory_disequilibrium"
+      ],
+      "note": "positional_brief: BPPV(頭位変換で誘発, <1分)。continuous_rotatory: 前庭神経炎(持続性回転性, 数日)。episodic_with_hearing: メニエール(反復性回転性+聴力低下, 20分~数時間)。non_rotatory: ふらつき/不安定感(中枢性/薬剤性/起立性低血圧)"
+    },
+    {
+      "id": "S60",
+      "name": "headache_pattern",
+      "name_ja": "頭痛のパターン",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "bilateral_pressing",
+        "unilateral_pulsating",
+        "periorbital_stabbing",
+        "thunderclap",
+        "progressive_with_neuro",
+        "electric_triggered"
+      ],
+      "note": "bilateral_pressing: 緊張型頭痛。unilateral_pulsating: 片頭痛。periorbital_stabbing: 群発頭痛(激烈+自律神経症状)。thunderclap: SAH/CVST(突発worst-ever)。progressive_with_neuro: 脳腫瘍(進行性+局所神経症状)。electric_triggered: 三叉神経痛(電撃様+トリガー誘発)"
     }
   ]
 }

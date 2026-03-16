@@ -33990,6 +33990,216 @@
           "present": 0.35
         }
       }
+    },
+    "S59": {
+      "description": "めまいの性状",
+      "leak": {
+        "absent": 0.85,
+        "positional_brief": 0.05,
+        "continuous_rotatory": 0.03,
+        "episodic_with_hearing": 0.02,
+        "non_rotatory_disequilibrium": 0.05
+      },
+      "parent_effects": {
+        "D293": {
+          "absent": 0.03,
+          "positional_brief": 0.9,
+          "continuous_rotatory": 0.02,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.03
+        },
+        "D292": {
+          "absent": 0.03,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.85,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.05
+        },
+        "D138": {
+          "absent": 0.4,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.15,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.4
+        },
+        "D139": {
+          "absent": 0.4,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.15,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.4
+        },
+        "D302": {
+          "absent": 0.15,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.05,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.75
+        },
+        "D303": {
+          "absent": 0.3,
+          "positional_brief": 0.03,
+          "continuous_rotatory": 0.05,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.6
+        },
+        "D304": {
+          "absent": 0.2,
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.05,
+          "episodic_with_hearing": 0.02,
+          "non_rotatory_disequilibrium": 0.68
+        }
+      }
+    },
+    "S60": {
+      "description": "頭痛のパターン",
+      "leak": {
+        "absent": 0.7,
+        "bilateral_pressing": 0.1,
+        "unilateral_pulsating": 0.08,
+        "periorbital_stabbing": 0.02,
+        "thunderclap": 0.03,
+        "progressive_with_neuro": 0.04,
+        "electric_triggered": 0.03
+      },
+      "parent_effects": {
+        "D296": {
+          "absent": 0.03,
+          "bilateral_pressing": 0.9,
+          "unilateral_pulsating": 0.02,
+          "periorbital_stabbing": 0.01,
+          "thunderclap": 0.01,
+          "progressive_with_neuro": 0.01,
+          "electric_triggered": 0.02
+        },
+        "D294": {
+          "absent": 0.03,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.8,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.01,
+          "electric_triggered": 0.02
+        },
+        "D295": {
+          "absent": 0.02,
+          "bilateral_pressing": 0.03,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.85,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.01,
+          "electric_triggered": 0.02
+        },
+        "D297": {
+          "absent": 0.02,
+          "bilateral_pressing": 0.02,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.03,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.01,
+          "electric_triggered": 0.87
+        },
+        "D155": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.03,
+          "unilateral_pulsating": 0.02,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.82,
+          "progressive_with_neuro": 0.03,
+          "electric_triggered": 0.03
+        },
+        "D315": {
+          "absent": 0.03,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.3,
+          "progressive_with_neuro": 0.5,
+          "electric_triggered": 0.05
+        },
+        "D311": {
+          "absent": 0.1,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.75,
+          "electric_triggered": 0.03
+        },
+        "D312": {
+          "absent": 0.2,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.58,
+          "electric_triggered": 0.03
+        },
+        "D313": {
+          "absent": 0.2,
+          "bilateral_pressing": 0.08,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.6,
+          "electric_triggered": 0.03
+        },
+        "D164": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.1,
+          "unilateral_pulsating": 0.03,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.02,
+          "progressive_with_neuro": 0.75,
+          "electric_triggered": 0.03
+        },
+        "D146": {
+          "absent": 0.15,
+          "bilateral_pressing": 0.55,
+          "unilateral_pulsating": 0.1,
+          "periorbital_stabbing": 0.03,
+          "thunderclap": 0.1,
+          "progressive_with_neuro": 0.05,
+          "electric_triggered": 0.02
+        },
+        "D13": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.3,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.15,
+          "progressive_with_neuro": 0.4,
+          "electric_triggered": 0.03
+        },
+        "D149": {
+          "absent": 0.05,
+          "bilateral_pressing": 0.75,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.03,
+          "progressive_with_neuro": 0.07,
+          "electric_triggered": 0.03
+        },
+        "D309": {
+          "absent": 0.15,
+          "bilateral_pressing": 0.05,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.6,
+          "progressive_with_neuro": 0.1,
+          "electric_triggered": 0.03
+        },
+        "D325": {
+          "absent": 0.25,
+          "bilateral_pressing": 0.2,
+          "unilateral_pulsating": 0.05,
+          "periorbital_stabbing": 0.02,
+          "thunderclap": 0.08,
+          "progressive_with_neuro": 0.37,
+          "electric_triggered": 0.03
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

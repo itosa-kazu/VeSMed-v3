@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4970,
+  "total_edges": 4992,
   "edges": [
     {
       "from": "R01",
@@ -39287,6 +39287,160 @@
       "from_name": "migraine",
       "to_name": "S58",
       "reason": "片頭痛: 光視症(視覚前兆, 20-30%)"
+    },
+    {
+      "from": "D293",
+      "to": "S59",
+      "from_name": "BPPV",
+      "to_name": "S59",
+      "reason": "BPPV: 頭位変換性めまい(定義的, <1分)"
+    },
+    {
+      "from": "D292",
+      "to": "S59",
+      "from_name": "vestibular_neuritis",
+      "to_name": "S59",
+      "reason": "前庭神経炎: 持続性回転性めまい(定義的, 数日)"
+    },
+    {
+      "from": "D138",
+      "to": "S59",
+      "from_name": "stroke",
+      "to_name": "S59",
+      "reason": "脳梗塞: めまい(後方循環で, 非回転性多い)"
+    },
+    {
+      "from": "D139",
+      "to": "S59",
+      "from_name": "ICH",
+      "to_name": "S59",
+      "reason": "脳出血: めまい(小脳出血で)"
+    },
+    {
+      "from": "D302",
+      "to": "S59",
+      "from_name": "PSP",
+      "to_name": "S59",
+      "reason": "PSP: ふらつき/不安定感(姿勢反射障害)"
+    },
+    {
+      "from": "D303",
+      "to": "S59",
+      "from_name": "PD",
+      "to_name": "S59",
+      "reason": "PD: ふらつき(姿勢反射障害, 進行期)"
+    },
+    {
+      "from": "D304",
+      "to": "S59",
+      "from_name": "DLB",
+      "to_name": "S59",
+      "reason": "DLB: ふらつき/失神(自律神経障害)"
+    },
+    {
+      "from": "D296",
+      "to": "S60",
+      "from_name": "TTH",
+      "to_name": "S60",
+      "reason": "TTH: 両側圧迫感(定義的)"
+    },
+    {
+      "from": "D294",
+      "to": "S60",
+      "from_name": "migraine",
+      "to_name": "S60",
+      "reason": "片頭痛: 片側拍動性(定義的)"
+    },
+    {
+      "from": "D295",
+      "to": "S60",
+      "from_name": "cluster",
+      "to_name": "S60",
+      "reason": "群発頭痛: 眼窩周囲激烈(定義的)"
+    },
+    {
+      "from": "D297",
+      "to": "S60",
+      "from_name": "TN",
+      "to_name": "S60",
+      "reason": "三叉神経痛: 電撃様+トリガー(定義的)"
+    },
+    {
+      "from": "D155",
+      "to": "S60",
+      "from_name": "SAH",
+      "to_name": "S60",
+      "reason": "SAH: thunderclap headache(定義的)"
+    },
+    {
+      "from": "D315",
+      "to": "S60",
+      "from_name": "CVST",
+      "to_name": "S60",
+      "reason": "CVST: thunderclap(30%)or進行性(60%)"
+    },
+    {
+      "from": "D311",
+      "to": "S60",
+      "from_name": "GBM",
+      "to_name": "S60",
+      "reason": "GBM: 進行性頭痛+局所神経症状(定義的)"
+    },
+    {
+      "from": "D312",
+      "to": "S60",
+      "from_name": "meningioma",
+      "to_name": "S60",
+      "reason": "髄膜腫: 進行性頭痛(40-60%)"
+    },
+    {
+      "from": "D313",
+      "to": "S60",
+      "from_name": "brain_metastasis",
+      "to_name": "S60",
+      "reason": "脳転移: 進行性頭痛(40-50%)"
+    },
+    {
+      "from": "D164",
+      "to": "S60",
+      "from_name": "chronic_SDH",
+      "to_name": "S60",
+      "reason": "慢性SDH: 進行性頭痛(90%)"
+    },
+    {
+      "from": "D146",
+      "to": "S60",
+      "from_name": "hypertensive_emergency",
+      "to_name": "S60",
+      "reason": "高血圧緊急症: 両側圧迫性(60-70%)"
+    },
+    {
+      "from": "D13",
+      "to": "S60",
+      "from_name": "meningitis",
+      "to_name": "S60",
+      "reason": "髄膜炎: びまん性頭痛(80%+)"
+    },
+    {
+      "from": "D149",
+      "to": "S60",
+      "from_name": "CO_poisoning",
+      "to_name": "S60",
+      "reason": "CO中毒: 両側鈍痛(90%+)"
+    },
+    {
+      "from": "D309",
+      "to": "S60",
+      "from_name": "AVM",
+      "to_name": "S60",
+      "reason": "AVM出血: thunderclap(出血時)"
+    },
+    {
+      "from": "D325",
+      "to": "S60",
+      "from_name": "PRES",
+      "to_name": "S60",
+      "reason": "PRES: 頭痛(50-60%, progressive)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
