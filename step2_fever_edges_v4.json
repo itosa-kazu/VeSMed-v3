@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4206,
+  "total_edges": 4226,
   "edges": [
     {
       "from": "R01",
@@ -33939,6 +33939,146 @@
       "from_name": "ovarian_torsion",
       "to_name": "L56",
       "reason": "ovarian_torsion: β-hCG陰性"
+    },
+    {
+      "from": "D282",
+      "to": "L14",
+      "from_name": "mushroom_poisoning",
+      "to_name": "L14",
+      "reason": "キノコ: 血小板減少(DIC)"
+    },
+    {
+      "from": "D282",
+      "to": "S07",
+      "from_name": "mushroom_poisoning",
+      "to_name": "S07",
+      "reason": "キノコ: 倦怠感"
+    },
+    {
+      "from": "D282",
+      "to": "E01",
+      "from_name": "mushroom_poisoning",
+      "to_name": "E01",
+      "reason": "キノコ: 体温(通常正常)"
+    },
+    {
+      "from": "D282",
+      "to": "L01",
+      "from_name": "mushroom_poisoning",
+      "to_name": "L01",
+      "reason": "キノコ: WBC上昇(ストレス/感染)"
+    },
+    {
+      "from": "D292",
+      "to": "L02",
+      "from_name": "vestibular_neuritis",
+      "to_name": "L02",
+      "reason": "前庭神経炎: CRP(ウイルス性でも上昇あり)"
+    },
+    {
+      "from": "D294",
+      "to": "E38",
+      "from_name": "migraine",
+      "to_name": "E38",
+      "reason": "片頭痛: 血圧上昇(発作時, 30-40%)"
+    },
+    {
+      "from": "D294",
+      "to": "L11",
+      "from_name": "migraine",
+      "to_name": "L11",
+      "reason": "片頭痛: 肝酵素(通常正常)"
+    },
+    {
+      "from": "D277",
+      "to": "E02",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "E02",
+      "reason": "肺腺癌: 頻脈"
+    },
+    {
+      "from": "D277",
+      "to": "L11",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L11",
+      "reason": "肺腺癌: 肝酵素(転移/閉塞)"
+    },
+    {
+      "from": "D277",
+      "to": "L01",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L01",
+      "reason": "肺腺癌: WBC"
+    },
+    {
+      "from": "D277",
+      "to": "L44",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L44",
+      "reason": "肺腺癌: 電解質(SIADH/高K)"
+    },
+    {
+      "from": "D263",
+      "to": "E02",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "E02",
+      "reason": "マイコプラズマ: 頻脈"
+    },
+    {
+      "from": "D263",
+      "to": "L11",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "L11",
+      "reason": "マイコプラズマ: 肝酵素(30-40%上昇)"
+    },
+    {
+      "from": "D297",
+      "to": "E38",
+      "from_name": "trigeminal_neuralgia",
+      "to_name": "E38",
+      "reason": "三叉神経痛: 血圧(疼痛で上昇)"
+    },
+    {
+      "from": "D298",
+      "to": "S02",
+      "from_name": "bell_palsy",
+      "to_name": "S02",
+      "reason": "Bell: 咽頭痛(先行URI, 20-30%)"
+    },
+    {
+      "from": "D298",
+      "to": "S01",
+      "from_name": "bell_palsy",
+      "to_name": "S01",
+      "reason": "Bell: 咳嗽(先行URI, 20-30%)"
+    },
+    {
+      "from": "D284",
+      "to": "L16",
+      "from_name": "pit_viper_bite",
+      "to_name": "L16",
+      "reason": "マムシ: LDH著高(組織壊死)"
+    },
+    {
+      "from": "D284",
+      "to": "E16",
+      "from_name": "pit_viper_bite",
+      "to_name": "E16",
+      "reason": "マムシ: 意識障害(重症/低Na)"
+    },
+    {
+      "from": "D284",
+      "to": "L52",
+      "from_name": "pit_viper_bite",
+      "to_name": "L52",
+      "reason": "マムシ: D-dimer(DIC)"
+    },
+    {
+      "from": "D284",
+      "to": "L44",
+      "from_name": "pit_viper_bite",
+      "to_name": "L44",
+      "reason": "マムシ: 低Na(SIADH/副腎不全)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

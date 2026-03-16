@@ -6853,6 +6853,13 @@
           "38.0_39.0": 0.1,
           "39.0_40.0": 0.06,
           "over_40.0": 0.02
+        },
+        "D282": {
+          "under_37.5": 0.55,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.05
         }
       }
     },
@@ -7670,6 +7677,16 @@
           "over_120": 0.25
         },
         "D295": {
+          "under_100": 0.2,
+          "100_120": 0.45,
+          "over_120": 0.35
+        },
+        "D277": {
+          "under_100": 0.25,
+          "100_120": 0.45,
+          "over_120": 0.3
+        },
+        "D263": {
           "under_100": 0.2,
           "100_120": 0.45,
           "over_120": 0.35
@@ -10657,6 +10674,11 @@
           "normal": 0.03,
           "confused": 0.35,
           "obtunded": 0.62
+        },
+        "D284": {
+          "normal": 0.45,
+          "confused": 0.35,
+          "obtunded": 0.2
         }
       }
     },
@@ -12697,6 +12719,18 @@
           "normal_4000_10000": 0.3,
           "high_10000_20000": 0.45,
           "very_high_over_20000": 0.2
+        },
+        "D282": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.2,
+          "high_10000_20000": 0.45,
+          "very_high_over_20000": 0.3
+        },
+        "D277": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -13836,6 +13870,12 @@
           "mild_0.3_3": 0.2,
           "moderate_3_10": 0.3,
           "high_over_10": 0.35
+        },
+        "D292": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.2
         }
       }
     },
@@ -15253,6 +15293,21 @@
           "normal": 0.25,
           "mild_elevated": 0.4,
           "very_high": 0.35
+        },
+        "D294": {
+          "normal": 0.7,
+          "mild_elevated": 0.25,
+          "very_high": 0.05
+        },
+        "D277": {
+          "normal": 0.35,
+          "mild_elevated": 0.4,
+          "very_high": 0.25
+        },
+        "D263": {
+          "normal": 0.5,
+          "mild_elevated": 0.35,
+          "very_high": 0.15
         }
       }
     },
@@ -15704,6 +15759,14 @@
           "thrombocytopenia": 0.35,
           "eosinophilia": 0.0,
           "lymphocyte_predominant": 0.05
+        },
+        "D282": {
+          "normal": 0.3,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.0,
+          "thrombocytopenia": 0.6,
+          "eosinophilia": 0.0,
+          "lymphocyte_predominant": 0.05
         }
       }
     },
@@ -15987,6 +16050,10 @@
         "D289": {
           "normal": 0.4,
           "elevated": 0.6
+        },
+        "D284": {
+          "normal": 0.1,
+          "elevated": 0.9
         }
       }
     },
@@ -17202,6 +17269,18 @@
           "hyponatremia": 0.05,
           "hyperkalemia": 0.55,
           "other": 0.05
+        },
+        "D277": {
+          "normal": 0.4,
+          "hyponatremia": 0.35,
+          "hyperkalemia": 0.15,
+          "other": 0.1
+        },
+        "D284": {
+          "normal": 0.4,
+          "hyponatremia": 0.5,
+          "hyperkalemia": 0.05,
+          "other": 0.05
         }
       }
     },
@@ -17701,6 +17780,11 @@
           "absent": 0.4,
           "dry": 0.2,
           "productive": 0.4
+        },
+        "D298": {
+          "absent": 0.65,
+          "dry": 0.25,
+          "productive": 0.1
         }
       }
     },
@@ -17825,6 +17909,10 @@
         "D265": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D298": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -19689,6 +19777,11 @@
           "absent": 0.05,
           "mild": 0.15,
           "severe": 0.8
+        },
+        "D282": {
+          "absent": 0.1,
+          "mild": 0.25,
+          "severe": 0.65
         }
       }
     },
@@ -27485,6 +27578,12 @@
           "normal": 0.15,
           "mildly_elevated": 0.3,
           "very_high": 0.45
+        },
+        "D284": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mildly_elevated": 0.25,
+          "very_high": 0.55
         }
       }
     },
@@ -28450,6 +28549,16 @@
         "D259": {
           "normal_under_140": 0.55,
           "elevated_140_180": 0.25,
+          "crisis_over_180": 0.2
+        },
+        "D294": {
+          "normal_under_140": 0.45,
+          "elevated_140_180": 0.4,
+          "crisis_over_180": 0.15
+        },
+        "D297": {
+          "normal_under_140": 0.35,
+          "elevated_140_180": 0.45,
           "crisis_over_180": 0.2
         }
       }
