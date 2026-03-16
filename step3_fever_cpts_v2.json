@@ -8815,6 +8815,16 @@
           "under_100": 0.3,
           "100_120": 0.4,
           "over_120": 0.3
+        },
+        "D319": {
+          "under_100": 0.3,
+          "100_120": 0.35,
+          "over_120": 0.35
+        },
+        "D336": {
+          "under_100": 0.3,
+          "100_120": 0.35,
+          "over_120": 0.35
         }
       }
     },
@@ -9833,6 +9843,16 @@
         "D277": {
           "normal_over_96": 0.35,
           "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.3
+        },
+        "D319": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.35
+        },
+        "D336": {
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.3
         }
       }
@@ -12000,6 +12020,11 @@
           "normal": 0.55,
           "confused": 0.3,
           "obtunded": 0.15
+        },
+        "D336": {
+          "normal": 0.5,
+          "confused": 0.3,
+          "obtunded": 0.2
         }
       }
     },
@@ -14094,6 +14119,12 @@
           "normal_4000_10000": 0.45,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.15
+        },
+        "D336": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -17262,6 +17293,14 @@
           "thrombocytopenia": 0.6,
           "eosinophilia": 0.0,
           "lymphocyte_predominant": 0.05
+        },
+        "D322": {
+          "normal": 0.05,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.02,
+          "thrombocytopenia": 0.8,
+          "eosinophilia": 0.02,
+          "lymphocyte_predominant": 0.06
         }
       }
     },
@@ -17549,6 +17588,10 @@
         "D284": {
           "normal": 0.1,
           "elevated": 0.9
+        },
+        "D322": {
+          "normal": 0.05,
+          "elevated": 0.95
         }
       }
     },
@@ -18812,6 +18855,12 @@
           "hyponatremia": 0.55,
           "hyperkalemia": 0.02,
           "other": 0.08
+        },
+        "D324": {
+          "normal": 0.45,
+          "hyponatremia": 0.45,
+          "hyperkalemia": 0.03,
+          "other": 0.07
         }
       }
     },
@@ -18920,6 +18969,14 @@
           "bacterial_pattern": 0.18,
           "HSV_PCR_positive": 0.0,
           "tb_fungal_pattern": 0.04
+        },
+        "D324": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "viral_pattern": 0.07,
+          "bacterial_pattern": 0.1,
+          "HSV_PCR_positive": 0.01,
+          "tb_fungal_pattern": 0.74
         }
       }
     },
@@ -20073,6 +20130,11 @@
           "absent": 0.5,
           "on_exertion": 0.35,
           "at_rest": 0.15
+        },
+        "D336": {
+          "absent": 0.35,
+          "on_exertion": 0.35,
+          "at_rest": 0.3
         }
       }
     },
@@ -22906,6 +22968,15 @@
           "LLQ": 0.35,
           "suprapubic": 0.1,
           "diffuse": 0.1
+        },
+        "D322": {
+          "absent": 0.1,
+          "epigastric": 0.4,
+          "RUQ": 0.4,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.04
         }
       }
     },
@@ -23454,6 +23525,10 @@
         "D345": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D336": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },

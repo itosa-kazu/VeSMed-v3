@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4642,
+  "total_edges": 4655,
   "edges": [
     {
       "from": "R01",
@@ -36991,6 +36991,97 @@
       "from_name": "moyamoya",
       "to_name": "E01",
       "reason": "もやもや: 体温(通常無熱)"
+    },
+    {
+      "from": "D322",
+      "to": "L14",
+      "from_name": "HELLP",
+      "to_name": "L14",
+      "reason": "HELLP: 血小板減少(定義的, <100k)"
+    },
+    {
+      "from": "D322",
+      "to": "L16",
+      "from_name": "HELLP",
+      "to_name": "L16",
+      "reason": "HELLP: LDH上昇(溶血, 定義的)"
+    },
+    {
+      "from": "D322",
+      "to": "S12",
+      "from_name": "HELLP",
+      "to_name": "S12",
+      "reason": "HELLP: 心窩部/右上腹部痛(65-90%)"
+    },
+    {
+      "from": "D324",
+      "to": "L45",
+      "from_name": "TB_meningitis",
+      "to_name": "L45",
+      "reason": "結核性髄膜炎: 髄液(リンパ球優位+糖低下+蛋白上昇)"
+    },
+    {
+      "from": "D324",
+      "to": "L44",
+      "from_name": "TB_meningitis",
+      "to_name": "L44",
+      "reason": "結核性髄膜炎: 低Na血症(SIADH, 30-40%)"
+    },
+    {
+      "from": "D319",
+      "to": "E05",
+      "from_name": "bronchiectasis",
+      "to_name": "E05",
+      "reason": "気管支拡張: SpO2低下(増悪/大量喀血時)"
+    },
+    {
+      "from": "D319",
+      "to": "E02",
+      "from_name": "bronchiectasis",
+      "to_name": "E02",
+      "reason": "気管支拡張: 頻脈(感染増悪/喀血時)"
+    },
+    {
+      "from": "D336",
+      "to": "E05",
+      "from_name": "ADPKD",
+      "to_name": "E05",
+      "reason": "ADPKD: SpO2低下(出血性ショック/腎不全)"
+    },
+    {
+      "from": "D336",
+      "to": "E02",
+      "from_name": "ADPKD",
+      "to_name": "E02",
+      "reason": "ADPKD: 頻脈(出血/感染合併時)"
+    },
+    {
+      "from": "D336",
+      "to": "S04",
+      "from_name": "ADPKD",
+      "to_name": "S04",
+      "reason": "ADPKD: 呼吸困難(腎不全→肺水腫/重度貧血)"
+    },
+    {
+      "from": "D336",
+      "to": "E16",
+      "from_name": "ADPKD",
+      "to_name": "E16",
+      "reason": "ADPKD: 意識障害(尿毒症/出血性ショック)"
+    },
+    {
+      "from": "D336",
+      "to": "S13",
+      "from_name": "ADPKD",
+      "to_name": "S13",
+      "reason": "ADPKD: 嘔気嘔吐(尿毒症, 40-50%)"
+    },
+    {
+      "from": "D336",
+      "to": "L01",
+      "from_name": "ADPKD",
+      "to_name": "L01",
+      "reason": "ADPKD: WBC上昇(UTI/嚢胞感染, 30-40%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
