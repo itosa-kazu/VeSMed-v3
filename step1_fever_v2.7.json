@@ -7320,6 +7320,89 @@
         "low_under_0.9"
       ],
       "note": "PAD: ABI<0.9で診断。<0.4は重症"
+    },
+    {
+      "id": "S55",
+      "name": "hoarseness",
+      "name_ja": "嗄声",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "喉頭癌で90%+。甲状腺疾患/喉頭蓋炎/GERD/声帯麻痺でも"
+    },
+    {
+      "id": "L61",
+      "name": "tumor_markers",
+      "name_ja": "腫瘍マーカー(PSA/AFP/CEA等)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated"
+      ],
+      "note": "PSA:前立腺癌, AFP:肝癌/精巣腫瘍, CEA:大腸癌/胆道癌, CA19-9:膵胆道癌"
+    },
+    {
+      "id": "E42",
+      "name": "peripheral_circulation",
+      "name_ja": "四肢末梢循環所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "pallor_cold",
+        "cyanosis",
+        "gangrene"
+      ],
+      "note": "蒼白冷感:急性虚血/PAD。チアノーゼ:低酸素。壊疽:重症PAD/DM足"
+    },
+    {
+      "id": "L62",
+      "name": "pelvic_US",
+      "name_ja": "骨盤超音波(経腹/経膣)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "adnexal_mass",
+        "free_fluid",
+        "uterine_abnormal"
+      ],
+      "note": "卵巣腫瘤:卵巣捻転/嚢腫。ダグラス窩液体:子宮外妊娠破裂。子宮異常:筋腫等"
+    },
+    {
+      "id": "S56",
+      "name": "intermittent_claudication",
+      "name_ja": "間欠性跛行",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "PADの典型症状。歩行→下肢痛→休息で改善。Fontaine II度"
+    },
+    {
+      "id": "E43",
+      "name": "diastolic_murmur",
+      "name_ja": "拡張期雑音/opening snap",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "僧帽弁狭窄: opening snap+拡張期ランブル。大動脈弁逆流: 拡張期逓減性雑音"
+    },
+    {
+      "id": "S57",
+      "name": "amenorrhea_agalactia",
+      "name_ja": "無月経/乳汁分泌不全",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "Sheehan症候群: 産後乳汁分泌不全+無月経が特徴的初発症状"
     }
   ]
 }

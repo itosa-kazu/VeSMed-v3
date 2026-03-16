@@ -13584,7 +13584,8 @@
         "S12": "RLQ",
         "E01": "under_37.5",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L62": "adnexal_mass"
       },
       "risk_factors": {
         "R01": "13_17",
@@ -13606,7 +13607,8 @@
         "E01": "38.0_39.0",
         "L01": "high_10000_20000",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L62": "adnexal_mass"
       },
       "risk_factors": {
         "R01": "6_12",
@@ -13633,7 +13635,8 @@
         "L11": "mild_elevated",
         "L44": "hyperkalemia",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L62": "adnexal_mass"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14481,7 +14484,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "L56": "positive",
-        "R15": "yes"
+        "R15": "yes",
+        "L62": "free_fluid"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14505,7 +14509,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "L56": "positive",
-        "R15": "yes"
+        "R15": "yes",
+        "L62": "free_fluid"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14529,7 +14534,8 @@
         "T01": "under_3d",
         "T02": "gradual_days",
         "L56": "positive",
-        "R15": "yes"
+        "R15": "yes",
+        "L62": "adnexal_mass"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -15879,7 +15885,8 @@
         "S02": "present",
         "S07": "mild",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S55": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15901,7 +15908,8 @@
         "S04": "on_exertion",
         "S07": "mild",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S55": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15923,7 +15931,8 @@
         "S04": "at_rest",
         "S07": "severe",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S55": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16567,7 +16576,9 @@
         "S07": "severe",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "E41": "low_under_0.9"
+        "E41": "low_under_0.9",
+        "E42": "gangrene",
+        "S56": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16589,7 +16600,9 @@
         "S07": "severe",
         "T01": "1w_to_3w",
         "T02": "gradual_days",
-        "E41": "low_under_0.9"
+        "E41": "low_under_0.9",
+        "E42": "pallor_cold",
+        "S56": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -16610,7 +16623,9 @@
         "S15": "present",
         "T01": "1w_to_3w",
         "T02": "gradual_days",
-        "E41": "low_under_0.9"
+        "E41": "low_under_0.9",
+        "E42": "pallor_cold",
+        "S56": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17236,7 +17251,8 @@
         "T01": "under_3d",
         "T02": "sudden_hours",
         "E40": "AF",
-        "E39": "valvular_abnormal"
+        "E39": "valvular_abnormal",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17262,7 +17278,8 @@
         "L11": "normal",
         "T01": "under_3d",
         "T02": "sudden_hours",
-        "E39": "valvular_abnormal"
+        "E39": "valvular_abnormal",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17288,7 +17305,8 @@
         "T01": "1w_to_3w",
         "T02": "gradual_days",
         "E40": "AF",
-        "E39": "valvular_abnormal"
+        "E39": "valvular_abnormal",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17601,7 +17619,8 @@
         "E02": "over_120",
         "T01": "3d_to_1w",
         "T02": "sudden_hours",
-        "R15": "yes"
+        "R15": "yes",
+        "S57": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17629,7 +17648,8 @@
         "L55": "mild_elevated",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "E39": "pericardial_effusion"
+        "E39": "pericardial_effusion",
+        "S57": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17649,7 +17669,8 @@
       "evidence": {
         "S07": "severe",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S57": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17966,7 +17987,8 @@
         "S15": "present",
         "E02": "under_100",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -18009,7 +18031,8 @@
         "S05": "mild",
         "E02": "under_100",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "E43": "present"
       },
       "risk_factors": {
         "R01": "18_39",

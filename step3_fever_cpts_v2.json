@@ -33036,6 +33036,174 @@
           "yes": 0.2
         }
       }
+    },
+    "S55": {
+      "description": "嗄声",
+      "leak": {
+        "absent": 0.92,
+        "present": 0.08
+      },
+      "parent_effects": {
+        "D320": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D128": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D254": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "L61": {
+      "description": "腫瘍マーカー",
+      "leak": {
+        "not_done": 0.65,
+        "normal": 0.3,
+        "elevated": 0.05
+      },
+      "parent_effects": {
+        "D289": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "elevated": 0.85
+        },
+        "D288": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "elevated": 0.8
+        },
+        "D287": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "elevated": 0.7
+        },
+        "D277": {
+          "not_done": 0.15,
+          "normal": 0.3,
+          "elevated": 0.55
+        },
+        "D313": {
+          "not_done": 0.15,
+          "normal": 0.25,
+          "elevated": 0.6
+        },
+        "D278": {
+          "not_done": 0.2,
+          "normal": 0.3,
+          "elevated": 0.5
+        },
+        "D347": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "elevated": 0.8
+        }
+      }
+    },
+    "E42": {
+      "description": "四肢末梢循環所見",
+      "leak": {
+        "normal": 0.85,
+        "pallor_cold": 0.08,
+        "cyanosis": 0.04,
+        "gangrene": 0.03
+      },
+      "parent_effects": {
+        "D335": {
+          "normal": 0.15,
+          "pallor_cold": 0.35,
+          "cyanosis": 0.1,
+          "gangrene": 0.4
+        },
+        "D285": {
+          "normal": 0.55,
+          "pallor_cold": 0.25,
+          "cyanosis": 0.15,
+          "gangrene": 0.05
+        },
+        "D172": {
+          "normal": 0.05,
+          "pallor_cold": 0.1,
+          "cyanosis": 0.15,
+          "gangrene": 0.7
+        }
+      }
+    },
+    "L62": {
+      "description": "骨盤超音波",
+      "leak": {
+        "not_done": 0.55,
+        "normal": 0.35,
+        "adnexal_mass": 0.04,
+        "free_fluid": 0.04,
+        "uterine_abnormal": 0.02
+      },
+      "parent_effects": {
+        "D276": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "adnexal_mass": 0.85,
+          "free_fluid": 0.05,
+          "uterine_abnormal": 0.02
+        },
+        "D291": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "adnexal_mass": 0.3,
+          "free_fluid": 0.55,
+          "uterine_abnormal": 0.05
+        }
+      }
+    },
+    "S56": {
+      "description": "間欠性跛行",
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D335": {
+          "absent": 0.15,
+          "present": 0.85
+        }
+      }
+    },
+    "E43": {
+      "description": "拡張期雑音",
+      "leak": {
+        "absent": 0.93,
+        "present": 0.07
+      },
+      "parent_effects": {
+        "D340": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D350": {
+          "absent": 0.4,
+          "present": 0.6
+        }
+      }
+    },
+    "S57": {
+      "description": "無月経/乳汁分泌不全",
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D345": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D332": {
+          "absent": 0.25,
+          "present": 0.75
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

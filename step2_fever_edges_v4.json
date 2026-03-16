@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4831,
+  "total_edges": 4851,
   "edges": [
     {
       "from": "R01",
@@ -38314,6 +38314,146 @@
       "from_name": "prostate_cancer",
       "to_name": "L01",
       "reason": "前立腺癌: WBC(感染/骨髄浸潤)"
+    },
+    {
+      "from": "D320",
+      "to": "S55",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S55",
+      "reason": "喉頭癌: 嗄声(90%+, 最も特徴的)"
+    },
+    {
+      "from": "D128",
+      "to": "S55",
+      "from_name": "epiglottitis",
+      "to_name": "S55",
+      "reason": "喉頭蓋炎: 嗄声(muffled voice, 50-60%)"
+    },
+    {
+      "from": "D254",
+      "to": "S55",
+      "from_name": "croup",
+      "to_name": "S55",
+      "reason": "クループ: 嗄声(犬吠様咳嗽, 70-80%)"
+    },
+    {
+      "from": "D289",
+      "to": "L61",
+      "from_name": "prostate_cancer",
+      "to_name": "L61",
+      "reason": "前立腺癌: PSA上昇(80%+)"
+    },
+    {
+      "from": "D288",
+      "to": "L61",
+      "from_name": "testicular_tumor",
+      "to_name": "L61",
+      "reason": "精巣腫瘍: AFP/β-hCG/LDH上昇(70-80%)"
+    },
+    {
+      "from": "D287",
+      "to": "L61",
+      "from_name": "gallbladder_cancer",
+      "to_name": "L61",
+      "reason": "胆嚢癌: CEA/CA19-9上昇(60-70%)"
+    },
+    {
+      "from": "D277",
+      "to": "L61",
+      "from_name": "lung_adenocarcinoma",
+      "to_name": "L61",
+      "reason": "肺腺癌: CEA上昇(40-50%)"
+    },
+    {
+      "from": "D313",
+      "to": "L61",
+      "from_name": "brain_metastasis",
+      "to_name": "L61",
+      "reason": "脳転移: 原発巣マーカー上昇(50-60%)"
+    },
+    {
+      "from": "D278",
+      "to": "L61",
+      "from_name": "mesothelioma",
+      "to_name": "L61",
+      "reason": "悪性中皮腫: メソテリン上昇(40-50%)"
+    },
+    {
+      "from": "D347",
+      "to": "L61",
+      "from_name": "neuroblastoma",
+      "to_name": "L61",
+      "reason": "神経芽腫: NSE上昇(70-80%)"
+    },
+    {
+      "from": "D335",
+      "to": "E42",
+      "from_name": "PAD",
+      "to_name": "E42",
+      "reason": "PAD: 蒼白冷感→壊疽(進行, 60-70%)"
+    },
+    {
+      "from": "D285",
+      "to": "E42",
+      "from_name": "DCS",
+      "to_name": "E42",
+      "reason": "減圧症: 蒼白/チアノーゼ(皮膚型, 20-30%)"
+    },
+    {
+      "from": "D172",
+      "to": "E42",
+      "from_name": "gas_gangrene",
+      "to_name": "E42",
+      "reason": "ガス壊疽: 壊疽(定義的)"
+    },
+    {
+      "from": "D276",
+      "to": "L62",
+      "from_name": "ovarian_torsion",
+      "to_name": "L62",
+      "reason": "卵巣捻転: 付属器腫瘤(90%+)"
+    },
+    {
+      "from": "D291",
+      "to": "L62",
+      "from_name": "ectopic_pregnancy",
+      "to_name": "L62",
+      "reason": "子宮外妊娠: 子宮外腫瘤+ダグラス窩液体(70-80%)"
+    },
+    {
+      "from": "D335",
+      "to": "S56",
+      "from_name": "PAD",
+      "to_name": "S56",
+      "reason": "PAD: 間欠性跛行(定義的症状, 70-80%)"
+    },
+    {
+      "from": "D340",
+      "to": "E43",
+      "from_name": "mitral_stenosis",
+      "to_name": "E43",
+      "reason": "僧帽弁狭窄: 拡張期雑音+opening snap(定義的)"
+    },
+    {
+      "from": "D350",
+      "to": "E43",
+      "from_name": "marfan",
+      "to_name": "E43",
+      "reason": "マルファン: 大動脈弁逆流→拡張期雑音(40-50%)"
+    },
+    {
+      "from": "D345",
+      "to": "S57",
+      "from_name": "sheehan",
+      "to_name": "S57",
+      "reason": "Sheehan: 無月経+乳汁分泌不全(定義的, 90%+)"
+    },
+    {
+      "from": "D332",
+      "to": "S57",
+      "from_name": "hypopituitarism",
+      "to_name": "S57",
+      "reason": "下垂体機能低下: 無月経(ゴナドトロピン低下, 60-70%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
