@@ -33254,6 +33254,110 @@
           "present": 0.75
         }
       }
+    },
+    "L63": {
+      "description": "転移巣(CT/PET所見)",
+      "leak": {
+        "not_done": 0.5,
+        "absent": 0.45,
+        "lung": 0.01,
+        "bone": 0.01,
+        "liver": 0.01,
+        "brain": 0.005,
+        "multiple": 0.005
+      },
+      "parent_effects": {
+        "D289": {
+          "not_done": 0.1,
+          "absent": 0.1,
+          "lung": 0.05,
+          "bone": 0.45,
+          "liver": 0.03,
+          "brain": 0.02,
+          "multiple": 0.25
+        },
+        "D277": {
+          "not_done": 0.1,
+          "absent": 0.2,
+          "lung": 0.1,
+          "bone": 0.15,
+          "liver": 0.1,
+          "brain": 0.15,
+          "multiple": 0.2
+        },
+        "D313": {
+          "not_done": 0.05,
+          "absent": 0.02,
+          "lung": 0.08,
+          "bone": 0.05,
+          "liver": 0.05,
+          "brain": 0.45,
+          "multiple": 0.3
+        },
+        "D287": {
+          "not_done": 0.1,
+          "absent": 0.15,
+          "lung": 0.05,
+          "bone": 0.03,
+          "liver": 0.45,
+          "brain": 0.02,
+          "multiple": 0.2
+        },
+        "D288": {
+          "not_done": 0.1,
+          "absent": 0.25,
+          "lung": 0.35,
+          "bone": 0.05,
+          "liver": 0.05,
+          "brain": 0.05,
+          "multiple": 0.15
+        },
+        "D290": {
+          "not_done": 0.1,
+          "absent": 0.35,
+          "lung": 0.1,
+          "bone": 0.15,
+          "liver": 0.1,
+          "brain": 0.03,
+          "multiple": 0.17
+        },
+        "D278": {
+          "not_done": 0.1,
+          "absent": 0.45,
+          "lung": 0.15,
+          "bone": 0.08,
+          "liver": 0.08,
+          "brain": 0.02,
+          "multiple": 0.12
+        },
+        "D320": {
+          "not_done": 0.1,
+          "absent": 0.55,
+          "lung": 0.15,
+          "bone": 0.05,
+          "liver": 0.05,
+          "brain": 0.02,
+          "multiple": 0.08
+        },
+        "D347": {
+          "not_done": 0.1,
+          "absent": 0.2,
+          "lung": 0.03,
+          "bone": 0.25,
+          "liver": 0.15,
+          "brain": 0.02,
+          "multiple": 0.25
+        },
+        "D348": {
+          "not_done": 0.1,
+          "absent": 0.55,
+          "lung": 0.2,
+          "bone": 0.02,
+          "liver": 0.03,
+          "brain": 0.02,
+          "multiple": 0.08
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

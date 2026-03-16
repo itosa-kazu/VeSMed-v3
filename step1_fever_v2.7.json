@@ -7403,6 +7403,22 @@
         "present"
       ],
       "note": "Sheehan症候群: 産後乳汁分泌不全+無月経が特徴的初発症状"
+    },
+    {
+      "id": "L63",
+      "name": "metastasis_imaging",
+      "name_ja": "転移巣(CT/PET所見)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "absent",
+        "lung",
+        "bone",
+        "liver",
+        "brain",
+        "multiple"
+      ],
+      "note": "CT/PET等で確認された転移巣。肺転移→咳嗽/呼吸困難、骨転移→骨痛/高Ca、肝転移→肝酵素上昇、脳転移→神経症状"
     }
   ]
 }

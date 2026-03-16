@@ -13689,7 +13689,8 @@
         "L01": "high_10000_20000",
         "L04": "bilateral_infiltrate",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14276,7 +14277,8 @@
         "L02": "high_over_10",
         "L11": "mild_elevated",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L63": "liver"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14388,7 +14390,8 @@
         "S15": "present",
         "L55": "mild_elevated",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "bone"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -14414,7 +14417,8 @@
         "L14": "thrombocytopenia",
         "L11": "very_high",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15036,7 +15040,8 @@
         "S07": "severe",
         "E01": "37.5_38.0",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15059,7 +15064,8 @@
         "S07": "severe",
         "L11": "very_high",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17766,7 +17772,8 @@
         "S07": "mild",
         "T01": "3d_to_1w",
         "T02": "gradual_days",
-        "L60": "elevated"
+        "L60": "elevated",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -17790,7 +17797,8 @@
         "L01": "normal_4000_10000",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "L60": "elevated"
+        "L60": "elevated",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "1_5",
@@ -17811,7 +17819,8 @@
         "S44": "present",
         "S07": "mild",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "bone"
       },
       "risk_factors": {
         "R01": "1_5",
@@ -17859,7 +17868,8 @@
         "L11": "mild_elevated",
         "L51": "very_high",
         "T01": "3d_to_1w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "lung"
       },
       "risk_factors": {
         "R01": "1_5",
