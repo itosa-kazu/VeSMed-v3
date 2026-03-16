@@ -4923,6 +4923,81 @@
         "65_plus,male": 0.0002,
         "65_plus,female": 0.0005
       }
+    },
+    "D302": {
+      "parents": [
+        "R01"
+      ],
+      "description": "PSP",
+      "cpt": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.0,
+        "13_17": 0.0,
+        "18_39": 0.0001,
+        "40_64": 0.001,
+        "65_plus": 0.002
+      }
+    },
+    "D303": {
+      "parents": [
+        "R01"
+      ],
+      "description": "パーキンソン病",
+      "cpt": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.0,
+        "13_17": 0.0001,
+        "18_39": 0.0005,
+        "40_64": 0.003,
+        "65_plus": 0.008
+      }
+    },
+    "D304": {
+      "parents": [
+        "R01"
+      ],
+      "description": "DLB",
+      "cpt": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.0,
+        "13_17": 0.0,
+        "18_39": 0.0001,
+        "40_64": 0.001,
+        "65_plus": 0.004
+      }
+    },
+    "D305": {
+      "parents": [
+        "R01"
+      ],
+      "description": "急性硬膜外血腫",
+      "cpt": {
+        "0_1": 0.001,
+        "1_5": 0.001,
+        "6_12": 0.002,
+        "13_17": 0.003,
+        "18_39": 0.003,
+        "40_64": 0.002,
+        "65_plus": 0.002
+      }
+    },
+    "D306": {
+      "parents": [
+        "R01"
+      ],
+      "description": "急性硬膜下血腫。高齢者+抗凝固",
+      "cpt": {
+        "0_1": 0.0005,
+        "1_5": 0.0005,
+        "6_12": 0.001,
+        "13_17": 0.002,
+        "18_39": 0.002,
+        "40_64": 0.003,
+        "65_plus": 0.005
+      }
     }
   },
   "noisy_or_params": {
@@ -7690,6 +7765,16 @@
           "under_100": 0.2,
           "100_120": 0.45,
           "over_120": 0.35
+        },
+        "D305": {
+          "under_100": 0.55,
+          "100_120": 0.3,
+          "over_120": 0.15
+        },
+        "D306": {
+          "under_100": 0.45,
+          "100_120": 0.35,
+          "over_120": 0.2
         }
       }
     },
@@ -10679,6 +10764,31 @@
           "normal": 0.45,
           "confused": 0.35,
           "obtunded": 0.2
+        },
+        "D302": {
+          "normal": 0.2,
+          "confused": 0.55,
+          "obtunded": 0.25
+        },
+        "D303": {
+          "normal": 0.5,
+          "confused": 0.35,
+          "obtunded": 0.15
+        },
+        "D304": {
+          "normal": 0.05,
+          "confused": 0.6,
+          "obtunded": 0.35
+        },
+        "D305": {
+          "normal": 0.1,
+          "confused": 0.3,
+          "obtunded": 0.6
+        },
+        "D306": {
+          "normal": 0.05,
+          "confused": 0.3,
+          "obtunded": 0.65
         }
       }
     },
@@ -18803,6 +18913,16 @@
           "absent": 0.6,
           "mild": 0.25,
           "severe": 0.15
+        },
+        "D305": {
+          "absent": 0.15,
+          "mild": 0.2,
+          "severe": 0.65
+        },
+        "D306": {
+          "absent": 0.2,
+          "mild": 0.2,
+          "severe": 0.6
         }
       }
     },
@@ -19782,6 +19902,21 @@
           "absent": 0.1,
           "mild": 0.25,
           "severe": 0.65
+        },
+        "D302": {
+          "absent": 0.1,
+          "mild": 0.35,
+          "severe": 0.55
+        },
+        "D303": {
+          "absent": 0.15,
+          "mild": 0.4,
+          "severe": 0.45
+        },
+        "D304": {
+          "absent": 0.1,
+          "mild": 0.35,
+          "severe": 0.55
         }
       }
     },
@@ -21480,6 +21615,14 @@
         "D301": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D305": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D306": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -23011,6 +23154,18 @@
         "D300": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D304": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D305": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D306": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -25141,6 +25296,36 @@
           "3d_to_1w": 0.3,
           "1w_to_3w": 0.4,
           "over_3w": 0.15
+        },
+        "D302": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
+        },
+        "D303": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
+        },
+        "D304": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
+        },
+        "D305": {
+          "under_3d": 0.9,
+          "3d_to_1w": 0.08,
+          "1w_to_3w": 0.02,
+          "over_3w": 0.0
+        },
+        "D306": {
+          "under_3d": 0.8,
+          "3d_to_1w": 0.15,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
         }
       }
     },
@@ -26130,6 +26315,26 @@
         "D301": {
           "sudden_hours": 0.15,
           "gradual_days": 0.85
+        },
+        "D302": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D303": {
+          "sudden_hours": 0.03,
+          "gradual_days": 0.97
+        },
+        "D304": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
+        },
+        "D305": {
+          "sudden_hours": 0.85,
+          "gradual_days": 0.15
+        },
+        "D306": {
+          "sudden_hours": 0.7,
+          "gradual_days": 0.3
         }
       }
     },
@@ -28350,6 +28555,31 @@
           "absent": 0.1,
           "unilateral_weakness": 0.15,
           "bilateral": 0.75
+        },
+        "D302": {
+          "absent": 0.05,
+          "unilateral_weakness": 0.15,
+          "bilateral": 0.8
+        },
+        "D303": {
+          "absent": 0.03,
+          "unilateral_weakness": 0.5,
+          "bilateral": 0.47
+        },
+        "D304": {
+          "absent": 0.25,
+          "unilateral_weakness": 0.3,
+          "bilateral": 0.45
+        },
+        "D305": {
+          "absent": 0.3,
+          "unilateral_weakness": 0.6,
+          "bilateral": 0.1
+        },
+        "D306": {
+          "absent": 0.3,
+          "unilateral_weakness": 0.55,
+          "bilateral": 0.15
         }
       }
     },
@@ -28430,6 +28660,16 @@
           "absent": 0.3,
           "dysarthria": 0.55,
           "aphasia": 0.15
+        },
+        "D302": {
+          "absent": 0.25,
+          "dysarthria": 0.6,
+          "aphasia": 0.15
+        },
+        "D303": {
+          "absent": 0.45,
+          "dysarthria": 0.45,
+          "aphasia": 0.1
         }
       }
     },
@@ -28560,6 +28800,16 @@
           "normal_under_140": 0.35,
           "elevated_140_180": 0.45,
           "crisis_over_180": 0.2
+        },
+        "D305": {
+          "normal_under_140": 0.25,
+          "elevated_140_180": 0.35,
+          "crisis_over_180": 0.4
+        },
+        "D306": {
+          "normal_under_140": 0.3,
+          "elevated_140_180": 0.35,
+          "crisis_over_180": 0.35
         }
       }
     },

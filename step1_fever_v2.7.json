@@ -6634,6 +6634,66 @@
         "positive"
       ],
       "note": "not_done=未検査, negative=陰性, positive=陽性"
+    },
+    {
+      "id": "D302",
+      "name": "PSP",
+      "name_ja": "進行性核上性麻痺(PSP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "垂直注視麻痺(下方)+早期転倒+軸性固縮+認知症。パーキンソニズムだがL-DOPA無効"
+    },
+    {
+      "id": "D303",
+      "name": "parkinson_disease",
+      "name_ja": "パーキンソン病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "四徴:安静時振戦+固縮+無動+姿勢反射障害。片側発症→両側進展。L-DOPA有効"
+    },
+    {
+      "id": "D304",
+      "name": "DLB",
+      "name_ja": "レビー小体型認知症(DLB)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "変動する認知障害+幻視+パーキンソニズム+REM睡眠行動障害。抗精神病薬過敏に注意"
+    },
+    {
+      "id": "D305",
+      "name": "acute_epidural_hematoma",
+      "name_ja": "急性硬膜外血腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "側頭骨骨折→中硬膜動脈損傷→レンズ状血腫。意識清明期(lucid interval)→急速悪化。緊急開頭"
+    },
+    {
+      "id": "D306",
+      "name": "acute_subdural_hematoma",
+      "name_ja": "急性硬膜下血腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "架橋静脈断裂→三日月状血腫。高齢者/抗凝固薬/外傷。意識障害進行性。死亡率40-60%"
     }
   ]
 }
