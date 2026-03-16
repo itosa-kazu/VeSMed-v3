@@ -3644,7 +3644,8 @@
         "L01": "low_under_4000",
         "L05": "pyuria_bacteriuria",
         "L09": "negative",
-        "L14": "thrombocytopenia"
+        "L14": "thrombocytopenia",
+        "L63": "bone"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -6323,7 +6324,8 @@
         "L04": "pleural_effusion",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "E39": "pericardial_effusion"
+        "E39": "pericardial_effusion",
+        "L63": "lung"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -8830,7 +8832,8 @@
         "E01": "under_37.5",
         "S07": "severe",
         "T01": "1w_to_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "liver"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14365,7 +14368,8 @@
       "evidence": {
         "L16": "elevated",
         "T01": "over_3w",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "L63": "absent"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -15938,7 +15942,8 @@
         "S07": "severe",
         "T01": "over_3w",
         "T02": "gradual_days",
-        "S55": "present"
+        "S55": "present",
+        "L63": "multiple"
       },
       "risk_factors": {
         "R01": "40_64",

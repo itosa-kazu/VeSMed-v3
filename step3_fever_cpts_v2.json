@@ -33356,6 +33356,78 @@
           "liver": 0.03,
           "brain": 0.02,
           "multiple": 0.08
+        },
+        "D69": {
+          "not_done": 0.1,
+          "absent": 0.15,
+          "lung": 0.25,
+          "bone": 0.15,
+          "liver": 0.08,
+          "brain": 0.07,
+          "multiple": 0.2
+        },
+        "D70": {
+          "not_done": 0.1,
+          "absent": 0.25,
+          "lung": 0.25,
+          "bone": 0.1,
+          "liver": 0.1,
+          "brain": 0.05,
+          "multiple": 0.15
+        },
+        "D230": {
+          "not_done": 0.1,
+          "absent": 0.1,
+          "lung": 0.05,
+          "bone": 0.03,
+          "liver": 0.45,
+          "brain": 0.02,
+          "multiple": 0.25
+        },
+        "D231": {
+          "not_done": 0.1,
+          "absent": 0.25,
+          "lung": 0.1,
+          "bone": 0.05,
+          "liver": 0.3,
+          "brain": 0.02,
+          "multiple": 0.18
+        },
+        "D238": {
+          "not_done": 0.1,
+          "absent": 0.15,
+          "lung": 0.1,
+          "bone": 0.03,
+          "liver": 0.4,
+          "brain": 0.02,
+          "multiple": 0.2
+        },
+        "D247": {
+          "not_done": 0.1,
+          "absent": 0.2,
+          "lung": 0.08,
+          "bone": 0.05,
+          "liver": 0.3,
+          "brain": 0.02,
+          "multiple": 0.25
+        },
+        "D248": {
+          "not_done": 0.1,
+          "absent": 0.3,
+          "lung": 0.12,
+          "bone": 0.08,
+          "liver": 0.15,
+          "brain": 0.03,
+          "multiple": 0.22
+        },
+        "D92": {
+          "not_done": 0.1,
+          "absent": 0.2,
+          "lung": 0.1,
+          "bone": 0.1,
+          "liver": 0.15,
+          "brain": 0.05,
+          "multiple": 0.3
         }
       }
     }
