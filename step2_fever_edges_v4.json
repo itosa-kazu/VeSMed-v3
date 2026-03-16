@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4725,
+  "total_edges": 4741,
   "edges": [
     {
       "from": "R01",
@@ -37572,6 +37572,118 @@
       "from_name": "mesothelioma",
       "to_name": "L16",
       "reason": "悪性中皮腫: LDH上昇(腫瘍/胸水)"
+    },
+    {
+      "from": "D78",
+      "to": "L20",
+      "from_name": "heatstroke_severe",
+      "to_name": "L20",
+      "reason": "熱中症: D-dimer上昇(DIC合併, 40-50%)"
+    },
+    {
+      "from": "D127",
+      "to": "E15",
+      "from_name": "pleural_effusion",
+      "to_name": "E15",
+      "reason": "胸水: 心雑音(弁膜症性, 30-40%)"
+    },
+    {
+      "from": "D279",
+      "to": "E04",
+      "from_name": "mediastinitis",
+      "to_name": "E04",
+      "reason": "縦隔炎: 頻呼吸(敗血症/疼痛, 70-80%)"
+    },
+    {
+      "from": "D336",
+      "to": "L44",
+      "from_name": "ADPKD",
+      "to_name": "L44",
+      "reason": "ADPKD: 電解質異常(CKD→低Na/高K, 40-50%)"
+    },
+    {
+      "from": "D344",
+      "to": "L55",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L55",
+      "reason": "収縮性心膜炎: 腎前性AKI(低心拍出, 20-30%)"
+    },
+    {
+      "from": "D349",
+      "to": "E02",
+      "from_name": "TB_pleurisy",
+      "to_name": "E02",
+      "reason": "結核性胸膜炎: 頻脈(発熱/大量胸水, 50-60%)"
+    },
+    {
+      "from": "D349",
+      "to": "E05",
+      "from_name": "TB_pleurisy",
+      "to_name": "E05",
+      "reason": "結核性胸膜炎: SpO2低下(大量胸水, 30-40%)"
+    },
+    {
+      "from": "D283",
+      "to": "S12",
+      "from_name": "tetrodotoxin",
+      "to_name": "S12",
+      "reason": "フグ毒: 腹痛(消化器症状, 40-50%)"
+    },
+    {
+      "from": "D283",
+      "to": "E38",
+      "from_name": "tetrodotoxin",
+      "to_name": "E38",
+      "reason": "フグ毒: 低血圧(Na channel block, 30-40%)"
+    },
+    {
+      "from": "D303",
+      "to": "S15",
+      "from_name": "parkinson_disease",
+      "to_name": "S15",
+      "reason": "パーキンソン: 腰背部痛(固縮/姿勢異常, 30-60%)"
+    },
+    {
+      "from": "D306",
+      "to": "E01",
+      "from_name": "acute_subdural_hematoma",
+      "to_name": "E01",
+      "reason": "急性SDH: 体温(通常無熱, 中枢性で上昇あり)"
+    },
+    {
+      "from": "D327",
+      "to": "E07",
+      "from_name": "aortic_stenosis",
+      "to_name": "E07",
+      "reason": "AS: 肺聴診(心不全→肺うっ血, crackles, 30-40%)"
+    },
+    {
+      "from": "D328",
+      "to": "S07",
+      "from_name": "ARDS",
+      "to_name": "S07",
+      "reason": "ARDS: 倦怠感(原因疾患:敗血症/肺炎, 50-60%)"
+    },
+    {
+      "from": "D328",
+      "to": "L11",
+      "from_name": "ARDS",
+      "to_name": "L11",
+      "reason": "ARDS: 肝酵素上昇(多臓器不全/ショック肝, 30-40%)"
+    },
+    {
+      "from": "D329",
+      "to": "S04",
+      "from_name": "osteomyelitis",
+      "to_name": "S04",
+      "reason": "骨髄炎: 呼吸困難(敗血症→ARDS合併, 15-20%)"
+    },
+    {
+      "from": "D319",
+      "to": "S07",
+      "from_name": "bronchiectasis",
+      "to_name": "S07",
+      "reason": "気管支拡張: 倦怠感(慢性消耗/感染, 40-50%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
