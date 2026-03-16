@@ -7529,11 +7529,11 @@
           "over_40.0": 0.09
         },
         "D264": {
-          "under_37.5": 0.2,
-          "37.5_38.0": 0.2,
-          "38.0_39.0": 0.35,
-          "39.0_40.0": 0.18,
-          "over_40.0": 0.07
+          "under_37.5": 0.4,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.2,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.03
         },
         "D265": {
           "under_37.5": 0.08,
@@ -10290,10 +10290,10 @@
           "decreased_absent": 0.1
         },
         "D264": {
-          "clear": 0.25,
-          "crackles": 0.5,
-          "wheezes": 0.15,
-          "decreased_absent": 0.1
+          "clear": 0.2,
+          "crackles": 0.3,
+          "wheezes": 0.25,
+          "decreased_absent": 0.25
         },
         "D265": {
           "clear": 0.05,
@@ -15432,10 +15432,10 @@
           "high_over_10": 0.32
         },
         "D264": {
-          "normal_under_0.3": 0.1,
+          "normal_under_0.3": 0.3,
           "mild_0.3_3": 0.25,
-          "moderate_3_10": 0.35,
-          "high_over_10": 0.3
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.2
         },
         "D265": {
           "normal_under_0.3": 0.03,
@@ -17595,10 +17595,10 @@
           "lymphocyte_predominant": 0.06
         },
         "D323": {
-          "normal": 0.4,
+          "normal": 0.55,
           "left_shift": 0.1,
           "atypical_lymphocytes": 0.02,
-          "thrombocytopenia": 0.4,
+          "thrombocytopenia": 0.25,
           "eosinophilia": 0.02,
           "lymphocyte_predominant": 0.06
         },
@@ -19738,8 +19738,8 @@
         },
         "D317": {
           "absent": 0.3,
-          "dry": 0.45,
-          "productive": 0.25
+          "dry": 0.5,
+          "productive": 0.2
         },
         "D319": {
           "absent": 0.03,
@@ -20344,9 +20344,9 @@
           "at_rest": 0.5
         },
         "D258": {
-          "absent": 0.3,
+          "absent": 0.05,
           "on_exertion": 0.3,
-          "at_rest": 0.4
+          "at_rest": 0.65
         },
         "D263": {
           "absent": 0.6,
@@ -20425,8 +20425,8 @@
         },
         "D317": {
           "absent": 0.08,
-          "on_exertion": 0.42,
-          "at_rest": 0.5
+          "on_exertion": 0.52,
+          "at_rest": 0.4
         },
         "D318": {
           "absent": 0.02,
@@ -20889,9 +20889,9 @@
           "severe": 0.15
         },
         "D305": {
-          "absent": 0.15,
-          "mild": 0.2,
-          "severe": 0.65
+          "absent": 0.08,
+          "mild": 0.12,
+          "severe": 0.8
         },
         "D306": {
           "absent": 0.2,
