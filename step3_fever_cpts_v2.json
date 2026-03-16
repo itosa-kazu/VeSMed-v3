@@ -33405,6 +33405,42 @@
           "normal": 0.4,
           "pre_DIC": 0.25,
           "overt_DIC": 0.25
+        },
+        "D15": {
+          "not_done": 0.1,
+          "normal": 0.45,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.2
+        },
+        "D16": {
+          "not_done": 0.1,
+          "normal": 0.55,
+          "pre_DIC": 0.2,
+          "overt_DIC": 0.15
+        },
+        "D52": {
+          "not_done": 0.1,
+          "normal": 0.4,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.25
+        },
+        "D166": {
+          "not_done": 0.1,
+          "normal": 0.5,
+          "pre_DIC": 0.2,
+          "overt_DIC": 0.2
+        },
+        "D174": {
+          "not_done": 0.1,
+          "normal": 0.5,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.15
+        },
+        "D208": {
+          "not_done": 0.1,
+          "normal": 0.8,
+          "pre_DIC": 0.08,
+          "overt_DIC": 0.02
         }
       }
     },
@@ -33638,6 +33674,55 @@
           "hepatocellular": 0.4,
           "cholestatic": 0.05,
           "congestive": 0.15
+        },
+        "D70": {
+          "not_assessed": 0.05,
+          "normal": 0.1,
+          "hepatocellular": 0.4,
+          "cholestatic": 0.15,
+          "congestive": 0.3
+        },
+        "D29": {
+          "not_assessed": 0.05,
+          "normal": 0.1,
+          "hepatocellular": 0.6,
+          "cholestatic": 0.2,
+          "congestive": 0.05
+        },
+        "D25": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.75,
+          "congestive": 0.05
+        },
+        "D11": {
+          "not_assessed": 0.1,
+          "normal": 0.25,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.5,
+          "congestive": 0.05
+        },
+        "D179": {
+          "not_assessed": 0.05,
+          "normal": 0.05,
+          "hepatocellular": 0.5,
+          "cholestatic": 0.35,
+          "congestive": 0.05
+        },
+        "D274": {
+          "not_assessed": 0.1,
+          "normal": 0.3,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.45,
+          "congestive": 0.05
+        },
+        "D229": {
+          "not_assessed": 0.05,
+          "normal": 0.1,
+          "hepatocellular": 0.1,
+          "cholestatic": 0.7,
+          "congestive": 0.05
         }
       }
     },
@@ -33740,6 +33825,41 @@
           "no_AKI": 0.15,
           "prerenal": 0.05,
           "renal": 0.65,
+          "postrenal": 0.05
+        },
+        "D156": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.3,
+          "prerenal": 0.05,
+          "renal": 0.5,
+          "postrenal": 0.05
+        },
+        "D205": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.15,
+          "prerenal": 0.05,
+          "renal": 0.65,
+          "postrenal": 0.05
+        },
+        "D219": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.25,
+          "prerenal": 0.05,
+          "renal": 0.55,
+          "postrenal": 0.05
+        },
+        "D240": {
+          "not_assessed": 0.05,
+          "no_AKI": 0.05,
+          "prerenal": 0.05,
+          "renal": 0.8,
+          "postrenal": 0.05
+        },
+        "D284": {
+          "not_assessed": 0.1,
+          "no_AKI": 0.5,
+          "prerenal": 0.1,
+          "renal": 0.25,
           "postrenal": 0.05
         }
       }
