@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4920,
+  "total_edges": 4912,
   "edges": [
     {
       "from": "R01",
@@ -36244,62 +36244,6 @@
       "reason": "LQTS: 突発"
     },
     {
-      "from": "D343",
-      "to": "S04",
-      "from_name": "takotsubo",
-      "to_name": "S04",
-      "reason": "たこつぼ: 呼吸困難(50-60%)"
-    },
-    {
-      "from": "D343",
-      "to": "S15",
-      "from_name": "takotsubo",
-      "to_name": "S15",
-      "reason": "たこつぼ: 胸痛(70-80%)"
-    },
-    {
-      "from": "D343",
-      "to": "E02",
-      "from_name": "takotsubo",
-      "to_name": "E02",
-      "reason": "たこつぼ: 頻脈(50-60%)"
-    },
-    {
-      "from": "D343",
-      "to": "E38",
-      "from_name": "takotsubo",
-      "to_name": "E38",
-      "reason": "たこつぼ: 血圧低下~正常"
-    },
-    {
-      "from": "D343",
-      "to": "L51",
-      "from_name": "takotsubo",
-      "to_name": "L51",
-      "reason": "たこつぼ: BNP上昇(80%+)"
-    },
-    {
-      "from": "D343",
-      "to": "S07",
-      "from_name": "takotsubo",
-      "to_name": "S07",
-      "reason": "たこつぼ: 倦怠感(40-50%)"
-    },
-    {
-      "from": "D343",
-      "to": "T01",
-      "from_name": "takotsubo",
-      "to_name": "T01",
-      "reason": "たこつぼ: 急性"
-    },
-    {
-      "from": "D343",
-      "to": "T02",
-      "from_name": "takotsubo",
-      "to_name": "T02",
-      "reason": "たこつぼ: 突発"
-    },
-    {
       "from": "D344",
       "to": "E36",
       "from_name": "constrictive_pericarditis",
@@ -37735,13 +37679,6 @@
       "reason": "Sheehan: Cr上昇(副腎不全→腎前性AKI, 15-20%)"
     },
     {
-      "from": "D343",
-      "to": "L01",
-      "from_name": "takotsubo",
-      "to_name": "L01",
-      "reason": "たこつぼ: WBC上昇(カテコラミンストレス, 40-50%)"
-    },
-    {
       "from": "D335",
       "to": "L55",
       "from_name": "PAD",
@@ -37952,13 +37889,6 @@
       "reason": "MS: 弁膜症(定義的)"
     },
     {
-      "from": "D343",
-      "to": "E39",
-      "from_name": "takotsubo",
-      "to_name": "E39",
-      "reason": "たこつぼ: apical ballooning(定義的)"
-    },
-    {
       "from": "D344",
       "to": "E39",
       "from_name": "constrictive_pericarditis",
@@ -38020,13 +37950,6 @@
       "from_name": "LQTS",
       "to_name": "E40",
       "reason": "LQTS: QT延長(定義的)"
-    },
-    {
-      "from": "D343",
-      "to": "E40",
-      "from_name": "takotsubo",
-      "to_name": "E40",
-      "reason": "たこつぼ: ST上昇→T波逆転(80%+)"
     },
     {
       "from": "D327",
@@ -38827,13 +38750,6 @@
       "reason": "HCM: 心不全(拡張障害, 40-50%)"
     },
     {
-      "from": "D343",
-      "to": "L65",
-      "from_name": "takotsubo",
-      "to_name": "L65",
-      "reason": "たこつぼ: 心不全(EF低下, 50-60%)"
-    },
-    {
       "from": "D344",
       "to": "L65",
       "from_name": "constrictive_pericarditis",
@@ -38937,6 +38853,34 @@
       "from_name": "takotsubo_old",
       "to_name": "L65",
       "reason": "たこつぼ(旧): 心不全(50-60%)"
+    },
+    {
+      "from": "D150",
+      "to": "S15",
+      "from_name": "takotsubo",
+      "to_name": "S15",
+      "reason": "たこつぼ: 胸痛(70-80%)"
+    },
+    {
+      "from": "D150",
+      "to": "E40",
+      "from_name": "takotsubo",
+      "to_name": "E40",
+      "reason": "たこつぼ: ST上昇→T波逆転(80%+)"
+    },
+    {
+      "from": "D150",
+      "to": "E38",
+      "from_name": "takotsubo",
+      "to_name": "E38",
+      "reason": "たこつぼ: 血圧低下~正常"
+    },
+    {
+      "from": "D150",
+      "to": "S07",
+      "from_name": "takotsubo",
+      "to_name": "S07",
+      "reason": "たこつぼ: 倦怠感(40-50%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

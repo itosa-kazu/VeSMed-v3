@@ -7116,18 +7116,6 @@
       "note": "先天性(KCNQ1/KCNH2/SCN5A変異)or薬剤性。QTc延長→TdP→失神/突然死。運動/精神的ストレス/睡眠中に発作"
     },
     {
-      "id": "D343",
-      "name": "takotsubo",
-      "name_ja": "たこつぼ心筋症",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "severity": "high",
-      "note": "精神的/身体的ストレス→左室心尖部無動(ballooning)。閉経後女性。AMIに酷似するが冠動脈正常。トロポニン軽度上昇"
-    },
-    {
       "id": "D344",
       "name": "constrictive_pericarditis",
       "name_ja": "収縮性心膜炎",

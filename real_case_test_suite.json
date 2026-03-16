@@ -17577,7 +17577,7 @@
       "pmcid": "PMC10091156",
       "vignette": "58F. 胸骨後部鈍痛(10/10)+背部放散+発汗+呼吸困難+めまい+動悸(1.5時間持続). HR 64, BP 112/76, T 36.5. トロポニンHS 207→2794→1478(上昇), WBC 11.2k(軽度上昇), ALT 39(軽度上昇). ECG:前胸部T波異常→T波逆転. Echo:EF 50-55%, 遠位中隔+心尖部重度低運動→follow-upで正常化. 冠動脈正常",
       "final_diagnosis": "たこつぼ心筋症(apical type, unprovoked)",
-      "expected_id": "D343",
+      "expected_id": "D150",
       "in_scope": true,
       "evidence": {
         "S04": "at_rest",
@@ -17603,7 +17603,7 @@
       "pmcid": "PMC3184576",
       "vignette": "78F. 突然発症の胸骨下鈍痛(安静時). 呼吸困難/動悸/発汗なし. 心筋酵素軽度上昇. ECG:心房細動+心室ペーシングリズム. Echo:EF 40%(初回)→6週後45-50%. 誘因:情動ストレス(夫のACS入院). 冠動脈造影正常. Apical ballooning",
       "final_diagnosis": "たこつぼ心筋症(情動ストレス誘発)",
-      "expected_id": "D343",
+      "expected_id": "D150",
       "in_scope": true,
       "evidence": {
         "S15": "present",
@@ -17628,7 +17628,7 @@
       "pmcid": "PMC9899325",
       "vignette": "62F. 6ヶ月の労作時胸骨後部痛+労作時呼吸困難+精神的ストレス. JVP正常+心雑音なし. ECG:洞調律+LVH基準+下壁ST上昇. Echo:安静時EF 60%→運動負荷時EF 25%に低下(全体的低運動+LV拡張)→2ヶ月後EF 60-65%に回復. 冠動脈非閉塞",
       "final_diagnosis": "たこつぼ心筋症(運動負荷誘発)",
-      "expected_id": "D343",
+      "expected_id": "D150",
       "in_scope": true,
       "evidence": {
         "S04": "on_exertion",

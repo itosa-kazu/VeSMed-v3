@@ -5644,29 +5644,6 @@
         "65_plus,female": 0.0005
       }
     },
-    "D343": {
-      "parents": [
-        "R01",
-        "R02"
-      ],
-      "description": "たこつぼ心筋症。閉経後女性",
-      "cpt": {
-        "0_1,male": 0.0,
-        "0_1,female": 0.0,
-        "1_5,male": 0.0,
-        "1_5,female": 0.0,
-        "6_12,male": 0.0,
-        "6_12,female": 0.0,
-        "13_17,male": 0.0,
-        "13_17,female": 0.0001,
-        "18_39,male": 0.0003,
-        "18_39,female": 0.0005,
-        "40_64,male": 0.0005,
-        "40_64,female": 0.002,
-        "65_plus,male": 0.001,
-        "65_plus,female": 0.004
-      }
-    },
     "D344": {
       "parents": [
         "R01"
@@ -8808,11 +8785,6 @@
           "under_100": 0.25,
           "100_120": 0.2,
           "over_120": 0.55
-        },
-        "D343": {
-          "under_100": 0.25,
-          "100_120": 0.4,
-          "over_120": 0.35
         },
         "D346": {
           "under_100": 0.35,
@@ -14339,12 +14311,6 @@
           "normal_4000_10000": 0.3,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.25
-        },
-        "D343": {
-          "low_under_4000": 0.03,
-          "normal_4000_10000": 0.35,
-          "high_10000_20000": 0.4,
-          "very_high_over_20000": 0.22
         },
         "D289": {
           "low_under_4000": 0.15,
@@ -20473,11 +20439,6 @@
           "on_exertion": 0.52,
           "at_rest": 0.4
         },
-        "D343": {
-          "absent": 0.25,
-          "on_exertion": 0.3,
-          "at_rest": 0.45
-        },
         "D344": {
           "absent": 0.2,
           "on_exertion": 0.5,
@@ -22097,11 +22058,6 @@
           "mild": 0.35,
           "severe": 0.4
         },
-        "D343": {
-          "absent": 0.35,
-          "mild": 0.35,
-          "severe": 0.3
-        },
         "D344": {
           "absent": 0.15,
           "mild": 0.35,
@@ -22148,6 +22104,11 @@
           "severe": 0.35
         },
         "D301": {
+          "absent": 0.35,
+          "mild": 0.35,
+          "severe": 0.3
+        },
+        "D150": {
           "absent": 0.35,
           "mild": 0.35,
           "severe": 0.3
@@ -28025,12 +27986,6 @@
           "1w_to_3w": 0.04,
           "over_3w": 0.01
         },
-        "D343": {
-          "under_3d": 0.7,
-          "3d_to_1w": 0.2,
-          "1w_to_3w": 0.08,
-          "over_3w": 0.02
-        },
         "D344": {
           "under_3d": 0.03,
           "3d_to_1w": 0.07,
@@ -29228,10 +29183,6 @@
           "sudden_hours": 0.9,
           "gradual_days": 0.1
         },
-        "D343": {
-          "sudden_hours": 0.75,
-          "gradual_days": 0.25
-        },
         "D344": {
           "sudden_hours": 0.05,
           "gradual_days": 0.95
@@ -29705,10 +29656,6 @@
           "absent": 0.05,
           "present": 0.95
         },
-        "D343": {
-          "absent": 0.15,
-          "present": 0.85
-        },
         "D344": {
           "absent": 0.4,
           "present": 0.6
@@ -29748,6 +29695,10 @@
         "D341": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D150": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -30691,12 +30642,6 @@
           "normal": 0.15,
           "mildly_elevated": 0.35,
           "very_high": 0.35
-        },
-        "D343": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.3,
-          "very_high": 0.55
         },
         "D344": {
           "not_done": 0.15,
@@ -32097,11 +32042,6 @@
           "elevated_140_180": 0.45,
           "crisis_over_180": 0.35
         },
-        "D343": {
-          "normal_under_140": 0.55,
-          "elevated_140_180": 0.3,
-          "crisis_over_180": 0.15
-        },
         "D345": {
           "normal_under_140": 0.85,
           "elevated_140_180": 0.12,
@@ -32141,6 +32081,11 @@
           "normal_under_140": 0.35,
           "elevated_140_180": 0.4,
           "crisis_over_180": 0.25
+        },
+        "D150": {
+          "normal_under_140": 0.55,
+          "elevated_140_180": 0.3,
+          "crisis_over_180": 0.15
         }
       }
     },
@@ -32673,15 +32618,6 @@
           "LVH": 0.05,
           "dilated_chamber": 0.1
         },
-        "D343": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "wall_motion_abnormal": 0.8,
-          "valvular_abnormal": 0.03,
-          "pericardial_effusion": 0.02,
-          "LVH": 0.03,
-          "dilated_chamber": 0.04
-        },
         "D344": {
           "not_done": 0.05,
           "normal": 0.05,
@@ -32789,17 +32725,6 @@
           "RVH_strain": 0.02,
           "LVH_pattern": 0.02
         },
-        "D343": {
-          "not_done": 0.03,
-          "normal": 0.05,
-          "ST_elevation": 0.4,
-          "ST_depression": 0.3,
-          "AF": 0.05,
-          "QT_prolongation": 0.05,
-          "Brugada_pattern": 0.01,
-          "RVH_strain": 0.03,
-          "LVH_pattern": 0.08
-        },
         "D327": {
           "not_done": 0.05,
           "normal": 0.1,
@@ -32854,6 +32779,17 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.65,
           "LVH_pattern": 0.07
+        },
+        "D150": {
+          "not_done": 0.03,
+          "normal": 0.05,
+          "ST_elevation": 0.4,
+          "ST_depression": 0.3,
+          "AF": 0.05,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.03,
+          "LVH_pattern": 0.08
         }
       }
     },
@@ -33623,12 +33559,6 @@
           "absent": 0.3,
           "mild_NYHA2": 0.35,
           "severe_NYHA3_4": 0.3
-        },
-        "D343": {
-          "not_assessed": 0.05,
-          "absent": 0.2,
-          "mild_NYHA2": 0.3,
-          "severe_NYHA3_4": 0.45
         },
         "D344": {
           "not_assessed": 0.05,
