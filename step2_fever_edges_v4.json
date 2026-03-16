@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4336,
+  "total_edges": 4374,
   "edges": [
     {
       "from": "R01",
@@ -34849,6 +34849,272 @@
       "from_name": "moyamoya",
       "to_name": "T02",
       "reason": "もやもや: 突発~亜急性"
+    },
+    {
+      "from": "D317",
+      "to": "S04",
+      "from_name": "PAP",
+      "to_name": "S04",
+      "reason": "PAP: 呼吸困難(80%+)"
+    },
+    {
+      "from": "D317",
+      "to": "S01",
+      "from_name": "PAP",
+      "to_name": "S01",
+      "reason": "PAP: 咳嗽(50-60%)"
+    },
+    {
+      "from": "D317",
+      "to": "E05",
+      "from_name": "PAP",
+      "to_name": "E05",
+      "reason": "PAP: 低酸素(60-70%)"
+    },
+    {
+      "from": "D317",
+      "to": "L04",
+      "from_name": "PAP",
+      "to_name": "L04",
+      "reason": "PAP: CXR(crazy-paving/両側GGO)"
+    },
+    {
+      "from": "D317",
+      "to": "S07",
+      "from_name": "PAP",
+      "to_name": "S07",
+      "reason": "PAP: 倦怠感"
+    },
+    {
+      "from": "D317",
+      "to": "E07",
+      "from_name": "PAP",
+      "to_name": "E07",
+      "reason": "PAP: 肺聴診(crackles)"
+    },
+    {
+      "from": "D317",
+      "to": "T01",
+      "from_name": "PAP",
+      "to_name": "T01",
+      "reason": "PAP: 慢性"
+    },
+    {
+      "from": "D317",
+      "to": "T02",
+      "from_name": "PAP",
+      "to_name": "T02",
+      "reason": "PAP: 緩徐"
+    },
+    {
+      "from": "D318",
+      "to": "S04",
+      "from_name": "CTEPH",
+      "to_name": "S04",
+      "reason": "CTEPH: 呼吸困難(進行性, 100%)"
+    },
+    {
+      "from": "D318",
+      "to": "E36",
+      "from_name": "CTEPH",
+      "to_name": "E36",
+      "reason": "CTEPH: 下肢浮腫(右心不全, 40-50%)"
+    },
+    {
+      "from": "D318",
+      "to": "E05",
+      "from_name": "CTEPH",
+      "to_name": "E05",
+      "reason": "CTEPH: 低酸素"
+    },
+    {
+      "from": "D318",
+      "to": "L51",
+      "from_name": "CTEPH",
+      "to_name": "L51",
+      "reason": "CTEPH: BNP上昇(右心不全)"
+    },
+    {
+      "from": "D318",
+      "to": "S07",
+      "from_name": "CTEPH",
+      "to_name": "S07",
+      "reason": "CTEPH: 倦怠感"
+    },
+    {
+      "from": "D318",
+      "to": "L52",
+      "from_name": "CTEPH",
+      "to_name": "L52",
+      "reason": "CTEPH: D-dimer(軽度上昇~正常)"
+    },
+    {
+      "from": "D318",
+      "to": "T01",
+      "from_name": "CTEPH",
+      "to_name": "T01",
+      "reason": "CTEPH: 慢性"
+    },
+    {
+      "from": "D318",
+      "to": "T02",
+      "from_name": "CTEPH",
+      "to_name": "T02",
+      "reason": "CTEPH: 緩徐"
+    },
+    {
+      "from": "D319",
+      "to": "S01",
+      "from_name": "bronchiectasis",
+      "to_name": "S01",
+      "reason": "気管支拡張: 慢性湿性咳嗽(90%+)"
+    },
+    {
+      "from": "D319",
+      "to": "S04",
+      "from_name": "bronchiectasis",
+      "to_name": "S04",
+      "reason": "気管支拡張: 呼吸困難(40-50%)"
+    },
+    {
+      "from": "D319",
+      "to": "E01",
+      "from_name": "bronchiectasis",
+      "to_name": "E01",
+      "reason": "気管支拡張: 発熱(増悪時, 30-40%)"
+    },
+    {
+      "from": "D319",
+      "to": "E07",
+      "from_name": "bronchiectasis",
+      "to_name": "E07",
+      "reason": "気管支拡張: crackles+wheezes"
+    },
+    {
+      "from": "D319",
+      "to": "L04",
+      "from_name": "bronchiectasis",
+      "to_name": "L04",
+      "reason": "気管支拡張: CXR(気管支壁肥厚/浸潤)"
+    },
+    {
+      "from": "D319",
+      "to": "S44",
+      "from_name": "bronchiectasis",
+      "to_name": "S44",
+      "reason": "気管支拡張: 喀血(20-30%)"
+    },
+    {
+      "from": "D319",
+      "to": "L01",
+      "from_name": "bronchiectasis",
+      "to_name": "L01",
+      "reason": "気管支拡張: WBC上昇(感染増悪時)"
+    },
+    {
+      "from": "D319",
+      "to": "L02",
+      "from_name": "bronchiectasis",
+      "to_name": "L02",
+      "reason": "気管支拡張: CRP上昇(感染増悪時)"
+    },
+    {
+      "from": "D319",
+      "to": "T01",
+      "from_name": "bronchiectasis",
+      "to_name": "T01",
+      "reason": "気管支拡張: 慢性(増悪で急性)"
+    },
+    {
+      "from": "D319",
+      "to": "T02",
+      "from_name": "bronchiectasis",
+      "to_name": "T02",
+      "reason": "気管支拡張: 慢性"
+    },
+    {
+      "from": "D320",
+      "to": "S02",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S02",
+      "reason": "喉頭癌: 嗄声/咽頭違和感(90%+)"
+    },
+    {
+      "from": "D320",
+      "to": "S04",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S04",
+      "reason": "喉頭癌: 呼吸困難(進行, 30-40%)"
+    },
+    {
+      "from": "D320",
+      "to": "S07",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S07",
+      "reason": "喉頭癌: 体重減少(40-50%)"
+    },
+    {
+      "from": "D320",
+      "to": "S01",
+      "from_name": "laryngeal_cancer",
+      "to_name": "S01",
+      "reason": "喉頭癌: 咳嗽(20-30%)"
+    },
+    {
+      "from": "D320",
+      "to": "T01",
+      "from_name": "laryngeal_cancer",
+      "to_name": "T01",
+      "reason": "喉頭癌: 慢性"
+    },
+    {
+      "from": "D320",
+      "to": "T02",
+      "from_name": "laryngeal_cancer",
+      "to_name": "T02",
+      "reason": "喉頭癌: 緩徐"
+    },
+    {
+      "from": "D321",
+      "to": "E38",
+      "from_name": "primary_aldosteronism",
+      "to_name": "E38",
+      "reason": "原発性アルドステロン症: 高血圧(定義的)"
+    },
+    {
+      "from": "D321",
+      "to": "L44",
+      "from_name": "primary_aldosteronism",
+      "to_name": "L44",
+      "reason": "原発性アルドステロン症: 低K血症→other"
+    },
+    {
+      "from": "D321",
+      "to": "S05",
+      "from_name": "primary_aldosteronism",
+      "to_name": "S05",
+      "reason": "原発性アルドステロン症: 頭痛(高血圧, 40-50%)"
+    },
+    {
+      "from": "D321",
+      "to": "S07",
+      "from_name": "primary_aldosteronism",
+      "to_name": "S07",
+      "reason": "原発性アルドステロン症: 倦怠感/筋力低下(低K, 30-40%)"
+    },
+    {
+      "from": "D321",
+      "to": "T01",
+      "from_name": "primary_aldosteronism",
+      "to_name": "T01",
+      "reason": "原発性アルドステロン症: 慢性"
+    },
+    {
+      "from": "D321",
+      "to": "T02",
+      "from_name": "primary_aldosteronism",
+      "to_name": "T02",
+      "reason": "原発性アルドステロン症: 緩徐"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

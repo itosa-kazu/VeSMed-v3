@@ -6814,6 +6814,66 @@
       ],
       "severity": "high",
       "note": "内頸動脈遠位部の進行性狭窄+異常血管網。日本人に多い。小児:TIA/脳梗塞、成人:脳出血"
+    },
+    {
+      "id": "D317",
+      "name": "PAP",
+      "name_ja": "肺胞蛋白症(PAP)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "サーファクタント蓄積→低酸素。自己免疫型(GM-CSF Ab)/二次性(血液疾患)/先天性。全肺洗浄が治療"
+    },
+    {
+      "id": "D318",
+      "name": "CTEPH",
+      "name_ja": "慢性血栓塞栓性肺高血圧症(CTEPH)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "急性PEの慢性化→肺動脈リモデリング→肺高血圧。労作時呼吸困難+右心不全。肺動脈内膜摘除術"
+    },
+    {
+      "id": "D319",
+      "name": "bronchiectasis",
+      "name_ja": "気管支拡張症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "気管支の不可逆的拡張。慢性湿性咳嗽+膿性痰+反復性肺炎+喀血。CF/原発性線毛機能不全"
+    },
+    {
+      "id": "D320",
+      "name": "laryngeal_cancer",
+      "name_ja": "喉頭癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "嗄声(声門型, 早期発見可能)+嚥下困難+頸部腫瘤(進行)。喫煙+飲酒がリスク。扁平上皮癌が95%"
+    },
+    {
+      "id": "D321",
+      "name": "primary_aldosteronism",
+      "name_ja": "原発性アルドステロン症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "治療抵抗性高血圧の5-10%。低K血症+高血圧。アルドステロン/レニン比>200で疑い。副腎腺腫/過形成"
     }
   ]
 }
