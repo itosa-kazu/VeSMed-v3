@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4912,
+  "total_edges": 4895,
   "edges": [
     {
       "from": "R01",
@@ -26892,62 +26892,6 @@
       "reason": "エチレングリコール: 急性"
     },
     {
-      "from": "D206",
-      "to": "S04",
-      "from_name": "HCM",
-      "to_name": "S04",
-      "reason": "HCM: 呼吸困難(労作時, 60-70%)"
-    },
-    {
-      "from": "D206",
-      "to": "S21",
-      "from_name": "HCM",
-      "to_name": "S21",
-      "reason": "HCM: 胸痛(40-50%)"
-    },
-    {
-      "from": "D206",
-      "to": "E02",
-      "from_name": "HCM",
-      "to_name": "E02",
-      "reason": "HCM: 頻脈/不整脈(30-40%)"
-    },
-    {
-      "from": "D206",
-      "to": "E03",
-      "from_name": "HCM",
-      "to_name": "E03",
-      "reason": "HCM: 低血圧(LVOT閉塞時)"
-    },
-    {
-      "from": "D206",
-      "to": "L53",
-      "from_name": "HCM",
-      "to_name": "L53",
-      "reason": "HCM: トロポニン上昇(心筋障害, 20-30%)"
-    },
-    {
-      "from": "D206",
-      "to": "L51",
-      "from_name": "HCM",
-      "to_name": "L51",
-      "reason": "HCM: BNP上昇(拡張障害, 50-60%)"
-    },
-    {
-      "from": "D206",
-      "to": "T01",
-      "from_name": "HCM",
-      "to_name": "T01",
-      "reason": "HCM: 慢性(急性増悪で来院)"
-    },
-    {
-      "from": "D206",
-      "to": "T02",
-      "from_name": "HCM",
-      "to_name": "T02",
-      "reason": "HCM: 急性~慢性"
-    },
-    {
       "from": "D207",
       "to": "L14",
       "from_name": "HIT",
@@ -35579,76 +35523,6 @@
       "reason": "骨髄炎: 亜急性"
     },
     {
-      "from": "D330",
-      "to": "S15",
-      "from_name": "rhabdomyolysis",
-      "to_name": "S15",
-      "reason": "横紋筋融解: 筋痛/腰背部痛(80%+)"
-    },
-    {
-      "from": "D330",
-      "to": "S07",
-      "from_name": "rhabdomyolysis",
-      "to_name": "S07",
-      "reason": "横紋筋融解: 倦怠感/筋力低下(70-80%)"
-    },
-    {
-      "from": "D330",
-      "to": "L55",
-      "from_name": "rhabdomyolysis",
-      "to_name": "L55",
-      "reason": "横紋筋融解: AKI(30-50%)"
-    },
-    {
-      "from": "D330",
-      "to": "L11",
-      "from_name": "rhabdomyolysis",
-      "to_name": "L11",
-      "reason": "横紋筋融解: AST上昇(CK連動, 80%+)"
-    },
-    {
-      "from": "D330",
-      "to": "S13",
-      "from_name": "rhabdomyolysis",
-      "to_name": "S13",
-      "reason": "横紋筋融解: 嘔気嘔吐(30-40%)"
-    },
-    {
-      "from": "D330",
-      "to": "E01",
-      "from_name": "rhabdomyolysis",
-      "to_name": "E01",
-      "reason": "横紋筋融解: 発熱(30-40%)"
-    },
-    {
-      "from": "D330",
-      "to": "E02",
-      "from_name": "rhabdomyolysis",
-      "to_name": "E02",
-      "reason": "横紋筋融解: 頻脈(脱水/ショック, 40-50%)"
-    },
-    {
-      "from": "D330",
-      "to": "L44",
-      "from_name": "rhabdomyolysis",
-      "to_name": "L44",
-      "reason": "横紋筋融解: 高K血症(30-40%)"
-    },
-    {
-      "from": "D330",
-      "to": "T01",
-      "from_name": "rhabdomyolysis",
-      "to_name": "T01",
-      "reason": "横紋筋融解: 急性"
-    },
-    {
-      "from": "D330",
-      "to": "T02",
-      "from_name": "rhabdomyolysis",
-      "to_name": "T02",
-      "reason": "横紋筋融解: 急性"
-    },
-    {
       "from": "D331",
       "to": "S04",
       "from_name": "fat_embolism",
@@ -35822,55 +35696,6 @@
       "from_name": "acromegaly",
       "to_name": "T02",
       "reason": "先端巨大症: 緩徐"
-    },
-    {
-      "from": "D334",
-      "to": "S15",
-      "from_name": "IgG4_RD",
-      "to_name": "S15",
-      "reason": "IgG4: 腹痛(膵炎/後腹膜, 50-60%)"
-    },
-    {
-      "from": "D334",
-      "to": "L11",
-      "from_name": "IgG4_RD",
-      "to_name": "L11",
-      "reason": "IgG4: 肝胆道酵素上昇(胆管狭窄, 40-50%)"
-    },
-    {
-      "from": "D334",
-      "to": "S07",
-      "from_name": "IgG4_RD",
-      "to_name": "S07",
-      "reason": "IgG4: 倦怠感/体重減少(40-50%)"
-    },
-    {
-      "from": "D334",
-      "to": "E36",
-      "from_name": "IgG4_RD",
-      "to_name": "E36",
-      "reason": "IgG4: 浮腫(腎障害/後腹膜, 20-30%)"
-    },
-    {
-      "from": "D334",
-      "to": "L55",
-      "from_name": "IgG4_RD",
-      "to_name": "L55",
-      "reason": "IgG4: 腎機能障害(腎病変, 20-30%)"
-    },
-    {
-      "from": "D334",
-      "to": "T01",
-      "from_name": "IgG4_RD",
-      "to_name": "T01",
-      "reason": "IgG4: 慢性"
-    },
-    {
-      "from": "D334",
-      "to": "T02",
-      "from_name": "IgG4_RD",
-      "to_name": "T02",
-      "reason": "IgG4: 緩徐"
     },
     {
       "from": "D335",
@@ -37623,27 +37448,6 @@
       "reason": "僧帽弁狭窄: 肝酵素上昇(うっ血肝, 20-30%)"
     },
     {
-      "from": "D334",
-      "to": "S13",
-      "from_name": "IgG4_RD",
-      "to_name": "S13",
-      "reason": "IgG4: 嘔気嘔吐(膵炎, 30-40%)"
-    },
-    {
-      "from": "D334",
-      "to": "L01",
-      "from_name": "IgG4_RD",
-      "to_name": "L01",
-      "reason": "IgG4: WBC上昇(炎症, 30-40%)"
-    },
-    {
-      "from": "D334",
-      "to": "L02",
-      "from_name": "IgG4_RD",
-      "to_name": "L02",
-      "reason": "IgG4: CRP上昇(炎症, 40-50%)"
-    },
-    {
       "from": "D287",
       "to": "L01",
       "from_name": "gallbladder_cancer",
@@ -38881,6 +38685,83 @@
       "from_name": "takotsubo",
       "to_name": "S07",
       "reason": "たこつぼ: 倦怠感(40-50%)"
+    },
+    {
+      "from": "D94",
+      "to": "T02",
+      "from_name": "IgG4_RD",
+      "to_name": "T02",
+      "reason": "IgG4: 緩徐"
+    },
+    {
+      "from": "D94",
+      "to": "L55",
+      "from_name": "IgG4_RD",
+      "to_name": "L55",
+      "reason": "IgG4: 腎機能障害(腎病変, 20-30%)"
+    },
+    {
+      "from": "D94",
+      "to": "E36",
+      "from_name": "IgG4_RD",
+      "to_name": "E36",
+      "reason": "IgG4: 浮腫(腎障害/後腹膜, 20-30%)"
+    },
+    {
+      "from": "D94",
+      "to": "S15",
+      "from_name": "IgG4_RD",
+      "to_name": "S15",
+      "reason": "IgG4: 腹痛(膵炎/後腹膜, 50-60%)"
+    },
+    {
+      "from": "D94",
+      "to": "S13",
+      "from_name": "IgG4_RD",
+      "to_name": "S13",
+      "reason": "IgG4: 嘔気嘔吐(膵炎, 30-40%)"
+    },
+    {
+      "from": "D94",
+      "to": "L01",
+      "from_name": "IgG4_RD",
+      "to_name": "L01",
+      "reason": "IgG4: WBC上昇(炎症, 30-40%)"
+    },
+    {
+      "from": "D153",
+      "to": "S15",
+      "from_name": "rhabdomyolysis",
+      "to_name": "S15",
+      "reason": "横紋筋融解: 筋痛/腰背部痛(80%+)"
+    },
+    {
+      "from": "D153",
+      "to": "L11",
+      "from_name": "rhabdomyolysis",
+      "to_name": "L11",
+      "reason": "横紋筋融解: AST上昇(CK連動, 80%+)"
+    },
+    {
+      "from": "D346",
+      "to": "E03",
+      "from_name": "HCM",
+      "to_name": "E03",
+      "reason": "HCM: 低血圧(LVOT閉塞時)"
+    },
+    {
+      "from": "D346",
+      "to": "S21",
+      "from_name": "HCM",
+      "to_name": "S21",
+      "reason": "HCM: 胸痛(40-50%)"
+    },
+    {
+      "from": "D346",
+      "to": "L53",
+      "from_name": "HCM",
+      "to_name": "L53",
+      "reason": "HCM: トロポニン上昇(心筋障害, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

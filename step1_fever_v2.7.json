@@ -5472,18 +5472,6 @@
       "note": "不凍液. 代謝性アシドーシス(AG開大)+浸透圧gap+AKI(蓚酸カルシウム結晶). メタノールと鑑別"
     },
     {
-      "id": "D206",
-      "name": "HCM",
-      "name_ja": "肥大型心筋症(HCM)",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "severity": "high",
-      "note": "非対称性中隔肥大. 労作時呼吸困難+失神+胸痛+突然死リスク. LVOT obstruction. 若年突然死の原因"
-    },
-    {
       "id": "D207",
       "name": "HIT",
       "name_ja": "ヘパリン起因性血小板減少症(HIT)",
@@ -6960,18 +6948,6 @@
       "note": "骨の細菌感染。小児:血行性(長管骨骨幹端)、成人:開放骨折/糖尿病性足部。発熱+局所疼痛+腫脹。黄色ブドウ球菌が最多"
     },
     {
-      "id": "D330",
-      "name": "rhabdomyolysis",
-      "name_ja": "横紋筋融解症",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "severity": "critical",
-      "note": "骨格筋壊死→CK大量放出→ミオグロビン尿→AKI。外傷/圧挫/薬剤/過度運動/横紋筋/感染が原因。茶褐色尿が特徴的"
-    },
-    {
       "id": "D331",
       "name": "fat_embolism",
       "name_ja": "脂肪塞栓症候群",
@@ -7006,18 +6982,6 @@
       ],
       "severity": "moderate",
       "note": "GH産生下垂体腺腫。末端肥大+顔貌変化+発汗過多+関節痛+頭痛。IGF-1高値+OGTT GH抑制不良"
-    },
-    {
-      "id": "D334",
-      "name": "IgG4_RD",
-      "name_ja": "IgG4関連疾患",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "severity": "moderate",
-      "note": "IgG4陽性形質細胞浸潤→臓器腫大/線維化。自己免疫性膵炎/唾液腺腫大/後腹膜線維症/胆管狭窄。高齢男性に多い"
     },
     {
       "id": "D335",

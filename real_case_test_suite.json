@@ -11664,7 +11664,7 @@
       "pmcid": "PMC3816167",
       "vignette": "30F 数年間の反復性失神+1ヶ月の呼吸困難増悪+運動不耐. BP 91/59, HR 46. ECG:2:1 AVブロック(HR 36)+非持続性VT. Echo:非対称性中隔肥大16mm+SAM+LVOT圧較差",
       "final_diagnosis": "肥大型心筋症(運動誘発性AVブロック)",
-      "expected_id": "D206",
+      "expected_id": "D346",
       "in_scope": true,
       "evidence": {
         "S04": "on_exertion",
@@ -11686,7 +11686,7 @@
       "pmcid": "PMC12076763",
       "vignette": "41M 2年間HTN. 中等度労作時呼吸困難+失神1回. BP 125/72, HR 67, RR 17, SpO2 97%. ECG:LVH+深いT波逆転V1-V6+PVCs. Echo:EF 68%, 心尖部~中間部LVH(max 20mm), 中間部圧較差42mmHg, 心尖部瘤, 拡張障害grade II. CMR:LGE<15%. 5年SCD risk 5.22%",
       "final_diagnosis": "中間部閉塞型HCM+心尖部瘤",
-      "expected_id": "D206",
+      "expected_id": "D346",
       "in_scope": true,
       "evidence": {
         "S04": "on_exertion",
@@ -16599,7 +16599,7 @@
       "pmcid": "PMC11930517",
       "vignette": "65M. 反復性膵炎様腹痛(慢性)+10日間の増悪エピソード+嘔吐. リパーゼ 357, CRP 80, WBC 13090. IgG4 3.76g/L(上昇). ANA/ANCA陰性. CT:ソーセージ様膵腫大+両側腎腎炎+胆管狭窄+リンパ節腫大",
       "final_diagnosis": "IgG4関連疾患(自己免疫性膵炎+多臓器病変)",
-      "expected_id": "D334",
+      "expected_id": "D94",
       "in_scope": true,
       "evidence": {
         "S15": "present",
@@ -16622,7 +16622,7 @@
       "pmcid": "PMC11049740",
       "vignette": "54M. 全身黄疸+強膜黄染+全身掻痒+体重減少+暗色尿. 多飲多尿(新規糖尿病)の既往. AST 93, ALT 257, ALP 502, GGT 737, 総ビリルビン 174.3, IgG4 14.800g/L(!), ESR 63, ANA 1:100. CT:膵鉤状突起腫大+rat-tail型CBD狭窄+肝内胆管狭窄",
       "final_diagnosis": "IgG4関連自己免疫性膵炎+硬化性胆管炎",
-      "expected_id": "D334",
+      "expected_id": "D94",
       "in_scope": true,
       "evidence": {
         "S07": "severe",
@@ -16643,7 +16643,7 @@
       "pmcid": "PMC4087819",
       "vignette": "75M. 背部痛+左水腎症(後腹膜腫瘤)→10ヶ月後に黄疸+腹痛. 総ビリルビン 10.4, ALP 1418, GGT 558, GOT 277, IgG4 240(正常<70), アミラーゼ 79. 膵頭部腫大+CBD狭窄+後腹膜線維症(尿管巻き込み)",
       "final_diagnosis": "IgG4関連全身性疾患(自己免疫性膵炎+異時性後腹膜線維症)",
-      "expected_id": "D334",
+      "expected_id": "D94",
       "in_scope": true,
       "evidence": {
         "S15": "present",
@@ -17055,7 +17055,7 @@
       "pmcid": "PMC7262479",
       "vignette": "22M アフリカ系. 1週間の重度筋痛+暗色尿. 4日前に上気道症状. T 37.3, HR 94, BP 135/72, SpO2 97%. 近位筋(上腕/大腿)圧痛+脱水徴候. WBC 8700, CRP 2.12, Cr 0.77, Na 134, K 4.2. CK >150000(!), AST 2299, ALT 404, LDH >12000. 尿:暗琥珀色+血液+蛋白2+",
       "final_diagnosis": "横紋筋融解症(AKIなし, CK>150000にもかかわらず)",
-      "expected_id": "D330",
+      "expected_id": "D153",
       "in_scope": true,
       "evidence": {
         "S15": "present",
@@ -17080,7 +17080,7 @@
       "pmcid": "PMC11964331",
       "vignette": "47M アフリカ系. 5日のインフルエンザ様症状+全身筋痛+食欲不振+尿量減少. BP 110/70, HR 89, RR 24, T 37.4. 全身筋圧痛+肺清明+下肢浮腫なし. CK 880300(!), Cr 5.6, BUN 49, Na 125, K 6.1, Ca 5.4, リン10.6, AST 2229, ALT 605, LDH 14020, GFR 13. 尿:茶色混濁+大量血液(RBC 4個=ミオグロビン尿)",
       "final_diagnosis": "急性ウイルス性筋炎+横紋筋融解症+色素腎症(AKI)",
-      "expected_id": "D330",
+      "expected_id": "D153",
       "in_scope": true,
       "evidence": {
         "S15": "present",
@@ -17106,7 +17106,7 @@
       "pmcid": "PMC7515789",
       "vignette": "19M 既往なし. 26kmジョギング(猛暑)+数時間後に全身倦怠感+両下肢痛+暗色尿. T 37.0, BP 130/70, HR 100, SpO2 100%. 疼痛表情+脱水+両下肢全般腫脹+圧痛. CK 587600, Cr 167μmol/L(~1.9), WBC 33.2, Na 136, K 4.2, AST 6632, ALT 2561, Ca 1.74, 静脈pH 7.13, 乳酸 6.5, INR 2.65",
       "final_diagnosis": "運動誘発性横紋筋融解症+AKI+DIC+両側コンパートメント症候群",
-      "expected_id": "D330",
+      "expected_id": "D153",
       "in_scope": true,
       "evidence": {
         "S15": "present",

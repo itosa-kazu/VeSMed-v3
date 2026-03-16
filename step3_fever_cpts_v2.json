@@ -2355,10 +2355,26 @@
       }
     },
     "D94": {
-      "parents": [],
+      "parents": [
+        "R01",
+        "R02"
+      ],
       "description": "IgG4関連疾患",
       "cpt": {
-        "": 0.005
+        "0_1,male": 0.0,
+        "0_1,female": 0.0,
+        "1_5,male": 0.0,
+        "1_5,female": 0.0,
+        "6_12,male": 0.0,
+        "6_12,female": 0.0,
+        "13_17,male": 0.0001,
+        "13_17,female": 0.0001,
+        "18_39,male": 0.0005,
+        "18_39,female": 0.0003,
+        "40_64,male": 0.002,
+        "40_64,female": 0.001,
+        "65_plus,male": 0.003,
+        "65_plus,female": 0.001
       }
     },
     "D96": {
@@ -2924,10 +2940,18 @@
       }
     },
     "D153": {
-      "parents": [],
+      "parents": [
+        "R01"
+      ],
       "description": "横紋筋融解症",
       "cpt": {
-        "": 0.003
+        "0_1": 0.0003,
+        "1_5": 0.0005,
+        "6_12": 0.001,
+        "13_17": 0.002,
+        "18_39": 0.003,
+        "40_64": 0.002,
+        "65_plus": 0.002
       }
     },
     "D154": {
@@ -3516,21 +3540,6 @@
       "description": "エチレングリコール中毒",
       "cpt": {
         "": 0.0005
-      }
-    },
-    "D206": {
-      "parents": [
-        "R01"
-      ],
-      "description": "HCM. 若年~中年",
-      "cpt": {
-        "0_1": 0.0001,
-        "1_5": 0.0001,
-        "6_12": 0.0001,
-        "13_17": 0.0001,
-        "18_39": 0.002,
-        "40_64": 0.002,
-        "65_plus": 0.001
       }
     },
     "D207": {
@@ -5393,21 +5402,6 @@
         "65_plus": 0.003
       }
     },
-    "D330": {
-      "parents": [
-        "R01"
-      ],
-      "description": "横紋筋融解症",
-      "cpt": {
-        "0_1": 0.0003,
-        "1_5": 0.0005,
-        "6_12": 0.001,
-        "13_17": 0.002,
-        "18_39": 0.003,
-        "40_64": 0.002,
-        "65_plus": 0.002
-      }
-    },
     "D331": {
       "parents": [
         "R01"
@@ -5459,29 +5453,6 @@
         "18_39": 0.001,
         "40_64": 0.001,
         "65_plus": 0.0005
-      }
-    },
-    "D334": {
-      "parents": [
-        "R01",
-        "R02"
-      ],
-      "description": "IgG4関連疾患。中高年男性",
-      "cpt": {
-        "0_1,male": 0.0,
-        "0_1,female": 0.0,
-        "1_5,male": 0.0,
-        "1_5,female": 0.0,
-        "6_12,male": 0.0,
-        "6_12,female": 0.0,
-        "13_17,male": 0.0001,
-        "13_17,female": 0.0001,
-        "18_39,male": 0.0005,
-        "18_39,female": 0.0003,
-        "40_64,male": 0.002,
-        "40_64,female": 0.001,
-        "65_plus,male": 0.003,
-        "65_plus,female": 0.001
       }
     },
     "D335": {
@@ -7736,13 +7707,6 @@
           "39.0_40.0": 0.25,
           "over_40.0": 0.1
         },
-        "D330": {
-          "under_37.5": 0.5,
-          "37.5_38.0": 0.15,
-          "38.0_39.0": 0.2,
-          "39.0_40.0": 0.12,
-          "over_40.0": 0.03
-        },
         "D331": {
           "under_37.5": 0.3,
           "37.5_38.0": 0.15,
@@ -8461,11 +8425,6 @@
           "100_120": 0.4,
           "over_120": 0.4
         },
-        "D206": {
-          "under_100": 0.4,
-          "100_120": 0.35,
-          "over_120": 0.25
-        },
         "D207": {
           "under_100": 0.3,
           "100_120": 0.45,
@@ -8745,11 +8704,6 @@
           "under_100": 0.1,
           "100_120": 0.3,
           "over_120": 0.6
-        },
-        "D330": {
-          "under_100": 0.35,
-          "100_120": 0.35,
-          "over_120": 0.3
         },
         "D331": {
           "under_100": 0.1,
@@ -9134,10 +9088,6 @@
           "normal_over_90": 0.75,
           "hypotension_under_90": 0.25
         },
-        "D206": {
-          "normal_over_90": 0.6,
-          "hypotension_under_90": 0.4
-        },
         "D211": {
           "normal_over_90": 0.45,
           "hypotension_under_90": 0.55
@@ -9265,6 +9215,10 @@
         "D285": {
           "normal_over_90": 0.55,
           "hypotension_under_90": 0.45
+        },
+        "D346": {
+          "normal_over_90": 0.6,
+          "hypotension_under_90": 0.4
         }
       }
     },
@@ -14300,12 +14254,6 @@
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.2
         },
-        "D334": {
-          "low_under_4000": 0.05,
-          "normal_4000_10000": 0.4,
-          "high_10000_20000": 0.4,
-          "very_high_over_20000": 0.15
-        },
         "D287": {
           "low_under_4000": 0.05,
           "normal_4000_10000": 0.3,
@@ -14316,6 +14264,12 @@
           "low_under_4000": 0.15,
           "normal_4000_10000": 0.35,
           "high_10000_20000": 0.35,
+          "very_high_over_20000": 0.15
+        },
+        "D94": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.4,
+          "high_10000_20000": 0.4,
           "very_high_over_20000": 0.15
         }
       }
@@ -15521,12 +15475,6 @@
           "normal_under_0.3": 0.25,
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.25,
-          "high_over_10": 0.25
-        },
-        "D334": {
-          "normal_under_0.3": 0.15,
-          "mild_0.3_3": 0.25,
-          "moderate_3_10": 0.35,
           "high_over_10": 0.25
         },
         "D287": {
@@ -17023,16 +16971,6 @@
           "mild_elevated": 0.25,
           "very_high": 0.72
         },
-        "D330": {
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "very_high": 0.75
-        },
-        "D334": {
-          "normal": 0.35,
-          "mild_elevated": 0.35,
-          "very_high": 0.3
-        },
         "D344": {
           "normal": 0.45,
           "mild_elevated": 0.35,
@@ -17092,6 +17030,11 @@
           "normal": 0.65,
           "mild_elevated": 0.25,
           "very_high": 0.1
+        },
+        "D153": {
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "very_high": 0.75
         }
       }
     },
@@ -19130,12 +19073,6 @@
           "hyperkalemia": 0.75,
           "other": 0.1
         },
-        "D330": {
-          "normal": 0.4,
-          "hyponatremia": 0.05,
-          "hyperkalemia": 0.45,
-          "other": 0.1
-        },
         "D332": {
           "normal": 0.4,
           "hyponatremia": 0.5,
@@ -20202,11 +20139,6 @@
         "D204": {
           "absent": 0.4,
           "on_exertion": 0.4,
-          "at_rest": 0.2
-        },
-        "D206": {
-          "absent": 0.2,
-          "on_exertion": 0.6,
           "at_rest": 0.2
         },
         "D207": {
@@ -22008,11 +21940,6 @@
           "mild": 0.35,
           "severe": 0.3
         },
-        "D330": {
-          "absent": 0.1,
-          "mild": 0.25,
-          "severe": 0.65
-        },
         "D332": {
           "absent": 0.05,
           "mild": 0.25,
@@ -22022,11 +21949,6 @@
           "absent": 0.25,
           "mild": 0.35,
           "severe": 0.4
-        },
-        "D334": {
-          "absent": 0.35,
-          "mild": 0.35,
-          "severe": 0.3
         },
         "D335": {
           "absent": 0.35,
@@ -23900,10 +23822,6 @@
           "absent": 0.3,
           "present": 0.7
         },
-        "D330": {
-          "absent": 0.55,
-          "present": 0.45
-        },
         "D332": {
           "absent": 0.55,
           "present": 0.45
@@ -23944,10 +23862,6 @@
           "absent": 0.65,
           "present": 0.35
         },
-        "D334": {
-          "absent": 0.55,
-          "present": 0.45
-        },
         "D295": {
           "absent": 0.55,
           "present": 0.45
@@ -23959,6 +23873,10 @@
         "D341": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D94": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -24674,13 +24592,6 @@
           "pressure": 0.65,
           "tearing": 0.1
         },
-        "D206": {
-          "absent": 0.45,
-          "burning": 0.05,
-          "sharp": 0.1,
-          "pressure": 0.35,
-          "tearing": 0.05
-        },
         "D62": {
           "absent": 0.6,
           "burning": 0.05,
@@ -24761,6 +24672,13 @@
         "D264": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D346": {
+          "absent": 0.45,
+          "burning": 0.05,
+          "sharp": 0.1,
+          "pressure": 0.35,
+          "tearing": 0.05
         }
       }
     },
@@ -27146,12 +27064,6 @@
           "1w_to_3w": 0.02,
           "over_3w": 0.0
         },
-        "D206": {
-          "under_3d": 0.25,
-          "3d_to_1w": 0.25,
-          "1w_to_3w": 0.25,
-          "over_3w": 0.25
-        },
         "D207": {
           "under_3d": 0.1,
           "3d_to_1w": 0.4,
@@ -27908,12 +27820,6 @@
           "1w_to_3w": 0.3,
           "over_3w": 0.3
         },
-        "D330": {
-          "under_3d": 0.55,
-          "3d_to_1w": 0.3,
-          "1w_to_3w": 0.12,
-          "over_3w": 0.03
-        },
         "D331": {
           "under_3d": 0.8,
           "3d_to_1w": 0.15,
@@ -27931,12 +27837,6 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.05,
           "over_3w": 0.9
-        },
-        "D334": {
-          "under_3d": 0.03,
-          "3d_to_1w": 0.07,
-          "1w_to_3w": 0.15,
-          "over_3w": 0.75
         },
         "D335": {
           "under_3d": 0.08,
@@ -28587,10 +28487,6 @@
           "sudden_hours": 0.8,
           "gradual_days": 0.2
         },
-        "D206": {
-          "sudden_hours": 0.35,
-          "gradual_days": 0.65
-        },
         "D207": {
           "sudden_hours": 0.2,
           "gradual_days": 0.8
@@ -29131,10 +29027,6 @@
           "sudden_hours": 0.15,
           "gradual_days": 0.85
         },
-        "D330": {
-          "sudden_hours": 0.45,
-          "gradual_days": 0.55
-        },
         "D331": {
           "sudden_hours": 0.6,
           "gradual_days": 0.4
@@ -29146,10 +29038,6 @@
         "D333": {
           "sudden_hours": 0.03,
           "gradual_days": 0.97
-        },
-        "D334": {
-          "sudden_hours": 0.05,
-          "gradual_days": 0.95
         },
         "D335": {
           "sudden_hours": 0.15,
@@ -29214,6 +29102,10 @@
         "D81": {
           "sudden_hours": 0.3,
           "gradual_days": 0.7
+        },
+        "D94": {
+          "sudden_hours": 0.05,
+          "gradual_days": 0.95
         }
       }
     },
@@ -29636,14 +29528,6 @@
           "absent": 0.05,
           "present": 0.95
         },
-        "D330": {
-          "absent": 0.1,
-          "present": 0.9
-        },
-        "D334": {
-          "absent": 0.3,
-          "present": 0.7
-        },
         "D335": {
           "absent": 0.1,
           "present": 0.9
@@ -29699,6 +29583,14 @@
         "D150": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D94": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D153": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -30388,11 +30280,6 @@
           "unilateral": 0.05,
           "bilateral": 0.45
         },
-        "D334": {
-          "absent": 0.6,
-          "unilateral": 0.1,
-          "bilateral": 0.3
-        },
         "D340": {
           "absent": 0.5,
           "unilateral": 0.05,
@@ -30432,6 +30319,11 @@
           "absent": 0.65,
           "unilateral": 0.2,
           "bilateral": 0.15
+        },
+        "D94": {
+          "absent": 0.6,
+          "unilateral": 0.1,
+          "bilateral": 0.3
         }
       }
     },
@@ -30582,12 +30474,6 @@
           "normal": 0.15,
           "mildly_elevated": 0.3,
           "very_high": 0.4
-        },
-        "D206": {
-          "not_done": 0.15,
-          "normal": 0.2,
-          "mildly_elevated": 0.4,
-          "very_high": 0.25
         },
         "D212": {
           "not_done": 0.1,
@@ -30983,12 +30869,6 @@
           "mildly_elevated": 0.4,
           "very_high": 0.2
         },
-        "D206": {
-          "not_done": 0.15,
-          "normal": 0.4,
-          "mildly_elevated": 0.35,
-          "very_high": 0.1
-        },
         "D216": {
           "not_done": 0.1,
           "normal": 0.25,
@@ -31030,6 +30910,12 @@
           "normal": 0.35,
           "mildly_elevated": 0.25,
           "very_high": 0.15
+        },
+        "D346": {
+          "not_done": 0.15,
+          "normal": 0.4,
+          "mildly_elevated": 0.35,
+          "very_high": 0.1
         }
       }
     },
@@ -32291,16 +32177,6 @@
           "mild_elevated": 0.3,
           "high_AKI": 0.5
         },
-        "D330": {
-          "normal": 0.3,
-          "mild_elevated": 0.3,
-          "high_AKI": 0.4
-        },
-        "D334": {
-          "normal": 0.55,
-          "mild_elevated": 0.3,
-          "high_AKI": 0.15
-        },
         "D336": {
           "normal": 0.25,
           "mild_elevated": 0.35,
@@ -32359,6 +32235,11 @@
         "D332": {
           "normal": 0.6,
           "mild_elevated": 0.25,
+          "high_AKI": 0.15
+        },
+        "D94": {
+          "normal": 0.55,
+          "mild_elevated": 0.3,
           "high_AKI": 0.15
         }
       }
