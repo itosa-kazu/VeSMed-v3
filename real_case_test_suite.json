@@ -12423,7 +12423,8 @@
         "L01": "high_10000_20000",
         "L02": "moderate_3_10",
         "T01": "under_3d",
-        "T02": "gradual_days"
+        "T02": "gradual_days",
+        "S55": "present"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -13466,7 +13467,8 @@
         "E10": "negative",
         "L01": "normal_4000_10000",
         "T01": "over_3w",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "L11": "normal"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14557,7 +14559,9 @@
         "R15": "yes",
         "L62": "free_fluid",
         "E02": "under_100",
-        "S44": "present"
+        "S44": "present",
+        "E01": "under_37.5",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14583,7 +14587,8 @@
         "L56": "positive",
         "R15": "yes",
         "L62": "adnexal_mass",
-        "S13": "present"
+        "S13": "present",
+        "E16": "normal"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -17972,7 +17977,8 @@
         "L04": "bilateral_infiltrate",
         "L44": "hyponatremia",
         "T01": "under_3d",
-        "T02": "sudden_hours"
+        "T02": "sudden_hours",
+        "S44": "present"
       },
       "risk_factors": {
         "R01": "0_1",
