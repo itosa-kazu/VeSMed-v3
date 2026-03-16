@@ -7419,6 +7419,32 @@
         "multiple"
       ],
       "note": "CT/PET等で確認された転移巣。肺転移→咳嗽/呼吸困難、骨転移→骨痛/高Ca、肝転移→肝酵素上昇、脳転移→神経症状"
+    },
+    {
+      "id": "L64",
+      "name": "DIC_score",
+      "name_ja": "DICスコア(ISTH基準)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "pre_DIC",
+        "overt_DIC"
+      ],
+      "note": "ISTH overt DIC score: PLT+PT+D-dimer+フィブリノゲンから算出。≥5=overt DIC"
+    },
+    {
+      "id": "L65",
+      "name": "heart_failure_grade",
+      "name_ja": "心不全グレード(臨床評価)",
+      "category": "lab",
+      "states": [
+        "not_assessed",
+        "absent",
+        "mild_NYHA2",
+        "severe_NYHA3_4"
+      ],
+      "note": "臨床評価: BNP+CXR+ラ音+浮腫+JVDから総合判定。NYHA/Killip分類"
     }
   ]
 }

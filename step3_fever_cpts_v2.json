@@ -33489,6 +33489,166 @@
           "multiple": 0.3
         }
       }
+    },
+    "L64": {
+      "description": "DICスコア(ISTH基準)",
+      "leak": {
+        "not_done": 0.6,
+        "normal": 0.35,
+        "pre_DIC": 0.03,
+        "overt_DIC": 0.02
+      },
+      "parent_effects": {
+        "D152": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "pre_DIC": 0.12,
+          "overt_DIC": 0.8
+        },
+        "D322": {
+          "not_done": 0.1,
+          "normal": 0.3,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.3
+        },
+        "D323": {
+          "not_done": 0.1,
+          "normal": 0.4,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.25
+        },
+        "D01": {
+          "not_done": 0.1,
+          "normal": 0.3,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.3
+        },
+        "D192": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "pre_DIC": 0.1,
+          "overt_DIC": 0.8
+        },
+        "D78": {
+          "not_done": 0.1,
+          "normal": 0.3,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.3
+        },
+        "D284": {
+          "not_done": 0.15,
+          "normal": 0.45,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.15
+        },
+        "D156": {
+          "not_done": 0.1,
+          "normal": 0.7,
+          "pre_DIC": 0.15,
+          "overt_DIC": 0.05
+        },
+        "D162": {
+          "not_done": 0.1,
+          "normal": 0.55,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.1
+        },
+        "D68": {
+          "not_done": 0.1,
+          "normal": 0.45,
+          "pre_DIC": 0.25,
+          "overt_DIC": 0.2
+        }
+      }
+    },
+    "L65": {
+      "description": "心不全グレード(臨床評価)",
+      "leak": {
+        "not_assessed": 0.4,
+        "absent": 0.5,
+        "mild_NYHA2": 0.06,
+        "severe_NYHA3_4": 0.04
+      },
+      "parent_effects": {
+        "D120": {
+          "not_assessed": 0.03,
+          "absent": 0.02,
+          "mild_NYHA2": 0.15,
+          "severe_NYHA3_4": 0.8
+        },
+        "D327": {
+          "not_assessed": 0.05,
+          "absent": 0.2,
+          "mild_NYHA2": 0.35,
+          "severe_NYHA3_4": 0.4
+        },
+        "D340": {
+          "not_assessed": 0.05,
+          "absent": 0.15,
+          "mild_NYHA2": 0.35,
+          "severe_NYHA3_4": 0.45
+        },
+        "D346": {
+          "not_assessed": 0.05,
+          "absent": 0.3,
+          "mild_NYHA2": 0.35,
+          "severe_NYHA3_4": 0.3
+        },
+        "D343": {
+          "not_assessed": 0.05,
+          "absent": 0.2,
+          "mild_NYHA2": 0.3,
+          "severe_NYHA3_4": 0.45
+        },
+        "D344": {
+          "not_assessed": 0.05,
+          "absent": 0.05,
+          "mild_NYHA2": 0.25,
+          "severe_NYHA3_4": 0.65
+        },
+        "D116": {
+          "not_assessed": 0.05,
+          "absent": 0.2,
+          "mild_NYHA2": 0.3,
+          "severe_NYHA3_4": 0.45
+        },
+        "D124": {
+          "not_assessed": 0.05,
+          "absent": 0.05,
+          "mild_NYHA2": 0.15,
+          "severe_NYHA3_4": 0.75
+        },
+        "D131": {
+          "not_assessed": 0.05,
+          "absent": 0.4,
+          "mild_NYHA2": 0.25,
+          "severe_NYHA3_4": 0.3
+        },
+        "D318": {
+          "not_assessed": 0.05,
+          "absent": 0.15,
+          "mild_NYHA2": 0.3,
+          "severe_NYHA3_4": 0.5
+        },
+        "D350": {
+          "not_assessed": 0.1,
+          "absent": 0.35,
+          "mild_NYHA2": 0.25,
+          "severe_NYHA3_4": 0.3
+        },
+        "D134": {
+          "not_assessed": 0.1,
+          "absent": 0.7,
+          "mild_NYHA2": 0.12,
+          "severe_NYHA3_4": 0.08
+        },
+        "D125": {
+          "not_assessed": 0.05,
+          "absent": 0.45,
+          "mild_NYHA2": 0.25,
+          "severe_NYHA3_4": 0.25
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

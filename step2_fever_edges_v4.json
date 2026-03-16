@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 4890,
+  "total_edges": 4913,
   "edges": [
     {
       "from": "R01",
@@ -38727,6 +38727,167 @@
       "from_name": "ectopic_pregnancy",
       "to_name": "E41",
       "reason": "子宮外妊娠: ABI正常(非動脈疾患)"
+    },
+    {
+      "from": "D152",
+      "to": "L64",
+      "from_name": "DIC",
+      "to_name": "L64",
+      "reason": "DIC: overt DIC(定義的)"
+    },
+    {
+      "from": "D322",
+      "to": "L64",
+      "from_name": "HELLP",
+      "to_name": "L64",
+      "reason": "HELLP: DIC合併(20-40%)"
+    },
+    {
+      "from": "D323",
+      "to": "L64",
+      "from_name": "placental_abruption",
+      "to_name": "L64",
+      "reason": "胎盤早期剥離: DIC(10-30%)"
+    },
+    {
+      "from": "D01",
+      "to": "L64",
+      "from_name": "sepsis",
+      "to_name": "L64",
+      "reason": "敗血症: DIC合併(30-40%)"
+    },
+    {
+      "from": "D192",
+      "to": "L64",
+      "from_name": "APL",
+      "to_name": "L64",
+      "reason": "APL: DIC(80%+)"
+    },
+    {
+      "from": "D78",
+      "to": "L64",
+      "from_name": "heatstroke_severe",
+      "to_name": "L64",
+      "reason": "熱中症: DIC合併(30-40%)"
+    },
+    {
+      "from": "D284",
+      "to": "L64",
+      "from_name": "mamushi",
+      "to_name": "L64",
+      "reason": "マムシ咬傷: DIC(10-20%)"
+    },
+    {
+      "from": "D156",
+      "to": "L64",
+      "from_name": "TTP",
+      "to_name": "L64",
+      "reason": "TTP: DICスコアは通常正常(PT/フィブリノゲン正常)"
+    },
+    {
+      "from": "D162",
+      "to": "L64",
+      "from_name": "HUS",
+      "to_name": "L64",
+      "reason": "HUS: DICスコアは通常正常~軽度"
+    },
+    {
+      "from": "D68",
+      "to": "L64",
+      "from_name": "acute_leukemia",
+      "to_name": "L64",
+      "reason": "急性白血病: DIC合併(15-20%)"
+    },
+    {
+      "from": "D120",
+      "to": "L65",
+      "from_name": "ADHF",
+      "to_name": "L65",
+      "reason": "急性心不全: severe(定義的)"
+    },
+    {
+      "from": "D327",
+      "to": "L65",
+      "from_name": "aortic_stenosis",
+      "to_name": "L65",
+      "reason": "AS: 心不全(三徴の一つ, 50-60%)"
+    },
+    {
+      "from": "D340",
+      "to": "L65",
+      "from_name": "mitral_stenosis",
+      "to_name": "L65",
+      "reason": "MS: 心不全(肺うっ血, 60-70%)"
+    },
+    {
+      "from": "D346",
+      "to": "L65",
+      "from_name": "HCM",
+      "to_name": "L65",
+      "reason": "HCM: 心不全(拡張障害, 40-50%)"
+    },
+    {
+      "from": "D343",
+      "to": "L65",
+      "from_name": "takotsubo",
+      "to_name": "L65",
+      "reason": "たこつぼ: 心不全(EF低下, 50-60%)"
+    },
+    {
+      "from": "D344",
+      "to": "L65",
+      "from_name": "constrictive_pericarditis",
+      "to_name": "L65",
+      "reason": "収縮性心膜炎: 右心不全(定義的, 80%+)"
+    },
+    {
+      "from": "D116",
+      "to": "L65",
+      "from_name": "acute_myocarditis",
+      "to_name": "L65",
+      "reason": "急性心筋炎: 心不全(50-60%)"
+    },
+    {
+      "from": "D124",
+      "to": "L65",
+      "from_name": "cardiac_tamponade",
+      "to_name": "L65",
+      "reason": "心タンポナーデ: 心不全様(閉塞性, 80%+)"
+    },
+    {
+      "from": "D131",
+      "to": "L65",
+      "from_name": "ACS",
+      "to_name": "L65",
+      "reason": "ACS: 心不全(Killip II-IV, 30-40%)"
+    },
+    {
+      "from": "D318",
+      "to": "L65",
+      "from_name": "CTEPH",
+      "to_name": "L65",
+      "reason": "CTEPH: 右心不全(60-70%)"
+    },
+    {
+      "from": "D350",
+      "to": "L65",
+      "from_name": "marfan",
+      "to_name": "L65",
+      "reason": "マルファン: 心不全(大動脈弁逆流, 30-40%)"
+    },
+    {
+      "from": "D134",
+      "to": "L65",
+      "from_name": "acute_pericarditis",
+      "to_name": "L65",
+      "reason": "急性心膜炎: 心不全は通常なし(心嚢液少量)"
+    },
+    {
+      "from": "D125",
+      "to": "L65",
+      "from_name": "arrhythmia",
+      "to_name": "L65",
+      "reason": "不整脈: 心不全(頻脈性で, 20-30%)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
