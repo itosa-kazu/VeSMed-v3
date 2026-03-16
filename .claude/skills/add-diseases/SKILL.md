@@ -44,6 +44,11 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 - git add + commit + push
 - commitメッセージに: 疾患数、辺数、案例数、Top-1、Top-3、FATAL
 
+### Step 7: 欠失変量の記録
+- FATALが辺追加で解決できない場合、鑑別に必要な変量が欠けている可能性
+- 発見したら `memory/project_missing_variables.md` に記録
+- 変量追加が可能な場合はその場で追加（L56 β-hCGのように）
+
 ## 鉄則チェックリスト
 - [ ] step1/step2/step3 三位一体
 - [ ] full_cptにR01/R02（性差/年齢差がある場合）
@@ -51,4 +56,5 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 - [ ] validate_cases.py ERROR 0
 - [ ] EDGE_NO_CPT = 0, CPT_NO_EDGE = 0
 - [ ] 回帰テストでFATAL 0
+- [ ] 欠失変量があればmemory記録
 - [ ] commit push済み
