@@ -6874,6 +6874,354 @@
       ],
       "severity": "moderate",
       "note": "治療抵抗性高血圧の5-10%。低K血症+高血圧。アルドステロン/レニン比>200で疑い。副腎腺腫/過形成"
+    },
+    {
+      "id": "D322",
+      "name": "HELLP",
+      "name_ja": "HELLP症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "妊娠高血圧に伴う溶血+肝酵素上昇+血小板減少。妊娠後期～産褥。右上腹部痛+嘔気+倦怠感。緊急分娩"
+    },
+    {
+      "id": "D323",
+      "name": "placental_abruption",
+      "name_ja": "常位胎盤早期剥離",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "正常位置の胎盤が分娩前に剥離。突然の腹痛+子宮圧痛+性器出血+DIC。胎児死亡リスク高い。緊急帝王切開"
+    },
+    {
+      "id": "D324",
+      "name": "TB_meningitis",
+      "name_ja": "結核性髄膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "結核菌の髄膜浸潤。亜急性経過の頭痛+発熱+意識障害+脳神経麻痺。CSF:リンパ球優位+糖低下+蛋白上昇。死亡率高い"
+    },
+    {
+      "id": "D325",
+      "name": "PRES",
+      "name_ja": "可逆性後頭葉白質脳症(PRES)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "高血圧/免疫抑制薬/子癇→後頭葉血管性浮腫。痙攣+頭痛+視力障害+意識障害。MRI: 後頭葉~頭頂葉白質浮腫"
+    },
+    {
+      "id": "D326",
+      "name": "TLS",
+      "name_ja": "腫瘍崩壊症候群(TLS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "化学療法後の大量腫瘍細胞崩壊→高K/高リン/高尿酸/低Ca→AKI+不整脈+痙攣。血液悪性腫瘍に多い"
+    },
+    {
+      "id": "D327",
+      "name": "aortic_stenosis",
+      "name_ja": "大動脈弁狭窄症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "大動脈弁石灰化→狭窄。三徴:狭心症+失神+心不全。収縮期駆出性雑音(頸部放散)。高齢者に多い"
+    },
+    {
+      "id": "D328",
+      "name": "ARDS",
+      "name_ja": "急性呼吸窮迫症候群(ARDS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "肺胞上皮/内皮障害→非心原性肺水腫。敗血症/肺炎/外傷/膵炎が原因。P/F比≤300。Berlin分類"
+    },
+    {
+      "id": "D329",
+      "name": "osteomyelitis",
+      "name_ja": "骨髄炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "骨の細菌感染。小児:血行性(長管骨骨幹端)、成人:開放骨折/糖尿病性足部。発熱+局所疼痛+腫脹。黄色ブドウ球菌が最多"
+    },
+    {
+      "id": "D330",
+      "name": "rhabdomyolysis",
+      "name_ja": "横紋筋融解症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "骨格筋壊死→CK大量放出→ミオグロビン尿→AKI。外傷/圧挫/薬剤/過度運動/横紋筋/感染が原因。茶褐色尿が特徴的"
+    },
+    {
+      "id": "D331",
+      "name": "fat_embolism",
+      "name_ja": "脂肪塞栓症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "長管骨骨折後12-72hに発症。古典的三徴:呼吸困難+意識障害+点状出血。低酸素+肺浸潤+血小板減少"
+    },
+    {
+      "id": "D332",
+      "name": "hypopituitarism",
+      "name_ja": "下垂体機能低下症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "下垂体前葉ホルモン欠損。副腎不全+甲状腺低下+性腺低下。倦怠感+低血圧+低Na+低血糖。Sheehan症候群/腫瘍/術後"
+    },
+    {
+      "id": "D333",
+      "name": "acromegaly",
+      "name_ja": "先端巨大症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "GH産生下垂体腺腫。末端肥大+顔貌変化+発汗過多+関節痛+頭痛。IGF-1高値+OGTT GH抑制不良"
+    },
+    {
+      "id": "D334",
+      "name": "IgG4_RD",
+      "name_ja": "IgG4関連疾患",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "IgG4陽性形質細胞浸潤→臓器腫大/線維化。自己免疫性膵炎/唾液腺腫大/後腹膜線維症/胆管狭窄。高齢男性に多い"
+    },
+    {
+      "id": "D335",
+      "name": "PAD",
+      "name_ja": "閉塞性動脈硬化症(PAD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "動脈硬化→下肢動脈閉塞。間欠性跛行(Fontaine II)→安静時痛(III)→壊疽(IV)。ABI<0.9。糖尿病/喫煙がリスク"
+    },
+    {
+      "id": "D336",
+      "name": "ADPKD",
+      "name_ja": "多発性嚢胞腎(ADPKD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "常染色体優性遺伝。両側腎嚢胞→腎肥大→腎不全。側腹部痛+血尿+高血圧+腎不全。肝嚢胞/脳動脈瘤合併"
+    },
+    {
+      "id": "D337",
+      "name": "pyloric_stenosis",
+      "name_ja": "肥厚性幽門狭窄症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "生後2-8週の乳児。幽門筋肥厚→噴射状嘔吐→脱水+低Cl性代謝性アルカローシス。オリーブ状腫瘤触知。Ramstedt手術"
+    },
+    {
+      "id": "D338",
+      "name": "intussusception",
+      "name_ja": "腸重積症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "腸管が自身に陥入。小児(3ヶ月-6歳)に多い。間欠的腹痛+嘔吐+血便(イチゴゼリー状)。腹部エコーでtarget sign"
+    },
+    {
+      "id": "D339",
+      "name": "retinal_detachment",
+      "name_ja": "網膜剥離",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "網膜が色素上皮から剥離。飛蚊症→光視症→視野欠損→視力低下。裂孔原性(最多)/牽引性/滲出性。緊急手術"
+    },
+    {
+      "id": "D340",
+      "name": "mitral_stenosis",
+      "name_ja": "僧帽弁狭窄症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "リウマチ熱後遺症が最多。左房拡大→心房細動→肺うっ血→呼吸困難。拡張期ランブル+opening snap。左房血栓→脳塞栓"
+    },
+    {
+      "id": "D341",
+      "name": "brugada",
+      "name_ja": "Brugada症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "SCN5A変異→coved型ST上昇(V1-V3)。失神/心室細動/突然死。30-50歳男性、東南アジアに多い。ICD適応"
+    },
+    {
+      "id": "D342",
+      "name": "LQTS",
+      "name_ja": "QT延長症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "先天性(KCNQ1/KCNH2/SCN5A変異)or薬剤性。QTc延長→TdP→失神/突然死。運動/精神的ストレス/睡眠中に発作"
+    },
+    {
+      "id": "D343",
+      "name": "takotsubo",
+      "name_ja": "たこつぼ心筋症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "精神的/身体的ストレス→左室心尖部無動(ballooning)。閉経後女性。AMIに酷似するが冠動脈正常。トロポニン軽度上昇"
+    },
+    {
+      "id": "D344",
+      "name": "constrictive_pericarditis",
+      "name_ja": "収縮性心膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "心膜肥厚/石灰化→心室拡張障害。結核/術後/放射線/特発性。右心不全症状:頸静脈怒張+肝腫大+腹水+浮腫。Kussmaul徴候"
+    },
+    {
+      "id": "D345",
+      "name": "sheehan",
+      "name_ja": "Sheehan症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "分娩時大量出血→下垂体壊死→汎下垂体機能低下。乳汁分泌不全+無月経+倦怠感+低血圧+低Na。産後数日~数週で発症"
+    },
+    {
+      "id": "D346",
+      "name": "HCM",
+      "name_ja": "肥大型心筋症(HCM)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "心室中隔の非対称性肥大。閉塞性(HOCM)は流出路狭窄→失神。若年突然死の原因。労作時呼吸困難+胸痛+失神+動悸"
+    },
+    {
+      "id": "D347",
+      "name": "neuroblastoma",
+      "name_ja": "神経芽腫",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "小児固形腫瘍で最多(副腎髄質/交感神経節)。腹部腫瘤+発熱+骨痛+眼周囲出血(パンダの目)。尿中VMA/HVA高値"
+    },
+    {
+      "id": "D348",
+      "name": "wilms_tumor",
+      "name_ja": "ウィルムス腫瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "小児腎腫瘍で最多(3-5歳)。腹部腫瘤(無症状で発見多い)+血尿+腹痛+高血圧。WAGR症候群/Beckwith-Wiedemann"
+    },
+    {
+      "id": "D349",
+      "name": "TB_pleurisy",
+      "name_ja": "結核性胸膜炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "結核菌の胸膜浸潤。若年者。片側性胸水+発熱+胸痛+咳嗽。胸水:リンパ球優位+ADA高値+蛋白高い(滲出性)"
+    },
+    {
+      "id": "D350",
+      "name": "marfan",
+      "name_ja": "マルファン症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "FBN1変異→結合組織障害。高身長+くも状指+水晶体偏位+大動脈基部拡張→解離。僧帽弁逸脱。Ghent基準で診断"
     }
   ]
 }
