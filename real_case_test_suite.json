@@ -18912,8 +18912,8 @@
       "source": "Case Rep 2025",
       "pmcid": "PMC11925717",
       "vignette": "39F, 3ヶ月の間欠的高熱+悪寒, 下肢紫斑, 体重減少, 悪心/嘔吐. T38.5, BP95/60, HR100, RR24, SpO2 88%. WBC14.05, PLT535, ESR101, CRP88, Cr1.4→1.7. 尿: 蛋白++, 血+++. CXR: 左下浸潤+胸水",
-      "final_diagnosis": "多発血管炎性肉芽腫症(GPA)",
-      "expected_id": "D219",
+      "final_diagnosis": "ANCA関連血管炎（GPA型）",
+      "expected_id": "D60",
       "in_scope": true,
       "evidence": {
         "E01": "38.0_39.0",
@@ -19316,7 +19316,7 @@
       "vignette": "28F, 7日の発熱38.6, 悪寒, 耳痛, 咽頭痛, 湿性咳嗽, 腹痛, 筋肉痛, 倦怠感. HR117. WBC3500, ANC25(重度好中球減少), Hb7.6, CRP19.8, lactate2.5. 肝脾腫. 血培: Pseudomonas",
       "final_diagnosis": "関節リウマチ(RA)(Felty症候群+重症好中球減少)",
       "expected_id": "D222",
-      "in_scope": true,
+      "in_scope": false,
       "evidence": {
         "E01": "38.0_39.0",
         "E02": "100_120",
@@ -19342,7 +19342,8 @@
         "R02": "female"
       },
       "result": "",
-      "notes": "ANC25(!). Hb7.6. Pseudomonas菌血症. 肝脾腫. Felty症候群の重症合併症"
+      "notes": "ANC25(!). Hb7.6. Pseudomonas菌血症. 肝脾腫. Felty症候群の重症合併症",
+      "oos_reason": "Felty syndrome with secondary Pseudomonas sepsis - dual diagnosis, blood culture positive dominates"
     },
     {
       "id": "R732",

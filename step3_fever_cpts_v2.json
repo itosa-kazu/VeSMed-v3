@@ -998,13 +998,12 @@
     },
     "D220": {
       "parents": [
-        "R01"
+        "R47"
       ],
       "description": "好酸球性多発血管炎性肉芽腫症(EGPA)。40-50歳",
       "cpt": {
-        "18_39": 0.002,
-        "40_64": 0.004,
-        "65_plus": 0.002
+        "no": 0.0005,
+        "yes": 0.01
       }
     },
     "D221": {
@@ -26183,6 +26182,10 @@
         "D06": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D220": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -34888,6 +34891,12 @@
           "pericardial_effusion": 0.05,
           "LVH": 0.05,
           "dilated_chamber": 0.1
+        },
+        "D220": {
+          "normal": 0.4,
+          "wall_motion_abnormal": 0.4,
+          "valvular": 0.1,
+          "pericardial_effusion": 0.1
         }
       }
     },
@@ -35917,6 +35926,11 @@
           "absent": 0.2,
           "mild_NYHA2": 0.3,
           "severe_NYHA3_4": 0.45
+        },
+        "D220": {
+          "absent": 0.4,
+          "mild_NYHA1_2": 0.3,
+          "severe_NYHA3_4": 0.3
         }
       }
     },
