@@ -47672,6 +47672,454 @@
       "to_name": "単純ヘルペス脳炎",
       "reason": "単純ヘルペス脳炎。乳幼児と50歳以上",
       "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D30",
+      "from_name": "年齢層",
+      "to_name": "腸腰筋膿瘍",
+      "reason": "腸腰筋膿瘍。高齢/免疫不全",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D31",
+      "from_name": "年齢層",
+      "to_name": "化膿性脊椎炎/椎間板炎",
+      "reason": "化膿性脊椎炎。高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D33",
+      "from_name": "年齢層",
+      "to_name": "扁桃周囲膿瘍",
+      "reason": "扁桃周囲膿瘍。思春期-若年成人",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D80",
+      "from_name": "年齢層",
+      "to_name": "無石胆嚢炎",
+      "reason": "無石胆嚢炎。重症/高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D90",
+      "from_name": "年齢層",
+      "to_name": "ベーチェット病",
+      "reason": "ベーチェット病。20-40歳の若年成人",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D141",
+      "from_name": "年齢層",
+      "to_name": "重症低血糖",
+      "reason": "重症低血糖。高齢者（多剤/腎クリアランス低下）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D154",
+      "from_name": "年齢層",
+      "to_name": "腸閉塞（イレウス）",
+      "reason": "腸閉塞。高齢者（癒着/ヘルニア/癌）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D157",
+      "from_name": "年齢層",
+      "to_name": "高浸透圧高血糖症候群(HHS)",
+      "reason": "高浸透圧高血糖症候群。高齢2型DM",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D167",
+      "from_name": "年齢層",
+      "to_name": "偶発性低体温症",
+      "reason": "偶発性低体温症。高齢者（体温調節障害）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D181",
+      "from_name": "年齢層",
+      "to_name": "アデノウイルス感染症",
+      "reason": "アデノウイルス感染症。小児に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D182",
+      "from_name": "年齢層",
+      "to_name": "猩紅熱",
+      "reason": "猩紅熱。5-15歳（GAS咽頭炎）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D186",
+      "from_name": "年齢層",
+      "to_name": "腎梗塞",
+      "reason": "腎梗塞。高齢者（AF塞栓）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D209",
+      "from_name": "年齢層",
+      "to_name": "骨髄線維症",
+      "reason": "骨髄線維症。高齢者（中央値65歳）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D215",
+      "from_name": "年齢層",
+      "to_name": "急性大動脈弁閉鎖不全症",
+      "reason": "急性大動脈弁閉鎖不全症。中高年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D220",
+      "from_name": "年齢層",
+      "to_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "reason": "好酸球性多発血管炎性肉芽腫症(EGPA)。40-50歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D221",
+      "from_name": "年齢層",
+      "to_name": "顕微鏡的多発血管炎(MPA)",
+      "reason": "顕微鏡的多発血管炎(MPA)。60-70歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D226",
+      "from_name": "年齢層",
+      "to_name": "真性多血症(PV)",
+      "reason": "真性多血症。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D230",
+      "from_name": "年齢層",
+      "to_name": "膵癌",
+      "reason": "膵癌。高齢者（中央値70歳以上）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D231",
+      "from_name": "年齢層",
+      "to_name": "胆管癌",
+      "reason": "胆管癌。高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D235",
+      "from_name": "年齢層",
+      "to_name": "慢性リンパ性白血病(CLL)",
+      "reason": "慢性リンパ性白血病。高齢者（中央値70歳）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D239",
+      "from_name": "年齢層",
+      "to_name": "IgA腎症(急性増悪)",
+      "reason": "IgA腎症急性増悪。若年成人（20-30歳）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D241",
+      "from_name": "年齢層",
+      "to_name": "腎血管性高血圧",
+      "reason": "腎血管性高血圧。高齢（動脈硬化）/若年女性（FMD）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D242",
+      "from_name": "年齢層",
+      "to_name": "消化性潰瘍(非穿孔性)",
+      "reason": "消化性潰瘍。中高年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D260",
+      "from_name": "年齢層",
+      "to_name": "ヘルパンギーナ",
+      "reason": "ヘルパンギーナ。5歳未満",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D261",
+      "from_name": "年齢層",
+      "to_name": "突発性発疹(ロゼオラ)",
+      "reason": "突発性発疹。6ヶ月-2歳（HHV-6）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D262",
+      "from_name": "年齢層",
+      "to_name": "伝染性膿痂疹(とびひ)",
+      "reason": "伝染性膿痂疹。2-5歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D267",
+      "from_name": "年齢層",
+      "to_name": "モラクセラ肺炎",
+      "reason": "モラクセラ肺炎。小児とCOPD高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D273",
+      "from_name": "年齢層",
+      "to_name": "総胆管結石",
+      "reason": "総胆管結石。高齢者（胆石有病率）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D275",
+      "from_name": "年齢層",
+      "to_name": "嵌頓ヘルニア",
+      "reason": "嵌頓ヘルニア。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D293",
+      "from_name": "年齢層",
+      "to_name": "良性発作性頭位めまい症(BPPV)",
+      "reason": "BPPV。中高年（耳石変性）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D297",
+      "from_name": "年齢層",
+      "to_name": "三叉神経痛",
+      "reason": "三叉神経痛。50歳以上",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D299",
+      "from_name": "年齢層",
+      "to_name": "Ramsay Hunt症候群",
+      "reason": "ラムゼイ・ハント症候群。高齢者（VZV再活性化）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D305",
+      "from_name": "年齢層",
+      "to_name": "急性硬膜外血腫",
+      "reason": "急性硬膜外血腫。若年成人（外傷）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D306",
+      "from_name": "年齢層",
+      "to_name": "急性硬膜下血腫",
+      "reason": "急性硬膜下血腫。高齢者（転倒）と若年（外傷）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D318",
+      "from_name": "年齢層",
+      "to_name": "慢性血栓塞栓性肺高血圧症(CTEPH)",
+      "reason": "CTEPH。中高年（PE後）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D329",
+      "from_name": "年齢層",
+      "to_name": "骨髄炎",
+      "reason": "骨髄炎。小児（血行性）と高齢者に二峰性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D339",
+      "from_name": "年齢層",
+      "to_name": "網膜剥離",
+      "reason": "網膜剥離。高齢者（硝子体変性）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D347",
+      "from_name": "年齢層",
+      "to_name": "神経芽腫",
+      "reason": "神経芽腫。5歳未満（中央値17ヶ月）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D159",
+      "from_name": "性別",
+      "to_name": "粘液水腫性昏睡",
+      "reason": "粘液水腫性昏睡。女性（甲状腺機能低下症5:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D210",
+      "from_name": "性別",
+      "to_name": "急性間欠性ポルフィリン症",
+      "reason": "急性間欠性ポルフィリン症。女性（ホルモン誘発）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D86",
+      "from_name": "性別",
+      "to_name": "急性膵炎",
+      "reason": "急性膵炎。男性（アルコール）30-50; 女性（胆石）50+",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D86",
+      "from_name": "年齢層",
+      "to_name": "急性膵炎",
+      "reason": "急性膵炎。男性（アルコール）30-50; 女性（胆石）50+",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D145",
+      "from_name": "性別",
+      "to_name": "尿管結石（腎疝痛）",
+      "reason": "尿管結石。男性2-3:1、20-50歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D145",
+      "from_name": "年齢層",
+      "to_name": "尿管結石（腎疝痛）",
+      "reason": "尿管結石。男性2-3:1、20-50歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D208",
+      "from_name": "性別",
+      "to_name": "特発性血小板減少性紫斑病(ITP)",
+      "reason": "ITP。小児（性差なし）と成人女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D208",
+      "from_name": "年齢層",
+      "to_name": "特発性血小板減少性紫斑病(ITP)",
+      "reason": "ITP。小児（性差なし）と成人女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D248",
+      "from_name": "性別",
+      "to_name": "食道癌",
+      "reason": "食道癌。高齢男性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D248",
+      "from_name": "年齢層",
+      "to_name": "食道癌",
+      "reason": "食道癌。高齢男性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D249",
+      "from_name": "性別",
+      "to_name": "慢性膵炎",
+      "reason": "慢性膵炎。男性（アルコール）40-60歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D249",
+      "from_name": "年齢層",
+      "to_name": "慢性膵炎",
+      "reason": "慢性膵炎。男性（アルコール）40-60歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D271",
+      "from_name": "性別",
+      "to_name": "好酸球性食道炎(EoE)",
+      "reason": "好酸球性食道炎。若年成人男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D271",
+      "from_name": "年齢層",
+      "to_name": "好酸球性食道炎(EoE)",
+      "reason": "好酸球性食道炎。若年成人男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D274",
+      "from_name": "性別",
+      "to_name": "胆石発作(胆石疝痛)",
+      "reason": "胆石発作。4F: female/forty/fat/fertile",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D274",
+      "from_name": "年齢層",
+      "to_name": "胆石発作(胆石疝痛)",
+      "reason": "胆石発作。4F: female/forty/fat/fertile",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D321",
+      "from_name": "性別",
+      "to_name": "原発性アルドステロン症",
+      "reason": "原発性アルドステロン症。中年、やや女性多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D321",
+      "from_name": "年齢層",
+      "to_name": "原発性アルドステロン症",
+      "reason": "原発性アルドステロン症。中年、やや女性多い",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
