@@ -49,6 +49,7 @@ python bn_inference.py  # Top-1/Top-3/FATAL を記録
 # 1. 元疾患をrename（name, name_ja, icd10, key_features）
 # 2. 新疾患を追加（disease list末尾に挿入）
 # 3. 新state追加が必要なら既存変数のstates配列を拡張（例: E40にSVT/VT追加）
+#    ※ not_doneステートは追加禁止（推理エンジンが辺縁化で処理）
 ```
 
 **新state追加時の注意**: 全既存noisy_or_params parent_effectsに新stateの確率0.0を追加必要。

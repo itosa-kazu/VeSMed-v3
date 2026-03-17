@@ -12,6 +12,8 @@ $ARGUMENTS に疾患名リスト（日本語）が渡される。なければ疾
 ### Step 1: 疾患モデル作成
 - **重複チェック（必須）**: 既存疾患と同名/類似名がないか確認。5組重複で性能低下した教訓
 - step1に変数定義（id, name, name_ja, category, states, severity, note）
+- **検査値変量にnot_doneステートは禁止**（推理エンジンが未観測変量を辺縁化で処理するため冗余）
+- 検査値変量のstate設計は因材施教: まず変量固有の黄金分級を文献検索、なければCTCAE準拠4-state(xULN基準)をfallback
 - step2に辺（disease→所見変数）を追加。**最低10辺以上**。鑑別力のある辺を優先（正常値辺は不要）
 - step3にCPT（leak + parent_effects）を追加。full_cptにR01/R02を含める（性差/年齢差がある場合）
 - **三位一体**: step1/step2/step3は必ず同時更新
