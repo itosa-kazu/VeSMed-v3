@@ -10106,6 +10106,11 @@
           "under_100": 0.35,
           "100_120": 0.35,
           "over_120": 0.3
+        },
+        "D221": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
         }
       }
     },
@@ -11190,6 +11195,11 @@
           "normal_over_96": 0.4,
           "mild_hypoxia_93_96": 0.35,
           "severe_hypoxia_under_93": 0.25
+        },
+        "D221": {
+          "normal_over_96": 0.3,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.3
         }
       }
     },
@@ -18680,6 +18690,11 @@
           "normal": 0.7,
           "mildly_elevated": 0.25,
           "highly_elevated": 0.05
+        },
+        "D219": {
+          "normal": 0.5,
+          "mildly_elevated": 0.4,
+          "highly_elevated": 0.1
         }
       }
     },
@@ -21634,6 +21649,10 @@
         "D252": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D219": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -25677,6 +25696,10 @@
         "D235": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D219": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -31561,6 +31584,12 @@
           "intermittent": 0.5,
           "periodic": 0.2,
           "double_quotidian": 0.1
+        },
+        "D221": {
+          "continuous": 0.2,
+          "intermittent": 0.5,
+          "remittent": 0.2,
+          "relapsing": 0.1
         }
       }
     },
