@@ -10697,6 +10697,28 @@
       "severity": "moderate",
       "key_features": "マダニ媒介の高熱+刺し口+紅斑+血小板減少。日本紅斑熱(R.japonica)/RMSF(R.rickettsii)/地中海紅斑熱。ドキシサイクリン著効。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "L101",
+      "name": "cryptococcal_antigen",
+      "name_ja": "クリプトコッカス抗原",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ]
+    },
+    {
+      "id": "L102",
+      "name": "toxoplasma_IgM",
+      "name_ja": "トキソプラズマIgM抗体",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ]
     }
   ]
 }
