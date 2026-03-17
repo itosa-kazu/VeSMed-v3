@@ -20999,6 +20999,421 @@
       },
       "result": "",
       "notes": ""
+    },
+    {
+      "id": "R793",
+      "source": "BMC Infect Dis 2020",
+      "pmcid": "PMC7583403",
+      "vignette": "65F RA(MTX+PSL). 発熱38℃+発作性咳嗽(白色痰)+両肺底湿性ラ音. 自宅改装(粉塵曝露)1週間後に発症. WBC6400(好中球78.8%), CRP正常, PCT正常. CT: 両側下葉+右中葉に結節性・斑状浸潤影→進行性に拡大. 培養でCryptococcus neoformans確認.",
+      "final_diagnosis": "肺クリプトコッカス症",
+      "expected_id": "D365",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S84": "productive",
+        "L01": "normal_4000_10000",
+        "L02": "normal_under_0.3",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "RA+MTX/PSLによる免疫抑制。自宅改装で環境曝露。CRP正常が特徴"
+    },
+    {
+      "id": "R794",
+      "source": "Cureus 2025",
+      "pmcid": "PMC12047671",
+      "vignette": "39M BMI33.6. 10日間の増悪する呼吸困難+湿性咳嗽+発熱+倦怠感+食欲不振. HR120, SpO2 90%(RA, 歩行時88%). WBC13690→21000, CRP51.95, ESR63, PCT<0.10. CXR: 右肺広範囲浸潤影. CT: 右肺多葉性肺炎+進行性右上葉浸潤. CrAg 1:320. 血培陰性.",
+      "final_diagnosis": "肺クリプトコッカス症",
+      "expected_id": "D365",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S84": "productive",
+        "S04": "on_exertion",
+        "S07": "severe",
+        "E02": "over_120",
+        "E05": "mild_hypoxia_93_96",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "L04": "lobar_infiltrate",
+        "L11": "mild_elevated",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "免疫正常者。SpO2 90%→88%(歩行時)。ESR63は elevated相当。CRP51.95→high_over_10。transaminitis記載あり"
+    },
+    {
+      "id": "R795",
+      "source": "Open Forum Infect Dis 2016",
+      "pmcid": "PMC5047412",
+      "vignette": "35M 免疫正常. 4ヶ月の咳嗽(先行する発熱・咽頭痛)+頭痛+盗汗+胸骨後部痛+労作時呼吸困難+体重減少. 頸部・腋窩リンパ節腫脹. CD4 761正常. CXR: 両側斑状肺胞浸潤影. CT: 両側肺結節+空洞形成. CrAg >1:64.",
+      "final_diagnosis": "肺クリプトコッカス症",
+      "expected_id": "D365",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S84": "dry",
+        "S04": "on_exertion",
+        "S07": "mild",
+        "S05": "mild",
+        "S17": "present",
+        "S16": "present",
+        "E13": "present",
+        "E46": "cervical",
+        "L04": "bilateral_infiltrate",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "免疫正常の慢性経過。4ヶ月間症状持続。リンパ節腫脹・盗汗・体重減少でTB/lymphomaとの鑑別困難"
+    },
+    {
+      "id": "R796",
+      "source": "Cureus 2022",
+      "pmcid": "PMC8783228",
+      "vignette": "60M DM(コントロール不良)+高血圧+甲状腺機能低下症. 4-5日間の発熱+頑固な乾性咳嗽+増悪する呼吸困難+頭痛. 低酸素血症で酸素投与必要. HRCT: 右上葉前区に限局性浸潤影+GGO→14日後に両側胸水出現. CT下肺生検でCryptococcus確認. CSF陰性.",
+      "final_diagnosis": "肺クリプトコッカス症",
+      "expected_id": "D365",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S84": "dry",
+        "S04": "on_exertion",
+        "S05": "mild",
+        "E05": "mild_hypoxia_93_96",
+        "L04": "lobar_infiltrate",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "DM+COVID-19後。急性発症。後に胸水出現。頭痛あるがCSF陰性でCNS波及なし"
+    },
+    {
+      "id": "R797",
+      "source": "Indian J Radiol Imaging 2024",
+      "pmcid": "PMC10880851",
+      "vignette": "42M 農業従事者. 6ヶ月の進行性乾性咳嗽+呼吸困難+微熱. CD4 173(低値)だがHIV陰性. 肝機能軽度異常. CT: 右肺巨大腫瘤(悪性疑い). PET/CT: FDG集積(SUVmax 8.5)の右肺mass+多発肺結節. 生検でCryptococcus.",
+      "final_diagnosis": "肺クリプトコッカス症",
+      "expected_id": "D365",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S01": "present",
+        "S84": "dry",
+        "S04": "on_exertion",
+        "L11": "mild_elevated",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "CD4低値(173)だがHIV陰性。6ヶ月の慢性経過。肺癌との鑑別が課題。CXR所見はmass→L04に直接マッピング困難"
+    },
+    {
+      "id": "R798",
+      "source": "Indian J Cancer 2017",
+      "pmcid": "PMC5582575",
+      "vignette": "45F 既往なし. 1ヶ月の間欠性高熱(38.3℃)+有意な体重減少. 両側頸部(顎下+鎖骨上)リンパ節腫脹(最大2cm, 硬, 圧痛なし, 癒合). 軽度蒼白+頻脈. Hb11.3, WBC8400(分画正常), PLT230K, ESR47. CXR正常. PPD/HIV/HBV/HCV陰性. 頸部US: 最大3.8cm低エコーリンパ節. 生検: Piringer-Kuchinka pattern. Toxo IgG+IgM高値(経時的5倍上昇).",
+      "final_diagnosis": "トキソプラズマリンパ節炎",
+      "expected_id": "D366",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S17": "present",
+        "E13": "present",
+        "E46": "cervical",
+        "L01": "normal_4000_10000",
+        "L28": "elevated",
+        "L04": "normal",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "リンパ腫との鑑別が主課題。ESR47上昇、WBC正常。1ヶ月の間欠性発熱"
+    },
+    {
+      "id": "R799",
+      "source": "Emerg Infect Dis 2018",
+      "pmcid": "PMC5887475",
+      "vignette": "29F 既往なし. ニカラグア渡航10日後に眼窩後部頭痛+発熱+悪寒+全身痛+発疹→12日目に40℃の持続熱+頸部リンパ節腫脹+嘔気+盗汗→30日後に微熱+倦怠感+視力障害. ALT103, AST30, トロポニン0.26(心筋炎). Toxo IgG 1:2048, IgM>160, IgG avidity低値(最近感染).",
+      "final_diagnosis": "トキソプラズマリンパ節炎",
+      "expected_id": "D366",
+      "in_scope": true,
+      "evidence": {
+        "E01": "over_40.0",
+        "S05": "severe",
+        "S06": "present",
+        "S07": "severe",
+        "S16": "present",
+        "E13": "present",
+        "E46": "cervical",
+        "L11": "mild_elevated",
+        "T01": "over_3w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R06": "tropical_endemic"
+      },
+      "result": "",
+      "notes": "ニカラグア渡航後。心筋炎+脈絡網膜炎合併の重症例。初期はデング熱/チクングニア疑い"
+    },
+    {
+      "id": "R800",
+      "source": "Emerg Infect Dis 2018",
+      "pmcid": "PMC5887475",
+      "vignette": "30M 既往なし. ニカラグア渡航後に全身痛+倦怠感+頭痛. 37.7℃微熱. 両側結膜充血. トロポニン0.1(軽度上昇). ALT112, AST327(著明肝障害). Toxo IgG 1:8000, IgM 11.1, avidity低値. TMP-SMX 2週間で完全回復.",
+      "final_diagnosis": "トキソプラズマリンパ節炎",
+      "expected_id": "D366",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S06": "present",
+        "S07": "severe",
+        "S05": "mild",
+        "E25": "present",
+        "L11": "very_high",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R06": "tropical_endemic"
+      },
+      "result": "",
+      "notes": "R799と同一家族のニカラグア渡航。AST327著明上昇。リンパ節腫脹は記載なしだが倦怠感+肝障害主体"
+    },
+    {
+      "id": "R801",
+      "source": "J Med Case Rep 2011",
+      "pmcid": "PMC3033841",
+      "vignette": "20M 中東系米国在住学生. 数ヶ月間の「リンパ節腫脹」で受診. 両側頸部・後頭部+右鼠径部リンパ節腫大(最大4cm, 無痛, 可動性良好). 左口蓋扁桃軽度発赤腫大. 無熱, バイタル正常. 全身症状なし. CBC・電解質正常. Monospot/HIV/CMV/RPR陰性. Toxo IgG 558, IgM陽性. 1ヶ月前に生キッベ(生羊肉)摂取歴.",
+      "final_diagnosis": "トキソプラズマリンパ節炎",
+      "expected_id": "D366",
+      "in_scope": true,
+      "evidence": {
+        "E01": "under_37.5",
+        "E13": "present",
+        "E46": "generalized",
+        "L01": "normal_4000_10000",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "無症候性リンパ節腫脹のみ。無熱。生肉(キッベ)曝露歴。全身症状なしの典型的免疫正常者パターン"
+    },
+    {
+      "id": "R802",
+      "source": "Int J Environ Res Public Health 2023",
+      "pmcid": "PMC10761556",
+      "vignette": "87F 園芸趣味. 発熱1日+体幹・四肢・手掌・足底に点状出血疹. 左上腕に焼痂(eschar). 意識軽度低下(GCS13). BP108/50(NAd使用), HR80, RR17, SpO2 97%. PLT36K, WBC2430, Hb8.8, AST120, ALT58, CRP11.11(mg/dL), Na124, CK465. DICスコア9. PCRでR.japonica確認.",
+      "final_diagnosis": "日本紅斑熱",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E12": "petechiae_purpura",
+        "E17": "present",
+        "L14": "thrombocytopenia",
+        "L01": "low_under_4000",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "L44": "hyponatremia",
+        "E05": "normal_over_96",
+        "E04": "normal_under_20",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "87歳園芸。DIC合併の重症例。Na124著明低下。PLT36K+WBC2430の汎血球減少"
+    },
+    {
+      "id": "R803",
+      "source": "Int J Environ Res Public Health 2023",
+      "pmcid": "PMC10761556",
+      "vignette": "78M 園芸趣味. 8日前に虫刺され. 2日間の頸部後部痛+発熱(当初crowned dens syndrome疑い)→再受診時に間欠性発熱+全身倦怠+食欲不振. 顔面・体幹・四肢に発疹+左下肢にeschar. 頭痛あり. GCS15. BP96/48, HR80, RR24, SpO2 92%. PLT90K, WBC3830, AST73, ALT54, CRP19.29(mg/dL), Na130, CK332. NAd3日間使用. 血便2回. PCRでR.japonica.",
+      "final_diagnosis": "日本紅斑熱",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E12": "maculopapular_rash",
+        "E17": "present",
+        "S05": "mild",
+        "S07": "severe",
+        "L14": "thrombocytopenia",
+        "L01": "low_under_4000",
+        "L11": "mild_elevated",
+        "L02": "high_over_10",
+        "L44": "hyponatremia",
+        "E05": "severe_hypoxia_under_93",
+        "E04": "tachypnea_20_30",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "虫刺され8日後。crowned dens syndromeと誤診→再来で紅斑熱診断。SpO2 92%。NAd使用の重症"
+    },
+    {
+      "id": "R804",
+      "source": "Am J Trop Med Hyg 2018",
+      "pmcid": "PMC5930880",
+      "vignette": "74F 趣味農業. 4日間の発熱39.6℃+発疹+意識混濁+見当識障害. 左大腿にeschar. HR121, BP108/63, RR22. 血小板減少+肝酵素上昇+DIC発症. IgM<40(2日目)→1:640(21日目). ICU6日間→74日入院で回復. 夫(R805)も同時発症.",
+      "final_diagnosis": "日本紅斑熱(家族クラスター)",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E12": "maculopapular_rash",
+        "E17": "present",
+        "E16": "confused",
+        "E02": "over_120",
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "家族クラスター。DIC合併→後腹膜血腫。74日の長期入院。ダニ生息域の趣味農業"
+    },
+    {
+      "id": "R805",
+      "source": "Am J Trop Med Hyg 2018",
+      "pmcid": "PMC5930880",
+      "vignette": "80M R804の夫. 5日間の発熱39.6℃+四肢・体幹の丘疹状発疹+意識変容. 左膝窩にeschar(後方視的に発見). HR140, BP105/47, RR24. 血小板減少+肝酵素上昇+FDP上昇+PT/APTT延長(DIC). セフトリアキソン+バンコマイシンで治療開始→無効→3日後に死亡.",
+      "final_diagnosis": "日本紅斑熱(家族クラスター→死亡)",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E12": "maculopapular_rash",
+        "E17": "present",
+        "E16": "confused",
+        "E02": "over_120",
+        "L14": "thrombocytopenia",
+        "L11": "mild_elevated",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "R804の夫。診断遅延→不適切抗菌薬(セフトリアキソン)→死亡。escharは後方視的発見"
+    },
+    {
+      "id": "R806",
+      "source": "Cureus 2023",
+      "pmcid": "PMC9791273",
+      "vignette": "72F 犬飼育. 2日間の発熱+筋肉痛+倦怠感+乾性咳嗽→7日目に103.9°F(39.9℃)+嘔気+食欲低下+頭痛+全身びまん性非掻痒性発疹(顔→胸腹→四肢に拡大). BP124/62, HR94, T99.5°F. WBC8550, PLT239K, Na126, AST42, ALT46. 8日目: Na129, CRP4.13, ESR30. 後に関節痛(手首・膝・指)出現. RMSF IgG 1:1024で確定.",
+      "final_diagnosis": "ロッキー山紅斑熱(RMSF)",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E12": "maculopapular_rash",
+        "S06": "present",
+        "S07": "mild",
+        "S05": "mild",
+        "S08": "present",
+        "S01": "present",
+        "S84": "dry",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "L28": "elevated",
+        "L11": "mild_elevated",
+        "L44": "hyponatremia",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "非定型分布(顔から体幹)。Na126低Na血症。PLT正常。犬飼育だがダニ刺咬歴なし。後に網膜血管炎合併"
+    },
+    {
+      "id": "R807",
+      "source": "Cureus 2023",
+      "pmcid": "PMC10663404",
+      "vignette": "21M テネシー州から帰省5日後. 4日間の発熱(101°F=38.3℃)+軽度頭痛+全身痛+関節痛+乾性咳嗽. 前腕掌側・下腿・体幹・頸部に斑丘疹(非掻痒性, blanching). 結膜軽度充血+鼻閉+咽頭痛+びまん性筋圧痛. PLT111→75→81→99→124K, Na132→128→134, ALT56→240, AST41→267, Bil1.5→2.9. ダニ刺咬否定. ドキシサイクリン5日で回復.",
+      "final_diagnosis": "ロッキー山紅斑熱(RMSF)",
+      "expected_id": "D367",
+      "in_scope": true,
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E12": "maculopapular_rash",
+        "E25": "present",
+        "S05": "mild",
+        "S06": "present",
+        "S08": "present",
+        "S01": "present",
+        "S84": "dry",
+        "L14": "thrombocytopenia",
+        "L11": "very_high",
+        "L44": "hyponatremia",
+        "L01": "normal_4000_10000",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R06": "domestic"
+      },
+      "result": "",
+      "notes": "テネシー州渡航。結膜充血あり。PLT111→75K(経時的低下)。AST41→267, ALT56→240(進行性肝障害)。Na128(最低値)"
     }
   ],
   "total_cases": 110
