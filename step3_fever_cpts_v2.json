@@ -11968,11 +11968,11 @@
           "hypothermia_under_35": 0.01
         },
         "D363": {
-          "under_37.5": 0.55,
-          "37.5_38.0": 0.25,
-          "38.0_39.0": 0.12,
-          "39.0_40.0": 0.05,
-          "over_40.0": 0.02,
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.15,
+          "38.0_39.0": 0.09,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.01,
           "hypothermia_under_35": 0.01
         },
         "D24": {
@@ -11984,11 +11984,11 @@
           "hypothermia_under_35": 0.0
         },
         "D364": {
-          "under_37.5": 0.01,
-          "37.5_38.0": 0.05,
+          "under_37.5": 0.08,
+          "37.5_38.0": 0.07,
           "38.0_39.0": 0.2,
-          "39.0_40.0": 0.45,
-          "over_40.0": 0.29,
+          "39.0_40.0": 0.4,
+          "over_40.0": 0.25,
           "hypothermia_under_35": 0.0
         }
       }
@@ -17362,8 +17362,8 @@
           "present": 0.45
         },
         "D363": {
-          "absent": 0.4,
-          "present": 0.6
+          "absent": 0.3,
+          "present": 0.7
         },
         "D354": {
           "absent": 0.7,
@@ -18928,9 +18928,9 @@
         },
         "D359": {
           "low_under_4000": 0.03,
-          "normal_4000_10000": 0.35,
-          "high_10000_20000": 0.5,
-          "very_high_over_20000": 0.12
+          "normal_4000_10000": 0.37,
+          "high_10000_20000": 0.55,
+          "very_high_over_20000": 0.05
         },
         "D65": {
           "low_under_4000": 0.03,
@@ -21487,15 +21487,15 @@
         },
         "D29": {
           "not_done_or_pending": 0.1,
-          "negative": 0.3,
+          "negative": 0.25,
           "gram_positive": 0.15,
-          "gram_negative": 0.45
+          "gram_negative": 0.5
         },
         "D362": {
-          "not_done_or_pending": 0.1,
-          "negative": 0.8,
-          "gram_positive": 0.05,
-          "gram_negative": 0.05
+          "not_done_or_pending": 0.05,
+          "negative": 0.9,
+          "gram_positive": 0.03,
+          "gram_negative": 0.02
         },
         "D24": {
           "not_done_or_pending": 0.1,
@@ -22029,9 +22029,9 @@
           "very_high": 0.1
         },
         "D359": {
-          "normal": 0.6,
-          "mild_elevated": 0.35,
-          "very_high": 0.05
+          "normal": 0.5,
+          "mild_elevated": 0.4,
+          "very_high": 0.1
         },
         "D29": {
           "normal": 0.1,
@@ -22039,19 +22039,19 @@
           "very_high": 0.45
         },
         "D362": {
-          "normal": 0.25,
+          "normal": 0.3,
           "mild_elevated": 0.55,
-          "very_high": 0.2
+          "very_high": 0.15
         },
         "D108": {
           "normal": 0.02,
-          "mild_elevated": 0.05,
-          "very_high": 0.93
+          "mild_elevated": 0.03,
+          "very_high": 0.95
         },
         "D363": {
-          "normal": 0.03,
-          "mild_elevated": 0.15,
-          "very_high": 0.82
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "very_high": 0.75
         },
         "D24": {
           "normal": 0.1,
@@ -23297,8 +23297,8 @@
         },
         "D65": {
           "not_done": 0.05,
-          "normal": 0.1,
-          "elevated": 0.85
+          "normal": 0.07,
+          "elevated": 0.88
         },
         "D360": {
           "not_done": 0.05,
@@ -23688,9 +23688,9 @@
           "very_high_over_100": 0.7
         },
         "D359": {
-          "normal": 0.02,
-          "elevated": 0.13,
-          "very_high_over_100": 0.85
+          "normal": 0.08,
+          "elevated": 0.17,
+          "very_high_over_100": 0.75
         },
         "D65": {
           "normal": 0.15,
@@ -23766,10 +23766,10 @@
           "crystals": 0.82
         },
         "D360": {
-          "not_done": 0.1,
-          "inflammatory": 0.1,
-          "septic": 0.05,
-          "crystals": 0.75
+          "not_done": 0.05,
+          "inflammatory": 0.06,
+          "septic": 0.02,
+          "crystals": 0.87
         }
       }
     },
@@ -25036,8 +25036,8 @@
           "present": 0.5
         },
         "D359": {
-          "absent": 0.8,
-          "present": 0.2
+          "absent": 0.83,
+          "present": 0.17
         }
       }
     },
@@ -27836,8 +27836,8 @@
           "present": 0.35
         },
         "D108": {
-          "absent": 0.7,
-          "present": 0.3
+          "absent": 0.65,
+          "present": 0.35
         },
         "D359": {
           "absent": 0.5,
@@ -29134,8 +29134,8 @@
           "present": 0.8
         },
         "D364": {
-          "absent": 0.45,
-          "present": 0.55
+          "absent": 0.5,
+          "present": 0.5
         },
         "D353": {
           "absent": 0.6,
@@ -33592,10 +33592,10 @@
           "over_3w": 0.8
         },
         "D359": {
-          "under_3d": 0.02,
-          "3d_to_1w": 0.03,
+          "under_3d": 0.05,
+          "3d_to_1w": 0.05,
           "1w_to_3w": 0.2,
-          "over_3w": 0.75
+          "over_3w": 0.7
         },
         "D65": {
           "under_3d": 0.6,
@@ -35445,10 +35445,10 @@
           "chronic": 0.1
         },
         "D360": {
-          "sudden": 0.05,
-          "acute": 0.3,
-          "subacute": 0.5,
-          "chronic": 0.15
+          "sudden": 0.15,
+          "acute": 0.35,
+          "subacute": 0.4,
+          "chronic": 0.1
         },
         "D106": {
           "sudden": 0.005,
@@ -35488,9 +35488,9 @@
         },
         "D359": {
           "sudden": 0.005,
-          "acute": 0.02,
+          "acute": 0.05,
           "subacute": 0.3,
-          "chronic": 0.675
+          "chronic": 0.645
         },
         "D352": {
           "sudden": 0.1,
