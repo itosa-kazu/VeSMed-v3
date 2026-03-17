@@ -39672,6 +39672,3502 @@
       "from_name": "meningioma",
       "to_name": "S13",
       "reason": "髄膜腫: 嘔吐(頭蓋内圧亢進, 25-35%)"
+    },
+    {
+      "from": "D241",
+      "to": "E33",
+      "from_name": "腎血管性高血圧",
+      "to_name": "脈拍左右差/血管雑音",
+      "reason": "腎動脈狭窄→血管雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D241",
+      "to": "S35",
+      "from_name": "腎血管性高血圧",
+      "to_name": "動悸",
+      "reason": "高血圧→動悸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D241",
+      "to": "E36",
+      "from_name": "腎血管性高血圧",
+      "to_name": "下腿浮腫",
+      "reason": "腎性高血圧→浮腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D244",
+      "to": "S66",
+      "from_name": "マロリー・ワイス症候群",
+      "to_name": "嘔吐",
+      "reason": "嘔吐後の吐血が典型",
+      "onset_day_range": null
+    },
+    {
+      "from": "D244",
+      "to": "S67",
+      "from_name": "マロリー・ワイス症候群",
+      "to_name": "嘔吐の性状",
+      "reason": "吐血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D244",
+      "to": "S26",
+      "from_name": "マロリー・ワイス症候群",
+      "to_name": "血便/粘血便",
+      "reason": "黒色便/血便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D244",
+      "to": "E03",
+      "from_name": "マロリー・ワイス症候群",
+      "to_name": "収縮期血圧",
+      "reason": "大量出血→低血圧",
+      "onset_day_range": null
+    },
+    {
+      "from": "D245",
+      "to": "S66",
+      "from_name": "急性胃粘膜病変(AGML)",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(吐血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D245",
+      "to": "S67",
+      "from_name": "急性胃粘膜病変(AGML)",
+      "to_name": "嘔吐の性状",
+      "reason": "吐血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D245",
+      "to": "S26",
+      "from_name": "急性胃粘膜病変(AGML)",
+      "to_name": "血便/粘血便",
+      "reason": "上部消化管出血→黒色便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D245",
+      "to": "L93",
+      "from_name": "急性胃粘膜病変(AGML)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "出血→貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S25",
+      "from_name": "食道癌",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難が主症状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S101",
+      "from_name": "食道癌",
+      "to_name": "嚥下困難の種類",
+      "reason": "固形物嚥下困難から進行",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S17",
+      "from_name": "食道癌",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S55",
+      "from_name": "食道癌",
+      "to_name": "嗄声",
+      "reason": "嗄声(反回神経浸潤)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S78",
+      "from_name": "食道癌",
+      "to_name": "嚥下痛",
+      "reason": "嚥下痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "E13",
+      "from_name": "食道癌",
+      "to_name": "リンパ節腫脹",
+      "reason": "鎖骨上リンパ節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D293",
+      "to": "S92",
+      "from_name": "良性発作性頭位めまい症(BPPV)",
+      "to_name": "めまいの性状",
+      "reason": "体位変換で誘発される短時間の回転性めまい",
+      "onset_day_range": null
+    },
+    {
+      "from": "D293",
+      "to": "E62",
+      "from_name": "良性発作性頭位めまい症(BPPV)",
+      "to_name": "眼振",
+      "reason": "眼振(方向固定性/回旋性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D293",
+      "to": "S125",
+      "from_name": "良性発作性頭位めまい症(BPPV)",
+      "to_name": "耳鳴",
+      "reason": "耳鳴は通常なし(メニエールとの鑑別)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D293",
+      "to": "S124",
+      "from_name": "良性発作性頭位めまい症(BPPV)",
+      "to_name": "難聴",
+      "reason": "難聴は通常なし",
+      "onset_day_range": null
+    },
+    {
+      "from": "D293",
+      "to": "E60",
+      "from_name": "良性発作性頭位めまい症(BPPV)",
+      "to_name": "Romberg徴候",
+      "reason": "Romberg陰性(末梢前庭)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D296",
+      "to": "S69",
+      "from_name": "緊張型頭痛",
+      "to_name": "頭痛の時間パターン",
+      "reason": "反復性/慢性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D296",
+      "to": "S70",
+      "from_name": "緊張型頭痛",
+      "to_name": "光音過敏",
+      "reason": "光音過敏は通常なし",
+      "onset_day_range": null
+    },
+    {
+      "from": "D296",
+      "to": "S71",
+      "from_name": "緊張型頭痛",
+      "to_name": "頭痛随伴の自律神経症状",
+      "reason": "自律神経症状なし",
+      "onset_day_range": null
+    },
+    {
+      "from": "D296",
+      "to": "S68",
+      "from_name": "緊張型頭痛",
+      "to_name": "頭痛の増悪因子",
+      "reason": "特定の増悪因子なし",
+      "onset_day_range": null
+    },
+    {
+      "from": "D296",
+      "to": "S114",
+      "from_name": "緊張型頭痛",
+      "to_name": "不安",
+      "reason": "ストレス/不安が関連",
+      "onset_day_range": null
+    },
+    {
+      "from": "D297",
+      "to": "S69",
+      "from_name": "三叉神経痛",
+      "to_name": "頭痛の時間パターン",
+      "reason": "反復性発作",
+      "onset_day_range": null
+    },
+    {
+      "from": "D297",
+      "to": "S20",
+      "from_name": "三叉神経痛",
+      "to_name": "顔面痛・圧迫感",
+      "reason": "顔面痛(三叉神経分布)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D297",
+      "to": "S68",
+      "from_name": "三叉神経痛",
+      "to_name": "頭痛の増悪因子",
+      "reason": "触覚刺激で誘発",
+      "onset_day_range": null
+    },
+    {
+      "from": "D339",
+      "to": "S122",
+      "from_name": "網膜剥離",
+      "to_name": "急性視力低下",
+      "reason": "急性片側視力低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D339",
+      "to": "S168",
+      "from_name": "網膜剥離",
+      "to_name": "光視症",
+      "reason": "光視症(網膜牽引)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D339",
+      "to": "S123",
+      "from_name": "網膜剥離",
+      "to_name": "眼痛",
+      "reason": "眼痛は通常軽度",
+      "onset_day_range": null
+    },
+    {
+      "from": "D226",
+      "to": "L93",
+      "from_name": "真性多血症(PV)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "Hb高値",
+      "onset_day_range": null
+    },
+    {
+      "from": "D226",
+      "to": "L100",
+      "from_name": "真性多血症(PV)",
+      "to_name": "血小板数",
+      "reason": "血小板増加",
+      "onset_day_range": null
+    },
+    {
+      "from": "D226",
+      "to": "E14",
+      "from_name": "真性多血症(PV)",
+      "to_name": "脾腫",
+      "reason": "脾腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D226",
+      "to": "S96",
+      "from_name": "真性多血症(PV)",
+      "to_name": "掻痒感",
+      "reason": "水浴後掻痒(aquagenic pruritus)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D226",
+      "to": "S42",
+      "from_name": "真性多血症(PV)",
+      "to_name": "痙攣",
+      "reason": "血栓→痙攣",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S48",
+      "from_name": "胸腺腫",
+      "to_name": "近位筋力低下",
+      "reason": "重症筋無力症合併(30-50%)→近位筋力低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S108",
+      "from_name": "胸腺腫",
+      "to_name": "眼瞼下垂",
+      "reason": "眼瞼下垂(MG)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S107",
+      "from_name": "胸腺腫",
+      "to_name": "複視",
+      "reason": "複視(MG)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S25",
+      "from_name": "胸腺腫",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(MG/腫瘍圧迫)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "L35",
+      "from_name": "胸腺腫",
+      "to_name": "胸部CT詳細所見",
+      "reason": "前縦隔腫瘤",
+      "onset_day_range": null
+    },
+    {
+      "from": "D235",
+      "to": "E13",
+      "from_name": "慢性リンパ性白血病(CLL)",
+      "to_name": "リンパ節腫脹",
+      "reason": "リンパ節腫脹(全身性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D235",
+      "to": "E14",
+      "from_name": "慢性リンパ性白血病(CLL)",
+      "to_name": "脾腫",
+      "reason": "脾腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D235",
+      "to": "L93",
+      "from_name": "慢性リンパ性白血病(CLL)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D235",
+      "to": "S17",
+      "from_name": "慢性リンパ性白血病(CLL)",
+      "to_name": "体重減少",
+      "reason": "体重減少(B症状)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D235",
+      "to": "S16",
+      "from_name": "慢性リンパ性白血病(CLL)",
+      "to_name": "盗汗",
+      "reason": "盗汗",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S54",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "視野障害",
+      "reason": "視神経炎→視力低下/視野障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S122",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "急性視力低下",
+      "reason": "視神経炎(片側)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S76",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "感覚障害のパターン",
+      "reason": "感覚障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S106",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "歩行障害",
+      "reason": "歩行障害(小脳性/痙性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "E61",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "小脳徴候(指鼻試験/踵膝試験/断綴言語)",
+      "reason": "小脳徴候",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S110",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "尿閉",
+      "reason": "尿閉/排尿障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "E62",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "眼振",
+      "reason": "眼振",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "L46",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "頭部MRI",
+      "reason": "脱髄斑(periventricular)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "S66",
+      "from_name": "腸重積症(成人)",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "E44",
+      "from_name": "腸重積症(成人)",
+      "to_name": "腹部膨満",
+      "reason": "腹部膨満",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "S73",
+      "from_name": "腸重積症(成人)",
+      "to_name": "排便停止",
+      "reason": "排便停止",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "S26",
+      "from_name": "腸重積症(成人)",
+      "to_name": "血便/粘血便",
+      "reason": "粘血便(イチゴゼリー状)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "E52",
+      "from_name": "腸重積症(成人)",
+      "to_name": "腸蠕動音",
+      "reason": "腸蠕動音亢進",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S61",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "腹痛の性状",
+      "reason": "灼烧感/空腹時痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S62",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "腹痛の増悪/緩和因子",
+      "reason": "食事で改善(DU)/食後増悪(GU)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S66",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S26",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "血便/粘血便",
+      "reason": "上部消化管出血→黒色便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S102",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "胸焼け",
+      "reason": "胸焼け",
+      "onset_day_range": null
+    },
+    {
+      "from": "D242",
+      "to": "S89",
+      "from_name": "消化性潰瘍(非穿孔性)",
+      "to_name": "腹痛の部位",
+      "reason": "心窩部痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D262",
+      "to": "S96",
+      "from_name": "伝染性膿痂疹(とびひ)",
+      "to_name": "掻痒感",
+      "reason": "掻痒感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D271",
+      "to": "S101",
+      "from_name": "好酸球性食道炎(EoE)",
+      "to_name": "嚥下困難の種類",
+      "reason": "固形物嚥下困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D271",
+      "to": "S78",
+      "from_name": "好酸球性食道炎(EoE)",
+      "to_name": "嚥下痛",
+      "reason": "嚥下痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D271",
+      "to": "S102",
+      "from_name": "好酸球性食道炎(EoE)",
+      "to_name": "胸焼け",
+      "reason": "胸焼け",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S109",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "顔面麻痺",
+      "reason": "末梢性顔面麻痺(上下)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S79",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "耳痛",
+      "reason": "耳痛(発症前後)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S124",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "難聴",
+      "reason": "患側の聴覚過敏",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S19",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "味覚障害",
+      "reason": "患側の味覚障害(鼓索神経)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S31",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "口腔乾燥",
+      "reason": "患側の眼乾燥(涙腺障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S109",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "顔面麻痺",
+      "reason": "末梢性顔面麻痺",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S79",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "耳痛",
+      "reason": "激しい耳痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S124",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "難聴",
+      "reason": "感音性難聴",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S59",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "めまい",
+      "reason": "めまい(前庭神経障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S125",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "耳鳴",
+      "reason": "耳鳴",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S106",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "歩行障害",
+      "reason": "易転倒性(後方転倒)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "E64",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "眼球運動障害",
+      "reason": "垂直性核上性注視麻痺(下方注視障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S25",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S104",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "記憶障害",
+      "reason": "記憶障害(前頭葉性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S150",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "認知機能低下(記憶以外)",
+      "reason": "認知機能低下(遂行機能障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "E53",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "深部腱反射",
+      "reason": "深部腱反射亢進",
+      "onset_day_range": null
+    },
+    {
+      "from": "D76",
+      "to": "S04",
+      "from_name": "輸血関連発熱反応",
+      "to_name": "呼吸困難",
+      "reason": "呼吸困難(TRALI合併)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D76",
+      "to": "S07",
+      "from_name": "輸血関連発熱反応",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D76",
+      "to": "S96",
+      "from_name": "輸血関連発熱反応",
+      "to_name": "掻痒感",
+      "reason": "蕁麻疹/掻痒感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D147",
+      "to": "S169",
+      "from_name": "精巣捻転",
+      "to_name": "陰嚢疼痛",
+      "reason": "激しい陰嚢疼痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D147",
+      "to": "S38",
+      "from_name": "精巣捻転",
+      "to_name": "陰嚢腫脹",
+      "reason": "陰嚢腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D147",
+      "to": "S66",
+      "from_name": "精巣捻転",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(反射性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D147",
+      "to": "S12",
+      "from_name": "精巣捻転",
+      "to_name": "腹痛の部位",
+      "reason": "下腹部痛(関連痛)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "E44",
+      "from_name": "S状結腸捻転",
+      "to_name": "腹部膨満",
+      "reason": "著明な腹部膨満",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "S66",
+      "from_name": "S状結腸捻転",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "S73",
+      "from_name": "S状結腸捻転",
+      "to_name": "排便停止",
+      "reason": "排便停止",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "S74",
+      "from_name": "S状結腸捻転",
+      "to_name": "排ガス停止",
+      "reason": "排ガス停止",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "E52",
+      "from_name": "S状結腸捻転",
+      "to_name": "腸蠕動音",
+      "reason": "腸蠕動音減弱~消失",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "L04",
+      "from_name": "S状結腸捻転",
+      "to_name": "胸部X線",
+      "reason": "腹部X線: coffee bean sign",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S111",
+      "from_name": "強直性脊椎炎",
+      "to_name": "腰痛",
+      "reason": "腰痛(炎症性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S112",
+      "from_name": "強直性脊椎炎",
+      "to_name": "頸部痛",
+      "reason": "頸部痛(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "E35",
+      "from_name": "強直性脊椎炎",
+      "to_name": "眼症状（ぶどう膜炎/結膜炎）",
+      "reason": "ぶどう膜炎(25-40%)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S145",
+      "from_name": "強直性脊椎炎",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "朝のこわばり2h以上",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S146",
+      "from_name": "強直性脊椎炎",
+      "to_name": "こわばりの活動による変化",
+      "reason": "運動で改善(炎症性の特徴)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "S15",
+      "from_name": "脾梗塞",
+      "to_name": "側腹部痛",
+      "reason": "左側腹部痛/左上腹部痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "S22",
+      "from_name": "脾梗塞",
+      "to_name": "背部痛（脊椎レベル）",
+      "reason": "左肩放散痛(Kehr sign)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "E14",
+      "from_name": "脾梗塞",
+      "to_name": "脾腫",
+      "reason": "脾腫(基礎疾患)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "E54",
+      "from_name": "脾梗塞",
+      "to_name": "脱水徴候",
+      "reason": "脱水",
+      "onset_day_range": null
+    },
+    {
+      "from": "D190",
+      "to": "L91",
+      "from_name": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "to_name": "尿浸透圧",
+      "reason": "尿浸透圧高値(不適切な濃縮尿)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D190",
+      "to": "L92",
+      "from_name": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "to_name": "血清浸透圧",
+      "reason": "血清浸透圧低値",
+      "onset_day_range": null
+    },
+    {
+      "from": "D190",
+      "to": "S82",
+      "from_name": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "to_name": "尿量",
+      "reason": "尿量減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D190",
+      "to": "E36",
+      "from_name": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "to_name": "下腿浮腫",
+      "reason": "浮腫は通常なし(euvolemic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S106",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "歩行障害",
+      "reason": "歩行障害(small-step, magnetic gait)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S110",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "尿閉",
+      "reason": "尿失禁/尿閉",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S104",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "記憶障害",
+      "reason": "記憶障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S150",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "認知機能低下(記憶以外)",
+      "reason": "認知機能低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "L46",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "頭部MRI",
+      "reason": "脳室拡大(MRI)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D211",
+      "to": "E40",
+      "from_name": "三環系抗うつ薬中毒",
+      "to_name": "ECG所見",
+      "reason": "QRS延長/不整脈",
+      "onset_day_range": null
+    },
+    {
+      "from": "D211",
+      "to": "E63",
+      "from_name": "三環系抗うつ薬中毒",
+      "to_name": "瞳孔異常",
+      "reason": "散瞳(抗コリン作用)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D211",
+      "to": "S82",
+      "from_name": "三環系抗うつ薬中毒",
+      "to_name": "尿量",
+      "reason": "尿閉(抗コリン)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D211",
+      "to": "E54",
+      "from_name": "三環系抗うつ薬中毒",
+      "to_name": "脱水徴候",
+      "reason": "口腔乾燥/皮膚乾燥(抗コリン)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "S49",
+      "from_name": "拘束型心筋症",
+      "to_name": "起座呼吸",
+      "reason": "起座呼吸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "E15",
+      "from_name": "拘束型心筋症",
+      "to_name": "心雑音",
+      "reason": "心雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "E73",
+      "from_name": "拘束型心筋症",
+      "to_name": "III音/IV音(gallop)",
+      "reason": "gallop",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "E39",
+      "from_name": "拘束型心筋症",
+      "to_name": "心エコー所見",
+      "reason": "心エコー異常",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "S56",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "間欠性跛行",
+      "reason": "間欠性跛行→急性疼痛(5P: Pain)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "S52",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "局所神経症状（片麻痺）",
+      "reason": "局所神経症状(Paresthesia/Paralysis)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "E41",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "ABI(足関節上腕血圧比)",
+      "reason": "ABI低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "E69",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "毛細血管再充満時間(CRT)",
+      "reason": "CRT延長(Pallor/Pulselessness)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "S105",
+      "from_name": "ウィルソン病",
+      "to_name": "不随意運動",
+      "reason": "不随意運動(振戦/ジストニア)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "S115",
+      "from_name": "ウィルソン病",
+      "to_name": "抑うつ気分",
+      "reason": "精神症状(抑うつ/行動変化)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "E25",
+      "from_name": "ウィルソン病",
+      "to_name": "結膜充血",
+      "reason": "角膜輪(Kayser-Fleischer ring)→結膜所見",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "L17",
+      "from_name": "ウィルソン病",
+      "to_name": "CK(クレアチンキナーゼ)",
+      "reason": "CK上昇",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "L93",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "L100",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "血小板数",
+      "reason": "血小板減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "L22",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "汎血球減少",
+      "reason": "汎血球減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "S17",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "E14",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "脾腫",
+      "reason": "脾腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "S100",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "尿の色/性状",
+      "reason": "早朝の茶褐色尿(ヘモグロビン尿)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "L93",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "L98",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "ハプトグロビン",
+      "reason": "ハプトグロビン低値(溶血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "L73",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "直接Coombs試験",
+      "reason": "Coombs陰性(非免疫性溶血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "S25",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(食道攣縮)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "L36",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "アミラーゼ/リパーゼ",
+      "reason": "アミラーゼ/リパーゼ上昇",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "L37",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "血清IgG4",
+      "reason": "IgG4上昇",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "S17",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "L31",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "腹部CT",
+      "reason": "膵腫大(CT)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "S46",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "食欲不振",
+      "reason": "食欲不振",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "S26",
+      "from_name": "大腸癌",
+      "to_name": "血便/粘血便",
+      "reason": "血便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "L79",
+      "from_name": "大腸癌",
+      "to_name": "便潜血",
+      "reason": "便潜血陽性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "S17",
+      "from_name": "大腸癌",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "S72",
+      "from_name": "大腸癌",
+      "to_name": "便秘",
+      "reason": "便秘(左側結腸)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "L93",
+      "from_name": "大腸癌",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "鉄欠乏性貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "E58",
+      "from_name": "大腸癌",
+      "to_name": "腹部腫瘤",
+      "reason": "腹部腫瘤(進行癌)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D239",
+      "to": "S33",
+      "from_name": "IgA腎症(急性増悪)",
+      "to_name": "血尿",
+      "reason": "肉眼的血尿(上気道感染後)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D239",
+      "to": "L78",
+      "from_name": "IgA腎症(急性増悪)",
+      "to_name": "尿蛋白定量",
+      "reason": "尿蛋白",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "S66",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "嘔吐",
+      "reason": "大量吐血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "S67",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "嘔吐の性状",
+      "reason": "血性嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "E14",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "脾腫",
+      "reason": "脾腫(門脈圧亢進)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "L93",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血(出血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "E65",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "腹壁静脈怒張",
+      "reason": "腹壁静脈怒張",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S17",
+      "from_name": "胃癌",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S46",
+      "from_name": "胃癌",
+      "to_name": "食欲不振",
+      "reason": "食欲不振",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S25",
+      "from_name": "胃癌",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(噴門部)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S135",
+      "from_name": "胃癌",
+      "to_name": "黒色便(タール便)",
+      "reason": "黒色便(タール便)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "L93",
+      "from_name": "胃癌",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "E58",
+      "from_name": "胃癌",
+      "to_name": "腹部腫瘤",
+      "reason": "腹部腫瘤(進行癌)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D268",
+      "to": "S66",
+      "from_name": "ノロウイルス胃腸炎",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(突然発症)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D268",
+      "to": "S86",
+      "from_name": "ノロウイルス胃腸炎",
+      "to_name": "下痢の性状",
+      "reason": "水様性下痢",
+      "onset_day_range": null
+    },
+    {
+      "from": "D268",
+      "to": "S173",
+      "from_name": "ノロウイルス胃腸炎",
+      "to_name": "下痢の持続期間",
+      "reason": "急性(24-72h)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S101",
+      "from_name": "食道アカラシア",
+      "to_name": "嚥下困難の種類",
+      "reason": "固形物+液体ともに困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S66",
+      "from_name": "食道アカラシア",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(食道内食物の逆流)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S102",
+      "from_name": "食道アカラシア",
+      "to_name": "胸焼け",
+      "reason": "胸焼け",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S17",
+      "from_name": "食道アカラシア",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S104",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "記憶障害",
+      "reason": "急速進行性認知症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S150",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "認知機能低下(記憶以外)",
+      "reason": "認知機能低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S105",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "不随意運動",
+      "reason": "不随意運動(ミオクローヌス)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "E61",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "小脳徴候(指鼻試験/踵膝試験/断綴言語)",
+      "reason": "小脳徴候(小脳性運動失調)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S106",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "歩行障害",
+      "reason": "歩行障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "L46",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "頭部MRI",
+      "reason": "MRI拡散強調画像異常",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "S76",
+      "from_name": "横断性脊髄炎",
+      "to_name": "感覚障害のパターン",
+      "reason": "感覚障害レベル",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "S110",
+      "from_name": "横断性脊髄炎",
+      "to_name": "尿閉",
+      "reason": "尿閉/排尿障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "S48",
+      "from_name": "横断性脊髄炎",
+      "to_name": "近位筋力低下",
+      "reason": "対麻痺/四肢麻痺",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "E53",
+      "from_name": "横断性脊髄炎",
+      "to_name": "深部腱反射",
+      "reason": "深部腱反射(急性期は消失)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S76",
+      "from_name": "馬尾症候群",
+      "to_name": "感覚障害のパターン",
+      "reason": "サドル麻酔(鞍型感覚障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S110",
+      "from_name": "馬尾症候群",
+      "to_name": "尿閉",
+      "reason": "尿閉(最重要red flag)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S111",
+      "from_name": "馬尾症候群",
+      "to_name": "腰痛",
+      "reason": "腰痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S99",
+      "from_name": "馬尾症候群",
+      "to_name": "尿失禁",
+      "reason": "尿失禁/便失禁",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "E53",
+      "from_name": "馬尾症候群",
+      "to_name": "深部腱反射",
+      "reason": "下肢深部腱反射消失",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S48",
+      "from_name": "馬尾症候群",
+      "to_name": "近位筋力低下",
+      "reason": "下肢筋力低下(両側性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S84",
+      "from_name": "急性気管支炎",
+      "to_name": "咳嗽の性状",
+      "reason": "咳嗽(初期乾性→湿性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S04",
+      "from_name": "急性気管支炎",
+      "to_name": "呼吸困難",
+      "reason": "軽度の呼吸困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S21",
+      "from_name": "急性気管支炎",
+      "to_name": "胸痛",
+      "reason": "咳嗽時胸痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S47",
+      "from_name": "急性気管支炎",
+      "to_name": "咳嗽の期間",
+      "reason": "咳嗽3週間前後",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S15",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "側腹部痛",
+      "reason": "肛門周囲痛(座位で増悪)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S07",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S14",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "下痢",
+      "reason": "排便時痛/下痢",
+      "onset_day_range": null
+    },
+    {
+      "from": "D41",
+      "to": "S07",
+      "from_name": "手術部位感染(SSI)",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "S122",
+      "from_name": "メタノール中毒",
+      "to_name": "急性視力低下",
+      "reason": "両側視力低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "S07",
+      "from_name": "メタノール中毒",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "L68",
+      "from_name": "メタノール中毒",
+      "to_name": "血液ガス/乳酸",
+      "reason": "代謝性アシドーシス(AG開大)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "S66",
+      "from_name": "メタノール中毒",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "L92",
+      "from_name": "メタノール中毒",
+      "to_name": "血清浸透圧",
+      "reason": "浸透圧gap上昇",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "S33",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "血尿",
+      "reason": "肉眼的血尿(コーラ色)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "E68",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "眼瞼浮腫",
+      "reason": "眼瞼浮腫(朝方)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "L75",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "補体(C3/C4)",
+      "reason": "低補体(C3低下)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "S82",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "尿量",
+      "reason": "乏尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S119",
+      "from_name": "全身性強皮症",
+      "to_name": "レイノー現象",
+      "reason": "レイノー現象(90%以上)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S25",
+      "from_name": "全身性強皮症",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(食道硬化)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S102",
+      "from_name": "全身性強皮症",
+      "to_name": "胸焼け",
+      "reason": "胸焼け(GERD)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "E55",
+      "from_name": "全身性強皮症",
+      "to_name": "爪/指の所見",
+      "reason": "強指症/爪変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "L18",
+      "from_name": "全身性強皮症",
+      "to_name": "抗核抗体",
+      "reason": "抗核抗体陽性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "S25",
+      "from_name": "アミロイドーシス",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(舌肥大/自律神経)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "S76",
+      "from_name": "アミロイドーシス",
+      "to_name": "感覚障害のパターン",
+      "reason": "末梢神経障害(stocking-glove)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "E73",
+      "from_name": "アミロイドーシス",
+      "to_name": "III音/IV音(gallop)",
+      "reason": "gallop(restrictive cardiomyopathy)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "E68",
+      "from_name": "アミロイドーシス",
+      "to_name": "眼瞼浮腫",
+      "reason": "眼窩周囲紫斑(pathognomonic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "L78",
+      "from_name": "アミロイドーシス",
+      "to_name": "尿蛋白定量",
+      "reason": "尿蛋白(腎アミロイド)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "S49",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "起座呼吸",
+      "reason": "起座呼吸(右心不全進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "E15",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "心雑音",
+      "reason": "TR/PR雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "E73",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "III音/IV音(gallop)",
+      "reason": "右心gallop",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "S97",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "失神",
+      "reason": "労作時失神",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "E39",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "心エコー所見",
+      "reason": "右心拡大",
+      "onset_day_range": null
+    },
+    {
+      "from": "D216",
+      "to": "E15",
+      "from_name": "急性僧帽弁閉鎖不全症",
+      "to_name": "心雑音",
+      "reason": "新規収縮期雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D216",
+      "to": "S49",
+      "from_name": "急性僧帽弁閉鎖不全症",
+      "to_name": "起座呼吸",
+      "reason": "急性起座呼吸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D216",
+      "to": "E39",
+      "from_name": "急性僧帽弁閉鎖不全症",
+      "to_name": "心エコー所見",
+      "reason": "弁逆流(心エコー)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D216",
+      "to": "E73",
+      "from_name": "急性僧帽弁閉鎖不全症",
+      "to_name": "III音/IV音(gallop)",
+      "reason": "S3 gallop",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S23",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "関節腫脹",
+      "reason": "関節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "E21",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "関節の発赤・熱感",
+      "reason": "関節の発赤・熱感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S90",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "関節痛の分布",
+      "reason": "多関節対称性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S145",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "朝のこわばり1h以上",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L88",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "リウマトイド因子(RF)",
+      "reason": "RF陽性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "S119",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "レイノー現象",
+      "reason": "レイノー現象(ほぼ全例)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "S48",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "近位筋力低下",
+      "reason": "近位筋力低下(PM/DM要素)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "L18",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "抗核抗体",
+      "reason": "抗核抗体陽性(anti-U1RNP)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D224",
+      "to": "E13",
+      "from_name": "成人T細胞白血病/リンパ腫(ATLL)",
+      "to_name": "リンパ節腫脹",
+      "reason": "リンパ節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D224",
+      "to": "E14",
+      "from_name": "成人T細胞白血病/リンパ腫(ATLL)",
+      "to_name": "脾腫",
+      "reason": "肝脾腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D224",
+      "to": "L84",
+      "from_name": "成人T細胞白血病/リンパ腫(ATLL)",
+      "to_name": "血清Ca",
+      "reason": "高Ca血症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D224",
+      "to": "S17",
+      "from_name": "成人T細胞白血病/リンパ腫(ATLL)",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D240",
+      "to": "S07",
+      "from_name": "急性間質性腎炎(AIN)",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D240",
+      "to": "S96",
+      "from_name": "急性間質性腎炎(AIN)",
+      "to_name": "掻痒感",
+      "reason": "薬剤アレルギー性の皮疹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D240",
+      "to": "S82",
+      "from_name": "急性間質性腎炎(AIN)",
+      "to_name": "尿量",
+      "reason": "乏尿/無尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "S96",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "掻痒感",
+      "reason": "掻痒感(初発症状)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "S31",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "口腔乾燥",
+      "reason": "口腔乾燥(シェーグレン合併)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "S164",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "眼乾燥",
+      "reason": "眼乾燥(シェーグレン合併)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D260",
+      "to": "S78",
+      "from_name": "ヘルパンギーナ",
+      "to_name": "嚥下痛",
+      "reason": "嚥下痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D260",
+      "to": "S46",
+      "from_name": "ヘルパンギーナ",
+      "to_name": "食欲不振",
+      "reason": "食欲不振(嚥下痛による)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D269",
+      "to": "S86",
+      "from_name": "ロタウイルス胃腸炎",
+      "to_name": "下痢の性状",
+      "reason": "水様性下痢(白色)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D269",
+      "to": "S66",
+      "from_name": "ロタウイルス胃腸炎",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D269",
+      "to": "E54",
+      "from_name": "ロタウイルス胃腸炎",
+      "to_name": "脱水徴候",
+      "reason": "脱水(小児で顕著)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D269",
+      "to": "S173",
+      "from_name": "ロタウイルス胃腸炎",
+      "to_name": "下痢の持続期間",
+      "reason": "急性(3-8日)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D270",
+      "to": "S81",
+      "from_name": "アスピリン喘息(NSAIDs不耐症)",
+      "to_name": "呼吸困難の性状",
+      "reason": "wheezing",
+      "onset_day_range": null
+    },
+    {
+      "from": "D270",
+      "to": "S96",
+      "from_name": "アスピリン喘息(NSAIDs不耐症)",
+      "to_name": "掻痒感",
+      "reason": "蕁麻疹/血管性浮腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D288",
+      "to": "S169",
+      "from_name": "精巣腫瘍",
+      "to_name": "陰嚢疼痛",
+      "reason": "疼痛は通常軽度",
+      "onset_day_range": null
+    },
+    {
+      "from": "D288",
+      "to": "S17",
+      "from_name": "精巣腫瘍",
+      "to_name": "体重減少",
+      "reason": "体重減少(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D288",
+      "to": "E13",
+      "from_name": "精巣腫瘍",
+      "to_name": "リンパ節腫脹",
+      "reason": "リンパ節腫脹(傍大動脈)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S71",
+      "from_name": "群発頭痛",
+      "to_name": "頭痛随伴の自律神経症状",
+      "reason": "自律神経症状(流涙/結膜充血/鼻閉)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S153",
+      "from_name": "群発頭痛",
+      "to_name": "頭痛自律神経症状の側性",
+      "reason": "同側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S69",
+      "from_name": "群発頭痛",
+      "to_name": "頭痛の時間パターン",
+      "reason": "群発期に毎日反復",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S105",
+      "from_name": "パーキンソン病",
+      "to_name": "不随意運動",
+      "reason": "不随意運動(安静時振戦)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S106",
+      "from_name": "パーキンソン病",
+      "to_name": "歩行障害",
+      "reason": "すくみ足/小刻み歩行",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S109",
+      "from_name": "パーキンソン病",
+      "to_name": "顔面麻痺",
+      "reason": "仮面様顔貌(表情筋)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S25",
+      "from_name": "パーキンソン病",
+      "to_name": "嚥下困難",
+      "reason": "嚥下困難(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S104",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "記憶障害",
+      "reason": "記憶障害(変動性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S150",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "認知機能低下(記憶以外)",
+      "reason": "認知機能低下(注意/遂行機能)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S117",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "幻覚",
+      "reason": "幻覚(詳細な幻視が特徴的)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S138",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "幻覚の種類",
+      "reason": "幻視",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S105",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "不随意運動",
+      "reason": "パーキンソニズム",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S116",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "不眠",
+      "reason": "不眠/REM睡眠行動障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "S175",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "局所神経症状の発症速度",
+      "reason": "超急性発症(出血時)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "E67",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "Kernig/Brudzinski徴候",
+      "reason": "髄膜刺激徴候(出血時)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "S04",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "呼吸困難",
+      "reason": "呼吸困難(大出血時)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "S175",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "局所神経症状の発症速度",
+      "reason": "超急性発症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "S54",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "視野障害",
+      "reason": "一過性の視野障害(amaurosis fugax)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "E40",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "ECG所見",
+      "reason": "心房細動(塞栓源)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D317",
+      "to": "S81",
+      "from_name": "肺胞蛋白症(PAP)",
+      "to_name": "呼吸困難の性状",
+      "reason": "進行性呼吸困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D317",
+      "to": "S17",
+      "from_name": "肺胞蛋白症(PAP)",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D317",
+      "to": "L35",
+      "from_name": "肺胞蛋白症(PAP)",
+      "to_name": "胸部CT詳細所見",
+      "reason": "crazy paving pattern(CT)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "S78",
+      "from_name": "喉頭癌",
+      "to_name": "嚥下痛",
+      "reason": "嚥下痛(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "S17",
+      "from_name": "喉頭癌",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "E13",
+      "from_name": "喉頭癌",
+      "to_name": "リンパ節腫脹",
+      "reason": "頸部リンパ節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D338",
+      "to": "S14",
+      "from_name": "腸重積症",
+      "to_name": "下痢",
+      "reason": "下痢/粘血便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D338",
+      "to": "E09",
+      "from_name": "腸重積症",
+      "to_name": "腹部触診",
+      "reason": "腹部腫瘤触知",
+      "onset_day_range": null
+    },
+    {
+      "from": "D338",
+      "to": "S12",
+      "from_name": "腸重積症",
+      "to_name": "腹痛の部位",
+      "reason": "間欠性腹痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D338",
+      "to": "S66",
+      "from_name": "腸重積症",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D342",
+      "to": "S97",
+      "from_name": "QT延長症候群",
+      "to_name": "失神",
+      "reason": "失神(TdP発作)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D342",
+      "to": "S35",
+      "from_name": "QT延長症候群",
+      "to_name": "動悸",
+      "reason": "動悸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D262",
+      "to": "S75",
+      "from_name": "伝染性膿痂疹(とびひ)",
+      "to_name": "皮疹の分布",
+      "reason": "四肢/露出部に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "D262",
+      "to": "S87",
+      "from_name": "伝染性膿痂疹(とびひ)",
+      "to_name": "皮膚症状の種類",
+      "reason": "水疱/膿痂疹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D241",
+      "to": "L78",
+      "from_name": "腎血管性高血圧",
+      "to_name": "尿蛋白定量",
+      "reason": "腎虚血→蛋白尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D241",
+      "to": "S07",
+      "from_name": "腎血管性高血圧",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D297",
+      "to": "S07",
+      "from_name": "三叉神経痛",
+      "to_name": "全身倦怠感",
+      "reason": "痛みによる消耗",
+      "onset_day_range": null
+    },
+    {
+      "from": "D297",
+      "to": "S19",
+      "from_name": "三叉神経痛",
+      "to_name": "味覚障害",
+      "reason": "味覚障害(三叉神経第3枝)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D339",
+      "to": "E63",
+      "from_name": "網膜剥離",
+      "to_name": "瞳孔異常",
+      "reason": "相対的瞳孔求心路障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D76",
+      "to": "S18",
+      "from_name": "輸血関連発熱反応",
+      "to_name": "皮膚の訴え",
+      "reason": "蕁麻疹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D147",
+      "to": "E12",
+      "from_name": "精巣捻転",
+      "to_name": "皮膚診察所見",
+      "reason": "患側発赤",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S22",
+      "from_name": "強直性脊椎炎",
+      "to_name": "背部痛（脊椎レベル）",
+      "reason": "背部痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "S90",
+      "from_name": "強直性脊椎炎",
+      "to_name": "関節痛の分布",
+      "reason": "末梢関節",
+      "onset_day_range": null
+    },
+    {
+      "from": "D184",
+      "to": "L28",
+      "from_name": "強直性脊椎炎",
+      "to_name": "赤沈(ESR)",
+      "reason": "ESR上昇",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "S89",
+      "from_name": "脾梗塞",
+      "to_name": "腹痛の部位",
+      "reason": "LLQ痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "S04",
+      "from_name": "脾梗塞",
+      "to_name": "呼吸困難",
+      "reason": "呼吸困難",
+      "onset_day_range": null
+    },
+    {
+      "from": "D187",
+      "to": "L31",
+      "from_name": "脾梗塞",
+      "to_name": "腹部CT",
+      "reason": "脾楔状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D190",
+      "to": "S66",
+      "from_name": "SIADH(抗利尿ホルモン不適切分泌症候群)",
+      "to_name": "嘔吐",
+      "reason": "嘔吐",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S99",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "尿失禁",
+      "reason": "尿失禁",
+      "onset_day_range": null
+    },
+    {
+      "from": "D211",
+      "to": "L68",
+      "from_name": "三環系抗うつ薬中毒",
+      "to_name": "血液ガス/乳酸",
+      "reason": "アシドーシス",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "E10",
+      "from_name": "拘束型心筋症",
+      "to_name": "マーフィー徴候",
+      "reason": "JVD",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "E33",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "脈拍左右差/血管雑音",
+      "reason": "動脈拍動消失",
+      "onset_day_range": null
+    },
+    {
+      "from": "D217",
+      "to": "S06",
+      "from_name": "急性動脈閉塞症",
+      "to_name": "筋肉痛",
+      "reason": "患肢痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "S36",
+      "from_name": "ウィルソン病",
+      "to_name": "振戦",
+      "reason": "振戦",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "S117",
+      "from_name": "ウィルソン病",
+      "to_name": "幻覚",
+      "reason": "精神症状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "L87",
+      "from_name": "ウィルソン病",
+      "to_name": "ビリルビン分画(直接/間接)",
+      "reason": "ビリルビン",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "L93",
+      "from_name": "ウィルソン病",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "溶血性貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D225",
+      "to": "L94",
+      "from_name": "骨髄異形成症候群(MDS)",
+      "to_name": "MCV(平均赤血球容積)",
+      "reason": "大球性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "L72",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "網状赤血球数",
+      "reason": "網赤血球増加",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "L100",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "血小板数",
+      "reason": "血小板減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "L94",
+      "from_name": "大腸癌",
+      "to_name": "MCV(平均赤血球容積)",
+      "reason": "小球性貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D239",
+      "to": "L75",
+      "from_name": "IgA腎症(急性増悪)",
+      "to_name": "補体(C3/C4)",
+      "reason": "補体C3低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "S26",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "血便/粘血便",
+      "reason": "黒色便",
+      "onset_day_range": null
+    },
+    {
+      "from": "D243",
+      "to": "L69",
+      "from_name": "食道静脈瘤破裂",
+      "to_name": "PT/INR",
+      "reason": "PT延長",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S131",
+      "from_name": "胃癌",
+      "to_name": "早期満腹感",
+      "reason": "早期満腹感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "E46",
+      "from_name": "胃癌",
+      "to_name": "リンパ節の部位",
+      "reason": "Virchow LN",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "L79",
+      "from_name": "胃癌",
+      "to_name": "便潜血",
+      "reason": "便潜血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D268",
+      "to": "E54",
+      "from_name": "ノロウイルス胃腸炎",
+      "to_name": "脱水徴候",
+      "reason": "脱水",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S54",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "視野障害",
+      "reason": "視覚障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S141",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "記憶/認知障害の発症様式",
+      "reason": "亜急性進行",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "S99",
+      "from_name": "横断性脊髄炎",
+      "to_name": "尿失禁",
+      "reason": "溢流性尿失禁",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "E74",
+      "from_name": "横断性脊髄炎",
+      "to_name": "Babinski徴候(病的反射)",
+      "reason": "Babinski",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "L80",
+      "from_name": "横断性脊髄炎",
+      "to_name": "MRI脊椎",
+      "reason": "脊髄MRI",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "E82",
+      "from_name": "馬尾症候群",
+      "to_name": "直腸診所見",
+      "reason": "肛門括約筋低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S03",
+      "from_name": "急性気管支炎",
+      "to_name": "鼻汁",
+      "reason": "鼻汁",
+      "onset_day_range": null
+    },
+    {
+      "from": "D06",
+      "to": "S09",
+      "from_name": "急性気管支炎",
+      "to_name": "悪寒戦慄",
+      "reason": "悪寒",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "E54",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "脱水徴候",
+      "reason": "局所腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "L09",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "血液培養",
+      "reason": "混合菌",
+      "onset_day_range": null
+    },
+    {
+      "from": "D41",
+      "to": "S09",
+      "from_name": "手術部位感染(SSI)",
+      "to_name": "悪寒戦慄",
+      "reason": "悪寒",
+      "onset_day_range": null
+    },
+    {
+      "from": "D41",
+      "to": "L09",
+      "from_name": "手術部位感染(SSI)",
+      "to_name": "血液培養",
+      "reason": "創培養",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "E57",
+      "from_name": "メタノール中毒",
+      "to_name": "乳頭浮腫(うっ血乳頭)",
+      "reason": "乳頭浮腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "S100",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "尿の色/性状",
+      "reason": "コーラ色尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "L78",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "尿蛋白定量",
+      "reason": "尿蛋白",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S31",
+      "from_name": "全身性強皮症",
+      "to_name": "口腔乾燥",
+      "reason": "口腔乾燥",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S96",
+      "from_name": "全身性強皮症",
+      "to_name": "掻痒感",
+      "reason": "掻痒",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "S14",
+      "from_name": "アミロイドーシス",
+      "to_name": "下痢",
+      "reason": "下痢",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "E12",
+      "from_name": "アミロイドーシス",
+      "to_name": "皮膚診察所見",
+      "reason": "紫斑",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "S17",
+      "from_name": "アミロイドーシス",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "S35",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "動悸",
+      "reason": "動悸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "E10",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "マーフィー徴候",
+      "reason": "JVD",
+      "onset_day_range": null
+    },
+    {
+      "from": "D216",
+      "to": "E10",
+      "from_name": "急性僧帽弁閉鎖不全症",
+      "to_name": "マーフィー徴候",
+      "reason": "JVD",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L76",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "抗CCP抗体",
+      "reason": "抗CCP",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "S23",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "関節腫脹",
+      "reason": "関節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D224",
+      "to": "S18",
+      "from_name": "成人T細胞白血病/リンパ腫(ATLL)",
+      "to_name": "皮膚の訴え",
+      "reason": "皮膚浸潤",
+      "onset_day_range": null
+    },
+    {
+      "from": "D240",
+      "to": "S18",
+      "from_name": "急性間質性腎炎(AIN)",
+      "to_name": "皮膚の訴え",
+      "reason": "皮疹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "S17",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "L18",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "抗核抗体",
+      "reason": "AMA/ANA",
+      "onset_day_range": null
+    },
+    {
+      "from": "D260",
+      "to": "S29",
+      "from_name": "ヘルパンギーナ",
+      "to_name": "口腔内潰瘍",
+      "reason": "口腔内水疱",
+      "onset_day_range": null
+    },
+    {
+      "from": "D270",
+      "to": "S126",
+      "from_name": "アスピリン喘息(NSAIDs不耐症)",
+      "to_name": "鼻出血",
+      "reason": "鼻ポリープ",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S70",
+      "from_name": "群発頭痛",
+      "to_name": "光音過敏",
+      "reason": "光音過敏軽度",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "E81",
+      "from_name": "パーキンソン病",
+      "to_name": "筋緊張",
+      "reason": "筋強剛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S163",
+      "from_name": "パーキンソン病",
+      "to_name": "嗅覚障害",
+      "reason": "嗅覚障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S116",
+      "from_name": "パーキンソン病",
+      "to_name": "不眠",
+      "reason": "不眠",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S150",
+      "from_name": "パーキンソン病",
+      "to_name": "認知機能低下(記憶以外)",
+      "reason": "認知機能低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S115",
+      "from_name": "パーキンソン病",
+      "to_name": "抑うつ気分",
+      "reason": "抑うつ",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "E81",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "筋緊張",
+      "reason": "パーキンソニズム",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S106",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "歩行障害",
+      "reason": "すくみ足",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "S34",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "喀血",
+      "reason": "喀血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "E33",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "脈拍左右差/血管雑音",
+      "reason": "血管雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "E33",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "脈拍左右差/血管雑音",
+      "reason": "頸動脈雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D317",
+      "to": "S84",
+      "from_name": "肺胞蛋白症(PAP)",
+      "to_name": "咳嗽の性状",
+      "reason": "乾性咳嗽",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "S79",
+      "from_name": "喉頭癌",
+      "to_name": "耳痛",
+      "reason": "耳痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "E46",
+      "from_name": "喉頭癌",
+      "to_name": "リンパ節の部位",
+      "reason": "頸部LN部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D338",
+      "to": "E52",
+      "from_name": "腸重積症",
+      "to_name": "腸蠕動音",
+      "reason": "腸蠕動音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D342",
+      "to": "S175",
+      "from_name": "QT延長症候群",
+      "to_name": "局所神経症状の発症速度",
+      "reason": "急性発症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "S31",
+      "from_name": "IgG4関連疾患",
+      "to_name": "口腔乾燥",
+      "reason": "口腔乾燥(唾液腺腫脹)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "S164",
+      "from_name": "IgG4関連疾患",
+      "to_name": "眼乾燥",
+      "reason": "眼乾燥(涙腺腫脹)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "E68",
+      "from_name": "IgG4関連疾患",
+      "to_name": "眼瞼浮腫",
+      "reason": "眼瞼浮腫(涙腺腫脹)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "S96",
+      "from_name": "IgG4関連疾患",
+      "to_name": "掻痒感",
+      "reason": "掻痒感(自己免疫)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "L14",
+      "from_name": "IgG4関連疾患",
+      "to_name": "末梢血液像",
+      "reason": "好酸球増加(30-40%)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D276",
+      "to": "S66",
+      "from_name": "卵巣捻転",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(突然の激痛に伴う)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D276",
+      "to": "S89",
+      "from_name": "卵巣捻転",
+      "to_name": "腹痛の部位",
+      "reason": "下腹部痛(片側性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D276",
+      "to": "S07",
+      "from_name": "卵巣捻転",
+      "to_name": "全身倦怠感",
+      "reason": "全身倦怠感",
+      "onset_day_range": null
+    },
+    {
+      "from": "D276",
+      "to": "S127",
+      "from_name": "卵巣捻転",
+      "to_name": "不正性器出血",
+      "reason": "不正出血(卵巣うっ血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D287",
+      "to": "S17",
+      "from_name": "胆嚢癌",
+      "to_name": "体重減少",
+      "reason": "体重減少",
+      "onset_day_range": null
+    },
+    {
+      "from": "D287",
+      "to": "S46",
+      "from_name": "胆嚢癌",
+      "to_name": "食欲不振",
+      "reason": "食欲不振",
+      "onset_day_range": null
+    },
+    {
+      "from": "D287",
+      "to": "S89",
+      "from_name": "胆嚢癌",
+      "to_name": "腹痛の部位",
+      "reason": "右上腹部痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D287",
+      "to": "E58",
+      "from_name": "胆嚢癌",
+      "to_name": "腹部腫瘤",
+      "reason": "腹部腫瘤(胆嚢腫大)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D287",
+      "to": "S96",
+      "from_name": "胆嚢癌",
+      "to_name": "掻痒感",
+      "reason": "掻痒(閉塞性黄疸)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "S84",
+      "from_name": "喉頭癌",
+      "to_name": "咳嗽の性状",
+      "reason": "犬吠様咳嗽",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "S81",
+      "from_name": "喉頭癌",
+      "to_name": "呼吸困難の性状",
+      "reason": "吸気性喘鳴(stridor)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D320",
+      "to": "E08",
+      "from_name": "喉頭癌",
+      "to_name": "咽頭所見",
+      "reason": "喉頭所見異常",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "S66",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "嘔吐",
+      "reason": "噴水状嘔吐(pathognomonic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "S67",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "嘔吐の性状",
+      "reason": "噴水状(非胆汁性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "E58",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "腹部腫瘤",
+      "reason": "オリーブ状腫瘤(RUQ)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "E54",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "脱水徴候",
+      "reason": "脱水(頻回嘔吐)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "L68",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "血液ガス/乳酸",
+      "reason": "代謝性アルカローシス(HCl喪失)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D337",
+      "to": "S89",
+      "from_name": "肥厚性幽門狭窄症",
+      "to_name": "腹痛の部位",
+      "reason": "心窩部/右上腹部",
+      "onset_day_range": null
+    },
+    {
+      "from": "D341",
+      "to": "S97",
+      "from_name": "Brugada症候群",
+      "to_name": "失神",
+      "reason": "失神(VF発作)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D341",
+      "to": "S35",
+      "from_name": "Brugada症候群",
+      "to_name": "動悸",
+      "reason": "動悸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D341",
+      "to": "S152",
+      "from_name": "Brugada症候群",
+      "to_name": "前失神(立ちくらみ)",
+      "reason": "前失神",
+      "onset_day_range": null
+    },
+    {
+      "from": "D288",
+      "to": "L25",
+      "from_name": "精巣腫瘍",
+      "to_name": "AFP(αフェトプロテイン)",
+      "reason": "AFP上昇(非セミノーマ)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D288",
+      "to": "S22",
+      "from_name": "精巣腫瘍",
+      "to_name": "背部痛（脊椎レベル）",
+      "reason": "背部痛(後腹膜LN転移)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S11",
+      "from_name": "前立腺癌",
+      "to_name": "頻尿",
+      "reason": "頻尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S82",
+      "from_name": "前立腺癌",
+      "to_name": "尿量",
+      "reason": "排尿困難/尿量変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S110",
+      "from_name": "前立腺癌",
+      "to_name": "尿閉",
+      "reason": "尿閉",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S22",
+      "from_name": "前立腺癌",
+      "to_name": "背部痛（脊椎レベル）",
+      "reason": "骨転移→背部痛/腰痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S111",
+      "from_name": "前立腺癌",
+      "to_name": "腰痛",
+      "reason": "腰痛(骨転移)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "S17",
+      "from_name": "前立腺癌",
+      "to_name": "体重減少",
+      "reason": "体重減少(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D290",
+      "to": "S11",
+      "from_name": "膀胱癌",
+      "to_name": "頻尿",
+      "reason": "頻尿",
+      "onset_day_range": null
+    },
+    {
+      "from": "D290",
+      "to": "S17",
+      "from_name": "膀胱癌",
+      "to_name": "体重減少",
+      "reason": "体重減少(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D290",
+      "to": "L93",
+      "from_name": "膀胱癌",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "貧血(慢性出血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D290",
+      "to": "S82",
+      "from_name": "膀胱癌",
+      "to_name": "尿量",
+      "reason": "尿量変化(閉塞)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S68",
+      "from_name": "群発頭痛",
+      "to_name": "頭痛の増悪因子",
+      "reason": "特定増悪因子なし(自発的)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "E62",
+      "from_name": "群発頭痛",
+      "to_name": "眼振",
+      "reason": "眼振(稀)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S122",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "急性視力低下",
+      "reason": "急性視神経炎(重症)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S76",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "感覚障害のパターン",
+      "reason": "脊髄障害→感覚レベル",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S110",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "尿閉",
+      "reason": "排尿障害(脊髄炎)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S106",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "歩行障害",
+      "reason": "痙性歩行",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S66",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "嘔吐",
+      "reason": "嘔吐(area postrema症候群)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S175",
+      "from_name": "髄膜腫",
+      "to_name": "局所神経症状の発症速度",
+      "reason": "慢性進行性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S122",
+      "from_name": "髄膜腫",
+      "to_name": "急性視力低下",
+      "reason": "視力低下(嗅窩/蝶形骨縁)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S106",
+      "from_name": "髄膜腫",
+      "to_name": "歩行障害",
+      "reason": "歩行障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "E74",
+      "from_name": "髄膜腫",
+      "to_name": "Babinski徴候(病的反射)",
+      "reason": "Babinski陽性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S108",
+      "from_name": "髄膜腫",
+      "to_name": "眼瞼下垂",
+      "reason": "眼瞼下垂(海綿静脈洞)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D335",
+      "to": "E69",
+      "from_name": "閉塞性動脈硬化症(PAD)",
+      "to_name": "毛細血管再充満時間(CRT)",
+      "reason": "CRT延長",
+      "onset_day_range": null
+    },
+    {
+      "from": "D335",
+      "to": "E70",
+      "from_name": "閉塞性動脈硬化症(PAD)",
+      "to_name": "皮膚ツルゴール",
+      "reason": "皮膚菲薄化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D335",
+      "to": "S52",
+      "from_name": "閉塞性動脈硬化症(PAD)",
+      "to_name": "局所神経症状（片麻痺）",
+      "reason": "局所神経症状(虚血性神経障害)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D335",
+      "to": "S76",
+      "from_name": "閉塞性動脈硬化症(PAD)",
+      "to_name": "感覚障害のパターン",
+      "reason": "末梢感覚障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D335",
+      "to": "E33",
+      "from_name": "閉塞性動脈硬化症(PAD)",
+      "to_name": "脈拍左右差/血管雑音",
+      "reason": "脈拍左右差/血管雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "E15",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "心雑音",
+      "reason": "拡張期雑音",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "S34",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "喀血",
+      "reason": "喀血(肺うっ血)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "S35",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "動悸",
+      "reason": "動悸(心房細動)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "S49",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "起座呼吸",
+      "reason": "起座呼吸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "S165",
+      "from_name": "Sheehan症候群",
+      "to_name": "乳汁分泌不全",
+      "reason": "乳汁分泌不全(pathognomonic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "S134",
+      "from_name": "Sheehan症候群",
+      "to_name": "暑がり(熱不耐)",
+      "reason": "寒がり(甲状腺機能低下)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "S17",
+      "from_name": "Sheehan症候群",
+      "to_name": "体重減少",
+      "reason": "体重変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "S46",
+      "from_name": "Sheehan症候群",
+      "to_name": "食欲不振",
+      "reason": "食欲不振",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "L32",
+      "from_name": "Sheehan症候群",
+      "to_name": "甲状腺機能検査",
+      "reason": "甲状腺機能低下",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "L96",
+      "from_name": "Sheehan症候群",
+      "to_name": "コルチゾール",
+      "reason": "コルチゾール低値",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "L54",
+      "from_name": "Sheehan症候群",
+      "to_name": "血糖値",
+      "reason": "低血糖傾向",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "S115",
+      "from_name": "Sheehan症候群",
+      "to_name": "抑うつ気分",
+      "reason": "抑うつ(汎下垂体機能低下)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
