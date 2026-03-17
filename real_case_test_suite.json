@@ -8309,7 +8309,8 @@
         "L53": "mildly_elevated",
         "S52": "absent",
         "T01": "under_3d",
-        "T02": "sudden"
+        "T02": "sudden",
+        "S60": "thunderclap"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -8363,7 +8364,8 @@
         "E16": "normal",
         "S52": "absent",
         "T01": "under_3d",
-        "T02": "sudden"
+        "T02": "sudden",
+        "S60": "thunderclap"
       },
       "risk_factors": {
         "R01": "18_39",
