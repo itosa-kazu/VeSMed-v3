@@ -29,9 +29,9 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **Flask再起動は5000番ポートのみkill** — 全python.exeをkillしない
 
 ## 現在の状態
-- 114疾患(D01-D114)、289変量、~1864辺
-- 191案例(188 in-scope + 3 OOS)
-- Top-1: 125/188(66%), Top-3: 174/188(93%), FATAL: 0
+- 345疾患(D01-D350)、792変量、6111辺、105疾患にR→D prior
+- 712案例(708 in-scope + 4 OOS)
+- Top-1: 562/708(79%), Top-3: 662/708(94%), FATAL: 0
 - 反証推奨(falsification test)実装済み
 
 ## 重要な研究方向
