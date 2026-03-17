@@ -9383,20 +9383,33 @@
       }
     },
     "D355": {
-      "parents": [],
+      "parents": [
+        "R01"
+      ],
       "description": "深部静脈血栓症(DVT)",
       "cpt": {
-        "": 0.003
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0001,
+        "13_17": 0.0005,
+        "18_39": 0.001,
+        "40_64": 0.002,
+        "65_plus": 0.003
       }
     },
     "D353": {
       "parents": [
-        "R35"
+        "R01"
       ],
       "description": "潰瘍性大腸炎(UC)",
       "cpt": {
-        "no": 0.003,
-        "yes": 0.01
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0005,
+        "13_17": 0.002,
+        "18_39": 0.003,
+        "40_64": 0.002,
+        "65_plus": 0.003
       }
     },
     "D354": {
@@ -14498,6 +14511,11 @@
           "normal_over_96": 0.55,
           "mild_hypoxia_93_96": 0.25,
           "severe_hypoxia_under_93": 0.2
+        },
+        "D222": {
+          "normal_over_96": 0.85,
+          "mild_hypoxia_93_96": 0.1,
+          "severe_hypoxia_under_93": 0.05
         }
       }
     },
@@ -16970,6 +16988,11 @@
           "normal": 0.8,
           "confused": 0.15,
           "obtunded": 0.05
+        },
+        "D222": {
+          "normal": 0.95,
+          "confused": 0.04,
+          "obtunded": 0.01
         }
       }
     },
@@ -21839,6 +21862,12 @@
           "negative": 0.8,
           "gram_positive": 0.03,
           "gram_negative": 0.02
+        },
+        "D258": {
+          "not_done_or_pending": 0.3,
+          "negative": 0.6,
+          "gram_positive": 0.08,
+          "gram_negative": 0.02
         }
       }
     },
@@ -22398,6 +22427,11 @@
           "normal": 0.6,
           "mild_elevated": 0.3,
           "very_high": 0.1
+        },
+        "D365": {
+          "normal": 0.8,
+          "mild_elevated": 0.15,
+          "very_high": 0.05
         }
       }
     },
@@ -25406,6 +25440,10 @@
         "D109": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D355": {
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -26719,6 +26757,11 @@
           "absent": 0.1,
           "mild": 0.25,
           "severe": 0.65
+        },
+        "D366": {
+          "absent": 0.85,
+          "mild": 0.12,
+          "severe": 0.03
         }
       }
     },
@@ -29854,6 +29897,10 @@
         "D354": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D366": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -30083,6 +30130,10 @@
         "D365": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D366": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -37337,6 +37388,10 @@
         "D24": {
           "absent": 0.85,
           "present": 0.15
+        },
+        "D222": {
+          "absent": 0.97,
+          "present": 0.03
         }
       }
     },
@@ -37934,6 +37989,12 @@
           "normal": 0.2,
           "mildly_elevated": 0.4,
           "very_high": 0.2
+        },
+        "D258": {
+          "not_done": 0.5,
+          "normal": 0.4,
+          "mildly_elevated": 0.08,
+          "very_high": 0.02
         }
       }
     },
