@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 5025,
+  "total_edges": 6454,
   "edges": [
     {
       "from": "R01",
@@ -48927,6 +48927,2182 @@
       "from_name": "シェーグレン症候群",
       "to_name": "食欲不振",
       "reason": "Sjogren: appetite loss from sicca/systemic symptoms (common in autoimmune)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D03",
+      "from_name": "sex",
+      "to_name": "D03",
+      "reason": "COVID。高齢男性重症化",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D03",
+      "from_name": "age_group",
+      "to_name": "D03",
+      "reason": "COVID。高齢男性重症化",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D05",
+      "from_name": "sex",
+      "to_name": "D05",
+      "reason": "市中肺炎。高齢者、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D10",
+      "from_name": "sex",
+      "to_name": "D10",
+      "reason": "虫垂炎。若年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D11",
+      "from_name": "sex",
+      "to_name": "D11",
+      "reason": "胆嚢炎。中年女性(4F)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D14",
+      "from_name": "sex",
+      "to_name": "D14",
+      "reason": "IE。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D14",
+      "from_name": "age_group",
+      "to_name": "D14",
+      "reason": "IE。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D17",
+      "from_name": "sex",
+      "to_name": "D17",
+      "reason": "肺結核。高齢男性、日本ではbimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D17",
+      "from_name": "age_group",
+      "to_name": "D17",
+      "reason": "肺結核。高齢男性、日本ではbimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D24",
+      "from_name": "sex",
+      "to_name": "D24",
+      "reason": "TSS。やや若年女性(menstrual含む)だが弱い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D24",
+      "from_name": "age_group",
+      "to_name": "D24",
+      "reason": "TSS。やや若年女性(menstrual含む)だが弱い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D25",
+      "from_name": "age_group",
+      "to_name": "D25",
+      "reason": "胆管炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D28",
+      "from_name": "age_group",
+      "to_name": "D28",
+      "reason": "腸チフス。若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D29",
+      "from_name": "sex",
+      "to_name": "D29",
+      "reason": "肝膿瘍。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D29",
+      "from_name": "age_group",
+      "to_name": "D29",
+      "reason": "肝膿瘍。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D35",
+      "from_name": "sex",
+      "to_name": "D35",
+      "reason": "肺膿瘍。中高年男性(アルコール)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D35",
+      "from_name": "age_group",
+      "to_name": "D35",
+      "reason": "肺膿瘍。中高年男性(アルコール)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D36",
+      "from_name": "sex",
+      "to_name": "D36",
+      "reason": "膿胸。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D36",
+      "from_name": "age_group",
+      "to_name": "D36",
+      "reason": "膿胸。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D39",
+      "from_name": "sex",
+      "to_name": "D39",
+      "reason": "肛門周囲膿瘍。男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D42",
+      "from_name": "sex",
+      "to_name": "D42",
+      "reason": "複雑性UTI。高齢者、女性多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D44",
+      "from_name": "sex",
+      "to_name": "D44",
+      "reason": "急性HIV。若年男性(MSM)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D44",
+      "from_name": "age_group",
+      "to_name": "D44",
+      "reason": "急性HIV。若年男性(MSM)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D45",
+      "from_name": "age_group",
+      "to_name": "D45",
+      "reason": "CMV。若年成人",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D47",
+      "from_name": "age_group",
+      "to_name": "D47",
+      "reason": "ムンプス。小児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D48",
+      "from_name": "age_group",
+      "to_name": "D48",
+      "reason": "風疹。小児～若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D51",
+      "from_name": "sex",
+      "to_name": "D51",
+      "reason": "アメーバ赤痢。男性(MSM)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D52",
+      "from_name": "sex",
+      "to_name": "D52",
+      "reason": "レプトスピラ。男性圧倒的(職業)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D56",
+      "from_name": "age_group",
+      "to_name": "D56",
+      "reason": "百日咳。小児中心、成人も",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D57",
+      "from_name": "age_group",
+      "to_name": "D57",
+      "reason": "壊死性筋膜炎。高齢者/DM",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D101",
+      "from_name": "sex",
+      "to_name": "D101",
+      "reason": "梅毒。若年男性(MSM)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D101",
+      "from_name": "age_group",
+      "to_name": "D101",
+      "reason": "梅毒。若年男性(MSM)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D102",
+      "from_name": "sex",
+      "to_name": "D102",
+      "reason": "レジオネラ。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D102",
+      "from_name": "age_group",
+      "to_name": "D102",
+      "reason": "レジオネラ。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D103",
+      "from_name": "age_group",
+      "to_name": "D103",
+      "reason": "リウマチ熱。5-15歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D104",
+      "from_name": "age_group",
+      "to_name": "D104",
+      "reason": "オウム病。中年(鳥類曝露)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D105",
+      "from_name": "sex",
+      "to_name": "D105",
+      "reason": "パルボB19。小児+若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D105",
+      "from_name": "age_group",
+      "to_name": "D105",
+      "reason": "パルボB19。小児+若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D106",
+      "from_name": "sex",
+      "to_name": "D106",
+      "reason": "DM/PM。中年女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D106",
+      "from_name": "age_group",
+      "to_name": "D106",
+      "reason": "DM/PM。中年女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D108",
+      "from_name": "sex",
+      "to_name": "D108",
+      "reason": "B型肝炎。やや若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D108",
+      "from_name": "age_group",
+      "to_name": "D108",
+      "reason": "B型肝炎。やや若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D112",
+      "from_name": "sex",
+      "to_name": "D112",
+      "reason": "PAN。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D112",
+      "from_name": "age_group",
+      "to_name": "D112",
+      "reason": "PAN。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D113",
+      "from_name": "sex",
+      "to_name": "D113",
+      "reason": "ヒストプラズマ。やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D114",
+      "from_name": "sex",
+      "to_name": "D114",
+      "reason": "骨髄腫。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D114",
+      "from_name": "age_group",
+      "to_name": "D114",
+      "reason": "骨髄腫。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D115",
+      "from_name": "sex",
+      "to_name": "D115",
+      "reason": "DGI。若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D115",
+      "from_name": "age_group",
+      "to_name": "D115",
+      "reason": "DGI。若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D116",
+      "from_name": "sex",
+      "to_name": "D116",
+      "reason": "心筋炎。若年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D116",
+      "from_name": "age_group",
+      "to_name": "D116",
+      "reason": "心筋炎。若年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D117",
+      "from_name": "sex",
+      "to_name": "D117",
+      "reason": "硬膜外膿瘍。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D117",
+      "from_name": "age_group",
+      "to_name": "D117",
+      "reason": "硬膜外膿瘍。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D118",
+      "from_name": "sex",
+      "to_name": "D118",
+      "reason": "脳膿瘍。男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D120",
+      "from_name": "sex",
+      "to_name": "D120",
+      "reason": "急性心不全。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D120",
+      "from_name": "age_group",
+      "to_name": "D120",
+      "reason": "急性心不全。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D121",
+      "from_name": "sex",
+      "to_name": "D121",
+      "reason": "COPD増悪。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D121",
+      "from_name": "age_group",
+      "to_name": "D121",
+      "reason": "COPD増悪。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D122",
+      "from_name": "sex",
+      "to_name": "D122",
+      "reason": "喘息。成人は女性、若年～中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D122",
+      "from_name": "age_group",
+      "to_name": "D122",
+      "reason": "喘息。成人は女性、若年～中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D123",
+      "from_name": "sex",
+      "to_name": "D123",
+      "reason": "気胸。若年男性6:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D123",
+      "from_name": "age_group",
+      "to_name": "D123",
+      "reason": "気胸。若年男性6:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D125",
+      "from_name": "sex",
+      "to_name": "D125",
+      "reason": "不整脈。高齢者、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D125",
+      "from_name": "age_group",
+      "to_name": "D125",
+      "reason": "不整脈。高齢者、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D127",
+      "from_name": "age_group",
+      "to_name": "D127",
+      "reason": "胸水。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D129",
+      "from_name": "sex",
+      "to_name": "D129",
+      "reason": "過換気。若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D129",
+      "from_name": "age_group",
+      "to_name": "D129",
+      "reason": "過換気。若年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D130",
+      "from_name": "sex",
+      "to_name": "D130",
+      "reason": "IPF。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D130",
+      "from_name": "age_group",
+      "to_name": "D130",
+      "reason": "IPF。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D131",
+      "from_name": "sex",
+      "to_name": "D131",
+      "reason": "ACS。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D131",
+      "from_name": "age_group",
+      "to_name": "D131",
+      "reason": "ACS。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D132",
+      "from_name": "sex",
+      "to_name": "D132",
+      "reason": "大動脈解離。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D132",
+      "from_name": "age_group",
+      "to_name": "D132",
+      "reason": "大動脈解離。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D134",
+      "from_name": "sex",
+      "to_name": "D134",
+      "reason": "心膜炎。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D134",
+      "from_name": "age_group",
+      "to_name": "D134",
+      "reason": "心膜炎。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D135",
+      "from_name": "sex",
+      "to_name": "D135",
+      "reason": "肋軟骨炎。やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D136",
+      "from_name": "sex",
+      "to_name": "D136",
+      "reason": "潰瘍穿孔。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D136",
+      "from_name": "age_group",
+      "to_name": "D136",
+      "reason": "潰瘍穿孔。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D137",
+      "from_name": "sex",
+      "to_name": "D137",
+      "reason": "腸間膜虚血。高齢、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D137",
+      "from_name": "age_group",
+      "to_name": "D137",
+      "reason": "腸間膜虚血。高齢、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D140",
+      "from_name": "age_group",
+      "to_name": "D140",
+      "reason": "DKA。若年(1型DM中心)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D143",
+      "from_name": "sex",
+      "to_name": "D143",
+      "reason": "誤嚥性肺炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D143",
+      "from_name": "age_group",
+      "to_name": "D143",
+      "reason": "誤嚥性肺炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D144",
+      "from_name": "sex",
+      "to_name": "D144",
+      "reason": "GBS。男性1.5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D146",
+      "from_name": "sex",
+      "to_name": "D146",
+      "reason": "高血圧緊急症。中高年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D146",
+      "from_name": "age_group",
+      "to_name": "D146",
+      "reason": "高血圧緊急症。中高年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D148",
+      "from_name": "sex",
+      "to_name": "D148",
+      "reason": "Boerhaave。中年男性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D148",
+      "from_name": "age_group",
+      "to_name": "D148",
+      "reason": "Boerhaave。中年男性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D150",
+      "from_name": "sex",
+      "to_name": "D150",
+      "reason": "たこつぼ。閉経後女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D150",
+      "from_name": "age_group",
+      "to_name": "D150",
+      "reason": "たこつぼ。閉経後女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D153",
+      "from_name": "sex",
+      "to_name": "D153",
+      "reason": "横紋筋融解。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D153",
+      "from_name": "age_group",
+      "to_name": "D153",
+      "reason": "横紋筋融解。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D156",
+      "from_name": "sex",
+      "to_name": "D156",
+      "reason": "TTP。中年女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D156",
+      "from_name": "age_group",
+      "to_name": "D156",
+      "reason": "TTP。中年女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D158",
+      "from_name": "sex",
+      "to_name": "D158",
+      "reason": "AIHA。女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D160",
+      "from_name": "age_group",
+      "to_name": "D160",
+      "reason": "破傷風。高齢者(ワクチン抗体低下)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D162",
+      "from_name": "age_group",
+      "to_name": "D162",
+      "reason": "HUS。小児(O157)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D163",
+      "from_name": "sex",
+      "to_name": "D163",
+      "reason": "ウェルニッケ。中年男性(アルコール)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D163",
+      "from_name": "age_group",
+      "to_name": "D163",
+      "reason": "ウェルニッケ。中年男性(アルコール)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D165",
+      "from_name": "sex",
+      "to_name": "D165",
+      "reason": "MG。若年女性+高齢男性のbimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D165",
+      "from_name": "age_group",
+      "to_name": "D165",
+      "reason": "MG。若年女性+高齢男性のbimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D166",
+      "from_name": "sex",
+      "to_name": "D166",
+      "reason": "アセトアミノフェン。若年女性(自殺企図)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D166",
+      "from_name": "age_group",
+      "to_name": "D166",
+      "reason": "アセトアミノフェン。若年女性(自殺企図)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D168",
+      "from_name": "sex",
+      "to_name": "D168",
+      "reason": "RPGN。高齢者、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D168",
+      "from_name": "age_group",
+      "to_name": "D168",
+      "reason": "RPGN。高齢者、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D169",
+      "from_name": "sex",
+      "to_name": "D169",
+      "reason": "AIH。女性4:1、bimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D169",
+      "from_name": "age_group",
+      "to_name": "D169",
+      "reason": "AIH。女性4:1、bimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D170",
+      "from_name": "sex",
+      "to_name": "D170",
+      "reason": "アルコール性肝炎。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D170",
+      "from_name": "age_group",
+      "to_name": "D170",
+      "reason": "アルコール性肝炎。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D172",
+      "from_name": "age_group",
+      "to_name": "D172",
+      "reason": "ガス壊疽。高齢者/DM",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D173",
+      "from_name": "age_group",
+      "to_name": "D173",
+      "reason": "水痘。小児中心",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D174",
+      "from_name": "sex",
+      "to_name": "D174",
+      "reason": "AAA破裂。高齢男性6:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D174",
+      "from_name": "age_group",
+      "to_name": "D174",
+      "reason": "AAA破裂。高齢男性6:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D175",
+      "from_name": "age_group",
+      "to_name": "D175",
+      "reason": "AIP。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D176",
+      "from_name": "sex",
+      "to_name": "D176",
+      "reason": "抗NMDA。若年女性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D176",
+      "from_name": "age_group",
+      "to_name": "D176",
+      "reason": "抗NMDA。若年女性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D177",
+      "from_name": "sex",
+      "to_name": "D177",
+      "reason": "虚血性腸炎。高齢女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D177",
+      "from_name": "age_group",
+      "to_name": "D177",
+      "reason": "虚血性腸炎。高齢女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D178",
+      "from_name": "age_group",
+      "to_name": "D178",
+      "reason": "リステリア。高齢者/免疫不全",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D180",
+      "from_name": "sex",
+      "to_name": "D180",
+      "reason": "S状結腸捻転。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D180",
+      "from_name": "age_group",
+      "to_name": "D180",
+      "reason": "S状結腸捻転。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D183",
+      "from_name": "age_group",
+      "to_name": "D183",
+      "reason": "クリオグロブリン。中年(HCV関連)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D184",
+      "from_name": "sex",
+      "to_name": "D184",
+      "reason": "AS。若年男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D184",
+      "from_name": "age_group",
+      "to_name": "D184",
+      "reason": "AS。若年男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D185",
+      "from_name": "age_group",
+      "to_name": "D185",
+      "reason": "HAE。若年成人で症状顕在化",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D188",
+      "from_name": "age_group",
+      "to_name": "D188",
+      "reason": "好酸球性肺炎。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D189",
+      "from_name": "sex",
+      "to_name": "D189",
+      "reason": "メタノール。男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D190",
+      "from_name": "age_group",
+      "to_name": "D190",
+      "reason": "SIADH。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D191",
+      "from_name": "age_group",
+      "to_name": "D191",
+      "reason": "PSGN。小児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D192",
+      "from_name": "age_group",
+      "to_name": "D192",
+      "reason": "APL。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D193",
+      "from_name": "age_group",
+      "to_name": "D193",
+      "reason": "過敏性肺炎。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D195",
+      "from_name": "age_group",
+      "to_name": "D195",
+      "reason": "薬剤性肺炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D198",
+      "from_name": "sex",
+      "to_name": "D198",
+      "reason": "HSP。小児男児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D198",
+      "from_name": "age_group",
+      "to_name": "D198",
+      "reason": "HSP。小児男児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D200",
+      "from_name": "age_group",
+      "to_name": "D200",
+      "reason": "NPH。高齢者(70-80代)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D204",
+      "from_name": "sex",
+      "to_name": "D204",
+      "reason": "アミロイドーシス。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D204",
+      "from_name": "age_group",
+      "to_name": "D204",
+      "reason": "アミロイドーシス。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D205",
+      "from_name": "sex",
+      "to_name": "D205",
+      "reason": "エチレングリコール。男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D214",
+      "from_name": "sex",
+      "to_name": "D214",
+      "reason": "PAH。若年女性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D214",
+      "from_name": "age_group",
+      "to_name": "D214",
+      "reason": "PAH。若年女性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D217",
+      "from_name": "sex",
+      "to_name": "D217",
+      "reason": "急性動脈閉塞。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D217",
+      "from_name": "age_group",
+      "to_name": "D217",
+      "reason": "急性動脈閉塞。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D218",
+      "from_name": "age_group",
+      "to_name": "D218",
+      "reason": "ウィルソン。若年(遺伝性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D219",
+      "from_name": "sex",
+      "to_name": "D219",
+      "reason": "GPA。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D219",
+      "from_name": "age_group",
+      "to_name": "D219",
+      "reason": "GPA。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D222",
+      "from_name": "sex",
+      "to_name": "D222",
+      "reason": "RA。女性3:1、30-50歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D222",
+      "from_name": "age_group",
+      "to_name": "D222",
+      "reason": "RA。女性3:1、30-50歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D223",
+      "from_name": "sex",
+      "to_name": "D223",
+      "reason": "MCTD。若年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D223",
+      "from_name": "age_group",
+      "to_name": "D223",
+      "reason": "MCTD。若年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D224",
+      "from_name": "age_group",
+      "to_name": "D224",
+      "reason": "ATLL。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D225",
+      "from_name": "sex",
+      "to_name": "D225",
+      "reason": "MDS。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D225",
+      "from_name": "age_group",
+      "to_name": "D225",
+      "reason": "MDS。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D227",
+      "from_name": "age_group",
+      "to_name": "D227",
+      "reason": "胸腺腫。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D228",
+      "from_name": "age_group",
+      "to_name": "D228",
+      "reason": "PNH。若年成人",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D229",
+      "from_name": "sex",
+      "to_name": "D229",
+      "reason": "自己免疫性膵炎。高齢男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D229",
+      "from_name": "age_group",
+      "to_name": "D229",
+      "reason": "自己免疫性膵炎。高齢男性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D232",
+      "from_name": "sex",
+      "to_name": "D232",
+      "reason": "AKA。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D232",
+      "from_name": "age_group",
+      "to_name": "D232",
+      "reason": "AKA。中年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D233",
+      "from_name": "sex",
+      "to_name": "D233",
+      "reason": "フィッシャー。やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D234",
+      "from_name": "sex",
+      "to_name": "D234",
+      "reason": "CML。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D234",
+      "from_name": "age_group",
+      "to_name": "D234",
+      "reason": "CML。中年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D236",
+      "from_name": "sex",
+      "to_name": "D236",
+      "reason": "MS。若年女性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D236",
+      "from_name": "age_group",
+      "to_name": "D236",
+      "reason": "MS。若年女性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D237",
+      "from_name": "age_group",
+      "to_name": "D237",
+      "reason": "腸重積(成人)。高齢",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D238",
+      "from_name": "sex",
+      "to_name": "D238",
+      "reason": "大腸癌。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D238",
+      "from_name": "age_group",
+      "to_name": "D238",
+      "reason": "大腸癌。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D243",
+      "from_name": "sex",
+      "to_name": "D243",
+      "reason": "静脈瘤破裂。中年男性(肝硬変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D243",
+      "from_name": "age_group",
+      "to_name": "D243",
+      "reason": "静脈瘤破裂。中年男性(肝硬変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D246",
+      "from_name": "age_group",
+      "to_name": "D246",
+      "reason": "EHEC。小児と高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D247",
+      "from_name": "sex",
+      "to_name": "D247",
+      "reason": "胃癌。高齢男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D247",
+      "from_name": "age_group",
+      "to_name": "D247",
+      "reason": "胃癌。高齢男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D250",
+      "from_name": "sex",
+      "to_name": "D250",
+      "reason": "PBC。中年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D250",
+      "from_name": "age_group",
+      "to_name": "D250",
+      "reason": "PBC。中年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D251",
+      "from_name": "sex",
+      "to_name": "D251",
+      "reason": "肝硬変。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D251",
+      "from_name": "age_group",
+      "to_name": "D251",
+      "reason": "肝硬変。中高年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D252",
+      "from_name": "sex",
+      "to_name": "D252",
+      "reason": "川崎病。乳幼児男児1.5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D252",
+      "from_name": "age_group",
+      "to_name": "D252",
+      "reason": "川崎病。乳幼児男児1.5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D253",
+      "from_name": "age_group",
+      "to_name": "D253",
+      "reason": "細気管支炎。乳幼児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D254",
+      "from_name": "age_group",
+      "to_name": "D254",
+      "reason": "クループ。乳幼児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D255",
+      "from_name": "age_group",
+      "to_name": "D255",
+      "reason": "熱性痙攣。乳幼児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D256",
+      "from_name": "age_group",
+      "to_name": "D256",
+      "reason": "腸回転異常。新生児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D257",
+      "from_name": "age_group",
+      "to_name": "D257",
+      "reason": "NEC。新生児(早産)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D258",
+      "from_name": "age_group",
+      "to_name": "D258",
+      "reason": "RSV。乳幼児+高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D259",
+      "from_name": "age_group",
+      "to_name": "D259",
+      "reason": "手足口病。小児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D269",
+      "from_name": "age_group",
+      "to_name": "D269",
+      "reason": "ロタウイルス。乳幼児",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D338",
+      "from_name": "sex",
+      "to_name": "D338",
+      "reason": "腸重積小児。乳幼児男児2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D338",
+      "from_name": "age_group",
+      "to_name": "D338",
+      "reason": "腸重積小児。乳幼児男児2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D348",
+      "from_name": "age_group",
+      "to_name": "D348",
+      "reason": "ウィルムス。3-5歳",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D263",
+      "from_name": "age_group",
+      "to_name": "D263",
+      "reason": "マイコプラズマ。若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D264",
+      "from_name": "age_group",
+      "to_name": "D264",
+      "reason": "クラミジア肺炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D265",
+      "from_name": "age_group",
+      "to_name": "D265",
+      "reason": "インフルエンザ菌肺炎。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D266",
+      "from_name": "age_group",
+      "to_name": "D266",
+      "reason": "肺炎球菌。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D270",
+      "from_name": "sex",
+      "to_name": "D270",
+      "reason": "アスピリン喘息。中年女性2.5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D270",
+      "from_name": "age_group",
+      "to_name": "D270",
+      "reason": "アスピリン喘息。中年女性2.5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D272",
+      "from_name": "age_group",
+      "to_name": "D272",
+      "reason": "アカラシア。若年～中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D277",
+      "from_name": "age_group",
+      "to_name": "D277",
+      "reason": "肺腺癌。高齢",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D280",
+      "from_name": "age_group",
+      "to_name": "D280",
+      "reason": "BZD中毒。若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D281",
+      "from_name": "sex",
+      "to_name": "D281",
+      "reason": "オピオイド。若年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D281",
+      "from_name": "age_group",
+      "to_name": "D281",
+      "reason": "オピオイド。若年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D285",
+      "from_name": "sex",
+      "to_name": "D285",
+      "reason": "減圧症。男性(ダイバー)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D286",
+      "from_name": "age_group",
+      "to_name": "D286",
+      "reason": "高Ca血症。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D292",
+      "from_name": "age_group",
+      "to_name": "D292",
+      "reason": "前庭神経炎。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D296",
+      "from_name": "sex",
+      "to_name": "D296",
+      "reason": "緊張型頭痛。やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D298",
+      "from_name": "age_group",
+      "to_name": "D298",
+      "reason": "Bell麻痺。若年～中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D300",
+      "from_name": "age_group",
+      "to_name": "D300",
+      "reason": "CJD。高齢(60-70代)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D307",
+      "from_name": "age_group",
+      "to_name": "D307",
+      "reason": "横断性脊髄炎。若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D308",
+      "from_name": "age_group",
+      "to_name": "D308",
+      "reason": "馬尾。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D309",
+      "from_name": "age_group",
+      "to_name": "D309",
+      "reason": "AVM。若年(先天性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D310",
+      "from_name": "age_group",
+      "to_name": "D310",
+      "reason": "TIA。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D311",
+      "from_name": "sex",
+      "to_name": "D311",
+      "reason": "GBM。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D311",
+      "from_name": "age_group",
+      "to_name": "D311",
+      "reason": "GBM。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D313",
+      "from_name": "age_group",
+      "to_name": "D313",
+      "reason": "転移性脳腫瘍。高齢",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D315",
+      "from_name": "sex",
+      "to_name": "D315",
+      "reason": "CVST。若年女性3:1(OCP)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D315",
+      "from_name": "age_group",
+      "to_name": "D315",
+      "reason": "CVST。若年女性3:1(OCP)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D316",
+      "from_name": "sex",
+      "to_name": "D316",
+      "reason": "もやもや。若年女性1.8:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D316",
+      "from_name": "age_group",
+      "to_name": "D316",
+      "reason": "もやもや。若年女性1.8:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D317",
+      "from_name": "sex",
+      "to_name": "D317",
+      "reason": "PAP。中年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D317",
+      "from_name": "age_group",
+      "to_name": "D317",
+      "reason": "PAP。中年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D319",
+      "from_name": "age_group",
+      "to_name": "D319",
+      "reason": "気管支拡張症。中年～",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D324",
+      "from_name": "age_group",
+      "to_name": "D324",
+      "reason": "結核性髄膜炎。若年+高齢bimodal",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D327",
+      "from_name": "sex",
+      "to_name": "D327",
+      "reason": "AS。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D327",
+      "from_name": "age_group",
+      "to_name": "D327",
+      "reason": "AS。高齢、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D331",
+      "from_name": "sex",
+      "to_name": "D331",
+      "reason": "脂肪塞栓。若年男性(外傷)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D331",
+      "from_name": "age_group",
+      "to_name": "D331",
+      "reason": "脂肪塞栓。若年男性(外傷)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D333",
+      "from_name": "age_group",
+      "to_name": "D333",
+      "reason": "先端巨大症。中年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D336",
+      "from_name": "age_group",
+      "to_name": "D336",
+      "reason": "ADPKD。中年で進行",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D342",
+      "from_name": "sex",
+      "to_name": "D342",
+      "reason": "先天性QT延長。若年、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D342",
+      "from_name": "age_group",
+      "to_name": "D342",
+      "reason": "先天性QT延長。若年、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D346",
+      "from_name": "sex",
+      "to_name": "D346",
+      "reason": "HCM。若年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D346",
+      "from_name": "age_group",
+      "to_name": "D346",
+      "reason": "HCM。若年、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D349",
+      "from_name": "sex",
+      "to_name": "D349",
+      "reason": "結核性胸膜炎。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D349",
+      "from_name": "age_group",
+      "to_name": "D349",
+      "reason": "結核性胸膜炎。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D350",
+      "from_name": "age_group",
+      "to_name": "D350",
+      "reason": "マルファン。若年(遺伝性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D61",
+      "from_name": "sex",
+      "to_name": "D61",
+      "reason": "PMR/GCA。高齢女性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D62",
+      "from_name": "sex",
+      "to_name": "D62",
+      "reason": "サルコイドーシス。若年、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D62",
+      "from_name": "age_group",
+      "to_name": "D62",
+      "reason": "サルコイドーシス。若年、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D63",
+      "from_name": "age_group",
+      "to_name": "D63",
+      "reason": "IBD。若年",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D64",
+      "from_name": "sex",
+      "to_name": "D64",
+      "reason": "反応性関節炎。若年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D64",
+      "from_name": "age_group",
+      "to_name": "D64",
+      "reason": "反応性関節炎。若年男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D65",
+      "from_name": "sex",
+      "to_name": "D65",
+      "reason": "痛風。中年男性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D65",
+      "from_name": "age_group",
+      "to_name": "D65",
+      "reason": "痛風。中年男性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D67",
+      "from_name": "sex",
+      "to_name": "D67",
+      "reason": "リンパ腫。bimodal、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D67",
+      "from_name": "age_group",
+      "to_name": "D67",
+      "reason": "リンパ腫。bimodal、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D68",
+      "from_name": "sex",
+      "to_name": "D68",
+      "reason": "急性白血病。bimodal、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D68",
+      "from_name": "age_group",
+      "to_name": "D68",
+      "reason": "急性白血病。bimodal、やや男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D69",
+      "from_name": "sex",
+      "to_name": "D69",
+      "reason": "腎癌。高齢男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D69",
+      "from_name": "age_group",
+      "to_name": "D69",
+      "reason": "腎癌。高齢男性2:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D70",
+      "from_name": "sex",
+      "to_name": "D70",
+      "reason": "HCC。高齢男性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D70",
+      "from_name": "age_group",
+      "to_name": "D70",
+      "reason": "HCC。高齢男性4:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D77",
+      "from_name": "age_group",
+      "to_name": "D77",
+      "reason": "DVT/PE。高齢者に多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D79",
+      "from_name": "sex",
+      "to_name": "D79",
+      "reason": "人工弁IE。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D79",
+      "from_name": "age_group",
+      "to_name": "D79",
+      "reason": "人工弁IE。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D81",
+      "from_name": "sex",
+      "to_name": "D81",
+      "reason": "SBP。中高年男性(肝硬変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D81",
+      "from_name": "age_group",
+      "to_name": "D81",
+      "reason": "SBP。中高年男性(肝硬変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D87",
+      "from_name": "sex",
+      "to_name": "D87",
+      "reason": "亜急性甲状腺炎。中年女性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D87",
+      "from_name": "age_group",
+      "to_name": "D87",
+      "reason": "亜急性甲状腺炎。中年女性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D89",
+      "from_name": "sex",
+      "to_name": "D89",
+      "reason": "悪性高熱。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D89",
+      "from_name": "age_group",
+      "to_name": "D89",
+      "reason": "悪性高熱。若年男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D92",
+      "from_name": "age_group",
+      "to_name": "D92",
+      "reason": "腫瘍熱。高齢者",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D96",
+      "from_name": "age_group",
+      "to_name": "D96",
+      "reason": "菊池病。若年、やや女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D97",
+      "from_name": "age_group",
+      "to_name": "D97",
+      "reason": "キャッスルマン。若年(unicentric)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D98",
+      "from_name": "age_group",
+      "to_name": "D98",
+      "reason": "高安。若年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D99",
+      "from_name": "age_group",
+      "to_name": "D99",
+      "reason": "NTM。中高年女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S79",
+      "from_name": "GPA",
+      "to_name": "otalgia",
+      "reason": "GPAは耳鼻咽喉科領域を高頻度に侵す",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "L93",
+      "from_name": "GPA",
+      "to_name": "hemoglobin",
+      "reason": "GPAは慢性炎症性貧血を起こす",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L100",
+      "from_name": "RA",
+      "to_name": "platelet_count",
+      "reason": "RAは反応性血小板増多を起こす",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "L100",
+      "from_name": "kawasaki",
+      "to_name": "platelet_count",
+      "reason": "川崎病は第2-3病週に血小板>50万",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "L93",
+      "from_name": "kawasaki",
+      "to_name": "hemoglobin",
+      "reason": "川崎病は炎症性貧血を起こしうる",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S43",
+      "from_name": "kawasaki",
+      "to_name": "palmar_plantar_rash",
+      "reason": "川崎病は手掌足底の膜様落屑が特徴",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "E02",
+      "from_name": "EGPA",
+      "to_name": "heart_rate",
+      "reason": "EGPAは心臓(60%)を侵し頻脈を起こす",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "L93",
+      "from_name": "EGPA",
+      "to_name": "hemoglobin",
+      "reason": "EGPAは慢性炎症性貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "L93",
+      "from_name": "MPA",
+      "to_name": "hemoglobin",
+      "reason": "MPAは炎症+腎障害による貧血",
       "onset_day_range": null
     }
   ],
