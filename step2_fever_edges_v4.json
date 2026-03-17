@@ -47240,6 +47240,294 @@
       "to_name": "発症の速さ",
       "reason": "飲酒中断後6-48時間で急性発症",
       "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D276",
+      "from_name": "性別",
+      "to_name": "卵巣捻転",
+      "reason": "卵巣捻転。女性のみ",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D288",
+      "from_name": "性別",
+      "to_name": "精巣腫瘍",
+      "reason": "精巣腫瘍。20-34歳男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D288",
+      "from_name": "年齢層",
+      "to_name": "精巣腫瘍",
+      "reason": "精巣腫瘍。20-34歳男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D289",
+      "from_name": "性別",
+      "to_name": "前立腺癌",
+      "reason": "前立腺癌。65歳以上の男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D289",
+      "from_name": "年齢層",
+      "to_name": "前立腺癌",
+      "reason": "前立腺癌。65歳以上の男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D290",
+      "from_name": "性別",
+      "to_name": "膀胱癌",
+      "reason": "膀胱癌。男性・高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D290",
+      "from_name": "年齢層",
+      "to_name": "膀胱癌",
+      "reason": "膀胱癌。男性・高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D291",
+      "from_name": "性別",
+      "to_name": "子宮外妊娠",
+      "reason": "子宮外妊娠。妊娠可能年齢の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D291",
+      "from_name": "年齢層",
+      "to_name": "子宮外妊娠",
+      "reason": "子宮外妊娠。妊娠可能年齢の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D295",
+      "from_name": "性別",
+      "to_name": "群発頭痛",
+      "reason": "群発頭痛。20-40歳男性に好発（男女比6:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D295",
+      "from_name": "年齢層",
+      "to_name": "群発頭痛",
+      "reason": "群発頭痛。20-40歳男性に好発（男女比6:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D301",
+      "from_name": "性別",
+      "to_name": "視神経脊髄炎(NMOSD)",
+      "reason": "NMOSD。30-50歳女性に好発（女性9:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D301",
+      "from_name": "年齢層",
+      "to_name": "視神経脊髄炎(NMOSD)",
+      "reason": "NMOSD。30-50歳女性に好発（女性9:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D341",
+      "from_name": "性別",
+      "to_name": "Brugada症候群",
+      "reason": "Brugada症候群。男性に圧倒的に多い（男女比8:1）",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D345",
+      "from_name": "性別",
+      "to_name": "Sheehan症候群",
+      "reason": "Sheehan症候群。分娩後の女性のみ",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D337",
+      "from_name": "年齢層",
+      "to_name": "肥厚性幽門狭窄症",
+      "reason": "肥厚性幽門狭窄症。生後2-8週に発症",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D312",
+      "from_name": "性別",
+      "to_name": "髄膜腫",
+      "reason": "髄膜腫。中高年女性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D312",
+      "from_name": "年齢層",
+      "to_name": "髄膜腫",
+      "reason": "髄膜腫。中高年女性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D320",
+      "from_name": "性別",
+      "to_name": "喉頭癌",
+      "reason": "喉頭癌。男性・高齢者・喫煙者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D320",
+      "from_name": "年齢層",
+      "to_name": "喉頭癌",
+      "reason": "喉頭癌。男性・高齢者・喫煙者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D287",
+      "from_name": "性別",
+      "to_name": "胆嚢癌",
+      "reason": "胆嚢癌。高齢女性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D287",
+      "from_name": "年齢層",
+      "to_name": "胆嚢癌",
+      "reason": "胆嚢癌。高齢女性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D278",
+      "from_name": "性別",
+      "to_name": "悪性胸膜中皮腫",
+      "reason": "悪性胸膜中皮腫。男性・高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D278",
+      "from_name": "年齢層",
+      "to_name": "悪性胸膜中皮腫",
+      "reason": "悪性胸膜中皮腫。男性・高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D340",
+      "from_name": "性別",
+      "to_name": "僧帽弁狭窄症",
+      "reason": "僧帽弁狭窄症。リウマチ熱後遺症、女性に多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D335",
+      "from_name": "性別",
+      "to_name": "閉塞性動脈硬化症(PAD)",
+      "reason": "閉塞性動脈硬化症。男性・高齢・糖尿病に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D335",
+      "from_name": "年齢層",
+      "to_name": "閉塞性動脈硬化症(PAD)",
+      "reason": "閉塞性動脈硬化症。男性・高齢・糖尿病に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D155",
+      "from_name": "年齢層",
+      "to_name": "くも膜下出血(SAH)",
+      "reason": "くも膜下出血。40-60歳にピーク",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D94",
+      "from_name": "性別",
+      "to_name": "IgG4関連疾患",
+      "reason": "IgG4関連疾患。60歳代男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D94",
+      "from_name": "年齢層",
+      "to_name": "IgG4関連疾患",
+      "reason": "IgG4関連疾患。60歳代男性に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D323",
+      "from_name": "性別",
+      "to_name": "常位胎盤早期剥離",
+      "reason": "常位胎盤早期剥離。妊娠後期の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D323",
+      "from_name": "年齢層",
+      "to_name": "常位胎盤早期剥離",
+      "reason": "常位胎盤早期剥離。妊娠後期の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D322",
+      "from_name": "性別",
+      "to_name": "HELLP症候群",
+      "reason": "HELLP症候群。妊娠後期の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D322",
+      "from_name": "年齢層",
+      "to_name": "HELLP症候群",
+      "reason": "HELLP症候群。妊娠後期の女性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D325",
+      "from_name": "性別",
+      "to_name": "可逆性後頭葉白質脳症(PRES)",
+      "reason": "PRES。妊娠高血圧・自己免疫で好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D325",
+      "from_name": "年齢層",
+      "to_name": "可逆性後頭葉白質脳症(PRES)",
+      "reason": "PRES。妊娠高血圧・自己免疫で好発",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
