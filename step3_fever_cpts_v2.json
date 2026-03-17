@@ -12240,10 +12240,10 @@
         "D106": {
           "absent": 0.5,
           "maculopapular_rash": 0.3,
-          "diffuse_erythema": 0.15,
           "petechiae_purpura": 0.01,
           "vesicular": 0.01,
-          "erythroderma": 0.03
+          "erythroderma": 0.03,
+          "diffuse_erythroderma": 0.15
         },
         "D107": {
           "absent": 0.75,
@@ -12251,15 +12251,15 @@
           "petechiae_purpura": 0.05,
           "vesicular": 0.01,
           "erythroderma": 0.01,
-          "diffuse_erythema": 0.03
+          "diffuse_erythroderma": 0.03
         },
         "D108": {
           "absent": 0.8,
           "maculopapular_rash": 0.1,
-          "diffuse_erythema": 0.05,
           "petechiae_purpura": 0.02,
           "vesicular": 0.01,
-          "erythroderma": 0.02
+          "erythroderma": 0.02,
+          "diffuse_erythroderma": 0.05
         },
         "D111": {
           "normal": 0.02,
@@ -12648,24 +12648,24 @@
         },
         "D54": {
           "normal": 0.2,
-          "localized_erythema": 0.6,
-          "vesicles_bullae": 0.1,
           "petechiae_purpura": 0.05,
-          "diffuse_erythema": 0.05
+          "localized_erythema_warmth_swelling": 0.6,
+          "vesicle_bulla": 0.1,
+          "diffuse_erythroderma": 0.05
         },
         "D219": {
           "normal": 0.5,
-          "localized_erythema": 0.1,
-          "vesicles_bullae": 0.05,
           "petechiae_purpura": 0.25,
-          "diffuse_erythema": 0.1
+          "localized_erythema_warmth_swelling": 0.1,
+          "vesicle_bulla": 0.05,
+          "diffuse_erythroderma": 0.1
         },
         "D222": {
           "normal": 0.55,
-          "localized_erythema": 0.1,
-          "vesicles_bullae": 0.05,
           "petechiae_purpura": 0.2,
-          "diffuse_erythema": 0.1
+          "localized_erythema_warmth_swelling": 0.1,
+          "vesicle_bulla": 0.05,
+          "diffuse_erythroderma": 0.1
         }
       }
     },
@@ -18678,23 +18678,23 @@
         },
         "D220": {
           "normal": 0.5,
-          "mildly_elevated": 0.35,
-          "highly_elevated": 0.15
+          "mild_elevated": 0.35,
+          "very_high": 0.15
         },
         "D221": {
           "normal": 0.6,
-          "mildly_elevated": 0.3,
-          "highly_elevated": 0.1
+          "mild_elevated": 0.3,
+          "very_high": 0.1
         },
         "D222": {
           "normal": 0.7,
-          "mildly_elevated": 0.25,
-          "highly_elevated": 0.05
+          "mild_elevated": 0.25,
+          "very_high": 0.05
         },
         "D219": {
           "normal": 0.5,
-          "mildly_elevated": 0.4,
-          "highly_elevated": 0.1
+          "mild_elevated": 0.4,
+          "very_high": 0.1
         }
       }
     },
@@ -39642,6 +39642,53 @@
           "improves_with_activity": 0.6,
           "worsens_with_activity": 0.2,
           "no_change": 0.2
+        }
+      }
+    },
+    "L78": {
+      "description": "尿蛋白定量",
+      "leak": {
+        "not_done": 0.5,
+        "normal": 0.4,
+        "mild_proteinuria": 0.08,
+        "nephrotic_range": 0.02
+      },
+      "parent_effects": {
+        "D239": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.3
+        },
+        "D204": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.3
+        },
+        "D241": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.3
+        },
+        "D191": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.3
+        },
+        "D219": {
+          "not_done": 0.1,
+          "normal": 0.2,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.3
+        },
+        "D221": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_proteinuria": 0.4,
+          "nephrotic_range": 0.4
         }
       }
     }
