@@ -1935,17 +1935,17 @@
     },
     {
       "id": "D37",
-      "name": "infective_diarrhea_bacterial",
-      "name_ja": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+      "name": "campylobacter_enteritis",
+      "name_ja": "カンピロバクター腸炎",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "A04.9",
+      "icd10": "A04.5",
       "category_sub": "gastrointestinal",
       "severity": "moderate",
-      "key_features": "発熱+血性/粘液性下痢+腹痛。ウイルス性(D07)より高熱で血便。便培養で確定。",
+      "key_features": "鶏肉摂取後2-5日。高熱+血性下痢+右下腹部痛。WBC/CRP著明上昇。GBS合併リスク。",
       "diagnostic_profile": {}
     },
     {
@@ -2325,17 +2325,17 @@
     },
     {
       "id": "D63",
-      "name": "IBD",
-      "name_ja": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "name": "crohns_disease",
+      "name_ja": "クローン病",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "K50/K51",
+      "icd10": "K50",
       "category_sub": "autoimmune",
       "severity": "moderate",
-      "key_features": "発熱+慢性下痢（血性or非血性）+腹痛+体重減少。若年者。肛門病変（クローン）。",
+      "key_features": "非連続性病変(skip lesion)+肛門病変+口腔潰瘍+右下腹部痛。若年者。体重減少顕著。肉芽腫形成。",
       "diagnostic_profile": {}
     },
     {
@@ -2385,8 +2385,8 @@
     },
     {
       "id": "D67",
-      "name": "malignant_lymphoma",
-      "name_ja": "悪性リンパ腫",
+      "name": "non_hodgkin_lymphoma",
+      "name_ja": "非ホジキンリンパ腫(NHL)",
       "category": "disease",
       "states": [
         "no",
@@ -2395,7 +2395,7 @@
       "icd10": "C85",
       "category_sub": "malignancy",
       "severity": "high",
-      "key_features": "FUOの3大原因。発熱+盗汗+体重減少(B症状)+リンパ節腫脹+肝脾腫。LDH上昇。",
+      "key_features": "FUOの主因。B症状(発熱+盗汗+体重減少)+リンパ節腫脹+肝脾腫。LDH/sIL-2R上昇。高齢に多い。",
       "diagnostic_profile": {}
     },
     {
@@ -2535,17 +2535,17 @@
     },
     {
       "id": "D77",
-      "name": "DVT_PE",
-      "name_ja": "深部静脈血栓症/肺塞栓症",
+      "name": "pulmonary_embolism",
+      "name_ja": "肺塞栓症(PE)",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "I26/I82",
+      "icd10": "I26",
       "category_sub": "vascular",
       "severity": "critical",
-      "key_features": "発熱(低頻度)+突然の呼吸困難+胸痛+片側下肢腫脹。D-dimer上昇。造影CTで確定。",
+      "key_features": "突然の呼吸困難+胸痛(胸膜性)+頻脈+低酸素血症。D-dimer上昇。造影CTで確定。発熱は低頻度。",
       "diagnostic_profile": {}
     },
     {
@@ -4400,15 +4400,15 @@
     },
     {
       "id": "D125",
-      "name": "acute_arrhythmia",
-      "name_ja": "急性不整脈（AF/SVT/VT）",
+      "name": "acute_atrial_fibrillation",
+      "name_ja": "急性心房細動(AF)",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "high",
-      "note": "原発性頻脈性不整脈。動悸+呼吸困難+めまい。HR>150が多い。ECGで確定。BNP/トロポニン軽度上昇。二次性(PE/敗血症/甲状腺)除外要"
+      "note": "新規発症/発作性AF。動悸+不整脈+呼吸困難。HR irregularly irregular。ECGでAF。BNP軽度上昇。塞栓リスク。"
     },
     {
       "id": "D126",
@@ -4436,15 +4436,15 @@
     },
     {
       "id": "D128",
-      "name": "upper_airway_obstruction",
-      "name_ja": "上気道閉塞（喉頭蓋炎/血管浮腫/異物）",
+      "name": "acute_epiglottitis",
+      "name_ja": "急性喉頭蓋炎",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "critical",
-      "note": "喉頭蓋炎/血管浮腫/異物。吸気性喘鳴+呼吸困難+嚥下困難。緊急気道確保"
+      "note": "高熱+咽頭痛+嚥下困難+流涎+嗄声。WBC/CRP著明上昇。吸気性喘鳴。緊急気道確保。"
     },
     {
       "id": "D129",
@@ -7185,6 +7185,112 @@
       "note": "FBN1変異→結合組織障害。高身長+くも状指+水晶体偏位+大動脈基部拡張→解離。僧帽弁逸脱。Ghent基準で診断"
     },
     {
+      "id": "D355",
+      "name": "deep_vein_thrombosis",
+      "name_ja": "深部静脈血栓症(DVT)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "I82",
+      "category_sub": "vascular",
+      "severity": "moderate",
+      "key_features": "片側下肢腫脹+疼痛+発赤+Homans徴候。D-dimer上昇。PE移行リスク。発熱は低頻度(10-15%)。"
+    },
+    {
+      "id": "D353",
+      "name": "ulcerative_colitis",
+      "name_ja": "潰瘍性大腸炎(UC)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K51",
+      "category_sub": "autoimmune",
+      "severity": "moderate",
+      "key_features": "連続性直腸炎から口側進展+血性下痢+左下腹部痛+テネスムス。若年者。関節炎/壊疽性膿皮症/原発性硬化性胆管炎合併。"
+    },
+    {
+      "id": "D354",
+      "name": "hodgkin_lymphoma",
+      "name_ja": "ホジキンリンパ腫(HL)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C81",
+      "category_sub": "malignancy",
+      "severity": "high",
+      "key_features": "二峰性年齢分布(20代+60代)。B症状+頸部/縦隔リンパ節腫脹。Pel-Ebstein熱。Reed-Sternberg細胞。"
+    },
+    {
+      "id": "D358",
+      "name": "airway_foreign_body",
+      "name_ja": "気道異物",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "食物/異物の気道閉塞。突然発症の呼吸困難+窒息+チアノーゼ。無熱。cafe coronary(高齢者)。"
+    },
+    {
+      "id": "D351",
+      "name": "salmonella_enteritis",
+      "name_ja": "サルモネラ腸炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A02.0",
+      "category_sub": "gastrointestinal",
+      "severity": "moderate",
+      "key_features": "鶏卵/食肉摂取後6-48h。高熱+水様性下痢+腹痛。菌血症リスク高(5-10%)。高齢者/免疫不全で重症化。"
+    },
+    {
+      "id": "D352",
+      "name": "shigellosis",
+      "name_ja": "細菌性赤痢",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A03",
+      "category_sub": "gastrointestinal",
+      "severity": "moderate",
+      "key_features": "少量接種で感染(感染力強)。高熱+粘血便+テネスムス+左下腹部痛。WBC著明上昇。渡航歴重要。"
+    },
+    {
+      "id": "D356",
+      "name": "paroxysmal_SVT",
+      "name_ja": "発作性上室性頻拍(SVT)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "AVNRT/AVRT/AT。突然発症の規則的頻脈(HR 150-250)。動悸+呼吸困難。迷走神経刺激で停止。若年者に多い。"
+    },
+    {
+      "id": "D357",
+      "name": "ventricular_tachycardia",
+      "name_ja": "心室頻拍(VT)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "critical",
+      "note": "器質的心疾患(虚血/サルコイドーシス/心筋症)に伴う。wide QRS頻拍。失神/低血圧リスク高。緊急電気的除細動。"
+    },
+    {
       "id": "E39",
       "name": "echocardiography",
       "name_ja": "心エコー所見",
@@ -7214,9 +7320,11 @@
         "QT_prolongation",
         "Brugada_pattern",
         "RVH_strain",
-        "LVH_pattern"
+        "LVH_pattern",
+        "SVT",
+        "VT"
       ],
-      "note": "ECG: ST変化/AF/QT延長/Brugada/右室負荷/左室肥大"
+      "note": "ECG: ST変化/AF/SVT/VT/QT延長/Brugada/右室負荷/左室肥大"
     },
     {
       "id": "L57",

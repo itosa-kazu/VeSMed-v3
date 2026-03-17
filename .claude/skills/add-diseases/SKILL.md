@@ -56,6 +56,13 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 - 発見したら `memory/project_missing_variables.md` に記録
 - 変量追加が可能な場合はその場で追加（L56 β-hCGのように）
 
+## 疾患混在禁止ルール
+- **1つのIDに臨床的に異なる疾患を同居させない**
+- 疫学(年齢/性別分布)、主要症状、治療法が異なるなら別IDに分割
+- 例: DVT/PEは別疾患（下肢腫脹 vs 呼吸困難）、IBDはクローン/UCに分割
+- umbrella疾患を見つけたら分割を検討（辺/CPTが「平均」になり鑑別力低下の原因）
+- 分割時はPrior分割: P(combined) ≈ P(sub1) + P(sub2)
+
 ## 鉄則チェックリスト
 - [ ] step1/step2/step3 三位一体
 - [ ] full_cptにR01/R02（性差/年齢差がある場合）

@@ -35,6 +35,7 @@
 - [feedback_cpt_state_name_sync.md](feedback_cpt_state_name_sync.md) — **CPT state名一致性必須**: step3のstate名がstep1と1文字でも違うとCPT無効化。R715 FATAL原因
 - [feedback_no_cherry_pick_edges.md](feedback_no_cherry_pick_edges.md) — **最重要: 臨床正確な辺の撤回禁止**。テスト退化は競合にも辺追加で解決。正しい辺を消すのは過拟合
 - [feedback_no_auto_cpt.md](feedback_no_auto_cpt.md) — **CPT数値は人工設定必須**。プログラム自動生成禁止、導入のみ担当
+- [feedback_no_umbrella_diseases.md](feedback_no_umbrella_diseases.md) — **疾患混在禁止**: 臨床的に異なる疾患を1IDに入れない。疫学/症状/治療が異なるなら別IDに分割
 - [project_intermediate_variable_issues.md](project_intermediate_variable_issues.md) — 中間変量問題リスト: 転移(解決)/DIC/心不全/肝不全/腎前性AKI/骨髄浸潤(未解決)
 
 ## ユーザー
@@ -53,6 +54,7 @@
 - [project_navigation_test.md](project_navigation_test.md) — 新評価軸：推奨検査ナビでTop-1到達+維持できるか（手動テスト、論文ネタ）
 - [project_violation_mechanism.md](project_violation_mechanism.md) — 違和感メカニズム：尤度比で対抗仮説を検出→鑑別検査推奨。骨髄腫で検証、未解決課題あり
 - [project_navigation_test_results.md](project_navigation_test_results.md) — ナビテスト全案例結果: 153/228(67%)到達、75件未到達の分類
+- [project_disease_split_plan.md](project_disease_split_plan.md) — 疾患リスト分割計画: umbrella疾患18件をA/B/C/D群に分類、A群6件から着手
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）
