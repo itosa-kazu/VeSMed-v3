@@ -754,8 +754,8 @@
     },
     {
       "id": "D23",
-      "name": "rickettsial_disease",
-      "name_ja": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "name": "scrub_typhus",
+      "name_ja": "ツツガムシ病",
       "category": "disease",
       "states": [
         "no",
@@ -784,7 +784,9 @@
           "治療の遅れ（致死率上昇）"
         ]
       },
-      "severity": "high"
+      "severity": "high",
+      "icd10": "A75.3",
+      "key_features": "秋(9-11月)の高熱+刺し口(eschar)+皮疹+リンパ節腫脹。ダニ媒介。Weil-Felix OX-K陽性。ドキシサイクリン著効。"
     },
     {
       "id": "D24",
@@ -4084,27 +4086,31 @@
     },
     {
       "id": "D109",
-      "name": "cryptococcosis",
-      "name_ja": "クリプトコッカス症（髄膜炎/肺）",
+      "name": "cryptococcal_meningitis",
+      "name_ja": "クリプトコッカス髄膜炎",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "critical",
-      "note": "免疫不全(HIV CD4<100,臓器移植,ステロイド)で好発。髄膜炎型(70-80%):頭痛+発熱+意識障害。肺型:咳嗽+胸部異常影。墨汁染色/CrAg陽性で確定"
+      "note": "免疫不全(HIV CD4<100,臓器移植,ステロイド)で好発。髄膜炎型(70-80%):頭痛+発熱+意識障害。肺型:咳嗽+胸部異常影。墨汁染色/CrAg陽性で確定",
+      "icd10": "B45.1",
+      "key_features": "免疫不全(HIV CD4<100,移植,ステロイド)の亜急性髄膜炎。頭痛+発熱+意識障害。CSF墨汁染色/クリプトコッカス抗原陽性。髄圧上昇。"
     },
     {
       "id": "D110",
-      "name": "toxoplasmosis",
-      "name_ja": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "name": "toxoplasma_encephalitis",
+      "name_ja": "トキソプラズマ脳炎",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "critical",
-      "note": "Toxoplasma gondii。免疫正常: 頸部リンパ節腫脹+微熱(自己限定)。免疫不全(HIV CD4<100): 脳炎(環状増強病変)+発熱+意識障害+痙攣。脈絡網膜炎(10-20%)。診断: IgG/IgM血清学, MRI, PCR"
+      "note": "Toxoplasma gondii。免疫正常: 頸部リンパ節腫脹+微熱(自己限定)。免疫不全(HIV CD4<100): 脳炎(環状増強病変)+発熱+意識障害+痙攣。脈絡網膜炎(10-20%)。診断: IgG/IgM血清学, MRI, PCR",
+      "icd10": "B58.2",
+      "key_features": "HIV/AIDS(CD4<100)の脳炎。頭痛+局所神経症状+痙攣+意識障害。MRIでリング状増強病変。抗トキソ治療に反応。"
     },
     {
       "id": "D111",
@@ -10645,6 +10651,51 @@
       "category_sub": "bacterial",
       "severity": "critical",
       "key_features": "急速進行性の軟部組織感染→壊死性筋膜炎+ショック+多臓器不全。局所疼痛が激烈。創傷/水痘が侵入門戸。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D365",
+      "name": "pulmonary_cryptococcosis",
+      "name_ja": "肺クリプトコッカス症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B45.0",
+      "category_sub": "fungal",
+      "severity": "moderate",
+      "key_features": "免疫不全者の肺結節/浸潤影。咳嗽+発熱。免疫正常者では無症候のことも。血清クリプトコッカス抗原陽性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D366",
+      "name": "toxoplasma_lymphadenitis",
+      "name_ja": "トキソプラズマリンパ節炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B58.1",
+      "category_sub": "parasitic",
+      "severity": "low",
+      "key_features": "免疫正常者の頸部リンパ節腫脹+微熱。自然軽快。肝脾腫を伴うこともある。猫接触歴。IgM抗体陽性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D367",
+      "name": "spotted_fever_rickettsiosis",
+      "name_ja": "紅斑熱群リケッチア症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A77",
+      "category_sub": "rickettsial",
+      "severity": "moderate",
+      "key_features": "マダニ媒介の高熱+刺し口+紅斑+血小板減少。日本紅斑熱(R.japonica)/RMSF(R.rickettsii)/地中海紅斑熱。ドキシサイクリン著効。",
       "diagnostic_profile": {}
     }
   ]

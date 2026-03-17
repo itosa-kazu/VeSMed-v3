@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6709,
+  "total_edges": 6780,
   "edges": [
     {
       "from": "R01",
@@ -230,14 +230,6 @@
     },
     {
       "from": "R06",
-      "to": "D23",
-      "from_name": "travel_tropical_2w",
-      "to_name": "rickettsial_disease",
-      "reason": "熱帯・亜熱帯地域でリケッチア症のリスク",
-      "onset_day_range": null
-    },
-    {
-      "from": "R06",
       "to": "D28",
       "from_name": "travel_tropical_2w",
       "to_name": "typhoid_fever",
@@ -450,14 +442,6 @@
       "from_name": "current_season",
       "to_name": "dengue",
       "reason": "デングは夏〜秋（蚊の活動期）",
-      "onset_day_range": null
-    },
-    {
-      "from": "R19",
-      "to": "D23",
-      "from_name": "current_season",
-      "to_name": "rickettsial_disease",
-      "reason": "ツツガムシ病は秋〜初冬",
       "onset_day_range": null
     },
     {
@@ -1121,18 +1105,6 @@
       }
     },
     {
-      "from": "D23",
-      "to": "S06",
-      "from_name": "rickettsial_disease",
-      "to_name": "myalgia",
-      "reason": "リケッチア症で筋肉痛",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D01",
       "to": "S07",
       "from_name": "viral_URI",
@@ -1238,18 +1210,6 @@
         "earliest": 3,
         "typical": 7,
         "latest": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S08",
-      "from_name": "rickettsial_disease",
-      "to_name": "arthralgia",
-      "reason": "リケッチア症で関節痛",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
       }
     },
     {
@@ -1661,18 +1621,6 @@
       }
     },
     {
-      "from": "D23",
-      "to": "S18",
-      "from_name": "rickettsial_disease",
-      "to_name": "skin_complaint",
-      "reason": "リケッチア症で発疹",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 5
-      }
-    },
-    {
       "from": "D16",
       "to": "S18",
       "from_name": "dengue",
@@ -1982,18 +1930,6 @@
         "earliest": 0,
         "typical": 0,
         "latest": 1
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E01",
-      "from_name": "rickettsial_disease",
-      "to_name": "temperature",
-      "reason": "リケッチア症で高熱",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 2
       }
     },
     {
@@ -2385,18 +2321,6 @@
       }
     },
     {
-      "from": "D23",
-      "to": "E12",
-      "from_name": "rickettsial_disease",
-      "to_name": "skin_exam",
-      "reason": "リケッチア症で斑丘疹",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 5
-      }
-    },
-    {
       "from": "D19",
       "to": "E12",
       "from_name": "drug_fever",
@@ -2538,18 +2462,6 @@
         "earliest": 0.5,
         "typical": 1,
         "latest": 3
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E17",
-      "from_name": "rickettsial_disease",
-      "to_name": "eschar",
-      "reason": "ツツガムシ病で刺し口（痂皮を伴う無痛性潰瘍）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
       }
     },
     {
@@ -3302,18 +3214,6 @@
         "earliest": 0,
         "typical": 1,
         "latest": 2
-      }
-    },
-    {
-      "from": "D23",
-      "to": "L14",
-      "from_name": "rickettsial_disease",
-      "to_name": "peripheral_blood_smear",
-      "reason": "リケッチア症で血小板減少",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 7
       }
     },
     {
@@ -11027,87 +10927,6 @@
       }
     },
     {
-      "from": "D23",
-      "to": "T01",
-      "reason": "リケッチア症の発熱は3日〜3週間",
-      "onset_day_range": {
-        "min": 3,
-        "max": 21
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S05",
-      "reason": "リケッチア症で激しい頭痛(80-90%)",
-      "onset_day_range": {
-        "min": 1,
-        "max": 7
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S07",
-      "reason": "リケッチア症で全身倦怠感",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S09",
-      "reason": "リケッチア症で悪寒戦慄",
-      "onset_day_range": {
-        "min": 0,
-        "max": 7
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E02",
-      "reason": "リケッチア症重症で頻脈",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E16",
-      "reason": "リケッチア症重症で意識障害",
-      "onset_day_range": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E18",
-      "reason": "リケッチア症重症肝障害で黄疸",
-      "onset_day_range": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "L11",
-      "reason": "リケッチア症で肝酵素上昇(60-80%)",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "L02",
-      "reason": "リケッチア症でCRP高値",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
       "from": "D103",
       "to": "T01",
       "reason": "リウマチ熱は1-3週の発熱",
@@ -11429,51 +11248,6 @@
       "onset_day_range": {
         "min": 7,
         "max": 60
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S14",
-      "reason": "リケッチアで消化器症状(下痢10-30%)",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "S12",
-      "reason": "リケッチアで腹痛",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E34",
-      "reason": "リケッチアで肝腫大",
-      "onset_day_range": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "E14",
-      "reason": "リケッチアで脾腫",
-      "onset_day_range": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    {
-      "from": "D23",
-      "to": "L01",
-      "reason": "リケッチアでWBC正常〜低下",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
       }
     },
     {
@@ -12048,13 +11822,6 @@
       "to": "T01",
       "from_name": "acute_prostatitis",
       "to_name": "fever_duration",
-      "reason": "TODO"
-    },
-    {
-      "from": "D23",
-      "to": "T02",
-      "from_name": "rickettsial_disease",
-      "to_name": "onset_speed",
       "reason": "TODO"
     },
     {
@@ -14321,27 +14088,6 @@
       "reason": "Q熱で相対的徐脈(高熱にもかかわらず頻脈少ない)が典型"
     },
     {
-      "from": "D23",
-      "to": "E25",
-      "from_name": "spotted fever group rickettsiosis",
-      "to_name": "conjunctival_injection",
-      "reason": "RMSF結膜充血30-40%。重要な臨床的手がかり"
-    },
-    {
-      "from": "D23",
-      "to": "L44",
-      "from_name": "spotted fever group rickettsiosis",
-      "to_name": "electrolytes",
-      "reason": "RMSF SIADH→低Na血症50-60%"
-    },
-    {
-      "from": "D23",
-      "to": "S01",
-      "from_name": "spotted fever group rickettsiosis",
-      "to_name": "cough",
-      "reason": "リケッチア症で乾性咳嗽15-25%"
-    },
-    {
       "from": "D71",
       "to": "E04",
       "from_name": "thyroid storm",
@@ -14776,13 +14522,6 @@
       "reason": "IE: Janeway病変(手掌足底の無痛性紅斑)(5-10%)"
     },
     {
-      "from": "D23",
-      "to": "S43",
-      "from_name": "D23",
-      "to_name": "S43",
-      "reason": "リケッチア症: 手掌足底の紫斑(RMSF 50-80%)"
-    },
-    {
       "from": "D52",
       "to": "S44",
       "from_name": "D52",
@@ -14979,153 +14718,6 @@
       "reason": "HLH: 体重減少(30-50%)"
     },
     {
-      "from": "D109",
-      "to": "E01",
-      "from_name": "cryptococcosis",
-      "to_name": "E01",
-      "reason": "クリプト: 発熱(60-80%), 通常中等度"
-    },
-    {
-      "from": "D109",
-      "to": "S05",
-      "from_name": "cryptococcosis",
-      "to_name": "S05",
-      "reason": "クリプト髄膜炎: 頭痛(80-90%, 最多の症状)"
-    },
-    {
-      "from": "D109",
-      "to": "E16",
-      "from_name": "cryptococcosis",
-      "to_name": "E16",
-      "reason": "クリプト髄膜炎: 意識障害(30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "E06",
-      "from_name": "cryptococcosis",
-      "to_name": "E06",
-      "reason": "クリプト髄膜炎: 項部硬直(30-50%, HIV患者では少ない)"
-    },
-    {
-      "from": "D109",
-      "to": "S13",
-      "from_name": "cryptococcosis",
-      "to_name": "S13",
-      "reason": "クリプト髄膜炎: 嘔気嘔吐(40-60%)"
-    },
-    {
-      "from": "D109",
-      "to": "S01",
-      "from_name": "cryptococcosis",
-      "to_name": "S01",
-      "reason": "クリプト肺型: 咳嗽(30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "L04",
-      "from_name": "cryptococcosis",
-      "to_name": "L04",
-      "reason": "クリプト肺型: 胸部X線異常(結節影/浸潤影30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "S07",
-      "from_name": "cryptococcosis",
-      "to_name": "S07",
-      "reason": "クリプト: 倦怠感(70-80%)"
-    },
-    {
-      "from": "D109",
-      "to": "S17",
-      "from_name": "cryptococcosis",
-      "to_name": "S17",
-      "reason": "クリプト: 体重減少(30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "L01",
-      "from_name": "cryptococcosis",
-      "to_name": "L01",
-      "reason": "クリプト: WBC正常~低下(免疫不全背景)"
-    },
-    {
-      "from": "D109",
-      "to": "L02",
-      "from_name": "cryptococcosis",
-      "to_name": "L02",
-      "reason": "クリプト: CRP軽度~中等度上昇"
-    },
-    {
-      "from": "D109",
-      "to": "L45",
-      "from_name": "cryptococcosis",
-      "to_name": "L45",
-      "reason": "クリプト髄膜炎: 髄液異常(リンパ球優位, 蛋白↑, 糖↓)"
-    },
-    {
-      "from": "D109",
-      "to": "T01",
-      "from_name": "cryptococcosis",
-      "to_name": "T01",
-      "reason": "クリプト: 亜急性~慢性経過(数日~数週)"
-    },
-    {
-      "from": "D109",
-      "to": "T02",
-      "from_name": "cryptococcosis",
-      "to_name": "T02",
-      "reason": "クリプト: 緩徐発症"
-    },
-    {
-      "from": "D109",
-      "to": "L11",
-      "from_name": "cryptococcosis",
-      "to_name": "L11",
-      "reason": "クリプト: 肝酵素軽度上昇(播種性で20-30%)"
-    },
-    {
-      "from": "D109",
-      "to": "L28",
-      "from_name": "cryptococcosis",
-      "to_name": "L28",
-      "reason": "クリプト: ESR上昇(50-70%)"
-    },
-    {
-      "from": "D109",
-      "to": "E04",
-      "from_name": "cryptococcosis",
-      "to_name": "E04",
-      "reason": "クリプト肺型: 頻呼吸(30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "E05",
-      "from_name": "cryptococcosis",
-      "to_name": "E05",
-      "reason": "クリプト肺型: 低酸素血症(30-50%, 重症肺型)"
-    },
-    {
-      "from": "D109",
-      "to": "S04",
-      "from_name": "cryptococcosis",
-      "to_name": "S04",
-      "reason": "クリプト肺型: 呼吸困難(30-50%)"
-    },
-    {
-      "from": "D109",
-      "to": "S46",
-      "from_name": "cryptococcosis",
-      "to_name": "S46",
-      "reason": "クリプト: 食欲不振(70-80%)"
-    },
-    {
-      "from": "D109",
-      "to": "L16",
-      "from_name": "cryptococcosis",
-      "to_name": "L16",
-      "reason": "クリプト: LDH上昇(50-70%, 組織破壊)"
-    },
-    {
       "from": "D105",
       "to": "L28",
       "from_name": "parvovirus_B19",
@@ -15138,174 +14730,6 @@
       "from_name": "parvovirus_B19",
       "to_name": "heart_rate",
       "reason": "パルボB19: 発熱時頻脈(PMC6482719:HR112)"
-    },
-    {
-      "from": "D109",
-      "to": "E02",
-      "from_name": "cryptococcosis",
-      "to_name": "heart_rate",
-      "reason": "クリプト: 重症感染時頻脈(PMC10598787:HR108)"
-    },
-    {
-      "from": "D110",
-      "to": "E01",
-      "from_name": "toxoplasmosis",
-      "to_name": "E01",
-      "reason": "トキソプラズマ: 発熱(免疫正常20-40%, 脳炎60-80%), 中等度"
-    },
-    {
-      "from": "D110",
-      "to": "S05",
-      "from_name": "toxoplasmosis",
-      "to_name": "S05",
-      "reason": "トキソプラズマ脳炎: 頭痛(50-80%), リンパ節型でも20-30%"
-    },
-    {
-      "from": "D110",
-      "to": "E13",
-      "from_name": "toxoplasmosis",
-      "to_name": "E13",
-      "reason": "トキソプラズマ: 頸部リンパ節腫脹(免疫正常80-90%), 全身性もあり"
-    },
-    {
-      "from": "D110",
-      "to": "S07",
-      "from_name": "toxoplasmosis",
-      "to_name": "S07",
-      "reason": "トキソプラズマ: 倦怠感(40-70%)"
-    },
-    {
-      "from": "D110",
-      "to": "S06",
-      "from_name": "toxoplasmosis",
-      "to_name": "S06",
-      "reason": "トキソプラズマ: 筋肉痛(20-40%)"
-    },
-    {
-      "from": "D110",
-      "to": "E16",
-      "from_name": "toxoplasmosis",
-      "to_name": "E16",
-      "reason": "トキソプラズマ脳炎: 意識障害(30-60%)"
-    },
-    {
-      "from": "D110",
-      "to": "S42",
-      "from_name": "toxoplasmosis",
-      "to_name": "S42",
-      "reason": "トキソプラズマ脳炎: 痙攣(20-30%)"
-    },
-    {
-      "from": "D110",
-      "to": "L46",
-      "from_name": "toxoplasmosis",
-      "to_name": "L46",
-      "reason": "トキソプラズマ脳炎: MRI環状増強病変(80-90%, 基底核に多発)"
-    },
-    {
-      "from": "D110",
-      "to": "E35",
-      "from_name": "toxoplasmosis",
-      "to_name": "E35",
-      "reason": "トキソプラズマ: 脈絡網膜炎(10-20%) → ぶどう膜炎"
-    },
-    {
-      "from": "D110",
-      "to": "L01",
-      "from_name": "toxoplasmosis",
-      "to_name": "L01",
-      "reason": "トキソプラズマ: WBC通常正常(免疫不全背景で低下もあり)"
-    },
-    {
-      "from": "D110",
-      "to": "L02",
-      "from_name": "toxoplasmosis",
-      "to_name": "L02",
-      "reason": "トキソプラズマ: CRP軽度~中等度上昇"
-    },
-    {
-      "from": "D110",
-      "to": "L11",
-      "from_name": "toxoplasmosis",
-      "to_name": "L11",
-      "reason": "トキソプラズマ: 肝酵素軽度上昇(播種性15-25%)"
-    },
-    {
-      "from": "D110",
-      "to": "E34",
-      "from_name": "toxoplasmosis",
-      "to_name": "E34",
-      "reason": "トキソプラズマ: 肝腫大(播種性10-20%)"
-    },
-    {
-      "from": "D110",
-      "to": "E14",
-      "from_name": "toxoplasmosis",
-      "to_name": "E14",
-      "reason": "トキソプラズマ: 脾腫(リンパ節型/播種性15-30%)"
-    },
-    {
-      "from": "D110",
-      "to": "T01",
-      "from_name": "toxoplasmosis",
-      "to_name": "T01",
-      "reason": "トキソプラズマ: 亜急性経過(1-3週)"
-    },
-    {
-      "from": "D110",
-      "to": "T02",
-      "from_name": "toxoplasmosis",
-      "to_name": "T02",
-      "reason": "トキソプラズマ: 緩徐発症"
-    },
-    {
-      "from": "D110",
-      "to": "L28",
-      "from_name": "toxoplasmosis",
-      "to_name": "L28",
-      "reason": "トキソプラズマ: ESR軽度上昇"
-    },
-    {
-      "from": "D110",
-      "to": "S13",
-      "from_name": "toxoplasmosis",
-      "to_name": "S13",
-      "reason": "トキソプラズマ脳炎: 嘔気嘔吐(頭蓋内圧亢進20-30%)"
-    },
-    {
-      "from": "R25",
-      "to": "D110",
-      "from_name": "R25",
-      "to_name": "toxoplasmosis",
-      "reason": "HIV陽性: トキソプラズマ脳炎の最大リスク因子(CD4<100で好発)"
-    },
-    {
-      "from": "R05",
-      "to": "D110",
-      "from_name": "R05",
-      "to_name": "toxoplasmosis",
-      "reason": "免疫不全(ステロイド/化学療法等): トキソプラズマ発症リスク上昇"
-    },
-    {
-      "from": "D110",
-      "to": "S01",
-      "from_name": "toxoplasmosis",
-      "to_name": "S01",
-      "reason": "トキソプラズマ肺型: 咳嗽(30-50%), 乾性咳嗽主体"
-    },
-    {
-      "from": "D110",
-      "to": "S04",
-      "from_name": "toxoplasmosis",
-      "to_name": "S04",
-      "reason": "トキソプラズマ肺型: 呼吸困難(20-40%), 重症例でat rest"
-    },
-    {
-      "from": "D110",
-      "to": "L04",
-      "from_name": "toxoplasmosis",
-      "to_name": "L04",
-      "reason": "トキソプラズマ肺型: 胸部X線異常(両側浸潤影/結節影30-50%)"
     },
     {
       "from": "D111",
@@ -16041,13 +15465,6 @@
       "from_name": "D64",
       "to_name": "E12",
       "reason": "反応性関節炎: keratoderma blennorrhagicum/circinate balanitis(10-30%)"
-    },
-    {
-      "from": "D110",
-      "to": "L14",
-      "from_name": "toxoplasmosis",
-      "to_name": "L14",
-      "reason": "トキソプラズマ: リンパ球優位(免疫正常でリンパ球増多, 免疫不全で血小板減少もあり)"
     },
     {
       "from": "D116",
@@ -19109,13 +18526,6 @@
       "reason": "脳膿瘍: 局所神経症状(50-65%)"
     },
     {
-      "from": "D110",
-      "to": "S52",
-      "from_name": "D110",
-      "to_name": "S52",
-      "reason": "トキソプラズマ脳炎: 局所神経症状(50-70%)"
-    },
-    {
       "from": "D13",
       "to": "S53",
       "from_name": "D13",
@@ -22091,13 +21501,6 @@
       "reason": "CO中毒: 構音障害"
     },
     {
-      "from": "D110",
-      "to": "E18",
-      "from_name": "toxoplasmosis",
-      "to_name": "E18",
-      "reason": "トキソプラズマ: 黄疸"
-    },
-    {
       "from": "D144",
       "to": "E16",
       "from_name": "GBS",
@@ -22712,13 +22115,6 @@
       "from_name": "listeria_meningitis",
       "to_name": "S09",
       "reason": "リステリア: 悪寒戦慄(菌血症)"
-    },
-    {
-      "from": "D23",
-      "to": "E05",
-      "from_name": "rickettsia",
-      "to_name": "E05",
-      "reason": "リケッチア: 低酸素(重症肺炎合併時)"
     },
     {
       "from": "D92",
@@ -26900,13 +26296,6 @@
       "reason": "胃腸炎: 血培陰性(ウイルス性)"
     },
     {
-      "from": "D110",
-      "to": "L09",
-      "from_name": "toxoplasmosis",
-      "to_name": "L09",
-      "reason": "トキソプラズマ: 血培陰性"
-    },
-    {
       "from": "D114",
       "to": "L09",
       "from_name": "histoplasmosis",
@@ -28305,20 +27694,6 @@
       "from_name": "odontogenic",
       "to_name": "T02",
       "reason": "歯原性感染: 急性"
-    },
-    {
-      "from": "D110",
-      "to": "L45",
-      "from_name": "toxoplasmosis",
-      "to_name": "L45",
-      "reason": "トキソプラズマ: CSF(リンパ球優位)"
-    },
-    {
-      "from": "D110",
-      "to": "E06",
-      "from_name": "toxoplasmosis",
-      "to_name": "E06",
-      "reason": "トキソプラズマ: 項部硬直(脳炎)"
     },
     {
       "from": "D121",
@@ -35909,13 +35284,6 @@
       "reason": "NPH: 髄液圧正常~軽度上昇(定義的)"
     },
     {
-      "from": "D109",
-      "to": "L59",
-      "from_name": "cryptococcosis",
-      "to_name": "L59",
-      "reason": "クリプトコッカス: 髄液圧上昇(60-70%)"
-    },
-    {
       "from": "D347",
       "to": "L60",
       "from_name": "neuroblastoma",
@@ -37461,13 +36829,6 @@
       "from_name": "TB_meningitis",
       "to_name": "S60",
       "reason": "結核性髄膜炎: 亜急性進行性頭痛"
-    },
-    {
-      "from": "D109",
-      "to": "S60",
-      "from_name": "crypto",
-      "to_name": "S60",
-      "reason": "クリプトコッカス髄膜炎: 亜急性進行性頭痛"
     },
     {
       "from": "D118",
@@ -41593,30 +40954,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D23",
-      "to": "S84",
-      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
-      "from": "D109",
-      "to": "S84",
-      "from_name": "クリプトコッカス症（髄膜炎/肺）",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: クリプトコッカス症（髄膜炎/肺） → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
-      "from": "D110",
-      "to": "S84",
-      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D113",
       "to": "S84",
       "from_name": "播種性ヒストプラズマ症",
@@ -42169,14 +41506,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D23",
-      "to": "S86",
-      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
-      "to_name": "下痢の性状",
-      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 下痢の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D03",
       "to": "S86",
       "from_name": "新型コロナウイルス感染症",
@@ -42489,14 +41818,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D23",
-      "to": "S87",
-      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
-      "to_name": "皮膚症状の種類",
-      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 皮膚症状の種類",
-      "onset_day_range": null
-    },
-    {
       "from": "D57",
       "to": "S87",
       "from_name": "壊死性筋膜炎",
@@ -42750,14 +42071,6 @@
       "from_name": "肺結核",
       "to_name": "腹痛の部位",
       "reason": "CPT_NO_EDGE sync: 肺結核 → 腹痛の部位",
-      "onset_day_range": null
-    },
-    {
-      "from": "D23",
-      "to": "S89",
-      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
-      "to_name": "腹痛の部位",
-      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 腹痛の部位",
       "onset_day_range": null
     },
     {
@@ -43449,14 +42762,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D110",
-      "to": "E46",
-      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
-      "to_name": "リンパ節の部位",
-      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → リンパ節の部位",
-      "onset_day_range": null
-    },
-    {
       "from": "D113",
       "to": "E46",
       "from_name": "播種性ヒストプラズマ症",
@@ -43550,14 +42855,6 @@
       "from_name": "伝染性単核球症",
       "to_name": "関節痛の分布",
       "reason": "CPT_NO_EDGE sync: 伝染性単核球症 → 関節痛の分布",
-      "onset_day_range": null
-    },
-    {
-      "from": "D23",
-      "to": "S90",
-      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
-      "to_name": "関節痛の分布",
-      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 関節痛の分布",
       "onset_day_range": null
     },
     {
@@ -44006,14 +43303,6 @@
       "from_name": "脳膿瘍",
       "to_name": "局所神経症状の側性",
       "reason": "CPT_NO_EDGE sync: 脳膿瘍 → 局所神経症状の側性",
-      "onset_day_range": null
-    },
-    {
-      "from": "D110",
-      "to": "S93",
-      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
-      "to_name": "局所神経症状の側性",
-      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 局所神経症状の側性",
       "onset_day_range": null
     },
     {
@@ -44566,14 +43855,6 @@
       "from_name": "風疹",
       "to_name": "眼所見の種類",
       "reason": "CPT_NO_EDGE sync: 風疹 → 眼所見の種類",
-      "onset_day_range": null
-    },
-    {
-      "from": "D110",
-      "to": "E48",
-      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
-      "to_name": "眼所見の種類",
-      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 眼所見の種類",
       "onset_day_range": null
     },
     {
@@ -53653,6 +52934,997 @@
       "from": "D354",
       "to": "S09",
       "reason": "HL: 悪寒(B症状時, 20-30%)"
+    },
+    {
+      "from": "R01",
+      "to": "D109",
+      "reason": "クリプトコッカス髄膜炎。免疫不全者",
+      "from_name": "age_group",
+      "to_name": "D109"
+    },
+    {
+      "from": "R02",
+      "to": "D109",
+      "reason": "クリプトコッカス髄膜炎。やや男性多い",
+      "from_name": "sex",
+      "to_name": "D109"
+    },
+    {
+      "from": "D109",
+      "to": "E01",
+      "reason": "クリプト髄膜炎: 発熱(70-80%)",
+      "from_name": "crypto_mening",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D109",
+      "to": "S05",
+      "reason": "クリプト髄膜炎: 頭痛(主症状, 70-90%)",
+      "from_name": "crypto_mening",
+      "to_name": "headache"
+    },
+    {
+      "from": "D109",
+      "to": "S60",
+      "reason": "クリプト髄膜炎: 頭痛パターン(progressive)",
+      "from_name": "crypto_mening",
+      "to_name": "S60"
+    },
+    {
+      "from": "D109",
+      "to": "E16",
+      "reason": "クリプト髄膜炎: 意識障害(30-50%)",
+      "from_name": "crypto_mening",
+      "to_name": "consciousness"
+    },
+    {
+      "from": "D109",
+      "to": "E06",
+      "reason": "クリプト髄膜炎: 髄膜刺激徴候(30-40%)",
+      "from_name": "crypto_mening",
+      "to_name": "meningeal_signs"
+    },
+    {
+      "from": "D109",
+      "to": "S13",
+      "reason": "クリプト髄膜炎: 嘔吐(40-50%)",
+      "from_name": "crypto_mening",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D109",
+      "to": "S07",
+      "reason": "クリプト髄膜炎: 倦怠感",
+      "from_name": "crypto_mening",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D109",
+      "to": "S17",
+      "reason": "クリプト髄膜炎: 体重減少(慢性経過)",
+      "from_name": "crypto_mening",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D109",
+      "to": "S46",
+      "reason": "クリプト髄膜炎: 食欲不振",
+      "from_name": "crypto_mening",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D109",
+      "to": "L45",
+      "reason": "クリプト髄膜炎: CSF(真菌パターン,墨汁染色+)",
+      "from_name": "crypto_mening",
+      "to_name": "CSF"
+    },
+    {
+      "from": "D109",
+      "to": "L59",
+      "reason": "クリプト髄膜炎: 髄圧上昇",
+      "from_name": "crypto_mening",
+      "to_name": "CSF_pressure"
+    },
+    {
+      "from": "D109",
+      "to": "L01",
+      "reason": "クリプト髄膜炎: WBC(免疫不全で低下〜正常)",
+      "from_name": "crypto_mening",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D109",
+      "to": "L02",
+      "reason": "クリプト髄膜炎: CRP上昇",
+      "from_name": "crypto_mening",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D109",
+      "to": "L28",
+      "reason": "クリプト髄膜炎: ESR上昇",
+      "from_name": "crypto_mening",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D109",
+      "to": "L16",
+      "reason": "クリプト髄膜炎: LDH上昇",
+      "from_name": "crypto_mening",
+      "to_name": "LDH"
+    },
+    {
+      "from": "D109",
+      "to": "T01",
+      "reason": "クリプト髄膜炎: 亜急性(1-4週)",
+      "from_name": "crypto_mening",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D109",
+      "to": "T02",
+      "reason": "クリプト髄膜炎: 亜急性〜慢性発症",
+      "from_name": "crypto_mening",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D109",
+      "to": "E02",
+      "reason": "クリプト髄膜炎: 頻脈",
+      "from_name": "crypto_mening",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "R01",
+      "to": "D365",
+      "reason": "肺クリプト。免疫不全者",
+      "from_name": "age_group",
+      "to_name": "D365"
+    },
+    {
+      "from": "R02",
+      "to": "D365",
+      "reason": "肺クリプト。やや男性多い",
+      "from_name": "sex",
+      "to_name": "D365"
+    },
+    {
+      "from": "D365",
+      "to": "E01",
+      "reason": "肺クリプト: 発熱(50-60%)",
+      "from_name": "pulm_crypto",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D365",
+      "to": "S01",
+      "reason": "肺クリプト: 咳嗽(50-70%)",
+      "from_name": "pulm_crypto",
+      "to_name": "cough"
+    },
+    {
+      "from": "D365",
+      "to": "S84",
+      "reason": "肺クリプト: 乾性咳嗽主体",
+      "from_name": "pulm_crypto",
+      "to_name": "S84"
+    },
+    {
+      "from": "D365",
+      "to": "S04",
+      "reason": "肺クリプト: 呼吸困難(30-50%)",
+      "from_name": "pulm_crypto",
+      "to_name": "dyspnea"
+    },
+    {
+      "from": "D365",
+      "to": "L04",
+      "reason": "肺クリプト: CXR(結節/浸潤/空洞)",
+      "from_name": "pulm_crypto",
+      "to_name": "chest_xray"
+    },
+    {
+      "from": "D365",
+      "to": "E04",
+      "reason": "肺クリプト: 頻呼吸",
+      "from_name": "pulm_crypto",
+      "to_name": "resp_rate"
+    },
+    {
+      "from": "D365",
+      "to": "E05",
+      "reason": "肺クリプト: 低酸素",
+      "from_name": "pulm_crypto",
+      "to_name": "SpO2"
+    },
+    {
+      "from": "D365",
+      "to": "S07",
+      "reason": "肺クリプト: 倦怠感",
+      "from_name": "pulm_crypto",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D365",
+      "to": "S17",
+      "reason": "肺クリプト: 体重減少",
+      "from_name": "pulm_crypto",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D365",
+      "to": "L01",
+      "reason": "肺クリプト: WBC",
+      "from_name": "pulm_crypto",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D365",
+      "to": "L02",
+      "reason": "肺クリプト: CRP",
+      "from_name": "pulm_crypto",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D365",
+      "to": "L28",
+      "reason": "肺クリプト: ESR",
+      "from_name": "pulm_crypto",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D365",
+      "to": "T01",
+      "reason": "肺クリプト: 亜急性〜慢性",
+      "from_name": "pulm_crypto",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D365",
+      "to": "T02",
+      "reason": "肺クリプト: 亜急性〜慢性発症",
+      "from_name": "pulm_crypto",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "R01",
+      "to": "D110",
+      "reason": "トキソ脳炎。HIV CD4<100",
+      "from_name": "age_group",
+      "to_name": "D110"
+    },
+    {
+      "from": "R02",
+      "to": "D110",
+      "reason": "トキソ脳炎。やや男性多い",
+      "from_name": "sex",
+      "to_name": "D110"
+    },
+    {
+      "from": "R25",
+      "to": "D110",
+      "reason": "HIV陽性がトキソ脳炎の最大リスク",
+      "from_name": "HIV",
+      "to_name": "D110"
+    },
+    {
+      "from": "R05",
+      "to": "D110",
+      "reason": "免疫抑制",
+      "from_name": "immunosuppression",
+      "to_name": "D110"
+    },
+    {
+      "from": "D110",
+      "to": "E01",
+      "reason": "トキソ脳炎: 発熱(50-70%)",
+      "from_name": "toxo_enceph",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D110",
+      "to": "S05",
+      "reason": "トキソ脳炎: 頭痛(50-60%)",
+      "from_name": "toxo_enceph",
+      "to_name": "headache"
+    },
+    {
+      "from": "D110",
+      "to": "E16",
+      "reason": "トキソ脳炎: 意識障害(40-50%)",
+      "from_name": "toxo_enceph",
+      "to_name": "consciousness"
+    },
+    {
+      "from": "D110",
+      "to": "S42",
+      "reason": "トキソ脳炎: 痙攣(20-30%)",
+      "from_name": "toxo_enceph",
+      "to_name": "seizure"
+    },
+    {
+      "from": "D110",
+      "to": "S52",
+      "reason": "トキソ脳炎: 局所神経症状(60-70%)",
+      "from_name": "toxo_enceph",
+      "to_name": "focal_neuro"
+    },
+    {
+      "from": "D110",
+      "to": "S93",
+      "reason": "トキソ脳炎: 局所症状の側性",
+      "from_name": "toxo_enceph",
+      "to_name": "S93"
+    },
+    {
+      "from": "D110",
+      "to": "E06",
+      "reason": "トキソ脳炎: 髄膜刺激(30%)",
+      "from_name": "toxo_enceph",
+      "to_name": "meningeal"
+    },
+    {
+      "from": "D110",
+      "to": "L46",
+      "reason": "トキソ脳炎: MRIリング状増強",
+      "from_name": "toxo_enceph",
+      "to_name": "MRI"
+    },
+    {
+      "from": "D110",
+      "to": "L45",
+      "reason": "トキソ脳炎: CSF(ウイルスパターン)",
+      "from_name": "toxo_enceph",
+      "to_name": "CSF"
+    },
+    {
+      "from": "D110",
+      "to": "S07",
+      "reason": "トキソ脳炎: 倦怠感",
+      "from_name": "toxo_enceph",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D110",
+      "to": "S13",
+      "reason": "トキソ脳炎: 嘔吐",
+      "from_name": "toxo_enceph",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D110",
+      "to": "L01",
+      "reason": "トキソ脳炎: WBC",
+      "from_name": "toxo_enceph",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D110",
+      "to": "L02",
+      "reason": "トキソ脳炎: CRP",
+      "from_name": "toxo_enceph",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D110",
+      "to": "L28",
+      "reason": "トキソ脳炎: ESR",
+      "from_name": "toxo_enceph",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D110",
+      "to": "T01",
+      "reason": "トキソ脳炎: 亜急性(1-3週)",
+      "from_name": "toxo_enceph",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D110",
+      "to": "T02",
+      "reason": "トキソ脳炎: 亜急性発症",
+      "from_name": "toxo_enceph",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "R01",
+      "to": "D366",
+      "reason": "トキソリンパ節炎。若年成人",
+      "from_name": "age_group",
+      "to_name": "D366"
+    },
+    {
+      "from": "R02",
+      "to": "D366",
+      "reason": "トキソリンパ節炎。男女差少ない",
+      "from_name": "sex",
+      "to_name": "D366"
+    },
+    {
+      "from": "D366",
+      "to": "E01",
+      "reason": "トキソリンパ節炎: 微熱(50-60%)",
+      "from_name": "toxo_lymph",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D366",
+      "to": "E13",
+      "reason": "トキソリンパ節炎: リンパ節腫脹(主症状)",
+      "from_name": "toxo_lymph",
+      "to_name": "lymphadenopathy"
+    },
+    {
+      "from": "D366",
+      "to": "E46",
+      "reason": "トキソリンパ節炎: 頸部主体",
+      "from_name": "toxo_lymph",
+      "to_name": "E46"
+    },
+    {
+      "from": "D366",
+      "to": "E34",
+      "reason": "トキソリンパ節炎: 肝脾腫(20-30%)",
+      "from_name": "toxo_lymph",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D366",
+      "to": "S07",
+      "reason": "トキソリンパ節炎: 倦怠感",
+      "from_name": "toxo_lymph",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D366",
+      "to": "S06",
+      "reason": "トキソリンパ節炎: 筋肉痛",
+      "from_name": "toxo_lymph",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D366",
+      "to": "S01",
+      "reason": "トキソリンパ節炎: 咳嗽(肺浸潤時)",
+      "from_name": "toxo_lymph",
+      "to_name": "cough"
+    },
+    {
+      "from": "D366",
+      "to": "S84",
+      "reason": "トキソリンパ節炎: 乾性咳嗽",
+      "from_name": "toxo_lymph",
+      "to_name": "S84"
+    },
+    {
+      "from": "D366",
+      "to": "L04",
+      "reason": "トキソリンパ節炎: CXR(びまん性浸潤, 20%)",
+      "from_name": "toxo_lymph",
+      "to_name": "chest_xray"
+    },
+    {
+      "from": "D366",
+      "to": "L01",
+      "reason": "トキソリンパ節炎: WBC(正常〜リンパ球優位)",
+      "from_name": "toxo_lymph",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D366",
+      "to": "L02",
+      "reason": "トキソリンパ節炎: CRP軽度",
+      "from_name": "toxo_lymph",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D366",
+      "to": "L11",
+      "reason": "トキソリンパ節炎: 肝酵素(肝浸潤時)",
+      "from_name": "toxo_lymph",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D366",
+      "to": "L14",
+      "reason": "トキソリンパ節炎: リンパ球優位",
+      "from_name": "toxo_lymph",
+      "to_name": "CBC_diff"
+    },
+    {
+      "from": "D366",
+      "to": "L09",
+      "reason": "トキソリンパ節炎: 血培陰性",
+      "from_name": "toxo_lymph",
+      "to_name": "blood_culture"
+    },
+    {
+      "from": "D366",
+      "to": "L28",
+      "reason": "トキソリンパ節炎: ESR",
+      "from_name": "toxo_lymph",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D366",
+      "to": "E18",
+      "reason": "トキソリンパ節炎: 黄疸(稀)",
+      "from_name": "toxo_lymph",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D366",
+      "to": "E35",
+      "reason": "トキソリンパ節炎: ぶどう膜炎(眼トキソ, 10-20%)",
+      "from_name": "toxo_lymph",
+      "to_name": "uveitis"
+    },
+    {
+      "from": "D366",
+      "to": "E48",
+      "reason": "トキソリンパ節炎: 眼所見",
+      "from_name": "toxo_lymph",
+      "to_name": "E48"
+    },
+    {
+      "from": "D366",
+      "to": "T01",
+      "reason": "トキソリンパ節炎: 亜急性〜慢性",
+      "from_name": "toxo_lymph",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D366",
+      "to": "T02",
+      "reason": "トキソリンパ節炎: 亜急性発症",
+      "from_name": "toxo_lymph",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "R01",
+      "to": "D23",
+      "reason": "ツツガムシ病。全年齢",
+      "from_name": "age_group",
+      "to_name": "D23"
+    },
+    {
+      "from": "R02",
+      "to": "D23",
+      "reason": "ツツガムシ病。男女差少ない",
+      "from_name": "sex",
+      "to_name": "D23"
+    },
+    {
+      "from": "R06",
+      "to": "D23",
+      "reason": "ツツガムシ病。国内山間部",
+      "from_name": "travel",
+      "to_name": "D23"
+    },
+    {
+      "from": "R19",
+      "to": "D23",
+      "reason": "ツツガムシ病。秋(9-11月)に多い",
+      "from_name": "season",
+      "to_name": "D23"
+    },
+    {
+      "from": "R30",
+      "to": "D23",
+      "reason": "ツツガムシ病。野外活動",
+      "from_name": "animal",
+      "to_name": "D23"
+    },
+    {
+      "from": "D23",
+      "to": "E01",
+      "reason": "ツツガムシ病: E01"
+    },
+    {
+      "from": "D23",
+      "to": "S05",
+      "reason": "ツツガムシ病: S05"
+    },
+    {
+      "from": "D23",
+      "to": "S06",
+      "reason": "ツツガムシ病: S06"
+    },
+    {
+      "from": "D23",
+      "to": "S07",
+      "reason": "ツツガムシ病: S07"
+    },
+    {
+      "from": "D23",
+      "to": "S08",
+      "reason": "ツツガムシ病: S08"
+    },
+    {
+      "from": "D23",
+      "to": "S09",
+      "reason": "ツツガムシ病: S09"
+    },
+    {
+      "from": "D23",
+      "to": "S18",
+      "reason": "ツツガムシ病: S18"
+    },
+    {
+      "from": "D23",
+      "to": "E12",
+      "reason": "ツツガムシ病: E12"
+    },
+    {
+      "from": "D23",
+      "to": "E17",
+      "reason": "ツツガムシ病: E17"
+    },
+    {
+      "from": "D23",
+      "to": "L01",
+      "reason": "ツツガムシ病: L01"
+    },
+    {
+      "from": "D23",
+      "to": "L02",
+      "reason": "ツツガムシ病: L02"
+    },
+    {
+      "from": "D23",
+      "to": "L11",
+      "reason": "ツツガムシ病: L11"
+    },
+    {
+      "from": "D23",
+      "to": "L14",
+      "reason": "ツツガムシ病: L14"
+    },
+    {
+      "from": "D23",
+      "to": "L28",
+      "reason": "ツツガムシ病: L28"
+    },
+    {
+      "from": "D23",
+      "to": "T01",
+      "reason": "ツツガムシ病: T01"
+    },
+    {
+      "from": "D23",
+      "to": "T02",
+      "reason": "ツツガムシ病: T02"
+    },
+    {
+      "from": "D23",
+      "to": "E02",
+      "reason": "ツツガムシ病: E02"
+    },
+    {
+      "from": "D23",
+      "to": "S43",
+      "reason": "ツツガムシ病: S43"
+    },
+    {
+      "from": "D23",
+      "to": "E05",
+      "reason": "ツツガムシ病: E05"
+    },
+    {
+      "from": "D23",
+      "to": "S12",
+      "reason": "ツツガムシ病: S12"
+    },
+    {
+      "from": "D23",
+      "to": "S84",
+      "reason": "ツツガムシ病: S84"
+    },
+    {
+      "from": "D23",
+      "to": "S86",
+      "reason": "ツツガムシ病: S86"
+    },
+    {
+      "from": "D23",
+      "to": "S87",
+      "reason": "ツツガムシ病: S87"
+    },
+    {
+      "from": "D23",
+      "to": "S89",
+      "reason": "ツツガムシ病: S89"
+    },
+    {
+      "from": "D23",
+      "to": "S90",
+      "reason": "ツツガムシ病: S90"
+    },
+    {
+      "from": "D23",
+      "to": "E14",
+      "reason": "ツツガムシ病: E14"
+    },
+    {
+      "from": "D23",
+      "to": "E16",
+      "reason": "ツツガムシ病: E16"
+    },
+    {
+      "from": "D23",
+      "to": "E18",
+      "reason": "ツツガムシ病: E18"
+    },
+    {
+      "from": "D23",
+      "to": "E25",
+      "reason": "ツツガムシ病: E25"
+    },
+    {
+      "from": "D23",
+      "to": "E34",
+      "reason": "ツツガムシ病: E34"
+    },
+    {
+      "from": "D23",
+      "to": "L44",
+      "reason": "ツツガムシ病: L44"
+    },
+    {
+      "from": "D23",
+      "to": "S01",
+      "reason": "ツツガムシ病: S01"
+    },
+    {
+      "from": "D23",
+      "to": "S14",
+      "reason": "ツツガムシ病: S14"
+    },
+    {
+      "from": "R01",
+      "to": "D367",
+      "reason": "紅斑熱群。全年齢",
+      "from_name": "age_group",
+      "to_name": "D367"
+    },
+    {
+      "from": "R02",
+      "to": "D367",
+      "reason": "紅斑熱群。やや男性多い",
+      "from_name": "sex",
+      "to_name": "D367"
+    },
+    {
+      "from": "R06",
+      "to": "D367",
+      "reason": "紅斑熱群。国内/渡航",
+      "from_name": "travel",
+      "to_name": "D367"
+    },
+    {
+      "from": "R19",
+      "to": "D367",
+      "reason": "紅斑熱群。春〜秋(4-10月)",
+      "from_name": "season",
+      "to_name": "D367"
+    },
+    {
+      "from": "R30",
+      "to": "D367",
+      "reason": "紅斑熱群。野外活動/マダニ",
+      "from_name": "animal",
+      "to_name": "D367"
+    },
+    {
+      "from": "D367",
+      "to": "E01",
+      "reason": "紅斑熱群: E01"
+    },
+    {
+      "from": "D367",
+      "to": "S05",
+      "reason": "紅斑熱群: S05"
+    },
+    {
+      "from": "D367",
+      "to": "S06",
+      "reason": "紅斑熱群: S06"
+    },
+    {
+      "from": "D367",
+      "to": "S07",
+      "reason": "紅斑熱群: S07"
+    },
+    {
+      "from": "D367",
+      "to": "S08",
+      "reason": "紅斑熱群: S08"
+    },
+    {
+      "from": "D367",
+      "to": "S09",
+      "reason": "紅斑熱群: S09"
+    },
+    {
+      "from": "D367",
+      "to": "S18",
+      "reason": "紅斑熱群: S18"
+    },
+    {
+      "from": "D367",
+      "to": "E12",
+      "reason": "紅斑熱群: E12"
+    },
+    {
+      "from": "D367",
+      "to": "E17",
+      "reason": "紅斑熱群: E17"
+    },
+    {
+      "from": "D367",
+      "to": "L01",
+      "reason": "紅斑熱群: L01"
+    },
+    {
+      "from": "D367",
+      "to": "L02",
+      "reason": "紅斑熱群: L02"
+    },
+    {
+      "from": "D367",
+      "to": "L11",
+      "reason": "紅斑熱群: L11"
+    },
+    {
+      "from": "D367",
+      "to": "L14",
+      "reason": "紅斑熱群: L14"
+    },
+    {
+      "from": "D367",
+      "to": "L28",
+      "reason": "紅斑熱群: L28"
+    },
+    {
+      "from": "D367",
+      "to": "T01",
+      "reason": "紅斑熱群: T01"
+    },
+    {
+      "from": "D367",
+      "to": "T02",
+      "reason": "紅斑熱群: T02"
+    },
+    {
+      "from": "D367",
+      "to": "E02",
+      "reason": "紅斑熱群: E02"
+    },
+    {
+      "from": "D367",
+      "to": "S43",
+      "reason": "紅斑熱群: S43"
+    },
+    {
+      "from": "D367",
+      "to": "E05",
+      "reason": "紅斑熱群: E05"
+    },
+    {
+      "from": "D367",
+      "to": "S12",
+      "reason": "紅斑熱群: S12"
+    },
+    {
+      "from": "D367",
+      "to": "S84",
+      "reason": "紅斑熱群: S84"
+    },
+    {
+      "from": "D367",
+      "to": "S86",
+      "reason": "紅斑熱群: S86"
+    },
+    {
+      "from": "D367",
+      "to": "S87",
+      "reason": "紅斑熱群: S87"
+    },
+    {
+      "from": "D367",
+      "to": "S89",
+      "reason": "紅斑熱群: S89"
+    },
+    {
+      "from": "D367",
+      "to": "S90",
+      "reason": "紅斑熱群: S90"
+    },
+    {
+      "from": "D367",
+      "to": "E14",
+      "reason": "紅斑熱群: E14"
+    },
+    {
+      "from": "D367",
+      "to": "E16",
+      "reason": "紅斑熱群: E16"
+    },
+    {
+      "from": "D367",
+      "to": "E18",
+      "reason": "紅斑熱群: E18"
+    },
+    {
+      "from": "D367",
+      "to": "E25",
+      "reason": "紅斑熱群: E25"
+    },
+    {
+      "from": "D367",
+      "to": "E34",
+      "reason": "紅斑熱群: E34"
+    },
+    {
+      "from": "D367",
+      "to": "L44",
+      "reason": "紅斑熱群: L44"
+    },
+    {
+      "from": "D367",
+      "to": "S01",
+      "reason": "紅斑熱群: S01"
+    },
+    {
+      "from": "D367",
+      "to": "S14",
+      "reason": "紅斑熱群: S14"
+    },
+    {
+      "from": "D109",
+      "to": "S01",
+      "reason": "クリプト髄膜炎: 咳嗽(30-40%, 肺合併時)"
+    },
+    {
+      "from": "D109",
+      "to": "S04",
+      "reason": "クリプト髄膜炎: 呼吸困難(肺合併/重症時)"
+    },
+    {
+      "from": "D109",
+      "to": "L04",
+      "reason": "クリプト髄膜炎: CXR異常(肺合併30%)"
+    },
+    {
+      "from": "D109",
+      "to": "E04",
+      "reason": "クリプト髄膜炎: 頻呼吸(重症時)"
+    },
+    {
+      "from": "D109",
+      "to": "E05",
+      "reason": "クリプト髄膜炎: 低酸素(肺合併/重症)"
+    },
+    {
+      "from": "D109",
+      "to": "S84",
+      "reason": "クリプト髄膜炎: 咳嗽の性状"
+    },
+    {
+      "from": "D109",
+      "to": "L11",
+      "reason": "クリプト髄膜炎: 肝酵素(播種時)"
+    },
+    {
+      "from": "D109",
+      "to": "M02",
+      "reason": "クリプト髄膜炎: ショック(重症敗血症時)"
+    },
+    {
+      "from": "D109",
+      "to": "E03",
+      "reason": "クリプト髄膜炎: 低血圧(ショック時)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

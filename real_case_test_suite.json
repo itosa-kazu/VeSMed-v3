@@ -1603,7 +1603,7 @@
       "id": "R59",
       "source": "PMC10663404",
       "description": "21M, RMSF: fever/headache/myalgia/arthralgia/dry cough/maculopapular rash, travel to Tennessee",
-      "expected_id": "D23",
+      "expected_id": "D367",
       "in_scope": true,
       "evidence": {
         "T01": "3d_to_1w",
@@ -1625,13 +1625,14 @@
         "R01": "18_39",
         "R02": "male",
         "R06": "domestic"
-      }
+      },
+      "final_diagnosis": "ロッキー山紅斑熱(RMSF)"
     },
     {
       "id": "R60",
       "source": "PMC5930880",
       "description": "74F, Japanese Spotted Fever: 4-day high fever/rash/confusion/eschar on thigh, hobby farmer",
-      "expected_id": "D23",
+      "expected_id": "D367",
       "in_scope": true,
       "evidence": {
         "T01": "3d_to_1w",
@@ -1645,13 +1646,14 @@
       },
       "risk_factors": {
         "R06": "domestic"
-      }
+      },
+      "final_diagnosis": "日本紅斑熱"
     },
     {
       "id": "R61",
       "source": "BMC_Infect_Dis_2022",
       "description": "36F, Mediterranean Spotted Fever: 13-day fever/chills/myalgia/arthralgia/rash/jaundice",
-      "expected_id": "D23",
+      "expected_id": "D367",
       "in_scope": true,
       "evidence": {
         "T01": "1w_to_3w",
@@ -1667,7 +1669,8 @@
         "L11": "very_high",
         "S90": "polyarticular_symmetric"
       },
-      "risk_factors": {}
+      "risk_factors": {},
+      "final_diagnosis": "地中海紅斑熱"
     },
     {
       "id": "R62",
@@ -4670,8 +4673,8 @@
       "source": "IDCases 2021",
       "pmcid": "PMC7893395",
       "vignette": "38M 免疫正常. 1週間の高熱(40℃)+乾性咳嗽+進行性呼吸困難(MMRC II). SpO2 88%. 肝腫大(18cm), 両側鼠径リンパ節腫脹. WBC 10400(リンパ球64%), Hb 10.7. AST 235/ALT 397, T-Bil 2.4. CXR: 両側中下野浸潤影. HIV陰性. Toxo IgM>160陽性",
-      "final_diagnosis": "トキソプラズマ肺炎(免疫正常)",
-      "expected_id": "D110",
+      "final_diagnosis": "トキソプラズマ症(播種型/免疫正常)",
+      "expected_id": "D366",
       "in_scope": true,
       "evidence": {
         "E01": "over_40.0",
