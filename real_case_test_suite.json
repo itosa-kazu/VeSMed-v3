@@ -116,7 +116,8 @@
         "L16": "elevated",
         "L22": "present",
         "S07": "severe",
-        "E46": "generalized"
+        "E46": "generalized",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -1437,7 +1438,8 @@
         "E25": "present",
         "L52": "mildly_elevated",
         "L03": "high_over_0.5",
-        "S89": "RUQ"
+        "S89": "RUQ",
+        "L103": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -7960,7 +7962,8 @@
         "L18": "positive",
         "T01": "over_3w",
         "T02": "subacute",
-        "S89": "epigastric"
+        "S89": "epigastric",
+        "L104": "mild_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -9674,7 +9677,9 @@
         "L01": "very_high_over_20000",
         "L02": "high_over_10",
         "T01": "over_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L103": "markedly_elevated",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -10205,7 +10210,8 @@
         "L02": "high_over_10",
         "T01": "3d_to_1w",
         "T02": "subacute",
-        "S89": "epigastric"
+        "S89": "epigastric",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -11442,7 +11448,8 @@
         "L11": "very_high",
         "L01": "high_10000_20000",
         "T01": "1w_to_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L104": "mild_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -12614,7 +12621,9 @@
         "S07": "severe",
         "L11": "mild_elevated",
         "T01": "over_3w",
-        "T02": "chronic"
+        "T02": "chronic",
+        "L103": "markedly_elevated",
+        "L104": "markedly_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -12638,7 +12647,9 @@
         "L01": "low_under_4000",
         "L14": "thrombocytopenia",
         "T01": "over_3w",
-        "T02": "chronic"
+        "T02": "chronic",
+        "L103": "markedly_elevated",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13866,7 +13877,9 @@
         "T01": "3d_to_1w",
         "T02": "subacute",
         "L02": "normal_under_0.3",
-        "L66": "cholestatic"
+        "L66": "cholestatic",
+        "L103": "moderate_elevated",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -13892,7 +13905,9 @@
         "T01": "under_3d",
         "T02": "acute",
         "L01": "normal_4000_10000",
-        "S89": "epigastric"
+        "S89": "epigastric",
+        "L103": "moderate_elevated",
+        "L104": "mild_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -13915,7 +13930,8 @@
         "L11": "mild_elevated",
         "T01": "3d_to_1w",
         "T02": "subacute",
-        "L66": "cholestatic"
+        "L66": "cholestatic",
+        "L103": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "0_1",
@@ -14849,7 +14865,8 @@
         "E18": "present",
         "L61": "elevated",
         "L66": "cholestatic",
-        "S89": "epigastric"
+        "S89": "epigastric",
+        "L104": "mild_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -14979,7 +14996,8 @@
         "T02": "subacute",
         "L63": "multiple",
         "L61": "elevated",
-        "S84": "productive"
+        "S84": "productive",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17215,7 +17233,9 @@
         "L11": "very_high",
         "T01": "over_3w",
         "T02": "chronic",
-        "L66": "cholestatic"
+        "L66": "cholestatic",
+        "L103": "markedly_elevated",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17238,7 +17258,9 @@
         "S07": "severe",
         "T01": "over_3w",
         "T02": "chronic",
-        "L66": "cholestatic"
+        "L66": "cholestatic",
+        "L103": "markedly_elevated",
+        "L104": "markedly_elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -18265,7 +18287,9 @@
         "E39": "dilated_chamber",
         "L65": "severe_NYHA3_4",
         "L66": "congestive",
-        "E50": "bilateral"
+        "E50": "bilateral",
+        "L103": "moderate_elevated",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -19664,7 +19688,8 @@
         "L22": "present",
         "S07": "severe",
         "S46": "present",
-        "E46": "cervical"
+        "E46": "cervical",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -20238,7 +20263,8 @@
         "L28": "normal",
         "L11": "mild_elevated",
         "T01": "1w_to_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L104": "mild_elevated"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -20265,7 +20291,8 @@
         "L28": "elevated",
         "L11": "very_high",
         "T01": "1w_to_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L104": "moderate_elevated"
       },
       "risk_factors": {
         "R01": "40_64",

@@ -44873,6 +44873,415 @@
           "positive": 0.38
         }
       }
+    },
+    "L103": {
+      "description": "γ-GTP。胆道系酵素。正常:男≤55,女≤30 IU/L。PBC/胆管炎/アルコール性で著高",
+      "leak": {
+        "not_done": 0.65,
+        "normal": 0.28,
+        "mild_elevated": 0.05,
+        "moderate_elevated": 0.015,
+        "markedly_elevated": 0.005
+      },
+      "parent_effects": {
+        "D250": {
+          "not_done": 0.05,
+          "normal": 0.03,
+          "mild_elevated": 0.12,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.5
+        },
+        "D25": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.35
+        },
+        "D273": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.3
+        },
+        "D231": {
+          "not_done": 0.08,
+          "normal": 0.02,
+          "mild_elevated": 0.1,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.5
+        },
+        "D230": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.4
+        },
+        "D287": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.35
+        },
+        "D11": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.1
+        },
+        "D80": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.1
+        },
+        "D274": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.4,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.05
+        },
+        "D170": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "mild_elevated": 0.13,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.5
+        },
+        "D179": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.25
+        },
+        "D29": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D362": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D169": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.15
+        },
+        "D100": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.15
+        },
+        "D108": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.15
+        },
+        "D151": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.25
+        },
+        "D251": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D363": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.15
+        },
+        "D94": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.45
+        },
+        "D229": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.35
+        },
+        "D70": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.25
+        },
+        "D344": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.1
+        },
+        "D86": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.1
+        },
+        "D249": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.1
+        }
+      }
+    },
+    "L104": {
+      "description": "ALP(アルカリフォスファターゼ)。胆道系+骨。正常40-130 IU/L。胆汁うっ滞/骨転移で著高",
+      "leak": {
+        "not_done": 0.65,
+        "normal": 0.28,
+        "mild_elevated": 0.05,
+        "moderate_elevated": 0.015,
+        "markedly_elevated": 0.005
+      },
+      "parent_effects": {
+        "D250": {
+          "not_done": 0.05,
+          "normal": 0.02,
+          "mild_elevated": 0.08,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.55
+        },
+        "D25": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.35
+        },
+        "D273": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.3
+        },
+        "D231": {
+          "not_done": 0.08,
+          "normal": 0.02,
+          "mild_elevated": 0.1,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.5
+        },
+        "D230": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.4
+        },
+        "D287": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.35
+        },
+        "D11": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.1
+        },
+        "D80": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.1
+        },
+        "D274": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.4,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.05
+        },
+        "D170": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.3
+        },
+        "D179": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.25
+        },
+        "D29": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D362": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D169": {
+          "not_done": 0.15,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.1
+        },
+        "D100": {
+          "not_done": 0.15,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.1
+        },
+        "D108": {
+          "not_done": 0.15,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.1
+        },
+        "D151": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D251": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.2
+        },
+        "D363": {
+          "not_done": 0.15,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.1
+        },
+        "D94": {
+          "not_done": 0.05,
+          "normal": 0.05,
+          "mild_elevated": 0.1,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.5
+        },
+        "D229": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.35
+        },
+        "D70": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.25
+        },
+        "D289": {
+          "not_done": 0.1,
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.4
+        },
+        "D354": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.3
+        },
+        "D359": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.3
+        },
+        "D344": {
+          "not_done": 0.15,
+          "normal": 0.1,
+          "mild_elevated": 0.3,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.15
+        },
+        "D171": {
+          "not_done": 0.1,
+          "normal": 0.1,
+          "mild_elevated": 0.25,
+          "moderate_elevated": 0.3,
+          "markedly_elevated": 0.25
+        },
+        "D194": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.1
+        },
+        "D86": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.1
+        },
+        "D249": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_elevated": 0.35,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.1
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"

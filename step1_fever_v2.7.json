@@ -10719,6 +10719,34 @@
         "negative",
         "positive"
       ]
+    },
+    {
+      "id": "L103",
+      "name": "gamma_GTP",
+      "name_ja": "γ-GTP",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mild_elevated",
+        "moderate_elevated",
+        "markedly_elevated"
+      ],
+      "note": "胆道系酵素。正常:男≤55,女≤30 IU/L。CTCAE fallback 4-state: mild(<3xULN), moderate(3-10x), marked(>10x)。PBC/胆管炎/アルコール性で著高。アルコール性では不釣り合いに高い(GGT/ALP比>2.5)"
+    },
+    {
+      "id": "L104",
+      "name": "ALP",
+      "name_ja": "ALP(アルカリフォスファターゼ)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mild_elevated",
+        "moderate_elevated",
+        "markedly_elevated"
+      ],
+      "note": "胆道系酵素+骨代謝。正常:40-130 IU/L。CTCAE fallback 4-state: mild(<3xULN), moderate(3-10x), marked(>10x)。胆汁うっ滞/骨転移/Paget病/ホジキンリンパ腫で上昇"
     }
   ]
 }

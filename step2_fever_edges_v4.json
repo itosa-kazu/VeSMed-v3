@@ -54053,6 +54053,391 @@
       "from": "R02",
       "to": "D355",
       "reason": "DVT: 女性やや多い(OCP/妊娠)"
+    },
+    {
+      "from": "D250",
+      "to": "L103",
+      "from_name": "D250",
+      "to_name": "L103",
+      "reason": "PBCでγ-GTP著高(>10xULN多い)。PMC8735790: GGT異常率92.86%"
+    },
+    {
+      "from": "D273",
+      "to": "L103",
+      "from_name": "D273",
+      "to_name": "L103",
+      "reason": "胆汁うっ滞でγ-GTP上昇。胆管閉塞の鋭敏なマーカー"
+    },
+    {
+      "from": "D25",
+      "to": "L103",
+      "from_name": "D25",
+      "to_name": "L103",
+      "reason": "胆管炎の胆汁うっ滞でγ-GTP著明上昇"
+    },
+    {
+      "from": "D11",
+      "to": "L103",
+      "from_name": "D11",
+      "to_name": "L103",
+      "reason": "胆嚢炎でγ-GTP軽度〜中等度上昇"
+    },
+    {
+      "from": "D274",
+      "to": "L103",
+      "from_name": "D274",
+      "to_name": "L103",
+      "reason": "胆石に伴う一過性胆汁うっ滞でγ-GTP軽度上昇"
+    },
+    {
+      "from": "D231",
+      "to": "L103",
+      "from_name": "D231",
+      "to_name": "L103",
+      "reason": "胆管閉塞でγ-GTP著明上昇"
+    },
+    {
+      "from": "D287",
+      "to": "L103",
+      "from_name": "D287",
+      "to_name": "L103",
+      "reason": "胆道系浸潤でγ-GTP上昇"
+    },
+    {
+      "from": "D230",
+      "to": "L103",
+      "from_name": "D230",
+      "to_name": "L103",
+      "reason": "膵頭部癌の胆管閉塞でγ-GTP著明上昇"
+    },
+    {
+      "from": "D170",
+      "to": "L103",
+      "from_name": "D170",
+      "to_name": "L103",
+      "reason": "アルコール性でγ-GTP不釣り合いに高い(GGT/ALP>2.5)。PMC8735790"
+    },
+    {
+      "from": "D179",
+      "to": "L103",
+      "from_name": "D179",
+      "to_name": "L103",
+      "reason": "DILIでγ-GTP異常率95.80%(PMC8735790)"
+    },
+    {
+      "from": "D29",
+      "to": "L103",
+      "from_name": "D29",
+      "to_name": "L103",
+      "reason": "肝膿瘍の胆汁うっ滞でγ-GTP上昇"
+    },
+    {
+      "from": "D169",
+      "to": "L103",
+      "from_name": "D169",
+      "to_name": "L103",
+      "reason": "AIHでγ-GTP軽度〜中等度上昇"
+    },
+    {
+      "from": "D100",
+      "to": "L103",
+      "from_name": "D100",
+      "to_name": "L103",
+      "reason": "急性肝炎でγ-GTP上昇(肝細胞型でも胆汁うっ滞成分あり)"
+    },
+    {
+      "from": "D108",
+      "to": "L103",
+      "from_name": "D108",
+      "to_name": "L103",
+      "reason": "急性肝炎でγ-GTP上昇"
+    },
+    {
+      "from": "D151",
+      "to": "L103",
+      "from_name": "D151",
+      "to_name": "L103",
+      "reason": "急性肝不全でγ-GTP上昇"
+    },
+    {
+      "from": "D251",
+      "to": "L103",
+      "from_name": "D251",
+      "to_name": "L103",
+      "reason": "肝硬変でγ-GTP持続上昇"
+    },
+    {
+      "from": "D362",
+      "to": "L103",
+      "from_name": "D362",
+      "to_name": "L103",
+      "reason": "肝膿瘍でγ-GTP上昇"
+    },
+    {
+      "from": "D363",
+      "to": "L103",
+      "from_name": "D363",
+      "to_name": "L103",
+      "reason": "肝炎再燃でγ-GTP上昇"
+    },
+    {
+      "from": "D94",
+      "to": "L103",
+      "from_name": "D94",
+      "to_name": "L103",
+      "reason": "IgG4関連硬化性胆管炎でγ-GTP著高"
+    },
+    {
+      "from": "D229",
+      "to": "L103",
+      "from_name": "D229",
+      "to_name": "L103",
+      "reason": "AIPの胆管浸潤でγ-GTP上昇"
+    },
+    {
+      "from": "D70",
+      "to": "L103",
+      "from_name": "D70",
+      "to_name": "L103",
+      "reason": "HCCでγ-GTP上昇(腫瘍マーカー的意義も)"
+    },
+    {
+      "from": "D344",
+      "to": "L103",
+      "from_name": "D344",
+      "to_name": "L103",
+      "reason": "うっ血性肝障害でγ-GTP上昇"
+    },
+    {
+      "from": "D80",
+      "to": "L103",
+      "from_name": "D80",
+      "to_name": "L103",
+      "reason": "胆嚢炎でγ-GTP上昇"
+    },
+    {
+      "from": "D86",
+      "to": "L103",
+      "from_name": "D86",
+      "to_name": "L103",
+      "reason": "膵炎に伴う胆管浮腫でγ-GTP上昇"
+    },
+    {
+      "from": "D249",
+      "to": "L103",
+      "from_name": "D249",
+      "to_name": "L103",
+      "reason": "慢性膵炎の胆管狭窄でγ-GTP上昇"
+    },
+    {
+      "from": "D250",
+      "to": "L104",
+      "from_name": "D250",
+      "to_name": "L104",
+      "reason": "PBCでALP著高(>10xULN)。胆汁うっ滞の代表的マーカー"
+    },
+    {
+      "from": "D273",
+      "to": "L104",
+      "from_name": "D273",
+      "to_name": "L104",
+      "reason": "胆管閉塞でALP著明上昇"
+    },
+    {
+      "from": "D25",
+      "to": "L104",
+      "from_name": "D25",
+      "to_name": "L104",
+      "reason": "胆管炎でALP著明上昇(胆汁うっ滞型)"
+    },
+    {
+      "from": "D11",
+      "to": "L104",
+      "from_name": "D11",
+      "to_name": "L104",
+      "reason": "胆嚢炎でALP軽度〜中等度上昇"
+    },
+    {
+      "from": "D274",
+      "to": "L104",
+      "from_name": "D274",
+      "to_name": "L104",
+      "reason": "胆石に伴うALP一過性上昇"
+    },
+    {
+      "from": "D231",
+      "to": "L104",
+      "from_name": "D231",
+      "to_name": "L104",
+      "reason": "胆管閉塞でALP著明上昇"
+    },
+    {
+      "from": "D287",
+      "to": "L104",
+      "from_name": "D287",
+      "to_name": "L104",
+      "reason": "胆道浸潤でALP上昇"
+    },
+    {
+      "from": "D230",
+      "to": "L104",
+      "from_name": "D230",
+      "to_name": "L104",
+      "reason": "膵頭部癌の胆管閉塞でALP著明上昇"
+    },
+    {
+      "from": "D170",
+      "to": "L104",
+      "from_name": "D170",
+      "to_name": "L104",
+      "reason": "アルコール性肝炎でALP中等度上昇"
+    },
+    {
+      "from": "D179",
+      "to": "L104",
+      "from_name": "D179",
+      "to_name": "L104",
+      "reason": "胆汁うっ滞型DILIでALP上昇"
+    },
+    {
+      "from": "D29",
+      "to": "L104",
+      "from_name": "D29",
+      "to_name": "L104",
+      "reason": "肝膿瘍でALP上昇"
+    },
+    {
+      "from": "D169",
+      "to": "L104",
+      "from_name": "D169",
+      "to_name": "L104",
+      "reason": "AIHでALP軽度上昇"
+    },
+    {
+      "from": "D100",
+      "to": "L104",
+      "from_name": "D100",
+      "to_name": "L104",
+      "reason": "急性肝炎でALP軽度上昇"
+    },
+    {
+      "from": "D108",
+      "to": "L104",
+      "from_name": "D108",
+      "to_name": "L104",
+      "reason": "急性肝炎でALP軽度上昇"
+    },
+    {
+      "from": "D151",
+      "to": "L104",
+      "from_name": "D151",
+      "to_name": "L104",
+      "reason": "急性肝不全でALP上昇"
+    },
+    {
+      "from": "D251",
+      "to": "L104",
+      "from_name": "D251",
+      "to_name": "L104",
+      "reason": "肝硬変でALP持続上昇"
+    },
+    {
+      "from": "D362",
+      "to": "L104",
+      "from_name": "D362",
+      "to_name": "L104",
+      "reason": "肝膿瘍でALP上昇"
+    },
+    {
+      "from": "D363",
+      "to": "L104",
+      "from_name": "D363",
+      "to_name": "L104",
+      "reason": "肝炎再燃でALP上昇"
+    },
+    {
+      "from": "D94",
+      "to": "L104",
+      "from_name": "D94",
+      "to_name": "L104",
+      "reason": "IgG4関連硬化性胆管炎でALP著高"
+    },
+    {
+      "from": "D229",
+      "to": "L104",
+      "from_name": "D229",
+      "to_name": "L104",
+      "reason": "AIPの胆管浸潤でALP上昇"
+    },
+    {
+      "from": "D70",
+      "to": "L104",
+      "from_name": "D70",
+      "to_name": "L104",
+      "reason": "HCCでALP上昇(肝浸潤/胆管圧迫)"
+    },
+    {
+      "from": "D289",
+      "to": "L104",
+      "from_name": "D289",
+      "to_name": "L104",
+      "reason": "骨転移でALP著明上昇(骨型ALP)"
+    },
+    {
+      "from": "D354",
+      "to": "L104",
+      "from_name": "D354",
+      "to_name": "L104",
+      "reason": "ホジキンで非特異的ALP上昇(肝浸潤/傍腫瘍)"
+    },
+    {
+      "from": "D359",
+      "to": "L104",
+      "from_name": "D359",
+      "to_name": "L104",
+      "reason": "血管炎でALP上昇(肝動脈炎/全身炎症)"
+    },
+    {
+      "from": "D344",
+      "to": "L104",
+      "from_name": "D344",
+      "to_name": "L104",
+      "reason": "うっ血性肝障害でALP上昇"
+    },
+    {
+      "from": "D171",
+      "to": "L104",
+      "from_name": "D171",
+      "to_name": "L104",
+      "reason": "APS肝血栓でALP上昇"
+    },
+    {
+      "from": "D194",
+      "to": "L104",
+      "from_name": "D194",
+      "to_name": "L104",
+      "reason": "ライム病肝炎でALP上昇"
+    },
+    {
+      "from": "D80",
+      "to": "L104",
+      "from_name": "D80",
+      "to_name": "L104",
+      "reason": "胆嚢炎でALP上昇"
+    },
+    {
+      "from": "D86",
+      "to": "L104",
+      "from_name": "D86",
+      "to_name": "L104",
+      "reason": "膵炎に伴うALP上昇"
+    },
+    {
+      "from": "D249",
+      "to": "L104",
+      "from_name": "D249",
+      "to_name": "L104",
+      "reason": "慢性膵炎の胆管狭窄でALP上昇"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
