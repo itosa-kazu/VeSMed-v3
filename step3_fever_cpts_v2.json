@@ -6704,14 +6704,14 @@
       "leak": 0.02,
       "parent_effects": {
         "R01": {
-          "18_39": 0.02,
-          "40_64": 0.03,
-          "65_plus": 0.06
+          "18_39": 0.18181818181818182,
+          "40_64": 0.2727272727272727,
+          "65_plus": 0.5454545454545454
         },
         "R03": {
-          "never": 0.02,
-          "former": 0.03,
-          "current": 0.05
+          "never": 0.19999999999999998,
+          "former": 0.3,
+          "current": 0.5
         },
         "R04": 0.04,
         "R05": 0.06,
@@ -6724,8 +6724,8 @@
       "leak": 0.005,
       "parent_effects": {
         "R02": {
-          "male": 0.005,
-          "female": 0.025
+          "male": 0.16666666666666666,
+          "female": 0.8333333333333333
         },
         "R04": 0.02,
         "R07": 0.015,
@@ -6743,20 +6743,20 @@
       "leak": 0.005,
       "parent_effects": {
         "R14": {
-          "no": 0,
-          "yes": 0.015
+          "no": 0.0,
+          "yes": 1.0
         },
         "R15": {
-          "no": 0,
-          "yes": 0.015
+          "no": 0.0,
+          "yes": 1.0
         },
         "R22": {
-          "no": 0,
-          "yes": 0.015
+          "no": 0.0,
+          "yes": 1.0
         },
         "R23": {
-          "no": 0,
-          "yes": 0.015
+          "no": 0.0,
+          "yes": 1.0
         }
       }
     },
@@ -6769,10 +6769,10 @@
       "leak": 0.0001,
       "parent_effects": {
         "R30": {
-          "none": 0,
-          "livestock": 0.02,
-          "pet_cat": 0.005,
-          "wild_animal": 0.003
+          "none": 0.0,
+          "livestock": 0.7142857142857143,
+          "pet_cat": 0.17857142857142858,
+          "wild_animal": 0.10714285714285714
         }
       }
     },
@@ -6785,15 +6785,15 @@
       "leak": 0.0001,
       "parent_effects": {
         "R43": {
-          "unvaccinated": 0.005,
-          "vaccinated": 0,
-          "unknown": 0.003
+          "unvaccinated": 0.625,
+          "vaccinated": 0.0,
+          "unknown": 0.375
         },
         "R06": {
-          "no": 0,
-          "tropical_endemic": 0.005,
-          "developed": 0.00025,
-          "domestic": 0.0001
+          "no": 0.0,
+          "tropical_endemic": 0.9345794392523366,
+          "developed": 0.04672897196261683,
+          "domestic": 0.01869158878504673
         }
       }
     },
@@ -9264,28 +9264,24 @@
           "over_120": 0.15
         },
         "D10": {
-          "normal_60_100": 0.4,
           "100_120": 0.45,
           "over_120": 0.1,
-          "bradycardia_under_60": 0.05
+          "under_100": 0.45
         },
         "D87": {
-          "normal_60_100": 0.3,
           "100_120": 0.5,
           "over_120": 0.15,
-          "bradycardia_under_60": 0.05
+          "under_100": 0.35
         },
         "D29": {
-          "normal_60_100": 0.3,
           "100_120": 0.45,
           "over_120": 0.2,
-          "bradycardia_under_60": 0.05
+          "under_100": 0.35
         },
         "D84": {
-          "normal_60_100": 0.35,
           "100_120": 0.45,
           "over_120": 0.15,
-          "bradycardia_under_60": 0.05
+          "under_100": 0.39999999999999997
         },
         "D46": {
           "under_100": 0.3,
@@ -10174,16 +10170,16 @@
           "hypotension_under_90": 0.6
         },
         "D71": {
-          "normal": 0.6,
-          "hypotension": 0.4
+          "normal_over_90": 0.6,
+          "hypotension_under_90": 0.4
         },
         "D81": {
-          "normal": 0.55,
-          "hypotension": 0.45
+          "normal_over_90": 0.55,
+          "hypotension_under_90": 0.45
         },
         "D98": {
-          "normal": 0.5,
-          "hypotension": 0.5
+          "normal_over_90": 0.5,
+          "hypotension_under_90": 0.5
         },
         "D77": {
           "normal_over_90": 0.7,
@@ -10797,14 +10793,12 @@
           "severe_over_30": 0.25
         },
         "D263": {
-          "normal": 0.4,
-          "mildly_elevated": 0.35,
-          "tachypnea": 0.25
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.6
         },
         "D264": {
-          "normal": 0.4,
-          "mildly_elevated": 0.4,
-          "tachypnea": 0.2
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.6000000000000001
         },
         "D279": {
           "normal_under_20": 0.1,
@@ -11612,10 +11606,9 @@
         },
         "D221": {
           "clear": 0.3,
-          "wheeze": 0.05,
-          "crackle": 0.55,
-          "rhonchi": 0.05,
-          "diminished": 0.05
+          "wheezes": 0.05,
+          "crackles": 0.6000000000000001,
+          "decreased_absent": 0.05
         }
       }
     },
@@ -11684,10 +11677,8 @@
         },
         "D252": {
           "normal": 0.2,
-          "erythema": 0.3,
-          "exudate": 0.2,
-          "vesicle": 0.1,
-          "membrane": 0.2
+          "erythema": 0.4,
+          "exudate_or_white_patch": 0.4
         }
       }
     },
@@ -11830,16 +11821,9 @@
           "peritoneal_signs": 0.15
         },
         "D338": {
-          "normal": 0.2,
-          "diffuse_tenderness": 0.2,
-          "RUQ_tenderness": 0.1,
-          "RLQ_tenderness": 0.05,
-          "LLQ_tenderness": 0.05,
-          "rebound_guarding": 0.2,
-          "murphy_positive": 0.0,
-          "CVA_tenderness": 0.0,
-          "suprapubic_tenderness": 0.0,
-          "mass_palpable": 0.2
+          "soft_nontender": 0.2,
+          "localized_tenderness": 0.6000000000000001,
+          "peritoneal_signs": 0.2
         }
       }
     },
@@ -11871,19 +11855,16 @@
           "positive": 0.25
         },
         "D212": {
-          "normal": 0.2,
-          "elevated": 0.7,
-          "markedly_elevated": 0.1
+          "negative": 0.2,
+          "positive": 0.7999999999999999
         },
         "D214": {
-          "normal": 0.3,
-          "elevated": 0.5,
-          "markedly_elevated": 0.2
+          "negative": 0.3,
+          "positive": 0.7
         },
         "D216": {
-          "normal": 0.3,
-          "elevated": 0.5,
-          "markedly_elevated": 0.2
+          "negative": 0.3,
+          "positive": 0.7
         }
       }
     },
@@ -12238,28 +12219,25 @@
           "skin_necrosis": 0.02
         },
         "D106": {
-          "absent": 0.5,
           "maculopapular_rash": 0.3,
           "petechiae_purpura": 0.01,
-          "vesicular": 0.01,
-          "erythroderma": 0.03,
-          "diffuse_erythroderma": 0.15
+          "diffuse_erythroderma": 0.18,
+          "normal": 0.5,
+          "vesicular_dermatomal": 0.01
         },
         "D107": {
-          "absent": 0.75,
           "maculopapular_rash": 0.15,
           "petechiae_purpura": 0.05,
-          "vesicular": 0.01,
-          "erythroderma": 0.01,
-          "diffuse_erythroderma": 0.03
+          "diffuse_erythroderma": 0.04,
+          "normal": 0.75,
+          "vesicular_dermatomal": 0.01
         },
         "D108": {
-          "absent": 0.8,
           "maculopapular_rash": 0.1,
           "petechiae_purpura": 0.02,
-          "vesicular": 0.01,
-          "erythroderma": 0.02,
-          "diffuse_erythroderma": 0.05
+          "diffuse_erythroderma": 0.07,
+          "normal": 0.8,
+          "vesicular_dermatomal": 0.01
         },
         "D111": {
           "normal": 0.02,
@@ -12964,27 +12942,19 @@
         },
         "D212": {
           "absent": 0.3,
-          "systolic": 0.2,
-          "diastolic": 0.3,
-          "both": 0.2
+          "new": 0.7
         },
         "D214": {
           "absent": 0.3,
-          "systolic": 0.3,
-          "diastolic": 0.2,
-          "both": 0.2
+          "new": 0.7
         },
         "D216": {
           "absent": 0.05,
-          "systolic": 0.8,
-          "diastolic": 0.05,
-          "both": 0.1
+          "new": 0.9500000000000001
         },
         "D340": {
           "absent": 0.05,
-          "systolic": 0.1,
-          "diastolic": 0.7,
-          "both": 0.15
+          "new": 0.95
         }
       }
     },
@@ -13107,16 +13077,14 @@
           "obtunded": 0.05
         },
         "D107": {
-          "alert": 0.55,
-          "confused": 0.25,
-          "obtunded": 0.15,
-          "coma": 0.05
-        },
-        "D109": {
-          "alert": 0.5,
           "confused": 0.25,
           "obtunded": 0.2,
-          "coma": 0.05
+          "normal": 0.55
+        },
+        "D109": {
+          "confused": 0.25,
+          "obtunded": 0.25,
+          "normal": 0.5
         },
         "D110": {
           "normal": 0.45,
@@ -16985,29 +16953,29 @@
           "high_over_10": 0.35
         },
         "D155": {
-          "negative": 0.4,
-          "mildly_elevated": 0.45,
-          "highly_elevated": 0.15
+          "normal_under_0.3": 0.4,
+          "mild_0.3_3": 0.45,
+          "high_over_10": 0.15
         },
         "D314": {
-          "negative": 0.8,
-          "mildly_elevated": 0.15,
-          "highly_elevated": 0.05
+          "normal_under_0.3": 0.8,
+          "mild_0.3_3": 0.15,
+          "high_over_10": 0.05
         },
         "D199": {
-          "negative": 0.6,
-          "mildly_elevated": 0.3,
-          "highly_elevated": 0.1
+          "normal_under_0.3": 0.6,
+          "mild_0.3_3": 0.3,
+          "high_over_10": 0.1
         },
         "D194": {
-          "negative": 0.3,
-          "mildly_elevated": 0.5,
-          "highly_elevated": 0.2
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.5,
+          "high_over_10": 0.2
         },
         "D317": {
-          "negative": 0.8,
-          "mildly_elevated": 0.15,
-          "highly_elevated": 0.05
+          "normal_under_0.3": 0.8,
+          "mild_0.3_3": 0.15,
+          "high_over_10": 0.05
         }
       }
     },
@@ -17360,21 +17328,18 @@
           "not_done": 0.05,
           "normal": 0.5644,
           "lobar_infiltrate": 0.047,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2727,
           "BHL": 0.0094,
           "pleural_effusion": 0.047,
-          "GGO": 0.0376,
           "pneumothorax": 0.0095
         },
         "D109": {
           "not_done": 0.05,
           "normal": 0.4703,
-          "lobar_infiltrate": 0.094,
-          "bilateral_infiltrate": 0.1411,
+          "lobar_infiltrate": 0.14100000000000001,
+          "bilateral_infiltrate": 0.2351,
           "BHL": 0.047,
           "pleural_effusion": 0.047,
-          "GGO": 0.094,
-          "cavity": 0.047,
           "pneumothorax": 0.0095
         },
         "D110": {
@@ -17819,8 +17784,8 @@
           "pneumothorax": 0.019
         },
         "D180": {
-          "not_done": 0.3,
-          "normal": 0.1,
+          "not_done": 0.7499999999999999,
+          "normal": 0.25,
           "lobar_infiltrate": 0.0,
           "bilateral_infiltrate": 0.0,
           "BHL": 0.0,
@@ -17829,10 +17794,9 @@
         },
         "D221": {
           "normal": 0.2,
-          "infiltrate": 0.5,
           "bilateral_infiltrate": 0.2,
-          "cavity": 0.05,
-          "effusion": 0.05
+          "lobar_infiltrate": 0.55,
+          "pleural_effusion": 0.05
         }
       }
     },
@@ -18901,12 +18865,12 @@
           "lymphocyte_predominant": 0.03
         },
         "D105": {
-          "normal": 0.5310344827586206,
-          "left_shift": 0.044252873563218394,
-          "atypical_lymphocytes": 0.08850574712643679,
-          "thrombocytopenia": 0.08850574712643679,
-          "eosinophilia": 0.017701149425287357,
-          "lymphocyte_predominant": 0.1
+          "normal": 0.6103844629409433,
+          "left_shift": 0.05086537191174528,
+          "atypical_lymphocytes": 0.10173074382349057,
+          "thrombocytopenia": 0.10173074382349057,
+          "eosinophilia": 0.020346148764698112,
+          "lymphocyte_predominant": 0.1149425287356322
         },
         "D107": {
           "normal": 0.097,
@@ -19188,14 +19152,12 @@
           "lymphocyte_predominant": 0.03
         },
         "D222": {
-          "normal": 0.6,
-          "leukocytosis": 0.1,
-          "left_shift": 0.05,
+          "normal": 0.65,
+          "left_shift": 0.15000000000000002,
           "eosinophilia": 0.05,
-          "lymphocytosis": 0.05,
           "atypical_lymphocytes": 0.05,
           "thrombocytopenia": 0.05,
-          "neutropenia": 0.05
+          "lymphocyte_predominant": 0.05
         }
       }
     },
@@ -19642,8 +19604,8 @@
         },
         "D220": {
           "normal": 0.5,
-          "mildly_elevated": 0.3,
-          "highly_elevated": 0.2
+          "elevated": 0.3,
+          "very_high": 0.2
         }
       }
     },
@@ -20221,18 +20183,18 @@
         },
         "D219": {
           "normal": 0.05,
-          "mildly_elevated": 0.25,
-          "highly_elevated": 0.7
+          "elevated": 0.25,
+          "very_high_over_100": 0.7
         },
         "D220": {
           "normal": 0.1,
-          "mildly_elevated": 0.4,
-          "highly_elevated": 0.5
+          "elevated": 0.4,
+          "very_high_over_100": 0.5
         },
         "D221": {
           "normal": 0.05,
-          "mildly_elevated": 0.2,
-          "highly_elevated": 0.75
+          "elevated": 0.2,
+          "very_high_over_100": 0.75
         }
       }
     },
@@ -20457,21 +20419,18 @@
       "leak": {
         "not_done": 0.6,
         "normal": 0.3,
-        "pathogen_detected": 0.07,
-        "CD_positive": 0.03
+        "pathogen_detected": 0.1
       },
       "parent_effects": {
         "D37": {
           "not_done": 0.1,
           "normal": 0.1,
-          "pathogen_detected": 0.75,
-          "CD_positive": 0.05
+          "pathogen_detected": 0.8
         },
         "D38": {
           "not_done": 0.1,
           "normal": 0.05,
-          "pathogen_detected": 0.05,
-          "CD_positive": 0.8
+          "pathogen_detected": 0.8500000000000001
         }
       }
     },
@@ -20568,13 +20527,13 @@
           "pleural_effusion": 0.76
         },
         "D227": {
-          "normal": 0.2,
-          "consolidation": 0.05,
-          "GGO": 0.05,
+          "normal": 0.5,
+          "consolidation": 0.125,
+          "GGO": 0.125,
           "cavity": 0.0,
           "halo_sign": 0.0,
           "BHL": 0.0,
-          "pleural_effusion": 0.1
+          "pleural_effusion": 0.25
         },
         "D317": {
           "normal": 0.05,
@@ -20979,9 +20938,8 @@
         "D252": {
           "normal": 0.6,
           "hyponatremia": 0.3,
-          "hypernatremia": 0.05,
-          "hypokalemia": 0.03,
-          "hyperkalemia": 0.02
+          "hyperkalemia": 0.02,
+          "other": 0.08
         }
       }
     },
@@ -20995,12 +20953,12 @@
         "HSV_PCR_positive"
       ],
       "leak": {
-        "not_done": 0.6789999999999999,
-        "normal": 0.2425,
-        "viral_pattern": 0.029099999999999997,
-        "bacterial_pattern": 0.0097,
-        "HSV_PCR_positive": 0.0097,
-        "tb_fungal_pattern": 0.01
+        "not_done": 0.6928571428571428,
+        "normal": 0.24744897959183673,
+        "viral_pattern": 0.029693877551020407,
+        "bacterial_pattern": 0.00989795918367347,
+        "HSV_PCR_positive": 0.00989795918367347,
+        "tb_fungal_pattern": 0.010204081632653062
       },
       "parent_effects": {
         "D84": {
@@ -21721,23 +21679,23 @@
         },
         "D35": {
           "absent": 0.3,
-          "exertional": 0.4,
-          "at_rest": 0.3
+          "at_rest": 0.3,
+          "on_exertion": 0.4
         },
         "D83": {
           "absent": 0.15,
-          "exertional": 0.35,
-          "at_rest": 0.5
+          "at_rest": 0.5,
+          "on_exertion": 0.35
         },
         "D99": {
           "absent": 0.35,
-          "exertional": 0.4,
-          "at_rest": 0.25
+          "at_rest": 0.25,
+          "on_exertion": 0.4
         },
         "D102": {
           "absent": 0.15,
-          "exertional": 0.35,
-          "at_rest": 0.5
+          "at_rest": 0.5,
+          "on_exertion": 0.35
         },
         "D58": {
           "absent": 0.7,
@@ -22271,24 +22229,24 @@
         },
         "D76": {
           "absent": 0.6,
-          "present": 0.4
+          "on_exertion": 0.4
         },
         "D06": {
           "absent": 0.8,
-          "present": 0.2
+          "on_exertion": 0.2
         },
         "D309": {
           "absent": 0.8,
-          "present": 0.2
+          "on_exertion": 0.2
         },
         "D187": {
           "absent": 0.7,
-          "present": 0.3
+          "on_exertion": 0.3
         },
         "D222": {
           "absent": 0.7,
-          "present_exertional": 0.2,
-          "at_rest": 0.1
+          "at_rest": 0.1,
+          "on_exertion": 0.2
         }
       }
     },
@@ -22767,15 +22725,15 @@
         },
         "D76": {
           "absent": 0.5,
-          "present": 0.5
+          "mild": 0.5
         },
         "D219": {
           "absent": 0.4,
-          "present": 0.6
+          "mild": 0.6
         },
         "D252": {
           "absent": 0.5,
-          "present": 0.5
+          "mild": 0.5
         }
       }
     },
@@ -23963,51 +23921,51 @@
         },
         "D76": {
           "absent": 0.30000000000000004,
-          "present": 0.7
+          "mild": 0.7
         },
         "D39": {
           "absent": 0.6,
-          "present": 0.4
+          "mild": 0.4
         },
         "D41": {
           "absent": 0.5,
-          "present": 0.5
+          "mild": 0.5
         },
         "D189": {
           "absent": 0.30000000000000004,
-          "present": 0.7
+          "mild": 0.7
         },
         "D240": {
           "absent": 0.5,
-          "present": 0.5
+          "mild": 0.5
         },
         "D241": {
           "absent": 0.4,
-          "present": 0.6
+          "mild": 0.6
         },
         "D297": {
           "absent": 0.7,
-          "present": 0.3
+          "mild": 0.3
         },
         "D276": {
           "absent": 0.6,
-          "present": 0.4
+          "mild": 0.4
         },
         "D84": {
           "absent": 0.2,
-          "present": 0.8
+          "mild": 0.8
         },
         "D314": {
           "absent": 0.3,
-          "present": 0.7
+          "mild": 0.7
         },
         "D275": {
           "absent": 0.5,
-          "present": 0.5
+          "mild": 0.5
         },
         "D280": {
           "absent": 0.15,
-          "present": 0.85
+          "mild": 0.85
         }
       }
     },
@@ -27421,49 +27379,41 @@
         "absent"
       ],
       "leak": {
-        "normal": 0.95,
-        "excessive": 0.04,
-        "absent": 0.01
+        "normal": 0.96,
+        "excessive": 0.04
       },
       "parent_effects": {
         "D71": {
-          "normal": 0.05,
-          "excessive": 0.9,
-          "absent": 0.05
+          "normal": 0.1,
+          "excessive": 0.9
         },
         "D73": {
-          "normal": 0.1,
-          "excessive": 0.85,
-          "absent": 0.05
+          "normal": 0.15000000000000002,
+          "excessive": 0.85
         },
         "D74": {
-          "normal": 0.1,
-          "excessive": 0.85,
-          "absent": 0.05
+          "normal": 0.15000000000000002,
+          "excessive": 0.85
         },
         "D75": {
-          "normal": 0.1,
-          "excessive": 0.85,
-          "absent": 0.05
+          "normal": 0.15000000000000002,
+          "excessive": 0.85
         },
         "D78": {
-          "normal": 0.05,
-          "excessive": 0.05,
-          "absent": 0.9
+          "normal": 0.9500000000000001,
+          "excessive": 0.05
         },
         "D88": {
-          "normal": 0.1,
-          "excessive": 0.85,
-          "absent": 0.05
+          "normal": 0.15000000000000002,
+          "excessive": 0.85
         },
         "D89": {
-          "normal": 0.1,
-          "excessive": 0.6,
-          "absent": 0.3
+          "normal": 0.4,
+          "excessive": 0.6
         },
         "D199": {
-          "absent": 0.3,
-          "present": 0.7
+          "excessive": 0.7,
+          "normal": 0.3
         }
       }
     },
@@ -31586,10 +31536,9 @@
           "double_quotidian": 0.1
         },
         "D221": {
-          "continuous": 0.2,
+          "continuous": 0.4,
           "intermittent": 0.5,
-          "remittent": 0.2,
-          "relapsing": 0.1
+          "periodic": 0.1
         }
       }
     },
@@ -32277,9 +32226,9 @@
           "chronic_over_8w": 0.0556
         },
         "D06": {
-          "under_3weeks": 0.6,
-          "3_to_8_weeks": 0.35,
-          "over_8weeks": 0.05
+          "acute_under_3w": 0.6,
+          "subacute_3w_8w": 0.35,
+          "chronic_over_8w": 0.05
         }
       }
     },
@@ -34924,8 +34873,8 @@
         "D220": {
           "normal": 0.4,
           "wall_motion_abnormal": 0.4,
-          "valvular": 0.1,
-          "pericardial_effusion": 0.1
+          "pericardial_effusion": 0.1,
+          "valvular_abnormal": 0.1
         }
       }
     },
@@ -35067,16 +35016,16 @@
         "D211": {
           "not_done": 0.3,
           "normal": 0.1,
-          "ST_change": 0.1,
-          "arrhythmia": 0.4,
-          "conduction_block": 0.1
+          "ST_elevation": 0.1,
+          "AF": 0.4,
+          "ST_depression": 0.1
         },
         "D310": {
           "not_done": 0.3,
           "normal": 0.3,
-          "ST_change": 0.1,
-          "arrhythmia": 0.2,
-          "conduction_block": 0.1
+          "ST_elevation": 0.1,
+          "AF": 0.2,
+          "ST_depression": 0.1
         }
       }
     },
@@ -35553,13 +35502,13 @@
     "L63": {
       "description": "転移巣(CT/PET所見)",
       "leak": {
-        "not_done": 0.5,
-        "absent": 0.45,
-        "lung": 0.01,
-        "bone": 0.01,
-        "liver": 0.01,
-        "brain": 0.005,
-        "multiple": 0.005
+        "not_done": 0.5050505050505051,
+        "absent": 0.4545454545454546,
+        "lung": 0.010101010101010102,
+        "bone": 0.010101010101010102,
+        "liver": 0.010101010101010102,
+        "brain": 0.005050505050505051,
+        "multiple": 0.005050505050505051
       },
       "parent_effects": {
         "D289": {
@@ -35958,8 +35907,8 @@
         },
         "D220": {
           "absent": 0.4,
-          "mild_NYHA1_2": 0.3,
-          "severe_NYHA3_4": 0.3
+          "severe_NYHA3_4": 0.3,
+          "mild_NYHA2": 0.3
         }
       }
     },
