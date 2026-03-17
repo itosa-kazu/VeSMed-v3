@@ -13056,6 +13056,16 @@
           "under_100": 0.12,
           "100_120": 0.33,
           "over_120": 0.55
+        },
+        "D352": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
+        },
+        "D351": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
         }
       }
     },
@@ -13465,6 +13475,18 @@
         "D364": {
           "hypotension_under_90": 0.75,
           "normal_over_90": 0.25
+        },
+        "D352": {
+          "hypotension_under_90": 0.15,
+          "normal_over_90": 0.85
+        },
+        "D353": {
+          "hypotension_under_90": 0.1,
+          "normal_over_90": 0.9
+        },
+        "D42": {
+          "hypotension_under_90": 0.2,
+          "normal_over_90": 0.8
         }
       }
     },
@@ -13794,6 +13816,11 @@
           "normal_under_20": 0.2,
           "tachypnea_20_30": 0.4,
           "severe_over_30": 0.4
+        },
+        "D42": {
+          "normal_under_20": 0.5,
+          "tachypnea_20_30": 0.35,
+          "severe_over_30": 0.15
         }
       }
     },
@@ -14209,6 +14236,11 @@
           "normal_over_96": 0.4,
           "mild_hypoxia_93_96": 0.3,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D42": {
+          "normal_over_96": 0.75,
+          "mild_hypoxia_93_96": 0.2,
+          "severe_hypoxia_under_93": 0.05
         }
       }
     },
@@ -15853,6 +15885,11 @@
         "D354": {
           "absent": 0.02,
           "present": 0.98
+        },
+        "D220": {
+          "absent": 0.8,
+          "localized": 0.15,
+          "generalized": 0.05
         }
       }
     },
@@ -16654,6 +16691,11 @@
           "normal": 0.3,
           "confused": 0.35,
           "obtunded": 0.35
+        },
+        "D363": {
+          "normal": 0.7,
+          "confused": 0.2,
+          "obtunded": 0.1
         }
       }
     },
@@ -17322,6 +17364,10 @@
         "D363": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D354": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -18933,6 +18979,12 @@
           "normal_4000_10000": 0.12,
           "high_10000_20000": 0.35,
           "very_high_over_20000": 0.45
+        },
+        "D354": {
+          "low_under_4000": 0.15,
+          "normal_4000_10000": 0.45,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.1
         }
       }
     },
@@ -20241,6 +20293,12 @@
           "mild_0.3_3": 0.03,
           "moderate_3_10": 0.1,
           "high_over_10": 0.85
+        },
+        "D354": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.3,
+          "high_over_10": 0.15
         }
       }
     },
@@ -22519,6 +22577,14 @@
           "thrombocytopenia": 0.35,
           "eosinophilia": 0.03,
           "lymphocyte_predominant": 0.05
+        },
+        "D42": {
+          "normal": 0.2,
+          "left_shift": 0.55,
+          "atypical_lymphocytes": 0.03,
+          "thrombocytopenia": 0.12,
+          "eosinophilia": 0.05,
+          "lymphocyte_predominant": 0.05
         }
       }
     },
@@ -22638,6 +22704,12 @@
           "mild_elevated": 0.4,
           "very_high_over_1000": 0.35,
           "extreme_over_10000": 0.1
+        },
+        "D354": {
+          "normal": 0.3,
+          "mild_elevated": 0.4,
+          "very_high_over_1000": 0.25,
+          "extreme_over_10000": 0.05
         }
       }
     },
@@ -26269,6 +26341,11 @@
           "absent": 0.6,
           "mild": 0.28,
           "severe": 0.12
+        },
+        "D352": {
+          "absent": 0.6,
+          "mild": 0.3,
+          "severe": 0.1
         }
       }
     },
@@ -26466,6 +26543,10 @@
         "D364": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D352": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -27757,6 +27838,10 @@
         "D108": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D359": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -28005,6 +28090,10 @@
         "D364": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D354": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -29043,6 +29132,14 @@
         "D24": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D364": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D353": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -29289,6 +29386,10 @@
         "D24": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D364": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -31392,6 +31493,14 @@
           "present": 0.9
         },
         "D363": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D352": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D351": {
           "absent": 0.2,
           "present": 0.8
         }
@@ -35376,6 +35485,36 @@
           "acute": 0.78,
           "subacute": 0.01,
           "chronic": 0.01
+        },
+        "D359": {
+          "sudden": 0.005,
+          "acute": 0.02,
+          "subacute": 0.3,
+          "chronic": 0.675
+        },
+        "D352": {
+          "sudden": 0.1,
+          "acute": 0.6,
+          "subacute": 0.25,
+          "chronic": 0.05
+        },
+        "D351": {
+          "sudden": 0.1,
+          "acute": 0.55,
+          "subacute": 0.3,
+          "chronic": 0.05
+        },
+        "D353": {
+          "sudden": 0.01,
+          "acute": 0.05,
+          "subacute": 0.4,
+          "chronic": 0.54
+        },
+        "D354": {
+          "sudden": 0.005,
+          "acute": 0.02,
+          "subacute": 0.375,
+          "chronic": 0.6
         }
       }
     },
@@ -42726,6 +42865,12 @@
           "supraclavicular": 0.1,
           "mediastinal": 0.3,
           "generalized": 0.13
+        },
+        "D220": {
+          "cervical": 0.4,
+          "axillary": 0.2,
+          "inguinal": 0.1,
+          "generalized": 0.3
         }
       }
     },
