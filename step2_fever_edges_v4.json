@@ -48120,6 +48120,126 @@
       "to_name": "原発性アルドステロン症",
       "reason": "原発性アルドステロン症。中年、やや女性多い",
       "onset_day_range": null
+    },
+    {
+      "from": "D155",
+      "to": "S42",
+      "from_name": "くも膜下出血(SAH)",
+      "to_name": "痙攣",
+      "reason": "SAH onset seizures 7-10% (PMC2744032 Seizures following aSAH)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D155",
+      "to": "L02",
+      "from_name": "くも膜下出血(SAH)",
+      "to_name": "CRP",
+      "reason": "SAH causes aseptic meningitis with mild CRP elevation (PMC9987649)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "T02",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "発症の速さ",
+      "reason": "HSE acute onset over days with prodrome (StatPearls NBK557643)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "S52",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "局所神経症状（片麻痺）",
+      "reason": "HSE focal neurological deficits 41% (Whitley NIAID, StatPearls NBK557643)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "S93",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "局所神経症状の側性",
+      "reason": "HSE temporal lobe predilection → unilateral deficits predominant (PMC4965403)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "S53",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "言語障害",
+      "reason": "HSE aphasia/speech disturbance 40-57% (Sili 2014 PubMed 24768322)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "S94",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "言語障害の種類",
+      "reason": "HSE temporal lobe → aphasia predominant over dysarthria (PMC4965403)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D84",
+      "to": "S07",
+      "from_name": "単純ヘルペス脳炎",
+      "to_name": "全身倦怠感",
+      "reason": "HSE prodromal malaise/fatigue common (StatPearls NBK557643)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "S42",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "痙攣",
+      "reason": "Hydrocephalus seizures 20-50% (PMC6464813, PubMed 11219629)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "S52",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "局所神経症状（片麻痺）",
+      "reason": "Hydrocephalus CN VI palsy as false localizing sign (StatPearls NBK560875)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "S93",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "局所神経症状の側性",
+      "reason": "Hydrocephalus CN palsies can be uni- or bilateral (StatPearls NBK441892)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "E06",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "項部硬直",
+      "reason": "Acute hydrocephalus can cause meningismus from herniation (StatPearls NBK560875)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "L02",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "CRP",
+      "reason": "Acute hydrocephalus CRP typically normal (non-infectious etiology)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D314",
+      "to": "S07",
+      "from_name": "急性閉塞性水頭症",
+      "to_name": "全身倦怠感",
+      "reason": "Hydrocephalus drowsiness/lethargy 3rd most common symptom (PMC1791823)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D275",
+      "to": "S07",
+      "from_name": "嵌頓ヘルニア",
+      "to_name": "全身倦怠感",
+      "reason": "Incarcerated hernia: nausea/malaise 59% (PMC4065900 n=150)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

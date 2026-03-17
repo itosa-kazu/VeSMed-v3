@@ -11280,6 +11280,10 @@
         "D315": {
           "absent": 0.85,
           "present": 0.15
+        },
+        "D314": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -16923,6 +16927,16 @@
           "mild_0.3_3": 0.2,
           "moderate_3_10": 0.35,
           "high_over_10": 0.35
+        },
+        "D155": {
+          "negative": 0.4,
+          "mildly_elevated": 0.45,
+          "highly_elevated": 0.15
+        },
+        "D314": {
+          "negative": 0.8,
+          "mildly_elevated": 0.15,
+          "highly_elevated": 0.05
         }
       }
     },
@@ -23798,6 +23812,18 @@
         "D276": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D84": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D314": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D275": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -26918,6 +26944,14 @@
         "D226": {
           "absent": 0.85,
           "present": 0.15
+        },
+        "D155": {
+          "absent": 0.9,
+          "present": 0.1
+        },
+        "D314": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -31149,6 +31183,12 @@
           "acute": 0.75,
           "subacute": 0.08,
           "chronic": 0.02
+        },
+        "D84": {
+          "sudden": 0.05,
+          "acute": 0.7,
+          "subacute": 0.2,
+          "chronic": 0.05
         }
       }
     },
@@ -33637,6 +33677,14 @@
         "D335": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D84": {
+          "absent": 0.59,
+          "present": 0.41
+        },
+        "D314": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -33730,6 +33778,10 @@
         "D304": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D84": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -38807,6 +38859,14 @@
         "D321": {
           "unilateral_weakness": 0.3333,
           "bilateral": 0.6667
+        },
+        "D84": {
+          "unilateral_weakness": 0.75,
+          "bilateral": 0.25
+        },
+        "D314": {
+          "unilateral_weakness": 0.5,
+          "bilateral": 0.5
         }
       }
     },
@@ -38900,6 +38960,10 @@
         "D304": {
           "dysarthria": 0.7,
           "aphasia": 0.3
+        },
+        "D84": {
+          "dysarthria": 0.2,
+          "aphasia": 0.8
         }
       }
     },
