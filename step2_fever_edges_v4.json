@@ -48840,6 +48840,70 @@
       "to_name": "トロポニン(I/T)",
       "reason": "SAH catecholamine surge causes troponin elevation (PMC9987649, StatPearls NBK441958)",
       "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "E02",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "心拍数",
+      "reason": "RA: tachycardia from inflammation/anemia/vasculitis (PMC11221493 HR120, PMC8157748 HR117)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S09",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "悪寒戦慄",
+      "reason": "RA: chills in active flares/Felty syndrome (PMC8157748)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D264",
+      "to": "S06",
+      "from_name": "クラミジア肺炎",
+      "to_name": "筋肉痛",
+      "reason": "Chlamydia pneumonia: myalgia common in atypical pneumonia (StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D264",
+      "to": "S05",
+      "from_name": "クラミジア肺炎",
+      "to_name": "頭痛",
+      "reason": "Chlamydia pneumonia: headache common (StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D128",
+      "to": "S25",
+      "from_name": "上気道閉塞（喉頭蓋炎/血管浮腫/異物）",
+      "to_name": "嚥下困難",
+      "reason": "Epiglottitis: odynophagia/dysphagia 90%+ (StatPearls epiglottitis)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D128",
+      "to": "E31",
+      "from_name": "上気道閉塞（喉頭蓋炎/血管浮腫/異物）",
+      "to_name": "流涎",
+      "reason": "Epiglottitis: drooling from inability to swallow (StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D258",
+      "to": "S13",
+      "from_name": "RSウイルス感染症",
+      "to_name": "悪心",
+      "reason": "RSV: poor feeding/vomiting in infants (StatPearls RSV)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L93",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "ヘモグロビン(Hb)",
+      "reason": "RA anemia of chronic disease ~60% (PMC11221493 Hb100, PMC8157748 Hb7.6)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

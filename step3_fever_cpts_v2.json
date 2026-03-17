@@ -10107,6 +10107,11 @@
           "under_100": 0.4,
           "100_120": 0.4,
           "over_120": 0.2
+        },
+        "D222": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
         }
       }
     },
@@ -14047,6 +14052,10 @@
         "D34": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D128": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -22734,6 +22743,11 @@
         "D252": {
           "absent": 0.5,
           "mild": 0.5
+        },
+        "D264": {
+          "absent": 0.4,
+          "mild": 0.4,
+          "severe": 0.2
         }
       }
     },
@@ -22910,6 +22924,10 @@
           "present": 0.5
         },
         "D222": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D264": {
           "absent": 0.4,
           "present": 0.6
         }
@@ -24376,6 +24394,10 @@
         "D221": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D222": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -25372,6 +25394,10 @@
           "present": 0.45
         },
         "D76": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D258": {
           "absent": 0.5,
           "present": 0.5
         }
@@ -26396,6 +26422,10 @@
         "D303": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D128": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -39644,6 +39674,83 @@
           "normal": 0.1,
           "mild_proteinuria": 0.4,
           "nephrotic_range": 0.4
+        }
+      }
+    },
+    "L93": {
+      "description": "ヘモグロビン(Hb)",
+      "leak": {
+        "normal": 0.7,
+        "mild_low_10_12": 0.15,
+        "low_7_10": 0.1,
+        "very_low_under_7": 0.05
+      },
+      "parent_effects": {
+        "D245": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D226": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D235": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D225": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D228": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D238": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D243": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D247": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D218": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D290": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.3,
+          "low_7_10": 0.25,
+          "very_low_under_7": 0.15
+        },
+        "D222": {
+          "normal": 0.3,
+          "mild_low_10_12": 0.4,
+          "low_7_10": 0.2,
+          "very_low_under_7": 0.1
         }
       }
     }
