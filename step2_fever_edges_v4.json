@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6458,
+  "total_edges": 6680,
   "edges": [
     {
       "from": "R01",
@@ -373,14 +373,6 @@
       "onset_day_range": null
     },
     {
-      "from": "R14",
-      "to": "D24",
-      "from_name": "skin_wound_or_trauma",
-      "to_name": "toxic_shock_syndrome",
-      "reason": "創傷は劇症型GAS/TSSの侵入門戸",
-      "onset_day_range": null
-    },
-    {
       "from": "R15",
       "to": "D08",
       "from_name": "pregnancy",
@@ -466,14 +458,6 @@
       "from_name": "current_season",
       "to_name": "rickettsial_disease",
       "reason": "ツツガムシ病は秋〜初冬",
-      "onset_day_range": null
-    },
-    {
-      "from": "R20",
-      "to": "D24",
-      "from_name": "tampon_or_vaginal_foreign_body",
-      "to_name": "toxic_shock_syndrome",
-      "reason": "タンポン長時間留置は黄色ブドウ球菌性TSSのリスク",
       "onset_day_range": null
     },
     {
@@ -746,18 +730,6 @@
       "from_name": "pulmonary_tuberculosis",
       "to_name": "onset_speed",
       "reason": "結核は数週間かけて緩徐",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
-      }
-    },
-    {
-      "from": "D24",
-      "to": "T02",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "onset_speed",
-      "reason": "TSSは数時間で急速進行",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -1161,18 +1133,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "S06",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "myalgia",
-      "reason": "TSS/壊死性筋膜炎で激烈な筋肉痛",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0.5
-      }
-    },
-    {
       "from": "D01",
       "to": "S07",
       "from_name": "viral_URI",
@@ -1338,18 +1298,6 @@
         "earliest": 0,
         "typical": 0,
         "latest": 1
-      }
-    },
-    {
-      "from": "D24",
-      "to": "S09",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "rigors",
-      "reason": "TSSで悪寒戦慄",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
       }
     },
     {
@@ -1737,18 +1685,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "S18",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "skin_complaint",
-      "reason": "TSSでびまん性紅斑",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0.5
-      }
-    },
-    {
       "from": "D03",
       "to": "S19",
       "from_name": "COVID19",
@@ -2061,18 +1997,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "E01",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "temperature",
-      "reason": "TSSで高熱（>38.9℃）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
-      }
-    },
-    {
       "from": "D25",
       "to": "E01",
       "from_name": "acute_cholangitis",
@@ -2129,18 +2053,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D24",
-      "to": "E02",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "heart_rate",
-      "reason": "TSSでショック性頻脈",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0.25
-      }
-    },
-    {
       "from": "D13",
       "to": "E02",
       "from_name": "meningitis",
@@ -2150,18 +2062,6 @@
         "earliest": 0,
         "typical": 0,
         "latest": 0.5
-      }
-    },
-    {
-      "from": "D24",
-      "to": "E03",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "blood_pressure_systolic",
-      "reason": "TSSでショック性低血圧",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0.25
       }
     },
     {
@@ -2497,18 +2397,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "E12",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "skin_exam",
-      "reason": "TSSでびまん性紅皮症",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0.5
-      }
-    },
-    {
       "from": "D19",
       "to": "E12",
       "from_name": "drug_fever",
@@ -2638,18 +2526,6 @@
         "earliest": 1,
         "typical": 3,
         "latest": 7
-      }
-    },
-    {
-      "from": "D24",
-      "to": "E16",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "consciousness",
-      "reason": "TSSでショック→意識障害",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0.25,
-        "latest": 0.5
       }
     },
     {
@@ -2985,18 +2861,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "L03",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "procalcitonin",
-      "reason": "TSSでPCT上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0.25,
-        "latest": 0.5
-      }
-    },
-    {
       "from": "D25",
       "to": "L03",
       "from_name": "acute_cholangitis",
@@ -3146,18 +3010,6 @@
       "from_name": "meningitis",
       "to_name": "blood_culture",
       "reason": "細菌性髄膜炎で血液培養陽性",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0.5,
-        "latest": 1
-      }
-    },
-    {
-      "from": "D24",
-      "to": "L09",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "blood_culture",
-      "reason": "TSSで血液培養陽性",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0.5,
@@ -3465,18 +3317,6 @@
       }
     },
     {
-      "from": "D24",
-      "to": "L01",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "WBC",
-      "reason": "TSSでWBC上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0.25,
-        "latest": 0.5
-      }
-    },
-    {
       "from": "D15",
       "to": "L11",
       "from_name": "malaria",
@@ -3667,140 +3507,6 @@
         "typical": 28,
         "latest": 56
       }
-    },
-    {
-      "from": "R04",
-      "to": "D29",
-      "reason": "糖尿病は肝膿瘍のリスク因子",
-      "from_name": "diabetes",
-      "to_name": "liver_abscess"
-    },
-    {
-      "from": "R06",
-      "to": "D29",
-      "reason": "熱帯地域渡航歴（アメーバ性）",
-      "from_name": "travel_tropical_2w",
-      "to_name": "liver_abscess"
-    },
-    {
-      "from": "D29",
-      "to": "E01",
-      "reason": "肝膿瘍による発熱",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      },
-      "from_name": "liver_abscess",
-      "to_name": "temperature"
-    },
-    {
-      "from": "D29",
-      "to": "S09",
-      "reason": "肝膿瘍による悪寒戦慄",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      },
-      "from_name": "liver_abscess",
-      "to_name": "rigors"
-    },
-    {
-      "from": "D29",
-      "to": "S12",
-      "reason": "右上腹部痛",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 5
-      },
-      "from_name": "liver_abscess",
-      "to_name": "abdominal_pain_location"
-    },
-    {
-      "from": "D29",
-      "to": "E34",
-      "reason": "肝腫大",
-      "onset_day_range": {
-        "earliest": 2,
-        "typical": 5,
-        "latest": 14
-      },
-      "from_name": "liver_abscess",
-      "to_name": "hepatomegaly"
-    },
-    {
-      "from": "D29",
-      "to": "E18",
-      "reason": "黄疸（胆管圧迫時）",
-      "onset_day_range": {
-        "earliest": 3,
-        "typical": 7,
-        "latest": 14
-      },
-      "from_name": "liver_abscess",
-      "to_name": "jaundice"
-    },
-    {
-      "from": "D29",
-      "to": "L02",
-      "reason": "CRP上昇",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 2,
-        "latest": 3
-      },
-      "from_name": "liver_abscess",
-      "to_name": "CRP"
-    },
-    {
-      "from": "D29",
-      "to": "L01",
-      "reason": "白血球増多",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 2,
-        "latest": 3
-      },
-      "from_name": "liver_abscess",
-      "to_name": "WBC"
-    },
-    {
-      "from": "D29",
-      "to": "L11",
-      "reason": "肝酵素上昇",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 7
-      },
-      "from_name": "liver_abscess",
-      "to_name": "liver_enzymes"
-    },
-    {
-      "from": "D29",
-      "to": "L31",
-      "reason": "腹部CTで膿瘍像",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      },
-      "from_name": "liver_abscess",
-      "to_name": "CT_abdomen"
-    },
-    {
-      "from": "D29",
-      "to": "L09",
-      "reason": "血液培養陽性（50-60%）",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 5
-      },
-      "from_name": "liver_abscess",
-      "to_name": "blood_culture"
     },
     {
       "from": "R04",
@@ -6515,97 +6221,6 @@
       "to_name": "ESR"
     },
     {
-      "from": "R01",
-      "to": "D61",
-      "reason": "50歳以上に多い",
-      "from_name": "age_group",
-      "to_name": "PMR_GCA"
-    },
-    {
-      "from": "D61",
-      "to": "E01",
-      "reason": "発熱",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 14
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "temperature"
-    },
-    {
-      "from": "D61",
-      "to": "S06",
-      "reason": "肩・骨盤帯の著明な筋痛",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 7
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "myalgia"
-    },
-    {
-      "from": "D61",
-      "to": "S27",
-      "reason": "朝のこわばり（>30分）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 7
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "morning_stiffness"
-    },
-    {
-      "from": "D61",
-      "to": "S05",
-      "reason": "頭痛（GCA合併時）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 7,
-        "latest": 30
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "headache"
-    },
-    {
-      "from": "D61",
-      "to": "S07",
-      "reason": "全身倦怠感",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 14
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "fatigue"
-    },
-    {
-      "from": "D61",
-      "to": "L28",
-      "reason": "ESR著増（>100が多い）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 7
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "ESR"
-    },
-    {
-      "from": "D61",
-      "to": "L02",
-      "reason": "CRP著増",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 7
-      },
-      "from_name": "PMR_GCA",
-      "to_name": "CRP"
-    },
-    {
       "from": "D62",
       "to": "E01",
       "reason": "微熱",
@@ -6778,90 +6393,6 @@
         "latest": 28
       },
       "from_name": "reactive_arthritis",
-      "to_name": "CRP"
-    },
-    {
-      "from": "D65",
-      "to": "E01",
-      "reason": "発熱（急性発作時）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "temperature"
-    },
-    {
-      "from": "D65",
-      "to": "S23",
-      "reason": "関節腫脹（単関節）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "joint_swelling"
-    },
-    {
-      "from": "D65",
-      "to": "E21",
-      "reason": "関節の発赤・熱感（単関節）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "joint_redness_warmth"
-    },
-    {
-      "from": "D65",
-      "to": "S08",
-      "reason": "関節痛（激痛）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "arthralgia"
-    },
-    {
-      "from": "D65",
-      "to": "L23",
-      "reason": "尿酸上昇（痛風）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "uric_acid"
-    },
-    {
-      "from": "D65",
-      "to": "L30",
-      "reason": "関節液（結晶）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      },
-      "from_name": "gout_pseudogout",
-      "to_name": "joint_fluid"
-    },
-    {
-      "from": "D65",
-      "to": "L02",
-      "reason": "CRP上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 2
-      },
-      "from_name": "gout_pseudogout",
       "to_name": "CRP"
     },
     {
@@ -10044,18 +9575,6 @@
       }
     },
     {
-      "from": "D61",
-      "to": "T01",
-      "reason": "リウマチ性多発筋痛症/巨細胞動脈炎は慢性経過",
-      "from_name": "PMR_GCA",
-      "to_name": "fever_duration",
-      "onset_day_range": {
-        "earliest": 7,
-        "typical": 21,
-        "latest": 120
-      }
-    },
-    {
       "from": "D62",
       "to": "T01",
       "reason": "サルコイドーシスは慢性経過",
@@ -10192,18 +9711,6 @@
       "to": "T01",
       "reason": "急性虫垂炎は急性経過",
       "from_name": "appendicitis",
-      "to_name": "fever_duration",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 3
-      }
-    },
-    {
-      "from": "D24",
-      "to": "T01",
-      "reason": "トキシックショック症候群（TSS/劇症型は急性経過",
-      "from_name": "toxic_shock_syndrome",
       "to_name": "fever_duration",
       "onset_day_range": {
         "earliest": 0,
@@ -12551,69 +12058,6 @@
       "reason": "TODO"
     },
     {
-      "from": "D24",
-      "to": "L02",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "CRP",
-      "reason": "TODO"
-    },
-    {
-      "from": "D24",
-      "to": "L11",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "liver_enzymes",
-      "reason": "TODO"
-    },
-    {
-      "from": "D24",
-      "to": "S13",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "nausea_vomiting",
-      "reason": "TODO"
-    },
-    {
-      "from": "D24",
-      "to": "S14",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "diarrhea",
-      "reason": "TODO"
-    },
-    {
-      "from": "D24",
-      "to": "E04",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "respiratory_rate",
-      "reason": "TSS→ARDS/敗血症性ショック→頻呼吸(80%以上)"
-    },
-    {
-      "from": "D24",
-      "to": "E05",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "spo2",
-      "reason": "TSS→ARDS→低酸素血症(60%以上で酸素必要)"
-    },
-    {
-      "from": "D24",
-      "to": "L14",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "peripheral_blood_smear",
-      "reason": "TSS→DIC→血小板減少(80%以上)"
-    },
-    {
-      "from": "D24",
-      "to": "L17",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "CK",
-      "reason": "TSS→横紋筋融解/筋炎→CK上昇(50%以上)"
-    },
-    {
-      "from": "D24",
-      "to": "E25",
-      "from_name": "toxic_shock_syndrome",
-      "to_name": "conjunctival_injection",
-      "reason": "TSS診断基準:結膜充血(特にStaph TSS)"
-    },
-    {
       "from": "D25",
       "to": "E02",
       "from_name": "acute_cholangitis",
@@ -12716,27 +12160,6 @@
       "to": "T02",
       "from_name": "typhoid_fever",
       "to_name": "onset_speed",
-      "reason": "TODO"
-    },
-    {
-      "from": "D29",
-      "to": "S07",
-      "from_name": "liver_abscess",
-      "to_name": "fatigue",
-      "reason": "TODO"
-    },
-    {
-      "from": "D29",
-      "to": "S46",
-      "from_name": "liver_abscess",
-      "to_name": "anorexia",
-      "reason": "TODO"
-    },
-    {
-      "from": "D29",
-      "to": "T01",
-      "from_name": "liver_abscess",
-      "to_name": "fever_duration",
       "reason": "TODO"
     },
     {
@@ -13321,27 +12744,6 @@
       "reason": "TODO"
     },
     {
-      "from": "D61",
-      "to": "L01",
-      "from_name": "PMR_GCA",
-      "to_name": "WBC",
-      "reason": "TODO"
-    },
-    {
-      "from": "D61",
-      "to": "S17",
-      "from_name": "PMR_GCA",
-      "to_name": "weight_loss",
-      "reason": "TODO"
-    },
-    {
-      "from": "D61",
-      "to": "S46",
-      "from_name": "PMR_GCA",
-      "to_name": "anorexia",
-      "reason": "TODO"
-    },
-    {
       "from": "D62",
       "to": "S08",
       "from_name": "sarcoidosis",
@@ -13360,13 +12762,6 @@
       "to": "T01",
       "from_name": "reactive_arthritis",
       "to_name": "fever_duration",
-      "reason": "TODO"
-    },
-    {
-      "from": "D65",
-      "to": "L01",
-      "from_name": "gout_pseudogout",
-      "to_name": "WBC",
       "reason": "TODO"
     },
     {
@@ -13979,11 +13374,6 @@
       "note": "Tachycardia during thyrotoxic phase of subacute thyroiditis"
     },
     {
-      "from": "D29",
-      "to": "E02",
-      "note": "Tachycardia in liver abscess with systemic infection"
-    },
-    {
       "from": "D28",
       "to": "S06",
       "note": "Myalgia in typhoid fever ~30-40%"
@@ -14334,26 +13724,6 @@
       "note": "Malaise in candidemia"
     },
     {
-      "from": "D61",
-      "to": "S09",
-      "note": "Chills in PMR/GCA with systemic inflammation"
-    },
-    {
-      "from": "D61",
-      "to": "L11",
-      "note": "Liver enzymes mildly elevated in GCA ~30%"
-    },
-    {
-      "from": "D61",
-      "to": "L15",
-      "note": "Ferritin elevated in PMR/GCA inflammatory"
-    },
-    {
-      "from": "D61",
-      "to": "S01",
-      "note": "Cough in GCA with large vessel involvement (rare)"
-    },
-    {
       "from": "D100",
       "to": "E02",
       "note": "Tachycardia in hepatitis A with fever"
@@ -14382,16 +13752,6 @@
       "from": "D98",
       "to": "L01",
       "note": "Leukocytosis in Takayasu active phase"
-    },
-    {
-      "from": "D29",
-      "to": "L14",
-      "note": "CBC in liver abscess: leukocytosis, occasionally thrombocytopenia"
-    },
-    {
-      "from": "D29",
-      "to": "L20",
-      "note": "D-dimer elevated in liver abscess with sepsis/DIC"
     },
     {
       "from": "D28",
@@ -15017,13 +14377,6 @@
       "reason": "重症/合併症を伴う副鼻腔炎で感染性頻脈(20-30%)"
     },
     {
-      "from": "D24",
-      "to": "M02",
-      "from_name": "TSS",
-      "to_name": "hemodynamic_compromise",
-      "reason": "TSS: 重症敗血症→ショック(80-90%)"
-    },
-    {
       "from": "D57",
       "to": "M02",
       "from_name": "necrotizing fasciitis",
@@ -15367,125 +14720,6 @@
       "reason": "パルボB19: フェリチン正常〜軽度上昇が典型。Stillとの鑑別ポイント"
     },
     {
-      "from": "D106",
-      "to": "S48",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S48",
-      "reason": "DM/PM: 近位筋力低下(>90%)"
-    },
-    {
-      "from": "D106",
-      "to": "L17",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L17",
-      "reason": "DM/PM: CK上昇(>95%, 通常5-50倍)"
-    },
-    {
-      "from": "D106",
-      "to": "E01",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "E01",
-      "reason": "DM/PM: 発熱(20-50%)"
-    },
-    {
-      "from": "D106",
-      "to": "E12",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "E12",
-      "reason": "DM/PM: DM皮膚所見(heliotrope/Gottron)"
-    },
-    {
-      "from": "D106",
-      "to": "S25",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S25",
-      "reason": "DM/PM: 嚥下困難(30-40%)"
-    },
-    {
-      "from": "D106",
-      "to": "S08",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S08",
-      "reason": "DM/PM: 関節痛(20-50%)"
-    },
-    {
-      "from": "D106",
-      "to": "S07",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S07",
-      "reason": "DM/PM: 倦怠感(60-80%)"
-    },
-    {
-      "from": "D106",
-      "to": "S06",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S06",
-      "reason": "DM/PM: 筋肉痛(50-70%)"
-    },
-    {
-      "from": "D106",
-      "to": "L04",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L04",
-      "reason": "DM/PM: 間質性肺炎(20-40%)"
-    },
-    {
-      "from": "D106",
-      "to": "L02",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L02",
-      "reason": "DM/PM: CRP上昇(50-70%)"
-    },
-    {
-      "from": "D106",
-      "to": "L28",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L28",
-      "reason": "DM/PM: ESR上昇(50-70%)"
-    },
-    {
-      "from": "D106",
-      "to": "L16",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L16",
-      "reason": "DM/PM: LDH上昇(筋原性)"
-    },
-    {
-      "from": "D106",
-      "to": "S17",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "S17",
-      "reason": "DM/PM: 体重減少(30-50%)"
-    },
-    {
-      "from": "D106",
-      "to": "T01",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "T01",
-      "reason": "DM/PM: 亜急性〜慢性経過"
-    },
-    {
-      "from": "D106",
-      "to": "T02",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "T02",
-      "reason": "DM/PM: 緩徐発症"
-    },
-    {
-      "from": "D106",
-      "to": "L18",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "L18",
-      "reason": "DM/PM: ANA陽性(60-80%)"
-    },
-    {
-      "from": "D106",
-      "to": "E20",
-      "from_name": "inflammatory_myopathy",
-      "to_name": "E20",
-      "reason": "DM/PM: DM heliotrope疹(蝶形紅斑類似)"
-    },
-    {
       "from": "D74",
       "to": "S48",
       "from_name": "D74",
@@ -15547,13 +14781,6 @@
       "from_name": "D23",
       "to_name": "S43",
       "reason": "リケッチア症: 手掌足底の紫斑(RMSF 50-80%)"
-    },
-    {
-      "from": "D106",
-      "to": "S30",
-      "from_name": "D106",
-      "to_name": "S30",
-      "reason": "DM: 光線過敏(40-50%)"
     },
     {
       "from": "D52",
@@ -15750,118 +14977,6 @@
       "from_name": "HLH",
       "to_name": "S17",
       "reason": "HLH: 体重減少(30-50%)"
-    },
-    {
-      "from": "D108",
-      "to": "E01",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "E01",
-      "reason": "HBV急性: 前駆期発熱(30-50%)"
-    },
-    {
-      "from": "D108",
-      "to": "S07",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S07",
-      "reason": "HBV急性: 倦怠感(90%+)"
-    },
-    {
-      "from": "D108",
-      "to": "S46",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S46",
-      "reason": "HBV急性: 食欲不振(80%+)"
-    },
-    {
-      "from": "D108",
-      "to": "S13",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S13",
-      "reason": "HBV急性: 嘔気嘔吐(60-80%)"
-    },
-    {
-      "from": "D108",
-      "to": "E18",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "E18",
-      "reason": "HBV急性: 黄疸(50-70%)"
-    },
-    {
-      "from": "D108",
-      "to": "S12",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S12",
-      "reason": "HBV急性: 右上腹部痛(40-60%)"
-    },
-    {
-      "from": "D108",
-      "to": "E34",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "E34",
-      "reason": "HBV急性: 肝腫大(30-50%)"
-    },
-    {
-      "from": "D108",
-      "to": "S08",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S08",
-      "reason": "HBV急性: 関節痛(前駆期10-30%, 免疫複合体)"
-    },
-    {
-      "from": "D108",
-      "to": "L11",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "L11",
-      "reason": "HBV急性: AST/ALT著増(通常>1000)"
-    },
-    {
-      "from": "D108",
-      "to": "L01",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "L01",
-      "reason": "HBV急性: WBC正常〜軽度低下"
-    },
-    {
-      "from": "D108",
-      "to": "L02",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "L02",
-      "reason": "HBV急性: CRP軽度上昇"
-    },
-    {
-      "from": "D108",
-      "to": "L39",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "L39",
-      "reason": "HBV急性: HBs抗原/IgM-HBc陽性"
-    },
-    {
-      "from": "D108",
-      "to": "T01",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "T01",
-      "reason": "HBV急性: 亜急性経過(前駆期1-4週→黄疸期)"
-    },
-    {
-      "from": "D108",
-      "to": "T02",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "T02",
-      "reason": "HBV急性: 緩徐発症"
-    },
-    {
-      "from": "D108",
-      "to": "S17",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "S17",
-      "reason": "HBV急性: 体重減少(30-40%)"
-    },
-    {
-      "from": "D108",
-      "to": "E12",
-      "from_name": "acute_hepatitis_B",
-      "to_name": "E12",
-      "reason": "HBV急性: 皮疹(蕁麻疹/血管炎, 10-20%)"
     },
     {
       "from": "D109",
@@ -17495,13 +16610,6 @@
       "reason": "甲状腺クリーゼ: 高拍出性心不全でBNP上昇"
     },
     {
-      "from": "D24",
-      "to": "L51",
-      "from_name": "D24",
-      "to_name": "L51",
-      "reason": "TSS: 敗血症性心筋障害でBNP上昇"
-    },
-    {
       "from": "D05",
       "to": "S49",
       "from_name": "D05",
@@ -17544,25 +16652,11 @@
       "reason": "SLE: 腎障害で両側浮腫(20-30%)"
     },
     {
-      "from": "D108",
-      "to": "E36",
-      "from_name": "D108",
-      "to_name": "E36",
-      "reason": "B型肝炎: 肝障害で浮腫(10-20%)"
-    },
-    {
       "from": "D116",
       "to": "E37",
       "from_name": "D116",
       "to_name": "E37",
       "reason": "重症心筋炎: JVD(15-20%)"
-    },
-    {
-      "from": "D24",
-      "to": "E37",
-      "from_name": "D24",
-      "to_name": "E37",
-      "reason": "TSS: 敗血症性心機能不全でJVD(10-15%)"
     },
     {
       "from": "D121",
@@ -18641,13 +17735,6 @@
       "from_name": "D132",
       "to_name": "L52",
       "reason": "大動脈解離: D-dimer著高(>20ug/mLが多い, 感度97%)"
-    },
-    {
-      "from": "D24",
-      "to": "L52",
-      "from_name": "D24",
-      "to_name": "L52",
-      "reason": "TSS/敗血症: DICでD-dimer上昇"
     },
     {
       "from": "D57",
@@ -20006,13 +19093,6 @@
       "from_name": "D72",
       "to_name": "L54",
       "reason": "副腎クリーゼ: 低血糖(30-50%)"
-    },
-    {
-      "from": "D24",
-      "to": "L54",
-      "from_name": "D24",
-      "to_name": "L54",
-      "reason": "TSS/敗血症: 血糖変動"
     },
     {
       "from": "D13",
@@ -22036,13 +21116,6 @@
       "from_name": "HHS",
       "to_name": "L55",
       "reason": "HHS: AKI(脱水)"
-    },
-    {
-      "from": "D24",
-      "to": "L55",
-      "from_name": "TSS",
-      "to_name": "L55",
-      "reason": "TSS: AKI(ショック)"
     },
     {
       "from": "D153",
@@ -24495,20 +23568,6 @@
       "reason": "腸チフス: 悪寒戦慄(50-60%)"
     },
     {
-      "from": "D29",
-      "to": "L03",
-      "from_name": "liver_abscess",
-      "to_name": "L03",
-      "reason": "肝膿瘍: PCT上昇(細菌性)"
-    },
-    {
-      "from": "D29",
-      "to": "S05",
-      "from_name": "liver_abscess",
-      "to_name": "S05",
-      "reason": "肝膿瘍: 頭痛(20-30%)"
-    },
-    {
       "from": "D57",
       "to": "L11",
       "from_name": "NF",
@@ -26271,27 +25330,6 @@
       "from_name": "amebic_dysentery",
       "to_name": "T02",
       "reason": "アメーバ赤痢: 発症の速さ"
-    },
-    {
-      "from": "D65",
-      "to": "T01",
-      "from_name": "FMF",
-      "to_name": "T01",
-      "reason": "FMF: 発熱期間"
-    },
-    {
-      "from": "D65",
-      "to": "T02",
-      "from_name": "FMF",
-      "to_name": "T02",
-      "reason": "FMF: 発症の速さ"
-    },
-    {
-      "from": "D65",
-      "to": "E02",
-      "from_name": "FMF",
-      "to_name": "E02",
-      "reason": "FMF: 頻脈(発作時)"
     },
     {
       "from": "D193",
@@ -28896,13 +27934,6 @@
       "from_name": "peritonsillar_abscess",
       "to_name": "E07",
       "reason": "扁桃周囲膿瘍: 肺(通常clear)"
-    },
-    {
-      "from": "D65",
-      "to": "L28",
-      "from_name": "FMF",
-      "to_name": "L28",
-      "reason": "FMF: ESR上昇(発作時)"
     },
     {
       "from": "D175",
@@ -37557,13 +36588,6 @@
       "reason": "急性心膜炎: 心不全は通常なし(心嚢液少量)"
     },
     {
-      "from": "D24",
-      "to": "L64",
-      "from_name": "TSS",
-      "to_name": "L64",
-      "reason": "TSS: DIC合併(30-40%)"
-    },
-    {
       "from": "D57",
       "to": "L64",
       "from_name": "NF",
@@ -37716,13 +36740,6 @@
       "from_name": "acute_hep_A",
       "to_name": "L66",
       "reason": "A型肝炎: 肝細胞型(AST/ALT著明上昇)"
-    },
-    {
-      "from": "D108",
-      "to": "L66",
-      "from_name": "hep_B",
-      "to_name": "L66",
-      "reason": "B型肝炎: 肝細胞型"
     },
     {
       "from": "D169",
@@ -37975,13 +36992,6 @@
       "from_name": "HCC",
       "to_name": "L66",
       "reason": "肝細胞癌: 肝細胞型(背景肝硬変+腫瘍浸潤)"
-    },
-    {
-      "from": "D29",
-      "to": "L66",
-      "from_name": "liver_abscess",
-      "to_name": "L66",
-      "reason": "肝膿瘍: 肝細胞型(AST/ALT上昇)"
     },
     {
       "from": "D25",
@@ -38486,13 +37496,6 @@
       "from_name": "hydrocephalus",
       "to_name": "S60",
       "reason": "急性水頭症: 進行性激烈頭痛(80%+)"
-    },
-    {
-      "from": "D61",
-      "to": "S60",
-      "from_name": "GCA",
-      "to_name": "S60",
-      "reason": "巨細胞動脈炎: 側頭部頭痛(bilateral pressing, 70-80%)"
     },
     {
       "from": "D82",
@@ -42590,14 +41593,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D61",
-      "to": "S84",
-      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D23",
       "to": "S84",
       "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
@@ -43198,14 +42193,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D24",
-      "to": "S86",
-      "from_name": "トキシックショック症候群（TSS/劇症型GAS含む）",
-      "to_name": "下痢の性状",
-      "reason": "CPT_NO_EDGE sync: トキシックショック症候群（TSS/劇症型GAS含む） → 下痢の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D27",
       "to": "S86",
       "from_name": "憩室炎",
@@ -43510,14 +42497,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D24",
-      "to": "S87",
-      "from_name": "トキシックショック症候群（TSS/劇症型GAS含む）",
-      "to_name": "皮膚症状の種類",
-      "reason": "CPT_NO_EDGE sync: トキシックショック症候群（TSS/劇症型GAS含む） → 皮膚症状の種類",
-      "onset_day_range": null
-    },
-    {
       "from": "D57",
       "to": "S87",
       "from_name": "壊死性筋膜炎",
@@ -43702,14 +42681,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D29",
-      "to": "S89",
-      "from_name": "肝膿瘍（細菌性/アメーバ性）",
-      "to_name": "腹痛の部位",
-      "reason": "CPT_NO_EDGE sync: 肝膿瘍（細菌性/アメーバ性） → 腹痛の部位",
-      "onset_day_range": null
-    },
-    {
       "from": "D38",
       "to": "S89",
       "from_name": "Clostridioides difficile感染症",
@@ -43827,14 +42798,6 @@
       "from_name": "レジオネラ肺炎",
       "to_name": "腹痛の部位",
       "reason": "CPT_NO_EDGE sync: レジオネラ肺炎 → 腹痛の部位",
-      "onset_day_range": null
-    },
-    {
-      "from": "D108",
-      "to": "S89",
-      "from_name": "B型肝炎（急性/慢性増悪）",
-      "to_name": "腹痛の部位",
-      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 腹痛の部位",
       "onset_day_range": null
     },
     {
@@ -44558,14 +43521,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D65",
-      "to": "S90",
-      "from_name": "痛風/偽痛風発作",
-      "to_name": "関節痛の分布",
-      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節痛の分布",
-      "onset_day_range": null
-    },
-    {
       "from": "D66",
       "to": "S90",
       "from_name": "家族性地中海熱",
@@ -44659,22 +43614,6 @@
       "from_name": "パルボウイルスB19感染症（伝染性紅斑）",
       "to_name": "関節痛の分布",
       "reason": "CPT_NO_EDGE sync: パルボウイルスB19感染症（伝染性紅斑） → 関節痛の分布",
-      "onset_day_range": null
-    },
-    {
-      "from": "D106",
-      "to": "S90",
-      "from_name": "炎症性筋疾患（皮膚筋炎/多発性筋炎）",
-      "to_name": "関節痛の分布",
-      "reason": "CPT_NO_EDGE sync: 炎症性筋疾患（皮膚筋炎/多発性筋炎） → 関節痛の分布",
-      "onset_day_range": null
-    },
-    {
-      "from": "D108",
-      "to": "S90",
-      "from_name": "B型肝炎（急性/慢性増悪）",
-      "to_name": "関節痛の分布",
-      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 関節痛の分布",
       "onset_day_range": null
     },
     {
@@ -44854,14 +43793,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D65",
-      "to": "S91",
-      "from_name": "痛風/偽痛風発作",
-      "to_name": "関節腫脹の分布",
-      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節腫脹の分布",
-      "onset_day_range": null
-    },
-    {
       "from": "D103",
       "to": "S91",
       "from_name": "急性リウマチ熱",
@@ -44907,14 +43838,6 @@
       "from_name": "反応性関節炎",
       "to_name": "関節炎症の分布",
       "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 関節炎症の分布",
-      "onset_day_range": null
-    },
-    {
-      "from": "D65",
-      "to": "E47",
-      "from_name": "痛風/偽痛風発作",
-      "to_name": "関節炎症の分布",
-      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節炎症の分布",
       "onset_day_range": null
     },
     {
@@ -45710,14 +44633,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D108",
-      "to": "E50",
-      "from_name": "B型肝炎（急性/慢性増悪）",
-      "to_name": "下腿浮腫の側性",
-      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 下腿浮腫の側性",
-      "onset_day_range": null
-    },
-    {
       "from": "D124",
       "to": "E50",
       "from_name": "心タンポナーデ",
@@ -45958,14 +44873,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D61",
-      "to": "S145",
-      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
-      "to_name": "朝のこわばりの持続時間",
-      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → 朝のこわばりの持続時間",
-      "onset_day_range": null
-    },
-    {
       "from": "D58",
       "to": "S145",
       "from_name": "成人Still病",
@@ -45995,14 +44902,6 @@
       "from_name": "反応性関節炎",
       "to_name": "朝のこわばりの持続時間",
       "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 朝のこわばりの持続時間",
-      "onset_day_range": null
-    },
-    {
-      "from": "D61",
-      "to": "S146",
-      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
-      "to_name": "こわばりの活動による変化",
-      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → こわばりの活動による変化",
       "onset_day_range": null
     },
     {
@@ -47806,22 +46705,6 @@
       "onset_day_range": null
     },
     {
-      "from": "R02",
-      "to": "D24",
-      "from_name": "sex",
-      "to_name": "D24",
-      "reason": "TSS。やや若年女性(menstrual含む)だが弱い",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D24",
-      "from_name": "age_group",
-      "to_name": "D24",
-      "reason": "TSS。やや若年女性(menstrual含む)だが弱い",
-      "onset_day_range": null
-    },
-    {
       "from": "R01",
       "to": "D25",
       "from_name": "age_group",
@@ -47835,22 +46718,6 @@
       "from_name": "age_group",
       "to_name": "D28",
       "reason": "腸チフス。若年",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
-      "to": "D29",
-      "from_name": "sex",
-      "to_name": "D29",
-      "reason": "肝膿瘍。中年男性",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D29",
-      "from_name": "age_group",
-      "to_name": "D29",
-      "reason": "肝膿瘍。中年男性",
       "onset_day_range": null
     },
     {
@@ -48035,38 +46902,6 @@
       "from_name": "age_group",
       "to_name": "D105",
       "reason": "パルボB19。小児+若年女性",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
-      "to": "D106",
-      "from_name": "sex",
-      "to_name": "D106",
-      "reason": "DM/PM。中年女性2:1",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D106",
-      "from_name": "age_group",
-      "to_name": "D106",
-      "reason": "DM/PM。中年女性2:1",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
-      "to": "D108",
-      "from_name": "sex",
-      "to_name": "D108",
-      "reason": "B型肝炎。やや若年男性",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D108",
-      "from_name": "age_group",
-      "to_name": "D108",
-      "reason": "B型肝炎。やや若年男性",
       "onset_day_range": null
     },
     {
@@ -49599,14 +48434,6 @@
     },
     {
       "from": "R02",
-      "to": "D61",
-      "from_name": "sex",
-      "to_name": "D61",
-      "reason": "PMR/GCA。高齢女性2:1",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
       "to": "D62",
       "from_name": "sex",
       "to_name": "D62",
@@ -49643,22 +48470,6 @@
       "from_name": "age_group",
       "to_name": "D64",
       "reason": "反応性関節炎。若年男性2:1",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
-      "to": "D65",
-      "from_name": "sex",
-      "to_name": "D65",
-      "reason": "痛風。中年男性9:1",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D65",
-      "from_name": "age_group",
-      "to_name": "D65",
-      "reason": "痛風。中年男性9:1",
       "onset_day_range": null
     },
     {
@@ -52688,6 +51499,2015 @@
         "typical": 0,
         "latest": 0
       }
+    },
+    {
+      "from": "R01",
+      "to": "D61",
+      "reason": "50歳以上に多い(PMR)",
+      "from_name": "age_group",
+      "to_name": "PMR"
+    },
+    {
+      "from": "R02",
+      "to": "D61",
+      "reason": "PMR。高齢女性2:1",
+      "from_name": "sex",
+      "to_name": "D61"
+    },
+    {
+      "from": "D61",
+      "to": "E01",
+      "reason": "発熱(微熱〜中等度)",
+      "from_name": "PMR",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D61",
+      "to": "S06",
+      "reason": "肩・骨盤帯の著明な筋痛(PMR主症状)",
+      "from_name": "PMR",
+      "to_name": "myalgia",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D61",
+      "to": "S27",
+      "reason": "朝のこわばり>30分(PMR特異的)",
+      "from_name": "PMR",
+      "to_name": "morning_stiffness",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D61",
+      "to": "S07",
+      "reason": "全身倦怠感",
+      "from_name": "PMR",
+      "to_name": "fatigue",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D61",
+      "to": "L28",
+      "reason": "ESR著増(>50が多い, >100も)",
+      "from_name": "PMR",
+      "to_name": "ESR",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D61",
+      "to": "L02",
+      "reason": "CRP著増",
+      "from_name": "PMR",
+      "to_name": "CRP",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D61",
+      "to": "T01",
+      "reason": "PMR慢性経過(週〜月単位)",
+      "from_name": "PMR",
+      "to_name": "fever_duration",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 21,
+        "latest": 120
+      }
+    },
+    {
+      "from": "D61",
+      "to": "L01",
+      "reason": "白血球軽度上昇",
+      "from_name": "PMR",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D61",
+      "to": "S17",
+      "reason": "体重減少(慢性炎症)",
+      "from_name": "PMR",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D61",
+      "to": "S46",
+      "reason": "食欲不振",
+      "from_name": "PMR",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D61",
+      "to": "S09",
+      "reason": "悪寒(全身炎症)",
+      "from_name": "PMR",
+      "to_name": "chills"
+    },
+    {
+      "from": "D61",
+      "to": "L15",
+      "reason": "フェリチン上昇(炎症)",
+      "from_name": "PMR",
+      "to_name": "ferritin"
+    },
+    {
+      "from": "D61",
+      "to": "S145",
+      "reason": "朝のこわばり>30分(PMR特異的所見)",
+      "from_name": "PMR",
+      "to_name": "S145"
+    },
+    {
+      "from": "D61",
+      "to": "S146",
+      "reason": "活動で改善(炎症性パターン)",
+      "from_name": "PMR",
+      "to_name": "S146"
+    },
+    {
+      "from": "R01",
+      "to": "D359",
+      "reason": "50歳以上(GCAは70歳以上にピーク)",
+      "from_name": "age_group",
+      "to_name": "GCA"
+    },
+    {
+      "from": "R02",
+      "to": "D359",
+      "reason": "GCA。高齢女性3:1",
+      "from_name": "sex",
+      "to_name": "D359"
+    },
+    {
+      "from": "D359",
+      "to": "E01",
+      "reason": "発熱(GCA: 中等度〜高熱, FUOの原因)",
+      "from_name": "GCA",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D359",
+      "to": "S05",
+      "reason": "新規頭痛(GCA主症状, 側頭部)",
+      "from_name": "GCA",
+      "to_name": "headache",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D359",
+      "to": "S60",
+      "reason": "側頭部頭痛(GCA 70-80%)",
+      "from_name": "GCA",
+      "to_name": "S60"
+    },
+    {
+      "from": "D359",
+      "to": "S06",
+      "reason": "筋痛(GCA合併PMR 40-60%)",
+      "from_name": "GCA",
+      "to_name": "myalgia",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D359",
+      "to": "S27",
+      "reason": "朝のこわばり(GCA合併PMR時)",
+      "from_name": "GCA",
+      "to_name": "morning_stiffness",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D359",
+      "to": "S07",
+      "reason": "全身倦怠感",
+      "from_name": "GCA",
+      "to_name": "fatigue",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D359",
+      "to": "L28",
+      "reason": "ESR著増(>100が多い)",
+      "from_name": "GCA",
+      "to_name": "ESR",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D359",
+      "to": "L02",
+      "reason": "CRP著増",
+      "from_name": "GCA",
+      "to_name": "CRP",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D359",
+      "to": "T01",
+      "reason": "GCA慢性経過(週〜月単位)",
+      "from_name": "GCA",
+      "to_name": "fever_duration",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 21,
+        "latest": 120
+      }
+    },
+    {
+      "from": "D359",
+      "to": "L01",
+      "reason": "白血球軽度上昇",
+      "from_name": "GCA",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D359",
+      "to": "S17",
+      "reason": "体重減少(慢性炎症)",
+      "from_name": "GCA",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D359",
+      "to": "S46",
+      "reason": "食欲不振",
+      "from_name": "GCA",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D359",
+      "to": "S09",
+      "reason": "悪寒",
+      "from_name": "GCA",
+      "to_name": "chills"
+    },
+    {
+      "from": "D359",
+      "to": "L11",
+      "reason": "肝酵素軽度上昇(GCA 30%)",
+      "from_name": "GCA",
+      "to_name": "AST_ALT"
+    },
+    {
+      "from": "D359",
+      "to": "L15",
+      "reason": "フェリチン著増(GCAで高い)",
+      "from_name": "GCA",
+      "to_name": "ferritin"
+    },
+    {
+      "from": "D359",
+      "to": "S01",
+      "reason": "咳嗽(大血管型GCA)",
+      "from_name": "GCA",
+      "to_name": "cough"
+    },
+    {
+      "from": "D359",
+      "to": "S84",
+      "reason": "乾性咳嗽(大血管型GCA)",
+      "from_name": "GCA",
+      "to_name": "S84"
+    },
+    {
+      "from": "D359",
+      "to": "S145",
+      "reason": "朝のこわばり(GCA合併PMR時)",
+      "from_name": "GCA",
+      "to_name": "S145"
+    },
+    {
+      "from": "D359",
+      "to": "S146",
+      "reason": "活動で改善(炎症性パターン)",
+      "from_name": "GCA",
+      "to_name": "S146"
+    },
+    {
+      "from": "R01",
+      "to": "D65",
+      "reason": "痛風。中年男性に多い",
+      "from_name": "age_group",
+      "to_name": "gout"
+    },
+    {
+      "from": "R02",
+      "to": "D65",
+      "reason": "痛風。男性9:1",
+      "from_name": "sex",
+      "to_name": "D65"
+    },
+    {
+      "from": "D65",
+      "to": "E01",
+      "reason": "発熱(急性発作時)",
+      "from_name": "gout",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D65",
+      "to": "S23",
+      "reason": "関節腫脹(単関節, 第1MTP好発)",
+      "from_name": "gout",
+      "to_name": "joint_swelling",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D65",
+      "to": "E21",
+      "reason": "関節の発赤・熱感",
+      "from_name": "gout",
+      "to_name": "joint_redness_warmth",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D65",
+      "to": "S08",
+      "reason": "関節痛(激痛)",
+      "from_name": "gout",
+      "to_name": "arthralgia",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D65",
+      "to": "L23",
+      "reason": "尿酸高値(痛風特異的)",
+      "from_name": "gout",
+      "to_name": "uric_acid",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 0
+      }
+    },
+    {
+      "from": "D65",
+      "to": "L30",
+      "reason": "関節液:尿酸ナトリウム結晶",
+      "from_name": "gout",
+      "to_name": "joint_fluid",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D65",
+      "to": "L02",
+      "reason": "CRP上昇",
+      "from_name": "gout",
+      "to_name": "CRP",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 2
+      }
+    },
+    {
+      "from": "D65",
+      "to": "L01",
+      "reason": "白血球上昇(急性発作時)",
+      "from_name": "gout",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D65",
+      "to": "T01",
+      "reason": "発作は数日で自然軽快",
+      "from_name": "gout",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D65",
+      "to": "T02",
+      "reason": "急性発症",
+      "from_name": "gout",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D65",
+      "to": "E02",
+      "reason": "頻脈(急性発作時の疼痛)",
+      "from_name": "gout",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D65",
+      "to": "L28",
+      "reason": "ESR上昇(急性炎症)",
+      "from_name": "gout",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D65",
+      "to": "S90",
+      "reason": "関節痛の分布(単関節)",
+      "from_name": "gout",
+      "to_name": "S90"
+    },
+    {
+      "from": "D65",
+      "to": "S91",
+      "reason": "関節腫脹の分布(単関節)",
+      "from_name": "gout",
+      "to_name": "S91"
+    },
+    {
+      "from": "D65",
+      "to": "E47",
+      "reason": "関節炎症の分布(単関節)",
+      "from_name": "gout",
+      "to_name": "E47"
+    },
+    {
+      "from": "R01",
+      "to": "D360",
+      "reason": "偽痛風。高齢者(60歳以上)に多い",
+      "from_name": "age_group",
+      "to_name": "CPPD"
+    },
+    {
+      "from": "R02",
+      "to": "D360",
+      "reason": "偽痛風。男女差少ない(やや女性多い)",
+      "from_name": "sex",
+      "to_name": "D360"
+    },
+    {
+      "from": "D360",
+      "to": "E01",
+      "reason": "発熱(急性発作時)",
+      "from_name": "CPPD",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D360",
+      "to": "S23",
+      "reason": "関節腫脹(単関節, 膝好発)",
+      "from_name": "CPPD",
+      "to_name": "joint_swelling",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D360",
+      "to": "E21",
+      "reason": "関節の発赤・熱感",
+      "from_name": "CPPD",
+      "to_name": "joint_redness_warmth",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D360",
+      "to": "S08",
+      "reason": "関節痛(激痛)",
+      "from_name": "CPPD",
+      "to_name": "arthralgia",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D360",
+      "to": "L23",
+      "reason": "尿酸正常(痛風との鑑別点)",
+      "from_name": "CPPD",
+      "to_name": "uric_acid",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 0
+      }
+    },
+    {
+      "from": "D360",
+      "to": "L30",
+      "reason": "関節液:ピロリン酸カルシウム結晶",
+      "from_name": "CPPD",
+      "to_name": "joint_fluid",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 0,
+        "latest": 1
+      }
+    },
+    {
+      "from": "D360",
+      "to": "L02",
+      "reason": "CRP上昇",
+      "from_name": "CPPD",
+      "to_name": "CRP",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 2
+      }
+    },
+    {
+      "from": "D360",
+      "to": "L01",
+      "reason": "白血球上昇(急性発作時)",
+      "from_name": "CPPD",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D360",
+      "to": "T01",
+      "reason": "発作は数日〜1週で軽快",
+      "from_name": "CPPD",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D360",
+      "to": "T02",
+      "reason": "急性発症",
+      "from_name": "CPPD",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D360",
+      "to": "E02",
+      "reason": "頻脈(疼痛)",
+      "from_name": "CPPD",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D360",
+      "to": "L28",
+      "reason": "ESR上昇",
+      "from_name": "CPPD",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D360",
+      "to": "S90",
+      "reason": "関節痛の分布(単関節)",
+      "from_name": "CPPD",
+      "to_name": "S90"
+    },
+    {
+      "from": "D360",
+      "to": "S91",
+      "reason": "関節腫脹の分布(単関節)",
+      "from_name": "CPPD",
+      "to_name": "S91"
+    },
+    {
+      "from": "D360",
+      "to": "E47",
+      "reason": "関節炎症の分布(単関節)",
+      "from_name": "CPPD",
+      "to_name": "E47"
+    },
+    {
+      "from": "R01",
+      "to": "D106",
+      "reason": "DM。中年女性2:1",
+      "from_name": "age_group",
+      "to_name": "DM"
+    },
+    {
+      "from": "R02",
+      "to": "D106",
+      "reason": "DM。女性2:1",
+      "from_name": "sex",
+      "to_name": "D106"
+    },
+    {
+      "from": "D106",
+      "to": "E01",
+      "reason": "発熱(20-50%)",
+      "from_name": "DM",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D106",
+      "to": "E12",
+      "reason": "DM皮膚所見(heliotrope/Gottron)(DM特異的)",
+      "from_name": "DM",
+      "to_name": "skin_findings"
+    },
+    {
+      "from": "D106",
+      "to": "E20",
+      "reason": "DM heliotrope疹(蝶形紅斑類似)(DM特異的)",
+      "from_name": "DM",
+      "to_name": "butterfly_rash"
+    },
+    {
+      "from": "D106",
+      "to": "S30",
+      "reason": "光線過敏(DM 40-50%)(DM特異的)",
+      "from_name": "DM",
+      "to_name": "photosensitivity"
+    },
+    {
+      "from": "D106",
+      "to": "S48",
+      "reason": "近位筋力低下(>90%)",
+      "from_name": "DM",
+      "to_name": "proximal_weakness"
+    },
+    {
+      "from": "D106",
+      "to": "L17",
+      "reason": "CK著増(通常5-50倍)",
+      "from_name": "DM",
+      "to_name": "CK"
+    },
+    {
+      "from": "D106",
+      "to": "S25",
+      "reason": "嚥下困難(30-40%)",
+      "from_name": "DM",
+      "to_name": "dysphagia"
+    },
+    {
+      "from": "D106",
+      "to": "S06",
+      "reason": "筋肉痛(50-70%)",
+      "from_name": "DM",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D106",
+      "to": "S07",
+      "reason": "倦怠感(60-80%)",
+      "from_name": "DM",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D106",
+      "to": "S08",
+      "reason": "関節痛(20-50%)",
+      "from_name": "DM",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D106",
+      "to": "L04",
+      "reason": "間質性肺炎(DM 30-50%)",
+      "from_name": "DM",
+      "to_name": "chest_xray"
+    },
+    {
+      "from": "D106",
+      "to": "L02",
+      "reason": "CRP上昇(50-70%)",
+      "from_name": "DM",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D106",
+      "to": "L28",
+      "reason": "ESR上昇(50-70%)",
+      "from_name": "DM",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D106",
+      "to": "L16",
+      "reason": "LDH上昇(筋原性)",
+      "from_name": "DM",
+      "to_name": "LDH"
+    },
+    {
+      "from": "D106",
+      "to": "L18",
+      "reason": "ANA陽性(60-80%)",
+      "from_name": "DM",
+      "to_name": "ANA"
+    },
+    {
+      "from": "D106",
+      "to": "S17",
+      "reason": "体重減少(30-50%)",
+      "from_name": "DM",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D106",
+      "to": "T01",
+      "reason": "亜急性〜慢性経過",
+      "from_name": "DM",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D106",
+      "to": "T02",
+      "reason": "緩徐発症",
+      "from_name": "DM",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D106",
+      "to": "S90",
+      "reason": "関節痛の分布(多関節対称性)",
+      "from_name": "DM",
+      "to_name": "S90"
+    },
+    {
+      "from": "R01",
+      "to": "D361",
+      "reason": "PM。中年〜高齢、女性やや多い",
+      "from_name": "age_group",
+      "to_name": "PM"
+    },
+    {
+      "from": "R02",
+      "to": "D361",
+      "reason": "PM。女性やや多い(1.5:1)",
+      "from_name": "sex",
+      "to_name": "D361"
+    },
+    {
+      "from": "D361",
+      "to": "E01",
+      "reason": "発熱(20-40%)",
+      "from_name": "PM",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D361",
+      "to": "S48",
+      "reason": "近位筋力低下(>95%)(PM主症状)",
+      "from_name": "PM",
+      "to_name": "proximal_weakness"
+    },
+    {
+      "from": "D361",
+      "to": "L17",
+      "reason": "CK著増(通常5-50倍)",
+      "from_name": "PM",
+      "to_name": "CK"
+    },
+    {
+      "from": "D361",
+      "to": "S25",
+      "reason": "嚥下困難(30-40%)",
+      "from_name": "PM",
+      "to_name": "dysphagia"
+    },
+    {
+      "from": "D361",
+      "to": "S06",
+      "reason": "筋肉痛(60-80%)",
+      "from_name": "PM",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D361",
+      "to": "S07",
+      "reason": "倦怠感(60-80%)",
+      "from_name": "PM",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D361",
+      "to": "S08",
+      "reason": "関節痛(20-40%)",
+      "from_name": "PM",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D361",
+      "to": "L04",
+      "reason": "間質性肺炎(PM 20-30%)",
+      "from_name": "PM",
+      "to_name": "chest_xray"
+    },
+    {
+      "from": "D361",
+      "to": "L02",
+      "reason": "CRP上昇",
+      "from_name": "PM",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D361",
+      "to": "L28",
+      "reason": "ESR上昇",
+      "from_name": "PM",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D361",
+      "to": "L16",
+      "reason": "LDH上昇(筋原性)",
+      "from_name": "PM",
+      "to_name": "LDH"
+    },
+    {
+      "from": "D361",
+      "to": "L18",
+      "reason": "ANA陽性(40-60%,DMより低い)",
+      "from_name": "PM",
+      "to_name": "ANA"
+    },
+    {
+      "from": "D361",
+      "to": "S17",
+      "reason": "体重減少",
+      "from_name": "PM",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D361",
+      "to": "T01",
+      "reason": "亜急性〜慢性経過",
+      "from_name": "PM",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D361",
+      "to": "T02",
+      "reason": "緩徐発症",
+      "from_name": "PM",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D361",
+      "to": "S90",
+      "reason": "関節痛の分布",
+      "from_name": "PM",
+      "to_name": "S90"
+    },
+    {
+      "from": "R01",
+      "to": "D29",
+      "reason": "細菌性肝膿瘍。中年男性",
+      "from_name": "age_group",
+      "to_name": "D29"
+    },
+    {
+      "from": "R02",
+      "to": "D29",
+      "reason": "細菌性肝膿瘍。男性2:1",
+      "from_name": "sex",
+      "to_name": "D29"
+    },
+    {
+      "from": "R04",
+      "to": "D29",
+      "reason": "糖尿病は細菌性肝膿瘍の主リスク因子",
+      "from_name": "diabetes",
+      "to_name": "D29"
+    },
+    {
+      "from": "D29",
+      "to": "E01",
+      "reason": "高熱(弛張熱パターン)",
+      "from_name": "bacterial_abscess",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 3
+      }
+    },
+    {
+      "from": "D29",
+      "to": "S09",
+      "reason": "悪寒戦慄(細菌血症)",
+      "from_name": "bacterial_abscess",
+      "to_name": "rigors",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 3
+      }
+    },
+    {
+      "from": "D29",
+      "to": "S12",
+      "reason": "右上腹部痛",
+      "from_name": "bacterial_abscess",
+      "to_name": "abdominal_distension",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 5
+      }
+    },
+    {
+      "from": "D29",
+      "to": "E34",
+      "reason": "肝腫大",
+      "from_name": "bacterial_abscess",
+      "to_name": "hepatomegaly",
+      "onset_day_range": {
+        "earliest": 2,
+        "typical": 5,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D29",
+      "to": "E18",
+      "reason": "黄疸(胆管圧迫, 細菌性で多い)",
+      "from_name": "bacterial_abscess",
+      "to_name": "jaundice",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D29",
+      "to": "L02",
+      "reason": "CRP著増",
+      "from_name": "bacterial_abscess",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D29",
+      "to": "L01",
+      "reason": "白血球増多",
+      "from_name": "bacterial_abscess",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D29",
+      "to": "L11",
+      "reason": "肝酵素上昇",
+      "from_name": "bacterial_abscess",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D29",
+      "to": "L31",
+      "reason": "CT:膿瘍像(多発が多い)",
+      "from_name": "bacterial_abscess",
+      "to_name": "CT_abdomen"
+    },
+    {
+      "from": "D29",
+      "to": "L09",
+      "reason": "血培陽性(Klebsiella/E.coli 50-60%)",
+      "from_name": "bacterial_abscess",
+      "to_name": "blood_culture"
+    },
+    {
+      "from": "D29",
+      "to": "S07",
+      "reason": "倦怠感",
+      "from_name": "bacterial_abscess",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D29",
+      "to": "S46",
+      "reason": "食欲不振",
+      "from_name": "bacterial_abscess",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D29",
+      "to": "T01",
+      "reason": "亜急性経過(1-3週)",
+      "from_name": "bacterial_abscess",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D29",
+      "to": "E02",
+      "reason": "頻脈(全身感染)",
+      "from_name": "bacterial_abscess",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D29",
+      "to": "L14",
+      "reason": "血小板減少(重症時)",
+      "from_name": "bacterial_abscess",
+      "to_name": "CBC_diff"
+    },
+    {
+      "from": "D29",
+      "to": "L20",
+      "reason": "D-dimer上昇",
+      "from_name": "bacterial_abscess",
+      "to_name": "D_dimer"
+    },
+    {
+      "from": "D29",
+      "to": "L03",
+      "reason": "PCT上昇(細菌性)",
+      "from_name": "bacterial_abscess",
+      "to_name": "PCT"
+    },
+    {
+      "from": "D29",
+      "to": "S05",
+      "reason": "頭痛",
+      "from_name": "bacterial_abscess",
+      "to_name": "headache"
+    },
+    {
+      "from": "D29",
+      "to": "L66",
+      "reason": "肝細胞型障害パターン",
+      "from_name": "bacterial_abscess",
+      "to_name": "L66"
+    },
+    {
+      "from": "D29",
+      "to": "S89",
+      "reason": "右上腹部痛",
+      "from_name": "bacterial_abscess",
+      "to_name": "S89"
+    },
+    {
+      "from": "R01",
+      "to": "D362",
+      "reason": "アメーバ性肝膿瘍。20-40歳男性に多い",
+      "from_name": "age_group",
+      "to_name": "D362"
+    },
+    {
+      "from": "R02",
+      "to": "D362",
+      "reason": "アメーバ性肝膿瘍。男性10:1",
+      "from_name": "sex",
+      "to_name": "D362"
+    },
+    {
+      "from": "R06",
+      "to": "D362",
+      "reason": "熱帯渡航歴(アメーバ感染の主リスク)",
+      "from_name": "travel_tropical",
+      "to_name": "D362"
+    },
+    {
+      "from": "D362",
+      "to": "E01",
+      "reason": "高熱(弛張熱)",
+      "from_name": "amebic_abscess",
+      "to_name": "temperature",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 3,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D362",
+      "to": "S09",
+      "reason": "悪寒戦慄",
+      "from_name": "amebic_abscess",
+      "to_name": "rigors"
+    },
+    {
+      "from": "D362",
+      "to": "S12",
+      "reason": "右上腹部痛(右肩放散)",
+      "from_name": "amebic_abscess",
+      "to_name": "abdominal_distension"
+    },
+    {
+      "from": "D362",
+      "to": "E34",
+      "reason": "肝腫大(右葉単発大膿瘍)",
+      "from_name": "amebic_abscess",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D362",
+      "to": "E18",
+      "reason": "黄疸(稀, <10%)",
+      "from_name": "amebic_abscess",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D362",
+      "to": "L02",
+      "reason": "CRP著増",
+      "from_name": "amebic_abscess",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D362",
+      "to": "L01",
+      "reason": "白血球増多",
+      "from_name": "amebic_abscess",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D362",
+      "to": "L11",
+      "reason": "肝酵素軽度上昇(細菌性より低い)",
+      "from_name": "amebic_abscess",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D362",
+      "to": "L31",
+      "reason": "CT:右葉単発大膿瘍",
+      "from_name": "amebic_abscess",
+      "to_name": "CT_abdomen"
+    },
+    {
+      "from": "D362",
+      "to": "L09",
+      "reason": "血培陰性(アメーバ性の特徴)",
+      "from_name": "amebic_abscess",
+      "to_name": "blood_culture"
+    },
+    {
+      "from": "D362",
+      "to": "S07",
+      "reason": "倦怠感",
+      "from_name": "amebic_abscess",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D362",
+      "to": "S46",
+      "reason": "食欲不振",
+      "from_name": "amebic_abscess",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D362",
+      "to": "T01",
+      "reason": "亜急性〜慢性(1-4週)",
+      "from_name": "amebic_abscess",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D362",
+      "to": "E02",
+      "reason": "頻脈",
+      "from_name": "amebic_abscess",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D362",
+      "to": "L14",
+      "reason": "白血球左方移動",
+      "from_name": "amebic_abscess",
+      "to_name": "CBC_diff"
+    },
+    {
+      "from": "D362",
+      "to": "L03",
+      "reason": "PCT軽度上昇(細菌性より低い)",
+      "from_name": "amebic_abscess",
+      "to_name": "PCT"
+    },
+    {
+      "from": "D362",
+      "to": "L66",
+      "reason": "肝細胞型障害パターン(軽度)",
+      "from_name": "amebic_abscess",
+      "to_name": "L66"
+    },
+    {
+      "from": "D362",
+      "to": "S89",
+      "reason": "右上腹部痛",
+      "from_name": "amebic_abscess",
+      "to_name": "S89"
+    },
+    {
+      "from": "D362",
+      "to": "S05",
+      "reason": "頭痛",
+      "from_name": "amebic_abscess",
+      "to_name": "headache"
+    },
+    {
+      "from": "R01",
+      "to": "D108",
+      "reason": "急性HBV。若年成人に多い",
+      "from_name": "age_group",
+      "to_name": "D108"
+    },
+    {
+      "from": "R02",
+      "to": "D108",
+      "reason": "急性HBV。男性やや多い",
+      "from_name": "sex",
+      "to_name": "D108"
+    },
+    {
+      "from": "D108",
+      "to": "E01",
+      "reason": "急性HBV: 前駆期発熱(30-50%)",
+      "from_name": "acute_HBV",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D108",
+      "to": "S07",
+      "reason": "急性HBV: 倦怠感(90%+)",
+      "from_name": "acute_HBV",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D108",
+      "to": "S46",
+      "reason": "急性HBV: 食欲不振(80%+)",
+      "from_name": "acute_HBV",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D108",
+      "to": "S13",
+      "reason": "急性HBV: 嘔気嘔吐(60-80%)",
+      "from_name": "acute_HBV",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D108",
+      "to": "E18",
+      "reason": "急性HBV: 黄疸(50-70%)",
+      "from_name": "acute_HBV",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D108",
+      "to": "S12",
+      "reason": "急性HBV: 右上腹部痛(40-60%)",
+      "from_name": "acute_HBV",
+      "to_name": "abd_distension"
+    },
+    {
+      "from": "D108",
+      "to": "E34",
+      "reason": "急性HBV: 肝腫大(30-50%)",
+      "from_name": "acute_HBV",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D108",
+      "to": "S08",
+      "reason": "急性HBV: 関節痛(前駆期10-30%,免疫複合体)",
+      "from_name": "acute_HBV",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D108",
+      "to": "L11",
+      "reason": "急性HBV: AST/ALT著増(>1000)",
+      "from_name": "acute_HBV",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D108",
+      "to": "L01",
+      "reason": "急性HBV: WBC正常〜軽度低下",
+      "from_name": "acute_HBV",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D108",
+      "to": "L02",
+      "reason": "急性HBV: CRP軽度上昇",
+      "from_name": "acute_HBV",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D108",
+      "to": "L39",
+      "reason": "急性HBV: HBsAg+IgM-HBc陽性",
+      "from_name": "acute_HBV",
+      "to_name": "hepatitis_serology"
+    },
+    {
+      "from": "D108",
+      "to": "T01",
+      "reason": "急性HBV: 亜急性(前駆1-4週→黄疸期)",
+      "from_name": "acute_HBV",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D108",
+      "to": "T02",
+      "reason": "急性HBV: 緩徐発症",
+      "from_name": "acute_HBV",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D108",
+      "to": "S17",
+      "reason": "急性HBV: 体重減少(30-40%)",
+      "from_name": "acute_HBV",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D108",
+      "to": "E12",
+      "reason": "急性HBV: 蕁麻疹/血管炎(10-20%)",
+      "from_name": "acute_HBV",
+      "to_name": "skin"
+    },
+    {
+      "from": "D108",
+      "to": "S09",
+      "reason": "急性HBV: 悪寒",
+      "from_name": "acute_HBV",
+      "to_name": "chills"
+    },
+    {
+      "from": "D108",
+      "to": "L66",
+      "reason": "急性HBV: 肝細胞型",
+      "from_name": "acute_HBV",
+      "to_name": "L66"
+    },
+    {
+      "from": "D108",
+      "to": "S89",
+      "reason": "急性HBV: 右上腹部痛",
+      "from_name": "acute_HBV",
+      "to_name": "S89"
+    },
+    {
+      "from": "D108",
+      "to": "S90",
+      "reason": "急性HBV: 関節痛の分布",
+      "from_name": "acute_HBV",
+      "to_name": "S90"
+    },
+    {
+      "from": "D108",
+      "to": "E50",
+      "reason": "急性HBV: 下腿浮腫",
+      "from_name": "acute_HBV",
+      "to_name": "E50"
+    },
+    {
+      "from": "D108",
+      "to": "E36",
+      "reason": "急性HBV: 浮腫(10-20%)",
+      "from_name": "acute_HBV",
+      "to_name": "E36"
+    },
+    {
+      "from": "R01",
+      "to": "D363",
+      "reason": "慢性HBV増悪。中年に多い(キャリア)",
+      "from_name": "age_group",
+      "to_name": "D363"
+    },
+    {
+      "from": "R02",
+      "to": "D363",
+      "reason": "慢性HBV増悪。男性やや多い",
+      "from_name": "sex",
+      "to_name": "D363"
+    },
+    {
+      "from": "D363",
+      "to": "E01",
+      "reason": "慢性HBV増悪: 発熱(20-30%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D363",
+      "to": "S07",
+      "reason": "慢性HBV増悪: 倦怠感(80%+)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D363",
+      "to": "S46",
+      "reason": "慢性HBV増悪: 食欲不振(70%+)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D363",
+      "to": "S13",
+      "reason": "慢性HBV増悪: 嘔気(50-60%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D363",
+      "to": "E18",
+      "reason": "慢性HBV増悪: 黄疸(40-60%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D363",
+      "to": "S12",
+      "reason": "慢性HBV増悪: 腹部膨満(40-50%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "abd_distension"
+    },
+    {
+      "from": "D363",
+      "to": "E34",
+      "reason": "慢性HBV増悪: 肝腫大/脾腫(40-60%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D363",
+      "to": "L11",
+      "reason": "慢性HBV増悪: AST/ALT著増(500-2000)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D363",
+      "to": "L01",
+      "reason": "慢性HBV増悪: WBC正常〜低下",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D363",
+      "to": "L02",
+      "reason": "慢性HBV増悪: CRP軽度上昇",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D363",
+      "to": "L39",
+      "reason": "慢性HBV増悪: HBsAg+, HBV-DNA急上昇",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "hepatitis_serology"
+    },
+    {
+      "from": "D363",
+      "to": "T01",
+      "reason": "慢性HBV増悪: 亜急性〜慢性",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D363",
+      "to": "T02",
+      "reason": "慢性HBV増悪: 亜急性発症",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D363",
+      "to": "S17",
+      "reason": "慢性HBV増悪: 体重減少(20-30%)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D363",
+      "to": "L66",
+      "reason": "慢性HBV増悪: 肝細胞型",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "L66"
+    },
+    {
+      "from": "D363",
+      "to": "S89",
+      "reason": "慢性HBV増悪: 右上腹部痛",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "S89"
+    },
+    {
+      "from": "D363",
+      "to": "S09",
+      "reason": "慢性HBV増悪: 悪寒",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "chills"
+    },
+    {
+      "from": "D363",
+      "to": "E36",
+      "reason": "慢性HBV増悪: 浮腫(慢性肝障害)",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "E36"
+    },
+    {
+      "from": "D363",
+      "to": "E50",
+      "reason": "慢性HBV増悪: 下腿浮腫",
+      "from_name": "chronic_HBV_flare",
+      "to_name": "E50"
+    },
+    {
+      "from": "R01",
+      "to": "D24",
+      "reason": "黄ブ菌TSS。若年女性(menstrual TSS)",
+      "from_name": "age_group",
+      "to_name": "D24"
+    },
+    {
+      "from": "R02",
+      "to": "D24",
+      "reason": "黄ブ菌TSS。女性やや多い(menstrual)",
+      "from_name": "sex",
+      "to_name": "D24"
+    },
+    {
+      "from": "R20",
+      "to": "D24",
+      "reason": "タンポン使用は黄ブ菌TSS主リスク",
+      "from_name": "tampon",
+      "to_name": "D24"
+    },
+    {
+      "from": "R14",
+      "to": "D24",
+      "reason": "創傷(術後・火傷)もTSSリスク",
+      "from_name": "wound",
+      "to_name": "D24"
+    },
+    {
+      "from": "D24",
+      "to": "E01",
+      "reason": "TSS: 高熱>38.9°C",
+      "from_name": "TSS",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D24",
+      "to": "E02",
+      "reason": "TSS: ショック性頻脈",
+      "from_name": "TSS",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D24",
+      "to": "E03",
+      "reason": "TSS: ショック性低血圧",
+      "from_name": "TSS",
+      "to_name": "blood_pressure"
+    },
+    {
+      "from": "D24",
+      "to": "E12",
+      "reason": "TSS: びまん性紅皮症(sunburn-like, TSS特異的)",
+      "from_name": "TSS",
+      "to_name": "skin_exam"
+    },
+    {
+      "from": "D24",
+      "to": "E16",
+      "reason": "TSS: ショック→意識障害",
+      "from_name": "TSS",
+      "to_name": "consciousness"
+    },
+    {
+      "from": "D24",
+      "to": "S13",
+      "reason": "TSS: 嘔吐(70%+, TSS特異的)",
+      "from_name": "TSS",
+      "to_name": "vomiting"
+    },
+    {
+      "from": "D24",
+      "to": "S14",
+      "reason": "TSS: 水様性下痢(60%+, TSS特異的)",
+      "from_name": "TSS",
+      "to_name": "diarrhea"
+    },
+    {
+      "from": "D24",
+      "to": "S06",
+      "reason": "TSS: 筋肉痛(激烈)",
+      "from_name": "TSS",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D24",
+      "to": "S09",
+      "reason": "TSS: 悪寒戦慄",
+      "from_name": "TSS",
+      "to_name": "rigors"
+    },
+    {
+      "from": "D24",
+      "to": "S18",
+      "reason": "TSS: 皮膚症状(紅皮)",
+      "from_name": "TSS",
+      "to_name": "skin_complaint"
+    },
+    {
+      "from": "D24",
+      "to": "E25",
+      "reason": "TSS: 結膜充血(TSS診断基準)",
+      "from_name": "TSS",
+      "to_name": "conj_injection"
+    },
+    {
+      "from": "D24",
+      "to": "L01",
+      "reason": "TSS: WBC著増",
+      "from_name": "TSS",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D24",
+      "to": "L02",
+      "reason": "TSS: CRP著増",
+      "from_name": "TSS",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D24",
+      "to": "L03",
+      "reason": "TSS: PCT著増",
+      "from_name": "TSS",
+      "to_name": "PCT"
+    },
+    {
+      "from": "D24",
+      "to": "L09",
+      "reason": "TSS: 血培(Staph aureus 30-50%)",
+      "from_name": "TSS",
+      "to_name": "blood_culture"
+    },
+    {
+      "from": "D24",
+      "to": "L11",
+      "reason": "TSS: 肝酵素上昇(多臓器障害)",
+      "from_name": "TSS",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D24",
+      "to": "L14",
+      "reason": "TSS: 血小板減少(DIC)",
+      "from_name": "TSS",
+      "to_name": "CBC_diff"
+    },
+    {
+      "from": "D24",
+      "to": "L17",
+      "reason": "TSS: CK上昇(筋炎)",
+      "from_name": "TSS",
+      "to_name": "CK"
+    },
+    {
+      "from": "D24",
+      "to": "T01",
+      "reason": "TSS: 急性経過(数日)",
+      "from_name": "TSS",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D24",
+      "to": "T02",
+      "reason": "TSS: 急速発症",
+      "from_name": "TSS",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D24",
+      "to": "M02",
+      "reason": "TSS: ショック(80-90%)",
+      "from_name": "TSS",
+      "to_name": "hemodynamic"
+    },
+    {
+      "from": "D24",
+      "to": "E04",
+      "reason": "TSS: 頻呼吸(ARDS)",
+      "from_name": "TSS",
+      "to_name": "resp_rate"
+    },
+    {
+      "from": "D24",
+      "to": "E05",
+      "reason": "TSS: 低酸素(ARDS)",
+      "from_name": "TSS",
+      "to_name": "spo2"
+    },
+    {
+      "from": "D24",
+      "to": "E37",
+      "reason": "TSS: 敗血症性心不全(JVD)",
+      "from_name": "TSS",
+      "to_name": "JVD"
+    },
+    {
+      "from": "D24",
+      "to": "L51",
+      "reason": "TSS: BNP上昇",
+      "from_name": "TSS",
+      "to_name": "BNP"
+    },
+    {
+      "from": "D24",
+      "to": "L52",
+      "reason": "TSS: D-dimer上昇(DIC)",
+      "from_name": "TSS",
+      "to_name": "D_dimer"
+    },
+    {
+      "from": "D24",
+      "to": "L54",
+      "reason": "TSS: 血糖変動",
+      "from_name": "TSS",
+      "to_name": "glucose"
+    },
+    {
+      "from": "D24",
+      "to": "L55",
+      "reason": "TSS: AKI(ショック)",
+      "from_name": "TSS",
+      "to_name": "creatinine"
+    },
+    {
+      "from": "D24",
+      "to": "L64",
+      "reason": "TSS: DIC(30-40%)",
+      "from_name": "TSS",
+      "to_name": "DIC_score"
+    },
+    {
+      "from": "D24",
+      "to": "S86",
+      "reason": "TSS: 水様性下痢",
+      "from_name": "TSS",
+      "to_name": "S86"
+    },
+    {
+      "from": "D24",
+      "to": "S87",
+      "reason": "TSS: びまん性皮疹",
+      "from_name": "TSS",
+      "to_name": "S87"
+    },
+    {
+      "from": "R01",
+      "to": "D364",
+      "reason": "iGAS。全年齢だが高齢・DM・免疫不全にリスク",
+      "from_name": "age_group",
+      "to_name": "D364"
+    },
+    {
+      "from": "R02",
+      "to": "D364",
+      "reason": "iGAS。男女差少ない",
+      "from_name": "sex",
+      "to_name": "D364"
+    },
+    {
+      "from": "R14",
+      "to": "D364",
+      "reason": "創傷・水痘がiGASの侵入門戸",
+      "from_name": "wound",
+      "to_name": "D364"
+    },
+    {
+      "from": "D364",
+      "to": "E01",
+      "reason": "iGAS: 高熱",
+      "from_name": "iGAS",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D364",
+      "to": "E02",
+      "reason": "iGAS: ショック性頻脈",
+      "from_name": "iGAS",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D364",
+      "to": "E03",
+      "reason": "iGAS: ショック性低血圧",
+      "from_name": "iGAS",
+      "to_name": "blood_pressure"
+    },
+    {
+      "from": "D364",
+      "to": "E12",
+      "reason": "iGAS: 局所発赤腫脹→壊死(TSS型紅皮ではない)",
+      "from_name": "iGAS",
+      "to_name": "skin_exam"
+    },
+    {
+      "from": "D364",
+      "to": "S18",
+      "reason": "iGAS: 局所激痛(壊死性筋膜炎)",
+      "from_name": "iGAS",
+      "to_name": "skin_complaint"
+    },
+    {
+      "from": "D364",
+      "to": "S06",
+      "reason": "iGAS: 筋肉痛(激烈,壊死性)",
+      "from_name": "iGAS",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D364",
+      "to": "S09",
+      "reason": "iGAS: 悪寒戦慄",
+      "from_name": "iGAS",
+      "to_name": "rigors"
+    },
+    {
+      "from": "D364",
+      "to": "E16",
+      "reason": "iGAS: ショック→意識障害",
+      "from_name": "iGAS",
+      "to_name": "consciousness"
+    },
+    {
+      "from": "D364",
+      "to": "L01",
+      "reason": "iGAS: WBC著増(左方移動)",
+      "from_name": "iGAS",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D364",
+      "to": "L02",
+      "reason": "iGAS: CRP著増",
+      "from_name": "iGAS",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D364",
+      "to": "L03",
+      "reason": "iGAS: PCT著増",
+      "from_name": "iGAS",
+      "to_name": "PCT"
+    },
+    {
+      "from": "D364",
+      "to": "L09",
+      "reason": "iGAS: 血培GAS陽性(60-70%)",
+      "from_name": "iGAS",
+      "to_name": "blood_culture"
+    },
+    {
+      "from": "D364",
+      "to": "L11",
+      "reason": "iGAS: 肝酵素上昇(多臓器障害)",
+      "from_name": "iGAS",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D364",
+      "to": "L14",
+      "reason": "iGAS: 血小板減少(DIC)",
+      "from_name": "iGAS",
+      "to_name": "CBC_diff"
+    },
+    {
+      "from": "D364",
+      "to": "L17",
+      "reason": "iGAS: CK著増(横紋筋融解)",
+      "from_name": "iGAS",
+      "to_name": "CK"
+    },
+    {
+      "from": "D364",
+      "to": "T01",
+      "reason": "iGAS: 急性経過(数日)",
+      "from_name": "iGAS",
+      "to_name": "fever_duration"
+    },
+    {
+      "from": "D364",
+      "to": "T02",
+      "reason": "iGAS: 電撃的発症",
+      "from_name": "iGAS",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D364",
+      "to": "M02",
+      "reason": "iGAS: ショック(70-80%)",
+      "from_name": "iGAS",
+      "to_name": "hemodynamic"
+    },
+    {
+      "from": "D364",
+      "to": "E04",
+      "reason": "iGAS: 頻呼吸",
+      "from_name": "iGAS",
+      "to_name": "resp_rate"
+    },
+    {
+      "from": "D364",
+      "to": "E05",
+      "reason": "iGAS: 低酸素",
+      "from_name": "iGAS",
+      "to_name": "spo2"
+    },
+    {
+      "from": "D364",
+      "to": "L52",
+      "reason": "iGAS: D-dimer上昇(DIC)",
+      "from_name": "iGAS",
+      "to_name": "D_dimer"
+    },
+    {
+      "from": "D364",
+      "to": "L55",
+      "reason": "iGAS: AKI",
+      "from_name": "iGAS",
+      "to_name": "creatinine"
+    },
+    {
+      "from": "D364",
+      "to": "L64",
+      "reason": "iGAS: DIC(40-50%)",
+      "from_name": "iGAS",
+      "to_name": "DIC_score"
+    },
+    {
+      "from": "D364",
+      "to": "S87",
+      "reason": "iGAS: 局所疼痛・発赤",
+      "from_name": "iGAS",
+      "to_name": "S87"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

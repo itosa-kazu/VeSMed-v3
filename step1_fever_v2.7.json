@@ -788,8 +788,8 @@
     },
     {
       "id": "D24",
-      "name": "toxic_shock_syndrome",
-      "name_ja": "トキシックショック症候群（TSS/劇症型GAS含む）",
+      "name": "staphylococcal_TSS",
+      "name_ja": "黄色ブドウ球菌性TSS",
       "category": "disease",
       "states": [
         "no",
@@ -818,7 +818,9 @@
           "壊死性軟部組織感染の合併"
         ]
       },
-      "severity": "critical"
+      "severity": "critical",
+      "icd10": "A48.3",
+      "key_features": "高熱+びまん性紅皮症+ショック+多臓器不全。タンポン/創傷。消化器症状(嘔吐下痢)。落屑(7-14日目)。"
     },
     {
       "id": "D25",
@@ -1815,8 +1817,8 @@
     },
     {
       "id": "D29",
-      "name": "liver_abscess",
-      "name_ja": "肝膿瘍（細菌性/アメーバ性）",
+      "name": "pyogenic_liver_abscess",
+      "name_ja": "細菌性肝膿瘍",
       "category": "disease",
       "states": [
         "no",
@@ -1825,7 +1827,7 @@
       "icd10": "K75.0",
       "category_sub": "deep_abscess",
       "severity": "high",
-      "key_features": "発熱+右上腹部痛+肝腫大。エコー/CTで膿瘍像。",
+      "key_features": "発熱+右上腹部痛+肝腫大。糖尿病・胆道疾患がリスク。血培Klebsiella/E.coli。CT多発膿瘍。",
       "diagnostic_profile": {}
     },
     {
@@ -2295,17 +2297,17 @@
     },
     {
       "id": "D61",
-      "name": "PMR_GCA",
-      "name_ja": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "name": "polymyalgia_rheumatica",
+      "name_ja": "リウマチ性多発筋痛症(PMR)",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "M35.3/M31.6",
+      "icd10": "M35.3",
       "category_sub": "autoimmune",
       "severity": "moderate",
-      "key_features": "50歳以上の発熱+肩・骨盤帯の著明な筋痛+朝のこわばり+ESR著増。GCA合併で頭痛+視力障害→緊急。",
+      "key_features": "50歳以上の発熱+肩・骨盤帯の著明な筋痛+朝のこわばり(>30分)+ESR著増。PSL低用量で劇的改善。",
       "diagnostic_profile": {}
     },
     {
@@ -2355,17 +2357,17 @@
     },
     {
       "id": "D65",
-      "name": "gout_pseudogout",
-      "name_ja": "痛風/偽痛風発作",
+      "name": "gout",
+      "name_ja": "痛風発作",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "M10/M11",
+      "icd10": "M10",
       "category_sub": "crystal",
       "severity": "low",
-      "key_features": "急性の単関節腫脹+発赤+激痛+発熱。痛風は第1MTP、偽痛風は膝が多い。関節液の結晶で確定。",
+      "key_features": "急性の単関節腫脹+発赤+激痛+発熱。第1MTP好発。中年男性。血清尿酸高値。関節液に尿酸ナトリウム結晶。",
       "diagnostic_profile": {}
     },
     {
@@ -4031,15 +4033,17 @@
     },
     {
       "id": "D106",
-      "name": "inflammatory_myopathy",
-      "name_ja": "炎症性筋疾患（皮膚筋炎/多発性筋炎）",
+      "name": "dermatomyositis",
+      "name_ja": "皮膚筋炎(DM)",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "high",
-      "note": "DM:heliotrope疹+Gottron丘疹+近位筋力低下。PM:皮膚所見なし。悪性腫瘍合併注意"
+      "note": "DM:heliotrope疹+Gottron丘疹+近位筋力低下。PM:皮膚所見なし。悪性腫瘍合併注意",
+      "icd10": "M33.1",
+      "key_features": "Heliotrope疹+Gottron丘疹+近位筋力低下+CK著増。悪性腫瘍合併15-30%。間質性肺炎合併20-40%。"
     },
     {
       "id": "S48",
@@ -4067,14 +4071,16 @@
     {
       "id": "D108",
       "name": "acute_hepatitis_B",
-      "name_ja": "B型肝炎（急性/慢性増悪）",
+      "name_ja": "急性B型肝炎",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
       "severity": "high",
-      "note": "HBV急性感染+慢性キャリア急性増悪(再活性化含む)。発熱+黄疸+肝酵素著増。劇症化リスクあり"
+      "note": "HBV急性感染+慢性キャリア急性増悪(再活性化含む)。発熱+黄疸+肝酵素著増。劇症化リスクあり",
+      "icd10": "B16",
+      "key_features": "HBV急性感染。前駆期(倦怠感+関節痛)→黄疸期(黄疸+AST/ALT著増)。IgM-HBc陽性。若年成人。"
     },
     {
       "id": "D109",
@@ -10550,6 +10556,96 @@
       ],
       "note": "<50k=DIC/TTP/HIT/重症ITP/白血病/再生不良(出血リスク高), 50-150k=軽度減少, >400k=反応性(感染/炎症/鉄欠乏)/MPN(ET/PV/CML), >1000k=ET",
       "severity": "medium"
+    },
+    {
+      "id": "D359",
+      "name": "giant_cell_arteritis",
+      "name_ja": "巨細胞動脈炎(GCA)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M31.6",
+      "category_sub": "autoimmune",
+      "severity": "high",
+      "key_features": "50歳以上の新規頭痛+側頭動脈圧痛+顎跛行+視力障害→緊急。ESR著増+CRP著増。大血管型はFUO。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D360",
+      "name": "pseudogout_CPPD",
+      "name_ja": "偽痛風(CPPD発作)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M11",
+      "category_sub": "crystal",
+      "severity": "low",
+      "key_features": "高齢者の急性単関節炎。膝好発。X線で軟骨石灰化。関節液にピロリン酸カルシウム結晶。尿酸正常。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D361",
+      "name": "polymyositis",
+      "name_ja": "多発性筋炎(PM)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "M33.2",
+      "category_sub": "autoimmune",
+      "severity": "high",
+      "key_features": "皮膚所見なしの近位筋力低下+CK著増。嚥下困難30-40%。間質性肺炎20-30%。悪性腫瘍合併注意。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D362",
+      "name": "amebic_liver_abscess",
+      "name_ja": "アメーバ性肝膿瘍",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A06.4",
+      "category_sub": "deep_abscess",
+      "severity": "high",
+      "key_features": "発熱+右上腹部痛+肝腫大。熱帯渡航歴。右葉単発の大きな膿瘍。血清アメーバ抗体陽性。血培陰性。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D363",
+      "name": "chronic_hepatitis_B_flare",
+      "name_ja": "慢性B型肝炎増悪(再活性化)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B18.1",
+      "category_sub": "viral_hepatitis",
+      "severity": "high",
+      "key_features": "既知HBVキャリアの急性増悪。免疫抑制剤/化学療法が契機。HBV-DNA急上昇+肝酵素著増。劇症化リスク。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D364",
+      "name": "invasive_group_A_strep",
+      "name_ja": "劇症型溶血性レンサ球菌感染症(iGAS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A48.0",
+      "category_sub": "bacterial",
+      "severity": "critical",
+      "key_features": "急速進行性の軟部組織感染→壊死性筋膜炎+ショック+多臓器不全。局所疼痛が激烈。創傷/水痘が侵入門戸。",
+      "diagnostic_profile": {}
     }
   ]
 }
