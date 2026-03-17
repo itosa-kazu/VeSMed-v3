@@ -12622,6 +12622,13 @@
           "purpura": 0.1,
           "vesicle_bulla": 0.0,
           "skin_necrosis": 0.0
+        },
+        "D54": {
+          "normal": 0.2,
+          "localized_erythema": 0.6,
+          "vesicles_bullae": 0.1,
+          "petechiae_purpura": 0.05,
+          "diffuse_erythema": 0.05
         }
       }
     },
@@ -16934,6 +16941,21 @@
           "highly_elevated": 0.15
         },
         "D314": {
+          "negative": 0.8,
+          "mildly_elevated": 0.15,
+          "highly_elevated": 0.05
+        },
+        "D199": {
+          "negative": 0.6,
+          "mildly_elevated": 0.3,
+          "highly_elevated": 0.1
+        },
+        "D194": {
+          "negative": 0.3,
+          "mildly_elevated": 0.5,
+          "highly_elevated": 0.2
+        },
+        "D317": {
           "negative": 0.8,
           "mildly_elevated": 0.15,
           "highly_elevated": 0.05
@@ -22612,6 +22634,10 @@
           "absent": 0.6,
           "mild": 0.25,
           "severe": 0.15
+        },
+        "D76": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -23824,6 +23850,10 @@
         "D275": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D280": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -25216,6 +25246,10 @@
         "D312": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D76": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -25795,6 +25829,14 @@
         "D240": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D54": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D194": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -26952,6 +26994,10 @@
         "D314": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D280": {
+          "absent": 0.98,
+          "present": 0.02
         }
       }
     },
@@ -27192,6 +27238,10 @@
           "normal": 0.1,
           "excessive": 0.6,
           "absent": 0.3
+        },
+        "D199": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -31189,6 +31239,12 @@
           "acute": 0.7,
           "subacute": 0.2,
           "chronic": 0.05
+        },
+        "D54": {
+          "sudden": 0.02,
+          "acute": 0.15,
+          "subacute": 0.7,
+          "chronic": 0.13
         }
       }
     },
@@ -33782,6 +33838,14 @@
         "D84": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D199": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D280": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -38587,6 +38651,10 @@
         "D115": {
           "monoarticular": 0.4167,
           "polyarticular": 0.5833
+        },
+        "D194": {
+          "monoarticular": 0.85,
+          "polyarticular": 0.15
         }
       }
     },
