@@ -47528,6 +47528,150 @@
       "to_name": "可逆性後頭葉白質脳症(PRES)",
       "reason": "PRES。妊娠高血圧・自己免疫で好発",
       "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D202",
+      "from_name": "性別",
+      "to_name": "シェーグレン症候群",
+      "reason": "シェーグレン症候群。女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D203",
+      "from_name": "性別",
+      "to_name": "全身性強皮症",
+      "reason": "全身性強皮症。女性5:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D59",
+      "from_name": "年齢層",
+      "to_name": "全身性エリテマトーデス",
+      "reason": "SLE。若年女性9:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D171",
+      "from_name": "性別",
+      "to_name": "抗リン脂質抗体症候群(APS)",
+      "reason": "抗リン脂質抗体症候群。女性に多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D147",
+      "from_name": "性別",
+      "to_name": "精巣捻転",
+      "reason": "精巣捻転。10-25歳男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D147",
+      "from_name": "年齢層",
+      "to_name": "精巣捻転",
+      "reason": "精巣捻転。10-25歳男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D138",
+      "from_name": "年齢層",
+      "to_name": "急性脳梗塞",
+      "reason": "急性脳梗塞。高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D139",
+      "from_name": "年齢層",
+      "to_name": "脳出血",
+      "reason": "脳出血。高齢者に好発",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D164",
+      "from_name": "性別",
+      "to_name": "慢性硬膜下血腫",
+      "reason": "慢性硬膜下血腫。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D164",
+      "from_name": "年齢層",
+      "to_name": "慢性硬膜下血腫",
+      "reason": "慢性硬膜下血腫。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D294",
+      "from_name": "性別",
+      "to_name": "片頭痛",
+      "reason": "片頭痛。若年女性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D294",
+      "from_name": "年齢層",
+      "to_name": "片頭痛",
+      "reason": "片頭痛。若年女性3:1",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D142",
+      "from_name": "年齢層",
+      "to_name": "てんかん重積状態",
+      "reason": "てんかん重積。小児と高齢者に二峰性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D302",
+      "from_name": "年齢層",
+      "to_name": "進行性核上性麻痺(PSP)",
+      "reason": "進行性核上性麻痺。60歳代",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D303",
+      "from_name": "年齢層",
+      "to_name": "パーキンソン病",
+      "reason": "パーキンソン病。60歳以上",
+      "onset_day_range": null
+    },
+    {
+      "from": "R02",
+      "to": "D304",
+      "from_name": "性別",
+      "to_name": "レビー小体型認知症(DLB)",
+      "reason": "レビー小体型認知症。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D304",
+      "from_name": "年齢層",
+      "to_name": "レビー小体型認知症(DLB)",
+      "reason": "レビー小体型認知症。高齢男性",
+      "onset_day_range": null
+    },
+    {
+      "from": "R01",
+      "to": "D84",
+      "from_name": "年齢層",
+      "to_name": "単純ヘルペス脳炎",
+      "reason": "単純ヘルペス脳炎。乳幼児と50歳以上",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
