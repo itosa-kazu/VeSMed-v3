@@ -11600,6 +11600,13 @@
           "crackles": 0.08,
           "wheezes": 0.03,
           "decreased_absent": 0.04
+        },
+        "D221": {
+          "clear": 0.3,
+          "wheeze": 0.05,
+          "crackle": 0.55,
+          "rhonchi": 0.05,
+          "diminished": 0.05
         }
       }
     },
@@ -11665,6 +11672,13 @@
           "normal": 0.4,
           "erythema": 0.3,
           "exudate_or_white_patch": 0.3
+        },
+        "D252": {
+          "normal": 0.2,
+          "erythema": 0.3,
+          "exudate": 0.2,
+          "vesicle": 0.1,
+          "membrane": 0.2
         }
       }
     },
@@ -12629,6 +12643,20 @@
           "vesicles_bullae": 0.1,
           "petechiae_purpura": 0.05,
           "diffuse_erythema": 0.05
+        },
+        "D219": {
+          "normal": 0.5,
+          "localized_erythema": 0.1,
+          "vesicles_bullae": 0.05,
+          "petechiae_purpura": 0.25,
+          "diffuse_erythema": 0.1
+        },
+        "D222": {
+          "normal": 0.55,
+          "localized_erythema": 0.1,
+          "vesicles_bullae": 0.05,
+          "petechiae_purpura": 0.2,
+          "diffuse_erythema": 0.1
         }
       }
     },
@@ -12759,6 +12787,10 @@
         "D320": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D252": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -12861,6 +12893,10 @@
         "D224": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D222": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -14224,6 +14260,10 @@
         "D184": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D252": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -17777,6 +17817,13 @@
           "BHL": 0.0,
           "pleural_effusion": 0.0,
           "pneumothorax": 0.0
+        },
+        "D221": {
+          "normal": 0.2,
+          "infiltrate": 0.5,
+          "bilateral_infiltrate": 0.2,
+          "cavity": 0.05,
+          "effusion": 0.05
         }
       }
     },
@@ -18619,6 +18666,21 @@
           "normal": 0.95,
           "mild_elevated": 0.04,
           "very_high": 0.01
+        },
+        "D220": {
+          "normal": 0.5,
+          "mildly_elevated": 0.35,
+          "highly_elevated": 0.15
+        },
+        "D221": {
+          "normal": 0.6,
+          "mildly_elevated": 0.3,
+          "highly_elevated": 0.1
+        },
+        "D222": {
+          "normal": 0.7,
+          "mildly_elevated": 0.25,
+          "highly_elevated": 0.05
         }
       }
     },
@@ -19110,6 +19172,16 @@
           "thrombocytopenia": 0.02,
           "eosinophilia": 0.6,
           "lymphocyte_predominant": 0.03
+        },
+        "D222": {
+          "normal": 0.6,
+          "leukocytosis": 0.1,
+          "left_shift": 0.05,
+          "eosinophilia": 0.05,
+          "lymphocytosis": 0.05,
+          "atypical_lymphocytes": 0.05,
+          "thrombocytopenia": 0.05,
+          "neutropenia": 0.05
         }
       }
     },
@@ -19553,6 +19625,11 @@
           "normal": 0.5,
           "elevated": 0.3,
           "very_high": 0.2
+        },
+        "D220": {
+          "normal": 0.5,
+          "mildly_elevated": 0.3,
+          "highly_elevated": 0.2
         }
       }
     },
@@ -20127,6 +20204,21 @@
           "normal": 0.2,
           "elevated": 0.6,
           "very_high_over_100": 0.2
+        },
+        "D219": {
+          "normal": 0.05,
+          "mildly_elevated": 0.25,
+          "highly_elevated": 0.7
+        },
+        "D220": {
+          "normal": 0.1,
+          "mildly_elevated": 0.4,
+          "highly_elevated": 0.5
+        },
+        "D221": {
+          "normal": 0.05,
+          "mildly_elevated": 0.2,
+          "highly_elevated": 0.75
         }
       }
     },
@@ -20869,6 +20961,13 @@
           "hyponatremia": 0.35,
           "hyperkalemia": 0.15,
           "other": 0.15
+        },
+        "D252": {
+          "normal": 0.6,
+          "hyponatremia": 0.3,
+          "hypernatremia": 0.05,
+          "hypokalemia": 0.03,
+          "hyperkalemia": 0.02
         }
       }
     },
@@ -21396,6 +21495,10 @@
         "D270": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D220": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -21528,6 +21631,10 @@
         "D320": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D252": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -22159,6 +22266,11 @@
         "D187": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D222": {
+          "absent": 0.7,
+          "present_exertional": 0.2,
+          "at_rest": 0.1
         }
       }
     },
@@ -22638,6 +22750,14 @@
         "D76": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D219": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D252": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -22800,6 +22920,22 @@
         "D217": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D219": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D220": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D221": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D222": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -24039,6 +24175,10 @@
         "D285": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D220": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -24250,6 +24390,14 @@
           "present": 0.3
         },
         "D41": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D219": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D221": {
           "absent": 0.5,
           "present": 0.5
         }
@@ -25719,6 +25867,22 @@
         "D345": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D219": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D220": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D221": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D222": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -25837,6 +26001,22 @@
         "D194": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D219": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D220": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D222": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D252": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -26513,6 +26693,14 @@
         "D191": {
           "absent": 0.30000000000000004,
           "present": 0.7
+        },
+        "D219": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D221": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -26558,6 +26746,14 @@
         "D340": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D219": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D221": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -27401,6 +27597,10 @@
         "D345": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D252": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -32515,6 +32715,18 @@
         "D190": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D220": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D222": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D252": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -33741,6 +33953,10 @@
         "D314": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D220": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -38256,6 +38472,14 @@
           "supraclavicular": 0.2,
           "mediastinal": 0.02,
           "generalized": 0.05
+        },
+        "D252": {
+          "cervical": 0.85,
+          "axillary": 0.05,
+          "inguinal": 0.03,
+          "supraclavicular": 0.02,
+          "mediastinal": 0.02,
+          "generalized": 0.03
         }
       }
     },

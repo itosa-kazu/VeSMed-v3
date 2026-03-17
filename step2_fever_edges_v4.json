@@ -48360,6 +48360,382 @@
       "to_name": "頭痛",
       "reason": "FNHTR: headache common accompanying symptom (PMC9843350)",
       "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S05",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "頭痛",
+      "reason": "GPA sinusitis-related headache (PMC8429614)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S06",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "筋肉痛",
+      "reason": "GPA myalgia common (PMC8006774)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S17",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "体重減少",
+      "reason": "GPA weight loss (PMC8026843, PMC8006774)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S33",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "血尿",
+      "reason": "GPA glomerulonephritis hematuria ~70% (StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S34",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "喀血",
+      "reason": "GPA DAH hemoptysis ~40% (PMC8026843)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "L28",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "赤沈(ESR)",
+      "reason": "GPA ESR markedly elevated (PMC8006774 ESR67, PMC11925717 ESR101)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S18",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "皮膚の訴え",
+      "reason": "GPA purpura/rash ~40% (PMC11925717)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "E12",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "皮膚診察所見",
+      "reason": "GPA purpura from vasculitis (PMC11925717)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S09",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "悪寒戦慄",
+      "reason": "GPA febrile with chills (PMC11925717)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S08",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "関節痛",
+      "reason": "EGPA polyarthritis (PMC11772266)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S06",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "筋肉痛",
+      "reason": "EGPA myalgia (PMC4129332)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S17",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "体重減少",
+      "reason": "EGPA weight loss systemic phase (PMC11772266)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S18",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "皮膚の訴え",
+      "reason": "EGPA skin 50-70% (PMC5726678, PMC10403021)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "L17",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "CK(クレアチンキナーゼ)",
+      "reason": "EGPA CK from myocarditis (PMC11772266 CK913)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "L28",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "赤沈(ESR)",
+      "reason": "EGPA ESR elevated (PMC4129332 ESR70)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S52",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "局所神経症状（片麻痺）",
+      "reason": "EGPA mononeuritis multiplex ~60% (PMC4129332)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "L11",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "肝酵素（AST/ALT）",
+      "reason": "EGPA hepatopathy (PMC10403021 ALT97)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "S01",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "咳嗽",
+      "reason": "EGPA cough from asthma/infiltrates (PMC4129332)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D220",
+      "to": "E36",
+      "from_name": "好酸球性多発血管炎性肉芽腫症(EGPA)",
+      "to_name": "下腿浮腫",
+      "reason": "EGPA edema from heart failure (PMC11772266)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S33",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "血尿",
+      "reason": "MPA glomerular hematuria ~80% (PMC4569227)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S34",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "喀血",
+      "reason": "MPA DAH hemoptysis ~50% (PMC4569227)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S17",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "体重減少",
+      "reason": "MPA weight loss (PMC4569227 12lb/1mo)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S06",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "筋肉痛",
+      "reason": "MPA myalgia/arthralgia (PMC9641526)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "L28",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "赤沈(ESR)",
+      "reason": "MPA ESR markedly elevated (PMC10244548 ESR82, PMC7045917 ESR125)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "L04",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "胸部X線",
+      "reason": "MPA bilateral infiltrates from DAH (PMC4569227)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "E07",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "肺聴診",
+      "reason": "MPA bilateral crackles (PMC10244548, PMC7045917)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "L11",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "肝酵素（AST/ALT）",
+      "reason": "MPA mild transaminase elevation (PMC9641526)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S09",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "悪寒戦慄",
+      "reason": "MPA fever with chills (PMC4569227)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S06",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "筋肉痛",
+      "reason": "RA myalgia in flares (PMC10721112)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S17",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "体重減少",
+      "reason": "RA weight loss (PMC8112089)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S18",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "皮膚の訴え",
+      "reason": "RA vasculitis purpuric lesions (PMC8112089)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "E12",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "皮膚診察所見",
+      "reason": "RA vasculitis purpura (PMC8112089)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "E14",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "脾腫",
+      "reason": "RA Felty: splenomegaly (PMC8565701)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L14",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "末梢血液像",
+      "reason": "RA Felty: neutropenia (PMC8565701 ANC440)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "L11",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "肝酵素（AST/ALT）",
+      "reason": "RA mild liver enzyme elevation (PMC11221493)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S04",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "呼吸困難",
+      "reason": "RA pulmonary: ILD/pleuritis (PMC8112089)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "E36",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "下腿浮腫",
+      "reason": "RA edema in vasculitis (PMC8112089)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E35",
+      "from_name": "川崎病",
+      "to_name": "眼症状（ぶどう膜炎/結膜炎）",
+      "reason": "Kawasaki: conjunctivitis ~80% (PMC10025724)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E08",
+      "from_name": "川崎病",
+      "to_name": "咽頭所見",
+      "reason": "Kawasaki: oral changes ~80% (PMC10025724)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E13",
+      "from_name": "川崎病",
+      "to_name": "リンパ節腫脹",
+      "reason": "Kawasaki: cervical LAD ~70% (PMC8009467)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E46",
+      "from_name": "川崎病",
+      "to_name": "リンパ節の部位",
+      "reason": "Kawasaki: cervical LAD predominant (PMC8009467)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E36",
+      "from_name": "川崎病",
+      "to_name": "下腿浮腫",
+      "reason": "Kawasaki: extremity edema ~60% (PMC10025724)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S18",
+      "from_name": "川崎病",
+      "to_name": "皮膚の訴え",
+      "reason": "Kawasaki: polymorphous rash ~85% (PMC10025724)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S46",
+      "from_name": "川崎病",
+      "to_name": "食欲不振",
+      "reason": "Kawasaki: irritability/poor feeding (PMC5341178)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "L44",
+      "from_name": "川崎病",
+      "to_name": "電解質（Na/K）",
+      "reason": "Kawasaki: hyponatremia ~30% (PMC10336680)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S05",
+      "from_name": "川崎病",
+      "to_name": "頭痛",
+      "reason": "Kawasaki: headache in older children (PMC3370327)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S02",
+      "from_name": "川崎病",
+      "to_name": "咽頭痛",
+      "reason": "Kawasaki: sore throat (PMC3370327)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
