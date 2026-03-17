@@ -1957,7 +1957,19 @@
         "female|40_64|no": 0.0014,
         "female|40_64|yes": 0.006,
         "female|65_plus|no": 0.0028,
-        "female|65_plus|yes": 0.012
+        "female|65_plus|yes": 0.012,
+        "male|18_39|no": 0.00105,
+        "male|18_39|yes": 0.0045,
+        "female|18_39|no": 0.0007,
+        "female|18_39|yes": 0.003,
+        "male|13_17|no": 0.0002,
+        "male|13_17|yes": 0.001,
+        "female|13_17|no": 0.0001,
+        "female|13_17|yes": 0.0008,
+        "male|6_12|no": 0.0001,
+        "male|6_12|yes": 0.0005,
+        "female|6_12|no": 0.0001,
+        "female|6_12|yes": 0.0005
       }
     },
     "D118": {
@@ -9085,6 +9097,16 @@
         "40_64": 0.001,
         "65_plus": 0.0005
       }
+    },
+    "D55": {
+      "parents": [
+        "R10"
+      ],
+      "description": "Q熱。人工弁で慢性Q熱リスク上昇",
+      "cpt": {
+        "no": 0.005,
+        "yes": 0.015
+      }
     }
   },
   "noisy_or_params": {
@@ -13638,6 +13660,11 @@
           "normal_over_96": 0.7,
           "mild_hypoxia_93_96": 0.2,
           "severe_hypoxia_under_93": 0.1
+        },
+        "D171": {
+          "normal_over_96": 0.65,
+          "mild_hypoxia_93_96": 0.2,
+          "severe_hypoxia_under_93": 0.15
         }
       }
     },
@@ -14274,6 +14301,11 @@
           "soft_nontender": 0.2,
           "localized_tenderness": 0.6000000000000001,
           "peritoneal_signs": 0.2
+        },
+        "D42": {
+          "soft_nontender": 0.35,
+          "localized_tenderness": 0.6,
+          "peritoneal_signs": 0.05
         }
       }
     },
@@ -21937,6 +21969,10 @@
         "D278": {
           "normal": 0.3,
           "elevated": 0.7
+        },
+        "D146": {
+          "normal": 0.4,
+          "elevated": 0.6
         }
       }
     },
@@ -28696,6 +28732,10 @@
         "D220": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D219": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -28753,6 +28793,10 @@
         "D289": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D324": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -35263,6 +35307,10 @@
         "D252": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D183": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -35861,6 +35909,12 @@
           "normal": 0.4,
           "mildly_elevated": 0.3,
           "very_high": 0.1
+        },
+        "D171": {
+          "not_done": 0.6,
+          "normal": 0.25,
+          "mildly_elevated": 0.12,
+          "very_high": 0.03
         }
       }
     },
@@ -42087,6 +42141,10 @@
         "D94": {
           "unilateral": 0.25,
           "bilateral": 0.75
+        },
+        "D183": {
+          "unilateral": 0.1,
+          "bilateral": 0.9
         }
       }
     },

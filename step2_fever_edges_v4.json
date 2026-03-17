@@ -51500,6 +51500,102 @@
       "to_name": "CRBSI",
       "reason": "悪性腫瘍（中心静脈カテーテル留置）→CRBSIリスク↑",
       "onset_day_range": null
+    },
+    {
+      "from": "D146",
+      "to": "L16",
+      "from_name": "hypertensive_emergency",
+      "to_name": "LDH",
+      "reason": "悪性高血圧→TMA→微小血管症性溶血→LDH上昇(PMC5535052)",
+      "onset_day_range": [
+        0,
+        3
+      ]
+    },
+    {
+      "from": "D171",
+      "to": "L53",
+      "from_name": "APS",
+      "to_name": "troponin",
+      "reason": "APS→冠動脈血栓/心筋微小血栓→トロポニン上昇(PMC6522847)",
+      "onset_day_range": [
+        0,
+        7
+      ]
+    },
+    {
+      "from": "D171",
+      "to": "E05",
+      "from_name": "APS",
+      "to_name": "SpO2",
+      "reason": "APS→PE(11-20%)/DAH→低酸素血症(PMC9309373)",
+      "onset_day_range": [
+        0,
+        7
+      ]
+    },
+    {
+      "from": "D183",
+      "to": "E36",
+      "from_name": "cryoglobulinemia",
+      "to_name": "lower_leg_edema",
+      "reason": "クリオグロブリン→MPGN(~30%)→ネフローゼ→下腿浮腫",
+      "onset_day_range": [
+        14,
+        90
+      ]
+    },
+    {
+      "from": "D183",
+      "to": "E50",
+      "from_name": "cryoglobulinemia",
+      "to_name": "edema_laterality",
+      "reason": "クリオグロブリンGN→両側性浮腫",
+      "onset_day_range": [
+        14,
+        90
+      ]
+    },
+    {
+      "from": "D219",
+      "to": "S21",
+      "from_name": "GPA",
+      "to_name": "chest_pain",
+      "reason": "GPA肺病変→胸膜炎→胸痛(PMC10224739)",
+      "onset_day_range": [
+        7,
+        60
+      ]
+    },
+    {
+      "from": "D42",
+      "to": "E09",
+      "from_name": "complicated_UTI",
+      "to_name": "abdominal_exam",
+      "reason": "腎盂腎炎→CVA/腹部圧痛(~66%)",
+      "onset_day_range": [
+        0,
+        7
+      ]
+    },
+    {
+      "from": "D324",
+      "to": "S22",
+      "from_name": "TB_meningitis",
+      "to_name": "back_pain",
+      "reason": "結核性髄膜炎→脊髄蜘蛛膜炎→背部痛(~50%合併)",
+      "onset_day_range": [
+        7,
+        60
+      ]
+    },
+    {
+      "from": "R10",
+      "to": "D55",
+      "from_name": "prosthetic_device",
+      "to_name": "Q_fever",
+      "reason": "人工弁→慢性Q熱リスク(39%, PMC5048103)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
