@@ -27,7 +27,7 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **新変数追加時は9項目の三位一体監査** — IDF健全性チェック含む
 - **回帰テスト報告は総案例数+百分率を含める**
 - **Flask再起動は5000番ポートのみkill** — 全python.exeをkillしない
-- **検査値変量のstate設計はCTCAE準拠** — normal/mild/moderate/markedly_elevated の4-state（xULN基準）を標準とする
+- **検査値変量のstate設計は因材施教** — まず変量固有の黄金分級を文献検索、なければCTCAE準拠4-state(xULN基準)をfallback
 
 ## 現在の状態
 - 345疾患(D01-D350)、792変量、6111辺、105疾患にR→D prior

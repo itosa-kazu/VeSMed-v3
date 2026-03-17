@@ -1,12 +1,18 @@
 ---
 name: 検査値変量の臨床的分級方法論
-description: 検査値（γ-GTP, ALP等）を新変量として追加する際、state設計はCTCAE v5.0ベースの4-state分級を採用する。文献根拠あり。
+description: 検査値を新変量として追加する際、まずその変量固有の黄金分級を文献検索。専用分級がなければCTCAE v5.0ベースの4-stateをfallbackとする。
 type: feedback
 ---
 
-## 鉄則：検査値変量のstate設計はCTCAE準拠の臨床分級を使う
+## 鉄則：検査値変量のstate設計は「因材施教」— 変量固有の黄金分級を優先
 
-新しい検査値変量を追加する際、stateは以下の4段階分級を基本とする：
+### 基本フロー
+
+1. **文献検索**: 新検査値変量を追加する際、まずその変量の**専用臨床分級**をPMC/教科書で検索
+2. **黄金分級があれば採用**: 学会ガイドライン等の確立された分級があればそれを使う
+3. **なければCTCAE fallback**: 専用分級がない場合のみ、以下のCTCAE準拠4-stateを使う
+
+### CTCAE fallback（専用分級がない検査値のデフォルト）
 
 | State | 定義 | CTCAE対応 |
 |-------|------|-----------|
@@ -15,27 +21,30 @@ type: feedback
 | `moderate_elevated` | 3x ~ 10x ULN | G2-G3相当 |
 | `markedly_elevated` | >10x ULN | G3-G4相当 |
 
-### 根拠
+### 黄金分級の例
 
-- **CTCAE v5.0**（NCI公式）は4段階: G1(>ULN~2.5x), G2(>2.5~5x), G3(>5~20x), G4(>20x)
-- 臨床肝臓学では簡化3段階: 軽度(<3x), 中等度(3-10x), 重度(>10x)が慣用
-- Case reportでG3(5-20x)とG4(>20x)を区別できる記載は稀 → 合併して>10xが実用的
-- VeSMedでは `normal` を加えた**4-state**を標準とする
+| 変量 | 黄金分級 | 出典 |
+|------|----------|------|
+| BNP | <100/100-400/>400 pg/mL | 心不全ガイドライン |
+| PT-INR | 凝固能ベース（正常/延長/著明延長） | 凝固学 |
+| CRP | <3/3-10/>10 mg/dL | 感染症分級 |
+| トロポニン | 99th percentile基準 | ACS診断基準 |
+| HbA1c | <5.7/5.7-6.4/≥6.5% | ADA糖尿病診断基準 |
 
-### 適用済み・適用予定の変量
+### CTCAE fallback適用の変量
 
 | 変量 | states | ULN参考値 |
 |------|--------|-----------|
 | γ-GTP | normal / mild / moderate / markedly_elevated | 男≤55, 女≤30 IU/L |
 | ALP | normal / mild / moderate / markedly_elevated | 40-130 IU/L |
-| (将来) AST/ALT | 同上 | AST: 10-40, ALT: 7-56 IU/L |
-| (将来) LDH | 同上 | 120-246 IU/L |
+| AST/ALT | 同上 | AST: 10-40, ALT: 7-56 IU/L |
+| LDH | 同上 | 120-246 IU/L |
 
-### 例外ケース
+### WebUI表示：具体的数値範囲を併記
 
-- **低値が臨床的に重要な検査**: ALP低下（低フォスファターゼ症）等は `decreased` stateを追加
-- **質的検査（陽性/陰性）**: この分級は不適用。ANCA, 抗GBM抗体等は `not_done/negative/positive` 等
-- **特殊な閾値がある検査**: トロポニン（正常/borderline/elevated）等は疾患特異的に設計
+state選択時にユーザーが迷わないよう、STATE_JAに具体的な数値範囲を併記する：
+- 例: `軽度上昇 (55-165 IU/L)` ではなく、STATE_JA自体は `軽度上昇` のまま
+- **app.pyのSTATE_JAにtooltip/補足情報を追加**して、WebUI上でホバーまたは括弧内に数値を表示
 
 ### PMC文献ソース
 
@@ -44,7 +53,7 @@ type: feedback
 - PMC8637680: Abnormal liver enzymes review
 - PMC7110573: Evaluation of elevated liver enzymes (ALP grading)
 - PMC5719197: Elevated liver enzymes in asymptomatic patients
-- CTCAE v5.0: NCI official grading (GGT/ALP both use same xULN scale)
+- CTCAE v5.0: NCI official grading
 
-**Why:** Case reportから検査値をstateにマッピングする際、統一基準がないと一貫性を欠く。CTCAE v5.0は最も標準化された分級であり、臨床論文でも広く使われている。
-**How to apply:** 新検査値変量追加時、まずこの4-state分級が適用可能か確認。適用可能なら統一フォーマットを使用。
+**Why:** 検査値ごとに臨床で確立された分級体系が異なる。一律CTCAEでは不適切な場合がある（例: BNPをxULNで分級しても臨床的に無意味）。各変量の黄金分級を優先することで、case reportからのマッピング精度が上がる。
+**How to apply:** 新検査値変量追加時、①PMCで専用分級を検索 ②あればそれを採用 ③なければCTCAE 4-state fallback。
