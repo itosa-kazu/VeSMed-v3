@@ -20656,143 +20656,120 @@
         "high_over_0.5"
       ],
       "leak": {
-        "not_done": 0.4,
-        "low_under_0.25": 0.45,
-        "gray_0.25_0.5": 0.1,
-        "high_over_0.5": 0.05
+        "low_under_0.25": 0.88,
+        "gray_0.25_0.5": 0.08,
+        "high_over_0.5": 0.04
       },
       "parent_effects": {
         "D05": {
-          "not_done": 0.15,
-          "low_under_0.25": 0.15,
-          "gray_0.25_0.5": 0.2,
-          "high_over_0.5": 0.5
+          "low_under_0.25": 0.1,
+          "gray_0.25_0.5": 0.25,
+          "high_over_0.5": 0.65
         },
         "D09": {
-          "not_done": 0.15,
-          "low_under_0.25": 0.15,
+          "low_under_0.25": 0.1,
           "gray_0.25_0.5": 0.25,
-          "high_over_0.5": 0.45
+          "high_over_0.5": 0.65
         },
         "D13": {
-          "not_done": 0.1,
-          "low_under_0.25": 0.05,
-          "gray_0.25_0.5": 0.1,
-          "high_over_0.5": 0.75
+          "low_under_0.25": 0.03,
+          "gray_0.25_0.5": 0.07,
+          "high_over_0.5": 0.9
         },
         "D14": {
-          "not_done": 0.15,
-          "low_under_0.25": 0.2,
-          "gray_0.25_0.5": 0.25,
+          "low_under_0.25": 0.25,
+          "gray_0.25_0.5": 0.35,
           "high_over_0.5": 0.4
         },
         "D25": {
-          "not_done": 0.1,
-          "low_under_0.25": 0.1,
+          "low_under_0.25": 0.05,
           "gray_0.25_0.5": 0.15,
-          "high_over_0.5": 0.65
+          "high_over_0.5": 0.8
         },
         "D57": {
-          "not_done": 0.2,
           "low_under_0.25": 0.02,
-          "gray_0.25_0.5": 0.03,
-          "high_over_0.5": 0.75
+          "gray_0.25_0.5": 0.08,
+          "high_over_0.5": 0.9
         },
         "D83": {
-          "not_done": 0.2,
-          "low_under_0.25": 0.2,
+          "low_under_0.25": 0.1,
           "gray_0.25_0.5": 0.25,
-          "high_over_0.5": 0.35
+          "high_over_0.5": 0.65
         },
         "D41": {
-          "not_done": 0.3,
-          "low_under_0.25": 0.4,
+          "low_under_0.25": 0.75,
+          "gray_0.25_0.5": 0.18,
+          "high_over_0.5": 0.07
+        },
+        "D117": {
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.15,
+          "high_over_0.5": 0.8
+        },
+        "D118": {
+          "low_under_0.25": 0.08,
+          "gray_0.25_0.5": 0.22,
+          "high_over_0.5": 0.7
+        },
+        "D119": {
+          "low_under_0.25": 0.05,
+          "gray_0.25_0.5": 0.15,
+          "high_over_0.5": 0.8
+        },
+        "D121": {
+          "low_under_0.25": 0.7,
           "gray_0.25_0.5": 0.2,
           "high_over_0.5": 0.1
         },
-        "D117": {
-          "not_done": 0.3,
-          "low_under_0.25": 0.05,
-          "gray_0.25_0.5": 0.15,
-          "high_over_0.5": 0.5
-        },
-        "D118": {
-          "not_done": 0.3,
-          "low_under_0.25": 0.1,
-          "gray_0.25_0.5": 0.2,
-          "high_over_0.5": 0.4
-        },
-        "D119": {
-          "not_done": 0.25,
-          "low_under_0.25": 0.05,
-          "gray_0.25_0.5": 0.1,
-          "high_over_0.5": 0.6
-        },
-        "D121": {
-          "not_done": 0.3,
-          "low_under_0.25": 0.3,
-          "gray_0.25_0.5": 0.2,
-          "high_over_0.5": 0.2
-        },
         "D112": {
-          "not_done": 0.3,
-          "low_under_0.25": 0.15,
-          "gray_0.25_0.5": 0.25,
+          "low_under_0.25": 0.3,
+          "gray_0.25_0.5": 0.4,
           "high_over_0.5": 0.3
         },
         "D143": {
-          "not_done": 0.25,
-          "low_under_0.25": 0.1,
-          "gray_0.25_0.5": 0.2,
-          "high_over_0.5": 0.45
-        },
-        "D178": {
-          "not_done": 0.15,
-          "low_under_0.25": 0.05,
-          "gray_0.25_0.5": 0.1,
+          "low_under_0.25": 0.08,
+          "gray_0.25_0.5": 0.22,
           "high_over_0.5": 0.7
         },
+        "D178": {
+          "low_under_0.25": 0.15,
+          "gray_0.25_0.5": 0.35,
+          "high_over_0.5": 0.5
+        },
         "D92": {
-          "not_done": 0.2,
-          "low_under_0.25": 0.5,
-          "gray_0.25_0.5": 0.2,
+          "low_under_0.25": 0.65,
+          "gray_0.25_0.5": 0.25,
           "high_over_0.5": 0.1
         },
         "D136": {
-          "not_done": 0.15,
-          "low_under_0.25": 0.1,
-          "gray_0.25_0.5": 0.15,
-          "high_over_0.5": 0.6
+          "low_under_0.25": 0.45,
+          "gray_0.25_0.5": 0.3,
+          "high_over_0.5": 0.25
         },
         "D266": {
-          "not_done": 0.15,
           "low_under_0.25": 0.05,
           "gray_0.25_0.5": 0.1,
-          "high_over_0.5": 0.7
+          "high_over_0.5": 0.85
         },
         "D29": {
-          "not_done": 0.15,
           "low_under_0.25": 0.03,
           "gray_0.25_0.5": 0.07,
-          "high_over_0.5": 0.75
+          "high_over_0.5": 0.9
         },
         "D362": {
-          "not_done": 0.15,
           "low_under_0.25": 0.15,
-          "gray_0.25_0.5": 0.3,
-          "high_over_0.5": 0.4
+          "gray_0.25_0.5": 0.35,
+          "high_over_0.5": 0.5
         },
         "D24": {
-          "not_done": 0.1,
           "low_under_0.25": 0.05,
-          "gray_0.25_0.5": 0.1,
-          "high_over_0.5": 0.75
+          "gray_0.25_0.5": 0.15,
+          "high_over_0.5": 0.8
         },
         "D364": {
-          "not_done": 0.1,
-          "low_under_0.25": 0.03,
-          "gray_0.25_0.5": 0.07,
-          "high_over_0.5": 0.8
+          "low_under_0.25": 0.2,
+          "gray_0.25_0.5": 0.35,
+          "high_over_0.5": 0.45
         }
       }
     },
@@ -20806,719 +20783,642 @@
         "pleural_effusion"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.4525,
-        "lobar_infiltrate": 0.015,
-        "bilateral_infiltrate": 0.015,
-        "BHL": 0.0025,
-        "pleural_effusion": 0.01,
-        "pneumothorax": 0.005
+        "normal": 0.82,
+        "lobar_infiltrate": 0.05,
+        "bilateral_infiltrate": 0.03,
+        "BHL": 0.01,
+        "pleural_effusion": 0.05,
+        "pneumothorax": 0.04
       },
       "parent_effects": {
         "D05": {
-          "not_done": 0.05,
           "normal": 0.047,
-          "lobar_infiltrate": 0.5926,
+          "lobar_infiltrate": 0.6426,
           "bilateral_infiltrate": 0.1881,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D03": {
-          "not_done": 0.05,
           "normal": 0.2821,
           "lobar_infiltrate": 0.094,
-          "bilateral_infiltrate": 0.4985,
+          "bilateral_infiltrate": 0.5485,
           "BHL": 0.0188,
           "pleural_effusion": 0.047,
           "pneumothorax": 0.0095
         },
         "D17": {
-          "not_done": 0.05,
           "normal": 0.1411,
-          "lobar_infiltrate": 0.4232,
+          "lobar_infiltrate": 0.4732,
           "bilateral_infiltrate": 0.1881,
           "BHL": 0.047,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D14": {
-          "not_done": 0.05,
           "normal": 0.3574,
           "lobar_infiltrate": 0.1411,
-          "bilateral_infiltrate": 0.3292,
+          "bilateral_infiltrate": 0.3792,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D35": {
-          "not_done": 0.05,
           "normal": 0.094,
-          "lobar_infiltrate": 0.5456,
+          "lobar_infiltrate": 0.5956,
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
           "pleural_effusion": 0.1881,
           "pneumothorax": 0.0095
         },
         "D36": {
-          "not_done": 0.05,
           "normal": 0.047,
           "lobar_infiltrate": 0.094,
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
-          "pleural_effusion": 0.6867,
+          "pleural_effusion": 0.7367,
           "pneumothorax": 0.0095
         },
         "D50": {
-          "not_done": 0.05,
           "normal": 0.3574,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D55": {
-          "not_done": 0.05,
           "normal": 0.2633,
-          "lobar_infiltrate": 0.4232,
+          "lobar_infiltrate": 0.4733,
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D77": {
-          "not_done": 0.05,
           "normal": 0.3574,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D83": {
-          "not_done": 0.05,
           "normal": 0.3574,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D99": {
-          "not_done": 0.05,
           "normal": 0.094,
-          "lobar_infiltrate": 0.4327,
+          "lobar_infiltrate": 0.4827,
           "bilateral_infiltrate": 0.2822,
           "BHL": 0.0376,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D102": {
-          "not_done": 0.05,
           "normal": 0.047,
-          "lobar_infiltrate": 0.6396,
+          "lobar_infiltrate": 0.6896,
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D92": {
-          "not_done": 0.05,
           "normal": 0.4044,
-          "lobar_infiltrate": 0.1881,
+          "lobar_infiltrate": 0.2381,
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0658,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D67": {
-          "not_done": 0.05,
           "normal": 0.2351,
           "lobar_infiltrate": 0.094,
-          "bilateral_infiltrate": 0.2821,
+          "bilateral_infiltrate": 0.3322,
           "BHL": 0.1411,
           "pleural_effusion": 0.1881,
           "pneumothorax": 0.0095
         },
         "D60": {
-          "not_done": 0.05,
           "normal": 0.3574,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D62": {
-          "not_done": 0.05,
           "normal": 0.094,
           "lobar_infiltrate": 0.0282,
           "bilateral_infiltrate": 0.0658,
-          "BHL": 0.6584,
+          "BHL": 0.7084,
           "pleural_effusion": 0.094,
           "pneumothorax": 0.0095
         },
         "D68": {
-          "not_done": 0.05,
           "normal": 0.3292,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.047,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D69": {
-          "not_done": 0.05,
           "normal": 0.348,
           "lobar_infiltrate": 0.1881,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.0282,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D104": {
-          "not_done": 0.05,
           "normal": 0.095,
-          "lobar_infiltrate": 0.4275,
+          "lobar_infiltrate": 0.4775,
           "bilateral_infiltrate": 0.285,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.0285
         },
         "D28": {
-          "not_done": 0.05,
           "normal": 0.7995,
-          "lobar_infiltrate": 0.047,
+          "lobar_infiltrate": 0.097,
           "bilateral_infiltrate": 0.0282,
           "BHL": 0.0188,
           "pleural_effusion": 0.047,
           "pneumothorax": 0.0095
         },
         "D56": {
-          "not_done": 0.05,
           "normal": 0.4703,
           "lobar_infiltrate": 0.1411,
-          "bilateral_infiltrate": 0.2351,
+          "bilateral_infiltrate": 0.2851,
           "BHL": 0.047,
           "pleural_effusion": 0.047,
           "pneumothorax": 0.0095
         },
         "D113": {
-          "not_done": 0.05,
           "normal": 0.2821,
           "lobar_infiltrate": 0.047,
-          "bilateral_infiltrate": 0.3762,
+          "bilateral_infiltrate": 0.4262,
           "BHL": 0.094,
           "pleural_effusion": 0.1411,
           "pneumothorax": 0.0095
         },
         "D120": {
-          "not_done": 0.05,
           "normal": 0.094,
           "lobar_infiltrate": 0.047,
-          "bilateral_infiltrate": 0.4232,
+          "bilateral_infiltrate": 0.4732,
           "BHL": 0.0188,
           "pleural_effusion": 0.3574,
           "pneumothorax": 0.0095
         },
         "D121": {
-          "not_done": 0.05,
           "normal": 0.5173,
           "lobar_infiltrate": 0.1411,
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
-          "pleural_effusion": 0.1693,
+          "pleural_effusion": 0.2193,
           "pneumothorax": 0.0095
         },
         "D122": {
-          "not_done": 0.05,
           "normal": 0.6584,
           "lobar_infiltrate": 0.047,
           "bilateral_infiltrate": 0.047,
           "BHL": 0.0188,
-          "pleural_effusion": 0.1693,
+          "pleural_effusion": 0.2193,
           "pneumothorax": 0.0095
         },
         "D123": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.019,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.8075
+          "pneumothorax": 0.8575
         },
         "D124": {
-          "not_done": 0.05,
           "normal": 0.285,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.019,
-          "pleural_effusion": 0.5225,
+          "pleural_effusion": 0.5725,
           "pneumothorax": 0.057
         },
         "D125": {
-          "not_done": 0.05,
           "normal": 0.6175,
           "lobar_infiltrate": 0.0285,
-          "bilateral_infiltrate": 0.1425,
+          "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.0475
         },
         "D127": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.0475,
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
-          "pleural_effusion": 0.7125,
+          "pleural_effusion": 0.7625,
           "pneumothorax": 0.0285
         },
         "D129": {
-          "not_done": 0.05,
           "normal": 0.855,
-          "lobar_infiltrate": 0.019,
+          "lobar_infiltrate": 0.069,
           "bilateral_infiltrate": 0.019,
           "BHL": 0.019,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.019
         },
         "D130": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.095,
-          "bilateral_infiltrate": 0.57,
+          "bilateral_infiltrate": 0.62,
           "BHL": 0.076,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.038
         },
         "D133": {
-          "not_done": 0.05,
           "normal": 0.855,
-          "lobar_infiltrate": 0.019,
+          "lobar_infiltrate": 0.069,
           "bilateral_infiltrate": 0.019,
           "BHL": 0.019,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.019
         },
         "D134": {
-          "not_done": 0.05,
           "normal": 0.665,
           "lobar_infiltrate": 0.0285,
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.019,
-          "pleural_effusion": 0.1425,
+          "pleural_effusion": 0.1925,
           "pneumothorax": 0.0475
         },
         "D135": {
-          "not_done": 0.05,
           "normal": 0.874,
-          "lobar_infiltrate": 0.019,
+          "lobar_infiltrate": 0.069,
           "bilateral_infiltrate": 0.0095,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.019
         },
         "D136": {
-          "not_done": 0.05,
           "normal": 0.1425,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.0285,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.703
+          "pneumothorax": 0.753
         },
         "D143": {
-          "not_done": 0.05,
           "normal": 0.095,
-          "lobar_infiltrate": 0.4275,
+          "lobar_infiltrate": 0.4775,
           "bilateral_infiltrate": 0.2375,
           "BHL": 0.019,
           "pleural_effusion": 0.1425,
           "pneumothorax": 0.0285
         },
         "D148": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.0475,
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
-          "pleural_effusion": 0.38,
+          "pleural_effusion": 0.43,
           "pneumothorax": 0.3135
         },
         "D173": {
-          "not_done": 0.05,
           "normal": 0.57,
           "lobar_infiltrate": 0.0285,
-          "bilateral_infiltrate": 0.285,
+          "bilateral_infiltrate": 0.335,
           "BHL": 0.0095,
           "pleural_effusion": 0.0285,
           "pneumothorax": 0.0285
         },
         "D175": {
-          "not_done": 0.05,
           "normal": 0.0285,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.855,
+          "bilateral_infiltrate": 0.905,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.019
         },
         "D188": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.0475,
-          "bilateral_infiltrate": 0.76,
+          "bilateral_infiltrate": 0.81,
           "BHL": 0.019,
           "pleural_effusion": 0.057,
           "pneumothorax": 0.019
         },
         "D116": {
-          "not_done": 0.05,
           "normal": 0.38,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.285,
+          "bilateral_infiltrate": 0.335,
           "BHL": 0.0095,
           "pleural_effusion": 0.2375,
           "pneumothorax": 0.019
         },
         "D193": {
-          "not_done": 0.05,
           "normal": 0.076,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.76,
+          "bilateral_infiltrate": 0.81,
           "BHL": 0.0285,
           "pleural_effusion": 0.0285,
           "pneumothorax": 0.038
         },
         "D195": {
-          "not_done": 0.05,
           "normal": 0.076,
           "lobar_infiltrate": 0.0475,
-          "bilateral_infiltrate": 0.7125,
+          "bilateral_infiltrate": 0.7625,
           "BHL": 0.019,
           "pleural_effusion": 0.057,
           "pneumothorax": 0.038
         },
         "D203": {
-          "not_done": 0.05,
           "normal": 0.38,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.4275,
+          "bilateral_infiltrate": 0.4775,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.0285
         },
         "D212": {
-          "not_done": 0.05,
           "normal": 0.19,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.2375,
           "BHL": 0.019,
-          "pleural_effusion": 0.456,
+          "pleural_effusion": 0.506,
           "pneumothorax": 0.0285
         },
         "D215": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.665,
+          "bilateral_infiltrate": 0.715,
           "BHL": 0.0095,
           "pleural_effusion": 0.19,
           "pneumothorax": 0.019
         },
         "D216": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.019,
-          "bilateral_infiltrate": 0.6175,
+          "bilateral_infiltrate": 0.6675,
           "BHL": 0.0095,
           "pleural_effusion": 0.2375,
           "pneumothorax": 0.019
         },
         "D219": {
-          "not_done": 0.05,
           "normal": 0.2375,
           "lobar_infiltrate": 0.1425,
-          "bilateral_infiltrate": 0.4275,
+          "bilateral_infiltrate": 0.4775,
           "BHL": 0.0285,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.038
         },
         "D227": {
-          "not_done": 0.05,
           "normal": 0.1425,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.095,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.57
+          "pneumothorax": 0.62
         },
         "D254": {
-          "not_done": 0.05,
           "normal": 0.57,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.285
+          "pneumothorax": 0.335
         },
         "D253": {
-          "not_done": 0.05,
           "normal": 0.2375,
           "lobar_infiltrate": 0.0475,
-          "bilateral_infiltrate": 0.5225,
+          "bilateral_infiltrate": 0.5725,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.114
         },
         "D255": {
-          "not_done": 0.05,
           "normal": 0.4275,
           "lobar_infiltrate": 0.095,
-          "bilateral_infiltrate": 0.3325,
+          "bilateral_infiltrate": 0.3825,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
           "pneumothorax": 0.038
         },
         "D263": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.1425,
-          "bilateral_infiltrate": 0.57,
+          "bilateral_infiltrate": 0.62,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.0475
         },
         "D264": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.1425,
-          "bilateral_infiltrate": 0.57,
+          "bilateral_infiltrate": 0.62,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.0475
         },
         "D265": {
-          "not_done": 0.05,
           "normal": 0.0475,
-          "lobar_infiltrate": 0.3325,
+          "lobar_infiltrate": 0.3825,
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.019,
           "pleural_effusion": 0.3325,
           "pneumothorax": 0.076
         },
         "D266": {
-          "not_done": 0.05,
           "normal": 0.0285,
-          "lobar_infiltrate": 0.6175,
+          "lobar_infiltrate": 0.6675,
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.0095,
           "pleural_effusion": 0.114,
           "pneumothorax": 0.038
         },
         "D267": {
-          "not_done": 0.05,
           "normal": 0.076,
           "lobar_infiltrate": 0.285,
-          "bilateral_infiltrate": 0.4275,
+          "bilateral_infiltrate": 0.4775,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.0475
         },
         "D277": {
-          "not_done": 0.05,
           "normal": 0.076,
           "lobar_infiltrate": 0.19,
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.0475,
-          "pleural_effusion": 0.4275,
+          "pleural_effusion": 0.4775,
           "pneumothorax": 0.0665
         },
         "D278": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.0475,
           "bilateral_infiltrate": 0.076,
           "BHL": 0.019,
-          "pleural_effusion": 0.7125,
+          "pleural_effusion": 0.7625,
           "pneumothorax": 0.0475
         },
         "D281": {
-          "not_done": 0.05,
           "normal": 0.2375,
           "lobar_infiltrate": 0.0475,
-          "bilateral_infiltrate": 0.5225,
+          "bilateral_infiltrate": 0.5725,
           "BHL": 0.0095,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.057
         },
         "D317": {
-          "not_done": 0.05,
           "normal": 0.0475,
           "lobar_infiltrate": 0.0285,
-          "bilateral_infiltrate": 0.8075,
+          "bilateral_infiltrate": 0.8575,
           "BHL": 0.019,
           "pleural_effusion": 0.0285,
           "pneumothorax": 0.019
         },
         "D319": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.19,
-          "bilateral_infiltrate": 0.475,
+          "bilateral_infiltrate": 0.525,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.076
         },
         "D328": {
-          "not_done": 0.05,
           "normal": 0.0095,
           "lobar_infiltrate": 0.038,
-          "bilateral_infiltrate": 0.855,
+          "bilateral_infiltrate": 0.905,
           "BHL": 0.0095,
           "pleural_effusion": 0.0285,
           "pneumothorax": 0.0095
         },
         "D331": {
-          "not_done": 0.05,
           "normal": 0.095,
           "lobar_infiltrate": 0.0475,
-          "bilateral_infiltrate": 0.7125,
+          "bilateral_infiltrate": 0.7625,
           "BHL": 0.019,
           "pleural_effusion": 0.0475,
           "pneumothorax": 0.0285
         },
         "D349": {
-          "not_done": 0.05,
           "normal": 0.0285,
           "lobar_infiltrate": 0.0475,
           "bilateral_infiltrate": 0.0665,
           "BHL": 0.019,
-          "pleural_effusion": 0.76,
+          "pleural_effusion": 0.81,
           "pneumothorax": 0.0285
         },
         "D258": {
-          "not_done": 0.05,
           "normal": 0.1425,
           "lobar_infiltrate": 0.1425,
-          "bilateral_infiltrate": 0.5225,
+          "bilateral_infiltrate": 0.5725,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.0475
         },
         "D348": {
-          "not_done": 0.05,
           "normal": 0.6175,
-          "lobar_infiltrate": 0.095,
+          "lobar_infiltrate": 0.145,
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
           "pneumothorax": 0.0475
         },
         "D344": {
-          "not_done": 0.05,
           "normal": 0.2375,
           "lobar_infiltrate": 0.019,
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.019,
-          "pleural_effusion": 0.5035,
+          "pleural_effusion": 0.5535,
           "pneumothorax": 0.0285
         },
         "D301": {
-          "not_done": 0.05,
           "normal": 0.855,
-          "lobar_infiltrate": 0.0285,
+          "lobar_infiltrate": 0.0785,
           "bilateral_infiltrate": 0.019,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
           "pneumothorax": 0.019
         },
         "D180": {
-          "not_done": 0.7499999999999999,
-          "normal": 0.25,
-          "lobar_infiltrate": 0.0,
-          "bilateral_infiltrate": 0.0,
-          "BHL": 0.0,
-          "pleural_effusion": 0.0,
-          "pneumothorax": 0.0
+          "normal": 0.95,
+          "lobar_infiltrate": 0.01,
+          "bilateral_infiltrate": 0.01,
+          "BHL": 0.005,
+          "pleural_effusion": 0.015,
+          "pneumothorax": 0.01
         },
         "D221": {
           "normal": 0.2,
-          "bilateral_infiltrate": 0.2,
           "lobar_infiltrate": 0.55,
-          "pleural_effusion": 0.05
+          "bilateral_infiltrate": 0.2,
+          "BHL": 0.0,
+          "pleural_effusion": 0.05,
+          "pneumothorax": 0.0
         },
         "D354": {
-          "not_done": 0.05,
           "normal": 0.15,
           "lobar_infiltrate": 0.05,
           "bilateral_infiltrate": 0.15,
-          "BHL": 0.3,
+          "BHL": 0.395,
           "pleural_effusion": 0.25,
           "pneumothorax": 0.005
         },
         "D356": {
-          "not_done": 0.05,
           "normal": 0.6175,
           "lobar_infiltrate": 0.0285,
-          "bilateral_infiltrate": 0.1425,
+          "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.0475
         },
         "D357": {
-          "not_done": 0.05,
           "normal": 0.6175,
           "lobar_infiltrate": 0.0285,
-          "bilateral_infiltrate": 0.1425,
+          "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
           "pneumothorax": 0.0475
         },
         "D106": {
-          "not_done": 0.05,
           "normal": 0.45,
           "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.35,
+          "bilateral_infiltrate": 0.4,
           "BHL": 0.01,
           "pleural_effusion": 0.05,
           "pneumothorax": 0.04
         },
         "D361": {
-          "not_done": 0.05,
           "normal": 0.6,
           "lobar_infiltrate": 0.04,
-          "bilateral_infiltrate": 0.22,
+          "bilateral_infiltrate": 0.27,
           "BHL": 0.01,
           "pleural_effusion": 0.04,
           "pneumothorax": 0.04
         },
         "D365": {
-          "not_done": 0.05,
           "normal": 0.25,
           "lobar_infiltrate": 0.2,
-          "bilateral_infiltrate": 0.3,
+          "bilateral_infiltrate": 0.35,
           "BHL": 0.05,
           "pleural_effusion": 0.1,
           "pneumothorax": 0.05
         },
         "D366": {
-          "not_done": 0.05,
           "normal": 0.6,
           "lobar_infiltrate": 0.05,
-          "bilateral_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
           "BHL": 0.03,
           "pleural_effusion": 0.05,
           "pneumothorax": 0.02
         },
         "D109": {
-          "not_done": 0.05,
           "normal": 0.5,
           "lobar_infiltrate": 0.1,
-          "bilateral_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.25,
           "BHL": 0.05,
           "pleural_effusion": 0.05,
           "pneumothorax": 0.05
@@ -37398,603 +37298,505 @@
     "L51": {
       "description": "BNP/NT-proBNP",
       "leak": {
-        "not_done": 0.7,
-        "normal": 0.25,
-        "mildly_elevated": 0.04,
-        "very_high": 0.01
+        "normal": 0.78,
+        "mildly_elevated": 0.15,
+        "very_high": 0.07
       },
       "parent_effects": {
         "D120": {
-          "not_done": 0.1,
           "normal": 0.03,
           "mildly_elevated": 0.12,
-          "very_high": 0.75
+          "very_high": 0.85
         },
         "D77": {
-          "not_done": 0.4,
-          "normal": 0.2,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
+          "normal": 0.3,
+          "mildly_elevated": 0.45,
+          "very_high": 0.25
         },
         "D116": {
-          "not_done": 0.3,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.25
-        },
-        "D71": {
-          "not_done": 0.4,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.15
-        },
-        "D121": {
-          "not_done": 0.3,
-          "normal": 0.4,
-          "mildly_elevated": 0.25,
-          "very_high": 0.05
-        },
-        "D122": {
-          "not_done": 0.4,
-          "normal": 0.5,
-          "mildly_elevated": 0.08,
-          "very_high": 0.02
-        },
-        "D124": {
-          "not_done": 0.25,
           "normal": 0.15,
           "mildly_elevated": 0.4,
-          "very_high": 0.2
-        },
-        "D125": {
-          "not_done": 0.3,
-          "normal": 0.2,
-          "mildly_elevated": 0.35,
-          "very_high": 0.15
-        },
-        "D127": {
-          "not_done": 0.25,
-          "normal": 0.3,
-          "mildly_elevated": 0.25,
-          "very_high": 0.2
-        },
-        "D131": {
-          "not_done": 0.2,
-          "normal": 0.25,
-          "mildly_elevated": 0.3,
-          "very_high": 0.25
-        },
-        "D132": {
-          "not_done": 0.2,
-          "normal": 0.3,
-          "mildly_elevated": 0.3,
-          "very_high": 0.2
-        },
-        "D133": {
-          "not_done": 0.4,
-          "normal": 0.55,
-          "mildly_elevated": 0.04,
-          "very_high": 0.01
-        },
-        "D135": {
-          "not_done": 0.4,
-          "normal": 0.55,
-          "mildly_elevated": 0.04,
-          "very_high": 0.01
-        },
-        "D150": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mildly_elevated": 0.3,
           "very_high": 0.45
         },
-        "D149": {
-          "not_done": 0.25,
-          "normal": 0.3,
-          "mildly_elevated": 0.25,
-          "very_high": 0.2
-        },
-        "D204": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.4
-        },
-        "D212": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.3,
-          "very_high": 0.55
-        },
-        "D214": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.3,
-          "very_high": 0.55
-        },
-        "D215": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "mildly_elevated": 0.12,
-          "very_high": 0.8
-        },
-        "D216": {
-          "not_done": 0.05,
-          "normal": 0.02,
-          "mildly_elevated": 0.1,
-          "very_high": 0.83
-        },
-        "D138": {
-          "not_done": 0.15,
-          "normal": 0.25,
-          "mildly_elevated": 0.35,
-          "very_high": 0.25
-        },
-        "D261": {
-          "not_done": 0.3,
-          "normal": 0.45,
-          "mildly_elevated": 0.2,
-          "very_high": 0.05
-        },
-        "D318": {
-          "not_done": 0.1,
-          "normal": 0.15,
-          "mildly_elevated": 0.35,
-          "very_high": 0.4
-        },
-        "D327": {
-          "not_done": 0.15,
+        "D71": {
           "normal": 0.2,
-          "mildly_elevated": 0.35,
-          "very_high": 0.3
-        },
-        "D340": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mildly_elevated": 0.35,
+          "mildly_elevated": 0.45,
           "very_high": 0.35
         },
-        "D344": {
-          "not_done": 0.15,
-          "normal": 0.2,
+        "D121": {
+          "normal": 0.55,
+          "mildly_elevated": 0.35,
+          "very_high": 0.1
+        },
+        "D122": {
+          "normal": 0.35,
           "mildly_elevated": 0.45,
           "very_high": 0.2
         },
-        "D346": {
-          "not_done": 0.15,
+        "D124": {
+          "normal": 0.05,
+          "mildly_elevated": 0.3,
+          "very_high": 0.65
+        },
+        "D125": {
+          "normal": 0.15,
+          "mildly_elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D127": {
           "normal": 0.25,
           "mildly_elevated": 0.4,
-          "very_high": 0.2
+          "very_high": 0.35
         },
-        "D356": {
-          "not_done": 0.3,
-          "normal": 0.35,
-          "mildly_elevated": 0.25,
-          "very_high": 0.1
-        },
-        "D357": {
-          "not_done": 0.25,
+        "D131": {
           "normal": 0.15,
-          "mildly_elevated": 0.35,
+          "mildly_elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D132": {
+          "normal": 0.25,
+          "mildly_elevated": 0.4,
+          "very_high": 0.35
+        },
+        "D133": {
+          "normal": 0.7,
+          "mildly_elevated": 0.25,
+          "very_high": 0.05
+        },
+        "D135": {
+          "normal": 0.85,
+          "mildly_elevated": 0.12,
+          "very_high": 0.03
+        },
+        "D150": {
+          "normal": 0.05,
+          "mildly_elevated": 0.25,
+          "very_high": 0.7
+        },
+        "D149": {
+          "normal": 0.3,
+          "mildly_elevated": 0.45,
           "very_high": 0.25
         },
-        "D24": {
-          "not_done": 0.4,
-          "normal": 0.2,
+        "D204": {
+          "normal": 0.15,
+          "mildly_elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D212": {
+          "normal": 0.03,
+          "mildly_elevated": 0.22,
+          "very_high": 0.75
+        },
+        "D214": {
+          "normal": 0.15,
+          "mildly_elevated": 0.45,
+          "very_high": 0.4
+        },
+        "D215": {
+          "normal": 0.03,
+          "mildly_elevated": 0.17,
+          "very_high": 0.8
+        },
+        "D216": {
+          "normal": 0.02,
+          "mildly_elevated": 0.13,
+          "very_high": 0.85
+        },
+        "D138": {
+          "normal": 0.3,
+          "mildly_elevated": 0.45,
+          "very_high": 0.25
+        },
+        "D261": {
+          "normal": 0.7,
           "mildly_elevated": 0.25,
+          "very_high": 0.05
+        },
+        "D318": {
+          "normal": 0.1,
+          "mildly_elevated": 0.35,
+          "very_high": 0.55
+        },
+        "D327": {
+          "normal": 0.2,
+          "mildly_elevated": 0.45,
+          "very_high": 0.35
+        },
+        "D340": {
+          "normal": 0.2,
+          "mildly_elevated": 0.45,
+          "very_high": 0.35
+        },
+        "D344": {
+          "normal": 0.1,
+          "mildly_elevated": 0.4,
+          "very_high": 0.5
+        },
+        "D346": {
+          "normal": 0.1,
+          "mildly_elevated": 0.4,
+          "very_high": 0.5
+        },
+        "D356": {
+          "normal": 0.45,
+          "mildly_elevated": 0.4,
           "very_high": 0.15
+        },
+        "D357": {
+          "normal": 0.05,
+          "mildly_elevated": 0.3,
+          "very_high": 0.65
+        },
+        "D24": {
+          "normal": 0.2,
+          "mildly_elevated": 0.45,
+          "very_high": 0.35
         }
       }
     },
     "L52": {
       "description": "Dダイマー。PE/解離/DICで上昇。陰性でPE/解離除外",
       "leak": {
-        "not_done": 0.7,
-        "normal": 0.25,
-        "mildly_elevated": 0.04,
-        "very_high": 0.01
+        "normal": 0.83,
+        "mildly_elevated": 0.14,
+        "very_high": 0.03
       },
       "parent_effects": {
         "D132": {
-          "not_done": 0.1,
           "normal": 0.03,
-          "mildly_elevated": 0.17,
-          "very_high": 0.7
+          "mildly_elevated": 0.1,
+          "very_high": 0.87
         },
         "D77": {
-          "not_done": 0.15,
-          "normal": 0.05,
-          "mildly_elevated": 0.4,
-          "very_high": 0.4
+          "normal": 0.08,
+          "mildly_elevated": 0.42,
+          "very_high": 0.5
         },
         "D57": {
-          "not_done": 0.2,
           "normal": 0.1,
-          "mildly_elevated": 0.35,
-          "very_high": 0.35
+          "mildly_elevated": 0.4,
+          "very_high": 0.5
         },
         "D15": {
-          "not_done": 0.25,
-          "normal": 0.15,
-          "mildly_elevated": 0.35,
-          "very_high": 0.25
-        },
-        "D131": {
-          "not_done": 0.25,
-          "normal": 0.4,
-          "mildly_elevated": 0.3,
-          "very_high": 0.05
-        },
-        "D107": {
-          "not_done": 0.2,
-          "normal": 0.1,
-          "mildly_elevated": 0.3,
-          "very_high": 0.4
-        },
-        "D137": {
-          "not_done": 0.2,
-          "normal": 0.05,
-          "mildly_elevated": 0.25,
-          "very_high": 0.5
-        },
-        "D03": {
-          "not_done": 0.25,
-          "normal": 0.25,
-          "mildly_elevated": 0.3,
-          "very_high": 0.2
-        },
-        "D05": {
-          "not_done": 0.3,
-          "normal": 0.35,
-          "mildly_elevated": 0.3,
-          "very_high": 0.05
-        },
-        "D152": {
-          "not_done": 0.1,
-          "normal": 0.03,
-          "mildly_elevated": 0.12,
-          "very_high": 0.75
-        },
-        "D158": {
-          "not_done": 0.2,
-          "normal": 0.25,
-          "mildly_elevated": 0.4,
-          "very_high": 0.15
-        },
-        "D166": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mildly_elevated": 0.25,
-          "very_high": 0.5
-        },
-        "D171": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.2,
-          "very_high": 0.65
-        },
-        "D174": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.15,
-          "very_high": 0.7
-        },
-        "D173": {
-          "not_done": 0.2,
-          "normal": 0.35,
-          "mildly_elevated": 0.25,
-          "very_high": 0.2
-        },
-        "D151": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mildly_elevated": 0.25,
-          "very_high": 0.5
-        },
-        "D162": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mildly_elevated": 0.25,
-          "very_high": 0.5
-        },
-        "D177": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.4
-        },
-        "D185": {
-          "not_done": 0.2,
-          "normal": 0.25,
-          "mildly_elevated": 0.3,
-          "very_high": 0.25
-        },
-        "D192": {
-          "not_done": 0.1,
-          "normal": 0.03,
-          "mildly_elevated": 0.07,
-          "very_high": 0.8
-        },
-        "D75": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "mildly_elevated": 0.07,
-          "very_high": 0.85
-        },
-        "D207": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.2,
-          "very_high": 0.65
-        },
-        "D178": {
-          "not_done": 0.15,
           "normal": 0.2,
-          "mildly_elevated": 0.3,
+          "mildly_elevated": 0.45,
           "very_high": 0.35
         },
-        "D175": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.4
-        },
-        "D228": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mildly_elevated": 0.25,
-          "very_high": 0.5
-        },
-        "D230": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.4
-        },
-        "D266": {
-          "not_done": 0.1,
-          "normal": 0.15,
-          "mildly_elevated": 0.3,
-          "very_high": 0.45
-        },
-        "D284": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mildly_elevated": 0.25,
-          "very_high": 0.55
-        },
-        "D315": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mildly_elevated": 0.2,
-          "very_high": 0.65
-        },
-        "D318": {
-          "not_done": 0.15,
-          "normal": 0.3,
+        "D131": {
+          "normal": 0.5,
           "mildly_elevated": 0.4,
-          "very_high": 0.15
+          "very_high": 0.1
         },
-        "D323": {
-          "not_done": 0.15,
+        "D107": {
           "normal": 0.1,
           "mildly_elevated": 0.3,
-          "very_high": 0.45
+          "very_high": 0.6
         },
-        "D277": {
-          "not_done": 0.15,
-          "normal": 0.15,
+        "D137": {
+          "normal": 0.05,
+          "mildly_elevated": 0.25,
+          "very_high": 0.7
+        },
+        "D03": {
+          "normal": 0.3,
           "mildly_elevated": 0.4,
           "very_high": 0.3
         },
-        "D24": {
-          "not_done": 0.2,
+        "D05": {
+          "normal": 0.45,
+          "mildly_elevated": 0.4,
+          "very_high": 0.15
+        },
+        "D152": {
+          "normal": 0.03,
+          "mildly_elevated": 0.1,
+          "very_high": 0.87
+        },
+        "D158": {
+          "normal": 0.3,
+          "mildly_elevated": 0.45,
+          "very_high": 0.25
+        },
+        "D166": {
           "normal": 0.1,
           "mildly_elevated": 0.35,
-          "very_high": 0.35
+          "very_high": 0.55
+        },
+        "D171": {
+          "normal": 0.05,
+          "mildly_elevated": 0.2,
+          "very_high": 0.75
+        },
+        "D174": {
+          "normal": 0.03,
+          "mildly_elevated": 0.1,
+          "very_high": 0.87
+        },
+        "D173": {
+          "normal": 0.4,
+          "mildly_elevated": 0.35,
+          "very_high": 0.25
+        },
+        "D151": {
+          "normal": 0.1,
+          "mildly_elevated": 0.25,
+          "very_high": 0.65
+        },
+        "D162": {
+          "normal": 0.1,
+          "mildly_elevated": 0.3,
+          "very_high": 0.6
+        },
+        "D177": {
+          "normal": 0.15,
+          "mildly_elevated": 0.35,
+          "very_high": 0.5
+        },
+        "D185": {
+          "normal": 0.3,
+          "mildly_elevated": 0.4,
+          "very_high": 0.3
+        },
+        "D192": {
+          "normal": 0.02,
+          "mildly_elevated": 0.08,
+          "very_high": 0.9
+        },
+        "D75": {
+          "normal": 0.02,
+          "mildly_elevated": 0.08,
+          "very_high": 0.9
+        },
+        "D207": {
+          "normal": 0.05,
+          "mildly_elevated": 0.2,
+          "very_high": 0.75
+        },
+        "D178": {
+          "normal": 0.2,
+          "mildly_elevated": 0.4,
+          "very_high": 0.4
+        },
+        "D175": {
+          "normal": 0.15,
+          "mildly_elevated": 0.35,
+          "very_high": 0.5
+        },
+        "D228": {
+          "normal": 0.08,
+          "mildly_elevated": 0.27,
+          "very_high": 0.65
+        },
+        "D230": {
+          "normal": 0.15,
+          "mildly_elevated": 0.4,
+          "very_high": 0.45
+        },
+        "D266": {
+          "normal": 0.12,
+          "mildly_elevated": 0.38,
+          "very_high": 0.5
+        },
+        "D284": {
+          "normal": 0.08,
+          "mildly_elevated": 0.27,
+          "very_high": 0.65
+        },
+        "D315": {
+          "normal": 0.05,
+          "mildly_elevated": 0.2,
+          "very_high": 0.75
+        },
+        "D318": {
+          "normal": 0.3,
+          "mildly_elevated": 0.5,
+          "very_high": 0.2
+        },
+        "D323": {
+          "normal": 0.1,
+          "mildly_elevated": 0.35,
+          "very_high": 0.55
+        },
+        "D277": {
+          "normal": 0.15,
+          "mildly_elevated": 0.45,
+          "very_high": 0.4
+        },
+        "D24": {
+          "normal": 0.1,
+          "mildly_elevated": 0.4,
+          "very_high": 0.5
         },
         "D364": {
-          "not_done": 0.2,
           "normal": 0.08,
-          "mildly_elevated": 0.3,
-          "very_high": 0.42
+          "mildly_elevated": 0.35,
+          "very_high": 0.57
         }
       }
     },
     "L53": {
       "description": "トロポニン。ACS/心筋炎で著高。PE/タンポナーデで軽度上昇",
       "leak": {
-        "not_done": 0.65,
-        "normal": 0.3,
-        "mildly_elevated": 0.04,
-        "very_high": 0.01
+        "normal": 0.86,
+        "mildly_elevated": 0.1,
+        "very_high": 0.04
       },
       "parent_effects": {
         "D131": {
-          "not_done": 0.05,
           "normal": 0.03,
           "mildly_elevated": 0.17,
-          "very_high": 0.75
+          "very_high": 0.8
         },
         "D116": {
-          "not_done": 0.1,
           "normal": 0.05,
           "mildly_elevated": 0.3,
-          "very_high": 0.55
+          "very_high": 0.65
         },
         "D77": {
-          "not_done": 0.2,
-          "normal": 0.35,
-          "mildly_elevated": 0.35,
-          "very_high": 0.1
+          "normal": 0.4,
+          "mildly_elevated": 0.45,
+          "very_high": 0.15
         },
         "D124": {
-          "not_done": 0.2,
-          "normal": 0.3,
-          "mildly_elevated": 0.4,
-          "very_high": 0.1
+          "normal": 0.35,
+          "mildly_elevated": 0.45,
+          "very_high": 0.2
         },
         "D120": {
-          "not_done": 0.15,
           "normal": 0.3,
-          "mildly_elevated": 0.4,
-          "very_high": 0.15
+          "mildly_elevated": 0.5,
+          "very_high": 0.2
         },
         "D132": {
-          "not_done": 0.15,
-          "normal": 0.35,
-          "mildly_elevated": 0.3,
-          "very_high": 0.2
+          "normal": 0.3,
+          "mildly_elevated": 0.4,
+          "very_high": 0.3
         },
         "D125": {
-          "not_done": 0.25,
-          "normal": 0.35,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
-        },
-        "D133": {
-          "not_done": 0.3,
-          "normal": 0.65,
-          "mildly_elevated": 0.04,
-          "very_high": 0.01
-        },
-        "D134": {
-          "not_done": 0.15,
           "normal": 0.45,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
-        },
-        "D135": {
-          "not_done": 0.3,
-          "normal": 0.65,
-          "mildly_elevated": 0.04,
-          "very_high": 0.01
-        },
-        "D146": {
-          "not_done": 0.2,
-          "normal": 0.35,
-          "mildly_elevated": 0.3,
+          "mildly_elevated": 0.4,
           "very_high": 0.15
         },
-        "D149": {
-          "not_done": 0.15,
-          "normal": 0.4,
-          "mildly_elevated": 0.35,
-          "very_high": 0.1
+        "D133": {
+          "normal": 0.92,
+          "mildly_elevated": 0.06,
+          "very_high": 0.02
         },
-        "D150": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mildly_elevated": 0.6,
+        "D134": {
+          "normal": 0.95,
+          "mildly_elevated": 0.04,
+          "very_high": 0.01
+        },
+        "D135": {
+          "normal": 0.93,
+          "mildly_elevated": 0.05,
+          "very_high": 0.02
+        },
+        "D146": {
+          "normal": 0.35,
+          "mildly_elevated": 0.45,
           "very_high": 0.2
         },
+        "D149": {
+          "normal": 0.35,
+          "mildly_elevated": 0.5,
+          "very_high": 0.15
+        },
+        "D150": {
+          "normal": 0.1,
+          "mildly_elevated": 0.65,
+          "very_high": 0.25
+        },
         "D163": {
-          "not_done": 0.2,
-          "normal": 0.55,
-          "mildly_elevated": 0.2,
-          "very_high": 0.05
+          "normal": 0.6,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
         },
         "D139": {
-          "not_done": 0.2,
           "normal": 0.45,
-          "mildly_elevated": 0.3,
-          "very_high": 0.05
+          "mildly_elevated": 0.4,
+          "very_high": 0.15
         },
         "D138": {
-          "not_done": 0.15,
-          "normal": 0.45,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
+          "normal": 0.5,
+          "mildly_elevated": 0.38,
+          "very_high": 0.12
         },
         "D174": {
-          "not_done": 0.15,
-          "normal": 0.35,
-          "mildly_elevated": 0.4,
-          "very_high": 0.1
+          "normal": 0.3,
+          "mildly_elevated": 0.45,
+          "very_high": 0.25
         },
         "D204": {
-          "not_done": 0.15,
-          "normal": 0.25,
+          "normal": 0.4,
           "mildly_elevated": 0.4,
           "very_high": 0.2
         },
         "D216": {
-          "not_done": 0.1,
-          "normal": 0.25,
-          "mildly_elevated": 0.35,
-          "very_high": 0.3
+          "normal": 0.15,
+          "mildly_elevated": 0.45,
+          "very_high": 0.4
         },
         "D220": {
-          "not_done": 0.15,
-          "normal": 0.3,
-          "mildly_elevated": 0.35,
-          "very_high": 0.2
+          "normal": 0.25,
+          "mildly_elevated": 0.4,
+          "very_high": 0.35
         },
         "D123": {
-          "not_done": 0.2,
-          "normal": 0.5,
-          "mildly_elevated": 0.25,
-          "very_high": 0.05
-        },
-        "D207": {
-          "not_done": 0.15,
-          "normal": 0.35,
-          "mildly_elevated": 0.35,
-          "very_high": 0.15
-        },
-        "D208": {
-          "not_done": 0.2,
-          "normal": 0.5,
-          "mildly_elevated": 0.25,
-          "very_high": 0.05
-        },
-        "D148": {
-          "not_done": 0.2,
-          "normal": 0.7,
-          "mildly_elevated": 0.08,
-          "very_high": 0.02
-        },
-        "D259": {
-          "not_done": 0.25,
-          "normal": 0.35,
-          "mildly_elevated": 0.25,
-          "very_high": 0.15
-        },
-        "D346": {
-          "not_done": 0.15,
-          "normal": 0.4,
-          "mildly_elevated": 0.35,
-          "very_high": 0.1
-        },
-        "D155": {
-          "not_done": 0.2,
-          "normal": 0.4,
-          "mildly_elevated": 0.3,
-          "very_high": 0.1
-        },
-        "D171": {
-          "not_done": 0.6,
-          "normal": 0.25,
-          "mildly_elevated": 0.12,
+          "normal": 0.88,
+          "mildly_elevated": 0.09,
           "very_high": 0.03
         },
-        "D356": {
-          "not_done": 0.25,
-          "normal": 0.55,
-          "mildly_elevated": 0.15,
-          "very_high": 0.05
+        "D207": {
+          "normal": 0.4,
+          "mildly_elevated": 0.42,
+          "very_high": 0.18
         },
-        "D357": {
-          "not_done": 0.2,
-          "normal": 0.2,
+        "D208": {
+          "normal": 0.92,
+          "mildly_elevated": 0.06,
+          "very_high": 0.02
+        },
+        "D148": {
+          "normal": 0.65,
+          "mildly_elevated": 0.28,
+          "very_high": 0.07
+        },
+        "D259": {
+          "normal": 0.35,
           "mildly_elevated": 0.4,
+          "very_high": 0.25
+        },
+        "D346": {
+          "normal": 0.4,
+          "mildly_elevated": 0.45,
+          "very_high": 0.15
+        },
+        "D155": {
+          "normal": 0.35,
+          "mildly_elevated": 0.45,
           "very_high": 0.2
         },
+        "D171": {
+          "normal": 0.7,
+          "mildly_elevated": 0.22,
+          "very_high": 0.08
+        },
+        "D356": {
+          "normal": 0.82,
+          "mildly_elevated": 0.14,
+          "very_high": 0.04
+        },
+        "D357": {
+          "normal": 0.15,
+          "mildly_elevated": 0.45,
+          "very_high": 0.4
+        },
         "D258": {
-          "not_done": 0.5,
-          "normal": 0.4,
-          "mildly_elevated": 0.08,
-          "very_high": 0.02
+          "normal": 0.8,
+          "mildly_elevated": 0.15,
+          "very_high": 0.05
         }
       }
     },

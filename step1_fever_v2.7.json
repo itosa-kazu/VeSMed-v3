@@ -1677,7 +1677,6 @@
       "name_ja": "プロカルシトニン",
       "category": "lab",
       "states": [
-        "not_done",
         "low_under_0.25",
         "gray_0.25_0.5",
         "high_over_0.5"
@@ -1690,7 +1689,6 @@
       "name_ja": "胸部X線",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "lobar_infiltrate",
         "bilateral_infiltrate",
@@ -4265,7 +4263,6 @@
       "name_ja": "BNP/NT-proBNP",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mildly_elevated",
         "very_high"
@@ -4512,7 +4509,6 @@
       "name_ja": "Dダイマー",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mildly_elevated",
         "very_high"
@@ -4525,7 +4521,6 @@
       "name_ja": "トロポニン(I/T)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mildly_elevated",
         "very_high"
