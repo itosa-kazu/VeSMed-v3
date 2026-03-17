@@ -18668,6 +18668,11 @@
           "normal": 0.5,
           "mild_elevated": 0.4,
           "very_high": 0.1
+        },
+        "D264": {
+          "normal": 0.6,
+          "mild_elevated": 0.3,
+          "very_high": 0.1
         }
       }
     },
@@ -27605,6 +27610,14 @@
           "present": 0.5
         },
         "D252": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D222": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D202": {
           "absent": 0.3,
           "present": 0.7
         }
