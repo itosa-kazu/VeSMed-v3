@@ -9,16 +9,41 @@
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
+- [feedback_max_cases.md](feedback_max_cases.md) — PMCで見つけた案例は全て使う（3件以上は全部追加）
+- [feedback_no_oos_escape.md](feedback_no_oos_escape.md) — OOS逃避禁止。FATALを正直に受け入れるか、変数追加で正面解決
+- [feedback_systematic_edge_audit.md](feedback_systematic_edge_audit.md) — 体系的辺監査: rank2+の全案例で漏れ辺検出→Top-1+36,Top-3+12の劇的改善
+- [feedback_no_architecture_change.md](feedback_no_architecture_change.md) — 架構変更禁止：IDF式/推論ロジック等はユーザー承認なしに変更不可
+- [feedback_never_skip_cases.md](feedback_never_skip_cases.md) — **最重要**: 新疾患追加後のreal case検索は絶対省略禁止。D197-D251で55疾患分忘れた重大インシデント
+- [feedback_no_overfitting.md](feedback_no_overfitting.md) — 辺監査の過拟合禁止：テスト案例のためだけの辺は追加不可。臨床的合理性が独立必要
 - [feedback_no_evidence_manipulation.md](feedback_no_evidence_manipulation.md) — 排名改善のための証拠操作禁止。原文所見は全保留、臆測値は除外
 - [feedback_disease_addition_methodology.md](feedback_disease_addition_methodology.md) — 疾患追加の標準方法論(6ステップ)。回帰テストはFATALだけでなくTop-1/Top-3推移も確認
 - [feedback_memory_sync.md](feedback_memory_sync.md) — push前にsync_memory.shでmemoryをrepoに同期
 - [feedback_dual_test.md](feedback_dual_test.md) — 新案例は伝統Top-3テスト+ナビゲーションテスト(反証推奨)の2種を必ず実施
+- [feedback_edge_audit_must_use_skill.md](feedback_edge_audit_must_use_skill.md) — **辺監査は必ず/edge-auditスキルで実施**。手動で雑にやると過拟合リスク
+- [feedback_no_regression_tolerance.md](feedback_no_regression_tolerance.md) — **ゼロ劣化原則**: 辺追加で1指標でも悪化したら必ず調査。「微減」で流さない
+- [feedback_no_indirect_edges.md](feedback_no_indirect_edges.md) — **間接因果禁止**: 転移/DIC等を経由する間接症状に直接辺を張らない
+- [feedback_check_duplicates.md](feedback_check_duplicates.md) — **新疾患追加前に重複チェック必須**。5組重複で性能低下した教訓
+- [feedback_new_var_disease_list_check.md](feedback_new_var_disease_list_check.md) — **新変量追加後は全疾患リストと手動照合**。S59/S60で17疾患の漏れを発見
+- [feedback_no_normal_value_edges.md](feedback_no_normal_value_edges.md) — 正常値辺(WBC正常等)は鑑別力ゼロで逆効果。疾患特異的辺のみ追加
+- [feedback_bidirectional_edge_check.md](feedback_bidirectional_edge_check.md) — **辺チェックは双方向**: 変量→疾患 + 疾患→変量。rank最差から優先
+- [project_dense_model_plan.md](project_dense_model_plan.md) — 稠密モデル実験結果: leak auto-fillは無効。臨床判断CPTによる漸進的稠密化が正解。年単位の長期計画
+- [project_t02_expansion.md](project_t02_expansion.md) — T02 4state化計画: sudden_minutes/acute_hours/subacute_weeks/chronic_months。自動マッピング失敗→手動CPT必要
+- [feedback_keep_experiment_branches.md](feedback_keep_experiment_branches.md) — 実験分支は削除禁止。失敗も保存
+- [feedback_evidence_needs_edges.md](feedback_evidence_needs_edges.md) — Evidence追加前に辺の整備を確認。辺なしevidenceはleak値で不利
+- [feedback_rd_prior_fairness.md](feedback_rd_prior_fairness.md) — **R→D Prior公平性**: 競合疾患群を同時追加しないとFATAL/大量退化。カテゴリ単位で追加必須
+- [feedback_edges_need_literature.md](feedback_edges_need_literature.md) — **新辺も文献必須**: D→変量の新辺はLLM印象ではなくPMC/教科書の根拠が必要
+- [feedback_cpt_state_name_sync.md](feedback_cpt_state_name_sync.md) — **CPT state名一致性必須**: step3のstate名がstep1と1文字でも違うとCPT無効化。R715 FATAL原因
+- [feedback_no_cherry_pick_edges.md](feedback_no_cherry_pick_edges.md) — **最重要: 臨床正確な辺の撤回禁止**。テスト退化は競合にも辺追加で解決。正しい辺を消すのは過拟合
+- [feedback_no_auto_cpt.md](feedback_no_auto_cpt.md) — **CPT数値は人工設定必須**。プログラム自動生成禁止、導入のみ担当
+- [project_intermediate_variable_issues.md](project_intermediate_variable_issues.md) — 中間変量問題リスト: 転移(解決)/DIC/心不全/肝不全/腎前性AKI/骨髄浸潤(未解決)
 
 ## ユーザー
 - [user_profile.md](user_profile.md) — 用户背景：VeSMed项目负责人，熟悉BN和医学诊断
 
 ## プロジェクト状況
-- [project_vesmed_status.md](project_vesmed_status.md) — 当前状态：1750辺, 180cases, Top-1 65%, Top-3 93%, FATAL 0
+- [project_vesmed_status.md](project_vesmed_status.md) — 当前状态：6025辺, 712cases, Top-1 79%, Top-3 94%, FATAL 0
+- [project_rd_prior_discovery.md](project_rd_prior_discovery.md) — **R→D Prior大発見**: 人口統計prior(年齢/性別)が史上最大の改善レバー。53/345疾患実装済み、全疾患展開が最優先
+- [project_variable_audit_pipeline.md](project_variable_audit_pipeline.md) — 変量審計パイプライン: 227新変量導入、CPT_NO_EDGE同期問題の発見と修正
 - [project_papers_plan.md](project_papers_plan.md) — 3篇论文计划：NO EDGE(85%), エントロピー(70%), 情報幾何(75%)
 - [project_ideas_backlog.md](project_ideas_backlog.md) — 7个未实现点子：timeline/surprise/embedding等
 - [project_inference_model_issue.md](project_inference_model_issue.md) — 解決済：超参数grid search + prevalence実験6種全て不採用

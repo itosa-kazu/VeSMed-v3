@@ -51136,6 +51136,370 @@
       "to_name": "CRP",
       "reason": "ウェルニッケ脳症は非感染性でCRP正常が多い(合併症でCRP上昇もあり)",
       "onset_day_range": null
+    },
+    {
+      "from": "D05",
+      "to": "E02",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "heart_rate",
+      "reason": "肺炎でSIRS性頻脈(70-80%)",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
+    },
+    {
+      "from": "D130",
+      "to": "E02",
+      "from_name": "ILD_IPF",
+      "to_name": "heart_rate",
+      "reason": "ILDで代償性頻脈(低酸素→頻脈)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 180
+      }
+    },
+    {
+      "from": "D219",
+      "to": "E02",
+      "from_name": "GPA",
+      "to_name": "heart_rate",
+      "reason": "GPA: 全身性炎症+肺病変で頻脈",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D219",
+      "to": "E05",
+      "from_name": "GPA",
+      "to_name": "SpO2",
+      "reason": "GPA: 肺病変(60-70%)で低酸素",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D219",
+      "to": "E07",
+      "from_name": "GPA",
+      "to_name": "lung_auscultation",
+      "reason": "GPA: 肺結節/出血で異常呼吸音",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D219",
+      "to": "L35",
+      "from_name": "GPA",
+      "to_name": "CT_chest_detail",
+      "reason": "GPA: 空洞性結節(30-50%)/DAH(GGO)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D221",
+      "to": "E04",
+      "from_name": "MPA",
+      "to_name": "respiratory_rate",
+      "reason": "MPA: 肺胞出血で頻呼吸",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D221",
+      "to": "S16",
+      "from_name": "MPA",
+      "to_name": "night_sweats",
+      "reason": "MPA: 全身血管炎で盗汗(30-50%)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D221",
+      "to": "S23",
+      "from_name": "MPA",
+      "to_name": "joint_swelling",
+      "reason": "MPA: 関節炎(30-50%)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D117",
+      "to": "S05",
+      "from_name": "spinal_epidural_abscess",
+      "to_name": "headache",
+      "reason": "硬膜外膿瘍: 頸胸部例で頭痛(20-40%)",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 3,
+        "latest": 14
+      }
+    },
+    {
+      "from": "D163",
+      "to": "S53",
+      "from_name": "Wernicke_encephalopathy",
+      "to_name": "speech_disorder",
+      "reason": "ウェルニッケ: 混迷→構音障害(60-80%)",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D163",
+      "to": "S94",
+      "from_name": "Wernicke_encephalopathy",
+      "to_name": "speech_disorder_type",
+      "reason": "ウェルニッケ: 構音障害(失語ではない)",
+      "onset_day_range": {
+        "earliest": 1,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D168",
+      "to": "S01",
+      "from_name": "RPGN",
+      "to_name": "cough",
+      "reason": "RPGN: 肺腎症候群で咳嗽(DAH, 30-60%)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 14,
+        "latest": 60
+      }
+    },
+    {
+      "from": "D168",
+      "to": "S84",
+      "from_name": "RPGN",
+      "to_name": "cough_character",
+      "reason": "RPGN: DAHで乾性→血痰",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 14,
+        "latest": 60
+      }
+    },
+    {
+      "from": "D63",
+      "to": "E02",
+      "from_name": "IBD",
+      "to_name": "heart_rate",
+      "reason": "IBD: 貧血/炎症で頻脈",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 180
+      }
+    },
+    {
+      "from": "D63",
+      "to": "E12",
+      "from_name": "IBD",
+      "to_name": "skin_exam",
+      "reason": "IBD: 結節性紅斑(5-15%)/壊疽性膿皮症(1-5%)",
+      "onset_day_range": {
+        "earliest": 30,
+        "typical": 90,
+        "latest": 365
+      }
+    },
+    {
+      "from": "D63",
+      "to": "S16",
+      "from_name": "IBD",
+      "to_name": "night_sweats",
+      "reason": "IBD: 慢性炎症で盗汗(20-30%)",
+      "onset_day_range": {
+        "earliest": 14,
+        "typical": 60,
+        "latest": 365
+      }
+    },
+    {
+      "from": "D63",
+      "to": "S18",
+      "from_name": "IBD",
+      "to_name": "skin_complaint",
+      "reason": "IBD: 腸管外症状として皮膚症状(10-20%)",
+      "onset_day_range": {
+        "earliest": 30,
+        "typical": 90,
+        "latest": 365
+      }
+    },
+    {
+      "from": "D63",
+      "to": "S87",
+      "from_name": "IBD",
+      "to_name": "skin_symptom_type",
+      "reason": "IBD: 結節性紅斑→広範性",
+      "onset_day_range": {
+        "earliest": 30,
+        "typical": 90,
+        "latest": 365
+      }
+    },
+    {
+      "from": "D63",
+      "to": "T02",
+      "from_name": "IBD",
+      "to_name": "onset_speed",
+      "reason": "IBD: 亜急性～慢性経過",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 180
+      }
+    },
+    {
+      "from": "D60",
+      "to": "E04",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "respiratory_rate",
+      "reason": "ANCA血管炎: 肺病変で頻呼吸",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D60",
+      "to": "E05",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "SpO2",
+      "reason": "ANCA血管炎: DAH/ILD→低酸素",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D60",
+      "to": "L55",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "creatinine",
+      "reason": "ANCA血管炎: RPGN→腎機能障害(70-80%)",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D60",
+      "to": "L78",
+      "from_name": "ANCA_vasculitis",
+      "to_name": "urine_protein",
+      "reason": "ANCA血管炎: 糸球体腎炎→蛋白尿",
+      "onset_day_range": {
+        "earliest": 7,
+        "typical": 30,
+        "latest": 90
+      }
+    },
+    {
+      "from": "D325",
+      "to": "E05",
+      "from_name": "PRES",
+      "to_name": "SpO2",
+      "reason": "PRES: 重症例で呼吸障害→低酸素",
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
+    },
+    {
+      "from": "R48",
+      "to": "D137",
+      "from_name": "AF_history",
+      "to_name": "acute_mesenteric_ischemia",
+      "reason": "心房細動→腸間膜動脈塞栓(約50%)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R48",
+      "to": "D139",
+      "from_name": "AF_history",
+      "to_name": "ICH",
+      "reason": "心房細動→抗凝固療法→脳出血リスク↑",
+      "onset_day_range": null
+    },
+    {
+      "from": "R10",
+      "to": "D79",
+      "from_name": "body_device",
+      "to_name": "PVE",
+      "reason": "人工弁は体内デバイス→PVEリスク",
+      "onset_day_range": null
+    },
+    {
+      "from": "R05",
+      "to": "D117",
+      "from_name": "immunocompromised",
+      "to_name": "spinal_epidural_abscess",
+      "reason": "免疫不全→硬膜外膿瘍リスク↑",
+      "onset_day_range": null
+    },
+    {
+      "from": "R47",
+      "to": "D122",
+      "from_name": "asthma_history",
+      "to_name": "asthma_attack",
+      "reason": "喘息既往→喘息発作の最重要リスク因子",
+      "onset_day_range": null
+    },
+    {
+      "from": "R06",
+      "to": "D17",
+      "from_name": "travel_history",
+      "to_name": "pulmonary_TB",
+      "reason": "結核蔓延地域への渡航→結核リスク↑",
+      "onset_day_range": null
+    },
+    {
+      "from": "R05",
+      "to": "D40",
+      "from_name": "immunocompromised",
+      "to_name": "CRBSI",
+      "reason": "免疫不全→CRBSI リスク↑",
+      "onset_day_range": null
+    },
+    {
+      "from": "R40",
+      "to": "D40",
+      "from_name": "malignancy",
+      "to_name": "CRBSI",
+      "reason": "悪性腫瘍（中心静脈カテーテル留置）→CRBSIリスク↑",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

@@ -321,6 +321,16 @@ def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
         "R02": {"description": "Japan 2024 sex ratio", "distribution": {
             "male": 0.488, "female": 0.512
         }},
+        "R05": {"description": "Immunocompromised prevalence", "distribution": {
+            "no": 0.95, "yes": 0.05
+        }},
+        "R06": {"description": "Travel history distribution (Japan)", "distribution": {
+            "no": 0.85, "tropical_endemic": 0.02, "developed": 0.03, "domestic": 0.10
+        }},
+        "R40": {"description": "Malignancy status distribution", "distribution": {
+            "no": 0.95, "history_remission": 0.02,
+            "active_on_treatment": 0.02, "active_untreated": 0.01
+        }},
     }
 
     rp = root_priors.get(disease_id)

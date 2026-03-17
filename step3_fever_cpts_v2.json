@@ -773,12 +773,15 @@
     },
     "D139": {
       "parents": [
-        "R01"
+        "R01",
+        "R48"
       ],
       "description": "脳出血。高齢者に好発",
       "cpt": {
-        "40_64": 0.003,
-        "65_plus": 0.008
+        "40_64|no": 0.0021,
+        "40_64|yes": 0.009,
+        "65_plus|no": 0.0056,
+        "65_plus|yes": 0.024
       }
     },
     "D164": {
@@ -1519,16 +1522,35 @@
     "D17": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R06"
       ],
-      "description": "肺結核。高齢男性、日本ではbimodal",
+      "description": "肺結核。高齢男性、結核蔓延地域渡航でリスク↑",
       "cpt": {
-        "male|18_39": 0.004,
-        "male|40_64": 0.003,
-        "male|65_plus": 0.008,
-        "female|18_39": 0.002,
-        "female|40_64": 0.002,
-        "female|65_plus": 0.004
+        "male|18_39|no": 0.0028,
+        "male|18_39|tropical_endemic": 0.02,
+        "male|18_39|developed": 0.002,
+        "male|18_39|domestic": 0.004,
+        "male|40_64|no": 0.0021,
+        "male|40_64|tropical_endemic": 0.015,
+        "male|40_64|developed": 0.0015,
+        "male|40_64|domestic": 0.003,
+        "male|65_plus|no": 0.0056,
+        "male|65_plus|tropical_endemic": 0.04,
+        "male|65_plus|developed": 0.004,
+        "male|65_plus|domestic": 0.008,
+        "female|18_39|no": 0.0014,
+        "female|18_39|tropical_endemic": 0.01,
+        "female|18_39|developed": 0.001,
+        "female|18_39|domestic": 0.002,
+        "female|40_64|no": 0.0014,
+        "female|40_64|tropical_endemic": 0.01,
+        "female|40_64|developed": 0.001,
+        "female|40_64|domestic": 0.002,
+        "female|65_plus|no": 0.0028,
+        "female|65_plus|tropical_endemic": 0.02,
+        "female|65_plus|developed": 0.002,
+        "female|65_plus|domestic": 0.004
       }
     },
     "D18": {
@@ -1923,14 +1945,19 @@
     "D117": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R05"
       ],
       "description": "硬膜外膿瘍。高齢、やや男性",
       "cpt": {
-        "male|40_64": 0.003,
-        "male|65_plus": 0.006,
-        "female|40_64": 0.002,
-        "female|65_plus": 0.004
+        "male|40_64|no": 0.0021,
+        "male|40_64|yes": 0.009,
+        "male|65_plus|no": 0.0042,
+        "male|65_plus|yes": 0.018,
+        "female|40_64|no": 0.0014,
+        "female|40_64|yes": 0.006,
+        "female|65_plus|no": 0.0028,
+        "female|65_plus|yes": 0.012
       }
     },
     "D118": {
@@ -1972,16 +1999,23 @@
     "D122": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R47"
       ],
       "description": "喘息。成人は女性、若年～中年",
       "cpt": {
-        "male|6_12": 0.005,
-        "male|18_39": 0.003,
-        "male|40_64": 0.002,
-        "female|6_12": 0.003,
-        "female|18_39": 0.005,
-        "female|40_64": 0.004
+        "male|6_12|no": 0.0015,
+        "male|6_12|yes": 0.02,
+        "male|18_39|no": 0.0009,
+        "male|18_39|yes": 0.012,
+        "male|40_64|no": 0.0006,
+        "male|40_64|yes": 0.008,
+        "female|6_12|no": 0.0009,
+        "female|6_12|yes": 0.012,
+        "female|18_39|no": 0.0015,
+        "female|18_39|yes": 0.02,
+        "female|40_64|no": 0.0012,
+        "female|40_64|yes": 0.016
       }
     },
     "D123": {
@@ -2114,14 +2148,19 @@
     "D137": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R48"
       ],
       "description": "腸間膜虚血。高齢、やや女性",
       "cpt": {
-        "male|40_64": 0.001,
-        "male|65_plus": 0.004,
-        "female|40_64": 0.002,
-        "female|65_plus": 0.006
+        "male|40_64|no": 0.0005,
+        "male|40_64|yes": 0.005,
+        "male|65_plus|no": 0.002,
+        "male|65_plus|yes": 0.02,
+        "female|40_64|no": 0.001,
+        "female|40_64|yes": 0.01,
+        "female|65_plus|no": 0.003,
+        "female|65_plus|yes": 0.03
       }
     },
     "D140": {
@@ -3598,14 +3637,19 @@
     "D79": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R10"
       ],
       "description": "人工弁IE。高齢男性",
       "cpt": {
-        "male|40_64": 0.003,
-        "male|65_plus": 0.006,
-        "female|40_64": 0.001,
-        "female|65_plus": 0.003
+        "male|40_64|no": 0.0015,
+        "male|40_64|yes": 0.024,
+        "male|65_plus|no": 0.003,
+        "male|65_plus|yes": 0.048,
+        "female|40_64|no": 0.0005,
+        "female|40_64|yes": 0.008,
+        "female|65_plus|no": 0.0015,
+        "female|65_plus|yes": 0.024
       }
     },
     "D81": {
@@ -3707,6 +3751,23 @@
         "male|65_plus": 0.003,
         "female|40_64": 0.004,
         "female|65_plus": 0.006
+      }
+    },
+    "D40": {
+      "parents": [
+        "R05",
+        "R40"
+      ],
+      "description": "CRBSI。免疫不全+悪性腫瘍がリスク因子",
+      "cpt": {
+        "no|no": 0.002,
+        "no|history_remission": 0.003,
+        "no|active_on_treatment": 0.008,
+        "no|active_untreated": 0.005,
+        "yes|no": 0.006,
+        "yes|history_remission": 0.008,
+        "yes|active_on_treatment": 0.02,
+        "yes|active_untreated": 0.015
       }
     }
   },
@@ -12445,6 +12506,26 @@
           "under_100": 0.3,
           "100_120": 0.4,
           "over_120": 0.3
+        },
+        "D05": {
+          "under_100": 0.35,
+          "100_120": 0.45,
+          "over_120": 0.2
+        },
+        "D130": {
+          "under_100": 0.3,
+          "100_120": 0.45,
+          "over_120": 0.25
+        },
+        "D219": {
+          "under_100": 0.5,
+          "100_120": 0.38,
+          "over_120": 0.12
+        },
+        "D63": {
+          "under_100": 0.4,
+          "100_120": 0.4,
+          "over_120": 0.2
         }
       }
     },
@@ -13152,6 +13233,16 @@
           "normal_under_20": 0.3,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.2
+        },
+        "D221": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.4,
+          "severe_over_30": 0.2
+        },
+        "D60": {
+          "normal_under_20": 0.4,
+          "tachypnea_20_30": 0.4,
+          "severe_over_30": 0.2
         }
       }
     },
@@ -13532,6 +13623,21 @@
           "normal_over_96": 0.3,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.3
+        },
+        "D219": {
+          "normal_over_96": 0.45,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.2
+        },
+        "D60": {
+          "normal_over_96": 0.4,
+          "mild_hypoxia_93_96": 0.35,
+          "severe_hypoxia_under_93": 0.25
+        },
+        "D325": {
+          "normal_over_96": 0.7,
+          "mild_hypoxia_93_96": 0.2,
+          "severe_hypoxia_under_93": 0.1
         }
       }
     },
@@ -13947,6 +14053,12 @@
           "wheezes": 0.05,
           "crackles": 0.6000000000000001,
           "decreased_absent": 0.05
+        },
+        "D219": {
+          "clear": 0.4,
+          "crackles": 0.35,
+          "wheezes": 0.05,
+          "decreased_absent": 0.2
         }
       }
     },
@@ -14982,6 +15094,17 @@
           "localized_erythema_warmth_swelling": 0.1,
           "vesicle_bulla": 0.05,
           "diffuse_erythroderma": 0.1
+        },
+        "D63": {
+          "normal": 0.8,
+          "localized_erythema_warmth_swelling": 0.08,
+          "petechiae_purpura": 0.02,
+          "maculopapular_rash": 0.05,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.01,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.01
         }
       }
     },
@@ -22901,6 +23024,16 @@
           "halo_sign": 0.0,
           "BHL": 0.0,
           "pleural_effusion": 0.15
+        },
+        "D219": {
+          "not_done": 0.05,
+          "normal": 0.1,
+          "consolidation": 0.15,
+          "GGO": 0.25,
+          "cavity": 0.3,
+          "halo_sign": 0.05,
+          "BHL": 0.02,
+          "pleural_effusion": 0.08
         }
       }
     },
@@ -23829,6 +23962,10 @@
         "D220": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D168": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -25097,6 +25234,11 @@
           "absent": 0.4,
           "mild": 0.4,
           "severe": 0.2
+        },
+        "D117": {
+          "absent": 0.65,
+          "mild": 0.25,
+          "severe": 0.1
         }
       }
     },
@@ -28033,6 +28175,14 @@
         "D219": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D221": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D63": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -28372,6 +28522,10 @@
         "D252": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D63": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -28653,6 +28807,10 @@
         "D223": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D221": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -33812,6 +33970,12 @@
           "acute": 0.15,
           "subacute": 0.7,
           "chronic": 0.13
+        },
+        "D63": {
+          "sudden": 0.02,
+          "acute": 0.18,
+          "subacute": 0.5,
+          "chronic": 0.3
         }
       }
     },
@@ -36440,6 +36604,10 @@
         "D280": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D163": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -36949,6 +37117,11 @@
           "normal": 0.55,
           "mild_elevated": 0.3,
           "high_AKI": 0.15
+        },
+        "D60": {
+          "normal": 0.25,
+          "mild_elevated": 0.35,
+          "high_AKI": 0.4
         }
       }
     },
@@ -39492,6 +39665,10 @@
         "D270": {
           "dry": 0.625,
           "productive": 0.375
+        },
+        "D168": {
+          "dry": 0.55,
+          "productive": 0.45
         }
       }
     },
@@ -39867,6 +40044,10 @@
         "D262": {
           "localized_pain_redness": 0.8889,
           "rash_widespread": 0.1111
+        },
+        "D63": {
+          "localized_pain_redness": 0.4,
+          "rash_widespread": 0.6
         }
       }
     },
@@ -41645,6 +41826,10 @@
         "D84": {
           "dysarthria": 0.2,
           "aphasia": 0.8
+        },
+        "D163": {
+          "dysarthria": 0.85,
+          "aphasia": 0.15
         }
       }
     },
@@ -42039,6 +42224,12 @@
           "normal": 0.1,
           "mild_proteinuria": 0.4,
           "nephrotic_range": 0.4
+        },
+        "D60": {
+          "not_done": 0.2,
+          "normal": 0.15,
+          "mild_proteinuria": 0.45,
+          "nephrotic_range": 0.2
         }
       }
     },
