@@ -43168,6 +43168,4078 @@
       "to_name": "抑うつ気分",
       "reason": "抑うつ(汎下垂体機能低下)",
       "onset_day_range": null
+    },
+    {
+      "from": "D05",
+      "to": "S83",
+      "from_name": "市中肺炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 市中肺炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D36",
+      "to": "S83",
+      "from_name": "膿胸",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 膿胸 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D66",
+      "to": "S83",
+      "from_name": "家族性地中海熱",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 家族性地中海熱 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D77",
+      "to": "S83",
+      "from_name": "深部静脈血栓症/肺塞栓症",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 深部静脈血栓症/肺塞栓症 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D03",
+      "to": "S83",
+      "from_name": "新型コロナウイルス感染症",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 新型コロナウイルス感染症 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D103",
+      "to": "S83",
+      "from_name": "急性リウマチ熱",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性リウマチ熱 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D73",
+      "to": "S83",
+      "from_name": "褐色細胞腫",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 褐色細胞腫 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D116",
+      "to": "S83",
+      "from_name": "急性心筋炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性心筋炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D123",
+      "to": "S83",
+      "from_name": "気胸",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 気胸 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D124",
+      "to": "S83",
+      "from_name": "心タンポナーデ",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 心タンポナーデ → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D125",
+      "to": "S83",
+      "from_name": "急性不整脈（AF/SVT/VT）",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性不整脈（AF/SVT/VT） → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D127",
+      "to": "S83",
+      "from_name": "胸水（非感染性）",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 胸水（非感染性） → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D129",
+      "to": "S83",
+      "from_name": "過換気症候群",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 過換気症候群 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D131",
+      "to": "S83",
+      "from_name": "急性冠症候群（ACS/心筋梗塞）",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性冠症候群（ACS/心筋梗塞） → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D132",
+      "to": "S83",
+      "from_name": "急性大動脈解離",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性大動脈解離 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D21",
+      "to": "S83",
+      "from_name": "帯状疱疹",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 帯状疱疹 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D133",
+      "to": "S83",
+      "from_name": "逆流性食道炎(GERD)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 逆流性食道炎(GERD) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D134",
+      "to": "S83",
+      "from_name": "急性心膜炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 急性心膜炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D135",
+      "to": "S83",
+      "from_name": "肋軟骨炎（筋骨格系胸痛）",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肋軟骨炎（筋骨格系胸痛） → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D35",
+      "to": "S83",
+      "from_name": "肺膿瘍",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肺膿瘍 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D146",
+      "to": "S83",
+      "from_name": "高血圧緊急症",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 高血圧緊急症 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D148",
+      "to": "S83",
+      "from_name": "特発性食道破裂(Boerhaave症候群)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 特発性食道破裂(Boerhaave症候群) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D149",
+      "to": "S83",
+      "from_name": "一酸化炭素中毒",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 一酸化炭素中毒 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D150",
+      "to": "S83",
+      "from_name": "たこつぼ心筋症",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: たこつぼ心筋症 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D62",
+      "to": "S83",
+      "from_name": "サルコイドーシス",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: サルコイドーシス → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "S83",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肺動脈性肺高血圧症(PAH) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S83",
+      "from_name": "胸腺腫",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 胸腺腫 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D248",
+      "to": "S83",
+      "from_name": "食道癌",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 食道癌 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D208",
+      "to": "S83",
+      "from_name": "特発性血小板減少性紫斑病(ITP)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 特発性血小板減少性紫斑病(ITP) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D266",
+      "to": "S83",
+      "from_name": "肺炎球菌性肺炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肺炎球菌性肺炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D271",
+      "to": "S83",
+      "from_name": "好酸球性食道炎(EoE)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 好酸球性食道炎(EoE) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S83",
+      "from_name": "食道アカラシア",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 食道アカラシア → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D277",
+      "to": "S83",
+      "from_name": "肺腺癌",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肺腺癌 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D278",
+      "to": "S83",
+      "from_name": "悪性胸膜中皮腫",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 悪性胸膜中皮腫 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D279",
+      "to": "S83",
+      "from_name": "縦隔炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 縦隔炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D264",
+      "to": "S83",
+      "from_name": "クラミジア肺炎",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: クラミジア肺炎 → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D346",
+      "to": "S83",
+      "from_name": "肥大型心筋症(HCM)",
+      "to_name": "胸痛の性状",
+      "reason": "CPT_NO_EDGE sync: 肥大型心筋症(HCM) → 胸痛の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D01",
+      "to": "S84",
+      "from_name": "ウイルス性上気道炎（かぜ症候群）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: ウイルス性上気道炎（かぜ症候群） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D02",
+      "to": "S84",
+      "from_name": "インフルエンザ",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: インフルエンザ → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D03",
+      "to": "S84",
+      "from_name": "新型コロナウイルス感染症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 新型コロナウイルス感染症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D05",
+      "to": "S84",
+      "from_name": "市中肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 市中肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D17",
+      "to": "S84",
+      "from_name": "肺結核",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 肺結核 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D14",
+      "to": "S84",
+      "from_name": "感染性心内膜炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 感染性心内膜炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D35",
+      "to": "S84",
+      "from_name": "肺膿瘍",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 肺膿瘍 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D36",
+      "to": "S84",
+      "from_name": "膿胸",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 膿胸 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D46",
+      "to": "S84",
+      "from_name": "麻疹",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 麻疹 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D50",
+      "to": "S84",
+      "from_name": "ニューモシスチス肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: ニューモシスチス肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D55",
+      "to": "S84",
+      "from_name": "Q熱",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: Q熱 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D56",
+      "to": "S84",
+      "from_name": "百日咳",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 百日咳 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D83",
+      "to": "S84",
+      "from_name": "侵襲性アスペルギルス症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 侵襲性アスペルギルス症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D99",
+      "to": "S84",
+      "from_name": "非結核性抗酸菌症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 非結核性抗酸菌症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D102",
+      "to": "S84",
+      "from_name": "レジオネラ肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: レジオネラ肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D92",
+      "to": "S84",
+      "from_name": "腫瘍熱（固形腫瘍）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 腫瘍熱（固形腫瘍） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D67",
+      "to": "S84",
+      "from_name": "悪性リンパ腫",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 悪性リンパ腫 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D62",
+      "to": "S84",
+      "from_name": "サルコイドーシス",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: サルコイドーシス → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D53",
+      "to": "S84",
+      "from_name": "ブルセラ症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: ブルセラ症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D104",
+      "to": "S84",
+      "from_name": "オウム病（Chlamydia psittaci肺炎）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: オウム病（Chlamydia psittaci肺炎） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D20",
+      "to": "S84",
+      "from_name": "急性副鼻腔炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性副鼻腔炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D60",
+      "to": "S84",
+      "from_name": "ANCA関連血管炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: ANCA関連血管炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D45",
+      "to": "S84",
+      "from_name": "サイトメガロウイルス感染症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: サイトメガロウイルス感染症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "S84",
+      "from_name": "成人Still病",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D68",
+      "to": "S84",
+      "from_name": "急性白血病",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性白血病 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D72",
+      "to": "S84",
+      "from_name": "副腎クリーゼ",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 副腎クリーゼ → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S84",
+      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D23",
+      "to": "S84",
+      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D109",
+      "to": "S84",
+      "from_name": "クリプトコッカス症（髄膜炎/肺）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: クリプトコッカス症（髄膜炎/肺） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D110",
+      "to": "S84",
+      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D113",
+      "to": "S84",
+      "from_name": "播種性ヒストプラズマ症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 播種性ヒストプラズマ症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D121",
+      "to": "S84",
+      "from_name": "COPD急性増悪",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: COPD急性増悪 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D122",
+      "to": "S84",
+      "from_name": "喘息発作（急性増悪）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 喘息発作（急性増悪） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D127",
+      "to": "S84",
+      "from_name": "胸水（非感染性）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 胸水（非感染性） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D130",
+      "to": "S84",
+      "from_name": "間質性肺疾患(ILD/IPF)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 間質性肺疾患(ILD/IPF) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D116",
+      "to": "S84",
+      "from_name": "急性心筋炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性心筋炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D134",
+      "to": "S84",
+      "from_name": "急性心膜炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性心膜炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D124",
+      "to": "S84",
+      "from_name": "心タンポナーデ",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 心タンポナーデ → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D143",
+      "to": "S84",
+      "from_name": "誤嚥性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 誤嚥性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D173",
+      "to": "S84",
+      "from_name": "水痘",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 水痘 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D175",
+      "to": "S84",
+      "from_name": "急性間質性肺炎(AIP/Hamman-Rich)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性間質性肺炎(AIP/Hamman-Rich) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D87",
+      "to": "S84",
+      "from_name": "亜急性甲状腺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 亜急性甲状腺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D181",
+      "to": "S84",
+      "from_name": "アデノウイルス感染症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: アデノウイルス感染症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D188",
+      "to": "S84",
+      "from_name": "好酸球性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 好酸球性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D96",
+      "to": "S84",
+      "from_name": "菊池病（壊死性リンパ節炎）",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 菊池病（壊死性リンパ節炎） → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D193",
+      "to": "S84",
+      "from_name": "過敏性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 過敏性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D195",
+      "to": "S84",
+      "from_name": "薬剤性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 薬剤性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D192",
+      "to": "S84",
+      "from_name": "急性前骨髄球性白血病(APL)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性前骨髄球性白血病(APL) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D114",
+      "to": "S84",
+      "from_name": "多発性骨髄腫",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 多発性骨髄腫 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D158",
+      "to": "S84",
+      "from_name": "自己免疫性溶血性貧血(AIHA)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 自己免疫性溶血性貧血(AIHA) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D202",
+      "to": "S84",
+      "from_name": "シェーグレン症候群",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: シェーグレン症候群 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D12",
+      "to": "S84",
+      "from_name": "蜂窩織炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 蜂窩織炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S84",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 多発血管炎性肉芽腫症(GPA) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S84",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 顕微鏡的多発血管炎(MPA) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D227",
+      "to": "S84",
+      "from_name": "胸腺腫",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 胸腺腫 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D156",
+      "to": "S84",
+      "from_name": "血栓性血小板減少性紫斑病(TTP)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 血栓性血小板減少性紫斑病(TTP) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D253",
+      "to": "S84",
+      "from_name": "急性細気管支炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性細気管支炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D254",
+      "to": "S84",
+      "from_name": "クループ(急性喉頭気管炎)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: クループ(急性喉頭気管炎) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D255",
+      "to": "S84",
+      "from_name": "熱性痙攣",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 熱性痙攣 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D258",
+      "to": "S84",
+      "from_name": "RSウイルス感染症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: RSウイルス感染症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D263",
+      "to": "S84",
+      "from_name": "マイコプラズマ肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: マイコプラズマ肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D264",
+      "to": "S84",
+      "from_name": "クラミジア肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: クラミジア肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D265",
+      "to": "S84",
+      "from_name": "インフルエンザ菌性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: インフルエンザ菌性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D266",
+      "to": "S84",
+      "from_name": "肺炎球菌性肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 肺炎球菌性肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D267",
+      "to": "S84",
+      "from_name": "モラクセラ肺炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: モラクセラ肺炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D272",
+      "to": "S84",
+      "from_name": "食道アカラシア",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 食道アカラシア → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D277",
+      "to": "S84",
+      "from_name": "肺腺癌",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 肺腺癌 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D278",
+      "to": "S84",
+      "from_name": "悪性胸膜中皮腫",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 悪性胸膜中皮腫 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D281",
+      "to": "S84",
+      "from_name": "オピオイド中毒",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: オピオイド中毒 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S84",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 顔面神経麻痺(Bell麻痺) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D319",
+      "to": "S84",
+      "from_name": "気管支拡張症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 気管支拡張症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D349",
+      "to": "S84",
+      "from_name": "結核性胸膜炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 結核性胸膜炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D328",
+      "to": "S84",
+      "from_name": "急性呼吸窮迫症候群(ARDS)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 急性呼吸窮迫症候群(ARDS) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D279",
+      "to": "S84",
+      "from_name": "縦隔炎",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 縦隔炎 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "S84",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: 僧帽弁狭窄症 → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D270",
+      "to": "S84",
+      "from_name": "アスピリン喘息(NSAIDs不耐症)",
+      "to_name": "咳嗽の性状",
+      "reason": "CPT_NO_EDGE sync: アスピリン喘息(NSAIDs不耐症) → 咳嗽の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D01",
+      "to": "S85",
+      "from_name": "ウイルス性上気道炎（かぜ症候群）",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: ウイルス性上気道炎（かぜ症候群） → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D20",
+      "to": "S85",
+      "from_name": "急性副鼻腔炎",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 急性副鼻腔炎 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D46",
+      "to": "S85",
+      "from_name": "麻疹",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 麻疹 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D48",
+      "to": "S85",
+      "from_name": "風疹",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 風疹 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D258",
+      "to": "S85",
+      "from_name": "RSウイルス感染症",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: RSウイルス感染症 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D295",
+      "to": "S85",
+      "from_name": "群発頭痛",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 群発頭痛 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D265",
+      "to": "S85",
+      "from_name": "インフルエンザ菌性肺炎",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: インフルエンザ菌性肺炎 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D02",
+      "to": "S85",
+      "from_name": "インフルエンザ",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: インフルエンザ → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D253",
+      "to": "S85",
+      "from_name": "急性細気管支炎",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 急性細気管支炎 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D254",
+      "to": "S85",
+      "from_name": "クループ(急性喉頭気管炎)",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: クループ(急性喉頭気管炎) → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D257",
+      "to": "S85",
+      "from_name": "壊死性腸炎(NEC)",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 壊死性腸炎(NEC) → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D255",
+      "to": "S85",
+      "from_name": "熱性痙攣",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 熱性痙攣 → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D256",
+      "to": "S85",
+      "from_name": "腸回転異常症(中腸軸捻転)",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: 腸回転異常症(中腸軸捻転) → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D270",
+      "to": "S85",
+      "from_name": "アスピリン喘息(NSAIDs不耐症)",
+      "to_name": "鼻汁の性状",
+      "reason": "CPT_NO_EDGE sync: アスピリン喘息(NSAIDs不耐症) → 鼻汁の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D37",
+      "to": "S86",
+      "from_name": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 細菌性腸炎（カンピロバクター/サルモネラ等） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D38",
+      "to": "S86",
+      "from_name": "Clostridioides difficile感染症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: Clostridioides difficile感染症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D51",
+      "to": "S86",
+      "from_name": "アメーバ赤痢",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: アメーバ赤痢 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D63",
+      "to": "S86",
+      "from_name": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 炎症性腸疾患（クローン病/潰瘍性大腸炎） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D71",
+      "to": "S86",
+      "from_name": "甲状腺クリーゼ",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 甲状腺クリーゼ → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D75",
+      "to": "S86",
+      "from_name": "セロトニン症候群",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: セロトニン症候群 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D102",
+      "to": "S86",
+      "from_name": "レジオネラ肺炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: レジオネラ肺炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D07",
+      "to": "S86",
+      "from_name": "急性胃腸炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 急性胃腸炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D28",
+      "to": "S86",
+      "from_name": "腸チフス・パラチフス",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 腸チフス・パラチフス → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D17",
+      "to": "S86",
+      "from_name": "肺結核",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 肺結核 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D16",
+      "to": "S86",
+      "from_name": "デング熱",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: デング熱 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D77",
+      "to": "S86",
+      "from_name": "深部静脈血栓症/肺塞栓症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 深部静脈血栓症/肺塞栓症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D23",
+      "to": "S86",
+      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D03",
+      "to": "S86",
+      "from_name": "新型コロナウイルス感染症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 新型コロナウイルス感染症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D15",
+      "to": "S86",
+      "from_name": "マラリア",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: マラリア → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D24",
+      "to": "S86",
+      "from_name": "トキシックショック症候群（TSS/劇症型GAS含む）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: トキシックショック症候群（TSS/劇症型GAS含む） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D27",
+      "to": "S86",
+      "from_name": "憩室炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 憩室炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D44",
+      "to": "S86",
+      "from_name": "急性HIV感染症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 急性HIV感染症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D100",
+      "to": "S86",
+      "from_name": "A型急性肝炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: A型急性肝炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D10",
+      "to": "S86",
+      "from_name": "急性虫垂炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 急性虫垂炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D91",
+      "to": "S86",
+      "from_name": "チクングニア熱",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: チクングニア熱 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D78",
+      "to": "S86",
+      "from_name": "熱中症（重症）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 熱中症（重症） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D46",
+      "to": "S86",
+      "from_name": "麻疹",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 麻疹 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D72",
+      "to": "S86",
+      "from_name": "副腎クリーゼ",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 副腎クリーゼ → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D26",
+      "to": "S86",
+      "from_name": "骨盤内炎症性疾患（PID）",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 骨盤内炎症性疾患（PID） → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D161",
+      "to": "S86",
+      "from_name": "有機リン中毒",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 有機リン中毒 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D162",
+      "to": "S86",
+      "from_name": "溶血性尿毒症症候群(HUS)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 溶血性尿毒症症候群(HUS) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D166",
+      "to": "S86",
+      "from_name": "アセトアミノフェン中毒",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: アセトアミノフェン中毒 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D172",
+      "to": "S86",
+      "from_name": "ガス壊疽",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: ガス壊疽 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D177",
+      "to": "S86",
+      "from_name": "虚血性腸炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 虚血性腸炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D181",
+      "to": "S86",
+      "from_name": "アデノウイルス感染症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: アデノウイルス感染症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D176",
+      "to": "S86",
+      "from_name": "抗NMDA受容体脳炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 抗NMDA受容体脳炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D185",
+      "to": "S86",
+      "from_name": "遺伝性血管性浮腫(HAE)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 遺伝性血管性浮腫(HAE) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D198",
+      "to": "S86",
+      "from_name": "IgA血管炎(HSP)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: IgA血管炎(HSP) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D201",
+      "to": "S86",
+      "from_name": "ウイルス性出血熱",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: ウイルス性出血熱 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D57",
+      "to": "S86",
+      "from_name": "壊死性筋膜炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 壊死性筋膜炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D152",
+      "to": "S86",
+      "from_name": "播種性血管内凝固症候群(DIC)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 播種性血管内凝固症候群(DIC) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D171",
+      "to": "S86",
+      "from_name": "抗リン脂質抗体症候群(APS)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 抗リン脂質抗体症候群(APS) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D183",
+      "to": "S86",
+      "from_name": "クリオグロブリン血症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: クリオグロブリン血症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "S86",
+      "from_name": "腸重積症(成人)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 腸重積症(成人) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "S86",
+      "from_name": "大腸癌",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 大腸癌 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D246",
+      "to": "S86",
+      "from_name": "腸管出血性大腸菌感染症(EHEC/O157)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 腸管出血性大腸菌感染症(EHEC/O157) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D249",
+      "to": "S86",
+      "from_name": "慢性膵炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 慢性膵炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D209",
+      "to": "S86",
+      "from_name": "骨髄線維症",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 骨髄線維症 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S86",
+      "from_name": "川崎病",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 川崎病 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D256",
+      "to": "S86",
+      "from_name": "腸回転異常症(中腸軸捻転)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 腸回転異常症(中腸軸捻転) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D257",
+      "to": "S86",
+      "from_name": "壊死性腸炎(NEC)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 壊死性腸炎(NEC) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D261",
+      "to": "S86",
+      "from_name": "突発性発疹(ロゼオラ)",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: 突発性発疹(ロゼオラ) → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D282",
+      "to": "S86",
+      "from_name": "キノコ中毒",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: キノコ中毒 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D263",
+      "to": "S86",
+      "from_name": "マイコプラズマ肺炎",
+      "to_name": "下痢の性状",
+      "reason": "CPT_NO_EDGE sync: マイコプラズマ肺炎 → 下痢の性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D12",
+      "to": "S87",
+      "from_name": "蜂窩織炎",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 蜂窩織炎 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D16",
+      "to": "S87",
+      "from_name": "デング熱",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: デング熱 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D21",
+      "to": "S87",
+      "from_name": "帯状疱疹",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 帯状疱疹 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D23",
+      "to": "S87",
+      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D24",
+      "to": "S87",
+      "from_name": "トキシックショック症候群（TSS/劇症型GAS含む）",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: トキシックショック症候群（TSS/劇症型GAS含む） → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D57",
+      "to": "S87",
+      "from_name": "壊死性筋膜炎",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 壊死性筋膜炎 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D19",
+      "to": "S87",
+      "from_name": "薬剤熱",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 薬剤熱 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S87",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 肛門周囲膿瘍 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D41",
+      "to": "S87",
+      "from_name": "手術部位感染(SSI)",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 手術部位感染(SSI) → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D44",
+      "to": "S87",
+      "from_name": "急性HIV感染症",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 急性HIV感染症 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D46",
+      "to": "S87",
+      "from_name": "麻疹",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 麻疹 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D48",
+      "to": "S87",
+      "from_name": "風疹",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 風疹 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "S87",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D91",
+      "to": "S87",
+      "from_name": "チクングニア熱",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: チクングニア熱 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D93",
+      "to": "S87",
+      "from_name": "DRESS症候群（薬剤性過敏症症候群）",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: DRESS症候群（薬剤性過敏症症候群） → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D101",
+      "to": "S87",
+      "from_name": "梅毒（二期）",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 梅毒（二期） → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D103",
+      "to": "S87",
+      "from_name": "急性リウマチ熱",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 急性リウマチ熱 → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D111",
+      "to": "S87",
+      "from_name": "スティーブンス・ジョンソン症候群/TEN",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: スティーブンス・ジョンソン症候群/TEN → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D115",
+      "to": "S87",
+      "from_name": "播種性淋菌感染症（DGI）",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: 播種性淋菌感染症（DGI） → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D126",
+      "to": "S87",
+      "from_name": "アナフィラキシー",
+      "to_name": "皮膚症状の種類",
+      "reason": "CPT_NO_EDGE sync: アナフィラキシー → 皮膚症状の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D07",
+      "to": "S89",
+      "from_name": "急性胃腸炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性胃腸炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D08",
+      "to": "S89",
+      "from_name": "下部尿路感染症（膀胱炎）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 下部尿路感染症（膀胱炎） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D09",
+      "to": "S89",
+      "from_name": "急性腎盂腎炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性腎盂腎炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D10",
+      "to": "S89",
+      "from_name": "急性虫垂炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性虫垂炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D11",
+      "to": "S89",
+      "from_name": "急性胆嚢炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性胆嚢炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D25",
+      "to": "S89",
+      "from_name": "急性胆管炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性胆管炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D26",
+      "to": "S89",
+      "from_name": "骨盤内炎症性疾患（PID）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 骨盤内炎症性疾患（PID） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D27",
+      "to": "S89",
+      "from_name": "憩室炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 憩室炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D29",
+      "to": "S89",
+      "from_name": "肝膿瘍（細菌性/アメーバ性）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 肝膿瘍（細菌性/アメーバ性） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D37",
+      "to": "S89",
+      "from_name": "細菌性腸炎（カンピロバクター/サルモネラ等）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 細菌性腸炎（カンピロバクター/サルモネラ等） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D38",
+      "to": "S89",
+      "from_name": "Clostridioides difficile感染症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: Clostridioides difficile感染症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S89",
+      "from_name": "肛門周囲膿瘍",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 肛門周囲膿瘍 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D51",
+      "to": "S89",
+      "from_name": "アメーバ赤痢",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: アメーバ赤痢 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D63",
+      "to": "S89",
+      "from_name": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 炎症性腸疾患（クローン病/潰瘍性大腸炎） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D66",
+      "to": "S89",
+      "from_name": "家族性地中海熱",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 家族性地中海熱 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D80",
+      "to": "S89",
+      "from_name": "無石胆嚢炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 無石胆嚢炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D81",
+      "to": "S89",
+      "from_name": "特発性細菌性腹膜炎(SBP)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 特発性細菌性腹膜炎(SBP) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D86",
+      "to": "S89",
+      "from_name": "急性膵炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性膵炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "S89",
+      "from_name": "IgG4関連疾患",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: IgG4関連疾患 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D17",
+      "to": "S89",
+      "from_name": "肺結核",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 肺結核 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D77",
+      "to": "S89",
+      "from_name": "深部静脈血栓症/肺塞栓症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 深部静脈血栓症/肺塞栓症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D23",
+      "to": "S89",
+      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D28",
+      "to": "S89",
+      "from_name": "腸チフス・パラチフス",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腸チフス・パラチフス → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D70",
+      "to": "S89",
+      "from_name": "肝細胞癌",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 肝細胞癌 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D72",
+      "to": "S89",
+      "from_name": "副腎クリーゼ",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 副腎クリーゼ → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D100",
+      "to": "S89",
+      "from_name": "A型急性肝炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: A型急性肝炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D102",
+      "to": "S89",
+      "from_name": "レジオネラ肺炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: レジオネラ肺炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D67",
+      "to": "S89",
+      "from_name": "悪性リンパ腫",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 悪性リンパ腫 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D108",
+      "to": "S89",
+      "from_name": "B型肝炎（急性/慢性増悪）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D112",
+      "to": "S89",
+      "from_name": "結節性多発動脈炎（PAN）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 結節性多発動脈炎（PAN） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D132",
+      "to": "S89",
+      "from_name": "急性大動脈解離",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性大動脈解離 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D136",
+      "to": "S89",
+      "from_name": "消化性潰瘍穿孔",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 消化性潰瘍穿孔 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D137",
+      "to": "S89",
+      "from_name": "急性腸間膜虚血",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性腸間膜虚血 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D140",
+      "to": "S89",
+      "from_name": "糖尿病性ケトアシドーシス(DKA)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 糖尿病性ケトアシドーシス(DKA) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D151",
+      "to": "S89",
+      "from_name": "急性肝不全（劇症肝炎）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性肝不全（劇症肝炎） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D154",
+      "to": "S89",
+      "from_name": "腸閉塞（イレウス）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腸閉塞（イレウス） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D162",
+      "to": "S89",
+      "from_name": "溶血性尿毒症症候群(HUS)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 溶血性尿毒症症候群(HUS) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D166",
+      "to": "S89",
+      "from_name": "アセトアミノフェン中毒",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: アセトアミノフェン中毒 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D169",
+      "to": "S89",
+      "from_name": "自己免疫性肝炎(AIH)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 自己免疫性肝炎(AIH) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D170",
+      "to": "S89",
+      "from_name": "アルコール性肝炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: アルコール性肝炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D174",
+      "to": "S89",
+      "from_name": "腹部大動脈瘤破裂",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腹部大動脈瘤破裂 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D171",
+      "to": "S89",
+      "from_name": "抗リン脂質抗体症候群(APS)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 抗リン脂質抗体症候群(APS) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D161",
+      "to": "S89",
+      "from_name": "有機リン中毒",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 有機リン中毒 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D177",
+      "to": "S89",
+      "from_name": "虚血性腸炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 虚血性腸炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D179",
+      "to": "S89",
+      "from_name": "薬剤性肝障害(DILI)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 薬剤性肝障害(DILI) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D180",
+      "to": "S89",
+      "from_name": "S状結腸捻転",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: S状結腸捻転 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D185",
+      "to": "S89",
+      "from_name": "遺伝性血管性浮腫(HAE)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 遺伝性血管性浮腫(HAE) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D186",
+      "to": "S89",
+      "from_name": "腎梗塞",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腎梗塞 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D189",
+      "to": "S89",
+      "from_name": "メタノール中毒",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: メタノール中毒 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D173",
+      "to": "S89",
+      "from_name": "水痘",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 水痘 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D107",
+      "to": "S89",
+      "from_name": "血球貪食症候群(HLH/MAS)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 血球貪食症候群(HLH/MAS) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D145",
+      "to": "S89",
+      "from_name": "尿管結石（腎疝痛）",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 尿管結石（腎疝痛） → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D149",
+      "to": "S89",
+      "from_name": "一酸化炭素中毒",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 一酸化炭素中毒 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D198",
+      "to": "S89",
+      "from_name": "IgA血管炎(HSP)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: IgA血管炎(HSP) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D183",
+      "to": "S89",
+      "from_name": "クリオグロブリン血症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: クリオグロブリン血症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D209",
+      "to": "S89",
+      "from_name": "骨髄線維症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 骨髄線維症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D210",
+      "to": "S89",
+      "from_name": "急性間欠性ポルフィリン症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性間欠性ポルフィリン症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D228",
+      "to": "S89",
+      "from_name": "発作性夜間ヘモグロビン尿症(PNH)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 発作性夜間ヘモグロビン尿症(PNH) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D229",
+      "to": "S89",
+      "from_name": "自己免疫性膵炎(AIP)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 自己免疫性膵炎(AIP) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D230",
+      "to": "S89",
+      "from_name": "膵癌",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 膵癌 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D231",
+      "to": "S89",
+      "from_name": "胆管癌",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 胆管癌 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D232",
+      "to": "S89",
+      "from_name": "アルコール性ケトアシドーシス(AKA)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: アルコール性ケトアシドーシス(AKA) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D234",
+      "to": "S89",
+      "from_name": "慢性骨髄性白血病(CML)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 慢性骨髄性白血病(CML) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D237",
+      "to": "S89",
+      "from_name": "腸重積症(成人)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腸重積症(成人) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D238",
+      "to": "S89",
+      "from_name": "大腸癌",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 大腸癌 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D244",
+      "to": "S89",
+      "from_name": "マロリー・ワイス症候群",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: マロリー・ワイス症候群 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D245",
+      "to": "S89",
+      "from_name": "急性胃粘膜病変(AGML)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 急性胃粘膜病変(AGML) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D246",
+      "to": "S89",
+      "from_name": "腸管出血性大腸菌感染症(EHEC/O157)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腸管出血性大腸菌感染症(EHEC/O157) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D247",
+      "to": "S89",
+      "from_name": "胃癌",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 胃癌 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D249",
+      "to": "S89",
+      "from_name": "慢性膵炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 慢性膵炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D250",
+      "to": "S89",
+      "from_name": "原発性胆汁性胆管炎(PBC)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 原発性胆汁性胆管炎(PBC) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D207",
+      "to": "S89",
+      "from_name": "ヘパリン起因性血小板減少症(HIT)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: ヘパリン起因性血小板減少症(HIT) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D146",
+      "to": "S89",
+      "from_name": "高血圧緊急症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 高血圧緊急症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D197",
+      "to": "S89",
+      "from_name": "無顆粒球症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 無顆粒球症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D256",
+      "to": "S89",
+      "from_name": "腸回転異常症(中腸軸捻転)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 腸回転異常症(中腸軸捻転) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D257",
+      "to": "S89",
+      "from_name": "壊死性腸炎(NEC)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 壊死性腸炎(NEC) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D268",
+      "to": "S89",
+      "from_name": "ノロウイルス胃腸炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: ノロウイルス胃腸炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D269",
+      "to": "S89",
+      "from_name": "ロタウイルス胃腸炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: ロタウイルス胃腸炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D273",
+      "to": "S89",
+      "from_name": "総胆管結石",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 総胆管結石 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D274",
+      "to": "S89",
+      "from_name": "胆石発作(胆石疝痛)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 胆石発作(胆石疝痛) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D275",
+      "to": "S89",
+      "from_name": "嵌頓ヘルニア",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 嵌頓ヘルニア → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D282",
+      "to": "S89",
+      "from_name": "キノコ中毒",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: キノコ中毒 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D286",
+      "to": "S89",
+      "from_name": "高カルシウム血症",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 高カルシウム血症 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D259",
+      "to": "S89",
+      "from_name": "手足口病",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 手足口病 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D291",
+      "to": "S89",
+      "from_name": "子宮外妊娠",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 子宮外妊娠 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D322",
+      "to": "S89",
+      "from_name": "HELLP症候群",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: HELLP症候群 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D323",
+      "to": "S89",
+      "from_name": "常位胎盤早期剥離",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 常位胎盤早期剥離 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D283",
+      "to": "S89",
+      "from_name": "フグ中毒(テトロドトキシン)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: フグ中毒(テトロドトキシン) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D263",
+      "to": "S89",
+      "from_name": "マイコプラズマ肺炎",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: マイコプラズマ肺炎 → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S89",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "腹痛の部位",
+      "reason": "CPT_NO_EDGE sync: 視神経脊髄炎(NMOSD) → 腹痛の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D44",
+      "to": "E46",
+      "from_name": "急性HIV感染症",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 急性HIV感染症 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D45",
+      "to": "E46",
+      "from_name": "サイトメガロウイルス感染症",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: サイトメガロウイルス感染症 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D48",
+      "to": "E46",
+      "from_name": "風疹",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 風疹 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D54",
+      "to": "E46",
+      "from_name": "猫ひっかき病",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 猫ひっかき病 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "E46",
+      "from_name": "成人Still病",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D62",
+      "to": "E46",
+      "from_name": "サルコイドーシス",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: サルコイドーシス → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D67",
+      "to": "E46",
+      "from_name": "悪性リンパ腫",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 悪性リンパ腫 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D68",
+      "to": "E46",
+      "from_name": "急性白血病",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 急性白血病 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D93",
+      "to": "E46",
+      "from_name": "DRESS症候群（薬剤性過敏症症候群）",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: DRESS症候群（薬剤性過敏症症候群） → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D96",
+      "to": "E46",
+      "from_name": "菊池病（壊死性リンパ節炎）",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 菊池病（壊死性リンパ節炎） → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D97",
+      "to": "E46",
+      "from_name": "キャッスルマン病",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: キャッスルマン病 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D101",
+      "to": "E46",
+      "from_name": "梅毒（二期）",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 梅毒（二期） → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D04",
+      "to": "E46",
+      "from_name": "急性咽頭扁桃炎",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 急性咽頭扁桃炎 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D18",
+      "to": "E46",
+      "from_name": "伝染性単核球症",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 伝染性単核球症 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D12",
+      "to": "E46",
+      "from_name": "蜂窩織炎",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 蜂窩織炎 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D21",
+      "to": "E46",
+      "from_name": "帯状疱疹",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 帯状疱疹 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D53",
+      "to": "E46",
+      "from_name": "ブルセラ症",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: ブルセラ症 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "E46",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D33",
+      "to": "E46",
+      "from_name": "扁桃周囲膿瘍",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 扁桃周囲膿瘍 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D46",
+      "to": "E46",
+      "from_name": "麻疹",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 麻疹 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D47",
+      "to": "E46",
+      "from_name": "流行性耳下腺炎（ムンプス）",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 流行性耳下腺炎（ムンプス） → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D110",
+      "to": "E46",
+      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D113",
+      "to": "E46",
+      "from_name": "播種性ヒストプラズマ症",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 播種性ヒストプラズマ症 → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D262",
+      "to": "E46",
+      "from_name": "伝染性膿痂疹(とびひ)",
+      "to_name": "リンパ節の部位",
+      "reason": "CPT_NO_EDGE sync: 伝染性膿痂疹(とびひ) → リンパ節の部位",
+      "onset_day_range": null
+    },
+    {
+      "from": "D32",
+      "to": "S90",
+      "from_name": "化膿性関節炎",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 化膿性関節炎 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D48",
+      "to": "S90",
+      "from_name": "風疹",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 風疹 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D53",
+      "to": "S90",
+      "from_name": "ブルセラ症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: ブルセラ症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "S90",
+      "from_name": "成人Still病",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "S90",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D64",
+      "to": "S90",
+      "from_name": "反応性関節炎",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D65",
+      "to": "S90",
+      "from_name": "痛風/偽痛風発作",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D66",
+      "to": "S90",
+      "from_name": "家族性地中海熱",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 家族性地中海熱 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D91",
+      "to": "S90",
+      "from_name": "チクングニア熱",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: チクングニア熱 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D16",
+      "to": "S90",
+      "from_name": "デング熱",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: デング熱 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D18",
+      "to": "S90",
+      "from_name": "伝染性単核球症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 伝染性単核球症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D23",
+      "to": "S90",
+      "from_name": "リケッチア症（ツツガムシ病・日本紅斑熱）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: リケッチア症（ツツガムシ病・日本紅斑熱） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D103",
+      "to": "S90",
+      "from_name": "急性リウマチ熱",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 急性リウマチ熱 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D14",
+      "to": "S90",
+      "from_name": "感染性心内膜炎",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 感染性心内膜炎 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D44",
+      "to": "S90",
+      "from_name": "急性HIV感染症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 急性HIV感染症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D62",
+      "to": "S90",
+      "from_name": "サルコイドーシス",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: サルコイドーシス → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D63",
+      "to": "S90",
+      "from_name": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 炎症性腸疾患（クローン病/潰瘍性大腸炎） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D101",
+      "to": "S90",
+      "from_name": "梅毒（二期）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 梅毒（二期） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D13",
+      "to": "S90",
+      "from_name": "髄膜炎",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 髄膜炎 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D105",
+      "to": "S90",
+      "from_name": "パルボウイルスB19感染症（伝染性紅斑）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: パルボウイルスB19感染症（伝染性紅斑） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D106",
+      "to": "S90",
+      "from_name": "炎症性筋疾患（皮膚筋炎/多発性筋炎）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 炎症性筋疾患（皮膚筋炎/多発性筋炎） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D108",
+      "to": "S90",
+      "from_name": "B型肝炎（急性/慢性増悪）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D112",
+      "to": "S90",
+      "from_name": "結節性多発動脈炎（PAN）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 結節性多発動脈炎（PAN） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D114",
+      "to": "S90",
+      "from_name": "多発性骨髄腫",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 多発性骨髄腫 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D115",
+      "to": "S90",
+      "from_name": "播種性淋菌感染症（DGI）",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 播種性淋菌感染症（DGI） → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D168",
+      "to": "S90",
+      "from_name": "急速進行性糸球体腎炎(RPGN)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 急速進行性糸球体腎炎(RPGN) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D169",
+      "to": "S90",
+      "from_name": "自己免疫性肝炎(AIH)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 自己免疫性肝炎(AIH) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D183",
+      "to": "S90",
+      "from_name": "クリオグロブリン血症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: クリオグロブリン血症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D194",
+      "to": "S90",
+      "from_name": "ライム病",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: ライム病 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D198",
+      "to": "S90",
+      "from_name": "IgA血管炎(HSP)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: IgA血管炎(HSP) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D202",
+      "to": "S90",
+      "from_name": "シェーグレン症候群",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: シェーグレン症候群 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "S90",
+      "from_name": "全身性強皮症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 全身性強皮症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D219",
+      "to": "S90",
+      "from_name": "多発血管炎性肉芽腫症(GPA)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 多発血管炎性肉芽腫症(GPA) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D221",
+      "to": "S90",
+      "from_name": "顕微鏡的多発血管炎(MPA)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 顕微鏡的多発血管炎(MPA) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "S90",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 混合性結合組織病(MCTD) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D156",
+      "to": "S90",
+      "from_name": "血栓性血小板減少性紫斑病(TTP)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 血栓性血小板減少性紫斑病(TTP) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D240",
+      "to": "S90",
+      "from_name": "急性間質性腎炎(AIN)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 急性間質性腎炎(AIN) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D175",
+      "to": "S90",
+      "from_name": "急性間質性肺炎(AIP/Hamman-Rich)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 急性間質性肺炎(AIP/Hamman-Rich) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D234",
+      "to": "S90",
+      "from_name": "慢性骨髄性白血病(CML)",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 慢性骨髄性白血病(CML) → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "S90",
+      "from_name": "川崎病",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 川崎病 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D285",
+      "to": "S90",
+      "from_name": "減圧症",
+      "to_name": "関節痛の分布",
+      "reason": "CPT_NO_EDGE sync: 減圧症 → 関節痛の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D32",
+      "to": "S91",
+      "from_name": "化膿性関節炎",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 化膿性関節炎 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "S91",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D64",
+      "to": "S91",
+      "from_name": "反応性関節炎",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D65",
+      "to": "S91",
+      "from_name": "痛風/偽痛風発作",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D103",
+      "to": "S91",
+      "from_name": "急性リウマチ熱",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 急性リウマチ熱 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "S91",
+      "from_name": "成人Still病",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D91",
+      "to": "S91",
+      "from_name": "チクングニア熱",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: チクングニア熱 → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D115",
+      "to": "S91",
+      "from_name": "播種性淋菌感染症（DGI）",
+      "to_name": "関節腫脹の分布",
+      "reason": "CPT_NO_EDGE sync: 播種性淋菌感染症（DGI） → 関節腫脹の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D32",
+      "to": "E47",
+      "from_name": "化膿性関節炎",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 化膿性関節炎 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D64",
+      "to": "E47",
+      "from_name": "反応性関節炎",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D65",
+      "to": "E47",
+      "from_name": "痛風/偽痛風発作",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 痛風/偽痛風発作 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D103",
+      "to": "E47",
+      "from_name": "急性リウマチ熱",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 急性リウマチ熱 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "E47",
+      "from_name": "成人Still病",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D13",
+      "to": "E47",
+      "from_name": "髄膜炎",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 髄膜炎 → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D105",
+      "to": "E47",
+      "from_name": "パルボウイルスB19感染症（伝染性紅斑）",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: パルボウイルスB19感染症（伝染性紅斑） → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D115",
+      "to": "E47",
+      "from_name": "播種性淋菌感染症（DGI）",
+      "to_name": "関節炎症の分布",
+      "reason": "CPT_NO_EDGE sync: 播種性淋菌感染症（DGI） → 関節炎症の分布",
+      "onset_day_range": null
+    },
+    {
+      "from": "D292",
+      "to": "S92",
+      "from_name": "急性前庭神経炎",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 急性前庭神経炎 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D138",
+      "to": "S92",
+      "from_name": "急性脳梗塞",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 急性脳梗塞 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D139",
+      "to": "S92",
+      "from_name": "脳出血",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 脳出血 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S92",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 進行性核上性麻痺(PSP) → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S92",
+      "from_name": "パーキンソン病",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: パーキンソン病 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S92",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: レビー小体型認知症(DLB) → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D125",
+      "to": "S92",
+      "from_name": "急性不整脈（AF/SVT/VT）",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 急性不整脈（AF/SVT/VT） → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D149",
+      "to": "S92",
+      "from_name": "一酸化炭素中毒",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 一酸化炭素中毒 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D163",
+      "to": "S92",
+      "from_name": "ウェルニッケ脳症",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: ウェルニッケ脳症 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D285",
+      "to": "S92",
+      "from_name": "減圧症",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 減圧症 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "S92",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 一過性脳虚血発作(TIA) → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D316",
+      "to": "S92",
+      "from_name": "もやもや病",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: もやもや病 → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S92",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "めまいの性状",
+      "reason": "CPT_NO_EDGE sync: 正常圧水頭症(NPH) → めまいの性状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D138",
+      "to": "S93",
+      "from_name": "急性脳梗塞",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 急性脳梗塞 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D139",
+      "to": "S93",
+      "from_name": "脳出血",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 脳出血 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D13",
+      "to": "S93",
+      "from_name": "髄膜炎",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 髄膜炎 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D118",
+      "to": "S93",
+      "from_name": "脳膿瘍",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 脳膿瘍 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D110",
+      "to": "S93",
+      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D144",
+      "to": "S93",
+      "from_name": "ギラン・バレー症候群(GBS)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: ギラン・バレー症候群(GBS) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D155",
+      "to": "S93",
+      "from_name": "くも膜下出血(SAH)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: くも膜下出血(SAH) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D163",
+      "to": "S93",
+      "from_name": "ウェルニッケ脳症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: ウェルニッケ脳症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D164",
+      "to": "S93",
+      "from_name": "慢性硬膜下血腫",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 慢性硬膜下血腫 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D165",
+      "to": "S93",
+      "from_name": "重症筋無力症クリーゼ",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 重症筋無力症クリーゼ → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D171",
+      "to": "S93",
+      "from_name": "抗リン脂質抗体症候群(APS)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 抗リン脂質抗体症候群(APS) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D146",
+      "to": "S93",
+      "from_name": "高血圧緊急症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 高血圧緊急症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D178",
+      "to": "S93",
+      "from_name": "リステリア髄膜炎",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: リステリア髄膜炎 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D142",
+      "to": "S93",
+      "from_name": "てんかん重積状態",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: てんかん重積状態 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D200",
+      "to": "S93",
+      "from_name": "正常圧水頭症(NPH)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 正常圧水頭症(NPH) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D210",
+      "to": "S93",
+      "from_name": "急性間欠性ポルフィリン症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 急性間欠性ポルフィリン症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D233",
+      "to": "S93",
+      "from_name": "フィッシャー症候群",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: フィッシャー症候群 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S93",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 多発性硬化症(MS) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D283",
+      "to": "S93",
+      "from_name": "フグ中毒(テトロドトキシン)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: フグ中毒(テトロドトキシン) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D285",
+      "to": "S93",
+      "from_name": "減圧症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 減圧症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D298",
+      "to": "S93",
+      "from_name": "顔面神経麻痺(Bell麻痺)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 顔面神経麻痺(Bell麻痺) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D299",
+      "to": "S93",
+      "from_name": "Ramsay Hunt症候群",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: Ramsay Hunt症候群 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S93",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: クロイツフェルト・ヤコブ病(CJD) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S93",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 視神経脊髄炎(NMOSD) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S93",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 進行性核上性麻痺(PSP) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S93",
+      "from_name": "パーキンソン病",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: パーキンソン病 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S93",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: レビー小体型認知症(DLB) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D305",
+      "to": "S93",
+      "from_name": "急性硬膜外血腫",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 急性硬膜外血腫 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D306",
+      "to": "S93",
+      "from_name": "急性硬膜下血腫",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 急性硬膜下血腫 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D307",
+      "to": "S93",
+      "from_name": "横断性脊髄炎",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 横断性脊髄炎 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D308",
+      "to": "S93",
+      "from_name": "馬尾症候群",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 馬尾症候群 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D309",
+      "to": "S93",
+      "from_name": "脳動静脈奇形(AVM)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 脳動静脈奇形(AVM) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "S93",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 一過性脳虚血発作(TIA) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D311",
+      "to": "S93",
+      "from_name": "膠芽腫(GBM)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 膠芽腫(GBM) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S93",
+      "from_name": "髄膜腫",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 髄膜腫 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D313",
+      "to": "S93",
+      "from_name": "転移性脳腫瘍",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 転移性脳腫瘍 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D315",
+      "to": "S93",
+      "from_name": "脳静脈洞血栓症(CVST)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 脳静脈洞血栓症(CVST) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D316",
+      "to": "S93",
+      "from_name": "もやもや病",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: もやもや病 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D324",
+      "to": "S93",
+      "from_name": "結核性髄膜炎",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 結核性髄膜炎 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D325",
+      "to": "S93",
+      "from_name": "可逆性後頭葉白質脳症(PRES)",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 可逆性後頭葉白質脳症(PRES) → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D333",
+      "to": "S93",
+      "from_name": "先端巨大症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 先端巨大症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D321",
+      "to": "S93",
+      "from_name": "原発性アルドステロン症",
+      "to_name": "局所神経症状の側性",
+      "reason": "CPT_NO_EDGE sync: 原発性アルドステロン症 → 局所神経症状の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D138",
+      "to": "S94",
+      "from_name": "急性脳梗塞",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 急性脳梗塞 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D139",
+      "to": "S94",
+      "from_name": "脳出血",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 脳出血 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D13",
+      "to": "S94",
+      "from_name": "髄膜炎",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 髄膜炎 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D118",
+      "to": "S94",
+      "from_name": "脳膿瘍",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 脳膿瘍 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D164",
+      "to": "S94",
+      "from_name": "慢性硬膜下血腫",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 慢性硬膜下血腫 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D165",
+      "to": "S94",
+      "from_name": "重症筋無力症クリーゼ",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 重症筋無力症クリーゼ → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D176",
+      "to": "S94",
+      "from_name": "抗NMDA受容体脳炎",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 抗NMDA受容体脳炎 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D149",
+      "to": "S94",
+      "from_name": "一酸化炭素中毒",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 一酸化炭素中毒 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D178",
+      "to": "S94",
+      "from_name": "リステリア髄膜炎",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: リステリア髄膜炎 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D218",
+      "to": "S94",
+      "from_name": "ウィルソン病",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: ウィルソン病 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D233",
+      "to": "S94",
+      "from_name": "フィッシャー症候群",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: フィッシャー症候群 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D236",
+      "to": "S94",
+      "from_name": "多発性硬化症(MS)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 多発性硬化症(MS) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D283",
+      "to": "S94",
+      "from_name": "フグ中毒(テトロドトキシン)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: フグ中毒(テトロドトキシン) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D300",
+      "to": "S94",
+      "from_name": "クロイツフェルト・ヤコブ病(CJD)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: クロイツフェルト・ヤコブ病(CJD) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D302",
+      "to": "S94",
+      "from_name": "進行性核上性麻痺(PSP)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 進行性核上性麻痺(PSP) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D303",
+      "to": "S94",
+      "from_name": "パーキンソン病",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: パーキンソン病 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D310",
+      "to": "S94",
+      "from_name": "一過性脳虚血発作(TIA)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 一過性脳虚血発作(TIA) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D311",
+      "to": "S94",
+      "from_name": "膠芽腫(GBM)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 膠芽腫(GBM) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D316",
+      "to": "S94",
+      "from_name": "もやもや病",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: もやもや病 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S94",
+      "from_name": "髄膜腫",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: 髄膜腫 → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D304",
+      "to": "S94",
+      "from_name": "レビー小体型認知症(DLB)",
+      "to_name": "言語障害の種類",
+      "reason": "CPT_NO_EDGE sync: レビー小体型認知症(DLB) → 言語障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D333",
+      "to": "S95",
+      "from_name": "先端巨大症",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 先端巨大症 → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D332",
+      "to": "S95",
+      "from_name": "下垂体機能低下症",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 下垂体機能低下症 → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D301",
+      "to": "S95",
+      "from_name": "視神経脊髄炎(NMOSD)",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 視神経脊髄炎(NMOSD) → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D312",
+      "to": "S95",
+      "from_name": "髄膜腫",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 髄膜腫 → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D311",
+      "to": "S95",
+      "from_name": "膠芽腫(GBM)",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 膠芽腫(GBM) → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D339",
+      "to": "S95",
+      "from_name": "網膜剥離",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 網膜剥離 → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D325",
+      "to": "S95",
+      "from_name": "可逆性後頭葉白質脳症(PRES)",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: 可逆性後頭葉白質脳症(PRES) → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D350",
+      "to": "S95",
+      "from_name": "マルファン症候群",
+      "to_name": "視野障害の種類",
+      "reason": "CPT_NO_EDGE sync: マルファン症候群 → 視野障害の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D62",
+      "to": "E48",
+      "from_name": "サルコイドーシス",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: サルコイドーシス → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D90",
+      "to": "E48",
+      "from_name": "ベーチェット病",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: ベーチェット病 → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D63",
+      "to": "E48",
+      "from_name": "炎症性腸疾患（クローン病/潰瘍性大腸炎）",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: 炎症性腸疾患（クローン病/潰瘍性大腸炎） → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D48",
+      "to": "E48",
+      "from_name": "風疹",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: 風疹 → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D110",
+      "to": "E48",
+      "from_name": "トキソプラズマ症（脳炎/リンパ節炎）",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: トキソプラズマ症（脳炎/リンパ節炎） → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D111",
+      "to": "E48",
+      "from_name": "スティーブンス・ジョンソン症候群/TEN",
+      "to_name": "眼所見の種類",
+      "reason": "CPT_NO_EDGE sync: スティーブンス・ジョンソン症候群/TEN → 眼所見の種類",
+      "onset_day_range": null
+    },
+    {
+      "from": "D47",
+      "to": "E49",
+      "from_name": "流行性耳下腺炎（ムンプス）",
+      "to_name": "耳下腺腫脹の側性",
+      "reason": "CPT_NO_EDGE sync: 流行性耳下腺炎（ムンプス） → 耳下腺腫脹の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "E49",
+      "from_name": "IgG4関連疾患",
+      "to_name": "耳下腺腫脹の側性",
+      "reason": "CPT_NO_EDGE sync: IgG4関連疾患 → 耳下腺腫脹の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D120",
+      "to": "E50",
+      "from_name": "急性心不全（ADHF）",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 急性心不全（ADHF） → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D77",
+      "to": "E50",
+      "from_name": "深部静脈血栓症/肺塞栓症",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 深部静脈血栓症/肺塞栓症 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D12",
+      "to": "E50",
+      "from_name": "蜂窩織炎",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 蜂窩織炎 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D57",
+      "to": "E50",
+      "from_name": "壊死性筋膜炎",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 壊死性筋膜炎 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "E50",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D108",
+      "to": "E50",
+      "from_name": "B型肝炎（急性/慢性増悪）",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: B型肝炎（急性/慢性増悪） → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D124",
+      "to": "E50",
+      "from_name": "心タンポナーデ",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 心タンポナーデ → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D127",
+      "to": "E50",
+      "from_name": "胸水（非感染性）",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 胸水（非感染性） → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D131",
+      "to": "E50",
+      "from_name": "急性冠症候群（ACS/心筋梗塞）",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 急性冠症候群（ACS/心筋梗塞） → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D159",
+      "to": "E50",
+      "from_name": "粘液水腫性昏睡",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 粘液水腫性昏睡 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D162",
+      "to": "E50",
+      "from_name": "溶血性尿毒症症候群(HUS)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 溶血性尿毒症症候群(HUS) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D171",
+      "to": "E50",
+      "from_name": "抗リン脂質抗体症候群(APS)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 抗リン脂質抗体症候群(APS) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D185",
+      "to": "E50",
+      "from_name": "遺伝性血管性浮腫(HAE)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 遺伝性血管性浮腫(HAE) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D191",
+      "to": "E50",
+      "from_name": "溶連菌感染後急性糸球体腎炎(PSGN)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 溶連菌感染後急性糸球体腎炎(PSGN) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D170",
+      "to": "E50",
+      "from_name": "アルコール性肝炎",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: アルコール性肝炎 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D169",
+      "to": "E50",
+      "from_name": "自己免疫性肝炎(AIH)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 自己免疫性肝炎(AIH) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D168",
+      "to": "E50",
+      "from_name": "急速進行性糸球体腎炎(RPGN)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 急速進行性糸球体腎炎(RPGN) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D204",
+      "to": "E50",
+      "from_name": "アミロイドーシス",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: アミロイドーシス → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D207",
+      "to": "E50",
+      "from_name": "ヘパリン起因性血小板減少症(HIT)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: ヘパリン起因性血小板減少症(HIT) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D212",
+      "to": "E50",
+      "from_name": "拘束型心筋症",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 拘束型心筋症 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D214",
+      "to": "E50",
+      "from_name": "肺動脈性肺高血圧症(PAH)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 肺動脈性肺高血圧症(PAH) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D223",
+      "to": "E50",
+      "from_name": "混合性結合組織病(MCTD)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 混合性結合組織病(MCTD) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D251",
+      "to": "E50",
+      "from_name": "非代償性肝硬変",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 非代償性肝硬変 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D234",
+      "to": "E50",
+      "from_name": "慢性骨髄性白血病(CML)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 慢性骨髄性白血病(CML) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D203",
+      "to": "E50",
+      "from_name": "全身性強皮症",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 全身性強皮症 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D318",
+      "to": "E50",
+      "from_name": "慢性血栓塞栓性肺高血圧症(CTEPH)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 慢性血栓塞栓性肺高血圧症(CTEPH) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D327",
+      "to": "E50",
+      "from_name": "大動脈弁狭窄症",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 大動脈弁狭窄症 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D340",
+      "to": "E50",
+      "from_name": "僧帽弁狭窄症",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 僧帽弁狭窄症 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D344",
+      "to": "E50",
+      "from_name": "収縮性心膜炎",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 収縮性心膜炎 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D277",
+      "to": "E50",
+      "from_name": "肺腺癌",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 肺腺癌 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D278",
+      "to": "E50",
+      "from_name": "悪性胸膜中皮腫",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 悪性胸膜中皮腫 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D325",
+      "to": "E50",
+      "from_name": "可逆性後頭葉白質脳症(PRES)",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 可逆性後頭葉白質脳症(PRES) → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D329",
+      "to": "E50",
+      "from_name": "骨髄炎",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 骨髄炎 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D345",
+      "to": "E50",
+      "from_name": "Sheehan症候群",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: Sheehan症候群 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D289",
+      "to": "E50",
+      "from_name": "前立腺癌",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: 前立腺癌 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D94",
+      "to": "E50",
+      "from_name": "IgG4関連疾患",
+      "to_name": "下腿浮腫の側性",
+      "reason": "CPT_NO_EDGE sync: IgG4関連疾患 → 下腿浮腫の側性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S145",
+      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → 朝のこわばりの持続時間",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "S145",
+      "from_name": "成人Still病",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → 朝のこわばりの持続時間",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "S145",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → 朝のこわばりの持続時間",
+      "onset_day_range": null
+    },
+    {
+      "from": "D105",
+      "to": "S145",
+      "from_name": "パルボウイルスB19感染症（伝染性紅斑）",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "CPT_NO_EDGE sync: パルボウイルスB19感染症（伝染性紅斑） → 朝のこわばりの持続時間",
+      "onset_day_range": null
+    },
+    {
+      "from": "D64",
+      "to": "S145",
+      "from_name": "反応性関節炎",
+      "to_name": "朝のこわばりの持続時間",
+      "reason": "CPT_NO_EDGE sync: 反応性関節炎 → 朝のこわばりの持続時間",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S146",
+      "from_name": "リウマチ性多発筋痛症/巨細胞動脈炎",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: リウマチ性多発筋痛症/巨細胞動脈炎 → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D58",
+      "to": "S146",
+      "from_name": "成人Still病",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: 成人Still病 → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D59",
+      "to": "S146",
+      "from_name": "全身性エリテマトーデス",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: 全身性エリテマトーデス → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D105",
+      "to": "S146",
+      "from_name": "パルボウイルスB19感染症（伝染性紅斑）",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: パルボウイルスB19感染症（伝染性紅斑） → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D64",
+      "to": "S146",
+      "from_name": "反応性関節炎",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: 反応性関節炎 → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D222",
+      "to": "S146",
+      "from_name": "関節リウマチ(RA)",
+      "to_name": "こわばりの活動による変化",
+      "reason": "CPT_NO_EDGE sync: 関節リウマチ(RA) → こわばりの活動による変化",
+      "onset_day_range": null
+    },
+    {
+      "from": "D88",
+      "to": "E04",
+      "from_name": "アルコール離脱症候群",
+      "to_name": "呼吸数",
+      "reason": "離脱時の交感神経亢進により頻呼吸を呈する",
+      "onset_day_range": null
+    },
+    {
+      "from": "D88",
+      "to": "T02",
+      "from_name": "アルコール離脱症候群",
+      "to_name": "発症の速さ",
+      "reason": "飲酒中断後6-48時間で急性発症",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

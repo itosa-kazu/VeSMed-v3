@@ -9841,6 +9841,11 @@
           "normal_under_20": 0.3,
           "tachypnea_20_30": 0.4,
           "severe_over_30": 0.3
+        },
+        "D88": {
+          "normal_under_20": 0.3,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.2
         }
       }
     },
@@ -30168,6 +30173,12 @@
           "acute": 0.0889,
           "subacute": 0.4889,
           "chronic": 0.4
+        },
+        "D88": {
+          "sudden": 0.15,
+          "acute": 0.75,
+          "subacute": 0.08,
+          "chronic": 0.02
         }
       }
     },
