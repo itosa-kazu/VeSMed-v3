@@ -44877,409 +44877,352 @@
     "L103": {
       "description": "γ-GTP。胆道系酵素。正常:男≤55,女≤30 IU/L。PBC/胆管炎/アルコール性で著高",
       "leak": {
-        "not_done": 0.65,
-        "normal": 0.28,
-        "mild_elevated": 0.05,
-        "moderate_elevated": 0.015,
-        "markedly_elevated": 0.005
+        "normal": 0.7999,
+        "mild_elevated": 0.1429,
+        "moderate_elevated": 0.0429,
+        "markedly_elevated": 0.0143
       },
       "parent_effects": {
         "D250": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "mild_elevated": 0.12,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.5
+          "normal": 0.0316,
+          "mild_elevated": 0.1263,
+          "moderate_elevated": 0.3158,
+          "markedly_elevated": 0.5263
         },
         "D25": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.35
+          "normal": 0.0555,
+          "mild_elevated": 0.1667,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.3889
         },
         "D273": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.3
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.3333
         },
         "D231": {
-          "not_done": 0.08,
-          "normal": 0.02,
-          "mild_elevated": 0.1,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.5
+          "normal": 0.0217,
+          "mild_elevated": 0.1087,
+          "moderate_elevated": 0.3261,
+          "markedly_elevated": 0.5435
         },
         "D230": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.4
+          "normal": 0.0556,
+          "mild_elevated": 0.1667,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.4444
         },
         "D287": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.35
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.3889
         },
         "D11": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.1
+          "normal": 0.1177,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1176
         },
         "D80": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.1
+          "normal": 0.1177,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1176
         },
         "D274": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.4,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.05
+          "normal": 0.1875,
+          "mild_elevated": 0.5,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.0625
         },
         "D170": {
-          "not_done": 0.05,
-          "normal": 0.02,
-          "mild_elevated": 0.13,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.5
+          "normal": 0.0211,
+          "mild_elevated": 0.1368,
+          "moderate_elevated": 0.3158,
+          "markedly_elevated": 0.5263
         },
         "D179": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.25
+          "normal": 0.0555,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.2778
         },
         "D29": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D362": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D169": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.15
+          "normal": 0.1176,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1765
         },
         "D100": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.15
+          "normal": 0.1176,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1765
         },
         "D108": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.15
+          "normal": 0.1176,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1765
         },
         "D151": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.25
+          "normal": 0.1111,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2778
         },
         "D251": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D363": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.15
+          "normal": 0.1176,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1765
         },
         "D94": {
-          "not_done": 0.05,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.45
+          "normal": 0.0526,
+          "mild_elevated": 0.1579,
+          "moderate_elevated": 0.3158,
+          "markedly_elevated": 0.4737
         },
         "D229": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.35
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.3889
         },
         "D70": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.25
+          "normal": 0.1111,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2778
         },
         "D344": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.1
+          "normal": 0.1177,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1176
         },
         "D86": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.1
+          "normal": 0.1875,
+          "mild_elevated": 0.4375,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.125
         },
         "D249": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.1
+          "normal": 0.1875,
+          "mild_elevated": 0.4375,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.125
         }
       }
     },
     "L104": {
       "description": "ALP(アルカリフォスファターゼ)。胆道系+骨。正常40-130 IU/L。胆汁うっ滞/骨転移で著高",
       "leak": {
-        "not_done": 0.65,
-        "normal": 0.28,
-        "mild_elevated": 0.05,
-        "moderate_elevated": 0.015,
-        "markedly_elevated": 0.005
+        "normal": 0.7999,
+        "mild_elevated": 0.1429,
+        "moderate_elevated": 0.0429,
+        "markedly_elevated": 0.0143
       },
       "parent_effects": {
         "D250": {
-          "not_done": 0.05,
-          "normal": 0.02,
-          "mild_elevated": 0.08,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.55
+          "normal": 0.0211,
+          "mild_elevated": 0.0842,
+          "moderate_elevated": 0.3158,
+          "markedly_elevated": 0.5789
         },
         "D25": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.35
+          "normal": 0.0555,
+          "mild_elevated": 0.1667,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.3889
         },
         "D273": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.3
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.3333
         },
         "D231": {
-          "not_done": 0.08,
-          "normal": 0.02,
-          "mild_elevated": 0.1,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.5
+          "normal": 0.0217,
+          "mild_elevated": 0.1087,
+          "moderate_elevated": 0.3261,
+          "markedly_elevated": 0.5435
         },
         "D230": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.4
+          "normal": 0.0556,
+          "mild_elevated": 0.1667,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.4444
         },
         "D287": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.35
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.3889
         },
         "D11": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.1
+          "normal": 0.1177,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1176
         },
         "D80": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.1
+          "normal": 0.1177,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1176
         },
         "D274": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.4,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.05
+          "normal": 0.1875,
+          "mild_elevated": 0.5,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.0625
         },
         "D170": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.35,
-          "markedly_elevated": 0.3
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3889,
+          "markedly_elevated": 0.3333
         },
         "D179": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.25
+          "normal": 0.1111,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2778
         },
         "D29": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D362": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D169": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.1
+          "normal": 0.1765,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1176
         },
         "D100": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.1
+          "normal": 0.1765,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1176
         },
         "D108": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.1
+          "normal": 0.1765,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1176
         },
         "D151": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D251": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.2
+          "normal": 0.1112,
+          "mild_elevated": 0.3333,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2222
         },
         "D363": {
-          "not_done": 0.15,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.1
+          "normal": 0.1765,
+          "mild_elevated": 0.4118,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.1176
         },
         "D94": {
-          "not_done": 0.05,
-          "normal": 0.05,
-          "mild_elevated": 0.1,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.5
+          "normal": 0.0526,
+          "mild_elevated": 0.1053,
+          "moderate_elevated": 0.3158,
+          "markedly_elevated": 0.5263
         },
         "D229": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.35
+          "normal": 0.0556,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.3889
         },
         "D70": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.25
+          "normal": 0.1111,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2778
         },
         "D289": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "mild_elevated": 0.15,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.4
+          "normal": 0.0556,
+          "mild_elevated": 0.1667,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.4444
         },
         "D354": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.25,
-          "markedly_elevated": 0.3
+          "normal": 0.1177,
+          "mild_elevated": 0.2353,
+          "moderate_elevated": 0.2941,
+          "markedly_elevated": 0.3529
         },
         "D359": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.2,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.3
+          "normal": 0.1112,
+          "mild_elevated": 0.2222,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.3333
         },
         "D344": {
-          "not_done": 0.15,
-          "normal": 0.1,
-          "mild_elevated": 0.3,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.15
+          "normal": 0.1177,
+          "mild_elevated": 0.3529,
+          "moderate_elevated": 0.3529,
+          "markedly_elevated": 0.1765
         },
         "D171": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_elevated": 0.25,
-          "moderate_elevated": 0.3,
-          "markedly_elevated": 0.25
+          "normal": 0.1111,
+          "mild_elevated": 0.2778,
+          "moderate_elevated": 0.3333,
+          "markedly_elevated": 0.2778
         },
         "D194": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.1
+          "normal": 0.1875,
+          "mild_elevated": 0.4375,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.125
         },
         "D86": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.1
+          "normal": 0.1875,
+          "mild_elevated": 0.4375,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.125
         },
         "D249": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_elevated": 0.35,
-          "moderate_elevated": 0.2,
-          "markedly_elevated": 0.1
+          "normal": 0.1875,
+          "mild_elevated": 0.4375,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.125
         }
       }
     }

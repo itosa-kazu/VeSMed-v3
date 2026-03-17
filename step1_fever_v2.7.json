@@ -10726,7 +10726,6 @@
       "name_ja": "γ-GTP",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mild_elevated",
         "moderate_elevated",
@@ -10740,7 +10739,6 @@
       "name_ja": "ALP(アルカリフォスファターゼ)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mild_elevated",
         "moderate_elevated",
