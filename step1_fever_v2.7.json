@@ -1057,13 +1057,14 @@
     },
     {
       "id": "R10",
-      "name": "prosthetic_valve_or_device",
-      "name_ja": "人工弁・人工関節等の体内デバイス",
+      "name": "other_implanted_device",
+      "name_ja": "その他の体内デバイス(ステント/人工血管/シャント等)",
       "category": "risk_factor",
       "states": [
         "no",
         "yes"
-      ]
+      ],
+      "note": "人工弁(R28)/人工関節(R42)/ペースメーカー(R56)以外の体内デバイス。冠動脈ステント/人工血管/VPシャント/透析シャント"
     },
     {
       "id": "R11",
@@ -1178,8 +1179,7 @@
       "category": "symptom",
       "states": [
         "absent",
-        "dry",
-        "productive"
+        "present"
       ],
       "note": "乾性=痰なし、湿性=痰あり"
     },
@@ -1195,14 +1195,14 @@
     },
     {
       "id": "S03",
-      "name": "nasal_symptoms",
-      "name_ja": "鼻汁・鼻閉",
+      "name": "rhinorrhea",
+      "name_ja": "鼻汁",
       "category": "symptom",
       "states": [
         "absent",
-        "clear_rhinorrhea",
-        "purulent_rhinorrhea"
-      ]
+        "present"
+      ],
+      "note": "鼻水。鼻閉(S154)とは独立。性状はS85 satellite(clear/purulent)"
     },
     {
       "id": "S04",
@@ -1255,7 +1255,8 @@
       "states": [
         "absent",
         "present"
-      ]
+      ],
+      "note": "mono=化膿性関節炎/痛風/偽痛風, oligo=反応性関節炎/脊椎関節炎/ベーチェット, poly対称=RA/SLE/ウイルス性, poly非対称=乾癬性関節炎/リウマチ熱, 移動性=淋菌性関節炎/リウマチ熱"
     },
     {
       "id": "S09",
@@ -1294,24 +1295,20 @@
       "category": "symptom",
       "states": [
         "absent",
-        "epigastric",
-        "RUQ",
-        "RLQ",
-        "LLQ",
-        "suprapubic",
-        "diffuse"
+        "present"
       ],
       "note": "互斥：最も目立つ部位を1つ選択。LLQ=憩室炎、RLQ=虫垂炎、RUQ=胆嚢/胆管炎、suprapubic=膀胱炎/PID"
     },
     {
       "id": "S13",
-      "name": "nausea_vomiting",
-      "name_ja": "悪心・嘔吐",
+      "name": "nausea",
+      "name_ja": "悪心",
       "category": "symptom",
       "states": [
         "absent",
         "present"
-      ]
+      ],
+      "note": "旧S13(悪心・嘔吐)から分離。嘔吐はS66へ。"
     },
     {
       "id": "S14",
@@ -1320,19 +1317,19 @@
       "category": "symptom",
       "states": [
         "absent",
-        "watery",
-        "bloody"
+        "present"
       ]
     },
     {
       "id": "S15",
       "name": "flank_pain",
-      "name_ja": "側腹部痛・腰背部痛",
+      "name_ja": "側腹部痛",
       "category": "symptom",
       "states": [
         "absent",
         "present"
-      ]
+      ],
+      "note": "腎結石/腎盂腎炎/腎梗塞/AAA/後腹膜病変。腰痛(S111)とは区別: 側腹部=腎/尿管由来が多い"
     },
     {
       "id": "S16",
@@ -1361,20 +1358,19 @@
       "category": "symptom",
       "states": [
         "absent",
-        "localized_pain_redness",
-        "rash_widespread"
+        "present"
       ]
     },
     {
       "id": "S19",
-      "name": "taste_smell_disorder",
-      "name_ja": "味覚・嗅覚障害",
+      "name": "taste_disorder",
+      "name_ja": "味覚障害",
       "category": "symptom",
       "states": [
         "absent",
         "present"
       ],
-      "note": "COVID-19鑑別に重要"
+      "note": "亜鉛欠乏/薬剤性/口腔内感染/頭部外傷/放射線治療後。嗅覚障害(S163)とは独立"
     },
     {
       "id": "S20",
@@ -1394,10 +1390,7 @@
       "category": "symptom",
       "states": [
         "absent",
-        "burning",
-        "sharp",
-        "pressure",
-        "tearing"
+        "present"
       ],
       "note": "胸痛の性質(Quality)。burning=GERD, sharp=胸膜性/心膜炎, pressure=ACS, tearing=解離"
     },
@@ -1420,9 +1413,12 @@
       "name_ja": "発症の速さ",
       "category": "temporal",
       "states": [
-        "sudden_hours",
-        "gradual_days"
-      ]
+        "sudden",
+        "acute",
+        "subacute",
+        "chronic"
+      ],
+      "note": "発症様式: sudden(秒~分), acute(時間~日), subacute(日~週), chronic(週~月)"
     },
     {
       "id": "T03",
@@ -1442,13 +1438,14 @@
       "name_ja": "体温",
       "category": "sign",
       "states": [
+        "hypothermia_under_35",
         "under_37.5",
         "37.5_38.0",
         "38.0_39.0",
         "39.0_40.0",
         "over_40.0"
       ],
-      "note": "経過中の最高体温を入力（来院時に限らない）"
+      "note": "経過中の最高体温を入力（来院時に限らない） hypothermia(<35℃)=敗血症重症/甲状腺機能低下/低血糖/低体温症/環境曝露"
     },
     {
       "id": "E02",
@@ -1586,9 +1583,9 @@
       "category": "sign",
       "states": [
         "absent",
-        "cervical",
-        "generalized"
-      ]
+        "present"
+      ],
+      "note": "supraclavicular=悪性red flag(Virchow:左=腹部原発,右=肺/縦隔), mediastinal=サルコイドーシス/リンパ腫/結核(BHL), axillary=乳癌/猫ひっかき病, inguinal=STI/下肢感染, cervical=咽頭炎/EBV/リンパ腫, generalized=全身性(HIV/SLE/リンパ腫)"
     },
     {
       "id": "E14",
@@ -1689,6 +1686,7 @@
       "name_ja": "胸部X線",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "lobar_infiltrate",
         "bilateral_infiltrate",
@@ -1704,6 +1702,7 @@
       "name_ja": "尿検査",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "pyuria_bacteriuria"
       ]
@@ -1714,6 +1713,7 @@
       "name_ja": "迅速インフルエンザ検査",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive_A",
         "positive_B"
@@ -1725,6 +1725,7 @@
       "name_ja": "迅速溶連菌検査",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -1735,6 +1736,7 @@
       "name_ja": "COVID抗原検査",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -2693,13 +2695,16 @@
     },
     {
       "id": "R25",
-      "name": "HIV_positive",
-      "name_ja": "HIV陽性/AIDS",
+      "name": "hiv_status",
+      "name_ja": "HIV感染状態",
       "category": "risk_factor",
       "states": [
-        "no",
-        "yes"
-      ]
+        "negative",
+        "hiv_positive_controlled",
+        "hiv_positive_uncontrolled",
+        "aids"
+      ],
+      "note": "controlled=ART中でウイルス抑制, uncontrolled=未治療/治療失敗, AIDS=CD4<200。日和見感染リスクが段階的に異なる"
     },
     {
       "id": "R26",
@@ -2840,8 +2845,7 @@
       "category": "symptom",
       "states": [
         "absent",
-        "monoarticular",
-        "polyarticular"
+        "present"
       ]
     },
     {
@@ -2881,9 +2885,9 @@
       "category": "symptom",
       "states": [
         "absent",
-        "under_30min",
-        "over_30min"
-      ]
+        "present"
+      ],
+      "note": "朝の関節こわばり。炎症性関節疾患の指標。duration/activity responseはsatellite(S131,S132)で記録"
     },
     {
       "id": "S28",
@@ -2917,13 +2921,14 @@
     },
     {
       "id": "S31",
-      "name": "dry_eyes_mouth",
-      "name_ja": "乾燥症状（口腔/眼）",
+      "name": "dry_mouth",
+      "name_ja": "口腔乾燥",
       "category": "symptom",
       "states": [
         "absent",
         "present"
-      ]
+      ],
+      "note": "シェーグレン/薬剤性(抗コリン)/放射線/脱水/糖尿病。眼乾燥(S164)とは独立"
     },
     {
       "id": "S32",
@@ -2988,12 +2993,13 @@
     {
       "id": "S38",
       "name": "scrotal_swelling",
-      "name_ja": "陰嚢腫脹・疼痛",
+      "name_ja": "陰嚢腫脹",
       "category": "symptom",
       "states": [
         "absent",
         "present"
-      ]
+      ],
+      "note": "水瘤/精索静脈瘤/精巣腫瘍(無痛性!)/鼠径ヘルニア。疼痛(S169)の有無で鑑別が変わる"
     },
     {
       "id": "S39",
@@ -3032,8 +3038,7 @@
       "category": "sign",
       "states": [
         "absent",
-        "monoarticular",
-        "polyarticular"
+        "present"
       ]
     },
     {
@@ -3063,8 +3068,7 @@
       "category": "sign",
       "states": [
         "absent",
-        "unilateral",
-        "bilateral"
+        "present"
       ]
     },
     {
@@ -3176,6 +3180,7 @@
       "name_ja": "抗核抗体",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -3186,6 +3191,7 @@
       "name_ja": "ANCA",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "c_ANCA",
         "p_ANCA"
@@ -3197,6 +3203,7 @@
       "name_ja": "D-dimer",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ]
@@ -3227,6 +3234,7 @@
       "name_ja": "尿酸値",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ]
@@ -3237,6 +3245,7 @@
       "name_ja": "ACE(アンギオテンシン変換酵素)",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ]
@@ -3247,6 +3256,7 @@
       "name_ja": "AFP(αフェトプロテイン)",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ]
@@ -3257,6 +3267,7 @@
       "name_ja": "ガラクトマンナン抗原",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -3267,6 +3278,7 @@
       "name_ja": "β-Dグルカン",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -3311,6 +3323,7 @@
       "name_ja": "腹部CT",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "abscess",
         "mass",
@@ -3323,6 +3336,7 @@
       "name_ja": "甲状腺機能検査",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "hyperthyroid",
         "hypothyroid"
@@ -3334,6 +3348,7 @@
       "name_ja": "HIV検査",
       "category": "lab",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ]
@@ -3341,14 +3356,14 @@
     {
       "id": "L34",
       "name": "stool_culture",
-      "name_ja": "便培養/CDトキシン",
+      "name_ja": "便培養",
       "category": "lab",
       "states": [
         "not_done",
         "normal",
-        "pathogen_detected",
-        "CD_positive"
-      ]
+        "pathogen_detected"
+      ],
+      "note": "Salmonella/Campylobacter/Shigella/EHEC等。CDトキシンはL99で別検査"
     },
     {
       "id": "L35",
@@ -3356,6 +3371,7 @@
       "name_ja": "胸部CT詳細所見",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "consolidation",
         "GGO",
@@ -3565,6 +3581,7 @@
       "name": "IgG4",
       "name_ja": "血清IgG4",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ],
@@ -3602,13 +3619,16 @@
     },
     {
       "id": "R40",
-      "name": "malignancy_known",
-      "name_ja": "悪性腫瘍の既往/治療中",
+      "name": "malignancy_status",
+      "name_ja": "悪性腫瘍の状態",
       "states": [
         "no",
-        "yes"
+        "history_remission",
+        "active_on_treatment",
+        "active_untreated"
       ],
-      "category": "risk_factor"
+      "category": "risk_factor",
+      "note": "既往寛解=再発リスク, 治療中=免疫抑制/腫瘍崩壊リスク, 未治療活動性=paraneoplastic/圧迫/浸潤"
     },
     {
       "id": "D96",
@@ -3713,6 +3733,7 @@
       "name": "RPR_TPHA",
       "name_ja": "梅毒血清検査(RPR/TPHA)",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ],
@@ -3723,6 +3744,7 @@
       "name": "hepatitis_serology",
       "name_ja": "肝炎ウイルス血清検査",
       "states": [
+        "not_done",
         "negative",
         "HAV_IgM",
         "HBV",
@@ -3735,6 +3757,7 @@
       "name": "legionella_urinary_antigen",
       "name_ja": "レジオネラ尿中抗原",
       "states": [
+        "not_done",
         "negative",
         "positive"
       ],
@@ -3745,6 +3768,7 @@
       "name": "IL6_sIL2R",
       "name_ja": "IL-6/sIL-2R",
       "states": [
+        "not_done",
         "normal",
         "elevated"
       ],
@@ -3758,7 +3782,8 @@
         "absent",
         "present"
       ],
-      "category": "sign"
+      "category": "sign",
+      "note": "脈拍左右差=大動脈解離/鎖骨下動脈狭窄/大動脈縮窄, 血管雑音=頸動脈狭窄/腎動脈狭窄/AVM。両方とも血管診察所見"
     },
     {
       "id": "S43",
@@ -3786,20 +3811,20 @@
       "name_ja": "眼症状（ぶどう膜炎/結膜炎）",
       "states": [
         "absent",
-        "conjunctivitis",
-        "uveitis"
+        "present"
       ],
       "category": "sign"
     },
     {
       "id": "S44",
-      "name": "bleeding_tendency",
-      "name_ja": "出血傾向（紫斑/歯肉出血/鼻出血）",
+      "name": "mucosal_bleeding",
+      "name_ja": "粘膜出血(歯肉出血等)",
       "states": [
         "absent",
         "present"
       ],
-      "category": "symptom"
+      "category": "symptom",
+      "note": "歯肉出血/口腔内出血/消化管出血前駆。S126(鼻出血), E12(紫斑/点状出血)とは独立。血小板減少/DIC/凝固障害/VitK欠乏/肝不全"
     },
     {
       "id": "S45",
@@ -3874,6 +3899,7 @@
       "name": "brain_MRI",
       "name_ja": "頭部MRI",
       "states": [
+        "not_done",
         "normal",
         "temporal_lobe_lesion",
         "diffuse_abnormal",
@@ -3985,7 +4011,6 @@
       "name_ja": "咳嗽の期間",
       "category": "symptom",
       "states": [
-        "absent",
         "acute_under_3w",
         "subacute_3w_8w",
         "chronic_over_8w"
@@ -4155,6 +4180,7 @@
       "name_ja": "血清総蛋白(TP)",
       "category": "lab",
       "states": [
+        "not_done",
         "normal",
         "mildly_elevated",
         "very_high"
@@ -4252,8 +4278,7 @@
       "category": "sign",
       "states": [
         "absent",
-        "unilateral",
-        "bilateral"
+        "present"
       ],
       "note": "片側: DVT。両側: 心不全/腎不全/肝硬変。"
     },
@@ -4270,14 +4295,14 @@
     },
     {
       "id": "R44",
-      "name": "cardiac_history",
-      "name_ja": "心疾患既往(心不全/虚血性心疾患)",
+      "name": "history_heart_failure",
+      "name_ja": "心不全の既往",
       "category": "risk_factor",
       "states": [
         "no",
         "yes"
       ],
-      "note": "心不全/虚血性心疾患の既往。心不全増悪のリスク"
+      "note": "うっ血性心不全の既往。容量負荷/肺うっ血/浮腫リスク。虚血性心疾患(R63)とは独立"
     },
     {
       "id": "R45",
@@ -4537,7 +4562,6 @@
       "name_ja": "胸痛の誘発因子",
       "category": "symptom",
       "states": [
-        "not_applicable",
         "none",
         "exertion",
         "breathing",
@@ -4552,7 +4576,6 @@
       "name_ja": "胸痛の放散",
       "category": "symptom",
       "states": [
-        "not_applicable",
         "none",
         "left_arm_jaw",
         "back"
@@ -4614,22 +4637,20 @@
       "category": "symptom",
       "states": [
         "absent",
-        "unilateral_weakness",
-        "bilateral"
+        "present"
       ],
       "note": "片側運動麻痺/感覚障害。脳梗塞/脳出血に特異的"
     },
     {
       "id": "S53",
-      "name": "speech_disturbance",
-      "name_ja": "構音障害/失語",
+      "name": "speech_language_disorder",
+      "name_ja": "言語障害",
       "category": "symptom",
       "states": [
         "absent",
-        "dysarthria",
-        "aphasia"
+        "present"
       ],
-      "note": "構音障害(小脳/脳幹), 失語(左大脳半球)。脳卒中に特異的"
+      "note": "構音障害/失語を含む。種類はS94 satelliteで記録。脳梗塞/脳出血/脳腫瘍/ALS/MS"
     },
     {
       "id": "D138",
@@ -7230,9 +7251,7 @@
       "category": "symptom",
       "states": [
         "absent",
-        "hemianopia",
-        "central_scotoma",
-        "visual_loss"
+        "present"
       ],
       "note": "両耳側半盲(下垂体腫瘍)/中心暗点(視神経炎)/視力消失(網膜剥離/CRAO)"
     },
@@ -7294,7 +7313,7 @@
         "normal",
         "elevated"
       ],
-      "note": "PSA:前立腺癌, AFP:肝癌/精巣腫瘍, CEA:大腸癌/胆道癌, CA19-9:膵胆道癌"
+      "note": "PSA(前立腺癌)/AFP(肝癌)/CEA(大腸癌)/CA19-9(膵癌)/CA125(卵巣癌)等。スクリーニングおよび治療効果判定"
     },
     {
       "id": "E42",
@@ -7347,14 +7366,14 @@
     },
     {
       "id": "S57",
-      "name": "amenorrhea_agalactia",
-      "name_ja": "無月経/乳汁分泌不全",
+      "name": "amenorrhea",
+      "name_ja": "無月経",
       "category": "symptom",
       "states": [
         "absent",
         "present"
       ],
-      "note": "Sheehan症候群: 産後乳汁分泌不全+無月経が特徴的初発症状"
+      "note": "原発性/続発性。PCOS/視床下部性/高プロラクチン/早発卵巣不全/Sheehan/甲状腺/妊娠"
     },
     {
       "id": "L63",
@@ -7428,28 +7447,25 @@
     },
     {
       "id": "S58",
-      "name": "floaters_photopsia",
-      "name_ja": "飛蚊症/光視症",
+      "name": "floaters",
+      "name_ja": "飛蚊症",
       "category": "symptom",
       "states": [
         "absent",
         "present"
       ],
-      "note": "網膜剥離の前駆症状(飛蚊症→光視症→視野欠損)。硝子体出血/後部硝子体剥離でも"
+      "note": "硝子体混濁/後部硝子体剥離/網膜裂孔(急性増加=emergency)/ぶどう膜炎"
     },
     {
       "id": "S59",
-      "name": "vertigo_pattern",
-      "name_ja": "めまいの性状",
+      "name": "vertigo_dizziness",
+      "name_ja": "めまい",
       "category": "symptom",
       "states": [
         "absent",
-        "positional_brief",
-        "continuous_rotatory",
-        "episodic_with_hearing",
-        "non_rotatory_disequilibrium"
+        "present"
       ],
-      "note": "positional_brief: BPPV(頭位変換で誘発, <1分)。continuous_rotatory: 前庭神経炎(持続性回転性, 数日)。episodic_with_hearing: メニエール(反復性回転性+聴力低下, 20分~数時間)。non_rotatory: ふらつき/不安定感(中枢性/薬剤性/起立性低血圧)"
+      "note": "回転性/非回転性を問わず広義のめまい。性状はS92 satelliteで記録"
     },
     {
       "id": "S60",
@@ -7457,7 +7473,6 @@
       "name_ja": "頭痛のパターン",
       "category": "symptom",
       "states": [
-        "absent",
         "bilateral_pressing",
         "unilateral_pulsating",
         "periorbital_stabbing",
@@ -7466,6 +7481,2967 @@
         "electric_triggered"
       ],
       "note": "bilateral_pressing: 緊張型頭痛。unilateral_pulsating: 片頭痛。periorbital_stabbing: 群発頭痛(激烈+自律神経症状)。thunderclap: SAH/CVST(突発worst-ever)。progressive_with_neuro: 脳腫瘍(進行性+局所神経症状)。electric_triggered: 三叉神経痛(電撃様+トリガー誘発)"
+    },
+    {
+      "id": "S61",
+      "name": "abdominal_pain_quality",
+      "name_ja": "腹痛の性状",
+      "category": "symptom",
+      "states": [
+        "colicky",
+        "burning_gnawing",
+        "sharp_stabbing",
+        "dull_aching",
+        "tearing"
+      ],
+      "note": "S12 satellite(Q): 疝痛=管腔臓器攣縮, 灼烧=胃酸, 鋭痛=腹膜刺激/実質臓器, 鈍痛=腫瘍/慢性, 引裂=血管",
+      "severity": "medium"
+    },
+    {
+      "id": "S62",
+      "name": "abdominal_pain_provocation",
+      "name_ja": "腹痛の増悪/緩和因子",
+      "category": "symptom",
+      "states": [
+        "none_identified",
+        "postprandial",
+        "relieved_by_food",
+        "worse_with_movement",
+        "relieved_by_leaning_forward"
+      ],
+      "note": "S12 satellite(P): 食後増悪=腸間膜虚血/胆石, 食事改善=十二指腸潰瘍, 体動増悪=腹膜炎, 前傾改善=膵炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S63",
+      "name": "abdominal_pain_radiation",
+      "name_ja": "腹痛の放散",
+      "category": "symptom",
+      "states": [
+        "none",
+        "back",
+        "right_shoulder",
+        "left_shoulder",
+        "groin",
+        "chest"
+      ],
+      "note": "S12 satellite(R): 背部=膵/AAA/腎胆, 右肩=胆嚢(C3-5横隔膜), 左肩=脾(Kehr), 鼠径=尿管結石",
+      "severity": "medium"
+    },
+    {
+      "id": "S64",
+      "name": "abdominal_pain_severity",
+      "name_ja": "腹痛の程度",
+      "category": "symptom",
+      "states": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "note": "S12 satellite(S): 重症度は疾患重症度と相関. 胆道疝痛/腸間膜虚血=severe, 胃腸炎=mild-moderate",
+      "severity": "medium"
+    },
+    {
+      "id": "S65",
+      "name": "abdominal_pain_temporal",
+      "name_ja": "腹痛の時間パターン",
+      "category": "symptom",
+      "states": [
+        "constant",
+        "intermittent_colicky",
+        "progressive",
+        "migratory"
+      ],
+      "note": "S12 satellite(T): 持続=腹膜炎/膵炎, 間欠=結石/腸閉塞, 漸増=虫垂炎/腫瘍, 移動=虫垂炎(臍→RLQ)",
+      "severity": "medium"
+    },
+    {
+      "id": "S66",
+      "name": "vomiting",
+      "name_ja": "嘔吐",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "旧S13から分離。悪心なしの嘔吐（噴射性など）も表現可能。",
+      "severity": "medium"
+    },
+    {
+      "id": "S67",
+      "name": "vomiting_quality",
+      "name_ja": "嘔吐の性状",
+      "category": "symptom",
+      "states": [
+        "bilious",
+        "bloody",
+        "feculent",
+        "projectile",
+        "food_content"
+      ],
+      "note": "S66 satellite(Q): 胆汁性=上位腸閉塞, 吐血=潰瘍/静脈瘤, 糞臭=下位腸閉塞, 噴射性=頭蓋内圧亢進, 食物=胃排出障害",
+      "severity": "medium"
+    },
+    {
+      "id": "S68",
+      "name": "headache_provocation",
+      "name_ja": "頭痛の増悪因子",
+      "category": "symptom",
+      "states": [
+        "valsalva_cough",
+        "exertional",
+        "positional_upright",
+        "positional_supine",
+        "none_identified"
+      ],
+      "note": "S05 satellite(P): Valsalva=後頭蓋窩病変/ICP亢進, 労作=SAH, 立位増悪=低髄液圧, 臥位増悪=IIH/脳腫瘍",
+      "severity": "medium"
+    },
+    {
+      "id": "S69",
+      "name": "headache_temporal",
+      "name_ja": "頭痛の時間パターン",
+      "category": "symptom",
+      "states": [
+        "single_acute",
+        "episodic_recurrent",
+        "chronic_progressive",
+        "chronic_stable"
+      ],
+      "note": "S05 satellite(T): 初発単回=SAH/髄膜炎/CVST(red flag), 反復性=片頭痛/群発, 慢性進行=脳腫瘍/IIH/慢性硬膜下, 慢性非進行=緊張型/薬物乱用",
+      "severity": "medium"
+    },
+    {
+      "id": "S70",
+      "name": "photophonophobia",
+      "name_ja": "光音過敏",
+      "category": "symptom",
+      "states": [
+        "photophobia_only",
+        "phonophobia_only",
+        "both",
+        "neither"
+      ],
+      "note": "S05 satellite: 両方=片頭痛診断基準, なし=緊張型, 羞明のみ=髄膜炎でも出現。S30(皮膚光過敏/SLE)とは別概念",
+      "severity": "medium"
+    },
+    {
+      "id": "S71",
+      "name": "headache_autonomic",
+      "name_ja": "頭痛随伴の自律神経症状",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "S05 satellite: 同側性流涙/鼻汁/結膜充血/縮瞳=群発頭痛/SUNCT/発作性片側頭痛(TAC診断基準), 両側性=片頭痛の一部(軽度)",
+      "severity": "medium"
+    },
+    {
+      "id": "S72",
+      "name": "constipation",
+      "name_ja": "便秘",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "排便回数減少/硬便。甲状腺機能低下, 高Ca血症, オピオイド, IBS等。腸閉塞の初期症状でもある",
+      "severity": "low"
+    },
+    {
+      "id": "S73",
+      "name": "obstipation",
+      "name_ja": "排便停止",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "完全に便が出ない。腸閉塞(部分的or完全)の徴候。便秘(S72)とは質的に異なる",
+      "severity": "medium"
+    },
+    {
+      "id": "S74",
+      "name": "no_flatus",
+      "name_ja": "排ガス停止",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "完全に排ガスなし。完全腸閉塞の最強指標(AAFP/AMBOSS)。部分閉塞では排ガスは残る",
+      "severity": "high"
+    },
+    {
+      "id": "E44",
+      "name": "abdominal_distention",
+      "name_ja": "腹部膨満",
+      "category": "sign",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ],
+      "note": "SBO4大徴候の1つ(疼痛+嘔吐+便秘/排便停止+膨満)。腸閉塞, 腹水, 偽性腸閉塞, 腸管麻痺の鑑別",
+      "severity": "medium"
+    },
+    {
+      "id": "S75",
+      "name": "rash_distribution",
+      "name_ja": "皮疹の分布",
+      "category": "symptom",
+      "states": [
+        "trunk_centripetal",
+        "extremities_centrifugal",
+        "acral",
+        "mucosal",
+        "generalized"
+      ],
+      "note": "E12 satellite: centripetal(体幹→末梢)=水痘/チフス, centrifugal(末梢→体幹)=RMSF/EM, acral=HFMD/梅毒二期, mucosal=SJS-TEN/川崎/ベーチェット, generalized=敗血症/薬疹",
+      "severity": "medium"
+    },
+    {
+      "id": "S76",
+      "name": "sensory_disturbance_pattern",
+      "name_ja": "感覚障害のパターン",
+      "category": "symptom",
+      "states": [
+        "stocking_glove",
+        "ascending",
+        "dermatomal",
+        "hemisensory",
+        "saddle"
+      ],
+      "note": "stocking_glove=末梢神経障害(DM/中毒/栄養欠乏), ascending=GBS, dermatomal=神経根障害/帯状疱疹, hemisensory=脳梗塞/CNS病変, saddle=馬尾症候群",
+      "severity": "medium"
+    },
+    {
+      "id": "S78",
+      "name": "odynophagia",
+      "name_ja": "嚥下痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "S25(嚥下困難)とは別概念。嚥下困難=通過障害、嚥下痛=痛み。嚥下痛は感染性を示唆(食道カンジダ,ウイルス性食道炎,扁桃周囲膿瘍)",
+      "severity": "medium"
+    },
+    {
+      "id": "S79",
+      "name": "otalgia",
+      "name_ja": "耳痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "急性中耳炎, 外耳炎, 乳様突起炎の共通初発症状。referred painとして咽頭・歯・顎関節由来も",
+      "severity": "medium"
+    },
+    {
+      "id": "S80",
+      "name": "otorrhea",
+      "name_ja": "耳漏",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "漿液性=ウイルス性/アレルギー性, 膿性=細菌性中耳炎/外耳炎/乳様突起炎。持続性膿性耳漏(>3w)=乳様突起炎の最も一貫した徴候",
+      "severity": "medium"
+    },
+    {
+      "id": "S81",
+      "name": "dyspnea_quality",
+      "name_ja": "呼吸困難の性状",
+      "category": "symptom",
+      "states": [
+        "stridor",
+        "wheezing",
+        "air_hunger_kussmaul",
+        "paroxysmal_nocturnal"
+      ],
+      "note": "S04 satellite(Q): stridor=上気道閉塞(喉頭蓋炎/クループ/アナフィラキシー), wheezing=下気道(喘息/COPD), air_hunger=代謝性(DKA/アシドーシス), PND=心不全. S49(起座呼吸)は別変数",
+      "severity": "high"
+    },
+    {
+      "id": "S82",
+      "name": "urine_output",
+      "name_ja": "尿量",
+      "category": "symptom",
+      "states": [
+        "normal",
+        "oliguria",
+        "anuria"
+      ],
+      "note": "L67(AKI分類)の臨床側。oliguria(<400mL/日)=腎前性/腎性AKI, anuria(<100mL/日)=完全閉塞/皮質壊死/重症ATN",
+      "severity": "high"
+    },
+    {
+      "id": "S83",
+      "name": "chest_pain_quality",
+      "name_ja": "胸痛の性状",
+      "category": "symptom",
+      "states": [
+        "burning",
+        "sharp",
+        "pressure",
+        "tearing"
+      ],
+      "note": "S21 satellite(Q): burning=GERD/潰瘍, sharp=胸膜炎/気胸/PE, pressure=ACS, tearing=大動脈解離",
+      "severity": "medium"
+    },
+    {
+      "id": "S84",
+      "name": "cough_quality",
+      "name_ja": "咳嗽の性状",
+      "category": "symptom",
+      "states": [
+        "dry",
+        "productive"
+      ],
+      "note": "S01 satellite(Q): dry=ウイルス/間質性肺炎/ACE阻害薬, productive=細菌性肺炎/気管支拡張症/COPD",
+      "severity": "medium"
+    },
+    {
+      "id": "S85",
+      "name": "nasal_discharge_quality",
+      "name_ja": "鼻汁の性状",
+      "category": "symptom",
+      "states": [
+        "clear_rhinorrhea",
+        "purulent_rhinorrhea"
+      ],
+      "note": "S03 satellite(Q): clear=ウイルス性/アレルギー, purulent=細菌性副鼻腔炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S86",
+      "name": "diarrhea_quality",
+      "name_ja": "下痢の性状",
+      "category": "symptom",
+      "states": [
+        "watery",
+        "bloody"
+      ],
+      "note": "S14 satellite(Q): watery=ウイルス性/毒素性/浸透圧性, bloody=細菌性(赤痢/EHEC)/IBD/虚血性腸炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S87",
+      "name": "skin_complaint_type",
+      "name_ja": "皮膚症状の種類",
+      "category": "symptom",
+      "states": [
+        "localized_pain_redness",
+        "rash_widespread"
+      ],
+      "note": "S18 satellite: localized=蜂窩織炎/膿瘍, widespread=薬疹/ウイルス性発疹/自己免疫",
+      "severity": "medium"
+    },
+    {
+      "id": "S88",
+      "name": "otorrhea_quality",
+      "name_ja": "耳漏の性状",
+      "category": "symptom",
+      "states": [
+        "serous",
+        "purulent"
+      ],
+      "note": "S80 satellite(Q): serous=ウイルス性/アレルギー性, purulent=細菌性中耳炎/外耳炎/乳様突起炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S89",
+      "name": "abdominal_pain_region",
+      "name_ja": "腹痛の部位",
+      "category": "symptom",
+      "states": [
+        "epigastric",
+        "RUQ",
+        "RLQ",
+        "LLQ",
+        "suprapubic",
+        "diffuse"
+      ],
+      "note": "S12 satellite(R): epigastric=膵/胃/大動脈, RUQ=胆嚢/肝, RLQ=虫垂/卵巣, LLQ=憩室/S状結腸, suprapubic=膀胱/PID, diffuse=腹膜炎/腸閉塞/SBP",
+      "severity": "medium"
+    },
+    {
+      "id": "E46",
+      "name": "lymph_node_location",
+      "name_ja": "リンパ節の部位",
+      "category": "sign",
+      "states": [
+        "cervical",
+        "axillary",
+        "inguinal",
+        "supraclavicular",
+        "mediastinal",
+        "generalized"
+      ],
+      "note": "E13 satellite: cervical=咽頭炎/EBV, axillary=乳癌/猫ひっかき病, inguinal=STI/下肢, supraclavicular=悪性(Virchow), mediastinal=サルコイド/リンパ腫, generalized=HIV/SLE/リンパ腫",
+      "severity": "medium"
+    },
+    {
+      "id": "S90",
+      "name": "arthralgia_distribution",
+      "name_ja": "関節痛の分布",
+      "category": "symptom",
+      "states": [
+        "monoarticular",
+        "oligoarticular",
+        "polyarticular_symmetric",
+        "polyarticular_asymmetric",
+        "migratory"
+      ],
+      "note": "S08 satellite: mono=化膿性/痛風, oligo=反応性/脊椎関節炎, poly対称=RA/SLE, poly非対称=乾癬性, 移動性=淋菌/リウマチ熱",
+      "severity": "medium"
+    },
+    {
+      "id": "S91",
+      "name": "joint_swelling_distribution",
+      "name_ja": "関節腫脹の分布",
+      "category": "symptom",
+      "states": [
+        "monoarticular",
+        "polyarticular"
+      ],
+      "note": "S23 satellite: mono=化膿性関節炎/痛風/偽痛風, poly=RA/SLE/ウイルス性",
+      "severity": "medium"
+    },
+    {
+      "id": "E47",
+      "name": "joint_inflammation_distribution",
+      "name_ja": "関節炎症の分布",
+      "category": "sign",
+      "states": [
+        "monoarticular",
+        "polyarticular"
+      ],
+      "note": "E21 satellite: mono=化膿性/結晶性, poly=RA/SLE/ウイルス性",
+      "severity": "medium"
+    },
+    {
+      "id": "S92",
+      "name": "vertigo_quality",
+      "name_ja": "めまいの性状",
+      "category": "symptom",
+      "states": [
+        "positional_brief",
+        "continuous_rotatory",
+        "episodic_with_hearing",
+        "non_rotatory_disequilibrium"
+      ],
+      "note": "S59 satellite(Q): positional_brief=BPPV, continuous_rotatory=前庭神経炎/小脳梗塞, episodic_with_hearing=メニエール, non_rotatory=起立性/貧血/薬剤性",
+      "severity": "medium"
+    },
+    {
+      "id": "S93",
+      "name": "focal_neuro_laterality",
+      "name_ja": "局所神経症状の側性",
+      "category": "symptom",
+      "states": [
+        "unilateral_weakness",
+        "bilateral"
+      ],
+      "note": "S52 satellite: unilateral=脳梗塞/脳出血/脳膿瘍(対側), bilateral=脊髄病変/GBS",
+      "severity": "medium"
+    },
+    {
+      "id": "S94",
+      "name": "speech_disturbance_type",
+      "name_ja": "言語障害の種類",
+      "category": "symptom",
+      "states": [
+        "dysarthria",
+        "aphasia"
+      ],
+      "note": "S53 satellite: dysarthria=小脳/脳幹/運動ニューロン, aphasia=左大脳半球(Broca/Wernicke)",
+      "severity": "medium"
+    },
+    {
+      "id": "S95",
+      "name": "visual_field_type",
+      "name_ja": "視野障害の種類",
+      "category": "symptom",
+      "states": [
+        "hemianopia",
+        "central_scotoma",
+        "visual_loss"
+      ],
+      "note": "S54 satellite: hemianopia=後頭葉/視索, central_scotoma=視神経炎/NMOSD, visual_loss=CRAO/側頭動脈炎",
+      "severity": "medium"
+    },
+    {
+      "id": "E48",
+      "name": "eye_finding_type",
+      "name_ja": "眼所見の種類",
+      "category": "sign",
+      "states": [
+        "conjunctivitis",
+        "uveitis"
+      ],
+      "note": "E35 satellite: conjunctivitis=ウイルス性/川崎病/反応性関節炎, uveitis=サルコイド/ベーチェット/AS/JIA",
+      "severity": "medium"
+    },
+    {
+      "id": "E49",
+      "name": "parotid_laterality",
+      "name_ja": "耳下腺腫脹の側性",
+      "category": "sign",
+      "states": [
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "E24 satellite: unilateral=細菌性耳下腺炎/唾石/腫瘍, bilateral=ムンプス/IgG4/シェーグレン",
+      "severity": "medium"
+    },
+    {
+      "id": "E50",
+      "name": "leg_edema_laterality",
+      "name_ja": "下腿浮腫の側性",
+      "category": "sign",
+      "states": [
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "E36 satellite: unilateral=DVT/蜂窩織炎/リンパ浮腫, bilateral=心不全/腎不全/肝硬変/低アルブミン",
+      "severity": "medium"
+    },
+    {
+      "id": "S96",
+      "name": "pruritus",
+      "name_ja": "掻痒感",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "localized",
+        "generalized"
+      ],
+      "note": "限局性=皮膚疾患/局所感染, 全身性=Hodgkinリンパ腫(20-30%に発熱+掻痒)/PBC/真性多血症/慢性腎臓病/薬疹",
+      "severity": "medium"
+    },
+    {
+      "id": "E51",
+      "name": "pulse_temperature_dissociation",
+      "name_ja": "脈拍体温解離(相対的徐脈)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "38.9℃以上で心拍数<100=相対的徐脈。典型的FUO clue: 腸チフス, ブルセラ, レジオネラ, 薬剤熱, 人為熱, リンパ腫, CNS感染",
+      "severity": "high"
+    },
+    {
+      "id": "E52",
+      "name": "bowel_sounds",
+      "name_ja": "腸蠕動音",
+      "category": "sign",
+      "states": [
+        "normal",
+        "hyperactive_high_pitched",
+        "hypoactive",
+        "absent"
+      ],
+      "note": "亢進/金属音=機械的腸閉塞(初期), 減弱=麻痺性イレウス/術後, 消失=汎発性腹膜炎。E09(触診)とは独立した聴診所見",
+      "severity": "medium"
+    },
+    {
+      "id": "E53",
+      "name": "deep_tendon_reflexes",
+      "name_ja": "深部腱反射",
+      "category": "sign",
+      "states": [
+        "normal",
+        "areflexia",
+        "hyporeflexia",
+        "hyperreflexia"
+      ],
+      "note": "消失=GBS(診断基準)/末梢神経障害, 減弱=末梢ニューロパチー, 亢進=上位運動ニューロン障害(脳梗塞/脊髄病変)",
+      "severity": "medium"
+    },
+    {
+      "id": "E54",
+      "name": "dehydration_signs",
+      "name_ja": "脱水徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ],
+      "note": "mild=口腔粘膜乾燥/皮膚ツルゴール低下, severe=眼窩陥凹/CRT延長/意識変容。敗血症/DKA/重症胃腸炎/熱中症の重症度指標",
+      "severity": "medium"
+    },
+    {
+      "id": "E55",
+      "name": "nail_digital_findings",
+      "name_ja": "爪/指の所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "splinter_hemorrhage",
+        "clubbing",
+        "janeway_osler"
+      ],
+      "note": "線状出血=IE(特異度高), ばち指=IE/肺癌/気管支拡張症/慢性膿胸/肝硬変, Janeway/Osler=IEの末梢塞栓徴候",
+      "severity": "medium"
+    },
+    {
+      "id": "E56",
+      "name": "pericardial_friction_rub",
+      "name_ja": "心膜摩擦音",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "心膜炎の特異的聴診所見。ウイルス性/尿毒症性/結核性/SLE/悪性腫瘍性心膜炎。E39(心エコー)と組み合わせ",
+      "severity": "high"
+    },
+    {
+      "id": "E57",
+      "name": "papilledema",
+      "name_ja": "乳頭浮腫(うっ血乳頭)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "頭蓋内圧亢進の徴候。脳膿瘍/CVST/脳腫瘍/IIH/髄膜炎(重症)。頭痛red flagの一つ(AAFP)",
+      "severity": "high"
+    },
+    {
+      "id": "E58",
+      "name": "abdominal_mass",
+      "name_ja": "腹部腫瘤",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "触知可能な腹部腫瘤。膿瘍, 悪性腫瘍(大腸癌/腎癌/リンパ腫), AAA(拍動性), 脾腫(E14とは別: E14は脾のみ)",
+      "severity": "medium"
+    },
+    {
+      "id": "S97",
+      "name": "syncope",
+      "name_ja": "失神",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "一過性の意識消失+自然回復。心原性(不整脈/AS/HCM/PE)/血管迷走神経性/起立性低血圧/頸動脈洞過敏。前失神(S152)とは別",
+      "severity": "medium"
+    },
+    {
+      "id": "S98",
+      "name": "urinary_retention_feeling",
+      "name_ja": "残尿感",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "BPH/膀胱癌/神経因性膀胱/UTI",
+      "severity": "medium"
+    },
+    {
+      "id": "S99",
+      "name": "urinary_incontinence",
+      "name_ja": "尿失禁",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "stress",
+        "urge",
+        "overflow",
+        "functional"
+      ],
+      "note": "stress=骨盤底脆弱, urge=過活動膀胱/UTI, overflow=BPH/神経因性, functional=認知症/ADL低下。馬尾=突然発症",
+      "severity": "medium"
+    },
+    {
+      "id": "S100",
+      "name": "urine_appearance",
+      "name_ja": "尿の色/性状",
+      "category": "symptom",
+      "states": [
+        "normal",
+        "abnormal"
+      ],
+      "note": "正常/異常のみ。詳細はS147 satelliteで記録",
+      "severity": "medium"
+    },
+    {
+      "id": "S101",
+      "name": "dysphagia_type",
+      "name_ja": "嚥下困難の種類",
+      "category": "symptom",
+      "states": [
+        "solids_only",
+        "solids_and_liquids",
+        "liquids_worse"
+      ],
+      "note": "S25 satellite: 固形のみ=機械的閉塞(腫瘍/狭窄), 両方=運動障害(アカラシア/強皮症), 液体優位=アカラシア",
+      "severity": "medium"
+    },
+    {
+      "id": "S102",
+      "name": "heartburn",
+      "name_ja": "胸焼け",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "胸骨後方の灼烧感。GERD/食道炎/嗜酸球性食道炎/機能性胸焼け。逆流(S151)とは独立",
+      "severity": "medium"
+    },
+    {
+      "id": "S103",
+      "name": "tenesmus",
+      "name_ja": "テネスムス(しぶり腹)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "排便後も残便感と排便衝動が持続。直腸炎/IBD(UC)/直腸癌/赤痢/放射線性腸炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S104",
+      "name": "memory_impairment",
+      "name_ja": "記憶障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "新規記憶の形成障害/既存記憶の想起障害。Alzheimer(近時記憶)/Korsakoff(前向性+逆向性)/一過性全健忘(TGA)/脳炎(海馬)",
+      "severity": "medium"
+    },
+    {
+      "id": "S105",
+      "name": "involuntary_movement",
+      "name_ja": "不随意運動",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "安静時振戦=パーキンソン, 動作時振戦=本態性/小脳, 舞踏=ハンチントン/SLE/リウマチ熱, ミオクローヌス=CJD/代謝性, ジストニア=薬剤性/遺伝性",
+      "severity": "medium"
+    },
+    {
+      "id": "S106",
+      "name": "gait_disturbance",
+      "name_ja": "歩行障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "ataxic=小脳/酩酊様, shuffling=パーキンソン, steppage=腓骨神経麻痺/GBS, spastic=脊髄病変, waddling=筋ジストロフィー, antalgic=疼痛回避",
+      "severity": "medium"
+    },
+    {
+      "id": "S107",
+      "name": "diplopia",
+      "name_ja": "複視",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "binocular",
+        "monocular"
+      ],
+      "note": "binocular=動眼/滑車/外転神経麻痺/MG/甲状腺眼症/脳幹病変, monocular=屈折異常/白内障/角膜疾患",
+      "severity": "medium"
+    },
+    {
+      "id": "S108",
+      "name": "ptosis",
+      "name_ja": "眼瞼下垂",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "unilateral=動眼神経麻痺/Horner(縮瞳合併)/MG, bilateral=MG(日内変動・疲労性)/ミトコンドリア病",
+      "severity": "medium"
+    },
+    {
+      "id": "S109",
+      "name": "facial_weakness",
+      "name_ja": "顔面麻痺",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "upper_and_lower",
+        "lower_only"
+      ],
+      "note": "上下=末梢性(Bell/Ramsay Hunt/ライム/サルコイド/中耳炎), 下のみ=中枢性(脳梗塞/脳腫瘍)。額のしわ寄せで鑑別",
+      "severity": "medium"
+    },
+    {
+      "id": "S110",
+      "name": "urinary_retention",
+      "name_ja": "尿閉",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "排尿不能/残尿増加。急性=馬尾症候群(emergency)/脊髄病変/術後/薬剤性(抗コリン), 慢性=BPH/神経因性膀胱。原因は推論で判定",
+      "severity": "medium"
+    },
+    {
+      "id": "S111",
+      "name": "low_back_pain",
+      "name_ja": "腰痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "S22(背部痛)とは別。椎間板ヘルニア/脊柱管狭窄/AA/転移性骨腫瘍/感染性脊椎炎/筋筋膜性",
+      "severity": "medium"
+    },
+    {
+      "id": "S112",
+      "name": "neck_pain",
+      "name_ja": "頸部痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "E06(項部硬直)とは別。頸椎症/椎間板ヘルニア/外傷/頸動脈解離/化膿性脊椎炎/リウマチ性環軸椎亜脱臼",
+      "severity": "medium"
+    },
+    {
+      "id": "S113",
+      "name": "shoulder_pain",
+      "name_ja": "肩痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "腱板損傷/石灰沈着性腱炎/凍結肩/関連痛(横隔膜刺激→Kehr sign/心臓)/頸椎由来放散痛",
+      "severity": "medium"
+    },
+    {
+      "id": "S114",
+      "name": "anxiety",
+      "name_ja": "不安",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "主観的不安感。甲状腺機能亢進/褐色細胞腫/パニック障害/PE/低血糖/離脱症状",
+      "severity": "medium"
+    },
+    {
+      "id": "S115",
+      "name": "depressed_mood",
+      "name_ja": "抑うつ気分",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "甲状腺機能低下/Cushing/膵癌(paraneoplastic)/副腎不全/うつ病/脳卒中後",
+      "severity": "medium"
+    },
+    {
+      "id": "S116",
+      "name": "insomnia",
+      "name_ja": "不眠",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "甲状腺機能亢進/疼痛/うつ/不安/薬剤性/致死性家族性不眠症(FFI)",
+      "severity": "medium"
+    },
+    {
+      "id": "S117",
+      "name": "hallucination",
+      "name_ja": "幻覚",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "感知障害。妄想(S149)とは別。LBD(視)/統合失調症(聴)/せん妄(視)/アルコール離脱(視+触)/脳炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S118",
+      "name": "alopecia",
+      "name_ja": "脱毛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "diffuse=SLE/甲状腺/鉄欠乏/梅毒II期/化学療法, patchy=円形脱毛症/梅毒II期(moth-eaten)/真菌",
+      "severity": "medium"
+    },
+    {
+      "id": "S119",
+      "name": "raynaud_phenomenon",
+      "name_ja": "レイノー現象",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "強皮症/SLE/MCTD/クリオグロブリン血症/多発性筋炎/振動障害。蒼白→紫→紅潮の三相性",
+      "severity": "medium"
+    },
+    {
+      "id": "S120",
+      "name": "weight_gain",
+      "name_ja": "体重増加",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "甲状腺機能低下/Cushing/心不全(浮腫)/ネフローゼ/PCOS/薬剤性(ステロイド/抗精神病薬)",
+      "severity": "medium"
+    },
+    {
+      "id": "S121",
+      "name": "polydipsia",
+      "name_ja": "多飲",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "DM/尿崩症(代償性)/心因性多飲/高Ca血症。多尿(S166)とは独立(心因性多飲→多尿は二次的)",
+      "severity": "medium"
+    },
+    {
+      "id": "S122",
+      "name": "acute_visual_loss",
+      "name_ja": "急性視力低下",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "unilateral=CRAO/CRVO/視神経炎/網膜剥離/急性緑内障/側頭動脈炎, bilateral=両側視神経炎(NMOSD)/皮質盲/中毒(メタノール)",
+      "severity": "medium"
+    },
+    {
+      "id": "S123",
+      "name": "eye_pain",
+      "name_ja": "眼痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "急性緑内障(+散瞳+充血)/前部ぶどう膜炎/視神経炎(眼球運動時痛)/角膜炎/眼窩蜂窩織炎",
+      "severity": "medium"
+    },
+    {
+      "id": "S124",
+      "name": "hearing_loss",
+      "name_ja": "難聴",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "conductive=中耳炎/耳硬化症/鼓膜穿孔, sensorineural=突発性難聴/メニエール/聴神経腫瘍/加齢性/薬剤性(アミノグリコシド)",
+      "severity": "medium"
+    },
+    {
+      "id": "S125",
+      "name": "tinnitus",
+      "name_ja": "耳鳴",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "メニエール(低音)/聴神経腫瘍(片側性)/薬剤性(アミノグリコシド/アスピリン)/加齢性/拍動性(AVM/頸動脈狭窄)",
+      "severity": "medium"
+    },
+    {
+      "id": "S126",
+      "name": "epistaxis",
+      "name_ja": "鼻出血",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "anterior=Kiesselbach部位(乾燥/鼻ほじり), posterior=高血圧/抗凝固薬/血小板減少/HHT/上顎癌",
+      "severity": "medium"
+    },
+    {
+      "id": "S127",
+      "name": "abnormal_vaginal_bleeding",
+      "name_ja": "不正性器出血",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "子宮筋腫/子宮内膜癌/子宮頸癌/異所性妊娠/流産/DUB/凝固障害",
+      "severity": "medium"
+    },
+    {
+      "id": "S128",
+      "name": "vaginal_discharge",
+      "name_ja": "帯下(異常分泌物)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "カンジダ(白色酒粕様)/トリコモナス(黄緑泡沫)/BV(灰白色魚臭)/淋菌・クラミジア(膿性)/子宮頸癌(血性)",
+      "severity": "medium"
+    },
+    {
+      "id": "S129",
+      "name": "breast_pain",
+      "name_ja": "乳房痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "乳腺症/乳腺炎/乳癌(稀に疼痛)/月経前",
+      "severity": "medium"
+    },
+    {
+      "id": "E59",
+      "name": "tympanic_membrane",
+      "name_ja": "鼓膜所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "bulging_erythematous",
+        "perforated",
+        "retracted",
+        "effusion"
+      ],
+      "note": "膨隆充血=急性中耳炎, 穿孔=慢性中耳炎/急性中耳炎合併症, 陥凹=耳管機能不全/癒着性中耳炎, 液貯留=滲出性中耳炎",
+      "severity": "medium"
+    },
+    {
+      "id": "E60",
+      "name": "romberg_sign",
+      "name_ja": "Romberg徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "陽性=後索障害(梅毒/VB12欠乏)/末梢前庭障害/感覚性ニューロパチー。小脳失調は開眼でも不安定(Romberg陰性)",
+      "severity": "medium"
+    },
+    {
+      "id": "E61",
+      "name": "cerebellar_signs",
+      "name_ja": "小脳徴候(指鼻試験/踵膝試験/断綴言語)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "小脳梗塞/出血/膿瘍/腫瘍/多発性硬化症/アルコール性小脳変性/傍腫瘍症候群",
+      "severity": "medium"
+    },
+    {
+      "id": "E62",
+      "name": "nystagmus",
+      "name_ja": "眼振",
+      "category": "sign",
+      "states": [
+        "absent",
+        "horizontal",
+        "vertical",
+        "rotatory"
+      ],
+      "note": "horizontal=末梢前庭(方向固定)/中枢(方向交代), vertical=脳幹/小脳, rotatory=BPPV/末梢前庭",
+      "severity": "medium"
+    },
+    {
+      "id": "E63",
+      "name": "pupil_abnormality",
+      "name_ja": "瞳孔異常",
+      "category": "sign",
+      "states": [
+        "normal",
+        "mydriasis",
+        "miosis",
+        "anisocoria",
+        "RAPD"
+      ],
+      "note": "散瞳=動眼神経麻痺/抗コリン薬/外傷, 縮瞳=Horner/有機リン/オピオイド, 瞳孔不同=脳ヘルニア, RAPD=視神経炎/視神経障害",
+      "severity": "medium"
+    },
+    {
+      "id": "E64",
+      "name": "eye_movement_disorder",
+      "name_ja": "眼球運動障害",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "CN3=動脈瘤/糖尿病/脳ヘルニア, CN6=頭蓋内圧亢進(偽巣症状), INO=MS/脳幹梗塞, gaze_palsy=前頭葉/脳幹",
+      "severity": "medium"
+    },
+    {
+      "id": "L68",
+      "name": "arterial_blood_gas",
+      "name_ja": "血液ガス/乳酸",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "metabolic_acidosis",
+        "metabolic_alkalosis",
+        "respiratory_acidosis",
+        "respiratory_alkalosis",
+        "lactic_acidosis"
+      ],
+      "note": "代謝性アシドーシス=DKA/乳酸アシドーシス/腎不全/中毒, 呼吸性アシドーシス=COPD/神経筋疾患, 乳酸上昇=敗血症/ショック/腸管虚血",
+      "severity": "medium"
+    },
+    {
+      "id": "L69",
+      "name": "PT_INR",
+      "name_ja": "PT/INR",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mildly_prolonged",
+        "very_prolonged"
+      ],
+      "note": "軽度延長=肝障害/ワーファリン, 著明延長=DIC/劇症肝炎/VitK欠乏. APTT延長はヘパリン/血友病",
+      "severity": "medium"
+    },
+    {
+      "id": "L70",
+      "name": "serum_albumin",
+      "name_ja": "血清アルブミン",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mildly_low",
+        "very_low"
+      ],
+      "note": "軽度低下=慢性炎症/栄養不良/肝硬変, 著明低下(<2.0)=ネフローゼ/蛋白漏出性胃腸症/重症肝不全",
+      "severity": "medium"
+    },
+    {
+      "id": "L71",
+      "name": "BUN",
+      "name_ja": "BUN(尿素窒素)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "elevated",
+        "very_high"
+      ],
+      "note": "上昇=腎機能低下/脱水/消化管出血(BUN/Cr比上昇)/高蛋白食/ステロイド",
+      "severity": "medium"
+    },
+    {
+      "id": "L72",
+      "name": "reticulocyte_count",
+      "name_ja": "網状赤血球数",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "low",
+        "normal",
+        "elevated"
+      ],
+      "note": "低値=骨髄抑制(再生不良性貧血/化学療法), 上昇=溶血性貧血/出血後回復/鉄剤投与後",
+      "severity": "medium"
+    },
+    {
+      "id": "L73",
+      "name": "direct_coombs",
+      "name_ja": "直接Coombs試験",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "陽性=自己免疫性溶血性貧血(AIHA)/薬剤性/輸血反応/SLE/CLL",
+      "severity": "medium"
+    },
+    {
+      "id": "L74",
+      "name": "HbA1c",
+      "name_ja": "HbA1c",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "prediabetic",
+        "diabetic"
+      ],
+      "note": "5.7-6.4%=前糖尿病, ≥6.5%=糖尿病。急性血糖変動は反映しない(L54で補完)",
+      "severity": "medium"
+    },
+    {
+      "id": "L75",
+      "name": "complement_C3_C4",
+      "name_ja": "補体(C3/C4)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "low_C3",
+        "low_C4",
+        "low_both"
+      ],
+      "note": "C3低下=SLE腎炎/MPGN/溶血性貧血, C4低下=遺伝性血管浮腫/クリオグロブリン, 両方低下=活動性SLE/肝硬変",
+      "severity": "medium"
+    },
+    {
+      "id": "L76",
+      "name": "anti_CCP",
+      "name_ja": "抗CCP抗体",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "RA特異度95%以上。RF陰性RAでも陽性可能。早期RA診断に有用",
+      "severity": "medium"
+    },
+    {
+      "id": "L77",
+      "name": "anti_dsDNA",
+      "name_ja": "抗dsDNA抗体",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "SLE特異度>95%。活動性と相関。ループス腎炎で特に上昇",
+      "severity": "medium"
+    },
+    {
+      "id": "L78",
+      "name": "urine_protein",
+      "name_ja": "尿蛋白定量",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "mild_proteinuria",
+        "nephrotic_range"
+      ],
+      "note": "軽度=糖尿病性腎症/高血圧性腎硬化, nephrotic(>3.5g/日)=微小変化群/膜性腎症/FSGS/糖尿病性/アミロイド",
+      "severity": "medium"
+    },
+    {
+      "id": "L79",
+      "name": "fecal_occult_blood",
+      "name_ja": "便潜血",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "陽性=大腸癌/消化性潰瘍/IBD/痔核/血管異形成。スクリーニングとしても使用",
+      "severity": "medium"
+    },
+    {
+      "id": "L80",
+      "name": "MRI_spine",
+      "name_ja": "MRI脊椎",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "compression_fracture",
+        "epidural_abscess",
+        "disc_herniation",
+        "tumor",
+        "myelitis"
+      ],
+      "note": "硬膜外膿瘍=emergency(発熱+背部痛+神経症状), 圧迫骨折=骨粗鬆症/転移, 脊髄炎=MS/NMOSD/感染",
+      "severity": "medium"
+    },
+    {
+      "id": "L81",
+      "name": "upper_endoscopy",
+      "name_ja": "上部消化管内視鏡",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "ulcer",
+        "varices",
+        "tumor",
+        "esophagitis",
+        "gastritis"
+      ],
+      "note": "潰瘍=消化性潰瘍(H.pylori/NSAIDs), 静脈瘤=門脈圧亢進, 腫瘍=胃癌/食道癌, 食道炎=GERD/カンジダ/薬剤性",
+      "severity": "medium"
+    },
+    {
+      "id": "L82",
+      "name": "colonoscopy",
+      "name_ja": "下部消化管内視鏡",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "polyp",
+        "tumor",
+        "inflammation",
+        "diverticula",
+        "vascular_malformation"
+      ],
+      "note": "ポリープ=腺腫(前癌)/過形成, 腫瘍=大腸癌, 炎症=IBD/感染性/虚血性, 憩室=憩室症, 血管異形成=消化管出血",
+      "severity": "medium"
+    },
+    {
+      "id": "R49",
+      "name": "post_splenectomy",
+      "name_ja": "脾摘後",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "莢膜菌(肺炎球菌/髄膜炎菌/インフルエンザ菌)による劇症型感染症(OPSI)リスク",
+      "severity": "medium"
+    },
+    {
+      "id": "R50",
+      "name": "on_dialysis",
+      "name_ja": "透析中",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "IE/透析カテーテル感染/腹膜透析関連腹膜炎/アミロイドーシス/心血管イベント",
+      "severity": "medium"
+    },
+    {
+      "id": "R51",
+      "name": "recent_dental_procedure",
+      "name_ja": "最近の歯科処置",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "IE classic risk factor。菌血症→弁膜付着",
+      "severity": "medium"
+    },
+    {
+      "id": "R52",
+      "name": "family_history_cancer",
+      "name_ja": "悪性腫瘍の家族歴",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "BRCA(乳/卵巣)/Lynch(大腸/子宮内膜)/Li-Fraumeni/MEN",
+      "severity": "medium"
+    },
+    {
+      "id": "R53",
+      "name": "family_history_autoimmune",
+      "name_ja": "自己免疫疾患の家族歴",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "SLE/RA/1型DM/甲状腺疾患/IBD/MS は家族集積性あり",
+      "severity": "medium"
+    },
+    {
+      "id": "R54",
+      "name": "obesity",
+      "name_ja": "肥満(BMI≥30)",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "PE/DVT/DM2/OSAS/NAFLD/変形性関節症/胆石/心血管リスク",
+      "severity": "medium"
+    },
+    {
+      "id": "R55",
+      "name": "immobilization",
+      "name_ja": "長期臥床/不動",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "DVT/PE/褥瘡/廃用性筋萎縮/誤嚥性肺炎/UTI",
+      "severity": "medium"
+    },
+    {
+      "id": "R56",
+      "name": "pacemaker_ICD",
+      "name_ja": "ペースメーカー/ICD",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "デバイス感染(CIED感染)。発熱+菌血症+デバイス留置=IE精査必須",
+      "severity": "medium"
+    },
+    {
+      "id": "S130",
+      "name": "back_pain_level",
+      "name_ja": "背部痛の部位",
+      "category": "symptom",
+      "states": [
+        "thoracic",
+        "lumbar",
+        "sacral"
+      ],
+      "note": "S22 satellite: thoracic=大動脈解離/脊椎圧迫骨折/椎体炎, lumbar=椎間板/脊柱管狭窄/AA/腎, sacral=馬尾/仙腸関節炎",
+      "severity": "medium"
+    },
+    {
+      "id": "E65",
+      "name": "caput_medusae",
+      "name_ja": "腹壁静脈怒張",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "門脈圧亢進の特異的徴候。肝硬変/門脈血栓症/Budd-Chiari",
+      "severity": "medium"
+    },
+    {
+      "id": "E66",
+      "name": "trousseau_chvostek",
+      "name_ja": "Trousseau/Chvostek徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "低Ca血症の徴候。副甲状腺機能低下/腎不全/ビタミンD欠乏/膵炎後/アルカローシス",
+      "severity": "medium"
+    },
+    {
+      "id": "E67",
+      "name": "kernig_brudzinski",
+      "name_ja": "Kernig/Brudzinski徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "髄膜刺激徴候。E06(項部硬直)と併用。髄膜炎/SAH/癌性髄膜炎。Kernig=感度5%特度95%, Brudzinski=感度5%特度95%",
+      "severity": "medium"
+    },
+    {
+      "id": "E68",
+      "name": "periorbital_edema",
+      "name_ja": "眼瞼浮腫",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "ネフローゼ症候群(朝方著明)/甲状腺機能低下(粘液水腫)/アレルギー/眼窩蜂窩織炎/SVC症候群",
+      "severity": "medium"
+    },
+    {
+      "id": "L83",
+      "name": "APTT",
+      "name_ja": "APTT",
+      "category": "lab",
+      "states": [
+        "normal",
+        "mildly_prolonged",
+        "very_prolonged"
+      ],
+      "note": "軽度延長=ヘパリン/vWD/ループスAC, 著明延長=血友病A・B/DIC。PT正常+APTT延長=内因系",
+      "severity": "medium"
+    },
+    {
+      "id": "L84",
+      "name": "serum_calcium",
+      "name_ja": "血清Ca",
+      "category": "lab",
+      "states": [
+        "low",
+        "normal",
+        "high",
+        "very_high"
+      ],
+      "note": "高Ca=悪性腫瘍(PTHrP)/原発性副甲状腺亢進/サルコイド/VitD中毒, 低Ca=副甲状腺低下/腎不全/VitD欠乏/膵炎",
+      "severity": "medium"
+    },
+    {
+      "id": "L85",
+      "name": "serum_magnesium",
+      "name_ja": "血清Mg",
+      "category": "lab",
+      "states": [
+        "low",
+        "normal",
+        "high"
+      ],
+      "note": "低Mg=不整脈(TdP)/痙攣/アルコール/利尿薬/PPI長期/下痢, 高Mg=腎不全/制酸剤",
+      "severity": "medium"
+    },
+    {
+      "id": "L86",
+      "name": "serum_phosphate",
+      "name_ja": "血清P",
+      "category": "lab",
+      "states": [
+        "low",
+        "normal",
+        "high"
+      ],
+      "note": "高P=腎不全/腫瘍崩壊症候群/副甲状腺低下, 低P=再摂食症候群/副甲状腺亢進/VitD欠乏/アルコール",
+      "severity": "medium"
+    },
+    {
+      "id": "L87",
+      "name": "bilirubin_fractionation",
+      "name_ja": "ビリルビン分画(直接/間接)",
+      "category": "lab",
+      "states": [
+        "normal",
+        "indirect_dominant",
+        "direct_dominant",
+        "both_elevated"
+      ],
+      "note": "間接優位=溶血/Gilbert/無効造血, 直接優位=閉塞性黄疸/胆汁うっ滞, 両方=肝細胞障害",
+      "severity": "medium"
+    },
+    {
+      "id": "L88",
+      "name": "rheumatoid_factor",
+      "name_ja": "リウマトイド因子(RF)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "RA(感度70%特度80%)/クリオグロブリン/シェーグレン/IE/HCV。非特異的だが高力価はRA示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "L89",
+      "name": "antiphospholipid_antibodies",
+      "name_ja": "抗リン脂質抗体",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "APS診断基準。ループスAC/抗カルジオリピン抗体/抗β2GPI抗体。血栓症+習慣流産",
+      "severity": "medium"
+    },
+    {
+      "id": "L90",
+      "name": "iron_studies",
+      "name_ja": "鉄代謝(Fe/TIBC/フェリチン)",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "iron_deficiency",
+        "chronic_disease",
+        "iron_overload",
+        "normal"
+      ],
+      "note": "鉄欠乏=Fe↓TIBC↑フェリチン↓, 慢性疾患=Fe↓TIBC↓フェリチン↑, 鉄過剰=ヘモクロマトーシス",
+      "severity": "medium"
+    },
+    {
+      "id": "L91",
+      "name": "urine_osmolality",
+      "name_ja": "尿浸透圧",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "dilute",
+        "concentrated",
+        "inappropriately_concentrated"
+      ],
+      "note": "希釈=尿崩症/水中毒, 濃縮=脱水/腎前性AKI, 不適切濃縮=SIADH(低Na+尿浸透圧>100)",
+      "severity": "medium"
+    },
+    {
+      "id": "L92",
+      "name": "serum_osmolality",
+      "name_ja": "血清浸透圧",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "low",
+        "normal",
+        "high",
+        "osmolar_gap_elevated"
+      ],
+      "note": "低値=SIADH/水中毒, 高値=DKA/高浸透圧状態/Na過剰, 浸透圧gap上昇=メタノール/エチレングリコール中毒",
+      "severity": "medium"
+    },
+    {
+      "id": "R57",
+      "name": "pregnancy_trimester",
+      "name_ja": "妊娠週数(trimester)",
+      "category": "risk",
+      "states": [
+        "not_pregnant",
+        "first_trimester",
+        "second_trimester",
+        "third_trimester",
+        "postpartum"
+      ],
+      "note": "R15(妊娠yes/no)のsatellite。1st=異所性妊娠/つわり, 2nd=妊娠糖尿病, 3rd=子癇前症/HELLP/常位胎盤早期剥離, 産褥=子宮内膜炎/DVT",
+      "severity": "medium"
+    },
+    {
+      "id": "R58",
+      "name": "occupational_exposure",
+      "name_ja": "職業曝露歴",
+      "category": "risk",
+      "states": [
+        "none",
+        "asbestos",
+        "silica",
+        "heavy_metals",
+        "organic_solvents",
+        "radiation"
+      ],
+      "note": "アスベスト=中皮腫/石綿肺, シリカ=珪肺/結核リスク増, 重金属=鉛/水銀中毒, 有機溶剤=肝障害, 放射線=白血病/甲状腺癌",
+      "severity": "medium"
+    },
+    {
+      "id": "E69",
+      "name": "capillary_refill_time",
+      "name_ja": "毛細血管再充満時間(CRT)",
+      "category": "sign",
+      "states": [
+        "normal_under_2s",
+        "delayed_2_4s",
+        "very_delayed_over_4s"
+      ],
+      "note": "延長=末梢循環不全/ショック/脱水/低体温。敗血症ガイドラインの評価項目",
+      "severity": "medium"
+    },
+    {
+      "id": "E70",
+      "name": "skin_turgor",
+      "name_ja": "皮膚ツルゴール",
+      "category": "sign",
+      "states": [
+        "normal",
+        "decreased"
+      ],
+      "note": "低下=脱水の徴候。E54(脱水徴候)の一部だが独立した身体所見として記録価値あり",
+      "severity": "medium"
+    },
+    {
+      "id": "E71",
+      "name": "postauricular_swelling",
+      "name_ja": "乳様突起部腫脹",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "急性乳様突起炎の特異的徴候。耳介の前方外側偏位を伴う。S79(耳痛)+E71で乳様突起炎を強く示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "E72",
+      "name": "fundoscopy",
+      "name_ja": "眼底所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "papilledema",
+        "hemorrhage",
+        "roth_spots",
+        "cotton_wool",
+        "diabetic_changes"
+      ],
+      "note": "乳頭浮腫=ICP亢進, 出血=高血圧/DM, Roth斑=IE/白血病/貧血, 綿花様白斑=DM/HIV/SLE",
+      "severity": "medium"
+    },
+    {
+      "id": "L93",
+      "name": "hemoglobin",
+      "name_ja": "ヘモグロビン(Hb)",
+      "category": "lab",
+      "states": [
+        "very_low_under_7",
+        "low_7_10",
+        "mild_low_10_12",
+        "normal",
+        "high"
+      ],
+      "note": "<7=重症貧血(輸血検討), 7-10=中等度貧血, 10-12=軽度。高値=多血症/脱水",
+      "severity": "medium"
+    },
+    {
+      "id": "L94",
+      "name": "MCV",
+      "name_ja": "MCV(平均赤血球容積)",
+      "category": "lab",
+      "states": [
+        "microcytic",
+        "normocytic",
+        "macrocytic"
+      ],
+      "note": "小球性=鉄欠乏/サラセミア/慢性疾患, 正球性=急性出血/腎性/溶血/骨髄抑制, 大球性=VB12・葉酸欠乏/MDS/アルコール/甲状腺低下/薬剤",
+      "severity": "medium"
+    },
+    {
+      "id": "L95",
+      "name": "schistocytes",
+      "name_ja": "破砕赤血球",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "absent",
+        "present"
+      ],
+      "note": "TTP/HUS/DIC/HELLP/悪性高血圧/人工弁溶血の決定的所見。>1%で微小血管障害性溶血性貧血(MAHA)示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "E73",
+      "name": "cardiac_gallop",
+      "name_ja": "III音/IV音(gallop)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "S3",
+        "S4",
+        "both"
+      ],
+      "note": "S3=容量負荷(心不全/MR/VSD), S4=圧負荷/コンプライアンス低下(HCM/AS/高血圧性心臓病/ACS)",
+      "severity": "medium"
+    },
+    {
+      "id": "E74",
+      "name": "babinski_sign",
+      "name_ja": "Babinski徴候(病的反射)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "上位運動ニューロン障害(UMN)。脳梗塞/脊髄病変/MS/ALS。E53(DTR亢進)と組み合わせ",
+      "severity": "medium"
+    },
+    {
+      "id": "E75",
+      "name": "nikolsky_sign",
+      "name_ja": "Nikolsky徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "表皮剥離徴候。SJS-TEN/天疱瘡/SSSS。TEN確認に必須",
+      "severity": "medium"
+    },
+    {
+      "id": "E76",
+      "name": "cullen_grey_turner",
+      "name_ja": "Cullen/Grey Turner徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "臍周囲/側腹部出血斑。重症膵炎/後腹膜出血。予後不良指標",
+      "severity": "medium"
+    },
+    {
+      "id": "E77",
+      "name": "chest_wall_tenderness",
+      "name_ja": "胸壁圧痛",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "触診再現性=筋骨格性胸痛(肋軟骨炎/Tietze)。心肺由来除外に有用",
+      "severity": "medium"
+    },
+    {
+      "id": "S131",
+      "name": "early_satiety",
+      "name_ja": "早期満腹感",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "胃癌(linitis plastica)/gastroparesis/脾腫圧排/機能性ディスペプシア",
+      "severity": "medium"
+    },
+    {
+      "id": "S132",
+      "name": "hiccups",
+      "name_ja": "吃逆(しゃっくり)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "transient",
+        "persistent"
+      ],
+      "note": "持続性(>48h)=横隔膜刺激(横隔膜下膿瘍)/脳幹病変/尿毒症/食道癌/薬剤性",
+      "severity": "low"
+    },
+    {
+      "id": "S133",
+      "name": "muscle_cramp",
+      "name_ja": "筋痙攣/こむら返り",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "電解質異常(低Ca/低Mg/低K)/脱水/透析/ALS/末梢神経障害/甲状腺機能低下",
+      "severity": "low"
+    },
+    {
+      "id": "S134",
+      "name": "heat_intolerance",
+      "name_ja": "暑がり(熱不耐)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "甲状腺機能亢進/褐色細胞腫/更年期(hot flash)/薬剤性",
+      "severity": "medium"
+    },
+    {
+      "id": "S135",
+      "name": "melena",
+      "name_ja": "黒色便(タール便)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "上部消化管出血(Treitz靭帯より口側)。消化性潰瘍/食道静脈瘤/胃癌。S26(血便)は下部出血",
+      "severity": "high"
+    },
+    {
+      "id": "E79",
+      "name": "asterixis",
+      "name_ja": "羽ばたき振戦",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "代謝性脳症: 肝性脳症(最多)/尿毒症/CO2ナルコーシス/薬剤性",
+      "severity": "high"
+    },
+    {
+      "id": "E80",
+      "name": "babinski_sign",
+      "name_ja": "バビンスキー徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "上位運動ニューロン障害: 脊髄病変/脳梗塞/脳腫瘍/多発性硬化症",
+      "severity": "medium"
+    },
+    {
+      "id": "E81",
+      "name": "muscle_tone",
+      "name_ja": "筋緊張",
+      "category": "sign",
+      "states": [
+        "normal",
+        "flaccid",
+        "spastic",
+        "rigid",
+        "paratonia"
+      ],
+      "note": "弛緩=下位MN/脊髄ショック, 痙性=上位MN(折りたたみナイフ), 固縮=パーキンソン(鉛管/歯車), パラトニア=認知症",
+      "severity": "medium"
+    },
+    {
+      "id": "E82",
+      "name": "rectal_exam",
+      "name_ja": "直腸診所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "mass",
+        "blood",
+        "fissure",
+        "prostate_enlargement"
+      ],
+      "note": "腫瘤=直腸癌, 血液=消化管出血, 裂肛=便秘/クローン, 前立腺腫大=BPH/前立腺癌",
+      "severity": "medium"
+    },
+    {
+      "id": "L96",
+      "name": "cortisol",
+      "name_ja": "コルチゾール",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "low",
+        "normal",
+        "elevated"
+      ],
+      "note": "低値=副腎不全(Addison/下垂体性), 高値=クッシング/ストレス反応",
+      "severity": "medium"
+    },
+    {
+      "id": "L97",
+      "name": "ammonia",
+      "name_ja": "血中アンモニア",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "elevated"
+      ],
+      "note": "高値=肝性脳症/門脈シャント/尿素サイクル異常/バルプロ酸",
+      "severity": "medium"
+    },
+    {
+      "id": "L98",
+      "name": "haptoglobin",
+      "name_ja": "ハプトグロビン",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "normal",
+        "low",
+        "absent"
+      ],
+      "note": "低下/消失=血管内溶血(TTP/HUS/PNH/人工弁/DIC)。LDH↑+間接Bil↑+ハプト↓=溶血三徴",
+      "severity": "medium"
+    },
+    {
+      "id": "R59",
+      "name": "oral_contraceptive_hrt",
+      "name_ja": "経口避妊薬/HRT使用",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "DVT/PE(エストロゲン凝固亢進)/CVST/肝腺腫のリスク",
+      "severity": "medium"
+    },
+    {
+      "id": "S145",
+      "name": "morning_stiffness_duration",
+      "name_ja": "朝のこわばりの持続時間",
+      "category": "symptom",
+      "states": [
+        "under_30min",
+        "over_30min",
+        "over_1hour"
+      ],
+      "note": "S27 satellite(T): <30min=OA/非炎症性, >30min=RA(ACR基準)/SLE/PMR, >1h=活動性RA/PMR",
+      "severity": "medium"
+    },
+    {
+      "id": "S146",
+      "name": "stiffness_activity_response",
+      "name_ja": "こわばりの活動による変化",
+      "category": "symptom",
+      "states": [
+        "improves_with_activity",
+        "worsens_with_activity",
+        "no_change"
+      ],
+      "note": "S27 satellite(P): 活動で改善=炎症性(RA/PMR), 活動で悪化=非炎症性(OA/変形性), 不変=線維筋痛症",
+      "severity": "medium"
+    },
+    {
+      "id": "S136",
+      "name": "involuntary_movement_type",
+      "name_ja": "不随意運動の種類",
+      "category": "symptom",
+      "states": [
+        "tremor_resting",
+        "tremor_action",
+        "chorea",
+        "myoclonus",
+        "dystonia"
+      ],
+      "note": "S105 satellite(Q): resting_tremor=パーキンソン, action_tremor=本態性/小脳, chorea=ハンチントン/SLE/リウマチ熱, myoclonus=CJD/代謝性, dystonia=薬剤性/遺伝性",
+      "severity": "medium"
+    },
+    {
+      "id": "S137",
+      "name": "gait_pattern",
+      "name_ja": "歩行障害のパターン",
+      "category": "symptom",
+      "states": [
+        "ataxic",
+        "shuffling",
+        "steppage",
+        "spastic",
+        "waddling",
+        "antalgic"
+      ],
+      "note": "S106 satellite(Q): ataxic=小脳/酩酊, shuffling=パーキンソン, steppage=腓骨神経/GBS, spastic=脊髄, waddling=筋ジストロフィー, antalgic=疼痛回避",
+      "severity": "medium"
+    },
+    {
+      "id": "S138",
+      "name": "hallucination_modality",
+      "name_ja": "幻覚の種類",
+      "category": "symptom",
+      "states": [
+        "visual",
+        "auditory",
+        "tactile"
+      ],
+      "note": "S117 satellite: visual=せん妄/LBD/薬剤/アルコール離脱, auditory=統合失調症/脳炎, tactile=アルコール離脱/コカイン",
+      "severity": "medium"
+    },
+    {
+      "id": "S139",
+      "name": "alopecia_pattern",
+      "name_ja": "脱毛のパターン",
+      "category": "symptom",
+      "states": [
+        "diffuse",
+        "patchy"
+      ],
+      "note": "S118 satellite: diffuse=SLE/甲状腺/鉄欠乏/梅毒II/化学療法, patchy=円形脱毛症/梅毒II(moth-eaten)/真菌",
+      "severity": "medium"
+    },
+    {
+      "id": "S140",
+      "name": "hearing_loss_type",
+      "name_ja": "難聴の種類",
+      "category": "symptom",
+      "states": [
+        "conductive",
+        "sensorineural",
+        "mixed"
+      ],
+      "note": "S124 satellite: conductive=中耳炎/耳硬化症/鼓膜穿孔, sensorineural=突発性/メニエール/聴神経腫瘍/加齢性/薬剤性, mixed=慢性中耳炎/耳硬化症進行",
+      "severity": "medium"
+    },
+    {
+      "id": "S141",
+      "name": "cognitive_decline_onset",
+      "name_ja": "記憶/認知障害の発症様式",
+      "category": "symptom",
+      "states": [
+        "acute",
+        "subacute",
+        "chronic_progressive"
+      ],
+      "note": "S104/S150共通satellite(O): acute=せん妄/脳炎/代謝性脳症, subacute=CJD/自己免疫性脳炎/NPH, chronic=アルツハイマー/LBD/FTD",
+      "severity": "medium"
+    },
+    {
+      "id": "S142",
+      "name": "epistaxis_location",
+      "name_ja": "鼻出血の部位",
+      "category": "symptom",
+      "states": [
+        "anterior",
+        "posterior"
+      ],
+      "note": "S126 satellite: anterior=Kiesselbach(乾燥/鼻ほじり), posterior=高血圧/抗凝固薬/血小板減少/HHT/上顎癌",
+      "severity": "medium"
+    },
+    {
+      "id": "E83",
+      "name": "eye_movement_detail",
+      "name_ja": "眼球運動障害の詳細",
+      "category": "sign",
+      "states": [
+        "CN3_palsy",
+        "CN4_palsy",
+        "CN6_palsy",
+        "INO",
+        "gaze_palsy"
+      ],
+      "note": "E64 satellite: CN3=動脈瘤/糖尿病/脳ヘルニア, CN4=外傷/先天性, CN6=頭蓋内圧亢進(偽巣), INO=MS/脳幹梗塞, gaze_palsy=前頭葉/脳幹",
+      "severity": "medium"
+    },
+    {
+      "id": "S143",
+      "name": "breast_mass",
+      "name_ja": "乳房腫瘤",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "乳癌/線維腺腫/嚢胞/葉状腫瘍。硬さ・可動性・境界で鑑別",
+      "severity": "medium"
+    },
+    {
+      "id": "S144",
+      "name": "nipple_discharge",
+      "name_ja": "乳頭分泌物",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "milky=プロラクチノーマ/薬剤性(高プロラクチン)/産褥, bloody=乳管内乳頭腫/乳癌, serous=乳腺症/線維嚢胞性変化",
+      "severity": "medium"
+    },
+    {
+      "id": "S147",
+      "name": "urine_appearance_type",
+      "name_ja": "尿の色/性状の種類",
+      "category": "symptom",
+      "states": [
+        "cloudy",
+        "foamy",
+        "cola_colored",
+        "tea_colored"
+      ],
+      "note": "S100 satellite: cloudy=UTI, foamy=蛋白尿(ネフローゼ), cola=糸球体腎炎/横紋筋融解, tea=ビリルビン尿",
+      "severity": "medium"
+    },
+    {
+      "id": "S148",
+      "name": "nipple_discharge_type",
+      "name_ja": "乳頭分泌物の性状",
+      "category": "symptom",
+      "states": [
+        "milky",
+        "bloody",
+        "serous"
+      ],
+      "note": "S144 satellite: milky=高プロラクチン/薬剤性/産褥, bloody=乳管内乳頭腫/乳癌, serous=乳腺症",
+      "severity": "medium"
+    },
+    {
+      "id": "S149",
+      "name": "delusion",
+      "name_ja": "妄想",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "思維内容障害。被害妄想=統合失調症, 誇大妄想=躁病/前頭側頭型認知症, 嫉妬妄想=アルコール依存, 身体妄想=うつ病。幻覚(S117)とは独立",
+      "severity": "medium"
+    },
+    {
+      "id": "S150",
+      "name": "cognitive_decline",
+      "name_ja": "認知機能低下(記憶以外)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "遂行機能/注意/言語/視空間の障害。記憶(S104)とは独立。FTD(遂行機能+人格変化)/LBD(注意変動)/NPH(遂行機能)/せん妄(注意)",
+      "severity": "medium"
+    },
+    {
+      "id": "S151",
+      "name": "acid_reflux",
+      "name_ja": "酸逆流",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "酸味/苦味のある液体が口腔まで逆流する症状。GERD/裂孔ヘルニア/妊娠/肥満。胸焼け(S102)なしの逆流もある",
+      "severity": "medium"
+    },
+    {
+      "id": "S152",
+      "name": "presyncope",
+      "name_ja": "前失神(立ちくらみ)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "意識消失には至らない眼前暗黒感/ふらつき。失神(S97)と同じ原因群だがリスク層別が異なる。起立性低血圧/貧血/脱水/自律神経障害",
+      "severity": "medium"
+    },
+    {
+      "id": "S153",
+      "name": "headache_autonomic_laterality",
+      "name_ja": "頭痛自律神経症状の側性",
+      "category": "symptom",
+      "states": [
+        "present_ipsilateral",
+        "present_bilateral"
+      ],
+      "note": "S71 satellite: ipsilateral=群発頭痛/SUNCT/発作性片側頭痛(TAC診断基準), bilateral=片頭痛の一部(軽度)",
+      "severity": "medium"
+    },
+    {
+      "id": "S154",
+      "name": "nasal_congestion",
+      "name_ja": "鼻閉",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "low",
+      "note": "鼻づまり。鼻汁(S03)なしの鼻閉=腫瘍/ポリープ/偏位。鼻汁+鼻閉=感染/アレルギー"
+    },
+    {
+      "id": "S155",
+      "name": "olfactory_disorder",
+      "name_ja": "嗅覚障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "COVID(急性)/パーキンソン(早期)/前頭葉腫瘍/Kallmann/外傷性。味覚障害(S19)とは独立した神経経路"
+    },
+    {
+      "id": "S156",
+      "name": "dry_eyes",
+      "name_ja": "眼乾燥",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "シェーグレン(Schirmer試験)/薬剤性/VDT/加齢/GvHD。口腔乾燥(S31)と両方=シェーグレン強く示唆"
+    },
+    {
+      "id": "S157",
+      "name": "scrotal_pain",
+      "name_ja": "陰嚢痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "精巣捻転(急性激痛=emergency)/精巣上体炎(徐々に増悪)/精巣炎(ムンプス後)。腫脹(S38)なしの痛みもある"
+    },
+    {
+      "id": "S158",
+      "name": "mucosal_bleeding",
+      "name_ja": "粘膜出血(歯肉/口腔)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "凝固因子障害(血友病/DIC/肝不全/VitK欠乏)/重症血小板減少/抗凝固薬。紫斑(S44)とは機序が異なりうる"
+    },
+    {
+      "id": "S159",
+      "name": "agalactia",
+      "name_ja": "乳汁分泌不全",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "Sheehan症候群に特異的(産後大量出血→下垂体壊死)。無月経(S57)との組み合わせ=汎下垂体機能低下を強く示唆"
+    },
+    {
+      "id": "S160",
+      "name": "photopsia",
+      "name_ja": "光視症",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "網膜牽引(網膜剥離前駆)/片頭痛前兆(閃輝暗点)/後部硝子体剥離。飛蚊症(S58)+光視症=網膜剥離risk高"
+    },
+    {
+      "id": "S161",
+      "name": "polyuria",
+      "name_ja": "多尿",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "尿崩症(中枢性/腎性)/DM/高Ca血症/利尿薬/リチウム。多飲(S121)なしの多尿=腎性尿崩症を示唆"
+    },
+    {
+      "id": "S162",
+      "name": "cold_intolerance",
+      "name_ja": "寒がり(冷え不耐)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "medium",
+      "note": "甲状腺機能低下/貧血/レイノー/末梢血管障害/低栄養/副腎不全"
+    },
+    {
+      "id": "R60",
+      "name": "AIDS",
+      "name_ja": "AIDS期(CD4<200/AIDS定義疾患)",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "CD4<200またはAIDS定義疾患(PCP/カポジ/CMV網膜炎等)。日和見感染リスクがHIV陽性のみと質的に異なる"
+    },
+    {
+      "id": "R61",
+      "name": "active_cancer_treatment",
+      "name_ja": "悪性腫瘍の治療中(化学療法/放射線)",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "note": "免疫抑制(好中球減少性発熱)/腫瘍崩壊症候群/治療関連毒性。既往のみ(R40)とはリスクレベルが質的に異なる"
+    },
+    {
+      "id": "R62",
+      "name": "ischemic_heart_disease_history",
+      "name_ja": "虚血性心疾患の既往",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "medium",
+      "note": "PCI/CABG歴/心筋梗塞既往。ACS再発リスク/ステント血栓症/抗血小板薬関連出血。心不全(R44)とは別のリスク群"
+    },
+    {
+      "id": "S163",
+      "name": "anosmia_hyposmia",
+      "name_ja": "嗅覚障害",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "COVID-19(急性)/パーキンソン(早期)/前頭葉病変/副鼻腔炎/頭部外傷。味覚障害(S19)とは独立",
+      "severity": "medium"
+    },
+    {
+      "id": "S164",
+      "name": "dry_eyes",
+      "name_ja": "眼乾燥",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "シェーグレン/加齢/VDT作業/薬剤性/マイボーム腺機能不全。口腔乾燥(S31)とは独立",
+      "severity": "medium"
+    },
+    {
+      "id": "S165",
+      "name": "agalactia",
+      "name_ja": "乳汁分泌不全",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "産褥期に乳汁が出ない。Sheehan症候群の特徴的所見。下垂体壊死/高プロラクチン(逆に乳汁漏出→S144)",
+      "severity": "medium"
+    },
+    {
+      "id": "S166",
+      "name": "polyuria",
+      "name_ja": "多尿",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "DM(浸透圧利尿)/尿崩症(中枢性/腎性)/高Ca/リチウム/利尿薬。多飲(S121)なしの多尿=尿崩症を強く示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "S167",
+      "name": "agitation",
+      "name_ja": "焦燥・興奮",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "客観的な運動性不穏。せん妄/アルコール離脱/甲状腺クリーゼ/抗NMDA受容体脳炎/低血糖/中毒。不安(S114)なしの焦燥=せん妄を示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "S168",
+      "name": "photopsia",
+      "name_ja": "光視症",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "実際にない光が見える。網膜牽引(網膜剥離前駆)/片頭痛前兆/後頭葉病変。飛蚊症(S58)とは独立のメカニズム",
+      "severity": "medium"
+    },
+    {
+      "id": "S169",
+      "name": "scrotal_pain",
+      "name_ja": "陰嚢疼痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "精巣捻転(急性激痛=emergency)/精巣上体炎/精索静脈瘤(鈍痛)。腫脹(S38)なしの疼痛=捻転早期/関連痛",
+      "severity": "medium"
+    },
+    {
+      "id": "L99",
+      "name": "cd_toxin",
+      "name_ja": "CDトキシン検査",
+      "category": "lab",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "Clostridioides difficile感染症の確定検査。抗菌薬使用後の下痢で検査。便培養(L34)とは別",
+      "severity": "medium"
+    },
+    {
+      "id": "R63",
+      "name": "history_IHD",
+      "name_ja": "虚血性心疾患の既往",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "心筋梗塞/狭心症の既往。ACS再発リスク/抗血小板薬使用中。心不全(R44)とは独立",
+      "severity": "medium"
+    },
+    {
+      "id": "S170",
+      "name": "seizure_type",
+      "name_ja": "痙攣の種類",
+      "states": [
+        "focal",
+        "focal_to_bilateral",
+        "generalized",
+        "status_epilepticus"
+      ],
+      "note": "S42 satellite(Q): focal=脳膿瘍/脳腫瘍/脳梗塞(対側), focal→bilateral=二次性全般化, generalized=代謝性/中毒/てんかん, status=てんかん重積(emergency)",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S171",
+      "name": "seizure_provocation",
+      "name_ja": "痙攣の誘発因子",
+      "states": [
+        "none_identified",
+        "fever",
+        "alcohol_withdrawal",
+        "photic",
+        "sleep_deprivation",
+        "metabolic"
+      ],
+      "note": "S42 satellite(P): 発熱=熱性痙攣(小児), アルコール離脱=48-72h後, 光刺激=光過敏性てんかん, 代謝=低Na/低Ca/低血糖",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S172",
+      "name": "seizure_history",
+      "name_ja": "痙攣の既往",
+      "states": [
+        "first_episode",
+        "recurrent"
+      ],
+      "note": "S42 satellite(T): 初発=器質的原因精査必須(脳MRI+脳波), 反復=既知てんかん/服薬コンプライアンス確認",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S173",
+      "name": "diarrhea_duration",
+      "name_ja": "下痢の持続期間",
+      "states": [
+        "acute_under_2w",
+        "persistent_2w_4w",
+        "chronic_over_4w"
+      ],
+      "note": "S14 satellite(T): acute=感染性/食中毒, persistent=後感染性IBS/ジアルジア/CDI遷延, chronic=IBD/IBS/セリアック/顕微鏡的大腸炎/膵外分泌不全",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S174",
+      "name": "diarrhea_provocation",
+      "name_ja": "下痢の増悪因子",
+      "states": [
+        "none_identified",
+        "postprandial",
+        "dairy",
+        "antibiotics",
+        "fasting_improves"
+      ],
+      "note": "S14 satellite(P): 食後=膵外分泌不全/dumping, 乳製品=乳糖不耐, 抗菌薬後=CDI, 絶食で改善=浸透圧性",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S175",
+      "name": "neuro_deficit_onset",
+      "name_ja": "局所神経症状の発症速度",
+      "states": [
+        "hyperacute_seconds",
+        "acute_hours",
+        "subacute_days_weeks",
+        "chronic_progressive"
+      ],
+      "note": "S52 satellite(T): 秒=脳血管(梗塞/出血), 時間=炎症(脳炎/ADEM), 日~週=脱髄(MS)/腫瘍/膿瘍, 慢性進行=腫瘍/変性疾患",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S176",
+      "name": "nausea_provocation",
+      "name_ja": "悪心の増悪因子",
+      "states": [
+        "none_identified",
+        "postprandial",
+        "positional",
+        "medication_related",
+        "morning"
+      ],
+      "note": "S13 satellite(P): 食後=胃排出障害/胆嚢, 体位=ICP亢進/前庭, 薬剤=化学療法/オピオイド/ジゴキシン, 早朝=妊娠/ICP亢進",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S177",
+      "name": "dyspnea_temporal",
+      "name_ja": "呼吸困難の時間パターン",
+      "states": [
+        "acute_onset",
+        "episodic_recurrent",
+        "chronic_progressive",
+        "chronic_stable"
+      ],
+      "note": "S04 satellite(T): 急性=PE/気胸/ACS/アナフィラキシー, 反復発作=喘息, 慢性進行=COPD/ILD/心不全/肺高血圧, 慢性安定=安定COPD",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S178",
+      "name": "dyspnea_provocation",
+      "name_ja": "呼吸困難の増悪因子",
+      "states": [
+        "none_identified",
+        "exertional",
+        "cold_air",
+        "allergen",
+        "emotional",
+        "positional_platypnea"
+      ],
+      "note": "S04 satellite(P): 労作=心不全/COPD/貧血, 冷気=喘息, アレルゲン=喘息/アナフィラキシー, platypnea=肝肺症候群/ASD(座位で悪化)。起座呼吸はS49で別管理",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S179",
+      "name": "cough_provocation",
+      "name_ja": "咳嗽の増悪因子",
+      "states": [
+        "none_identified",
+        "supine",
+        "cold_air",
+        "meals_speaking",
+        "exercise",
+        "ACE_inhibitor"
+      ],
+      "note": "S01 satellite(P): 臥位=心不全/GERD/後鼻漏, 冷気=喘息/COPD, 食事/会話=誤嚥/百日咳, 運動=EIB, ACE阻害薬=薬剤性(5-20%)",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S180",
+      "name": "myalgia_distribution",
+      "name_ja": "筋肉痛の分布",
+      "states": [
+        "localized",
+        "proximal_girdle",
+        "generalized"
+      ],
+      "note": "S06 satellite(R): 限局=外傷/横紋筋融解/膿瘍, 近位帯状=PM/DM/甲状腺/スタチン, 全身=ウイルス/薬剤/線維筋痛症/インフルエンザ",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S181",
+      "name": "chest_pain_severity",
+      "name_ja": "胸痛の程度",
+      "states": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "note": "S21 satellite(S): severe=ACS/大動脈解離/気胸/PE, mild=筋骨格性/GERD/不安",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S182",
+      "name": "chest_pain_temporal",
+      "name_ja": "胸痛の時間パターン",
+      "states": [
+        "instantaneous_seconds",
+        "minutes_to_hours",
+        "persistent_hours_days",
+        "episodic_recurrent"
+      ],
+      "note": "S21 satellite(T): 瞬間=気胸/筋骨格, 分~時間=ACS/PE, 持続=心膜炎/大動脈解離, 反復=安定狭心症/GERD",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S183",
+      "name": "weight_loss_tempo",
+      "name_ja": "体重減少の速度",
+      "states": [
+        "rapid_weeks",
+        "gradual_months"
+      ],
+      "note": "S17 satellite(T): 急速(週)=悪性腫瘍/甲状腺亢進/副腎不全/DM1/吸収不良, 緩徐(月)=慢性感染/うつ/COPD/心不全",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S184",
+      "name": "arthralgia_quality",
+      "name_ja": "関節痛の性状",
+      "states": [
+        "dull_aching",
+        "sharp_stabbing",
+        "burning",
+        "throbbing"
+      ],
+      "note": "S08 satellite(Q): 鈍痛=OA/半月板, 鋭痛=結晶性(痛風/偽痛風), 灼烧=神経障害性, 拍動性=化膿性関節炎/痛風急性期",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S185",
+      "name": "arthralgia_provocation",
+      "name_ja": "関節痛の増悪因子",
+      "states": [
+        "rest",
+        "activity",
+        "morning",
+        "weather",
+        "none_identified"
+      ],
+      "note": "S08 satellite(P): 安静時増悪=炎症性(RA/SpA), 活動時増悪=OA/半月板, 朝方=RA/PMR(→S27), 天候=OA。S145(こわばり持続)と組み合わせ",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S186",
+      "name": "flank_pain_radiation",
+      "name_ja": "側腹部痛の放散",
+      "states": [
+        "none",
+        "groin",
+        "back",
+        "ipsilateral_testicle"
+      ],
+      "note": "S15 satellite(R): 鼠径=尿管結石(中部~下部), 背部=腎盂腎炎/AAA, 同側精巣=尿管結石(T10-L1 referred)",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "S187",
+      "name": "speech_onset_speed",
+      "name_ja": "言語障害の発症速度",
+      "states": [
+        "hyperacute",
+        "subacute",
+        "chronic_progressive"
+      ],
+      "note": "S53 satellite(T): 超急性=脳卒中(Broca/Wernicke), 亜急性=脳腫瘍/膿瘍, 慢性進行=ALS(構音)/FTD(原発性進行性失語)/PD",
+      "category": "symptom",
+      "severity": "medium"
+    },
+    {
+      "id": "E84",
+      "name": "proptosis",
+      "name_ja": "眼球突出",
+      "category": "sign",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "note": "unilateral=眼窩蜂窩織炎/眼窩腫瘍/頸動脈海綿静脈洞瘻, bilateral=Graves病(甲状腺眼症)/IgG4",
+      "severity": "medium"
+    },
+    {
+      "id": "E85",
+      "name": "conjunctival_pallor",
+      "name_ja": "結膜蒼白",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "貧血の身体所見(Hb<9で感度有意)。L93(Hb)と組み合わせ",
+      "severity": "medium"
+    },
+    {
+      "id": "E86",
+      "name": "scleral_icterus",
+      "name_ja": "強膜黄染",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "E18(黄疸)より早期に出現(ビリルビン2-3mg/dLで検出)。溶血/肝障害/胆道閉塞",
+      "severity": "medium"
+    },
+    {
+      "id": "E87",
+      "name": "oral_candidiasis",
+      "name_ja": "口腔カンジダ",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "白苔(偽膜性)/紅斑性。免疫不全(HIV/ステロイド吸入/化学療法)/抗菌薬使用後/義歯。食道カンジダ合併示唆",
+      "severity": "medium"
+    },
+    {
+      "id": "E88",
+      "name": "gingival_finding",
+      "name_ja": "歯肉所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "hypertrophy",
+        "bleeding",
+        "necrotic_ulcer"
+      ],
+      "note": "肥大=フェニトイン/CsA/Ca拮抗薬/白血病浸潤, 出血=血小板減少/DIC/壊血病, 壊死性潰瘍=急性壊死性潰瘍性歯肉炎(ANUG)/HIV",
+      "severity": "medium"
+    },
+    {
+      "id": "E89",
+      "name": "pleural_friction_rub",
+      "name_ja": "胸膜摩擦音",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "胸膜炎の特異的聴診所見。吸気+呼気で聴取。PE/肺炎随伴性胸膜炎/結核性胸膜炎/SLE/悪性胸膜炎",
+      "severity": "medium"
+    },
+    {
+      "id": "E90",
+      "name": "peripheral_pulse",
+      "name_ja": "末梢動脈触知",
+      "category": "sign",
+      "states": [
+        "normal",
+        "diminished",
+        "absent"
+      ],
+      "note": "減弱/消失=PAD/急性動脈閉塞/大動脈解離/大動脈縮窄。左右差=解離。E41(ABI)と組み合わせ",
+      "severity": "medium"
+    },
+    {
+      "id": "E91",
+      "name": "perianal_finding",
+      "name_ja": "肛門周囲所見",
+      "category": "sign",
+      "states": [
+        "normal",
+        "fissure",
+        "fistula",
+        "abscess",
+        "hemorrhoid",
+        "skin_tag"
+      ],
+      "note": "裂肛=Crohn/便秘, 瘻孔=Crohn(特異的), 膿瘍=肛門周囲膿瘍, 痔核=門脈圧亢進, skin tag=Crohn",
+      "severity": "medium"
+    },
+    {
+      "id": "E92",
+      "name": "pelvic_exam",
+      "name_ja": "内診所見",
+      "category": "sign",
+      "states": [
+        "not_done",
+        "normal",
+        "cervical_motion_tenderness",
+        "adnexal_mass",
+        "adnexal_tenderness",
+        "uterine_enlargement"
+      ],
+      "note": "CMT=PID, 付属器腫瘤=卵巣嚢腫/卵巣腫瘍/異所性妊娠, 付属器圧痛=PID/卵管卵巣膿瘍, 子宮腫大=筋腫/妊娠",
+      "severity": "medium"
+    },
+    {
+      "id": "E93",
+      "name": "prehn_sign",
+      "name_ja": "Prehn徴候",
+      "category": "sign",
+      "states": [
+        "not_done",
+        "negative",
+        "positive"
+      ],
+      "note": "陽性(挙睾で疼痛改善)=精巣上体炎示唆, 陰性=精巣捻転示唆。特異度は低いが初期鑑別の手がかり",
+      "severity": "medium"
+    },
+    {
+      "id": "E94",
+      "name": "tender_points",
+      "name_ja": "圧痛点(線維筋痛症)",
+      "category": "sign",
+      "states": [
+        "absent",
+        "few_under_11",
+        "many_11_or_more"
+      ],
+      "note": "ACR1990基準: 18箇所中11箇所以上=線維筋痛症。2010改訂基準ではWPI+SSで評価",
+      "severity": "medium"
+    },
+    {
+      "id": "E95",
+      "name": "skin_color_change",
+      "name_ja": "皮膚色調変化",
+      "category": "sign",
+      "states": [
+        "normal",
+        "pallor",
+        "cyanosis",
+        "flushing",
+        "bronze",
+        "hyperpigmentation"
+      ],
+      "note": "蒼白=貧血/ショック, チアノーゼ=低酸素/メトHb, 紅潮=カルチノイド/更年期/アナフィラキシー, 青銅色=ヘモクロマトーシス, 色素沈着=Addison/慢性肝",
+      "severity": "medium"
+    },
+    {
+      "id": "E96",
+      "name": "cushingoid_appearance",
+      "name_ja": "Cushing様体型",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "満月様顔貌/中心性肥満/水牛肩/皮膚線条(紫色)/多毛/痤瘡。Cushing症候群/外因性ステロイド",
+      "severity": "medium"
+    },
+    {
+      "id": "R64",
+      "name": "allergy_history",
+      "name_ja": "アレルギー歴",
+      "category": "risk",
+      "states": [
+        "none",
+        "drug_allergy",
+        "food_allergy",
+        "multiple"
+      ],
+      "note": "薬剤=アナフィラキシーリスク/SJS-TEN, 食物=アナフィラキシー/好酸球性食道炎, 多発=アトピー素因",
+      "severity": "medium"
+    },
+    {
+      "id": "R65",
+      "name": "autoimmune_history",
+      "name_ja": "膠原病/自己免疫疾患既往",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "SLE/RA/SS/SSc/PM-DM/MCTD/APS/血管炎等。overlap/合併症/薬剤関連合併症のリスク",
+      "severity": "medium"
+    },
+    {
+      "id": "L100",
+      "name": "platelet_count",
+      "name_ja": "血小板数",
+      "category": "lab",
+      "states": [
+        "very_low_under_50k",
+        "low_50k_150k",
+        "normal",
+        "high_over_400k",
+        "very_high_over_1000k"
+      ],
+      "note": "<50k=DIC/TTP/HIT/重症ITP/白血病/再生不良(出血リスク高), 50-150k=軽度減少, >400k=反応性(感染/炎症/鉄欠乏)/MPN(ET/PV/CML), >1000k=ET",
+      "severity": "medium"
     }
   ]
 }
