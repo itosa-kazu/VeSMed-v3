@@ -2666,16 +2666,23 @@
     "D222": {
       "parents": [
         "R02",
-        "R01"
+        "R01",
+        "R65"
       ],
-      "description": "RA。女性3:1、30-50歳",
+      "description": "RA。女性3:1、30-50歳 + R65膠原病既往あり→2倍",
       "cpt": {
-        "male|18_39": 0.001,
-        "male|40_64": 0.003,
-        "male|65_plus": 0.002,
-        "female|18_39": 0.003,
-        "female|40_64": 0.008,
-        "female|65_plus": 0.004
+        "male|18_39|no": 0.001,
+        "male|18_39|yes": 0.002,
+        "male|40_64|no": 0.003,
+        "male|40_64|yes": 0.006,
+        "male|65_plus|no": 0.002,
+        "male|65_plus|yes": 0.004,
+        "female|18_39|no": 0.003,
+        "female|18_39|yes": 0.006,
+        "female|40_64|no": 0.008,
+        "female|40_64|yes": 0.016,
+        "female|65_plus|no": 0.004,
+        "female|65_plus|yes": 0.008
       }
     },
     "D223": {
@@ -19311,6 +19318,12 @@
           "normal_under_0.3": 0.8,
           "mild_0.3_3": 0.15,
           "high_over_10": 0.05
+        },
+        "D163": {
+          "normal_under_0.3": 0.55,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.12,
+          "high_over_10": 0.08
         }
       }
     },
@@ -22535,6 +22548,11 @@
           "normal": 0.05,
           "elevated": 0.2,
           "very_high_over_100": 0.75
+        },
+        "D252": {
+          "normal": 0.1,
+          "elevated": 0.5,
+          "very_high_over_100": 0.4
         }
       }
     },
@@ -41710,6 +41728,10 @@
         "D111": {
           "conjunctivitis": 0.8889,
           "uveitis": 0.1111
+        },
+        "D252": {
+          "conjunctivitis": 0.95,
+          "uveitis": 0.05
         }
       }
     },

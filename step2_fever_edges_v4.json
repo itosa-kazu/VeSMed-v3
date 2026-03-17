@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6454,
+  "total_edges": 6458,
   "edges": [
     {
       "from": "R01",
@@ -51103,6 +51103,38 @@
       "from_name": "MPA",
       "to_name": "hemoglobin",
       "reason": "MPAは炎症+腎障害による貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "R65",
+      "to": "D222",
+      "from_name": "autoimmune_history",
+      "to_name": "RA",
+      "reason": "RA患者は膠原病/自己免疫疾患既往を持つことが多い",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "L28",
+      "from_name": "kawasaki",
+      "to_name": "ESR",
+      "reason": "川崎病はESR著増(>40mm/hが80%以上)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D252",
+      "to": "E48",
+      "from_name": "kawasaki",
+      "to_name": "eye_findings",
+      "reason": "川崎病の結膜充血は主要診断基準(>85%)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D163",
+      "to": "L02",
+      "from_name": "Wernicke",
+      "to_name": "CRP",
+      "reason": "ウェルニッケ脳症は非感染性でCRP正常が多い(合併症でCRP上昇もあり)",
       "onset_day_range": null
     }
   ],
