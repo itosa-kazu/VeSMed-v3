@@ -331,6 +331,9 @@ def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
             "no": 0.95, "history_remission": 0.02,
             "active_on_treatment": 0.02, "active_untreated": 0.01
         }},
+        "R35": {"description": "IBD history prevalence (Japan)", "distribution": {
+            "no": 0.997, "yes": 0.003
+        }},
     }
 
     rp = root_priors.get(disease_id)

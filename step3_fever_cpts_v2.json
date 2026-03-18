@@ -3797,13 +3797,17 @@
     },
     "D353": {
       "parents": [
-        "R01"
+        "R01",
+        "R35"
       ],
-      "description": "UC。若年に多い(20-30代ピーク)",
+      "description": "UC。若年ピーク + IBD既往で大幅上昇",
       "cpt": {
-        "18_39": 0.005,
-        "40_64": 0.002,
-        "65_plus": 0.001
+        "18_39|no": 0.005,
+        "18_39|yes": 0.15,
+        "40_64|no": 0.002,
+        "40_64|yes": 0.1,
+        "65_plus|no": 0.001,
+        "65_plus|yes": 0.08
       }
     },
     "D354": {
@@ -13304,6 +13308,16 @@
           "under_100": 0.4,
           "100_120": 0.4,
           "over_120": 0.2
+        },
+        "D365": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
+        },
+        "D354": {
+          "under_100": 0.55,
+          "100_120": 0.3,
+          "over_120": 0.15
         }
       }
     },
@@ -14068,6 +14082,16 @@
           "normal_under_20": 0.55,
           "tachypnea_20_30": 0.3,
           "severe_over_30": 0.15
+        },
+        "D185": {
+          "normal_under_20": 0.5,
+          "tachypnea_20_30": 0.35,
+          "severe_over_30": 0.15
+        },
+        "D358": {
+          "normal_under_20": 0.15,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.35
         }
       }
     },
@@ -16015,6 +16039,17 @@
           "skin_necrosis": 0.0,
           "purpura": 0.0,
           "vesicle_bulla": 0.0
+        },
+        "D201": {
+          "normal": 0.1,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.55,
+          "maculopapular_rash": 0.15,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.02,
+          "purpura": 0.1,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.04
         }
       }
     },
@@ -16159,6 +16194,10 @@
           "absent": 0.05,
           "localized": 0.7,
           "generalized": 0.25
+        },
+        "D365": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -16969,6 +17008,11 @@
         "D367": {
           "normal": 0.8,
           "confused": 0.15,
+          "obtunded": 0.05
+        },
+        "D352": {
+          "normal": 0.85,
+          "confused": 0.1,
           "obtunded": 0.05
         }
       }
@@ -19289,6 +19333,12 @@
           "normal_4000_10000": 0.5,
           "high_10000_20000": 0.2,
           "very_high_over_20000": 0.05
+        },
+        "D325": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.35,
+          "high_10000_20000": 0.4,
+          "very_high_over_20000": 0.2
         }
       }
     },
@@ -20621,6 +20671,12 @@
           "mild_0.3_3": 0.1,
           "moderate_3_10": 0.35,
           "high_over_10": 0.5
+        },
+        "D325": {
+          "normal_under_0.3": 0.35,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.1
         }
       }
     },
@@ -21499,6 +21555,24 @@
           "BHL": 0.05,
           "pleural_effusion": 0.05,
           "pneumothorax": 0.05
+        },
+        "D201": {
+          "not_done": 0.05,
+          "normal": 0.55,
+          "lobar_infiltrate": 0.05,
+          "bilateral_infiltrate": 0.2,
+          "BHL": 0.0,
+          "pleural_effusion": 0.15,
+          "pneumothorax": 0.0
+        },
+        "D13": {
+          "not_done": 0.1,
+          "normal": 0.65,
+          "lobar_infiltrate": 0.12,
+          "bilateral_infiltrate": 0.05,
+          "BHL": 0.0,
+          "pleural_effusion": 0.04,
+          "pneumothorax": 0.04
         }
       }
     },
@@ -22398,6 +22472,16 @@
           "normal": 0.6,
           "mild_elevated": 0.3,
           "very_high": 0.1
+        },
+        "D365": {
+          "normal": 0.7,
+          "mild_elevated": 0.2,
+          "very_high": 0.1
+        },
+        "D325": {
+          "normal": 0.45,
+          "mild_elevated": 0.35,
+          "very_high": 0.2
         }
       }
     },
@@ -23619,6 +23703,10 @@
         "D354": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D353": {
+          "absent": 0.93,
+          "present": 0.07
         }
       }
     },
@@ -24859,6 +24947,18 @@
           "hyponatremia": 0.65,
           "hyperkalemia": 0.03,
           "other": 0.02
+        },
+        "D354": {
+          "normal": 0.85,
+          "hyponatremia": 0.08,
+          "hyperkalemia": 0.02,
+          "other": 0.05
+        },
+        "D352": {
+          "normal": 0.55,
+          "hyponatremia": 0.25,
+          "hyperkalemia": 0.15,
+          "other": 0.05
         }
       }
     },
@@ -26202,6 +26302,16 @@
           "absent": 0.55,
           "on_exertion": 0.3,
           "at_rest": 0.15
+        },
+        "D201": {
+          "absent": 0.6,
+          "on_exertion": 0.15,
+          "at_rest": 0.25
+        },
+        "D325": {
+          "absent": 0.65,
+          "on_exertion": 0.2,
+          "at_rest": 0.15
         }
       }
     },
@@ -26719,7 +26829,9 @@
           "absent": 0.1,
           "mild": 0.25,
           "severe": 0.65
-        }
+        },
+        "D366": 0.25,
+        "D365": 0.2
       }
     },
     "S06": {
@@ -29538,7 +29650,8 @@
         "D110": {
           "absent": 0.65,
           "present": 0.35
-        }
+        },
+        "D354": 0.15
       }
     },
     "S14": {
@@ -29854,6 +29967,14 @@
         "D354": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D366": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "D365": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -30083,6 +30204,14 @@
         "D365": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D366": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D151": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -35965,6 +36094,12 @@
           "acute": 0.6728,
           "subacute": 0.1847,
           "chronic": 0.0792
+        },
+        "D37": {
+          "sudden": 0.05,
+          "acute": 0.7,
+          "subacute": 0.2,
+          "chronic": 0.05
         }
       }
     },
@@ -43350,6 +43485,14 @@
           "supraclavicular": 0.05,
           "mediastinal": 0.05,
           "generalized": 0.25
+        },
+        "D365": {
+          "cervical": 0.15,
+          "axillary": 0.05,
+          "inguinal": 0.05,
+          "supraclavicular": 0.05,
+          "mediastinal": 0.6,
+          "generalized": 0.1
         }
       }
     },
