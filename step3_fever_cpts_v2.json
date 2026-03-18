@@ -23355,55 +23355,45 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.45,
-        "positive": 0.05
+        "negative": 0.93,
+        "positive": 0.07
       },
       "parent_effects": {
         "D59": {
-          "not_done": 0.05,
-          "negative": 0.019,
-          "positive": 0.931
+          "negative": 0.02,
+          "positive": 0.98
         },
         "D96": {
-          "not_done": 0.05,
-          "negative": 0.8075,
-          "positive": 0.1425
+          "negative": 0.82,
+          "positive": 0.18
         },
         "D105": {
-          "not_done": 0.05,
-          "negative": 0.665,
-          "positive": 0.285
+          "negative": 0.03,
+          "positive": 0.97
         },
         "D151": {
-          "not_done": 0.05,
-          "negative": 0.57,
-          "positive": 0.38
+          "negative": 0.25,
+          "positive": 0.75
         },
         "D203": {
-          "not_done": 0.2,
-          "negative": 0.1,
-          "positive": 0.7
+          "negative": 0.02,
+          "positive": 0.98
         },
         "D223": {
-          "not_done": 0.1,
-          "negative": 0.02,
-          "positive": 0.88
+          "negative": 0.08,
+          "positive": 0.92
         },
         "D250": {
-          "not_done": 0.1,
-          "negative": 0.1,
+          "negative": 0.2,
           "positive": 0.8
         },
         "D106": {
-          "not_done": 0.05,
-          "negative": 0.25,
-          "positive": 0.7
+          "negative": 0.26,
+          "positive": 0.74
         },
         "D361": {
-          "not_done": 0.05,
-          "negative": 0.45,
-          "positive": 0.5
+          "negative": 0.82,
+          "positive": 0.18
         }
       }
     },
@@ -24885,38 +24875,34 @@
         "other"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.45,
-        "temporal_lobe_lesion": 0.015,
-        "diffuse_abnormal": 0.02,
-        "other": 0.015
+        "normal": 0.7,
+        "temporal_lobe_lesion": 0.05,
+        "diffuse_abnormal": 0.1,
+        "other": 0.15
       },
       "parent_effects": {
         "D84": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "temporal_lobe_lesion": 0.8075,
-          "diffuse_abnormal": 0.0475,
-          "other": 0.0475
+          "normal": 0.05,
+          "temporal_lobe_lesion": 0.85,
+          "diffuse_abnormal": 0.05,
+          "other": 0.05
         },
         "D95": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "temporal_lobe_lesion": 0.0475,
-          "diffuse_abnormal": 0.7125,
-          "other": 0.095
+          "normal": 0.65,
+          "temporal_lobe_lesion": 0.05,
+          "diffuse_abnormal": 0.2,
+          "other": 0.1
         },
         "D118": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "temporal_lobe_lesion": 0.095,
-          "diffuse_abnormal": 0.095,
-          "other": 0.7125
+          "normal": 0.05,
+          "temporal_lobe_lesion": 0.05,
+          "diffuse_abnormal": 0.05,
+          "other": 0.85
         },
         "D236": {
-          "normal": 0.2,
-          "temporal_lobe_lesion": 0.1,
-          "diffuse_abnormal": 0.6,
+          "normal": 0.15,
+          "temporal_lobe_lesion": 0.05,
+          "diffuse_abnormal": 0.7,
           "other": 0.1
         },
         "D200": {
@@ -24926,17 +24912,16 @@
           "other": 0.15
         },
         "D300": {
-          "normal": 0.1,
-          "temporal_lobe_lesion": 0.1,
-          "diffuse_abnormal": 0.7,
+          "normal": 0.05,
+          "temporal_lobe_lesion": 0.05,
+          "diffuse_abnormal": 0.8,
           "other": 0.1
         },
         "D110": {
-          "not_done": 0.05,
           "normal": 0.1,
-          "temporal_lobe_lesion": 0.05,
-          "diffuse_abnormal": 0.15,
-          "other": 0.65
+          "temporal_lobe_lesion": 0.45,
+          "diffuse_abnormal": 0.25,
+          "other": 0.2
         }
       }
     },
@@ -36540,77 +36525,69 @@
         "other"
       ],
       "leak": {
-        "not_done": 0.85,
-        "reactive": 0.1,
-        "kikuchi_pattern": 0.001,
-        "lymphoma": 0.002,
-        "castleman": 0.001,
-        "granuloma": 0.003,
-        "other": 0.043
+        "reactive": 0.6,
+        "kikuchi_pattern": 0.005,
+        "lymphoma": 0.015,
+        "castleman": 0.005,
+        "granuloma": 0.02,
+        "other": 0.355
       },
       "parent_effects": {
         "D96": {
-          "not_done": 0.3,
-          "reactive": 0.02,
-          "kikuchi_pattern": 0.65,
+          "reactive": 0.03,
+          "kikuchi_pattern": 0.92,
           "lymphoma": 0.001,
           "castleman": 0.001,
           "granuloma": 0.001,
-          "other": 0.027
+          "other": 0.047
         },
         "D67": {
-          "not_done": 0.15,
-          "reactive": 0.03,
+          "reactive": 0.04,
           "kikuchi_pattern": 0.001,
-          "lymphoma": 0.78,
+          "lymphoma": 0.92,
           "castleman": 0.01,
           "granuloma": 0.001,
-          "other": 0.027
+          "other": 0.028
         },
         "D97": {
-          "not_done": 0.2,
-          "reactive": 0.03,
+          "reactive": 0.04,
           "kikuchi_pattern": 0.001,
-          "lymphoma": 0.01,
-          "castleman": 0.72,
+          "lymphoma": 0.9,
+          "castleman": 0.001,
           "granuloma": 0.001,
-          "other": 0.038
+          "other": 0.057
         },
         "D62": {
-          "not_done": 0.25,
-          "reactive": 0.05,
+          "reactive": 0.06,
           "kikuchi_pattern": 0.001,
           "lymphoma": 0.001,
           "castleman": 0.001,
-          "granuloma": 0.68,
-          "other": 0.017
+          "granuloma": 0.91,
+          "other": 0.027
         },
         "D68": {
-          "not_done": 0.2,
-          "reactive": 0.05,
+          "reactive": 0.06,
           "kikuchi_pattern": 0.001,
-          "lymphoma": 0.05,
+          "lymphoma": 0.06,
           "castleman": 0.001,
           "granuloma": 0.001,
-          "other": 0.697
+          "other": 0.877
         },
         "D18": {
-          "not_done": 0.5,
-          "reactive": 0.42,
-          "kikuchi_pattern": 0.01,
+          "reactive": 0.35,
+          "kikuchi_pattern": 0.02,
           "lymphoma": 0.001,
           "castleman": 0.001,
-          "granuloma": 0.001,
-          "other": 0.067
+          "granuloma": 0.58,
+          "other": 0.048
         },
         "D17": {
-          "not_done": 0.4,
-          "reactive": 0.03,
+          "reactive": 0.04,
           "kikuchi_pattern": 0.001,
           "lymphoma": 0.001,
           "castleman": 0.001,
-          "granuloma": 0.55,
-          "other": 0.017
+          "granuloma": 0.93,
+          "other": 0.027
         }
       }
     },
@@ -39808,45 +39785,37 @@
     "L61": {
       "description": "腫瘍マーカー",
       "leak": {
-        "not_done": 0.65,
-        "normal": 0.3,
+        "normal": 0.95,
         "elevated": 0.05
       },
       "parent_effects": {
         "D289": {
-          "not_done": 0.1,
           "normal": 0.05,
-          "elevated": 0.85
+          "elevated": 0.95
         },
         "D288": {
-          "not_done": 0.1,
           "normal": 0.1,
-          "elevated": 0.8
+          "elevated": 0.9
         },
         "D287": {
-          "not_done": 0.1,
           "normal": 0.2,
-          "elevated": 0.7
+          "elevated": 0.8
         },
         "D277": {
-          "not_done": 0.15,
-          "normal": 0.3,
-          "elevated": 0.55
+          "normal": 0.35,
+          "elevated": 0.65
         },
         "D313": {
-          "not_done": 0.15,
-          "normal": 0.25,
-          "elevated": 0.6
+          "normal": 0.3,
+          "elevated": 0.7
         },
         "D278": {
-          "not_done": 0.2,
-          "normal": 0.3,
-          "elevated": 0.5
+          "normal": 0.38,
+          "elevated": 0.62
         },
         "D347": {
-          "not_done": 0.1,
           "normal": 0.1,
-          "elevated": 0.8
+          "elevated": 0.9
         }
       }
     },
@@ -44260,53 +44229,45 @@
     "L78": {
       "description": "尿蛋白定量",
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.4,
-        "mild_proteinuria": 0.08,
-        "nephrotic_range": 0.02
+        "normal": 0.8,
+        "mild_proteinuria": 0.16,
+        "nephrotic_range": 0.04
       },
       "parent_effects": {
         "D239": {
-          "not_done": 0.1,
           "normal": 0.2,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.3
+          "mild_proteinuria": 0.6,
+          "nephrotic_range": 0.2
         },
         "D204": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.3
+          "normal": 0.1,
+          "mild_proteinuria": 0.35,
+          "nephrotic_range": 0.55
         },
         "D241": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.3
+          "normal": 0.1,
+          "mild_proteinuria": 0.3,
+          "nephrotic_range": 0.6
         },
         "D191": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.3
+          "normal": 0.03,
+          "mild_proteinuria": 0.1,
+          "nephrotic_range": 0.87
         },
         "D219": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.3
+          "normal": 0.25,
+          "mild_proteinuria": 0.6,
+          "nephrotic_range": 0.15
         },
         "D221": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "mild_proteinuria": 0.4,
-          "nephrotic_range": 0.4
+          "normal": 0.45,
+          "mild_proteinuria": 0.48,
+          "nephrotic_range": 0.07
         },
         "D60": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "mild_proteinuria": 0.45,
-          "nephrotic_range": 0.2
+          "normal": 0.05,
+          "mild_proteinuria": 0.25,
+          "nephrotic_range": 0.7
         }
       }
     },

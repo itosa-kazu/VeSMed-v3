@@ -3178,7 +3178,6 @@
       "name_ja": "抗核抗体",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ]
@@ -3894,7 +3893,6 @@
       "name": "brain_MRI",
       "name_ja": "頭部MRI",
       "states": [
-        "not_done",
         "normal",
         "temporal_lobe_lesion",
         "diffuse_abnormal",
@@ -3990,7 +3988,6 @@
       "name_ja": "リンパ節生検",
       "category": "lab",
       "states": [
-        "not_done",
         "reactive",
         "kikuchi_pattern",
         "lymphoma",
@@ -7413,7 +7410,6 @@
       "name_ja": "腫瘍マーカー(PSA/AFP/CEA等)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "elevated"
       ],
@@ -8850,7 +8846,6 @@
       "name_ja": "尿蛋白定量",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mild_proteinuria",
         "nephrotic_range"
