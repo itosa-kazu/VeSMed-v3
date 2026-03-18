@@ -1704,7 +1704,6 @@
       "name_ja": "尿検査",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "pyuria_bacteriuria"
       ]
@@ -6633,7 +6632,6 @@
       "name_ja": "β-hCG(妊娠検査)",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -7303,7 +7301,6 @@
       "name_ja": "心エコー所見",
       "category": "sign",
       "states": [
-        "not_done",
         "normal",
         "wall_motion_abnormal",
         "valvular_abnormal",
@@ -7496,7 +7493,6 @@
       "name_ja": "転移巣(CT/PET所見)",
       "category": "lab",
       "states": [
-        "not_done",
         "absent",
         "lung",
         "bone",
@@ -7512,7 +7508,6 @@
       "name_ja": "DICスコア(ISTH基準)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "pre_DIC",
         "overt_DIC"

@@ -36160,105 +36160,85 @@
         "pyuria_bacteriuria"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.425,
-        "pyuria_bacteriuria": 0.075
+        "normal": 0.9,
+        "pyuria_bacteriuria": 0.1
       },
       "parent_effects": {
         "D22": {
-          "not_done": 0.05,
-          "normal": 0.076,
-          "pyuria_bacteriuria": 0.874
+          "normal": 0.08,
+          "pyuria_bacteriuria": 0.92
         },
         "D08": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "pyuria_bacteriuria": 0.9025
+          "normal": 0.05,
+          "pyuria_bacteriuria": 0.95
         },
         "D09": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "pyuria_bacteriuria": 0.855
+          "normal": 0.1,
+          "pyuria_bacteriuria": 0.9
         },
         "D42": {
-          "not_done": 0.05,
-          "normal": 0.076,
-          "pyuria_bacteriuria": 0.874
+          "normal": 0.08,
+          "pyuria_bacteriuria": 0.92
         },
         "D119": {
-          "not_done": 0.05,
-          "normal": 0.285,
-          "pyuria_bacteriuria": 0.665
+          "normal": 0.3,
+          "pyuria_bacteriuria": 0.7
         },
         "D43": {
-          "not_done": 0.05,
-          "normal": 0.285,
-          "pyuria_bacteriuria": 0.665
+          "normal": 0.3,
+          "pyuria_bacteriuria": 0.7
         },
         "D145": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "pyuria_bacteriuria": 0.855
+          "normal": 0.1,
+          "pyuria_bacteriuria": 0.9
         },
         "D168": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "pyuria_bacteriuria": 0.9025
+          "normal": 0.05,
+          "pyuria_bacteriuria": 0.95
         },
         "D183": {
-          "not_done": 0.05,
-          "normal": 0.4275,
-          "pyuria_bacteriuria": 0.5225
+          "normal": 0.45,
+          "pyuria_bacteriuria": 0.55
         },
         "D191": {
-          "not_done": 0.05,
-          "normal": 0.019,
-          "pyuria_bacteriuria": 0.931
+          "normal": 0.02,
+          "pyuria_bacteriuria": 0.98
         },
         "D198": {
-          "not_done": 0.05,
-          "normal": 0.4275,
-          "pyuria_bacteriuria": 0.5225
+          "normal": 0.45,
+          "pyuria_bacteriuria": 0.55
         },
         "D202": {
-          "not_done": 0.05,
-          "normal": 0.76,
-          "pyuria_bacteriuria": 0.19
+          "normal": 0.8,
+          "pyuria_bacteriuria": 0.2
         },
         "D204": {
-          "not_done": 0.05,
-          "normal": 0.2375,
-          "pyuria_bacteriuria": 0.7125
+          "normal": 0.25,
+          "pyuria_bacteriuria": 0.75
         },
         "D219": {
-          "not_done": 0.05,
-          "normal": 0.2375,
-          "pyuria_bacteriuria": 0.7125
+          "normal": 0.25,
+          "pyuria_bacteriuria": 0.75
         },
         "D221": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "pyuria_bacteriuria": 0.855
+          "normal": 0.1,
+          "pyuria_bacteriuria": 0.9
         },
         "D147": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "pyuria_bacteriuria": 0.855
+          "normal": 0.1,
+          "pyuria_bacteriuria": 0.9
         },
         "D239": {
-          "not_done": 0.05,
-          "normal": 0.019,
-          "pyuria_bacteriuria": 0.931
+          "normal": 0.02,
+          "pyuria_bacteriuria": 0.98
         },
         "D240": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "pyuria_bacteriuria": 0.855
+          "normal": 0.1,
+          "pyuria_bacteriuria": 0.9
         },
         "D290": {
-          "not_done": 0.05,
-          "normal": 0.076,
-          "pyuria_bacteriuria": 0.874
+          "normal": 0.08,
+          "pyuria_bacteriuria": 0.92
         }
       }
     },
@@ -39111,90 +39091,73 @@
     },
     "L56": {
       "leak": {
-        "not_done": 0.6,
-        "negative": 0.35,
-        "positive": 0.05
+        "negative": 0.875,
+        "positive": 0.125
       },
       "parent_effects": {
         "D291": {
-          "not_done": 0.05,
           "negative": 0.02,
-          "positive": 0.93
+          "positive": 0.98
         },
         "D174": {
-          "not_done": 0.2,
-          "negative": 0.78,
-          "positive": 0.02
+          "negative": 0.97,
+          "positive": 0.03
         },
         "D136": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D137": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D154": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D86": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D27": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D275": {
-          "not_done": 0.25,
-          "negative": 0.7,
-          "positive": 0.05
+          "negative": 0.93,
+          "positive": 0.07
         },
         "D276": {
-          "not_done": 0.2,
-          "negative": 0.6,
+          "negative": 0.8,
           "positive": 0.2
         },
         "D322": {
-          "not_done": 0.1,
           "negative": 0.02,
-          "positive": 0.88
+          "positive": 0.98
         },
         "D323": {
-          "not_done": 0.1,
           "negative": 0.02,
-          "positive": 0.88
+          "positive": 0.98
         },
         "D345": {
-          "not_done": 0.2,
-          "negative": 0.6,
-          "positive": 0.2
+          "negative": 0.4,
+          "positive": 0.6
         },
         "D156": {
-          "not_done": 0.15,
-          "negative": 0.8,
-          "positive": 0.05
+          "negative": 0.94,
+          "positive": 0.06
         },
         "D162": {
-          "not_done": 0.15,
-          "negative": 0.8,
-          "positive": 0.05
+          "negative": 0.94,
+          "positive": 0.06
         },
         "D152": {
-          "not_done": 0.15,
-          "negative": 0.75,
+          "negative": 0.9,
           "positive": 0.1
         },
         "D166": {
-          "not_done": 0.15,
-          "negative": 0.8,
-          "positive": 0.05
+          "negative": 0.94,
+          "positive": 0.06
         }
       }
     },
@@ -39270,146 +39233,133 @@
     "E39": {
       "description": "心エコー所見",
       "leak": {
-        "not_done": 0.3,
-        "normal": 0.5,
-        "wall_motion_abnormal": 0.05,
-        "valvular_abnormal": 0.05,
-        "pericardial_effusion": 0.03,
-        "LVH": 0.04,
-        "dilated_chamber": 0.03
+        "normal": 0.71,
+        "wall_motion_abnormal": 0.07,
+        "valvular_abnormal": 0.07,
+        "pericardial_effusion": 0.04,
+        "LVH": 0.06,
+        "dilated_chamber": 0.05
       },
       "parent_effects": {
         "D131": {
-          "not_done": 0.05,
           "normal": 0.05,
-          "wall_motion_abnormal": 0.8,
+          "wall_motion_abnormal": 0.84,
           "valvular_abnormal": 0.02,
           "pericardial_effusion": 0.02,
-          "LVH": 0.03,
+          "LVH": 0.04,
           "dilated_chamber": 0.03
         },
         "D116": {
-          "not_done": 0.05,
-          "normal": 0.1,
-          "wall_motion_abnormal": 0.65,
+          "normal": 0.11,
+          "wall_motion_abnormal": 0.68,
           "valvular_abnormal": 0.03,
           "pericardial_effusion": 0.1,
-          "LVH": 0.02,
+          "LVH": 0.03,
           "dilated_chamber": 0.05
         },
         "D134": {
-          "not_done": 0.05,
-          "normal": 0.2,
-          "wall_motion_abnormal": 0.05,
-          "valvular_abnormal": 0.03,
-          "pericardial_effusion": 0.6,
-          "LVH": 0.03,
-          "dilated_chamber": 0.04
-        },
-        "D124": {
-          "not_done": 0.03,
-          "normal": 0.02,
-          "wall_motion_abnormal": 0.03,
-          "valvular_abnormal": 0.02,
-          "pericardial_effusion": 0.85,
-          "LVH": 0.02,
-          "dilated_chamber": 0.03
-        },
-        "D120": {
-          "not_done": 0.05,
-          "normal": 0.05,
+          "normal": 0.15,
           "wall_motion_abnormal": 0.3,
-          "valvular_abnormal": 0.1,
-          "pericardial_effusion": 0.05,
-          "LVH": 0.15,
-          "dilated_chamber": 0.3
-        },
-        "D327": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "wall_motion_abnormal": 0.05,
-          "valvular_abnormal": 0.55,
-          "pericardial_effusion": 0.02,
-          "LVH": 0.25,
-          "dilated_chamber": 0.05
-        },
-        "D340": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "wall_motion_abnormal": 0.05,
-          "valvular_abnormal": 0.7,
-          "pericardial_effusion": 0.02,
-          "LVH": 0.05,
-          "dilated_chamber": 0.1
-        },
-        "D344": {
-          "not_done": 0.05,
-          "normal": 0.05,
-          "wall_motion_abnormal": 0.1,
-          "valvular_abnormal": 0.05,
-          "pericardial_effusion": 0.15,
-          "LVH": 0.05,
-          "dilated_chamber": 0.55
-        },
-        "D346": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "wall_motion_abnormal": 0.05,
-          "valvular_abnormal": 0.1,
-          "pericardial_effusion": 0.02,
-          "LVH": 0.65,
-          "dilated_chamber": 0.1
-        },
-        "D150": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "wall_motion_abnormal": 0.8,
-          "valvular_abnormal": 0.03,
-          "pericardial_effusion": 0.02,
-          "LVH": 0.03,
-          "dilated_chamber": 0.04
-        },
-        "D345": {
-          "not_done": 0.1,
-          "normal": 0.35,
-          "wall_motion_abnormal": 0.1,
-          "valvular_abnormal": 0.03,
-          "pericardial_effusion": 0.35,
-          "LVH": 0.03,
-          "dilated_chamber": 0.04
-        },
-        "D212": {
-          "not_done": 0.2,
-          "normal": 0.05,
-          "wall_motion_abnormal": 0.2,
           "valvular_abnormal": 0.1,
           "pericardial_effusion": 0.1,
           "LVH": 0.2,
           "dilated_chamber": 0.15
         },
-        "D214": {
-          "not_done": 0.2,
+        "D124": {
+          "normal": 0.02,
+          "wall_motion_abnormal": 0.03,
+          "valvular_abnormal": 0.02,
+          "pericardial_effusion": 0.88,
+          "LVH": 0.02,
+          "dilated_chamber": 0.03
+        },
+        "D120": {
+          "normal": 0.05,
+          "wall_motion_abnormal": 0.32,
+          "valvular_abnormal": 0.11,
+          "pericardial_effusion": 0.05,
+          "LVH": 0.16,
+          "dilated_chamber": 0.31
+        },
+        "D327": {
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.58,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.26,
+          "dilated_chamber": 0.06
+        },
+        "D340": {
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.74,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.05,
+          "dilated_chamber": 0.11
+        },
+        "D344": {
+          "normal": 0.05,
+          "wall_motion_abnormal": 0.08,
+          "valvular_abnormal": 0.05,
+          "pericardial_effusion": 0.07,
+          "LVH": 0.65,
+          "dilated_chamber": 0.1
+        },
+        "D346": {
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.05,
+          "valvular_abnormal": 0.11,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.68,
+          "dilated_chamber": 0.11
+        },
+        "D150": {
+          "normal": 0.03,
+          "wall_motion_abnormal": 0.84,
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.02,
+          "LVH": 0.03,
+          "dilated_chamber": 0.05
+        },
+        "D345": {
           "normal": 0.05,
           "wall_motion_abnormal": 0.1,
-          "valvular_abnormal": 0.2,
-          "pericardial_effusion": 0.1,
-          "LVH": 0.05,
-          "dilated_chamber": 0.3
+          "valvular_abnormal": 0.03,
+          "pericardial_effusion": 0.05,
+          "LVH": 0.03,
+          "dilated_chamber": 0.74
+        },
+        "D212": {
+          "normal": 0.06,
+          "wall_motion_abnormal": 0.15,
+          "valvular_abnormal": 0.12,
+          "pericardial_effusion": 0.38,
+          "LVH": 0.17,
+          "dilated_chamber": 0.12
+        },
+        "D214": {
+          "normal": 0.06,
+          "wall_motion_abnormal": 0.12,
+          "valvular_abnormal": 0.12,
+          "pericardial_effusion": 0.5,
+          "LVH": 0.08,
+          "dilated_chamber": 0.12
         },
         "D216": {
-          "not_done": 0.15,
-          "normal": 0.05,
-          "wall_motion_abnormal": 0.2,
-          "valvular_abnormal": 0.4,
-          "pericardial_effusion": 0.05,
-          "LVH": 0.05,
-          "dilated_chamber": 0.1
+          "normal": 0.35,
+          "wall_motion_abnormal": 0.25,
+          "valvular_abnormal": 0.18,
+          "pericardial_effusion": 0.1,
+          "LVH": 0.07,
+          "dilated_chamber": 0.05
         },
         "D220": {
           "normal": 0.4,
           "wall_motion_abnormal": 0.4,
-          "pericardial_effusion": 0.1,
-          "valvular_abnormal": 0.1
+          "valvular_abnormal": 0.1,
+          "pericardial_effusion": 0.05,
+          "LVH": 0.03,
+          "dilated_chamber": 0.02
         }
       }
     },
@@ -40089,319 +40039,277 @@
     "L63": {
       "description": "転移巣(CT/PET所見)",
       "leak": {
-        "not_done": 0.5050505050505051,
-        "absent": 0.4545454545454546,
-        "lung": 0.010101010101010102,
-        "bone": 0.010101010101010102,
-        "liver": 0.010101010101010102,
-        "brain": 0.005050505050505051,
-        "multiple": 0.005050505050505051
+        "absent": 0.955,
+        "lung": 0.015,
+        "bone": 0.01,
+        "liver": 0.01,
+        "brain": 0.005,
+        "multiple": 0.005
       },
       "parent_effects": {
         "D289": {
-          "not_done": 0.1,
           "absent": 0.1,
           "lung": 0.05,
-          "bone": 0.45,
+          "bone": 0.5,
           "liver": 0.03,
           "brain": 0.02,
-          "multiple": 0.25
+          "multiple": 0.3
         },
         "D277": {
-          "not_done": 0.1,
           "absent": 0.2,
           "lung": 0.1,
-          "bone": 0.15,
+          "bone": 0.18,
           "liver": 0.1,
-          "brain": 0.15,
-          "multiple": 0.2
+          "brain": 0.2,
+          "multiple": 0.22
         },
         "D313": {
-          "not_done": 0.05,
           "absent": 0.02,
           "lung": 0.08,
           "bone": 0.05,
           "liver": 0.05,
-          "brain": 0.45,
+          "brain": 0.5,
           "multiple": 0.3
         },
         "D287": {
-          "not_done": 0.1,
           "absent": 0.15,
           "lung": 0.05,
           "bone": 0.03,
-          "liver": 0.45,
+          "liver": 0.52,
           "brain": 0.02,
-          "multiple": 0.2
+          "multiple": 0.23
         },
         "D288": {
-          "not_done": 0.1,
           "absent": 0.25,
-          "lung": 0.35,
+          "lung": 0.38,
           "bone": 0.05,
-          "liver": 0.05,
+          "liver": 0.08,
           "brain": 0.05,
-          "multiple": 0.15
+          "multiple": 0.19
         },
         "D290": {
-          "not_done": 0.1,
-          "absent": 0.35,
+          "absent": 0.42,
           "lung": 0.1,
-          "bone": 0.15,
+          "bone": 0.18,
           "liver": 0.1,
           "brain": 0.03,
           "multiple": 0.17
         },
         "D278": {
-          "not_done": 0.1,
-          "absent": 0.45,
-          "lung": 0.15,
+          "absent": 0.52,
+          "lung": 0.18,
           "bone": 0.08,
           "liver": 0.08,
           "brain": 0.02,
           "multiple": 0.12
         },
         "D320": {
-          "not_done": 0.1,
-          "absent": 0.55,
-          "lung": 0.15,
+          "absent": 0.62,
+          "lung": 0.17,
           "bone": 0.05,
           "liver": 0.05,
-          "brain": 0.02,
+          "brain": 0.03,
           "multiple": 0.08
         },
         "D347": {
-          "not_done": 0.1,
           "absent": 0.2,
           "lung": 0.03,
-          "bone": 0.25,
-          "liver": 0.15,
+          "bone": 0.28,
+          "liver": 0.18,
           "brain": 0.02,
-          "multiple": 0.25
+          "multiple": 0.29
         },
         "D348": {
-          "not_done": 0.1,
-          "absent": 0.55,
-          "lung": 0.2,
+          "absent": 0.62,
+          "lung": 0.22,
           "bone": 0.02,
           "liver": 0.03,
           "brain": 0.02,
-          "multiple": 0.08
+          "multiple": 0.09
         },
         "D69": {
-          "not_done": 0.1,
           "absent": 0.15,
-          "lung": 0.25,
-          "bone": 0.15,
+          "lung": 0.28,
+          "bone": 0.18,
           "liver": 0.08,
-          "brain": 0.07,
-          "multiple": 0.2
+          "brain": 0.08,
+          "multiple": 0.23
         },
         "D70": {
-          "not_done": 0.1,
-          "absent": 0.25,
-          "lung": 0.25,
+          "absent": 0.28,
+          "lung": 0.27,
           "bone": 0.1,
           "liver": 0.1,
           "brain": 0.05,
-          "multiple": 0.15
+          "multiple": 0.2
         },
         "D230": {
-          "not_done": 0.1,
           "absent": 0.1,
           "lung": 0.05,
           "bone": 0.03,
-          "liver": 0.45,
+          "liver": 0.52,
           "brain": 0.02,
-          "multiple": 0.25
+          "multiple": 0.28
         },
         "D231": {
-          "not_done": 0.1,
           "absent": 0.25,
           "lung": 0.1,
           "bone": 0.05,
-          "liver": 0.3,
-          "brain": 0.02,
-          "multiple": 0.18
-        },
-        "D238": {
-          "not_done": 0.1,
-          "absent": 0.15,
-          "lung": 0.1,
-          "bone": 0.03,
-          "liver": 0.4,
+          "liver": 0.38,
           "brain": 0.02,
           "multiple": 0.2
         },
+        "D238": {
+          "absent": 0.15,
+          "lung": 0.1,
+          "bone": 0.03,
+          "liver": 0.47,
+          "brain": 0.02,
+          "multiple": 0.23
+        },
         "D247": {
-          "not_done": 0.1,
           "absent": 0.2,
           "lung": 0.08,
           "bone": 0.05,
-          "liver": 0.3,
+          "liver": 0.33,
           "brain": 0.02,
-          "multiple": 0.25
+          "multiple": 0.32
         },
         "D248": {
-          "not_done": 0.1,
-          "absent": 0.3,
+          "absent": 0.36,
           "lung": 0.12,
           "bone": 0.08,
           "liver": 0.15,
           "brain": 0.03,
-          "multiple": 0.22
+          "multiple": 0.26
         },
         "D92": {
-          "not_done": 0.1,
-          "absent": 0.2,
+          "absent": 0.27,
           "lung": 0.1,
           "bone": 0.1,
           "liver": 0.15,
           "brain": 0.05,
-          "multiple": 0.3
+          "multiple": 0.33
         }
       }
     },
     "L64": {
       "description": "DICスコア(ISTH基準)",
       "leak": {
-        "not_done": 0.6,
-        "normal": 0.35,
-        "pre_DIC": 0.03,
-        "overt_DIC": 0.02
+        "normal": 0.92,
+        "pre_DIC": 0.05,
+        "overt_DIC": 0.03
       },
       "parent_effects": {
         "D152": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "pre_DIC": 0.12,
+          "normal": 0.05,
+          "pre_DIC": 0.15,
           "overt_DIC": 0.8
         },
         "D322": {
-          "not_done": 0.1,
-          "normal": 0.3,
+          "normal": 0.45,
           "pre_DIC": 0.3,
-          "overt_DIC": 0.3
-        },
-        "D323": {
-          "not_done": 0.1,
-          "normal": 0.4,
-          "pre_DIC": 0.25,
           "overt_DIC": 0.25
         },
-        "D01": {
-          "not_done": 0.1,
-          "normal": 0.3,
+        "D323": {
+          "normal": 0.5,
           "pre_DIC": 0.3,
-          "overt_DIC": 0.3
+          "overt_DIC": 0.2
+        },
+        "D01": {
+          "normal": 0.45,
+          "pre_DIC": 0.35,
+          "overt_DIC": 0.2
         },
         "D192": {
-          "not_done": 0.05,
-          "normal": 0.05,
-          "pre_DIC": 0.1,
-          "overt_DIC": 0.8
+          "normal": 0.1,
+          "pre_DIC": 0.15,
+          "overt_DIC": 0.75
         },
         "D78": {
-          "not_done": 0.1,
-          "normal": 0.3,
+          "normal": 0.45,
           "pre_DIC": 0.3,
-          "overt_DIC": 0.3
+          "overt_DIC": 0.25
         },
         "D284": {
-          "not_done": 0.15,
-          "normal": 0.45,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.15
+          "normal": 0.6,
+          "pre_DIC": 0.28,
+          "overt_DIC": 0.12
         },
         "D156": {
-          "not_done": 0.1,
-          "normal": 0.7,
-          "pre_DIC": 0.15,
+          "normal": 0.78,
+          "pre_DIC": 0.17,
           "overt_DIC": 0.05
         },
         "D162": {
-          "not_done": 0.1,
-          "normal": 0.55,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.1
+          "normal": 0.65,
+          "pre_DIC": 0.27,
+          "overt_DIC": 0.08
         },
         "D68": {
-          "not_done": 0.1,
-          "normal": 0.45,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.2
+          "normal": 0.55,
+          "pre_DIC": 0.27,
+          "overt_DIC": 0.18
         },
         "D57": {
-          "not_done": 0.1,
-          "normal": 0.35,
-          "pre_DIC": 0.3,
-          "overt_DIC": 0.25
+          "normal": 0.45,
+          "pre_DIC": 0.32,
+          "overt_DIC": 0.23
         },
         "D107": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.45
+          "normal": 0.28,
+          "pre_DIC": 0.3,
+          "overt_DIC": 0.42
         },
         "D201": {
-          "not_done": 0.1,
-          "normal": 0.15,
-          "pre_DIC": 0.2,
+          "normal": 0.2,
+          "pre_DIC": 0.25,
           "overt_DIC": 0.55
         },
         "D326": {
-          "not_done": 0.1,
-          "normal": 0.4,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.25
+          "normal": 0.5,
+          "pre_DIC": 0.28,
+          "overt_DIC": 0.22
         },
         "D15": {
-          "not_done": 0.1,
-          "normal": 0.45,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.2
+          "normal": 0.55,
+          "pre_DIC": 0.28,
+          "overt_DIC": 0.17
         },
         "D16": {
-          "not_done": 0.1,
-          "normal": 0.55,
-          "pre_DIC": 0.2,
-          "overt_DIC": 0.15
+          "normal": 0.65,
+          "pre_DIC": 0.23,
+          "overt_DIC": 0.12
         },
         "D52": {
-          "not_done": 0.1,
-          "normal": 0.4,
-          "pre_DIC": 0.25,
-          "overt_DIC": 0.25
+          "normal": 0.5,
+          "pre_DIC": 0.28,
+          "overt_DIC": 0.22
         },
         "D166": {
-          "not_done": 0.1,
-          "normal": 0.5,
-          "pre_DIC": 0.2,
-          "overt_DIC": 0.2
-        },
-        "D174": {
-          "not_done": 0.1,
-          "normal": 0.5,
-          "pre_DIC": 0.25,
+          "normal": 0.62,
+          "pre_DIC": 0.23,
           "overt_DIC": 0.15
         },
+        "D174": {
+          "normal": 0.62,
+          "pre_DIC": 0.27,
+          "overt_DIC": 0.11
+        },
         "D208": {
-          "not_done": 0.1,
-          "normal": 0.8,
-          "pre_DIC": 0.08,
-          "overt_DIC": 0.02
+          "normal": 0.88,
+          "pre_DIC": 0.09,
+          "overt_DIC": 0.03
         },
         "D24": {
-          "not_done": 0.1,
-          "normal": 0.3,
-          "pre_DIC": 0.3,
-          "overt_DIC": 0.3
+          "normal": 0.42,
+          "pre_DIC": 0.33,
+          "overt_DIC": 0.25
         },
         "D364": {
-          "not_done": 0.1,
-          "normal": 0.2,
-          "pre_DIC": 0.3,
-          "overt_DIC": 0.4
+          "normal": 0.28,
+          "pre_DIC": 0.33,
+          "overt_DIC": 0.39
         }
       }
     },
