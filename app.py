@@ -35,6 +35,7 @@ variables, diseases, disease_children, noisy_or, root_priors = build_model(step1
 idf_disc = compute_idf_disc(step2, noisy_or, n_diseases=len(diseases))
 IDF_DISC_POWER = 0.5
 CF_COVERAGE_ALPHA = 0.3
+PRIOR_POWER = 0.5
 
 # Build lookup dicts
 var_lookup = {v["id"]: v for v in step1["variables"]}
@@ -87,7 +88,7 @@ def api_infer():
 
     ranked = infer(evidence, risk, diseases, disease_children, noisy_or,
                    root_priors, disc=idf_disc, disc_power=IDF_DISC_POWER,
-                   cf_alpha=CF_COVERAGE_ALPHA)
+                   cf_alpha=CF_COVERAGE_ALPHA, prior_power=PRIOR_POWER)
     h = entropy(ranked)
 
     results = []
