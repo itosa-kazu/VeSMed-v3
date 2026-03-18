@@ -18,6 +18,7 @@ Usage:
 import json
 import math
 import os
+import re
 from collections import defaultdict
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -233,112 +234,164 @@ def _cpt_val_to_prior(val):
     return 0.01
 
 
-def _lookup_cpt(cpt, parents, parts):
-    """Look up a CPT value given parent states. Returns scalar or None."""
-    # Try composite key
-    key = "|".join(parts) if len(parts) > 1 else parts[0]
-    if key in cpt:
-        return _cpt_val_to_prior(cpt[key])
-
-    # Fallback: try single parent state directly
-    if len(parts) == 1 and parts[0] in cpt:
-        return _cpt_val_to_prior(cpt[parts[0]])
-
-    # Fallback: common default keys
-    for k in ("no", "none", "absent"):
-        if k in cpt:
-            return _cpt_val_to_prior(cpt[k])
-
-    # Final fallback: minimum value
-    vals = [_cpt_val_to_prior(v) for v in cpt.values()]
-    return min(vals) if vals else None
-
-
 BASE_PRIOR = 0.01
 
+# Japan 2024 population pyramid (Statistics Bureau of Japan)
+# Source: stat.go.jp + UN World Population Prospects
+# Used as FIXED reference distribution for demographic contrast.
+JAPAN_POP = {
+    "R01": {"0_1": 0.013, "1_5": 0.027, "6_12": 0.057, "13_17": 0.045,
+            "18_39": 0.220, "40_64": 0.340, "65_plus": 0.298},
+    "R02": {"male": 0.488, "female": 0.512},
+    "R03": {"never": 0.75, "former": 0.10, "current": 0.15},
+    "R04": {"no": 0.88, "yes": 0.12},
+    "R05": {"no": 0.95, "yes": 0.05},
+    "R06": {"no": 0.85, "tropical_endemic": 0.02, "developed": 0.03, "domestic": 0.10},
+    "R07": {"no": 0.97, "yes": 0.03},
+    "R08": {"no": 0.97, "yes": 0.03},
+    "R09": {"no": 0.90, "yes": 0.10},
+    "R10": {"no": 0.95, "yes": 0.05},
+    "R11": {"no": 0.85, "yes": 0.15},
+    "R12": {"no": 0.95, "yes": 0.05},
+    "R13": {"no": 0.90, "yes": 0.10},
+    "R14": {"no": 0.95, "yes": 0.05},
+    "R15": {"no": 0.95, "yes": 0.05},
+    "R16": {"no": 0.95, "yes": 0.05},
+    "R17": {"no": 0.90, "yes": 0.10},
+    "R18": {"no": 0.95, "yes": 0.05},
+    "R19": {"spring": 0.25, "summer": 0.25, "autumn": 0.25, "winter": 0.25},
+    "R20": {"no": 0.95, "yes": 0.05},
+    "R21": {"no": 0.95, "yes": 0.05},
+    "R22": {"no": 0.95, "yes": 0.05},
+    "R23": {"no": 0.95, "yes": 0.05},
+    "R24": {"no": 0.95, "yes": 0.05},
+    "R25": {"no": 0.95, "yes": 0.05},
+    "R26": {"no": 0.95, "yes": 0.05},
+    "R29": {"no": 0.95, "yes": 0.05},
+    "R30": {"none": 0.70, "livestock": 0.05, "pet_cat": 0.15, "wild_animal": 0.10},
+    "R37": {"no": 0.95, "yes": 0.05},
+    "R40": {"no": 0.95, "history_remission": 0.02,
+            "active_on_treatment": 0.02, "active_untreated": 0.01},
+    "R42": {"no": 0.95, "yes": 0.05},
+    "R44": {"no": 0.85, "yes": 0.15},
+    "R45": {"never": 0.75, "former": 0.10, "current": 0.15},
+    "R46": {"no": 0.90, "yes": 0.10},
+    "R48": {"no": 0.90, "yes": 0.10},
+}
 
-def _compute_marginal(cpt, parents, root_priors):
-    """Compute population-weighted marginal P(d) = Σ P(d|RF=s) × P(RF=s).
 
-    This represents the average prior across the population, without
-    knowing any risk factor values. Used as the denominator in the
-    RF relative adjustment ratio.
+def _parse_cpt_entries(cpt, parents):
+    """Parse joint CPT keys into per-parent state tuples.
+
+    Handles three key formats:
+      1. Pipe-delimited:  "state1|state2" → parts follow parent order
+      2. Comma-delimited: "state1,state2" → parts follow parent order
+      3. Standalone:      "state"         → single parent (typically R01 age)
+
+    Returns: list of (state_dict, value) where state_dict maps parent_id → state.
     """
-    # Get distribution for each RF parent
-    distributions = []
+    import re
+    entries = []
+
+    # Build set of known states per parent for standalone key matching
+    known = {}
     for pid in parents:
-        dist_info = root_priors.get(pid)
-        if isinstance(dist_info, dict) and "distribution" in dist_info:
-            distributions.append(list(dist_info["distribution"].items()))
-        else:
-            distributions.append([("no", 0.5), ("yes", 0.5)])
+        dist = JAPAN_POP.get(pid)
+        if dist:
+            known[pid] = set(dist.keys())
 
-    # For single parent: simple weighted average
-    if len(parents) == 1:
-        total = 0.0
-        for state, prob in distributions[0]:
-            val = cpt.get(state)
-            if val is not None:
-                total += _cpt_val_to_prior(val) * prob
-        return total if total > 0 else None
+    for key, val in cpt.items():
+        val = _cpt_val_to_prior(val)
+        parts = re.split(r'[|,]', key)
 
-    # For multi-parent: iterate over all state combinations
-    # Use itertools-style nested loop
-    from itertools import product
-    total = 0.0
-    for combo in product(*distributions):
-        states = [s for s, _ in combo]
-        weight = 1.0
-        for _, p in combo:
-            weight *= p
-        key = "|".join(states)
-        val = cpt.get(key)
-        if val is not None:
-            total += _cpt_val_to_prior(val) * weight
-    return total if total > 0 else None
+        if len(parts) == len(parents):
+            # Full composite: parts[i] → parents[i]
+            sd = {parents[i]: parts[i] for i in range(len(parents))}
+            entries.append((sd, val))
+        elif len(parts) == 1:
+            # Standalone: find which parent it belongs to
+            for pid in parents:
+                if pid in known and parts[0] in known[pid]:
+                    entries.append(({pid: parts[0]}, val))
+                    break
+        # else: part count mismatch — skip entry
+
+    return entries
+
+
+def _decompose_marginals(cpt, parents):
+    """Decompose a joint CPT into per-parent individual marginals.
+
+    For each parent R_i, computes:
+      marginal[R_i][state] = Σ P(d | R_i=state, others) × pop(others) / Σ pop(others)
+
+    This marginalizes out all other parents using JAPAN_POP weights.
+    Returns: dict of {parent_id: {state: marginal_value}}
+    """
+    entries = _parse_cpt_entries(cpt, parents)
+    if not entries:
+        return {}
+
+    from collections import defaultdict
+    marginals = {}
+
+    for target_pid in parents:
+        # Accumulate weighted values for each state of target parent
+        accum = defaultdict(lambda: [0.0, 0.0])  # state → [weighted_sum, weight_sum]
+
+        for state_dict, val in entries:
+            if target_pid not in state_dict:
+                continue
+            target_state = state_dict[target_pid]
+
+            # Validate: target state must be a known state for this parent
+            target_known = JAPAN_POP.get(target_pid)
+            if target_known and target_state not in target_known:
+                continue  # e.g. R01 encoded as binary "no"/"yes" — skip
+
+            # Weight = product of other parents' population probabilities
+            weight = 1.0
+            for other_pid in parents:
+                if other_pid == target_pid:
+                    continue
+                if other_pid in state_dict:
+                    other_state = state_dict[other_pid]
+                    pop = JAPAN_POP.get(other_pid, {})
+                    weight *= pop.get(other_state, 0.5)
+                # If other_pid not in state_dict (standalone entry), weight stays 1.0
+
+            accum[target_state][0] += val * weight
+            accum[target_state][1] += weight
+
+        result = {}
+        for state, (ws, wt) in accum.items():
+            if wt > 0:
+                result[state] = ws / wt
+        if result:
+            marginals[target_pid] = result
+
+    return marginals
 
 
 def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
-    """Get disease prior: demographic contrast with FIXED Japan population distribution.
+    """Get disease prior using independent multiplicative R-factor adjustment.
 
-    Formula: adjusted_prior = BASE × P(d|RF_observed) / P_marginal_fixed(d)
+    DeepMind three-layer BN approach (Richens et al. 2020):
+    Each R variable independently contributes a likelihood ratio (LR).
 
-    P_marginal_fixed uses Japan 2024 population pyramid (hardcoded).
-    This is INDEPENDENT of root_priors distribution — adding/removing age
-    groups never changes existing results.
+    For single R parent:
+      adjusted = BASE × (P(d|R=obs) / P_marginal(R))^prior_power
+
+    For multiple R parents (independent multiplicative):
+      log_adjustment = Σ_i log(P_i(d|R_i=obs) / P_i_marginal)
+      adjusted = BASE × exp(log_adjustment × prior_power)
 
     prior_power controls strength:
       0.0 = no demographic adjustment (all diseases equal)
-      1.0 = full adjustment (original ratio formula)
+      1.0 = full adjustment
     """
-    # Japan 2024 population pyramid (Statistics Bureau of Japan)
-    # Source: stat.go.jp + UN World Population Prospects
-    JAPAN_POP = {
-        "R01": {"description": "Japan 2024 population", "distribution": {
-            "0_1": 0.013, "1_5": 0.027, "6_12": 0.057, "13_17": 0.045,
-            "18_39": 0.220, "40_64": 0.340, "65_plus": 0.298
-        }},
-        "R02": {"description": "Japan 2024 sex ratio", "distribution": {
-            "male": 0.488, "female": 0.512
-        }},
-        "R05": {"description": "Immunocompromised prevalence", "distribution": {
-            "no": 0.95, "yes": 0.05
-        }},
-        "R06": {"description": "Travel history distribution (Japan)", "distribution": {
-            "no": 0.85, "tropical_endemic": 0.02, "developed": 0.03, "domestic": 0.10
-        }},
-        "R40": {"description": "Malignancy status distribution", "distribution": {
-            "no": 0.95, "history_remission": 0.02,
-            "active_on_treatment": 0.02, "active_untreated": 0.01
-        }},
-    }
-
     rp = root_priors.get(disease_id)
-    if rp is None:
-        return BASE_PRIOR
-    if isinstance(rp, (int, float)):
-        return BASE_PRIOR
-    if not isinstance(rp, dict):
+    if rp is None or isinstance(rp, (int, float)) or not isinstance(rp, dict):
         return BASE_PRIOR
 
     parents = rp.get("parents", [])
@@ -346,122 +399,92 @@ def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
     if not cpt or not parents:
         return BASE_PRIOR
 
-    # Only use risk factor parents (R-prefixed)
     rf_parents = [p for p in parents if p.startswith("R")]
     if not rf_parents:
         return BASE_PRIOR
-
-    # Build observed state for each RF parent
-    obs_parts = []
-    for pid in rf_parents:
-        if pid in risk_evidence:
-            obs_parts.append(risk_evidence[pid])
-        else:
-            # Unobserved: use most common state from Japan population
-            dist_info = JAPAN_POP.get(pid)
-            if dist_info:
-                dist = dist_info["distribution"]
-                obs_parts.append(max(dist, key=dist.get))
-            else:
-                obs_parts.append("no")
-
-    # For CPTs with mixed parents (RF + disease), fill disease parents with "no"
-    if len(rf_parents) < len(parents):
-        full_obs = []
-        rf_idx = 0
-        full_parents = parents
-        for pid in parents:
-            if pid.startswith("R"):
-                full_obs.append(obs_parts[rf_idx])
-                rf_idx += 1
-            else:
-                full_obs.append("no")
-        obs_parts = full_obs
-    else:
-        full_parents = rf_parents
-
-    # P(d | RF=observed)
-    p_observed = _lookup_cpt(cpt, full_parents, obs_parts)
-    if p_observed is None:
-        return BASE_PRIOR
-    if p_observed <= 0:
-        return 1e-6
-
     if prior_power <= 0:
         return BASE_PRIOR
 
-    # P_marginal using Japan population (fixed, never changes)
-    p_marginal = _compute_marginal(cpt, full_parents, JAPAN_POP)
-    if p_marginal is None or p_marginal <= 0:
+    # === Single R parent: simple ratio (identical to old behavior) ===
+    if len(rf_parents) == 1:
+        pid = rf_parents[0]
+        obs = risk_evidence.get(pid)
+        if obs is None:
+            pop = JAPAN_POP.get(pid)
+            obs = max(pop, key=pop.get) if pop else "no"
+
+        # P(d | R=obs)
+        p_obs = cpt.get(obs)
+        if p_obs is not None:
+            p_obs = _cpt_val_to_prior(p_obs)
+        else:
+            # Fallback: min value
+            vals = [_cpt_val_to_prior(v) for v in cpt.values()]
+            p_obs = min(vals) if vals else None
+        if p_obs is None or p_obs <= 0:
+            return BASE_PRIOR
+
+        # P_marginal
+        pop = JAPAN_POP.get(pid, {})
+        if pop:
+            p_marg = sum(_cpt_val_to_prior(cpt.get(s, 0)) * w
+                         for s, w in pop.items()
+                         if cpt.get(s) is not None)
+        else:
+            vals = [_cpt_val_to_prior(v) for v in cpt.values()]
+            p_marg = sum(vals) / len(vals) if vals else 0
+
+        if p_marg <= 0:
+            return BASE_PRIOR
+
+        ratio = p_obs / p_marg
+        adjusted = BASE_PRIOR * (ratio ** prior_power)
+        return max(min(adjusted, 0.5), 1e-6)
+
+    # === Multiple R parents: independent multiplicative LR ===
+    marginals = _decompose_marginals(cpt, rf_parents)
+    if not marginals:
         return BASE_PRIOR
 
-    # Ratio-based adjustment
-    ratio = p_observed / p_marginal
-    adjusted = BASE_PRIOR * (ratio ** prior_power)
+    log_ratio_sum = 0.0
 
+    for r_id in rf_parents:
+        if r_id not in marginals:
+            continue  # No valid entries for this parent → LR=1 (neutral)
+        r_cpt = marginals[r_id]
+
+        # Observed state
+        obs = risk_evidence.get(r_id)
+        if obs is None:
+            pop = JAPAN_POP.get(r_id)
+            obs = max(pop, key=pop.get) if pop else "no"
+
+        # P(d | R_i = obs)
+        p_obs = r_cpt.get(obs)
+        if p_obs is None:
+            # Fallback: try closest match or min
+            p_obs = min(r_cpt.values()) if r_cpt else None
+        if p_obs is None or p_obs <= 0:
+            continue
+
+        # P_marginal for this R_i
+        pop = JAPAN_POP.get(r_id, {})
+        if pop:
+            p_marg = sum(r_cpt.get(s, 0) * w for s, w in pop.items())
+        else:
+            vals = list(r_cpt.values())
+            p_marg = sum(vals) / len(vals) if vals else 0
+
+        if p_marg <= 0:
+            continue
+
+        log_ratio_sum += math.log(p_obs / p_marg)
+
+    if log_ratio_sum == 0.0:
+        return BASE_PRIOR
+
+    adjusted = BASE_PRIOR * math.exp(log_ratio_sum * prior_power)
     return max(min(adjusted, 0.5), 1e-6)
-
-
-def _compute_marginal_fixed(cpt, parents):
-    """Compute marginal prior using FIXED reference distribution.
-
-    Uses a hardcoded adult-weighted distribution that never changes,
-    regardless of how many age/sex states exist in R01/R02.
-    This makes the demographic contrast independent of population composition
-    while preserving disease-specific modulation.
-    """
-    # Fixed reference distribution (hardcoded, never changes)
-    FIXED_DIST = {
-        "R01": {"18_39": 0.40, "40_64": 0.35, "65_plus": 0.25},
-        "R02": {"male": 0.50, "female": 0.50},
-    }
-
-    if not parents or not cpt:
-        return None
-
-    # Compute weighted average using fixed distribution
-    # For single parent
-    if len(parents) == 1:
-        pid = parents[0]
-        dist = FIXED_DIST.get(pid, {})
-        if not dist:
-            # Fallback: uniform over leaf values
-            vals = [v for v in cpt.values() if isinstance(v, (int, float))]
-            return sum(vals) / len(vals) if vals else None
-
-        total = 0.0
-        weight_sum = 0.0
-        for state, weight in dist.items():
-            val = cpt.get(state)
-            if val is not None and isinstance(val, (int, float)):
-                total += val * weight
-                weight_sum += weight
-        return total / weight_sum if weight_sum > 0 else None
-
-    # For multiple parents (e.g., R01+R02): enumerate combinations
-    if len(parents) == 2:
-        p0, p1 = parents[0], parents[1]
-        d0 = FIXED_DIST.get(p0, {})
-        d1 = FIXED_DIST.get(p1, {})
-        if not d0 or not d1:
-            vals = [v for v in cpt.values() if isinstance(v, (int, float))]
-            return sum(vals) / len(vals) if vals else None
-
-        total = 0.0
-        weight_sum = 0.0
-        for s0, w0 in d0.items():
-            for s1, w1 in d1.items():
-                key = f"{s0},{s1}"
-                val = cpt.get(key)
-                if val is not None and isinstance(val, (int, float)):
-                    w = w0 * w1
-                    total += val * w
-                    weight_sum += w
-        return total / weight_sum if weight_sum > 0 else None
-
-    # Fallback for >2 parents
-    vals = [v for v in cpt.values() if isinstance(v, (int, float))]
-    return sum(vals) / len(vals) if vals else None
 
 
 def resolve_state(obs_state, states):
