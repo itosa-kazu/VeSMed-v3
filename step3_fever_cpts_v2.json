@@ -23364,8 +23364,8 @@
           "positive": 0.18
         },
         "D105": {
-          "negative": 0.03,
-          "positive": 0.97
+          "negative": 0.75,
+          "positive": 0.25
         },
         "D151": {
           "negative": 0.25,
@@ -36107,10 +36107,6 @@
           "pyuria_bacteriuria": 0.75
         },
         "D221": {
-          "normal": 0.1,
-          "pyuria_bacteriuria": 0.9
-        },
-        "D147": {
           "normal": 0.1,
           "pyuria_bacteriuria": 0.9
         },

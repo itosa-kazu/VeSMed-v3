@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6800,
+  "total_edges": 6854,
   "edges": [
     {
       "from": "R01",
@@ -25342,13 +25342,6 @@
       "from_name": "MPA",
       "to_name": "T02",
       "reason": "MPA: 亜急性"
-    },
-    {
-      "from": "D147",
-      "to": "L05",
-      "from_name": "urolithiasis",
-      "to_name": "L05",
-      "reason": "尿管結石: 尿異常(血尿, 80%+)"
     },
     {
       "from": "D175",
