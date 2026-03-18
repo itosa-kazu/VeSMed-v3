@@ -53970,17 +53970,23 @@
     {
       "from": "D366",
       "to": "S05",
-      "reason": "トキソリンパ節炎: 頭痛(15%, IM様症状, PMC10209818)"
+      "reason": "トキソリンパ節炎: 頭痛(15%, IM様症状, PMC10209818)",
+      "from_name": "toxoplasma_lymphadenitis",
+      "to_name": "headache"
     },
     {
       "from": "D366",
       "to": "S16",
-      "reason": "トキソリンパ節炎: 盗汗(75%, PMC10447303)"
+      "reason": "トキソリンパ節炎: 盗汗(75%, PMC10447303)",
+      "from_name": "toxoplasma_lymphadenitis",
+      "to_name": "night_sweats"
     },
     {
       "from": "D366",
       "to": "S17",
-      "reason": "トキソリンパ節炎: 体重減少(10-20%, StatPearls)"
+      "reason": "トキソリンパ節炎: 体重減少(10-20%, StatPearls)",
+      "from_name": "toxoplasma_lymphadenitis",
+      "to_name": "weight_loss"
     },
     {
       "from": "R06",
@@ -53990,7 +53996,9 @@
     {
       "from": "D365",
       "to": "L11",
-      "reason": "肺クリプト: 肝酵素(播散時10-20%)"
+      "reason": "肺クリプト: 肝酵素(播散時10-20%)",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "liver_enzymes"
     },
     {
       "from": "R01",
@@ -54005,7 +54013,9 @@
     {
       "from": "R35",
       "to": "D353",
-      "reason": "UC: IBD既往/家族歴リスク(5-20%)"
+      "reason": "UC: IBD既往/家族歴リスク(5-20%)",
+      "from_name": "IBD_history",
+      "to_name": "ulcerative_colitis"
     },
     {
       "from": "D222",
@@ -54431,6 +54441,174 @@
       "from_name": "D249",
       "to_name": "L104",
       "reason": "慢性膵炎の胆管狭窄でALP上昇"
+    },
+    {
+      "from": "D13",
+      "to": "L04",
+      "from_name": "meningitis",
+      "to_name": "chest_xray",
+      "reason": "髄膜炎: 胸部X線(合併肺炎, 15-25%)"
+    },
+    {
+      "from": "D147",
+      "to": "L05",
+      "from_name": "urolithiasis",
+      "to_name": "L05",
+      "reason": "尿管結石: 尿異常(血尿, 80%+)"
+    },
+    {
+      "from": "D151",
+      "to": "S17",
+      "from_name": "acute_liver_failure",
+      "to_name": "weight_loss",
+      "reason": "急性肝不全: 体重減少(慢性肝疾患合併時, 10-20%)"
+    },
+    {
+      "from": "D185",
+      "to": "E04",
+      "from_name": "hereditary_angioedema",
+      "to_name": "respiratory_rate",
+      "reason": "HAE: 喉頭浮腫に伴う頻呼吸(30-50%)"
+    },
+    {
+      "from": "D201",
+      "to": "E12",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "skin_exam",
+      "reason": "VHF: 出血斑/紫斑(50-60%)"
+    },
+    {
+      "from": "D201",
+      "to": "L04",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "chest_xray",
+      "reason": "VHF: 胸部X線(ARDS/胸水, 20-30%)"
+    },
+    {
+      "from": "D201",
+      "to": "S04",
+      "from_name": "viral_hemorrhagic_fever",
+      "to_name": "dyspnea",
+      "reason": "VHF: 呼吸困難(ARDS合併, 25-35%)"
+    },
+    {
+      "from": "D325",
+      "to": "L01",
+      "from_name": "PRES",
+      "to_name": "WBC",
+      "reason": "PRES: WBC上昇(40-60%)"
+    },
+    {
+      "from": "D325",
+      "to": "L02",
+      "from_name": "PRES",
+      "to_name": "CRP",
+      "reason": "PRES: CRP軽度上昇(30-40%)"
+    },
+    {
+      "from": "D325",
+      "to": "L11",
+      "from_name": "PRES",
+      "to_name": "liver_enzymes",
+      "reason": "PRES: 肝酵素上昇(子癇/HELLP合併, 30-50%)"
+    },
+    {
+      "from": "D325",
+      "to": "S04",
+      "from_name": "PRES",
+      "to_name": "dyspnea",
+      "reason": "PRES: 呼吸困難(肺水腫合併, 20-30%)"
+    },
+    {
+      "from": "D352",
+      "to": "E16",
+      "from_name": "shigellosis",
+      "to_name": "consciousness",
+      "reason": "細菌性赤痢: 意識障害(重症, 5-15%)"
+    },
+    {
+      "from": "D352",
+      "to": "L44",
+      "from_name": "shigellosis",
+      "to_name": "electrolytes",
+      "reason": "細菌性赤痢: 電解質異常(脱水, 30-40%)"
+    },
+    {
+      "from": "D353",
+      "to": "L22",
+      "from_name": "ulcerative_colitis",
+      "to_name": "pancytopenia",
+      "reason": "UC: 汎血球減少(薬剤性/重症, 5-8%)"
+    },
+    {
+      "from": "D354",
+      "to": "E02",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "heart_rate",
+      "reason": "HL: 頻脈(B症状に伴う, 30-40%)"
+    },
+    {
+      "from": "D354",
+      "to": "L44",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "electrolytes",
+      "reason": "HL: 電解質異常(低Na/高Ca, 10-15%)"
+    },
+    {
+      "from": "D354",
+      "to": "S13",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "nausea",
+      "reason": "HL: 悪心(10-15%)"
+    },
+    {
+      "from": "D358",
+      "to": "E04",
+      "from_name": "airway_foreign_body",
+      "to_name": "respiratory_rate",
+      "reason": "気道異物: 頻呼吸(主徴, 60-80%)"
+    },
+    {
+      "from": "D365",
+      "to": "E02",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "heart_rate",
+      "reason": "肺クリプトコッカス症: 頻脈(感染に伴う)"
+    },
+    {
+      "from": "D365",
+      "to": "E13",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "lymphadenopathy",
+      "reason": "肺クリプトコッカス症: リンパ節腫脹(10-15%)"
+    },
+    {
+      "from": "D365",
+      "to": "E46",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "lymph_node_location",
+      "reason": "肺クリプトコッカス症: 縦隔リンパ節主体"
+    },
+    {
+      "from": "D365",
+      "to": "S05",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "headache",
+      "reason": "肺クリプトコッカス症: 頭痛(CNS播種15-30%)"
+    },
+    {
+      "from": "D365",
+      "to": "S16",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "night_sweats",
+      "reason": "肺クリプトコッカス症: 盗汗(20-30%)"
+    },
+    {
+      "from": "D37",
+      "to": "T02",
+      "from_name": "campylobacter_enteritis",
+      "to_name": "onset_speed",
+      "reason": "カンピロバクター腸炎: 急性発症(2-5日潜伏後)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
