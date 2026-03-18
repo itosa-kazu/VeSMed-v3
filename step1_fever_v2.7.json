@@ -3324,7 +3324,6 @@
       "name_ja": "腹部CT",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "abscess",
         "mass",
@@ -3372,7 +3371,6 @@
       "name_ja": "胸部CT詳細所見",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "consolidation",
         "GGO",
@@ -3886,7 +3884,6 @@
       "name": "CSF_analysis",
       "name_ja": "髄液検査",
       "states": [
-        "not_done",
         "normal",
         "viral_pattern",
         "bacterial_pattern",
@@ -4189,7 +4186,6 @@
       "name_ja": "血清総蛋白(TP)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "mildly_elevated",
         "very_high"
@@ -7316,7 +7312,6 @@
       "name_ja": "ECG所見",
       "category": "sign",
       "states": [
-        "not_done",
         "normal",
         "ST_elevation",
         "ST_depression",

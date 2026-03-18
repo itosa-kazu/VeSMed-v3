@@ -24070,103 +24070,89 @@
         "other_abnormal"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.425,
-        "abscess": 0.025,
-        "mass": 0.025,
-        "other_abnormal": 0.025
+        "normal": 0.85,
+        "abscess": 0.05,
+        "mass": 0.05,
+        "other_abnormal": 0.05
       },
       "parent_effects": {
         "D30": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "abscess": 0.8075,
-          "mass": 0.0475,
-          "other_abnormal": 0.0475
-        },
-        "D10": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "abscess": 0.2375,
-          "mass": 0.0475,
-          "other_abnormal": 0.57
-        },
-        "D27": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "abscess": 0.19,
-          "mass": 0.0475,
-          "other_abnormal": 0.665
-        },
-        "D34": {
-          "not_done": 0.05,
-          "normal": 0.285,
-          "abscess": 0.475,
-          "mass": 0.0475,
-          "other_abnormal": 0.1425
-        },
-        "D69": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "abscess": 0.0475,
-          "mass": 0.665,
-          "other_abnormal": 0.1425
-        },
-        "D39": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "abscess": 0.76,
-          "mass": 0.0,
-          "other_abnormal": 0.095
-        },
-        "D119": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "abscess": 0.8075,
-          "mass": 0.0475,
-          "other_abnormal": 0.0475
-        },
-        "D136": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "abscess": 0.095,
-          "mass": 0.0475,
-          "other_abnormal": 0.76
-        },
-        "D137": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "abscess": 0.0475,
-          "mass": 0.0475,
-          "other_abnormal": 0.76
-        },
-        "D229": {
-          "not_done": 0.3,
-          "normal": 0.1,
-          "abscess": 0.0,
-          "mass": 0.5,
-          "other_abnormal": 0.1
-        },
-        "D187": {
-          "not_done": 0.3,
-          "normal": 0.1,
-          "abscess": 0.1,
-          "mass": 0.0,
-          "other_abnormal": 0.5
-        },
-        "D29": {
-          "not_done": 0.05,
-          "normal": 0.04,
-          "abscess": 0.82,
-          "mass": 0.04,
+          "normal": 0.05,
+          "abscess": 0.85,
+          "mass": 0.05,
           "other_abnormal": 0.05
         },
-        "D362": {
-          "not_done": 0.05,
-          "normal": 0.03,
+        "D10": {
+          "normal": 0.1,
+          "abscess": 0.25,
+          "mass": 0.05,
+          "other_abnormal": 0.6
+        },
+        "D27": {
+          "normal": 0.05,
+          "abscess": 0.2,
+          "mass": 0.05,
+          "other_abnormal": 0.7
+        },
+        "D34": {
+          "normal": 0.25,
+          "abscess": 0.2,
+          "mass": 0.05,
+          "other_abnormal": 0.5
+        },
+        "D69": {
+          "normal": 0.1,
+          "abscess": 0.05,
+          "mass": 0.7,
+          "other_abnormal": 0.15
+        },
+        "D39": {
+          "normal": 0.1,
+          "abscess": 0.8,
+          "mass": 0.0,
+          "other_abnormal": 0.1
+        },
+        "D119": {
+          "normal": 0.05,
           "abscess": 0.85,
+          "mass": 0.05,
+          "other_abnormal": 0.05
+        },
+        "D136": {
+          "normal": 0.05,
+          "abscess": 0.8,
+          "mass": 0.05,
+          "other_abnormal": 0.1
+        },
+        "D137": {
+          "normal": 0.1,
+          "abscess": 0.05,
+          "mass": 0.05,
+          "other_abnormal": 0.8
+        },
+        "D229": {
+          "normal": 0.14,
+          "abscess": 0.0,
+          "mass": 0.72,
+          "other_abnormal": 0.14
+        },
+        "D187": {
+          "normal": 0.14,
+          "abscess": 0.14,
+          "mass": 0.0,
+          "other_abnormal": 0.72
+        },
+        "D29": {
+          "normal": 0.04,
+          "abscess": 0.86,
+          "mass": 0.04,
+          "other_abnormal": 0.06
+        },
+        "D362": {
+          "normal": 0.03,
+          "abscess": 0.89,
           "mass": 0.03,
-          "other_abnormal": 0.04
+          "other_abnormal": 0.05
         }
       }
     },
@@ -24271,94 +24257,86 @@
         "pleural_effusion"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.35,
-        "consolidation": 0.05,
-        "GGO": 0.025,
-        "cavity": 0.015,
-        "halo_sign": 0.01,
-        "BHL": 0.025,
-        "pleural_effusion": 0.025
+        "normal": 0.55,
+        "consolidation": 0.1,
+        "GGO": 0.1,
+        "cavity": 0.05,
+        "halo_sign": 0.03,
+        "BHL": 0.09,
+        "pleural_effusion": 0.08
       },
       "parent_effects": {
         "D35": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "consolidation": 0.1425,
-          "GGO": 0.0475,
-          "cavity": 0.6175,
-          "halo_sign": 0.019,
-          "BHL": 0.019,
-          "pleural_effusion": 0.057
+          "normal": 0.05,
+          "consolidation": 0.15,
+          "GGO": 0.05,
+          "cavity": 0.65,
+          "halo_sign": 0.02,
+          "BHL": 0.02,
+          "pleural_effusion": 0.06
         },
         "D50": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "consolidation": 0.0475,
-          "GGO": 0.76,
-          "cavity": 0.019,
-          "halo_sign": 0.019,
-          "BHL": 0.019,
-          "pleural_effusion": 0.038
+          "normal": 0.05,
+          "consolidation": 0.05,
+          "GGO": 0.8,
+          "cavity": 0.02,
+          "halo_sign": 0.02,
+          "BHL": 0.02,
+          "pleural_effusion": 0.04
         },
         "D62": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "consolidation": 0.0475,
-          "GGO": 0.0475,
-          "cavity": 0.019,
-          "halo_sign": 0.019,
-          "BHL": 0.665,
-          "pleural_effusion": 0.057
+          "normal": 0.1,
+          "consolidation": 0.05,
+          "GGO": 0.05,
+          "cavity": 0.02,
+          "halo_sign": 0.02,
+          "BHL": 0.7,
+          "pleural_effusion": 0.06
         },
         "D83": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "consolidation": 0.1425,
-          "GGO": 0.095,
-          "cavity": 0.095,
-          "halo_sign": 0.475,
-          "BHL": 0.019,
-          "pleural_effusion": 0.076
+          "normal": 0.05,
+          "consolidation": 0.15,
+          "GGO": 0.1,
+          "cavity": 0.1,
+          "halo_sign": 0.5,
+          "BHL": 0.02,
+          "pleural_effusion": 0.08
         },
         "D17": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "consolidation": 0.2375,
-          "GGO": 0.095,
-          "cavity": 0.285,
-          "halo_sign": 0.019,
-          "BHL": 0.0285,
-          "pleural_effusion": 0.2375
+          "normal": 0.05,
+          "consolidation": 0.25,
+          "GGO": 0.1,
+          "cavity": 0.3,
+          "halo_sign": 0.02,
+          "BHL": 0.03,
+          "pleural_effusion": 0.25
         },
         "D99": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "consolidation": 0.1425,
-          "GGO": 0.095,
-          "cavity": 0.2375,
-          "halo_sign": 0.019,
-          "BHL": 0.0285,
-          "pleural_effusion": 0.3325
+          "normal": 0.1,
+          "consolidation": 0.3,
+          "GGO": 0.1,
+          "cavity": 0.3,
+          "halo_sign": 0.02,
+          "BHL": 0.03,
+          "pleural_effusion": 0.15
         },
         "D36": {
-          "not_done": 0.05,
-          "normal": 0.019,
-          "consolidation": 0.095,
-          "GGO": 0.0285,
-          "cavity": 0.0475,
+          "normal": 0.02,
+          "consolidation": 0.1,
+          "GGO": 0.03,
+          "cavity": 0.05,
           "halo_sign": 0.0,
           "BHL": 0.0,
-          "pleural_effusion": 0.76
+          "pleural_effusion": 0.8
         },
         "D227": {
-          "normal": 0.5,
-          "consolidation": 0.125,
-          "GGO": 0.125,
-          "cavity": 0.0,
-          "halo_sign": 0.0,
-          "BHL": 0.0,
-          "pleural_effusion": 0.25
+          "normal": 0.05,
+          "consolidation": 0.1,
+          "GGO": 0.15,
+          "cavity": 0.6,
+          "halo_sign": 0.05,
+          "BHL": 0.02,
+          "pleural_effusion": 0.03
         },
         "D317": {
           "normal": 0.05,
@@ -24370,14 +24348,13 @@
           "pleural_effusion": 0.15
         },
         "D219": {
-          "not_done": 0.05,
           "normal": 0.1,
-          "consolidation": 0.15,
-          "GGO": 0.25,
-          "cavity": 0.3,
+          "consolidation": 0.16,
+          "GGO": 0.26,
+          "cavity": 0.32,
           "halo_sign": 0.05,
           "BHL": 0.02,
-          "pleural_effusion": 0.08
+          "pleural_effusion": 0.09
         }
       }
     },
@@ -24806,109 +24783,96 @@
         "HSV_PCR_positive"
       ],
       "leak": {
-        "not_done": 0.6928571428571428,
-        "normal": 0.24744897959183673,
-        "viral_pattern": 0.029693877551020407,
-        "bacterial_pattern": 0.00989795918367347,
-        "HSV_PCR_positive": 0.00989795918367347,
-        "tb_fungal_pattern": 0.010204081632653062
+        "normal": 0.7,
+        "viral_pattern": 0.12,
+        "bacterial_pattern": 0.08,
+        "HSV_PCR_positive": 0.05,
+        "tb_fungal_pattern": 0.05
       },
       "parent_effects": {
         "D84": {
-          "not_done": 0.05,
           "normal": 0.01,
-          "viral_pattern": 0.01,
+          "viral_pattern": 0.02,
           "bacterial_pattern": 0.01,
-          "HSV_PCR_positive": 0.9,
+          "HSV_PCR_positive": 0.94,
           "tb_fungal_pattern": 0.02
         },
         "D13": {
-          "not_done": 0.04950495049504951,
-          "normal": 0.019801980198019802,
-          "viral_pattern": 0.22772277227722773,
-          "bacterial_pattern": 0.6732673267326733,
-          "HSV_PCR_positive": 0.019801980198019802,
-          "tb_fungal_pattern": 0.009900990099009901
+          "normal": 0.02,
+          "viral_pattern": 0.24,
+          "bacterial_pattern": 0.7,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.02
         },
         "D82": {
-          "not_done": 0.04950495049504951,
-          "normal": 0.019801980198019802,
-          "viral_pattern": 0.04950495049504951,
-          "bacterial_pattern": 0.8514851485148515,
-          "HSV_PCR_positive": 0.019801980198019802,
-          "tb_fungal_pattern": 0.009900990099009901
+          "normal": 0.02,
+          "viral_pattern": 0.05,
+          "bacterial_pattern": 0.88,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.03
         },
         "D95": {
-          "not_done": 0.04950495049504951,
-          "normal": 0.019801980198019802,
-          "viral_pattern": 0.8712871287128713,
-          "bacterial_pattern": 0.0297029702970297,
-          "HSV_PCR_positive": 0.019801980198019802,
-          "tb_fungal_pattern": 0.009900990099009901
+          "normal": 0.02,
+          "viral_pattern": 0.91,
+          "bacterial_pattern": 0.03,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.02
         },
         "D14": {
-          "not_done": 0.39603960396039606,
-          "normal": 0.1485148514851485,
-          "viral_pattern": 0.09900990099009901,
-          "bacterial_pattern": 0.297029702970297,
-          "HSV_PCR_positive": 0.04950495049504951,
-          "tb_fungal_pattern": 0.009900990099009901
+          "normal": 0.15,
+          "viral_pattern": 0.12,
+          "bacterial_pattern": 0.6,
+          "HSV_PCR_positive": 0.05,
+          "tb_fungal_pattern": 0.08
         },
         "D17": {
-          "not_done": 0.49504950495049505,
-          "normal": 0.09900990099009901,
-          "viral_pattern": 0.24752475247524752,
-          "bacterial_pattern": 0.1485148514851485,
-          "HSV_PCR_positive": 0.0,
-          "tb_fungal_pattern": 0.009900990099009901
-        },
-        "D178": {
-          "not_done": 0.1,
-          "normal": 0.03,
-          "viral_pattern": 0.05,
-          "bacterial_pattern": 0.75,
-          "HSV_PCR_positive": 0.0,
-          "tb_fungal_pattern": 0.07
-        },
-        "D53": {
-          "not_done": 0.3,
-          "normal": 0.15,
-          "viral_pattern": 0.4,
-          "bacterial_pattern": 0.1,
-          "HSV_PCR_positive": 0.0,
-          "tb_fungal_pattern": 0.05
-        },
-        "D20": {
-          "not_done": 0.5,
-          "normal": 0.25,
-          "viral_pattern": 0.03,
-          "bacterial_pattern": 0.18,
-          "HSV_PCR_positive": 0.0,
-          "tb_fungal_pattern": 0.04
-        },
-        "D324": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "viral_pattern": 0.07,
+          "normal": 0.05,
+          "viral_pattern": 0.1,
           "bacterial_pattern": 0.1,
           "HSV_PCR_positive": 0.01,
           "tb_fungal_pattern": 0.74
         },
-        "D109": {
-          "not_done": 0.1,
-          "normal": 0.02,
+        "D178": {
+          "normal": 0.1,
+          "viral_pattern": 0.65,
+          "bacterial_pattern": 0.1,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.13
+        },
+        "D53": {
+          "normal": 0.18,
+          "viral_pattern": 0.58,
+          "bacterial_pattern": 0.13,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.09
+        },
+        "D20": {
+          "normal": 0.05,
           "viral_pattern": 0.05,
-          "bacterial_pattern": 0.08,
-          "tb_fungal_pattern": 0.75,
-          "HSV_PCR_positive": 0.0
+          "bacterial_pattern": 0.82,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.06
+        },
+        "D324": {
+          "normal": 0.03,
+          "viral_pattern": 0.07,
+          "bacterial_pattern": 0.1,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.78
+        },
+        "D109": {
+          "normal": 0.02,
+          "viral_pattern": 0.06,
+          "bacterial_pattern": 0.09,
+          "HSV_PCR_positive": 0.01,
+          "tb_fungal_pattern": 0.82
         },
         "D110": {
-          "not_done": 0.25,
-          "normal": 0.15,
-          "viral_pattern": 0.45,
-          "bacterial_pattern": 0.05,
-          "HSV_PCR_positive": 0.0,
-          "tb_fungal_pattern": 0.1
+          "normal": 0.18,
+          "viral_pattern": 0.62,
+          "bacterial_pattern": 0.07,
+          "HSV_PCR_positive": 0.02,
+          "tb_fungal_pattern": 0.11
         }
       }
     },
@@ -36887,71 +36851,60 @@
     "L50": {
       "description": "血清総蛋白。基本検査。骨髄腫ではM蛋白で著明上昇。",
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.45,
-        "mildly_elevated": 0.04,
-        "very_high": 0.01
+        "normal": 0.9,
+        "mildly_elevated": 0.08,
+        "very_high": 0.02
       },
       "parent_effects": {
         "D114": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "mildly_elevated": 0.1425,
-          "very_high": 0.7125
+          "normal": 0.1,
+          "mildly_elevated": 0.15,
+          "very_high": 0.75
         },
         "D97": {
-          "not_done": 0.05,
-          "normal": 0.38,
-          "mildly_elevated": 0.38,
-          "very_high": 0.19
+          "normal": 0.25,
+          "mildly_elevated": 0.35,
+          "very_high": 0.4
         },
         "D67": {
-          "not_done": 0.05,
-          "normal": 0.665,
-          "mildly_elevated": 0.19,
-          "very_high": 0.095
+          "normal": 0.7,
+          "mildly_elevated": 0.2,
+          "very_high": 0.1
         },
         "D94": {
-          "not_done": 0.05,
-          "normal": 0.475,
-          "mildly_elevated": 0.38,
-          "very_high": 0.095
+          "normal": 0.45,
+          "mildly_elevated": 0.45,
+          "very_high": 0.1
         },
         "D59": {
-          "not_done": 0.05,
-          "normal": 0.5225,
-          "mildly_elevated": 0.3325,
-          "very_high": 0.095
+          "normal": 0.45,
+          "mildly_elevated": 0.4,
+          "very_high": 0.15
         },
         "D62": {
-          "not_done": 0.05,
-          "normal": 0.6175,
-          "mildly_elevated": 0.285,
-          "very_high": 0.0475
+          "normal": 0.65,
+          "mildly_elevated": 0.3,
+          "very_high": 0.05
         },
         "D107": {
-          "not_done": 0.05,
-          "normal": 0.5225,
-          "mildly_elevated": 0.3325,
-          "very_high": 0.095
+          "normal": 0.6,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
         },
         "D44": {
-          "not_done": 0.05,
-          "normal": 0.6175,
-          "mildly_elevated": 0.266,
-          "very_high": 0.0665
+          "normal": 0.6,
+          "mildly_elevated": 0.3,
+          "very_high": 0.1
         },
         "D17": {
-          "not_done": 0.05,
-          "normal": 0.665,
-          "mildly_elevated": 0.2375,
-          "very_high": 0.0475
+          "normal": 0.65,
+          "mildly_elevated": 0.28,
+          "very_high": 0.07
         },
         "D113": {
-          "not_done": 0.05,
-          "normal": 0.665,
-          "mildly_elevated": 0.2375,
-          "very_high": 0.0475
+          "normal": 0.5,
+          "mildly_elevated": 0.38,
+          "very_high": 0.12
         }
       }
     },
@@ -39366,7 +39319,6 @@
     "E40": {
       "description": "ECG所見",
       "leak": {
-        "not_done": 0.15,
         "normal": 0.55,
         "ST_elevation": 0.05,
         "ST_depression": 0.05,
@@ -39374,11 +39326,12 @@
         "QT_prolongation": 0.03,
         "Brugada_pattern": 0.01,
         "RVH_strain": 0.05,
-        "LVH_pattern": 0.06
+        "LVH_pattern": 0.06,
+        "SVT": 0.08,
+        "VT": 0.07
       },
       "parent_effects": {
         "D131": {
-          "not_done": 0.03,
           "normal": 0.05,
           "ST_elevation": 0.45,
           "ST_depression": 0.35,
@@ -39387,37 +39340,34 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.02,
           "LVH_pattern": 0.03,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.01,
+          "VT": 0.02
         },
         "D134": {
-          "not_done": 0.03,
           "normal": 0.05,
           "ST_elevation": 0.75,
           "ST_depression": 0.03,
           "AF": 0.05,
-          "QT_prolongation": 0.03,
+          "QT_prolongation": 0.04,
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.02,
           "LVH_pattern": 0.03,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.01,
+          "VT": 0.01
         },
         "D116": {
-          "not_done": 0.03,
           "normal": 0.08,
-          "ST_elevation": 0.35,
-          "ST_depression": 0.25,
+          "ST_elevation": 0.33,
+          "ST_depression": 0.22,
           "AF": 0.1,
-          "QT_prolongation": 0.05,
+          "QT_prolongation": 0.08,
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.03,
           "LVH_pattern": 0.1,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.02,
+          "VT": 0.03
         },
         "D341": {
-          "not_done": 0.03,
           "normal": 0.02,
           "ST_elevation": 0.05,
           "ST_depression": 0.02,
@@ -39426,11 +39376,10 @@
           "Brugada_pattern": 0.8,
           "RVH_strain": 0.01,
           "LVH_pattern": 0.02,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.01,
+          "VT": 0.02
         },
         "D342": {
-          "not_done": 0.03,
           "normal": 0.02,
           "ST_elevation": 0.02,
           "ST_depression": 0.05,
@@ -39439,11 +39388,10 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.02,
           "LVH_pattern": 0.02,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.01,
+          "VT": 0.02
         },
         "D327": {
-          "not_done": 0.05,
           "normal": 0.1,
           "ST_elevation": 0.03,
           "ST_depression": 0.1,
@@ -39452,11 +39400,10 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.03,
           "LVH_pattern": 0.6,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.03,
+          "VT": 0.02
         },
         "D340": {
-          "not_done": 0.05,
           "normal": 0.1,
           "ST_elevation": 0.03,
           "ST_depression": 0.05,
@@ -39465,11 +39412,10 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.1,
           "LVH_pattern": 0.08,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.03,
+          "VT": 0.02
         },
         "D346": {
-          "not_done": 0.03,
           "normal": 0.05,
           "ST_elevation": 0.03,
           "ST_depression": 0.2,
@@ -39477,12 +39423,11 @@
           "QT_prolongation": 0.03,
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.02,
-          "LVH_pattern": 0.58,
-          "SVT": 0.0,
-          "VT": 0.0
+          "LVH_pattern": 0.55,
+          "SVT": 0.03,
+          "VT": 0.03
         },
         "D125": {
-          "not_done": 0.03,
           "normal": 0.02,
           "ST_elevation": 0.02,
           "ST_depression": 0.08,
@@ -39491,78 +39436,80 @@
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.02,
           "LVH_pattern": 0.05,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.02,
+          "VT": 0.01
         },
         "D318": {
-          "not_done": 0.05,
-          "normal": 0.08,
-          "ST_elevation": 0.02,
-          "ST_depression": 0.05,
-          "AF": 0.05,
-          "QT_prolongation": 0.02,
-          "Brugada_pattern": 0.01,
-          "RVH_strain": 0.65,
-          "LVH_pattern": 0.07,
-          "SVT": 0.0,
-          "VT": 0.0
+          "normal": 0.15,
+          "ST_elevation": 0.03,
+          "ST_depression": 0.08,
+          "AF": 0.08,
+          "QT_prolongation": 0.1,
+          "Brugada_pattern": 0.02,
+          "RVH_strain": 0.3,
+          "LVH_pattern": 0.1,
+          "SVT": 0.05,
+          "VT": 0.09
         },
         "D150": {
-          "not_done": 0.03,
           "normal": 0.05,
-          "ST_elevation": 0.4,
-          "ST_depression": 0.3,
+          "ST_elevation": 0.38,
+          "ST_depression": 0.28,
           "AF": 0.05,
-          "QT_prolongation": 0.05,
+          "QT_prolongation": 0.07,
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.03,
           "LVH_pattern": 0.08,
-          "SVT": 0.0,
-          "VT": 0.0
+          "SVT": 0.03,
+          "VT": 0.02
         },
         "D211": {
-          "not_done": 0.3,
           "normal": 0.1,
-          "ST_elevation": 0.1,
-          "AF": 0.4,
-          "ST_depression": 0.1,
-          "SVT": 0.0,
-          "VT": 0.0
+          "ST_elevation": 0.08,
+          "ST_depression": 0.08,
+          "AF": 0.42,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.02,
+          "LVH_pattern": 0.03,
+          "SVT": 0.15,
+          "VT": 0.06
         },
         "D310": {
-          "not_done": 0.3,
-          "normal": 0.3,
+          "normal": 0.2,
           "ST_elevation": 0.1,
-          "AF": 0.2,
           "ST_depression": 0.1,
-          "SVT": 0.0,
-          "VT": 0.0
+          "AF": 0.15,
+          "QT_prolongation": 0.05,
+          "Brugada_pattern": 0.01,
+          "RVH_strain": 0.03,
+          "LVH_pattern": 0.2,
+          "SVT": 0.1,
+          "VT": 0.06
         },
         "D356": {
-          "not_done": 0.03,
           "normal": 0.02,
           "ST_elevation": 0.01,
           "ST_depression": 0.05,
-          "AF": 0.0,
+          "AF": 0.01,
           "QT_prolongation": 0.02,
           "Brugada_pattern": 0.01,
           "RVH_strain": 0.01,
           "LVH_pattern": 0.02,
-          "SVT": 0.83,
-          "VT": 0.0
+          "SVT": 0.84,
+          "VT": 0.01
         },
         "D357": {
-          "not_done": 0.03,
           "normal": 0.02,
           "ST_elevation": 0.03,
           "ST_depression": 0.05,
-          "AF": 0.0,
+          "AF": 0.01,
           "QT_prolongation": 0.03,
           "Brugada_pattern": 0.02,
           "RVH_strain": 0.02,
           "LVH_pattern": 0.02,
-          "SVT": 0.0,
-          "VT": 0.78
+          "SVT": 0.01,
+          "VT": 0.79
         }
       }
     },
