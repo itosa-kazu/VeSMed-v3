@@ -117,6 +117,7 @@ python bn_inference.py  # 全案例
 | FATAL | 0 |
 | EDGE_NO_CPT | 0 |
 | CPT_NO_EDGE | 0 |
+| validate_edges.py | エラー数が増加していないこと |
 
 **1案例でも悪化したら原因調査**（ゼロ劣化原則）。
 よくある原因:

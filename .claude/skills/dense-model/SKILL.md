@@ -40,6 +40,7 @@ for did in all_diseases:
 
 ### Step 4: 三位一体確認
 EDGE_NO_CPT=0, CPT_NO_EDGE=0
+`python3 validate_edges.py` のエラー数が増加していないこと
 
 ### Step 5: テスト
 - まずparent_count IDF方式でテスト（既存方式）

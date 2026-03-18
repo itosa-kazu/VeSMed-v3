@@ -43,6 +43,7 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 2. **WebSearchでPMC/教科書を確認** → 文献根拠がない辺は追加しない
 3. 「頻度は？」→ CPT値設定（文献の頻度データを参考に）
 4. 「この案例がなくてもこの辺を追加するか？」→ 過拟合チェック
+5. **from_nameは既存辺から取得**（同一disease IDの既存辺のfrom_nameをコピー。手動入力禁止）
 
 **重要:** LLMの「印象」だけで辺を追加してはならない。D→変量の因果辺は必ずPMC/教科書の根拠が必要。
 
@@ -51,11 +52,14 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 - L09=negative/L10=negative → 他の類似疾患にも同じ辺を追加すること（公平性）
 - 特殊変量(E15心雑音/E22口蓋垂偏位等) → 本当に必要か慎重判断
 
-## Step 4: 三位一体確認
+## Step 4: 三位一体確認 + validate_edges
 
 ```python
 # EDGE_NO_CPT と CPT_NO_EDGE が両方0であること
+# さらに validate_edges.py を実行して名前衝突・孤立CPTがないこと
+python3 validate_edges.py
 ```
+**validate_edges.pyのエラーが増加した場合は辺追加をやり直す。**
 
 ## Step 5: 回帰テスト（ゼロ劣化原則）
 
