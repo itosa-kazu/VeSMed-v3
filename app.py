@@ -137,7 +137,7 @@ def api_next_best_test():
     recommendations = next_best_test(
         evidence, risk, diseases, disease_children, noisy_or, root_priors,
         disc=idf_disc, disc_power=IDF_DISC_POWER, cf_alpha=CF_COVERAGE_ALPHA,
-        top_n=15,
+        prior_power=PRIOR_POWER, top_n=15,
     )
 
     results = []
@@ -169,7 +169,7 @@ def api_next_best_test():
     falsification = next_best_falsification_test(
         evidence, risk, diseases, disease_children, noisy_or, root_priors,
         disc=idf_disc, disc_power=IDF_DISC_POWER, cf_alpha=CF_COVERAGE_ALPHA,
-        top_n=5,
+        prior_power=PRIOR_POWER, top_n=5,
     )
 
     falsification_results = []

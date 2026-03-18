@@ -594,7 +594,7 @@ def entropy(ranked):
 
 def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
                    root_priors, disc=None, disc_power=0.0, cf_alpha=0.0,
-                   top_n=10):
+                   prior_power=0.0, top_n=10):
     """
     次に行うべき検査を情報利得(IG)で推奨する。
 
@@ -608,7 +608,7 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
     # Current posterior and entropy
     ranked_now = infer(evidence, risk, diseases, disease_children, noisy_or,
                        root_priors, disc=disc, disc_power=disc_power,
-                       cf_alpha=cf_alpha)
+                       cf_alpha=cf_alpha, prior_power=prior_power)
     h_now = entropy(ranked_now)
     posterior = {d: p for d, p in ranked_now}
 
@@ -660,7 +660,8 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
             ev_hypo[var_id] = s
             ranked_hypo = infer(ev_hypo, risk, diseases, disease_children,
                                 noisy_or, root_priors, disc=disc,
-                                disc_power=disc_power, cf_alpha=cf_alpha)
+                                disc_power=disc_power, cf_alpha=cf_alpha,
+                                prior_power=prior_power)
             h_hypo = entropy(ranked_hypo)
             expected_h += p_s * h_hypo
             state_details.append({"state": s, "prob": p_s, "h_after": h_hypo})
@@ -685,7 +686,8 @@ def next_best_test(evidence, risk, diseases, disease_children, noisy_or,
 
 def next_best_falsification_test(evidence, risk, diseases, disease_children,
                                   noisy_or, root_priors, disc=None,
-                                  disc_power=0.0, cf_alpha=0.0, top_n=5):
+                                  disc_power=0.0, cf_alpha=0.0,
+                                  prior_power=0.0, top_n=5):
     """
     反証推奨: 現在のTop-1診断を最も動揺させる検査を推奨する。
 
@@ -705,7 +707,7 @@ def next_best_falsification_test(evidence, risk, diseases, disease_children,
     all_results = next_best_test(
         evidence, risk, diseases, disease_children, noisy_or, root_priors,
         disc=disc, disc_power=disc_power, cf_alpha=cf_alpha,
-        top_n=9999
+        prior_power=prior_power, top_n=9999
     )
 
     if not all_results:
