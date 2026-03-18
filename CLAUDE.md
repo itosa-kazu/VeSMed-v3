@@ -30,6 +30,8 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **検査値変量のstate設計は因材施教** — まず変量固有の黄金分級を文献検索、なければCTCAE準拠4-state(xULN基準)をfallback
 - **辺追加後は `python3 validate_edges.py` 必須** — 疾患IDの名前衝突・孤立CPT・重複辺を検出
 - **辺のfrom_nameは疾患IDマスタから引く** — 手動入力禁止、step2のfrom既存辺から正規名を取得
+- **新疾患追加/疾患分割時はR01+R02必須** — full_cptsにR01(年齢7区分)とR02(性別)を必ず追加。per-R個別フォーマット使用
+- **revert禁止** — 回帰テストが悪化してもrevertにはユーザ承認が必要
 
 ## 現在の状態
 - 345疾患(D01-D350)、792変量、6111辺、105疾患にR→D prior

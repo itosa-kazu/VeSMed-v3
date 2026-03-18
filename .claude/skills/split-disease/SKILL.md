@@ -74,6 +74,8 @@ python bn_inference.py  # Top-1/Top-3/FATAL を記録
 
 # === (B) full_cpts ===
 # 元のflat/conditional priorを分割
+# ★ R01(年齢)とR02(性別)を各子疾患に必ず追加（per-R個別フォーマット）
+# "R01": {"0_1": 0.01, "1_5": 0.02, ...}, "R02": {"male": 0.06, "female": 0.04}
 
 # === (C) noisy_or_params（存在する場合） ===
 # 元疾患が noisy_or_params に含まれていれば分割
@@ -161,6 +163,7 @@ git push
 - [ ] step2: 辺を疾患特異的に再設計（各10辺以上）
 - [ ] step3 root_priors: Prior分割 P(A)+P(B)≈P(combined)
 - [ ] step3 full_cpts: flat/conditional prior分割
+- [ ] **step3 full_cpts: R01(年齢)とR02(性別)を各子疾患に必ず追加（per-R個別フォーマット）**
 - [ ] step3 noisy_or_params: 元疾患のエントリを分割（存在する場合）
 - [ ] **step3 parent_effects: 新疾患を全関連証拠変数に追加（最重要）**
 - [ ] 新state追加時: 全既存parent_effectsに0.0追加

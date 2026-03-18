@@ -16,7 +16,8 @@ $ARGUMENTS に疾患名リスト（日本語）が渡される。なければ疾
 - 検査値変量のstate設計は因材施教: まず変量固有の黄金分級を文献検索、なければCTCAE準拠4-state(xULN基準)をfallback
 - step2に辺（disease→所見変数）を追加。**最低10辺以上**。鑑別力のある辺を優先（正常値辺は不要）
 - **辺のfrom_nameは同一disease IDの既存辺からコピー**（手動入力禁止。新疾患の場合はstep2のfrom_nameとして正式英語名を使用）
-- step3にCPT（leak + parent_effects）を追加。full_cptにR01/R02を含める（性差/年齢差がある場合）
+- step3にCPT（leak + parent_effects）を追加
+- **full_cptにR01(年齢)とR02(性別)を必ず追加（必須・省略禁止）**。per-R個別フォーマットで: `"R01": {"0_1": 0.01, "1_5": 0.02, ...}`, `"R02": {"male": 0.06, "female": 0.04}`
 - **CPTの機械的一括変換は禁止**（比例正規化/LR保存式等）。各CPTは臨床根拠に基づき手動設計
 - **大量CPT作業は並列Agent分割**: 5変量以上の場合、1Agent=1変量で並列起動。5変量ごとに回帰テスト
 - **三位一体**: step1/step2/step3は必ず同時更新
@@ -70,7 +71,7 @@ missing = set(ev.keys()) - edge_map.get(expected, set())
 
 ## 鉄則チェックリスト
 - [ ] step1/step2/step3 三位一体
-- [ ] full_cptにR01/R02（性差/年齢差がある場合）
+- [ ] **full_cptにR01(年齢7区分)とR02(性別)を必ず追加（必須）**
 - [ ] 案例検索agent起動済み
 - [ ] validate_cases.py ERROR 0
 - [ ] EDGE_NO_CPT = 0, CPT_NO_EDGE = 0
