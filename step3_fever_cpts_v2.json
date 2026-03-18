@@ -21779,25 +21779,21 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.85,
-        "negative": 0.14,
-        "positive": 0.01
+        "negative": 0.98,
+        "positive": 0.02
       },
       "parent_effects": {
         "D15": {
-          "not_done": 0.05,
           "negative": 0.05,
-          "positive": 0.9
+          "positive": 0.95
         },
         "D16": {
-          "not_done": 0.25,
-          "negative": 0.73,
-          "positive": 0.02
+          "negative": 0.97,
+          "positive": 0.03
         },
         "D91": {
-          "not_done": 0.25,
-          "negative": 0.73,
-          "positive": 0.02
+          "negative": 0.97,
+          "positive": 0.03
         }
       }
     },
@@ -23405,23 +23401,20 @@
         "p_ANCA"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "c_ANCA": 0.005,
-        "p_ANCA": 0.005
+        "negative": 0.98,
+        "c_ANCA": 0.01,
+        "p_ANCA": 0.01
       },
       "parent_effects": {
         "D60": {
-          "not_done": 0.05,
-          "negative": 0.0475,
-          "c_ANCA": 0.3325,
-          "p_ANCA": 0.57
+          "negative": 0.05,
+          "c_ANCA": 0.35,
+          "p_ANCA": 0.6
         },
         "D112": {
-          "not_done": 0.05,
-          "negative": 0.76,
-          "c_ANCA": 0.019,
-          "p_ANCA": 0.171
+          "negative": 0.8,
+          "c_ANCA": 0.02,
+          "p_ANCA": 0.18
         }
       }
     },
@@ -23432,40 +23425,33 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.425,
-        "elevated": 0.075
+        "normal": 0.85,
+        "elevated": 0.15
       },
       "parent_effects": {
         "D77": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "elevated": 0.9025
+          "normal": 0.05,
+          "elevated": 0.95
         },
         "D03": {
-          "not_done": 0.05,
-          "normal": 0.38,
-          "elevated": 0.57
-        },
-        "D78": {
-          "not_done": 0.05,
-          "normal": 0.285,
-          "elevated": 0.665
-        },
-        "D355": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "elevated": 0.9025
-        },
-        "D29": {
-          "not_done": 0.05,
-          "normal": 0.35,
+          "normal": 0.4,
           "elevated": 0.6
         },
+        "D78": {
+          "normal": 0.3,
+          "elevated": 0.7
+        },
+        "D355": {
+          "normal": 0.05,
+          "elevated": 0.95
+        },
+        "D29": {
+          "normal": 0.37,
+          "elevated": 0.63
+        },
         "D362": {
-          "not_done": 0.05,
-          "normal": 0.45,
-          "elevated": 0.5
+          "normal": 0.47,
+          "elevated": 0.53
         }
       }
     },
@@ -23553,24 +23539,20 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.425,
-        "elevated": 0.075
+        "normal": 0.85,
+        "elevated": 0.15
       },
       "parent_effects": {
         "D326": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "elevated": 0.9025
+          "normal": 0.05,
+          "elevated": 0.95
         },
         "D65": {
-          "not_done": 0.05,
-          "normal": 0.07,
-          "elevated": 0.88
+          "normal": 0.08,
+          "elevated": 0.92
         },
         "D360": {
-          "not_done": 0.05,
-          "normal": 0.8,
+          "normal": 0.85,
           "elevated": 0.15
         }
       }
@@ -23582,15 +23564,13 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.475,
-        "elevated": 0.025
+        "normal": 0.95,
+        "elevated": 0.05
       },
       "parent_effects": {
         "D62": {
-          "not_done": 0.05,
-          "normal": 0.285,
-          "elevated": 0.665
+          "normal": 0.3,
+          "elevated": 0.7
         }
       }
     },
@@ -23601,20 +23581,17 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.485,
-        "elevated": 0.015
+        "normal": 0.95,
+        "elevated": 0.05
       },
       "parent_effects": {
         "D70": {
-          "not_done": 0.05,
-          "normal": 0.1425,
-          "elevated": 0.8075
+          "normal": 0.15,
+          "elevated": 0.85
         },
         "D288": {
-          "not_done": 0.3,
-          "normal": 0.3,
-          "elevated": 0.4
+          "normal": 0.35,
+          "elevated": 0.65
         }
       }
     },
@@ -23625,15 +23602,13 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "positive": 0.01
+        "negative": 0.95,
+        "positive": 0.05
       },
       "parent_effects": {
         "D83": {
-          "not_done": 0.05,
-          "negative": 0.1425,
-          "positive": 0.8075
+          "negative": 0.15,
+          "positive": 0.85
         }
       }
     },
@@ -23644,25 +23619,21 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.475,
-        "positive": 0.025
+        "negative": 0.95,
+        "positive": 0.05
       },
       "parent_effects": {
         "D49": {
-          "not_done": 0.05,
-          "negative": 0.19,
-          "positive": 0.76
+          "negative": 0.2,
+          "positive": 0.8
         },
         "D50": {
-          "not_done": 0.05,
-          "negative": 0.1425,
-          "positive": 0.8075
+          "negative": 0.15,
+          "positive": 0.85
         },
         "D83": {
-          "not_done": 0.05,
-          "negative": 0.2375,
-          "positive": 0.7125
+          "negative": 0.25,
+          "positive": 0.75
         }
       }
     },
@@ -23998,15 +23969,13 @@
         "elevated_over_250"
       ],
       "leak": {
-        "not_done": 0.7,
-        "normal": 0.28,
-        "elevated_over_250": 0.02
+        "normal": 0.85,
+        "elevated_over_250": 0.15
       },
       "parent_effects": {
         "D81": {
-          "not_done": 0.1,
           "normal": 0.05,
-          "elevated_over_250": 0.85
+          "elevated_over_250": 0.95
         }
       }
     },
@@ -24019,35 +23988,30 @@
         "crystals"
       ],
       "leak": {
-        "not_done": 0.8,
-        "inflammatory": 0.12,
-        "septic": 0.05,
-        "crystals": 0.03
+        "inflammatory": 0.55,
+        "septic": 0.1,
+        "crystals": 0.35
       },
       "parent_effects": {
         "D32": {
-          "not_done": 0.1,
           "inflammatory": 0.1,
-          "septic": 0.75,
-          "crystals": 0.05
+          "septic": 0.82,
+          "crystals": 0.08
         },
         "D115": {
-          "not_done": 0.3,
-          "inflammatory": 0.3,
-          "septic": 0.35,
-          "crystals": 0.05
+          "inflammatory": 0.35,
+          "septic": 0.55,
+          "crystals": 0.1
         },
         "D65": {
-          "not_done": 0.1,
-          "inflammatory": 0.05,
-          "septic": 0.03,
-          "crystals": 0.82
+          "inflammatory": 0.08,
+          "septic": 0.02,
+          "crystals": 0.9
         },
         "D360": {
-          "not_done": 0.05,
-          "inflammatory": 0.06,
+          "inflammatory": 0.08,
           "septic": 0.02,
-          "crystals": 0.87
+          "crystals": 0.9
         }
       }
     },
@@ -24154,29 +24118,25 @@
         "hypothyroid"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.45,
-        "hyperthyroid": 0.035,
-        "hypothyroid": 0.015
+        "normal": 0.88,
+        "hyperthyroid": 0.07,
+        "hypothyroid": 0.05
       },
       "parent_effects": {
         "D71": {
-          "not_done": 0.05,
-          "normal": 0.019,
-          "hyperthyroid": 0.9025,
-          "hypothyroid": 0.0285
+          "normal": 0.02,
+          "hyperthyroid": 0.95,
+          "hypothyroid": 0.03
         },
         "D87": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "hyperthyroid": 0.8075,
-          "hypothyroid": 0.0475
+          "normal": 0.1,
+          "hyperthyroid": 0.85,
+          "hypothyroid": 0.05
         },
         "D345": {
-          "not_done": 0.2,
           "normal": 0.1,
-          "hyperthyroid": 0.02,
-          "hypothyroid": 0.68
+          "hyperthyroid": 0.05,
+          "hypothyroid": 0.85
         }
       }
     },
@@ -24187,15 +24147,13 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
+        "negative": 0.99,
         "positive": 0.01
       },
       "parent_effects": {
         "D44": {
-          "not_done": 0.05,
-          "negative": 0.285,
-          "positive": 0.665
+          "negative": 0.03,
+          "positive": 0.97
         }
       }
     },
@@ -24208,30 +24166,25 @@
         "CD_positive"
       ],
       "leak": {
-        "not_done": 0.6,
-        "normal": 0.3,
+        "normal": 0.9,
         "pathogen_detected": 0.1
       },
       "parent_effects": {
         "D37": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "pathogen_detected": 0.8
+          "normal": 0.12,
+          "pathogen_detected": 0.88
         },
         "D38": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "pathogen_detected": 0.8500000000000001
+          "normal": 0.08,
+          "pathogen_detected": 0.92
         },
         "D351": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "pathogen_detected": 0.8
+          "normal": 0.12,
+          "pathogen_detected": 0.88
         },
         "D352": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "pathogen_detected": 0.8
+          "normal": 0.12,
+          "pathogen_detected": 0.88
         }
       }
     },
@@ -24390,20 +24343,17 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.485,
-        "elevated": 0.015
+        "normal": 0.97,
+        "elevated": 0.03
       },
       "parent_effects": {
         "D94": {
-          "not_done": 0.05,
-          "normal": 0.095,
-          "elevated": 0.855
+          "normal": 0.1,
+          "elevated": 0.9
         },
         "D229": {
-          "not_done": 0.3,
-          "normal": 0.1,
-          "elevated": 0.6
+          "normal": 0.15,
+          "elevated": 0.85
         }
       }
     },
@@ -24414,15 +24364,13 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.485,
-        "positive": 0.015
+        "negative": 0.98,
+        "positive": 0.02
       },
       "parent_effects": {
         "D101": {
-          "not_done": 0.05,
-          "negative": 0.019,
-          "positive": 0.931
+          "negative": 0.02,
+          "positive": 0.98
         }
       }
     },
@@ -24435,32 +24383,28 @@
         "HCV"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.45,
-        "HAV_IgM": 0.015,
-        "HBV": 0.02,
-        "HCV": 0.015
+        "negative": 0.9,
+        "HAV_IgM": 0.03,
+        "HBV": 0.04,
+        "HCV": 0.03
       },
       "parent_effects": {
         "D100": {
-          "not_done": 0.05,
-          "negative": 0.019,
-          "HAV_IgM": 0.8835,
-          "HBV": 0.0285,
-          "HCV": 0.019
+          "negative": 0.02,
+          "HAV_IgM": 0.93,
+          "HBV": 0.03,
+          "HCV": 0.02
         },
         "D108": {
-          "not_done": 0.05,
-          "negative": 0.01,
-          "HAV_IgM": 0.01,
-          "HBV": 0.92,
-          "HCV": 0.01
-        },
-        "D363": {
-          "not_done": 0.05,
           "negative": 0.02,
           "HAV_IgM": 0.01,
-          "HBV": 0.9,
+          "HBV": 0.95,
+          "HCV": 0.02
+        },
+        "D363": {
+          "negative": 0.02,
+          "HAV_IgM": 0.01,
+          "HBV": 0.95,
           "HCV": 0.02
         }
       }
@@ -24472,15 +24416,13 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "positive": 0.01
+        "negative": 0.97,
+        "positive": 0.03
       },
       "parent_effects": {
         "D102": {
-          "not_done": 0.05,
-          "negative": 0.095,
-          "positive": 0.855
+          "negative": 0.1,
+          "positive": 0.9
         }
       }
     },
@@ -24491,30 +24433,25 @@
         "elevated"
       ],
       "leak": {
-        "not_done": 0.5,
-        "normal": 0.45,
-        "elevated": 0.05
+        "normal": 0.9,
+        "elevated": 0.1
       },
       "parent_effects": {
         "D97": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "elevated": 0.9025
+          "normal": 0.05,
+          "elevated": 0.95
         },
         "D67": {
-          "not_done": 0.05,
-          "normal": 0.19,
-          "elevated": 0.76
+          "normal": 0.2,
+          "elevated": 0.8
         },
         "D107": {
-          "not_done": 0.05,
-          "normal": 0.0475,
-          "elevated": 0.9025
+          "normal": 0.05,
+          "elevated": 0.95
         },
         "D354": {
-          "not_done": 0.05,
-          "normal": 0.19,
-          "elevated": 0.76
+          "normal": 0.2,
+          "elevated": 0.8
         }
       }
     },
@@ -36499,17 +36436,15 @@
         "positive_B"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "positive_A": 0.005,
-        "positive_B": 0.005
+        "negative": 0.95,
+        "positive_A": 0.03,
+        "positive_B": 0.02
       },
       "parent_effects": {
         "D02": {
-          "not_done": 0.05,
-          "negative": 0.2375,
-          "positive_A": 0.475,
-          "positive_B": 0.2375
+          "negative": 0.25,
+          "positive_A": 0.5,
+          "positive_B": 0.25
         }
       }
     },
@@ -36740,88 +36675,75 @@
     "L48": {
       "description": "血清蛋白電気泳動。FUO精査で施行。",
       "leak": {
-        "not_done": 0.85,
-        "normal": 0.13,
-        "monoclonal_gammopathy": 0.01,
-        "polyclonal_gammopathy": 0.01
+        "normal": 0.8,
+        "monoclonal_gammopathy": 0.1,
+        "polyclonal_gammopathy": 0.1
       },
       "parent_effects": {
         "D114": {
-          "not_done": 0.15,
           "normal": 0.03,
-          "monoclonal_gammopathy": 0.8,
+          "monoclonal_gammopathy": 0.95,
           "polyclonal_gammopathy": 0.02
         },
-        "D67": {
-          "not_done": 0.5,
-          "normal": 0.35,
-          "monoclonal_gammopathy": 0.08,
-          "polyclonal_gammopathy": 0.07
-        },
         "D97": {
-          "not_done": 0.4,
-          "normal": 0.15,
-          "monoclonal_gammopathy": 0.05,
-          "polyclonal_gammopathy": 0.4
+          "normal": 0.1,
+          "monoclonal_gammopathy": 0.85,
+          "polyclonal_gammopathy": 0.05
+        },
+        "D67": {
+          "normal": 0.55,
+          "monoclonal_gammopathy": 0.15,
+          "polyclonal_gammopathy": 0.3
         },
         "D62": {
-          "not_done": 0.55,
-          "normal": 0.25,
-          "monoclonal_gammopathy": 0.02,
-          "polyclonal_gammopathy": 0.18
+          "normal": 0.3,
+          "monoclonal_gammopathy": 0.05,
+          "polyclonal_gammopathy": 0.65
         },
         "D59": {
-          "not_done": 0.45,
-          "normal": 0.2,
-          "monoclonal_gammopathy": 0.02,
-          "polyclonal_gammopathy": 0.33
+          "normal": 0.25,
+          "monoclonal_gammopathy": 0.05,
+          "polyclonal_gammopathy": 0.7
         },
         "D45": {
-          "not_done": 0.6,
-          "normal": 0.25,
-          "monoclonal_gammopathy": 0.02,
-          "polyclonal_gammopathy": 0.13
+          "normal": 0.45,
+          "monoclonal_gammopathy": 0.05,
+          "polyclonal_gammopathy": 0.5
         }
       }
     },
     "L49": {
       "description": "骨X線/骨病変。骨痛・FUO精査で施行。",
       "leak": {
-        "not_done": 0.85,
-        "normal": 0.12,
-        "lytic_lesions": 0.01,
-        "compression_fracture": 0.02
+        "normal": 0.7,
+        "lytic_lesions": 0.18,
+        "compression_fracture": 0.12
       },
       "parent_effects": {
         "D114": {
-          "not_done": 0.1,
           "normal": 0.1,
-          "lytic_lesions": 0.55,
+          "lytic_lesions": 0.65,
           "compression_fracture": 0.25
         },
         "D67": {
-          "not_done": 0.5,
-          "normal": 0.3,
-          "lytic_lesions": 0.12,
-          "compression_fracture": 0.08
+          "normal": 0.62,
+          "lytic_lesions": 0.25,
+          "compression_fracture": 0.13
         },
         "D31": {
-          "not_done": 0.2,
-          "normal": 0.15,
-          "lytic_lesions": 0.15,
-          "compression_fracture": 0.5
+          "normal": 0.18,
+          "lytic_lesions": 0.18,
+          "compression_fracture": 0.64
         },
         "D68": {
-          "not_done": 0.6,
-          "normal": 0.25,
-          "lytic_lesions": 0.1,
-          "compression_fracture": 0.05
+          "normal": 0.62,
+          "lytic_lesions": 0.28,
+          "compression_fracture": 0.1
         },
         "D69": {
-          "not_done": 0.5,
-          "normal": 0.25,
-          "lytic_lesions": 0.2,
-          "compression_fracture": 0.05
+          "normal": 0.55,
+          "lytic_lesions": 0.35,
+          "compression_fracture": 0.1
         }
       }
     },
@@ -39002,20 +38924,17 @@
     },
     "L07": {
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.425,
-        "positive": 0.075
+        "negative": 0.92,
+        "positive": 0.08
       },
       "parent_effects": {
         "D182": {
-          "not_done": 0.05,
-          "negative": 0.095,
-          "positive": 0.855
+          "negative": 0.1,
+          "positive": 0.9
         },
         "D04": {
-          "not_done": 0.05,
-          "negative": 0.285,
-          "positive": 0.665
+          "negative": 0.3,
+          "positive": 0.7
         }
       }
     },
@@ -39493,70 +39412,60 @@
     "L57": {
       "description": "ADAMTS13活性",
       "leak": {
-        "not_done": 0.7,
-        "normal": 0.25,
-        "low": 0.03,
-        "very_low_under_10": 0.02
+        "normal": 0.9,
+        "low": 0.07,
+        "very_low_under_10": 0.03
       },
       "parent_effects": {
         "D156": {
-          "not_done": 0.1,
           "normal": 0.03,
           "low": 0.07,
-          "very_low_under_10": 0.8
+          "very_low_under_10": 0.9
         },
         "D162": {
-          "not_done": 0.15,
-          "normal": 0.7,
-          "low": 0.1,
-          "very_low_under_10": 0.05
+          "normal": 0.75,
+          "low": 0.18,
+          "very_low_under_10": 0.07
         },
         "D152": {
-          "not_done": 0.15,
-          "normal": 0.55,
-          "low": 0.25,
-          "very_low_under_10": 0.05
+          "normal": 0.6,
+          "low": 0.3,
+          "very_low_under_10": 0.1
         },
         "D322": {
-          "not_done": 0.15,
-          "normal": 0.5,
-          "low": 0.3,
-          "very_low_under_10": 0.05
+          "normal": 0.55,
+          "low": 0.35,
+          "very_low_under_10": 0.1
         }
       }
     },
     "L58": {
       "description": "IGF-1/GH",
       "leak": {
-        "not_done": 0.75,
-        "normal": 0.2,
-        "elevated": 0.03,
-        "low": 0.02
+        "normal": 0.88,
+        "elevated": 0.05,
+        "low": 0.07
       },
       "parent_effects": {
         "D333": {
-          "not_done": 0.05,
           "normal": 0.03,
-          "elevated": 0.9,
+          "elevated": 0.95,
           "low": 0.02
         },
         "D332": {
-          "not_done": 0.15,
           "normal": 0.2,
           "elevated": 0.02,
-          "low": 0.63
+          "low": 0.78
         },
         "D159": {
-          "not_done": 0.2,
           "normal": 0.3,
           "elevated": 0.02,
-          "low": 0.48
+          "low": 0.68
         },
         "D196": {
-          "not_done": 0.2,
           "normal": 0.55,
-          "elevated": 0.2,
-          "low": 0.05
+          "elevated": 0.25,
+          "low": 0.2
         }
       }
     },
@@ -39616,107 +39525,90 @@
     "L59": {
       "description": "髄液開放圧",
       "leak": {
-        "not_done": 0.6,
-        "normal": 0.3,
-        "elevated": 0.07,
-        "very_high": 0.03
+        "normal": 0.75,
+        "elevated": 0.175,
+        "very_high": 0.075
       },
       "parent_effects": {
         "D13": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "elevated": 0.4,
-          "very_high": 0.45
+          "normal": 0.06,
+          "elevated": 0.44,
+          "very_high": 0.5
         },
         "D324": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "elevated": 0.45,
-          "very_high": 0.35
+          "normal": 0.11,
+          "elevated": 0.5,
+          "very_high": 0.39
         },
         "D314": {
-          "not_done": 0.1,
           "normal": 0.03,
-          "elevated": 0.17,
-          "very_high": 0.7
+          "elevated": 0.19,
+          "very_high": 0.78
         },
         "D315": {
-          "not_done": 0.1,
-          "normal": 0.05,
-          "elevated": 0.4,
-          "very_high": 0.45
+          "normal": 0.06,
+          "elevated": 0.44,
+          "very_high": 0.5
         },
         "D200": {
-          "not_done": 0.1,
-          "normal": 0.55,
-          "elevated": 0.3,
-          "very_high": 0.05
+          "normal": 0.61,
+          "elevated": 0.33,
+          "very_high": 0.06
         },
         "D109": {
-          "not_done": 0.1,
-          "normal": 0.1,
-          "elevated": 0.35,
-          "very_high": 0.45
+          "normal": 0.11,
+          "elevated": 0.39,
+          "very_high": 0.5
         }
       }
     },
     "L60": {
       "description": "尿中VMA/HVA",
       "leak": {
-        "not_done": 0.85,
-        "normal": 0.13,
-        "elevated": 0.02
+        "normal": 0.95,
+        "elevated": 0.05
       },
       "parent_effects": {
         "D347": {
-          "not_done": 0.05,
-          "normal": 0.03,
-          "elevated": 0.92
+          "normal": 0.05,
+          "elevated": 0.95
         },
         "D196": {
-          "not_done": 0.05,
           "normal": 0.08,
-          "elevated": 0.87
+          "elevated": 0.92
         },
         "D146": {
-          "not_done": 0.5,
-          "normal": 0.45,
-          "elevated": 0.05
+          "normal": 0.85,
+          "elevated": 0.15
         }
       }
     },
     "E41": {
       "description": "ABI",
       "leak": {
-        "not_done": 0.7,
-        "normal_over_0.9": 0.25,
-        "low_under_0.9": 0.05
+        "normal_over_0.9": 0.85,
+        "low_under_0.9": 0.15
       },
       "parent_effects": {
         "D335": {
-          "not_done": 0.05,
           "normal_over_0.9": 0.05,
-          "low_under_0.9": 0.9
+          "low_under_0.9": 0.95
         },
         "D137": {
-          "not_done": 0.3,
-          "normal_over_0.9": 0.4,
-          "low_under_0.9": 0.3
+          "normal_over_0.9": 0.75,
+          "low_under_0.9": 0.25
         },
         "D174": {
-          "not_done": 0.25,
-          "normal_over_0.9": 0.3,
-          "low_under_0.9": 0.45
+          "normal_over_0.9": 0.45,
+          "low_under_0.9": 0.55
         },
         "D291": {
-          "not_done": 0.3,
-          "normal_over_0.9": 0.65,
-          "low_under_0.9": 0.05
+          "normal_over_0.9": 0.92,
+          "low_under_0.9": 0.08
         },
         "D217": {
-          "not_done": 0.3,
-          "normal_over_0.9": 0.05,
-          "low_under_0.9": 0.65
+          "normal_over_0.9": 0.15,
+          "low_under_0.9": 0.85
         }
       }
     },
@@ -39851,33 +39743,29 @@
     "L62": {
       "description": "骨盤超音波",
       "leak": {
-        "not_done": 0.55,
-        "normal": 0.35,
-        "adnexal_mass": 0.04,
-        "free_fluid": 0.04,
-        "uterine_abnormal": 0.02
+        "normal": 0.78,
+        "adnexal_mass": 0.08,
+        "free_fluid": 0.08,
+        "uterine_abnormal": 0.06
       },
       "parent_effects": {
         "D276": {
-          "not_done": 0.05,
           "normal": 0.03,
-          "adnexal_mass": 0.85,
-          "free_fluid": 0.05,
+          "adnexal_mass": 0.88,
+          "free_fluid": 0.07,
           "uterine_abnormal": 0.02
         },
         "D291": {
-          "not_done": 0.05,
           "normal": 0.05,
           "adnexal_mass": 0.3,
-          "free_fluid": 0.55,
+          "free_fluid": 0.6,
           "uterine_abnormal": 0.05
         },
         "D40": {
-          "not_done": 0.15,
-          "normal": 0.25,
-          "adnexal_mass": 0.3,
-          "free_fluid": 0.25,
-          "uterine_abnormal": 0.05
+          "normal": 0.2,
+          "adnexal_mass": 0.35,
+          "free_fluid": 0.3,
+          "uterine_abnormal": 0.15
         }
       }
     },
@@ -44451,20 +44339,17 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "positive": 0.01
+        "negative": 0.98,
+        "positive": 0.02
       },
       "parent_effects": {
         "D365": {
-          "not_done": 0.05,
-          "negative": 0.19,
-          "positive": 0.76
+          "negative": 0.2,
+          "positive": 0.8
         },
         "D109": {
-          "not_done": 0.05,
-          "negative": 0.019,
-          "positive": 0.931
+          "negative": 0.02,
+          "positive": 0.98
         }
       }
     },
@@ -44475,20 +44360,17 @@
         "positive"
       ],
       "leak": {
-        "not_done": 0.5,
-        "negative": 0.49,
-        "positive": 0.01
+        "negative": 0.98,
+        "positive": 0.02
       },
       "parent_effects": {
         "D366": {
-          "not_done": 0.05,
-          "negative": 0.095,
-          "positive": 0.855
+          "negative": 0.1,
+          "positive": 0.9
         },
         "D110": {
-          "not_done": 0.05,
-          "negative": 0.57,
-          "positive": 0.38
+          "negative": 0.6,
+          "positive": 0.4
         }
       }
     },
