@@ -13315,9 +13315,9 @@
           "over_120": 0.15
         },
         "D354": {
-          "under_100": 0.55,
-          "100_120": 0.3,
-          "over_120": 0.15
+          "under_100": 0.8,
+          "100_120": 0.15,
+          "over_120": 0.05
         }
       }
     },
@@ -17011,9 +17011,9 @@
           "obtunded": 0.05
         },
         "D352": {
-          "normal": 0.85,
-          "confused": 0.1,
-          "obtunded": 0.05
+          "normal": 0.92,
+          "confused": 0.06,
+          "obtunded": 0.02
         }
       }
     },
@@ -23705,8 +23705,8 @@
           "present": 0.5
         },
         "D353": {
-          "absent": 0.93,
-          "present": 0.07
+          "absent": 0.96,
+          "present": 0.04
         }
       }
     },
@@ -24949,16 +24949,16 @@
           "other": 0.02
         },
         "D354": {
-          "normal": 0.85,
-          "hyponatremia": 0.08,
-          "hyperkalemia": 0.02,
-          "other": 0.05
+          "normal": 0.92,
+          "hyponatremia": 0.03,
+          "hyperkalemia": 0.01,
+          "other": 0.04
         },
         "D352": {
-          "normal": 0.55,
-          "hyponatremia": 0.25,
-          "hyperkalemia": 0.15,
-          "other": 0.05
+          "normal": 0.7,
+          "hyponatremia": 0.2,
+          "hyperkalemia": 0.08,
+          "other": 0.02
         }
       }
     },
