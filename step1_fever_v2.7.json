@@ -1737,7 +1737,6 @@
       "name_ja": "COVID抗原検査",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ]
@@ -1782,7 +1781,6 @@
       "name_ja": "腹部超音波",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "gallbladder_wall_thickening",
         "appendix_swelling"
@@ -1794,7 +1792,6 @@
       "name_ja": "異好性抗体（EBV迅速検査）",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ]
@@ -8722,7 +8719,6 @@
       "name_ja": "血液ガス/乳酸",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "metabolic_acidosis",
         "metabolic_alkalosis",
@@ -8778,7 +8774,6 @@
       "name_ja": "網状赤血球数",
       "category": "lab",
       "states": [
-        "not_done",
         "low",
         "normal",
         "elevated"
@@ -8792,7 +8787,6 @@
       "name_ja": "直接Coombs試験",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -8805,7 +8799,6 @@
       "name_ja": "HbA1c",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "prediabetic",
         "diabetic"
@@ -8819,7 +8812,6 @@
       "name_ja": "補体(C3/C4)",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "low_C3",
         "low_C4",
@@ -8834,7 +8826,6 @@
       "name_ja": "抗CCP抗体",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -8847,7 +8838,6 @@
       "name_ja": "抗dsDNA抗体",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -8874,7 +8864,6 @@
       "name_ja": "便潜血",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -8887,7 +8876,6 @@
       "name_ja": "MRI脊椎",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "compression_fracture",
         "epidural_abscess",
@@ -8904,7 +8892,6 @@
       "name_ja": "上部消化管内視鏡",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "ulcer",
         "varices",
@@ -8921,7 +8908,6 @@
       "name_ja": "下部消化管内視鏡",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "polyp",
         "tumor",
@@ -9162,7 +9148,6 @@
       "name_ja": "リウマトイド因子(RF)",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -9175,7 +9160,6 @@
       "name_ja": "抗リン脂質抗体",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -9188,7 +9172,6 @@
       "name_ja": "鉄代謝(Fe/TIBC/フェリチン)",
       "category": "lab",
       "states": [
-        "not_done",
         "iron_deficiency",
         "chronic_disease",
         "iron_overload",
@@ -9203,7 +9186,6 @@
       "name_ja": "尿浸透圧",
       "category": "lab",
       "states": [
-        "not_done",
         "dilute",
         "concentrated",
         "inappropriately_concentrated"
@@ -9217,7 +9199,6 @@
       "name_ja": "血清浸透圧",
       "category": "lab",
       "states": [
-        "not_done",
         "low",
         "normal",
         "high",
@@ -9344,7 +9325,6 @@
       "name_ja": "破砕赤血球",
       "category": "lab",
       "states": [
-        "not_done",
         "absent",
         "present"
       ],
@@ -9534,7 +9514,6 @@
       "name_ja": "コルチゾール",
       "category": "lab",
       "states": [
-        "not_done",
         "low",
         "normal",
         "elevated"
@@ -9548,7 +9527,6 @@
       "name_ja": "血中アンモニア",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "elevated"
       ],
@@ -9561,7 +9539,6 @@
       "name_ja": "ハプトグロビン",
       "category": "lab",
       "states": [
-        "not_done",
         "normal",
         "low",
         "absent"
@@ -10061,7 +10038,6 @@
       "name_ja": "CDトキシン検査",
       "category": "lab",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],
@@ -10443,7 +10419,6 @@
       "name_ja": "内診所見",
       "category": "sign",
       "states": [
-        "not_done",
         "normal",
         "cervical_motion_tenderness",
         "adnexal_mass",
@@ -10459,7 +10434,6 @@
       "name_ja": "Prehn徴候",
       "category": "sign",
       "states": [
-        "not_done",
         "negative",
         "positive"
       ],

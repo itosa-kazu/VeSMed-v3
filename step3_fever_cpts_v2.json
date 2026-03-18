@@ -44882,6 +44882,219 @@
           "markedly_elevated": 0.125
         }
       }
+    },
+    "L08": {
+      "leak": {
+        "negative": 0.95,
+        "positive": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L13": {
+      "leak": {
+        "negative": 0.95,
+        "positive": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L73": {
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L76": {
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L77": {
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L79": {
+      "leak": {
+        "negative": 0.92,
+        "positive": 0.08
+      },
+      "parent_effects": {}
+    },
+    "L88": {
+      "leak": {
+        "negative": 0.93,
+        "positive": 0.07
+      },
+      "parent_effects": {}
+    },
+    "L89": {
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L95": {
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {}
+    },
+    "L97": {
+      "leak": {
+        "normal": 0.95,
+        "elevated": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L99": {
+      "leak": {
+        "negative": 0.97,
+        "positive": 0.03
+      },
+      "parent_effects": {}
+    },
+    "E93": {
+      "leak": {
+        "negative": 0.95,
+        "positive": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L12": {
+      "leak": {
+        "normal": 0.9,
+        "gallbladder_wall_thickening": 0.06,
+        "appendix_swelling": 0.04
+      },
+      "parent_effects": {}
+    },
+    "L68": {
+      "leak": {
+        "normal": 0.7,
+        "metabolic_acidosis": 0.06,
+        "metabolic_alkalosis": 0.06,
+        "respiratory_acidosis": 0.05,
+        "respiratory_alkalosis": 0.08,
+        "lactic_acidosis": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L72": {
+      "leak": {
+        "low": 0.05,
+        "normal": 0.88,
+        "elevated": 0.07
+      },
+      "parent_effects": {}
+    },
+    "L74": {
+      "leak": {
+        "normal": 0.82,
+        "prediabetic": 0.12,
+        "diabetic": 0.06
+      },
+      "parent_effects": {}
+    },
+    "L75": {
+      "leak": {
+        "normal": 0.92,
+        "low_C3": 0.03,
+        "low_C4": 0.03,
+        "low_both": 0.02
+      },
+      "parent_effects": {}
+    },
+    "L90": {
+      "leak": {
+        "normal": 0.78,
+        "iron_deficiency": 0.12,
+        "chronic_disease": 0.07,
+        "iron_overload": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L91": {
+      "leak": {
+        "dilute": 0.15,
+        "concentrated": 0.8,
+        "inappropriately_concentrated": 0.05
+      },
+      "parent_effects": {}
+    },
+    "L92": {
+      "leak": {
+        "low": 0.03,
+        "normal": 0.88,
+        "high": 0.06,
+        "osmolar_gap_elevated": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L96": {
+      "leak": {
+        "low": 0.04,
+        "normal": 0.88,
+        "elevated": 0.08
+      },
+      "parent_effects": {}
+    },
+    "L98": {
+      "leak": {
+        "normal": 0.9,
+        "low": 0.07,
+        "absent": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L80": {
+      "leak": {
+        "normal": 0.55,
+        "compression_fracture": 0.1,
+        "epidural_abscess": 0.03,
+        "disc_herniation": 0.25,
+        "tumor": 0.04,
+        "myelitis": 0.03
+      },
+      "parent_effects": {}
+    },
+    "L81": {
+      "leak": {
+        "normal": 0.4,
+        "ulcer": 0.08,
+        "varices": 0.04,
+        "tumor": 0.05,
+        "esophagitis": 0.18,
+        "gastritis": 0.25
+      },
+      "parent_effects": {}
+    },
+    "L82": {
+      "leak": {
+        "normal": 0.35,
+        "polyp": 0.25,
+        "tumor": 0.05,
+        "inflammation": 0.1,
+        "diverticula": 0.22,
+        "vascular_malformation": 0.03
+      },
+      "parent_effects": {}
+    },
+    "E92": {
+      "leak": {
+        "normal": 0.8,
+        "cervical_motion_tenderness": 0.04,
+        "adnexal_mass": 0.05,
+        "adnexal_tenderness": 0.05,
+        "uterine_enlargement": 0.06
+      },
+      "parent_effects": {}
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
