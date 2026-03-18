@@ -373,18 +373,52 @@ def _decompose_marginals(cpt, parents):
     return marginals
 
 
+def _compute_single_r_lr(r_cpt, r_id, risk_evidence):
+    """Compute log-LR for a single R variable given its individual CPT.
+
+    r_cpt: dict of {state: prior_value}, e.g. {"18_39": 0.01, "65_plus": 0.03}
+    Returns: log(P(d|R=obs) / P_marginal) or 0.0 if neutral.
+    """
+    obs = risk_evidence.get(r_id)
+    if obs is None:
+        pop = JAPAN_POP.get(r_id)
+        obs = max(pop, key=pop.get) if pop else "no"
+
+    p_obs = r_cpt.get(obs)
+    if p_obs is None:
+        p_obs = min(r_cpt.values()) if r_cpt else None
+    if p_obs is None or p_obs <= 0:
+        return 0.0
+
+    pop = JAPAN_POP.get(r_id, {})
+    if pop:
+        p_marg = sum(r_cpt.get(s, 0) * w for s, w in pop.items())
+    else:
+        vals = list(r_cpt.values())
+        p_marg = sum(vals) / len(vals) if vals else 0
+
+    if p_marg <= 0:
+        return 0.0
+
+    return math.log(p_obs / p_marg)
+
+
 def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
     """Get disease prior using independent multiplicative R-factor adjustment.
 
     DeepMind three-layer BN approach (Richens et al. 2020):
     Each R variable independently contributes a likelihood ratio (LR).
 
-    For single R parent:
-      adjusted = BASE × (P(d|R=obs) / P_marginal(R))^prior_power
+    Supports two data formats in full_cpts:
 
-    For multiple R parents (independent multiplicative):
-      log_adjustment = Σ_i log(P_i(d|R_i=obs) / P_i_marginal)
-      adjusted = BASE × exp(log_adjustment × prior_power)
+    Old format (joint CPT):
+      {"parents": ["R01", "R11"], "cpt": {"18_39|no": 0.06, ...}}
+      → Decomposed at runtime into per-R marginals
+
+    New format (per-R individual CPTs, can coexist with old):
+      {"parents": ["R11", "R19"], "cpt": {...},
+       "R01": {"0_1": 0.001, ..., "65_plus": 0.03}}
+      → R01 used directly, R11/R19 decomposed from joint CPT
 
     prior_power controls strength:
       0.0 = no demographic adjustment (all diseases equal)
@@ -393,92 +427,72 @@ def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
     rp = root_priors.get(disease_id)
     if rp is None or isinstance(rp, (int, float)) or not isinstance(rp, dict):
         return BASE_PRIOR
-
-    parents = rp.get("parents", [])
-    cpt = rp.get("cpt", {})
-    if not cpt or not parents:
-        return BASE_PRIOR
-
-    rf_parents = [p for p in parents if p.startswith("R")]
-    if not rf_parents:
-        return BASE_PRIOR
     if prior_power <= 0:
         return BASE_PRIOR
 
-    # === Single R parent: simple ratio (identical to old behavior) ===
-    if len(rf_parents) == 1:
-        pid = rf_parents[0]
-        obs = risk_evidence.get(pid)
-        if obs is None:
-            pop = JAPAN_POP.get(pid)
-            obs = max(pop, key=pop.get) if pop else "no"
+    # Collect all per-R individual CPTs (new format: top-level R keys)
+    individual_r = {}
+    for key, val in rp.items():
+        if key.startswith("R") and isinstance(val, dict) and key != "cpt":
+            # Verify it looks like a CPT (has string keys with numeric values)
+            if any(isinstance(v, (int, float)) for v in val.values()):
+                individual_r[key] = val
 
-        # P(d | R=obs)
-        p_obs = cpt.get(obs)
-        if p_obs is not None:
-            p_obs = _cpt_val_to_prior(p_obs)
-        else:
-            # Fallback: min value
-            vals = [_cpt_val_to_prior(v) for v in cpt.values()]
-            p_obs = min(vals) if vals else None
-        if p_obs is None or p_obs <= 0:
-            return BASE_PRIOR
+    # Collect R parents from joint CPT (old format)
+    parents = rp.get("parents", [])
+    cpt = rp.get("cpt", {})
+    joint_rf_parents = [p for p in parents if p.startswith("R")]
 
-        # P_marginal
-        pop = JAPAN_POP.get(pid, {})
-        if pop:
-            p_marg = sum(_cpt_val_to_prior(cpt.get(s, 0)) * w
-                         for s, w in pop.items()
-                         if cpt.get(s) is not None)
-        else:
-            vals = [_cpt_val_to_prior(v) for v in cpt.values()]
-            p_marg = sum(vals) / len(vals) if vals else 0
+    # Exclude R variables that already have individual CPTs from joint decomposition
+    joint_rf_only = [p for p in joint_rf_parents if p not in individual_r]
 
-        if p_marg <= 0:
-            return BASE_PRIOR
-
-        ratio = p_obs / p_marg
-        adjusted = BASE_PRIOR * (ratio ** prior_power)
-        return max(min(adjusted, 0.5), 1e-6)
-
-    # === Multiple R parents: independent multiplicative LR ===
-    marginals = _decompose_marginals(cpt, rf_parents)
-    if not marginals:
+    # If no R information at all, return base
+    if not individual_r and not joint_rf_only:
         return BASE_PRIOR
 
     log_ratio_sum = 0.0
 
-    for r_id in rf_parents:
-        if r_id not in marginals:
-            continue  # No valid entries for this parent → LR=1 (neutral)
-        r_cpt = marginals[r_id]
+    # === Process individual per-R CPTs (new format) ===
+    for r_id, r_cpt in individual_r.items():
+        log_ratio_sum += _compute_single_r_lr(r_cpt, r_id, risk_evidence)
 
-        # Observed state
-        obs = risk_evidence.get(r_id)
-        if obs is None:
-            pop = JAPAN_POP.get(r_id)
-            obs = max(pop, key=pop.get) if pop else "no"
+    # === Process joint CPT R parents (old format) ===
+    if joint_rf_only and cpt:
+        if len(joint_rf_only) == 1:
+            # Single R parent in joint CPT: direct lookup
+            pid = joint_rf_only[0]
+            obs = risk_evidence.get(pid)
+            if obs is None:
+                pop = JAPAN_POP.get(pid)
+                obs = max(pop, key=pop.get) if pop else "no"
 
-        # P(d | R_i = obs)
-        p_obs = r_cpt.get(obs)
-        if p_obs is None:
-            # Fallback: try closest match or min
-            p_obs = min(r_cpt.values()) if r_cpt else None
-        if p_obs is None or p_obs <= 0:
-            continue
+            p_obs = cpt.get(obs)
+            if p_obs is not None:
+                p_obs = _cpt_val_to_prior(p_obs)
+            else:
+                vals = [_cpt_val_to_prior(v) for v in cpt.values()]
+                p_obs = min(vals) if vals else None
 
-        # P_marginal for this R_i
-        pop = JAPAN_POP.get(r_id, {})
-        if pop:
-            p_marg = sum(r_cpt.get(s, 0) * w for s, w in pop.items())
+            if p_obs is not None and p_obs > 0:
+                pop = JAPAN_POP.get(pid, {})
+                if pop:
+                    p_marg = sum(_cpt_val_to_prior(cpt.get(s, 0)) * w
+                                 for s, w in pop.items()
+                                 if cpt.get(s) is not None)
+                else:
+                    vals = [_cpt_val_to_prior(v) for v in cpt.values()]
+                    p_marg = sum(vals) / len(vals) if vals else 0
+
+                if p_marg > 0:
+                    log_ratio_sum += math.log(p_obs / p_marg)
         else:
-            vals = list(r_cpt.values())
-            p_marg = sum(vals) / len(vals) if vals else 0
-
-        if p_marg <= 0:
-            continue
-
-        log_ratio_sum += math.log(p_obs / p_marg)
+            # Multiple R parents in joint CPT: decompose into marginals
+            marginals = _decompose_marginals(cpt, joint_rf_only)
+            for r_id in joint_rf_only:
+                if r_id not in marginals:
+                    continue
+                log_ratio_sum += _compute_single_r_lr(
+                    marginals[r_id], r_id, risk_evidence)
 
     if log_ratio_sum == 0.0:
         return BASE_PRIOR
