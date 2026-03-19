@@ -21069,7 +21069,8 @@
       },
       "risk_factors": {
         "R01": "65_plus",
-        "R02": "female"
+        "R02": "female",
+        "R05": "yes"
       },
       "result": "",
       "notes": "RA+MTX/PSLによる免疫抑制。自宅改装で環境曝露。CRP正常が特徴"
@@ -21182,7 +21183,8 @@
       },
       "risk_factors": {
         "R01": "40_64",
-        "R02": "male"
+        "R02": "male",
+        "R05": "yes"
       },
       "result": "",
       "notes": "CD4低値(173)だがHIV陰性。6ヶ月の慢性経過。肺癌との鑑別が課題。CXR所見はmass→L04に直接マッピング困難"
