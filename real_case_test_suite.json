@@ -21447,6 +21447,1151 @@
       },
       "result": "",
       "notes": "テネシー州渡航。結膜充血あり。PLT111→75K(経時的低下)。AST41→267, ALT56→240(進行性肝障害)。Na128(最低値)"
+    },
+    {
+      "id": "R808",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Korean J Fam Med 2015 (PMC4445055)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "100_120",
+        "E03": "normal_over_90",
+        "E05": "normal_over_96",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S07": "severe",
+        "S46": "present",
+        "S90": "oligoarticular",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "normal_4000_10000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "L23": "normal",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R16": "yes",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R809",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Am J Case Rep 2021 (PMC8475732)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S07": "severe",
+        "S22": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L28": "elevated",
+        "L23": "normal",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes",
+        "R54": "yes"
+      }
+    },
+    {
+      "id": "R810",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Neurology 2009 (PMC2725931)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S22": "present",
+        "S111": "present",
+        "L28": "very_high_over_100",
+        "L23": "elevated",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R811",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "J Gen Intern Med 2006 (PMC1924738)",
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E03": "hypotension_under_90",
+        "E04": "tachypnea_20_30",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L23": "normal",
+        "L93": "mild_low_10_12",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R16": "yes",
+        "R54": "yes",
+        "R62": "yes"
+      }
+    },
+    {
+      "id": "R812",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Case Rep Rheumatol 2020 (PMC7013360)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S07": "severe",
+        "S16": "present",
+        "S21": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L23": "normal",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R04": "yes",
+        "R54": "yes"
+      }
+    },
+    {
+      "id": "R813",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Case Rep Rheumatol 2021 (PMC8494596)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E38": "elevated_140_180",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S22": "present",
+        "S111": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L28": "elevated",
+        "L23": "elevated",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R814",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "J Med Case Rep 2011 (PMC3170636)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S18": "present",
+        "S87": "localized_pain_redness",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L23": "elevated",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R815",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "CEN Case Rep 2012 (PMC5411531)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L02": "high_over_10",
+        "L93": "very_low_under_7",
+        "L55": "high_AKI",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R50": "yes"
+      }
+    },
+    {
+      "id": "R816",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Medicine (Baltimore) 2015 (PMC4554016)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S22": "present",
+        "S113": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L02": "high_over_10",
+        "L55": "mild_elevated",
+        "L23": "normal",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R05": "yes"
+      }
+    },
+    {
+      "id": "R817",
+      "expected_id": "D65",
+      "expected_name": "痛風(gout)",
+      "in_scope": true,
+      "source": "Cureus 2023 (PMC10640783)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "S08": "present",
+        "S23": "present",
+        "E21": "present",
+        "S10": "present",
+        "S38": "present",
+        "S15": "present",
+        "S22": "present",
+        "S02": "present",
+        "S90": "polyarticular_asymmetric",
+        "S91": "polyarticular",
+        "E47": "polyarticular",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L28": "very_high_over_100",
+        "L23": "elevated",
+        "L55": "high_AKI",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R48": "yes",
+        "R54": "yes"
+      }
+    },
+    {
+      "id": "R818",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Case Rep Med 2018 (PMC6052374)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E04": "tachypnea_20_30",
+        "S113": "present",
+        "S28": "present",
+        "S06": "present",
+        "S27": "present",
+        "S145": "over_30min",
+        "S180": "proximal_girdle",
+        "S07": "severe",
+        "L01": "normal_4000_10000",
+        "L28": "elevated",
+        "L02": "high_over_10",
+        "L11": "mild_elevated",
+        "L17": "normal",
+        "L88": "negative",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R819",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Case Rep Rheumatol 2018 (PMC6052921)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S113": "present",
+        "S06": "present",
+        "S27": "present",
+        "S145": "over_1hour",
+        "S180": "proximal_girdle",
+        "S07": "severe",
+        "L28": "very_high_over_100",
+        "L02": "high_over_10",
+        "L93": "low_7_10",
+        "L11": "mild_elevated",
+        "L104": "markedly_elevated",
+        "L103": "moderate_elevated",
+        "L88": "negative",
+        "L18": "negative",
+        "L19": "negative",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R21": "yes"
+      }
+    },
+    {
+      "id": "R820",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Cureus 2022 (PMC8943385)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S113": "present",
+        "S28": "present",
+        "S06": "present",
+        "S27": "present",
+        "S145": "over_1hour",
+        "S180": "proximal_girdle",
+        "S17": "present",
+        "S07": "severe",
+        "L28": "elevated",
+        "L02": "moderate_3_10",
+        "L93": "mild_low_10_12",
+        "L100": "high_over_400k",
+        "L70": "mildly_low",
+        "L88": "negative",
+        "L76": "negative",
+        "L19": "negative",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female",
+        "R18": "yes"
+      }
+    },
+    {
+      "id": "R821",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Cases J 2009 (PMC2984339)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S113": "present",
+        "S22": "present",
+        "S28": "present",
+        "S06": "present",
+        "S10": "present",
+        "S180": "proximal_girdle",
+        "T03": "intermittent",
+        "L28": "very_high_over_100",
+        "L02": "high_over_10",
+        "L93": "low_7_10",
+        "L100": "high_over_400k",
+        "L15": "mild_elevated",
+        "L70": "mildly_low",
+        "L88": "negative",
+        "L19": "negative",
+        "L09": "negative",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R822",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Case Rep Med 2018 (PMC6081045)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S112": "present",
+        "S113": "present",
+        "S06": "present",
+        "S27": "present",
+        "S180": "proximal_girdle",
+        "S46": "present",
+        "S17": "present",
+        "S16": "present",
+        "S07": "severe",
+        "L28": "very_high_over_100",
+        "L02": "high_over_10",
+        "L93": "low_7_10",
+        "L100": "high_over_400k",
+        "L20": "elevated",
+        "L88": "negative",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R823",
+      "expected_id": "D61",
+      "expected_name": "リウマチ性多発筋痛症(PMR)",
+      "in_scope": true,
+      "source": "Case Rep Rheumatol 2013 (PMC3542932)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S112": "present",
+        "S113": "present",
+        "S28": "present",
+        "S06": "present",
+        "S27": "present",
+        "S180": "proximal_girdle",
+        "S46": "present",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L28": "elevated",
+        "L02": "high_over_10",
+        "L93": "low_7_10",
+        "L104": "moderate_elevated",
+        "L103": "moderate_elevated",
+        "L88": "negative",
+        "L18": "negative",
+        "L19": "negative",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R824",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Case Rep Gastroenterol 2023 (PMC9908420)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E02": "over_120",
+        "E03": "normal_over_90",
+        "E04": "severe_over_30",
+        "E05": "normal_over_96",
+        "E18": "present",
+        "S07": "mild",
+        "S18": "present",
+        "L11": "mild_elevated",
+        "L104": "markedly_elevated",
+        "L87": "direct_dominant",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L55": "high_AKI",
+        "L66": "cholestatic",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R825",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Asian J Neurosurg 2019 (PMC6703052)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "L11": "very_high",
+        "L66": "hepatocellular",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R826",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Am J Case Rep 2018 (PMC6181557-1)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E68": "present",
+        "S96": "generalized",
+        "E12": "maculopapular_rash",
+        "S18": "present",
+        "S13": "present",
+        "S12": "present",
+        "S07": "mild",
+        "L11": "very_high",
+        "L104": "moderate_elevated",
+        "L87": "direct_dominant",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R827",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Am J Case Rep 2018 (PMC6181557-2)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "S05": "mild",
+        "S79": "present",
+        "E18": "present",
+        "L01": "high_10000_20000",
+        "L11": "very_high",
+        "L104": "markedly_elevated",
+        "L87": "direct_dominant",
+        "L66": "cholestatic",
+        "T01": "1w_to_3w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R828",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "BMJ Case Rep 2015 (PMC4488648)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "T03": "intermittent",
+        "S16": "present",
+        "S07": "severe",
+        "S13": "present",
+        "L02": "high_over_10",
+        "L11": "very_high",
+        "L104": "moderate_elevated",
+        "L103": "markedly_elevated",
+        "L15": "very_high_over_1000",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R829",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Eur J Hosp Pharm 2021 (PMC8899667)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "L11": "very_high",
+        "L100": "low_50k_150k",
+        "L14": "eosinophilia",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "L16": "elevated",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R830",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Clin Case Rep 2025 (PMC12682597)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S02": "present",
+        "S78": "present",
+        "S07": "mild",
+        "E18": "present",
+        "L11": "mild_elevated",
+        "L87": "direct_dominant",
+        "L104": "mild_elevated",
+        "L100": "low_50k_150k",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R831",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Medicine (Baltimore) 2022 (PMC9524870)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "under_100",
+        "E03": "normal_over_90",
+        "E38": "elevated_140_180",
+        "E04": "normal_under_20",
+        "E05": "normal_over_96",
+        "S96": "generalized",
+        "S18": "present",
+        "S07": "mild",
+        "S46": "present",
+        "T03": "intermittent",
+        "L11": "very_high",
+        "L104": "moderate_elevated",
+        "L87": "direct_dominant",
+        "L01": "normal_4000_10000",
+        "L02": "moderate_3_10",
+        "L03": "high_over_0.5",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R832",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "Cureus 2022 (PMC9705226)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "S07": "severe",
+        "S18": "present",
+        "E12": "diffuse_erythroderma",
+        "E18": "present",
+        "L11": "very_high",
+        "L104": "markedly_elevated",
+        "L87": "direct_dominant",
+        "L14": "eosinophilia",
+        "L100": "very_low_under_50k",
+        "L55": "high_AKI",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R833",
+      "expected_id": "D179",
+      "expected_name": "薬剤性肝障害(DILI)",
+      "in_scope": true,
+      "source": "BMJ Case Rep 2017 (PMC5580171)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S96": "generalized",
+        "S18": "present",
+        "E12": "maculopapular_rash",
+        "S12": "present",
+        "S66": "present",
+        "S14": "present",
+        "S02": "present",
+        "L11": "very_high",
+        "L104": "moderate_elevated",
+        "L02": "moderate_3_10",
+        "L14": "eosinophilia",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female",
+        "R08": "yes"
+      }
+    },
+    {
+      "id": "R840",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "Cureus 2023 (PMC10615121)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "present",
+        "S04": "at_rest",
+        "S21": "present",
+        "S09": "present",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L03": "low_under_0.25",
+        "L14": "normal",
+        "L35": "GGO",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R03": "former"
+      }
+    },
+    {
+      "id": "R841",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "Tanaffos 2020 (PMC8008414)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E04": "severe_over_30",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "present",
+        "S04": "at_rest",
+        "S16": "present",
+        "S17": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L14": "eosinophilia",
+        "L16": "elevated",
+        "L28": "elevated",
+        "L35": "consolidation",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R03": "never",
+        "R47": "yes"
+      }
+    },
+    {
+      "id": "R842",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "BMJ Case Rep 2016 (PMC5483544)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "present",
+        "S04": "at_rest",
+        "S13": "present",
+        "S66": "present",
+        "S14": "present",
+        "L01": "very_high_over_20000",
+        "L14": "normal",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "female",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R843",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "JIMHICR 2020 (PMC7262976)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "100_120",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "present",
+        "S04": "at_rest",
+        "S21": "present",
+        "S09": "present",
+        "S05": "mild",
+        "S13": "present",
+        "S46": "present",
+        "S07": "severe",
+        "L01": "high_10000_20000",
+        "L14": "eosinophilia",
+        "L04": "bilateral_infiltrate",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R844",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "AAIR 2010 (PMC2846739)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E04": "tachypnea_20_30",
+        "E05": "mild_hypoxia_93_96",
+        "S01": "present",
+        "S04": "at_rest",
+        "S06": "present",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L28": "normal",
+        "L14": "normal",
+        "L35": "GGO",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "female",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R845",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "BMC Pulm Med 2023 (PMC10413584)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E05": "normal_over_96",
+        "S01": "present",
+        "S04": "at_rest",
+        "S21": "present",
+        "L01": "high_10000_20000",
+        "L14": "eosinophilia",
+        "L02": "moderate_3_10",
+        "L35": "GGO",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "female",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R846",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "JCHIMP 2018 (PMC5998281)",
+      "evidence": {
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E04": "normal_under_20",
+        "E05": "severe_hypoxia_under_93",
+        "S01": "present",
+        "S04": "at_rest",
+        "L01": "normal_4000_10000",
+        "L14": "normal",
+        "L02": "high_over_10",
+        "L03": "high_over_0.5",
+        "L28": "elevated",
+        "L35": "pleural_effusion",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male",
+        "R03": "current"
+      }
+    },
+    {
+      "id": "R847",
+      "expected_id": "D188",
+      "expected_name": "好酸球性肺炎",
+      "in_scope": true,
+      "source": "J Med Case Rep 2016 (PMC4983070)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E02": "under_100",
+        "E04": "normal_under_20",
+        "E05": "mild_hypoxia_93_96",
+        "S01": "present",
+        "S04": "at_rest",
+        "S07": "severe",
+        "S16": "present",
+        "S17": "present",
+        "L01": "very_high_over_20000",
+        "L14": "eosinophilia",
+        "L93": "mild_low_10_12",
+        "L35": "pleural_effusion",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female",
+        "R03": "never",
+        "R47": "yes"
+      }
+    },
+    {
+      "id": "R834",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "Wiad Lek 2020 (PMC7572208)",
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "under_100",
+        "E04": "tachypnea_20_30",
+        "E03": "normal_over_90",
+        "E08": "exudate_or_white_patch",
+        "E12": "maculopapular_rash",
+        "S02": "present",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "S75": "generalized",
+        "L01": "very_high_over_20000",
+        "L28": "normal",
+        "L02": "high_over_10",
+        "L07": "positive",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "6_12",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R835",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "Clin Case Rep 2021 (PMC8511905)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E05": "normal_over_96",
+        "S02": "present",
+        "S06": "present",
+        "S01": "present",
+        "S84": "dry",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "S96": "generalized",
+        "S75": "generalized",
+        "S55": "present",
+        "S04": "at_rest",
+        "L02": "moderate_3_10",
+        "L07": "positive",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R836",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "Ital J Pediatr 2008 (PMC2504399)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E08": "exudate_or_white_patch",
+        "E12": "maculopapular_rash",
+        "E18": "present",
+        "S02": "present",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "S75": "generalized",
+        "L01": "high_10000_20000",
+        "L28": "elevated",
+        "L02": "high_over_10",
+        "L11": "very_high",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "male"
+      }
+    },
+    {
+      "id": "R837",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "J Med Case Rep 2010 (PMC2804020)",
+      "evidence": {
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E04": "severe_over_30",
+        "E03": "normal_over_90",
+        "E05": "severe_hypoxia_under_93",
+        "E12": "diffuse_erythroderma",
+        "S01": "present",
+        "S84": "dry",
+        "S66": "present",
+        "S21": "present",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "S75": "trunk_centripetal",
+        "L01": "low_under_4000",
+        "L28": "elevated",
+        "L44": "hyponatremia",
+        "L71": "elevated",
+        "L55": "mild_elevated",
+        "L16": "elevated",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R838",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "London J Prim Care 2017 (PMC5649319)",
+      "evidence": {
+        "E01": "37.5_38.0",
+        "E08": "erythema",
+        "E12": "maculopapular_rash",
+        "E13": "present",
+        "E46": "cervical",
+        "S02": "present",
+        "S12": "present",
+        "S66": "present",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "S75": "trunk_centripetal",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "6_12",
+        "R02": "female"
+      }
+    },
+    {
+      "id": "R839",
+      "expected_id": "D182",
+      "expected_name": "猩紅熱(scarlet fever)",
+      "in_scope": true,
+      "source": "Front Pediatr 2023 (PMC10354902)",
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S18": "present",
+        "S87": "rash_widespread",
+        "L07": "positive",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "1_5",
+        "R02": "male"
+      }
     }
   ],
   "total_cases": 110
