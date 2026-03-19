@@ -1492,7 +1492,9 @@
         "S17": "present",
         "T01": "over_3w",
         "L11": "mild_elevated",
-        "L28": "elevated"
+        "L28": "elevated",
+        "L37": "elevated",
+        "T02": "subacute"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17213,7 +17215,13 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "T01": "3d_to_1w",
-        "T02": "chronic"
+        "T02": "chronic",
+        "L37": "elevated",
+        "S12": "present",
+        "S66": "present",
+        "E13": "present",
+        "L36": "elevated",
+        "L66": "cholestatic"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -17237,7 +17245,13 @@
         "T02": "chronic",
         "L66": "cholestatic",
         "L103": "markedly_elevated",
-        "L104": "moderate_elevated"
+        "L104": "moderate_elevated",
+        "L37": "elevated",
+        "E18": "present",
+        "S17": "present",
+        "L28": "elevated",
+        "S12": "present",
+        "L87": "direct_dominant"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -17262,7 +17276,12 @@
         "T02": "chronic",
         "L66": "cholestatic",
         "L103": "markedly_elevated",
-        "L104": "markedly_elevated"
+        "L104": "markedly_elevated",
+        "L37": "elevated",
+        "E18": "present",
+        "S22": "present",
+        "S12": "present",
+        "L36": "normal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -21134,7 +21153,7 @@
         "S05": "mild",
         "E05": "mild_hypoxia_93_96",
         "L04": "lobar_infiltrate",
-        "T01": "under_3d",
+        "T01": "3d_to_1w",
         "T02": "acute"
       },
       "risk_factors": {
@@ -21177,7 +21196,7 @@
       "expected_id": "D366",
       "in_scope": true,
       "evidence": {
-        "E01": "38.0_39.0",
+        "E01": "37.5_38.0",
         "S17": "present",
         "E13": "present",
         "E46": "cervical",
