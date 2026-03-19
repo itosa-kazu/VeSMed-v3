@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7019,
+  "total_edges": 7053,
   "edges": [
     {
       "from": "R01",
@@ -55882,6 +55882,244 @@
       "reason": "咽頭痛(外頸動脈枝虚血、6-9%。PMC8565553)",
       "from_name": "giant_cell_arteritis",
       "to_name": "sore_throat"
+    },
+    {
+      "from": "D368",
+      "to": "E01",
+      "reason": "急性HCV: 発熱(20-30%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D368",
+      "to": "S07",
+      "reason": "急性HCV: 倦怠感(60-80%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D368",
+      "to": "S46",
+      "reason": "急性HCV: 食欲不振(50-70%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D368",
+      "to": "S13",
+      "reason": "急性HCV: 嘔気(40-60%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D368",
+      "to": "E18",
+      "reason": "急性HCV: 黄疸(20-30%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D368",
+      "to": "L11",
+      "reason": "急性HCV: ALT著増(>10xULN)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D368",
+      "to": "L39",
+      "reason": "急性HCV: HCV-RNA+抗HCV抗体",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "hepatitis_serology"
+    },
+    {
+      "from": "D368",
+      "to": "L66",
+      "reason": "急性HCV: 肝細胞型障害",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "liver_injury_pattern"
+    },
+    {
+      "from": "D368",
+      "to": "L02",
+      "reason": "急性HCV: CRP軽度上昇",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D368",
+      "to": "L01",
+      "reason": "急性HCV: WBC正常~軽度低下",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D368",
+      "to": "T01",
+      "reason": "急性HCV: 亜急性(2-12週潜伏後)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D368",
+      "to": "T02",
+      "reason": "急性HCV: 緩徐発症",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D368",
+      "to": "S89",
+      "reason": "急性HCV: 右上腹部痛",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "abdominal_pain_location"
+    },
+    {
+      "from": "D368",
+      "to": "S08",
+      "reason": "急性HCV: 関節痛(5-10%)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D368",
+      "to": "L103",
+      "reason": "急性HCV: gamma-GTP上昇",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "gamma_GTP"
+    },
+    {
+      "from": "D368",
+      "to": "L104",
+      "reason": "急性HCV: ALP軽度上昇",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "ALP"
+    },
+    {
+      "from": "D369",
+      "to": "E01",
+      "reason": "HEV: 発熱(60-70%)",
+      "from_name": "hepatitis_E",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D369",
+      "to": "S07",
+      "reason": "HEV: 倦怠感(70-90%)",
+      "from_name": "hepatitis_E",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D369",
+      "to": "S46",
+      "reason": "HEV: 食欲不振(60-80%)",
+      "from_name": "hepatitis_E",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D369",
+      "to": "S13",
+      "reason": "HEV: 嘔気嘔吐(50-70%)",
+      "from_name": "hepatitis_E",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D369",
+      "to": "E18",
+      "reason": "HEV: 黄疸(40-70%)",
+      "from_name": "hepatitis_E",
+      "to_name": "jaundice"
+    },
+    {
+      "from": "D369",
+      "to": "L11",
+      "reason": "HEV: ALT著増(>10xULN)",
+      "from_name": "hepatitis_E",
+      "to_name": "liver_enzymes"
+    },
+    {
+      "from": "D369",
+      "to": "L39",
+      "reason": "HEV: IgM-HEV/HEV-RNA陽性",
+      "from_name": "hepatitis_E",
+      "to_name": "hepatitis_serology"
+    },
+    {
+      "from": "D369",
+      "to": "L66",
+      "reason": "HEV: 肝細胞型障害",
+      "from_name": "hepatitis_E",
+      "to_name": "liver_injury_pattern"
+    },
+    {
+      "from": "D369",
+      "to": "L02",
+      "reason": "HEV: CRP軽度上昇",
+      "from_name": "hepatitis_E",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D369",
+      "to": "L01",
+      "reason": "HEV: WBC正常",
+      "from_name": "hepatitis_E",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D369",
+      "to": "T01",
+      "reason": "HEV: 亜急性(2-6週潜伏後)",
+      "from_name": "hepatitis_E",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D369",
+      "to": "T02",
+      "reason": "HEV: 緩徐~急性発症",
+      "from_name": "hepatitis_E",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D369",
+      "to": "S89",
+      "reason": "HEV: 右上腹部痛",
+      "from_name": "hepatitis_E",
+      "to_name": "abdominal_pain_location"
+    },
+    {
+      "from": "D369",
+      "to": "S14",
+      "reason": "HEV: 下痢(20-30%)",
+      "from_name": "hepatitis_E",
+      "to_name": "diarrhea"
+    },
+    {
+      "from": "D369",
+      "to": "L103",
+      "reason": "HEV: gamma-GTP上昇",
+      "from_name": "hepatitis_E",
+      "to_name": "gamma_GTP"
+    },
+    {
+      "from": "D369",
+      "to": "L104",
+      "reason": "HEV: ALP軽度上昇",
+      "from_name": "hepatitis_E",
+      "to_name": "ALP"
+    },
+    {
+      "from": "D369",
+      "to": "E34",
+      "reason": "HEV: 肝腫大(30-40%)",
+      "from_name": "hepatitis_E",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D369",
+      "to": "S09",
+      "reason": "HEV: 悪寒",
+      "from_name": "hepatitis_E",
+      "to_name": "chills"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

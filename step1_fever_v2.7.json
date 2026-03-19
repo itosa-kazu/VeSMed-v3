@@ -3725,7 +3725,8 @@
         "negative",
         "HAV_IgM",
         "HBV",
-        "HCV"
+        "HCV",
+        "HEV"
       ],
       "category": "lab"
     },
@@ -10669,6 +10670,36 @@
         "markedly_elevated"
       ],
       "note": "胆道系酵素+骨代謝。正常:40-130 IU/L。CTCAE fallback 4-state: mild(<3xULN), moderate(3-10x), marked(>10x)。胆汁うっ滞/骨転移/Paget病/ホジキンリンパ腫で上昇"
+    },
+    {
+      "id": "D368",
+      "name": "acute_hepatitis_C",
+      "name_ja": "急性C型肝炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B17.1",
+      "category_sub": "viral_hepatitis",
+      "severity": "moderate",
+      "key_features": "血液感染(針刺し/輸血/性行為)。潜伏期2-12週。70-80%無症状、20-30%黄疸。ALT著増。HCV-RNA+抗HCV抗体。慢性化率55-85%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D369",
+      "name": "hepatitis_E",
+      "name_ja": "E型肝炎",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "B17.2",
+      "category_sub": "viral_hepatitis",
+      "severity": "moderate",
+      "key_features": "経口感染(ジビエ/豚肉/水系)。潜伏期2-6週。自限性が多いが妊婦で劇症化(死亡率20%)。IgM-HEV/HEV-RNA陽性。日本genotype3/4。",
+      "diagnostic_profile": {}
     }
   ]
 }

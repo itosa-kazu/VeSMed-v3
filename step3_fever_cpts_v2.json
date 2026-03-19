@@ -4054,6 +4054,36 @@
         "female|40_64": 0.001,
         "female|65_plus": 0.001
       }
+    },
+    "D368": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "急性HCV。若年成人(IVDU/性行為)に多い",
+      "cpt": {
+        "male|18_39": 0.003,
+        "male|40_64": 0.001,
+        "male|65_plus": 0.0005,
+        "female|18_39": 0.002,
+        "female|40_64": 0.0008,
+        "female|65_plus": 0.0003
+      }
+    },
+    "D369": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "HEV。中年男性に多い(日本genotype3/4)",
+      "cpt": {
+        "male|18_39": 0.001,
+        "male|40_64": 0.003,
+        "male|65_plus": 0.001,
+        "female|18_39": 0.001,
+        "female|40_64": 0.001,
+        "female|65_plus": 0.0005
+      }
     }
   },
   "full_cpts": {
@@ -12623,6 +12653,44 @@
         "male": 0.055,
         "female": 0.045
       }
+    },
+    "D368": {
+      "parents": [
+        "R01"
+      ],
+      "description": "急性C型肝炎",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0001,
+        "13_17": 0.0001,
+        "18_39": 0.002,
+        "40_64": 0.001,
+        "65_plus": 0.0005
+      },
+      "R02": {
+        "male": 0.06,
+        "female": 0.04
+      }
+    },
+    "D369": {
+      "parents": [
+        "R01"
+      ],
+      "description": "E型肝炎",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0002,
+        "13_17": 0.0003,
+        "18_39": 0.001,
+        "40_64": 0.002,
+        "65_plus": 0.001
+      },
+      "R02": {
+        "male": 0.06,
+        "female": 0.04
+      }
     }
   },
   "noisy_or_params": {
@@ -15174,6 +15242,22 @@
           "39.0_40.0": 0.5,
           "over_40.0": 0.15,
           "hypothermia_under_35": 0.0006
+        },
+        "D368": {
+          "under_37.5": 0.55,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.04,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
+        },
+        "D369": {
+          "under_37.5": 0.25,
+          "37.5_38.0": 0.3,
+          "38.0_39.0": 0.3,
+          "39.0_40.0": 0.12,
+          "over_40.0": 0.02,
+          "hypothermia_under_35": 0.01
         }
       }
     },
@@ -20175,6 +20259,14 @@
         "D367": {
           "absent": 0.85,
           "present": 0.15
+        },
+        "D368": {
+          "absent": 0.72,
+          "present": 0.28
+        },
+        "D369": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -20694,6 +20786,10 @@
         "D367": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D369": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -22335,6 +22431,18 @@
           "normal_4000_10000": 0.35,
           "high_10000_20000": 0.4,
           "very_high_over_20000": 0.2
+        },
+        "D368": {
+          "low_under_4000": 0.15,
+          "normal_4000_10000": 0.65,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
+        },
+        "D369": {
+          "low_under_4000": 0.1,
+          "normal_4000_10000": 0.7,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -23691,6 +23799,18 @@
           "mild_0.3_3": 0.2,
           "moderate_3_10": 0.5,
           "high_over_10": 0.25
+        },
+        "D368": {
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.2,
+          "high_over_10": 0.05
+        },
+        "D369": {
+          "normal_under_0.3": 0.25,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.25,
+          "high_over_10": 0.05
         }
       }
     },
@@ -25415,6 +25535,16 @@
           "normal": 0.45,
           "mild_elevated": 0.35,
           "very_high": 0.2
+        },
+        "D368": {
+          "normal": 0.02,
+          "mild_elevated": 0.08,
+          "very_high": 0.9
+        },
+        "D369": {
+          "normal": 0.02,
+          "mild_elevated": 0.08,
+          "very_high": 0.9
         }
       }
     },
@@ -27536,32 +27666,51 @@
         "negative",
         "HAV_IgM",
         "HBV",
-        "HCV"
+        "HCV",
+        "HEV"
       ],
       "leak": {
-        "negative": 0.9,
-        "HAV_IgM": 0.03,
-        "HBV": 0.04,
-        "HCV": 0.03
+        "negative": 0.8910891089108911,
+        "HAV_IgM": 0.0297029702970297,
+        "HBV": 0.039603960396039604,
+        "HCV": 0.0297029702970297,
+        "HEV": 0.009900990099009901
       },
       "parent_effects": {
         "D100": {
-          "negative": 0.02,
-          "HAV_IgM": 0.93,
-          "HBV": 0.03,
-          "HCV": 0.02
+          "negative": 0.019801980198019802,
+          "HAV_IgM": 0.9207920792079208,
+          "HBV": 0.0297029702970297,
+          "HCV": 0.019801980198019802,
+          "HEV": 0.009900990099009901
         },
         "D108": {
-          "negative": 0.02,
-          "HAV_IgM": 0.01,
-          "HBV": 0.95,
-          "HCV": 0.02
+          "negative": 0.019801980198019802,
+          "HAV_IgM": 0.009900990099009901,
+          "HBV": 0.9405940594059405,
+          "HCV": 0.019801980198019802,
+          "HEV": 0.009900990099009901
         },
         "D363": {
-          "negative": 0.02,
+          "negative": 0.019801980198019802,
+          "HAV_IgM": 0.009900990099009901,
+          "HBV": 0.9405940594059405,
+          "HCV": 0.019801980198019802,
+          "HEV": 0.009900990099009901
+        },
+        "D368": {
+          "negative": 0.01,
           "HAV_IgM": 0.01,
-          "HBV": 0.95,
-          "HCV": 0.02
+          "HBV": 0.01,
+          "HCV": 0.95,
+          "HEV": 0.02
+        },
+        "D369": {
+          "negative": 0.01,
+          "HAV_IgM": 0.01,
+          "HBV": 0.01,
+          "HCV": 0.02,
+          "HEV": 0.95
         }
       }
     },
@@ -31064,6 +31213,16 @@
           "absent": 0.5,
           "mild": 0.35,
           "severe": 0.15
+        },
+        "D368": {
+          "absent": 0.25,
+          "mild": 0.45,
+          "severe": 0.3
+        },
+        "D369": {
+          "absent": 0.15,
+          "mild": 0.35,
+          "severe": 0.5
         }
       }
     },
@@ -31269,6 +31428,10 @@
         "D367": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D368": {
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -31526,6 +31689,10 @@
         "D188": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D369": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -32589,6 +32756,14 @@
         "D188": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D368": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D369": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -32841,6 +33016,10 @@
           "present": 0.3
         },
         "D367": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D369": {
           "absent": 0.7,
           "present": 0.3
         }
@@ -35029,6 +35208,14 @@
         "D179": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D368": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D369": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -37200,6 +37387,18 @@
           "3d_to_1w": 0.45,
           "1w_to_3w": 0.35,
           "over_3w": 0.1
+        },
+        "D368": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.4,
+          "over_3w": 0.2
+        },
+        "D369": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.45,
+          "over_3w": 0.25
         }
       }
     },
@@ -39083,6 +39282,18 @@
           "acute": 0.7,
           "subacute": 0.2,
           "chronic": 0.05
+        },
+        "D368": {
+          "sudden": 0.05,
+          "acute": 0.25,
+          "subacute": 0.55,
+          "chronic": 0.15
+        },
+        "D369": {
+          "sudden": 0.05,
+          "acute": 0.3,
+          "subacute": 0.5,
+          "chronic": 0.15
         }
       }
     },
@@ -43734,6 +43945,20 @@
           "hepatocellular": 0.75,
           "cholestatic": 0.1,
           "congestive": 0.05
+        },
+        "D368": {
+          "not_assessed": 0.1,
+          "normal": 0.02,
+          "hepatocellular": 0.85,
+          "cholestatic": 0.02,
+          "congestive": 0.01
+        },
+        "D369": {
+          "not_assessed": 0.1,
+          "normal": 0.02,
+          "hepatocellular": 0.85,
+          "cholestatic": 0.02,
+          "congestive": 0.01
         }
       }
     },
@@ -45993,6 +46218,22 @@
           "LLQ": 0.08,
           "suprapubic": 0.04,
           "diffuse": 0.28
+        },
+        "D368": {
+          "epigastric": 0.15,
+          "RUQ": 0.7,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.1
+        },
+        "D369": {
+          "epigastric": 0.15,
+          "RUQ": 0.65,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.15
         }
       }
     },
@@ -47886,6 +48127,18 @@
           "mild_elevated": 0.4375,
           "moderate_elevated": 0.25,
           "markedly_elevated": 0.125
+        },
+        "D368": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.05
+        },
+        "D369": {
+          "normal": 0.2,
+          "mild_elevated": 0.5,
+          "moderate_elevated": 0.25,
+          "markedly_elevated": 0.05
         }
       }
     },
@@ -48077,6 +48330,18 @@
           "mild_elevated": 0.4375,
           "moderate_elevated": 0.25,
           "markedly_elevated": 0.125
+        },
+        "D368": {
+          "normal": 0.35,
+          "mild_elevated": 0.45,
+          "moderate_elevated": 0.15,
+          "markedly_elevated": 0.05
+        },
+        "D369": {
+          "normal": 0.3,
+          "mild_elevated": 0.45,
+          "moderate_elevated": 0.2,
+          "markedly_elevated": 0.05
         }
       }
     },
