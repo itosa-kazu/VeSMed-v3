@@ -10760,6 +10760,21 @@
       "severity": "moderate",
       "key_features": "倦怠感+体重増加+寒がり+便秘+皮膚乾燥+脱毛+筋痛。F:M=7-10:1、45-55歳ピーク。TSH著増+FT4低下。抗TPO抗体90-95%陽性。CK上昇57%。貧血43%。潜行性(月~年)。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D374",
+      "name": "graves_disease",
+      "name_ja": "バセドウ病(甲状腺機能亢進症)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E05.0",
+      "category_sub": "endocrine",
+      "severity": "moderate",
+      "key_features": "動悸+振戦+体重減少+発汗過多+甲状腺腫(90%)+眼球突出(25-50%)。F:M=5-10:1、30-50歳。TSH抑制+FT4上昇。TRAb 97-99%陽性。CRP正常(亜急性甲状腺炎との鑑別)。非クリーゼ型(D71が甲状腺クリーゼ)。",
+      "diagnostic_profile": {}
     }
   ]
 }

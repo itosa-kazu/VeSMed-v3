@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7125,
+  "total_edges": 7143,
   "edges": [
     {
       "from": "R01",
@@ -56624,6 +56624,132 @@
       "reason": "甲状腺機能低下: WBC通常正常(StatPearls)",
       "from_name": "hypothyroidism_hashimoto",
       "to_name": "WBC"
+    },
+    {
+      "from": "D374",
+      "to": "S36",
+      "reason": "バセドウ: 微細振戦(76%, 小研究/StatPearls)",
+      "from_name": "graves_disease",
+      "to_name": "tremor"
+    },
+    {
+      "from": "D374",
+      "to": "S35",
+      "reason": "バセドウ: 動悸(72%, PMID:33633879)",
+      "from_name": "graves_disease",
+      "to_name": "palpitations"
+    },
+    {
+      "from": "D374",
+      "to": "E02",
+      "reason": "バセドウ: 頻脈(72%, PMID:33633879)",
+      "from_name": "graves_disease",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D374",
+      "to": "S114",
+      "reason": "バセドウ: 不安/神経質(72%, PMC4224229)",
+      "from_name": "graves_disease",
+      "to_name": "anxiety"
+    },
+    {
+      "from": "D374",
+      "to": "S07",
+      "reason": "バセドウ: 倦怠感/筋力低下(70%, StatPearls)",
+      "from_name": "graves_disease",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D374",
+      "to": "S17",
+      "reason": "バセドウ: 体重減少(60%, StatPearls)",
+      "from_name": "graves_disease",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D374",
+      "to": "S45",
+      "reason": "バセドウ: 発汗過多(>50%, Harrison's)",
+      "from_name": "graves_disease",
+      "to_name": "sweating"
+    },
+    {
+      "from": "D374",
+      "to": "E19",
+      "reason": "バセドウ: びまん性甲状腺腫(90-95%, PMC3474632)",
+      "from_name": "graves_disease",
+      "to_name": "goiter"
+    },
+    {
+      "from": "D374",
+      "to": "E84",
+      "reason": "バセドウ: 眼球突出(25-50%臨床的, PMC3898790)",
+      "from_name": "graves_disease",
+      "to_name": "exophthalmos"
+    },
+    {
+      "from": "D374",
+      "to": "L104",
+      "reason": "バセドウ: ALP上昇(44%, Scappaticcio meta-analysis)",
+      "from_name": "graves_disease",
+      "to_name": "ALP"
+    },
+    {
+      "from": "D374",
+      "to": "S04",
+      "reason": "バセドウ: 労作時呼吸困難(41%, PMID:33633879)",
+      "from_name": "graves_disease",
+      "to_name": "dyspnea"
+    },
+    {
+      "from": "D374",
+      "to": "S14",
+      "reason": "バセドウ: 下痢/排便回数増加(20-33%, StatPearls)",
+      "from_name": "graves_disease",
+      "to_name": "diarrhea"
+    },
+    {
+      "from": "D374",
+      "to": "S118",
+      "reason": "バセドウ: 脱毛(20-30%, 多源)",
+      "from_name": "graves_disease",
+      "to_name": "alopecia"
+    },
+    {
+      "from": "D374",
+      "to": "L01",
+      "reason": "バセドウ: 好中球減少(10%, PMID:32799342 meta)",
+      "from_name": "graves_disease",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D374",
+      "to": "L02",
+      "reason": "バセドウ: CRP正常!(亜急性甲状腺炎との鑑別, PMC3510970)",
+      "from_name": "graves_disease",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D374",
+      "to": "E01",
+      "reason": "バセドウ: 微熱(非クリーゼでは稀, StatPearls)",
+      "from_name": "graves_disease",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D374",
+      "to": "T01",
+      "reason": "バセドウ: 慢性経過(週~月, Endotext)",
+      "from_name": "graves_disease",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D374",
+      "to": "T02",
+      "reason": "バセドウ: 亜急性発症(週~月, Endotext)",
+      "from_name": "graves_disease",
+      "to_name": "onset_speed"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
