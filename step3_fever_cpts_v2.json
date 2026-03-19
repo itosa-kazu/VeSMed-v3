@@ -23541,10 +23541,10 @@
           "high_over_10": 0.85
         },
         "D65": {
-          "normal_under_0.3": 0.1,
-          "mild_0.3_3": 0.3,
-          "moderate_3_10": 0.4,
-          "high_over_10": 0.2
+          "normal_under_0.3": 0.05,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.35,
+          "high_over_10": 0.35
         },
         "D360": {
           "normal_under_0.3": 0.05,
@@ -26990,7 +26990,8 @@
         },
         "D65": {
           "normal": 0.15,
-          "elevated": 0.85
+          "elevated": 0.7,
+          "very_high_over_100": 0.15
         },
         "D360": {
           "normal": 0.1,
@@ -27623,10 +27624,10 @@
           "other": 0.03
         },
         "D67": {
-          "normal": 0.55,
-          "hyponatremia": 0.35,
+          "normal": 0.72,
+          "hyponatremia": 0.15,
           "hyperkalemia": 0.05,
-          "other": 0.05
+          "other": 0.08
         },
         "D17": {
           "normal": 0.55,
@@ -27785,10 +27786,10 @@
           "other": 0.02
         },
         "D354": {
-          "normal": 0.92,
-          "hyponatremia": 0.03,
+          "normal": 0.84,
+          "hyponatremia": 0.08,
           "hyperkalemia": 0.01,
-          "other": 0.04
+          "other": 0.07
         },
         "D352": {
           "normal": 0.7,
@@ -31874,6 +31875,10 @@
         "D182": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D354": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -46439,18 +46444,18 @@
           "migratory": 0.15
         },
         "D65": {
-          "monoarticular": 0.55,
-          "oligoarticular": 0.2,
+          "monoarticular": 0.4,
+          "oligoarticular": 0.22,
           "polyarticular_symmetric": 0.03,
-          "polyarticular_asymmetric": 0.18,
-          "migratory": 0.04
+          "polyarticular_asymmetric": 0.3,
+          "migratory": 0.05
         },
         "D360": {
-          "monoarticular": 0.7,
-          "oligoarticular": 0.2,
-          "polyarticular_symmetric": 0.03,
-          "polyarticular_asymmetric": 0.05,
-          "migratory": 0.02
+          "monoarticular": 0.55,
+          "oligoarticular": 0.22,
+          "polyarticular_symmetric": 0.05,
+          "polyarticular_asymmetric": 0.13,
+          "migratory": 0.05
         },
         "D106": {
           "monoarticular": 0.1,
@@ -46525,12 +46530,12 @@
           "polyarticular": 0.6429
         },
         "D65": {
-          "monoarticular": 0.95,
-          "polyarticular": 0.05
+          "monoarticular": 0.65,
+          "polyarticular": 0.35
         },
         "D360": {
-          "monoarticular": 0.9,
-          "polyarticular": 0.1
+          "monoarticular": 0.75,
+          "polyarticular": 0.25
         }
       }
     },
@@ -46574,12 +46579,12 @@
           "polyarticular": 0.15
         },
         "D65": {
-          "monoarticular": 0.95,
-          "polyarticular": 0.05
+          "monoarticular": 0.65,
+          "polyarticular": 0.35
         },
         "D360": {
-          "monoarticular": 0.9,
-          "polyarticular": 0.1
+          "monoarticular": 0.75,
+          "polyarticular": 0.25
         }
       }
     },

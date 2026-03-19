@@ -75,7 +75,7 @@
       "id": "R03",
       "source": "Cureus 2024",
       "pmcid": "PMC11706331",
-      "vignette": "78F 4ヶ月倦怠感→発熱+下肢浮腫+低血圧96/55。重度貧血,血小板減少,LDH 1924 U/L,フェリチン1519 ng/mL,低Na 133 mEq/L",
+      "vignette": "78F 4ヶ月倦怠感→発熱+下肢浮腫+低血圧96/55。重度貧血,血小板減少,LDH 1519 U/L,フェリチン1924 ng/mL,低Na 133 mEq/L。CT:脾腫17.1cm",
       "final_diagnosis": "DLBCL→HLH",
       "expected_id": "D67",
       "in_scope": true,
@@ -88,7 +88,9 @@
         "L15": "very_high_over_1000",
         "E03": "hypotension_under_90",
         "L44": "hyponatremia",
-        "S46": "present"
+        "S46": "present",
+        "L01": "normal_4000_10000",
+        "E14": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -19916,7 +19918,8 @@
         "E34": "present",
         "E14": "present",
         "T01": "over_3w",
-        "L44": "hyponatremia"
+        "L44": "hyponatremia",
+        "E13": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -20373,7 +20376,7 @@
         "L01": "very_high_over_20000",
         "L28": "very_high_over_100",
         "E02": "100_120",
-        "T01": "under_3d",
+        "T01": "3d_to_1w",
         "T02": "sudden",
         "S90": "polyarticular_asymmetric",
         "S91": "polyarticular",
@@ -21715,7 +21718,7 @@
       "source": "Cureus 2023 (PMC10640783)",
       "evidence": {
         "E01": "39.0_40.0",
-        "E02": "over_120",
+        "E02": "100_120",
         "S08": "present",
         "S23": "present",
         "E21": "present",
