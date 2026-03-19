@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7143,
+  "total_edges": 7159,
   "edges": [
     {
       "from": "R01",
@@ -6368,114 +6368,6 @@
       "to_name": "ESR"
     },
     {
-      "from": "D68",
-      "to": "E01",
-      "reason": "発熱（感染合併）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 14
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "temperature"
-    },
-    {
-      "from": "D68",
-      "to": "S44",
-      "reason": "出血傾向",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 7,
-        "latest": 14
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "bleeding_tendency"
-    },
-    {
-      "from": "D68",
-      "to": "S07",
-      "reason": "全身倦怠感",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 14
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "fatigue"
-    },
-    {
-      "from": "D68",
-      "to": "L22",
-      "reason": "汎血球減少",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 7
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "pancytopenia"
-    },
-    {
-      "from": "D68",
-      "to": "L21",
-      "reason": "末梢血芽球",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 7
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "peripheral_blood_blast"
-    },
-    {
-      "from": "D68",
-      "to": "L16",
-      "reason": "LDH上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 3,
-        "latest": 7
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "LDH"
-    },
-    {
-      "from": "D68",
-      "to": "E14",
-      "reason": "脾腫",
-      "onset_day_range": {
-        "earliest": 7,
-        "typical": 14,
-        "latest": 30
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "splenomegaly"
-    },
-    {
-      "from": "D68",
-      "to": "E13",
-      "reason": "リンパ節腫脹",
-      "onset_day_range": {
-        "earliest": 7,
-        "typical": 14,
-        "latest": 30
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "lymphadenopathy"
-    },
-    {
-      "from": "D68",
-      "to": "S46",
-      "reason": "食欲不振",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 7,
-        "latest": 14
-      },
-      "from_name": "leukemia_acute",
-      "to_name": "anorexia"
-    },
-    {
       "from": "D69",
       "to": "E01",
       "reason": "発熱（腫瘍熱）",
@@ -9487,18 +9379,6 @@
       }
     },
     {
-      "from": "D68",
-      "to": "T01",
-      "reason": "急性白血病は慢性経過",
-      "from_name": "leukemia_acute",
-      "to_name": "symptom_duration",
-      "onset_day_range": {
-        "earliest": 7,
-        "typical": 21,
-        "latest": 120
-      }
-    },
-    {
       "from": "D69",
       "to": "T01",
       "reason": "腎細胞癌は慢性経過",
@@ -9767,18 +9647,6 @@
       "to": "L04",
       "reason": "サルコイドーシスでCXR異常",
       "from_name": "sarcoidosis",
-      "to_name": "chest_xray",
-      "onset_day_range": {
-        "earliest": 3,
-        "typical": 14,
-        "latest": 60
-      }
-    },
-    {
-      "from": "D68",
-      "to": "L04",
-      "reason": "白血病(肺浸潤)でCXR異常",
-      "from_name": "leukemia_acute",
       "to_name": "chest_xray",
       "onset_day_range": {
         "earliest": 3,
@@ -10833,36 +10701,6 @@
         "max": 30
       },
       "from_name": "reactive_arthritis"
-    },
-    {
-      "from": "D68",
-      "to": "E12",
-      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
-      "onset_day_range": {
-        "min": 0,
-        "max": 30
-      },
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "L01",
-      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
-      "onset_day_range": {
-        "min": 0,
-        "max": 30
-      },
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "L15",
-      "reason": "CPT存在・辺欠損修正 (validate_bn検出)",
-      "onset_day_range": {
-        "min": 0,
-        "max": 30
-      },
-      "from_name": "leukemia_acute"
     },
     {
       "from": "D69",
@@ -12613,20 +12451,6 @@
       "reason": "TODO"
     },
     {
-      "from": "D68",
-      "to": "E34",
-      "from_name": "leukemia_acute",
-      "to_name": "hepatomegaly",
-      "reason": "TODO"
-    },
-    {
-      "from": "D68",
-      "to": "L02",
-      "from_name": "leukemia_acute",
-      "to_name": "CRP",
-      "reason": "TODO"
-    },
-    {
       "from": "D69",
       "to": "L01",
       "from_name": "renal_cell_carcinoma",
@@ -13480,48 +13304,6 @@
       "from_name": "pheochromocytoma"
     },
     {
-      "from": "D68",
-      "to": "E02",
-      "note": "Tachycardia in leukemia with anemia/infection",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "S01",
-      "note": "Cough in leukemia with pneumonia/pulmonary infiltrates",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "S04",
-      "note": "Dyspnea in leukemia with anemia",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "S05",
-      "note": "Headache in leukemia, meningeal involvement",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "S06",
-      "note": "Myalgia/bone pain in leukemia",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "S13",
-      "note": "Nausea in leukemia",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "L14",
-      "note": "Blast cells/abnormal CBC in leukemia - hallmark",
-      "from_name": "leukemia_acute"
-    },
-    {
       "from": "D71",
       "to": "S04",
       "note": "Dyspnea in thyroid storm with heart failure",
@@ -13700,24 +13482,6 @@
       "to": "L04",
       "note": "CXR in pertussis: perihilar infiltrates or normal",
       "from_name": "pertussis"
-    },
-    {
-      "from": "D68",
-      "to": "E03",
-      "note": "BP in leukemia: normal or hypotension if sepsis/DIC",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "E04",
-      "note": "Tachypnea in leukemia with anemia/pneumonia",
-      "from_name": "leukemia_acute"
-    },
-    {
-      "from": "D68",
-      "to": "E05",
-      "note": "Hypoxia in leukemia with pulmonary infiltrates/infection",
-      "from_name": "leukemia_acute"
     },
     {
       "from": "D47",
@@ -14385,13 +14149,6 @@
       "reason": "サルコイドーシス: 非乾酪性肉芽腫"
     },
     {
-      "from": "D68",
-      "to": "L47",
-      "from_name": "leukemia_acute",
-      "to_name": "lymph_node_biopsy",
-      "reason": "急性白血病: リンパ節浸潤"
-    },
-    {
       "from": "D18",
       "to": "L47",
       "from_name": "infectious_mononucleosis",
@@ -14670,13 +14427,6 @@
       "from_name": "thyroid_storm",
       "to_name": "proximal_muscle_weakness",
       "reason": "甲状腺クリーゼ: 甲状腺性ミオパチー(20-40%)"
-    },
-    {
-      "from": "D68",
-      "to": "S48",
-      "from_name": "leukemia_acute",
-      "to_name": "proximal_muscle_weakness",
-      "reason": "急性白血病: 全身衰弱(10-20%)"
     },
     {
       "from": "D14",
@@ -15440,13 +15190,6 @@
       "from_name": "vertebral_osteomyelitis",
       "to_name": "L49",
       "reason": "椎体骨髄炎: 椎体破壊/圧迫骨折"
-    },
-    {
-      "from": "D68",
-      "to": "L49",
-      "from_name": "leukemia_acute",
-      "to_name": "L49",
-      "reason": "急性白血病: 骨浸潤/溶骨性病変(稀)"
     },
     {
       "from": "D69",
@@ -36155,13 +35898,6 @@
       "reason": "HUS: DICスコアは通常正常~軽度"
     },
     {
-      "from": "D68",
-      "to": "L64",
-      "from_name": "leukemia_acute",
-      "to_name": "L64",
-      "reason": "急性白血病: DIC合併(15-20%)"
-    },
-    {
       "from": "D120",
       "to": "L65",
       "from_name": "acute_heart_failure",
@@ -41221,14 +40957,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D68",
-      "to": "S84",
-      "from_name": "leukemia_acute",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: 急性白血病 → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D72",
       "to": "S84",
       "from_name": "adrenal_crisis",
@@ -42930,14 +42658,6 @@
       "from_name": "sarcoidosis",
       "to_name": "リンパ節の部位",
       "reason": "CPT_NO_EDGE sync: サルコイドーシス → リンパ節の部位",
-      "onset_day_range": null
-    },
-    {
-      "from": "D68",
-      "to": "E46",
-      "from_name": "leukemia_acute",
-      "to_name": "リンパ節の部位",
-      "reason": "CPT_NO_EDGE sync: 急性白血病 → リンパ節の部位",
       "onset_day_range": null
     },
     {
@@ -56750,6 +56470,342 @@
       "reason": "バセドウ: 亜急性発症(週~月, Endotext)",
       "from_name": "graves_disease",
       "to_name": "onset_speed"
+    },
+    {
+      "from": "D68",
+      "to": "E01",
+      "reason": "AML: 発熱(48-80%, PMC11210435/PMC10799219)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D68",
+      "to": "S07",
+      "reason": "AML: 倦怠感(64%, PMC5720651)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D68",
+      "to": "S44",
+      "reason": "AML: 出血傾向(20-30%, PMC11210435)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "bleeding"
+    },
+    {
+      "from": "D68",
+      "to": "L22",
+      "reason": "AML: 汎血球減少(30.5%, PMC11526254)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "pancytopenia"
+    },
+    {
+      "from": "D68",
+      "to": "L21",
+      "reason": "AML: 末梢血芽球(診断基準≥20%)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "blasts"
+    },
+    {
+      "from": "D68",
+      "to": "L16",
+      "reason": "AML: LDH上昇(83%, PMC10799219)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "LDH"
+    },
+    {
+      "from": "D68",
+      "to": "L93",
+      "reason": "AML: 貧血(95%, median Hb 7.4, PMC11526254)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D68",
+      "to": "L01",
+      "reason": "AML: WBC低~著増(variable)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D68",
+      "to": "L100",
+      "reason": "AML: 血小板減少",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "platelet_count"
+    },
+    {
+      "from": "D68",
+      "to": "E13",
+      "reason": "AML: LAD(4-12%, PMC11210435)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "lymphadenopathy"
+    },
+    {
+      "from": "D68",
+      "to": "E14",
+      "reason": "AML: 脾腫(23-37%, PMC11210435)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "splenomegaly"
+    },
+    {
+      "from": "D68",
+      "to": "E34",
+      "reason": "AML: 肝腫大(22-29%, PMC10799219)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D68",
+      "to": "L64",
+      "reason": "AML: DIC(10-25%, APL 80-90%, PMC8652184)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "DIC_score"
+    },
+    {
+      "from": "D68",
+      "to": "S46",
+      "reason": "AML: 食欲不振",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D68",
+      "to": "L15",
+      "reason": "AML: フェリチン上昇",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "ferritin"
+    },
+    {
+      "from": "D68",
+      "to": "L02",
+      "reason": "AML: CRP上昇(感染合併)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D68",
+      "to": "E12",
+      "reason": "AML: 皮膚出血/leukemia cutis(3-5%, PMC8330858)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "skin_findings"
+    },
+    {
+      "from": "D68",
+      "to": "T01",
+      "reason": "AML: 亜急性~慢性経過(週~月)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D68",
+      "to": "S04",
+      "reason": "AML: 呼吸困難(貧血・肺浸潤)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "dyspnea"
+    },
+    {
+      "from": "D68",
+      "to": "E02",
+      "reason": "AML: 頻脈(貧血・発熱)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D375",
+      "to": "E01",
+      "reason": "ALL: 発熱(50-60%, PMC6371227)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D375",
+      "to": "S07",
+      "reason": "ALL: 倦怠感",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D375",
+      "to": "L22",
+      "reason": "ALL: 汎血球減少(11.9%, PMC11526254)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "pancytopenia"
+    },
+    {
+      "from": "D375",
+      "to": "L21",
+      "reason": "ALL: 末梢血芽球(診断基準≥20%)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "blasts"
+    },
+    {
+      "from": "D375",
+      "to": "L16",
+      "reason": "ALL: LDH著増(79%>900, mean 1669, PMC10799219)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "LDH"
+    },
+    {
+      "from": "D375",
+      "to": "L93",
+      "reason": "ALL: 貧血(90%, median Hb 7.9, PMC11526254)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D375",
+      "to": "L01",
+      "reason": "ALL: WBC低~著増",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D375",
+      "to": "L100",
+      "reason": "ALL: 血小板減少",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "platelet_count"
+    },
+    {
+      "from": "D375",
+      "to": "E13",
+      "reason": "ALL: LAD(43-57%!, PMC6371227/StatPearls)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "lymphadenopathy"
+    },
+    {
+      "from": "D375",
+      "to": "E14",
+      "reason": "ALL: 脾腫(50-63%!, PMC6371227)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "splenomegaly"
+    },
+    {
+      "from": "D375",
+      "to": "E34",
+      "reason": "ALL: 肝腫大(50-78%!, PMC6371227)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D375",
+      "to": "S44",
+      "reason": "ALL: 出血傾向(AMLより少ない)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "bleeding"
+    },
+    {
+      "from": "D375",
+      "to": "S46",
+      "reason": "ALL: 食欲不振",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D375",
+      "to": "L15",
+      "reason": "ALL: フェリチン上昇",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "ferritin"
+    },
+    {
+      "from": "D375",
+      "to": "L02",
+      "reason": "ALL: CRP上昇(感染合併)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D375",
+      "to": "S08",
+      "reason": "ALL: 骨痛(20-40%, 小児39%, PMC6371227)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D375",
+      "to": "E12",
+      "reason": "ALL: 皮膚点状出血",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "skin_findings"
+    },
+    {
+      "from": "D375",
+      "to": "T01",
+      "reason": "ALL: 亜急性~慢性経過",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D375",
+      "to": "S04",
+      "reason": "ALL: 呼吸困難(貧血・縦隔腫瘤)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "dyspnea"
+    },
+    {
+      "from": "D375",
+      "to": "E02",
+      "reason": "ALL: 頻脈(貧血・発熱)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D375",
+      "to": "S17",
+      "reason": "ALL: 体重減少(B症状)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "weight_loss"
+    },
+    {
+      "from": "D68",
+      "to": "L14",
+      "reason": "AML: 末梢血像(血小板減少/芽球/左方移動)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "peripheral_smear"
+    },
+    {
+      "from": "D68",
+      "to": "S13",
+      "reason": "AML: 嘔気(感染/化学療法)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D68",
+      "to": "S06",
+      "reason": "AML: 筋痛",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D68",
+      "to": "S01",
+      "reason": "AML: 咳嗽(肺感染合併)",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "cough"
+    },
+    {
+      "from": "D375",
+      "to": "L14",
+      "reason": "ALL: 末梢血像(芽球/血小板減少)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "peripheral_smear"
+    },
+    {
+      "from": "D375",
+      "to": "S13",
+      "reason": "ALL: 嘔気",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "nausea"
+    },
+    {
+      "from": "D375",
+      "to": "S01",
+      "reason": "ALL: 咳嗽(感染/縦隔腫瘤)",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "cough"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

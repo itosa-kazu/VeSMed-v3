@@ -3019,9 +3019,9 @@
       "source": "J Pharm Pract 2014 (PMC3956732)",
       "pmcid": "PMC3956732",
       "vignette": "25M B-ALL。化学療法誘導10日後に発熱+筋肉痛+嘔吐+咳嗽+呼吸困難+頭痛。T 38.6, HR 104, BP 98/64, RR 22, SpO2 93%。WBC 1.1K(ANC 300), Hb 7.1, PLT 17K。発熱性好中球減少。",
-      "final_diagnosis": "急性白血病(発熱性好中球減少)",
-      "expected_id": "D68",
-      "in_scope": true,
+      "final_diagnosis": "急性リンパ性白血病(ALL)",
+      "expected_id": "D375",
+      "in_scope": false,
       "evidence": {
         "E01": "38.0_39.0",
         "E02": "100_120",
@@ -3043,7 +3043,8 @@
         "R01": "18_39",
         "R02": "male",
         "R05": "yes"
-      }
+      },
+      "notes": "OOS: 化学療法後の発熱性好中球減少症。初回診断ではなく治療合併症。"
     },
     {
       "id": "R123",
@@ -4210,7 +4211,8 @@
       "risk_factors": {
         "R01": "40_64",
         "R02": "female"
-      }
+      },
+      "final_diagnosis": "急性骨髄性白血病(AML)"
     },
     {
       "id": "R164",

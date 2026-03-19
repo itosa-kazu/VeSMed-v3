@@ -2395,17 +2395,17 @@
     },
     {
       "id": "D68",
-      "name": "leukemia_acute",
-      "name_ja": "急性白血病",
+      "name": "acute_myeloid_leukemia",
+      "name_ja": "急性骨髄性白血病(AML)",
       "category": "disease",
       "states": [
         "no",
         "yes"
       ],
-      "icd10": "C95.0",
+      "icd10": "C92.0",
       "category_sub": "malignancy",
       "severity": "critical",
-      "key_features": "発熱+出血傾向（紫斑・歯肉出血）+貧血症状。末梢血で芽球出現。汎血球減少。",
+      "key_features": "中高年(median 68歳)。汎血球減少+末梢血芽球。DIC合併10-25%(APL 80-90%)。歯肉腫脹(M4/M5)。LAD少(4-12%)。M:F=5:3。",
       "diagnostic_profile": {}
     },
     {
@@ -10774,6 +10774,21 @@
       "category_sub": "endocrine",
       "severity": "moderate",
       "key_features": "動悸+振戦+体重減少+発汗過多+甲状腺腫(90%)+眼球突出(25-50%)。F:M=5-10:1、30-50歳。TSH抑制+FT4上昇。TRAb 97-99%陽性。CRP正常(亜急性甲状腺炎との鑑別)。非クリーゼ型(D71が甲状腺クリーゼ)。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D375",
+      "name": "acute_lymphoblastic_leukemia",
+      "name_ja": "急性リンパ性白血病(ALL)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "C91.0",
+      "category_sub": "malignancy",
+      "severity": "critical",
+      "key_features": "二峰性(小児2-5歳+成人50歳)。LAD 43-57%。肝脾腫50-78%。骨痛20-40%。CNS浸潤5-8%。T-ALLで縦隔腫瘤50-75%。LDH著増(AMLより高い)。",
       "diagnostic_profile": {}
     }
   ]
