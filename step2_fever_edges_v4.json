@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6946,
+  "total_edges": 6988,
   "edges": [
     {
       "from": "R01",
@@ -22211,6 +22211,76 @@
       "reason": "猩紅熱: 急性"
     },
     {
+      "from": "D182",
+      "to": "S18",
+      "from_name": "scarlet_fever",
+      "to_name": "S18",
+      "reason": "猩紅熱: 皮膚症状(sandpaper rash, 100%)"
+    },
+    {
+      "from": "D182",
+      "to": "S87",
+      "from_name": "scarlet_fever",
+      "to_name": "S87",
+      "reason": "猩紅熱: 全身性発疹(rash_widespread)"
+    },
+    {
+      "from": "D182",
+      "to": "S75",
+      "from_name": "scarlet_fever",
+      "to_name": "S75",
+      "reason": "猩紅熱: 体幹優位→全身性の紅斑(trunk_centripetal/generalized)"
+    },
+    {
+      "from": "D182",
+      "to": "L02",
+      "from_name": "scarlet_fever",
+      "to_name": "L02",
+      "reason": "猩紅熱: CRP上昇(GAS細菌感染)"
+    },
+    {
+      "from": "D182",
+      "to": "L28",
+      "from_name": "scarlet_fever",
+      "to_name": "L28",
+      "reason": "猩紅熱: ESR上昇(GAS細菌感染)"
+    },
+    {
+      "from": "D182",
+      "to": "E13",
+      "from_name": "scarlet_fever",
+      "to_name": "E13",
+      "reason": "猩紅熱: 前頸部リンパ節腫脹(60%)"
+    },
+    {
+      "from": "D182",
+      "to": "E46",
+      "from_name": "scarlet_fever",
+      "to_name": "E46",
+      "reason": "猩紅熱: 頸部リンパ節(cervical)"
+    },
+    {
+      "from": "D182",
+      "to": "S66",
+      "from_name": "scarlet_fever",
+      "to_name": "S66",
+      "reason": "猩紅熱: 嘔吐(小児で30-40%)"
+    },
+    {
+      "from": "D182",
+      "to": "S12",
+      "from_name": "scarlet_fever",
+      "to_name": "S12",
+      "reason": "猩紅熱: 腹痛(小児で20%)"
+    },
+    {
+      "from": "D182",
+      "to": "S01",
+      "from_name": "scarlet_fever",
+      "to_name": "S01",
+      "reason": "猩紅熱: 咳嗽(20%)"
+    },
+    {
       "from": "D178",
       "to": "L45",
       "from_name": "listeria_meningitis",
@@ -22706,6 +22776,83 @@
       "from_name": "eosinophilic_pneumonia",
       "to_name": "T02",
       "reason": "好酸球性肺炎: 亜急性"
+    },
+    {
+      "from": "D188",
+      "to": "E02",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "E02",
+      "reason": "好酸球性肺炎: 頻脈(発熱+低酸素に伴う, 60-70%)"
+    },
+    {
+      "from": "D188",
+      "to": "L35",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "L35",
+      "reason": "好酸球性肺炎: 胸部CT(GGO/末梢consolidation/胸水)"
+    },
+    {
+      "from": "D188",
+      "to": "L02",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "L02",
+      "reason": "好酸球性肺炎: CRP上昇(通常中等度, 60-80%)"
+    },
+    {
+      "from": "D188",
+      "to": "L28",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "L28",
+      "reason": "好酸球性肺炎: ESR上昇(50-70%)"
+    },
+    {
+      "from": "D188",
+      "to": "S07",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S07",
+      "reason": "好酸球性肺炎: 倦怠感(40-60%)"
+    },
+    {
+      "from": "D188",
+      "to": "S21",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S21",
+      "reason": "好酸球性肺炎: 胸膜性胸痛(20-40%)"
+    },
+    {
+      "from": "D188",
+      "to": "S16",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S16",
+      "reason": "好酸球性肺炎: 盗汗(CEPで30-50%)"
+    },
+    {
+      "from": "D188",
+      "to": "S17",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S17",
+      "reason": "好酸球性肺炎: 体重減少(CEPで20-40%)"
+    },
+    {
+      "from": "D188",
+      "to": "L03",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "L03",
+      "reason": "好酸球性肺炎: 低プロカルシトニン(細菌性との鑑別点)"
+    },
+    {
+      "from": "D188",
+      "to": "S09",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S09",
+      "reason": "好酸球性肺炎: 悪寒(20-30%)"
+    },
+    {
+      "from": "D188",
+      "to": "S13",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "S13",
+      "reason": "好酸球性肺炎: 悪心(15-25%)"
     },
     {
       "from": "D189",
@@ -51406,6 +51553,69 @@
       "to_name": "E47"
     },
     {
+      "from": "D65",
+      "to": "S22",
+      "reason": "背部痛(脊椎痛風/tophaceous spinal gout)",
+      "from_name": "gout",
+      "to_name": "back_pain"
+    },
+    {
+      "from": "D65",
+      "to": "L55",
+      "reason": "クレアチニン上昇(痛風患者の20-40%にCKD合併、尿酸腎症)",
+      "from_name": "gout",
+      "to_name": "creatinine"
+    },
+    {
+      "from": "D65",
+      "to": "S07",
+      "reason": "倦怠感(急性痛風発作時の全身症状)",
+      "from_name": "gout",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D65",
+      "to": "E04",
+      "reason": "頻呼吸(重症疼痛・高熱時)",
+      "from_name": "gout",
+      "to_name": "respiratory_rate"
+    },
+    {
+      "from": "D65",
+      "to": "S111",
+      "reason": "腰痛(脊椎痛風/lumbar tophaceous gout)",
+      "from_name": "gout",
+      "to_name": "low_back_pain"
+    },
+    {
+      "from": "D65",
+      "to": "E03",
+      "reason": "血圧低下(重症polyarticular gout flare、敗血症様)",
+      "from_name": "gout",
+      "to_name": "blood_pressure_systolic"
+    },
+    {
+      "from": "D65",
+      "to": "L93",
+      "reason": "貧血(慢性痛風のCKD合併による)",
+      "from_name": "gout",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D65",
+      "to": "S46",
+      "reason": "食欲不振(急性痛風発作時の全身症状)",
+      "from_name": "gout",
+      "to_name": "anorexia"
+    },
+    {
+      "from": "D65",
+      "to": "S16",
+      "reason": "盗汗(稀、重症polyarticular gout)",
+      "from_name": "gout",
+      "to_name": "night_sweats"
+    },
+    {
       "from": "R01",
       "to": "D360",
       "reason": "偽痛風。高齢者(60歳以上)に多い",
@@ -55366,6 +55576,90 @@
       "to": "E50",
       "to_name": "leg_edema_laterality",
       "reason": "orphan CPT sync: step3 CPT existed without step2 edge"
+    },
+    {
+      "from": "D179",
+      "to": "L87",
+      "from_name": "DILI",
+      "to_name": "ビリルビン分画(直接/間接)",
+      "reason": "DILI: 肝細胞障害/胆汁うっ滞型で直接ビリルビン優位(40-60%で黄疸)"
+    },
+    {
+      "from": "D179",
+      "to": "S18",
+      "from_name": "DILI",
+      "to_name": "S18",
+      "reason": "DILI: DRESS/薬疹型で皮膚症状(10-20%)"
+    },
+    {
+      "from": "D179",
+      "to": "L02",
+      "from_name": "DILI",
+      "to_name": "L02",
+      "reason": "DILI: 免疫アレルギー型で炎症反応としてCRP軽度上昇"
+    },
+    {
+      "from": "D179",
+      "to": "E12",
+      "from_name": "DILI",
+      "to_name": "E12",
+      "reason": "DILI: DRESS型で斑状丘疹状皮疹(10-15%)"
+    },
+    {
+      "from": "D179",
+      "to": "S96",
+      "from_name": "DILI",
+      "to_name": "掻痒感",
+      "reason": "DILI: 胆汁うっ滞型で掻痒感(30-50%)"
+    },
+    {
+      "from": "D179",
+      "to": "L100",
+      "from_name": "DILI",
+      "to_name": "L100",
+      "reason": "DILI: 免疫アレルギー型で血小板減少(5-15%)"
+    },
+    {
+      "from": "D179",
+      "to": "L14",
+      "from_name": "DILI",
+      "to_name": "L14",
+      "reason": "DILI: アレルギー性DILIで好酸球増多(15-25%)"
+    },
+    {
+      "from": "D179",
+      "to": "L55",
+      "from_name": "DILI",
+      "to_name": "L55",
+      "reason": "DILI: 重症肝障害に伴う腎機能障害(肝腎症候群, 5-10%)"
+    },
+    {
+      "from": "D179",
+      "to": "S46",
+      "from_name": "DILI",
+      "to_name": "S46",
+      "reason": "DILI: 食欲不振(50-60%)"
+    },
+    {
+      "from": "D179",
+      "to": "L15",
+      "from_name": "DILI",
+      "to_name": "L15",
+      "reason": "DILI: 肝細胞障害型でフェリチン上昇(30-40%)"
+    },
+    {
+      "from": "D179",
+      "to": "S16",
+      "from_name": "DILI",
+      "to_name": "S16",
+      "reason": "DILI: 薬剤熱型で盗汗(10-15%)"
+    },
+    {
+      "from": "D179",
+      "to": "T03",
+      "from_name": "DILI",
+      "to_name": "T03",
+      "reason": "DILI: 薬剤熱型で間欠熱パターン"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
