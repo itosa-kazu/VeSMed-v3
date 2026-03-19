@@ -1046,7 +1046,11 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "L45": "viral_pattern",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L03": "high_over_0.5",
+        "S34": "present",
+        "L04": "normal",
+        "L44": "hyponatremia"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -1807,7 +1811,10 @@
         "L02": "high_over_10",
         "L28": "elevated"
       },
-      "risk_factors": {}
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "male"
+      }
     },
     {
       "id": "R68",
@@ -1923,9 +1930,17 @@
         "E01": "38.0_39.0",
         "E16": "obtunded",
         "E06": "present",
-        "L09": "negative"
+        "L09": "negative",
+        "L01": "very_high_over_20000",
+        "L02": "high_over_10",
+        "E02": "100_120",
+        "E04": "tachypnea_20_30",
+        "E12": "petechiae_purpura",
+        "L45": "bacterial_pattern"
       },
-      "risk_factors": {}
+      "risk_factors": {
+        "R04": "yes"
+      }
     },
     {
       "id": "R74",
@@ -2269,10 +2284,17 @@
       "evidence": {
         "E01": "39.0_40.0",
         "E18": "present",
-        "L01": "low_under_4000",
+        "L01": "normal_4000_10000",
         "L11": "mild_elevated",
         "T01": "over_3w",
-        "E14": "present"
+        "E14": "present",
+        "L14": "atypical_lymphocytes",
+        "E34": "present",
+        "L15": "very_high_over_1000",
+        "L16": "elevated",
+        "L87": "indirect_dominant",
+        "S07": "present",
+        "S02": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -7378,14 +7400,17 @@
       "expected_id": "D144",
       "in_scope": true,
       "evidence": {
-        "S52": "present",
         "E01": "under_37.5",
         "L01": "normal_4000_10000",
         "L02": "normal_under_0.3",
         "L28": "normal",
         "T01": "over_3w",
         "T02": "subacute",
-        "S93": "bilateral"
+        "S93": "bilateral",
+        "S48": "present",
+        "S106": "present",
+        "E53": "areflexia",
+        "L45": "viral_pattern"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -11777,7 +11802,9 @@
         "E16": "confused",
         "S42": "present",
         "T01": "over_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "S150": "present",
+        "L45": "normal"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -12009,7 +12036,9 @@
         "E03": "hypotension_under_90",
         "L01": "high_10000_20000",
         "T01": "under_3d",
-        "T02": "acute"
+        "T02": "acute",
+        "L68": "metabolic_acidosis",
+        "L44": "other"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -19879,8 +19908,11 @@
         "S13": "present",
         "L01": "high_10000_20000",
         "L02": "high_over_10",
-        "T01": "3d_to_1w",
-        "S86": "bloody"
+        "T01": "1w_to_3w",
+        "S86": "bloody",
+        "L93": "very_low_under_7",
+        "L100": "high_over_400k",
+        "S66": "present"
       },
       "risk_factors": {
         "R01": "18_39",
