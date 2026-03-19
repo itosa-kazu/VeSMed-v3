@@ -24812,6 +24812,18 @@
           "negative": 0.6,
           "gram_positive": 0.08,
           "gram_negative": 0.02
+        },
+        "D65": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.78,
+          "gram_positive": 0.01,
+          "gram_negative": 0.01
+        },
+        "D360": {
+          "not_done_or_pending": 0.2,
+          "negative": 0.78,
+          "gram_positive": 0.01,
+          "gram_negative": 0.01
         }
       }
     },
@@ -37020,10 +37032,10 @@
           "over_3w": 0.7
         },
         "D65": {
-          "under_3d": 0.6,
+          "under_3d": 0.55,
           "3d_to_1w": 0.3,
-          "1w_to_3w": 0.08,
-          "over_3w": 0.02
+          "1w_to_3w": 0.1,
+          "over_3w": 0.05
         },
         "D360": {
           "under_3d": 0.4,

@@ -21475,7 +21475,8 @@
         "L28": "very_high_over_100",
         "L23": "normal",
         "T01": "over_3w",
-        "T02": "chronic"
+        "T02": "chronic",
+        "L09": "negative"
       },
       "risk_factors": {
         "R01": "40_64",
