@@ -15,9 +15,9 @@ from collections import defaultdict
 
 
 def main():
-    with open('step2_fever_edges_v4.json') as f:
+    with open('step2_fever_edges_v4.json', encoding='utf-8') as f:
         s2 = json.load(f)
-    with open('step3_fever_cpts_v2.json') as f:
+    with open('step3_fever_cpts_v2.json', encoding='utf-8') as f:
         s3 = json.load(f)
 
     nop = s3['noisy_or_params']
