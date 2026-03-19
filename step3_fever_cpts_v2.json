@@ -4084,6 +4084,21 @@
         "female|40_64": 0.001,
         "female|65_plus": 0.0005
       }
+    },
+    "D370": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "AA。二峰性(15-25歳+>60歳)。M:F≈1.2:1。アジア2-3倍高い",
+      "cpt": {
+        "male|18_39": 0.002,
+        "male|40_64": 0.001,
+        "male|65_plus": 0.003,
+        "female|18_39": 0.0015,
+        "female|40_64": 0.0008,
+        "female|65_plus": 0.002
+      }
     }
   },
   "full_cpts": {
@@ -12691,6 +12706,25 @@
         "male": 0.06,
         "female": 0.04
       }
+    },
+    "D370": {
+      "parents": [
+        "R01"
+      ],
+      "description": "再生不良性貧血",
+      "cpt": {
+        "0_1": 0.0002,
+        "1_5": 0.0003,
+        "6_12": 0.0005,
+        "13_17": 0.001,
+        "18_39": 0.002,
+        "40_64": 0.001,
+        "65_plus": 0.003
+      },
+      "R02": {
+        "male": 0.055,
+        "female": 0.045
+      }
     }
   },
   "noisy_or_params": {
@@ -15258,6 +15292,14 @@
           "39.0_40.0": 0.05,
           "over_40.0": 0.005,
           "hypothermia_under_35": 0.005
+        },
+        "D370": {
+          "under_37.5": 0.55,
+          "37.5_38.0": 0.18,
+          "38.0_39.0": 0.15,
+          "39.0_40.0": 0.08,
+          "over_40.0": 0.03,
+          "hypothermia_under_35": 0.01
         }
       }
     },
@@ -19121,6 +19163,17 @@
           "skin_necrosis": 0.01,
           "purpura": 0.0,
           "vesicle_bulla": 0.01
+        },
+        "D370": {
+          "normal": 0.42,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.4,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.12,
+          "vesicle_bulla": 0.005,
+          "skin_necrosis": 0.005
         }
       }
     },
@@ -19273,6 +19326,10 @@
         "D182": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D370": {
+          "absent": 0.97,
+          "present": 0.03
         }
       }
     },
@@ -19383,6 +19440,10 @@
         "D367": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D370": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     },
@@ -20790,6 +20851,10 @@
         "D369": {
           "absent": 0.9,
           "present": 0.1
+        },
+        "D370": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     },
@@ -22443,6 +22508,12 @@
           "normal_4000_10000": 0.7,
           "high_10000_20000": 0.15,
           "very_high_over_20000": 0.05
+        },
+        "D370": {
+          "low_under_4000": 0.85,
+          "normal_4000_10000": 0.12,
+          "high_10000_20000": 0.02,
+          "very_high_over_20000": 0.01
         }
       }
     },
@@ -23811,6 +23882,12 @@
           "mild_0.3_3": 0.5,
           "moderate_3_10": 0.15,
           "high_over_10": 0.05
+        },
+        "D370": {
+          "normal_under_0.3": 0.65,
+          "mild_0.3_3": 0.25,
+          "moderate_3_10": 0.08,
+          "high_over_10": 0.02
         }
       }
     },
@@ -26221,6 +26298,12 @@
           "mild_elevated": 0.35,
           "very_high_over_1000": 0.2,
           "extreme_over_10000": 0.05
+        },
+        "D370": {
+          "normal": 0.45,
+          "mild_elevated": 0.4,
+          "very_high_over_1000": 0.13,
+          "extreme_over_10000": 0.02
         }
       }
     },
@@ -26795,6 +26878,10 @@
         "D289": {
           "absent": 0.98,
           "present": 0.02
+        },
+        "D370": {
+          "absent": 0.01,
+          "present": 0.99
         }
       }
     },
@@ -29369,6 +29456,11 @@
           "absent": 0.65,
           "on_exertion": 0.2,
           "at_rest": 0.15
+        },
+        "D370": {
+          "absent": 0.35,
+          "on_exertion": 0.55,
+          "at_rest": 0.1
         }
       }
     },
@@ -31227,6 +31319,11 @@
           "absent": 0.25,
           "mild": 0.35,
           "severe": 0.4
+        },
+        "D370": {
+          "absent": 0.08,
+          "mild": 0.22,
+          "severe": 0.7
         }
       }
     },
@@ -31695,6 +31792,10 @@
           "present": 0.3
         },
         "D369": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D370": {
           "absent": 0.7,
           "present": 0.3
         }
@@ -37403,6 +37504,12 @@
           "3d_to_1w": 0.25,
           "1w_to_3w": 0.45,
           "over_3w": 0.25
+        },
+        "D370": {
+          "under_3d": 0.03,
+          "3d_to_1w": 0.07,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.65
         }
       }
     },
@@ -39298,6 +39405,12 @@
           "acute": 0.3,
           "subacute": 0.5,
           "chronic": 0.15
+        },
+        "D370": {
+          "sudden": 0.02,
+          "acute": 0.08,
+          "subacute": 0.3,
+          "chronic": 0.6
         }
       }
     },
@@ -47842,6 +47955,13 @@
           "mild_low_10_12": 0.44,
           "normal": 0.43,
           "high": 0.02
+        },
+        "D370": {
+          "very_low_under_7": 0.3,
+          "low_7_10": 0.45,
+          "mild_low_10_12": 0.2,
+          "normal": 0.04,
+          "high": 0.01
         }
       }
     },
@@ -47903,6 +48023,13 @@
           "normal": 0.42,
           "high_over_400k": 0.5,
           "very_high_over_1000k": 0.05
+        },
+        "D370": {
+          "very_low_under_50k": 0.75,
+          "low_50k_150k": 0.18,
+          "normal": 0.05,
+          "high_over_400k": 0.01,
+          "very_high_over_1000k": 0.01
         }
       }
     },

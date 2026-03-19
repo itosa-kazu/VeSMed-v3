@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7056,
+  "total_edges": 7072,
   "edges": [
     {
       "from": "R01",
@@ -56141,6 +56141,118 @@
       "reason": "HEV: 掻痒感(15-41%, PMC8928388: 15%, PMC4921434: 41%)",
       "from_name": "hepatitis_E",
       "to_name": "pruritus"
+    },
+    {
+      "from": "D370",
+      "to": "L22",
+      "reason": "AA: 汎血球減少(100%, 診断基準. PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "pancytopenia"
+    },
+    {
+      "from": "D370",
+      "to": "L93",
+      "reason": "AA: 貧血(median Hb 7.6g/dL, PMC11758088)",
+      "from_name": "aplastic_anemia",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D370",
+      "to": "L01",
+      "reason": "AA: 白血球減少(median 2.2k, PMC11758088)",
+      "from_name": "aplastic_anemia",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D370",
+      "to": "L100",
+      "reason": "AA: 血小板減少(median 18k, 52.6%<20k, PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "platelet_count"
+    },
+    {
+      "from": "D370",
+      "to": "S07",
+      "reason": "AA: 倦怠感/脱力(92%, PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D370",
+      "to": "E12",
+      "reason": "AA: 粘膜皮膚出血(58%, PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "skin_findings"
+    },
+    {
+      "from": "D370",
+      "to": "E01",
+      "reason": "AA: 発熱(42%, 好中球減少に伴う感染, PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D370",
+      "to": "S04",
+      "reason": "AA: 労作時呼吸困難(50-70%, Hb<8での推定, StatPearls)",
+      "from_name": "aplastic_anemia",
+      "to_name": "dyspnea"
+    },
+    {
+      "from": "D370",
+      "to": "L02",
+      "reason": "AA: CRP正常(非炎症性疾患!, StatPearls)",
+      "from_name": "aplastic_anemia",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D370",
+      "to": "T01",
+      "reason": "AA: 潜行性発症(週~月, StatPearls/Merck)",
+      "from_name": "aplastic_anemia",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D370",
+      "to": "T02",
+      "reason": "AA: 潜行性(週~月, StatPearls)",
+      "from_name": "aplastic_anemia",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D370",
+      "to": "E13",
+      "reason": "AA: リンパ節腫大なし(<3%, Merck/StatPearls, 他疾患を示唆)",
+      "from_name": "aplastic_anemia",
+      "to_name": "lymphadenopathy"
+    },
+    {
+      "from": "D370",
+      "to": "E34",
+      "reason": "AA: 肝腫大なし(<5%, Merck/StatPearls)",
+      "from_name": "aplastic_anemia",
+      "to_name": "hepatomegaly"
+    },
+    {
+      "from": "D370",
+      "to": "E14",
+      "reason": "AA: 脾腫なし(<5%, Merck, 輸血鉄過剰以外では見られない)",
+      "from_name": "aplastic_anemia",
+      "to_name": "splenomegaly"
+    },
+    {
+      "from": "D370",
+      "to": "L15",
+      "reason": "AA: フェリチン正常~軽度↑(鉄利用低下, PMC3456476: 骨髄鉄増加79%)",
+      "from_name": "aplastic_anemia",
+      "to_name": "ferritin"
+    },
+    {
+      "from": "D370",
+      "to": "S09",
+      "reason": "AA: 悪寒(感染合併時のみ, PMC3456476)",
+      "from_name": "aplastic_anemia",
+      "to_name": "chills"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

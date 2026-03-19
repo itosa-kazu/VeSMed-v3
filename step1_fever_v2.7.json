@@ -10700,6 +10700,21 @@
       "severity": "moderate",
       "key_features": "経口感染(ジビエ/豚肉/水系)。潜伏期2-6週。自限性が多いが妊婦で劇症化(死亡率20%)。IgM-HEV/HEV-RNA陽性。日本genotype3/4。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D370",
+      "name": "aplastic_anemia",
+      "name_ja": "再生不良性貧血",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "D61.9",
+      "category_sub": "hematologic",
+      "severity": "high",
+      "key_features": "汎血球減少+骨髄低形成(<25%)。臓器腫大なし(肝脾腫・リンパ節腫大は他疾患を示唆)。潜行性発症。出血+感染+貧血の三徴。二峰性(15-25歳+>60歳)。",
+      "diagnostic_profile": {}
     }
   ]
 }
