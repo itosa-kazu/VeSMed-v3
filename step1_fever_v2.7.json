@@ -10730,6 +10730,21 @@
       "severity": "moderate",
       "key_features": "急性発症の注意障害+意識変容+変動する経過。高齢者(>65)に多い。誘因:感染(49%)/薬物(31%)/代謝(46%)/手術。幻視26%。低活動型50%/過活動型23%/混合型28%。臓器腫大・局所神経徴候なし。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D372",
+      "name": "primary_sclerosing_cholangitis",
+      "name_ja": "原発性硬化性胆管炎(PSC)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "K83.0",
+      "category_sub": "hepatobiliary",
+      "severity": "moderate",
+      "key_features": "胆汁うっ滞型肝障害(ALP 3-10xULN)。IBD合併60-80%(UC>>CD)。pANCA 70-80%陽性。30-40歳男性2:1。50%無症状。MRCPでbeading。胆管癌リスク10-20%。",
+      "diagnostic_profile": {}
     }
   ]
 }

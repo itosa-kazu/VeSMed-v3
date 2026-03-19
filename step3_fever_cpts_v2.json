@@ -4114,6 +4114,21 @@
         "female|40_64": 0.002,
         "female|65_plus": 0.012
       }
+    },
+    "D372": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "PSC。30-40歳ピーク。M:F=2:1",
+      "cpt": {
+        "male|18_39": 0.003,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.0005,
+        "female|18_39": 0.0015,
+        "female|40_64": 0.001,
+        "female|65_plus": 0.0003
+      }
     }
   },
   "full_cpts": {
@@ -12759,6 +12774,25 @@
         "male": 0.055,
         "female": 0.045
       }
+    },
+    "D372": {
+      "parents": [
+        "R01"
+      ],
+      "description": "原発性硬化性胆管炎(PSC)",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0001,
+        "6_12": 0.0002,
+        "13_17": 0.0005,
+        "18_39": 0.003,
+        "40_64": 0.002,
+        "65_plus": 0.0005
+      },
+      "R02": {
+        "male": 0.065,
+        "female": 0.035
+      }
     }
   },
   "noisy_or_params": {
@@ -15342,6 +15376,14 @@
           "39.0_40.0": 0.05,
           "over_40.0": 0.01,
           "hypothermia_under_35": 0.01
+        },
+        "D372": {
+          "under_37.5": 0.88,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
         }
       }
     },
@@ -19495,6 +19537,10 @@
         "D370": {
           "absent": 0.95,
           "present": 0.05
+        },
+        "D372": {
+          "absent": 0.61,
+          "present": 0.39
         }
       }
     },
@@ -20384,6 +20430,10 @@
         "D369": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D372": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -20911,6 +20961,10 @@
         "D370": {
           "absent": 0.95,
           "present": 0.05
+        },
+        "D372": {
+          "absent": 0.56,
+          "present": 0.44
         }
       }
     },
@@ -23956,6 +24010,12 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.1,
           "high_over_10": 0.05
+        },
+        "D372": {
+          "normal_under_0.3": 0.55,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.1,
+          "high_over_10": 0.05
         }
       }
     },
@@ -25690,6 +25750,11 @@
           "normal": 0.02,
           "mild_elevated": 0.14,
           "very_high": 0.84
+        },
+        "D372": {
+          "normal": 0.1,
+          "mild_elevated": 0.7,
+          "very_high": 0.2
         }
       }
     },
@@ -26790,6 +26855,10 @@
         "D359": {
           "negative": 0.95,
           "positive": 0.05
+        },
+        "D372": {
+          "negative": 0.55,
+          "positive": 0.45
         }
       }
     },
@@ -26820,6 +26889,11 @@
           "negative": 0.97,
           "c_ANCA": 0.02,
           "p_ANCA": 0.01
+        },
+        "D372": {
+          "negative": 0.22,
+          "c_ANCA": 0.03,
+          "p_ANCA": 0.75
         }
       }
     },
@@ -31397,6 +31471,11 @@
           "absent": 0.25,
           "mild": 0.35,
           "severe": 0.4
+        },
+        "D372": {
+          "absent": 0.55,
+          "mild": 0.3,
+          "severe": 0.15
         }
       }
     },
@@ -33528,6 +33607,10 @@
         "D188": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D372": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -37597,6 +37680,12 @@
           "3d_to_1w": 0.4,
           "1w_to_3w": 0.2,
           "over_3w": 0.1
+        },
+        "D372": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
         }
       }
     },
@@ -39504,6 +39593,12 @@
           "acute": 0.6,
           "subacute": 0.2,
           "chronic": 0.05
+        },
+        "D372": {
+          "sudden": 0.02,
+          "acute": 0.05,
+          "subacute": 0.18,
+          "chronic": 0.75
         }
       }
     },
@@ -44174,6 +44269,13 @@
           "hepatocellular": 0.85,
           "cholestatic": 0.02,
           "congestive": 0.01
+        },
+        "D372": {
+          "not_assessed": 0.05,
+          "normal": 0.02,
+          "hepatocellular": 0.08,
+          "cholestatic": 0.82,
+          "congestive": 0.03
         }
       }
     },
@@ -46449,6 +46551,14 @@
           "LLQ": 0.02,
           "suprapubic": 0.01,
           "diffuse": 0.15
+        },
+        "D372": {
+          "epigastric": 0.1,
+          "RUQ": 0.75,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.01,
+          "diffuse": 0.1
         }
       }
     },
@@ -48368,6 +48478,12 @@
           "mild_elevated": 0.5,
           "moderate_elevated": 0.25,
           "markedly_elevated": 0.05
+        },
+        "D372": {
+          "normal": 0.05,
+          "mild_elevated": 0.2,
+          "moderate_elevated": 0.4,
+          "markedly_elevated": 0.35
         }
       }
     },
@@ -48571,6 +48687,12 @@
           "mild_elevated": 0.45,
           "moderate_elevated": 0.2,
           "markedly_elevated": 0.05
+        },
+        "D372": {
+          "normal": 0.05,
+          "mild_elevated": 0.15,
+          "moderate_elevated": 0.35,
+          "markedly_elevated": 0.45
         }
       }
     },
@@ -48894,6 +49016,11 @@
           "absent": 0.72,
           "localized": 0.15,
           "generalized": 0.13
+        },
+        "D372": {
+          "absent": 0.75,
+          "localized": 0.1,
+          "generalized": 0.15
         }
       }
     },
