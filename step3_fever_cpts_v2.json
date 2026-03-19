@@ -20581,8 +20581,8 @@
           "present": 0.6
         },
         "D372": {
-          "absent": 0.8,
-          "present": 0.2
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -22805,10 +22805,16 @@
           "very_high_over_20000": 0.03
         },
         "D375": {
-          "low_under_4000": 0.25,
+          "low_under_4000": 0.35,
           "normal_4000_10000": 0.25,
-          "high_10000_20000": 0.25,
+          "high_10000_20000": 0.15,
           "very_high_over_20000": 0.25
+        },
+        "D372": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.6,
+          "high_10000_20000": 0.25,
+          "very_high_over_20000": 0.1
         }
       }
     },
@@ -27242,8 +27248,8 @@
           "present": 0.99
         },
         "D375": {
-          "absent": 0.88,
-          "present": 0.12
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -31711,9 +31717,9 @@
           "severe": 0.4
         },
         "D372": {
-          "absent": 0.55,
-          "mild": 0.3,
-          "severe": 0.15
+          "absent": 0.3,
+          "mild": 0.4,
+          "severe": 0.3
         },
         "D373": {
           "absent": 0.22,
@@ -48484,6 +48490,13 @@
           "mild_low_10_12": 0.3,
           "normal": 0.55,
           "high": 0.02
+        },
+        "D375": {
+          "very_low_under_7": 0.4,
+          "low_7_10": 0.35,
+          "mild_low_10_12": 0.15,
+          "normal": 0.08,
+          "high": 0.02
         }
       }
     },
@@ -48552,6 +48565,13 @@
           "normal": 0.05,
           "high_over_400k": 0.01,
           "very_high_over_1000k": 0.01
+        },
+        "D375": {
+          "very_low_under_50k": 0.6,
+          "low_50k_150k": 0.23,
+          "normal": 0.15,
+          "high_over_400k": 0.015,
+          "very_high_over_1000k": 0.005
         }
       }
     },
@@ -49338,9 +49358,9 @@
           "generalized": 0.13
         },
         "D372": {
-          "absent": 0.75,
+          "absent": 0.6,
           "localized": 0.1,
-          "generalized": 0.15
+          "generalized": 0.3
         }
       }
     },

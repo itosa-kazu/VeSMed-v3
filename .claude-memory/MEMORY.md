@@ -36,6 +36,10 @@
 - [feedback_no_cherry_pick_edges.md](feedback_no_cherry_pick_edges.md) — **最重要: 臨床正確な辺の撤回禁止**。テスト退化は競合にも辺追加で解決。正しい辺を消すのは過拟合
 - [feedback_no_auto_cpt.md](feedback_no_auto_cpt.md) — **CPT数値は人工設定必須**。プログラム自動生成禁止、導入のみ担当
 - [feedback_no_umbrella_diseases.md](feedback_no_umbrella_diseases.md) — **疾患混在禁止**: 臨床的に異なる疾患を1IDに入れない。疫学/症状/治療が異なるなら別IDに分割
+- [feedback_add_disease_skill_v2.md](feedback_add_disease_skill_v2.md) — **新skill起点**: D370以降は文献検証必須。D368/D369は遡及修正済み。D367以前は未検証
+- [feedback_fatal_fix_workflow.md](feedback_fatal_fix_workflow.md) — **FATAL修復5ステップ**: 原文回帰→CPT比較→文献調査→競合回帰→修正。退化時も原文回帰で正面解決
+- [feedback_no_rank_worship.md](feedback_no_rank_worship.md) — **排名唯一主義禁止**: rankは鏡であり目的ではない。原文所見は必ず追加、隠すのは過拟合。臨床的に正しい順位は受け入れる
+- [feedback_verify_cpt_sources.md](feedback_verify_cpt_sources.md) — **CPT文献は原文fetch必須**: agentのweb search結果を鵜呑みにせず、原文をfetchして百分比を直接確認する
 - [project_intermediate_variable_issues.md](project_intermediate_variable_issues.md) — 中間変量問題リスト: 転移(解決)/DIC/心不全/肝不全/腎前性AKI/骨髄浸潤(未解決)
 
 ## ユーザー
@@ -54,7 +58,9 @@
 - [project_navigation_test.md](project_navigation_test.md) — 新評価軸：推奨検査ナビでTop-1到達+維持できるか（手動テスト、論文ネタ）
 - [project_violation_mechanism.md](project_violation_mechanism.md) — 違和感メカニズム：尤度比で対抗仮説を検出→鑑別検査推奨。骨髄腫で検証、未解決課題あり
 - [project_navigation_test_results.md](project_navigation_test_results.md) — ナビテスト全案例結果: 153/228(67%)到達、75件未到達の分類
+- [project_pending_splits.md](project_pending_splits.md) — 未実施の疾患分割・追加リスト(AML/ALL分割、MCD/MN/FSGS追加等)
 - [project_disease_split_plan.md](project_disease_split_plan.md) — 疾患リスト分割計画: umbrella疾患18件をA/B/C/D群に分類、A群6件から着手
+- [project_new_variables_needed.md](project_new_variables_needed.md) — 新変量追加候補: 肺クリプトコッカス等の構造的限界を解決する変量リスト
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）
