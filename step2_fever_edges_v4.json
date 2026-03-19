@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7005,
+  "total_edges": 7012,
   "edges": [
     {
       "from": "R01",
@@ -55784,6 +55784,55 @@
       "from_name": "bronchiectasis",
       "to_name": "hemoptysis",
       "reason": "気管支拡張症: 喀血50-70%(Harrison's)"
+    },
+    {
+      "from": "D289",
+      "to": "S16",
+      "from_name": "prostate_cancer",
+      "to_name": "night_sweats",
+      "reason": "前立腺癌転移: 盗汗12%(Zhu, Asian J Androl 2020)"
+    },
+    {
+      "from": "D289",
+      "to": "L22",
+      "from_name": "prostate_cancer",
+      "to_name": "pancytopenia",
+      "reason": "前立腺癌骨髄浸潤: 汎血球減少8%(Jain, Hematology 2013)"
+    },
+    {
+      "from": "D286",
+      "to": "E04",
+      "from_name": "hypercalcemia",
+      "to_name": "respiratory_rate",
+      "reason": "高Ca血症: 頻呼吸20%(Minisola, BMJ 2015)"
+    },
+    {
+      "from": "D286",
+      "to": "S66",
+      "from_name": "hypercalcemia",
+      "to_name": "vomiting",
+      "reason": "高Ca血症: 嘔吐50%(Harrison's, Lafferty Medicine 2005)"
+    },
+    {
+      "from": "D28",
+      "to": "E04",
+      "from_name": "typhoid",
+      "to_name": "respiratory_rate",
+      "reason": "腸チフス: 頻呼吸15%(Parry, NEJM 2002)"
+    },
+    {
+      "from": "D28",
+      "to": "L16",
+      "from_name": "typhoid",
+      "to_name": "LDH",
+      "reason": "腸チフス: LDH上昇40%(Khosla, Postgrad Med J 1992)"
+    },
+    {
+      "from": "D28",
+      "to": "L55",
+      "from_name": "typhoid",
+      "to_name": "creatinine",
+      "reason": "腸チフス: AKI 10%(Basu, Nephrol Dial Transplant 2011)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

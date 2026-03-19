@@ -1764,7 +1764,10 @@
         "L02": "high_over_10",
         "L04": "normal",
         "L09": "gram_negative",
-        "L11": "very_high"
+        "L11": "very_high",
+        "E04": "severe_over_30",
+        "L16": "elevated",
+        "L55": "mild_elevated"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -14853,7 +14856,9 @@
         "L44": "other",
         "T01": "1w_to_3w",
         "T02": "subacute",
-        "L84": "very_high"
+        "L84": "very_high",
+        "E04": "severe_over_30",
+        "S66": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -15039,7 +15044,9 @@
         "L63": "multiple",
         "L61": "elevated",
         "S84": "productive",
-        "L104": "moderate_elevated"
+        "L104": "moderate_elevated",
+        "S17": "present",
+        "S16": "present"
       },
       "risk_factors": {
         "R01": "40_64",
