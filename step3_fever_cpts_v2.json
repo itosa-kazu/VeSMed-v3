@@ -47577,6 +47577,13 @@
           "normal": 0.8,
           "high_over_400k": 0.04,
           "very_high_over_1000k": 0.01
+        },
+        "D359": {
+          "very_low_under_50k": 0.01,
+          "low_50k_150k": 0.02,
+          "normal": 0.42,
+          "high_over_400k": 0.5,
+          "very_high_over_1000k": 0.05
         }
       }
     },

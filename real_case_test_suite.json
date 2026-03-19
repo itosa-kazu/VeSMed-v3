@@ -20205,7 +20205,8 @@
         "L02": "high_over_10",
         "L28": "elevated",
         "T01": "under_3d",
-        "T02": "acute"
+        "T02": "acute",
+        "L100": "high_over_400k"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -20282,10 +20283,11 @@
         "L01": "very_high_over_20000",
         "L02": "high_over_10",
         "L28": "normal",
-        "L11": "mild_elevated",
+        "L11": "normal",
         "T01": "1w_to_3w",
         "T02": "subacute",
-        "L104": "mild_elevated"
+        "L104": "mild_elevated",
+        "L100": "high_over_400k"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -22300,13 +22302,13 @@
         "S66": "present",
         "S14": "present",
         "L01": "very_high_over_20000",
-        "L14": "normal",
+        "L14": "eosinophilia",
         "L04": "bilateral_infiltrate",
         "T01": "under_3d",
         "T02": "acute"
       },
       "risk_factors": {
-        "R01": "13_17",
+        "R01": "18_39",
         "R02": "female",
         "R03": "current"
       }
@@ -22361,7 +22363,8 @@
         "L14": "normal",
         "L35": "GGO",
         "T01": "3d_to_1w",
-        "T02": "acute"
+        "T02": "acute",
+        "E07": "crackles"
       },
       "risk_factors": {
         "R01": "13_17",
