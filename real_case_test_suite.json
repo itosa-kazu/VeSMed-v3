@@ -14852,7 +14852,8 @@
         "L53": "very_high",
         "L44": "other",
         "T01": "1w_to_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L84": "very_high"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -16577,7 +16578,8 @@
         "L01": "normal_4000_10000",
         "L02": "normal_under_0.3",
         "T01": "under_3d",
-        "T02": "acute"
+        "T02": "acute",
+        "S34": "present"
       },
       "risk_factors": {
         "R01": "65_plus",

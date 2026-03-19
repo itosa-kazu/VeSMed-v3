@@ -34086,6 +34086,10 @@
         "D221": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D319": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -48474,6 +48478,53 @@
           "acral": 0.02,
           "mucosal": 0.03,
           "generalized": 0.45
+        }
+      }
+    },
+    "L84": {
+      "description": "血清Ca。高Ca=悪性腫瘍/PTH亢進/サルコイド, 低Ca=膵炎/腎不全",
+      "states": [
+        "low",
+        "normal",
+        "high",
+        "very_high"
+      ],
+      "leak": {
+        "low": 0.02,
+        "normal": 0.93,
+        "high": 0.04,
+        "very_high": 0.01
+      },
+      "parent_effects": {
+        "D286": {
+          "low": 0.001,
+          "normal": 0.01,
+          "high": 0.35,
+          "very_high": 0.639
+        },
+        "D97": {
+          "low": 0.02,
+          "normal": 0.78,
+          "high": 0.15,
+          "very_high": 0.05
+        },
+        "D69": {
+          "low": 0.02,
+          "normal": 0.78,
+          "high": 0.15,
+          "very_high": 0.05
+        },
+        "D62": {
+          "low": 0.02,
+          "normal": 0.78,
+          "high": 0.15,
+          "very_high": 0.05
+        },
+        "D86": {
+          "low": 0.25,
+          "normal": 0.7,
+          "high": 0.04,
+          "very_high": 0.01
         }
       }
     }

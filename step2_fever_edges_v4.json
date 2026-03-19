@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 6999,
+  "total_edges": 7005,
   "edges": [
     {
       "from": "R01",
@@ -55742,6 +55742,48 @@
       "from_name": "guillain_barre",
       "to_name": "CSF_analysis",
       "reason": "GBS: 蛋白細胞解離(80%+, Harrison's diagnostic criterion)"
+    },
+    {
+      "from": "D286",
+      "to": "L84",
+      "from_name": "hypercalcemia",
+      "to_name": "serum_calcium",
+      "reason": "高Ca血症: 血清Ca上昇が定義的所見"
+    },
+    {
+      "from": "D97",
+      "to": "L84",
+      "from_name": "castleman_disease",
+      "to_name": "serum_calcium",
+      "reason": "Castleman: 高Ca血症10-15%"
+    },
+    {
+      "from": "D69",
+      "to": "L84",
+      "from_name": "renal_cell_carcinoma",
+      "to_name": "serum_calcium",
+      "reason": "腎癌: PTHrP産生による高Ca10-20%"
+    },
+    {
+      "from": "D62",
+      "to": "L84",
+      "from_name": "sarcoidosis",
+      "to_name": "serum_calcium",
+      "reason": "サルコイドーシス: 1,25VitD産生による高Ca10-20%"
+    },
+    {
+      "from": "D86",
+      "to": "L84",
+      "from_name": "acute_pancreatitis",
+      "to_name": "serum_calcium",
+      "reason": "急性膵炎: 低Ca血症15-25%(脂肪壊死によるCa沈着)"
+    },
+    {
+      "from": "D319",
+      "to": "S34",
+      "from_name": "bronchiectasis",
+      "to_name": "hemoptysis",
+      "reason": "気管支拡張症: 喀血50-70%(Harrison's)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
