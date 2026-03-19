@@ -26615,8 +26615,8 @@
           "elevated": 0.95
         },
         "D65": {
-          "normal": 0.08,
-          "elevated": 0.92
+          "normal": 0.35,
+          "elevated": 0.65
         },
         "D360": {
           "normal": 0.85,
@@ -46439,11 +46439,11 @@
           "migratory": 0.15
         },
         "D65": {
-          "monoarticular": 0.75,
-          "oligoarticular": 0.15,
-          "polyarticular_symmetric": 0.02,
-          "polyarticular_asymmetric": 0.05,
-          "migratory": 0.03
+          "monoarticular": 0.55,
+          "oligoarticular": 0.2,
+          "polyarticular_symmetric": 0.03,
+          "polyarticular_asymmetric": 0.18,
+          "migratory": 0.04
         },
         "D360": {
           "monoarticular": 0.7,
