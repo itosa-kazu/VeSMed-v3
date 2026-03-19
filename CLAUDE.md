@@ -34,9 +34,9 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **revert禁止** — 回帰テストが悪化してもrevertにはユーザ承認が必要
 
 ## 現在の状態
-- 362疾患、792変量、6991辺、R01/R02全362疾患Prior完備
+- 362疾患、792変量、7005辺、R01/R02全362疾患Prior完備
 - 841案例(836 in-scope + 5 OOS)
-- Top-1: 654/841(78%), Top-3: 768/841(91%), FATAL: 0
+- Top-1: 668/841(79%), Top-3: 786/841(93%), FATAL: 0
 - 反証推奨(falsification test)実装済み
 
 ## 重要な研究方向
