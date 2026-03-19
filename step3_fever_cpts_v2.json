@@ -15252,12 +15252,12 @@
           "hypothermia_under_35": 0.005
         },
         "D369": {
-          "under_37.5": 0.25,
-          "37.5_38.0": 0.3,
-          "38.0_39.0": 0.3,
-          "39.0_40.0": 0.12,
-          "over_40.0": 0.02,
-          "hypothermia_under_35": 0.01
+          "under_37.5": 0.58,
+          "37.5_38.0": 0.22,
+          "38.0_39.0": 0.14,
+          "39.0_40.0": 0.05,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
         }
       }
     },
@@ -20261,8 +20261,8 @@
           "present": 0.15
         },
         "D368": {
-          "absent": 0.72,
-          "present": 0.28
+          "absent": 0.55,
+          "present": 0.45
         },
         "D369": {
           "absent": 0.4,
@@ -20788,8 +20788,8 @@
           "present": 0.35
         },
         "D369": {
-          "absent": 0.6,
-          "present": 0.4
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -23801,15 +23801,15 @@
           "high_over_10": 0.25
         },
         "D368": {
-          "normal_under_0.3": 0.3,
-          "mild_0.3_3": 0.45,
-          "moderate_3_10": 0.2,
-          "high_over_10": 0.05
+          "normal_under_0.3": 0.6,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.08,
+          "high_over_10": 0.02
         },
         "D369": {
-          "normal_under_0.3": 0.25,
-          "mild_0.3_3": 0.45,
-          "moderate_3_10": 0.25,
+          "normal_under_0.3": 0.3,
+          "mild_0.3_3": 0.5,
+          "moderate_3_10": 0.15,
           "high_over_10": 0.05
         }
       }
@@ -25537,14 +25537,14 @@
           "very_high": 0.2
         },
         "D368": {
-          "normal": 0.02,
-          "mild_elevated": 0.08,
-          "very_high": 0.9
+          "normal": 0.05,
+          "mild_elevated": 0.25,
+          "very_high": 0.7
         },
         "D369": {
           "normal": 0.02,
-          "mild_elevated": 0.08,
-          "very_high": 0.9
+          "mild_elevated": 0.14,
+          "very_high": 0.84
         }
       }
     },
@@ -30094,7 +30094,11 @@
           "present": 0.4
         },
         "D23": 0.55,
-        "D367": 0.55
+        "D367": 0.55,
+        "D368": {
+          "absent": 0.64,
+          "present": 0.36
+        }
       }
     },
     "S07": {
@@ -31215,14 +31219,14 @@
           "severe": 0.15
         },
         "D368": {
-          "absent": 0.25,
-          "mild": 0.45,
-          "severe": 0.3
+          "absent": 0.32,
+          "mild": 0.4,
+          "severe": 0.28
         },
         "D369": {
-          "absent": 0.15,
+          "absent": 0.25,
           "mild": 0.35,
-          "severe": 0.5
+          "severe": 0.4
         }
       }
     },
@@ -31430,8 +31434,8 @@
           "present": 0.6
         },
         "D368": {
-          "absent": 0.9,
-          "present": 0.1
+          "absent": 0.76,
+          "present": 0.24
         }
       }
     },
@@ -31691,8 +31695,8 @@
           "present": 0.3
         },
         "D369": {
-          "absent": 0.45,
-          "present": 0.55
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -32758,12 +32762,12 @@
           "present": 0.25
         },
         "D368": {
-          "absent": 0.45,
-          "present": 0.55
+          "absent": 0.67,
+          "present": 0.33
         },
         "D369": {
-          "absent": 0.35,
-          "present": 0.65
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -33020,8 +33024,8 @@
           "present": 0.3
         },
         "D369": {
-          "absent": 0.7,
-          "present": 0.3
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -35210,8 +35214,8 @@
           "present": 0.6
         },
         "D368": {
-          "absent": 0.35,
-          "present": 0.65
+          "absent": 0.6,
+          "present": 0.4
         },
         "D369": {
           "absent": 0.25,
@@ -48655,6 +48659,16 @@
           "absent": 0.45,
           "localized": 0.15,
           "generalized": 0.4
+        },
+        "D368": {
+          "absent": 0.64,
+          "localized": 0.2,
+          "generalized": 0.16
+        },
+        "D369": {
+          "absent": 0.72,
+          "localized": 0.15,
+          "generalized": 0.13
         }
       }
     },

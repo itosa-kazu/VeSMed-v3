@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7053,
+  "total_edges": 7056,
   "edges": [
     {
       "from": "R01",
@@ -55886,49 +55886,49 @@
     {
       "from": "D368",
       "to": "E01",
-      "reason": "急性HCV: 発熱(20-30%)",
+      "reason": "急性HCV: 発熱(44%, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "temperature"
     },
     {
       "from": "D368",
       "to": "S07",
-      "reason": "急性HCV: 倦怠感(60-80%)",
+      "reason": "急性HCV: 倦怠感(68%, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "fatigue"
     },
     {
       "from": "D368",
       "to": "S46",
-      "reason": "急性HCV: 食欲不振(50-70%)",
+      "reason": "急性HCV: 食欲不振(40%, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "anorexia"
     },
     {
       "from": "D368",
       "to": "S13",
-      "reason": "急性HCV: 嘔気(40-60%)",
+      "reason": "急性HCV: 嘔気(33%, PMC1828916)",
       "from_name": "acute_hepatitis_C",
       "to_name": "nausea"
     },
     {
       "from": "D368",
       "to": "E18",
-      "reason": "急性HCV: 黄疸(20-30%)",
+      "reason": "急性HCV: 黄疸(40-57%, PMC5577910/PMC2277496)",
       "from_name": "acute_hepatitis_C",
       "to_name": "jaundice"
     },
     {
       "from": "D368",
       "to": "L11",
-      "reason": "急性HCV: ALT著増(>10xULN)",
+      "reason": "急性HCV: ALT著増(70%>10xULN, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "liver_enzymes"
     },
     {
       "from": "D368",
       "to": "L39",
-      "reason": "急性HCV: HCV-RNA+抗HCV抗体",
+      "reason": "急性HCV: HCV-RNA+抗HCV抗体(PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "hepatitis_serology"
     },
@@ -55942,7 +55942,7 @@
     {
       "from": "D368",
       "to": "L02",
-      "reason": "急性HCV: CRP軽度上昇",
+      "reason": "急性HCV: CRP正常!(HCV特徴的, Pubmed:2514117/PMC6473745)",
       "from_name": "acute_hepatitis_C",
       "to_name": "CRP"
     },
@@ -55970,14 +55970,14 @@
     {
       "from": "D368",
       "to": "S89",
-      "reason": "急性HCV: 右上腹部痛",
+      "reason": "急性HCV: 腹痛(60%, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "abdominal_pain_location"
     },
     {
       "from": "D368",
       "to": "S08",
-      "reason": "急性HCV: 関節痛(5-10%)",
+      "reason": "急性HCV: 関節痛(24%, PMC5577910)",
       "from_name": "acute_hepatitis_C",
       "to_name": "arthralgia"
     },
@@ -55998,42 +55998,42 @@
     {
       "from": "D369",
       "to": "E01",
-      "reason": "HEV: 発熱(60-70%)",
+      "reason": "HEV: 発熱(30-50%, PMC8928388: 37%, PMC4921434: 52%)",
       "from_name": "hepatitis_E",
       "to_name": "temperature"
     },
     {
       "from": "D369",
       "to": "S07",
-      "reason": "HEV: 倦怠感(70-90%)",
+      "reason": "HEV: 倦怠感(50-86%, PMC8928388: 86%)",
       "from_name": "hepatitis_E",
       "to_name": "fatigue"
     },
     {
       "from": "D369",
       "to": "S46",
-      "reason": "HEV: 食欲不振(60-80%)",
+      "reason": "HEV: 食欲不振(56-79%, PMC3082222: 64.7%)",
       "from_name": "hepatitis_E",
       "to_name": "anorexia"
     },
     {
       "from": "D369",
       "to": "S13",
-      "reason": "HEV: 嘔気嘔吐(50-70%)",
+      "reason": "HEV: 嘔気(40-55%, PMC8928388: 55%)",
       "from_name": "hepatitis_E",
       "to_name": "nausea"
     },
     {
       "from": "D369",
       "to": "E18",
-      "reason": "HEV: 黄疸(40-70%)",
+      "reason": "HEV: 黄疸(40-85%, GT依存. PMC3082222: 85.7%)",
       "from_name": "hepatitis_E",
       "to_name": "jaundice"
     },
     {
       "from": "D369",
       "to": "L11",
-      "reason": "HEV: ALT著増(>10xULN)",
+      "reason": "HEV: ALT著増(84%>10xULN, PMC9769141)",
       "from_name": "hepatitis_E",
       "to_name": "liver_enzymes"
     },
@@ -56082,14 +56082,14 @@
     {
       "from": "D369",
       "to": "S89",
-      "reason": "HEV: 右上腹部痛",
+      "reason": "HEV: 腹痛(28-51%, PMC8928388: 51%)",
       "from_name": "hepatitis_E",
       "to_name": "abdominal_pain_location"
     },
     {
       "from": "D369",
       "to": "S14",
-      "reason": "HEV: 下痢(20-30%)",
+      "reason": "HEV: 下痢(10-17%, PMC8928388: 17%)",
       "from_name": "hepatitis_E",
       "to_name": "diarrhea"
     },
@@ -56110,16 +56110,37 @@
     {
       "from": "D369",
       "to": "E34",
-      "reason": "HEV: 肝腫大(30-40%)",
+      "reason": "HEV: 肝腫大(10%, PMC7073673)",
       "from_name": "hepatitis_E",
       "to_name": "hepatomegaly"
     },
     {
       "from": "D369",
       "to": "S09",
-      "reason": "HEV: 悪寒",
+      "reason": "HEV: 悪寒(prodromal, less common)",
       "from_name": "hepatitis_E",
       "to_name": "chills"
+    },
+    {
+      "from": "D368",
+      "to": "S96",
+      "reason": "急性HCV: 掻痒感(36%, PMC5577910)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "pruritus"
+    },
+    {
+      "from": "D368",
+      "to": "S06",
+      "reason": "急性HCV: 筋痛(36%, PMC5577910)",
+      "from_name": "acute_hepatitis_C",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D369",
+      "to": "S96",
+      "reason": "HEV: 掻痒感(15-41%, PMC8928388: 15%, PMC4921434: 41%)",
+      "from_name": "hepatitis_E",
+      "to_name": "pruritus"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
