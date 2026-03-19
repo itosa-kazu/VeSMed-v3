@@ -1767,7 +1767,9 @@
         "L11": "very_high"
       },
       "risk_factors": {
-        "R01": "18_39"
+        "R01": "18_39",
+        "R06": "tropical_endemic",
+        "R02": "male"
       }
     },
     {
@@ -11930,9 +11932,15 @@
         "S04": "on_exertion",
         "E36": "present",
         "L04": "bilateral_infiltrate",
-        "T01": "1w_to_3w",
+        "T01": "over_3w",
         "T02": "subacute",
-        "E50": "bilateral"
+        "E50": "bilateral",
+        "L18": "positive",
+        "S25": "present",
+        "S13": "present",
+        "S66": "present",
+        "L35": "GGO",
+        "S18": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -18307,7 +18315,9 @@
         "T01": "over_3w",
         "T02": "subacute",
         "E40": "ST_elevation",
-        "E39": "wall_motion_abnormal"
+        "E39": "wall_motion_abnormal",
+        "S21": "present",
+        "S50": "exertion"
       },
       "risk_factors": {
         "R01": "40_64",
