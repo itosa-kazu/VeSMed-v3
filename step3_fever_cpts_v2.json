@@ -26505,6 +26505,10 @@
         "D361": {
           "negative": 0.82,
           "positive": 0.18
+        },
+        "D359": {
+          "negative": 0.95,
+          "positive": 0.05
         }
       }
     },
@@ -26530,6 +26534,11 @@
           "negative": 0.8,
           "c_ANCA": 0.02,
           "p_ANCA": 0.18
+        },
+        "D359": {
+          "negative": 0.97,
+          "c_ANCA": 0.02,
+          "p_ANCA": 0.01
         }
       }
     },
@@ -26567,6 +26576,10 @@
         "D362": {
           "normal": 0.47,
           "elevated": 0.53
+        },
+        "D359": {
+          "normal": 0.4,
+          "elevated": 0.6
         }
       }
     },
@@ -28537,6 +28550,10 @@
         "D219": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D359": {
+          "absent": 0.93,
+          "present": 0.07
         }
       }
     },
@@ -47573,6 +47590,13 @@
           "mild_low_10_12": 0.25,
           "low_7_10": 0.12,
           "very_low_under_7": 0.03
+        },
+        "D359": {
+          "very_low_under_7": 0.01,
+          "low_7_10": 0.1,
+          "mild_low_10_12": 0.44,
+          "normal": 0.43,
+          "high": 0.02
         }
       }
     },
@@ -48553,6 +48577,126 @@
           "normal": 0.7,
           "high": 0.04,
           "very_high": 0.01
+        }
+      }
+    },
+    "S69": {
+      "description": "頭痛の時間パターン",
+      "states": [
+        "single_acute",
+        "episodic_recurrent",
+        "chronic_progressive",
+        "chronic_stable"
+      ],
+      "leak": {
+        "single_acute": 0.3,
+        "episodic_recurrent": 0.3,
+        "chronic_progressive": 0.25,
+        "chronic_stable": 0.15
+      },
+      "parent_effects": {
+        "D296": {
+          "single_acute": 0.05,
+          "episodic_recurrent": 0.2,
+          "chronic_progressive": 0.1,
+          "chronic_stable": 0.65
+        },
+        "D297": {
+          "single_acute": 0.05,
+          "episodic_recurrent": 0.7,
+          "chronic_progressive": 0.1,
+          "chronic_stable": 0.15
+        },
+        "D295": {
+          "single_acute": 0.05,
+          "episodic_recurrent": 0.8,
+          "chronic_progressive": 0.05,
+          "chronic_stable": 0.1
+        }
+      }
+    },
+    "S122": {
+      "description": "急性視力低下",
+      "states": [
+        "absent",
+        "unilateral",
+        "bilateral"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "unilateral": 0.02,
+        "bilateral": 0.01
+      },
+      "parent_effects": {
+        "D339": {
+          "absent": 0.05,
+          "unilateral": 0.85,
+          "bilateral": 0.1
+        },
+        "D236": {
+          "absent": 0.7,
+          "unilateral": 0.2,
+          "bilateral": 0.1
+        },
+        "D189": {
+          "absent": 0.2,
+          "unilateral": 0.1,
+          "bilateral": 0.7
+        },
+        "D301": {
+          "absent": 0.4,
+          "unilateral": 0.45,
+          "bilateral": 0.15
+        },
+        "D312": {
+          "absent": 0.6,
+          "unilateral": 0.35,
+          "bilateral": 0.05
+        },
+        "D359": {
+          "absent": 0.82,
+          "unilateral": 0.14,
+          "bilateral": 0.04
+        }
+      }
+    },
+    "S107": {
+      "description": "複視",
+      "states": [
+        "absent",
+        "binocular",
+        "monocular"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "binocular": 0.02,
+        "monocular": 0.01
+      },
+      "parent_effects": {
+        "D227": {
+          "absent": 0.5,
+          "binocular": 0.45,
+          "monocular": 0.05
+        }
+      }
+    },
+    "L70": {
+      "description": "血清アルブミン",
+      "states": [
+        "normal",
+        "mildly_low",
+        "very_low"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "mildly_low": 0.1,
+        "very_low": 0.05
+      },
+      "parent_effects": {
+        "D359": {
+          "normal": 0.72,
+          "mildly_low": 0.2,
+          "very_low": 0.08
         }
       }
     }

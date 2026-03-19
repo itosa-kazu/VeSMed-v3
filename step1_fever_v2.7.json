@@ -1400,8 +1400,8 @@
     },
     {
       "id": "T01",
-      "name": "fever_duration",
-      "name_ja": "発熱の持続期間",
+      "name": "symptom_duration",
+      "name_ja": "症状の持続期間",
       "category": "temporal",
       "states": [
         "under_3d",
@@ -1409,7 +1409,7 @@
         "1w_to_3w",
         "over_3w"
       ],
-      "note": "発熱が始まってから現在までの期間"
+      "note": "主訴症状が始まってから現在までの期間。発熱・呼吸困難・胸痛・腹痛・意識障害等を問わず共通。"
     },
     {
       "id": "T02",

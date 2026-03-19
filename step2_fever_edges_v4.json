@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7012,
+  "total_edges": 7019,
   "edges": [
     {
       "from": "R01",
@@ -460,7 +460,7 @@
       "from": "D01",
       "to": "T01",
       "from_name": "viral_URI",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "かぜは通常3日以内で解熱",
       "onset_day_range": {
         "earliest": 0,
@@ -472,7 +472,7 @@
       "from": "D02",
       "to": "T01",
       "from_name": "influenza",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "インフルエンザは3-5日",
       "onset_day_range": {
         "earliest": 0,
@@ -484,7 +484,7 @@
       "from": "D03",
       "to": "T01",
       "from_name": "COVID19",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "COVIDは5-14日",
       "onset_day_range": {
         "earliest": 0,
@@ -496,7 +496,7 @@
       "from": "D04",
       "to": "T01",
       "from_name": "acute_pharyngotonsillitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "咽頭扁桃炎は3-5日",
       "onset_day_range": {
         "earliest": 0,
@@ -508,7 +508,7 @@
       "from": "D05",
       "to": "T01",
       "from_name": "community_acquired_pneumonia",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "肺炎は治療で3-7日、未治療で長引く",
       "onset_day_range": {
         "earliest": 0,
@@ -520,7 +520,7 @@
       "from": "D06",
       "to": "T01",
       "from_name": "acute_bronchitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "気管支炎は1-3週間咳が続くが発熱は短い",
       "onset_day_range": {
         "earliest": 0,
@@ -532,7 +532,7 @@
       "from": "D07",
       "to": "T01",
       "from_name": "acute_gastroenteritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "胃腸炎は通常1-3日",
       "onset_day_range": {
         "earliest": 0,
@@ -544,7 +544,7 @@
       "from": "D09",
       "to": "T01",
       "from_name": "acute_pyelonephritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "腎盂腎炎は治療で3-5日",
       "onset_day_range": {
         "earliest": 0,
@@ -556,7 +556,7 @@
       "from": "D14",
       "to": "T01",
       "from_name": "infective_endocarditis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "心内膜炎は数週間以上持続",
       "onset_day_range": {
         "earliest": 0,
@@ -568,7 +568,7 @@
       "from": "D15",
       "to": "T01",
       "from_name": "malaria",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "マラリアは治療なしで持続・再燃",
       "onset_day_range": {
         "earliest": 0,
@@ -580,7 +580,7 @@
       "from": "D17",
       "to": "T01",
       "from_name": "pulmonary_tuberculosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "結核は数週間〜数ヶ月持続",
       "onset_day_range": {
         "earliest": 0,
@@ -592,7 +592,7 @@
       "from": "D19",
       "to": "T01",
       "from_name": "drug_fever",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "薬剤熱は原因薬中止後2-3日で解熱",
       "onset_day_range": {
         "earliest": 0,
@@ -604,7 +604,7 @@
       "from": "D28",
       "to": "T01",
       "from_name": "typhoid_fever",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "腸チフスは1-3週間持続",
       "onset_day_range": {
         "earliest": 0,
@@ -9359,7 +9359,7 @@
       "to": "T01",
       "reason": "腫瘍熱は慢性経過",
       "from_name": "tumor_fever",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 14,
         "typical": 30,
@@ -9431,7 +9431,7 @@
       "to": "T01",
       "reason": "成人Still病は慢性経過",
       "from_name": "adult_onset_still",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9443,7 +9443,7 @@
       "to": "T01",
       "reason": "全身性エリテマトーデスは慢性経過",
       "from_name": "SLE",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9455,7 +9455,7 @@
       "to": "T01",
       "reason": "ANCA関連血管炎は慢性経過",
       "from_name": "ANCA_vasculitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9467,7 +9467,7 @@
       "to": "T01",
       "reason": "サルコイドーシスは慢性経過",
       "from_name": "sarcoidosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9479,7 +9479,7 @@
       "to": "T01",
       "reason": "家族性地中海熱は慢性経過",
       "from_name": "familial_mediterranean_fever",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9491,7 +9491,7 @@
       "to": "T01",
       "reason": "急性白血病は慢性経過",
       "from_name": "leukemia_acute",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9503,7 +9503,7 @@
       "to": "T01",
       "reason": "腎細胞癌は慢性経過",
       "from_name": "renal_cell_carcinoma",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9515,7 +9515,7 @@
       "to": "T01",
       "reason": "肝細胞癌は慢性経過",
       "from_name": "hepatocellular_carcinoma",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9527,7 +9527,7 @@
       "to": "T01",
       "reason": "ベーチェット病は慢性経過",
       "from_name": "behcet_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9539,7 +9539,7 @@
       "to": "T01",
       "reason": "IgG4関連疾患は慢性経過",
       "from_name": "IgG4_related",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9551,7 +9551,7 @@
       "to": "T01",
       "reason": "菊池病（壊死性リンパ節炎）は慢性経過",
       "from_name": "kikuchi_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9563,7 +9563,7 @@
       "to": "T01",
       "reason": "キャッスルマン病は慢性経過",
       "from_name": "castleman_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9575,7 +9575,7 @@
       "to": "T01",
       "reason": "高安動脈炎（大動脈炎症候群）は慢性経過",
       "from_name": "takayasu_arteritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9587,7 +9587,7 @@
       "to": "T01",
       "reason": "非結核性抗酸菌症は慢性経過",
       "from_name": "NTM",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -9599,7 +9599,7 @@
       "to": "T01",
       "reason": "急性虫垂炎は急性経過",
       "from_name": "appendicitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9611,7 +9611,7 @@
       "to": "T01",
       "reason": "壊死性筋膜炎は急性経過",
       "from_name": "necrotizing_fasciitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9623,7 +9623,7 @@
       "to": "T01",
       "reason": "甲状腺クリーゼは急性経過",
       "from_name": "thyroid_storm",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9635,7 +9635,7 @@
       "to": "T01",
       "reason": "副腎クリーゼは急性経過",
       "from_name": "adrenal_crisis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9647,7 +9647,7 @@
       "to": "T01",
       "reason": "悪性症候群は急性経過",
       "from_name": "NMS",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9659,7 +9659,7 @@
       "to": "T01",
       "reason": "セロトニン症候群は急性経過",
       "from_name": "serotonin_syndrome",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9671,7 +9671,7 @@
       "to": "T01",
       "reason": "輸血関連発熱反応は急性経過",
       "from_name": "transfusion_reaction",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9683,7 +9683,7 @@
       "to": "T01",
       "reason": "熱中症（重症）は急性経過",
       "from_name": "heat_stroke",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9695,7 +9695,7 @@
       "to": "T01",
       "reason": "単純ヘルペス脳炎は急性経過",
       "from_name": "herpes_encephalitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9707,7 +9707,7 @@
       "to": "T01",
       "reason": "急性膵炎は急性経過",
       "from_name": "acute_pancreatitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9719,7 +9719,7 @@
       "to": "T01",
       "reason": "アルコール離脱症候群は急性経過",
       "from_name": "alcohol_withdrawal",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -9731,7 +9731,7 @@
       "to": "T01",
       "reason": "悪性高熱症は急性経過",
       "from_name": "malignant_hyperthermia",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -10115,7 +10115,7 @@
       "to": "T01",
       "reason": "ブルセラ症は亜急性～慢性経過（波状熱が数週～数ヶ月持続）",
       "from_name": "brucellosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -10438,7 +10438,7 @@
       "from": "D87",
       "to": "T01",
       "from_name": "subacute_thyroiditis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "亜急性甲状腺炎は4-8週間持続",
       "onset_day_range": {
         "earliest": 7,
@@ -10577,7 +10577,7 @@
       "from": "D55",
       "to": "T01",
       "from_name": "Q_fever",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "Q熱の発熱は1-3週が典型",
       "onset_day_range": {
         "min": 14,
@@ -11594,7 +11594,7 @@
       "from": "D11",
       "to": "T01",
       "from_name": "cholecystitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11629,7 +11629,7 @@
       "from": "D12",
       "to": "T01",
       "from_name": "cellulitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11643,7 +11643,7 @@
       "from": "D13",
       "to": "T01",
       "from_name": "meningitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11811,7 +11811,7 @@
       "from": "D18",
       "to": "T01",
       "from_name": "infectious_mononucleosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11853,7 +11853,7 @@
       "from": "D20",
       "to": "T01",
       "from_name": "acute_sinusitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11895,7 +11895,7 @@
       "from": "D22",
       "to": "T01",
       "from_name": "acute_prostatitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11909,7 +11909,7 @@
       "from": "D25",
       "to": "T01",
       "from_name": "acute_cholangitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11937,7 +11937,7 @@
       "from": "D26",
       "to": "T01",
       "from_name": "pelvic_inflammatory_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -11965,7 +11965,7 @@
       "from": "D27",
       "to": "T01",
       "from_name": "diverticulitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12021,21 +12021,21 @@
       "from": "D30",
       "to": "T01",
       "from_name": "psoas_abscess",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
       "from": "D31",
       "to": "T01",
       "from_name": "vertebral_osteomyelitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
       "from": "D32",
       "to": "T01",
       "from_name": "septic_arthritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12049,7 +12049,7 @@
       "from": "D33",
       "to": "T01",
       "from_name": "peritonsillar_abscess",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12070,7 +12070,7 @@
       "from": "D34",
       "to": "T01",
       "from_name": "deep_neck_infection",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12105,7 +12105,7 @@
       "from": "D35",
       "to": "T01",
       "from_name": "lung_abscess",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12133,7 +12133,7 @@
       "from": "D36",
       "to": "T01",
       "from_name": "empyema",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12154,7 +12154,7 @@
       "from": "D38",
       "to": "T01",
       "from_name": "clostridium_difficile",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12189,7 +12189,7 @@
       "from": "D40",
       "to": "T01",
       "from_name": "catheter_related_BSI",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12203,7 +12203,7 @@
       "from": "D41",
       "to": "T01",
       "from_name": "surgical_site_infection",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12217,7 +12217,7 @@
       "from": "D42",
       "to": "T01",
       "from_name": "UTI_complicated",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12273,7 +12273,7 @@
       "from": "D44",
       "to": "T01",
       "from_name": "acute_HIV",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12287,7 +12287,7 @@
       "from": "D45",
       "to": "T01",
       "from_name": "CMV_infection",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12308,7 +12308,7 @@
       "from": "D46",
       "to": "T01",
       "from_name": "measles",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12329,7 +12329,7 @@
       "from": "D47",
       "to": "T01",
       "from_name": "mumps",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12350,7 +12350,7 @@
       "from": "D48",
       "to": "T01",
       "from_name": "rubella",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12364,7 +12364,7 @@
       "from": "D49",
       "to": "T01",
       "from_name": "candidemia",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12392,7 +12392,7 @@
       "from": "D51",
       "to": "T01",
       "from_name": "amebiasis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12406,7 +12406,7 @@
       "from": "D52",
       "to": "T01",
       "from_name": "leptospirosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12448,7 +12448,7 @@
       "from": "D54",
       "to": "T01",
       "from_name": "cat_scratch_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12476,7 +12476,7 @@
       "from": "D56",
       "to": "T01",
       "from_name": "pertussis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12602,7 +12602,7 @@
       "from": "D64",
       "to": "T01",
       "from_name": "reactive_arthritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12728,7 +12728,7 @@
       "from": "D79",
       "to": "T01",
       "from_name": "infective_endocarditis_prosthetic",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12812,7 +12812,7 @@
       "from": "D83",
       "to": "T01",
       "from_name": "aspergillosis_invasive",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12882,7 +12882,7 @@
       "from": "D91",
       "to": "T01",
       "from_name": "chikungunya",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -12924,7 +12924,7 @@
       "from": "D93",
       "to": "T01",
       "from_name": "DRESS",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -13036,7 +13036,7 @@
       "from": "D100",
       "to": "T01",
       "from_name": "hepatitis_A",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -13078,7 +13078,7 @@
       "from": "D101",
       "to": "T01",
       "from_name": "secondary_syphilis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -13141,7 +13141,7 @@
       "from": "D102",
       "to": "T01",
       "from_name": "legionella_pneumonia",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "TODO"
     },
     {
@@ -13968,7 +13968,7 @@
       "from": "D43",
       "to": "T01",
       "from_name": "epididymitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "精巣上体炎の発熱期間"
     },
     {
@@ -14584,7 +14584,7 @@
       "from": "D105",
       "to": "T01",
       "from_name": "parvovirus_B19",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "パルボB19: 発熱は3日〜1週程度"
     },
     {
@@ -48828,7 +48828,7 @@
       "from": "D77",
       "to": "T01",
       "from_name": "pulmonary_embolism",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "PE: 急性(数時間~数日)",
       "onset_day_range": {
         "earliest": 0,
@@ -48936,7 +48936,7 @@
       "from": "D355",
       "to": "T01",
       "from_name": "deep_vein_thrombosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "DVT: 亜急性(数日~数週)",
       "onset_day_range": {
         "earliest": 1,
@@ -49104,7 +49104,7 @@
       "from": "D63",
       "to": "T01",
       "from_name": "crohns_disease",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "CD: 慢性経過(数週~数ヶ月)",
       "onset_day_range": {
         "earliest": 7,
@@ -49252,7 +49252,7 @@
       "from": "D353",
       "to": "T01",
       "from_name": "ulcerative_colitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "UC: 慢性経過(数週~数ヶ月)",
       "onset_day_range": {
         "earliest": 7,
@@ -49460,7 +49460,7 @@
       "from": "D67",
       "to": "T01",
       "from_name": "non_hodgkin_lymphoma",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "NHL: 慢性経過(数週~数ヶ月)",
       "onset_day_range": {
         "earliest": 7,
@@ -49616,7 +49616,7 @@
       "from": "D354",
       "to": "T01",
       "from_name": "hodgkin_lymphoma",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "HL: 慢性経過(数週~数ヶ月)",
       "onset_day_range": {
         "earliest": 7,
@@ -49784,7 +49784,7 @@
       "from": "D128",
       "to": "T01",
       "from_name": "acute_epiglottitis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "喉頭蓋炎: 超急性(数時間~1日)",
       "onset_day_range": {
         "earliest": 0,
@@ -49968,7 +49968,7 @@
       "from": "D358",
       "to": "T01",
       "from_name": "airway_foreign_body",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "気道異物: 超急性(数分)",
       "onset_day_range": {
         "earliest": 0,
@@ -50124,7 +50124,7 @@
       "from": "D37",
       "to": "T01",
       "from_name": "campylobacter_enteritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "Campylobacter: 急性(2-5日の潜伏後)",
       "onset_day_range": {
         "earliest": 0,
@@ -50284,7 +50284,7 @@
       "from": "D351",
       "to": "T01",
       "from_name": "salmonella_enteritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "Salmonella: 急性(6-48h潜伏)",
       "onset_day_range": {
         "earliest": 0,
@@ -50432,7 +50432,7 @@
       "from": "D352",
       "to": "T01",
       "from_name": "shigellosis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "赤痢: 急性(1-3日潜伏)",
       "onset_day_range": {
         "earliest": 0,
@@ -50592,7 +50592,7 @@
       "from": "D125",
       "to": "T01",
       "from_name": "acute_atrial_fibrillation",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "AF: 急性(数時間~数日)",
       "onset_day_range": {
         "earliest": 0,
@@ -50816,7 +50816,7 @@
       "from": "D356",
       "to": "T01",
       "from_name": "paroxysmal_SVT",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "SVT: 急性(数分~数時間)",
       "onset_day_range": {
         "earliest": 0,
@@ -50996,7 +50996,7 @@
       "from": "D357",
       "to": "T01",
       "from_name": "ventricular_tachycardia",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "reason": "VT: 急性(数分~数時間)",
       "onset_day_range": {
         "earliest": 0,
@@ -51155,7 +51155,7 @@
       "to": "T01",
       "reason": "PMR慢性経過(週〜月単位)",
       "from_name": "polymyalgia_rheumatica",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -51321,7 +51321,7 @@
       "to": "T01",
       "reason": "GCA慢性経過(週〜月単位)",
       "from_name": "giant_cell_arteritis",
-      "to_name": "fever_duration",
+      "to_name": "symptom_duration",
       "onset_day_range": {
         "earliest": 7,
         "typical": 21,
@@ -51508,7 +51508,7 @@
       "to": "T01",
       "reason": "発作は数日で自然軽快",
       "from_name": "gout",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D65",
@@ -51725,7 +51725,7 @@
       "to": "T01",
       "reason": "発作は数日〜1週で軽快",
       "from_name": "pseudogout_CPPD",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D360",
@@ -51900,7 +51900,7 @@
       "to": "T01",
       "reason": "亜急性〜慢性経過",
       "from_name": "dermatomyositis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D106",
@@ -52026,7 +52026,7 @@
       "to": "T01",
       "reason": "亜急性〜慢性経過",
       "from_name": "polymyositis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D361",
@@ -52177,7 +52177,7 @@
       "to": "T01",
       "reason": "亜急性経過(1-3週)",
       "from_name": "pyogenic_liver_abscess",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D29",
@@ -52343,7 +52343,7 @@
       "to": "T01",
       "reason": "亜急性〜慢性(1-4週)",
       "from_name": "amebic_liver_abscess",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D362",
@@ -52490,7 +52490,7 @@
       "to": "T01",
       "reason": "急性HBV: 亜急性(前駆1-4週→黄疸期)",
       "from_name": "acute_hepatitis_B",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D108",
@@ -52651,7 +52651,7 @@
       "to": "T01",
       "reason": "慢性HBV増悪: 亜急性〜慢性",
       "from_name": "chronic_hepatitis_B_flare",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D363",
@@ -52861,7 +52861,7 @@
       "to": "T01",
       "reason": "TSS: 急性経過(数日)",
       "from_name": "staphylococcal_TSS",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D24",
@@ -53078,7 +53078,7 @@
       "to": "T01",
       "reason": "iGAS: 急性経過(数日)",
       "from_name": "invasive_group_A_strep",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D364",
@@ -53434,7 +53434,7 @@
       "to": "T01",
       "reason": "クリプト髄膜炎: 亜急性(1-4週)",
       "from_name": "cryptococcal_meningitis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D109",
@@ -53553,7 +53553,7 @@
       "to": "T01",
       "reason": "肺クリプト: 亜急性〜慢性",
       "from_name": "pulmonary_cryptococcosis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D365",
@@ -53693,7 +53693,7 @@
       "to": "T01",
       "reason": "トキソ脳炎: 亜急性(1-3週)",
       "from_name": "toxoplasma_encephalitis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D110",
@@ -53847,7 +53847,7 @@
       "to": "T01",
       "reason": "トキソリンパ節炎: 亜急性〜慢性",
       "from_name": "toxoplasma_lymphadenitis",
-      "to_name": "fever_duration"
+      "to_name": "symptom_duration"
     },
     {
       "from": "D366",
@@ -55833,6 +55833,55 @@
       "from_name": "typhoid",
       "to_name": "creatinine",
       "reason": "腸チフス: AKI 10%(Basu, Nephrol Dial Transplant 2011)"
+    },
+    {
+      "from": "D359",
+      "to": "L93",
+      "reason": "正球性貧血(慢性炎症、54.6%。Gonzalez-Gay 2005)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D359",
+      "to": "L70",
+      "reason": "低アルブミン(負の急性期蛋白、27.8%。Gonzalez-Gay 2005)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "serum_albumin"
+    },
+    {
+      "from": "D359",
+      "to": "S122",
+      "reason": "急性視力低下(AION/CRAO、14-20%。PMC8999894)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "acute_visual_loss"
+    },
+    {
+      "from": "D359",
+      "to": "L20",
+      "reason": "D-dimer上昇(炎症性凝固、60.2%。PMC4054907)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "D-dimer"
+    },
+    {
+      "from": "D359",
+      "to": "L18",
+      "reason": "ANA陰性(GCA特徴的。自己抗体産生は非典型。PMC4278656)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "ANA"
+    },
+    {
+      "from": "D359",
+      "to": "L19",
+      "reason": "ANCA陰性(大血管炎でANCA陰性。PMC4902281)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "ANCA"
+    },
+    {
+      "from": "D359",
+      "to": "S02",
+      "reason": "咽頭痛(外頸動脈枝虚血、6-9%。PMC8565553)",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "sore_throat"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
