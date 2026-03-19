@@ -4099,6 +4099,21 @@
         "female|40_64": 0.0008,
         "female|65_plus": 0.002
       }
+    },
+    "D371": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "せん妄。高齢者に多い(入院23%, ICU32%)。M:F≈1.3:1",
+      "cpt": {
+        "male|18_39": 0.001,
+        "male|40_64": 0.003,
+        "male|65_plus": 0.015,
+        "female|18_39": 0.0008,
+        "female|40_64": 0.002,
+        "female|65_plus": 0.012
+      }
     }
   },
   "full_cpts": {
@@ -12725,6 +12740,25 @@
         "male": 0.055,
         "female": 0.045
       }
+    },
+    "D371": {
+      "parents": [
+        "R01"
+      ],
+      "description": "せん妄",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0002,
+        "6_12": 0.0003,
+        "13_17": 0.0005,
+        "18_39": 0.001,
+        "40_64": 0.003,
+        "65_plus": 0.015
+      },
+      "R02": {
+        "male": 0.055,
+        "female": 0.045
+      }
     }
   },
   "noisy_or_params": {
@@ -15300,6 +15334,14 @@
           "39.0_40.0": 0.08,
           "over_40.0": 0.03,
           "hypothermia_under_35": 0.01
+        },
+        "D371": {
+          "under_37.5": 0.75,
+          "37.5_38.0": 0.1,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.05,
+          "over_40.0": 0.01,
+          "hypothermia_under_35": 0.01
         }
       }
     },
@@ -16396,6 +16438,11 @@
           "under_100": 0.35,
           "100_120": 0.45,
           "over_120": 0.2
+        },
+        "D371": {
+          "under_100": 0.65,
+          "100_120": 0.25,
+          "over_120": 0.1
         }
       }
     },
@@ -19330,6 +19377,10 @@
         "D370": {
           "absent": 0.97,
           "present": 0.03
+        },
+        "D371": {
+          "absent": 0.97,
+          "present": 0.03
         }
       }
     },
@@ -20155,6 +20206,11 @@
           "normal": 0.92,
           "confused": 0.06,
           "obtunded": 0.02
+        },
+        "D371": {
+          "normal": 0.1,
+          "confused": 0.75,
+          "obtunded": 0.15
         }
       }
     },
@@ -22514,6 +22570,12 @@
           "normal_4000_10000": 0.12,
           "high_10000_20000": 0.02,
           "very_high_over_20000": 0.01
+        },
+        "D371": {
+          "low_under_4000": 0.05,
+          "normal_4000_10000": 0.75,
+          "high_10000_20000": 0.15,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -23888,6 +23950,12 @@
           "mild_0.3_3": 0.25,
           "moderate_3_10": 0.08,
           "high_over_10": 0.02
+        },
+        "D371": {
+          "normal_under_0.3": 0.55,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.1,
+          "high_over_10": 0.05
         }
       }
     },
@@ -31324,6 +31392,11 @@
           "absent": 0.08,
           "mild": 0.22,
           "severe": 0.7
+        },
+        "D371": {
+          "absent": 0.25,
+          "mild": 0.35,
+          "severe": 0.4
         }
       }
     },
@@ -31798,6 +31871,10 @@
         "D370": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D371": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -34520,6 +34597,10 @@
         "D218": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D371": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -37510,6 +37591,12 @@
           "3d_to_1w": 0.07,
           "1w_to_3w": 0.25,
           "over_3w": 0.65
+        },
+        "D371": {
+          "under_3d": 0.3,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.1
         }
       }
     },
@@ -39411,6 +39498,12 @@
           "acute": 0.08,
           "subacute": 0.3,
           "chronic": 0.6
+        },
+        "D371": {
+          "sudden": 0.15,
+          "acute": 0.6,
+          "subacute": 0.2,
+          "chronic": 0.05
         }
       }
     },
@@ -42554,6 +42647,11 @@
           "normal": 0.96,
           "mild_elevated": 0.025,
           "high_AKI": 0.015
+        },
+        "D371": {
+          "normal": 0.75,
+          "mild_elevated": 0.15,
+          "high_AKI": 0.1
         }
       }
     },
@@ -49103,6 +49201,90 @@
           "normal": 0.72,
           "mildly_low": 0.2,
           "very_low": 0.08
+        }
+      }
+    },
+    "S117": {
+      "description": "幻覚",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D304": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D218": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D371": {
+          "absent": 0.74,
+          "present": 0.26
+        }
+      }
+    },
+    "S138": {
+      "description": "幻覚の種類",
+      "states": [
+        "visual",
+        "auditory",
+        "tactile"
+      ],
+      "leak": {
+        "visual": 0.4,
+        "auditory": 0.45,
+        "tactile": 0.15
+      },
+      "parent_effects": {
+        "D304": {
+          "visual": 0.9,
+          "auditory": 0.07,
+          "tactile": 0.03
+        },
+        "D371": {
+          "visual": 0.92,
+          "auditory": 0.05,
+          "tactile": 0.03
+        }
+      }
+    },
+    "S167": {
+      "description": "焦燥・興奮",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D371": {
+          "absent": 0.55,
+          "present": 0.45
+        }
+      }
+    },
+    "E79": {
+      "description": "羽ばたき振戦",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D371": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     }

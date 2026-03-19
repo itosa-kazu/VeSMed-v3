@@ -10715,6 +10715,21 @@
       "severity": "high",
       "key_features": "汎血球減少+骨髄低形成(<25%)。臓器腫大なし(肝脾腫・リンパ節腫大は他疾患を示唆)。潜行性発症。出血+感染+貧血の三徴。二峰性(15-25歳+>60歳)。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D371",
+      "name": "delirium",
+      "name_ja": "せん妄",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "F05",
+      "category_sub": "neuropsychiatric",
+      "severity": "moderate",
+      "key_features": "急性発症の注意障害+意識変容+変動する経過。高齢者(>65)に多い。誘因:感染(49%)/薬物(31%)/代謝(46%)/手術。幻視26%。低活動型50%/過活動型23%/混合型28%。臓器腫大・局所神経徴候なし。",
+      "diagnostic_profile": {}
     }
   ]
 }

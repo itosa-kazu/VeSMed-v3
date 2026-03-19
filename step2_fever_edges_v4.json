@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7072,
+  "total_edges": 7088,
   "edges": [
     {
       "from": "R01",
@@ -56253,6 +56253,118 @@
       "reason": "AA: 悪寒(感染合併時のみ, PMC3456476)",
       "from_name": "aplastic_anemia",
       "to_name": "chills"
+    },
+    {
+      "from": "D371",
+      "to": "E16",
+      "reason": "せん妄: 意識変容(75% confused, PMC5516527)",
+      "from_name": "delirium",
+      "to_name": "consciousness_level"
+    },
+    {
+      "from": "D371",
+      "to": "S117",
+      "reason": "せん妄: 幻覚(26%, PMC8217166 n=602)",
+      "from_name": "delirium",
+      "to_name": "hallucination"
+    },
+    {
+      "from": "D371",
+      "to": "S138",
+      "reason": "せん妄: 幻視(幻覚者中92%が幻視, PMC8217166)",
+      "from_name": "delirium",
+      "to_name": "hallucination_modality"
+    },
+    {
+      "from": "D371",
+      "to": "S167",
+      "reason": "せん妄: 焦燥興奮(過活動型23-47%, PMC8896322/Liptzin)",
+      "from_name": "delirium",
+      "to_name": "agitation"
+    },
+    {
+      "from": "D371",
+      "to": "E01",
+      "reason": "せん妄: 発熱(19%直接, 感染誘因49%, PMC4115889)",
+      "from_name": "delirium",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D371",
+      "to": "S07",
+      "reason": "せん妄: 倦怠感(低活動型50%で顕著, PMC8896322)",
+      "from_name": "delirium",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D371",
+      "to": "L01",
+      "reason": "せん妄: WBC通常正常(感染なければ, PMC5529095)",
+      "from_name": "delirium",
+      "to_name": "WBC"
+    },
+    {
+      "from": "D371",
+      "to": "L02",
+      "reason": "せん妄: CRP通常正常(非炎症性, PMC5256313)",
+      "from_name": "delirium",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D371",
+      "to": "T01",
+      "reason": "せん妄: 持続期間days~weeks(StatPearls)",
+      "from_name": "delirium",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D371",
+      "to": "T02",
+      "reason": "せん妄: 急性発症(時間~日, DSM-5必須基準)",
+      "from_name": "delirium",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D371",
+      "to": "S36",
+      "reason": "せん妄: 振戦(代謝性/離脱型で出現, AAFP 2003)",
+      "from_name": "delirium",
+      "to_name": "tremor"
+    },
+    {
+      "from": "D371",
+      "to": "E02",
+      "reason": "せん妄: 頻脈(過活動型で自律神経障害, StatPearls)",
+      "from_name": "delirium",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D371",
+      "to": "E79",
+      "reason": "せん妄: 羽ばたき振戦なし(肝性脳症との鑑別, Merck)",
+      "from_name": "delirium",
+      "to_name": "asterixis"
+    },
+    {
+      "from": "D371",
+      "to": "L55",
+      "reason": "せん妄: Cr上昇(腎性誘因10-25%, PMC4115889)",
+      "from_name": "delirium",
+      "to_name": "creatinine"
+    },
+    {
+      "from": "D371",
+      "to": "S09",
+      "reason": "せん妄: 悪寒(感染誘因時のみ, PMC4115889)",
+      "from_name": "delirium",
+      "to_name": "chills"
+    },
+    {
+      "from": "D371",
+      "to": "E13",
+      "reason": "せん妄: リンパ節腫大なし(局所所見なし, StatPearls)",
+      "from_name": "delirium",
+      "to_name": "lymphadenopathy"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
