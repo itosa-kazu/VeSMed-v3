@@ -34,10 +34,12 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **revert禁止** — 回帰テストが悪化してもrevertにはユーザ承認が必要
 
 ## 現在の状態
-- 362疾患、792変量、7005辺、R01/R02全362疾患Prior完備
-- 841案例(836 in-scope + 5 OOS)
-- Top-1: 668/841(79%), Top-3: 786/841(93%), FATAL: 0
+- 363疾患、792変量、7019辺、R01/R02全363疾患Prior完備
+- 852案例(847 in-scope + 5 OOS)
+- Top-1: 671/847(79%), Top-3: 791/847(93%), FATAL: 0
 - 反証推奨(falsification test)実装済み
+- T01泛化済み: fever_duration→symptom_duration（非発熱疾患にも適用）
+- A群+B群疾患分割完了（12分割、D351-D364）
 
 ## 重要な研究方向
 - **反証推奨** — エントロピー増大方向の検査推奨（波普尔証伪の初の計算実装、論文化予定）
