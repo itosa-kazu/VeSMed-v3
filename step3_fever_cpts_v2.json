@@ -17055,14 +17055,14 @@
           "severe_over_30": 0.05
         },
         "D286": {
-          "normal_under_20": 0.8,
-          "tachypnea_20_30": 0.15,
-          "severe_over_30": 0.05
+          "normal_under_20": 0.9,
+          "tachypnea_20_30": 0.08,
+          "severe_over_30": 0.02
         },
         "D28": {
-          "normal_under_20": 0.85,
-          "tachypnea_20_30": 0.12,
-          "severe_over_30": 0.03
+          "normal_under_20": 0.95,
+          "tachypnea_20_30": 0.04,
+          "severe_over_30": 0.01
         }
       }
     },
@@ -26299,8 +26299,8 @@
           "elevated": 0.65
         },
         "D28": {
-          "normal": 0.6,
-          "elevated": 0.4
+          "normal": 0.8,
+          "elevated": 0.2
         }
       }
     },
@@ -26650,8 +26650,8 @@
           "present": 0.04
         },
         "D289": {
-          "absent": 0.92,
-          "present": 0.08
+          "absent": 0.98,
+          "present": 0.02
         }
       }
     },
@@ -32909,7 +32909,7 @@
           "absent": 0.9,
           "present": 0.1
         },
-        "D289": 0.12
+        "D289": 0.05
       }
     },
     "S17": {
@@ -42206,9 +42206,9 @@
           "high_AKI": 0.05
         },
         "D28": {
-          "normal": 0.88,
-          "mild_elevated": 0.07,
-          "high_AKI": 0.05
+          "normal": 0.96,
+          "mild_elevated": 0.025,
+          "high_AKI": 0.015
         }
       }
     },
@@ -48478,8 +48478,8 @@
           "present": 0.35
         },
         "D286": {
-          "absent": 0.5,
-          "present": 0.5
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },

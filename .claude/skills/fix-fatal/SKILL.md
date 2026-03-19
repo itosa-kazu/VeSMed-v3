@@ -50,6 +50,9 @@ for ev_id, obs_state in case_evidence.items():
 
 **文献なきCPT修正は禁止。**
 
+**CPT数値は原文fetch検証必須。** 研究agentが報告した百分比をそのまま使わない。
+必ずWebFetchで原文を取得し、該当する数値が本文/Table/Figureに実在するか確認してからCPTに設定する。
+
 ## Step 5: 競合案例の回帰チェック
 
 CPT変更対象の疾患について:
