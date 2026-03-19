@@ -26075,6 +26075,12 @@
           "mild_elevated": 0.4,
           "very_high_over_1000": 0.13,
           "extreme_over_10000": 0.02
+        },
+        "D45": {
+          "normal": 0.4,
+          "mild_elevated": 0.35,
+          "very_high_over_1000": 0.2,
+          "extreme_over_10000": 0.05
         }
       }
     },
@@ -26277,6 +26283,10 @@
         "D109": {
           "normal": 0.3,
           "elevated": 0.7
+        },
+        "D45": {
+          "normal": 0.35,
+          "elevated": 0.65
         }
       }
     },
@@ -27927,6 +27937,14 @@
           "bacterial_pattern": 0.07,
           "HSV_PCR_positive": 0.02,
           "tb_fungal_pattern": 0.11
+        },
+        "D144": {
+          "normal": 0.15,
+          "viral_pattern": 0.75,
+          "bacterial_pattern": 0.02,
+          "tb_fungal_pattern": 0.03,
+          "hemorrhagic": 0.02,
+          "malignant_cells": 0.03
         }
       }
     },
@@ -39899,6 +39917,10 @@
         "D361": {
           "absent": 0.03,
           "present": 0.97
+        },
+        "D144": {
+          "absent": 0.02,
+          "present": 0.98
         }
       }
     },
@@ -48245,6 +48267,12 @@
           "indirect_dominant": 0.05,
           "direct_dominant": 0.55,
           "both_elevated": 0.2
+        },
+        "D45": {
+          "normal": 0.4,
+          "indirect_dominant": 0.35,
+          "direct_dominant": 0.15,
+          "both_elevated": 0.1
         }
       }
     },
