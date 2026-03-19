@@ -10745,6 +10745,21 @@
       "severity": "moderate",
       "key_features": "胆汁うっ滞型肝障害(ALP 3-10xULN)。IBD合併60-80%(UC>>CD)。pANCA 70-80%陽性。30-40歳男性2:1。50%無症状。MRCPでbeading。胆管癌リスク10-20%。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D373",
+      "name": "hypothyroidism_hashimoto",
+      "name_ja": "甲状腺機能低下症(橋本病)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E03.9",
+      "category_sub": "endocrine",
+      "severity": "moderate",
+      "key_features": "倦怠感+体重増加+寒がり+便秘+皮膚乾燥+脱毛+筋痛。F:M=7-10:1、45-55歳ピーク。TSH著増+FT4低下。抗TPO抗体90-95%陽性。CK上昇57%。貧血43%。潜行性(月~年)。",
+      "diagnostic_profile": {}
     }
   ]
 }

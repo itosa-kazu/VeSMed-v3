@@ -4129,6 +4129,21 @@
         "female|40_64": 0.001,
         "female|65_plus": 0.0003
       }
+    },
+    "D373": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "橋本病。F:M=8:1。45-55歳ピーク。60歳以上女性で最大10%",
+      "cpt": {
+        "male|18_39": 0.0005,
+        "male|40_64": 0.001,
+        "male|65_plus": 0.001,
+        "female|18_39": 0.003,
+        "female|40_64": 0.008,
+        "female|65_plus": 0.006
+      }
     }
   },
   "full_cpts": {
@@ -12793,6 +12808,25 @@
         "male": 0.065,
         "female": 0.035
       }
+    },
+    "D373": {
+      "parents": [
+        "R01"
+      ],
+      "description": "甲状腺機能低下症(橋本病)",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0002,
+        "6_12": 0.0003,
+        "13_17": 0.0005,
+        "18_39": 0.002,
+        "40_64": 0.005,
+        "65_plus": 0.004
+      },
+      "R02": {
+        "male": 0.012,
+        "female": 0.088
+      }
     }
   },
   "noisy_or_params": {
@@ -15384,6 +15418,14 @@
           "39.0_40.0": 0.02,
           "over_40.0": 0.005,
           "hypothermia_under_35": 0.005
+        },
+        "D373": {
+          "hypothermia_under_35": 0.02,
+          "under_37.5": 0.9,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.005,
+          "over_40.0": 0.002
         }
       }
     },
@@ -16485,6 +16527,11 @@
           "under_100": 0.65,
           "100_120": 0.25,
           "over_120": 0.1
+        },
+        "D373": {
+          "under_100": 0.92,
+          "100_120": 0.06,
+          "over_120": 0.02
         }
       }
     },
@@ -20455,6 +20502,10 @@
         "D87": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D373": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -22630,6 +22681,12 @@
           "normal_4000_10000": 0.75,
           "high_10000_20000": 0.15,
           "very_high_over_20000": 0.05
+        },
+        "D373": {
+          "low_under_4000": 0.08,
+          "normal_4000_10000": 0.8,
+          "high_10000_20000": 0.1,
+          "very_high_over_20000": 0.02
         }
       }
     },
@@ -24015,6 +24072,12 @@
           "normal_under_0.3": 0.55,
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.1,
+          "high_over_10": 0.05
+        },
+        "D373": {
+          "normal_under_0.3": 0.4,
+          "mild_0.3_3": 0.4,
+          "moderate_3_10": 0.15,
           "high_over_10": 0.05
         }
       }
@@ -26802,6 +26865,11 @@
           "normal": 0.2,
           "elevated": 0.35,
           "very_high": 0.45
+        },
+        "D373": {
+          "normal": 0.4,
+          "elevated": 0.45,
+          "very_high": 0.15
         }
       }
     },
@@ -27464,6 +27532,11 @@
           "normal": 0.2,
           "elevated": 0.65,
           "very_high_over_100": 0.15
+        },
+        "D373": {
+          "normal": 0.5,
+          "elevated": 0.4,
+          "very_high_over_100": 0.1
         }
       }
     },
@@ -30332,6 +30405,10 @@
         "D368": {
           "absent": 0.64,
           "present": 0.36
+        },
+        "D373": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -31476,6 +31553,11 @@
           "absent": 0.55,
           "mild": 0.3,
           "severe": 0.15
+        },
+        "D373": {
+          "absent": 0.22,
+          "mild": 0.38,
+          "severe": 0.4
         }
       }
     },
@@ -31685,6 +31767,10 @@
         "D368": {
           "absent": 0.76,
           "present": 0.24
+        },
+        "D373": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -37686,6 +37772,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.1,
           "over_3w": 0.85
+        },
+        "D373": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.02,
+          "1w_to_3w": 0.05,
+          "over_3w": 0.92
         }
       }
     },
@@ -39599,6 +39691,12 @@
           "acute": 0.05,
           "subacute": 0.18,
           "chronic": 0.75
+        },
+        "D373": {
+          "sudden": 0.01,
+          "acute": 0.02,
+          "subacute": 0.07,
+          "chronic": 0.9
         }
       }
     },
@@ -40891,6 +40989,10 @@
         "D363": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D373": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     },
@@ -43499,6 +43601,10 @@
         "D248": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D373": {
+          "absent": 0.88,
+          "present": 0.12
         }
       }
     },
@@ -48170,6 +48276,13 @@
           "mild_low_10_12": 0.2,
           "normal": 0.04,
           "high": 0.01
+        },
+        "D373": {
+          "very_low_under_7": 0.03,
+          "low_7_10": 0.1,
+          "mild_low_10_12": 0.3,
+          "normal": 0.55,
+          "high": 0.02
         }
       }
     },
@@ -49412,6 +49525,107 @@
         "D371": {
           "absent": 0.95,
           "present": 0.05
+        }
+      }
+    },
+    "S120": {
+      "description": "体重増加",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D373": {
+          "absent": 0.66,
+          "present": 0.34
+        }
+      }
+    },
+    "S162": {
+      "description": "寒がり(冷え不耐)",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.85,
+        "present": 0.15
+      },
+      "parent_effects": {
+        "D373": {
+          "absent": 0.65,
+          "present": 0.35
+        }
+      }
+    },
+    "S72": {
+      "description": "便秘",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.85,
+        "present": 0.15
+      },
+      "parent_effects": {
+        "D373": {
+          "absent": 0.83,
+          "present": 0.17
+        },
+        "D238": {
+          "absent": 0.6,
+          "present": 0.4
+        }
+      }
+    },
+    "S118": {
+      "description": "脱毛",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D373": {
+          "absent": 0.57,
+          "present": 0.43
+        }
+      }
+    },
+    "E68": {
+      "description": "眼瞼浮腫",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D373": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D191": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D204": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D94": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     }

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7105,
+  "total_edges": 7125,
   "edges": [
     {
       "from": "R01",
@@ -56484,6 +56484,146 @@
       "reason": "PSC: 体重減少(進行期, PMC6028044)",
       "from_name": "primary_sclerosing_cholangitis",
       "to_name": "weight_loss"
+    },
+    {
+      "from": "D373",
+      "to": "S07",
+      "reason": "甲状腺機能低下: 倦怠感(68-81%, Carle 2014/PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "fatigue"
+    },
+    {
+      "from": "D373",
+      "to": "S120",
+      "reason": "甲状腺機能低下: 体重増加(34%, PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "weight_gain"
+    },
+    {
+      "from": "D373",
+      "to": "S162",
+      "reason": "甲状腺機能低下: 寒がり(35%, PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "cold_intolerance"
+    },
+    {
+      "from": "D373",
+      "to": "S72",
+      "reason": "甲状腺機能低下: 便秘(12-20%, PMC3425758/PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "constipation"
+    },
+    {
+      "from": "D373",
+      "to": "S118",
+      "reason": "甲状腺機能低下: 脱毛(41-46%, PMC3726898/PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "alopecia"
+    },
+    {
+      "from": "D373",
+      "to": "S06",
+      "reason": "甲状腺機能低下: 筋痛/筋力低下(30-80%, StatPearls NBK519513)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "myalgia"
+    },
+    {
+      "from": "D373",
+      "to": "S08",
+      "reason": "甲状腺機能低下: 関節痛(~25%, PMC9478900)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "arthralgia"
+    },
+    {
+      "from": "D373",
+      "to": "S55",
+      "reason": "甲状腺機能低下: 嗄声(4-30%, PMC6592446)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "hoarseness"
+    },
+    {
+      "from": "D373",
+      "to": "E68",
+      "reason": "甲状腺機能低下: 眼瞼/顔面浮腫(29-38%, PMC3726898)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "periorbital_edema"
+    },
+    {
+      "from": "D373",
+      "to": "E19",
+      "reason": "甲状腺機能低下: 甲状腺腫(20-30%, StatPearls NBK459262)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "goiter"
+    },
+    {
+      "from": "D373",
+      "to": "E02",
+      "reason": "甲状腺機能低下: 徐脈(~10%, PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "heart_rate"
+    },
+    {
+      "from": "D373",
+      "to": "E01",
+      "reason": "甲状腺機能低下: 低体温傾向(重症で顕著, StatPearls)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "temperature"
+    },
+    {
+      "from": "D373",
+      "to": "L17",
+      "reason": "甲状腺機能低下: CK上昇(顕性57%, PubMed 16392619)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "CK"
+    },
+    {
+      "from": "D373",
+      "to": "L93",
+      "reason": "甲状腺機能低下: 貧血(pooled 43%, PMC11138123)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "hemoglobin"
+    },
+    {
+      "from": "D373",
+      "to": "L02",
+      "reason": "甲状腺機能低下: CRP軽度上昇(PMC10798680)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "CRP"
+    },
+    {
+      "from": "D373",
+      "to": "L28",
+      "reason": "甲状腺機能低下: ESR上昇傾向(PMC4668398)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "ESR"
+    },
+    {
+      "from": "D373",
+      "to": "E36",
+      "reason": "甲状腺機能低下: 末梢浮腫(~3%, PMC10331040)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "leg_edema"
+    },
+    {
+      "from": "D373",
+      "to": "T01",
+      "reason": "甲状腺機能低下: 慢性経過(月~年, StatPearls)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "symptom_duration"
+    },
+    {
+      "from": "D373",
+      "to": "T02",
+      "reason": "甲状腺機能低下: 潜行性発症(StatPearls)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "onset_speed"
+    },
+    {
+      "from": "D373",
+      "to": "L01",
+      "reason": "甲状腺機能低下: WBC通常正常(StatPearls)",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "WBC"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
