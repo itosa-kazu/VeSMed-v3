@@ -10981,6 +10981,22 @@
       "key_features": "中心性肥満+満月様顔貌+紫色皮膚線条+高血圧+近位筋力低下+耐糖能異常。Cushing様体型(E96)が鍵。コルチゾール過剰による免疫抑制→感染易感性。",
       "note": "F:M=3-4:1。30-44歳ピーク。下垂体性(Cushing病)60-70%/異所性ACTH15-20%/副腎腫瘍15-20%。死亡率2-4倍(感染・心血管)。24h UFC/DST/深夜唾液コルチゾールでスクリーニング。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D381",
+      "name": "nocardiosis",
+      "name_ja": "ノカルジア症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "A43",
+      "category_sub": "bacterial_infection",
+      "severity": "high",
+      "key_features": "免疫不全者の亜急性肺感染。咳(80%)+発熱(70%)+高CRP(81%)。肺結節/空洞/浸潤影。CNS播種15%(脳膿瘍)。弱抗酸菌陽性。",
+      "note": "M:F=3:1。平均50-57歳。免疫不全60-66%(ステロイド最多45-65%)。死亡率12-33%。TMP-SMX治療。肺結核/放線菌症/アスペルギルスとの鑑別。",
+      "diagnostic_profile": {}
     }
   ]
 }

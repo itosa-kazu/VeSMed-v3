@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7311,
+  "total_edges": 7325,
   "edges": [
     {
       "from": "R01",
@@ -57688,7 +57688,11 @@
       "from_name": "lethal_catatonia",
       "to_name": "temperature",
       "reason": "致死性緊張病: 発熱~100%(定義的特徴, Park 2017 PMC5303832)",
-      "onset_day_range": {"earliest": 0, "typical": 1, "latest": 7}
+      "onset_day_range": {
+        "earliest": 0,
+        "typical": 1,
+        "latest": 7
+      }
     },
     {
       "from": "D379",
@@ -57864,6 +57868,109 @@
       "from_name": "cushing_syndrome",
       "to_name": "symptom_duration",
       "reason": "クッシング症候群: 慢性経過(数ヶ月〜数年)(PMC4407747)"
+    },
+    {
+      "from": "R05",
+      "to": "D381",
+      "from_name": "immunosuppressed",
+      "to_name": "nocardiosis",
+      "reason": "ノカルジア症: 免疫不全60-66%(PMC6200467/PMC7768126)"
+    },
+    {
+      "from": "D381",
+      "to": "E01",
+      "from_name": "nocardiosis",
+      "to_name": "temperature",
+      "reason": "ノカルジア症: 発熱52-88%(PMC3940923: 71%, PMC4948227: 78%)",
+      "onset_day_range": {
+        "earliest": 3,
+        "typical": 7,
+        "latest": 30
+      }
+    },
+    {
+      "from": "D381",
+      "to": "S01",
+      "from_name": "nocardiosis",
+      "to_name": "cough",
+      "reason": "ノカルジア症: 咳嗽73-94%(PMC3940923: 94%, PMC8956243: 80%)"
+    },
+    {
+      "from": "D381",
+      "to": "S34",
+      "from_name": "nocardiosis",
+      "to_name": "hemoptysis",
+      "reason": "ノカルジア症: 喀血6-21%(PMC8956243: 19%, PMC9709137: 21%)"
+    },
+    {
+      "from": "D381",
+      "to": "S17",
+      "from_name": "nocardiosis",
+      "to_name": "weight_loss",
+      "reason": "ノカルジア症: 体重減少~25%(StatPearls/PMC3498414)"
+    },
+    {
+      "from": "D381",
+      "to": "S16",
+      "from_name": "nocardiosis",
+      "to_name": "night_sweats",
+      "reason": "ノカルジア症: 盗汗~25%(StatPearls/PMC3498414)"
+    },
+    {
+      "from": "D381",
+      "to": "S07",
+      "from_name": "nocardiosis",
+      "to_name": "fatigue",
+      "reason": "ノカルジア症: 倦怠感25%(PMC3940923: 29%)"
+    },
+    {
+      "from": "D381",
+      "to": "L01",
+      "from_name": "nocardiosis",
+      "to_name": "WBC",
+      "reason": "ノカルジア症: 白血球増多41-70%(PMC3940923: 41%, PMC6200467: 60%)"
+    },
+    {
+      "from": "D381",
+      "to": "L02",
+      "from_name": "nocardiosis",
+      "to_name": "CRP",
+      "reason": "ノカルジア症: CRP上昇81%(中央値37-70mg/L, PMC3940923/PMC8956243)"
+    },
+    {
+      "from": "D381",
+      "to": "T01",
+      "from_name": "nocardiosis",
+      "to_name": "symptom_duration",
+      "reason": "ノカルジア症: 亜急性(中位15-25日, PMC3940923: 亜急性59%)"
+    },
+    {
+      "from": "D381",
+      "to": "T02",
+      "from_name": "nocardiosis",
+      "to_name": "onset_speed",
+      "reason": "ノカルジア症: 亜急性発症59%(PMC3940923)"
+    },
+    {
+      "from": "D381",
+      "to": "L04",
+      "from_name": "nocardiosis",
+      "to_name": "chest_xray",
+      "reason": "ノカルジア症: 浸潤影60%/胸水10-65%(PMC3940923/PMC8956243)"
+    },
+    {
+      "from": "D381",
+      "to": "L35",
+      "from_name": "nocardiosis",
+      "to_name": "CT_chest_detail",
+      "reason": "ノカルジア症: 浸潤55%/空洞45%/GGO45%(PMC3940923/PMC8956243)"
+    },
+    {
+      "from": "D381",
+      "to": "S52",
+      "from_name": "nocardiosis",
+      "to_name": "focal_neuro_deficit",
+      "reason": "ノカルジア症: CNS播種15%(脳膿瘍87%, PMC9485982)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

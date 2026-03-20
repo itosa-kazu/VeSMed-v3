@@ -24836,6 +24836,155 @@
       },
       "result": "",
       "notes": "異所性ACTH。K 1.5の重症低K+血糖400。ノカルジア肺感染"
+    },
+    {
+      "id": "R932",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "Respirol Case Rep 2019 (PMC6599924)",
+      "vignette": "70M。肺癌に対する放射線肺臓炎でプレドニゾロン35mg/日服用中。約4週間の経過で発熱38.2℃、血痰、呼吸困難(SpO2 85% RA)。WBC 16900(好中球93.7%)、CRP 13.5mg/dL、Hb 10.4、Alb 2.3、LDH 260。CXR右中肺野浸潤影、右胸水出現。CT右中葉air bronchogramを伴う浸潤影。BALからNocardia exalbida検出。",
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "evidence": {
+        "R05": "yes",
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S34": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "lobar_infiltrate",
+        "L35": "consolidation",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "result": "",
+      "notes": "ステロイド35mg。肺ノカルジア。22日目死亡(肺癌進行)"
+    },
+    {
+      "id": "R933",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "J Surg Case Rep 2015 (PMC4655492)",
+      "vignette": "38M。腎移植後(2回目)、タクロリムス+ミコフェノール酸モフェチル服用中。発熱38℃、頭痛、意識混濁、うっ血乳頭。WBC 12500(好中球優位)、CRP上昇。HRCT肺結節なし。頭部MRI後頭葉脳膿瘍2個(最大5×4×3cm)、正中偏位。穿頭ドレナージでNocardia spp.検出。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "evidence": {
+        "R05": "yes",
+        "E01": "38.0_39.0",
+        "E16": "confused",
+        "S52": "present",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "T01": "3d_to_1w"
+      },
+      "result": "",
+      "notes": "CNS播種型(肺病変なし)。腎移植後。12ヶ月再発なし"
+    },
+    {
+      "id": "R934",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "BMC Infect Dis 2021 (PMC8294930)",
+      "vignette": "64M。S状結腸癌術後4日。咳嗽、呼吸困難(NYHA III)、体温37.1℃、心拍103、血圧85/55。WBC 13960(好中球92.7%)、CRP 162.12mg/dL、Hb 7.9、Alb 1.9、PCT 0.323。CXR多発斑状浸潤+両側胸水。CT被包化液体貯留+不整胸膜肥厚。30日目に構音障害+嚥下障害→MRI左前頭側頭葉脳膿瘍(24mm ring-enhancing)。胸水/脳膿瘍からN. farcinica検出。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "R05": "yes",
+        "S01": "present",
+        "E01": "37.5_38.0",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "pleural_effusion",
+        "S52": "present",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "result": "",
+      "notes": "播種型。膿胸+脳膿瘍。N. farcinica"
+    },
+    {
+      "id": "R935",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "BMC Infect Dis 2020 (PMC6971799)",
+      "vignette": "70M。免疫正常(慢性疾患・免疫抑制薬なし)。持続する発熱+咳嗽。2ヶ月後に全身痙攣+右片麻痺。WBC 21500(好中球87.2%)、CRP 58.1mg/L、ESR 60mm/h、フィブリノーゲン6.59g/L。胸部CT右中葉S5に6cm低濃度病変(胸膜・横隔膜に接する)。脳MRI左前中心領域にring-enhancing病変3個+周囲浮腫。開頭術でN. cyriacigeorgica検出。",
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "evidence": {
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S52": "present",
+        "S42": "present",
+        "L01": "very_high_over_20000",
+        "L02": "moderate_3_10",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "result": "",
+      "notes": "免疫正常者の播種型。肺+脳膿瘍。R05=no"
+    },
+    {
+      "id": "R936",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "Medicine 2018 (PMC6122714)",
+      "vignette": "58M。膜性腎症(ネフローゼ)にプレドニゾン20mg/日×4ヶ月、ステロイド性糖尿病。3週間前の肺炎治療後に湿性咳嗽・発熱・盗汗。左眼視力低下(3日間)。WBC 11480(好中球75.8%)、CRP 59.9mg/L。胸部CT両側多発結節(一部空洞)。眼底に乳白色網膜下病変+出血。7週後に右上下肢脱力→脳MRI両大脳半球多発嚢胞性造影病変。喀痰・血培からNocardia spp.検出。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "R05": "yes",
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "S16": "present",
+        "L01": "high_10000_20000",
+        "L02": "moderate_3_10",
+        "L35": "cavity",
+        "S52": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "result": "",
+      "notes": "播種型(肺+眼+脳)。ステロイド使用。盗汗あり"
+    },
+    {
+      "id": "R937",
+      "in_scope": true,
+      "expected_id": "D381",
+      "final_diagnosis": "ノカルジア症",
+      "source": "J Infect Chemother 2022 (PMC8216568)",
+      "vignette": "34M。白血病に対する同種HSCT後、慢性GVHDにシクロスポリン150mg+プレドニゾロン12.5mg/日。右胸膜性胸背部痛、非湿性咳嗽、発熱。WBC 15000(好中球90%,リンパ球7%)、CRP 11.3mg/dL、Hb 8.7、IgG 113mg/dL(著減)。CT右肺S6結節、後に肋骨沿いの多発ring-enhancing空洞+胸水。N. elegans検出。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "evidence": {
+        "R05": "yes",
+        "E01": "38.0_39.0",
+        "S01": "present",
+        "L01": "high_10000_20000",
+        "L02": "high_over_10",
+        "L04": "pleural_effusion",
+        "L35": "cavity",
+        "T01": "3d_to_1w",
+        "T02": "subacute"
+      },
+      "result": "",
+      "notes": "HSCT後。N. elegans。6ヶ月無病"
     }
   ],
   "total_cases": 110
