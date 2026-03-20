@@ -10878,6 +10878,54 @@
       "severity": "critical",
       "key_features": "二峰性(小児2-5歳+成人50歳)。LAD 43-57%。肝脾腫50-78%。骨痛20-40%。CNS浸潤5-8%。T-ALLで縦隔腫瘤50-75%。LDH著増(AMLより高い)。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D376",
+      "name": "minimal_change_disease",
+      "name_ja": "微小変化型ネフローゼ症候群(MCD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "N04.0",
+      "category_sub": "renal",
+      "severity": "moderate",
+      "key_features": "小児NS最多(70-90%)。突然発症の浮腫+高度蛋白尿+低Alb。血尿少ない(10-30%)。ステロイド著効(>90%)。補体正常。光顕正常、電顕で足突起消失。",
+      "note": "二峰性年齢分布(小児2-6歳+成人30-40歳)。成人NSの10-15%。AKI 20-25%(成人)。再発率80-90%(小児)。ESRD<5%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D377",
+      "name": "membranous_nephropathy",
+      "name_ja": "膜性腎症(MN)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "N04.2",
+      "category_sub": "renal",
+      "severity": "high",
+      "key_features": "成人NS最多原因の一つ(30-35%)。潜行性発症。PLA2R抗体70-80%陽性。VTEリスク最高。ステロイド単独不応。Rule of thirds(1/3自然寛解/1/3安定/1/3ESRD)。",
+      "note": "50-60歳ピーク。M:F=2:1。二次性(SLE/悪性腫瘍/HBV/薬剤)20-25%。血尿25-50%。高血圧30-37%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D378",
+      "name": "focal_segmental_glomerulosclerosis",
+      "name_ja": "巣状分節性糸球体硬化症(FSGS)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "N04.1",
+      "category_sub": "renal",
+      "severity": "high",
+      "key_features": "成人NS最多原因の一つ(35-40%)。血尿多い(30-68%)。高血圧顕著(33-82%)。腎機能障害高率(28-60%)。ステロイド不応多い。ESRD 50%/3-8年。",
+      "note": "18-45歳ピーク。M:F=1.5-2:1。アフリカ系3-7倍。APOL1変異。非ネフローゼ型は高血圧82%。",
+      "diagnostic_profile": {}
     }
   ]
 }

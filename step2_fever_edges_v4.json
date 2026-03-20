@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7233,
+  "total_edges": 7284,
   "edges": [
     {
       "from": "R01",
@@ -57317,6 +57317,363 @@
       "from_name": "new_medication_4w",
       "to_name": "DILI",
       "reason": "DILI: 薬剤暴露が最重要リスク因子(Harrison's)"
+    },
+    {
+      "from": "D376",
+      "to": "R01",
+      "from_name": "minimal_change_disease",
+      "to_name": "age_group",
+      "reason": "MCD: 二峰性(小児2-6歳+成人30-40歳)(StatPearls, CKJ2013 mean 30.5歳)"
+    },
+    {
+      "from": "D376",
+      "to": "R02",
+      "from_name": "minimal_change_disease",
+      "to_name": "sex",
+      "reason": "MCD: 小児M:F=2:1、成人M:F≈1:1(StatPearls, CKJ2013 33M:28F)"
+    },
+    {
+      "from": "D376",
+      "to": "E01",
+      "from_name": "minimal_change_disease",
+      "to_name": "body_temperature",
+      "reason": "MCD: 通常無熱。感染合併時のみ発熱"
+    },
+    {
+      "from": "D376",
+      "to": "E36",
+      "from_name": "minimal_change_disease",
+      "to_name": "lower_extremity_edema",
+      "reason": "MCD: 浮腫~100%(CKJ2013 61/61=100%, StatPearls)"
+    },
+    {
+      "from": "D376",
+      "to": "E50",
+      "from_name": "minimal_change_disease",
+      "to_name": "leg_edema_laterality",
+      "reason": "MCD: 両側性浮腫(ネフローゼの特徴)"
+    },
+    {
+      "from": "D376",
+      "to": "E68",
+      "from_name": "minimal_change_disease",
+      "to_name": "periorbital_edema",
+      "reason": "MCD: 眼瞼浮腫。小児で顕著(~95%)、成人でも60-70%(StatPearls, PMC5293332)"
+    },
+    {
+      "from": "D376",
+      "to": "L78",
+      "from_name": "minimal_change_disease",
+      "to_name": "urine_protein",
+      "reason": "MCD: ネフローゼレベル蛋白尿~100%(平均5.3g/日, CKJ2013)"
+    },
+    {
+      "from": "D376",
+      "to": "L70",
+      "from_name": "minimal_change_disease",
+      "to_name": "serum_albumin",
+      "reason": "MCD: 低Alb~100%(多くは<2.0g/dL)(CKJ2013 mean 2.0, PMC5293332)"
+    },
+    {
+      "from": "D376",
+      "to": "S33",
+      "from_name": "minimal_change_disease",
+      "to_name": "hematuria",
+      "reason": "MCD: 顕微鏡的血尿10-30%(StatPearls)。MCD特徴:血尿が少ない"
+    },
+    {
+      "from": "D376",
+      "to": "E38",
+      "from_name": "minimal_change_disease",
+      "to_name": "blood_pressure_high",
+      "reason": "MCD: 高血圧25-50%(成人)(PMC6556731, PMC6968635)"
+    },
+    {
+      "from": "D376",
+      "to": "L55",
+      "from_name": "minimal_change_disease",
+      "to_name": "creatinine",
+      "reason": "MCD: AKI 20-25%(成人)(PMC6968635)。50歳以上では52.9%"
+    },
+    {
+      "from": "D376",
+      "to": "L75",
+      "from_name": "minimal_change_disease",
+      "to_name": "complement_C3_C4",
+      "reason": "MCD: 補体正常(PSGN/SLEとの鑑別点)(kidneypathology.com)"
+    },
+    {
+      "from": "D376",
+      "to": "S120",
+      "from_name": "minimal_change_disease",
+      "to_name": "weight_gain",
+      "reason": "MCD: 体液貯留による体重増加(ネフローゼの特徴)"
+    },
+    {
+      "from": "D376",
+      "to": "S07",
+      "from_name": "minimal_change_disease",
+      "to_name": "fatigue",
+      "reason": "MCD: 倦怠感(StatPearls)"
+    },
+    {
+      "from": "D376",
+      "to": "T01",
+      "from_name": "minimal_change_disease",
+      "to_name": "symptom_duration",
+      "reason": "MCD: 突然発症。数日~1週で受診が多い"
+    },
+    {
+      "from": "D376",
+      "to": "T02",
+      "from_name": "minimal_change_disease",
+      "to_name": "onset_speed",
+      "reason": "MCD: 急性発症が特徴(StatPearls: almost overnight)"
+    },
+    {
+      "from": "D376",
+      "to": "L67",
+      "from_name": "minimal_change_disease",
+      "to_name": "AKI_etiology",
+      "reason": "MCD: AKI時は腎性(PMC6968635)"
+    },
+    {
+      "from": "D377",
+      "to": "R01",
+      "from_name": "membranous_nephropathy",
+      "to_name": "age_group",
+      "reason": "MN: 50-60歳ピーク(StatPearls, PMC10627124 中央値52歳)"
+    },
+    {
+      "from": "D377",
+      "to": "R02",
+      "from_name": "membranous_nephropathy",
+      "to_name": "sex",
+      "reason": "MN: M:F=2:1(複数出典一致)"
+    },
+    {
+      "from": "D377",
+      "to": "E01",
+      "from_name": "membranous_nephropathy",
+      "to_name": "body_temperature",
+      "reason": "MN: 通常無熱。感染合併時のみ発熱"
+    },
+    {
+      "from": "D377",
+      "to": "E36",
+      "from_name": "membranous_nephropathy",
+      "to_name": "lower_extremity_edema",
+      "reason": "MN: 浮腫>80%(StatPearls, PMC10627124)"
+    },
+    {
+      "from": "D377",
+      "to": "E50",
+      "from_name": "membranous_nephropathy",
+      "to_name": "leg_edema_laterality",
+      "reason": "MN: 両側性浮腫(ネフローゼの特徴)"
+    },
+    {
+      "from": "D377",
+      "to": "E68",
+      "from_name": "membranous_nephropathy",
+      "to_name": "periorbital_edema",
+      "reason": "MN: 眼瞼浮腫(ネフローゼ共通所見)"
+    },
+    {
+      "from": "D377",
+      "to": "L78",
+      "from_name": "membranous_nephropathy",
+      "to_name": "urine_protein",
+      "reason": "MN: ネフローゼレベル蛋白尿80%(CJASN 2017 PMC5460716)。中央値3.33g/日"
+    },
+    {
+      "from": "D377",
+      "to": "L70",
+      "from_name": "membranous_nephropathy",
+      "to_name": "serum_albumin",
+      "reason": "MN: 低Alb 80%+(PMC8695761)。平均2.88g/dL"
+    },
+    {
+      "from": "D377",
+      "to": "S33",
+      "from_name": "membranous_nephropathy",
+      "to_name": "hematuria",
+      "reason": "MN: 顕微鏡的血尿25-50%(CJASN 2017, PMC8695761 49.5%)"
+    },
+    {
+      "from": "D377",
+      "to": "E38",
+      "from_name": "membranous_nephropathy",
+      "to_name": "blood_pressure_high",
+      "reason": "MN: 高血圧30-37%(初診時)(CJASN 2017, PMC7086205 45.5%)"
+    },
+    {
+      "from": "D377",
+      "to": "L55",
+      "from_name": "membranous_nephropathy",
+      "to_name": "creatinine",
+      "reason": "MN: 腎機能障害20%(初診時)(CJASN 2017)。eGFR平均95.9"
+    },
+    {
+      "from": "D377",
+      "to": "L75",
+      "from_name": "membranous_nephropathy",
+      "to_name": "complement_C3_C4",
+      "reason": "MN: 補体正常(PMC4274996)。低下はSLE等の二次性を示唆"
+    },
+    {
+      "from": "D377",
+      "to": "S120",
+      "from_name": "membranous_nephropathy",
+      "to_name": "weight_gain",
+      "reason": "MN: 体液貯留による体重増加(ネフローゼの特徴)"
+    },
+    {
+      "from": "D377",
+      "to": "S07",
+      "from_name": "membranous_nephropathy",
+      "to_name": "fatigue",
+      "reason": "MN: 倦怠感(StatPearls)"
+    },
+    {
+      "from": "D377",
+      "to": "T01",
+      "from_name": "membranous_nephropathy",
+      "to_name": "symptom_duration",
+      "reason": "MN: 潜行性発症。数週~数月で受診(CJASN 2017)"
+    },
+    {
+      "from": "D377",
+      "to": "T02",
+      "from_name": "membranous_nephropathy",
+      "to_name": "onset_speed",
+      "reason": "MN: 緩徐発症が特徴(StatPearls: insidious onset)"
+    },
+    {
+      "from": "D377",
+      "to": "L67",
+      "from_name": "membranous_nephropathy",
+      "to_name": "AKI_etiology",
+      "reason": "MN: 初診時AKIは稀。腎機能障害20%は軽度"
+    },
+    {
+      "from": "D378",
+      "to": "R01",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "age_group",
+      "reason": "FSGS: 18-45歳ピーク(StatPearls)"
+    },
+    {
+      "from": "D378",
+      "to": "R02",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "sex",
+      "reason": "FSGS: M:F=1.5-2:1(StatPearls)"
+    },
+    {
+      "from": "D378",
+      "to": "E01",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "body_temperature",
+      "reason": "FSGS: 通常無熱。感染合併時のみ発熱"
+    },
+    {
+      "from": "D378",
+      "to": "E36",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "lower_extremity_edema",
+      "reason": "FSGS: 浮腫~70%+(StatPearls)"
+    },
+    {
+      "from": "D378",
+      "to": "E50",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "leg_edema_laterality",
+      "reason": "FSGS: 両側性浮腫(ネフローゼの特徴)"
+    },
+    {
+      "from": "D378",
+      "to": "E68",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "periorbital_edema",
+      "reason": "FSGS: 眼瞼浮腫(ネフローゼ共通所見)"
+    },
+    {
+      "from": "D378",
+      "to": "L78",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "urine_protein",
+      "reason": "FSGS: ネフローゼレベル蛋白尿67-88%(PMC11763650)"
+    },
+    {
+      "from": "D378",
+      "to": "L70",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "serum_albumin",
+      "reason": "FSGS: 低Alb 67-70%(PMC11763650)。ネフローゼ群Alb中央値1.80g/dL"
+    },
+    {
+      "from": "D378",
+      "to": "S33",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "hematuria",
+      "reason": "FSGS: 顕微鏡的血尿30-68%(PMC11763650 ネフローゼ群68%)。MCD(10-30%)との主要鑑別点"
+    },
+    {
+      "from": "D378",
+      "to": "E38",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "blood_pressure_high",
+      "reason": "FSGS: 高血圧33-82%(PMC11763650)。非ネフローゼ群では82%"
+    },
+    {
+      "from": "D378",
+      "to": "L55",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "creatinine",
+      "reason": "FSGS: 腎機能障害28-60%(PMC11763650, IJRMS 60%)。eGFR中央値56"
+    },
+    {
+      "from": "D378",
+      "to": "L75",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "complement_C3_C4",
+      "reason": "FSGS: 補体正常(MPGN等との鑑別)"
+    },
+    {
+      "from": "D378",
+      "to": "S120",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "weight_gain",
+      "reason": "FSGS: 体液貯留による体重増加(ネフローゼの特徴)"
+    },
+    {
+      "from": "D378",
+      "to": "S07",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "fatigue",
+      "reason": "FSGS: 倦怠感(StatPearls)"
+    },
+    {
+      "from": "D378",
+      "to": "T01",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "symptom_duration",
+      "reason": "FSGS: 亜急性~慢性。数週で受診が多い"
+    },
+    {
+      "from": "D378",
+      "to": "T02",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "onset_speed",
+      "reason": "FSGS: 亜急性発症(StatPearls)。上気道感染後に急性発症もあり"
+    },
+    {
+      "from": "D378",
+      "to": "L67",
+      "from_name": "focal_segmental_glomerulosclerosis",
+      "to_name": "AKI_etiology",
+      "reason": "FSGS: 腎性AKI 28-60%(PMC11763650)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

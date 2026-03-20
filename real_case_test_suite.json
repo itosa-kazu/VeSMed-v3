@@ -24146,6 +24146,404 @@
         "L22": "present",
         "T01": "over_3w"
       }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "インフルエンザB後MCD。Alb 2.0(境界)。尿蛋白20.88g/gCr",
+      "expected_id": "D376",
+      "final_diagnosis": "微小変化型ネフローゼ症候群(MCD)",
+      "id": "R905",
+      "source": "Case Rep Nephrol Dial 2018 (PMC6032563)",
+      "vignette": "50F. 6日前から発熱+咳嗽+腰痛→5日前から顔面浮腫+両下腿浮腫(pitting)+尿量減少。T36.2, BP109/83。尿蛋白20.88g/gCr(dipstick 4+)。Alb 2.0, Cr 0.84, BUN 13。TC 308。C3/C4正常。血尿trace(1-4RBC/HPF)。IgE 2966。",
+      "evidence": {
+        "E01": "under_37.5",
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "L70": "mildly_low",
+        "S33": "absent",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S07": "mild",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "75F高齢MCD+重症AKI(Cr 7.70)。WBC 15700。Na 120",
+      "expected_id": "D376",
+      "final_diagnosis": "微小変化型ネフローゼ症候群(MCD)",
+      "id": "R906",
+      "source": "CEN Case Rep 2020 (PMC7204776)",
+      "vignette": "75F. 1週間の食欲低下+下痢+呼吸困難+乏尿。全身浮腫。T35.8, BP137/63, HR81。尿蛋白9.38g/gCr。Alb 2.4, Cr 7.70(重症AKI), BUN 182。TC 351。WBC 15700。Na 120, K 6.7。右胸水。血尿5-9RBC/HPF。",
+      "evidence": {
+        "E01": "under_37.5",
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "mildly_low",
+        "S33": "present",
+        "E38": "normal_under_140",
+        "L55": "high_AKI",
+        "L75": "normal",
+        "S07": "mild",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "3ヶ月経過(gradual)。体重18kg増。IgG 415低値",
+      "expected_id": "D376",
+      "final_diagnosis": "微小変化型ネフローゼ症候群(MCD)",
+      "id": "R907",
+      "source": "Cureus 2024 (PMC11993934)",
+      "vignette": "60F. 3ヶ月で悪化する浮腫+体重18kg増加。両下腿浮腫(2+), 側腹部浮腫。反復性感染。BP126/68。24h尿蛋白13.5g。Alb 1.8, Cr 0.6, BUN 16。LDL 120, TG 218。補体正常。IgG 415(低値)。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S120": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "75M MCD+AKI(Cr 1.69)。高血圧。血尿13RBC/HPF",
+      "expected_id": "D376",
+      "final_diagnosis": "微小変化型ネフローゼ症候群(MCD)",
+      "id": "R908",
+      "source": "World J Nephrol 2020 (PMC6968635)",
+      "vignette": "75M. 1ヶ月の呼吸困難+下腿浮腫+30lb体重増加。高血圧。尿蛋白/Cr比5.41(ネフローゼ)。Alb 1.9, Cr 1.69(上昇中)。脂質正常。C3/C4正常。血尿13RBC/HPF+顆粒円柱。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "present",
+        "E38": "elevated_140_180",
+        "L55": "mild_elevated",
+        "L75": "normal",
+        "S120": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "53M MCD+Sjögren。BP 150/100。血尿陰性(MCD特徴的)",
+      "expected_id": "D376",
+      "final_diagnosis": "微小変化型ネフローゼ症候群(MCD)",
+      "id": "R909",
+      "source": "Eur J Med Res 2023 (PMC10089134)",
+      "vignette": "53M. 呼吸困難+両前脛骨浮腫(pitting)+高血圧。BP 150/100。尿蛋白12g/日。Alb 1.82, Cr 0.9, BUN 21。C3/C4正常。ESR 100, CRP 1.4。血尿なし(<1RBC/HPF)。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "absent",
+        "E38": "elevated_140_180",
+        "L55": "normal",
+        "L75": "normal",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "48M典型MN。2ヶ月潜行性。Alb 1.8。血尿なし。TC 324",
+      "expected_id": "D377",
+      "final_diagnosis": "膜性腎症(MN)",
+      "id": "R910",
+      "source": "Arch Clin Nephrol 2018 (PMC6295683)",
+      "vignette": "48M白人. 2ヶ月の両側眼瞼浮腫+上肢浮腫(1+)+下腿浮腫(2+,膝まで)+泡沫尿。倦怠感/発熱/血尿なし。T36.7, BP128/84, HR82。尿蛋白5.5g/日(dipstick 4+)。Alb 1.8。TC 324, TG 300。C3/C4正常。CBC正常。",
+      "evidence": {
+        "E01": "under_37.5",
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "absent",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S07": "absent",
+        "T01": "over_3w",
+        "T02": "chronic"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "60M IgA-variant MN。8年蛋白尿歴。血尿15RBC/HPF",
+      "expected_id": "D377",
+      "final_diagnosis": "膜性腎症(MN)",
+      "id": "R911",
+      "source": "Kidney Int Rep 2022 (PMC9334231)",
+      "vignette": "60M. 下腿浮腫+泡沫尿。8年の蛋白尿歴。尿蛋白3.76→4.76g/日。Alb 2.0→1.8。BUN 38.4, Cr 0.62。TC 163。C3 127, C4 16(正常)。Hb 13.9, WBC 5560, Plt 226k。血尿2+(15RBC/HPF)。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "present",
+        "L55": "normal",
+        "L75": "normal",
+        "T01": "over_3w",
+        "T02": "chronic"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "60M MN。2ヶ月倦怠感。Alb 1.7。血尿あり。後にPE合併",
+      "expected_id": "D377",
+      "final_diagnosis": "膜性腎症(MN)",
+      "id": "R912",
+      "source": "Nephrol Renal Dis 2020 (PMC7405995)",
+      "vignette": "60M. 2ヶ月の倦怠感+軽度下腿浮腫+関節痛(膝/手)+夜間頻尿。無熱。BP110/60, HR80。尿蛋白10.68g/日(dipstick 3+)。Alb 1.7。Cr 0.97。TC 294, TG 161。ESR 48。Hb 170, Plt 254k。補体正常。血尿20-25RBC/uL。ANA/ANCA陰性。",
+      "evidence": {
+        "E01": "under_37.5",
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "present",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S07": "mild",
+        "T01": "over_3w",
+        "T02": "chronic"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "34M MN。Alb 1.1(重度)。2週間。臨床情報少ない",
+      "expected_id": "D377",
+      "final_diagnosis": "膜性腎症(MN)",
+      "id": "R913",
+      "source": "Am J Med Case Rep 2018 (PMC6099058)",
+      "vignette": "34M Hispanic. 2週間の悪化する全身浮腫。尿蛋白/Cr比11g/g。Alb 1.1。LDL 279。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "48M MN+乳び胸。尿蛋白21.6g/日。BP 140/76",
+      "expected_id": "D377",
+      "final_diagnosis": "膜性腎症(MN)",
+      "id": "R914",
+      "source": "BMC Nephrol 2023 (PMC10037291)",
+      "vignette": "48M. 12日の呼吸困難+乾性咳嗽。顔面浮腫(朝優位)+両下腿浮腫(pitting)。発熱なし。T36.3, BP140/76, HR70, RR30。尿蛋白21.6g/日。低Alb。TC 452。ESR 68。腎機能正常。CBC正常。両側胸水(乳び胸)。",
+      "evidence": {
+        "E01": "under_37.5",
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "E38": "elevated_140_180",
+        "L55": "normal",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "17M tip-variant FSGS。Alb<1.0。TC 570。6週間",
+      "expected_id": "D378",
+      "final_diagnosis": "巣状分節性糸球体硬化症(FSGS)",
+      "id": "R915",
+      "source": "Cureus 2022 (PMC9637278)",
+      "vignette": "17M. 6週間で進行する全身浮腫(下腿+大腿+陰嚢+腹部)+眼瞼浮腫+泡沫尿。尿蛋白/Cr比7.29。Alb<1.0。TC 570, TG 206。Cr 1.08, BUN 36。C3 108, C4 28(正常)。ESR 53。Hb 13.6, WBC 14900, Plt 345k。血尿trace。甲状腺機能低下症合併。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "absent",
+        "L55": "normal",
+        "L75": "normal",
+        "T01": "over_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "73M cellular-FSGS+急性腎不全(Cr 6.95)。BP 162/88。ANA 1:160",
+      "expected_id": "D378",
+      "final_diagnosis": "巣状分節性糸球体硬化症(FSGS)",
+      "id": "R916",
+      "source": "CEN Case Rep 2012 (PMC5413643)",
+      "vignette": "73M. 数日で全身浮腫(顔面+四肢, pitting著明)+乏尿+7kg体重増加。BP 162/88。尿蛋白8.9g/日。Alb 2.2, TP 4.9。Cr 6.95(baseline 1.01→急性上昇), BUN 83。TC 262, LDL 193。CRP 1.33。C3/C4正常。ANA 1:160+。FENa 0.61%。血尿few RBC/HPF。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "L70": "mildly_low",
+        "S33": "present",
+        "E38": "elevated_140_180",
+        "L55": "high_AKI",
+        "L75": "normal",
+        "S120": "present",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "25M collapsing-FSGS。Cr 24.2(透析必要)。Hb 5.7。吐血あり",
+      "expected_id": "D378",
+      "final_diagnosis": "巣状分節性糸球体硬化症(FSGS)",
+      "id": "R917",
+      "source": "Cureus 2021 (PMC8742996)",
+      "vignette": "25M Hispanic. 2週間の顔面+手+足の浮腫。5日間の吐血。嘔気+下痢+尿量減少。BP 165/85, HR 113, T36.7。尿蛋白/Cr比10000mg/g(dipstick 4+)。Cr 24.2, GFR 3。Hb 5.7(重症貧血)。代謝性アシドーシス。高K。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "E68": "present",
+        "L78": "nephrotic_range",
+        "E01": "under_37.5",
+        "E38": "elevated_140_180",
+        "L55": "high_AKI",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "47F tip-variant FSGS。Alb 1.5。再発歴あり(47/62/67歳)",
+      "expected_id": "D378",
+      "final_diagnosis": "巣状分節性糸球体硬化症(FSGS)",
+      "id": "R918",
+      "source": "CEN Case Rep 2022 (PMC9061925)",
+      "vignette": "47F. 泡沫尿+pitting浮腫+11kg体重増加。BP 138/90。尿蛋白/Cr比15(massive)。Alb 1.5, Cr 0.9。CBC正常。補体正常。ANA陰性。尿沈渣:硝子/顆粒円柱+少数RBC。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "present",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S120": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      }
+    },
+    {
+      "in_scope": true,
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "79F FSGS+Sjögren。C3 67(軽度低下)。血尿20-29RBC/HPF",
+      "expected_id": "D378",
+      "final_diagnosis": "巣状分節性糸球体硬化症(FSGS)",
+      "id": "R919",
+      "source": "Intern Med 2019 (PMC6714328)",
+      "vignette": "79F. 1ヶ月の両下腿浮腫+7kg体重増加。5年間の口腔乾燥。尿蛋白5.7g/日。Alb 1.7, TP 6.3。Cr 0.65, BUN 14.9。TC 323, TG 233。C3 67(軽度低下), C4 15(正常)。Hb 12.3, WBC 8190, Plt 208k。血尿20-29RBC/HPF。",
+      "evidence": {
+        "E36": "present",
+        "E50": "bilateral",
+        "L78": "nephrotic_range",
+        "L70": "very_low",
+        "S33": "present",
+        "E38": "normal_under_140",
+        "L55": "normal",
+        "L75": "normal",
+        "S120": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      }
     }
   ],
   "total_cases": 110

@@ -4216,6 +4216,65 @@
         "female|40_64": 0.0008,
         "female|65_plus": 0.0015
       }
+    },
+    "D376": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "MCD。小児(2-6歳)+成人(30-40歳)。小児M:F=2:1、成人1:1",
+      "cpt": {
+        "male|0_1": 0.0004,
+        "male|1_5": 0.004,
+        "male|6_12": 0.0025,
+        "male|13_17": 0.0012,
+        "male|18_39": 0.001,
+        "male|40_64": 0.0005,
+        "male|65_plus": 0.0003,
+        "female|0_1": 0.0002,
+        "female|1_5": 0.002,
+        "female|6_12": 0.0015,
+        "female|13_17": 0.0008,
+        "female|18_39": 0.001,
+        "female|40_64": 0.0005,
+        "female|65_plus": 0.0003
+      }
+    },
+    "D377": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "MN。50-60歳ピーク。M:F=2:1",
+      "cpt": {
+        "male|18_39": 0.0006,
+        "male|40_64": 0.003,
+        "male|65_plus": 0.0025,
+        "female|18_39": 0.0003,
+        "female|40_64": 0.0015,
+        "female|65_plus": 0.0012
+      }
+    },
+    "D378": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "FSGS。18-45歳ピーク。M:F=1.5-2:1",
+      "cpt": {
+        "male|1_5": 0.0004,
+        "male|6_12": 0.0006,
+        "male|13_17": 0.001,
+        "male|18_39": 0.0025,
+        "male|40_64": 0.0012,
+        "male|65_plus": 0.0006,
+        "female|1_5": 0.0002,
+        "female|6_12": 0.0004,
+        "female|13_17": 0.0006,
+        "female|18_39": 0.0015,
+        "female|40_64": 0.0008,
+        "female|65_plus": 0.0004
+      }
     }
   },
   "full_cpts": {
@@ -12939,6 +12998,63 @@
         "male": 0.055,
         "female": 0.045
       }
+    },
+    "D376": {
+      "parents": [
+        "R01"
+      ],
+      "description": "微小変化型ネフローゼ症候群(MCD)",
+      "cpt": {
+        "0_1": 0.0003,
+        "1_5": 0.003,
+        "6_12": 0.002,
+        "13_17": 0.001,
+        "18_39": 0.001,
+        "40_64": 0.0005,
+        "65_plus": 0.0003
+      },
+      "R02": {
+        "male": 0.055,
+        "female": 0.045
+      }
+    },
+    "D377": {
+      "parents": [
+        "R01"
+      ],
+      "description": "膜性腎症(MN)",
+      "cpt": {
+        "0_1": 5e-05,
+        "1_5": 0.0001,
+        "6_12": 0.0001,
+        "13_17": 0.0001,
+        "18_39": 0.0005,
+        "40_64": 0.002,
+        "65_plus": 0.002
+      },
+      "R02": {
+        "male": 0.065,
+        "female": 0.035
+      }
+    },
+    "D378": {
+      "parents": [
+        "R01"
+      ],
+      "description": "巣状分節性糸球体硬化症(FSGS)",
+      "cpt": {
+        "0_1": 0.0001,
+        "1_5": 0.0003,
+        "6_12": 0.0005,
+        "13_17": 0.0008,
+        "18_39": 0.002,
+        "40_64": 0.001,
+        "65_plus": 0.0005
+      },
+      "R02": {
+        "male": 0.06,
+        "female": 0.04
+      }
     }
   },
   "noisy_or_params": {
@@ -15554,6 +15670,30 @@
           "39.0_40.0": 0.18,
           "over_40.0": 0.06,
           "hypothermia_under_35": 0.01
+        },
+        "D376": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
+        },
+        "D377": {
+          "under_37.5": 0.88,
+          "37.5_38.0": 0.06,
+          "38.0_39.0": 0.03,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
+        },
+        "D378": {
+          "under_37.5": 0.85,
+          "37.5_38.0": 0.08,
+          "38.0_39.0": 0.04,
+          "39.0_40.0": 0.02,
+          "over_40.0": 0.005,
+          "hypothermia_under_35": 0.005
         }
       }
     },
@@ -31686,6 +31826,21 @@
           "absent": 0.4,
           "mild": 0.3,
           "severe": 0.3
+        },
+        "D376": {
+          "absent": 0.3,
+          "mild": 0.45,
+          "severe": 0.25
+        },
+        "D377": {
+          "absent": 0.3,
+          "mild": 0.45,
+          "severe": 0.25
+        },
+        "D378": {
+          "absent": 0.25,
+          "mild": 0.4,
+          "severe": 0.35
         }
       }
     },
@@ -34747,6 +34902,18 @@
         "D221": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D376": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "D377": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D378": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -37963,6 +38130,24 @@
           "3d_to_1w": 0.05,
           "1w_to_3w": 0.18,
           "over_3w": 0.75
+        },
+        "D376": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.3,
+          "over_3w": 0.15
+        },
+        "D377": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.05,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.73
+        },
+        "D378": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.1,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.5
         }
       }
     },
@@ -39894,6 +40079,24 @@
           "acute": 0.6,
           "subacute": 0.3,
           "chronic": 0.05
+        },
+        "D376": {
+          "sudden": 0.05,
+          "acute": 0.65,
+          "subacute": 0.25,
+          "chronic": 0.05
+        },
+        "D377": {
+          "sudden": 0.01,
+          "acute": 0.04,
+          "subacute": 0.25,
+          "chronic": 0.7
+        },
+        "D378": {
+          "sudden": 0.03,
+          "acute": 0.12,
+          "subacute": 0.5,
+          "chronic": 0.35
         }
       }
     },
@@ -41173,6 +41376,18 @@
         "D373": {
           "absent": 0.95,
           "present": 0.05
+        },
+        "D376": {
+          "absent": 0.02,
+          "present": 0.98
+        },
+        "D377": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D378": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -42730,6 +42945,21 @@
           "normal_under_140": 0.55,
           "elevated_140_180": 0.3,
           "crisis_over_180": 0.15
+        },
+        "D376": {
+          "normal_under_140": 0.65,
+          "elevated_140_180": 0.3,
+          "crisis_over_180": 0.05
+        },
+        "D377": {
+          "normal_under_140": 0.62,
+          "elevated_140_180": 0.33,
+          "crisis_over_180": 0.05
+        },
+        "D378": {
+          "normal_under_140": 0.45,
+          "elevated_140_180": 0.43,
+          "crisis_over_180": 0.12
         }
       }
     },
@@ -43029,6 +43259,21 @@
           "normal": 0.75,
           "mild_elevated": 0.15,
           "high_AKI": 0.1
+        },
+        "D376": {
+          "normal": 0.75,
+          "mild_elevated": 0.2,
+          "high_AKI": 0.05
+        },
+        "D377": {
+          "normal": 0.78,
+          "mild_elevated": 0.18,
+          "high_AKI": 0.04
+        },
+        "D378": {
+          "normal": 0.45,
+          "mild_elevated": 0.4,
+          "high_AKI": 0.15
         }
       }
     },
@@ -44700,6 +44945,27 @@
           "prerenal": 0.1,
           "renal": 0.25,
           "postrenal": 0.05
+        },
+        "D376": {
+          "not_assessed": 0.3,
+          "no_AKI": 0.48,
+          "prerenal": 0.02,
+          "renal": 0.18,
+          "postrenal": 0.02
+        },
+        "D377": {
+          "not_assessed": 0.3,
+          "no_AKI": 0.55,
+          "prerenal": 0.02,
+          "renal": 0.11,
+          "postrenal": 0.02
+        },
+        "D378": {
+          "not_assessed": 0.25,
+          "no_AKI": 0.3,
+          "prerenal": 0.02,
+          "renal": 0.4,
+          "postrenal": 0.03
         }
       }
     },
@@ -48178,6 +48444,18 @@
         "D363": {
           "unilateral": 0.1,
           "bilateral": 0.9
+        },
+        "D376": {
+          "unilateral": 0.02,
+          "bilateral": 0.98
+        },
+        "D377": {
+          "unilateral": 0.03,
+          "bilateral": 0.97
+        },
+        "D378": {
+          "unilateral": 0.03,
+          "bilateral": 0.97
         }
       }
     },
@@ -48323,6 +48601,21 @@
           "normal": 0.05,
           "mild_proteinuria": 0.25,
           "nephrotic_range": 0.7
+        },
+        "D376": {
+          "normal": 0.01,
+          "mild_proteinuria": 0.04,
+          "nephrotic_range": 0.95
+        },
+        "D377": {
+          "normal": 0.02,
+          "mild_proteinuria": 0.18,
+          "nephrotic_range": 0.8
+        },
+        "D378": {
+          "normal": 0.02,
+          "mild_proteinuria": 0.23,
+          "nephrotic_range": 0.75
         }
       }
     },
@@ -49123,7 +49416,26 @@
         "low_C4": 0.03,
         "low_both": 0.02
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D376": {
+          "normal": 0.97,
+          "low_C3": 0.01,
+          "low_C4": 0.01,
+          "low_both": 0.01
+        },
+        "D377": {
+          "normal": 0.97,
+          "low_C3": 0.01,
+          "low_C4": 0.01,
+          "low_both": 0.01
+        },
+        "D378": {
+          "normal": 0.95,
+          "low_C3": 0.03,
+          "low_C4": 0.01,
+          "low_both": 0.01
+        }
+      }
     },
     "L90": {
       "leak": {
@@ -49653,6 +49965,21 @@
           "normal": 0.72,
           "mildly_low": 0.2,
           "very_low": 0.08
+        },
+        "D376": {
+          "normal": 0.02,
+          "mildly_low": 0.13,
+          "very_low": 0.85
+        },
+        "D377": {
+          "normal": 0.05,
+          "mildly_low": 0.25,
+          "very_low": 0.7
+        },
+        "D378": {
+          "normal": 0.1,
+          "mildly_low": 0.3,
+          "very_low": 0.6
         }
       }
     },
@@ -49754,6 +50081,18 @@
         "D373": {
           "absent": 0.66,
           "present": 0.34
+        },
+        "D376": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D377": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D378": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -49842,6 +50181,18 @@
         "D94": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D376": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D377": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D378": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
