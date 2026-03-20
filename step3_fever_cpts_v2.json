@@ -8794,10 +8794,13 @@
       }
     },
     "D179": {
-      "parents": [],
+      "parents": [
+        "R08"
+      ],
       "description": "DILI。薬剤性肝障害",
       "cpt": {
-        "": 0.003
+        "no": 0.001,
+        "yes": 0.03
       },
       "R01": {
         "0_1": 0.0005,
@@ -49239,6 +49242,30 @@
           "indirect_dominant": 0.35,
           "direct_dominant": 0.15,
           "both_elevated": 0.1
+        },
+        "D25": {
+          "normal": 0.08,
+          "indirect_dominant": 0.02,
+          "direct_dominant": 0.65,
+          "both_elevated": 0.25
+        },
+        "D273": {
+          "normal": 0.1,
+          "indirect_dominant": 0.02,
+          "direct_dominant": 0.7,
+          "both_elevated": 0.18
+        },
+        "D231": {
+          "normal": 0.05,
+          "indirect_dominant": 0.02,
+          "direct_dominant": 0.8,
+          "both_elevated": 0.13
+        },
+        "D230": {
+          "normal": 0.15,
+          "indirect_dominant": 0.02,
+          "direct_dominant": 0.65,
+          "both_elevated": 0.18
         }
       }
     },
