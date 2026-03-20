@@ -24724,6 +24724,118 @@
       },
       "result": "",
       "notes": "23歳。誤嚥性肺炎合併。BZDで改善"
+    },
+    {
+      "id": "R927",
+      "in_scope": true,
+      "expected_id": "D380",
+      "final_diagnosis": "クッシング症候群",
+      "source": "BMC Endocr Disord 2023 (PMC10506208)",
+      "vignette": "66M。歩行障害・めまい・高血圧・低カリウム血症・てんかん・慢性水頭症・全身発疹。満月様顔貌・水牛肩・皮膚菲薄・四肢細長・中心性肥満。BP 154/89。コルチゾール日内変動消失(8時492nmol/L, 深夜483)。ACTH<1ng/L。24h UFC 2582.8μg/24h(基準20-127)。K 3.45。髄液からCryptococcus neoformans検出→クリプトコッカス髄膜炎合併。",
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "evidence": {
+        "E96": "present",
+        "E38": "elevated_140_180",
+        "L96": "elevated",
+        "T01": "over_3w"
+      },
+      "result": "",
+      "notes": "PMAH。免疫抑制→クリプトコッカス髄膜炎"
+    },
+    {
+      "id": "R928",
+      "in_scope": true,
+      "expected_id": "D380",
+      "final_diagnosis": "クッシング症候群",
+      "source": "BMJ Case Rep 2019 (PMC6381946)",
+      "vignette": "31F。3週間の発熱+左上腹部痛+呼吸困難。3年間で15kg体重増加、近位筋力低下、糖尿病、高血圧既往。Cushingoid体型: 中心性脂肪沈着、鎖骨上/背頸部脂肪パッド、満月様紅潮顔、広い紫色腹部皮膚線条、多毛、易出血性。軽度脾腫。WBC 11.3k、K 3.1、HbA1c 11.9%、コルチゾール38μg/dL、ACTH 56pg/mL、24h UFC 1330μg。脾膿瘍+膿胸(Pseudomonas aeruginosa)。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E96": "present",
+        "E38": "elevated_140_180",
+        "S48": "present",
+        "S120": "present",
+        "L01": "high_10000_20000",
+        "L54": "hyperglycemia",
+        "L96": "elevated",
+        "T01": "over_3w"
+      },
+      "result": "",
+      "notes": "最も典型的なCushing像+感染。ACTH依存性"
+    },
+    {
+      "id": "R929",
+      "in_scope": true,
+      "expected_id": "D380",
+      "final_diagnosis": "クッシング症候群",
+      "source": "Front Endocrinol 2021 (PMC8040973)",
+      "vignette": "41M。2ヶ月の倦怠感、多飲多尿。発熱38.4℃、黄色痰を伴う咳、4日間の躁状態/攻撃的行動。軽度満月様顔貌、皮膚菲薄+色素沈着、顔面/下肢の紫斑・浮腫。血糖24.8mmol/L(446mg/dL)、K 2.6、Na 164、Alb 21g/L。ACTH 171pg/mL、コルチゾール51.21μg/dL、24h UFC 3522μg。ノカルジア+アスペルギルス脳膿瘍。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "E01": "38.0_39.0",
+        "E96": "present",
+        "E36": "present",
+        "S07": "severe",
+        "L54": "hyperglycemia",
+        "L96": "elevated",
+        "T01": "over_3w"
+      },
+      "result": "",
+      "notes": "異所性ACTH。ノカルジア+アスペルギルス重複感染"
+    },
+    {
+      "id": "R930",
+      "in_scope": true,
+      "expected_id": "D380",
+      "final_diagnosis": "クッシング症候群",
+      "source": "JCEM 2020 (PMC7208775)",
+      "vignette": "52M。3ヶ月の両下腿浮腫+顔面浮腫、2ヶ月の体幹紫斑、高血圧悪化、新規糖尿病。Cushingoid体型、痤瘡、斑状出血、近位筋力低下、下腿浮腫、ばち指、頸部リンパ節腫脹。BP 166/110。空腹時血糖190mg/dL、食後285。K 3.0。コルチゾール51.6μg/dL(23時)。ACTH 178pg/mL。気管支洗浄液からNocardia検出。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "E96": "present",
+        "E38": "elevated_140_180",
+        "S48": "present",
+        "E36": "present",
+        "L54": "hyperglycemia",
+        "L96": "elevated",
+        "T01": "over_3w"
+      },
+      "result": "",
+      "notes": "異所性ACTH(肺腺癌)。ノカルジア肺感染"
+    },
+    {
+      "id": "R931",
+      "in_scope": true,
+      "expected_id": "D380",
+      "final_diagnosis": "クッシング症候群",
+      "source": "BMC Endocr Disord 2014 (PMC4079169) Case 3",
+      "vignette": "38M。2ヶ月の進行性筋力低下(階段/しゃがみ困難)、体重減少、新規糖尿病。BP 160/100、斑状出血、呼吸音減弱、近位筋力3/5。K 1.5mEq/L(重症低K)、随時血糖400mg/dL。ACTH 255pg/mL、24h UFC 9088μg。コルチゾール192μg/dL。気管支洗浄液からNocardia検出。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "evidence": {
+        "E38": "elevated_140_180",
+        "S48": "present",
+        "L54": "hyperglycemia",
+        "L96": "elevated",
+        "T01": "over_3w"
+      },
+      "result": "",
+      "notes": "異所性ACTH。K 1.5の重症低K+血糖400。ノカルジア肺感染"
     }
   ],
   "total_cases": 110

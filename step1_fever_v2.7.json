@@ -10965,6 +10965,22 @@
       "key_features": "精神疾患既往+緊張病徴候(緘黙/木僵/蝋様屈曲)+高熱+自律神経不安定+CK上昇。NMSとの鑑別が最重要。抗精神病薬不要(NMSは必須)。",
       "note": "中位32歳(IQR 23-45)。M:F≒54:46。死亡率9-20%(治療後)。ベンゾジアゼピン+ECTが第一選択。精神疾患(統合失調症58%/気分障害20%)基盤。NMS鑑別: 緊張病徴候90%+ vs NMS20-34%, 筋強剛MC40-55%(蝋様) vs NMS91%(鉛管様)。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D380",
+      "name": "cushing_syndrome",
+      "name_ja": "クッシング症候群",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "E24",
+      "category_sub": "endocrine",
+      "severity": "high",
+      "key_features": "中心性肥満+満月様顔貌+紫色皮膚線条+高血圧+近位筋力低下+耐糖能異常。Cushing様体型(E96)が鍵。コルチゾール過剰による免疫抑制→感染易感性。",
+      "note": "F:M=3-4:1。30-44歳ピーク。下垂体性(Cushing病)60-70%/異所性ACTH15-20%/副腎腫瘍15-20%。死亡率2-4倍(感染・心血管)。24h UFC/DST/深夜唾液コルチゾールでスクリーニング。",
+      "diagnostic_profile": {}
     }
   ]
 }

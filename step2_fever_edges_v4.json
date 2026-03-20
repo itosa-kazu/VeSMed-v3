@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7299,
+  "total_edges": 7311,
   "edges": [
     {
       "from": "R01",
@@ -57780,6 +57780,90 @@
       "from_name": "anti_NMDA_receptor_encephalitis",
       "to_name": "catatonic_signs",
       "reason": "抗NMDA受容体脳炎: 緊張病徴候20-30%(Dalmau 2008, PMC5183991)"
+    },
+    {
+      "from": "D380",
+      "to": "E96",
+      "from_name": "cushing_syndrome",
+      "to_name": "cushingoid_appearance",
+      "reason": "クッシング症候群: 満月様顔貌81-92%+中心性肥満70-97%(Endotext NBK279088)"
+    },
+    {
+      "from": "D380",
+      "to": "E38",
+      "from_name": "cushing_syndrome",
+      "to_name": "blood_pressure_high",
+      "reason": "クッシング症候群: 高血圧58-90%(PMC6399544/PMC4215264)"
+    },
+    {
+      "from": "D380",
+      "to": "S48",
+      "from_name": "cushing_syndrome",
+      "to_name": "proximal_muscle_weakness",
+      "reason": "クッシング症候群: 近位筋力低下40-82%(Endotext/PMC4407747)"
+    },
+    {
+      "from": "D380",
+      "to": "E36",
+      "from_name": "cushing_syndrome",
+      "to_name": "lower_extremity_edema",
+      "reason": "クッシング症候群: 浮腫48-50%(Endotext NBK279088)"
+    },
+    {
+      "from": "D380",
+      "to": "S120",
+      "from_name": "cushing_syndrome",
+      "to_name": "weight_gain",
+      "reason": "クッシング症候群: 体重増加70-97%(Endotext/PMC4407747)"
+    },
+    {
+      "from": "D380",
+      "to": "L01",
+      "from_name": "cushing_syndrome",
+      "to_name": "WBC",
+      "reason": "クッシング症候群: 白血球増多21-40%(PubMed 24078318)"
+    },
+    {
+      "from": "D380",
+      "to": "L54",
+      "from_name": "cushing_syndrome",
+      "to_name": "blood_glucose",
+      "reason": "クッシング症候群: 耐糖能異常/糖尿病43-75%(PMC4407747/PMC4215264)"
+    },
+    {
+      "from": "D380",
+      "to": "L96",
+      "from_name": "cushing_syndrome",
+      "to_name": "cortisol",
+      "reason": "クッシング症候群: コルチゾール高値(診断基準、Endotext NBK279088)"
+    },
+    {
+      "from": "D380",
+      "to": "S115",
+      "from_name": "cushing_syndrome",
+      "to_name": "depressed_mood",
+      "reason": "クッシング症候群: 大うつ病50-81%(Frontiers 10.3389/fendo.2019.00766)"
+    },
+    {
+      "from": "D380",
+      "to": "S07",
+      "from_name": "cushing_syndrome",
+      "to_name": "fatigue",
+      "reason": "クッシング症候群: 倦怠感/疲労60%(Frontiers review)"
+    },
+    {
+      "from": "D380",
+      "to": "E01",
+      "from_name": "cushing_syndrome",
+      "to_name": "temperature",
+      "reason": "クッシング症候群: コルチゾールによる免疫抑制→感染→発熱(鈍化傾向)(Endotext)"
+    },
+    {
+      "from": "D380",
+      "to": "T01",
+      "from_name": "cushing_syndrome",
+      "to_name": "symptom_duration",
+      "reason": "クッシング症候群: 慢性経過(数ヶ月〜数年)(PMC4407747)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
