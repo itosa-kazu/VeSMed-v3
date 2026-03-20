@@ -61,6 +61,9 @@
 - [project_pending_splits.md](project_pending_splits.md) — 未実施の疾患分割・追加リスト(AML/ALL分割、MCD/MN/FSGS追加等)
 - [project_disease_split_plan.md](project_disease_split_plan.md) — 疾患リスト分割計画: umbrella疾患18件をA/B/C/D群に分類、A群6件から着手
 - [project_new_variables_needed.md](project_new_variables_needed.md) — 新変量追加候補: 肺クリプトコッカス等の構造的限界を解決する変量リスト
+- [project_next_best_test_perf.md](project_next_best_test_perf.md) — next_best_test性能瓶颈(10-20秒)、預筛选/缓存/C扩展の最適化方向
+- [project_causal_disease_overlap.md](project_causal_disease_overlap.md) — 因果疾患重複問題: D273(胆管結石)→D25(胆管炎)等、因果関係疾患が確率を食い合う
+- [project_complication_limitation.md](project_complication_limitation.md) — 合併症表現の構造的限界: D→D因果連鎖が表現不可。将来hierarchical BN等で対処
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）

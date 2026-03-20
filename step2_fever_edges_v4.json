@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7284,
+  "total_edges": 7299,
   "edges": [
     {
       "from": "R01",
@@ -57674,6 +57674,112 @@
       "from_name": "focal_segmental_glomerulosclerosis",
       "to_name": "AKI_etiology",
       "reason": "FSGS: 腎性AKI 28-60%(PMC11763650)"
+    },
+    {
+      "from": "R66",
+      "to": "D379",
+      "from_name": "psychiatric_history",
+      "to_name": "lethal_catatonia",
+      "reason": "精神疾患既往(統合失調症58%/気分障害20%): Rogers 2021 PMC10123832"
+    },
+    {
+      "from": "D379",
+      "to": "E01",
+      "from_name": "lethal_catatonia",
+      "to_name": "temperature",
+      "reason": "致死性緊張病: 発熱~100%(定義的特徴, Park 2017 PMC5303832)",
+      "onset_day_range": {"earliest": 0, "typical": 1, "latest": 7}
+    },
+    {
+      "from": "D379",
+      "to": "E97",
+      "from_name": "lethal_catatonia",
+      "to_name": "catatonic_signs",
+      "reason": "致死性緊張病: 緊張病徴候90%+(緘黙97%/木僵97%/蝋様27-50%, Rosebush 2004)"
+    },
+    {
+      "from": "D379",
+      "to": "S37",
+      "from_name": "lethal_catatonia",
+      "to_name": "muscle_rigidity",
+      "reason": "致死性緊張病: 筋強剛40-55%(蝋様屈曲型, Rosebush 2004)"
+    },
+    {
+      "from": "D379",
+      "to": "E16",
+      "from_name": "lethal_catatonia",
+      "to_name": "consciousness",
+      "reason": "致死性緊張病: 意識障害80-90%(Park 2017 PMC5303832)"
+    },
+    {
+      "from": "D379",
+      "to": "L17",
+      "from_name": "lethal_catatonia",
+      "to_name": "CK",
+      "reason": "致死性緊張病: CK上昇70-80%(平均2545 IU/L, Rogers 2021 PMC10123832)"
+    },
+    {
+      "from": "D379",
+      "to": "E02",
+      "from_name": "lethal_catatonia",
+      "to_name": "heart_rate",
+      "reason": "致死性緊張病: 頻脈60-70%(自律神経不安定, Park 2017)"
+    },
+    {
+      "from": "D379",
+      "to": "S45",
+      "from_name": "lethal_catatonia",
+      "to_name": "sweating_abnormality",
+      "reason": "致死性緊張病: 多汗40-50%(自律神経不安定, EU NMS study)"
+    },
+    {
+      "from": "D379",
+      "to": "E03",
+      "from_name": "lethal_catatonia",
+      "to_name": "blood_pressure",
+      "reason": "致死性緊張病: 血圧不安定40-50%(Park 2017)"
+    },
+    {
+      "from": "D379",
+      "to": "M02",
+      "from_name": "lethal_catatonia",
+      "to_name": "hemodynamic_compromise",
+      "reason": "致死性緊張病: 自律神経不安定→血行動態異常(Park 2017)"
+    },
+    {
+      "from": "D379",
+      "to": "T01",
+      "from_name": "lethal_catatonia",
+      "to_name": "symptom_duration",
+      "reason": "致死性緊張病: 急性経過(数日~1週, Park 2017)"
+    },
+    {
+      "from": "D379",
+      "to": "L01",
+      "from_name": "lethal_catatonia",
+      "to_name": "WBC",
+      "reason": "致死性緊張病: 白血球増多50-60%(Rogers 2021 PMC10123832)"
+    },
+    {
+      "from": "D379",
+      "to": "L11",
+      "from_name": "lethal_catatonia",
+      "to_name": "AST_ALT",
+      "reason": "致死性緊張病: 横紋筋融解に伴うAST/ALT上昇(StatPearls NBK430842)"
+    },
+    {
+      "from": "D74",
+      "to": "E97",
+      "from_name": "NMS",
+      "to_name": "catatonic_signs",
+      "reason": "NMS: 緊張病徴候20-34%(木僵20%/緘黙34%, PMC8295452)"
+    },
+    {
+      "from": "D176",
+      "to": "E97",
+      "from_name": "anti_NMDA_receptor_encephalitis",
+      "to_name": "catatonic_signs",
+      "reason": "抗NMDA受容体脳炎: 緊張病徴候20-30%(Dalmau 2008, PMC5183991)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

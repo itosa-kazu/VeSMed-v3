@@ -24544,6 +24544,186 @@
         "T01": "over_3w",
         "T02": "subacute"
       }
+    },
+    {
+      "id": "R920",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Intern Med 2016 (PMC5088557)",
+      "vignette": "42F。統合失調症(10年)+軽度知的障害。リスペリドン2mg/日服用中。緘黙・蝋様屈曲・カタレプシー・木僵・拒絶症が出現し、その後高熱38.3℃・頻脈120bpm・血圧160/86。GCS 6。WBC 16.8k、CPK 1538、AST 62、LDH 505。乳酸3.0。DIC兆候(FDP 70)。ロラゼパム1.5mg/日で緊張病徴候改善。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E16": "obtunded",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "L11": "mild_elevated",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "NMSとの鑑別: 緊張病徴候がautonomic症状に先行。BZD有効"
+    },
+    {
+      "id": "R921",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Medicine 2017 (PMC5406061)",
+      "vignette": "53M。統合失調症(29年)。家族死亡を契機に抗精神病薬(リスペリドン7mg+クロルプロマジン75mg)中止3日後に発症。DSM-5の12項目全陽性: 木僵・カタレプシー・蝋様屈曲・緘黙・拒絶症・姿勢保持・衒奇症・常同・興奮・しかめ面・反響言語・反響動作。体温40.0℃、心拍148bpm、血圧178/98。CPK 8559、CRP 4.8、尿ミオグロビン陽性。ダントロレン無効。ジアゼパム10mg静注で劇的改善。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "over_40.0",
+        "E02": "over_120",
+        "E16": "confused",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "全12 DSM-5 catatonic features陽性。ダントロレン無効・BZD有効=MC確定"
+    },
+    {
+      "id": "R922",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Cureus 2024 (PMC11088471)",
+      "vignette": "64F。双極I型障害既往、緊張病既往あり。緘黙・拒絶症・木僵・姿勢保持・筋強剛・常同(BFCRS 9→21)。体温39.0℃、心拍139bpm、血圧210/104。WBC 15.45k、CK 2300。入院時ハロペリドール2mg中止。ロラゼパム20mg/日IVまで増量。メマンチン5→20mg/日併用。誤嚥性肺炎・C.diff合併。21日目退院。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "39.0_40.0",
+        "E02": "over_120",
+        "E16": "confused",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "BFCRS 9→21の悪化。高用量BZD+メマンチン。ECT法的障壁"
+    },
+    {
+      "id": "R923",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Medicine 2016 (PMC4985383)",
+      "vignette": "60F。統合失調症(32年、28歳発症)。クエチアピン925mg→200mg漸減中。緘黙・木僵・拒絶症・筋強剛・常同的把握・凝視。体温39.1℃、心拍118bpm、血圧190/98。CPK 1945(day2→2022 day6)、ミオグロビン366.8、WBC 15200、血清鉄32μg/dL(低値)、プロカルシトニン<0.09。ロラゼパム8mg/日+ブロモクリプチン40mg/日→ECT 11回で完全寛解。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "39.0_40.0",
+        "E02": "100_120",
+        "E16": "obtunded",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "血清鉄低値(緊張病の特徴的所見)。ECT 11回で完全寛解"
+    },
+    {
+      "id": "R924",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "J Med Cases 2024 (PMC11602172)",
+      "vignette": "26F。双極性障害(最近診断)。複数の抗精神病薬歴(アリピプラゾール・クエチアピン・ハロペリドール・リスペリドン)。緘黙・四肢筋強剛(反射消失)・引きこもり・凝視・姿勢保持。BFCS 15。体温37.81℃、心拍170bpm、血圧175/108。WBC 12000、CK 6500。ミダゾラム静注+ダントロレン+ブロモクリプチン+ロラゼパム→ECT 11回で完全寛解。BFCS 15→0。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "37.5_38.0",
+        "E02": "over_120",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "26歳。ECT 11回で完全寛解。1年後フォローアップ良好"
+    },
+    {
+      "id": "R925",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Cureus 2021 (PMC8295452)",
+      "vignette": "58M。長期統合失調症(州立病院2年入院歴)、緊張病既往。クロザピン150mg+フルフェナジン5mg+ロラゼパム8mg服用中。緘黙・木僵・蝋様屈曲・姿勢保持・鉛管様筋強剛・振戦。体温38.3℃(101F)、心拍123bpm。WBC 18500(好中球91.1%)、CPK 1088。ダントロレン25mg開始→3日目中止。ロラゼパム9mg/日に増量で改善。当初NMS診断→MC に修正。",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "38.0_39.0",
+        "E02": "over_120",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "S36": "present",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "当初NMS診断→MC修正。ダントロレン無効、BZD有効"
+    },
+    {
+      "id": "R926",
+      "in_scope": true,
+      "expected_id": "D379",
+      "final_diagnosis": "致死性緊張病",
+      "source": "Ind J Psychiatry 2015 (PMC4361981)",
+      "vignette": "23F。1年前から被害妄想・幻聴。オランザピン10mg/日服用中。緘黙・木僵・全身筋強剛・拒絶症・拒食。入院時は無熱だが2日目に高熱出現。CPK 3200(2500-3000で推移)、WBC 15000。胸部X線で肺浸潤(誤嚥性肺炎)。ロラゼパム6mg/日IV+抗菌薬→4-5日で改善。",
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "evidence": {
+        "R66": "yes",
+        "R26": "yes",
+        "E01": "39.0_40.0",
+        "E16": "obtunded",
+        "E97": "present",
+        "S37": "present",
+        "L17": "very_high",
+        "L01": "high_10000_20000",
+        "T01": "under_3d"
+      },
+      "result": "",
+      "notes": "23歳。誤嚥性肺炎合併。BZDで改善"
     }
   ],
   "total_cases": 110

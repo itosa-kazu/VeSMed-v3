@@ -10538,6 +10538,18 @@
       "severity": "medium"
     },
     {
+      "id": "E97",
+      "name": "catatonic_signs",
+      "name_ja": "緊張病徴候",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "緘黙/木僵/蝋様屈曲/姿勢保持/拒絶症。Bush-Francis Catatonia Rating Scaleで評価。致死性緊張病/NMS/抗NMDA受容体脳炎で出現",
+      "severity": "high"
+    },
+    {
       "id": "R64",
       "name": "allergy_history",
       "name_ja": "アレルギー歴",
@@ -10562,6 +10574,17 @@
       ],
       "note": "SLE/RA/SS/SSc/PM-DM/MCTD/APS/血管炎等。overlap/合併症/薬剤関連合併症のリスク",
       "severity": "medium"
+    },
+    {
+      "id": "R66",
+      "name": "psychiatric_history",
+      "name_ja": "精神疾患既往",
+      "category": "risk",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "note": "統合失調症/双極性障害/大うつ病等の精神疾患既往。緊張病のリスク因子"
     },
     {
       "id": "L100",
@@ -10925,6 +10948,22 @@
       "severity": "high",
       "key_features": "成人NS最多原因の一つ(35-40%)。血尿多い(30-68%)。高血圧顕著(33-82%)。腎機能障害高率(28-60%)。ステロイド不応多い。ESRD 50%/3-8年。",
       "note": "18-45歳ピーク。M:F=1.5-2:1。アフリカ系3-7倍。APOL1変異。非ネフローゼ型は高血圧82%。",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D379",
+      "name": "lethal_catatonia",
+      "name_ja": "致死性緊張病",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "icd10": "F20.2",
+      "category_sub": "neuropsychiatric",
+      "severity": "critical",
+      "key_features": "精神疾患既往+緊張病徴候(緘黙/木僵/蝋様屈曲)+高熱+自律神経不安定+CK上昇。NMSとの鑑別が最重要。抗精神病薬不要(NMSは必須)。",
+      "note": "中位32歳(IQR 23-45)。M:F≒54:46。死亡率9-20%(治療後)。ベンゾジアゼピン+ECTが第一選択。精神疾患(統合失調症58%/気分障害20%)基盤。NMS鑑別: 緊張病徴候90%+ vs NMS20-34%, 筋強剛MC40-55%(蝋様) vs NMS91%(鉛管様)。",
       "diagnostic_profile": {}
     }
   ]
