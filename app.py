@@ -77,7 +77,11 @@ def get_variables_by_category():
 @app.route("/")
 def index():
     groups = get_variables_by_category()
-    return render_template("index.html", groups=groups)
+    disease_list = [
+        {"id": v["id"], "name": v.get("name", ""), "name_ja": v.get("name_ja", "")}
+        for v in step1["variables"] if v.get("category") == "disease"
+    ]
+    return render_template("index.html", groups=groups, disease_list=disease_list)
 
 
 @app.route("/api/infer", methods=["POST"])

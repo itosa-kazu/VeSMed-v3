@@ -27790,101 +27790,6 @@
         }
       }
     },
-    "L31": {
-      "description": "腹部CT",
-      "states": [
-        "normal",
-        "abscess",
-        "mass",
-        "other_abnormal"
-      ],
-      "leak": {
-        "normal": 0.85,
-        "abscess": 0.05,
-        "mass": 0.05,
-        "other_abnormal": 0.05
-      },
-      "parent_effects": {
-        "D30": {
-          "normal": 0.05,
-          "abscess": 0.85,
-          "mass": 0.05,
-          "other_abnormal": 0.05
-        },
-        "D10": {
-          "normal": 0.1,
-          "abscess": 0.25,
-          "mass": 0.05,
-          "other_abnormal": 0.6
-        },
-        "D27": {
-          "normal": 0.05,
-          "abscess": 0.2,
-          "mass": 0.05,
-          "other_abnormal": 0.7
-        },
-        "D34": {
-          "normal": 0.25,
-          "abscess": 0.2,
-          "mass": 0.05,
-          "other_abnormal": 0.5
-        },
-        "D69": {
-          "normal": 0.1,
-          "abscess": 0.05,
-          "mass": 0.7,
-          "other_abnormal": 0.15
-        },
-        "D39": {
-          "normal": 0.1,
-          "abscess": 0.8,
-          "mass": 0.0,
-          "other_abnormal": 0.1
-        },
-        "D119": {
-          "normal": 0.05,
-          "abscess": 0.85,
-          "mass": 0.05,
-          "other_abnormal": 0.05
-        },
-        "D136": {
-          "normal": 0.05,
-          "abscess": 0.8,
-          "mass": 0.05,
-          "other_abnormal": 0.1
-        },
-        "D137": {
-          "normal": 0.1,
-          "abscess": 0.05,
-          "mass": 0.05,
-          "other_abnormal": 0.8
-        },
-        "D229": {
-          "normal": 0.14,
-          "abscess": 0.0,
-          "mass": 0.72,
-          "other_abnormal": 0.14
-        },
-        "D187": {
-          "normal": 0.14,
-          "abscess": 0.14,
-          "mass": 0.0,
-          "other_abnormal": 0.72
-        },
-        "D29": {
-          "normal": 0.04,
-          "abscess": 0.86,
-          "mass": 0.04,
-          "other_abnormal": 0.06
-        },
-        "D362": {
-          "normal": 0.03,
-          "abscess": 0.89,
-          "mass": 0.03,
-          "other_abnormal": 0.05
-        }
-      }
-    },
     "L32": {
       "description": "甲状腺機能検査",
       "states": [
@@ -49951,6 +49856,448 @@
           "absent": 0.62,
           "unilateral": 0.08,
           "bilateral": 0.3
+        }
+      }
+    },
+    "L31a": {
+      "description": "腹部CT: 膿瘍",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D30": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D10": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D27": {
+          "absent": 0.8,
+          "present": 0.2
+        },
+        "D39": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D119": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D29": {
+          "absent": 0.14,
+          "present": 0.86
+        },
+        "D362": {
+          "absent": 0.11,
+          "present": 0.89
+        }
+      }
+    },
+    "L31b": {
+      "description": "腹部CT: 腫瘤",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D69": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D70": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D230": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D231": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D238": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D247": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D287": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D92": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D67": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "L31c": {
+      "description": "腹部CT: 腸管壁肥厚",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D10": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D27": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D63": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D353": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D177": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D137": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D238": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D247": {
+          "absent": 0.6,
+          "present": 0.4
+        }
+      }
+    },
+    "L31d": {
+      "description": "腹部CT: 遊離ガス",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D136": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D27": {
+          "absent": 0.92,
+          "present": 0.08
+        },
+        "D10": {
+          "absent": 0.95,
+          "present": 0.05
+        }
+      }
+    },
+    "L31e": {
+      "description": "腹部CT: 臓器梗塞",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D187": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D137": {
+          "absent": 0.6,
+          "present": 0.4
+        }
+      }
+    },
+    "L31f": {
+      "description": "腹部CT: 肝脾腫大",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.94,
+        "present": 0.06
+      },
+      "parent_effects": {
+        "D18": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D15": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D16": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D45": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D107": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D67": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D354": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D68": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D375": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D209": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D234": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D235": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D224": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D28": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D113": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D58": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D251": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D44": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D97": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D187": {
+          "absent": 0.85,
+          "present": 0.15
+        }
+      }
+    },
+    "L31g": {
+      "description": "腹部CT: リンパ節腫大",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.96,
+        "present": 0.04
+      },
+      "parent_effects": {
+        "D67": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D354": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D17": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D62": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D44": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D235": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D224": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D97": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D94": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D113": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D69": {
+          "absent": 0.85,
+          "present": 0.15
+        }
+      }
+    },
+    "L31h": {
+      "description": "腹部CT: 胆管拡張",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D25": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D11": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D231": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D230": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D287": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D229": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D94": {
+          "absent": 0.75,
+          "present": 0.25
+        }
+      }
+    },
+    "L31i": {
+      "description": "腹部CT: 膵炎像",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.99,
+        "present": 0.01
+      },
+      "parent_effects": {
+        "D86": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D229": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D94": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D230": {
+          "absent": 0.8,
+          "present": 0.2
+        }
+      }
+    },
+    "L31j": {
+      "description": "腹部CT: 腹水",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D81": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D251": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D136": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D120": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D151": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D92": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D86": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     }

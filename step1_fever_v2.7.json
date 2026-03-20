@@ -1295,7 +1295,7 @@
     {
       "id": "S12",
       "name": "abdominal_pain_location",
-      "name_ja": "腹痛の部位",
+      "name_ja": "腹痛",
       "category": "symptom",
       "states": [
         "absent",
@@ -3303,15 +3303,103 @@
       ]
     },
     {
-      "id": "L31",
-      "name": "CT_abdomen",
-      "name_ja": "腹部CT",
+      "id": "L31a",
+      "name": "CT_abd_abscess",
+      "name_ja": "腹部CT: 膿瘍",
       "category": "lab",
       "states": [
-        "normal",
-        "abscess",
-        "mass",
-        "other_abnormal"
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31b",
+      "name": "CT_abd_mass",
+      "name_ja": "腹部CT: 腫瘤",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31c",
+      "name": "CT_abd_bowel_wall_thickening",
+      "name_ja": "腹部CT: 腸管壁肥厚",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31d",
+      "name": "CT_abd_free_air",
+      "name_ja": "腹部CT: 遊離ガス",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31e",
+      "name": "CT_abd_organ_infarction",
+      "name_ja": "腹部CT: 臓器梗塞",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31f",
+      "name": "CT_abd_hepatosplenomegaly",
+      "name_ja": "腹部CT: 肝脾腫大",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31g",
+      "name": "CT_abd_lymphadenopathy",
+      "name_ja": "腹部CT: リンパ節腫大",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31h",
+      "name": "CT_abd_biliary_dilatation",
+      "name_ja": "腹部CT: 胆管拡張",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31i",
+      "name": "CT_abd_pancreatitis",
+      "name_ja": "腹部CT: 膵炎像",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
+      ]
+    },
+    {
+      "id": "L31j",
+      "name": "CT_abd_ascites",
+      "name_ja": "腹部CT: 腹水",
+      "category": "lab",
+      "states": [
+        "absent",
+        "present"
       ]
     },
     {

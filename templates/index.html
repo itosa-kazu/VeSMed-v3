@@ -196,7 +196,15 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 <div class="container">
   <header>
     <h1>VeSMed V3</h1>
-    <p>発熱鑑別診断 ベイジアンネットワーク — 104疾患 / 1600辺</p>
+    <p>発熱鑑別診断 ベイジアンネットワーク — {{ disease_list|length }}疾患</p>
+    <div style="margin-top:12px;position:relative;max-width:480px;margin-left:auto;margin-right:auto;">
+      <input type="text" id="diseaseSearch" class="search-input"
+             placeholder="疾患を検索... (ID / 英語名 / 日本語名)"
+             autocomplete="off">
+      <div id="diseaseResults" style="display:none;position:absolute;top:100%;left:0;right:0;
+           background:var(--surface);border:1px solid var(--border);border-radius:0 0 6px 6px;
+           max-height:300px;overflow-y:auto;z-index:100;"></div>
+    </div>
   </header>
 
   <div class="layout">
@@ -293,6 +301,32 @@ header p { color: var(--text2); font-size: 0.9em; margin-top: 4px; }
 </div>
 
 <script>
+// ═══ Disease search ═══
+const ALL_DISEASES = {{ disease_list | tojson }};
+const dsInput = document.getElementById('diseaseSearch');
+const dsResults = document.getElementById('diseaseResults');
+dsInput.addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  if (!q) { dsResults.style.display = 'none'; return; }
+  const hits = ALL_DISEASES.filter(d =>
+    d.id.toLowerCase().includes(q) || d.name.toLowerCase().includes(q) || d.name_ja.includes(q)
+  ).slice(0, 20);
+  if (hits.length === 0) {
+    dsResults.innerHTML = '<div style="padding:8px 12px;color:var(--text2);font-size:0.85em;">該当なし</div>';
+  } else {
+    dsResults.innerHTML = hits.map(d =>
+      `<div style="padding:6px 12px;border-bottom:1px solid var(--border);font-size:0.85em;display:flex;gap:8px;">
+        <span style="color:var(--text2);font-family:monospace;min-width:40px;">${d.id}</span>
+        <span style="flex:1;">${d.name_ja}</span>
+        <span style="color:var(--text2);font-size:0.8em;">${d.name}</span>
+      </div>`
+    ).join('');
+  }
+  dsResults.style.display = 'block';
+});
+dsInput.addEventListener('blur', () => setTimeout(() => dsResults.style.display = 'none', 200));
+dsInput.addEventListener('focus', function() { if (this.value.trim()) this.dispatchEvent(new Event('input')); });
+
 // ═══ State Japanese mapping (complete) ═══
 const STATE_JA = {
   // Common
@@ -565,15 +599,17 @@ async function runAll() {
   const headers = { 'Content-Type': 'application/json' };
 
   try {
-    // Run both in parallel
-    const [inferResp, recResp] = await Promise.all([
-      fetch('/api/infer', { method: 'POST', headers, body }),
-      fetch('/api/next_best_test', { method: 'POST', headers, body }),
-    ]);
-    const inferData = await inferResp.json();
-    const recData = await recResp.json();
+    // Fire both requests in parallel, but show results as each completes
+    const inferPromise = fetch('/api/infer', { method: 'POST', headers, body });
+    const recPromise = fetch('/api/next_best_test', { method: 'POST', headers, body });
 
-    // ── Diagnosis results ──
+    // ── Show diagnosis results as soon as infer completes (fast, <1s) ──
+    const inferResp = await inferPromise;
+    const inferData = await inferResp.json();
+
+    btn.classList.remove('loading');
+    btn.textContent = '推論';
+
     document.getElementById('statsBar').style.display = 'flex';
     document.getElementById('statEvidence').textContent = inferData.n_evidence + inferData.n_risk;
     document.getElementById('statEntropy').textContent = inferData.entropy.toFixed(1);
@@ -598,7 +634,14 @@ async function runAll() {
       </div>`;
     }).join('');
 
-    // ── Falsification recommendations (反証推奨) ──
+    // Auto-switch to diagnosis tab immediately
+    switchTab('diagnosis');
+
+    // ── Recommendations load in background (slow, 10-20s) ──
+    const recResp = await recPromise;
+    const recData = await recResp.json();
+
+    // Falsification recommendations (反証推奨)
     const falsRecs = recData.falsification || [];
     const filteredFals = falsRecs;
     document.getElementById('falsificationList').innerHTML = filteredFals.length === 0
@@ -628,7 +671,7 @@ async function runAll() {
           <div class="rec-states-detail" id="rec-detail-f${i}">${details2}</div>`;
         }).join('');
 
-    // ── Confirmation recommendations (確認推奨) ──
+    // Confirmation recommendations (確認推奨)
     const recs = recData.recommendations || [];
     const CAT_LABELS = {lab:'検査',sign:'身体所見',symptom:'症状',temporal:'時間'};
     const CAT_CSS = {lab:'lab',sign:'sign',symptom:'symptom',temporal:'temporal'};
@@ -660,9 +703,6 @@ async function runAll() {
           </div>
           <div class="rec-states-detail" id="rec-detail-${i}">${details}</div>`;
         }).join('');
-
-    // Auto-switch to diagnosis tab
-    switchTab('diagnosis');
   } catch (e) {
     document.getElementById('resultsList').innerHTML = `<div class="empty-state">エラー: ${e.message}</div>`;
   } finally {

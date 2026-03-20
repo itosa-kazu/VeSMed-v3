@@ -3575,8 +3575,8 @@
         "T01": "3d_to_1w",
         "E09": "localized_tenderness",
         "L01": "very_high_over_20000",
-        "L31": "abscess",
-        "S89": "LLQ"
+        "S89": "LLQ",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3609,8 +3609,8 @@
         "L01": "normal_4000_10000",
         "L05": "normal",
         "L09": "gram_positive",
-        "L31": "abscess",
-        "S89": "diffuse"
+        "S89": "diffuse",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3733,7 +3733,7 @@
         "E02": "100_120",
         "E12": "localized_erythema_warmth_swelling",
         "L01": "high_10000_20000",
-        "L31": "abscess"
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -3978,7 +3978,7 @@
         "E02": "over_120",
         "E03": "normal_over_90",
         "L01": "high_10000_20000",
-        "L31": "mass"
+        "L31b": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -4008,8 +4008,8 @@
         "L01": "high_10000_20000",
         "L11": "mild_elevated",
         "L25": "elevated",
-        "L31": "mass",
-        "S89": "RUQ"
+        "S89": "RUQ",
+        "L31b": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5279,9 +5279,9 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "L05": "normal",
-        "L31": "abscess",
         "T01": "3d_to_1w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -5304,9 +5304,9 @@
         "L01": "very_high_over_20000",
         "L03": "high_over_0.5",
         "L05": "pyuria_bacteriuria",
-        "L31": "abscess",
         "T01": "over_3w",
-        "T02": "subacute"
+        "T02": "subacute",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -20722,9 +20722,9 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "L11": "mild_elevated",
-        "L31": "abscess",
         "T01": "3d_to_1w",
-        "S89": "RUQ"
+        "S89": "RUQ",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -20750,8 +20750,8 @@
         "L01": "high_10000_20000",
         "L02": "high_over_10",
         "L11": "mild_elevated",
-        "L31": "abscess",
-        "T01": "1w_to_3w"
+        "T01": "1w_to_3w",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "40_64",
@@ -20776,8 +20776,8 @@
         "S89": "RUQ",
         "L01": "high_10000_20000",
         "L11": "mild_elevated",
-        "L31": "abscess",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "18_39",
@@ -20803,8 +20803,8 @@
         "L02": "high_over_10",
         "L11": "mild_elevated",
         "L09": "negative",
-        "L31": "abscess",
-        "T01": "over_3w"
+        "T01": "over_3w",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "65_plus",
@@ -20830,8 +20830,8 @@
         "E18": "present",
         "L01": "high_10000_20000",
         "L11": "very_high",
-        "L31": "abscess",
-        "T01": "1w_to_3w"
+        "T01": "1w_to_3w",
+        "L31a": "present"
       },
       "risk_factors": {
         "R01": "18_39",

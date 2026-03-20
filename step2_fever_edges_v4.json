@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7163,
+  "total_edges": 7228,
   "edges": [
     {
       "from": "R01",
@@ -3498,18 +3498,6 @@
       },
       "from_name": "psoas_abscess",
       "to_name": "WBC"
-    },
-    {
-      "from": "D30",
-      "to": "L31",
-      "reason": "腹部CTで膿瘍像",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      },
-      "from_name": "psoas_abscess",
-      "to_name": "CT_abdomen"
     },
     {
       "from": "D30",
@@ -11409,13 +11397,6 @@
     },
     {
       "from": "D10",
-      "to": "L31",
-      "from_name": "appendicitis",
-      "to_name": "CT_abdomen",
-      "reason": "TODO"
-    },
-    {
-      "from": "D10",
       "to": "S46",
       "from_name": "appendicitis",
       "to_name": "anorexia",
@@ -11780,13 +11761,6 @@
     },
     {
       "from": "D27",
-      "to": "L31",
-      "from_name": "diverticulitis",
-      "to_name": "CT_abdomen",
-      "reason": "TODO"
-    },
-    {
-      "from": "D27",
       "to": "S13",
       "from_name": "diverticulitis",
       "to_name": "nausea_vomiting",
@@ -11888,13 +11862,6 @@
       "to": "T01",
       "from_name": "peritonsillar_abscess",
       "to_name": "symptom_duration",
-      "reason": "TODO"
-    },
-    {
-      "from": "D34",
-      "to": "L31",
-      "from_name": "deep_neck_infection",
-      "to_name": "CT_abdomen",
       "reason": "TODO"
     },
     {
@@ -12455,13 +12422,6 @@
       "to": "L01",
       "from_name": "renal_cell_carcinoma",
       "to_name": "WBC",
-      "reason": "TODO"
-    },
-    {
-      "from": "D69",
-      "to": "L31",
-      "from_name": "renal_cell_carcinoma",
-      "to_name": "CT_abdomen",
       "reason": "TODO"
     },
     {
@@ -13594,13 +13554,6 @@
       "from_name": "perianal_abscess",
       "to_name": "rigors",
       "reason": "膿瘍形成で悪寒戦慄"
-    },
-    {
-      "from": "D39",
-      "to": "L31",
-      "from_name": "perianal_abscess",
-      "to_name": "abd_CT",
-      "reason": "CT膿瘍描出"
     },
     {
       "from": "D39",
@@ -15760,13 +15713,6 @@
     },
     {
       "from": "D119",
-      "to": "L31",
-      "from_name": "perinephric_abscess",
-      "to_name": "L31",
-      "reason": "腎周囲膿瘍: 腹部CT — 膿瘍像(abscess)"
-    },
-    {
-      "from": "D119",
       "to": "L28",
       "from_name": "perinephric_abscess",
       "to_name": "L28",
@@ -17713,13 +17659,6 @@
     },
     {
       "from": "D136",
-      "to": "L31",
-      "from_name": "peptic_ulcer_perforation",
-      "to_name": "L31",
-      "reason": "穿孔: 腹部CT — 遊離ガス+腹水"
-    },
-    {
-      "from": "D136",
       "to": "T01",
       "from_name": "peptic_ulcer_perforation",
       "to_name": "T01",
@@ -17801,13 +17740,6 @@
       "from_name": "acute_mesenteric_ischemia",
       "to_name": "L52",
       "reason": "腸間膜虚血: D-dimer上昇(血栓)"
-    },
-    {
-      "from": "D137",
-      "to": "L31",
-      "from_name": "acute_mesenteric_ischemia",
-      "to_name": "L31",
-      "reason": "腸間膜虚血: 腹部CT — 腸管壁肥厚/門脈ガス"
     },
     {
       "from": "D137",
@@ -38174,14 +38106,6 @@
     },
     {
       "from": "D229",
-      "to": "L31",
-      "from_name": "autoimmune_pancreatitis",
-      "to_name": "腹部CT",
-      "reason": "膵腫大(CT)",
-      "onset_day_range": null
-    },
-    {
-      "from": "D229",
       "to": "S46",
       "from_name": "autoimmune_pancreatitis",
       "to_name": "食欲不振",
@@ -39402,14 +39326,6 @@
       "from_name": "splenic_infarction",
       "to_name": "呼吸困難",
       "reason": "呼吸困難",
-      "onset_day_range": null
-    },
-    {
-      "from": "D187",
-      "to": "L31",
-      "from_name": "splenic_infarction",
-      "to_name": "腹部CT",
-      "reason": "脾楔状",
       "onset_day_range": null
     },
     {
@@ -51866,13 +51782,6 @@
     },
     {
       "from": "D29",
-      "to": "L31",
-      "reason": "CT:膿瘍像(多発が多い)",
-      "from_name": "pyogenic_liver_abscess",
-      "to_name": "CT_abdomen"
-    },
-    {
-      "from": "D29",
       "to": "L09",
       "reason": "血培陽性(Klebsiella/E.coli 50-60%)",
       "from_name": "pyogenic_liver_abscess",
@@ -52029,13 +51938,6 @@
       "reason": "肝酵素軽度上昇(細菌性より低い)",
       "from_name": "amebic_liver_abscess",
       "to_name": "liver_enzymes"
-    },
-    {
-      "from": "D362",
-      "to": "L31",
-      "reason": "CT:右葉単発大膿瘍",
-      "from_name": "amebic_liver_abscess",
-      "to_name": "CT_abdomen"
     },
     {
       "from": "D362",
@@ -56834,6 +56736,552 @@
       "to": "T02",
       "to_name": "onset_speed",
       "strength": "strong"
+    },
+    {
+      "from": "D30",
+      "to": "L31a",
+      "from_name": "psoas_abscess",
+      "to_name": "CT_abd_abscess",
+      "reason": "腸腰筋膿瘍: CTで膿瘍像(感度90%+)"
+    },
+    {
+      "from": "D10",
+      "to": "L31a",
+      "from_name": "appendicitis",
+      "to_name": "CT_abd_abscess",
+      "reason": "穿孔性虫垂炎: CT膿瘍像(~15%に合併)"
+    },
+    {
+      "from": "D27",
+      "to": "L31a",
+      "from_name": "diverticulitis",
+      "to_name": "CT_abd_abscess",
+      "reason": "憩室炎合併膿瘍(~20%のHinchey II以上)"
+    },
+    {
+      "from": "D39",
+      "to": "L31a",
+      "from_name": "perianal_abscess",
+      "to_name": "CT_abd_abscess",
+      "reason": "肛門周囲膿瘍: CT描出"
+    },
+    {
+      "from": "D119",
+      "to": "L31a",
+      "from_name": "perinephric_abscess",
+      "to_name": "CT_abd_abscess",
+      "reason": "腎周囲膿瘍: CTゴールドスタンダード"
+    },
+    {
+      "from": "D29",
+      "to": "L31a",
+      "from_name": "pyogenic_liver_abscess",
+      "to_name": "CT_abd_abscess",
+      "reason": "化膿性肝膿瘍: CT感度95%+(多発が多い)"
+    },
+    {
+      "from": "D362",
+      "to": "L31a",
+      "from_name": "amebic_liver_abscess",
+      "to_name": "CT_abd_abscess",
+      "reason": "アメーバ性肝膿瘍: CT右葉単発大膿瘍(感度~95%)"
+    },
+    {
+      "from": "D69",
+      "to": "L31b",
+      "from_name": "renal_cell_carcinoma",
+      "to_name": "CT_abd_mass",
+      "reason": "腎細胞癌: CT腎腫瘤(感度90%+)"
+    },
+    {
+      "from": "D70",
+      "to": "L31b",
+      "from_name": "hepatocellular_carcinoma",
+      "to_name": "CT_abd_mass",
+      "reason": "肝細胞癌: CT造影で典型的wash-in/wash-out"
+    },
+    {
+      "from": "D230",
+      "to": "L31b",
+      "from_name": "pancreatic_cancer",
+      "to_name": "CT_abd_mass",
+      "reason": "膵癌: CT低吸収域腫瘤(感度~90%)"
+    },
+    {
+      "from": "D231",
+      "to": "L31b",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "CT_abd_mass",
+      "reason": "胆管癌: CT腫瘤性病変(~50%)"
+    },
+    {
+      "from": "D238",
+      "to": "L31b",
+      "from_name": "colorectal_cancer",
+      "to_name": "CT_abd_mass",
+      "reason": "大腸癌: CT壁肥厚/腫瘤像"
+    },
+    {
+      "from": "D247",
+      "to": "L31b",
+      "from_name": "gastric_cancer",
+      "to_name": "CT_abd_mass",
+      "reason": "胃癌: CT壁肥厚/腫瘤(進行癌)"
+    },
+    {
+      "from": "D287",
+      "to": "L31b",
+      "from_name": "gallbladder_cancer",
+      "to_name": "CT_abd_mass",
+      "reason": "胆嚢癌: CT胆嚢腫瘤/壁肥厚"
+    },
+    {
+      "from": "D92",
+      "to": "L31b",
+      "from_name": "tumor_fever",
+      "to_name": "CT_abd_mass",
+      "reason": "腫瘍熱: CT原発巣/転移巣腫瘤"
+    },
+    {
+      "from": "D67",
+      "to": "L31b",
+      "from_name": "non_hodgkin_lymphoma",
+      "to_name": "CT_abd_mass",
+      "reason": "NHL: 腹腔内腫瘤(~25%)"
+    },
+    {
+      "from": "D10",
+      "to": "L31c",
+      "from_name": "appendicitis",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "虫垂炎: CT虫垂腫大+壁肥厚+脂肪浸潤(感度95%)"
+    },
+    {
+      "from": "D27",
+      "to": "L31c",
+      "from_name": "diverticulitis",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "憩室炎: CT結腸壁肥厚+脂肪浸潤(感度94%)"
+    },
+    {
+      "from": "D63",
+      "to": "L31c",
+      "from_name": "crohns_disease",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "クローン病: CT腸管壁肥厚(mural stratification)"
+    },
+    {
+      "from": "D353",
+      "to": "L31c",
+      "from_name": "ulcerative_colitis",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "UC: CT結腸壁肥厚(連続性)"
+    },
+    {
+      "from": "D177",
+      "to": "L31c",
+      "from_name": "ischemic_colitis",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "虚血性腸炎: CT壁肥厚+thumbprinting"
+    },
+    {
+      "from": "D137",
+      "to": "L31c",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "腸間膜虚血: CT腸管壁肥厚(後期所見)"
+    },
+    {
+      "from": "D238",
+      "to": "L31c",
+      "from_name": "colorectal_cancer",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "大腸癌: CT非対称性壁肥厚"
+    },
+    {
+      "from": "D247",
+      "to": "L31c",
+      "from_name": "gastric_cancer",
+      "to_name": "CT_abd_bowel_wall_thickening",
+      "reason": "胃癌: CT胃壁肥厚"
+    },
+    {
+      "from": "D136",
+      "to": "L31d",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "CT_abd_free_air",
+      "reason": "消化管穿孔: CT遊離ガス(感度95%+)"
+    },
+    {
+      "from": "D27",
+      "to": "L31d",
+      "from_name": "diverticulitis",
+      "to_name": "CT_abd_free_air",
+      "reason": "憩室炎穿孔: CT遊離ガス(~8%に合併)"
+    },
+    {
+      "from": "D10",
+      "to": "L31d",
+      "from_name": "appendicitis",
+      "to_name": "CT_abd_free_air",
+      "reason": "穿孔性虫垂炎: CT遊離ガス(~5%)"
+    },
+    {
+      "from": "D187",
+      "to": "L31e",
+      "from_name": "splenic_infarction",
+      "to_name": "CT_abd_organ_infarction",
+      "reason": "脾梗塞: CT楔状低吸収域(感度90%+)"
+    },
+    {
+      "from": "D137",
+      "to": "L31e",
+      "from_name": "acute_mesenteric_ischemia",
+      "to_name": "CT_abd_organ_infarction",
+      "reason": "腸間膜虚血: CT臓器虚血像/門脈ガス"
+    },
+    {
+      "from": "D18",
+      "to": "L31f",
+      "from_name": "infectious_mononucleosis",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "EBV: 脾腫50%+(脾破裂リスク)"
+    },
+    {
+      "from": "D15",
+      "to": "L31f",
+      "from_name": "malaria",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "マラリア: 脾腫60-80%"
+    },
+    {
+      "from": "D16",
+      "to": "L31f",
+      "from_name": "dengue",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "デング熱: 肝脾腫大~30%"
+    },
+    {
+      "from": "D45",
+      "to": "L31f",
+      "from_name": "CMV_infection",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "CMV: 脾腫~35%"
+    },
+    {
+      "from": "D107",
+      "to": "L31f",
+      "from_name": "hemophagocytic_lymphohistiocytosis",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "HLH: 肝脾腫大(診断基準、75%+)"
+    },
+    {
+      "from": "D67",
+      "to": "L31f",
+      "from_name": "non_hodgkin_lymphoma",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "NHL: 脾腫~45%"
+    },
+    {
+      "from": "D354",
+      "to": "L31f",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "HL: 脾腫30-40%"
+    },
+    {
+      "from": "D68",
+      "to": "L31f",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "AML: 肝脾腫大~40%"
+    },
+    {
+      "from": "D375",
+      "to": "L31f",
+      "from_name": "acute_lymphoblastic_leukemia",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "ALL: 肝脾腫大~45%"
+    },
+    {
+      "from": "D209",
+      "to": "L31f",
+      "from_name": "myelofibrosis",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "骨髄線維症: 巨脾(hallmark、85%+)"
+    },
+    {
+      "from": "D234",
+      "to": "L31f",
+      "from_name": "CML",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "CML: 脾腫75%"
+    },
+    {
+      "from": "D235",
+      "to": "L31f",
+      "from_name": "CLL",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "CLL: 脾腫~50%"
+    },
+    {
+      "from": "D224",
+      "to": "L31f",
+      "from_name": "ATLL",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "ATLL: 肝脾腫大~45%"
+    },
+    {
+      "from": "D28",
+      "to": "L31f",
+      "from_name": "typhoid_fever",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "腸チフス: 肝脾腫大~40%"
+    },
+    {
+      "from": "D113",
+      "to": "L31f",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "播種性ヒストプラズマ: 肝脾腫大55%"
+    },
+    {
+      "from": "D58",
+      "to": "L31f",
+      "from_name": "adult_onset_still",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "成人Still病: 肝脾腫大40-50%"
+    },
+    {
+      "from": "D251",
+      "to": "L31f",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "非代償性肝硬変: 門脈圧亢進による脾腫"
+    },
+    {
+      "from": "D44",
+      "to": "L31f",
+      "from_name": "acute_HIV",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "HIV: 脾腫~30%"
+    },
+    {
+      "from": "D97",
+      "to": "L31f",
+      "from_name": "castleman_disease",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "キャッスルマン: 多中心型で肝脾腫大~40%"
+    },
+    {
+      "from": "D187",
+      "to": "L31f",
+      "from_name": "splenic_infarction",
+      "to_name": "CT_abd_hepatosplenomegaly",
+      "reason": "脾梗塞: 背景の脾腫(塞栓源)~15%"
+    },
+    {
+      "from": "D67",
+      "to": "L31g",
+      "from_name": "non_hodgkin_lymphoma",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "NHL: 腹腔内リンパ節腫大~65%"
+    },
+    {
+      "from": "D354",
+      "to": "L31g",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "HL: 腹腔内リンパ節腫大~55%"
+    },
+    {
+      "from": "D17",
+      "to": "L31g",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "結核: 腹腔内リンパ節腫大(腹部TB)~30%"
+    },
+    {
+      "from": "D62",
+      "to": "L31g",
+      "from_name": "sarcoidosis",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "サルコイドーシス: 腹腔リンパ節腫大~30%"
+    },
+    {
+      "from": "D44",
+      "to": "L31g",
+      "from_name": "acute_HIV",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "HIV: 全身リンパ節腫大~35%"
+    },
+    {
+      "from": "D235",
+      "to": "L31g",
+      "from_name": "CLL",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "CLL: リンパ節腫大(hallmark)~50%"
+    },
+    {
+      "from": "D224",
+      "to": "L31g",
+      "from_name": "ATLL",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "ATLL: リンパ節腫大~50%"
+    },
+    {
+      "from": "D97",
+      "to": "L31g",
+      "from_name": "castleman_disease",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "キャッスルマン: リンパ節腫大(定義的特徴)~55%"
+    },
+    {
+      "from": "D94",
+      "to": "L31g",
+      "from_name": "IgG4_related",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "IgG4: リンパ節腫大~30%"
+    },
+    {
+      "from": "D113",
+      "to": "L31g",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "播種性ヒストプラズマ: 腹腔リンパ節腫大~35%"
+    },
+    {
+      "from": "D69",
+      "to": "L31g",
+      "from_name": "renal_cell_carcinoma",
+      "to_name": "CT_abd_lymphadenopathy",
+      "reason": "RCC: 後腹膜リンパ節転移~15%"
+    },
+    {
+      "from": "D25",
+      "to": "L31h",
+      "from_name": "acute_cholangitis",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "急性胆管炎: 胆管拡張73-100%(PMC3474110)"
+    },
+    {
+      "from": "D11",
+      "to": "L31h",
+      "from_name": "cholecystitis",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "急性胆嚢炎: CBD拡張(総胆管結石合併時~15%)"
+    },
+    {
+      "from": "D231",
+      "to": "L31h",
+      "from_name": "cholangiocarcinoma",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "胆管癌: 胆管拡張(hallmark、75%)"
+    },
+    {
+      "from": "D230",
+      "to": "L31h",
+      "from_name": "pancreatic_cancer",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "膵頭部癌: CBD拡張(double duct sign)~45%"
+    },
+    {
+      "from": "D287",
+      "to": "L31h",
+      "from_name": "gallbladder_cancer",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "胆嚢癌: 胆管浸潤による拡張~40%"
+    },
+    {
+      "from": "D229",
+      "to": "L31h",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "自己免疫性膵炎: 胆管狭窄/拡張~15%"
+    },
+    {
+      "from": "D94",
+      "to": "L31h",
+      "from_name": "IgG4_related",
+      "to_name": "CT_abd_biliary_dilatation",
+      "reason": "IgG4関連硬化性胆管炎~25%"
+    },
+    {
+      "from": "D86",
+      "to": "L31i",
+      "from_name": "acute_pancreatitis",
+      "to_name": "CT_abd_pancreatitis",
+      "reason": "急性膵炎: CT膵腫大+脂肪浸潤(感度~80%)"
+    },
+    {
+      "from": "D229",
+      "to": "L31i",
+      "from_name": "autoimmune_pancreatitis",
+      "to_name": "CT_abd_pancreatitis",
+      "reason": "自己免疫性膵炎: CTびまん性膵腫大(sausage pancreas)~70%"
+    },
+    {
+      "from": "D94",
+      "to": "L31i",
+      "from_name": "IgG4_related",
+      "to_name": "CT_abd_pancreatitis",
+      "reason": "IgG4関連膵炎: CT膵腫大~30%"
+    },
+    {
+      "from": "D230",
+      "to": "L31i",
+      "from_name": "pancreatic_cancer",
+      "to_name": "CT_abd_pancreatitis",
+      "reason": "膵癌: 閉塞性膵炎(上流膵管拡張)~20%"
+    },
+    {
+      "from": "D81",
+      "to": "L31j",
+      "from_name": "spontaneous_bacterial_peritonitis",
+      "to_name": "CT_abd_ascites",
+      "reason": "SBP: 腹水(前提条件、95%+)"
+    },
+    {
+      "from": "D251",
+      "to": "L31j",
+      "from_name": "decompensated_cirrhosis",
+      "to_name": "CT_abd_ascites",
+      "reason": "非代償性肝硬変: 腹水75%+"
+    },
+    {
+      "from": "D136",
+      "to": "L31j",
+      "from_name": "peptic_ulcer_perforation",
+      "to_name": "CT_abd_ascites",
+      "reason": "消化管穿孔: 遊離腹水(腹膜炎)~30%"
+    },
+    {
+      "from": "D120",
+      "to": "L31j",
+      "from_name": "acute_heart_failure",
+      "to_name": "CT_abd_ascites",
+      "reason": "急性心不全: 腹水(右心不全)~25%"
+    },
+    {
+      "from": "D151",
+      "to": "L31j",
+      "from_name": "acute_liver_failure",
+      "to_name": "CT_abd_ascites",
+      "reason": "急性肝不全: 腹水~35%"
+    },
+    {
+      "from": "D92",
+      "to": "L31j",
+      "from_name": "tumor_fever",
+      "to_name": "CT_abd_ascites",
+      "reason": "腫瘍熱: 癌性腹膜炎~15%"
+    },
+    {
+      "from": "D86",
+      "to": "L31j",
+      "from_name": "acute_pancreatitis",
+      "to_name": "CT_abd_ascites",
+      "reason": "急性膵炎: 膵周囲液貯留/腹水(中等症以上)~25%"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
