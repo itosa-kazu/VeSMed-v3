@@ -11058,6 +11058,19 @@
       ],
       "severity": "high",
       "note": "最多認知症(60-80%)。近時記憶障害→遂行機能/言語/視空間低下→BPSD→ADL低下。95%≥65歳、女性65%。MRI側頭葉萎縮。鑑別:DLB/NPH/CJD/せん妄"
+    },
+    {
+      "id": "D383",
+      "name": "iron_deficiency_anemia",
+      "name_ja": "鉄欠乏性貧血(IDA)",
+      "category": "disease",
+      "category_sub": "hematologic",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "最多の貧血(全貧血の66%)。閉経前女性に好発(F:M=3:1)。倦怠感/動悸/蒼白/異食症(45%)/匙状爪。MCV↓(60%)/正球性(40%),Fe↓TIBC↑フェリチン↓。鑑別:サラセミア/慢性疾患貧血/MDS"
     }
   ]
 }

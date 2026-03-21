@@ -25154,7 +25154,101 @@
       },
       "result": "",
       "notes": "典型的晩発性AD。剖検確認(Braak V)。84歳女性"
+    },
+    {
+      "id": "R944",
+      "source": "PMC",
+      "pmcid": "PMC1592266",
+      "vignette": "42歳女性。月経過多を背景に2ヶ月間の倦怠感と労作時呼吸困難。結膜蒼白、過動性心音。Hb 4.6g/dL、MCV 71.3fL、RDW 21.3%、血清鉄12ng/mL、TIBC 428ng/mL、鉄飽和度3%、フェリチン6ng/mL。心カテ: EF 30%(中等度左室機能不全)。鉄補充で心機能改善。",
+      "final_diagnosis": "鉄欠乏性貧血(IDA)",
+      "expected_id": "D383",
+      "in_scope": true,
+      "evidence": {
+        "L93": "very_low_under_7",
+        "L94": "microcytic",
+        "L90": "iron_deficiency",
+        "S07": "severe",
+        "S04": "on_exertion",
+        "E85": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "重度IDA(Hb4.6)+鉄欠乏性心筋症。鉄補充で可逆的"
+    },
+    {
+      "id": "R945",
+      "source": "PMC",
+      "pmcid": "PMC4707311",
+      "vignette": "68歳女性。数週間進行する呼吸困難、全身倦怠感、腹部膨満。蒼白、頸静脈怒張、両側下肢浮腫、肺下野に吸気時crackles。Hb 1.4g/dL、MCV 60.1fL、RDW 20.0%、鉄6ug/dL、TIBC 471ug/dL、鉄飽和度1%、フェリチン2ng/mL。心エコー: LV拡張+EF44%、中等度MR、心嚢液貯留。原因は習慣的瀉血。",
+      "final_diagnosis": "鉄欠乏性貧血(IDA)",
+      "expected_id": "D383",
+      "in_scope": true,
+      "evidence": {
+        "L93": "very_low_under_7",
+        "L94": "microcytic",
+        "L90": "iron_deficiency",
+        "S07": "severe",
+        "S04": "at_rest",
+        "E95": "pallor",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "極重度IDA(Hb1.4)。習慣的瀉血が原因。急性心不全合併"
+    },
+    {
+      "id": "R946",
+      "source": "PMC",
+      "pmcid": "PMC2850349",
+      "vignette": "36歳女性。月経過多(毎月タンポン2箱使用)。毎日マクドナルドの特大カップ2杯以上の氷を摂取(異食症/pagophagia)。Hb 10.2g/dL、MCV 68fL、フェリチン8ng/mL。末梢血塗抹: poikilocytosis+microcytosis。",
+      "final_diagnosis": "鉄欠乏性貧血(IDA)",
+      "expected_id": "D383",
+      "in_scope": true,
+      "evidence": {
+        "L93": "mild_low_10_12",
+        "L94": "microcytic",
+        "L90": "iron_deficiency",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "軽度IDA+pagophagia。月経過多が原因。Lab所見のみで診断"
+    },
+    {
+      "id": "R947",
+      "source": "PMC",
+      "pmcid": "PMC2850349",
+      "vignette": "37歳女性。1年間の月経過多。1日中ゴムバンドを噛む異食症。Hb 7g/dL、MCV 64fL、フェリチン4ng/mL。末梢血塗抹: anisocytosis+poikilocytosis+microcytosis。",
+      "final_diagnosis": "鉄欠乏性貧血(IDA)",
+      "expected_id": "D383",
+      "in_scope": true,
+      "evidence": {
+        "L93": "low_7_10",
+        "L94": "microcytic",
+        "L90": "iron_deficiency",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "中等度IDA+ゴムバンド異食症。月経過多が原因"
     }
   ],
-  "total_cases": 942
+  "total_cases": 946
 }

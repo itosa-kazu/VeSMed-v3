@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7412,
+  "total_edges": 7436,
   "edges": [
     {
       "from": "R01",
@@ -58580,6 +58580,174 @@
       "from_name": "pancreatic_cancer",
       "to_name": "weight_loss_tempo",
       "reason": "膵癌: 体重減少は主訴の80%。進行が速い"
+    },
+    {
+      "from": "D383",
+      "to": "L93",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "hemoglobin",
+      "reason": "IDA: Hb低下。mild(10-12) 40%, moderate(7-10) 35%, severe(<7) 10% (WHO grading)"
+    },
+    {
+      "from": "D383",
+      "to": "L94",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "MCV",
+      "reason": "IDA: 小球性60%, 正球性40%(PMC10079471)。初期は正球性"
+    },
+    {
+      "from": "D383",
+      "to": "L90",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "iron_studies",
+      "reason": "IDA: Fe↓TIBC↑フェリチン↓。iron_deficiency patternが定義的(AAFP 2013)"
+    },
+    {
+      "from": "D383",
+      "to": "L72",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "reticulocyte_count",
+      "reason": "IDA: 網赤血球低値(低産生性貧血)。鉄供給不足→赤血球産生低下"
+    },
+    {
+      "from": "D383",
+      "to": "L100",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "platelet_count",
+      "reason": "IDA: 反応性血小板増多22%(ASH Blood 2018)。鉄補充で正常化"
+    },
+    {
+      "from": "D383",
+      "to": "E85",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "conjunctival_pallor",
+      "reason": "IDA: 結膜蒼白。Hb<7で感度高い(PMC9868202 systematic review)"
+    },
+    {
+      "from": "D383",
+      "to": "E95",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "skin_color_change",
+      "reason": "IDA: 皮膚蒼白。中等度以上の貧血で出現"
+    },
+    {
+      "from": "D383",
+      "to": "S07",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "fatigue",
+      "reason": "IDA: 倦怠感82-87%(PMC12302447, 239名女性コホート)"
+    },
+    {
+      "from": "D383",
+      "to": "S04",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "dyspnea",
+      "reason": "IDA: 労作時呼吸困難34-38%(PMC9918126 SHIPコホート)"
+    },
+    {
+      "from": "D383",
+      "to": "S35",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "palpitation",
+      "reason": "IDA: 動悸15-30%。中等度以上の貧血で代償性頻脈"
+    },
+    {
+      "from": "D383",
+      "to": "S05",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "headache",
+      "reason": "IDA: 頭痛~80%(PMC11488462)。片頭痛との関連も報告"
+    },
+    {
+      "from": "D383",
+      "to": "S59",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "vertigo_dizziness",
+      "reason": "IDA: めまい20-30%。脳酸素供給低下"
+    },
+    {
+      "from": "D383",
+      "to": "S25",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "dysphagia",
+      "reason": "IDA: 嚥下困難<1%(Plummer-Vinson, StatPearls NBK538306)。極めて稀だが特異的"
+    },
+    {
+      "from": "D383",
+      "to": "S118",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "alopecia",
+      "reason": "IDA: 脱毛70%(PMC12302447)。びまん性脱毛"
+    },
+    {
+      "from": "D383",
+      "to": "S139",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "alopecia_pattern",
+      "reason": "IDA: びまん性脱毛(step1 note: diffuse=鉄欠乏/SLE/甲状腺)"
+    },
+    {
+      "from": "D383",
+      "to": "T01",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "symptom_duration",
+      "reason": "IDA: 慢性経過(週~月単位で進行)"
+    },
+    {
+      "from": "D383",
+      "to": "T02",
+      "from_name": "iron_deficiency_anemia",
+      "to_name": "onset_speed",
+      "reason": "IDA: 慢性発症。急性失血は別疾患"
+    },
+    {
+      "from": "D370",
+      "to": "E85",
+      "from_name": "aplastic_anemia",
+      "to_name": "conjunctival_pallor",
+      "reason": "再生不良性貧血: 重度貧血→結膜蒼白80%"
+    },
+    {
+      "from": "D158",
+      "to": "E85",
+      "from_name": "AIHA",
+      "to_name": "conjunctival_pallor",
+      "reason": "AIHA: 溶血性貧血→結膜蒼白65%"
+    },
+    {
+      "from": "D370",
+      "to": "E95",
+      "from_name": "aplastic_anemia",
+      "to_name": "skin_color_change",
+      "reason": "再生不良性貧血: 重度貧血→皮膚蒼白"
+    },
+    {
+      "from": "D72",
+      "to": "E95",
+      "from_name": "adrenal_crisis",
+      "to_name": "skin_color_change",
+      "reason": "副腎クリーゼ: Addison病→皮膚色素沈着(hyperpigmentation 55%)"
+    },
+    {
+      "from": "D370",
+      "to": "L94",
+      "from_name": "aplastic_anemia",
+      "to_name": "MCV",
+      "reason": "再生不良性貧血: 正球性~大球性。MDS鑑別重要"
+    },
+    {
+      "from": "D373",
+      "to": "S139",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "alopecia_pattern",
+      "reason": "甲状腺機能低下: びまん性脱毛(step1 note明記)"
+    },
+    {
+      "from": "D374",
+      "to": "S139",
+      "from_name": "graves_disease",
+      "to_name": "alopecia_pattern",
+      "reason": "バセドウ病: びまん性脱毛(step1 note明記)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

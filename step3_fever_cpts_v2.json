@@ -4332,6 +4332,21 @@
         "female|40_64": 0.003,
         "female|65_plus": 0.012
       }
+    },
+    "D383": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "IDA。閉経前女性に好発。全貧血の66%",
+      "cpt": {
+        "male|18_39": 0.002,
+        "male|40_64": 0.003,
+        "male|65_plus": 0.005,
+        "female|18_39": 0.015,
+        "female|40_64": 0.008,
+        "female|65_plus": 0.005
+      }
     }
   },
   "full_cpts": {
@@ -13196,6 +13211,27 @@
         "cpt": {
           "male": 0.35,
           "female": 0.65
+        }
+      }
+    },
+    "D383": {
+      "R01": {
+        "description": "IDA年齢分布。小児+閉経前女性に好発",
+        "cpt": {
+          "0_1": 0.01,
+          "1_5": 0.03,
+          "6_12": 0.03,
+          "13_17": 0.05,
+          "18_39": 0.3,
+          "40_64": 0.25,
+          "65_plus": 0.24
+        }
+      },
+      "R02": {
+        "description": "IDA性別分布。F:M=3:1(月経/妊娠)",
+        "cpt": {
+          "male": 0.25,
+          "female": 0.75
         }
       }
     }
@@ -30181,6 +30217,11 @@
           "absent": 0.4,
           "on_exertion": 0.4,
           "at_rest": 0.2
+        },
+        "D383": {
+          "absent": 0.62,
+          "on_exertion": 0.33,
+          "at_rest": 0.05
         }
       }
     },
@@ -30699,7 +30740,12 @@
           "mild": 0.12,
           "severe": 0.03
         },
-        "D365": 0.2
+        "D365": 0.2,
+        "D383": {
+          "absent": 0.65,
+          "mild": 0.3,
+          "severe": 0.05
+        }
       }
     },
     "S06": {
@@ -32098,6 +32144,11 @@
           "absent": 0.7,
           "mild": 0.2,
           "severe": 0.1
+        },
+        "D383": {
+          "absent": 0.13,
+          "mild": 0.42,
+          "severe": 0.45
         }
       }
     },
@@ -34862,6 +34913,10 @@
         "D361": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D383": {
+          "absent": 0.99,
+          "present": 0.01
         }
       }
     },
@@ -35317,6 +35372,10 @@
         "D374": {
           "absent": 0.28,
           "present": 0.72
+        },
+        "D383": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -38461,6 +38520,12 @@
           "3d_to_1w": 0.01,
           "1w_to_3w": 0.01,
           "over_3w": 0.97
+        },
+        "D383": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.01,
+          "1w_to_3w": 0.03,
+          "over_3w": 0.95
         }
       }
     },
@@ -40422,6 +40487,12 @@
           "acute": 0.01,
           "subacute": 0.03,
           "chronic": 0.95
+        },
+        "D383": {
+          "sudden": 0.01,
+          "acute": 0.02,
+          "subacute": 0.07,
+          "chronic": 0.9
         }
       }
     },
@@ -45421,6 +45492,10 @@
         "D357": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D383": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -49112,6 +49187,13 @@
           "mild_low_10_12": 0.15,
           "normal": 0.08,
           "high": 0.02
+        },
+        "D383": {
+          "very_low_under_7": 0.1,
+          "low_7_10": 0.35,
+          "mild_low_10_12": 0.4,
+          "normal": 0.14,
+          "high": 0.01
         }
       }
     },
@@ -49187,6 +49269,13 @@
           "normal": 0.15,
           "high_over_400k": 0.015,
           "very_high_over_1000k": 0.005
+        },
+        "D383": {
+          "very_low_under_50k": 0.01,
+          "low_50k_150k": 0.02,
+          "normal": 0.75,
+          "high_over_400k": 0.2,
+          "very_high_over_1000k": 0.02
         }
       }
     },
@@ -49760,7 +49849,13 @@
         "normal": 0.88,
         "elevated": 0.07
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D383": {
+          "low": 0.7,
+          "normal": 0.28,
+          "elevated": 0.02
+        }
+      }
     },
     "L74": {
       "leak": {
@@ -49805,7 +49900,14 @@
         "chronic_disease": 0.07,
         "iron_overload": 0.03
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D383": {
+          "iron_deficiency": 0.95,
+          "chronic_disease": 0.03,
+          "iron_overload": 0.005,
+          "normal": 0.015
+        }
+      }
     },
     "L91": {
       "leak": {
@@ -50536,6 +50638,10 @@
         "D374": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D383": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -52033,6 +52139,136 @@
         "D382": {
           "absent": 0.61,
           "present": 0.39
+        }
+      }
+    },
+    "L94": {
+      "description": "MCV(平均赤血球容積)",
+      "states": [
+        "microcytic",
+        "normocytic",
+        "macrocytic"
+      ],
+      "leak": {
+        "microcytic": 0.1,
+        "normocytic": 0.8,
+        "macrocytic": 0.1
+      },
+      "parent_effects": {
+        "D225": {
+          "microcytic": 0.05,
+          "normocytic": 0.3,
+          "macrocytic": 0.65
+        },
+        "D238": {
+          "microcytic": 0.5,
+          "normocytic": 0.45,
+          "macrocytic": 0.05
+        },
+        "D383": {
+          "microcytic": 0.6,
+          "normocytic": 0.38,
+          "macrocytic": 0.02
+        },
+        "D370": {
+          "microcytic": 0.05,
+          "normocytic": 0.6,
+          "macrocytic": 0.35
+        }
+      }
+    },
+    "E85": {
+      "description": "結膜蒼白",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D383": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D370": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D158": {
+          "absent": 0.35,
+          "present": 0.65
+        }
+      }
+    },
+    "E95": {
+      "description": "皮膚色変化",
+      "states": [
+        "normal",
+        "pallor",
+        "cyanosis",
+        "flushing",
+        "bronze",
+        "hyperpigmentation"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "pallor": 0.05,
+        "cyanosis": 0.02,
+        "flushing": 0.01,
+        "bronze": 0.005,
+        "hyperpigmentation": 0.015
+      },
+      "parent_effects": {
+        "D383": {
+          "normal": 0.5,
+          "pallor": 0.45,
+          "cyanosis": 0.01,
+          "flushing": 0.01,
+          "bronze": 0.01,
+          "hyperpigmentation": 0.02
+        },
+        "D370": {
+          "normal": 0.2,
+          "pallor": 0.75,
+          "cyanosis": 0.02,
+          "flushing": 0.01,
+          "bronze": 0.01,
+          "hyperpigmentation": 0.01
+        },
+        "D72": {
+          "normal": 0.3,
+          "pallor": 0.1,
+          "cyanosis": 0.02,
+          "flushing": 0.01,
+          "bronze": 0.02,
+          "hyperpigmentation": 0.55
+        }
+      }
+    },
+    "S139": {
+      "description": "脱毛パターン",
+      "states": [
+        "diffuse",
+        "patchy"
+      ],
+      "leak": {
+        "diffuse": 0.5,
+        "patchy": 0.5
+      },
+      "parent_effects": {
+        "D383": {
+          "diffuse": 0.9,
+          "patchy": 0.1
+        },
+        "D373": {
+          "diffuse": 0.85,
+          "patchy": 0.15
+        },
+        "D374": {
+          "diffuse": 0.8,
+          "patchy": 0.2
         }
       }
     }
