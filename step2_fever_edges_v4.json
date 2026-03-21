@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7852,
+  "total_edges": 7864,
   "edges": [
     {
       "from": "R01",
@@ -61660,6 +61660,90 @@
       "to": "T02",
       "to_name": "発症速度",
       "reason": "丹毒: 急性発症(spread rapidly within hours, StatPearls)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S56",
+      "to_name": "間欠性跛行",
+      "reason": "LSS: 神経性間欠性跛行(hallmark, ~80-90%, PMC7101166)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S111",
+      "to_name": "腰痛",
+      "reason": "LSS: 腰痛(65-90%, PMC7595829)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S22",
+      "to_name": "背部痛",
+      "reason": "LSS: 背部痛(腰部中心, StatPearls)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S106",
+      "to_name": "歩行障害",
+      "reason": "LSS: 歩行障害(claudication + 不安定歩行, PMC7101166)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S137",
+      "to_name": "歩行障害のパターン",
+      "reason": "LSS: 疼痛性跛行(antalgic gait, 前傾姿勢, PMC4017306)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S76",
+      "to_name": "感覚障害のパターン",
+      "reason": "LSS: 神経根型=dermatomal, 馬尾型=saddle(PMC7101166)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "E53",
+      "to_name": "深部腱反射",
+      "reason": "LSS: 腱反射低下(下位運動ニューロン障害, StatPearls)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "S48",
+      "to_name": "近位筋力低下",
+      "reason": "LSS: 下肢筋力低下(重症例30-50%, PMC7595829)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "E41",
+      "to_name": "ABI",
+      "reason": "LSS: ABI正常(PADとの鑑別, PMC3513595)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "E01",
+      "to_name": "体温",
+      "reason": "LSS: 非感染性変性疾患、発熱なし"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "T01",
+      "to_name": "症状持続期間",
+      "reason": "LSS: 慢性進行性(数ヶ月~数年で受診)"
+    },
+    {
+      "from": "D412",
+      "from_name": "腰部脊柱管狭窄症",
+      "to": "T02",
+      "to_name": "発症速度",
+      "reason": "LSS: 緩徐進行性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",

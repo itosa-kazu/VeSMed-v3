@@ -11435,6 +11435,19 @@
       ],
       "severity": "moderate",
       "note": "真皮の急性細菌感染(GAS)。境界明瞭な隆起性紅斑が特徴。下肢85%、顔面20%。発熱20-70%。蜂窩織炎との鑑別: 境界明瞭+隆起性辺縁"
+    },
+    {
+      "id": "D412",
+      "name": "lumbar_spinal_stenosis",
+      "name_ja": "腰部脊柱管狭窄症",
+      "category": "disease",
+      "category_sub": "orthopedic",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "腰椎の変性狭窄→神経性間欠性跛行。歩行/立位で下肢痛+しびれ、前屈/座位で軽快。50-70歳。PAD鑑別重要(ABI)"
     }
   ]
 }
