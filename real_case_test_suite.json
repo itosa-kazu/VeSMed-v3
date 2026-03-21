@@ -26432,7 +26432,160 @@
       },
       "result": "",
       "notes": "22歳女性の下咽頭滑膜肉腫T3N0M0。緊急気管切開。AIM化学療法"
+    },
+    {
+      "id": "R997",
+      "source": "PMC",
+      "pmcid": "PMC11608760",
+      "vignette": "72歳男性。反復嘔吐+右側頭部拍動性頭痛。7日前から右眼の違和感+視力低下+結膜充血(近医でドライアイと誤診)。右眼IOP 62mmHg、左眼7.5mmHg。右瞳孔散大(左より0.51mm大)、対光反応低下。右角膜浮腫。浅前房+狭隅角。初診で脳出血/片頭痛を疑われた。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S13": "present",
+        "S123": "present",
+        "S122": "unilateral",
+        "E63": "mydriasis",
+        "E25": "present",
+        "E01": "under_37.5",
+        "T01": "3d_to_1w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "脳出血/片頭痛/ドライアイと3重誤診。IOP 62。7日遅延"
+    },
+    {
+      "id": "R998",
+      "source": "PMC",
+      "pmcid": "PMC12947831",
+      "vignette": "65歳女性。2日間の羞明+両側霧視+全身倦怠感+悪心嘔吐+前頭部頭痛。IOP: 右57mmHg、左50mmHg。両側瞳孔散大固定。両側毛様混合充血。両側重度角膜浮腫。両側浅前房。VA: 両眼光覚のみ。隅角鏡:360度全周閉塞。遠視(+3.00D)。脳CT/神経学的検査/腰椎穿刺全正常。中枢神経疾患と誤診。OTC風邪薬(デキストロメトルファン)が誘因。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S13": "present",
+        "S123": "present",
+        "S122": "bilateral",
+        "E63": "mydriasis",
+        "E25": "present",
+        "S07": "mild",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "両側性AACG。デキストロメトルファン誘発。中枢神経疾患誤診。治療後VA 20/32,20/20"
+    },
+    {
+      "id": "R999",
+      "source": "PMC",
+      "pmcid": "PMC6873066",
+      "vignette": "59歳女性。上気道感染に対しプソイドエフェドリン(Mucinex D)1回内服後。2日間の霧視+頭痛。IOP: 右53mmHg、左51mmHg。両側瞳孔散大・対光反射消失。両側角膜浮腫+結膜充血。両側浅前房。VA: 右6/60、左手動弁。神経内科に紹介(両側性→中枢疾患疑い)。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S123": "present",
+        "S122": "bilateral",
+        "E63": "mydriasis",
+        "E25": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "プソイドエフェドリン1回で両側AACG。神経内科誤紹介。YAG iridotomy後改善"
+    },
+    {
+      "id": "R1000",
+      "source": "PMC",
+      "pmcid": "PMC4593269",
+      "vignette": "40歳男性。白内障評価のための散瞳6時間後に右眼痛+充血+視力低下+悪心嘔吐(12時間)。IOP 78mmHg(右)、18mmHg(左)。右瞳孔散大固定。全周角膜浮腫。浅前房+虹彩角膜接触。360度隅角閉塞。VA: 光覚のみ。膨化白内障。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S123": "present",
+        "S122": "unilateral",
+        "E25": "present",
+        "E63": "mydriasis",
+        "S13": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "散瞳誘発AACG。IOP 78(最高値)。緊急毛様体光凝固。最終VA 6/6"
+    },
+    {
+      "id": "R1001",
+      "source": "PMC",
+      "pmcid": "PMC5665139",
+      "vignette": "69歳男性。COPD急性増悪でICU入室中。3日目に右眼痛+充血+視力低下。翌日左眼も症状出現。IOP 45mmHg(右)、20mmHg(左)。右瞳孔散大固定。角膜混濁。浅前房。VA: 右指数弁、左6/18。ノルアドレナリン+サルブタモール+イプラトロピウム使用中。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S123": "present",
+        "S122": "unilateral",
+        "E25": "present",
+        "E63": "mydriasis",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "ICU患者。交感神経刺激薬(ノルアドレナリン/気管支拡張薬)が誘因。両側YAG PI"
+    },
+    {
+      "id": "R1002",
+      "source": "PMC",
+      "pmcid": "PMC4550991",
+      "vignette": "27歳女性。ミルタザピン初回内服1時間後に悪心+激しい頭痛+霧視+右眼充血。IOP 26mmHg(右)、12mmHg(左)。右瞳孔散大・対光反射消失。軽度角膜浮腫(右)。浅前房。隅角鏡: 右360度閉塞(grade 0)。VA: 右8/10、左10/10。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S13": "present",
+        "S123": "present",
+        "S122": "unilateral",
+        "E63": "mydriasis",
+        "E25": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "27歳の極めて若年AACG。ミルタザピン誘発。IOP比較的低い(26)が360度閉塞"
     }
   ],
-  "total_cases": 995
+  "total_cases": 1001
 }
