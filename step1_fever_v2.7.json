@@ -11344,6 +11344,32 @@
       ],
       "severity": "high",
       "note": "X連鎖劣性。1/5,000男児出生。2-5歳発症。近位筋力低下+Gower徴候+腓腹筋仮性肥大+CK著明高値(10-200xULN)+動揺性歩行。12歳までに歩行不能。心筋症70-100%。鑑別:Becker型/脊髄性筋萎縮症/先天性ミオパチー/多発筋炎"
+    },
+    {
+      "id": "D405",
+      "name": "breast_cancer",
+      "name_ja": "乳癌",
+      "category": "disease",
+      "category_sub": "gynecology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "女性癌1位。無痛性乳房腫瘤(80%)が主訴。腋窩リンパ節転移40-50%。乳頭分泌(血性5-10%)。転移:骨>肺>肝>脳。50-70歳ピーク。BRCA1/2。M:F≈1:100。鑑別:線維腺腫/乳腺症/乳腺炎/乳管内乳頭腫/葉状腫瘍"
+    },
+    {
+      "id": "D406",
+      "name": "allergic_bronchopulmonary_aspergillosis",
+      "name_ja": "アレルギー性気管支肺アスペルギルス症(ABPA)",
+      "category": "disease",
+      "category_sub": "respiratory",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "喘息患者の1-2%(専門施設13%)。Aspergillus fumigatusに対する過敏反応。産生性咳嗽(茶色粘液栓)+喘鳴+好酸球増多+IgE>1000+中枢性気管支拡張症。20-40歳。鑑別:好酸球性肺炎/過敏性肺炎/肺結核/EGPA/肺アスペルギルス症(侵襲性)"
     }
   ]
 }

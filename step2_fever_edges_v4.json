@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7761,
+  "total_edges": 7792,
   "edges": [
     {
       "from": "R01",
@@ -61023,6 +61023,223 @@
       "from_name": "duchenne_muscular_dystrophy",
       "to_name": "onset_speed",
       "reason": "DMD: 慢性(先天性)。緩徐進行。数年単位で筋力低下が進行"
+    },
+    {
+      "from": "D405",
+      "to": "S143",
+      "from_name": "breast_cancer",
+      "to_name": "breast_mass",
+      "reason": "乳癌: 無痛性乳房腫瘤80%(StatPearls)。最多初発症状。硬く不整形"
+    },
+    {
+      "from": "D405",
+      "to": "E13",
+      "from_name": "breast_cancer",
+      "to_name": "lymphadenopathy",
+      "reason": "乳癌: 腋窩リンパ節腫脹40-50%(Harrison's)。同側腋窩が最多"
+    },
+    {
+      "from": "D405",
+      "to": "E46",
+      "from_name": "breast_cancer",
+      "to_name": "lymph_node_location",
+      "reason": "乳癌: 腋窩リンパ節(Harrison's)。鎖骨上は進行例"
+    },
+    {
+      "from": "D405",
+      "to": "S144",
+      "from_name": "breast_cancer",
+      "to_name": "nipple_discharge",
+      "reason": "乳癌: 乳頭分泌5-10%。血性が悪性示唆"
+    },
+    {
+      "from": "D405",
+      "to": "S148",
+      "from_name": "breast_cancer",
+      "to_name": "nipple_discharge_type",
+      "reason": "乳癌: 血性乳頭分泌。乳管内乳頭腫との鑑別"
+    },
+    {
+      "from": "D405",
+      "to": "S129",
+      "from_name": "breast_cancer",
+      "to_name": "breast_pain",
+      "reason": "乳癌: 乳房痛5-15%。通常無痛性だが炎症性乳癌では疼痛あり"
+    },
+    {
+      "from": "D405",
+      "to": "S17",
+      "from_name": "breast_cancer",
+      "to_name": "weight_loss",
+      "reason": "乳癌: 体重減少20-30%(進行例)。悪性cachexia"
+    },
+    {
+      "from": "D405",
+      "to": "L63",
+      "from_name": "breast_cancer",
+      "to_name": "metastasis_imaging",
+      "reason": "乳癌: 転移(進行例40%): 骨>肺>肝>脳。骨転移最多"
+    },
+    {
+      "from": "D405",
+      "to": "L104",
+      "from_name": "breast_cancer",
+      "to_name": "ALP",
+      "reason": "乳癌: ALP上昇(骨転移)。溶骨性+造骨性混合型"
+    },
+    {
+      "from": "D405",
+      "to": "S07",
+      "from_name": "breast_cancer",
+      "to_name": "fatigue",
+      "reason": "乳癌: 倦怠感。悪性腫瘍+化学療法"
+    },
+    {
+      "from": "D405",
+      "to": "E01",
+      "from_name": "breast_cancer",
+      "to_name": "temperature",
+      "reason": "乳癌: 通常無熱。発熱→炎症性乳癌/膿瘍/好中球減少性発熱"
+    },
+    {
+      "from": "D405",
+      "to": "T01",
+      "from_name": "breast_cancer",
+      "to_name": "symptom_duration",
+      "reason": "乳癌: 慢性(数ヶ月~)。緩徐増大する腫瘤"
+    },
+    {
+      "from": "D405",
+      "to": "T02",
+      "from_name": "breast_cancer",
+      "to_name": "onset_speed",
+      "reason": "乳癌: 慢性発症。数ヶ月~年で発見"
+    },
+    {
+      "from": "D67",
+      "to": "S143",
+      "from_name": "non_hodgkin_lymphoma",
+      "to_name": "breast_mass",
+      "reason": "NHL: 乳房原発リンパ腫(稀, <1%)。乳腺腫瘤として発見"
+    },
+    {
+      "from": "D354",
+      "to": "S143",
+      "from_name": "hodgkin_lymphoma",
+      "to_name": "breast_mass",
+      "reason": "HL: 乳房浸潤(極稀)。若年女性HL後のRT-induced乳癌リスク"
+    },
+    {
+      "from": "D380",
+      "to": "S144",
+      "from_name": "cushing_syndrome",
+      "to_name": "nipple_discharge",
+      "reason": "プロラクチノーマ: 乳汁漏出(galactorrhea)50-80%。高プロラクチン"
+    },
+    {
+      "from": "D380",
+      "to": "S148",
+      "from_name": "cushing_syndrome",
+      "to_name": "nipple_discharge_type",
+      "reason": "プロラクチノーマ: 乳汁性(milky)が特徴的"
+    },
+    {
+      "from": "D406",
+      "to": "S01",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "cough",
+      "reason": "ABPA: 咳嗽80-95%(Agarwal 2013)。産生性。茶色/金色粘液栓の喀出30-70%"
+    },
+    {
+      "from": "D406",
+      "to": "S84",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "cough_quality",
+      "reason": "ABPA: 産生性咳嗽が主(PMC4921692)。粘稠な粘液栓"
+    },
+    {
+      "from": "D406",
+      "to": "S04",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "dyspnea",
+      "reason": "ABPA: 呼吸困難60-80%(Agarwal 2013)。気道閉塞+気管支拡張"
+    },
+    {
+      "from": "D406",
+      "to": "E07",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "lung_auscultation",
+      "reason": "ABPA: 聴診: 喘鳴(wheezes)70-90%。基礎疾患の喘息+気道炎症"
+    },
+    {
+      "from": "D406",
+      "to": "S34",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "hemoptysis",
+      "reason": "ABPA: 喀血15-30%。中枢性気管支拡張症から。軽度~中等度"
+    },
+    {
+      "from": "D406",
+      "to": "L14",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "peripheral_blood_smear",
+      "reason": "ABPA: 好酸球増多80-95%(Agarwal 2013)。>500/μL、しばしば>1000/μL"
+    },
+    {
+      "from": "D406",
+      "to": "L04",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "chest_xray",
+      "reason": "ABPA: CXR: 移動性浸潤影50-80%。上葉優位。中枢性気管支拡張"
+    },
+    {
+      "from": "D406",
+      "to": "E01",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "temperature",
+      "reason": "ABPA: 微熱25-50%。急性増悪時。高熱→侵襲性アスペルギルス症を除外"
+    },
+    {
+      "from": "D406",
+      "to": "S07",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "fatigue",
+      "reason": "ABPA: 倦怠感。慢性炎症+ステロイド依存性喘息"
+    },
+    {
+      "from": "D406",
+      "to": "S17",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "weight_loss",
+      "reason": "ABPA: 体重減少10-25%(進行例)"
+    },
+    {
+      "from": "D406",
+      "to": "L28",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "ESR",
+      "reason": "ABPA: ESR上昇40-60%。急性増悪時。非特異的"
+    },
+    {
+      "from": "D406",
+      "to": "E04",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "respiratory_rate",
+      "reason": "ABPA: 頻呼吸(急性増悪時)。気道閉塞による"
+    },
+    {
+      "from": "D406",
+      "to": "T01",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "symptom_duration",
+      "reason": "ABPA: 慢性経過(数週~数ヶ月の増悪を繰り返す)"
+    },
+    {
+      "from": "D406",
+      "to": "T02",
+      "from_name": "allergic_bronchopulmonary_aspergillosis",
+      "to_name": "onset_speed",
+      "reason": "ABPA: 亜急性~慢性。増悪は急性だが全体経過は慢性"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
