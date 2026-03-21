@@ -11318,6 +11318,19 @@
       ],
       "severity": "high",
       "note": "全肺癌の13-15%。中枢型(90%)。急速増殖(倍加時間54-132日)。60-70%が初診時extensive。SIADH(10-45%)/Cushing(2-5%)/Lambert-Eaton(3%)等paraneoplastic。喫煙95%。M:F≈1.5:1、60-70歳。鑑別:肺腺癌/肺扁平上皮癌/リンパ腫/胸腺腫/転移性肺腫瘍"
+    },
+    {
+      "id": "D403",
+      "name": "tetralogy_of_fallot",
+      "name_ja": "ファロー四徴症(TOF)",
+      "category": "disease",
+      "category_sub": "cardiovascular",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "最多チアノーゼ性先天性心疾患(5-7/10,000出生)。四徴:VSD+RVOTO+大動脈騎乗+右室肥大。70-80%チアノーゼ、20-30%はpink Tet。無修復生存:1歳66%、20歳11%。ばち指+多血症+低酸素。鑑別:大血管転位/総動脈幹/三尖弁閉鎖/Ebstein"
     }
   ]
 }
