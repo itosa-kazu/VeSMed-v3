@@ -26051,7 +26051,105 @@
       },
       "result": "",
       "notes": "PD既往の21歳女性。接合部調律→正常洞調律。Lab全正常"
+    },
+    {
+      "id": "R981",
+      "source": "PMC",
+      "pmcid": "PMC8841641",
+      "vignette": "49歳女性。6週間で2回目の激しい頭痛+悪心で救急受診。朝に嘔吐。右眼の霧視+羞明。血液検査正常。頭部CT正常。初診で片頭痛と誤診。眼科コンサルトで右眼IOP 62mmHg、右瞳孔対光反射消失を発見。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S13": "present",
+        "S123": "present",
+        "S122": "unilateral",
+        "E63": "mydriasis",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "片頭痛と誤診。頭部CT正常。IOP 62mmHg。iridectomy+laser iridotomy"
+    },
+    {
+      "id": "R982",
+      "source": "PMC",
+      "pmcid": "PMC1676140_case2",
+      "vignette": "80歳女性。突然の左眼窩周囲痛+前頭部頭痛+霧視。結膜充血あり。初診で結膜炎と誤診されクロラムフェニコール点眼処方。後にIOP 48mmHg(左)、12mmHg(右)。左瞳孔散大、対光反射遅鈍。浅前房。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S123": "present",
+        "S122": "unilateral",
+        "E25": "present",
+        "E63": "mydriasis",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "結膜炎と誤診。IOP 48mmHg。治療遅延で左眼失明"
+    },
+    {
+      "id": "R983",
+      "source": "PMC",
+      "pmcid": "PMC1676140_case1",
+      "vignette": "66歳女性。術後3日目に激しい頭痛+羞明+項部硬直。4日目に視力低下+充血出現。両側角膜混濁、浅前房、両瞳孔散大固定。IOP: 右45mmHg、左33mmHg。VA: 両眼指数弁。初診で髄膜炎を疑い頭部CT施行。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S05": "severe",
+        "S123": "present",
+        "S122": "bilateral",
+        "E25": "present",
+        "E63": "mydriasis",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "髄膜炎と誤診。両側性AACG。術後発症。最終VA 6/12"
+    },
+    {
+      "id": "R984",
+      "source": "PMC",
+      "pmcid": "PMC10425924",
+      "vignette": "65歳女性。16時間の乳癌再建術後1日目に意識変容。左瞳孔6mm対光反射消失。右瞳孔正常。術後せん妄で典型的AACG症状を訴えられず。POD2にIOP>55mmHg。角膜びまん性浮腫。",
+      "final_diagnosis": "急性閉塞隅角緑内障",
+      "expected_id": "D395",
+      "in_scope": true,
+      "evidence": {
+        "S123": "present",
+        "S122": "unilateral",
+        "E63": "mydriasis",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "術後せん妄に隠れたAACG。IOP 55mmHg。laser PI後VA 6/9に回復"
     }
   ],
-  "total_cases": 979
+  "total_cases": 983
 }

@@ -4514,6 +4514,21 @@
         "female|40_64": 0.004,
         "female|65_plus": 0.002
       }
+    },
+    "D395": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "AACG。F:M=3:1。55-65歳ピーク。有病率4/100,000/年",
+      "cpt": {
+        "male|18_39": 0.0001,
+        "male|40_64": 0.0005,
+        "male|65_plus": 0.0008,
+        "female|18_39": 0.0003,
+        "female|40_64": 0.0015,
+        "female|65_plus": 0.0025
+      }
     }
   },
   "full_cpts": {
@@ -13632,6 +13647,27 @@
           "female": 0.67
         }
       }
+    },
+    "D395": {
+      "R01": {
+        "description": "AACG年齢。55-65歳ピーク。40歳以上で急増",
+        "cpt": {
+          "0_1": 0.001,
+          "1_5": 0.001,
+          "6_12": 0.005,
+          "13_17": 0.01,
+          "18_39": 0.05,
+          "40_64": 0.4,
+          "65_plus": 0.533
+        }
+      },
+      "R02": {
+        "description": "AACG性別。F:M=3:1",
+        "cpt": {
+          "male": 0.25,
+          "female": 0.75
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16337,6 +16373,14 @@
           "over_40.0": 0.001
         },
         "D394": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D395": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -21710,6 +21754,10 @@
         "D367": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D395": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -31300,6 +31348,11 @@
           "absent": 0.5,
           "mild": 0.35,
           "severe": 0.15
+        },
+        "D395": {
+          "absent": 0.55,
+          "mild": 0.2,
+          "severe": 0.25
         }
       }
     },
@@ -34337,6 +34390,10 @@
           "present": 0.35
         },
         "D394": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D395": {
           "absent": 0.6,
           "present": 0.4
         }
@@ -39281,6 +39338,12 @@
           "3d_to_1w": 0.15,
           "1w_to_3w": 0.1,
           "over_3w": 0.15
+        },
+        "D395": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.08,
+          "over_3w": 0.02
         }
       }
     },
@@ -41314,6 +41377,12 @@
           "acute": 0.2,
           "subacute": 0.07,
           "chronic": 0.03
+        },
+        "D395": {
+          "sudden": 0.65,
+          "acute": 0.3,
+          "subacute": 0.04,
+          "chronic": 0.01
         }
       }
     },
@@ -46378,6 +46447,10 @@
         "D394": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D395": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -51342,6 +51415,11 @@
           "absent": 0.82,
           "unilateral": 0.14,
           "bilateral": 0.04
+        },
+        "D395": {
+          "absent": 0.15,
+          "unilateral": 0.83,
+          "bilateral": 0.02
         }
       }
     },
@@ -53780,6 +53858,70 @@
         "D394": {
           "absent": 0.7,
           "present": 0.3
+        }
+      }
+    },
+    "S123": {
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D339": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D395": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D295": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D359": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D90": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D62": {
+          "absent": 0.6,
+          "present": 0.4
+        }
+      }
+    },
+    "E63": {
+      "leak": {
+        "normal": 0.95,
+        "mydriasis": 0.02,
+        "miosis": 0.01,
+        "anisocoria": 0.01,
+        "RAPD": 0.01
+      },
+      "parent_effects": {
+        "D211": {
+          "normal": 0.15,
+          "mydriasis": 0.5,
+          "miosis": 0.05,
+          "anisocoria": 0.25,
+          "RAPD": 0.05
+        },
+        "D339": {
+          "normal": 0.6,
+          "mydriasis": 0.05,
+          "miosis": 0.05,
+          "anisocoria": 0.1,
+          "RAPD": 0.2
+        },
+        "D395": {
+          "normal": 0.1,
+          "mydriasis": 0.85,
+          "miosis": 0.01,
+          "anisocoria": 0.03,
+          "RAPD": 0.01
         }
       }
     }
