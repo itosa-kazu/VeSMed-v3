@@ -20732,6 +20732,11 @@
           "normal": 0.1,
           "confused": 0.75,
           "obtunded": 0.15
+        },
+        "D381": {
+          "normal": 0.8,
+          "confused": 0.12,
+          "obtunded": 0.08
         }
       }
     },
@@ -35661,6 +35666,10 @@
         "D110": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D381": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     },
