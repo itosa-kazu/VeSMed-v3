@@ -4317,6 +4317,21 @@
         "no": 0.0002,
         "yes": 0.003
       }
+    },
+    "D382": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "アルツハイマー型認知症。95%≥65歳。女性65%。最多認知症",
+      "cpt": {
+        "male|18_39": 0.0005,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.008,
+        "female|18_39": 0.0005,
+        "female|40_64": 0.003,
+        "female|65_plus": 0.012
+      }
     }
   },
   "full_cpts": {
@@ -13161,6 +13176,27 @@
       "R02": {
         "male": 0.075,
         "female": 0.025
+      }
+    },
+    "D382": {
+      "R01": {
+        "description": "AD年齢分布。95%≥65歳、早発型<5%",
+        "cpt": {
+          "0_1": 0.0001,
+          "1_5": 0.0001,
+          "6_12": 0.0001,
+          "13_17": 0.0001,
+          "18_39": 0.005,
+          "40_64": 0.05,
+          "65_plus": 0.9446
+        }
+      },
+      "R02": {
+        "description": "AD性別分布。女性65%(PMC5390933)",
+        "cpt": {
+          "male": 0.35,
+          "female": 0.65
+        }
       }
     }
   },
@@ -28931,6 +28967,12 @@
           "temporal_lobe_lesion": 0.45,
           "diffuse_abnormal": 0.25,
           "other": 0.2
+        },
+        "D382": {
+          "normal": 0.1,
+          "temporal_lobe_lesion": 0.8,
+          "diffuse_abnormal": 0.05,
+          "other": 0.05
         }
       }
     },
@@ -34223,6 +34265,10 @@
         "D381": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D382": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -35670,6 +35716,10 @@
         "D381": {
           "absent": 0.95,
           "present": 0.05
+        },
+        "D382": {
+          "absent": 0.87,
+          "present": 0.13
         }
       }
     },
@@ -38405,6 +38455,12 @@
           "3d_to_1w": 0.15,
           "1w_to_3w": 0.45,
           "over_3w": 0.35
+        },
+        "D382": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.01,
+          "1w_to_3w": 0.01,
+          "over_3w": 0.97
         }
       }
     },
@@ -40360,6 +40416,12 @@
           "acute": 0.1,
           "subacute": 0.6,
           "chronic": 0.28
+        },
+        "D382": {
+          "sudden": 0.01,
+          "acute": 0.01,
+          "subacute": 0.03,
+          "chronic": 0.95
         }
       }
     },
@@ -42991,6 +43053,10 @@
         "D163": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D382": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -48470,6 +48536,10 @@
         "D163": {
           "dysarthria": 0.85,
           "aphasia": 0.15
+        },
+        "D382": {
+          "dysarthria": 0.15,
+          "aphasia": 0.85
         }
       }
     },
@@ -50302,6 +50372,10 @@
         "D371": {
           "absent": 0.74,
           "present": 0.26
+        },
+        "D382": {
+          "absent": 0.84,
+          "present": 0.16
         }
       }
     },
@@ -50327,6 +50401,11 @@
           "visual": 0.92,
           "auditory": 0.05,
           "tactile": 0.03
+        },
+        "D382": {
+          "visual": 0.75,
+          "auditory": 0.2,
+          "tactile": 0.05
         }
       }
     },
@@ -50344,6 +50423,10 @@
         "D371": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D382": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -51036,6 +51119,10 @@
         "D380": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D382": {
+          "absent": 0.58,
+          "present": 0.42
         }
       }
     },
@@ -51499,6 +51586,453 @@
           "gpr": 0.01,
           "afb": 0.005,
           "fungal": 0.015
+        }
+      }
+    },
+    "S104": {
+      "description": "記憶障害",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D302": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D200": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D300": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D304": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D382": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S150": {
+      "description": "認知機能低下(非記憶)",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D302": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D200": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D300": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D304": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D303": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D382": {
+          "absent": 0.3,
+          "present": 0.7
+        }
+      }
+    },
+    "S141": {
+      "description": "認知障害の発症様式",
+      "states": [
+        "acute",
+        "subacute",
+        "chronic_progressive"
+      ],
+      "leak": {
+        "acute": 0.4,
+        "subacute": 0.35,
+        "chronic_progressive": 0.25
+      },
+      "parent_effects": {
+        "D300": {
+          "acute": 0.05,
+          "subacute": 0.9,
+          "chronic_progressive": 0.05
+        },
+        "D382": {
+          "acute": 0.02,
+          "subacute": 0.03,
+          "chronic_progressive": 0.95
+        },
+        "D200": {
+          "acute": 0.05,
+          "subacute": 0.35,
+          "chronic_progressive": 0.6
+        },
+        "D304": {
+          "acute": 0.05,
+          "subacute": 0.1,
+          "chronic_progressive": 0.85
+        },
+        "D302": {
+          "acute": 0.02,
+          "subacute": 0.08,
+          "chronic_progressive": 0.9
+        }
+      }
+    },
+    "S149": {
+      "description": "妄想",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D382": {
+          "absent": 0.69,
+          "present": 0.31
+        },
+        "D304": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D371": {
+          "absent": 0.7,
+          "present": 0.3
+        }
+      }
+    },
+    "S106": {
+      "description": "歩行障害",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.92,
+        "present": 0.08
+      },
+      "parent_effects": {
+        "D236": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D302": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D200": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D300": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D303": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D304": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D301": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D312": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D382": {
+          "absent": 0.6,
+          "present": 0.4
+        }
+      }
+    },
+    "S137": {
+      "description": "歩行障害のパターン",
+      "states": [
+        "ataxic",
+        "shuffling",
+        "steppage",
+        "spastic",
+        "waddling",
+        "antalgic"
+      ],
+      "leak": {
+        "ataxic": 0.25,
+        "shuffling": 0.15,
+        "steppage": 0.1,
+        "spastic": 0.2,
+        "waddling": 0.1,
+        "antalgic": 0.2
+      },
+      "parent_effects": {
+        "D382": {
+          "ataxic": 0.08,
+          "shuffling": 0.65,
+          "steppage": 0.02,
+          "spastic": 0.1,
+          "waddling": 0.03,
+          "antalgic": 0.12
+        },
+        "D200": {
+          "ataxic": 0.15,
+          "shuffling": 0.55,
+          "steppage": 0.02,
+          "spastic": 0.05,
+          "waddling": 0.03,
+          "antalgic": 0.2
+        },
+        "D303": {
+          "ataxic": 0.05,
+          "shuffling": 0.75,
+          "steppage": 0.02,
+          "spastic": 0.03,
+          "waddling": 0.02,
+          "antalgic": 0.13
+        },
+        "D304": {
+          "ataxic": 0.08,
+          "shuffling": 0.68,
+          "steppage": 0.02,
+          "spastic": 0.05,
+          "waddling": 0.02,
+          "antalgic": 0.15
+        }
+      }
+    },
+    "S105": {
+      "description": "不随意運動",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D218": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D300": {
+          "absent": 0.2,
+          "present": 0.8
+        },
+        "D303": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D304": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D382": {
+          "absent": 0.9,
+          "present": 0.1
+        }
+      }
+    },
+    "S136": {
+      "description": "不随意運動の種類",
+      "states": [
+        "tremor_resting",
+        "tremor_action",
+        "chorea",
+        "myoclonus",
+        "dystonia"
+      ],
+      "leak": {
+        "tremor_resting": 0.25,
+        "tremor_action": 0.2,
+        "chorea": 0.15,
+        "myoclonus": 0.2,
+        "dystonia": 0.2
+      },
+      "parent_effects": {
+        "D382": {
+          "tremor_resting": 0.05,
+          "tremor_action": 0.03,
+          "chorea": 0.02,
+          "myoclonus": 0.82,
+          "dystonia": 0.08
+        },
+        "D300": {
+          "tremor_resting": 0.03,
+          "tremor_action": 0.02,
+          "chorea": 0.05,
+          "myoclonus": 0.85,
+          "dystonia": 0.05
+        },
+        "D303": {
+          "tremor_resting": 0.75,
+          "tremor_action": 0.1,
+          "chorea": 0.02,
+          "myoclonus": 0.03,
+          "dystonia": 0.1
+        }
+      }
+    },
+    "E81": {
+      "description": "筋緊張",
+      "states": [
+        "normal",
+        "flaccid",
+        "spastic",
+        "rigid",
+        "paratonia"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "flaccid": 0.03,
+        "spastic": 0.05,
+        "rigid": 0.04,
+        "paratonia": 0.03
+      },
+      "parent_effects": {
+        "D303": {
+          "normal": 0.15,
+          "flaccid": 0.02,
+          "spastic": 0.03,
+          "rigid": 0.75,
+          "paratonia": 0.05
+        },
+        "D304": {
+          "normal": 0.4,
+          "flaccid": 0.02,
+          "spastic": 0.03,
+          "rigid": 0.45,
+          "paratonia": 0.1
+        },
+        "D382": {
+          "normal": 0.5,
+          "flaccid": 0.02,
+          "spastic": 0.05,
+          "rigid": 0.13,
+          "paratonia": 0.3
+        }
+      }
+    },
+    "S99": {
+      "description": "尿失禁",
+      "states": [
+        "absent",
+        "stress",
+        "urge",
+        "overflow",
+        "functional"
+      ],
+      "leak": {
+        "absent": 0.9,
+        "stress": 0.04,
+        "urge": 0.03,
+        "overflow": 0.02,
+        "functional": 0.01
+      },
+      "parent_effects": {
+        "D308": {
+          "absent": 0.25,
+          "stress": 0.02,
+          "urge": 0.03,
+          "overflow": 0.65,
+          "functional": 0.05
+        },
+        "D200": {
+          "absent": 0.4,
+          "stress": 0.02,
+          "urge": 0.5,
+          "overflow": 0.05,
+          "functional": 0.03
+        },
+        "D307": {
+          "absent": 0.55,
+          "stress": 0.03,
+          "urge": 0.25,
+          "overflow": 0.12,
+          "functional": 0.05
+        },
+        "D382": {
+          "absent": 0.65,
+          "stress": 0.02,
+          "urge": 0.03,
+          "overflow": 0.02,
+          "functional": 0.28
+        }
+      }
+    },
+    "S183": {
+      "description": "体重減少の速度",
+      "states": [
+        "rapid_weeks",
+        "gradual_months"
+      ],
+      "leak": {
+        "rapid_weeks": 0.4,
+        "gradual_months": 0.6
+      },
+      "parent_effects": {
+        "D382": {
+          "rapid_weeks": 0.05,
+          "gradual_months": 0.95
+        },
+        "D67": {
+          "rapid_weeks": 0.35,
+          "gradual_months": 0.65
+        },
+        "D230": {
+          "rapid_weeks": 0.45,
+          "gradual_months": 0.55
+        }
+      }
+    },
+    "S116": {
+      "description": "不眠",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.85,
+        "present": 0.15
+      },
+      "parent_effects": {
+        "D304": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D303": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D382": {
+          "absent": 0.61,
+          "present": 0.39
         }
       }
     }

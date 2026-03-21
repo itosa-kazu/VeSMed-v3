@@ -493,6 +493,24 @@ const STATE_JA = {
   // D-dimer/Troponin - uses existing: not_done, normal, mildly_elevated, very_high
   // γ-GTP (L103) / ALP (L104) - 4-state CTCAE grading
   moderate_elevated:"中等度上昇", markedly_elevated:"著明上昇",
+  // Gait pattern (S137)
+  ataxic:"失調性", shuffling:"すり足/小刻み", steppage:"鶏歩", spastic:"痙性",
+  waddling:"動揺歩行", antalgic:"疼痛回避歩行",
+  // Muscle tone (E81)
+  flaccid:"弛緩", rigid:"固縮", paratonia:"パラトニア",
+  // Involuntary movement type (S136)
+  tremor_resting:"安静時振戦", tremor_action:"動作時振戦", chorea:"舞踏運動",
+  myoclonus:"ミオクローヌス", dystonia:"ジストニア",
+  // Urinary incontinence type (S99)
+  stress:"腹圧性", urge:"切迫性", overflow:"溢流性", functional:"機能性",
+  // Cognitive decline onset (S141)
+  chronic_progressive:"慢性進行性",
+  // Hallucination modality (S138)
+  visual:"視覚性", auditory:"聴覚性", tactile:"触覚性",
+  // Weight loss tempo (S183)
+  rapid_weeks:"急速(週単位)", gradual_months:"緩徐(月単位)",
+  // Onset speed (T02)
+  sudden:"突然", acute:"急性", subacute:"亜急性", chronic:"慢性",
 };
 
 function stateJa(s) { return STATE_JA[s] || s; }

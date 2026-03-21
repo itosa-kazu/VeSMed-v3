@@ -12,6 +12,7 @@
 
 ## 将来タスク
 - [project_d05_cap_split.md](project_d05_cap_split.md) — **D05(市中肺炎)は分割/削除が必要**。病原体別ID(D266/D265/D263等)が既にあり冗長
+- **L108(膿瘍穿刺液鏡検)** — 将来追加。R933(脳膿瘍ドレナージ)/R935(手術検体)のノカルジアCNS案例を解決する鍵。states: negative/gpc/gnr/afb/branching_filaments/fungal
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
 - [feedback_max_cases.md](feedback_max_cases.md) — PMCで見つけた案例は全て使う（3件以上は全部追加）
 - [feedback_no_oos_escape.md](feedback_no_oos_escape.md) — OOS逃避禁止。FATALを正直に受け入れるか、変数追加で正面解決

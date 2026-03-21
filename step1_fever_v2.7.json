@@ -11045,6 +11045,19 @@
       ],
       "note": "髄液Gram染色。感度91%。gpc=肺炎球菌,gn=髄膜炎菌/大腸菌,gpr=Listeria,fungal=Crypto",
       "severity": "high"
+    },
+    {
+      "id": "D382",
+      "name": "alzheimer_disease",
+      "name_ja": "アルツハイマー型認知症",
+      "category": "disease",
+      "category_sub": "neurodegenerative",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "最多認知症(60-80%)。近時記憶障害→遂行機能/言語/視空間低下→BPSD→ADL低下。95%≥65歳、女性65%。MRI側頭葉萎縮。鑑別:DLB/NPH/CJD/せん妄"
     }
   ]
 }

@@ -24987,7 +24987,174 @@
       },
       "result": "",
       "notes": "HSCT後。N. elegans。6ヶ月無病"
+    },
+    {
+      "id": "R938",
+      "vignette": "63歳男性。7年前(56歳)から物忘れ、言葉が不明瞭になった。商売で釣り銭の間違い、自転車の置き場所を忘れる。3年後に鏡で自分を認識できなくなり、靴を隠す(盗まれるという妄想)。MMSE 18/30。5年後に幻視とイライラ出現。現在MMSE 3/30、MoCA 0/30。歩行異常、筋緊張亢進、膝蓋腱反射亢進。頭部MRI: 全大脳皮質萎縮、側頭葉・海馬萎縮顕著(MTA grade 3)。FDG-PET: 両側前頭・頭頂葉の糖代謝低下。髄液: Aβ42低下(462pg/ml)、総タウ上昇(754pg/ml)、リン酸化タウ上昇(87pg/ml)。APOE ε3/ε3。",
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S53": "present",
+        "S94": "aphasia",
+        "S117": "present",
+        "S138": "visual",
+        "S167": "present",
+        "S106": "present",
+        "L46": "temporal_lobe_lesion",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "expected_id": "D382",
+      "pmcid": "PMC7845665",
+      "source": "PMC",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "in_scope": true,
+      "notes": "前頭葉変異型早発性AD。進行性非流暢性失語で初発",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": ""
+    },
+    {
+      "id": "R939",
+      "vignette": "58歳女性。2年前から反復言動、記憶力低下、遂行機能障害。6ヶ月前から語想起困難、識字能力低下、家電操作不能(コンロ消せない)、運転中止。MMSE 14/30。軽度の観念運動失行。歩行・小脳機能は正常。進行後、筋強剛、運動失行悪化、時折ミオクローヌス出現。転倒リスク増大、1人介助で歩行。CT: 顕著な全脳萎縮、海馬萎縮。遺伝子検査: 新規PSEN2変異(L221T)、APOE ε3/4。63歳で肺炎にて死亡。剖検: AD確認(アミロイド斑+神経原線維変化)。",
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S53": "present",
+        "S94": "aphasia",
+        "S105": "present",
+        "S136": "myoclonus",
+        "E81": "rigid",
+        "S106": "present",
+        "L46": "temporal_lobe_lesion",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "expected_id": "D382",
+      "pmcid": "PMC6554015",
+      "source": "PMC",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "in_scope": true,
+      "notes": "早発性AD、新規PSEN2変異。剖検確認。後期に筋強剛+ミオクローヌス",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": ""
+    },
+    {
+      "id": "R940",
+      "vignette": "58歳女性。進行性認知機能低下と重度言語障害。表出性言語困難、語想起障害、記憶力低下。不安、気分変動、怒り、攻撃性、被害妄想(幻覚なし)。てんかんの既往あり。神経学的検査: 表出性失語、顔面非対称、混乱、不安。頭部MRI(経時的): 初回は比較的保たれた脳容積 → 2年後に年齢に比して過度の全般性脳萎縮。髄液: 総タウ上昇、Aβ42/40比低下、リン酸化タウ181上昇。APP/PSEN1/PSEN2遺伝子変異なし。",
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S53": "present",
+        "S94": "aphasia",
+        "S149": "present",
+        "S167": "present",
+        "S115": "present",
+        "S42": "present",
+        "L46": "diffuse_abnormal",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "expected_id": "D382",
+      "pmcid": "PMC12450289",
+      "source": "PMC",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "in_scope": true,
+      "notes": "早発性AD、家族歴なし。行動変化+妄想+てんかん合併",
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": ""
+    },
+    {
+      "id": "R941",
+      "source": "PMC",
+      "pmcid": "PMC11271388",
+      "vignette": "32歳女性。2年前から日常生活に支障をきたす進行性記憶力低下。MMSE 23/30。4年後にMMSE 16/30に低下、全般性強直間代発作出現(バルプロ酸で制御)、ミオクローヌス、重度失語、失行。当初は自己免疫性脳炎と誤診されIVIg+ステロイド投与も無効。MRI: 左海馬FLAIR高信号+ガドリニウム造影増強、白質病変。FDG-PET: 両側側頭頭頂葉+楔前部+後部帯状回に重度糖代謝低下(AD典型パターン)。アミロイドPET: 大脳皮質全般にアミロイド沈着。エクソーム解析: PSEN1新規変異(Ala260Val, de novo)。",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "expected_id": "D382",
+      "in_scope": true,
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S42": "present",
+        "S105": "present",
+        "S136": "myoclonus",
+        "S53": "present",
+        "S94": "aphasia",
+        "L46": "temporal_lobe_lesion",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "超早発性AD(32歳)。PSEN1 de novo変異。自己免疫性脳炎と誤診"
+    },
+    {
+      "id": "R942",
+      "source": "PMC",
+      "pmcid": "PMC4289771",
+      "vignette": "51歳女性。物の操作困難が進行、2年以内に不随意運動出現、書字不能、家事不能。神経学的検査: 重度両側観念運動失行、四肢の舞踏運動(左上肢遠位で顕著)、腱反射亢進、眉間・口尖・手掌顎反射陽性。MMSE 21/30、MoCA 14/30。視空間構成障害重度、失書、失算。後方性失語(喚語困難、意味性錯語)。血液検査正常。髄液: Aβ42低下(122.7pg/mL)、タウ上昇(1106.8pg/mL)。MRI: 両側頭頂葉の顕著な萎縮、海馬は相対的に保たれる。ハンチントン病遺伝子検査陰性。APP/PSEN1/PSEN2変異なし。APOE ε3/ε3。",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "expected_id": "D382",
+      "in_scope": true,
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S53": "present",
+        "S94": "aphasia",
+        "S105": "present",
+        "S136": "chorea",
+        "L46": "other",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "両側頭頂葉変異型AD。舞踏運動でHD疑い→遺伝子検査陰性。髄液+PiB-PETでAD確認"
+    },
+    {
+      "id": "R943",
+      "source": "PMC",
+      "pmcid": "PMC9217863",
+      "vignette": "84歳女性。約2年前から徐々に記憶力低下。語想起困難、小切手帳の管理困難。既往: 冠動脈疾患(ステント)、高血圧、脂質異常症、うつ病。MMSE 23/30(軽度AD)。アミロイドPET: 大脳皮質+線条体にアミロイド斑(SUVR 1.5)。APOE ε3/ε3。経過中にMMSE 14→5へ低下。死後剖検: NIA/AA A1B3C1、Braak stage V神経原線維変性、残存アミロイド斑。",
+      "final_diagnosis": "アルツハイマー型認知症",
+      "expected_id": "D382",
+      "in_scope": true,
+      "evidence": {
+        "S104": "present",
+        "S150": "present",
+        "S141": "chronic_progressive",
+        "S53": "present",
+        "S94": "aphasia",
+        "S115": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "典型的晩発性AD。剖検確認(Braak V)。84歳女性"
     }
   ],
-  "total_cases": 110
+  "total_cases": 942
 }
