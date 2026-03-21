@@ -25981,7 +25981,77 @@
       },
       "result": "",
       "notes": "TBI後躁病。53歳男性。YMRS31。Lab全正常。Olanzapineで完全寛解"
+    },
+    {
+      "id": "R978",
+      "source": "PMC",
+      "pmcid": "PMC10211418",
+      "vignette": "22歳男性。大学生。不安感と「発作」の恐怖。発作時: 動悸、発汗、胸部絞扼感、離人感、コントロール喪失への恐怖。発作は5-10分持続。週1回頻度。家族内葛藤が誘因。身体診察・検査は正常。13歳からてんかんと誤診されていた(EEG繰り返し陰性)。",
+      "final_diagnosis": "パニック症(パニック障害)",
+      "expected_id": "D394",
+      "in_scope": true,
+      "evidence": {
+        "S35": "present",
+        "S21": "present",
+        "S114": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "9年間てんかんと誤診。EEG繰り返し陰性。CBT+SSRIで完全寛解"
+    },
+    {
+      "id": "R979",
+      "source": "PMC",
+      "pmcid": "PMC10653632",
+      "vignette": "63歳女性。胸痛と強い心理的ストレスで救急受診。非定型胸痛、主観的呼吸困難、不安。間欠的動悸。血圧上昇。ECG: ST変化なし。トロポニン84→145ng/L(上昇)。心エコー: 壁運動異常なし。冠動脈造影: 冠動脈開通(狭窄なし)。",
+      "final_diagnosis": "パニック症(パニック障害)",
+      "expected_id": "D394",
+      "in_scope": true,
+      "evidence": {
+        "S21": "present",
+        "S04": "at_rest",
+        "S114": "present",
+        "S35": "present",
+        "E40": "normal",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "心理ストレス性胸痛。Troponin偽陽性。冠動脈正常"
+    },
+    {
+      "id": "R980",
+      "source": "PMC",
+      "pmcid": "PMC10357390",
+      "vignette": "21歳女性。不安障害+パニック障害の既往。胸部絞扼感/胸痛、呼吸困難、口唇周囲・指先のしびれで救急受診。既往のパニック発作と同様の症状。HR 63bpm、BP正常、RR 20、無熱。ECG: 接合部調律53bpm(発作中)→発作後正常洞調律53bpm。トロポニン正常。甲状腺/電解質/薬物スクリーン正常。",
+      "final_diagnosis": "パニック症(パニック障害)",
+      "expected_id": "D394",
+      "in_scope": true,
+      "evidence": {
+        "S21": "present",
+        "S04": "at_rest",
+        "S114": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "PD既往の21歳女性。接合部調律→正常洞調律。Lab全正常"
     }
   ],
-  "total_cases": 976
+  "total_cases": 979
 }
