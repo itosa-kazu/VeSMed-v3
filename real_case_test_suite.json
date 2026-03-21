@@ -26218,7 +26218,75 @@
       },
       "result": "",
       "notes": "典型BPH。AUA 21(重症)。前立腺65mL。α遮断薬+5ARI併用"
+    },
+    {
+      "id": "R988",
+      "source": "PMC",
+      "pmcid": "PMC6259496",
+      "vignette": "56歳男性。BMI 30.1。重度のいびき(配偶者証言)。断片化睡眠(23-6時)。日中の過度の眠気(仕事中/移動中に居眠り)。ESS 23/24(重度)。BP 147/81、脈拍78。頸囲46.2cm。扁桃腫大なし。夜間パルスオキシメトリ:ODI 49.2/h。PSG: AHI 50.7/h、覚醒指数42.9/h。",
+      "final_diagnosis": "閉塞性睡眠時無呼吸症候群(OSAS)",
+      "expected_id": "D397",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "S116": "present",
+        "E05": "mild_hypoxia_93_96",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "重症OSAS。AHI 50.7。ESS 23。CPAP後ESS 8に改善"
+    },
+    {
+      "id": "R989",
+      "source": "PMC",
+      "pmcid": "PMC2848777",
+      "vignette": "63歳女性。BMI 22.67。慢性不眠を主訴(入眠潜時2-3時間、総睡眠3時間以下と主観的に訴え)。しかし家族は30分以内の入眠+6時間以上の睡眠を観察。軽度いびき。PSG: AHI 74.6/h(重症)、最低SpO2 76%、平均SpO2 92.8%。ベンゾジアゼピン/抗うつ薬/抗精神病薬で治療失敗。",
+      "final_diagnosis": "閉塞性睡眠時無呼吸症候群(OSAS)",
+      "expected_id": "D397",
+      "in_scope": true,
+      "evidence": {
+        "S07": "severe",
+        "S116": "present",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "不眠と誤診された重症OSAS。AHI 74.6。BMI正常。閉経後女性"
+    },
+    {
+      "id": "R990",
+      "source": "PMC",
+      "pmcid": "PMC10241529",
+      "vignette": "46歳男性。6ヶ月間の咽頭違和感。夜間睡眠中の窒息感/呼吸困難で覚醒。断片化睡眠。バイタル安定、無熱。口腔内:口蓋垂過形成(長大)。Mallampati II度。HbA1C 5.2%正常、甲状腺機能正常。MRI:口蓋垂が舌根に接触、咽頭気道狭窄。",
+      "final_diagnosis": "閉塞性睡眠時無呼吸症候群(OSAS)",
+      "expected_id": "D397",
+      "in_scope": true,
+      "evidence": {
+        "S116": "present",
+        "S07": "mild",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "口蓋垂過形成によるOSAS。PSG未施行。手術拒否"
     }
   ],
-  "total_cases": 986
+  "total_cases": 989
 }

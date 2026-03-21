@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7641,
+  "total_edges": 7651,
   "edges": [
     {
       "from": "R01",
@@ -60183,6 +60183,76 @@
       "from_name": "cauda_equina",
       "to_name": "urinary_retention_feeling",
       "reason": "馬尾症候群: 残尿感/尿閉。膀胱直腸障害"
+    },
+    {
+      "from": "D397",
+      "to": "S07",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "fatigue",
+      "reason": "OSAS: 倦怠感/日中眠気~80%(PMC10303057)。夜間断片化睡眠による"
+    },
+    {
+      "from": "D397",
+      "to": "S05",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "headache",
+      "reason": "OSAS: 朝頭痛~30%(AJRCCM 2001)。夜間低酸素+高CO2による"
+    },
+    {
+      "from": "D397",
+      "to": "S116",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "insomnia",
+      "reason": "OSAS: 不眠~50%。夜間覚醒多数+入眠困難"
+    },
+    {
+      "from": "D397",
+      "to": "S11",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "urinary_frequency",
+      "reason": "OSAS: 夜間頻尿~50%。ANP分泌増加+覚醒に伴う"
+    },
+    {
+      "from": "D397",
+      "to": "S35",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "palpitation",
+      "reason": "OSAS: 動悸。夜間不整脈(AF 5x増)。OSA-AF関連"
+    },
+    {
+      "from": "D397",
+      "to": "E05",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "SpO2",
+      "reason": "OSAS: SpO2低下。夜間反復性低酸素。重症AHI>30で持続性低下"
+    },
+    {
+      "from": "D397",
+      "to": "E02",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "heart_rate",
+      "reason": "OSAS: 頻脈/除脈反復。無呼吸中の自律神経変動"
+    },
+    {
+      "from": "D397",
+      "to": "E01",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "temperature",
+      "reason": "OSAS: 無熱(定義的)。発熱は合併感染/別疾患"
+    },
+    {
+      "from": "D397",
+      "to": "T01",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "symptom_duration",
+      "reason": "OSAS: 慢性(数ヶ月~数年)。緩徐進行性"
+    },
+    {
+      "from": "D397",
+      "to": "T02",
+      "from_name": "obstructive_sleep_apnea",
+      "to_name": "onset_speed",
+      "reason": "OSAS: 慢性発症。数ヶ月~数年で進行"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
