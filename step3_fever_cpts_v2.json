@@ -4604,6 +4604,21 @@
         "female|40_64": 0.0007,
         "female|65_plus": 0.0006
       }
+    },
+    "D401": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "子癇前症。女性のみ。妊娠可能年齢。初産/35歳以上リスク",
+      "cpt": {
+        "male|18_39": 0.0,
+        "male|40_64": 0.0,
+        "male|65_plus": 0.0,
+        "female|18_39": 0.005,
+        "female|40_64": 0.002,
+        "female|65_plus": 0.0
+      }
     }
   },
   "full_cpts": {
@@ -13848,6 +13863,27 @@
           "female": 0.43
         }
       }
+    },
+    "D401": {
+      "R01": {
+        "description": "PE年齢。18-39歳が主(妊娠可能年齢)",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.0,
+          "13_17": 0.01,
+          "18_39": 0.65,
+          "40_64": 0.34,
+          "65_plus": 0.01
+        }
+      },
+      "R02": {
+        "description": "PE性別。女性のみ",
+        "cpt": {
+          "male": 0.0,
+          "female": 1.0
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16601,6 +16637,14 @@
           "over_40.0": 0.001
         },
         "D400": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D401": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -27183,6 +27227,11 @@
           "normal": 0.1,
           "mild_elevated": 0.7,
           "very_high": 0.2
+        },
+        "D401": {
+          "normal": 0.5,
+          "mild_elevated": 0.35,
+          "very_high": 0.15
         }
       }
     },
@@ -27730,6 +27779,14 @@
           "thrombocytopenia": 0.45,
           "eosinophilia": 0.01,
           "lymphocyte_predominant": 0.24
+        },
+        "D401": {
+          "normal": 0.6,
+          "left_shift": 0.05,
+          "atypical_lymphocytes": 0.02,
+          "thrombocytopenia": 0.28,
+          "eosinophilia": 0.02,
+          "lymphocyte_predominant": 0.03
         }
       }
     },
@@ -28097,6 +28154,10 @@
         "D384": {
           "normal": 0.2,
           "elevated": 0.8
+        },
+        "D401": {
+          "normal": 0.5,
+          "elevated": 0.5
         }
       }
     },
@@ -31607,6 +31668,11 @@
           "absent": 0.7,
           "mild": 0.25,
           "severe": 0.05
+        },
+        "D401": {
+          "absent": 0.35,
+          "mild": 0.25,
+          "severe": 0.4
         }
       }
     },
@@ -33084,6 +33150,11 @@
           "absent": 0.4,
           "mild": 0.35,
           "severe": 0.25
+        },
+        "D401": {
+          "absent": 0.45,
+          "mild": 0.35,
+          "severe": 0.2
         }
       }
     },
@@ -34012,6 +34083,10 @@
         "D398": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D401": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -34669,6 +34744,10 @@
         "D395": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D401": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -36826,6 +36905,10 @@
         "D382": {
           "absent": 0.87,
           "present": 0.13
+        },
+        "D401": {
+          "absent": 0.97,
+          "present": 0.03
         }
       }
     },
@@ -39679,6 +39762,12 @@
           "3d_to_1w": 0.01,
           "1w_to_3w": 0.03,
           "over_3w": 0.95
+        },
+        "D401": {
+          "under_3d": 0.3,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.05
         }
       }
     },
@@ -41748,6 +41837,12 @@
           "acute": 0.02,
           "subacute": 0.07,
           "chronic": 0.9
+        },
+        "D401": {
+          "sudden": 0.1,
+          "acute": 0.5,
+          "subacute": 0.35,
+          "chronic": 0.05
         }
       }
     },
@@ -43084,6 +43179,10 @@
         "D389": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D401": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -44696,6 +44795,11 @@
           "normal_under_140": 0.15,
           "elevated_140_180": 0.6,
           "crisis_over_180": 0.25
+        },
+        "D401": {
+          "normal_under_140": 0.1,
+          "elevated_140_180": 0.65,
+          "crisis_over_180": 0.25
         }
       }
     },
@@ -45015,6 +45119,11 @@
           "normal": 0.85,
           "mild_elevated": 0.12,
           "high_AKI": 0.03
+        },
+        "D401": {
+          "normal": 0.7,
+          "mild_elevated": 0.25,
+          "high_AKI": 0.05
         }
       }
     },
@@ -45103,6 +45212,10 @@
         "D166": {
           "negative": 0.94,
           "positive": 0.06
+        },
+        "D401": {
+          "negative": 0.01,
+          "positive": 0.99
         }
       }
     },
@@ -45627,6 +45740,10 @@
         "D300": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D401": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -45754,6 +45871,10 @@
         "D152": {
           "no": 0.8,
           "yes": 0.2
+        },
+        "D401": {
+          "no": 0.01,
+          "yes": 0.99
         }
       }
     },
@@ -48894,6 +49015,14 @@
           "LLQ": 0.02,
           "suprapubic": 0.01,
           "diffuse": 0.1
+        },
+        "D401": {
+          "epigastric": 0.45,
+          "RUQ": 0.4,
+          "RLQ": 0.02,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.09
         }
       }
     },
@@ -50435,6 +50564,11 @@
           "normal": 0.02,
           "mild_proteinuria": 0.23,
           "nephrotic_range": 0.75
+        },
+        "D401": {
+          "normal": 0.35,
+          "mild_proteinuria": 0.35,
+          "nephrotic_range": 0.3
         }
       }
     },
@@ -52055,6 +52189,10 @@
         "D391": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D401": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -52175,6 +52313,10 @@
         "D378": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D401": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },

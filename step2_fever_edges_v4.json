@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7696,
+  "total_edges": 7717,
   "edges": [
     {
       "from": "R01",
@@ -60568,6 +60568,153 @@
       "from_name": "frontotemporal_dementia",
       "to_name": "brain_MRI",
       "reason": "FTD: 前頭/側頭葉萎縮が診断基準(PMC5619539)。MRI: 前頭>側頭の限局性萎縮。PET: 前頭/側頭の低代謝"
+    },
+    {
+      "from": "D401",
+      "to": "E38",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "blood_pressure_high",
+      "reason": "PE: 高血圧(≥140/90)は診断基準(ACOG)。重症25%(≥160/110, PMC9723483)"
+    },
+    {
+      "from": "D401",
+      "to": "L78",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "urine_protein",
+      "reason": "PE: 蛋白尿42-58%(PMC9723483)。≥0.3g/24h。2013以降必須ではないが高頻度"
+    },
+    {
+      "from": "D401",
+      "to": "S05",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "headache",
+      "reason": "PE: 頭痛66%(子癇前兆, PMC3119563)。重症型で高頻度。子癇の最多前駆症状"
+    },
+    {
+      "from": "D401",
+      "to": "S54",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "visual_field_defect",
+      "reason": "PE: 視覚障害25-50%(NBK576389)。暗点/閃光/霧視。後頭葉血管性浮腫"
+    },
+    {
+      "from": "D401",
+      "to": "E36",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "lower_extremity_edema",
+      "reason": "PE: 下肢浮腫60%。蛋白尿に伴う低アルブミン→浮腫。非特異的だが急速増悪は警告"
+    },
+    {
+      "from": "D401",
+      "to": "E68",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "periorbital_edema",
+      "reason": "PE: 顔面浮腫(眼瞼)30%。全身性浮腫の一部。急速な体重増加を伴う"
+    },
+    {
+      "from": "D401",
+      "to": "S13",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "nausea",
+      "reason": "PE: 悪心30-40%。肝腫大/子宮内圧上昇。HELLP移行の警告"
+    },
+    {
+      "from": "D401",
+      "to": "S42",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "seizure",
+      "reason": "PE: 子癇(痙攣)<3%(PMC3119563)。40%は典型的PE所見なし。MgSO4で予防"
+    },
+    {
+      "from": "D401",
+      "to": "L11",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "liver_enzymes",
+      "reason": "PE: 肝酵素上昇10-54%(PMC4779350)。重症で高頻度。HELLP移行リスク"
+    },
+    {
+      "from": "D401",
+      "to": "L14",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "peripheral_blood_smear",
+      "reason": "PE: 血小板減少25-30%(重症)。<100,000は重症基準。HELLP移行のサイン"
+    },
+    {
+      "from": "D401",
+      "to": "L55",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "creatinine",
+      "reason": "PE: クレアチニン上昇(重症基準: >1.1mg/dL)。腎血管内皮障害"
+    },
+    {
+      "from": "D401",
+      "to": "L16",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "LDH",
+      "reason": "PE: LDH上昇45-50%。血管内皮障害+溶血反映。HELLP移行マーカー"
+    },
+    {
+      "from": "D401",
+      "to": "R15",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "pregnancy",
+      "reason": "PE: 妊娠が必須条件(定義的)。妊娠20週以降~産後48時間"
+    },
+    {
+      "from": "D401",
+      "to": "L56",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "beta_hCG",
+      "reason": "PE: β-hCG陽性(妊娠中)。妊娠の確認"
+    },
+    {
+      "from": "D401",
+      "to": "S12",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "abdominal_pain_location",
+      "reason": "PE: 上腹部痛25-30%(PMC3119563)。肝被膜伸展。HELLP移行の警告"
+    },
+    {
+      "from": "D401",
+      "to": "S89",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "abdominal_pain_region",
+      "reason": "PE: 心窩部/右上腹部痛が主(肝腫大)。HELLP同様のパターン"
+    },
+    {
+      "from": "D401",
+      "to": "S120",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "weight_gain",
+      "reason": "PE: 体重増加55-60%。浮腫に伴う急速な体重増加(>2kg/週)"
+    },
+    {
+      "from": "D401",
+      "to": "S07",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "fatigue",
+      "reason": "PE: 倦怠感。全身性浮腫+貧血+高血圧に伴う"
+    },
+    {
+      "from": "D401",
+      "to": "E01",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "temperature",
+      "reason": "PE: 通常無熱。発熱→感染/子宮内膜炎を除外"
+    },
+    {
+      "from": "D401",
+      "to": "T01",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "symptom_duration",
+      "reason": "PE: 急性~亜急性(数日~1-2週)。急速進行で緊急分娩要する場合あり"
+    },
+    {
+      "from": "D401",
+      "to": "T02",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "onset_speed",
+      "reason": "PE: 急性~亜急性発症。数日で症状悪化"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
