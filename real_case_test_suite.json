@@ -26286,7 +26286,77 @@
       },
       "result": "",
       "notes": "口蓋垂過形成によるOSAS。PSG未施行。手術拒否"
+    },
+    {
+      "id": "R991",
+      "source": "PMC",
+      "pmcid": "PMC11196016",
+      "vignette": "60歳女性。閉経後(50歳閉経)。3ヶ月間の不正性器出血(進行性に悪化)。間欠的骨盤痛(下腹部、中等度)。2ヶ月で10kg体重減少。顔色蒼白、易疲労感。下腹部軽度圧痛。腟鏡:少量性器出血。CA-125 42U/mL(軽度上昇)。経腟US:子宮内膜15mm肥厚。",
+      "final_diagnosis": "子宮体癌(子宮内膜癌)",
+      "expected_id": "D398",
+      "in_scope": true,
+      "evidence": {
+        "S127": "present",
+        "S12": "present",
+        "S07": "severe",
+        "S17": "present",
+        "E85": "present",
+        "L62": "uterine_abnormal",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "高分化型腺癌FIGO II。内膜15mm。10kg体重減少。子宮全摘"
+    },
+    {
+      "id": "R992",
+      "source": "PMC",
+      "pmcid": "PMC8738900",
+      "vignette": "67歳女性。5-6年間の閉経後出血(最近悪化、血塊あり)。BMI 38.8(肥満)。高血圧/脂質異常/前糖尿病/甲状腺機能低下(術後)。子宮著明腫大(12週大)。経腟US:子宮内膜2.6cm肥厚+多発筋腫。初回子宮内膜生検:陰性。2回目生検:検体不十分。D&Cで腺癌確定。",
+      "final_diagnosis": "子宮体癌(子宮内膜癌)",
+      "expected_id": "D398",
+      "in_scope": true,
+      "evidence": {
+        "S127": "present",
+        "L62": "uterine_abnormal",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "明細胞癌。BMI 38.8。2回生検陰性→D&Cで確定。FIGO II"
+    },
+    {
+      "id": "R993",
+      "source": "PMC",
+      "pmcid": "PMC4518496",
+      "vignette": "31歳女性。BMI 35.5(肥満)。10年間の原発性不妊+稀発月経+不正出血。PCOS既往。経腟US:子宮内膜12mm肥厚。3D超音波:子宮腔の半分に不整内膜+線維性索状物。子宮鏡:多発ポリープ様病変→生検。",
+      "final_diagnosis": "子宮体癌(子宮内膜癌)",
+      "expected_id": "D398",
+      "in_scope": true,
+      "evidence": {
+        "S127": "present",
+        "L62": "uterine_abnormal",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "31歳の若年発症。BMI 35.5+PCOS。FIGO II。凍結胚で代理母選択肢"
     }
   ],
-  "total_cases": 989
+  "total_cases": 992
 }

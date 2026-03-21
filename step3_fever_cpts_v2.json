@@ -4559,6 +4559,21 @@
         "female|40_64": 0.004,
         "female|65_plus": 0.003
       }
+    },
+    "D398": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "EC。女性のみ。55-65歳ピーク",
+      "cpt": {
+        "male|18_39": 0.0,
+        "male|40_64": 0.0,
+        "male|65_plus": 0.0,
+        "female|18_39": 0.0005,
+        "female|40_64": 0.003,
+        "female|65_plus": 0.004
+      }
     }
   },
   "full_cpts": {
@@ -13740,6 +13755,27 @@
           "female": 0.29
         }
       }
+    },
+    "D398": {
+      "R01": {
+        "description": "EC年齢。55-65歳ピーク",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.0,
+          "13_17": 0.001,
+          "18_39": 0.05,
+          "40_64": 0.4,
+          "65_plus": 0.549
+        }
+      },
+      "R02": {
+        "description": "EC性別。女性のみ",
+        "cpt": {
+          "male": 0.0,
+          "female": 1.0
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16469,6 +16505,14 @@
           "over_40.0": 0.001
         },
         "D397": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D398": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -32928,6 +32972,11 @@
           "absent": 0.15,
           "mild": 0.35,
           "severe": 0.5
+        },
+        "D398": {
+          "absent": 0.5,
+          "mild": 0.3,
+          "severe": 0.2
         }
       }
     },
@@ -33852,6 +33901,10 @@
         "D390": {
           "absent": 0.02,
           "present": 0.98
+        },
+        "D398": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -35147,6 +35200,10 @@
         "D391": {
           "absent": 0.67,
           "present": 0.33
+        },
+        "D398": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -39477,6 +39534,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.05,
           "over_3w": 0.9
+        },
+        "D398": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.05,
+          "over_3w": 0.9
         }
       }
     },
@@ -41528,6 +41591,12 @@
           "acute": 0.03,
           "subacute": 0.1,
           "chronic": 0.85
+        },
+        "D398": {
+          "sudden": 0.03,
+          "acute": 0.05,
+          "subacute": 0.12,
+          "chronic": 0.8
         }
       }
     },
@@ -45654,6 +45723,12 @@
           "adnexal_mass": 0.35,
           "free_fluid": 0.3,
           "uterine_abnormal": 0.15
+        },
+        "D398": {
+          "normal": 0.1,
+          "adnexal_mass": 0.05,
+          "free_fluid": 0.05,
+          "uterine_abnormal": 0.8
         }
       }
     },
@@ -53565,6 +53640,10 @@
         "D384": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D398": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -54192,6 +54271,50 @@
           "normal": 0.8,
           "oliguria": 0.18,
           "anuria": 0.02
+        }
+      }
+    },
+    "S127": {
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D276": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D398": {
+          "absent": 0.08,
+          "present": 0.92
+        },
+        "D291": {
+          "absent": 0.25,
+          "present": 0.75
+        },
+        "D26": {
+          "absent": 0.65,
+          "present": 0.35
+        }
+      }
+    },
+    "S128": {
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D398": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D291": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D276": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     }
