@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7875,
+  "total_edges": 7890,
   "edges": [
     {
       "from": "R01",
@@ -61821,6 +61821,111 @@
       "to": "T02",
       "to_name": "発症速度",
       "reason": "インスリノーマ: 緩徐進行(個々の発作は急性だが全体経過は慢性, Service 2009)"
+    },
+    {
+      "from": "D380",
+      "from_name": "cushing_syndrome",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "Cushing: 低K血症(43-75%, ミネラルコルチコイド過剰, PMC4407747/PMC4215264)"
+    },
+    {
+      "from": "D321",
+      "from_name": "primary_aldosteronism",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "原発性アルドステロン症: 低K血症(30-50%が低K、classic feature, StatPearls)"
+    },
+    {
+      "from": "D72",
+      "from_name": "adrenal_crisis",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "副腎クリーゼ: 高K血症(アルドステロン欠乏→K排泄低下, Harrison's Ch.379)"
+    },
+    {
+      "from": "D153",
+      "from_name": "rhabdomyolysis",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "横紋筋融解症: 高K血症(細胞崩壊→K放出, 30-40%, PMC5594070)"
+    },
+    {
+      "from": "D140",
+      "from_name": "diabetic_ketoacidosis",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "DKA: 来院時高K(アシドーシスによるK細胞外シフト, 初期30-40%高K, StatPearls)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "L108",
+      "to_name": "血清カリウム",
+      "reason": "HypoPP: 発作時低K(K+ 0.9-3.5mEq/L, 平均1.8-2.3, GeneReviews NBK1338)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "S48",
+      "to_name": "近位筋力低下",
+      "reason": "HypoPP: 近位筋優位の四肢麻痺(下肢>上肢、95%+, StatPearls NBK559178)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "E53",
+      "to_name": "深部腱反射",
+      "reason": "HypoPP: 発作時腱反射低下〜消失(下位運動ニューロン型, StatPearls NBK559178)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "S106",
+      "to_name": "歩行障害",
+      "reason": "HypoPP: 下肢麻痺による歩行不能(下肢>上肢, 80%+, GeneReviews NBK1338)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "S07",
+      "to_name": "倦怠感・疲労感",
+      "reason": "HypoPP: 疲労(89%が報告, GeneReviews NBK1338)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "S06",
+      "to_name": "筋肉痛",
+      "reason": "HypoPP: 筋痙攣・筋痛(発作前駆症状/随伴, 30-40%, GeneReviews NBK1338)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "S35",
+      "to_name": "動悸",
+      "reason": "HypoPP: 低K→心電図異常(U波/QT延長)→動悸(15-20%, PMC1426181)"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "E01",
+      "to_name": "体温",
+      "reason": "HypoPP: 非感染性チャネル病、発熱なし"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "T01",
+      "to_name": "症状持続期間",
+      "reason": "HypoPP: 発作は1-72時間(平均24h, GeneReviews NBK1338)。再発性だが各発作は急性"
+    },
+    {
+      "from": "D414",
+      "from_name": "低カリウム性周期性四肢麻痺",
+      "to": "T02",
+      "to_name": "発症速度",
+      "reason": "HypoPP: 突然〜急性発症の四肢麻痺(数分〜数時間で完成, GeneReviews NBK1338)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",

@@ -4855,6 +4855,29 @@
         "female|40_64": 0.0002,
         "female|65_plus": 0.00012
       }
+    },
+    "D414": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "HypoPP。1/10万。M:F=3:1。10-20歳発症ピーク。AD遺伝(CACNA1S 40-60%)",
+      "cpt": {
+        "male|0_1": 1e-06,
+        "male|1_5": 5e-06,
+        "male|6_12": 5e-05,
+        "male|13_17": 0.0001,
+        "male|18_39": 8e-05,
+        "male|40_64": 3e-05,
+        "male|65_plus": 1e-05,
+        "female|0_1": 1e-06,
+        "female|1_5": 2e-06,
+        "female|6_12": 2e-05,
+        "female|13_17": 4e-05,
+        "female|18_39": 3e-05,
+        "female|40_64": 1e-05,
+        "female|65_plus": 5e-06
+      }
     }
   },
   "full_cpts": {
@@ -14372,6 +14395,27 @@
           "female": 0.59
         }
       }
+    },
+    "D414": {
+      "R01": {
+        "description": "HypoPP年齢。発症10-20歳ピーク(GeneReviews NBK1338, mean 14yr)",
+        "cpt": {
+          "0_1": 0.001,
+          "1_5": 0.02,
+          "6_12": 0.15,
+          "13_17": 0.3,
+          "18_39": 0.35,
+          "40_64": 0.15,
+          "65_plus": 0.029
+        }
+      },
+      "R02": {
+        "description": "HypoPP性別。M:F=3:1(penetrance差, GeneReviews NBK1338)",
+        "cpt": {
+          "male": 0.75,
+          "female": 0.25
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -17229,6 +17273,14 @@
           "over_40.0": 0.001
         },
         "D413": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.95,
+          "37.5_38.0": 0.03,
+          "38.0_39.0": 0.01,
+          "39.0_40.0": 0.003,
+          "over_40.0": 0.002
+        },
+        "D414": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.95,
           "37.5_38.0": 0.03,
@@ -32621,6 +32673,10 @@
         "D391": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D414": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -33920,6 +33976,11 @@
           "absent": 0.44,
           "mild": 0.4,
           "severe": 0.16
+        },
+        "D414": {
+          "absent": 0.11,
+          "mild": 0.44,
+          "severe": 0.45
         }
       }
     },
@@ -37331,6 +37392,10 @@
         "D413": {
           "absent": 0.88,
           "present": 0.12
+        },
+        "D414": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -40694,6 +40759,12 @@
           "3d_to_1w": 0.02,
           "1w_to_3w": 0.1,
           "over_3w": 0.85
+        },
+        "D414": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.08,
+          "over_3w": 0.02
         }
       }
     },
@@ -42841,6 +42912,12 @@
           "acute": 0.05,
           "subacute": 0.15,
           "chronic": 0.75
+        },
+        "D414": {
+          "sudden": 0.3,
+          "acute": 0.55,
+          "subacute": 0.1,
+          "chronic": 0.05
         }
       }
     },
@@ -43740,6 +43817,10 @@
         "D412": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D414": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -54803,6 +54884,10 @@
         "D412": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D414": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -55431,6 +55516,11 @@
           "areflexia": 0.05,
           "hyporeflexia": 0.4,
           "hyperreflexia": 0.1
+        },
+        "D414": {
+          "normal": 0.15,
+          "areflexia": 0.25,
+          "hyporeflexia": 0.6
         }
       }
     },
@@ -56197,6 +56287,59 @@
           "horizontal": 0.3,
           "vertical": 0.02,
           "rotatory": 0.03
+        }
+      }
+    },
+    "L108": {
+      "leak": {
+        "severe_hypo_under_2.5": 0.005,
+        "hypo_2.5_3.5": 0.04,
+        "normal": 0.9,
+        "hyper_5.0_6.5": 0.045,
+        "severe_hyper_over_6.5": 0.01
+      },
+      "parent_effects": {
+        "D380": {
+          "severe_hypo_under_2.5": 0.05,
+          "hypo_2.5_3.5": 0.45,
+          "normal": 0.4,
+          "hyper_5.0_6.5": 0.08,
+          "severe_hyper_over_6.5": 0.02
+        },
+        "D321": {
+          "severe_hypo_under_2.5": 0.1,
+          "hypo_2.5_3.5": 0.55,
+          "normal": 0.3,
+          "hyper_5.0_6.5": 0.04,
+          "severe_hyper_over_6.5": 0.01
+        },
+        "D72": {
+          "severe_hypo_under_2.5": 0.02,
+          "hypo_2.5_3.5": 0.05,
+          "normal": 0.38,
+          "hyper_5.0_6.5": 0.4,
+          "severe_hyper_over_6.5": 0.15
+        },
+        "D153": {
+          "severe_hypo_under_2.5": 0.02,
+          "hypo_2.5_3.5": 0.05,
+          "normal": 0.53,
+          "hyper_5.0_6.5": 0.3,
+          "severe_hyper_over_6.5": 0.1
+        },
+        "D140": {
+          "severe_hypo_under_2.5": 0.03,
+          "hypo_2.5_3.5": 0.12,
+          "normal": 0.35,
+          "hyper_5.0_6.5": 0.35,
+          "severe_hyper_over_6.5": 0.15
+        },
+        "D414": {
+          "severe_hypo_under_2.5": 0.6,
+          "hypo_2.5_3.5": 0.35,
+          "normal": 0.04,
+          "hyper_5.0_6.5": 0.005,
+          "severe_hyper_over_6.5": 0.005
         }
       }
     }

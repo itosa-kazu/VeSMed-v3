@@ -11461,6 +11461,35 @@
       ],
       "severity": "moderate",
       "note": "膵β細胞腫瘍→内因性高インスリン血症→反復性低血糖。Whipple三徴(低血糖症状+血糖<55+ブドウ糖で改善)。90%良性/単発。40-60歳、F>M"
+    },
+    {
+      "id": "L108",
+      "name": "serum_potassium",
+      "name_ja": "血清カリウム",
+      "category": "lab",
+      "category_sub": "electrolyte",
+      "states": [
+        "severe_hypo_under_2.5",
+        "hypo_2.5_3.5",
+        "normal",
+        "hyper_5.0_6.5",
+        "severe_hyper_over_6.5"
+      ],
+      "severity": "moderate",
+      "note": "血清K+。基準値3.5-5.0mEq/L。低K: 筋力低下/不整脈/イレウス。高K: 不整脈(peaked T/wide QRS)/心停止。"
+    },
+    {
+      "id": "D414",
+      "name": "hypokalemic_periodic_paralysis",
+      "name_ja": "低カリウム性周期性四肢麻痺",
+      "category": "disease",
+      "category_sub": "neurology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "Ca/Naチャネル変異→低K時に筋麻痺発作。Whipple三徴(の低血糖版ではなく低K版)。発作時K<3.5(多くは<2.5)。10-20歳発症、M>F(3:1)。炭水化物摂取/運動後安静で誘発。甲状腺中毒性PPも類似"
     }
   ]
 }
