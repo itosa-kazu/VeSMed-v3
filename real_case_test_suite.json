@@ -25248,7 +25248,79 @@
       },
       "result": "",
       "notes": "中等度IDA+ゴムバンド異食症。月経過多が原因"
+    },
+    {
+      "id": "R948",
+      "source": "PMC",
+      "pmcid": "PMC10788660",
+      "vignette": "39歳女性。1ヶ月間の進行する全身倦怠感、眼窩周囲のしびれ、立ちくらみ(労作で増悪)。出血・体重減少なし。洞性頻脈(110bpm)。結膜蒼白、毛細血管再充填遅延。神経脱落所見なし。Hb 5g/dL、MCV 113fL、B12<150pg/mL、LDH 3450IU/L、ビリルビン1.3mg/dL、ハプトグロビン<10mg/dL、網赤血球3.2%、ホモシステイン72.7umol/L。抗内因子抗体・抗壁細胞抗体陽性。末梢血塗抹:楕円形大赤血球。",
+      "final_diagnosis": "ビタミンB12欠乏症(悪性貧血)",
+      "expected_id": "D384",
+      "in_scope": true,
+      "evidence": {
+        "L93": "very_low_under_7",
+        "L94": "macrocytic",
+        "L16": "elevated",
+        "L87": "indirect_dominant",
+        "S07": "severe",
+        "S59": "present",
+        "E85": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "悪性貧血+溶血。Hb5,MCV113,LDH3450。抗IF/PCA抗体陽性"
+    },
+    {
+      "id": "R949",
+      "source": "PMC",
+      "pmcid": "PMC9728147",
+      "vignette": "63歳女性。高血圧・甲状腺機能低下の既往。1ヶ月の倦怠感悪化、間欠的心窩部痛、悪心、嘔吐、下痢。頻脈、結膜蒼白、毛細血管再充填遅延。局所神経症状なし。Hb 4.3g/dL、MCV 138fL、B12<150pg/mL、LDH 2008U/L、血小板76x10^3(最低50)。抗壁細胞抗体・抗内因子抗体陽性。EGD:自己免疫性胃炎。",
+      "final_diagnosis": "ビタミンB12欠乏症(悪性貧血)",
+      "expected_id": "D384",
+      "in_scope": true,
+      "evidence": {
+        "L93": "very_low_under_7",
+        "L94": "macrocytic",
+        "L16": "elevated",
+        "L100": "low_50k_150k",
+        "S07": "severe",
+        "E85": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "悪性貧血+DIC。Hb4.3,MCV138,LDH2008,plt76k"
+    },
+    {
+      "id": "R950",
+      "source": "PMC",
+      "pmcid": "PMC3623262",
+      "vignette": "44歳女性。9ヶ月の菜食主義。6週間で徐々に進行する両手足のしびれ・刺痛。Hb 13.5g/dL(正常)、MCV 110fL(大球性)、B12 135pg/mL。神経学的検査:両手の軽度麻痺、深部腱反射亢進、固有感覚・振動覚障害。MRI:後索にT2高信号。銅正常。",
+      "final_diagnosis": "ビタミンB12欠乏症(悪性貧血)",
+      "expected_id": "D384",
+      "in_scope": true,
+      "evidence": {
+        "L94": "macrocytic",
+        "E53": "hyperreflexia",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "菜食主義によるB12欠乏SACD。貧血なし(28%は貧血なしで神経症状のみ)"
     }
   ],
-  "total_cases": 946
+  "total_cases": 949
 }

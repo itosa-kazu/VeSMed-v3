@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7436,
+  "total_edges": 7460,
   "edges": [
     {
       "from": "R01",
@@ -58748,6 +58748,174 @@
       "from_name": "graves_disease",
       "to_name": "alopecia_pattern",
       "reason": "バセドウ病: びまん性脱毛(step1 note明記)"
+    },
+    {
+      "from": "D384",
+      "to": "L93",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "hemoglobin",
+      "reason": "B12欠乏: 貧血37%(Andres 2006, n=201)。重症Hb<6は2.5%"
+    },
+    {
+      "from": "D384",
+      "to": "L94",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "MCV",
+      "reason": "B12欠乏: 大球性54%, 正球性44%(Andres 2006)。MCV>120でSp99%"
+    },
+    {
+      "from": "D384",
+      "to": "L16",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "LDH",
+      "reason": "B12欠乏: LDH著高(無効造血)。巨赤芽球性貧血で平均3800U/L"
+    },
+    {
+      "from": "D384",
+      "to": "L87",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "bilirubin_fractionation",
+      "reason": "B12欠乏: 間接Bil優位(無効造血による軽度黄疸)。lemon-yellow pallor"
+    },
+    {
+      "from": "D384",
+      "to": "L72",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "reticulocyte_count",
+      "reason": "B12欠乏: 網赤血球低値(低産生性)。巨赤芽球性無効造血"
+    },
+    {
+      "from": "D384",
+      "to": "L100",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "platelet_count",
+      "reason": "B12欠乏: 血小板減少10%(Andres 2006)。汎血球減少5%"
+    },
+    {
+      "from": "D384",
+      "to": "E85",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "conjunctival_pallor",
+      "reason": "B12欠乏: 結膜蒼白。貧血の程度に比例"
+    },
+    {
+      "from": "D384",
+      "to": "E95",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "skin_color_change",
+      "reason": "B12欠乏: lemon-yellow waxy pallor。無効造血+軽度黄疸"
+    },
+    {
+      "from": "D384",
+      "to": "S07",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "fatigue",
+      "reason": "B12欠乏: 倦怠感55%(systematic review, PMID38987871)"
+    },
+    {
+      "from": "D384",
+      "to": "S04",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "dyspnea",
+      "reason": "B12欠乏: 労作時呼吸困難。貧血の程度に依存"
+    },
+    {
+      "from": "D384",
+      "to": "S17",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "weight_loss",
+      "reason": "B12欠乏: 体重減少27-50%(PMID38987871; Medscape PA)"
+    },
+    {
+      "from": "D384",
+      "to": "S106",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "gait_disturbance",
+      "reason": "B12欠乏: 歩行障害12%(Healton 1991, n=143)。SACD後索障害"
+    },
+    {
+      "from": "D384",
+      "to": "S137",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "gait_pattern",
+      "reason": "B12欠乏: 失調性歩行(SACD後索障害)"
+    },
+    {
+      "from": "D384",
+      "to": "S104",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "memory_impairment",
+      "reason": "B12欠乏: 記憶障害。認知症状4-50%(PMC2781043)"
+    },
+    {
+      "from": "D384",
+      "to": "S150",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "cognitive_decline",
+      "reason": "B12欠乏: 認知機能低下25%。28%は貧血なしで神経症状のみ(Lindenbaum 1988)"
+    },
+    {
+      "from": "D384",
+      "to": "S115",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "depressed_mood",
+      "reason": "B12欠乏: 抑うつ。神経精神症状の一部(PMC10859001)"
+    },
+    {
+      "from": "D384",
+      "to": "E60",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "romberg_sign",
+      "reason": "B12欠乏: Romberg陽性(後索障害)。step1 note: VB12欠乏で陽性"
+    },
+    {
+      "from": "D384",
+      "to": "E53",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "deep_tendon_reflexes",
+      "reason": "B12欠乏: 腱反射亢進(SACD上位運動ニューロン)+低下(末梢神経障害)混在"
+    },
+    {
+      "from": "D384",
+      "to": "S76",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "sensory_disturbance_pattern",
+      "reason": "B12欠乏: stocking-glove型感覚障害。末梢神経障害76%軸索型(PMC3847746)"
+    },
+    {
+      "from": "D384",
+      "to": "T01",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "symptom_duration",
+      "reason": "B12欠乏: 慢性経過(月~年単位)"
+    },
+    {
+      "from": "D384",
+      "to": "T02",
+      "from_name": "vitamin_B12_deficiency",
+      "to_name": "onset_speed",
+      "reason": "B12欠乏: 慢性発症。潜行性に進行"
+    },
+    {
+      "from": "D144",
+      "to": "E60",
+      "from_name": "guillain_barre_syndrome",
+      "to_name": "romberg_sign",
+      "reason": "GBS: 固有感覚障害→Romberg陽性50%"
+    },
+    {
+      "from": "D236",
+      "to": "E60",
+      "from_name": "multiple_sclerosis",
+      "to_name": "romberg_sign",
+      "reason": "MS: 後索障害→Romberg陽性30%"
+    },
+    {
+      "from": "D144",
+      "to": "E53",
+      "from_name": "guillain_barre_syndrome",
+      "to_name": "deep_tendon_reflexes",
+      "reason": "GBS: 腱反射消失/低下は定義的特徴。>90%でareflexia(Lancet 2016)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

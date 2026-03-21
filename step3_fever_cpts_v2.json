@@ -4347,6 +4347,21 @@
         "female|40_64": 0.008,
         "female|65_plus": 0.005
       }
+    },
+    "D384": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "B12欠乏。高齢者に好発。F:M=1.9:1",
+      "cpt": {
+        "male|18_39": 0.001,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.005,
+        "female|18_39": 0.001,
+        "female|40_64": 0.003,
+        "female|65_plus": 0.008
+      }
     }
   },
   "full_cpts": {
@@ -13232,6 +13247,27 @@
         "cpt": {
           "male": 0.25,
           "female": 0.75
+        }
+      }
+    },
+    "D384": {
+      "R01": {
+        "description": "B12欠乏年齢分布。>60歳で6-20%",
+        "cpt": {
+          "0_1": 0.001,
+          "1_5": 0.002,
+          "6_12": 0.005,
+          "13_17": 0.01,
+          "18_39": 0.1,
+          "40_64": 0.25,
+          "65_plus": 0.632
+        }
+      },
+      "R02": {
+        "description": "B12欠乏性別。F:M=1.9:1",
+        "cpt": {
+          "male": 0.35,
+          "female": 0.65
         }
       }
     }
@@ -27300,6 +27336,10 @@
         "D375": {
           "normal": 0.1,
           "elevated": 0.9
+        },
+        "D384": {
+          "normal": 0.2,
+          "elevated": 0.8
         }
       }
     },
@@ -30222,6 +30262,11 @@
           "absent": 0.62,
           "on_exertion": 0.33,
           "at_rest": 0.05
+        },
+        "D384": {
+          "absent": 0.7,
+          "on_exertion": 0.25,
+          "at_rest": 0.05
         }
       }
     },
@@ -32149,6 +32194,11 @@
           "absent": 0.13,
           "mild": 0.42,
           "severe": 0.45
+        },
+        "D384": {
+          "absent": 0.45,
+          "mild": 0.35,
+          "severe": 0.2
         }
       }
     },
@@ -34320,6 +34370,10 @@
         "D382": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D384": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -38526,6 +38580,12 @@
           "3d_to_1w": 0.01,
           "1w_to_3w": 0.03,
           "over_3w": 0.95
+        },
+        "D384": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.01,
+          "1w_to_3w": 0.03,
+          "over_3w": 0.95
         }
       }
     },
@@ -40493,6 +40553,12 @@
           "acute": 0.02,
           "subacute": 0.07,
           "chronic": 0.9
+        },
+        "D384": {
+          "sudden": 0.01,
+          "acute": 0.02,
+          "subacute": 0.12,
+          "chronic": 0.85
         }
       }
     },
@@ -49194,6 +49260,13 @@
           "mild_low_10_12": 0.4,
           "normal": 0.14,
           "high": 0.01
+        },
+        "D384": {
+          "very_low_under_7": 0.03,
+          "low_7_10": 0.15,
+          "mild_low_10_12": 0.19,
+          "normal": 0.62,
+          "high": 0.01
         }
       }
     },
@@ -49276,6 +49349,13 @@
           "normal": 0.75,
           "high_over_400k": 0.2,
           "very_high_over_1000k": 0.02
+        },
+        "D384": {
+          "very_low_under_50k": 0.02,
+          "low_50k_150k": 0.08,
+          "normal": 0.85,
+          "high_over_400k": 0.04,
+          "very_high_over_1000k": 0.01
         }
       }
     },
@@ -49854,6 +49934,11 @@
           "low": 0.7,
           "normal": 0.28,
           "elevated": 0.02
+        },
+        "D384": {
+          "low": 0.65,
+          "normal": 0.3,
+          "elevated": 0.05
         }
       }
     },
@@ -50047,6 +50132,12 @@
           "indirect_dominant": 0.02,
           "direct_dominant": 0.65,
           "both_elevated": 0.18
+        },
+        "D384": {
+          "normal": 0.55,
+          "indirect_dominant": 0.35,
+          "direct_dominant": 0.03,
+          "both_elevated": 0.07
         }
       }
     },
@@ -51229,6 +51320,10 @@
         "D382": {
           "absent": 0.58,
           "present": 0.42
+        },
+        "D384": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -51725,6 +51820,10 @@
         "D382": {
           "absent": 0.1,
           "present": 0.9
+        },
+        "D384": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -51762,6 +51861,10 @@
         "D382": {
           "absent": 0.3,
           "present": 0.7
+        },
+        "D384": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -51876,6 +51979,10 @@
         "D382": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D384": {
+          "absent": 0.88,
+          "present": 0.12
         }
       }
     },
@@ -51929,6 +52036,14 @@
           "spastic": 0.05,
           "waddling": 0.02,
           "antalgic": 0.15
+        },
+        "D384": {
+          "ataxic": 0.8,
+          "shuffling": 0.1,
+          "steppage": 0.03,
+          "spastic": 0.03,
+          "waddling": 0.02,
+          "antalgic": 0.02
         }
       }
     },
@@ -52174,6 +52289,11 @@
           "microcytic": 0.05,
           "normocytic": 0.6,
           "macrocytic": 0.35
+        },
+        "D384": {
+          "microcytic": 0.02,
+          "normocytic": 0.44,
+          "macrocytic": 0.54
         }
       }
     },
@@ -52199,6 +52319,10 @@
         "D158": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D384": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -52244,6 +52368,14 @@
           "flushing": 0.01,
           "bronze": 0.02,
           "hyperpigmentation": 0.55
+        },
+        "D384": {
+          "normal": 0.55,
+          "pallor": 0.4,
+          "cyanosis": 0.01,
+          "flushing": 0.01,
+          "bronze": 0.01,
+          "hyperpigmentation": 0.02
         }
       }
     },
@@ -52269,6 +52401,150 @@
         "D374": {
           "diffuse": 0.8,
           "patchy": 0.2
+        }
+      }
+    },
+    "S76": {
+      "description": "感覚障害パターン",
+      "states": [
+        "stocking_glove",
+        "ascending",
+        "dermatomal",
+        "hemisensory",
+        "saddle"
+      ],
+      "leak": {
+        "stocking_glove": 0.3,
+        "ascending": 0.15,
+        "dermatomal": 0.2,
+        "hemisensory": 0.15,
+        "saddle": 0.2
+      },
+      "parent_effects": {
+        "D236": {
+          "stocking_glove": 0.2,
+          "ascending": 0.3,
+          "dermatomal": 0.15,
+          "hemisensory": 0.25,
+          "saddle": 0.1
+        },
+        "D307": {
+          "stocking_glove": 0.1,
+          "ascending": 0.5,
+          "dermatomal": 0.05,
+          "hemisensory": 0.15,
+          "saddle": 0.2
+        },
+        "D308": {
+          "stocking_glove": 0.05,
+          "ascending": 0.1,
+          "dermatomal": 0.15,
+          "hemisensory": 0.05,
+          "saddle": 0.65
+        },
+        "D204": {
+          "stocking_glove": 0.75,
+          "ascending": 0.1,
+          "dermatomal": 0.03,
+          "hemisensory": 0.05,
+          "saddle": 0.07
+        },
+        "D301": {
+          "stocking_glove": 0.15,
+          "ascending": 0.4,
+          "dermatomal": 0.1,
+          "hemisensory": 0.25,
+          "saddle": 0.1
+        },
+        "D335": {
+          "stocking_glove": 0.8,
+          "ascending": 0.1,
+          "dermatomal": 0.02,
+          "hemisensory": 0.03,
+          "saddle": 0.05
+        },
+        "D384": {
+          "stocking_glove": 0.7,
+          "ascending": 0.15,
+          "dermatomal": 0.02,
+          "hemisensory": 0.03,
+          "saddle": 0.1
+        }
+      }
+    },
+    "E53": {
+      "description": "深部腱反射",
+      "states": [
+        "normal",
+        "areflexia",
+        "hyporeflexia",
+        "hyperreflexia"
+      ],
+      "leak": {
+        "normal": 0.85,
+        "areflexia": 0.03,
+        "hyporeflexia": 0.07,
+        "hyperreflexia": 0.05
+      },
+      "parent_effects": {
+        "D302": {
+          "normal": 0.3,
+          "areflexia": 0.02,
+          "hyporeflexia": 0.03,
+          "hyperreflexia": 0.65
+        },
+        "D307": {
+          "normal": 0.2,
+          "areflexia": 0.1,
+          "hyporeflexia": 0.15,
+          "hyperreflexia": 0.55
+        },
+        "D308": {
+          "normal": 0.15,
+          "areflexia": 0.4,
+          "hyporeflexia": 0.4,
+          "hyperreflexia": 0.05
+        },
+        "D384": {
+          "normal": 0.5,
+          "areflexia": 0.05,
+          "hyporeflexia": 0.15,
+          "hyperreflexia": 0.3
+        },
+        "D144": {
+          "normal": 0.05,
+          "areflexia": 0.6,
+          "hyporeflexia": 0.3,
+          "hyperreflexia": 0.05
+        }
+      }
+    },
+    "E60": {
+      "description": "Romberg徴候",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D293": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D384": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D144": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D236": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     }

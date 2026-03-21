@@ -11071,6 +11071,19 @@
       ],
       "severity": "moderate",
       "note": "最多の貧血(全貧血の66%)。閉経前女性に好発(F:M=3:1)。倦怠感/動悸/蒼白/異食症(45%)/匙状爪。MCV↓(60%)/正球性(40%),Fe↓TIBC↑フェリチン↓。鑑別:サラセミア/慢性疾患貧血/MDS"
+    },
+    {
+      "id": "D384",
+      "name": "vitamin_B12_deficiency",
+      "name_ja": "ビタミンB12欠乏症(悪性貧血)",
+      "category": "disease",
+      "category_sub": "hematologic",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "大球性貧血+神経症状(SACD)+舌炎が三徴。悪性貧血(自己免疫性)が20-50%。MCV>100(54%)、Hb低下(37%)、LDH著高。28%は貧血なしで神経症状のみ。高齢者/菜食主義に好発。鑑別:葉酸欠乏/MDS/甲状腺低下/肝疾患"
     }
   ]
 }
