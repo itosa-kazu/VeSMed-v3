@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7717,
+  "total_edges": 7736,
   "edges": [
     {
       "from": "R01",
@@ -60715,6 +60715,139 @@
       "from_name": "preeclampsia_eclampsia",
       "to_name": "onset_speed",
       "reason": "PE: 急性~亜急性発症。数日で症状悪化"
+    },
+    {
+      "from": "D402",
+      "to": "S01",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "cough",
+      "reason": "SCLC: 咳嗽70-75%(StatPearls NBK482458)。中枢型で気道刺激/閉塞"
+    },
+    {
+      "from": "D402",
+      "to": "S04",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "dyspnea",
+      "reason": "SCLC: 呼吸困難40-75%(Medscape)。腫瘤圧迫/胸水/SVC症候群"
+    },
+    {
+      "from": "D402",
+      "to": "S16",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "night_sweats",
+      "reason": "SCLC: 喀血20-30%(Medscape)。気道浸潤"
+    },
+    {
+      "from": "D402",
+      "to": "S17",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "weight_loss",
+      "reason": "SCLC: 体重減少60-80%(Medscape)。悪性cachexia+食欲不振"
+    },
+    {
+      "from": "D402",
+      "to": "S21",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "chest_pain",
+      "reason": "SCLC: 胸痛20-40%(Medscape)。胸壁浸潤/胸膜炎性"
+    },
+    {
+      "from": "D402",
+      "to": "S07",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "fatigue",
+      "reason": "SCLC: 倦怠感60%。悪性腫瘍+paraneoplastic(SIADH/Cushing)"
+    },
+    {
+      "from": "D402",
+      "to": "S55",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "hoarseness",
+      "reason": "SCLC: 嗄声5-10%(Medscape)。反回神経麻痺(縦隔浸潤)"
+    },
+    {
+      "from": "D402",
+      "to": "S46",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "anorexia",
+      "reason": "SCLC: 食欲不振50%。cachexia+SIADH関連の悪心"
+    },
+    {
+      "from": "D402",
+      "to": "S25",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "dysphagia",
+      "reason": "SCLC: 嚥下困難5-10%(Medscape)。食道圧迫"
+    },
+    {
+      "from": "D402",
+      "to": "L04",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "chest_xray",
+      "reason": "SCLC: 胸部X線。中枢型腫瘤90%→肺門腫大/縦隔拡大。胸水も"
+    },
+    {
+      "from": "D402",
+      "to": "L44",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "electrolytes",
+      "reason": "SCLC: 低Na血症(SIADH)10-45%(PMC7656388)。最多paraneoplastic"
+    },
+    {
+      "from": "D402",
+      "to": "L16",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "LDH",
+      "reason": "SCLC: LDH上昇44%(PMC8636211)。腫瘍量マーカー/予後因子"
+    },
+    {
+      "from": "D402",
+      "to": "E13",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "lymphadenopathy",
+      "reason": "SCLC: リンパ節腫脹。縦隔/鎖骨上リンパ節。初診時66%縦隔浸潤"
+    },
+    {
+      "from": "D402",
+      "to": "E46",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "lymph_node_location",
+      "reason": "SCLC: 鎖骨上/縦隔リンパ節。N2/N3が多い"
+    },
+    {
+      "from": "D402",
+      "to": "L63",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "metastasis_imaging",
+      "reason": "SCLC: 転移巣。60-70%がextensive(PMC8177722)。骨50-67%/脳10-20%/肝転移"
+    },
+    {
+      "from": "D402",
+      "to": "S84",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "cough_quality",
+      "reason": "SCLC: 咳嗽は乾性/湿性両方。気道閉塞パターン"
+    },
+    {
+      "from": "D402",
+      "to": "E01",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "temperature",
+      "reason": "SCLC: 通常無熱。発熱→閉塞性肺炎合併を示唆"
+    },
+    {
+      "from": "D402",
+      "to": "T01",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "symptom_duration",
+      "reason": "SCLC: 8-12週の症状期間(StatPearls)。急速増殖だが受診まで数週"
+    },
+    {
+      "from": "D402",
+      "to": "T02",
+      "from_name": "small_cell_lung_cancer",
+      "to_name": "onset_speed",
+      "reason": "SCLC: 亜急性~慢性発症。数週~数ヶ月で進行"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

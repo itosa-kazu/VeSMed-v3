@@ -4619,6 +4619,21 @@
         "female|40_64": 0.002,
         "female|65_plus": 0.0
       }
+    },
+    "D402": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "SCLC。M:F≈1.5:1。60-70歳ピーク。喫煙強く関連",
+      "cpt": {
+        "male|18_39": 0.0001,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.003,
+        "female|18_39": 5e-05,
+        "female|40_64": 0.001,
+        "female|65_plus": 0.002
+      }
     }
   },
   "full_cpts": {
@@ -13884,6 +13899,27 @@
           "female": 1.0
         }
       }
+    },
+    "D402": {
+      "R01": {
+        "description": "SCLC年齢。60-70歳ピーク",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.0,
+          "13_17": 0.001,
+          "18_39": 0.02,
+          "40_64": 0.4,
+          "65_plus": 0.579
+        }
+      },
+      "R02": {
+        "description": "SCLC性別。M:F≈1.5:1",
+        "cpt": {
+          "male": 0.6,
+          "female": 0.4
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16651,6 +16687,14 @@
           "38.0_39.0": 0.007,
           "39.0_40.0": 0.002,
           "over_40.0": 0.001
+        },
+        "D402": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.9,
+          "37.5_38.0": 0.06,
+          "38.0_39.0": 0.025,
+          "39.0_40.0": 0.007,
+          "over_40.0": 0.003
         }
       }
     },
@@ -20778,6 +20822,10 @@
         "D399": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D402": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -26284,6 +26332,14 @@
           "BHL": 0.02,
           "pleural_effusion": 0.2,
           "pneumothorax": 0.08
+        },
+        "D402": {
+          "normal": 0.05,
+          "lobar_infiltrate": 0.2,
+          "bilateral_infiltrate": 0.05,
+          "BHL": 0.45,
+          "pleural_effusion": 0.2,
+          "pneumothorax": 0.05
         }
       }
     },
@@ -28158,6 +28214,10 @@
         "D401": {
           "normal": 0.5,
           "elevated": 0.5
+        },
+        "D402": {
+          "normal": 0.55,
+          "elevated": 0.45
         }
       }
     },
@@ -29697,6 +29757,12 @@
           "hyponatremia": 0.05,
           "hyperkalemia": 0.02,
           "other": 0.28
+        },
+        "D402": {
+          "normal": 0.6,
+          "hyponatremia": 0.35,
+          "hyperkalemia": 0.02,
+          "other": 0.03
         }
       }
     },
@@ -30266,6 +30332,10 @@
         "D389": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D402": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -31125,6 +31195,10 @@
           "absent": 0.15,
           "on_exertion": 0.15,
           "at_rest": 0.7
+        },
+        "D402": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -33155,6 +33229,11 @@
           "absent": 0.45,
           "mild": 0.35,
           "severe": 0.2
+        },
+        "D402": {
+          "absent": 0.35,
+          "mild": 0.35,
+          "severe": 0.3
         }
       }
     },
@@ -35101,6 +35180,10 @@
         "D381": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D402": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -35398,6 +35481,10 @@
         "D400": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D402": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -35742,6 +35829,10 @@
         "D394": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D402": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -36019,6 +36110,10 @@
         "D400": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D402": {
+          "absent": 0.92,
+          "present": 0.08
         }
       }
     },
@@ -37393,6 +37488,10 @@
         "D25": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D402": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -39768,6 +39867,12 @@
           "3d_to_1w": 0.4,
           "1w_to_3w": 0.25,
           "over_3w": 0.05
+        },
+        "D402": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.05,
+          "1w_to_3w": 0.2,
+          "over_3w": 0.73
         }
       }
     },
@@ -41843,6 +41948,12 @@
           "acute": 0.5,
           "subacute": 0.35,
           "chronic": 0.05
+        },
+        "D402": {
+          "sudden": 0.02,
+          "acute": 0.08,
+          "subacute": 0.4,
+          "chronic": 0.5
         }
       }
     },
@@ -45908,6 +46019,10 @@
         "D399": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D402": {
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -46241,6 +46356,14 @@
           "liver": 0.15,
           "brain": 0.05,
           "multiple": 0.33
+        },
+        "D402": {
+          "absent": 0.3,
+          "lung": 0.05,
+          "bone": 0.15,
+          "liver": 0.1,
+          "brain": 0.1,
+          "multiple": 0.3
         }
       }
     },
@@ -47759,6 +47882,10 @@
         "D109": {
           "dry": 0.6,
           "productive": 0.4
+        },
+        "D402": {
+          "dry": 0.55,
+          "productive": 0.45
         }
       }
     },
@@ -49282,6 +49409,14 @@
           "supraclavicular": 0.05,
           "mediastinal": 0.01,
           "generalized": 0.01
+        },
+        "D402": {
+          "cervical": 0.1,
+          "axillary": 0.02,
+          "inguinal": 0.01,
+          "supraclavicular": 0.45,
+          "mediastinal": 0.4,
+          "generalized": 0.02
         }
       }
     },

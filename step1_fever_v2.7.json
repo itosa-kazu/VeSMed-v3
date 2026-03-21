@@ -11305,6 +11305,19 @@
       ],
       "severity": "high",
       "note": "妊娠20週以降の高血圧+蛋白尿(or重症徴候)。頭痛66%+視覚障害25-50%+上腹部痛25%。子癇=痙攣(<3%)。HELLP移行3-20%。有病率4-5%。初産/肥満/35歳以上がリスク。鑑別:HELLP/TTP-HUS/高血圧緊急症/PRES/CVST"
+    },
+    {
+      "id": "D402",
+      "name": "small_cell_lung_cancer",
+      "name_ja": "小細胞肺癌(SCLC)",
+      "category": "disease",
+      "category_sub": "respiratory",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "全肺癌の13-15%。中枢型(90%)。急速増殖(倍加時間54-132日)。60-70%が初診時extensive。SIADH(10-45%)/Cushing(2-5%)/Lambert-Eaton(3%)等paraneoplastic。喫煙95%。M:F≈1.5:1、60-70歳。鑑別:肺腺癌/肺扁平上皮癌/リンパ腫/胸腺腫/転移性肺腫瘍"
     }
   ]
 }
