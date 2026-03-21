@@ -4377,6 +4377,21 @@
         "female|40_64": 0.002,
         "female|65_plus": 0.003
       }
+    },
+    "D386": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "血友病。X連鎖。男性97%。小児~若年発症",
+      "cpt": {
+        "male|18_39": 0.002,
+        "male|40_64": 0.001,
+        "male|65_plus": 0.001,
+        "female|18_39": 0.0001,
+        "female|40_64": 0.0001,
+        "female|65_plus": 0.0001
+      }
     }
   },
   "full_cpts": {
@@ -13306,6 +13321,27 @@
           "female": 0.45
         }
       }
+    },
+    "D386": {
+      "R01": {
+        "description": "血友病年齢。小児~若年発症が多い",
+        "cpt": {
+          "0_1": 0.08,
+          "1_5": 0.1,
+          "6_12": 0.12,
+          "13_17": 0.1,
+          "18_39": 0.25,
+          "40_64": 0.2,
+          "65_plus": 0.15
+        }
+      },
+      "R02": {
+        "description": "血友病性別。X連鎖劣性、男性97%",
+        "cpt": {
+          "male": 0.97,
+          "female": 0.03
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -19867,6 +19903,17 @@
           "vesicular_dermatomal": 0.01,
           "diffuse_erythroderma": 0.01,
           "purpura": 0.1,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.02
+        },
+        "D386": {
+          "normal": 0.25,
+          "localized_erythema_warmth_swelling": 0.05,
+          "petechiae_purpura": 0.02,
+          "maculopapular_rash": 0.01,
+          "vesicular_dermatomal": 0.01,
+          "diffuse_erythroderma": 0.01,
+          "purpura": 0.62,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.02
         }
@@ -31045,6 +31092,10 @@
         "D68": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D386": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -32249,6 +32300,11 @@
           "absent": 0.52,
           "mild": 0.3,
           "severe": 0.18
+        },
+        "D386": {
+          "absent": 0.55,
+          "mild": 0.3,
+          "severe": 0.15
         }
       }
     },
@@ -34895,6 +34951,10 @@
         "D360": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D386": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -36097,6 +36157,10 @@
         "D375": {
           "absent": 0.82,
           "present": 0.18
+        },
+        "D386": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -38650,6 +38714,12 @@
           "3d_to_1w": 0.01,
           "1w_to_3w": 0.01,
           "over_3w": 0.97
+        },
+        "D386": {
+          "under_3d": 0.5,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.1
         }
       }
     },
@@ -40629,6 +40699,12 @@
           "acute": 0.01,
           "subacute": 0.08,
           "chronic": 0.9
+        },
+        "D386": {
+          "sudden": 0.3,
+          "acute": 0.5,
+          "subacute": 0.15,
+          "chronic": 0.05
         }
       }
     },
@@ -48317,6 +48393,10 @@
         "D360": {
           "monoarticular": 0.75,
           "polyarticular": 0.25
+        },
+        "D386": {
+          "monoarticular": 0.75,
+          "polyarticular": 0.25
         }
       }
     },
@@ -49353,6 +49433,13 @@
           "mild_low_10_12": 0.19,
           "normal": 0.62,
           "high": 0.01
+        },
+        "D386": {
+          "very_low_under_7": 0.03,
+          "low_7_10": 0.1,
+          "mild_low_10_12": 0.2,
+          "normal": 0.65,
+          "high": 0.02
         }
       }
     },
@@ -49442,6 +49529,13 @@
           "normal": 0.85,
           "high_over_400k": 0.04,
           "very_high_over_1000k": 0.01
+        },
+        "D386": {
+          "very_low_under_50k": 0.01,
+          "low_50k_150k": 0.02,
+          "normal": 0.95,
+          "high_over_400k": 0.015,
+          "very_high_over_1000k": 0.005
         }
       }
     },
@@ -52736,6 +52830,91 @@
           "hyperacute": 0.02,
           "subacute": 0.08,
           "chronic_progressive": 0.9
+        }
+      }
+    },
+    "L83": {
+      "description": "APTT",
+      "states": [
+        "normal",
+        "mildly_prolonged",
+        "very_prolonged"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "mildly_prolonged": 0.07,
+        "very_prolonged": 0.03
+      },
+      "parent_effects": {
+        "D386": {
+          "normal": 0.15,
+          "mildly_prolonged": 0.25,
+          "very_prolonged": 0.6
+        },
+        "D152": {
+          "normal": 0.05,
+          "mildly_prolonged": 0.2,
+          "very_prolonged": 0.75
+        },
+        "D171": {
+          "normal": 0.4,
+          "mildly_prolonged": 0.5,
+          "very_prolonged": 0.1
+        }
+      }
+    },
+    "L69": {
+      "description": "PT/INR",
+      "states": [
+        "normal",
+        "mildly_prolonged",
+        "very_prolonged"
+      ],
+      "leak": {
+        "normal": 0.9,
+        "mildly_prolonged": 0.07,
+        "very_prolonged": 0.03
+      },
+      "parent_effects": {
+        "D243": {
+          "normal": 0.3,
+          "mildly_prolonged": 0.4,
+          "very_prolonged": 0.3
+        },
+        "D386": {
+          "normal": 0.98,
+          "mildly_prolonged": 0.015,
+          "very_prolonged": 0.005
+        },
+        "D152": {
+          "normal": 0.05,
+          "mildly_prolonged": 0.25,
+          "very_prolonged": 0.7
+        }
+      }
+    },
+    "S126": {
+      "description": "鼻出血",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D270": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D386": {
+          "absent": 0.53,
+          "present": 0.47
+        },
+        "D208": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     }

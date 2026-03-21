@@ -11097,6 +11097,19 @@
       ],
       "severity": "critical",
       "note": "UMN+LMN同時障害が特徴。四肢型67-75%/球麻痺型20-33%。筋萎縮+線維束攣縮+腱反射亢進+Babinski。感覚正常/膀胱直腸正常/眼球運動正常。中央値2-5年生存。鑑別:頸椎症性脊髄症/MG/MS/Kennedy病"
+    },
+    {
+      "id": "D386",
+      "name": "hemophilia",
+      "name_ja": "血友病(A/B)",
+      "category": "disease",
+      "category_sub": "hematologic",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "X連鎖劣性。A型(FVIII欠乏)80%/B型(FIX欠乏)20%。血関節症75-90%/筋血腫25%/粘膜出血87%。aPTT延長+PT正常+PLT正常が三徴。男性97%。重症60%(自発性出血)/中等15%/軽症25%。鑑別:vWD/後天性血友病/DIC/ITP"
     }
   ]
 }

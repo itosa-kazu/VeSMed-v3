@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7483,
+  "total_edges": 7500,
   "edges": [
     {
       "from": "R01",
@@ -59077,6 +59077,125 @@
       "from_name": "parkinson_disease",
       "to_name": "speech_onset_speed",
       "reason": "Parkinson: 慢性進行性構音障害(hypokinetic dysarthria)"
+    },
+    {
+      "from": "D386",
+      "to": "L83",
+      "from_name": "hemophilia",
+      "to_name": "APTT",
+      "reason": "血友病: APTT延長(定義的)。重症で2-3倍延長(StatPearls NBK551607)"
+    },
+    {
+      "from": "D386",
+      "to": "L69",
+      "from_name": "hemophilia",
+      "to_name": "PT_INR",
+      "reason": "血友病: PT/INR正常(定義的)。外因系正常=aPTT延長+PT正常で血友病/vWD疑(Merck)"
+    },
+    {
+      "from": "D386",
+      "to": "L100",
+      "from_name": "hemophilia",
+      "to_name": "platelet_count",
+      "reason": "血友病: 血小板正常(定義的)。ITP/DIC/TTPとの鑑別(Merck Manual)"
+    },
+    {
+      "from": "D386",
+      "to": "S23",
+      "from_name": "hemophilia",
+      "to_name": "joint_swelling",
+      "reason": "血友病: 血関節症75-90%(PMC4207585)。膝45%/肘30%/足関節15%"
+    },
+    {
+      "from": "D386",
+      "to": "S91",
+      "from_name": "hemophilia",
+      "to_name": "joint_swelling_distribution",
+      "reason": "血友病: 単関節型が主(単一関節の出血エピソード)"
+    },
+    {
+      "from": "D386",
+      "to": "S44",
+      "from_name": "hemophilia",
+      "to_name": "mucosal_bleeding",
+      "reason": "血友病: 粘膜出血(歯肉出血)87%(West Java severe HA cohort)"
+    },
+    {
+      "from": "D386",
+      "to": "S126",
+      "from_name": "hemophilia",
+      "to_name": "epistaxis",
+      "reason": "血友病: 鼻出血47%(West Java study)。粘膜出血の一環"
+    },
+    {
+      "from": "D386",
+      "to": "E12",
+      "from_name": "hemophilia",
+      "to_name": "skin_exam",
+      "reason": "血友病: 皮下出血/紫斑69%。容易な皮下出血=初発症状23%(PMC10412897)"
+    },
+    {
+      "from": "D386",
+      "to": "S06",
+      "from_name": "hemophilia",
+      "to_name": "myalgia",
+      "reason": "血友病: 筋血腫→筋痛。深部組織出血63%(West Java severe HA)"
+    },
+    {
+      "from": "D386",
+      "to": "L93",
+      "from_name": "hemophilia",
+      "to_name": "hemoglobin",
+      "reason": "血友病: 慢性出血による貧血。重症ではHb低下あり"
+    },
+    {
+      "from": "D386",
+      "to": "S07",
+      "from_name": "hemophilia",
+      "to_name": "fatigue",
+      "reason": "血友病: 慢性貧血による倦怠感"
+    },
+    {
+      "from": "D386",
+      "to": "T01",
+      "from_name": "hemophilia",
+      "to_name": "symptom_duration",
+      "reason": "血友病: 出血エピソードは急性(時間~日)"
+    },
+    {
+      "from": "D386",
+      "to": "T02",
+      "from_name": "hemophilia",
+      "to_name": "onset_speed",
+      "reason": "血友病: 出血は突然/急性発症"
+    },
+    {
+      "from": "D152",
+      "to": "L83",
+      "from_name": "DIC",
+      "to_name": "APTT",
+      "reason": "DIC: aPTT著明延長(消費性凝固障害)"
+    },
+    {
+      "from": "D171",
+      "to": "L83",
+      "from_name": "antiphospholipid_syndrome",
+      "to_name": "APTT",
+      "reason": "APS: aPTT延長(ループスアンチコアグラント)。血栓傾向なのにaPTT延長"
+    },
+    {
+      "from": "D152",
+      "to": "L69",
+      "from_name": "DIC",
+      "to_name": "PT_INR",
+      "reason": "DIC: PT著明延長(消費性凝固障害)"
+    },
+    {
+      "from": "D208",
+      "to": "S126",
+      "from_name": "ITP",
+      "to_name": "epistaxis",
+      "reason": "ITP: 鼻出血60%。血小板減少による粘膜出血"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

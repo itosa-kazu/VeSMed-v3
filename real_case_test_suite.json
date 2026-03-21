@@ -25392,7 +25392,83 @@
       },
       "result": "",
       "notes": "突然発症型ALS。脳卒中/神経痛性筋萎縮と誤診"
+    },
+    {
+      "id": "R954",
+      "source": "PMC",
+      "pmcid": "PMC6590732",
+      "vignette": "12歳男児。生来の血友病A(FVIII<1%)。13日間の多関節腫脹(左肘→右肘→左膝→右肩)と間欠性発熱(102°F)。外傷歴なし。出生以来同様の関節出血エピソードあり。鼻出血、容易な皮下出血、割礼後出血の既往。Hb 7.5g/dL、PLT 309k、CRP 30.7。X線: 複数関節に血友病性関節症。",
+      "final_diagnosis": "血友病(A/B)",
+      "expected_id": "D386",
+      "in_scope": true,
+      "evidence": {
+        "S23": "present",
+        "S91": "polyarticular",
+        "S44": "present",
+        "S126": "present",
+        "E12": "purpura",
+        "L93": "low_7_10",
+        "L100": "normal",
+        "T01": "1w_to_3w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "6_12",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "重症先天性血友病A。多関節血関節症。FVIII<1%"
+    },
+    {
+      "id": "R955",
+      "source": "PMC",
+      "pmcid": "PMC10509382",
+      "vignette": "68歳男性。貧血+出血傾向+失神+転倒。数週間の皮下出血(全身性)。中心静脈カテーテル刺入部から活動性出血。腹部・股関節痛。Hb 7.8g/dL、aPTT 92秒(著明延長)、PT 12.8秒(正常)、PLT 150k(正常)、フィブリノゲン323(正常)。FVIII活性1.5%、FVIII抑制因子113.5BU。",
+      "final_diagnosis": "血友病(A/B)",
+      "expected_id": "D386",
+      "in_scope": true,
+      "evidence": {
+        "L83": "very_prolonged",
+        "L69": "normal",
+        "L100": "normal",
+        "L93": "low_7_10",
+        "E12": "purpura",
+        "S44": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "後天性血友病A。aPTT92秒、FVIII1.5%。高力価抑制因子"
+    },
+    {
+      "id": "R956",
+      "source": "PMC",
+      "pmcid": "PMC7899955",
+      "vignette": "60歳女性。1ヶ月間の自発性上肢斑状出血。2週間前から結膜下出血+大腿血腫。Hb 8.2g/dL、MCV 90fL、PLT正常。PT 12.2秒(正常)、aPTT 58.2秒(延長)。FVIII 1.5%。混合試験: 正常血漿で補正されず。Bethesda 80単位。ANA 1:160。",
+      "final_diagnosis": "血友病(A/B)",
+      "expected_id": "D386",
+      "in_scope": true,
+      "evidence": {
+        "L83": "mildly_prolonged",
+        "L69": "normal",
+        "L100": "normal",
+        "L93": "low_7_10",
+        "E12": "purpura",
+        "E85": "present",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "後天性血友病A(特発性)。ANA陽性。60歳女性"
     }
   ],
-  "total_cases": 952
+  "total_cases": 955
 }
