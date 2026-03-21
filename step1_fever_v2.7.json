@@ -11279,6 +11279,19 @@
       ],
       "severity": "high",
       "note": "嚥下困難/嚥下痛(主訴)+咽頭痛+頸部腫瘤(50%)+嗄声+耳痛(関連痛)+体重減少。M:F=3-5:1、55-65歳。喫煙+飲酒+HPVがリスク。鑑別:喉頭癌/扁桃周囲膿瘍/食道癌/甲状腺癌/リンパ腫/上咽頭癌"
+    },
+    {
+      "id": "D400",
+      "name": "frontotemporal_dementia",
+      "name_ja": "前頭側頭型認知症(FTD/bvFTD)",
+      "category": "disease",
+      "category_sub": "neurology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "行動変容型(bvFTD)が60%。脱抑制+無関心+共感喪失+常同行動+食行動変化+遂行機能障害。記憶は早期保持(AD鑑別)。45-65歳発症。M:F=1.3:1。30-50%家族性。鑑別:AD/DLB/PSP/CJD/うつ病/統合失調症"
     }
   ]
 }

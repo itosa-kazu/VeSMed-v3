@@ -803,7 +803,7 @@ def main():
         print("Grid Search: finding optimal (disc_power, cf_alpha, prior_power)")
         print("=" * 80)
 
-        in_scope_cases = [c for c in case_data["cases"]
+        in_scope_cases = [c for c in (case_data if isinstance(case_data, list) else case_data["cases"])
                           if c["in_scope"] and c.get("expected_id", "OOS") != "OOS"]
 
         best_score = -1
@@ -884,7 +884,7 @@ def main():
         prior_power = PRIOR_POWER
         mode_label = f"ENHANCED (IDF={disc_power}, CF={cf_alpha}, PP={prior_power})"
 
-    cases = case_data["cases"]
+    cases = case_data if isinstance(case_data, list) else case_data["cases"]
     if args.case:
         cases = [c for c in cases if c["id"] in args.case]
 

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7679,
+  "total_edges": 7696,
   "edges": [
     {
       "from": "R01",
@@ -60449,6 +60449,125 @@
       "from_name": "pharyngeal_cancer",
       "to_name": "onset_speed",
       "reason": "咽頭癌: 亜急性~慢性発症。数週~数ヶ月で進行"
+    },
+    {
+      "from": "D400",
+      "to": "S150",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "cognitive_decline",
+      "reason": "FTD: 遂行機能障害>90%(PMC5619539)。前頭葉萎縮→計画/判断/抽象思考の障害。core diagnostic criterion"
+    },
+    {
+      "from": "D400",
+      "to": "S104",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "memory_impairment",
+      "reason": "FTD: 記憶は早期に保持(70-80%, PMC5619539)。AD(近時記憶障害90%)との最大の鑑別点"
+    },
+    {
+      "from": "D400",
+      "to": "S141",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "cognitive_decline_onset",
+      "reason": "FTD: 慢性進行性(PMC5619539)。数年単位で緩徐進行。CJD(亜急性)との鑑別"
+    },
+    {
+      "from": "D400",
+      "to": "S115",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "depressed_mood",
+      "reason": "FTD: 無関心/apathy>80%(PMC5619539, UCSF)。うつ病との誤診多い。しかし悲哀感なし"
+    },
+    {
+      "from": "D400",
+      "to": "S167",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "agitation",
+      "reason": "FTD: 脱抑制/焦燥60-70%(PMC5619539)。不適切な社会行動。AD(40%)より高頻度"
+    },
+    {
+      "from": "D400",
+      "to": "S149",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "delusion",
+      "reason": "FTD: 妄想10-20%(PMC5619539)。誇大妄想が特徴的。C9orf72変異例で40%"
+    },
+    {
+      "from": "D400",
+      "to": "S117",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "hallucination",
+      "reason": "FTD: 幻覚<5%(PMC5619539)。稀。DLB(80%)との最大の鑑別点"
+    },
+    {
+      "from": "D400",
+      "to": "S53",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "speech_language_disorder",
+      "reason": "FTD: 言語障害40-60%(PMC5619539)。svPPA(意味性)/nfvPPA(非流暢性)。bvFTDでも後期に"
+    },
+    {
+      "from": "D400",
+      "to": "S94",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "speech_disturbance_type",
+      "reason": "FTD: 失語(aphasia)優位(PMC5619539)。意味性失語/非流暢性失語。構音障害はPSP/MND"
+    },
+    {
+      "from": "D400",
+      "to": "S187",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "speech_onset_speed",
+      "reason": "FTD: 言語障害は慢性進行性(PMC5619539)。月~年単位で進行"
+    },
+    {
+      "from": "D400",
+      "to": "S106",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "gait_disturbance",
+      "reason": "FTD: 歩行障害20-30%(late stage)。FTD-MND overlap/FTD-parkinsonism"
+    },
+    {
+      "from": "D400",
+      "to": "S25",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "dysphagia",
+      "reason": "FTD: 嚥下困難15-20%(late stage)。FTD-MND overlapで顕著"
+    },
+    {
+      "from": "D400",
+      "to": "S17",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "weight_loss",
+      "reason": "FTD: 体重減少30-40%。食行動変化(過食/偏食)+進行期のcachexia"
+    },
+    {
+      "from": "D400",
+      "to": "E01",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "temperature",
+      "reason": "FTD: 無熱(定義的)。発熱→感染/自己免疫性脳炎を除外"
+    },
+    {
+      "from": "D400",
+      "to": "T01",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "symptom_duration",
+      "reason": "FTD: 慢性(数年単位)。初診時に数年の経過あることが多い"
+    },
+    {
+      "from": "D400",
+      "to": "T02",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "onset_speed",
+      "reason": "FTD: 慢性発症。数ヶ月~年で徐々に進行"
+    },
+    {
+      "from": "D400",
+      "to": "L46",
+      "from_name": "frontotemporal_dementia",
+      "to_name": "brain_MRI",
+      "reason": "FTD: 前頭/側頭葉萎縮が診断基準(PMC5619539)。MRI: 前頭>側頭の限局性萎縮。PET: 前頭/側頭の低代謝"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

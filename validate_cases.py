@@ -17,7 +17,8 @@ def load(fname):
 
 def main():
     s1 = load("step1_fever_v2.7.json")
-    suite = load("real_case_test_suite.json")
+    suite_raw = load("real_case_test_suite.json")
+    suite = {"cases": suite_raw} if isinstance(suite_raw, list) else suite_raw
 
     # Build variable lookup
     var_map = {}

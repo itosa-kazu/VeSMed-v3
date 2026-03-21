@@ -4589,6 +4589,21 @@
         "female|40_64": 0.0005,
         "female|65_plus": 0.0008
       }
+    },
+    "D400": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "FTD。M:F=1.3:1。45-65歳ピーク。AD(65+)より若年発症",
+      "cpt": {
+        "male|18_39": 0.0002,
+        "male|40_64": 0.001,
+        "male|65_plus": 0.0008,
+        "female|18_39": 0.0001,
+        "female|40_64": 0.0007,
+        "female|65_plus": 0.0006
+      }
     }
   },
   "full_cpts": {
@@ -13812,6 +13827,27 @@
           "female": 0.2
         }
       }
+    },
+    "D400": {
+      "R01": {
+        "description": "FTD年齢。45-65歳ピーク(PMC3932112)",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.0,
+          "13_17": 0.001,
+          "18_39": 0.03,
+          "40_64": 0.55,
+          "65_plus": 0.419
+        }
+      },
+      "R02": {
+        "description": "FTD性別。M:F=1.3:1(PMC3932112)",
+        "cpt": {
+          "male": 0.57,
+          "female": 0.43
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16557,6 +16593,14 @@
           "over_40.0": 0.001
         },
         "D399": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D400": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -29765,9 +29809,15 @@
         },
         "D382": {
           "normal": 0.1,
-          "temporal_lobe_lesion": 0.8,
+          "temporal_lobe_lesion": 0.75,
           "diffuse_abnormal": 0.05,
-          "other": 0.05
+          "other": 0.1
+        },
+        "D400": {
+          "normal": 0.15,
+          "temporal_lobe_lesion": 0.65,
+          "diffuse_abnormal": 0.1,
+          "other": 0.1
         }
       }
     },
@@ -35265,6 +35315,10 @@
         "D399": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D400": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -35882,6 +35936,10 @@
         "D399": {
           "absent": 0.25,
           "present": 0.75
+        },
+        "D400": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -39615,6 +39673,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.05,
           "over_3w": 0.9
+        },
+        "D400": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.01,
+          "1w_to_3w": 0.03,
+          "over_3w": 0.95
         }
       }
     },
@@ -41678,6 +41742,12 @@
           "acute": 0.03,
           "subacute": 0.2,
           "chronic": 0.75
+        },
+        "D400": {
+          "sudden": 0.01,
+          "acute": 0.02,
+          "subacute": 0.07,
+          "chronic": 0.9
         }
       }
     },
@@ -44362,6 +44432,10 @@
         "D385": {
           "absent": 0.67,
           "present": 0.33
+        },
+        "D400": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -49912,6 +49986,10 @@
         "D385": {
           "dysarthria": 0.95,
           "aphasia": 0.05
+        },
+        "D400": {
+          "dysarthria": 0.15,
+          "aphasia": 0.85
         }
       }
     },
@@ -51846,6 +51924,10 @@
         "D393": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D400": {
+          "absent": 0.95,
+          "present": 0.05
         }
       }
     },
@@ -51915,6 +51997,10 @@
         "D393": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D400": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -52683,6 +52769,10 @@
         "D393": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D400": {
+          "absent": 0.2,
+          "present": 0.8
         }
       }
     },
@@ -53183,6 +53273,10 @@
         "D384": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D400": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -53236,6 +53330,10 @@
         "D392": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D400": {
+          "absent": 0.08,
+          "present": 0.92
         }
       }
     },
@@ -53276,6 +53374,11 @@
           "acute": 0.02,
           "subacute": 0.08,
           "chronic_progressive": 0.9
+        },
+        "D400": {
+          "acute": 0.02,
+          "subacute": 0.03,
+          "chronic_progressive": 0.95
         }
       }
     },
@@ -53309,6 +53412,10 @@
         "D393": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D400": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -53366,6 +53473,10 @@
         "D385": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D400": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -53487,8 +53598,8 @@
         "D382": {
           "tremor_resting": 0.05,
           "tremor_action": 0.03,
-          "chorea": 0.02,
-          "myoclonus": 0.82,
+          "chorea": 0.04,
+          "myoclonus": 0.8,
           "dystonia": 0.08
         },
         "D300": {
@@ -54053,6 +54164,11 @@
           "hyperacute": 0.02,
           "subacute": 0.08,
           "chronic_progressive": 0.9
+        },
+        "D400": {
+          "hyperacute": 0.01,
+          "subacute": 0.04,
+          "chronic_progressive": 0.95
         }
       }
     },
