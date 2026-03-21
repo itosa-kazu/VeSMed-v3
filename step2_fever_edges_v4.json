@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7327,
+  "total_edges": 7347,
   "edges": [
     {
       "from": "R01",
@@ -57985,6 +57985,146 @@
       "from_name": "nocardiosis",
       "to_name": "seizure",
       "reason": "ノカルジア症: CNS播種時の痙攣19-28%(PMC9485982: 19%, PMC4616325: 28%)"
+    },
+    {
+      "from": "D266",
+      "to": "L105",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "肺炎球菌: 喀痰Gram GPC感度50-70%(PMC7384319 PLR=7.6)"
+    },
+    {
+      "from": "D05",
+      "to": "L105",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "CAP: 肺炎球菌35%+インフル桿菌10%+非定型30%(PMC7384319)"
+    },
+    {
+      "from": "D265",
+      "to": "L105",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "H. influenzae: 喀痰Gram GNR感度76%(PMC7384319 PLR=24.7)"
+    },
+    {
+      "from": "D267",
+      "to": "L105",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "M. catarrhalis: Gram陰性双球菌。COPD/高齢者の第3菌"
+    },
+    {
+      "from": "D102",
+      "to": "L105",
+      "from_name": "legionella_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "Legionella: Gram染色に染まりにくい→negative多い(StatPearls)"
+    },
+    {
+      "from": "D143",
+      "to": "L105",
+      "from_name": "aspiration_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "誤嚥性肺炎: 口腔嫌気性菌+GPC+GNR混合(Mandell's)"
+    },
+    {
+      "from": "D17",
+      "to": "L105",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "sputum_gram_stain",
+      "reason": "肺結核: 喀痰AFB塗抹感度50-80%(WHO/PMC review)"
+    },
+    {
+      "from": "D99",
+      "to": "L105",
+      "from_name": "NTM",
+      "to_name": "sputum_gram_stain",
+      "reason": "NTM: AFB塗抹感度40-60%。TBと塗抹では鑑別不能"
+    },
+    {
+      "from": "D349",
+      "to": "L105",
+      "from_name": "TB_pleurisy",
+      "to_name": "sputum_gram_stain",
+      "reason": "結核性胸膜炎: 喀痰AFB陽性率15-20%(胸水主体)"
+    },
+    {
+      "from": "D381",
+      "to": "L105",
+      "from_name": "nocardiosis",
+      "to_name": "sputum_gram_stain",
+      "reason": "ノカルジア: 喀痰Gram分岐フィラメント感度64-78%(PMC254378)"
+    },
+    {
+      "from": "D83",
+      "to": "L105",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "sputum_gram_stain",
+      "reason": "アスペルギルス: 喀痰/BALで隔壁菌糸45度分岐(StatPearls)"
+    },
+    {
+      "from": "D365",
+      "to": "L105",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "sputum_gram_stain",
+      "reason": "肺クリプト: 喀痰で莢膜酵母。感度低い(CSF India inkが主)"
+    },
+    {
+      "from": "D50",
+      "to": "L105",
+      "from_name": "PCP",
+      "to_name": "sputum_gram_stain",
+      "reason": "PCP: 通常Gram染色陰性。Grocott/DFA染色が必要"
+    },
+    {
+      "from": "D35",
+      "to": "L105",
+      "from_name": "lung_abscess",
+      "to_name": "sputum_gram_stain",
+      "reason": "肺膿瘍: 混合嫌気性菌+GPC+GNR(Mandell's)"
+    },
+    {
+      "from": "D36",
+      "to": "L105",
+      "from_name": "empyema",
+      "to_name": "sputum_gram_stain",
+      "reason": "膿胸: GPC(40%)+GNR(30%)+嫌気性菌(Mandell's)"
+    },
+    {
+      "from": "D263",
+      "to": "L105",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "Mycoplasma: 細胞壁なし→Gram染色陰性(Harrison's)"
+    },
+    {
+      "from": "D264",
+      "to": "L105",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "sputum_gram_stain",
+      "reason": "C. pneumoniae: 細胞内寄生→Gram染色陰性"
+    },
+    {
+      "from": "D104",
+      "to": "L105",
+      "from_name": "psittacosis",
+      "to_name": "sputum_gram_stain",
+      "reason": "C. psittaci: 細胞内寄生→Gram染色陰性"
+    },
+    {
+      "from": "D55",
+      "to": "L105",
+      "from_name": "Q_fever",
+      "to_name": "sputum_gram_stain",
+      "reason": "C. burnetii: 細胞内寄生→Gram染色陰性"
+    },
+    {
+      "from": "D319",
+      "to": "L105",
+      "from_name": "bronchiectasis",
+      "to_name": "sputum_gram_stain",
+      "reason": "気管支拡張症: Pseudomonas/H.influenzae(GNR)が定着菌"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

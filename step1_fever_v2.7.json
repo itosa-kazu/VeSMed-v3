@@ -10997,6 +10997,22 @@
       "key_features": "免疫不全者の亜急性肺感染。咳(80%)+発熱(70%)+高CRP(81%)。肺結節/空洞/浸潤影。CNS播種15%(脳膿瘍)。弱抗酸菌陽性。",
       "note": "M:F=3:1。平均50-57歳。免疫不全60-66%(ステロイド最多45-65%)。死亡率12-33%。TMP-SMX治療。肺結核/放線菌症/アスペルギルスとの鑑別。",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "L105",
+      "name": "sputum_gram_stain",
+      "name_ja": "喀痰グラム染色",
+      "category": "lab",
+      "states": [
+        "negative",
+        "gpc",
+        "gnr",
+        "afb",
+        "branching_filaments",
+        "fungal"
+      ],
+      "note": "喀痰のGram染色+抗酸菌染色。negative=菌体なし, gpc=グラム陽性球菌(肺炎球菌等), gnr=グラム陰性桿菌(インフル桿菌等), afb=抗酸菌陽性(TB/NTM), branching_filaments=分岐状フィラメント(Nocardia/Actinomyces), fungal=真菌要素(Aspergillus菌糸/酵母)",
+      "severity": "high"
     }
   ]
 }

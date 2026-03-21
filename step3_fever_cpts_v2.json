@@ -51038,6 +51038,187 @@
           "present": 0.65
         }
       }
+    },
+    "L105": {
+      "description": "喀痰グラム染色+抗酸菌染色。呼吸器感染の病原体形態分類",
+      "states": [
+        "negative",
+        "gpc",
+        "gnr",
+        "afb",
+        "branching_filaments",
+        "fungal"
+      ],
+      "leak": {
+        "negative": 0.904,
+        "gpc": 0.04,
+        "gnr": 0.03,
+        "afb": 0.005,
+        "branching_filaments": 0.001,
+        "fungal": 0.02
+      },
+      "parent_effects": {
+        "D266": {
+          "negative": 0.4,
+          "gpc": 0.5,
+          "gnr": 0.03,
+          "afb": 0.02,
+          "branching_filaments": 0.005,
+          "fungal": 0.045
+        },
+        "D05": {
+          "negative": 0.48,
+          "gpc": 0.25,
+          "gnr": 0.15,
+          "afb": 0.03,
+          "branching_filaments": 0.01,
+          "fungal": 0.08
+        },
+        "D265": {
+          "negative": 0.4,
+          "gpc": 0.04,
+          "gnr": 0.5,
+          "afb": 0.02,
+          "branching_filaments": 0.005,
+          "fungal": 0.035
+        },
+        "D267": {
+          "negative": 0.5,
+          "gpc": 0.04,
+          "gnr": 0.4,
+          "afb": 0.02,
+          "branching_filaments": 0.005,
+          "fungal": 0.035
+        },
+        "D102": {
+          "negative": 0.82,
+          "gpc": 0.03,
+          "gnr": 0.08,
+          "afb": 0.02,
+          "branching_filaments": 0.01,
+          "fungal": 0.04
+        },
+        "D143": {
+          "negative": 0.37,
+          "gpc": 0.2,
+          "gnr": 0.3,
+          "afb": 0.02,
+          "branching_filaments": 0.01,
+          "fungal": 0.1
+        },
+        "D17": {
+          "negative": 0.35,
+          "gpc": 0.03,
+          "gnr": 0.02,
+          "afb": 0.55,
+          "branching_filaments": 0.01,
+          "fungal": 0.04
+        },
+        "D99": {
+          "negative": 0.45,
+          "gpc": 0.03,
+          "gnr": 0.02,
+          "afb": 0.45,
+          "branching_filaments": 0.01,
+          "fungal": 0.04
+        },
+        "D349": {
+          "negative": 0.75,
+          "gpc": 0.04,
+          "gnr": 0.03,
+          "afb": 0.15,
+          "branching_filaments": 0.005,
+          "fungal": 0.025
+        },
+        "D381": {
+          "negative": 0.22,
+          "gpc": 0.03,
+          "gnr": 0.02,
+          "afb": 0.05,
+          "branching_filaments": 0.65,
+          "fungal": 0.03
+        },
+        "D83": {
+          "negative": 0.48,
+          "gpc": 0.03,
+          "gnr": 0.02,
+          "afb": 0.02,
+          "branching_filaments": 0.02,
+          "fungal": 0.43
+        },
+        "D365": {
+          "negative": 0.65,
+          "gpc": 0.04,
+          "gnr": 0.03,
+          "afb": 0.02,
+          "branching_filaments": 0.01,
+          "fungal": 0.25
+        },
+        "D50": {
+          "negative": 0.88,
+          "gpc": 0.03,
+          "gnr": 0.02,
+          "afb": 0.01,
+          "branching_filaments": 0.01,
+          "fungal": 0.05
+        },
+        "D35": {
+          "negative": 0.3,
+          "gpc": 0.25,
+          "gnr": 0.25,
+          "afb": 0.04,
+          "branching_filaments": 0.03,
+          "fungal": 0.13
+        },
+        "D36": {
+          "negative": 0.3,
+          "gpc": 0.3,
+          "gnr": 0.25,
+          "afb": 0.03,
+          "branching_filaments": 0.02,
+          "fungal": 0.1
+        },
+        "D263": {
+          "negative": 0.93,
+          "gpc": 0.02,
+          "gnr": 0.02,
+          "afb": 0.01,
+          "branching_filaments": 0.005,
+          "fungal": 0.015
+        },
+        "D264": {
+          "negative": 0.93,
+          "gpc": 0.02,
+          "gnr": 0.02,
+          "afb": 0.01,
+          "branching_filaments": 0.005,
+          "fungal": 0.015
+        },
+        "D104": {
+          "negative": 0.93,
+          "gpc": 0.02,
+          "gnr": 0.02,
+          "afb": 0.01,
+          "branching_filaments": 0.005,
+          "fungal": 0.015
+        },
+        "D55": {
+          "negative": 0.93,
+          "gpc": 0.02,
+          "gnr": 0.02,
+          "afb": 0.01,
+          "branching_filaments": 0.005,
+          "fungal": 0.015
+        },
+        "D319": {
+          "negative": 0.35,
+          "gpc": 0.1,
+          "gnr": 0.45,
+          "afb": 0.03,
+          "branching_filaments": 0.01,
+          "fungal": 0.06
+        }
+      }
     }
   },
   "changelog": "v1→v2: 74新疾患の全CPT追加"
