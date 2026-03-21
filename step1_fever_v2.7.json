@@ -11136,6 +11136,19 @@
       ],
       "severity": "high",
       "note": "I度(PR延長)/II度Mobitz I(Wenckebach)/II度Mobitz II/III度(完全AVB)。退行性50%/虚血性40%/薬剤性15%/Lyme1-5%。失神33%/めまい34%/呼吸困難19%/無症状28%。高齢者。ECG診断→ペースメーカー。鑑別:洞機能不全/薬剤性徐脈/迷走神経性失神"
+    },
+    {
+      "id": "D389",
+      "name": "dilated_cardiomyopathy",
+      "name_ja": "拡張型心筋症(DCM)",
+      "category": "disease",
+      "category_sub": "cardiac",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "LV拡大+収縮機能低下(EF<40%)。特発性/遺伝性30-50%/ウイルス性/アルコール性/周産期。呼吸困難85%/倦怠83%/動悸60%/浮腫58-77%。BNP著高。M:F=2-3:1、20-60歳。鑑別:虚血性心筋症/HCM/拘束型/心筋炎/弁膜症"
     }
   ]
 }

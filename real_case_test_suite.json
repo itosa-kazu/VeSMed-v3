@@ -25609,7 +25609,85 @@
       },
       "result": "",
       "notes": "迷走神経介導AVB。前立腺肥大+チモロール点眼の協同効果"
+    },
+    {
+      "id": "R963",
+      "source": "PMC",
+      "pmcid": "PMC9829073",
+      "vignette": "45歳男性。2週間の下肢浮腫+労作時呼吸困難+乾性咳嗽。BP 116/88、HR 100、RR 22、SpO2 99%。全身凹陷性浮腫(顔面/手/下腿)。両肺吸気末crackles。S3奔馬律。BNP 1140pg/mL。TSH 196.2↑↑、FT4 1.80↓↓、FT3 0.74↓↓。CXR: 心拡大+肺水腫。Echo: EF 28.4%、LVEDD 58.5mm。甲状腺ホルモン補充17ヶ月後EF49.1%に改善。",
+      "final_diagnosis": "拡張型心筋症(DCM)",
+      "expected_id": "D389",
+      "in_scope": true,
+      "evidence": {
+        "S04": "on_exertion",
+        "S07": "severe",
+        "E36": "present",
+        "E50": "bilateral",
+        "S01": "present",
+        "L51": "very_high",
+        "E07": "crackles",
+        "E02": "100_120",
+        "T01": "1w_to_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "甲減性DCM。EF28.4%。甲状腺補充で可逆的"
+    },
+    {
+      "id": "R964",
+      "source": "PMC",
+      "pmcid": "PMC12091609",
+      "vignette": "26歳男性。3年間の労作時呼吸困難が7日前から増悪。発作性胸悶、多汗。HR 102、BP 90/66。両下肢浮腫、両肺crackles。心尖拍動左方偏位。心律不整。NT-proBNP 2679pg/mL。Echo: EF 31%、LVEDD 73mm、中等度MR、中重度TR、心嚢液。",
+      "final_diagnosis": "拡張型心筋症(DCM)",
+      "expected_id": "D389",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S07": "severe",
+        "E36": "present",
+        "E50": "bilateral",
+        "S35": "present",
+        "E02": "100_120",
+        "E03": "hypotension_under_90",
+        "L51": "very_high",
+        "E07": "crackles",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "特発性DCM。26歳男性。EF31%、LVEDD73mm。NYHA IV"
+    },
+    {
+      "id": "R965",
+      "source": "PMC",
+      "pmcid": "PMC11413831",
+      "vignette": "69歳女性。6週間の呼吸困難+咳嗽+胸悶。4日前から悪心嘔吐下痢。HR 111、BP 123/85、RR 20。NT-proBNP 23985pg/L、Troponin 316ng/L、AST 1087、ALT 1069。ECG: 洞性頻脈、ST-T異常。Echo: EF 20-25%、LVDd 6.54cm、全体運動低下。CMR: EF14%。心原性ショック。",
+      "final_diagnosis": "拡張型心筋症(DCM)",
+      "expected_id": "D389",
+      "in_scope": true,
+      "evidence": {
+        "S04": "at_rest",
+        "S01": "present",
+        "E02": "100_120",
+        "L51": "very_high",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "薬剤性DCM。EF20-25%。心原性ショック"
     }
   ],
-  "total_cases": 961
+  "total_cases": 964
 }
