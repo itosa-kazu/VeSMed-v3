@@ -4649,6 +4649,21 @@
         "female|40_64": 5e-05,
         "female|65_plus": 2e-05
       }
+    },
+    "D404": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "DMD。男児のみ(X連鎖)。2-5歳発症。1/5,000男児出生",
+      "cpt": {
+        "male|18_39": 0.0001,
+        "male|40_64": 2e-05,
+        "male|65_plus": 0.0,
+        "female|18_39": 0.0,
+        "female|40_64": 0.0,
+        "female|65_plus": 0.0
+      }
     }
   },
   "full_cpts": {
@@ -13956,6 +13971,27 @@
           "female": 0.43
         }
       }
+    },
+    "D404": {
+      "R01": {
+        "description": "DMD年齢。1-12歳が主。成人は稀(Becker型との混同)",
+        "cpt": {
+          "0_1": 0.1,
+          "1_5": 0.35,
+          "6_12": 0.35,
+          "13_17": 0.1,
+          "18_39": 0.08,
+          "40_64": 0.02,
+          "65_plus": 0.0
+        }
+      },
+      "R02": {
+        "description": "DMD性別。男児のみ(X連鎖劣性)",
+        "cpt": {
+          "male": 1.0,
+          "female": 0.0
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16733,6 +16769,14 @@
           "over_40.0": 0.003
         },
         "D403": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D404": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -28437,6 +28481,11 @@
           "normal": 0.4,
           "elevated": 0.45,
           "very_high": 0.15
+        },
+        "D404": {
+          "normal": 0.02,
+          "elevated": 0.08,
+          "very_high": 0.9
         }
       }
     },
@@ -31258,6 +31307,11 @@
           "absent": 0.1,
           "on_exertion": 0.55,
           "at_rest": 0.35
+        },
+        "D404": {
+          "absent": 0.55,
+          "on_exertion": 0.3,
+          "at_rest": 0.15
         }
       }
     },
@@ -33298,6 +33352,11 @@
           "absent": 0.2,
           "mild": 0.4,
           "severe": 0.4
+        },
+        "D404": {
+          "absent": 0.25,
+          "mild": 0.4,
+          "severe": 0.35
         }
       }
     },
@@ -39943,6 +40002,12 @@
           "3d_to_1w": 0.05,
           "1w_to_3w": 0.05,
           "over_3w": 0.85
+        },
+        "D404": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.01,
+          "1w_to_3w": 0.03,
+          "over_3w": 0.95
         }
       }
     },
@@ -42030,6 +42095,12 @@
           "acute": 0.05,
           "subacute": 0.1,
           "chronic": 0.8
+        },
+        "D404": {
+          "sudden": 0.01,
+          "acute": 0.02,
+          "subacute": 0.05,
+          "chronic": 0.92
         }
       }
     },
@@ -42921,6 +42992,10 @@
         "D385": {
           "absent": 0.05,
           "present": 0.95
+        },
+        "D404": {
+          "absent": 0.02,
+          "present": 0.98
         }
       }
     },
@@ -53848,6 +53923,10 @@
         "D400": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D404": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     },
@@ -53909,6 +53988,14 @@
           "spastic": 0.03,
           "waddling": 0.02,
           "antalgic": 0.02
+        },
+        "D404": {
+          "ataxic": 0.02,
+          "shuffling": 0.02,
+          "steppage": 0.05,
+          "spastic": 0.01,
+          "waddling": 0.85,
+          "antalgic": 0.05
         }
       }
     },
@@ -54033,6 +54120,13 @@
           "spastic": 0.6,
           "rigid": 0.05,
           "paratonia": 0.05
+        },
+        "D404": {
+          "normal": 0.15,
+          "flaccid": 0.75,
+          "spastic": 0.05,
+          "rigid": 0.02,
+          "paratonia": 0.03
         }
       }
     },
@@ -54434,6 +54528,12 @@
           "areflexia": 0.02,
           "hyporeflexia": 0.02,
           "hyperreflexia": 0.91
+        },
+        "D404": {
+          "normal": 0.15,
+          "areflexia": 0.25,
+          "hyporeflexia": 0.55,
+          "hyperreflexia": 0.05
         }
       }
     },

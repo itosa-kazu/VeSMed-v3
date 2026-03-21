@@ -11331,6 +11331,19 @@
       ],
       "severity": "high",
       "note": "最多チアノーゼ性先天性心疾患(5-7/10,000出生)。四徴:VSD+RVOTO+大動脈騎乗+右室肥大。70-80%チアノーゼ、20-30%はpink Tet。無修復生存:1歳66%、20歳11%。ばち指+多血症+低酸素。鑑別:大血管転位/総動脈幹/三尖弁閉鎖/Ebstein"
+    },
+    {
+      "id": "D404",
+      "name": "duchenne_muscular_dystrophy",
+      "name_ja": "Duchenne型筋ジストロフィー(DMD)",
+      "category": "disease",
+      "category_sub": "neurology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "X連鎖劣性。1/5,000男児出生。2-5歳発症。近位筋力低下+Gower徴候+腓腹筋仮性肥大+CK著明高値(10-200xULN)+動揺性歩行。12歳までに歩行不能。心筋症70-100%。鑑別:Becker型/脊髄性筋萎縮症/先天性ミオパチー/多発筋炎"
     }
   ]
 }
