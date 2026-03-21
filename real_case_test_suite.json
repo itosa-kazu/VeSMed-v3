@@ -25687,7 +25687,80 @@
       },
       "result": "",
       "notes": "薬剤性DCM。EF20-25%。心原性ショック"
+    },
+    {
+      "id": "R966",
+      "source": "PMC",
+      "pmcid": "PMC10496265",
+      "vignette": "36歳女性。大学時代からの左下腹間欠的絞痛。ほぼ持続的な腹部膨満(月経時増悪)。頻繁な便秘(隔日排便、硬く小さい便)。軽度腹部膨隆、左下腹軽度圧痛。直腸診正常。CBC正常、TSH正常、CMP正常。赤旗症状なし(便血/発熱/体重減少/夜間症状なし)。",
+      "final_diagnosis": "過敏性腸症候群(IBS)",
+      "expected_id": "D390",
+      "in_scope": true,
+      "evidence": {
+        "S12": "present",
+        "S72": "present",
+        "S07": "mild",
+        "E01": "under_37.5",
+        "S17": "absent",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "IBS-C。Lab全正常。赤旗なし。Rome IV"
+    },
+    {
+      "id": "R967",
+      "source": "PMC",
+      "pmcid": "PMC11164200",
+      "vignette": "31歳男性。18ヶ月前の食中毒後から下腹痛、腹部膨満、便秘(硬便、排出困難)。CBC/代謝パネル/肝機能/甲状腺/セリアック血清学/CRP全て2回とも正常。結腸鏡正常。乳果糖呼気試験正常(SIBO/IMO除外)。",
+      "final_diagnosis": "過敏性腸症候群(IBS)",
+      "expected_id": "D390",
+      "in_scope": true,
+      "evidence": {
+        "S12": "present",
+        "S72": "present",
+        "L02": "normal_under_0.3",
+        "E01": "under_37.5",
+        "S17": "absent",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Post-infectious IBS-C。31歳男性。全検査正常"
+    },
+    {
+      "id": "R968",
+      "source": "PMC",
+      "pmcid": "PMC3816529",
+      "vignette": "28歳女性。7ヶ月間の反復する左下腹絞痛、腹部膨満/膨隆、頻繁な水様便。左下腹圧痛、その他異常なし。幼少期から類似の軽い症状あり。排便時の不安あり。",
+      "final_diagnosis": "過敏性腸症候群(IBS)",
+      "expected_id": "D390",
+      "in_scope": true,
+      "evidence": {
+        "S12": "present",
+        "S14": "present",
+        "S86": "watery",
+        "S114": "present",
+        "E01": "under_37.5",
+        "S17": "absent",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "IBS-D。28歳女性。水様便+排便不安。Rome III"
     }
   ],
-  "total_cases": 964
+  "total_cases": 967
 }

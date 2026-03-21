@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7547,
+  "total_edges": 7560,
   "edges": [
     {
       "from": "R01",
@@ -59525,6 +59525,97 @@
       "from_name": "dilated_cardiomyopathy",
       "to_name": "onset_speed",
       "reason": "DCM: 亜急性~慢性発症"
+    },
+    {
+      "from": "D390",
+      "to": "S12",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "abdominal_pain_location",
+      "reason": "IBS: 腹痛100%(Rome IV基準)。排便で改善94%。左下腹が多い"
+    },
+    {
+      "from": "D390",
+      "to": "S14",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "diarrhea",
+      "reason": "IBS: 下痢。IBS-D 35%+IBS-M 35%=約60%が下痢エピソード(PMC10723935)"
+    },
+    {
+      "from": "D390",
+      "to": "S72",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "constipation",
+      "reason": "IBS: 便秘。IBS-C 25%+IBS-M 35%=約55%が便秘エピソード"
+    },
+    {
+      "from": "D390",
+      "to": "S86",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "diarrhea_quality",
+      "reason": "IBS: 水様性下痢(非血性)。血便は赤旗→IBD/大腸癌除外必要"
+    },
+    {
+      "from": "D390",
+      "to": "S13",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "nausea",
+      "reason": "IBS: 悪心24-43%(PMC3865067)。IBS-M型で最高43%"
+    },
+    {
+      "from": "D390",
+      "to": "S07",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "fatigue",
+      "reason": "IBS: 倦怠感~89%(PMC3706251)。QOL低下の主因"
+    },
+    {
+      "from": "D390",
+      "to": "S115",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "depressed_mood",
+      "reason": "IBS: 抑うつ29%(PMC10237074)。脳腸相関"
+    },
+    {
+      "from": "D390",
+      "to": "S114",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "anxiety",
+      "reason": "IBS: 不安39%(PMC10237074)。IBS患者は対照の3倍"
+    },
+    {
+      "from": "D390",
+      "to": "L02",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "CRP",
+      "reason": "IBS: CRP正常。65.4%がCRP<1(PMC10239547)。炎症性疾患との鑑別"
+    },
+    {
+      "from": "D390",
+      "to": "E01",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "temperature",
+      "reason": "IBS: 無熱(定義的)。発熱は赤旗→感染/IBD除外"
+    },
+    {
+      "from": "D390",
+      "to": "S17",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "weight_loss",
+      "reason": "IBS: 体重減少なし(定義的)。体重減少は赤旗→器質性疾患除外"
+    },
+    {
+      "from": "D390",
+      "to": "T01",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "symptom_duration",
+      "reason": "IBS: 慢性(3ヶ月以上、Rome IV基準)"
+    },
+    {
+      "from": "D390",
+      "to": "T02",
+      "from_name": "irritable_bowel_syndrome",
+      "to_name": "onset_speed",
+      "reason": "IBS: 慢性発症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

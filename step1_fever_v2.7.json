@@ -11149,6 +11149,19 @@
       ],
       "severity": "high",
       "note": "LV拡大+収縮機能低下(EF<40%)。特発性/遺伝性30-50%/ウイルス性/アルコール性/周産期。呼吸困難85%/倦怠83%/動悸60%/浮腫58-77%。BNP著高。M:F=2-3:1、20-60歳。鑑別:虚血性心筋症/HCM/拘束型/心筋炎/弁膜症"
+    },
+    {
+      "id": "D390",
+      "name": "irritable_bowel_syndrome",
+      "name_ja": "過敏性腸症候群(IBS)",
+      "category": "disease",
+      "category_sub": "gastrointestinal",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "low",
+      "note": "Rome IV: 腹痛≥1回/週×3ヶ月+排便関連。IBS-D(35%)/IBS-C(25%)/IBS-M(35%)。腹痛100%/腹部膨満62-81%/倦怠89%。Lab正常(WBC/CRP/Hb)。発熱・体重減少・血便は赤旗。F:M=2:1、35歳以下50%。鑑別:IBD/セリアック/顕微鏡的大腸炎/甲状腺/大腸癌"
     }
   ]
 }
