@@ -11013,6 +11013,38 @@
       ],
       "note": "喀痰のGram染色+抗酸菌染色。negative=菌体なし, gpc=グラム陽性球菌(肺炎球菌等), gnr=グラム陰性桿菌(インフル桿菌等), afb=抗酸菌陽性(TB/NTM), branching_filaments=分岐状フィラメント(Nocardia/Actinomyces), fungal=真菌要素(Aspergillus菌糸/酵母)",
       "severity": "high"
+    },
+    {
+      "id": "L106",
+      "name": "BAL_microscopy",
+      "name_ja": "BAL鏡検",
+      "category": "lab",
+      "states": [
+        "negative",
+        "gpc",
+        "gnr",
+        "afb",
+        "branching_filaments",
+        "fungal"
+      ],
+      "note": "BAL Gram+AFB染色。喀痰(L105)より高感度",
+      "severity": "high"
+    },
+    {
+      "id": "L107",
+      "name": "csf_gram_stain",
+      "name_ja": "髄液グラム染色",
+      "category": "lab",
+      "states": [
+        "negative",
+        "gpc",
+        "gn",
+        "gpr",
+        "afb",
+        "fungal"
+      ],
+      "note": "髄液Gram染色。感度91%。gpc=肺炎球菌,gn=髄膜炎菌/大腸菌,gpr=Listeria,fungal=Crypto",
+      "severity": "high"
     }
   ]
 }

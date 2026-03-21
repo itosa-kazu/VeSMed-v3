@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7347,
+  "total_edges": 7377,
   "edges": [
     {
       "from": "R01",
@@ -58125,6 +58125,216 @@
       "from_name": "bronchiectasis",
       "to_name": "sputum_gram_stain",
       "reason": "気管支拡張症: Pseudomonas/H.influenzae(GNR)が定着菌"
+    },
+    {
+      "from": "D266",
+      "to": "L106",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D05",
+      "to": "L106",
+      "from_name": "community_acquired_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D265",
+      "to": "L106",
+      "from_name": "h_influenzae_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D267",
+      "to": "L106",
+      "from_name": "moraxella_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D102",
+      "to": "L106",
+      "from_name": "legionella_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D143",
+      "to": "L106",
+      "from_name": "aspiration_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D17",
+      "to": "L106",
+      "from_name": "pulmonary_tuberculosis",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D99",
+      "to": "L106",
+      "from_name": "NTM",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D349",
+      "to": "L106",
+      "from_name": "TB_pleurisy",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D381",
+      "to": "L106",
+      "from_name": "nocardiosis",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D83",
+      "to": "L106",
+      "from_name": "aspergillosis_invasive",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D365",
+      "to": "L106",
+      "from_name": "pulmonary_cryptococcosis",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D50",
+      "to": "L106",
+      "from_name": "PCP",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D35",
+      "to": "L106",
+      "from_name": "lung_abscess",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D36",
+      "to": "L106",
+      "from_name": "empyema",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D263",
+      "to": "L106",
+      "from_name": "mycoplasma_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D264",
+      "to": "L106",
+      "from_name": "chlamydia_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D319",
+      "to": "L106",
+      "from_name": "bronchiectasis",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D188",
+      "to": "L106",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D113",
+      "to": "L106",
+      "from_name": "disseminated_histoplasmosis",
+      "to_name": "BAL_microscopy",
+      "reason": "BAL鏡検"
+    },
+    {
+      "from": "D13",
+      "to": "L107",
+      "from_name": "meningitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D82",
+      "to": "L107",
+      "from_name": "bacterial_meningitis_nosocomial",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D109",
+      "to": "L107",
+      "from_name": "cryptococcal_meningitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D324",
+      "to": "L107",
+      "from_name": "TB_meningitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D178",
+      "to": "L107",
+      "from_name": "listeria_meningitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D118",
+      "to": "L107",
+      "from_name": "brain_abscess",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D84",
+      "to": "L107",
+      "from_name": "herpes_encephalitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D176",
+      "to": "L107",
+      "from_name": "anti_NMDA_receptor_encephalitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D110",
+      "to": "L107",
+      "from_name": "toxoplasma_encephalitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
+    },
+    {
+      "from": "D95",
+      "to": "L107",
+      "from_name": "japanese_encephalitis",
+      "to_name": "csf_gram_stain",
+      "reason": "髄液Gram染色"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

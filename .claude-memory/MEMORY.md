@@ -9,6 +9,9 @@
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_atomicity_principle.md](feedback_atomicity_principle.md) — **変量原子化原則**: 1変量=1臨床観察単位。異なる検体/手技/感度は別変量(喀痰≠BAL)
+
+## 将来タスク
+- [project_d05_cap_split.md](project_d05_cap_split.md) — **D05(市中肺炎)は分割/削除が必要**。病原体別ID(D266/D265/D263等)が既にあり冗長
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
 - [feedback_max_cases.md](feedback_max_cases.md) — PMCで見つけた案例は全て使う（3件以上は全部追加）
 - [feedback_no_oos_escape.md](feedback_no_oos_escape.md) — OOS逃避禁止。FATALを正直に受け入れるか、変数追加で正面解決
