@@ -11084,6 +11084,19 @@
       ],
       "severity": "moderate",
       "note": "大球性貧血+神経症状(SACD)+舌炎が三徴。悪性貧血(自己免疫性)が20-50%。MCV>100(54%)、Hb低下(37%)、LDH著高。28%は貧血なしで神経症状のみ。高齢者/菜食主義に好発。鑑別:葉酸欠乏/MDS/甲状腺低下/肝疾患"
+    },
+    {
+      "id": "D385",
+      "name": "amyotrophic_lateral_sclerosis",
+      "name_ja": "筋萎縮性側索硬化症(ALS)",
+      "category": "disease",
+      "category_sub": "neurodegenerative",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "critical",
+      "note": "UMN+LMN同時障害が特徴。四肢型67-75%/球麻痺型20-33%。筋萎縮+線維束攣縮+腱反射亢進+Babinski。感覚正常/膀胱直腸正常/眼球運動正常。中央値2-5年生存。鑑別:頸椎症性脊髄症/MG/MS/Kennedy病"
     }
   ]
 }

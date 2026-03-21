@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7460,
+  "total_edges": 7483,
   "edges": [
     {
       "from": "R01",
@@ -58916,6 +58916,167 @@
       "from_name": "guillain_barre_syndrome",
       "to_name": "deep_tendon_reflexes",
       "reason": "GBS: 腱反射消失/低下は定義的特徴。>90%でareflexia(Lancet 2016)"
+    },
+    {
+      "from": "D385",
+      "to": "S48",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "proximal_muscle_weakness",
+      "reason": "ALS: 筋力低下は定義的特徴~100%。非対称進行性(PMC7540334)"
+    },
+    {
+      "from": "D385",
+      "to": "S52",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "focal_neuro_deficit",
+      "reason": "ALS: 非対称四肢筋力低下85%。focal deficit(片麻痺パターン)(US ALS Registry)"
+    },
+    {
+      "from": "D385",
+      "to": "E53",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "deep_tendon_reflexes",
+      "reason": "ALS: 腱反射亢進91%(UMN)。萎縮した筋でも亢進=ALS特異的(Neural Regen Res 2022)"
+    },
+    {
+      "from": "D385",
+      "to": "E74",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "babinski_sign",
+      "reason": "ALS: Babinski陽性(UMN)。step1 note明記。E53亢進と組み合わせ"
+    },
+    {
+      "from": "D385",
+      "to": "E81",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "muscle_tone",
+      "reason": "ALS: 痙性(UMN)。上位運動ニューロン障害の定義的所見"
+    },
+    {
+      "from": "D385",
+      "to": "E30",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "clonus",
+      "reason": "ALS: クローヌス(UMN)。痙性と同時出現"
+    },
+    {
+      "from": "D385",
+      "to": "S133",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "muscle_cramp",
+      "reason": "ALS: 筋痙攣92%(PMC5575819)。20%が初発症状。step1 note: ALS明記"
+    },
+    {
+      "from": "D385",
+      "to": "S105",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "involuntary_movement",
+      "reason": "ALS: 線維束攣縮56-73%(US ALS Registry/PMC8579676)。LMN所見"
+    },
+    {
+      "from": "D385",
+      "to": "S53",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "speech_language_disorder",
+      "reason": "ALS: 構音障害33%(US ALS Registry)。球麻痺型で初発"
+    },
+    {
+      "from": "D385",
+      "to": "S94",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "speech_disturbance_type",
+      "reason": "ALS: 構音障害(dysarthria)。失語(aphasia)ではない"
+    },
+    {
+      "from": "D385",
+      "to": "S187",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "speech_onset_speed",
+      "reason": "ALS: 慢性進行性発症。step1 note: ALS(構音)=chronic_progressive"
+    },
+    {
+      "from": "D385",
+      "to": "S25",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "dysphagia",
+      "reason": "ALS: 嚥下困難32%診断時(Yang 2024)。進行で73-98%"
+    },
+    {
+      "from": "D385",
+      "to": "S17",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "weight_loss",
+      "reason": "ALS: 体重減少56-62%(PMC3717067)"
+    },
+    {
+      "from": "D385",
+      "to": "S07",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "fatigue",
+      "reason": "ALS: 倦怠感48%(PMC10791750 meta-analysis)"
+    },
+    {
+      "from": "D385",
+      "to": "S04",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "dyspnea",
+      "reason": "ALS: 呼吸困難3%初発(PMC7540334)。呼吸筋麻痺→最終死因90%"
+    },
+    {
+      "from": "D385",
+      "to": "S106",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "gait_disturbance",
+      "reason": "ALS: 歩行障害~40%。下肢発症型で顕著"
+    },
+    {
+      "from": "D385",
+      "to": "S150",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "cognitive_decline",
+      "reason": "ALS: 認知機能低下30-50%。10-20%はFTD基準(StatPearls)"
+    },
+    {
+      "from": "D385",
+      "to": "T01",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "symptom_duration",
+      "reason": "ALS: 慢性経過(月~年単位)"
+    },
+    {
+      "from": "D385",
+      "to": "T02",
+      "from_name": "amyotrophic_lateral_sclerosis",
+      "to_name": "onset_speed",
+      "reason": "ALS: 慢性進行性発症"
+    },
+    {
+      "from": "D373",
+      "to": "S133",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "muscle_cramp",
+      "reason": "甲状腺機能低下: 筋痙攣30-50%。step1 note明記"
+    },
+    {
+      "from": "D153",
+      "to": "S133",
+      "from_name": "rhabdomyolysis",
+      "to_name": "muscle_cramp",
+      "reason": "横紋筋融解: 筋痙攣90%。定義的症状"
+    },
+    {
+      "from": "D138",
+      "to": "S187",
+      "from_name": "acute_ischemic_stroke",
+      "to_name": "speech_onset_speed",
+      "reason": "脳梗塞: 超急性発症の失語/構音障害(Broca/Wernicke)"
+    },
+    {
+      "from": "D303",
+      "to": "S187",
+      "from_name": "parkinson_disease",
+      "to_name": "speech_onset_speed",
+      "reason": "Parkinson: 慢性進行性構音障害(hypokinetic dysarthria)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

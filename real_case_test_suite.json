@@ -25320,7 +25320,79 @@
       },
       "result": "",
       "notes": "菜食主義によるB12欠乏SACD。貧血なし(28%は貧血なしで神経症状のみ)"
+    },
+    {
+      "id": "R951",
+      "source": "PMC",
+      "pmcid": "PMC3154066",
+      "vignette": "35歳女性。6週間の進行性右上肢筋力低下。手指3-5の筋力低下、書字困難、細かい作業不能。両手の筋線維束攣縮。構音障害あり。神経学的検査: 右手関節屈筋/伸筋筋力低下、右三頭筋・母指球の線維束攣縮。C5-S1深部腱反射著明亢進。EMG: 右第1骨間筋、回内筋、三角筋、腓腹筋、両側前脛骨筋に活動性脱神経。MRI: 両側皮質脊髄路に高信号。15ヶ月後に死亡。",
+      "final_diagnosis": "筋萎縮性側索硬化症(ALS)",
+      "expected_id": "D385",
+      "in_scope": true,
+      "evidence": {
+        "S48": "present",
+        "S52": "present",
+        "E53": "hyperreflexia",
+        "S105": "present",
+        "S53": "present",
+        "S94": "dysarthria",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "35歳女性四肢型ALS。6週間で急速進行。15ヶ月後死亡"
+    },
+    {
+      "id": "R952",
+      "source": "PMC",
+      "pmcid": "PMC2847417",
+      "vignette": "61歳女性。進行性四肢筋力低下と歩行困難。三角筋・手内筋萎縮。筋緊張亢進。遠位上肢筋のびまん性筋力低下。病的腱反射亢進(下顎反射亢進、両側Hoffman徴候、足クローヌス)。感覚・脳神経正常。EMG: 4肢+胸部傍脊柱筋にびまん性線維束攣縮電位+脱神経電位。ACE 69(基準8-52)。脳/頸椎MRI正常。剖検: ALS(Bunina小体)+サルコイドーシス。",
+      "final_diagnosis": "筋萎縮性側索硬化症(ALS)",
+      "expected_id": "D385",
+      "in_scope": true,
+      "evidence": {
+        "S48": "present",
+        "S52": "present",
+        "E53": "hyperreflexia",
+        "E30": "present",
+        "S105": "present",
+        "S106": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "ALS+神経サルコイドーシス合併。剖検確認"
+    },
+    {
+      "id": "R953",
+      "source": "PMC",
+      "pmcid": "PMC6123847",
+      "vignette": "65歳男性。PC操作中に突然右示指の挙上困難。右上肢遠位の筋力低下(指伸筋MMT2)。初診時深部腱反射・Babinski正常。EMG: 指伸筋に著明な脱神経電位、C6-T1領域に脱神経。1ヶ月後: 腱反射亢進出現、線維束攣縮電位。1年後: 左上肢にも進展。脳・頸椎MRI正常。",
+      "final_diagnosis": "筋萎縮性側索硬化症(ALS)",
+      "expected_id": "D385",
+      "in_scope": true,
+      "evidence": {
+        "S52": "present",
+        "S105": "present",
+        "E53": "hyperreflexia",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "突然発症型ALS。脳卒中/神経痛性筋萎縮と誤診"
     }
   ],
-  "total_cases": 949
+  "total_cases": 952
 }
