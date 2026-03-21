@@ -11110,6 +11110,19 @@
       ],
       "severity": "high",
       "note": "X連鎖劣性。A型(FVIII欠乏)80%/B型(FIX欠乏)20%。血関節症75-90%/筋血腫25%/粘膜出血87%。aPTT延長+PT正常+PLT正常が三徴。男性97%。重症60%(自発性出血)/中等15%/軽症25%。鑑別:vWD/後天性血友病/DIC/ITP"
+    },
+    {
+      "id": "D387",
+      "name": "anorexia_nervosa",
+      "name_ja": "神経性食欲不振症",
+      "category": "disease",
+      "category_sub": "psychiatric",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "F:M=10:1。13-25歳好発。体重減少+無月経+徐脈+低血圧+低体温。白血球減少35%/貧血30%。低K(14-42%)/低T3(63%)。死亡率5-10%。鑑別:甲状腺亢進/Addison/セリアック/IBD/悪性腫瘍/うつ病"
     }
   ]
 }

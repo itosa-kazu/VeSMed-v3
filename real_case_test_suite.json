@@ -25468,7 +25468,80 @@
       },
       "result": "",
       "notes": "後天性血友病A(特発性)。ANA陽性。60歳女性"
+    },
+    {
+      "id": "R957",
+      "source": "PMC",
+      "pmcid": "PMC11634563",
+      "vignette": "19歳女性。3ヶ月で18kg体重減少(56→38kg)、BMI 14。食欲変動、著明な倦怠感、全身筋力低下、筋痛、持続的な悲しみ、睡眠障害。蒼白、無力。心拍数30-40bpm(重度洞性徐脈)。血圧安定。Hb正常、TSH正常。軽度鉄欠乏、Mg軽度低下。心エコー: 心臓縮小。",
+      "final_diagnosis": "神経性食欲不振症",
+      "expected_id": "D387",
+      "in_scope": true,
+      "evidence": {
+        "S17": "present",
+        "S07": "severe",
+        "E02": "under_100",
+        "S115": "present",
+        "E85": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "重度AN。BMI14、HR30-40。心臓縮小"
+    },
+    {
+      "id": "R958",
+      "source": "PMC",
+      "pmcid": "PMC6831791",
+      "vignette": "24歳女性。神経性食欲不振症。体重36.5kg、BMI 12.6。入院時: HR 28bpm、BP 58/42mmHg、体温34.6°C。悪液質。甲状腺機能正常。心エコー: 正常LV機能だが全体的菲薄化+LV mass低下。運動負荷で正常chronotropic反応。",
+      "final_diagnosis": "神経性食欲不振症",
+      "expected_id": "D387",
+      "in_scope": true,
+      "evidence": {
+        "S17": "present",
+        "E02": "under_100",
+        "E03": "hypotension_under_90",
+        "E01": "hypothermia_under_35",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "極重度AN。BMI12.6、HR28、BP58/42、体温34.6°C"
+    },
+    {
+      "id": "R959",
+      "source": "PMC",
+      "pmcid": "PMC4925047",
+      "vignette": "14歳女性。6ヶ月間の体重減少(52→39kg)、過度のダイエット・運動、食物への執着。無月経3ヶ月。体像障害、体重増加への強い恐怖。低栄養、蒼白、毛髪脆弱、抑うつ顔貌。HR 48/分(徐脈)、BP 90/58mmHg。Hb 9.5g/dL。ECG: 洞性徐脈(HR45)。低Ca 8.4mEq/L。",
+      "final_diagnosis": "神経性食欲不振症",
+      "expected_id": "D387",
+      "in_scope": true,
+      "evidence": {
+        "S17": "present",
+        "S183": "gradual_months",
+        "E02": "under_100",
+        "S57": "present",
+        "L93": "low_7_10",
+        "S115": "present",
+        "S118": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "14歳AN。無月経+徐脈+貧血+脱毛。インド症例"
     }
   ],
-  "total_cases": 955
+  "total_cases": 958
 }

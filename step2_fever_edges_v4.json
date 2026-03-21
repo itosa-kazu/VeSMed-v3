@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7500,
+  "total_edges": 7519,
   "edges": [
     {
       "from": "R01",
@@ -59196,6 +59196,139 @@
       "from_name": "ITP",
       "to_name": "epistaxis",
       "reason": "ITP: 鼻出血60%。血小板減少による粘膜出血"
+    },
+    {
+      "from": "D387",
+      "to": "S17",
+      "from_name": "anorexia_nervosa",
+      "to_name": "weight_loss",
+      "reason": "AN: 体重減少100%(診断基準)(DSM-5)"
+    },
+    {
+      "from": "D387",
+      "to": "S183",
+      "from_name": "anorexia_nervosa",
+      "to_name": "weight_loss_tempo",
+      "reason": "AN: 緩徐な体重減少(月単位)。ダイエット/食事制限"
+    },
+    {
+      "from": "D387",
+      "to": "S07",
+      "from_name": "anorexia_nervosa",
+      "to_name": "fatigue",
+      "reason": "AN: 倦怠感~80%。筋力35%低下(PMC7400818)"
+    },
+    {
+      "from": "D387",
+      "to": "E02",
+      "from_name": "anorexia_nervosa",
+      "to_name": "heart_rate",
+      "reason": "AN: 徐脈56-95%(PMC7310519/PMC3709923)。HR<60 が多い"
+    },
+    {
+      "from": "D387",
+      "to": "E03",
+      "from_name": "anorexia_nervosa",
+      "to_name": "blood_pressure_systolic",
+      "reason": "AN: 低血圧16-54%(PMC10080852)"
+    },
+    {
+      "from": "D387",
+      "to": "E01",
+      "from_name": "anorexia_nervosa",
+      "to_name": "temperature",
+      "reason": "AN: 低体温10-45%(PMC7310519)。体脂肪減少→体温調節障害"
+    },
+    {
+      "from": "D387",
+      "to": "S57",
+      "from_name": "anorexia_nervosa",
+      "to_name": "amenorrhea",
+      "reason": "AN: 無月経50-84%(PMC8226688/PMC4381361)。20%は体重減少前に発症"
+    },
+    {
+      "from": "D387",
+      "to": "S72",
+      "from_name": "anorexia_nervosa",
+      "to_name": "constipation",
+      "reason": "AN: 便秘67-83%(PubMed2338185)。GI症状90-99%"
+    },
+    {
+      "from": "D387",
+      "to": "S118",
+      "from_name": "anorexia_nervosa",
+      "to_name": "alopecia",
+      "reason": "AN: 脱毛~60%(JAAD)。telogen effluvium"
+    },
+    {
+      "from": "D387",
+      "to": "S139",
+      "from_name": "anorexia_nervosa",
+      "to_name": "alopecia_pattern",
+      "reason": "AN: びまん性脱毛(栄養不良性)"
+    },
+    {
+      "from": "D387",
+      "to": "S115",
+      "from_name": "anorexia_nervosa",
+      "to_name": "depressed_mood",
+      "reason": "AN: 抑うつ36-80%(PMC8958208)。最多合併精神疾患"
+    },
+    {
+      "from": "D387",
+      "to": "S114",
+      "from_name": "anorexia_nervosa",
+      "to_name": "anxiety",
+      "reason": "AN: 不安障害24-72%(AJP 2004)"
+    },
+    {
+      "from": "D387",
+      "to": "L01",
+      "from_name": "anorexia_nervosa",
+      "to_name": "WBC",
+      "reason": "AN: 白血球減少29-39%(PMC5107965)。重症で53-79%"
+    },
+    {
+      "from": "D387",
+      "to": "L93",
+      "from_name": "anorexia_nervosa",
+      "to_name": "hemoglobin",
+      "reason": "AN: 貧血21-39%(PMC5107965)。重症で47-83%"
+    },
+    {
+      "from": "D387",
+      "to": "L44",
+      "from_name": "anorexia_nervosa",
+      "to_name": "electrolytes",
+      "reason": "AN: 低K14-42%(JAMA2022)。AN-BP型で42%。低Na~3-7%"
+    },
+    {
+      "from": "D387",
+      "to": "E36",
+      "from_name": "anorexia_nervosa",
+      "to_name": "lower_extremity_edema",
+      "reason": "AN: 末梢浮腫20-42%(PMC7310519)。低アルブミン/refeeding"
+    },
+    {
+      "from": "D387",
+      "to": "E50",
+      "from_name": "anorexia_nervosa",
+      "to_name": "leg_edema_laterality",
+      "reason": "AN: 両側性浮腫(全身性栄養障害)"
+    },
+    {
+      "from": "D387",
+      "to": "T01",
+      "from_name": "anorexia_nervosa",
+      "to_name": "symptom_duration",
+      "reason": "AN: 慢性経過(月~年)"
+    },
+    {
+      "from": "D387",
+      "to": "T02",
+      "from_name": "anorexia_nervosa",
+      "to_name": "onset_speed",
+      "reason": "AN: 慢性発症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
