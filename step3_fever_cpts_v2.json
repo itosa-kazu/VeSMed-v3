@@ -4529,6 +4529,21 @@
         "female|40_64": 0.0015,
         "female|65_plus": 0.0025
       }
+    },
+    "D396": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "BPH。男性のみ。50歳以上50%+、70歳以上80%+",
+      "cpt": {
+        "male|18_39": 0.001,
+        "male|40_64": 0.01,
+        "male|65_plus": 0.02,
+        "female|18_39": 0.0,
+        "female|40_64": 0.0,
+        "female|65_plus": 0.0
+      }
     }
   },
   "full_cpts": {
@@ -13668,6 +13683,27 @@
           "female": 0.75
         }
       }
+    },
+    "D396": {
+      "R01": {
+        "description": "BPH年齢。50歳以上で急増",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.0,
+          "13_17": 0.0,
+          "18_39": 0.02,
+          "40_64": 0.38,
+          "65_plus": 0.6
+        }
+      },
+      "R02": {
+        "description": "BPH性別。男性のみ",
+        "cpt": {
+          "male": 1.0,
+          "female": 0.0
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16381,6 +16417,14 @@
           "over_40.0": 0.001
         },
         "D395": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D396": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -31353,6 +31397,11 @@
           "absent": 0.55,
           "mild": 0.2,
           "severe": 0.25
+        },
+        "D396": {
+          "absent": 0.95,
+          "mild": 0.04,
+          "severe": 0.01
         }
       }
     },
@@ -35964,6 +36013,10 @@
         "D378": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D396": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -39344,6 +39397,12 @@
           "3d_to_1w": 0.2,
           "1w_to_3w": 0.08,
           "over_3w": 0.02
+        },
+        "D396": {
+          "under_3d": 0.05,
+          "3d_to_1w": 0.05,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.8
         }
       }
     },
@@ -41383,6 +41442,12 @@
           "acute": 0.3,
           "subacute": 0.04,
           "chronic": 0.01
+        },
+        "D396": {
+          "sudden": 0.05,
+          "acute": 0.1,
+          "subacute": 0.15,
+          "chronic": 0.7
         }
       }
     },
@@ -41582,6 +41647,10 @@
         "D301": {
           "absent": 0.2,
           "present": 0.8
+        },
+        "D396": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -41623,6 +41692,10 @@
         "D290": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D396": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -44629,6 +44702,11 @@
           "normal": 0.45,
           "mild_elevated": 0.4,
           "high_AKI": 0.15
+        },
+        "D396": {
+          "normal": 0.85,
+          "mild_elevated": 0.12,
+          "high_AKI": 0.03
         }
       }
     },
@@ -53922,6 +54000,110 @@
           "miosis": 0.01,
           "anisocoria": 0.03,
           "RAPD": 0.01
+        }
+      }
+    },
+    "S98": {
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D396": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D289": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D22": {
+          "absent": 0.4,
+          "present": 0.6
+        },
+        "D308": {
+          "absent": 0.2,
+          "present": 0.8
+        }
+      }
+    },
+    "S110": {
+      "leak": {
+        "absent": 0.98,
+        "present": 0.02
+      },
+      "parent_effects": {
+        "D301": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D236": {
+          "absent": 0.7,
+          "present": 0.3
+        },
+        "D307": {
+          "absent": 0.3,
+          "present": 0.7
+        },
+        "D200": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D308": {
+          "absent": 0.15,
+          "present": 0.85
+        },
+        "D289": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D396": {
+          "absent": 0.8,
+          "present": 0.2
+        }
+      }
+    },
+    "S82": {
+      "leak": {
+        "normal": 0.95,
+        "oliguria": 0.04,
+        "anuria": 0.01
+      },
+      "parent_effects": {
+        "D240": {
+          "normal": 0.5,
+          "oliguria": 0.4,
+          "anuria": 0.1
+        },
+        "D290": {
+          "normal": 0.75,
+          "oliguria": 0.2,
+          "anuria": 0.05
+        },
+        "D190": {
+          "normal": 0.6,
+          "oliguria": 0.35,
+          "anuria": 0.05
+        },
+        "D289": {
+          "normal": 0.7,
+          "oliguria": 0.25,
+          "anuria": 0.05
+        },
+        "D191": {
+          "normal": 0.4,
+          "oliguria": 0.5,
+          "anuria": 0.1
+        },
+        "D211": {
+          "normal": 0.5,
+          "oliguria": 0.4,
+          "anuria": 0.1
+        },
+        "D396": {
+          "normal": 0.8,
+          "oliguria": 0.18,
+          "anuria": 0.02
         }
       }
     }

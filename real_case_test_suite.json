@@ -26149,7 +26149,76 @@
       },
       "result": "",
       "notes": "術後せん妄に隠れたAACG。IOP 55mmHg。laser PI後VA 6/9に回復"
+    },
+    {
+      "id": "R985",
+      "source": "PMC",
+      "pmcid": "PMC11416196",
+      "vignette": "70歳男性。2ヶ月で4回目の急性尿閉で救急受診。12時間排尿不能。心不全・高血圧・糖尿病の既往。腹部膨満、膀胱膨隆触知。BP 180/100、HR 95。Cr 1.0mg/dL(正常)、CBC正常。超音波で膀胱著明膨満。カテーテル挿入で2000mL排出。",
+      "final_diagnosis": "前立腺肥大症(BPH)",
+      "expected_id": "D396",
+      "in_scope": true,
+      "evidence": {
+        "S110": "present",
+        "S11": "present",
+        "S98": "present",
+        "L55": "normal",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "BPH+心不全。急性尿閉4回目。カテーテル後低血圧合併"
+    },
+    {
+      "id": "R986",
+      "source": "PMC",
+      "pmcid": "PMC6110568",
+      "vignette": "22歳男性。急性尿閉+左腎疝痛で救急受診。既往歴なし。DRE:前立腺腫大(平滑、結節なし、圧痛なし)。無熱。左側腹部に軽度圧痛。尿検査正常、PSA 1.6ng/mL。超音波:膀胱壁肥厚、膀胱頸部に5x2cm組織増殖。",
+      "final_diagnosis": "前立腺肥大症(BPH)",
+      "expected_id": "D396",
+      "in_scope": true,
+      "evidence": {
+        "S110": "present",
+        "S11": "present",
+        "E01": "under_37.5",
+        "T01": "under_3d",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "22歳の極めて稀なBPH。嚢胞性腺性膀胱炎合併。TUR後症状消失"
+    },
+    {
+      "id": "R987",
+      "source": "PMC",
+      "pmcid": "PMC1502357_case1",
+      "vignette": "62歳男性。4年間の進行性LUTS(排尿困難・尿勢低下・残尿感・夜間頻尿)。AUA症状スコア21(重症)。尿流量11mL/s。残尿60mL。TRUS:前立腺65mL。PSA 3.2ng/mL。DRE:平滑腫大。",
+      "final_diagnosis": "前立腺肥大症(BPH)",
+      "expected_id": "D396",
+      "in_scope": true,
+      "evidence": {
+        "S11": "present",
+        "S98": "present",
+        "S10": "present",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "典型BPH。AUA 21(重症)。前立腺65mL。α遮断薬+5ARI併用"
     }
   ],
-  "total_cases": 983
+  "total_cases": 986
 }

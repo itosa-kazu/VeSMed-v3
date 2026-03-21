@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7627,
+  "total_edges": 7641,
   "edges": [
     {
       "from": "R01",
@@ -60085,6 +60085,104 @@
       "from_name": "sarcoidosis",
       "to_name": "eye_pain",
       "reason": "サルコイドーシス: 眼痛。前部ぶどう膜炎に伴う"
+    },
+    {
+      "from": "D396",
+      "to": "S11",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "urinary_frequency",
+      "reason": "BPH: 頻尿。蓄尿症状の主要所見。56%のBPH患者で報告(StatPearls NBK558920)"
+    },
+    {
+      "from": "D396",
+      "to": "S10",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "dysuria",
+      "reason": "BPH: 排尿時痛/不快感。尿路閉塞に伴う(合併UTI時に増強)"
+    },
+    {
+      "from": "D396",
+      "to": "S98",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "urinary_retention_feeling",
+      "reason": "BPH: 残尿感。排尿症状の主要所見。IPSS評価項目"
+    },
+    {
+      "from": "D396",
+      "to": "S110",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "urinary_retention",
+      "reason": "BPH: 尿閉。急性尿閉は重篤合併症(5%/年, StatPearls)。PVR>200mL"
+    },
+    {
+      "from": "D396",
+      "to": "S33",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "hematuria",
+      "reason": "BPH: 血尿。前立腺血管怒張による。肉眼的血尿はBPH合併症"
+    },
+    {
+      "from": "D396",
+      "to": "S82",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "urine_output",
+      "reason": "BPH: 尿量変化。慢性尿閉→溢流性尿失禁/乏尿→腎後性AKI"
+    },
+    {
+      "from": "D396",
+      "to": "L55",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "creatinine",
+      "reason": "BPH: Cr上昇。閉塞性腎症→腎後性AKI(重症合併症)"
+    },
+    {
+      "from": "D396",
+      "to": "S05",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "headache",
+      "reason": "BPH: 頭痛は稀(absent)。鑑別的:頭痛なし"
+    },
+    {
+      "from": "D396",
+      "to": "E01",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "temperature",
+      "reason": "BPH: 無熱。発熱→急性前立腺炎/UTI合併を示唆"
+    },
+    {
+      "from": "D396",
+      "to": "T01",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "symptom_duration",
+      "reason": "BPH: 慢性(数ヶ月~数年かけて進行)"
+    },
+    {
+      "from": "D396",
+      "to": "T02",
+      "from_name": "benign_prostatic_hyperplasia",
+      "to_name": "onset_speed",
+      "reason": "BPH: 慢性発症。緩徐進行性"
+    },
+    {
+      "from": "D289",
+      "to": "S98",
+      "from_name": "prostate_cancer",
+      "to_name": "urinary_retention_feeling",
+      "reason": "前立腺癌: 残尿感。前立腺腫大/浸潤による閉塞症状"
+    },
+    {
+      "from": "D22",
+      "to": "S98",
+      "from_name": "acute_prostatitis",
+      "to_name": "urinary_retention_feeling",
+      "reason": "急性前立腺炎: 残尿感。前立腺腫脹による排尿障害"
+    },
+    {
+      "from": "D308",
+      "to": "S98",
+      "from_name": "cauda_equina",
+      "to_name": "urinary_retention_feeling",
+      "reason": "馬尾症候群: 残尿感/尿閉。膀胱直腸障害"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

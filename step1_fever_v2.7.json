@@ -11227,6 +11227,19 @@
       ],
       "severity": "high",
       "note": "急性眼圧上昇(50-80mmHg)。眼痛47-83%/視力低下82-86%/角膜浮腫80%/充血23-75%/散瞳固定/頭痛34%/悪心嘔吐24-44%。F:M=2-4:1、55-65歳。遠視/浅前房がリスク。鑑別:片頭痛/群発頭痛/ぶどう膜炎/CRAO/角膜炎/急性副鼻腔炎"
+    },
+    {
+      "id": "D396",
+      "name": "benign_prostatic_hyperplasia",
+      "name_ja": "前立腺肥大症(BPH)",
+      "category": "disease",
+      "category_sub": "urology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "LUTS: 頻尿/夜間頻尿/尿勢低下/残尿感/尿閉。50歳以上男性50%+。DRE:平滑腫大前立腺。急性尿閉5%。鑑別:前立腺癌/膀胱癌/尿道狭窄/神経因性膀胱/前立腺炎/OAB"
     }
   ]
 }
