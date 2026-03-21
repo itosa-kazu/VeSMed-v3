@@ -11448,6 +11448,19 @@
       ],
       "severity": "moderate",
       "note": "腰椎の変性狭窄→神経性間欠性跛行。歩行/立位で下肢痛+しびれ、前屈/座位で軽快。50-70歳。PAD鑑別重要(ABI)"
+    },
+    {
+      "id": "D413",
+      "name": "insulinoma",
+      "name_ja": "インスリノーマ",
+      "category": "disease",
+      "category_sub": "endocrine",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "膵β細胞腫瘍→内因性高インスリン血症→反復性低血糖。Whipple三徴(低血糖症状+血糖<55+ブドウ糖で改善)。90%良性/単発。40-60歳、F>M"
     }
   ]
 }
