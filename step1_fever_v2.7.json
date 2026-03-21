@@ -11370,6 +11370,19 @@
       ],
       "severity": "moderate",
       "note": "喘息患者の1-2%(専門施設13%)。Aspergillus fumigatusに対する過敏反応。産生性咳嗽(茶色粘液栓)+喘鳴+好酸球増多+IgE>1000+中枢性気管支拡張症。20-40歳。鑑別:好酸球性肺炎/過敏性肺炎/肺結核/EGPA/肺アスペルギルス症(侵襲性)"
+    },
+    {
+      "id": "D407",
+      "name": "menieres_disease",
+      "name_ja": "メニエール病",
+      "category": "disease",
+      "category_sub": "ENT",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "内リンパ水腫。三徴: 反復性回転性めまい(20分-12時間)+低音型感音性難聴+耳鳴。耳閉感。40-60歳, F>M(1.3:1)"
     }
   ]
 }
