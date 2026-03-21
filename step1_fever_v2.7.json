@@ -11396,6 +11396,19 @@
       ],
       "severity": "moderate",
       "note": "72時間以内に3連続周波数で≧30dBの感音性難聴。片側性>90%。耳鳴80-95%。めまい28-56%。41-55歳ピーク。M≒F"
+    },
+    {
+      "id": "D409",
+      "name": "acute_otitis_media",
+      "name_ja": "急性中耳炎",
+      "category": "disease",
+      "category_sub": "ENT",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "mild",
+      "note": "中耳の急性細菌感染。小児主体(6-24ヶ月ピーク)、成人稀。耳痛+鼓膜膨隆+伝音性難聴。URI先行~75%。発熱~66%"
     }
   ]
 }

@@ -27849,5 +27849,97 @@
       "R02": "male"
     },
     "notes": "Classic SSNHL: sudden hearing loss + tinnitus, noticed upon waking. No vertigo. 90dB flat loss."
+  },
+  {
+    "id": "R1055",
+    "source": "PMC",
+    "pmcid": "PMC7804088",
+    "vignette": "38歳男性。4日前からの難聴+耳閉感。慢性の非産生性咳嗽、軽度呼吸困難。耳鏡: 両側鼓膜膨隆+膿性貯留液。",
+    "final_diagnosis": "急性中耳炎",
+    "expected_id": "D409",
+    "in_scope": true,
+    "evidence": {
+      "S79": "present",
+      "S124": "present",
+      "S140": "conductive",
+      "S01": "present",
+      "E01": "under_37.5",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Bilateral AOM with purulent effusion. No fever. Cough (COVID context)."
+  },
+  {
+    "id": "R1056",
+    "source": "PMC",
+    "pmcid": "PMC7804088",
+    "vignette": "35歳女性。2週間前からの咳嗽+進行性呼吸困難。入院中に片側性耳痛+難聴を発症。耳鏡: 鼓膜著明発赤。",
+    "final_diagnosis": "急性中耳炎",
+    "expected_id": "D409",
+    "in_scope": true,
+    "evidence": {
+      "S79": "present",
+      "S124": "present",
+      "S140": "conductive",
+      "S01": "present",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "AOM developing during hospitalization for pneumonia. Red TM."
+  },
+  {
+    "id": "R1057",
+    "source": "PMC",
+    "pmcid": "PMC7804088",
+    "vignette": "22歳女性。7日前からの非産生性咳嗽。24時間前から左耳痛、耳閉感、難聴、ポップ音。耳鏡: 鼓膜可動性低下+膨隆+充血+膿性貯留液。聴力検査: 伝音性難聴+軽度感音性難聴。",
+    "final_diagnosis": "急性中耳炎",
+    "expected_id": "D409",
+    "in_scope": true,
+    "evidence": {
+      "S79": "present",
+      "S124": "present",
+      "S140": "conductive",
+      "S01": "present",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "AOM with bulging TM and purulent effusion. Conductive + mild SNHL on audiometry."
+  },
+  {
+    "id": "R1058",
+    "source": "PMC",
+    "pmcid": "PMC7804088",
+    "vignette": "45歳女性。4日前からの重度耳痛、耳閉感、難聴。軽度咳嗽。耳鏡: 鼓膜中央穿孔+膿性耳漏。",
+    "final_diagnosis": "急性中耳炎",
+    "expected_id": "D409",
+    "in_scope": true,
+    "evidence": {
+      "S79": "present",
+      "S124": "present",
+      "S140": "conductive",
+      "S01": "present",
+      "E01": "under_37.5",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "AOM with spontaneous TM perforation and purulent otorrhea."
   }
 ]
