@@ -11422,6 +11422,19 @@
       ],
       "severity": "moderate",
       "note": "慢性免疫介在性皮膚疾患。境界明瞭な紅斑+銀白色鱗屑(伸側優位)。PsA 20-30%。掻痒60-90%。二峰性発症(20-30歳/55-60歳)"
+    },
+    {
+      "id": "D411",
+      "name": "erysipelas",
+      "name_ja": "丹毒",
+      "category": "disease",
+      "category_sub": "skin_soft_tissue",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "真皮の急性細菌感染(GAS)。境界明瞭な隆起性紅斑が特徴。下肢85%、顔面20%。発熱20-70%。蜂窩織炎との鑑別: 境界明瞭+隆起性辺縁"
     }
   ]
 }

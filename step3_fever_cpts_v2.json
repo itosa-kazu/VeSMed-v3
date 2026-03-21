@@ -4786,6 +4786,29 @@
         "female|40_64": 0.003,
         "female|65_plus": 0.002
       }
+    },
+    "D411": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "丹毒。高齢者多い。M≈F。年間発症率~2/1000(PMC4033615)",
+      "cpt": {
+        "male|0_1": 0.0005,
+        "male|1_5": 0.0005,
+        "male|6_12": 0.0005,
+        "male|13_17": 0.0008,
+        "male|18_39": 0.001,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.004,
+        "female|0_1": 0.0005,
+        "female|1_5": 0.0005,
+        "female|6_12": 0.0005,
+        "female|13_17": 0.0008,
+        "female|18_39": 0.001,
+        "female|40_64": 0.002,
+        "female|65_plus": 0.004
+      }
     }
   },
   "full_cpts": {
@@ -14240,6 +14263,27 @@
           "female": 0.49
         }
       }
+    },
+    "D411": {
+      "R01": {
+        "description": "丹毒年齢。高齢者に多い(PMC4033615)",
+        "cpt": {
+          "0_1": 0.02,
+          "1_5": 0.02,
+          "6_12": 0.03,
+          "13_17": 0.04,
+          "18_39": 0.12,
+          "40_64": 0.3,
+          "65_plus": 0.47
+        }
+      },
+      "R02": {
+        "description": "丹毒性別。M≈F(PMC12347616: やや男性多い)",
+        "cpt": {
+          "male": 0.52,
+          "female": 0.48
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -17079,6 +17123,14 @@
           "38.0_39.0": 0.02,
           "39.0_40.0": 0.005,
           "over_40.0": 0.001
+        },
+        "D411": {
+          "hypothermia_under_35": 0.001,
+          "under_37.5": 0.1,
+          "37.5_38.0": 0.25,
+          "38.0_39.0": 0.4,
+          "39.0_40.0": 0.2,
+          "over_40.0": 0.049
         }
       }
     },
@@ -21065,6 +21117,17 @@
           "purpura": 0.001,
           "vesicle_bulla": 0.001,
           "skin_necrosis": 0.001
+        },
+        "D411": {
+          "normal": 0.01,
+          "localized_erythema_warmth_swelling": 0.92,
+          "petechiae_purpura": 0.005,
+          "maculopapular_rash": 0.02,
+          "vesicular_dermatomal": 0.005,
+          "diffuse_erythroderma": 0.02,
+          "purpura": 0.005,
+          "vesicle_bulla": 0.01,
+          "skin_necrosis": 0.005
         }
       }
     },
@@ -24535,6 +24598,12 @@
           "normal_4000_10000": 0.6,
           "high_10000_20000": 0.04,
           "very_high_over_20000": 0.01
+        },
+        "D411": {
+          "low": 0.02,
+          "normal": 0.25,
+          "high": 0.6,
+          "very_high": 0.13
         }
       }
     },
@@ -25951,6 +26020,11 @@
           "mild_0.3_3": 0.3,
           "moderate_3_10": 0.04,
           "high_over_10": 0.01
+        },
+        "D411": {
+          "normal": 0.1,
+          "mildly_elevated": 0.3,
+          "highly_elevated": 0.6
         }
       }
     },
@@ -33727,6 +33801,11 @@
           "absent": 0.4,
           "mild": 0.4,
           "severe": 0.2
+        },
+        "D411": {
+          "absent": 0.35,
+          "mild": 0.45,
+          "severe": 0.2
         }
       }
     },
@@ -34217,6 +34296,10 @@
         "D371": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D411": {
+          "absent": 0.4,
+          "present": 0.6
         }
       }
     },
@@ -36158,6 +36241,10 @@
           "present": 0.2
         },
         "D410": {
+          "absent": 0.05,
+          "present": 0.95
+        },
+        "D411": {
           "absent": 0.05,
           "present": 0.95
         }
@@ -40454,6 +40541,12 @@
           "3d_to_1w": 0.05,
           "1w_to_3w": 0.18,
           "over_3w": 0.75
+        },
+        "D411": {
+          "under_3d": 0.4,
+          "3d_to_1w": 0.4,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.05
         }
       }
     },
@@ -42583,6 +42676,12 @@
           "acute": 0.05,
           "subacute": 0.18,
           "chronic": 0.75
+        },
+        "D411": {
+          "sudden": 0.1,
+          "acute": 0.65,
+          "subacute": 0.2,
+          "chronic": 0.05
         }
       }
     },
@@ -43927,6 +44026,10 @@
         "D401": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D411": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -48976,6 +49079,10 @@
         "D410": {
           "localized_pain_redness": 0.25,
           "rash_widespread": 0.75
+        },
+        "D411": {
+          "localized_pain_redness": 0.85,
+          "rash_widespread": 0.15
         }
       }
     },
@@ -52558,6 +52665,11 @@
           "absent": 0.25,
           "localized": 0.4,
           "generalized": 0.35
+        },
+        "D411": {
+          "absent": 0.5,
+          "localized": 0.45,
+          "generalized": 0.05
         }
       }
     },

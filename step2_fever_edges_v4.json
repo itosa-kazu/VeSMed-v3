@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7840,
+  "total_edges": 7852,
   "edges": [
     {
       "from": "R01",
@@ -61576,6 +61576,90 @@
       "to": "T02",
       "to_name": "発症速度",
       "reason": "乾癬: 慢性・緩徐発症"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "S18",
+      "to_name": "皮膚の訴え",
+      "reason": "丹毒: 皮膚症状(~100%, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "E12",
+      "to_name": "皮膚診察所見",
+      "reason": "丹毒: 境界明瞭な紅斑+腫脹+熱感(~100%, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "S87",
+      "to_name": "皮膚症状の種類",
+      "reason": "丹毒: 局所性疼痛+発赤(常に局所性, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "E01",
+      "to_name": "体温",
+      "reason": "丹毒: 発熱(20-70%, 平均38.1℃, PMC12347616)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "S09",
+      "to_name": "悪寒",
+      "reason": "丹毒: 悪寒(皮疹に48h先行可, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "S07",
+      "to_name": "倦怠感",
+      "reason": "丹毒: 前駆症状として倦怠感(StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "E36",
+      "to_name": "浮腫",
+      "reason": "丹毒: 局所浮腫(marked edema, bleb formation possible, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "S96",
+      "to_name": "掻痒感",
+      "reason": "丹毒: 局所掻痒感(itchiness at site, StatPearls)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "L02",
+      "to_name": "CRP",
+      "reason": "丹毒: CRP上昇(急性細菌感染)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "L01",
+      "to_name": "白血球数",
+      "reason": "丹毒: 白血球増多(hyperleukocytosis, 文献review)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "T01",
+      "to_name": "症状持続期間",
+      "reason": "丹毒: 急性(数日以内に受診)"
+    },
+    {
+      "from": "D411",
+      "from_name": "丹毒",
+      "to": "T02",
+      "to_name": "発症速度",
+      "reason": "丹毒: 急性発症(spread rapidly within hours, StatPearls)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
