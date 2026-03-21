@@ -25541,7 +25541,75 @@
       },
       "result": "",
       "notes": "14歳AN。無月経+徐脈+貧血+脱毛。インド症例"
+    },
+    {
+      "id": "R960",
+      "source": "PMC",
+      "pmcid": "PMC8564693",
+      "vignette": "54歳男性。反復する失神(3回)。前駆症状は頭部の熱感のみ。BP 114/71、HR 33bpm。無熱。ECG: 完全三度房室ブロック、室性逸搏。翌日間欠的I/II度ブロック。ボレリアIgG/IgM陽性。頭孢曲松+ドキシサイクリンで治療。6日後にAV伝導回復。",
+      "final_diagnosis": "房室ブロック(AVB)",
+      "expected_id": "D388",
+      "in_scope": true,
+      "evidence": {
+        "E02": "under_100",
+        "S97": "present",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "Lyme心臓炎によるIII度AVB。HR33。失神3回"
+    },
+    {
+      "id": "R961",
+      "source": "PMC",
+      "pmcid": "PMC2245813",
+      "vignette": "90歳女性。数ヶ月の疲労+めまい増悪。初回失神。HR ~15bpm(!!)、BP 150/100。顔面浮腫、両側脛骨前浮腫。ECG: 完全AVB、逸搏15bpm。TSH>100↑↑、FT4 2↓↓、Cr 217↑。胸部X線: 心拡大+肺うっ血。甲状腺ホルモン補充+体外ペースメーカーで改善。",
+      "final_diagnosis": "房室ブロック(AVB)",
+      "expected_id": "D388",
+      "in_scope": true,
+      "evidence": {
+        "E02": "under_100",
+        "S97": "present",
+        "S59": "present",
+        "S07": "severe",
+        "E36": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "甲状腺機能低下によるIII度AVB。HR15!。90歳女性"
+    },
+    {
+      "id": "R962",
+      "source": "PMC",
+      "pmcid": "PMC11260208",
+      "vignette": "80歳男性。新規のめまい、倦怠感、2回の短時間意識消失(自然回復)。既往: 未治療高血圧、消化不良、開放隅角緑内障(チモロール0.5%点眼5年以上)。HR 58bpm、RR 20、BP 190/92、SpO2 100%。ECG: 徐脈+三度AVB、心室停止あり。WBC 12800、PSA 13.2↑。膀胱著明拡張+前立腺肥大。Foley導尿(>2000ml排出)で即座に改善。",
+      "final_diagnosis": "房室ブロック(AVB)",
+      "expected_id": "D388",
+      "in_scope": true,
+      "evidence": {
+        "E02": "under_100",
+        "S97": "present",
+        "S59": "present",
+        "S07": "mild",
+        "T01": "under_3d",
+        "T02": "sudden"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "迷走神経介導AVB。前立腺肥大+チモロール点眼の協同効果"
     }
   ],
-  "total_cases": 958
+  "total_cases": 961
 }

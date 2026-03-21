@@ -11123,6 +11123,19 @@
       ],
       "severity": "high",
       "note": "F:M=10:1。13-25歳好発。体重減少+無月経+徐脈+低血圧+低体温。白血球減少35%/貧血30%。低K(14-42%)/低T3(63%)。死亡率5-10%。鑑別:甲状腺亢進/Addison/セリアック/IBD/悪性腫瘍/うつ病"
+    },
+    {
+      "id": "D388",
+      "name": "atrioventricular_block",
+      "name_ja": "房室ブロック(AVB)",
+      "category": "disease",
+      "category_sub": "cardiac_arrhythmia",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "I度(PR延長)/II度Mobitz I(Wenckebach)/II度Mobitz II/III度(完全AVB)。退行性50%/虚血性40%/薬剤性15%/Lyme1-5%。失神33%/めまい34%/呼吸困難19%/無症状28%。高齢者。ECG診断→ペースメーカー。鑑別:洞機能不全/薬剤性徐脈/迷走神経性失神"
     }
   ]
 }
