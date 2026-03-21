@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7588,
+  "total_edges": 7600,
   "edges": [
     {
       "from": "R01",
@@ -59812,6 +59812,90 @@
       "from_name": "schizophrenia",
       "to_name": "onset_speed",
       "reason": "SCZ: 亜急性~慢性。前駆期(数ヶ月~数年)→急性精神病"
+    },
+    {
+      "from": "D393",
+      "to": "S167",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "agitation",
+      "reason": "躁病: 精神運動興奮/焦燥85%。活動性亢進はDSM-5核心基準(PMC9168523)"
+    },
+    {
+      "from": "D393",
+      "to": "S116",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "insomnia",
+      "reason": "躁病: 睡眠欲求減少~90%。DSM-5基準。不眠ではなく'少ない睡眠で十分'"
+    },
+    {
+      "from": "D393",
+      "to": "S117",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "hallucination",
+      "reason": "躁病: 精神病性特徴40-70%(PMC9521535)。幻覚は断片的・一過性が多い"
+    },
+    {
+      "from": "D393",
+      "to": "S138",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "hallucination_modality",
+      "reason": "躁病: 聴覚性幻覚が主体。視覚性も25%(PMC3195159)"
+    },
+    {
+      "from": "D393",
+      "to": "S149",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "delusion",
+      "reason": "躁病: 妄想50-70%(PMC9521535)。誇大妄想が最多、被害妄想も"
+    },
+    {
+      "from": "D393",
+      "to": "S114",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "anxiety",
+      "reason": "躁病: 不安~50%。混合性特徴で20-80%(PMC5299125)"
+    },
+    {
+      "from": "D393",
+      "to": "S115",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "depressed_mood",
+      "reason": "躁病: 抑うつ気分は通常absent(躁状態)。混合性で20%"
+    },
+    {
+      "from": "D393",
+      "to": "S07",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "fatigue",
+      "reason": "躁病: 倦怠感absent(活力増大が特徴)。疲労感じにくい"
+    },
+    {
+      "from": "D393",
+      "to": "R66",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "psychiatric_history",
+      "reason": "躁病: 精神疾患既往。再発率90%+。うつ病エピソード先行多い"
+    },
+    {
+      "from": "D393",
+      "to": "E01",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "temperature",
+      "reason": "躁病: 無熱。発熱→NMS/感染/脳炎除外"
+    },
+    {
+      "from": "D393",
+      "to": "T01",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "symptom_duration",
+      "reason": "躁病: 躁病エピソード1-4週(DSM-5: 1週間以上)"
+    },
+    {
+      "from": "D393",
+      "to": "T02",
+      "from_name": "bipolar_disorder_mania",
+      "to_name": "onset_speed",
+      "reason": "躁病: 急性発症(日~週単位で躁転)"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

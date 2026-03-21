@@ -25909,7 +25909,79 @@
       },
       "result": "",
       "notes": "19歳男性。妄想型。理学療法中に偶然発見。2年以上の病歴"
+    },
+    {
+      "id": "R975",
+      "source": "PMC",
+      "pmcid": "PMC8611610",
+      "vignette": "19歳女性。2019年にうつ病エピソード(3-4ヶ月で自然寛解)。2020年11月に急性発症: 高揚・拡大する気分、身体的落ち着きのなさ、多弁、SNSハッキングに関する被害念慮。疑い深い態度、馴れ馴れしい/おどけた態度、高揚した感情、観念奔逸、誇大妄想+被害妄想、実況形式の幻聴、病識欠如、睡眠欲求減少。YMRS 32/60。血液/生化学/甲状腺/頭部CT正常。",
+      "final_diagnosis": "双極性障害(躁病エピソード)",
+      "expected_id": "D393",
+      "in_scope": true,
+      "evidence": {
+        "S167": "present",
+        "S116": "present",
+        "S117": "present",
+        "S138": "auditory",
+        "S149": "present",
+        "R66": "yes",
+        "E01": "under_37.5",
+        "T01": "1w_to_3w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "BD-I躁病+精神病性。19歳女性。YMRS32。一級症状あり"
+    },
+    {
+      "id": "R976",
+      "source": "PMC",
+      "pmcid": "PMC11315583",
+      "vignette": "22歳男性。重度の焦燥、まとまりのなさ、多弁(圧迫性)、不安。誇大妄想(自分は不死身)。言語的・身体的攻撃性。衝動性、急激な気分変動。拡大・易変する感情。病識なし。過去3-4ヶ月で18回の精神科入院。MDMA/コカイン/大麻使用歴。",
+      "final_diagnosis": "双極性障害(躁病エピソード)",
+      "expected_id": "D393",
+      "in_scope": true,
+      "evidence": {
+        "S167": "present",
+        "S149": "present",
+        "S114": "present",
+        "R66": "yes",
+        "T01": "over_3w",
+        "T02": "acute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "BD-I躁病。22歳男性。18回入院。物質乱用合併"
+    },
+    {
+      "id": "R977",
+      "source": "PMC",
+      "pmcid": "PMC5485283",
+      "vignette": "53歳男性。TBI後5ヶ月で行動変化: 易刺激性、睡眠欲求減少、多弁(圧迫性)、書字多量、被害妄想(異音+窃盗)。高揚気分+易変性感情。脅迫的電子メッセージを隣人に送付。尿検査/薬物スクリーニング/CMP/甲状腺/頭部CT全て正常。YMRS 31→退院時0。",
+      "final_diagnosis": "双極性障害(躁病エピソード)",
+      "expected_id": "D393",
+      "in_scope": true,
+      "evidence": {
+        "S167": "present",
+        "S116": "present",
+        "S149": "present",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "TBI後躁病。53歳男性。YMRS31。Lab全正常。Olanzapineで完全寛解"
     }
   ],
-  "total_cases": 973
+  "total_cases": 976
 }
