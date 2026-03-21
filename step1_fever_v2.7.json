@@ -11162,6 +11162,19 @@
       ],
       "severity": "low",
       "note": "Rome IV: 腹痛≥1回/週×3ヶ月+排便関連。IBS-D(35%)/IBS-C(25%)/IBS-M(35%)。腹痛100%/腹部膨満62-81%/倦怠89%。Lab正常(WBC/CRP/Hb)。発熱・体重減少・血便は赤旗。F:M=2:1、35歳以下50%。鑑別:IBD/セリアック/顕微鏡的大腸炎/甲状腺/大腸癌"
+    },
+    {
+      "id": "D391",
+      "name": "major_depressive_disorder",
+      "name_ja": "うつ病(大うつ病性障害)",
+      "category": "disease",
+      "category_sub": "psychiatric",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "DSM-5: 抑うつ気分+興味喪失(2週間以上)+5/9基準。不眠88%/倦怠95%/食欲変化50%/集中困難76%/精神運動障害55%/自殺念慮53%。F:M=2:1、平均40歳。身体症状が主訴の45-95%。鑑別:甲状腺低下/副腎不全/Cushing/AN/せん妄"
     }
   ]
 }

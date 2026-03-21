@@ -69,6 +69,8 @@
 - [project_next_best_test_perf.md](project_next_best_test_perf.md) — next_best_test性能瓶颈(10-20秒)、預筛选/缓存/C扩展の最適化方向
 - [project_causal_disease_overlap.md](project_causal_disease_overlap.md) — 因果疾患重複問題: D273(胆管結石)→D25(胆管炎)等、因果関係疾患が確率を食い合う
 - [project_complication_limitation.md](project_complication_limitation.md) — 合併症表現の構造的限界: D→D因果連鎖が表現不可。将来hierarchical BN等で対処
+- [project_kokushi_gap_analysis.md](project_kokushi_gap_analysis.md) — **国試×VeSMed缺口分析**: 精神科が最大Gap(うつ病116点+統合失調症104点)。覆盖率71%
+- [project_d120_split_needed.md](project_d120_split_needed.md) — D120(急性心不全)は将来分割が必要。DCM(D389)追加で部分解決
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）

@@ -25760,7 +25760,83 @@
       },
       "result": "",
       "notes": "IBS-D。28歳女性。水様便+排便不安。Rome III"
+    },
+    {
+      "id": "R969",
+      "source": "PMC",
+      "pmcid": "PMC6220621",
+      "vignette": "28歳女性。4週間の倦怠感、不眠、頭痛、腹部不快感、集中力低下。悲しみ、涙もろさ、育児への罪悪感、社交への興味喪失、配偶者へのイライラ。疲れた外観だが急性病態なし。CBC正常、TSH正常。",
+      "final_diagnosis": "うつ病(大うつ病性障害)",
+      "expected_id": "D391",
+      "in_scope": true,
+      "evidence": {
+        "S115": "present",
+        "S116": "present",
+        "S07": "severe",
+        "S05": "mild",
+        "S150": "present",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "初発MDD。28歳女性。身体症状(倦怠/頭痛/腹部不快)+精神症状"
+    },
+    {
+      "id": "R970",
+      "source": "PMC",
+      "pmcid": "PMC10247677",
+      "vignette": "13歳男性。全身性疼痛(腰部→全身に拡大)、下肢・背部の激痛、独歩不能(杖必要)。抑うつ気分、食欲不振、不眠(入眠障害+早朝覚醒)、持続的倦怠感、興味喪失、易泣性、希死念慮。発語遅延、視線回避。バイタル正常、神経学的検査正常、脊椎CT/MRI正常。Lab正常。",
+      "final_diagnosis": "うつ病(大うつ病性障害)",
+      "expected_id": "D391",
+      "in_scope": true,
+      "evidence": {
+        "S115": "present",
+        "S116": "present",
+        "S07": "severe",
+        "S06": "present",
+        "S17": "present",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "13_17",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "13歳男性MDD+身体化障害。全身痛で歩行不能→Lab/画像全正常"
+    },
+    {
+      "id": "R971",
+      "source": "PMC",
+      "pmcid": "PMC3304678",
+      "vignette": "40歳女性。20年前に初発。現在のエピソード7年。抑うつ気分、イライラ、日常活動への興味減退、食欲不振、体重減少、気力低下、集中力低下、不眠、反復する希死念慮。仕事・社会機能障害。PCOS既往(無月経/多毛)。",
+      "final_diagnosis": "うつ病(大うつ病性障害)",
+      "expected_id": "D391",
+      "in_scope": true,
+      "evidence": {
+        "S115": "present",
+        "S114": "present",
+        "S116": "present",
+        "S07": "severe",
+        "S17": "present",
+        "S150": "present",
+        "R66": "yes",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "反復性MDD。7年持続。精神疾患既往あり。PCOS合併"
     }
   ],
-  "total_cases": 967
+  "total_cases": 970
 }
