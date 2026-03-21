@@ -25836,7 +25836,80 @@
       },
       "result": "",
       "notes": "反復性MDD。7年持続。精神疾患既往あり。PCOS合併"
+    },
+    {
+      "id": "R972",
+      "source": "PMC",
+      "pmcid": "PMC10611902",
+      "vignette": "59歳男性。20年来の統合失調症。聴覚性幻覚(妻が自分を殺そうとしているという声)、被害妄想(家族に対する猜疑心)、不眠、焦燥、異常行動(繰り返し鍵を確認、妻が作った食事を拒否)。精神状態:誇張された情動表現、焦燥、大声での自発的発語、不適切な感情、被害的認知、聴覚性幻覚、病識なし。MRI:脳室拡大。",
+      "final_diagnosis": "統合失調症",
+      "expected_id": "D392",
+      "in_scope": true,
+      "evidence": {
+        "S117": "present",
+        "S138": "auditory",
+        "S149": "present",
+        "S167": "present",
+        "S116": "present",
+        "R66": "yes",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "40_64",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "妄想型統合失調症。20年の病歴。聴覚性幻覚+被害妄想"
+    },
+    {
+      "id": "R973",
+      "source": "PMC",
+      "pmcid": "PMC7191004",
+      "vignette": "23歳女性。15歳から8年間の未治療精神病。学業低下、社会的引きこもり、言語的/身体的敵意、沈黙・非社交性、理由なき笑い、聴覚性幻覚の疑い。顕著な無気力・無快楽症、感情反応性低下、意欲低下、精神運動遅延、認知障害(思考/記憶/概念形成が重度障害)。PANSS陰性45/49。検査/EEG/MRI正常。",
+      "final_diagnosis": "統合失調症",
+      "expected_id": "D392",
+      "in_scope": true,
+      "evidence": {
+        "S117": "present",
+        "S138": "auditory",
+        "S167": "present",
+        "S150": "present",
+        "S07": "severe",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "早発性統合失調症。陰性症状優位(PANSS陰性45/49)。8年未治療"
+    },
+    {
+      "id": "R974",
+      "source": "PMC",
+      "pmcid": "PMC2958076",
+      "vignette": "19歳男性。大学生。肩痛で理学療法受診中に発見。CIA/政府が体内に装置を埋め込み痛みを引き起こし行動を制御しているという被害妄想。友人/隣人/教授が「彼らと協力している」。友人/家族を傷つけるよう命じる命令性幻覚。社会的孤立。視線回避、単調な話し方、感情鈍麻、無表情。2年以上の症状。",
+      "final_diagnosis": "統合失調症",
+      "expected_id": "D392",
+      "in_scope": true,
+      "evidence": {
+        "S117": "present",
+        "S138": "auditory",
+        "S149": "present",
+        "S150": "present",
+        "T01": "over_3w",
+        "T02": "chronic"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "19歳男性。妄想型。理学療法中に偶然発見。2年以上の病歴"
     }
   ],
-  "total_cases": 970
+  "total_cases": 973
 }

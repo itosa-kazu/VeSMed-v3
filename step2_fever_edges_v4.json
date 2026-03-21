@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7575,
+  "total_edges": 7588,
   "edges": [
     {
       "from": "R01",
@@ -59721,6 +59721,97 @@
       "from_name": "major_depressive_disorder",
       "to_name": "onset_speed",
       "reason": "MDD: 亜急性~慢性発症。週~月単位で進行"
+    },
+    {
+      "from": "D392",
+      "to": "S117",
+      "from_name": "schizophrenia",
+      "to_name": "hallucination",
+      "reason": "SCZ: 幻覚60-80%(PMC2525988)。聴覚性が最多"
+    },
+    {
+      "from": "D392",
+      "to": "S138",
+      "from_name": "schizophrenia",
+      "to_name": "hallucination_modality",
+      "reason": "SCZ: 聴覚性幻覚が主体(60-80%)。視覚性27%。DLB(視覚)と鑑別"
+    },
+    {
+      "from": "D392",
+      "to": "S149",
+      "from_name": "schizophrenia",
+      "to_name": "delusion",
+      "reason": "SCZ: 妄想62-90%(PMC10479313)。被害妄想が最多62%"
+    },
+    {
+      "from": "D392",
+      "to": "S167",
+      "from_name": "schizophrenia",
+      "to_name": "agitation",
+      "reason": "SCZ: 焦燥/精神運動興奮40-60%。急性期で顕著"
+    },
+    {
+      "from": "D392",
+      "to": "S115",
+      "from_name": "schizophrenia",
+      "to_name": "depressed_mood",
+      "reason": "SCZ: 抑うつ~40%。陰性症状+併存うつ"
+    },
+    {
+      "from": "D392",
+      "to": "S114",
+      "from_name": "schizophrenia",
+      "to_name": "anxiety",
+      "reason": "SCZ: 不安~40%。精神病に伴う不安"
+    },
+    {
+      "from": "D392",
+      "to": "S116",
+      "from_name": "schizophrenia",
+      "to_name": "insomnia",
+      "reason": "SCZ: 不眠~23%(ICD-10基準, PMC5614792)。急性期で増加"
+    },
+    {
+      "from": "D392",
+      "to": "S150",
+      "from_name": "schizophrenia",
+      "to_name": "cognitive_decline",
+      "reason": "SCZ: 認知機能低下60-98%(PMC5810454)。注意/記憶/遂行機能"
+    },
+    {
+      "from": "D392",
+      "to": "S07",
+      "from_name": "schizophrenia",
+      "to_name": "fatigue",
+      "reason": "SCZ: 倦怠感。陰性症状(無為/意欲低下)に伴う"
+    },
+    {
+      "from": "D392",
+      "to": "R66",
+      "from_name": "schizophrenia",
+      "to_name": "psychiatric_history",
+      "reason": "SCZ: 精神疾患既往。再発率80%+"
+    },
+    {
+      "from": "D392",
+      "to": "E01",
+      "from_name": "schizophrenia",
+      "to_name": "temperature",
+      "reason": "SCZ: 無熱(定義的)。発熱→感染/NMS/脳炎除外"
+    },
+    {
+      "from": "D392",
+      "to": "T01",
+      "from_name": "schizophrenia",
+      "to_name": "symptom_duration",
+      "reason": "SCZ: 慢性(DSM-5: 6ヶ月以上の活動期+前駆/残遺)"
+    },
+    {
+      "from": "D392",
+      "to": "T02",
+      "from_name": "schizophrenia",
+      "to_name": "onset_speed",
+      "reason": "SCZ: 亜急性~慢性。前駆期(数ヶ月~数年)→急性精神病"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"
