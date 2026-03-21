@@ -27941,5 +27941,75 @@
       "R02": "female"
     },
     "notes": "AOM with spontaneous TM perforation and purulent otorrhea."
+  },
+  {
+    "id": "R1059",
+    "source": "PMC",
+    "pmcid": "PMC6143714",
+    "vignette": "60歳女性。中等度の汎発性尋常性乾癬(BSA 10%)。境界明瞭な紅斑性鱗屑プラーク。掻痒感あり、疼痛なし。軽度変形性関節症の既往あるが関節腫脹なし。PASI 7.2。",
+    "final_diagnosis": "尋常性乾癬",
+    "expected_id": "D410",
+    "in_scope": true,
+    "evidence": {
+      "S18": "present",
+      "E12": "maculopapular_rash",
+      "S96": "generalized",
+      "S87": "rash_widespread",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Moderate plaque psoriasis. BSA 10%, PASI 7.2. Pruritus without pain."
+  },
+  {
+    "id": "R1060",
+    "source": "PMC",
+    "pmcid": "PMC6120403",
+    "vignette": "65歳女性。1週間前からの四肢に多発する搔痒性紅斑鱗屑性プラーク。頭皮+耳後部にも乾癬様鱗屑。発熱・体重減少・盗汗なし。既知の頭皮乾癬の増悪。",
+    "final_diagnosis": "尋常性乾癬",
+    "expected_id": "D410",
+    "in_scope": true,
+    "evidence": {
+      "S18": "present",
+      "E12": "maculopapular_rash",
+      "S96": "localized",
+      "S87": "rash_widespread",
+      "S75": "extremities_centrifugal",
+      "E01": "under_37.5",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Psoriasis exacerbation during PD-1 therapy. Scalp + limbs."
+  },
+  {
+    "id": "R1061",
+    "source": "PMC",
+    "pmcid": "PMC8419559",
+    "vignette": "35歳男性。5日前からの右示指・環指+右第4趾の有痛性腫脹。手掌腫脹あり。頭皮に3×2.5cmの鱗屑を伴う乾癬パッチ。爪変化なし。HLA-B27陰性、RF陰性、炎症マーカー正常。",
+    "final_diagnosis": "尋常性乾癬",
+    "expected_id": "D410",
+    "in_scope": true,
+    "evidence": {
+      "S18": "present",
+      "E12": "maculopapular_rash",
+      "S08": "present",
+      "S90": "oligoarticular",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Psoriatic arthritis with dactylitis. Scalp psoriatic patch. CASPAR score 4."
   }
 ]

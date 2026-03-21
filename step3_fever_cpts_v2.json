@@ -4763,6 +4763,29 @@
         "female|40_64": 0.001,
         "female|65_plus": 0.001
       }
+    },
+    "D410": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "乾癬。二峰性(20-30歳/55-60歳)。M≈F。有病率2-3%(PMC5134160)",
+      "cpt": {
+        "male|0_1": 0.0001,
+        "male|1_5": 0.0002,
+        "male|6_12": 0.0005,
+        "male|13_17": 0.001,
+        "male|18_39": 0.003,
+        "male|40_64": 0.003,
+        "male|65_plus": 0.002,
+        "female|0_1": 0.0001,
+        "female|1_5": 0.0002,
+        "female|6_12": 0.0005,
+        "female|13_17": 0.001,
+        "female|18_39": 0.003,
+        "female|40_64": 0.003,
+        "female|65_plus": 0.002
+      }
     }
   },
   "full_cpts": {
@@ -14196,6 +14219,27 @@
           "female": 0.47
         }
       }
+    },
+    "D410": {
+      "R01": {
+        "description": "乾癬年齢。二峰性Type I(20-30歳)75%+Type II(55-60歳)25%",
+        "cpt": {
+          "0_1": 0.01,
+          "1_5": 0.02,
+          "6_12": 0.05,
+          "13_17": 0.08,
+          "18_39": 0.3,
+          "40_64": 0.35,
+          "65_plus": 0.19
+        }
+      },
+      "R02": {
+        "description": "乾癬性別。M≈F(M:F~1:1, PMC5134160)",
+        "cpt": {
+          "male": 0.51,
+          "female": 0.49
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -17027,6 +17071,14 @@
           "38.0_39.0": 0.2,
           "39.0_40.0": 0.05,
           "over_40.0": 0.008
+        },
+        "D410": {
+          "hypothermia_under_35": 0.004,
+          "under_37.5": 0.92,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.005,
+          "over_40.0": 0.001
         }
       }
     },
@@ -21002,6 +21054,17 @@
           "purpura": 0.62,
           "vesicle_bulla": 0.01,
           "skin_necrosis": 0.02
+        },
+        "D410": {
+          "normal": 0.02,
+          "localized_erythema_warmth_swelling": 0.02,
+          "petechiae_purpura": 0.001,
+          "maculopapular_rash": 0.935,
+          "vesicular_dermatomal": 0.001,
+          "diffuse_erythroderma": 0.02,
+          "purpura": 0.001,
+          "vesicle_bulla": 0.001,
+          "skin_necrosis": 0.001
         }
       }
     },
@@ -33881,6 +33944,10 @@
         "D375": {
           "absent": 0.62,
           "present": 0.38
+        },
+        "D410": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -36089,6 +36156,10 @@
         "D179": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D410": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -36679,6 +36750,10 @@
         "D359": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D410": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -37499,6 +37574,10 @@
         "D367": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D410": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -40369,6 +40448,12 @@
           "3d_to_1w": 0.4,
           "1w_to_3w": 0.15,
           "over_3w": 0.05
+        },
+        "D410": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.05,
+          "1w_to_3w": 0.18,
+          "over_3w": 0.75
         }
       }
     },
@@ -42492,6 +42577,12 @@
           "acute": 0.6,
           "subacute": 0.25,
           "chronic": 0.05
+        },
+        "D410": {
+          "sudden": 0.02,
+          "acute": 0.05,
+          "subacute": 0.18,
+          "chronic": 0.75
         }
       }
     },
@@ -48881,6 +48972,10 @@
         "D182": {
           "localized_pain_redness": 0.02,
           "rash_widespread": 0.98
+        },
+        "D410": {
+          "localized_pain_redness": 0.25,
+          "rash_widespread": 0.75
         }
       }
     },
@@ -50343,6 +50438,13 @@
           "polyarticular_symmetric": 0.4,
           "polyarticular_asymmetric": 0.15,
           "migratory": 0.15
+        },
+        "D410": {
+          "monoarticular": 0.15,
+          "oligoarticular": 0.35,
+          "polyarticular_symmetric": 0.1,
+          "polyarticular_asymmetric": 0.3,
+          "migratory": 0.1
         }
       }
     },
@@ -52451,6 +52553,11 @@
           "absent": 0.6,
           "localized": 0.1,
           "generalized": 0.3
+        },
+        "D410": {
+          "absent": 0.25,
+          "localized": 0.4,
+          "generalized": 0.35
         }
       }
     },
@@ -52599,6 +52706,13 @@
           "acral": 0.02,
           "mucosal": 0.03,
           "generalized": 0.45
+        },
+        "D410": {
+          "trunk_centripetal": 0.1,
+          "extremities_centrifugal": 0.65,
+          "acral": 0.1,
+          "mucosal": 0.01,
+          "generalized": 0.14
         }
       }
     },

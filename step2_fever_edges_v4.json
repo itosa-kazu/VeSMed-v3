@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7828,
+  "total_edges": 7840,
   "edges": [
     {
       "from": "R01",
@@ -61492,6 +61492,90 @@
       "to": "T02",
       "to_name": "発症速度",
       "reason": "AOM: 急性発症(URI後に急性耳痛)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S18",
+      "to_name": "皮膚の訴え",
+      "reason": "乾癬: 皮膚症状がprimary complaint(~100%, StatPearls)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "E12",
+      "to_name": "皮膚診察所見",
+      "reason": "乾癬: 紅斑+鱗屑プラーク→maculopapular_rash(~100%, StatPearls)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S96",
+      "to_name": "掻痒感",
+      "reason": "乾癬: 掻痒(60-90%, PMC3047933)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S87",
+      "to_name": "皮膚症状の種類",
+      "reason": "乾癬: 広範な皮疹(plaque型80-90%, StatPearls)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S75",
+      "to_name": "皮疹の分布",
+      "reason": "乾癬: 伸側(肘/膝)優位→extremities_centrifugal(StatPearls)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S08",
+      "to_name": "関節痛",
+      "reason": "乾癬: 関節痛~50%(PsA 20-30%, PMC7122924)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S90",
+      "to_name": "関節痛の分布",
+      "reason": "乾癬性関節炎: 非対称性少関節/多関節(PMC5134160)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S43",
+      "to_name": "手掌・足底の皮疹",
+      "reason": "乾癬: 掌蹠型12-16%(Psoriasis.org)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "S27",
+      "to_name": "朝のこわばり",
+      "reason": "乾癬性関節炎: 朝のこわばり(PsA患者~50%, PMC5134160)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "E01",
+      "to_name": "体温",
+      "reason": "乾癬: 非感染性、発熱なし(erythrodermic除く)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "T01",
+      "to_name": "症状持続期間",
+      "reason": "乾癬: 慢性疾患(数週~数ヶ月以上で受診)"
+    },
+    {
+      "from": "D410",
+      "from_name": "尋常性乾癬",
+      "to": "T02",
+      "to_name": "発症速度",
+      "reason": "乾癬: 慢性・緩徐発症"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",

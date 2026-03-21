@@ -11409,6 +11409,19 @@
       ],
       "severity": "mild",
       "note": "中耳の急性細菌感染。小児主体(6-24ヶ月ピーク)、成人稀。耳痛+鼓膜膨隆+伝音性難聴。URI先行~75%。発熱~66%"
+    },
+    {
+      "id": "D410",
+      "name": "psoriasis_vulgaris",
+      "name_ja": "尋常性乾癬",
+      "category": "disease",
+      "category_sub": "dermatology",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "moderate",
+      "note": "慢性免疫介在性皮膚疾患。境界明瞭な紅斑+銀白色鱗屑(伸側優位)。PsA 20-30%。掻痒60-90%。二峰性発症(20-30歳/55-60歳)"
     }
   ]
 }
