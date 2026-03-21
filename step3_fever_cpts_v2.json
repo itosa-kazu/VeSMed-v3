@@ -4717,6 +4717,29 @@
         "female|40_64": 0.003,
         "female|65_plus": 0.0015
       }
+    },
+    "D408": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "SSNHL。41-55歳ピーク。M:F≈1:1。年間発症率5-27/100,000(PMC9653771)",
+      "cpt": {
+        "male|0_1": 1e-05,
+        "male|1_5": 2e-05,
+        "male|6_12": 0.0001,
+        "male|13_17": 0.0003,
+        "male|18_39": 0.001,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.0015,
+        "female|0_1": 1e-05,
+        "female|1_5": 2e-05,
+        "female|6_12": 0.0001,
+        "female|13_17": 0.0003,
+        "female|18_39": 0.001,
+        "female|40_64": 0.002,
+        "female|65_plus": 0.0015
+      }
     }
   },
   "full_cpts": {
@@ -14108,6 +14131,27 @@
           "female": 0.57
         }
       }
+    },
+    "D408": {
+      "R01": {
+        "description": "SSNHL年齢分布。41-55歳ピーク(PMC9653771, PMC10151530)",
+        "cpt": {
+          "0_1": 0.002,
+          "1_5": 0.003,
+          "6_12": 0.01,
+          "13_17": 0.03,
+          "18_39": 0.22,
+          "40_64": 0.45,
+          "65_plus": 0.285
+        }
+      },
+      "R02": {
+        "description": "SSNHL性別。M:F≈1.07:1(PMC10151530)",
+        "cpt": {
+          "male": 0.52,
+          "female": 0.48
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16917,6 +16961,14 @@
           "over_40.0": 0.005
         },
         "D407": {
+          "hypothermia_under_35": 0.004,
+          "under_37.5": 0.92,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.005,
+          "over_40.0": 0.001
+        },
+        "D408": {
           "hypothermia_under_35": 0.004,
           "under_37.5": 0.92,
           "37.5_38.0": 0.05,
@@ -35149,6 +35201,10 @@
         "D407": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D408": {
+          "absent": 0.78,
+          "present": 0.22
         }
       }
     },
@@ -40237,6 +40293,12 @@
           "3d_to_1w": 0.1,
           "1w_to_3w": 0.15,
           "over_3w": 0.65
+        },
+        "D408": {
+          "under_3d": 0.5,
+          "3d_to_1w": 0.3,
+          "1w_to_3w": 0.15,
+          "over_3w": 0.05
         }
       }
     },
@@ -42348,6 +42410,12 @@
           "acute": 0.2,
           "subacute": 0.3,
           "chronic": 0.35
+        },
+        "D408": {
+          "sudden": 0.5,
+          "acute": 0.35,
+          "subacute": 0.1,
+          "chronic": 0.05
         }
       }
     },
@@ -47519,6 +47587,10 @@
         "D407": {
           "absent": 0.08,
           "present": 0.92
+        },
+        "D408": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -50402,6 +50474,12 @@
           "continuous_rotatory": 0.07,
           "episodic_with_hearing": 0.85,
           "non_rotatory_disequilibrium": 0.05
+        },
+        "D408": {
+          "positional_brief": 0.05,
+          "continuous_rotatory": 0.45,
+          "episodic_with_hearing": 0.1,
+          "non_rotatory_disequilibrium": 0.4
         }
       }
     },
@@ -51442,6 +51520,10 @@
         "D407": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D408": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -52403,6 +52485,10 @@
         "D407": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D408": {
+          "absent": 0.88,
+          "present": 0.12
         }
       }
     },
@@ -55486,6 +55572,10 @@
         "D407": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D408": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -55505,6 +55595,11 @@
           "conductive": 0.03,
           "sensorineural": 0.92,
           "mixed": 0.05
+        },
+        "D408": {
+          "conductive": 0.02,
+          "sensorineural": 0.95,
+          "mixed": 0.03
         }
       }
     },
@@ -55525,6 +55620,10 @@
         "D407": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D408": {
+          "absent": 0.12,
+          "present": 0.88
         }
       }
     },
@@ -55559,6 +55658,12 @@
           "horizontal": 0.72,
           "vertical": 0.03,
           "rotatory": 0.05
+        },
+        "D408": {
+          "absent": 0.65,
+          "horizontal": 0.3,
+          "vertical": 0.02,
+          "rotatory": 0.03
         }
       }
     }
