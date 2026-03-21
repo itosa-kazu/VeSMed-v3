@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7665,
+  "total_edges": 7679,
   "edges": [
     {
       "from": "R01",
@@ -60351,6 +60351,104 @@
       "from_name": "ovarian_torsion",
       "to_name": "vaginal_discharge",
       "reason": "卵巣捻転: 帯下/分泌物は非特異的だが婦人科疾患"
+    },
+    {
+      "from": "D399",
+      "to": "S25",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "dysphagia",
+      "reason": "咽頭癌: 嚥下困難60-80%。腫瘍による機械的閉塞。進行に伴い固形→液体"
+    },
+    {
+      "from": "D399",
+      "to": "S78",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "odynophagia",
+      "reason": "咽頭癌: 嚥下痛(odynophagia)50-70%。腫瘍浸潤による粘膜痛"
+    },
+    {
+      "from": "D399",
+      "to": "S02",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "sore_throat",
+      "reason": "咽頭癌: 咽頭痛40-60%。持続性。抗菌薬無効が鑑別の鍵"
+    },
+    {
+      "from": "D399",
+      "to": "S55",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "hoarseness",
+      "reason": "咽頭癌: 嗄声30-40%。下咽頭→反回神経浸潤。喉頭癌との鑑別"
+    },
+    {
+      "from": "D399",
+      "to": "E13",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "lymphadenopathy",
+      "reason": "咽頭癌: 頸部リンパ節腫脹50%。初発症状として頸部腫瘤のみの場合あり"
+    },
+    {
+      "from": "D399",
+      "to": "E46",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "lymph_node_location",
+      "reason": "咽頭癌: 頸部リンパ節(cervical)。jugulodigastric/jugulo-omohyoid"
+    },
+    {
+      "from": "D399",
+      "to": "S79",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "otalgia",
+      "reason": "咽頭癌: 耳痛(関連痛)20-30%。Arnold nerve/glossopharyngeal nerve経由"
+    },
+    {
+      "from": "D399",
+      "to": "S17",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "weight_loss",
+      "reason": "咽頭癌: 体重減少30-50%。嚥下困難→栄養障害+悪性cachexia"
+    },
+    {
+      "from": "D399",
+      "to": "S24",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "trismus",
+      "reason": "咽頭癌: 開口障害。翼突筋浸潤(進行例)"
+    },
+    {
+      "from": "D399",
+      "to": "S07",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "fatigue",
+      "reason": "咽頭癌: 倦怠感。悪性腫瘍+栄養障害"
+    },
+    {
+      "from": "D399",
+      "to": "S101",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "dysphagia_type",
+      "reason": "咽頭癌: 固形物のみの嚥下困難→両方(進行時)。機械的閉塞パターン"
+    },
+    {
+      "from": "D399",
+      "to": "E01",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "temperature",
+      "reason": "咽頭癌: 無熱(定義的)。発熱→感染合併/リンパ腫除外"
+    },
+    {
+      "from": "D399",
+      "to": "T01",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "symptom_duration",
+      "reason": "咽頭癌: 慢性(数ヶ月~)。初期は非特異的症状で診断遅延"
+    },
+    {
+      "from": "D399",
+      "to": "T02",
+      "from_name": "pharyngeal_cancer",
+      "to_name": "onset_speed",
+      "reason": "咽頭癌: 亜急性~慢性発症。数週~数ヶ月で進行"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)"

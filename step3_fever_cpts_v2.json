@@ -4574,6 +4574,21 @@
         "female|40_64": 0.003,
         "female|65_plus": 0.004
       }
+    },
+    "D399": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "咽頭癌。M:F=4:1。55-65歳ピーク",
+      "cpt": {
+        "male|18_39": 0.0002,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.003,
+        "female|18_39": 5e-05,
+        "female|40_64": 0.0005,
+        "female|65_plus": 0.0008
+      }
     }
   },
   "full_cpts": {
@@ -13776,6 +13791,27 @@
           "female": 1.0
         }
       }
+    },
+    "D399": {
+      "R01": {
+        "description": "咽頭癌年齢。55-65歳ピーク",
+        "cpt": {
+          "0_1": 0.0,
+          "1_5": 0.0,
+          "6_12": 0.001,
+          "13_17": 0.005,
+          "18_39": 0.05,
+          "40_64": 0.45,
+          "65_plus": 0.494
+        }
+      },
+      "R02": {
+        "description": "咽頭癌性別。M:F=4:1",
+        "cpt": {
+          "male": 0.8,
+          "female": 0.2
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -16513,6 +16549,14 @@
           "over_40.0": 0.001
         },
         "D398": {
+          "hypothermia_under_35": 0.005,
+          "under_37.5": 0.96,
+          "37.5_38.0": 0.025,
+          "38.0_39.0": 0.007,
+          "39.0_40.0": 0.002,
+          "over_40.0": 0.001
+        },
+        "D399": {
           "hypothermia_under_35": 0.005,
           "under_37.5": 0.96,
           "37.5_38.0": 0.025,
@@ -20642,6 +20686,10 @@
         "D375": {
           "absent": 0.45,
           "present": 0.55
+        },
+        "D399": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
@@ -30251,6 +30299,10 @@
         "D359": {
           "absent": 0.93,
           "present": 0.07
+        },
+        "D399": {
+          "absent": 0.45,
+          "present": 0.55
         }
       }
     },
@@ -32977,6 +33029,11 @@
           "absent": 0.5,
           "mild": 0.3,
           "severe": 0.2
+        },
+        "D399": {
+          "absent": 0.4,
+          "mild": 0.35,
+          "severe": 0.25
         }
       }
     },
@@ -35204,6 +35261,10 @@
         "D398": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D399": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -35708,6 +35769,10 @@
         "D47": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D399": {
+          "absent": 0.8,
+          "present": 0.2
         }
       }
     },
@@ -35813,6 +35878,10 @@
         "D385": {
           "absent": 0.68,
           "present": 0.32
+        },
+        "D399": {
+          "absent": 0.25,
+          "present": 0.75
         }
       }
     },
@@ -39540,6 +39609,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.05,
           "over_3w": 0.9
+        },
+        "D399": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.05,
+          "over_3w": 0.9
         }
       }
     },
@@ -41597,6 +41672,12 @@
           "acute": 0.05,
           "subacute": 0.12,
           "chronic": 0.8
+        },
+        "D399": {
+          "sudden": 0.02,
+          "acute": 0.03,
+          "subacute": 0.2,
+          "chronic": 0.75
         }
       }
     },
@@ -45628,6 +45709,10 @@
         "D373": {
           "absent": 0.88,
           "present": 0.12
+        },
+        "D399": {
+          "absent": 0.65,
+          "present": 0.35
         }
       }
     },
@@ -48986,6 +49071,14 @@
           "supraclavicular": 0.01,
           "mediastinal": 0.01,
           "generalized": 0.07
+        },
+        "D399": {
+          "cervical": 0.9,
+          "axillary": 0.02,
+          "inguinal": 0.01,
+          "supraclavicular": 0.05,
+          "mediastinal": 0.01,
+          "generalized": 0.01
         }
       }
     },
@@ -50548,6 +50641,10 @@
         "D219": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D399": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -54315,6 +54412,63 @@
         "D276": {
           "absent": 0.75,
           "present": 0.25
+        }
+      }
+    },
+    "S78": {
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D248": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D260": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D320": {
+          "absent": 0.6,
+          "present": 0.4
+        },
+        "D271": {
+          "absent": 0.5,
+          "present": 0.5
+        },
+        "D399": {
+          "absent": 0.35,
+          "present": 0.65
+        }
+      }
+    },
+    "S101": {
+      "leak": {
+        "solids_only": 0.5,
+        "solids_and_liquids": 0.3,
+        "liquids_worse": 0.2
+      },
+      "parent_effects": {
+        "D248": {
+          "solids_only": 0.5,
+          "solids_and_liquids": 0.35,
+          "liquids_worse": 0.15
+        },
+        "D272": {
+          "solids_only": 0.5,
+          "solids_and_liquids": 0.35,
+          "liquids_worse": 0.15
+        },
+        "D271": {
+          "solids_only": 0.5,
+          "solids_and_liquids": 0.35,
+          "liquids_worse": 0.15
+        },
+        "D399": {
+          "solids_only": 0.6,
+          "solids_and_liquids": 0.35,
+          "liquids_worse": 0.05
         }
       }
     }

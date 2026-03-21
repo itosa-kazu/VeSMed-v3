@@ -26356,7 +26356,83 @@
       },
       "result": "",
       "notes": "31歳の若年発症。BMI 35.5+PCOS。FIGO II。凍結胚で代理母選択肢"
+    },
+    {
+      "id": "R994",
+      "source": "PMC",
+      "pmcid": "PMC6134673",
+      "vignette": "72歳男性。2ヶ月間の進行性嚥下困難+咳嗽+咽頭痛+構音障害+呼吸困難+異物感。50年間の喫煙(20本/日)+飲酒歴。体重減少なし。喉頭鏡:下咽頭後壁の巨大腫瘤が声帯を圧排。両側頸部レベルIIにリンパ節(0.5cm)。CT:左梨状陥凹の不整粘膜下腫瘤。PET: SUVmax 10.3。",
+      "final_diagnosis": "咽頭癌(中咽頭/下咽頭)",
+      "expected_id": "D399",
+      "in_scope": true,
+      "evidence": {
+        "S25": "present",
+        "S02": "present",
+        "S55": "present",
+        "E13": "present",
+        "E46": "cervical",
+        "S101": "solids_only",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "下咽頭癌肉腫pT3N0M0 III期。50年喫煙+飲酒。術後10ヶ月で死亡"
+    },
+    {
+      "id": "R995",
+      "source": "PMC",
+      "pmcid": "PMC7086435",
+      "vignette": "82歳男性。4-5ヶ月間の進行性嚥下困難。17ポンド体重減少。声の変化、鼻腔への液体逆流、反復性咳嗽。軟性喉頭鏡:咽頭内良性様腫瘤。CT:下咽頭左背壁に3.5cm腫瘤+右後壁に1.7cm腫瘤。初回生検:良性線維上皮性ポリープ(誤診)。",
+      "final_diagnosis": "咽頭癌(中咽頭/下咽頭)",
+      "expected_id": "D399",
+      "in_scope": true,
+      "evidence": {
+        "S25": "present",
+        "S17": "present",
+        "S55": "present",
+        "S101": "solids_and_liquids",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "65_plus",
+        "R02": "male"
+      },
+      "result": "",
+      "notes": "下咽頭脱分化脂肪肉腫。初回生検で良性と誤診。術後改善"
+    },
+    {
+      "id": "R996",
+      "source": "PMC",
+      "pmcid": "PMC11240002",
+      "vignette": "22歳女性。3ヶ月間の咽頭腫瘤増大+進行性嚥下困難+嚥下痛+体重減少。入院1週間前から進行性呼吸困難+嗄声。喀血(約200cc)のエピソード。救急時:頻呼吸+低酸素。CT:下咽頭C3-C7レベルに7.2x5.6x3.4cm不均一増強腫瘤。中咽頭/声門上部完全閉塞。",
+      "final_diagnosis": "咽頭癌(中咽頭/下咽頭)",
+      "expected_id": "D399",
+      "in_scope": true,
+      "evidence": {
+        "S25": "present",
+        "S78": "present",
+        "S17": "present",
+        "S55": "present",
+        "S07": "severe",
+        "E05": "severe_hypoxia_under_93",
+        "E01": "under_37.5",
+        "T01": "over_3w",
+        "T02": "subacute"
+      },
+      "risk_factors": {
+        "R01": "18_39",
+        "R02": "female"
+      },
+      "result": "",
+      "notes": "22歳女性の下咽頭滑膜肉腫T3N0M0。緊急気管切開。AIM化学療法"
     }
   ],
-  "total_cases": 992
+  "total_cases": 995
 }
