@@ -4993,6 +4993,18 @@
         "female|40_64": 0.001,
         "female|65_plus": 0.0005
       }
+    },
+    "D420": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "cpt": {
+        "male|40_64": 0.001,
+        "male|65_plus": 0.004,
+        "female|40_64": 0.002,
+        "female|65_plus": 0.008
+      }
     }
   },
   "full_cpts": {
@@ -14636,6 +14648,24 @@
           "female": 0.37
         }
       }
+    },
+    "D420": {
+      "parents": [
+        "R01"
+      ],
+      "cpt": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.0,
+        "13_17": 0.0,
+        "18_39": 0.0005,
+        "40_64": 0.002,
+        "65_plus": 0.006
+      },
+      "R02": {
+        "male": 0.4,
+        "female": 0.6
+      }
     }
   },
   "noisy_or_params": {
@@ -17547,6 +17577,14 @@
           "38.0_39.0": 0.25,
           "39.0_40.0": 0.1,
           "over_40.0": 0.02
+        },
+        "D420": {
+          "hypothermia_under_35": 0.01,
+          "under_37.5": 0.9,
+          "37.5_38.0": 0.07,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.0,
+          "over_40.0": 0.0
         }
       }
     },
@@ -18698,6 +18736,11 @@
           "under_100": 0.3,
           "100_120": 0.5,
           "over_120": 0.2
+        },
+        "D420": {
+          "under_100": 0.6,
+          "100_120": 0.3,
+          "over_120": 0.1
         }
       }
     },
@@ -19503,6 +19546,11 @@
           "normal_under_20": 0.5,
           "tachypnea_20_30": 0.4,
           "severe_over_30": 0.1
+        },
+        "D420": {
+          "normal_under_20": 0.45,
+          "tachypnea_20_30": 0.45,
+          "severe_over_30": 0.1
         }
       }
     },
@@ -19943,6 +19991,11 @@
           "normal_over_96": 0.15,
           "mild_hypoxia_93_96": 0.2,
           "severe_hypoxia_under_93": 0.65
+        },
+        "D420": {
+          "normal_over_96": 0.5,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.1
         }
       }
     },
@@ -20382,6 +20435,12 @@
           "crackles": 0.1,
           "wheezes": 0.75,
           "decreased_absent": 0.05
+        },
+        "D420": {
+          "clear": 0.55,
+          "crackles": 0.4,
+          "wheezes": 0.03,
+          "decreased_absent": 0.02
         }
       }
     },
@@ -27309,6 +27368,14 @@
           "BHL": 0.12,
           "pleural_effusion": 0.1,
           "pneumothorax": 0.03
+        },
+        "D420": {
+          "normal": 0.3,
+          "lobar_infiltrate": 0.02,
+          "bilateral_infiltrate": 0.3,
+          "BHL": 0.0,
+          "pleural_effusion": 0.35,
+          "pneumothorax": 0.0
         }
       }
     },
@@ -32227,9 +32294,14 @@
           "at_rest": 0.3
         },
         "D419": {
-          "absent": 0.40,
+          "absent": 0.4,
           "on_exertion": 0.45,
           "at_rest": 0.15
+        },
+        "D420": {
+          "absent": 0.02,
+          "on_exertion": 0.78,
+          "at_rest": 0.2
         }
       }
     },
@@ -34336,6 +34408,11 @@
           "absent": 0.2,
           "mild": 0.4,
           "severe": 0.4
+        },
+        "D420": {
+          "absent": 0.41,
+          "mild": 0.39,
+          "severe": 0.2
         }
       }
     },
@@ -37811,6 +37888,10 @@
         "D414": {
           "absent": 0.85,
           "present": 0.15
+        },
+        "D420": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -41218,6 +41299,12 @@
           "3d_to_1w": 0.1,
           "1w_to_3w": 0.35,
           "over_3w": 0.52
+        },
+        "D420": {
+          "under_3d": 0.1,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.35
         }
       }
     },
@@ -43401,6 +43488,12 @@
           "acute": 0.15,
           "subacute": 0.55,
           "chronic": 0.27
+        },
+        "D420": {
+          "sudden": 0.05,
+          "acute": 0.15,
+          "subacute": 0.5,
+          "chronic": 0.3
         }
       }
     },
@@ -44540,6 +44633,10 @@
         "D389": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D420": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -44765,6 +44862,10 @@
         "D411": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D420": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -44810,6 +44911,10 @@
         "D389": {
           "absent": 0.27,
           "present": 0.73
+        },
+        "D420": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -44975,6 +45080,11 @@
           "normal": 0.05,
           "mildly_elevated": 0.25,
           "very_high": 0.7
+        },
+        "D420": {
+          "normal": 0.33,
+          "mildly_elevated": 0.45,
+          "very_high": 0.22
         }
       }
     },
@@ -47010,6 +47120,14 @@
           "pericardial_effusion": 0.05,
           "LVH": 0.03,
           "dilated_chamber": 0.02
+        },
+        "D420": {
+          "normal": 0.55,
+          "wall_motion_abnormal": 0.02,
+          "valvular_abnormal": 0.05,
+          "pericardial_effusion": 0.01,
+          "LVH": 0.35,
+          "dilated_chamber": 0.02
         }
       }
     },
@@ -48115,6 +48233,12 @@
           "absent": 0.45,
           "mild_NYHA2": 0.25,
           "severe_NYHA3_4": 0.25
+        },
+        "D420": {
+          "not_assessed": 0.1,
+          "absent": 0.05,
+          "mild_NYHA2": 0.55,
+          "severe_NYHA3_4": 0.3
         }
       }
     },
@@ -52119,6 +52243,10 @@
           "bilateral": 0.95
         },
         "D389": {
+          "unilateral": 0.05,
+          "bilateral": 0.95
+        },
+        "D420": {
           "unilateral": 0.05,
           "bilateral": 0.95
         }

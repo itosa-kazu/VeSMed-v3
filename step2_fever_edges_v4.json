@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7949,
+  "total_edges": 7967,
   "edges": [
     {
       "from": "R01",
@@ -62339,10 +62339,155 @@
       "to": "T02",
       "to_name": "発症速度",
       "reason": "コクシジオイデス症: 亜急性(潜伏期7-21日後に発症, CDC/StatPearls)"
+    },
+    {
+      "from": "D420",
+      "to": "S04",
+      "from_name": "HFpEF",
+      "to_name": "dyspnea",
+      "reason": "HFpEF: 労作時呼吸困難98%(StatPearls NBK599960)。主訴の98%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "S07",
+      "from_name": "HFpEF",
+      "to_name": "fatigue",
+      "reason": "HFpEF: 倦怠感59%(StatPearls NBK599960)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "S49",
+      "from_name": "HFpEF",
+      "to_name": "orthopnea",
+      "reason": "HFpEF: 起座呼吸/PND 40-50%(HF decompensation)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "S35",
+      "from_name": "HFpEF",
+      "to_name": "palpitation",
+      "reason": "HFpEF: AF合併30-50%に伴う動悸(PMC4084609)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E01",
+      "from_name": "HFpEF",
+      "to_name": "temperature",
+      "reason": "HFpEF: 非感染性、通常無熱",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E02",
+      "from_name": "HFpEF",
+      "to_name": "heart_rate",
+      "reason": "HFpEF: AF合併時頻脈30-40%(PMC4084609)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E04",
+      "from_name": "HFpEF",
+      "to_name": "respiratory_rate",
+      "reason": "HFpEF: 急性増悪時に頻呼吸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E05",
+      "from_name": "HFpEF",
+      "to_name": "SpO2",
+      "reason": "HFpEF: 肺うっ血による軽度低酸素",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E07",
+      "from_name": "HFpEF",
+      "to_name": "lung_auscultation",
+      "reason": "HFpEF: crackles 30-50%(肺うっ血、decompensation時)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E36",
+      "from_name": "HFpEF",
+      "to_name": "lower_extremity_edema",
+      "reason": "HFpEF: 下腿浮腫50-70%(decompensation)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E37",
+      "from_name": "HFpEF",
+      "to_name": "JVD",
+      "reason": "HFpEF: JVD 10-20%(StatPearls)。HFrEFより低頻度",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E39",
+      "from_name": "HFpEF",
+      "to_name": "echocardiography",
+      "reason": "HFpEF: LVH 7-43%(PMC4084609)。EF保持だがLVH+拡張機能障害",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "E50",
+      "from_name": "HFpEF",
+      "to_name": "leg_edema_laterality",
+      "reason": "HFpEF: 両側性浮腫(心不全の特徴)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "L04",
+      "from_name": "HFpEF",
+      "to_name": "chest_xray",
+      "reason": "HFpEF: CXR肺うっ血/胸水50-70%(decompensation)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "L51",
+      "from_name": "HFpEF",
+      "to_name": "BNP_NTproBNP",
+      "reason": "HFpEF: BNP上昇67%、1/3は正常(StatPearls)。HFrEFより低値",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "L65",
+      "from_name": "HFpEF",
+      "to_name": "heart_failure_grade",
+      "reason": "HFpEF: NYHA II-III。労作時症状主体",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "T01",
+      "from_name": "HFpEF",
+      "to_name": "symptom_duration",
+      "reason": "HFpEF: 亜急性~慢性経過。増悪は急性だが基礎は慢性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D420",
+      "to": "T02",
+      "from_name": "HFpEF",
+      "to_name": "onset_speed",
+      "reason": "HFpEF: 緩徐発症(subacute/chronic)。急性増悪は急性",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 7805
-  }
+    "edge_count": 7967
+  },
+  "edge_count": 7967
 }

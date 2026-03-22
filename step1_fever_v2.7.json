@@ -4391,7 +4391,7 @@
         "yes"
       ],
       "severity": "critical",
-      "note": "呼吸困難の最多原因。起座呼吸+湿性ラ音+下腿浮腫+JVD+BNP著高。胸部X線で肺うっ血/胸水。心疾患既往+高齢がリスク。"
+      "note": "呼吸困難の最多原因。起座呼吸+湿性ラ音+下腿浮腫+JVD+BNP著高。胸部X線で肺うっ血/胸水。心疾患既往+高齢がリスク。. HFpEF(D420)分離済み。残案例はHFrEF/原因不明ADHF"
     },
     {
       "id": "R46",
@@ -11555,6 +11555,21 @@
       ],
       "severity": "high",
       "note": "コクシジオイデス症(Valley Fever)。Coccidioides immitis/posadasii。60%無症状、40%有症状(肺炎様)。倦怠感(80%)+咳(67%)+呼吸困難(60%)+発熱(55%)+胸痛(50%)。好酸球増多(25-30%)が特徴。CXR浸潤影75%。米国南西部/メキシコ/中南米流行地。潜伏期7-21日。自然治癒>90%。播種性1-3%"
+    },
+    {
+      "id": "D420",
+      "name": "HFpEF",
+      "name_ja": "収縮能保持型心不全(HFpEF)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "category_sub": "cardiovascular",
+      "note": "LVEF>=50%の心不全。高齢女性に多い。高血圧/肥満/AF/DM/CKDが危険因子。労作時呼吸困難が主訴。BNPはHFrEFより低め(1/3が正常範囲)。拡張機能障害が本態",
+      "key_features": "高齢女性の労作時呼吸困難+両側下腿浮腫+BNP軽度上昇。EF保持(>=50%)。LVH+拡張機能障害。高血圧/AF/肥満の合併頻度高い",
+      "diagnostic_profile": {}
     }
   ]
 }

@@ -5303,7 +5303,7 @@
     "pmcid": "PMC11997898",
     "vignette": "87F 心不全既往+心房細動. 1週間の進行性労作時呼吸困難(着替え・入浴で増悪). T=36.0, HR 83(不整), BP 129/76, RR 19, SpO2 98%(O2 2L). 両側下肺crackles, 両側下腿pit edema著明. NT-proBNP 6126. CXR: 肺うっ血. Echo: EF 57.9%. 甲状腺機能亢進(FT4 3.77, TSH<0.01)が増悪因子",
     "final_diagnosis": "急性心不全（甲状腺中毒性結節性甲状腺腫による増悪）",
-    "expected_id": "D120",
+    "expected_id": "D420",
     "in_scope": true,
     "evidence": {
       "E01": "under_37.5",
@@ -5324,7 +5324,7 @@
       "R44": "yes"
     },
     "result": "",
-    "notes": "伝統+ナビ. 無熱(36.0). HR正常(83だがAfib). 甲状腺中毒が原因だが心不全として評価"
+    "notes": "伝統+ナビ. 無熱(36.0). HR正常(83だがAfib). 甲状腺中毒が原因だが心不全として評価 [D120分割] HFpEF(EF57.9%)→D420に再マッピング"
   },
   {
     "id": "R205",
@@ -28969,5 +28969,113 @@
       "R02": "male"
     },
     "notes": "Cocci presenting as trapped lung. Arizona work history 2-3y prior. Pneumothorax + pleural effusion. No fever/myalgia/arthralgia. Serology IgG+. Culture C. immitis."
+  },
+  {
+    "id": "R1103",
+    "source": "Cureus 2025",
+    "pmcid": "PMC12089450",
+    "vignette": "50F AA. 呼吸困難悪化+脱力+動悸+両側下腿浮腫増大+腹部膨満+起座呼吸+尿量減少。2週間前にも同様症状で入院歴。高血圧/脂質異常/DM(A1c>14%)/うつ病合併。HR 80-92, BP 92/50-146/86, RR 28, SpO2 97-99%. 両側肺底部crackles+両側pedal edema+全身浮腫。JVD(-). BNP 32(正常!), Trop-HS 3, Cr 0.59, AST 372, ALT 524. CXR: 両側斑状陰影+両側胸水. Echo: EF 55-60%, mild concentric LVH.",
+    "final_diagnosis": "HFpEF急性増悪(低BNP)",
+    "expected_id": "D420",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S49": "present",
+      "S07": "severe",
+      "S35": "present",
+      "E02": "under_100",
+      "E04": "tachypnea_20_30",
+      "E05": "normal_over_96",
+      "E07": "crackles",
+      "E36": "present",
+      "E50": "bilateral",
+      "E39": "LVH",
+      "L51": "normal",
+      "L04": "pleural_effusion",
+      "L65": "severe_NYHA3_4",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "HFpEF with normal BNP (32 pg/mL) - diagnostic dilemma. AA female with DM/HTN/obesity"
+  },
+  {
+    "id": "R1104",
+    "source": "ESC Heart Failure 2024",
+    "pmcid": "PMC11424280",
+    "vignette": "55M. 1ヶ月間の労作時呼吸困難+動悸+前失神。既往歴特記なし。HR 160(AF), BP 108/57. JVP正常,肺うっ血・末梢浮腫なし。NT-proBNP 1405.5, hs-Trop 83(軽度上昇), eGFR 59. Echo: EF 58%, 非対称性中隔肥厚1.5cm, LAVi 69mL/m2, E/e' 20, sPAP 47mmHg. 冠動脈造影:正常.",
+    "final_diagnosis": "HFpEF(AF+非対称性中隔肥厚)",
+    "expected_id": "D420",
+    "in_scope": true,
+    "evidence": {
+      "S04": "on_exertion",
+      "S35": "present",
+      "E02": "over_120",
+      "E37": "absent",
+      "E39": "LVH",
+      "L51": "mildly_elevated",
+      "L53": "mildly_elevated",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "AF-triggered HFpEF with asymmetric septal hypertrophy. No congestion signs at presentation (compensated)"
+  },
+  {
+    "id": "R1105",
+    "source": "Frontiers in Cardiovascular Medicine 2025",
+    "pmcid": "PMC12539019",
+    "vignette": "56M. 1週間の労作時胸部圧迫感+呼吸困難+軽度嘔気+非産生性咳嗽。心血管既往歴なし。NT-proBNP 516, cTnI <0.010(正常), K 3.27(低K). Chest CT: 両肺にGGO(butterfly sign)+胸水. Echo: EF 68%(保持). SVT確認→アブレーション治療. 3日後CT改善.",
+    "final_diagnosis": "HFpEF(SVT誘発性flash pulmonary edema)",
+    "expected_id": "D420",
+    "in_scope": true,
+    "evidence": {
+      "S04": "on_exertion",
+      "S13": "present",
+      "S01": "present",
+      "L51": "mildly_elevated",
+      "L04": "bilateral_infiltrate",
+      "E39": "normal",
+      "E01": "under_37.5",
+      "T01": "3d_to_1w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "SVT-triggered flash pulmonary edema with preserved EF 68%. Butterfly sign on CT. Resolved after SVT ablation"
+  },
+  {
+    "id": "R1106",
+    "source": "Heart Failure Reviews 2023",
+    "pmcid": "PMC9993108",
+    "vignette": "80F, BMI 31.2, 腹囲111cm. 日常活動時の進行性呼吸困難。心電図:洞調律。冠動脈CT:有意狭窄なし(Ca score 0)。NT-proBNP 109(正常). Echo: EF 64%, 拡張機能障害Grade 1, E/A 0.7, E/e' 11.1, LAVi 38.1mL/m2, TR Vmax 2.7m/s, LV mass index 106.8g/m2. 運動負荷心エコーでHFpEF確定.",
+    "final_diagnosis": "HFpEF(肥満関連)",
+    "expected_id": "D420",
+    "in_scope": true,
+    "evidence": {
+      "S04": "on_exertion",
+      "S07": "mild",
+      "E39": "LVH",
+      "L51": "normal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "L65": "mild_NYHA2"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Classic obesity-related HFpEF in elderly female. NT-proBNP normal (109). Diastolic dysfunction grade 1. Diagnosed by exercise echo"
   }
 ]
