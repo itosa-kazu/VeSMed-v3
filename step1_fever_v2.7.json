@@ -11490,6 +11490,19 @@
       ],
       "severity": "moderate",
       "note": "Ca/Naチャネル変異→低K時に筋麻痺発作。Whipple三徴(の低血糖版ではなく低K版)。発作時K<3.5(多くは<2.5)。10-20歳発症、M>F(3:1)。炭水化物摂取/運動後安静で誘発。甲状腺中毒性PPも類似"
+    },
+    {
+      "id": "D415",
+      "name": "chorioamnionitis",
+      "name_ja": "絨毛膜羊膜炎",
+      "category": "disease",
+      "category_sub": "obstetrics",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "羊膜腔内感染。母体発熱+頻脈+WBC増多+子宮圧痛/膿性帯下。全分娩1-4%、PROM後6-10%。Gibbs基準/Triple I基準。GBS/E.coli/嫌気性菌。緊急分娩+抗菌薬"
     }
   ]
 }
