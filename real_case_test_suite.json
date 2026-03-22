@@ -29106,5 +29106,183 @@
       "R02": "female"
     },
     "notes": "HFpEF with cardiorenal syndrome (Cr 0.8->3.6). Diuretic resistance. 30kg weight gain in 5mo. JVD prominent. FENa 0.1% prerenal"
+  },
+  {
+    "id": "R1108",
+    "source": "Pediatric Emergency Care 2020",
+    "pmcid": "PMC7398740",
+    "vignette": "17F. 安静時の動悸で来院。2ヶ月前にもSVTエピソード。HR 200, BP 97/63, RR 18, SpO2 95%. ECG: SVT+広範ST低下。Adenosine後: PR 100ms(短縮), delta wave(+), QRS 117ms. WPW確定.",
+    "final_diagnosis": "間欠性WPW症候群(SVT)",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S35": "present",
+      "E02": "over_120",
+      "E03": "normal_over_90",
+      "E05": "mild_hypoxia_93_96",
+      "E01": "under_37.5",
+      "E40": "SVT",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "13_17",
+      "R02": "female"
+    },
+    "notes": "Intermittent WPW. HR 200. Adenosine unmasked delta wave. PR 100ms"
+  },
+  {
+    "id": "R1109",
+    "source": "Cureus 2024",
+    "pmcid": "PMC11262883",
+    "vignette": "17M. 自宅で意識消失(collapse). 2週間前から動悸。GCS 15, 神経学的異常なし。ECG: delta wave(+), 短縮PR<0.12s, WPW Type B. Echo: EF 55%, 弁膜異常なし. RF ablation成功.",
+    "final_diagnosis": "WPW症候群Type B(失神)",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S35": "present",
+      "S97": "present",
+      "E40": "SVT",
+      "E39": "normal",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "13_17",
+      "R02": "male"
+    },
+    "notes": "WPW Type B with syncope. Delta wave + short PR. Normal echo"
+  },
+  {
+    "id": "R1110",
+    "source": "ESC Heart Failure 2024",
+    "pmcid": "PMC11263991",
+    "vignette": "40M. 36時間の動悸+非定型胸痛+発汗+めまい。HR頻脈, BP約90/50. 2/6収縮期雑音, びまん性甲状腺腫大. ECG: PR 90ms, delta wave(+), 不整WCT(AF). TSH<0.001(甲状腺クリーゼ). Echo: LV拡大, 中等度MR/TR.",
+    "final_diagnosis": "WPW(pre-excited AF)+甲状腺クリーゼ",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S35": "present",
+      "S21": "present",
+      "S59": "present",
+      "E02": "over_120",
+      "E03": "hypotension_under_90",
+      "E01": "under_37.5",
+      "E40": "SVT",
+      "E39": "dilated_chamber",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Pre-excited AF in WPW + thyroid storm. PR 90ms. Hypotensive"
+  },
+  {
+    "id": "R1111",
+    "source": "Frontiers in Cardiovascular Medicine 2021",
+    "pmcid": "PMC8517903",
+    "vignette": "22M. 再発性失神(13歳から10年間). めまい+急速心拍+大量発汗+恐怖感。安静時所見正常。ECG: 安静時洞徐脈, 発作時WCT(RBBB+capture beats). Echo/MRI正常. EP: 左側副伝導路.",
+    "final_diagnosis": "WPW症候群(antidromic AVRT)",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S97": "present",
+      "S35": "present",
+      "S59": "present",
+      "E39": "normal",
+      "E40": "SVT",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Antidromic AVRT. Recurrent syncope since 13yo. Left-sided AP"
+  },
+  {
+    "id": "R1112",
+    "source": "Case Reports in Obstetrics and Gynecology 2022",
+    "pmcid": "PMC8975611",
+    "vignette": "23F 妊娠35週. 胸痛+動悸+めまい。HR 215, RR 26, BP 122/60. 心肺正常(頻脈以外). ECG: narrow complex SVT. 治療後: 短縮PR, delta wave, 幅広QRS. CBC/腎機能/電解質正常.",
+    "final_diagnosis": "WPW症候群(妊娠中SVT)",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S21": "present",
+      "S35": "present",
+      "S59": "present",
+      "E02": "over_120",
+      "E04": "tachypnea_20_30",
+      "E03": "normal_over_90",
+      "E01": "under_37.5",
+      "E40": "SVT",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "WPW in pregnancy 35w. HR 215 narrow complex SVT"
+  },
+  {
+    "id": "R1113",
+    "source": "Cureus 2021",
+    "pmcid": "PMC8604443",
+    "vignette": "29F 産後2ヶ月. 4日間の左胸鋭痛+血痰+動悸+嘔吐+両側下腿浮腫+起座呼吸+PND。HR 190, BP 76/50. ECG: orthodromic AVRT 190bpm, 回復後delta wave. BNP 916. CXR: 左胸水. Echo: EF<20%, 中等度LVH, 中-高度TR.",
+    "final_diagnosis": "WPW症候群+周産期心筋症",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S21": "present",
+      "S35": "present",
+      "S04": "at_rest",
+      "S49": "present",
+      "E02": "over_120",
+      "E03": "hypotension_under_90",
+      "E01": "under_37.5",
+      "E40": "SVT",
+      "E36": "present",
+      "L51": "very_high",
+      "L04": "pleural_effusion",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "WPW + peripartum CMP. HR 190. EF<20%. BNP 916. Cardiogenic shock"
+  },
+  {
+    "id": "R1114",
+    "source": "Cureus 2024",
+    "pmcid": "PMC11247259",
+    "vignette": "39M. 1週間の胸痛(急性増悪+動悸+発汗). HR 83, BP 126/78, RR 20, SpO2 100%, T 36.8. 身体所見正常. ECG: WPW Type A(PR<0.12s, delta wave, QRS>0.11s). Troponin T 495ng/mL(著増). Echo: EF 54%, 局所壁運動異常.",
+    "final_diagnosis": "WPW症候群+NSTEMI",
+    "expected_id": "D356",
+    "in_scope": true,
+    "evidence": {
+      "S21": "present",
+      "S35": "present",
+      "E02": "under_100",
+      "E03": "normal_over_90",
+      "E05": "normal_over_96",
+      "E01": "under_37.5",
+      "E40": "SVT",
+      "T01": "3d_to_1w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "WPW Type A masking NSTEMI. Troponin 495. RWMA on echo. L53/E39はNSTEMI由来のため除外(WPWの所見ではない)"
   }
 ]
