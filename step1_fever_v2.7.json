@@ -11516,6 +11516,19 @@
       ],
       "severity": "high",
       "note": "大腿骨頸部骨折。高齢女性の低エネルギー転倒が90%以上。股関節痛+荷重不能+下肢短縮外旋が三徴。平均年齢80歳、F:M=2.9:1。Garden分類(I-IV)。displaced(72%)は人工骨頭、non-displaced(28%)は骨接合。せん妄13-33%。1年死亡率~30%"
+    },
+    {
+      "id": "D417",
+      "name": "tuberculous_peritonitis",
+      "name_ja": "結核性腹膜炎",
+      "category": "disease",
+      "category_sub": "infectious",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "結核性腹膜炎。腹水(90%)+発熱(65%)+腹痛(70%)+体重減少(60%)。亜急性~慢性経過。腹水ADA>30IU/L(sens90%+)。20-40歳ピーク、F:M=1.4:1。肺TB合併14-40%。全TBの2%、EPTB4.9%。HIV関連多い"
     }
   ]
 }
