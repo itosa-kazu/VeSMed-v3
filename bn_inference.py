@@ -388,8 +388,11 @@ def _compute_single_r_lr(r_cpt, r_id, risk_evidence):
     p_obs = r_cpt.get(obs)
     if p_obs is None:
         p_obs = min(r_cpt.values()) if r_cpt else None
-    if p_obs is None or p_obs <= 0:
+    if p_obs is None:
         return 0.0
+    # Explicitly impossible state (e.g. female for prostate cancer) → strong negative LR
+    if p_obs <= 0:
+        p_obs = 1e-6
 
     pop = JAPAN_POP.get(r_id, {})
     if pop:
@@ -474,6 +477,9 @@ def get_prior(disease_id, root_priors, risk_evidence, prior_power=0.0):
                 vals = [_cpt_val_to_prior(v) for v in cpt.values()]
                 p_obs = min(vals) if vals else None
 
+            # Explicitly impossible state → strong negative LR
+            if p_obs is not None and p_obs <= 0:
+                p_obs = 1e-6
             if p_obs is not None and p_obs > 0:
                 pop = JAPAN_POP.get(pid, {})
                 if pop:
