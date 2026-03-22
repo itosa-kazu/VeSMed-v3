@@ -457,7 +457,7 @@
     "source": "Cureus 2025",
     "vignette": "38M 5日間高熱39.2℃+筋肉痛+倦怠感。咳嗽/痰/胸痛/呼吸困難なし。HR110,SpO2 97%。初診時CXR正常。3日後に右下肺crackles出現。WBC 11.8,CRP 112,ESR 55。最終的にCXR+CTで右下肺consolidation確認→肺炎",
     "final_diagnosis": "Occult pneumonia(潜在性肺炎)",
-    "expected_id": "D05",
+    "expected_id": "D266",
     "in_scope": true,
     "evidence": {
       "E01": "39.0_40.0",
@@ -475,7 +475,7 @@
       "R02": "male"
     },
     "result": "Miss rank20 (人工弁心内膜炎 21%) H=4.1",
-    "notes": "呼吸器症状なしの肺炎。E07(crackles)/L04(CXR infiltrate)なしでは肺炎が浮上しにくい。臨床的にも初診で見逃された症例"
+    "notes": "呼吸器症状なしの肺炎。E07(crackles)/L04(CXR infiltrate)なしでは肺炎が浮上しにくい。臨床的にも初診で見逃された症例 [D05廃止] 病原体不明だが典型的細菌性CAP→肺炎球菌性肺炎(D266)に再マッピング"
   },
   {
     "id": "R19",
@@ -856,7 +856,7 @@
     "pmcid": "PMC6940340",
     "vignette": "65M 高熱+市中肺炎。醤油色尿（横紋筋融解）+急性腎障害。CK 10,486U/L。マイコプラズマ抗体陽性。25日間入院、治癒",
     "final_diagnosis": "市中肺炎+横紋筋融解症",
-    "expected_id": "D05",
+    "expected_id": "D263",
     "in_scope": true,
     "evidence": {
       "E01": "39.0_40.0",
@@ -872,7 +872,7 @@
       "R02": "male"
     },
     "result": "Miss rank6 (肺膿瘍 22%) H=3.6",
-    "notes": "CAP+横紋筋融解。CK著増は合併症だがBNでは肺炎所見(高熱+咳嗽+CXR浸潤影)で捕捉可能"
+    "notes": "CAP+横紋筋融解。CK著増は合併症だがBNでは肺炎所見(高熱+咳嗽+CXR浸潤影)で捕捉可能 [D05廃止] MP抗体陽性→マイコプラズマ肺炎(D263)に再マッピング"
   },
   {
     "id": "R34",

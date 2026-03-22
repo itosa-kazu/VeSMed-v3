@@ -148,7 +148,7 @@
         "no",
         "yes"
       ],
-      "note": "細菌性・非定型含む",
+      "note": "[DEPRECATED] pathogen-specific IDs (D263-D267/D102/D104) supersede. Cases remapped to D266/D263. Old: 細菌性・非定型含む",
       "diagnostic_profile": {
         "name_ja": "市中肺炎",
         "diagnostic_speed": "fast",
