@@ -57181,22 +57181,6 @@
           "hyperacute": 0.01,
           "subacute": 0.04,
           "chronic_progressive": 0.95
-        },
-        "D427": {
-          "absent": 0.85,
-          "present": 0.15
-        },
-        "D40": {
-          "absent": 0.45,
-          "present": 0.55
-        },
-        "D422": {
-          "absent": 0.85,
-          "present": 0.15
-        },
-        "D428": {
-          "absent": 0.35,
-          "present": 0.65
         }
       }
     },
@@ -58014,20 +57998,7 @@
         "absent": 0.7,
         "present": 0.3
       },
-      "parent_effects": {
-        "D427": {
-          "absent": 0.65,
-          "present": 0.35
-        },
-        "D40": {
-          "absent": 0.35,
-          "present": 0.65
-        },
-        "D428": {
-          "absent": 0.1,
-          "present": 0.9
-        }
-      }
+      "parent_effects": {}
     },
     "E58": {
       "leak": {
@@ -58038,6 +58009,50 @@
         "D427": {
           "absent": 0.8,
           "present": 0.2
+        }
+      }
+    },
+    "S188": {
+      "leak": {
+        "absent": 0.7,
+        "present": 0.3
+      },
+      "parent_effects": {
+        "D427": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D428": {
+          "absent": 0.1,
+          "present": 0.9
+        },
+        "D40": {
+          "absent": 0.35,
+          "present": 0.65
+        }
+      }
+    },
+    "S189": {
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D427": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D428": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D40": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D422": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     }

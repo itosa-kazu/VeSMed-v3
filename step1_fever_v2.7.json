@@ -11693,6 +11693,28 @@
       "note": "子宮内膜組織が子宮外に存在。月経困難症(90%)/慢性骨盤痛(70%)/性交痛(60-70%)/不妊(30-50%)。25-35歳にピーク。チョコレート嚢胞(卵巣内膜症性嚢胞)が特徴的US所見",
       "key_features": "月経困難症+慢性骨盤痛+深部性交痛+不妊。骨盤USでチョコレート嚢胞(endometrioma)。CA-125軽度上昇。25-35歳女性",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "S188",
+      "name": "dysmenorrhea",
+      "name_ja": "月経困難症(月経痛)",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "月経時の疼痛。子宮内膜症(90%)/子宮筋腫(30-40%)/PID。一次性vs二次性"
+    },
+    {
+      "id": "S189",
+      "name": "dyspareunia",
+      "name_ja": "性交痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "性交時の疼痛。子宮内膜症(60-70%)/PID/外陰部疾患。深部性交痛は内膜症に特異的"
     }
   ]
 }

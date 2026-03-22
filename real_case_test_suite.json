@@ -31395,5 +31395,126 @@
       "R02": "female"
     },
     "notes": "Cystic fibroid 20cm. Hb 4.6. Menorrhagia 9 pads/day. CA-125 173. 1478g uterus"
+  },
+  {
+    "id": "R1203",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10359053",
+    "vignette": "30F 未経産. 急性進行性月経困難症+性交痛。子宮14x8x6cm(腫大)+両側付属器腫瘤(6x4cm/6x6cm)+Douglas窩圧満+深部可動時圧痛。AMH 0.05ng/dL(卵巣予備能低下)。MRI: びまん性腺筋症子宮16x8x6cm+両側チョコレート嚢胞(T1高信号/T2低信号)+漿膜面線維性肥厚+Douglas窩閉塞。",
+    "final_diagnosis": "子宮内膜症(Grade 4)+腺筋症",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "L62": "endometrioma",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "S188": "present",
+      "S189": "present"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Grade 4 endometriosis + adenomyosis. Bilateral endometriomas. Dysmenorrhea + dyspareunia"
+  },
+  {
+    "id": "R1204",
+    "source": "Int J Womens Health 2022",
+    "pmcid": "PMC8849430",
+    "vignette": "25F(15歳発症→25歳診断、10年遅延). 重度月経困難症+過多月経(2時間パッド2枚)+性交痛+慢性骨盤痛+腰痛・大腿痛+月経時排便痛+排尿時痛+便秘+下痢+直腸出血+月経時呼吸困難(横隔膜浸潤)。Hb 8.0(鉄欠乏性貧血)。US: 両側卵巣複合嚢胞性腫瘤(右10cm/左<5cm x3個)+左水卵管症。術中: 腹壁/両卵巣/腟壁/虫垂/膀胱/腸/直腸/横隔膜に内膜症組織。",
+    "final_diagnosis": "子宮内膜症(Stage IV, >40点)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S127": "present",
+      "S22": "present",
+      "S72": "present",
+      "L62": "endometrioma",
+      "L93": "low_7_10",
+      "S07": "mild",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "S188": "present",
+      "S189": "present"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Stage IV endometriosis. 10yr delay. Bilateral endometriomas. Diaphragm involvement. Hb 8.0"
+  },
+  {
+    "id": "R1205",
+    "source": "Cureus 2024",
+    "pmcid": "PMC11524699",
+    "vignette": "20F 未経産. 数ヶ月のびまん性間欠的腹痛+慢性便秘+腹部膨満。月経規則的(28-30日周期)。軽度月経困難症(痛み2/10)。BP 190/121(高血圧緊急症)。腹部膨満+硬+中等度圧痛+筋性防御。Cr 2.4, GFR 38。CA-125/CEA/AFP/LDH全て陰性。US: 左付属器嚢胞性腫瘤12x18x25cm。両側水腎水尿管症。",
+    "final_diagnosis": "子宮内膜症(巨大チョコレート嚢胞25cm+AKI)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S72": "present",
+      "L62": "endometrioma",
+      "E38": "crisis_over_180",
+      "L55": "high_AKI",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "S188": "present"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Giant endometrioma 25cm. BP 190/121. AKI Cr 2.4. Bilateral hydronephrosis"
+  },
+  {
+    "id": "R1206",
+    "source": "Int J Surg Case Rep 2024",
+    "pmcid": "PMC10909607",
+    "vignette": "40F. 無症状(体重減少/排尿排便変化なし)。左付属器嚢胞性腫瘤14x19x11cm。CA-125 70.4, CA19.9 383.1。US: 左卵巣単房性均一嚢胞(低レベル内部エコー+明瞭壁+充実成分なし)。右子宮筋腫8.4x6x8.5cm。MRI: 左卵巣チョコレート嚢胞17x9.8x13cm(T1高信号均一)。",
+    "final_diagnosis": "子宮内膜症(巨大チョコレート嚢胞17cm)+子宮筋腫合併",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "L62": "endometrioma",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Asymptomatic giant endometrioma 17cm. CA-125 70.4. Concurrent fibroid. Incidental"
+  },
+  {
+    "id": "R1207",
+    "source": "BMC Res Notes 2020",
+    "pmcid": "PMC7687799",
+    "vignette": "32F. 3年間の重度月経困難症(VAS 8/10)+性交痛+慢性骨盤痛+腰痛+排便時痛。月経不順+過多月経。TVUS: 右卵巣チョコレート嚢胞4cm+Douglas窩閉塞(sliding sign陰性)+直腸腟結節。左卵巣正常。CA-125軽度上昇。",
+    "final_diagnosis": "深部浸潤型子宮内膜症(DIE, 直腸腟中隔浸潤)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S127": "present",
+      "S22": "present",
+      "L62": "endometrioma",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "S188": "present",
+      "S189": "present"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Deep infiltrating endometriosis. Rectovaginal nodule. Endometrioma 4cm. 3yr symptoms"
   }
 ]

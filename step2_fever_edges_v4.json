@@ -63438,7 +63438,7 @@
     },
     {
       "from": "D427",
-      "to": "S186",
+      "to": "S188",
       "from_name": "子宮筋腫",
       "to_name": "dysmenorrhea",
       "reason": "子宮筋腫: 月経困難症30-40%(AAFP)。粘膜下筋腫で特に顕著",
@@ -63446,7 +63446,7 @@
     },
     {
       "from": "D427",
-      "to": "S187",
+      "to": "S189",
       "from_name": "子宮筋腫",
       "to_name": "dyspareunia",
       "reason": "子宮筋腫: 性交痛10-20%(Cleveland Clinic)。大型/頸部筋腫",
@@ -63454,7 +63454,7 @@
     },
     {
       "from": "D40",
-      "to": "S186",
+      "to": "S188",
       "from_name": "catheter_related_BSI",
       "to_name": "dysmenorrhea",
       "reason": "PID: 月経困難症60-70%。炎症による二次性",
@@ -63462,7 +63462,7 @@
     },
     {
       "from": "D40",
-      "to": "S187",
+      "to": "S189",
       "from_name": "catheter_related_BSI",
       "to_name": "dyspareunia",
       "reason": "PID: 性交痛50-60%(CDC)。深部性交痛",
@@ -63470,7 +63470,7 @@
     },
     {
       "from": "D422",
-      "to": "S187",
+      "to": "S189",
       "from_name": "子宮頸癌",
       "to_name": "dyspareunia",
       "reason": "子宮頸癌: 性交痛10-20%。進行期",
@@ -63478,7 +63478,7 @@
     },
     {
       "from": "D428",
-      "to": "S186",
+      "to": "S188",
       "from_name": "子宮内膜症",
       "to_name": "dysmenorrhea",
       "reason": "子宮内膜症: 月経困難症90%(UpToDate)。最も特異的症状",
@@ -63486,7 +63486,7 @@
     },
     {
       "from": "D428",
-      "to": "S187",
+      "to": "S189",
       "from_name": "子宮内膜症",
       "to_name": "dyspareunia",
       "reason": "子宮内膜症: 深部性交痛60-70%(UpToDate)",
