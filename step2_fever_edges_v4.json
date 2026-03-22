@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8047,
+  "total_edges": 8059,
   "edges": [
     {
       "from": "R01",
@@ -63123,11 +63123,107 @@
       "to_name": "onset_speed",
       "reason": "甲状腺癌: 緩徐(乳頭癌)/急速(未分化癌)",
       "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "S161",
+      "from_name": "中枢性尿崩症",
+      "to_name": "polyuria",
+      "reason": "中枢性尿崩症: 多尿(>3L/日)は定義的症状。100%(PMC9516129)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "S121",
+      "from_name": "中枢性尿崩症",
+      "to_name": "polydipsia",
+      "reason": "中枢性尿崩症: 多飲は補償的症状。100%(PMC9516129)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "S11",
+      "from_name": "中枢性尿崩症",
+      "to_name": "urinary_frequency",
+      "reason": "中枢性尿崩症: 頻尿/夜間多尿80-90%(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "L91",
+      "from_name": "中枢性尿崩症",
+      "to_name": "urine_osmolality",
+      "reason": "中枢性尿崩症: 尿浸透圧<300mOsm/kg(典型<200)。100%(PMC7996474)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "L92",
+      "from_name": "中枢性尿崩症",
+      "to_name": "serum_osmolality",
+      "reason": "中枢性尿崩症: 血清浸透圧>295mOsm/kg 60-80%(脱水時)(PMC7996474)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "L44",
+      "from_name": "中枢性尿崩症",
+      "to_name": "electrolytes",
+      "reason": "中枢性尿崩症: 高Na血症(>145)20-40%(水分摂取不十分時)(PMC9516129)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "E54",
+      "from_name": "中枢性尿崩症",
+      "to_name": "dehydration_signs",
+      "reason": "中枢性尿崩症: 脱水徴候(口腔乾燥/皮膚ツルゴール低下)30-50%(PMC7996474)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "S07",
+      "from_name": "中枢性尿崩症",
+      "to_name": "fatigue",
+      "reason": "中枢性尿崩症: 倦怠感30-40%(脱水/電解質異常による)(Medscape)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "S17",
+      "from_name": "中枢性尿崩症",
+      "to_name": "weight_loss",
+      "reason": "中枢性尿崩症: 体重減少10-20%(脱水による)(Medscape)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "E01",
+      "from_name": "中枢性尿崩症",
+      "to_name": "temperature",
+      "reason": "中枢性尿崩症: 通常無熱。重度脱水で微熱あり",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "T01",
+      "from_name": "中枢性尿崩症",
+      "to_name": "symptom_duration",
+      "reason": "中枢性尿崩症: 慢性経過(術後は急性発症もあり)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D425",
+      "to": "T02",
+      "from_name": "中枢性尿崩症",
+      "to_name": "onset_speed",
+      "reason": "中枢性尿崩症: 術後/外傷後は急性、特発性は亜急性~慢性",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8047
+    "edge_count": 8059
   },
-  "edge_count": 8047
+  "edge_count": 8059
 }

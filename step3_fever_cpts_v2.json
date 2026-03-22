@@ -5052,6 +5052,22 @@
         "female|40_64": 0.0015,
         "female|65_plus": 0.001
       }
+    },
+    "D425": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "cpt": {
+        "male|13_17": 0.0003,
+        "male|18_39": 0.0004,
+        "male|40_64": 0.0002,
+        "male|65_plus": 0.0001,
+        "female|13_17": 0.0003,
+        "female|18_39": 0.0004,
+        "female|40_64": 0.0002,
+        "female|65_plus": 0.0001
+      }
     }
   },
   "full_cpts": {
@@ -14785,6 +14801,24 @@
         "male": 0.25,
         "female": 0.75
       }
+    },
+    "D425": {
+      "parents": [
+        "R01"
+      ],
+      "cpt": {
+        "0_1": 5e-05,
+        "1_5": 0.0001,
+        "6_12": 0.0002,
+        "13_17": 0.0003,
+        "18_39": 0.0004,
+        "40_64": 0.0002,
+        "65_plus": 0.0001
+      },
+      "R02": {
+        "male": 0.5,
+        "female": 0.5
+      }
     }
   },
   "noisy_or_params": {
@@ -17735,6 +17769,14 @@
           "37.5_38.0": 0.05,
           "38.0_39.0": 0.02,
           "39.0_40.0": 0.01,
+          "over_40.0": 0.0
+        },
+        "D425": {
+          "hypothermia_under_35": 0.0,
+          "under_37.5": 0.92,
+          "37.5_38.0": 0.06,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.0,
           "over_40.0": 0.0
         }
       }
@@ -31078,6 +31120,12 @@
           "hyponatremia": 0.35,
           "hyperkalemia": 0.02,
           "other": 0.03
+        },
+        "D425": {
+          "normal": 0.65,
+          "hyponatremia": 0.02,
+          "hyperkalemia": 0.01,
+          "other": 0.32
         }
       }
     },
@@ -34704,6 +34752,11 @@
           "absent": 0.65,
           "mild": 0.25,
           "severe": 0.1
+        },
+        "D425": {
+          "absent": 0.65,
+          "mild": 0.3,
+          "severe": 0.05
         }
       }
     },
@@ -37061,6 +37114,10 @@
           "present": 0.3
         },
         "D424": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D425": {
           "absent": 0.85,
           "present": 0.15
         }
@@ -41680,6 +41737,12 @@
           "3d_to_1w": 0.02,
           "1w_to_3w": 0.1,
           "over_3w": 0.87
+        },
+        "D425": {
+          "under_3d": 0.15,
+          "3d_to_1w": 0.2,
+          "1w_to_3w": 0.25,
+          "over_3w": 0.4
         }
       }
     },
@@ -43899,6 +43962,12 @@
           "acute": 0.04,
           "subacute": 0.2,
           "chronic": 0.75
+        },
+        "D425": {
+          "sudden": 0.15,
+          "acute": 0.25,
+          "subacute": 0.3,
+          "chronic": 0.3
         }
       }
     },
@@ -44151,6 +44220,10 @@
         "D397": {
           "absent": 0.5,
           "present": 0.5
+        },
+        "D425": {
+          "absent": 0.15,
+          "present": 0.85
         }
       }
     },
@@ -53839,7 +53912,13 @@
         "concentrated": 0.8,
         "inappropriately_concentrated": 0.05
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D425": {
+          "dilute": 0.95,
+          "concentrated": 0.02,
+          "inappropriately_concentrated": 0.03
+        }
+      }
     },
     "L92": {
       "leak": {
@@ -53848,7 +53927,14 @@
         "high": 0.06,
         "osmolar_gap_elevated": 0.03
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D425": {
+          "low": 0.01,
+          "normal": 0.25,
+          "high": 0.73,
+          "osmolar_gap_elevated": 0.01
+        }
+      }
     },
     "L96": {
       "leak": {
@@ -57563,6 +57649,44 @@
           "localized": 0.1,
           "proximal_girdle": 0.8,
           "generalized": 0.1
+        }
+      }
+    },
+    "S161": {
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D425": {
+          "absent": 0.02,
+          "present": 0.98
+        }
+      }
+    },
+    "S121": {
+      "leak": {
+        "absent": 0.97,
+        "present": 0.03
+      },
+      "parent_effects": {
+        "D425": {
+          "absent": 0.02,
+          "present": 0.98
+        }
+      }
+    },
+    "E54": {
+      "leak": {
+        "absent": 0.95,
+        "mild": 0.04,
+        "severe": 0.01
+      },
+      "parent_effects": {
+        "D425": {
+          "absent": 0.55,
+          "mild": 0.35,
+          "severe": 0.1
         }
       }
     }

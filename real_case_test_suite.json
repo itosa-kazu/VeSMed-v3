@@ -30693,5 +30693,131 @@
       "R02": "female"
     },
     "notes": "Pediatric papillary thyroid. 11yo girl. Tg>300. Lung mets. TIRADS 5"
+  },
+  {
+    "id": "R1175",
+    "source": "J Med Case Rep 2023",
+    "pmcid": "PMC9897711",
+    "vignette": "39M 統合失調症(14歳から). 急性下痢+全身状態不良+振戦で入院。ICU中に多尿(~9L/日)出現。意識レベル低下(GCS 10)。Na 177mEq/L, 血清浸透圧395mOsm/kg, 尿浸透圧165mOsm/L, Cr 3.6。デスモプレシン投与後: 尿浸透圧330→363mOsm/L, Na正常化。MRI: 神経下垂体T1高信号消失。",
+    "final_diagnosis": "特発性部分型中枢性尿崩症",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "L91": "dilute",
+      "L92": "high",
+      "L44": "other",
+      "E54": "severe",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Idiopathic partial CDI. Urine 9L/day. Na 177. Serum osm 395. Urine osm 165"
+  },
+  {
+    "id": "R1176",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10404345",
+    "vignette": "60F. 4ヶ月の坐骨神経痛+左上下肢測定障害+筋力低下。多尿(11L/日)+多飲+夜間頻尿。Na 138, 血漿浸透圧300mOsm, 尿浸透圧173mOsm。TSH 0.05(低下), LDH 291。デスモプレシン後: 尿浸透圧520mOsmに上昇。CT脳: 脳室周囲造影増強+浮腫。",
+    "final_diagnosis": "中枢性尿崩症(DLBCL/汎下垂体機能低下症合併)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S11": "present",
+      "L91": "dilute",
+      "L92": "high",
+      "L44": "normal",
+      "S07": "mild",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "CDI from DLBCL. Urine 11L/day. Urine osm 173. Panhypopituitarism. Na 138(正常)"
+  },
+  {
+    "id": "R1177",
+    "source": "Cureus 2018",
+    "pmcid": "PMC6112378",
+    "vignette": "40F Stage IV乳癌. 多尿+多飲+最近の意識混濁。MAP 50台, 発熱+頻脈+多呼吸。体重48kg。陥凹眼球+皮膚ツルゴール低下。Na 167mEq/L(ベース151), 血清浸透圧347mOsm/kg, 尿浸透圧185mOsm/kg, Ca 16.5mg/dL, Hb 7.9。尿量350-450mL/時。",
+    "final_diagnosis": "中枢性尿崩症(下垂体転移)+腎性尿崩症(高Ca)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "L91": "dilute",
+      "L92": "high",
+      "L44": "other",
+      "E54": "severe",
+      "E01": "38.0_39.0",
+      "L93": "low_7_10",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "CDI from pituitary metastasis + nephrogenic DI from hypercalcemia. Na 167. Ca 16.5"
+  },
+  {
+    "id": "R1178",
+    "source": "Front Med 2025",
+    "pmcid": "PMC12075111",
+    "vignette": "41M. 3ヶ月の口渇+多尿(最大8000mL/日)。Na 147.79(入院時)→195(ピーク)。尿比重<1.005。血漿ADH<1.4pmol/L。K 3.0。コルチゾール447.98ng/mL(高値)。MRI: 下垂体茎肥厚6.8mm+後葉高信号消失+中心橋髄鞘崩壊。",
+    "final_diagnosis": "中枢性尿崩症(浸透圧性脱髄症候群合併)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "L91": "dilute",
+      "L92": "high",
+      "L44": "other",
+      "E54": "mild",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "CDI with osmotic demyelination. Na 195 peak. Urine 8L/day. USG<1.005. Stalk 6.8mm"
+  },
+  {
+    "id": "R1179",
+    "source": "Case Rep Nephrol 2017",
+    "pmcid": "PMC5512035",
+    "vignette": "43F ALS+在宅人工呼吸. 肺炎+粘液栓による心肺停止(PEA)→30分蘇生。入院5日目: 多尿(300-600mL/時)+Na 136→199mM(24時間で63上昇)。血漿浸透圧403mOsm/kg, 尿浸透圧112mOsm/kg。WBC 37600, 乳酸5。デスモプレシン後: 尿量50mL/時, 尿浸透圧364mOsm/kgに改善。CT脳: 低酸素性虚血性変化。",
+    "final_diagnosis": "一過性中枢性尿崩症(心停止後)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "L91": "dilute",
+      "L92": "high",
+      "L44": "other",
+      "E54": "mild",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Transient CDI post cardiac arrest. Na 199. Urine osm 112. Urine 300-600mL/hr"
   }
 ]

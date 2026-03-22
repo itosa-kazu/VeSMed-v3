@@ -11630,6 +11630,21 @@
       "note": "甲状腺結節→癌5-15%。乳頭癌80%/濾胞癌10%/髄様癌5%/未分化癌5%。F:M=3:1。Peak 30-50歳。嗄声(反回神経浸潤)/嚥下困難(進行期)。未分化癌は急速進行+予後不良",
       "key_features": "甲状腺結節+嗄声+頸部リンパ節腫脹。乳頭癌が80%で予後良好。未分化癌は急速進行。女性3倍。30-50歳",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D425",
+      "name": "central_diabetes_insipidus",
+      "name_ja": "中枢性尿崩症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "category_sub": "endocrine",
+      "note": "AVP(ADH)分泌低下→多尿(>3L/日)+多飲+夜間頻尿。原因: 特発性30%/腫瘍23%/術後20%/外傷16%。高Na血症は水分摂取不十分時。10-20歳発症多い。M=F。SIADH(D190)との対比で国試頻出",
+      "key_features": "多尿(>3L/日)+口渇/多飲+尿浸透圧低下(<300)+DDAVP反応(+)。高Na血症は脱水時のみ。下垂体疾患/脳外傷/術後に多い",
+      "diagnostic_profile": {}
     }
   ]
 }
