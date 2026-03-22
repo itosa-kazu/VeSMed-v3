@@ -21953,13 +21953,11 @@
         },
         "D423": {
           "absent": 0.35,
-          "localized": 0.45,
-          "generalized": 0.2
+          "present": 0.65
         },
         "D424": {
           "absent": 0.55,
-          "localized": 0.4,
-          "generalized": 0.05
+          "present": 0.45
         }
       }
     },

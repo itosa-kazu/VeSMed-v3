@@ -29784,5 +29784,361 @@
       "R02": "female"
     },
     "notes": "Ovarian small cell neuroendocrine carcinoma. 27cm mass. Stage IA"
+  },
+  {
+    "id": "R1135",
+    "source": "Gynecol Oncol Rep 2023",
+    "pmcid": "PMC10276186",
+    "vignette": "35F 経産婦. 3ヶ月の不正性器出血+1週間の白色帯下。前頸唇に3x4cm易出血性腫瘤。腟円蓋自由。鼠径リンパ節腫脹なし。US: 3x3cm低エコー病変。MRI: 3.8x2.5cm腫瘤+軽度子宮傍組織浸潤。",
+    "final_diagnosis": "子宮頸癌(神経内分泌型, Stage IB)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S128": "present",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Cervical NEC Stage IB. 3mo vaginal bleeding + white discharge. 3x4cm friable mass"
+  },
+  {
+    "id": "R1136",
+    "source": "Gynecol Oncol Rep 2023",
+    "pmcid": "PMC10276186",
+    "vignette": "31F 経産婦. 6ヶ月の大量不正性器出血+下腹部痛。頸部に4x5cm潰瘍増殖性腫瘤。PET/CT: 代謝活性頸部病変+左骨盤/右大腿骨/左腸骨に骨転移。Ki67 80%。",
+    "final_diagnosis": "子宮頸癌(小細胞NEC, FIGO IV)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S12": "present",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Cervical small-cell NEC Stage IV. Heavy bleeding 6 months. Bone metastases"
+  },
+  {
+    "id": "R1137",
+    "source": "Gynecol Oncol Rep 2023",
+    "pmcid": "PMC10276186",
+    "vignette": "48F 経産3. 2年間の白色悪臭帯下(月経時悪化)+下腹部痛+腰痛。3x2cm頸管内腫瘤。腟円蓋・子宮傍組織自由。",
+    "final_diagnosis": "子宮頸癌(NEC, Stage IB)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S128": "present",
+      "S12": "present",
+      "S22": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cervical NEC Stage IB. Foul discharge 2 years + abdominal/back pain"
+  },
+  {
+    "id": "R1138",
+    "source": "Cureus 2022",
+    "pmcid": "PMC8890600",
+    "vignette": "59F. 6週間の進行性労作時呼吸困難+湿性咳嗽+胸部絞扼感。倦怠感+食欲不振+慢性骨盤不快感。1年で32kgの体重減少。悪液質。6-8L O2。WBC 20K, 乳酸4.6, Ca 12.6。CT: 子宮頸部7x7cm腫瘤+多発肺転移+縦隔腫瘤+両側肺門リンパ節腫脹。",
+    "final_diagnosis": "子宮頸癌(Stage IV, 肺転移)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S04": "on_exertion",
+      "S07": "severe",
+      "S46": "present",
+      "S17": "present",
+      "S12": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Advanced cervical cancer Stage IV. 32kg weight loss. Lung mets. Cachectic"
+  },
+  {
+    "id": "R1139",
+    "source": "Gynecol Oncol Rep 2023",
+    "pmcid": "PMC10276186",
+    "vignette": "50F 閉経後 高血圧. 不正性器出血+右上下肢脱力+構音障害。頸部3x3.5cm腫瘤+後腟円蓋浸潤。US: 3x2.5cm頸部腫瘤+両側軽度水腎症。MRI: 3.7x2.7x2.5cm+傍組織浸潤。CT脳: 両側前頭・頭頂後頭に低吸収域。8ヶ月の経過。",
+    "final_diagnosis": "子宮頸癌(NEC, Stage IV脳転移)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "L55": "mild_elevated",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cervical NEC Stage IV. Vaginal bleeding. Brain mets. Bilateral hydronephrosis"
+  },
+  {
+    "id": "R1140",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10412465",
+    "vignette": "62M. 7ヶ月前から右下肢外側に無痛性結節5x5cm。ピンク色過顆粒状結節+不整辺縁+鱗屑性紅斑。右鼠径部大リンパ節触知。右下肢3+圧痕性浮腫。発熱/盗汗/体重減少なし。Breslow 1.5mm, Clark IV。SLN転移(+)最大2cm。PET/MRI遠隔転移なし。",
+    "final_diagnosis": "無色素性悪性黒色腫(Stage IIIC)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "E13": "present",
+      "E36": "present",
+      "S17": "absent",
+      "L63": "absent",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Amelanotic melanoma Stage IIIC. Inguinal LAD. Leg edema. No systemic symptoms"
+  },
+  {
+    "id": "R1141",
+    "source": "Front Surg 2024",
+    "pmcid": "PMC11543182",
+    "vignette": "71M 高血圧15年. 2日間の重度頭痛+多数回嘔吐(10回/日)+視力低下+意識消失+食欲低下+錯乱。BP 150/100。両側乳頭浮腫。右背4x4mm+左大腿2x2mm色素沈着。リンパ節なし。造影CT: 右側頭/右後頭/左前頭/左脳室周囲に多発腫瘤+脳浮腫+正中偏位。CBC/肝腎正常。",
+    "final_diagnosis": "転移性悪性黒色腫(原発不明, 多発脳転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "L63": "brain",
+      "E13": "absent",
+      "L93": "normal",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Metastatic melanoma unknown primary. Multiple brain mets. Acute headache/vomiting"
+  },
+  {
+    "id": "R1142",
+    "source": "Int J Surg Case Rep 2021",
+    "pmcid": "PMC8304196",
+    "vignette": "26F. 最近左乳房腫瘤+左乳房下皮下結節+右上前腸骨棘上皮下結節を発見。US: 左乳房22mm病変+乳房下21mm病変。PET-CT: 左上腕/左肺/左胸壁/肝/左腎/臀部/寛骨臼/右大腿に多発FDG集積。脳MRI転移なし。Ki-67 90%, BRAF(+)。",
+    "final_diagnosis": "転移性悪性黒色腫(原発不明, Stage IV)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "L63": "multiple",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma occult primary Stage IV. Multiple organ mets. Ki-67 90%"
+  },
+  {
+    "id": "R1143",
+    "source": "J Surg Case Rep 2024",
+    "pmcid": "PMC11245971",
+    "vignette": "80F. 1ヶ月の上部胸椎痛(VAS 9/10)+3日間の両下肢脱力。痙性歩行、筋力4→3/5、反射亢進(3+)、Babinski伸展。急性尿閉。WBC 5.5k, ESR 42, CRP 0.6, Cr 0.8。MRI: T3椎体に4.2x4cm腫瘤+脊柱管狭窄。CT胸腹: 他病変なし。",
+    "final_diagnosis": "転移性悪性黒色腫(T3椎体転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S22": "present",
+      "L63": "bone",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma T3 vertebra. Cord compression. ESR 42. 1 month thoracic pain"
+  },
+  {
+    "id": "R1144",
+    "source": "J Med Case Rep 2008",
+    "pmcid": "PMC2211303",
+    "vignette": "45F. 左下肢感覚低下→軽度片麻痺→痙攣発作で来院。脳MRI: 右頭頂葉腫瘤。手術で転移性メラノーマ(S100/HMB45/Vimentin+)。CT: 左副腎腫大。全血液検査+ホルモン正常。KPS 80%。後に虫垂原発と判明。",
+    "final_diagnosis": "転移性悪性黒色腫(虫垂原発, Stage IV)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "L63": "brain",
+      "L93": "normal",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma appendiceal primary. Brain met first presentation. Labs normal"
+  },
+  {
+    "id": "R1145",
+    "source": "EDMCR 2021",
+    "pmcid": "PMC8284955",
+    "vignette": "76F. 右頸部腫瘤(2x3cm→7x6cmに急速増大)。3ヶ月の乾性咳嗽+2ヶ月の食欲不振・悪寒+頸部痛(顎放散)+5kg体重減少。石様硬+不整+深部癒着の腫瘤。BP 100/60, HR 98, RR 20, T 36.8, SpO2 98%。Hb 12.3, WBC 23.84k, TSH 0.02, fT4 4.77。CT: 縦隔進展+両側肺転移+右内頸V血栓+心嚢液。",
+    "final_diagnosis": "未分化甲状腺癌(Stage IVC)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S17": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Anaplastic thyroid cancer IVC. TSH 0.02. WBC 23.8k. Lung mets. Died day 3"
+  },
+  {
+    "id": "R1146",
+    "source": "Cureus 2024",
+    "pmcid": "PMC10924440",
+    "vignette": "69F. 10年来の頸部腫脹+3日前からの顔面浮腫+嚥下困難+呼吸困難(SVC症候群)。右側優位のびまん性頸部腫脹(硬)。WBC 7k, Hb 10.5, Plt 315k, TSH 2.4。CT: 甲状腺不均一+右葉石灰化+左鎖骨上15mmLN+右頸部16x9mmLN+右内頸V血栓→SVC進展。",
+    "final_diagnosis": "未分化甲状腺癌(乳頭癌合併)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S25": "present",
+      "S04": "at_rest",
+      "L93": "mild_low_10_12",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Anaplastic+papillary thyroid. SVC syndrome. Hb 10.5. 10-year neck swelling"
+  },
+  {
+    "id": "R1147",
+    "source": "Head Neck Pathol 2020",
+    "pmcid": "PMC7168172",
+    "vignette": "54F 喫煙歴20年+. 4ヶ月で急速増大する左頸部腫瘤+軽度不快感+体重減少。左鎖骨上窩に8cm結節性集塊+びまん性甲状腺腫大+右甲状腺5cm腫瘤+気管偏位。PET: 頸部+肺にFDG集積。CT: 壊死性腫瘤+気管偏位+肺病変。BRAF V600E(+)。Ki-67 >50%。",
+    "final_diagnosis": "未分化甲状腺癌(乳頭癌由来)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S17": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Anaplastic thyroid from PTC. 4 months rapid growth. Weight loss. BRAF+. Ki-67>50%"
+  },
+  {
+    "id": "R1148",
+    "source": "Cureus 2018",
+    "pmcid": "PMC5787655",
+    "vignette": "65M. 数ヶ月の左頸部腫脹(徐々に増大)。左Level II-IIIに8x5cmの嚢胞性・非圧痛・嚥下移動性腫瘤。CT: 舌骨〜甲状軟骨下縁の嚢胞性病変。甲状腺正常外観。FDG-PET: 左甲状腺葉に高集積。",
+    "final_diagnosis": "甲状腺乳頭癌(左葉)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "E19": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Papillary thyroid cancer. 8x5cm cystic neck mass. Several months"
+  },
+  {
+    "id": "R1149",
+    "source": "Cureus 2018",
+    "pmcid": "PMC5787655",
+    "vignette": "32F. 6ヶ月の右頸部腫脹。右後三角に2x2cm可動性・嚢胞性・非圧痛腫瘤。CT: 両側多発頸部リンパ節腫脹(最大1.6x1.4cm中心壊死)。甲状腺正常。FNAC: 転移性乳頭癌。PET: 右甲状腺上極+右Level III/IVに集積。",
+    "final_diagnosis": "甲状腺乳頭癌(頸部LN転移)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Papillary thyroid with bilateral cervical LN mets. 6 months neck swelling"
+  },
+  {
+    "id": "R1150",
+    "source": "BMC Surg 2013",
+    "pmcid": "PMC3604668",
+    "vignette": "75M. 2ヶ月の無痛性増大右頸部腫瘤7x5cm(不整+固定)。頸部リンパ節腫脹(+)。嚥下困難/嗄声/耳痛なし。体重減少/盗汗なし。臨床的甲状腺機能正常。カルシトニン/CEA正常。CT: 6cm腫瘤+右頸部bulkyリンパ節。PET: 右頸部FDG集積。",
+    "final_diagnosis": "未分化甲状腺癌(乳頭癌合併, Hashimoto背景)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "E19": "present",
+      "E13": "present",
+      "S25": "absent",
+      "S55": "absent",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Anaplastic+papillary thyroid. 7x5cm fixed mass. 2 months. Died 19 weeks post-op"
   }
 ]

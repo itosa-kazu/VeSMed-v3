@@ -9,6 +9,7 @@
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_atomicity_principle.md](feedback_atomicity_principle.md) — **変量原子化原則**: 1変量=1臨床観察単位。異なる検体/手技/感度は別変量(喀痰≠BAL)
+- [feedback_not_fever_only.md](feedback_not_fever_only.md) — **最重要: VeSMedは発熱限定ではない**。全疾患対象の包括的システム。「scope外」と判断しない
 
 ## 将来タスク
 - [project_d05_cap_split.md](project_d05_cap_split.md) — **D05(市中肺炎)は分割/削除が必要**。病原体別ID(D266/D265/D263等)が既にあり冗長
