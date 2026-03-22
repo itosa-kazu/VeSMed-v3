@@ -11503,6 +11503,19 @@
       ],
       "severity": "high",
       "note": "羊膜腔内感染。母体発熱+頻脈+WBC増多+子宮圧痛/膿性帯下。全分娩1-4%、PROM後6-10%。Gibbs基準/Triple I基準。GBS/E.coli/嫌気性菌。緊急分娩+抗菌薬"
+    },
+    {
+      "id": "D416",
+      "name": "femoral_neck_fracture",
+      "name_ja": "大腿骨頸部骨折",
+      "category": "disease",
+      "category_sub": "orthopedic",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "大腿骨頸部骨折。高齢女性の低エネルギー転倒が90%以上。股関節痛+荷重不能+下肢短縮外旋が三徴。平均年齢80歳、F:M=2.9:1。Garden分類(I-IV)。displaced(72%)は人工骨頭、non-displaced(28%)は骨接合。せん妄13-33%。1年死亡率~30%"
     }
   ]
 }
