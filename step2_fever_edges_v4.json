@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8200,
+  "total_edges": 8233,
   "edges": [
     {
       "from": "R01",
@@ -64315,6 +64315,270 @@
       "from_name": "Meckel憩室",
       "to_name": "diarrhea",
       "reason": "Meckel: 下痢/血便(PMC9436618 'bleeding per rectum 2.9%'成人)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "S190",
+      "from_name": "裂肛",
+      "to_name": "anal_pain",
+      "reason": "裂肛: 排便時肛門痛90.8%(PMC3048443, 876例review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "S26",
+      "from_name": "裂肛",
+      "to_name": "bloody_stool",
+      "reason": "裂肛: 鮮血71.4%(PMC3048443, 紙付着/便に線状)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "S72",
+      "from_name": "裂肛",
+      "to_name": "constipation",
+      "reason": "裂肛: 便秘が主因(硬便による裂傷, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "E91",
+      "from_name": "裂肛",
+      "to_name": "perianal_finding",
+      "reason": "裂肛: 視診でfissure確認(後方正中90%, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "E82",
+      "from_name": "裂肛",
+      "to_name": "rectal_exam",
+      "reason": "裂肛: 直腸診でfissure触知(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "E01",
+      "from_name": "裂肛",
+      "to_name": "temperature",
+      "reason": "裂肛: 発熱なし(局所病変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "T02",
+      "from_name": "裂肛",
+      "to_name": "onset_speed",
+      "reason": "裂肛: 急性(排便時に発症)〜慢性(再発性, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "T01",
+      "from_name": "裂肛",
+      "to_name": "symptom_duration",
+      "reason": "裂肛: 急性<6週、慢性>6週(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "L01",
+      "from_name": "裂肛",
+      "to_name": "WBC",
+      "reason": "裂肛: WBC正常(局所病変、感染なし)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D434",
+      "to": "L02",
+      "from_name": "裂肛",
+      "to_name": "CRP",
+      "reason": "裂肛: CRP正常(局所病変)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "S190",
+      "from_name": "痔瘻",
+      "to_name": "anal_pain",
+      "reason": "痔瘻: 肛門痛(持続性、膿瘍期は激烈, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "E91",
+      "from_name": "痔瘻",
+      "to_name": "perianal_finding",
+      "reason": "痔瘻: 肛門周囲に外瘻孔(排膿, Cleveland Clinic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "E01",
+      "from_name": "痔瘻",
+      "to_name": "temperature",
+      "reason": "痔瘻: 膿瘍合併時に発熱21%(StatPearls perianal abscess)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "S26",
+      "from_name": "痔瘻",
+      "to_name": "bloody_stool",
+      "reason": "痔瘻: 膿性/血性排膿25%(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "E82",
+      "from_name": "痔瘻",
+      "to_name": "rectal_exam",
+      "reason": "痔瘻: 直腸診で瘻管触知(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "T02",
+      "from_name": "痔瘻",
+      "to_name": "onset_speed",
+      "reason": "痔瘻: 膿瘍後の亜急性〜慢性経過(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "T01",
+      "from_name": "痔瘻",
+      "to_name": "symptom_duration",
+      "reason": "痔瘻: 週〜月単位の慢性経過(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "L01",
+      "from_name": "痔瘻",
+      "to_name": "WBC",
+      "reason": "痔瘻: 膿瘍合併時にWBC上昇、慢性期は正常(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "L02",
+      "from_name": "痔瘻",
+      "to_name": "CRP",
+      "reason": "痔瘻: 膿瘍合併時にCRP上昇(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D435",
+      "to": "S09",
+      "from_name": "痔瘻",
+      "to_name": "rigors",
+      "reason": "痔瘻: 膿瘍合併時に悪寒21%(StatPearls perianal abscess)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "S72",
+      "from_name": "便秘症(機能性)",
+      "to_name": "constipation",
+      "reason": "便秘症: 便秘は定義症状100%(Rome IV criteria)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "E44",
+      "from_name": "便秘症(機能性)",
+      "to_name": "abdominal_distention",
+      "reason": "便秘症: 腹部膨満50-60%(Rome IV supportive, PMC6326211)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "S12",
+      "from_name": "便秘症(機能性)",
+      "to_name": "abdominal_pain",
+      "reason": "便秘症: 腹痛(mild)30-40%(Rome IV 'mild pain may be present')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "S13",
+      "from_name": "便秘症(機能性)",
+      "to_name": "nausea",
+      "reason": "便秘症: 悪心15-20%(重度便秘時)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "T01",
+      "from_name": "便秘症(機能性)",
+      "to_name": "symptom_duration",
+      "reason": "便秘症: Rome IV 3ヶ月以上、慢性(Rome IV criteria)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "T02",
+      "from_name": "便秘症(機能性)",
+      "to_name": "onset_speed",
+      "reason": "便秘症: 慢性(Rome IV 6ヶ月以上の経過)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "E01",
+      "from_name": "便秘症(機能性)",
+      "to_name": "temperature",
+      "reason": "便秘症: 発熱なし(機能性、器質的疾患除外)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "L01",
+      "from_name": "便秘症(機能性)",
+      "to_name": "WBC",
+      "reason": "便秘症: WBC正常(機能性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "L02",
+      "from_name": "便秘症(機能性)",
+      "to_name": "CRP",
+      "reason": "便秘症: CRP正常(機能性)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D436",
+      "to": "S89",
+      "from_name": "便秘症(機能性)",
+      "to_name": "abdominal_pain_region",
+      "reason": "便秘症: 左下腹部/びまん性腹痛(S状結腸停滞)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "S190",
+      "from_name": "perianal_abscess",
+      "to_name": "anal_pain",
+      "reason": "肛門周囲膿瘍: 肛門痛が主症状(StatPearls 'anal pain, dull/sharp/aching/throbbing')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "E91",
+      "from_name": "perianal_abscess",
+      "to_name": "perianal_finding",
+      "reason": "肛門周囲膿瘍: 肛門周囲に膿瘍触知(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D39",
+      "to": "E82",
+      "from_name": "perianal_abscess",
+      "to_name": "rectal_exam",
+      "reason": "肛門周囲膿瘍: 直腸診で圧痛性腫瘤(StatPearls)",
       "onset_day_range": null
     }
   ],

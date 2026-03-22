@@ -11766,6 +11766,42 @@
       "note": "回腸遠位の先天性憩室。人口の2%。症候性は4-6%。成人では炎症/閉塞が主体、小児では出血。M:F≈1.7:1、平均25歳"
     },
     {
+      "id": "D434",
+      "name": "anal_fissure",
+      "name_ja": "裂肛",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "mild",
+      "note": "排便時の激痛(90%)+鮮血(71%)。硬便/便秘が原因。後方正中が90%。男女同等。20-40歳に多い"
+    },
+    {
+      "id": "D435",
+      "name": "anal_fistula",
+      "name_ja": "痔瘻",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "肛門周囲膿瘍の後遺。持続性排膿+肛門痛。M:F≈2:1。30-50歳に多い。瘻孔触知"
+    },
+    {
+      "id": "D436",
+      "name": "functional_constipation",
+      "name_ja": "便秘症(機能性)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "mild",
+      "note": "Rome IV: 排便困難/硬便/排便回数減少が3ヶ月以上。有病率10-15%。女性2-3倍。高齢で増加"
+    },
+    {
       "id": "S188",
       "name": "dysmenorrhea",
       "name_ja": "月経困難症(月経痛)",
@@ -11786,6 +11822,17 @@
         "present"
       ],
       "note": "性交時の疼痛。子宮内膜症(60-70%)/PID/外陰部疾患。深部性交痛は内膜症に特異的"
+    },
+    {
+      "id": "S190",
+      "name": "anal_pain",
+      "name_ja": "肛門痛",
+      "category": "symptom",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "排便時/排便後の肛門痛。裂肛(90%)、肛門周囲膿瘍、痔瘻に特徴的"
     }
   ]
 }
