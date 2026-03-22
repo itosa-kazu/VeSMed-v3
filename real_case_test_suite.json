@@ -29077,5 +29077,34 @@
       "R02": "female"
     },
     "notes": "Classic obesity-related HFpEF in elderly female. NT-proBNP normal (109). Diastolic dysfunction grade 1. Diagnosed by exercise echo"
+  },
+  {
+    "id": "R1107",
+    "source": "Case Reports in Nephrology 2021",
+    "pmcid": "PMC8436697",
+    "vignette": "52F, 134kg. 3日間の意識変容で入院。5ヶ月で30kg体重増加。JVD>5-8cmH2O, 両側肺底部呼吸音減弱, 下腿~下腹部2+圧痕性浮腫。BP 109/59, SpO2 98%, 無熱。proBNP 1170, Cr 3.6(1ヶ月前0.8), BUN 41, Hb 8.7, Na 131, K 6.7, Alb 2.5, FENa 0.1%. CXR: 肺水腫。Echo: EF 60-65%, 拡張機能障害。利尿薬抵抗性。",
+    "final_diagnosis": "HFpEF急性増悪(心腎症候群+利尿薬抵抗性)",
+    "expected_id": "D420",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E36": "present",
+      "E50": "bilateral",
+      "E37": "present",
+      "E05": "normal_over_96",
+      "E01": "under_37.5",
+      "E07": "decreased_absent",
+      "L51": "mildly_elevated",
+      "L04": "bilateral_infiltrate",
+      "L65": "severe_NYHA3_4",
+      "S07": "severe",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "HFpEF with cardiorenal syndrome (Cr 0.8->3.6). Diuretic resistance. 30kg weight gain in 5mo. JVD prominent. FENa 0.1% prerenal"
   }
 ]
