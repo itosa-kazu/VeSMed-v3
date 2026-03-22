@@ -11570,6 +11570,21 @@
       "note": "LVEF>=50%の心不全。高齢女性に多い。高血圧/肥満/AF/DM/CKDが危険因子。労作時呼吸困難が主訴。BNPはHFrEFより低め(1/3が正常範囲)。拡張機能障害が本態",
       "key_features": "高齢女性の労作時呼吸困難+両側下腿浮腫+BNP軽度上昇。EF保持(>=50%)。LVH+拡張機能障害。高血圧/AF/肥満の合併頻度高い",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D421",
+      "name": "ovarian_cancer",
+      "name_ja": "卵巣癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "category_sub": "gynecology",
+      "note": "腹部膨満+腹水+体重減少+骨盤痛。CA-125上昇。80%がstage III-IVで発見。Peak 60-65歳。非特異的症状のため早期発見困難",
+      "key_features": "閉経後女性の腹部膨満+腹水+早期満腹感+体重減少。CA-125上昇。骨盤内腫瘤。stage III-IVで80%発見",
+      "diagnostic_profile": {}
     }
   ]
 }

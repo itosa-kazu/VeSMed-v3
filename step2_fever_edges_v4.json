@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8000,
+  "total_edges": 8014,
   "edges": [
     {
       "from": "R01",
@@ -62747,11 +62747,123 @@
       "to_name": "LDH",
       "reason": "DILI: 肝細胞障害→LDH上昇40-60%(LiverTox)",
       "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S12",
+      "from_name": "卵巣癌",
+      "to_name": "abdominal_pain",
+      "reason": "卵巣癌: 腹痛/骨盤痛22-26%(UKCTOCS PMC7453382)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "E28",
+      "from_name": "卵巣癌",
+      "to_name": "ascites",
+      "reason": "卵巣癌: 腹水>90%(stage III-IV)(PMC ascites review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S17",
+      "from_name": "卵巣癌",
+      "to_name": "weight_loss",
+      "reason": "卵巣癌: 体重減少20-30%。進行期で顕著",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S07",
+      "from_name": "卵巣癌",
+      "to_name": "fatigue",
+      "reason": "卵巣癌: 倦怠感34%(UKCTOCS PMC7453382)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S46",
+      "from_name": "卵巣癌",
+      "to_name": "anorexia",
+      "reason": "卵巣癌: 食欲不振/早期満腹感30-40%(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S72",
+      "from_name": "卵巣癌",
+      "to_name": "constipation",
+      "reason": "卵巣癌: 便秘24%(UKCTOCS)。腫瘤圧迫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "S13",
+      "from_name": "卵巣癌",
+      "to_name": "nausea",
+      "reason": "卵巣癌: 嘔気(腹水/腫瘤圧迫)20-30%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "L04",
+      "from_name": "卵巣癌",
+      "to_name": "chest_xray",
+      "reason": "卵巣癌: 胸水(Meigs症候群)10-20%。進行期で増加",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "L70",
+      "from_name": "卵巣癌",
+      "to_name": "serum_albumin",
+      "reason": "卵巣癌: 低アルブミン(悪液質+腹水)40-60%進行期",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "E01",
+      "from_name": "卵巣癌",
+      "to_name": "temperature",
+      "reason": "卵巣癌: 通常無熱。腫瘍熱は稀(<10%)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "T01",
+      "from_name": "卵巣癌",
+      "to_name": "symptom_duration",
+      "reason": "卵巣癌: 慢性経過。数ヶ月~数年",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "T02",
+      "from_name": "卵巣癌",
+      "to_name": "onset_speed",
+      "reason": "卵巣癌: 緩徐発症。非特異的症状が徐々に進行",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "L93",
+      "from_name": "卵巣癌",
+      "to_name": "hemoglobin",
+      "reason": "卵巣癌: 慢性疾患に伴う貧血30-50%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "to": "E36",
+      "from_name": "卵巣癌",
+      "to_name": "lower_extremity_edema",
+      "reason": "卵巣癌: 下腿浮腫(低Alb/骨盤内腫瘤によるリンパ還流障害)20-30%",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8000
+    "edge_count": 8014
   },
-  "edge_count": 8000
+  "edge_count": 8014
 }
