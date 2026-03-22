@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8148,
+  "total_edges": 8163,
   "edges": [
     {
       "from": "R01",
@@ -63899,6 +63899,126 @@
       "from_name": "アニサキス症",
       "to_name": "peripheral_blood_smear",
       "reason": "アニサキス症: 急性期は好酸球低値、亜急性期(7-10日後)に好酸球増多(9-14%, PMC5020723/PMC2532642)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "T01",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "symptom_duration",
+      "reason": "FD: Rome IV基準で6ヶ月以上の症状持続が必須(Rome IV criteria)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "T02",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "onset_speed",
+      "reason": "FD: 緩徐発症、慢性経過が特徴(Rome IV, 6ヶ月以上)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S12",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_pain",
+      "reason": "FD: 心窩部痛はEPS型62%(27%+35%overlap)(PMC8132673)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S89",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_pain_region",
+      "reason": "FD: 心窩部に限局が定義(Rome IV: 'localized to epigastrium')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S61",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_pain_quality",
+      "reason": "FD EPS: 灼熱感/鈍痛が特徴(Rome IV 'epigastric burning')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S62",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_pain_provocation",
+      "reason": "FD PDS: 食後増悪が特徴(Rome IV 'meal-induced'、PMC8132673)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S65",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_pain_temporal",
+      "reason": "FD: 間欠的、relapsing-remitting course(StatPearls NBK554563)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S13",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "nausea",
+      "reason": "FD: 悪心は約40%(PDS型で多い、StatPearls/PMC7012988)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S176",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "nausea_provocation",
+      "reason": "FD: 悪心は食後に増悪(Rome IV 'postprandial nausea', PDS supportive feature)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "S131",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "early_satiety",
+      "reason": "FD PDS: 早期満腹感はPDS定義症状(38%PDS+35%overlap≈55%, PMC8132673)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "E44",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_distention",
+      "reason": "FD: 腹部膨満はPDS supportive feature、約50-60%(PMC7012988 highest subscore)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "E01",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "temperature",
+      "reason": "FD: 発熱なし(器質的疾患除外が前提、Rome IV)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "L01",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "WBC",
+      "reason": "FD: WBC正常(器質的疾患除外、AAFP 2020)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "L02",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "CRP",
+      "reason": "FD: CRP正常(器質的疾患除外、AAFP 2020)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D430",
+      "to": "E09",
+      "from_name": "機能性ディスペプシア(FD)",
+      "to_name": "abdominal_exam",
+      "reason": "FD: 身体所見は正常~軽度心窩部圧痛。腹膜刺激徴候なし",
       "onset_day_range": null
     }
   ],

@@ -11718,6 +11718,18 @@
       "note": "生魚摂取後1-12hで激烈心窩部痛+悪心嘔吐。内視鏡で虫体除去。年間2000-3000例(日本)"
     },
     {
+      "id": "D430",
+      "name": "functional_dyspepsia",
+      "name_ja": "機能性ディスペプシア(FD)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "mild",
+      "note": "Rome IV: 食後膨満感/早期満腹感/心窩部痛/心窩部灼熱感が6ヶ月以上。器質的疾患なし。有病率10-20%。女性1.5-2倍"
+    },
+    {
       "id": "S188",
       "name": "dysmenorrhea",
       "name_ja": "月経困難症(月経痛)",

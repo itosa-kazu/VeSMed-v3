@@ -14942,6 +14942,27 @@
         "no": 0.85,
         "yes": 0.15
       }
+    },
+    "D430": {
+      "parents": [],
+      "description": "機能性ディスペプシア。有病率10-20%だが発症確率としては低め",
+      "cpt": {
+        "no": 0.97,
+        "yes": 0.03
+      },
+      "R01": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.001,
+        "13_17": 0.005,
+        "18_39": 0.008,
+        "40_64": 0.006,
+        "65_plus": 0.003
+      },
+      "R02": {
+        "male": 0.4,
+        "female": 0.6
+      }
     }
   },
   "noisy_or_params": {
@@ -17933,6 +17954,14 @@
           "39.0_40.0": 0.015,
           "over_40.0": 0.004,
           "hypothermia_under_35": 0.001
+        },
+        "D430": {
+          "under_37.5": 0.95,
+          "37.5_38.0": 0.04,
+          "38.0_39.0": 0.008,
+          "39.0_40.0": 0.001,
+          "over_40.0": 0.0005,
+          "hypothermia_under_35": 0.0005
         }
       }
     },
@@ -21059,6 +21088,11 @@
           "soft_nontender": 0.15,
           "localized_tenderness": 0.8,
           "peritoneal_signs": 0.05
+        },
+        "D430": {
+          "soft_nontender": 0.55,
+          "localized_tenderness": 0.43,
+          "peritoneal_signs": 0.02
         }
       }
     },
@@ -25553,6 +25587,12 @@
           "normal_4000_10000": 0.49,
           "high_10000_20000": 0.44,
           "very_high_over_20000": 0.05
+        },
+        "D430": {
+          "low_under_4000": 0.03,
+          "normal_4000_10000": 0.92,
+          "high_10000_20000": 0.04,
+          "very_high_over_20000": 0.01
         }
       }
     },
@@ -26998,6 +27038,12 @@
           "mild_0.3_3": 0.45,
           "moderate_3_10": 0.15,
           "high_over_10": 0.05
+        },
+        "D430": {
+          "normal_under_0.3": 0.88,
+          "mild_0.3_3": 0.1,
+          "moderate_3_10": 0.015,
+          "high_over_10": 0.005
         }
       }
     },
@@ -36019,7 +36065,8 @@
           "absent": 0.75,
           "present": 0.25
         },
-        "D429": 0.78
+        "D429": 0.78,
+        "D430": 0.62
       }
     },
     "S13": {
@@ -36700,7 +36747,8 @@
         "D420": 0.25,
         "D423": 0.2,
         "D402": 0.25,
-        "D429": 0.67
+        "D429": 0.67,
+        "D430": 0.4
       }
     },
     "S14": {
@@ -42093,6 +42141,12 @@
           "3d_to_1w": 0.25,
           "1w_to_3w": 0.04,
           "over_3w": 0.01
+        },
+        "D430": {
+          "under_3d": 0.01,
+          "3d_to_1w": 0.02,
+          "1w_to_3w": 0.07,
+          "over_3w": 0.9
         }
       }
     },
@@ -44354,6 +44408,12 @@
           "acute": 0.65,
           "subacute": 0.08,
           "chronic": 0.02
+        },
+        "D430": {
+          "sudden": 0.02,
+          "acute": 0.05,
+          "subacute": 0.18,
+          "chronic": 0.75
         }
       }
     },
@@ -51808,6 +51868,14 @@
           "LLQ": 0.02,
           "suprapubic": 0.02,
           "diffuse": 0.13
+        },
+        "D430": {
+          "epigastric": 0.85,
+          "RUQ": 0.03,
+          "RLQ": 0.01,
+          "LLQ": 0.01,
+          "suprapubic": 0.01,
+          "diffuse": 0.09
         }
       }
     },
@@ -58326,6 +58394,125 @@
           "sharp_stabbing": 0.5,
           "dull_aching": 0.1,
           "tearing": 0.05
+        },
+        "D430": {
+          "colicky": 0.05,
+          "burning_gnawing": 0.55,
+          "sharp_stabbing": 0.05,
+          "dull_aching": 0.3,
+          "tearing": 0.05
+        }
+      }
+    },
+    "S62": {
+      "description": "腹痛の増悪/緩和因子",
+      "states": [
+        "none_identified",
+        "postprandial",
+        "relieved_by_food",
+        "worse_with_movement",
+        "relieved_by_leaning_forward"
+      ],
+      "leak": {
+        "none_identified": 0.4,
+        "postprandial": 0.2,
+        "relieved_by_food": 0.15,
+        "worse_with_movement": 0.15,
+        "relieved_by_leaning_forward": 0.1
+      },
+      "parent_effects": {
+        "D430": {
+          "none_identified": 0.1,
+          "postprandial": 0.7,
+          "relieved_by_food": 0.05,
+          "worse_with_movement": 0.05,
+          "relieved_by_leaning_forward": 0.1
+        }
+      }
+    },
+    "S65": {
+      "description": "腹痛の時間パターン",
+      "states": [
+        "constant",
+        "intermittent_colicky",
+        "progressive",
+        "migratory"
+      ],
+      "leak": {
+        "constant": 0.3,
+        "intermittent_colicky": 0.4,
+        "progressive": 0.2,
+        "migratory": 0.1
+      },
+      "parent_effects": {
+        "D430": {
+          "constant": 0.15,
+          "intermittent_colicky": 0.65,
+          "progressive": 0.1,
+          "migratory": 0.1
+        }
+      }
+    },
+    "S176": {
+      "description": "悪心の増悪因子",
+      "states": [
+        "none_identified",
+        "postprandial",
+        "positional",
+        "medication_related",
+        "morning"
+      ],
+      "leak": {
+        "none_identified": 0.4,
+        "postprandial": 0.2,
+        "positional": 0.1,
+        "medication_related": 0.2,
+        "morning": 0.1
+      },
+      "parent_effects": {
+        "D430": {
+          "none_identified": 0.15,
+          "postprandial": 0.7,
+          "positional": 0.05,
+          "medication_related": 0.05,
+          "morning": 0.05
+        }
+      }
+    },
+    "S131": {
+      "description": "早期満腹感",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.95,
+        "present": 0.05
+      },
+      "parent_effects": {
+        "D430": {
+          "absent": 0.45,
+          "present": 0.55
+        }
+      }
+    },
+    "E44": {
+      "description": "腹部膨満",
+      "states": [
+        "absent",
+        "mild",
+        "severe"
+      ],
+      "leak": {
+        "absent": 0.85,
+        "mild": 0.12,
+        "severe": 0.03
+      },
+      "parent_effects": {
+        "D430": {
+          "absent": 0.4,
+          "mild": 0.5,
+          "severe": 0.1
         }
       }
     }
