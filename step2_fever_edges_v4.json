@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7970,
+  "total_edges": 7988,
   "edges": [
     {
       "from": "R01",
@@ -62507,11 +62507,155 @@
       "to_name": "orthopnea",
       "reason": "急性AR: 急性左心不全→起座呼吸/PND(StatPearls NBK557428)",
       "onset_day_range": null
+    },
+    {
+      "from": "D373",
+      "to": "S04",
+      "from_name": "hypothyroidism",
+      "to_name": "dyspnea",
+      "reason": "甲状腺機能低下: 心膜液/胸水/心筋機能低下→呼吸困難30-50%(Harrison Ch.376, UpToDate)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D373",
+      "to": "E16",
+      "from_name": "hypothyroidism",
+      "to_name": "consciousness",
+      "reason": "甲状腺機能低下: 粘液水腫昏睡→意識障害。重症で5-10%(Harrison Ch.376)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D373",
+      "to": "L11",
+      "from_name": "hypothyroidism",
+      "to_name": "liver_enzymes",
+      "reason": "甲状腺機能低下: 軽度肝酵素上昇30-40%(PMC7589504)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D373",
+      "to": "L55",
+      "from_name": "hypothyroidism",
+      "to_name": "creatinine",
+      "reason": "甲状腺機能低下: GFR低下→Cr上昇25-55%(Thyroid 2017;27:897)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D419",
+      "to": "L01",
+      "from_name": "コクシジオイデス症",
+      "to_name": "WBC",
+      "reason": "コクシジオイデス症: WBC上昇30-40%。好中球優位(StatPearls, PMC coccidioidomycosis review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D419",
+      "to": "L02",
+      "from_name": "コクシジオイデス症",
+      "to_name": "CRP",
+      "reason": "コクシジオイデス症: 炎症反応→CRP上昇60-80%(PMC review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D419",
+      "to": "S17",
+      "from_name": "コクシジオイデス症",
+      "to_name": "weight_loss",
+      "reason": "コクシジオイデス症: 体重減少40-50%、特に慢性型(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D266",
+      "to": "L28",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "ESR",
+      "reason": "肺炎球菌性肺炎: ESR上昇80%+(細菌性肺炎, Harrison Ch.153)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D266",
+      "to": "S07",
+      "from_name": "pneumococcal_pneumonia",
+      "to_name": "fatigue",
+      "reason": "肺炎球菌性肺炎: 全身倦怠感50-70%(急性感染の全身症状)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D359",
+      "to": "L88",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "rheumatoid_factor",
+      "reason": "GCA: RF陽性10-15%。非特異的だが鑑別検査として提出される(Rheumatology 2016)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D359",
+      "to": "S28",
+      "from_name": "giant_cell_arteritis",
+      "to_name": "hip_pain",
+      "reason": "GCA: PMR合併40-60%→股関節痛。GCAの40%にPMR症状(Harrison Ch.363)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D188",
+      "to": "S06",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "myalgia",
+      "reason": "好酸球性肺炎: 全身筋肉痛20-30%。全身炎症症状(UpToDate, Eosinophilic lung diseases)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D374",
+      "to": "E36",
+      "from_name": "Graves_disease",
+      "to_name": "lower_extremity_edema",
+      "reason": "バセドウ病: 前脛骨粘液水腫(pretibial myxedema)3-5%。甲状腺性心不全で浮腫も(Harrison Ch.375)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D68",
+      "to": "T02",
+      "from_name": "acute_myeloid_leukemia",
+      "to_name": "onset_speed",
+      "reason": "AML: 急性～亜急性発症。数日～数週間で進行(Harrison Ch.100)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S28",
+      "from_name": "polymyalgia_rheumatica",
+      "to_name": "hip_pain",
+      "reason": "PMR: 股関節痛/鼠径部痛50-70%。近位関節のこわばりが主症状(Harrison Ch.363, UpToDate PMR)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "L88",
+      "from_name": "polymyalgia_rheumatica",
+      "to_name": "rheumatoid_factor",
+      "reason": "PMR: RF陰性が典型(95%陰性)。RA鑑別の重要検査(Harrison Ch.363)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S113",
+      "from_name": "polymyalgia_rheumatica",
+      "to_name": "shoulder_pain",
+      "reason": "PMR: 肩痛70-95%。最も特徴的な症状(Harrison Ch.363, UpToDate PMR)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D61",
+      "to": "S180",
+      "from_name": "polymyalgia_rheumatica",
+      "to_name": "myalgia_distribution",
+      "reason": "PMR: 近位筋群のこわばり/痛み。proximal_girdleが典型(Harrison Ch.363)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 7970
+    "edge_count": 7988
   },
-  "edge_count": 7970
+  "edge_count": 7988
 }

@@ -22657,6 +22657,11 @@
           "normal": 0.75,
           "confused": 0.22,
           "obtunded": 0.03
+        },
+        "D373": {
+          "normal": 0.9,
+          "confused": 0.08,
+          "obtunded": 0.02
         }
       }
     },
@@ -25120,6 +25125,13 @@
           "normal_4000_10000": 0.6,
           "high_10000_20000": 0.32,
           "very_high_over_20000": 0.05
+        },
+        "D419": {
+          "very_low_under_1000": 0.01,
+          "low_1000_4000": 0.05,
+          "normal_4000_10000": 0.55,
+          "high_10000_20000": 0.3,
+          "very_high_over_20000": 0.09
         }
       }
     },
@@ -26553,6 +26565,12 @@
           "mild_0.3_3": 0.15,
           "moderate_3_10": 0.42,
           "high_over_10": 0.35
+        },
+        "D419": {
+          "normal_under_0.5": 0.2,
+          "mild_0.5_5": 0.35,
+          "moderate_5_10": 0.25,
+          "high_over_10": 0.2
         }
       }
     },
@@ -28334,6 +28352,11 @@
           "normal": 0.5,
           "mild_elevated": 0.35,
           "very_high": 0.15
+        },
+        "D373": {
+          "normal": 0.65,
+          "mild_elevated": 0.3,
+          "very_high": 0.05
         }
       }
     },
@@ -30130,6 +30153,11 @@
           "normal": 0.45,
           "elevated": 0.45,
           "very_high_over_100": 0.1
+        },
+        "D266": {
+          "normal": 0.1,
+          "elevated": 0.7,
+          "very_high": 0.2
         }
       }
     },
@@ -32312,6 +32340,11 @@
           "absent": 0.02,
           "on_exertion": 0.78,
           "at_rest": 0.2
+        },
+        "D373": {
+          "absent": 0.55,
+          "on_exertion": 0.35,
+          "at_rest": 0.1
         }
       }
     },
@@ -33099,6 +33132,10 @@
         "D419": {
           "absent": 0.6,
           "present": 0.4
+        },
+        "D188": {
+          "absent": 0.7,
+          "present": 0.3
         }
       }
     },
@@ -34423,6 +34460,11 @@
           "absent": 0.41,
           "mild": 0.39,
           "severe": 0.2
+        },
+        "D266": {
+          "absent": 0.35,
+          "mild": 0.4,
+          "severe": 0.25
         }
       }
     },
@@ -36750,6 +36792,10 @@
         "D417": {
           "absent": 0.4,
           "present": 0.6
+        },
+        "D419": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -37543,6 +37589,14 @@
         "D416": {
           "absent": 0.03,
           "present": 0.97
+        },
+        "D359": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D61": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -43504,6 +43558,12 @@
           "acute": 0.15,
           "subacute": 0.5,
           "chronic": 0.3
+        },
+        "D68": {
+          "sudden": 0.05,
+          "acute": 0.4,
+          "subacute": 0.45,
+          "chronic": 0.1
         }
       }
     },
@@ -44880,6 +44940,10 @@
         "D420": {
           "absent": 0.35,
           "present": 0.65
+        },
+        "D374": {
+          "absent": 0.9,
+          "present": 0.1
         }
       }
     },
@@ -46836,6 +46900,11 @@
           "normal": 0.7,
           "mild_elevated": 0.25,
           "high_AKI": 0.05
+        },
+        "D373": {
+          "normal": 0.55,
+          "mild_elevated": 0.35,
+          "high_AKI": 0.1
         }
       }
     },
@@ -53220,7 +53289,16 @@
         "negative": 0.93,
         "positive": 0.07
       },
-      "parent_effects": {}
+      "parent_effects": {
+        "D359": {
+          "negative": 0.85,
+          "positive": 0.15
+        },
+        "D61": {
+          "negative": 0.95,
+          "positive": 0.05
+        }
+      }
     },
     "L89": {
       "leak": {
@@ -57029,6 +57107,32 @@
           "absent": 0.02,
           "few_under_11": 0.13,
           "many_11_or_more": 0.85
+        }
+      }
+    },
+    "S113": {
+      "leak": {
+        "absent": 0.9,
+        "present": 0.1
+      },
+      "parent_effects": {
+        "D61": {
+          "absent": 0.1,
+          "present": 0.9
+        }
+      }
+    },
+    "S180": {
+      "leak": {
+        "localized": 0.6,
+        "proximal_girdle": 0.1,
+        "generalized": 0.3
+      },
+      "parent_effects": {
+        "D61": {
+          "localized": 0.1,
+          "proximal_girdle": 0.8,
+          "generalized": 0.1
         }
       }
     }
