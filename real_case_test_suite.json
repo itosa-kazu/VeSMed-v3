@@ -30140,5 +30140,558 @@
       "R02": "male"
     },
     "notes": "Anaplastic+papillary thyroid. 7x5cm fixed mass. 2 months. Died 19 weeks post-op"
+  },
+  {
+    "id": "R1151",
+    "source": "Cancer Manag Res 2025",
+    "pmcid": "PMC12666399",
+    "vignette": "46F. 2ヶ月の性交後出血。自発性出血/間欠期出血/性交時痛なし。体重減少/倦怠感/食欲変化なし。BP 136/84, HR 84, RR 18, T 36.6C. 子宮頸部に3x3x3cm外方発育性腫瘤。両手診で子宮傍組織浸潤なし。Hb 14.2, Hct 40.5%, WBC 6920, Plt 335k. MRI: 子宮頸部3x3x3cm腫瘤+腟上部浸潤。CXR正常。",
+    "final_diagnosis": "子宮頸癌(低分化非角化型SCC, Stage IIA1)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "L62": "uterine_abnormal",
+      "L93": "normal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cervical SCC IIA1. Postcoital bleeding 2mo. Full vitals normal. Hb 14.2"
+  },
+  {
+    "id": "R1152",
+    "source": "Cureus 2025",
+    "pmcid": "PMC12505012",
+    "vignette": "39F. 12ヶ月の不正進行性増悪する不正性器出血+4日間の大量出血+めまい+倦怠感+運動耐容能低下。性交後出血。悪臭帯下。骨盤痛/体重減少なし。蒼白。子宮頸部4x4cm易出血性外方発育腫瘤+固定+子宮傍組織浸潤疑い。Hb 44g/L(4.4g/dL), WBC 11.1k, Plt 469k, MCV 61. CT: 子宮頸部不整+骨盤リンパ節腫脹。MRI: 7.4x6.5x6.0cm腫瘤+傍大動脈リンパ節転移。",
+    "final_diagnosis": "子宮頸癌(HPV関連腺癌, Stage IIIC2)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S128": "present",
+      "S07": "severe",
+      "L93": "very_low_under_7",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Cervical adenoca IIIC2. Severe anemia Hb 4.4. 12mo chronic bleeding. Foul discharge"
+  },
+  {
+    "id": "R1153",
+    "source": "Case Rep Oncol Med 2020",
+    "pmcid": "PMC7060405",
+    "vignette": "66F. 1ヶ月の呼吸困難+倦怠感+閉経後不正出血+1週間の胸部絞扼感。食欲低下+発汗+咳嗽+嘔気嘔吐+排尿時痛+血尿+蒼白+立ちくらみ。数ヶ月で9kgの体重減少。Hb 4.5g/dL, Hct 18.3%, WBC 39900, Cr 2.0mg/dL, K 5.6。経腟US: 子宮頸部腫瘤→膀胱に1.5cm穿通+左水腎症。",
+    "final_diagnosis": "子宮頸癌(中分化SCC, 膀胱浸潤)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S17": "present",
+      "S07": "severe",
+      "S04": "on_exertion",
+      "L93": "very_low_under_7",
+      "L55": "high_AKI",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Advanced cervical SCC. Hb 4.5, Cr 2.0, WBC 39.9k. Bladder invasion. Weight loss 9kg"
+  },
+  {
+    "id": "R1154",
+    "source": "Front Oncol 2025",
+    "pmcid": "PMC12484061",
+    "vignette": "55F 閉経後. 2ヶ月の性交後出血(鮮紅色少量)。帯下/骨盤痛/腰仙部不快/排尿異常/血尿/下肢浮腫/倦怠感/体重減少なし。子宮頸部結節状~2cm。左子宮傍組織短縮肥厚。SCC 4.60ng/mL(正常<1.5)。MRI: 子宮頸部4.1x3.4x5.0cm軟部腫瘤。PET/CT: SUVmax 12.6。",
+    "final_diagnosis": "子宮頸癌(中分化HPV関連SCC, Stage IIB)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cervical SCC IIB. Postcoital bleeding 2mo. SCC 4.6. PET SUVmax 12.6"
+  },
+  {
+    "id": "R1155",
+    "source": "BMC Womens Health 2021",
+    "pmcid": "PMC8272335",
+    "vignette": "66F 閉経後. 不正性器出血+右背部痛+乏尿。右肋骨脊椎角圧痛。Cr 1.2→2.2mg/dL。経腟US: 骨盤腫瘤~7cm。CT: 進行子宮頸癌+両側水尿管水腎症+右側大量胸水(>2600mL血性)。",
+    "final_diagnosis": "子宮頸癌(浸潤性SCC, Stage IVA膀胱浸潤)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S22": "present",
+      "L55": "high_AKI",
+      "L04": "pleural_effusion",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Cervical SCC IVA. Back pain. Cr 2.2. Hydronephrosis. Massive pleural effusion"
+  },
+  {
+    "id": "R1156",
+    "source": "Medicina 2022",
+    "pmcid": "PMC9785399",
+    "vignette": "45F. 骨盤不快感/痛み。月経異常なし。不正出血なし。8ヶ月前に腸骨大腿静脈血栓。右骨盤腫瘤7x7cm(有痛・境界不明瞭)。CRP 22.35, Hb 87g/L(8.7g/dL)。MRI: 子宮頸部内発育性腫瘤35x26mm+両側子宮傍組織浸潤+右卵巣腫瘤90x58mm+腹膜播種。CT: 縦隔・傍大動脈・骨盤リンパ節腫脹。",
+    "final_diagnosis": "子宮頸癌(乳頭状扁平移行上皮癌, Stage IVB)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E13": "present",
+      "L93": "low_7_10",
+      "L62": "uterine_abnormal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Atypical cervical cancer IVB. No vaginal bleeding. Pelvic pain. LAD. Hb 8.7"
+  },
+  {
+    "id": "R1157",
+    "source": "Arch Med Sci 2012",
+    "pmcid": "PMC3400924",
+    "vignette": "24F. 不正性器出血+頭痛+嘔気+6ヶ月で5.4kgの体重減少。子宮頸部1.8x1.2x1.0cm軟脆弱肥厚性病変。SCC 5.0ng/mL。US: 子宮43x31x46mm, 内膜10mm, Douglas窩液体11mm。",
+    "final_diagnosis": "子宮頸癌(明細胞腺癌, Stage IB)",
+    "expected_id": "D422",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S17": "present",
+      "S13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Cervical clear cell adenocarcinoma IB. Age 24. Vaginal bleeding. Weight loss. SCC 5.0"
+  },
+  {
+    "id": "R1158",
+    "source": "BMJ Case Rep 2022",
+    "pmcid": "PMC9379485",
+    "vignette": "40代F. 1ヶ月の倦怠感+嘔気嘔吐+疲労+食欲不振+14kgの体重減少。来院時発熱+低血圧。Hb 65g/L(6.5g/dL), Plt 21k, LDH 1981, Bil 82umol/L, ハプトグロビン0.3, フェリチン19917。CT: 肝/骨/脾転移+胸水。PET: 肝/脾/肺/骨格/リンパ節に広範FDG集積。MRI脳: 多発テント上転移。27年前右肩メラノーマ切除歴。",
+    "final_diagnosis": "転移性悪性黒色腫(Stage IV, HLH合併)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S17": "present",
+      "S07": "severe",
+      "S13": "present",
+      "E01": "38.0_39.0",
+      "L16": "elevated",
+      "L93": "very_low_under_7",
+      "L63": "multiple",
+      "L04": "pleural_effusion",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma IV + HLH. LDH 1981. Hb 6.5. Febrile. 14kg weight loss"
+  },
+  {
+    "id": "R1159",
+    "source": "Ann Transl Med 2016",
+    "pmcid": "PMC4828744",
+    "vignette": "60M. 倦怠感+鉄欠乏性小球性貧血+1回の下血+慢性下痢。体重減少/食欲不振なし。Hb 8.5→7.0g/dL, MCV 76→72, フェリチン6ng/mL。腹部US/上部内視鏡/大腸内視鏡: 正常。CT: 小腸壁肥厚+腸間膜リンパ節腫大。カプセル内視鏡: 空腸無茎性腫瘤。後にWBC 23k, CRP 211。",
+    "final_diagnosis": "小腸原発悪性黒色腫(空腸, 腸間膜LN転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S07": "mild",
+      "L93": "low_7_10",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Primary small bowel melanoma. Hb 7.0. Mesenteric LN mets. Iron deficiency anemia"
+  },
+  {
+    "id": "R1160",
+    "source": "Int J Surg Case Rep 2021",
+    "pmcid": "PMC8377529",
+    "vignette": "43F. 3週間の重度頭痛(拍動性、両側側頭前頭、2時間毎)+1週間の強直間代発作(2分、尿失禁)。GCS 15、局所神経学的欠損なし。左鼠径部8x6cm硬結節性腫脹。皮膚病変なし。好中球73.7%。CT脳: 右半球高吸収病変+血管原性浮腫+左後頭葉病変+正中偏位。CT腹骨盤: 肝孤立性転移+左大腿リンパ節壊死。",
+    "final_diagnosis": "転移性悪性黒色腫(原発不明, 脳/肝/LN転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "E13": "present",
+      "L63": "multiple",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma unknown primary. Brain + liver + inguinal LN. Headache + seizure"
+  },
+  {
+    "id": "R1161",
+    "source": "Ann R Coll Surg Engl 2016",
+    "pmcid": "PMC5234398",
+    "vignette": "71M. 6ヶ月の食欲不振+嘔吐+倦怠感+12.7kgの体重減少+めまい+低血圧。体幹・下肢にカフェオレ様色素沈着。LDH 162(正常)。Na 111mmol/L(重度低Na)。テトラコサクチド試験: コルチゾール無反応(副腎不全)。CT: 両側壊死性副腎腫瘤(左9.6cm/右7.4cm)+右肺13mm結節+縦隔傍大動脈リンパ節。",
+    "final_diagnosis": "悪性黒色腫(鼻部表在拡大型, Stage IV副腎/肺/LN転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S17": "present",
+      "S07": "mild",
+      "S46": "present",
+      "E13": "present",
+      "L16": "normal",
+      "L63": "multiple",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Melanoma Stage IV. Addisonian crisis. Na 111. Bilateral adrenal mets. LDH normal"
+  },
+  {
+    "id": "R1162",
+    "source": "Pan Afr Med J 2023",
+    "pmcid": "PMC10559153",
+    "vignette": "84M. 3ヶ月の背部神経根痛+便秘悪化+腹部不快感+4日間の歩行不能。股関節/膝屈曲筋力2/5。右第5趾足底に境界明瞭な不整色素沈着。リンパ節腫脹/脾腫なし。PSA<0.1(正常)。CT: T8椎体溶骨性置換+右腸骨硬化/溶骨病変。MRI: 広範頭蓋骨転移+T8大病変+硬膜外進展+脊髄圧迫。脳転移なし。",
+    "final_diagnosis": "末端黒子型悪性黒色腫(右第5趾足底, Stage IV多発骨転移)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S22": "present",
+      "L63": "bone",
+      "E13": "absent",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "ALM plantar Stage IV. Multiple bone mets. Cord compression. 3mo back pain"
+  },
+  {
+    "id": "R1163",
+    "source": "Intern Med 2021",
+    "pmcid": "PMC8627802",
+    "vignette": "80F. 数日間の食欲不振→倦怠感+嘔吐に進行。心窩部+左腰部痛。リンパ節腫脹なし。皮膚病変なし。WBC 6300, Hb 11.8, Plt 5.3万(重度減少)。LDH 5084, AST 123, ALP 388。フィブリノゲン105(DIC)。FDP>110, D-dimer>50。CRP 4.68。CT: 肝脾に多発小低吸収結節。",
+    "final_diagnosis": "悪性黒色腫(原発不明, 骨髄癌腫症+DIC)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S07": "severe",
+      "S46": "present",
+      "S13": "present",
+      "L16": "elevated",
+      "L93": "mild_low_10_12",
+      "E13": "absent",
+      "L63": "liver",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Melanoma MUP with BM carcinomatosis. LDH 5084. DIC. Plt 5.3k. Died day 9"
+  },
+  {
+    "id": "R1164",
+    "source": "BMJ Case Rep 2021",
+    "pmcid": "PMC8230919",
+    "vignette": "40代F. 頭痛+体重減少。LDH 391(上昇、後に5011まで上昇)。肝機能異常。CT: 肺腫瘤+脳/肝/副腎に広範転移。SKAP2-BRAF融合変異。通常のBRAF/NRAS/KIT変異陰性。",
+    "final_diagnosis": "転移性悪性黒色腫(原発不明, BRAF融合)",
+    "expected_id": "D423",
+    "in_scope": true,
+    "evidence": {
+      "S17": "present",
+      "L16": "elevated",
+      "L63": "multiple",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Metastatic melanoma MUP. LDH 391→5011. Lung/brain/liver/adrenal. Rare BRAF fusion"
+  },
+  {
+    "id": "R1165",
+    "source": "Acta Otorhinolaryngol Ital 2018",
+    "pmcid": "PMC5836709",
+    "vignette": "81F. 6ヶ月の左頸部腫瘤(入院数日前に急速増大)。液体嚥下困難+嗄声+進行性呼吸困難+喘鳴。CT: 左甲状腺葉から12x8x14cm不均一浸潤性腫瘤+左頸動脈被包+同側内頸V血栓+気道偏位(声門上最小6mm)+両側頸部リンパ節腫脹。肺転移なし。",
+    "final_diagnosis": "未分化甲状腺癌(入院1週間で死亡)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S55": "present",
+      "S25": "present",
+      "S04": "at_rest",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Anaplastic thyroid cancer. 12x8x14cm mass. Dysphagia+dysphonia+dyspnea. Died 1 week"
+  },
+  {
+    "id": "R1166",
+    "source": "Cancer Manag Res 2023",
+    "pmcid": "PMC10065318",
+    "vignette": "62M 乳頭癌5年歴(甲状腺全摘+放射性ヨウ素治療後). 2ヶ月で急速増大する頸部腫瘤(62x42mm→130x120mm)+固形物嚥下困難+頸部痛。発熱/呼吸困難なし。全身性頸部リンパ管炎。CT: 130x120mm切除不能病変→気管/食道/頸動脈/頸V/胸郭入口浸潤。BRAF V600E(+)。",
+    "final_diagnosis": "未分化甲状腺癌(乳頭癌から転化, Stage IVB)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "S25": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "ATC transformed from PTC. 130x120mm mass. Dysphagia. BRAF V600E. Stage IVB"
+  },
+  {
+    "id": "R1167",
+    "source": "Case Rep Oncol Med 2018",
+    "pmcid": "PMC5899845",
+    "vignette": "79F 甲状腺機能亢進症4年+(メチマゾール内服). 3ヶ月の急速甲状腺腫増大+呼吸困難+体重減少+胸痛+左頸部激痛(内頸V血栓)。仰臥位で胸部圧迫感。US: 左葉9.7cm+右葉5.1cm。TSH<0.003, fT4 1.56。CT: 9.8x13.2cm腫瘤+気管圧迫偏位+縦隔進展+両側肺転移(空洞形成)+右大腿骨転子間溶骨性病変+病的骨折。",
+    "final_diagnosis": "未分化甲状腺癌(pT4b N1b M1)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S04": "on_exertion",
+      "S17": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "ATC. 9.8x13.2cm mass. TSH<0.003. Pulmonary mets with cavitation. Bone met. Died 1mo"
+  },
+  {
+    "id": "R1168",
+    "source": "Respir Med Case Rep 2019",
+    "pmcid": "PMC6721105",
+    "vignette": "67M ワーファリン内服. 6週間の嗄声+咳嗽+時折盗汗+3日前から喀痰産生性咳嗽→2-3時間で~250mLの大量喀血。WBC 11.7k(好中球64%), Hb 14.6, Plt 258k, INR 2.6。CT胸部: 散在性5mm以下肺結節。CT頸部: 輪状甲状膜レベルに2.5x2.4cm気管前軟部腫瘤→声門下気管に突出。気管支鏡: 前方気管壁に1x1cm無茎性ポリープ。",
+    "final_diagnosis": "甲状腺乳頭癌(気管浸潤, Stage IVA T4a N0 M0)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "S55": "present",
+      "E23": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Papillary thyroid cancer with tracheal invasion. Massive hemoptysis 250mL. BRAF+"
+  },
+  {
+    "id": "R1169",
+    "source": "J Clin Med 2022",
+    "pmcid": "PMC8794687",
+    "vignette": "46M. 4ヶ月の頸部腫瘤(5cm前頸部、気管固定)+嗄声+呼吸困難+時折喀血。喉頭鏡: 気管狭窄+左声帯麻痺。サイログロブリン270ng/mL。CT: 左甲状腺から後上縦隔/傍椎体/左気管食道溝に進展→気管/食道高度狭窄+右気管食道リンパ節腫脹。後にPET-CT: 膵転移。",
+    "final_diagnosis": "甲状腺乳頭癌(高細胞型, Stage mpT4a N1b)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S55": "present",
+      "S04": "on_exertion",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Papillary tall cell variant. 5cm mass. Hoarseness. Vocal cord paralysis. Tg 270"
+  },
+  {
+    "id": "R1170",
+    "source": "Pediatr Rep 2021",
+    "pmcid": "PMC8286748",
+    "vignette": "7M. 2週間の両側頸部リンパ節腫脹+甲状腺腫。呼吸困難/嚥下困難/喘鳴/疼痛/嗄声/B症状なし。甲状腺機能正常。カルシトニン正常。US: 過血管性甲状腺腫12.5mL+両側頸部結節性腫瘤。PET-CT: 甲状腺+頸部リンパ節に高代謝。後にCT: 前上縦隔腫瘤8x3x6cm。",
+    "final_diagnosis": "甲状腺乳頭癌(濾胞亜型, pT3b N1b M1肺転移)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "6_12",
+      "R02": "male"
+    },
+    "notes": "Pediatric papillary thyroid cancer. 7yo boy. Bilateral cervical LAD. Lung mets"
+  },
+  {
+    "id": "R1171",
+    "source": "J Med Case Rep 2025",
+    "pmcid": "PMC12282676",
+    "vignette": "65F. 6ヶ月の水様性下痢(15-20回/日、大量、非血性)+間欠性腹部痙攣痛+嗄声+4ヶ月の左頸部無痛性増大腫瘤+20kgの体重減少。カルシトニン>2000pg/mL, CEA 3138ng/mL。便浸透圧差10mOsm/kg(分泌性)。CBC/甲状腺機能/腎肝/CRP正常。US: 頸部腫瘤+頸部リンパ節腫脹。CT: 左甲状腺腫瘤31x27x26mm+頸部/門脈周囲/後腹膜LN+肝腫瘤+椎体転移+副腎+縦隔+両側肺結節+少量腹水。",
+    "final_diagnosis": "甲状腺髄様癌(散発性, 多発転移)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "S55": "present",
+      "S17": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Medullary thyroid cancer. Secretory diarrhea 15-20x/day. Calcitonin >2000. 20kg loss"
+  },
+  {
+    "id": "R1172",
+    "source": "Am J Ophthalmol Case Rep 2021",
+    "pmcid": "PMC8488480",
+    "vignette": "38M. 3週間の右眼無痛性視力低下。診察で左頸部リンパ節腫脹+左甲状腺葉腫大発見。カルシトニン>585.2pmol/L, CEA 503ug/L。TSH/T4正常。CBC/肝腎正常。US: 左甲状腺42x21x26mm不均一分葉状病変+多発頸部リンパ節(最大38x19mm)。CT: 頸部LN中心壊死+両側肺結節(最大13x10mm)。MRI: 右脈絡膜病変+下垂体異常。CT腹部: 多発肝病変。",
+    "final_diagnosis": "甲状腺髄様癌(RET変異+, 脈絡膜/肺/肝/脳/骨/LN転移)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "E19": "present",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Medullary thyroid cancer. Calcitonin >585. CEA 503. Choroidal + widespread mets"
+  },
+  {
+    "id": "R1173",
+    "source": "World J Surg Oncol 2014",
+    "pmcid": "PMC4077262",
+    "vignette": "50F. 3ヶ月の頸部腫脹+痛み。嚥下困難/呼吸困難/嗄声/体重減少なし。生化学正常。TSH/fT3/T4正常。US: 両側多発低エコー結節(最大右葉13x10mm)。FNA: 硬結節で組織不十分。",
+    "final_diagnosis": "甲状腺濾胞癌(明細胞亜型, 被膜外進展)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E19": "present",
+      "E23": "present",
+      "S25": "absent",
+      "S55": "absent",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Follicular thyroid cancer clear cell variant. Neck swelling 3mo. Normal labs"
+  },
+  {
+    "id": "R1174",
+    "source": "Int J Surg Case Rep 2021",
+    "pmcid": "PMC7806368",
+    "vignette": "11F. 4ヶ月の左頸部無痛性緩徐増大腫瘤(50x40mm)。可動性、非圧痛、硬、皮膚癒着。慢性病容。甲状腺機能正常。US: 左頸部LN大葉状病変(TIRADS 5)。CT: 左甲状腺下極限局性腫瘤+石灰化+両側上肺葉結節。サイログロブリン>300ug/L。I-123 SPECT: 頸部LN+両側肺に集積。",
+    "final_diagnosis": "甲状腺乳頭癌(小児, LN+肺転移)",
+    "expected_id": "D424",
+    "in_scope": true,
+    "evidence": {
+      "E23": "present",
+      "E13": "present",
+      "E19": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "6_12",
+      "R02": "female"
+    },
+    "notes": "Pediatric papillary thyroid. 11yo girl. Tg>300. Lung mets. TIRADS 5"
   }
 ]
