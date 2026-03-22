@@ -30940,5 +30940,341 @@
       "R02": "female"
     },
     "notes": "C3GN/MPGN. 71F. Mild proteinuria 614mg. C3=46 C4=24. Cr 1.7. HTN"
+  },
+  {
+    "id": "R1185",
+    "source": "Am J Case Rep 2022",
+    "pmcid": "PMC9811334",
+    "vignette": "75F 橋本病. 多尿(6.3L/日)+多飲+頻尿+口渇。Na 158mEq/L, 血漿浸透圧321mOsm/kg, 尿浸透圧125mOsm/kg, 尿比重1.002, AVP 0.6pg/mL。BP 140/63, HR 69。3kg体重減少。MRI: 後葉高信号消失。70歳初診→75歳再発。",
+    "final_diagnosis": "特発性中枢性尿崩症(再発)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S11": "present",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E54": "mild",
+      "S17": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Idiopathic CDI 75F. Na 158. Urine osm 125. AVP 0.6. Hashimoto comorbid"
+  },
+  {
+    "id": "R1186",
+    "source": "AACE Clin Case Rep 2020",
+    "pmcid": "PMC8573270",
+    "vignette": "22M. 小児期から多尿(~15L/日)+多飲(~15L/日)+1時間毎の夜間頻尿。Na 147mmol/L, 血清浸透圧302mOsm/kg, 尿浸透圧78mOsm/kg, 尿比重1.001, AVP<0.8pg/mL, コペプチン<2.8pmol/L。口腔粘膜湿潤。MRI: 後葉高信号消失。AVP遺伝子変異(c.55G>A)。",
+    "final_diagnosis": "家族性中枢性尿崩症(AVP遺伝子変異)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S11": "present",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E54": "absent",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Familial CDI. AVP gene mutation. Urine 15L/day. Urine osm 78. Lifelong"
+  },
+  {
+    "id": "R1187",
+    "source": "BMJ Case Rep 2015",
+    "pmcid": "PMC4307084",
+    "vignette": "45F. 2週間の倦怠感+嘔気嘔吐→せん妄。グルココルチコイド開始後に多尿(4-6L/日)+極度口渇が顕在化。Na 137→158mEq/L, 血清浸透圧277→313mOsm/L, 尿浸透圧329→95mOsm/L, K 2.9, コルチゾール<0.8mg/dL。BP 112/70, HR 123, T 36.9C。",
+    "final_diagnosis": "中枢性尿崩症(神経サルコイドーシス+二次性副腎不全)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S07": "severe",
+      "S13": "present",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E54": "mild",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "CDI from neurosarcoidosis. Na 158. Urine osm 95. Cortisol <0.8. Delirium"
+  },
+  {
+    "id": "R1188",
+    "source": "BMC Endocr Disord 2022",
+    "pmcid": "PMC9117597",
+    "vignette": "54F イラン人. COVID-19感染6週後。多尿(13300mL/日)+強い口渇+頻脈(HR 110)。Na 144mEq/L, 血清浸透圧298mOsm/L, 尿浸透圧164mOsm/L, 尿比重1.005, ADH検出不能。デスモプレシン後: 尿浸透圧810, 尿比重1.025, 尿量2850mL。",
+    "final_diagnosis": "中枢性尿崩症(COVID-19後)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "L44": "normal",
+      "L91": "dilute",
+      "L92": "high",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Post-COVID CDI. Urine 13.3L/day. Urine osm 164. ADH undetectable. Na 144 (normal)"
+  },
+  {
+    "id": "R1189",
+    "source": "J Med Case Rep 2024",
+    "pmcid": "PMC10981802",
+    "vignette": "13M ネパール人. 4ヶ月の多尿(9mL/kg/時)+多飲+尿保持不能+5日間の両下肢脱力+歩行不安定。Na 181mEq/L(ピーク190), 血清浸透圧393.6mOsm/kg, 尿浸透圧222.7mOsm/kg, 尿比重1.010, K 2.7。T 36.7C, HR 94, RR 32, BP 100/60, GCS 12→8。低身長+思春期遅発。MRI: 第三脳室嚢胞+閉塞性水頭症。",
+    "final_diagnosis": "中枢性尿崩症(第三脳室嚢胞)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S11": "present",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E54": "severe",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "13_17",
+      "R02": "male"
+    },
+    "notes": "CDI from 3rd ventricular cyst. Na 181(peak 190). Pediatric. Obstructive hydrocephalus"
+  },
+  {
+    "id": "R1190",
+    "source": "BMJ Case Rep 2018",
+    "pmcid": "PMC5836632",
+    "vignette": "58F 神経線維腫症1型. 1ヶ月の多尿(飲水5-6L/日)+多飲+夜間頻尿3回+嘔気。Na 150mmol/L, 血清浸透圧302mOsm/kg, 尿浸透圧82mOsm/kg。デスモプレシン後: 尿浸透圧236。MRI: 下垂体腫大(リンパ球性下垂体炎疑い)。",
+    "final_diagnosis": "中枢性尿崩症(リンパ球性下垂体炎)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S11": "present",
+      "S13": "present",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "CDI from lymphocytic hypophysitis. Na 150. Urine osm 82. NF1 comorbid"
+  },
+  {
+    "id": "R1191",
+    "source": "JAFES 2022",
+    "pmcid": "PMC9242662",
+    "vignette": "24M フィリピン人. 7ヶ月の多尿(>5L/日)+多飲(2時間毎に冷水)+頭痛+全身脱力+3ヶ月で5kg体重減少+性欲低下+複視+歩行不安定。Na 155mEq/L, 尿浸透圧164mOsm。汎下垂体機能低下症。MRI: 松果体+トルコ鞍上+前頭葉の頭蓋内胚細胞腫瘍+水頭症。",
+    "final_diagnosis": "中枢性尿崩症(頭蓋内胚細胞腫瘍)",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S17": "present",
+      "S07": "mild",
+      "L44": "other",
+      "L91": "dilute",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "CDI from intracranial germ cell tumor. Na 155. 5kg weight loss. Panhypopituitarism"
+  },
+  {
+    "id": "R1192",
+    "source": "Intern Med 2018",
+    "pmcid": "PMC6064704",
+    "vignette": "51F 日本人 バセドウ病(メチマゾール1ヶ月中止後). 多飲+多尿(>3L/日)+全身倦怠+精神不穏+せん妄+発熱。Na 149→160mmol/L, 血清浸透圧315mOsm/kg, 尿浸透圧90mOsm/kg, AVP 1.1pg/mL。fT4>7.77, fT3 20.13, TSH<0.01。HR 148, T 38.3C, BMI 15.6。DDAVP後: 尿浸透圧307。",
+    "final_diagnosis": "中枢性尿崩症(リンパ球性漏斗下垂体後葉炎)+甲状腺クリーゼ",
+    "expected_id": "D425",
+    "in_scope": true,
+    "evidence": {
+      "S161": "present",
+      "S121": "present",
+      "S07": "severe",
+      "L44": "other",
+      "L91": "dilute",
+      "L92": "high",
+      "E54": "severe",
+      "E01": "38.0_39.0",
+      "T01": "1w_to_3w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "CDI + thyroid storm. Na 160. Urine osm 90. HR 148. T 38.3. BMI 15.6"
+  },
+  {
+    "id": "R1193",
+    "source": "Intern Med 2012",
+    "pmcid": "PMC3482072",
+    "vignette": "36F 日本人. 5年間の周期性発熱(>39C、10-14日毎)+蕁麻疹様皮疹+関節痛。顔面浮腫+体重増加(52→60kg)+変形赤血球血尿+高血圧。Cr 1.71, Alb 2.8, 尿蛋白5.6g/日。C3 19(著明低下), C4 10(低下), CH50<11。Hb 6.4, Plt 200k。PR3-ANCA 44.1。BP 176/100。CRP 1.43, IL-6 97.6。",
+    "final_diagnosis": "膜性増殖性糸球体腎炎I型(PR3-ANCA+自己炎症性周期性発熱)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "E36": "present",
+      "E38": "crisis_over_180",
+      "L75": "low_both",
+      "L70": "mildly_low",
+      "L55": "mild_elevated",
+      "L93": "very_low_under_7",
+      "E01": "39.0_40.0",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "MPGN Type I + ANCA. C3=19 C4=10. Hb 6.4. BP 176/100. Periodic fever. 5yr history"
+  },
+  {
+    "id": "R1194",
+    "source": "BMC Nephrol 2017",
+    "pmcid": "PMC5438808",
+    "vignette": "70M. 1ヶ月の進行性浮腫(全身性、月5kg増加)。紫斑/関節炎/神経障害なし。Cr 1.47, Alb 3.1。尿蛋白9.61g/gCr。C3 54(低下), C4 9(低下)。Hb 11.4。尿沈渣: 蛋白4+, 潜血3+, >100RBC/HPF(変形赤血球+赤血球円柱)。RF 439, HCV-RNA 6.4log。",
+    "final_diagnosis": "膜性増殖性糸球体腎炎I型(HCVクリオグロブリン血症)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "E36": "present",
+      "L75": "low_both",
+      "L70": "mildly_low",
+      "L55": "mild_elevated",
+      "S120": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "MPGN Type I from HCV cryoglobulinemia. C3=54 C4=9. RF 439. Proteinuria 9.6g. Anasarca"
+  },
+  {
+    "id": "R1195",
+    "source": "CEN Case Rep 2022",
+    "pmcid": "PMC9639310",
+    "vignette": "11F. 学校検尿で蛋白尿発見。上眼瞼浮腫+全身浮腫。Cr 0.54, Alb 1.3g/dL。尿蛋白22g/gCr。C3 67(低下), C4 14.1(正常)。尿沈渣: >100RBC/HPF。総コレステロール666。",
+    "final_diagnosis": "IgA優位型膜性増殖性糸球体腎炎",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "E36": "present",
+      "E68": "present",
+      "L75": "low_C3",
+      "L70": "very_low",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "6_12",
+      "R02": "female"
+    },
+    "notes": "IgA-dominant MPGN. Pediatric 11F. Alb 1.3. Proteinuria 22g. C3=67. Cholesterol 666"
+  },
+  {
+    "id": "R1196",
+    "source": "Case Rep Nephrol 2025",
+    "pmcid": "PMC12659674",
+    "vignette": "44M アルコール性肝硬変. 血尿+蛋白尿+AKI+発熱+悪寒+下腿浮腫(+2)+収縮期雑音。Cr 2.3→3.2。UPCR 4275mg/g。C3 29(著明低下), C4 6(著明低下)。Hb 7.6, Plt 117k。尿沈渣: 血2+, 蛋白2+, RBC 10-20/HPF。血培: Aggregatibacter(HACEK群)。",
+    "final_diagnosis": "免疫複合体型MPGN(HACEK心内膜炎続発)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "E36": "present",
+      "L75": "low_both",
+      "L55": "high_AKI",
+      "L93": "low_7_10",
+      "E01": "38.0_39.0",
+      "T01": "1w_to_3w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "IC-MPGN from HACEK endocarditis. C3=29 C4=6. Cr 3.2. Hb 7.6. Fever+murmur"
+  },
+  {
+    "id": "R1197",
+    "source": "Chinese J Nephrol 2025",
+    "pmcid": "PMC12855336",
+    "vignette": "29M. 両側下腿浮腫+下痢+乏尿。Cr 103umol/L(1.16mg/dL)。Alb 25g/L(2.5g/dL)。尿蛋白7643mg/日。C3 0.68g/L(低下), C4 0.16(正常)。Hb 67g/L(6.7g/dL)。Plt 43k。腎生検: MPGN。骨髄: CLL(IgG-κ単クローン蛋白)。",
+    "final_diagnosis": "膜性増殖性糸球体腎炎(CLL続発)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "absent",
+      "L78": "nephrotic_range",
+      "E36": "present",
+      "L75": "low_C3",
+      "L70": "very_low",
+      "L93": "very_low_under_7",
+      "S120": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "MPGN from CLL. 29M. Alb 2.5. Proteinuria 7.6g. C3=0.68. Hb 6.7. Plt 43k"
   }
 ]
