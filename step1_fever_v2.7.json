@@ -11730,6 +11730,18 @@
       "note": "Rome IV: 食後膨満感/早期満腹感/心窩部痛/心窩部灼熱感が6ヶ月以上。器質的疾患なし。有病率10-20%。女性1.5-2倍"
     },
     {
+      "id": "D431",
+      "name": "esophageal_candidiasis",
+      "name_ja": "食道カンジダ症",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "免疫不全(HIV/ステロイド/DM)で嚥下困難+嚥下痛+口腔カンジダ。内視鏡で白苔。CD4<200でリスク増。年齢中央値55.5歳"
+    },
+    {
       "id": "S188",
       "name": "dysmenorrhea",
       "name_ja": "月経困難症(月経痛)",

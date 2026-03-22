@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8163,
+  "total_edges": 8174,
   "edges": [
     {
       "from": "R01",
@@ -64019,6 +64019,94 @@
       "from_name": "機能性ディスペプシア(FD)",
       "to_name": "abdominal_exam",
       "reason": "FD: 身体所見は正常~軽度心窩部圧痛。腹膜刺激徴候なし",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S25",
+      "from_name": "食道カンジダ症",
+      "to_name": "dysphagia",
+      "reason": "食道カンジダ: 嚥下困難70-80%(StatPearls, most common symptom)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S78",
+      "from_name": "食道カンジダ症",
+      "to_name": "odynophagia",
+      "reason": "食道カンジダ: 嚥下痛50-70%(StatPearls 'hallmark of EC')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S101",
+      "from_name": "食道カンジダ症",
+      "to_name": "dysphagia_type",
+      "reason": "食道カンジダ: 粘膜病変で固形+液体嚥下困難(ScienceDirect)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S21",
+      "from_name": "食道カンジダ症",
+      "to_name": "chest_pain",
+      "reason": "食道カンジダ: 胸骨後部痛30-50%(StatPearls 'retrosternal pain')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "E87",
+      "from_name": "食道カンジダ症",
+      "to_name": "oral_candidiasis",
+      "reason": "食道カンジダ: 口腔カンジダ併存60-70%(PMC3218701, 1/3は口腔所見なし)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S13",
+      "from_name": "食道カンジダ症",
+      "to_name": "nausea",
+      "reason": "食道カンジダ: 悪心20-30%(PMC6854261 'other symptoms')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S17",
+      "from_name": "食道カンジダ症",
+      "to_name": "weight_loss",
+      "reason": "食道カンジダ: 体重減少20-30%(摂食困難による、PMC6854261)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "E01",
+      "from_name": "食道カンジダ症",
+      "to_name": "temperature",
+      "reason": "食道カンジダ: 通常無熱、重症例で微熱(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "T02",
+      "from_name": "食道カンジダ症",
+      "to_name": "onset_speed",
+      "reason": "食道カンジダ: 亜急性〜慢性発症(数日〜数週、StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "T01",
+      "from_name": "食道カンジダ症",
+      "to_name": "symptom_duration",
+      "reason": "食道カンジダ: 通常1-3週で受診(PMC6854261)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D431",
+      "to": "S46",
+      "from_name": "食道カンジダ症",
+      "to_name": "anorexia",
+      "reason": "食道カンジダ: 食欲不振(嚥下困難・嚥下痛による摂食回避、PMC6854261)",
       "onset_day_range": null
     }
   ],
