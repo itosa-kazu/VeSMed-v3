@@ -11542,6 +11542,19 @@
       ],
       "severity": "medium",
       "note": "線維筋痛症。広範な慢性疼痛+倦怠感+睡眠障害+認知障害。ACR2010基準(WPI+SS)。有病率2-4%。F:M=3:1。30-60歳ピーク。検査値正常(CRP/ESR/WBC)。PMR/SLE/RA/甲状腺機能低下との鑑別重要"
+    },
+    {
+      "id": "D419",
+      "name": "coccidioidomycosis",
+      "name_ja": "コクシジオイデス症",
+      "category": "disease",
+      "category_sub": "infectious",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "severity": "high",
+      "note": "コクシジオイデス症(Valley Fever)。Coccidioides immitis/posadasii。60%無症状、40%有症状(肺炎様)。倦怠感(80%)+咳(67%)+呼吸困難(60%)+発熱(55%)+胸痛(50%)。好酸球増多(25-30%)が特徴。CXR浸潤影75%。米国南西部/メキシコ/中南米流行地。潜伏期7-21日。自然治癒>90%。播種性1-3%"
     }
   ]
 }

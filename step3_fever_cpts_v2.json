@@ -4970,6 +4970,29 @@
         "female|40_64": 0.012,
         "female|65_plus": 0.006
       }
+    },
+    "D419": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "description": "コクシジオイデス症。M:F=1.9:1(PMC3702223)。40-65歳ピーク。流行地渡航歴必須。日本では極めて稀(輸入症例のみ)",
+      "cpt": {
+        "male|0_1": 0.0,
+        "male|1_5": 1e-05,
+        "male|6_12": 2e-05,
+        "male|13_17": 5e-05,
+        "male|18_39": 0.001,
+        "male|40_64": 0.002,
+        "male|65_plus": 0.001,
+        "female|0_1": 0.0,
+        "female|1_5": 1e-05,
+        "female|6_12": 2e-05,
+        "female|13_17": 3e-05,
+        "female|18_39": 0.0005,
+        "female|40_64": 0.001,
+        "female|65_plus": 0.0005
+      }
     }
   },
   "full_cpts": {
@@ -14592,6 +14615,27 @@
           "female": 0.75
         }
       }
+    },
+    "D419": {
+      "R01": {
+        "description": "コクシジオイデス症年齢。40-65歳ピーク(PMC3702223 CA peak 40-49, AZ peak 65+)",
+        "cpt": {
+          "0_1": 0.005,
+          "1_5": 0.01,
+          "6_12": 0.02,
+          "13_17": 0.03,
+          "18_39": 0.25,
+          "40_64": 0.42,
+          "65_plus": 0.265
+        }
+      },
+      "R02": {
+        "description": "コクシジオイデス症性別。M:F=1.9:1(PMC3702223, 63%男性)",
+        "cpt": {
+          "male": 0.63,
+          "female": 0.37
+        }
+      }
     }
   },
   "noisy_or_params": {
@@ -17495,6 +17539,14 @@
           "38.0_39.0": 0.01,
           "39.0_40.0": 0.003,
           "over_40.0": 0.002
+        },
+        "D419": {
+          "hypothermia_under_35": 0.01,
+          "under_37.5": 0.42,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.25,
+          "39.0_40.0": 0.1,
+          "over_40.0": 0.02
         }
       }
     },
@@ -27249,6 +27301,14 @@
           "BHL": 0.05,
           "pleural_effusion": 0.05,
           "pneumothorax": 0.05
+        },
+        "D419": {
+          "normal": 0.1,
+          "lobar_infiltrate": 0.55,
+          "bilateral_infiltrate": 0.1,
+          "BHL": 0.12,
+          "pleural_effusion": 0.1,
+          "pneumothorax": 0.03
         }
       }
     },
@@ -28760,6 +28820,14 @@
           "thrombocytopenia": 0.01,
           "eosinophilia": 0.85,
           "lymphocyte_predominant": 0.01
+        },
+        "D419": {
+          "normal": 0.5,
+          "left_shift": 0.1,
+          "atypical_lymphocytes": 0.03,
+          "thrombocytopenia": 0.02,
+          "eosinophilia": 0.27,
+          "lymphocyte_predominant": 0.08
         }
       }
     },
@@ -31271,6 +31339,10 @@
         "D409": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D419": {
+          "absent": 0.33,
+          "present": 0.67
         }
       }
     },
@@ -32153,6 +32225,11 @@
           "absent": 0.25,
           "on_exertion": 0.45,
           "at_rest": 0.3
+        },
+        "D419": {
+          "absent": 0.40,
+          "on_exertion": 0.45,
+          "at_rest": 0.15
         }
       }
     },
@@ -32936,6 +33013,10 @@
         "D418": {
           "absent": 0.02,
           "present": 0.98
+        },
+        "D419": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -34250,6 +34331,11 @@
           "absent": 0.15,
           "mild": 0.45,
           "severe": 0.4
+        },
+        "D419": {
+          "absent": 0.2,
+          "mild": 0.4,
+          "severe": 0.4
         }
       }
     },
@@ -34479,6 +34565,10 @@
         "D418": {
           "absent": 0.23,
           "present": 0.77
+        },
+        "D419": {
+          "absent": 0.63,
+          "present": 0.37
         }
       }
     },
@@ -36256,6 +36346,10 @@
         "D417": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D419": {
+          "absent": 0.55,
+          "present": 0.45
         }
       }
     },
@@ -41118,6 +41212,12 @@
           "3d_to_1w": 0.02,
           "1w_to_3w": 0.07,
           "over_3w": 0.9
+        },
+        "D419": {
+          "under_3d": 0.03,
+          "3d_to_1w": 0.1,
+          "1w_to_3w": 0.35,
+          "over_3w": 0.52
         }
       }
     },
@@ -43295,6 +43395,12 @@
           "acute": 0.03,
           "subacute": 0.2,
           "chronic": 0.75
+        },
+        "D419": {
+          "sudden": 0.03,
+          "acute": 0.15,
+          "subacute": 0.55,
+          "chronic": 0.27
         }
       }
     },
@@ -43842,6 +43948,10 @@
         "D352": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D419": {
+          "absent": 0.5,
+          "present": 0.5
         }
       }
     },
