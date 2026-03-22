@@ -29413,5 +29413,109 @@
       "R02": "male"
     },
     "notes": "Acute AR from S. sanguinis IE. BP 124/41 (wide pulse pressure). 3mo constitutional symptoms. Bounding pulses. Emergent AVR"
+  },
+  {
+    "id": "R1120",
+    "source": "Medicina 2021",
+    "pmcid": "PMC7896646",
+    "vignette": "45F 既往健康. URI後1週間の労作時呼吸困難+PND. BP 80-90mmHg(低血圧), 無熱. 大動脈弁領域に著明な拡張期雑音+肺ラ音+チアノーゼ+起座呼吸. 白血球増多, 貧血, CRP上昇, トロポニン正常, PCT正常, 顕微鏡的血尿. CXR/CT: びまん性肺水腫+両側胸水. Echo: 重度AR(二尖弁), EF 62.8%, LVEDD 5.2cm. TEE: 疣贅. 血培: S. sanguinis.",
+    "final_diagnosis": "急性AR(IE: S. sanguinis, 二尖弁, 無熱)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S49": "present",
+      "E03": "hypotension_under_90",
+      "E01": "under_37.5",
+      "E07": "crackles",
+      "L04": "bilateral_infiltrate",
+      "L51": "very_high",
+      "L65": "severe_NYHA3_4",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Acute AR from IE on bicuspid valve. Afebrile. Hypotensive. Bilateral pulmonary edema. S. sanguinis"
+  },
+  {
+    "id": "R1121",
+    "source": "BMJ Case Reports 2023",
+    "pmcid": "PMC10294716",
+    "vignette": "76F. 3日間の進行性呼吸困難+起座呼吸+PND+湿性咳嗽. HR頻脈, BP 92/41, RR 55(!), SpO2 85%(RA). JVD顎角まで+右上胸骨縁に短い大きな拡張期雑音+2+両側圧痕性浮腫. BNP 593, ESR 57. ABG: pH 7.00, PCO2 61(混合性アシドーシス). CXR: 両側肺門周囲・肺底部陰影. Echo: EF 25-30%, LV拡大, 中-重度AR. TEE: 上行大動脈4.6cm拡大, 重度AR, PHT 97ms.",
+    "final_diagnosis": "急性AR(巨細胞性大動脈炎+大動脈瘤)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S49": "present",
+      "E02": "over_120",
+      "E03": "normal_over_90",
+      "E04": "severe_over_30",
+      "E05": "severe_hypoxia_under_93",
+      "E07": "crackles",
+      "E01": "under_37.5",
+      "L04": "bilateral_infiltrate",
+      "L51": "mildly_elevated",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Acute AR from giant cell aortitis. EF 25-30% (decompensated). RR 55. Mixed acidosis. BNP 593"
+  },
+  {
+    "id": "R1122",
+    "source": "Oxford Medical Case Reports 2021",
+    "pmcid": "PMC7875584",
+    "vignette": "58M. ジム高強度運動後の突然の呼吸困難. HR 110, BP 130/60, RR 22, 無熱. 左胸骨縁にgrade II早期拡張期雑音. 両側下肺野に微細ラ音. 血液検査全て正常(WBC/肝腎/電解質/甲状腺/炎症マーカー). 血培3セット陰性. CXR: 肺うっ血. Echo: 重度AR(PHT 250ms), EF 65%, 軽度LVH, LV正常サイズ, 大動脈根正常. TEE: 二尖弁破裂確認, 疣贅なし.",
+    "final_diagnosis": "急性AR(二尖弁自然破裂, 重量挙げ誘発)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E02": "100_120",
+      "E03": "normal_over_90",
+      "E07": "crackles",
+      "E01": "under_37.5",
+      "L04": "bilateral_infiltrate",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Acute AR from spontaneous bicuspid valve rupture triggered by weightlifting. EF 65%. All labs normal"
+  },
+  {
+    "id": "R1123",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10290443",
+    "vignette": "44F. 3日間の発熱+関節痛(当初UTI疑い)→心原性ショックで挿管. HR 95, BP 104/59(ノルアドレナリン4mcg/min), T 36.4, SpO2 100%(人工呼吸器). WBC 22.61k, Hb 8.4, ESR 109, CRP 33.65. 尿培養: S. agalactiae(他培養陰性). Echo: EF 65%, 中等度AR→TEEで重度AR(前尖穿孔), 中-重度MR, PAP 60mmHg. 疣贅なし.",
+    "final_diagnosis": "急性AR(自然弁尖穿孔, 原因不明)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E02": "under_100",
+      "E03": "normal_over_90",
+      "E01": "under_37.5",
+      "L51": "very_high",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Spontaneous aortic leaflet perforation. Cardiogenic shock. WBC 22.6k ESR 109 CRP 33.65. No vegetations. Etiology undetermined"
   }
 ]

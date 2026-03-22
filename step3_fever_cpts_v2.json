@@ -19551,6 +19551,11 @@
           "normal_under_20": 0.45,
           "tachypnea_20_30": 0.45,
           "severe_over_30": 0.1
+        },
+        "D215": {
+          "normal_under_20": 0.1,
+          "tachypnea_20_30": 0.5,
+          "severe_over_30": 0.4
         }
       }
     },
@@ -19996,6 +20001,11 @@
           "normal_over_96": 0.5,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.1
+        },
+        "D215": {
+          "normal_over_96": 0.15,
+          "mild_hypoxia_93_96": 0.4,
+          "severe_hypoxia_under_93": 0.45
         }
       }
     },
@@ -44637,6 +44647,10 @@
         "D420": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D215": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
