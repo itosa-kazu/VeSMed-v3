@@ -31516,5 +31516,119 @@
       "R02": "female"
     },
     "notes": "Deep infiltrating endometriosis. Rectovaginal nodule. Endometrioma 4cm. 3yr symptoms"
+  },
+  {
+    "id": "R1208",
+    "source": "BMJ Case Rep 2017",
+    "pmcid": "PMC5535061",
+    "vignette": "38F. 3年間の慢性骨盤痛+月経困難症+深部性交痛+排便時痛+時折の直腸出血。MRI: 左付属器から不均一外方発育性腫瘤→S状結腸浸潤+直腸腟筋膜肥厚。大腸内視鏡: 肛門から12cmに3.5cm無茎性病変。",
+    "final_diagnosis": "深部浸潤型子宮内膜症(卵管+直腸浸潤)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S188": "present",
+      "S189": "present",
+      "S12": "present",
+      "S72": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "DIE with rectal involvement. 3yr chronic pain. Dysmenorrhea+dyspareunia+dyschezia"
+  },
+  {
+    "id": "R1209",
+    "source": "JSLS 2005",
+    "pmcid": "PMC3015558",
+    "vignette": "31F. 長年の骨盤痛+悪化する性交痛+1年間の月経時排尿時痛/頻尿。月経困難症。膀胱鏡: 膀胱頂部3cm紫色病変。TVUS: 膀胱壁腫瘤3.5x3.5cm。7ヶ月前に気胸(月経随伴性)。",
+    "final_diagnosis": "子宮内膜症(胸膜+膀胱+直腸腟中隔同時型)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S188": "present",
+      "S189": "present",
+      "S12": "present",
+      "S11": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Synchronous pleural+bladder+rectovaginal endometriosis. Catamenial pneumothorax"
+  },
+  {
+    "id": "R1210",
+    "source": "Medicine 2019",
+    "pmcid": "PMC6571359",
+    "vignette": "40F. 2年間の下腹部痛(VAS 3-9)+月経困難症+1年間の月経不順。TVUS: 子宮+左卵巣近傍に6.8x4.7cm充実性腫瘤(豊富血流)+最大1.2x0.6cm腹膜結節。CA-125 372.4(術後7.8に正常化)。MRI: 骨盤液+子宮底不整占拠性病変+多発結節。悪性腫瘍疑い。",
+    "final_diagnosis": "子宮内膜症(腫瘤形成型, 悪性腫瘍類似)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S188": "present",
+      "S12": "present",
+      "S127": "present",
+      "L62": "adnexal_mass",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Mass-forming endometriosis mimicking malignancy. CA-125 372. 6.8cm mass"
+  },
+  {
+    "id": "R1211",
+    "source": "Ghana Med J 2023",
+    "pmcid": "PMC10846656",
+    "vignette": "31F. 4ヶ月の進行性腹部膨満+悪化する月経困難症+腹痛+過多月経+早期満腹感+体重減少。CBC/電解質/肝機能/凝固正常。US: 大量腹水+子宮腫大(筋腫)+右付属器嚢胞性腫瘤5.0x4.8cm。CT: 大量腹水+右付属器5.0x4.3cm分葉状複合腫瘤。術中: 腹水8.6L(出血性)+腹壁/大網/腸管/骨盤臓器に内膜症結節散布。",
+    "final_diagnosis": "播種性子宮内膜症(大量出血性腹水8.6L)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S188": "present",
+      "S12": "present",
+      "S127": "present",
+      "S07": "mild",
+      "L62": "endometrioma",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Disseminated endometriosis. 8.6L hemorrhagic ascites. Right endometrioma 5cm"
+  },
+  {
+    "id": "R1212",
+    "source": "J Med Case Rep 2015",
+    "pmcid": "PMC4517405",
+    "vignette": "31F. 17歳から14年間の腹痛+慢性便秘(来院時10日間排便なし)。Hb 7.8mmol/L(正常), WBC 6.8k, CRP 8.0。CT: 盲腸9cm拡張+S状結腸閉塞。X線: 便秘所見。術中: S状結腸に4cm腫瘤(内膜症)。",
+    "final_diagnosis": "S状結腸子宮内膜症(腸閉塞)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S72": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Sigmoid endometriosis causing obstruction. 14yr abdominal pain. No classic gyn symptoms"
   }
 ]
