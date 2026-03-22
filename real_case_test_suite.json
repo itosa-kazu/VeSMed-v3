@@ -31630,5 +31630,46 @@
       "R02": "female"
     },
     "notes": "Sigmoid endometriosis causing obstruction. 14yr abdominal pain. No classic gyn symptoms"
+  },
+  {
+    "id": "R1213",
+    "source": "Case Rep Obstet Gynecol 2018",
+    "pmcid": "PMC6157201",
+    "vignette": "27F. 慢性骨盤痛。CA-125 8142U/mL(極度上昇、12日後2038)→悪性腫瘍疑い。CA19.9 430。TVUS: 右卵巣嚢胞6.5cm(低レベル内部エコー)。CT: 6.5cm高吸収右卵巣嚢胞+中等量遊離液体。DIE超音波: 腸管が子宮後壁に癒着。術中: 両側未破裂チョコレート嚢胞+片側漏出所見。",
+    "final_diagnosis": "子宮内膜症(Stage IV, 両側チョコレート嚢胞+漏出)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "L62": "endometrioma",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Stage IV endometriosis. CA-125 8142. Bilateral endometriomas with unilateral leakage"
+  },
+  {
+    "id": "R1214",
+    "source": "J Int Med Res 2025",
+    "pmcid": "PMC12075976",
+    "vignette": "34F. 月経に連動する頻尿+尿意切迫感(catamenial)。腹痛/側腹部痛なし。血尿なし。CA-125 26.2(境界域)。TVUS: 膀胱上方に28x22mm充実性結節。CT: 前膀胱壁腫瘤。膀胱鏡: 膀胱頂部圧迫。",
+    "final_diagnosis": "膀胱子宮内膜症(臍尿管部)",
+    "expected_id": "D428",
+    "in_scope": true,
+    "evidence": {
+      "S11": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Bladder endometriosis at urachus. Catamenial urinary frequency. CA-125 26.2"
   }
 ]
