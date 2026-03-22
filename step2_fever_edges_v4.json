@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8074,
+  "total_edges": 8086,
   "edges": [
     {
       "from": "R01",
@@ -63339,11 +63339,107 @@
       "to_name": "onset_speed",
       "reason": "MPGN: 緩徐発症が多い。急性腎炎型は急性もあり",
       "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S127",
+      "from_name": "子宮筋腫",
+      "to_name": "abnormal_vaginal_bleeding",
+      "reason": "子宮筋腫: 不正出血/過多月経50-60%(AAFP/StatPearls)。最多症状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S12",
+      "from_name": "子宮筋腫",
+      "to_name": "abdominal_pain",
+      "reason": "子宮筋腫: 骨盤痛/圧迫感20-30%(AAFP)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S22",
+      "from_name": "子宮筋腫",
+      "to_name": "back_pain",
+      "reason": "子宮筋腫: 腰痛15-20%(AAFP)。大型筋腫の圧迫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S11",
+      "from_name": "子宮筋腫",
+      "to_name": "urinary_frequency",
+      "reason": "子宮筋腫: 頻尿15-25%(StatPearls)。膀胱圧迫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S72",
+      "from_name": "子宮筋腫",
+      "to_name": "constipation",
+      "reason": "子宮筋腫: 便秘10-15%(StatPearls)。直腸圧迫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "L93",
+      "from_name": "子宮筋腫",
+      "to_name": "hemoglobin",
+      "reason": "子宮筋腫: 鉄欠乏性貧血30-40%(StatPearls)。出血性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "L62",
+      "from_name": "子宮筋腫",
+      "to_name": "pelvic_us",
+      "reason": "子宮筋腫: 骨盤US異常(子宮腫瘤)~95%。診断の主軸",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S07",
+      "from_name": "子宮筋腫",
+      "to_name": "fatigue",
+      "reason": "子宮筋腫: 倦怠感20-30%(貧血に伴う)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "E58",
+      "from_name": "子宮筋腫",
+      "to_name": "abdominal_mass",
+      "reason": "子宮筋腫: 腹部腫瘤触知15-25%(大型筋腫)(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "E01",
+      "from_name": "子宮筋腫",
+      "to_name": "temperature",
+      "reason": "子宮筋腫: 通常無熱。変性時に微熱あり",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "T01",
+      "from_name": "子宮筋腫",
+      "to_name": "symptom_duration",
+      "reason": "子宮筋腫: 慢性経過。年単位で増大",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "T02",
+      "from_name": "子宮筋腫",
+      "to_name": "onset_speed",
+      "reason": "子宮筋腫: 緩徐発症",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8074
+    "edge_count": 8086
   },
-  "edge_count": 8074
+  "edge_count": 8086
 }
