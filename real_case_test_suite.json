@@ -29517,5 +29517,272 @@
       "R02": "female"
     },
     "notes": "Spontaneous aortic leaflet perforation. Cardiogenic shock. WBC 22.6k ESR 109 CRP 33.65. No vegetations. Etiology undetermined"
+  },
+  {
+    "id": "R1124",
+    "source": "Medicine 2019",
+    "pmcid": "PMC6887600",
+    "vignette": "66F DM. 2日間の悪寒+発熱(39.5C)+咽頭痛+胸部圧迫感。頭痛。HR 125, RR 24, BP 110/68, T 39.1C. 外見良好、リンパ節腫脹なし。WBC 9900(好中球88%), ESR 79, CRP 42.9mg/dL. 9日目に急性気道閉塞→挿管。CT/MRI: 咽頭後壁腫脹+気道狭窄。血培: K. kristinae.",
+    "final_diagnosis": "咽後膿瘍(気道閉塞+敗血症)",
+    "expected_id": "D34",
+    "in_scope": true,
+    "evidence": {
+      "E01": "39.0_40.0",
+      "E02": "over_120",
+      "S02": "present",
+      "L01": "normal_4000_10000",
+      "L02": "high_over_10",
+      "L28": "elevated",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "RPA with sepsis and acute airway obstruction. K. kristinae. DM background"
+  },
+  {
+    "id": "R1125",
+    "source": "IDCases 2023",
+    "pmcid": "PMC10334455",
+    "vignette": "59M RA(deflazacort内服). 1週間の腰痛+頸部硬直+両上肢しびれ・脱力。嚥下困難+運動失調+測定障害。発熱+頻脈+多呼吸。WBC 23800, CRP 337mg/L. CT: 咽後膿瘍+C2-C6溶骨性病変. 血培: MSSA. 慢性脛骨骨髄炎(20年)が血行性感染源.",
+    "final_diagnosis": "咽後膿瘍(頸椎化膿性脊椎炎合併)",
+    "expected_id": "D34",
+    "in_scope": true,
+    "evidence": {
+      "E01": "38.0_39.0",
+      "E02": "100_120",
+      "S25": "present",
+      "L01": "very_high_over_20000",
+      "L02": "high_over_10",
+      "T01": "3d_to_1w",
+      "T02": "acute",
+      "S22": "present"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "RPA + spondylodiscitis. MSSA bacteremia. WBC 23.8k CRP 337. RA on immunosuppression"
+  },
+  {
+    "id": "R1126",
+    "source": "Cureus 2021",
+    "pmcid": "PMC8120784",
+    "vignette": "60F COVID-19退院3週後。咽頭痛+右頸部痛+声変わり+嚥下痛+流涎+急性呼吸困難。SpO2 95%. 右胸鎖乳突筋圧痛. 喉頭鏡: 咽喉頭腫脹+気道偏位+声門閉塞. WBC 24330→27790. CT: C2-C7咽後膿瘍+軟部気腫. 培養: S. anginosus, Klebsiella, Candida.",
+    "final_diagnosis": "咽後膿瘍(COVID-19後合併症)",
+    "expected_id": "D34",
+    "in_scope": true,
+    "evidence": {
+      "S02": "present",
+      "S25": "present",
+      "S04": "on_exertion",
+      "E31": "present",
+      "E23": "present",
+      "L01": "very_high_over_20000",
+      "E05": "mild_hypoxia_93_96",
+      "T01": "under_3d",
+      "T02": "acute",
+      "E01": "under_37.5"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Post-COVID RPA. S. anginosus + Klebsiella + Candida. WBC 24.3k. Airway compromise"
+  },
+  {
+    "id": "R1127",
+    "source": "Case Rep Otolaryngol 2011",
+    "pmcid": "PMC3201680",
+    "vignette": "46F DM. 発熱+嚥下痛+斜頸+開口障害。後咽頭壁膨隆。C4横突起圧痛。WBC上昇。頸椎X線: 椎前軟部組織肥厚。CT: 咽後膿瘍。培養: S. aureus. 魚骨誤飲が原因.",
+    "final_diagnosis": "咽後膿瘍(魚骨誤飲)",
+    "expected_id": "D34",
+    "in_scope": true,
+    "evidence": {
+      "E01": "38.0_39.0",
+      "S02": "present",
+      "S25": "present",
+      "S24": "present",
+      "E23": "present",
+      "L01": "high_10000_20000",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Classic RPA from fishbone ingestion. Trismus + torticollis + posterior pharyngeal bulge"
+  },
+  {
+    "id": "R1128",
+    "source": "Int J Surg Case Rep 2024",
+    "pmcid": "PMC11407954",
+    "vignette": "76F HTN/DM/IHD. 15日間の進行性頸部腫脹。頸部痛+喘鳴を伴う呼吸困難+窒息感+嚥下困難(固形+液体)+発語困難+発熱+1ヶ月の体重減少+口渇。右頸部に圧痛あり硬い腫脹、左に圧痛なし腫脹。後咽頭壁が前方膨隆→舌根に接触。CT: 3.2x6.1x9.2cm(90cm3)の巨大膿瘍. 培養: Strep+S. aureus.",
+    "final_diagnosis": "巨大咽後膿瘍",
+    "expected_id": "D34",
+    "in_scope": true,
+    "evidence": {
+      "E01": "38.0_39.0",
+      "S25": "present",
+      "S04": "on_exertion",
+      "S17": "present",
+      "E23": "present",
+      "S02": "present",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Massive RPA 90cm3. Strep + S. aureus. Died day 12 from PE"
+  },
+  {
+    "id": "R1129",
+    "source": "BMJ Case Reports 2021",
+    "pmcid": "PMC8042998",
+    "vignette": "38F 未経産. 3週間の無痛性腹部膨満。HR 106, T 37.8C. 著明な腹部膨満+固定された骨盤腫瘤(臍上まで)+腹水+臍部結節(Sister Mary Joseph nodule 2.5cm). CA-125 419, Alb 20g/L, Hb 111, WBC 14.7k, LDH 365, CRP 244. US: 18cm複合腫瘤+腹水. CT: 左卵巣腫瘤130mm+腹腔内リンパ節腫脹.",
+    "final_diagnosis": "卵巣粘液性腺癌(FIGO IIIA)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E28": "present",
+      "L70": "very_low",
+      "L93": "mild_low_10_12",
+      "E01": "37.5_38.0",
+      "E02": "100_120",
+      "S07": "mild",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Ovarian mucinous adenocarcinoma Stage IIIA. CA-125 419. Alb 20. Sister Mary Joseph nodule"
+  },
+  {
+    "id": "R1130",
+    "source": "World J Surg Oncol 2014",
+    "pmcid": "PMC4186346",
+    "vignette": "82F. 2ヶ月の腹部膨満+腹痛+食後膨満感+頻尿. ECOG PS 4(寝たきり). 両肺乾性+湿性ラ音, 移動性濁音(+)(大量腹水), 左胸水. CA-125 1030→治療後31.17. US: 大量腹水+左胸水. CT: 右肺感染+左胸水+肝脾低吸収域+後腹膜リンパ節腫大.",
+    "final_diagnosis": "上皮性卵巣癌(FIGO IIIC)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E28": "present",
+      "S46": "present",
+      "E07": "crackles",
+      "L04": "pleural_effusion",
+      "E36": "present",
+      "T01": "over_3w",
+      "T02": "chronic",
+      "E01": "under_37.5",
+      "S07": "severe"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "Epithelial ovarian cancer IIIC. CA-125 1030. Massive ascites. Bedridden (PS4)"
+  },
+  {
+    "id": "R1131",
+    "source": "Cureus 2025",
+    "pmcid": "PMC11755966",
+    "vignette": "53F. 3週間の進行性呼吸困難+透明痰の咳嗽。腹痛なし. T 36C, HR 84, BP 169/80, RR 34, SpO2 86%(RA). 右側大量胸水→完全無気肺. 腹水なし(微量Douglas窩液体). CA-125 76, 胸水LDH>900. CXR/CT: 右全胸腔白濁. PET: 胸膜+Douglas窩FDG集積.",
+    "final_diagnosis": "卵巣高悪性度漿液性癌(胸水主体型)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S01": "present",
+      "E04": "severe_over_30",
+      "E05": "severe_hypoxia_under_93",
+      "L04": "pleural_effusion",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "HGSC presenting as massive pleural effusion. No ascites. CA-125 only 76. SpO2 86%"
+  },
+  {
+    "id": "R1132",
+    "source": "Diagnostics 2023",
+    "pmcid": "PMC10544829",
+    "vignette": "45F. 2週間の鈍い腹痛+腹部膨満. 腹部膨隆+腫脹. CA-125 4686, CEA<0.5. CT: 腹膜播種+腹水+石灰化リンパ節+大網ケーキ状肥厚. 卵巣/子宮腫瘤なし. 腹水穿刺2700cc(淡黄色透明).",
+    "final_diagnosis": "卵巣/ミュラー管由来転移性癌(Stage IV)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E28": "present",
+      "S46": "present",
+      "L70": "mildly_low",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Stage IV Mullerian carcinoma. CA-125 4686. Peritoneal carcinomatosis. No visible ovarian mass"
+  },
+  {
+    "id": "R1133",
+    "source": "Case Rep Oncol 2014",
+    "pmcid": "PMC4025513",
+    "vignette": "41F. 右側腹痛+腹部膨満+高度倦怠感. BP 145/90. 腹水(+), 肝腫大, 右少量胸水. CA-125 623→705(上昇). Hb 136, WBC 5.8k, Plt 335k. CT: 骨盤嚢胞性固形腫瘤+腹膜播種+肝腫大+腹水+リンパ節腫脹. US: 右卵巣腫瘤100x90x60mm.",
+    "final_diagnosis": "卵巣癌(扁平上皮型, Stage III-IV)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E28": "present",
+      "S07": "severe",
+      "L04": "pleural_effusion",
+      "E13": "present",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Ovarian carcinoma Stage III-IV. CA-125 623. Ascites + hepatomegaly + pleural effusion"
+  },
+  {
+    "id": "R1134",
+    "source": "J Med Case Rep 2018",
+    "pmcid": "PMC5929396",
+    "vignette": "45F. 2週間の嘔気+嘔吐+腹痛+腹部膨満. 貧血. やせ型. 腹部軟圧痛+左下腹部に腫瘤触知. 骨盤内診: 左付属器腫瘤. US/CT: 27x17x12cm腫瘤(固形+嚢胞).",
+    "final_diagnosis": "卵巣小細胞神経内分泌癌(Stage IA)",
+    "expected_id": "D421",
+    "in_scope": true,
+    "evidence": {
+      "S13": "present",
+      "S66": "present",
+      "S12": "present",
+      "L93": "mild_low_10_12",
+      "E01": "under_37.5",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Ovarian small cell neuroendocrine carcinoma. 27cm mass. Stage IA"
   }
 ]

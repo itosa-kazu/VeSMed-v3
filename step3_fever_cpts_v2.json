@@ -23325,8 +23325,7 @@
         },
         "D421": {
           "absent": 0.3,
-          "small": 0.25,
-          "moderate_large": 0.45
+          "present": 0.7
         }
       }
     },
