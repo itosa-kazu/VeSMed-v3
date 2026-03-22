@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8014,
+  "total_edges": 8047,
   "edges": [
     {
       "from": "R01",
@@ -62859,11 +62859,275 @@
       "to_name": "lower_extremity_edema",
       "reason": "卵巣癌: 下腿浮腫(低Alb/骨盤内腫瘤によるリンパ還流障害)20-30%",
       "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S127",
+      "from_name": "子宮頸癌",
+      "to_name": "abnormal_vaginal_bleeding",
+      "reason": "子宮頸癌: 不正性器出血80%+。最多症状。性交後出血が特徴的(NCI/ACS)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S128",
+      "from_name": "子宮頸癌",
+      "to_name": "vaginal_discharge",
+      "reason": "子宮頸癌: 異常帯下(水様/血性/悪臭)50-60%(Mayo Clinic)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S12",
+      "from_name": "子宮頸癌",
+      "to_name": "abdominal_pain",
+      "reason": "子宮頸癌: 骨盤痛/腹痛30-40%。進行期で増加",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S22",
+      "from_name": "子宮頸癌",
+      "to_name": "back_pain",
+      "reason": "子宮頸癌: 腰痛20-30%。傍大動脈リンパ節転移/骨盤浸潤",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S17",
+      "from_name": "子宮頸癌",
+      "to_name": "weight_loss",
+      "reason": "子宮頸癌: 体重減少20-30%。進行期",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S07",
+      "from_name": "子宮頸癌",
+      "to_name": "fatigue",
+      "reason": "子宮頸癌: 倦怠感30-40%。貧血+悪液質",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "E36",
+      "from_name": "子宮頸癌",
+      "to_name": "lower_extremity_edema",
+      "reason": "子宮頸癌: 下腿浮腫10-20%。リンパ還流障害(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "L62",
+      "from_name": "子宮頸癌",
+      "to_name": "pelvic_us",
+      "reason": "子宮頸癌: 骨盤USで子宮異常/腫瘤描出",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "L93",
+      "from_name": "子宮頸癌",
+      "to_name": "hemoglobin",
+      "reason": "子宮頸癌: 出血性貧血40-60%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "E01",
+      "from_name": "子宮頸癌",
+      "to_name": "temperature",
+      "reason": "子宮頸癌: 通常無熱。感染合併時のみ",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "T01",
+      "from_name": "子宮頸癌",
+      "to_name": "symptom_duration",
+      "reason": "子宮頸癌: 慢性経過",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "T02",
+      "from_name": "子宮頸癌",
+      "to_name": "onset_speed",
+      "reason": "子宮頸癌: 緩徐発症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "L55",
+      "from_name": "子宮頸癌",
+      "to_name": "creatinine",
+      "reason": "子宮頸癌: 水腎症→腎後性AKI 10-20%(進行期、尿管浸潤)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "S17",
+      "from_name": "悪性黒色腫",
+      "to_name": "weight_loss",
+      "reason": "悪性黒色腫: 転移性で体重減少20-30%(NCCN melanoma guidelines)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "S07",
+      "from_name": "悪性黒色腫",
+      "to_name": "fatigue",
+      "reason": "悪性黒色腫: 倦怠感30%(進行期、免疫療法副作用含む)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "E13",
+      "from_name": "悪性黒色腫",
+      "to_name": "lymphadenopathy",
+      "reason": "悪性黒色腫: リンパ節転移40-60%(stage III)。所属リンパ節腫脹",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "E01",
+      "from_name": "悪性黒色腫",
+      "to_name": "temperature",
+      "reason": "悪性黒色腫: 転移性で腫瘍熱5-10%。通常無熱",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "L04",
+      "from_name": "悪性黒色腫",
+      "to_name": "chest_xray",
+      "reason": "悪性黒色腫: 肺転移20-30%。CXRで結節影",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "L16",
+      "from_name": "悪性黒色腫",
+      "to_name": "LDH",
+      "reason": "悪性黒色腫: LDH上昇は予後不良因子。転移性で50-60%上昇(AJCC staging)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "L93",
+      "from_name": "悪性黒色腫",
+      "to_name": "hemoglobin",
+      "reason": "悪性黒色腫: 慢性疾患の貧血20-30%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "L63",
+      "from_name": "悪性黒色腫",
+      "to_name": "metastasis_imaging",
+      "reason": "悪性黒色腫: 遠隔転移(肺/肝/脳/骨)。転移性でCT/PET異常",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "T01",
+      "from_name": "悪性黒色腫",
+      "to_name": "symptom_duration",
+      "reason": "悪性黒色腫: 慢性経過(皮膚病変の変化は数ヶ月~)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "T02",
+      "from_name": "悪性黒色腫",
+      "to_name": "onset_speed",
+      "reason": "悪性黒色腫: 緩徐発症",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "E19",
+      "from_name": "甲状腺癌",
+      "to_name": "goiter",
+      "reason": "甲状腺癌: 甲状腺腫/結節90%+。主訴の大部分(UpToDate thyroid nodule)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "S55",
+      "from_name": "甲状腺癌",
+      "to_name": "hoarseness",
+      "reason": "甲状腺癌: 嗄声10-20%。反回神経浸潤(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "S25",
+      "from_name": "甲状腺癌",
+      "to_name": "dysphagia",
+      "reason": "甲状腺癌: 嚥下困難10-15%。食道圧迫(進行期)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "E13",
+      "from_name": "甲状腺癌",
+      "to_name": "lymphadenopathy",
+      "reason": "甲状腺癌: 頸部リンパ節転移20-50%(乳頭癌)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "E23",
+      "from_name": "甲状腺癌",
+      "to_name": "neck_swelling",
+      "reason": "甲状腺癌: 頸部腫脹(甲状腺腫瘤)。主訴80%+",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "S04",
+      "from_name": "甲状腺癌",
+      "to_name": "dyspnea",
+      "reason": "甲状腺癌: 呼吸困難5-10%。気管圧迫(巨大腫瘤/未分化癌)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "E01",
+      "from_name": "甲状腺癌",
+      "to_name": "temperature",
+      "reason": "甲状腺癌: 通常無熱。未分化癌で腫瘍熱稀",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "S17",
+      "from_name": "甲状腺癌",
+      "to_name": "weight_loss",
+      "reason": "甲状腺癌: 体重減少10-15%。未分化癌/進行期",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "T01",
+      "from_name": "甲状腺癌",
+      "to_name": "symptom_duration",
+      "reason": "甲状腺癌: 慢性経過(結節は数ヶ月~数年)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D424",
+      "to": "T02",
+      "from_name": "甲状腺癌",
+      "to_name": "onset_speed",
+      "reason": "甲状腺癌: 緩徐(乳頭癌)/急速(未分化癌)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8014
+    "edge_count": 8047
   },
-  "edge_count": 8014
+  "edge_count": 8047
 }

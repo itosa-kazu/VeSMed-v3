@@ -11585,6 +11585,51 @@
       "note": "腹部膨満+腹水+体重減少+骨盤痛。CA-125上昇。80%がstage III-IVで発見。Peak 60-65歳。非特異的症状のため早期発見困難",
       "key_features": "閉経後女性の腹部膨満+腹水+早期満腹感+体重減少。CA-125上昇。骨盤内腫瘤。stage III-IVで80%発見",
       "diagnostic_profile": {}
+    },
+    {
+      "id": "D422",
+      "name": "cervical_cancer",
+      "name_ja": "子宮頸癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "category_sub": "gynecology",
+      "note": "HPV関連。不正性器出血(特に性交後出血)が最多症状。帯下(水様/血性/悪臭)。進行期で骨盤痛/腰痛/下腿浮腫。Peak 35-44歳+55-64歳の二峰性。早期は無症状",
+      "key_features": "不正性器出血(性交後出血)+異常帯下+骨盤痛。HPV関連。35-44歳ピーク。進行期で水腎症/下腿浮腫/腰痛",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D423",
+      "name": "malignant_melanoma",
+      "name_ja": "悪性黒色腫(メラノーマ)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "high",
+      "category_sub": "dermatology",
+      "note": "ABCDE法(非対称/境界不整/色不均一/直径>6mm/変化)。転移性で発熱/体重減少/リンパ節腫脹。日本では足底/爪下(ALM)が最多。Peak 50-70歳。M>F",
+      "key_features": "皮膚色素性病変(ABCDE基準)+リンパ節腫脹+体重減少。転移性で発熱/肝腫大/肺転移。日本ではALM(末端黒子型)が最多",
+      "diagnostic_profile": {}
+    },
+    {
+      "id": "D424",
+      "name": "thyroid_cancer",
+      "name_ja": "甲状腺癌",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "category_sub": "endocrine",
+      "note": "甲状腺結節→癌5-15%。乳頭癌80%/濾胞癌10%/髄様癌5%/未分化癌5%。F:M=3:1。Peak 30-50歳。嗄声(反回神経浸潤)/嚥下困難(進行期)。未分化癌は急速進行+予後不良",
+      "key_features": "甲状腺結節+嗄声+頸部リンパ節腫脹。乳頭癌が80%で予後良好。未分化癌は急速進行。女性3倍。30-50歳",
+      "diagnostic_profile": {}
     }
   ]
 }
