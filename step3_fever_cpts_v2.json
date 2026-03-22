@@ -14911,6 +14911,37 @@
         "male": 0.0,
         "female": 1.0
       }
+    },
+    "D429": {
+      "parents": [
+        "R67"
+      ],
+      "description": "アニサキス症。生魚摂取が必須条件",
+      "cpt": {
+        "no": 0.0001,
+        "yes": 0.008
+      },
+      "R01": {
+        "0_1": 0.0,
+        "1_5": 0.001,
+        "6_12": 0.002,
+        "13_17": 0.003,
+        "18_39": 0.004,
+        "40_64": 0.005,
+        "65_plus": 0.003
+      },
+      "R02": {
+        "male": 0.55,
+        "female": 0.45
+      }
+    },
+    "R67": {
+      "parents": [],
+      "description": "生魚摂取歴。一般人口における24h以内の生魚摂取率",
+      "cpt": {
+        "no": 0.85,
+        "yes": 0.15
+      }
     }
   },
   "noisy_or_params": {
@@ -17894,6 +17925,14 @@
           "38.0_39.0": 0.02,
           "39.0_40.0": 0.0,
           "over_40.0": 0.0
+        },
+        "D429": {
+          "under_37.5": 0.7,
+          "37.5_38.0": 0.2,
+          "38.0_39.0": 0.08,
+          "39.0_40.0": 0.015,
+          "over_40.0": 0.004,
+          "hypothermia_under_35": 0.001
         }
       }
     },
@@ -21015,6 +21054,11 @@
           "soft_nontender": 0.15,
           "localized_tenderness": 0.7,
           "peritoneal_signs": 0.15
+        },
+        "D429": {
+          "soft_nontender": 0.15,
+          "localized_tenderness": 0.8,
+          "peritoneal_signs": 0.05
         }
       }
     },
@@ -25503,6 +25547,12 @@
           "normal_4000_10000": 0.55,
           "high_10000_20000": 0.3,
           "very_high_over_20000": 0.09
+        },
+        "D429": {
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.49,
+          "high_10000_20000": 0.44,
+          "very_high_over_20000": 0.05
         }
       }
     },
@@ -26942,6 +26992,12 @@
           "mild_0.5_5": 0.35,
           "moderate_5_10": 0.25,
           "high_over_10": 0.2
+        },
+        "D429": {
+          "normal_under_0.3": 0.35,
+          "mild_0.3_3": 0.45,
+          "moderate_3_10": 0.15,
+          "high_over_10": 0.05
         }
       }
     },
@@ -29315,6 +29371,14 @@
           "thrombocytopenia": 0.02,
           "eosinophilia": 0.27,
           "lymphocyte_predominant": 0.08
+        },
+        "D429": {
+          "normal": 0.5,
+          "left_shift": 0.1,
+          "atypical_lymphocytes": 0.02,
+          "thrombocytopenia": 0.01,
+          "eosinophilia": 0.35,
+          "lymphocyte_predominant": 0.02
         }
       }
     },
@@ -35954,7 +36018,8 @@
         "D427": {
           "absent": 0.75,
           "present": 0.25
-        }
+        },
+        "D429": 0.78
       }
     },
     "S13": {
@@ -36634,7 +36699,8 @@
         },
         "D420": 0.25,
         "D423": 0.2,
-        "D402": 0.25
+        "D402": 0.25,
+        "D429": 0.67
       }
     },
     "S14": {
@@ -42021,6 +42087,12 @@
           "3d_to_1w": 0.03,
           "1w_to_3w": 0.1,
           "over_3w": 0.85
+        },
+        "D429": {
+          "under_3d": 0.7,
+          "3d_to_1w": 0.25,
+          "1w_to_3w": 0.04,
+          "over_3w": 0.01
         }
       }
     },
@@ -44274,6 +44346,12 @@
         "D75": {
           "sudden": 0.35,
           "acute": 0.55,
+          "subacute": 0.08,
+          "chronic": 0.02
+        },
+        "D429": {
+          "sudden": 0.25,
+          "acute": 0.65,
           "subacute": 0.08,
           "chronic": 0.02
         }
@@ -51722,6 +51800,14 @@
           "LLQ": 0.05,
           "suprapubic": 0.05,
           "diffuse": 0.7
+        },
+        "D429": {
+          "epigastric": 0.75,
+          "RUQ": 0.05,
+          "RLQ": 0.03,
+          "LLQ": 0.02,
+          "suprapubic": 0.02,
+          "diffuse": 0.13
         }
       }
     },
@@ -54683,6 +54769,10 @@
         "D421": {
           "absent": 0.75,
           "present": 0.25
+        },
+        "D429": {
+          "absent": 0.49,
+          "present": 0.51
         }
       }
     },
@@ -58190,6 +58280,52 @@
         "D422": {
           "absent": 0.85,
           "present": 0.15
+        }
+      }
+    },
+    "S64": {
+      "description": "腹痛の程度",
+      "states": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "leak": {
+        "mild": 0.3,
+        "moderate": 0.5,
+        "severe": 0.2
+      },
+      "parent_effects": {
+        "D429": {
+          "mild": 0.05,
+          "moderate": 0.2,
+          "severe": 0.75
+        }
+      }
+    },
+    "S61": {
+      "description": "腹痛の性状",
+      "states": [
+        "colicky",
+        "burning_gnawing",
+        "sharp_stabbing",
+        "dull_aching",
+        "tearing"
+      ],
+      "leak": {
+        "colicky": 0.2,
+        "burning_gnawing": 0.25,
+        "sharp_stabbing": 0.2,
+        "dull_aching": 0.3,
+        "tearing": 0.05
+      },
+      "parent_effects": {
+        "D429": {
+          "colicky": 0.15,
+          "burning_gnawing": 0.2,
+          "sharp_stabbing": 0.5,
+          "dull_aching": 0.1,
+          "tearing": 0.05
         }
       }
     }

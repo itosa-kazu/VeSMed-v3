@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8134,
+  "total_edges": 8148,
   "edges": [
     {
       "from": "R01",
@@ -63788,6 +63788,118 @@
       "to": "S04",
       "to_name": "dyspnea",
       "reason": "GCA_aortitis/respiratory_involvement→dyspnea_8-15%"
+    },
+    {
+      "from": "D429",
+      "to": "T01",
+      "from_name": "アニサキス症",
+      "to_name": "symptom_duration",
+      "reason": "アニサキス症: 通常1-3日で自然軽快(内視鏡除去後は数時間, CMR 1989)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "T02",
+      "from_name": "アニサキス症",
+      "to_name": "onset_speed",
+      "reason": "アニサキス症: 摂取後1-12時間で急性発症(PMC8223542)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S12",
+      "from_name": "アニサキス症",
+      "to_name": "abdominal_pain",
+      "reason": "アニサキス症: 腹痛78%(PMC10353124, n=212)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S89",
+      "from_name": "アニサキス症",
+      "to_name": "abdominal_pain_region",
+      "reason": "アニサキス症: 胃型90%で心窩部痛が主(JIHS疫学情報)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S13",
+      "from_name": "アニサキス症",
+      "to_name": "nausea",
+      "reason": "アニサキス症: 悪心67%(PubMed 16029756, 42例)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S66",
+      "from_name": "アニサキス症",
+      "to_name": "vomiting",
+      "reason": "アニサキス症: 嘔吐51%(PubMed 16029756, 42例)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "E09",
+      "from_name": "アニサキス症",
+      "to_name": "abdominal_exam",
+      "reason": "アニサキス症: 心窩部圧痛が主体(PMC3732148)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "L01",
+      "from_name": "アニサキス症",
+      "to_name": "WBC",
+      "reason": "アニサキス症: 有症状群の51%でWBC上昇(PMC10353124)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "L02",
+      "from_name": "アニサキス症",
+      "to_name": "CRP",
+      "reason": "アニサキス症: CRP軽度上昇(急性期は短時間で間に合わないことも, PMC10353124)",
+      "onset_day_range": null
+    },
+    {
+      "from": "R67",
+      "to": "D429",
+      "from_name": "生魚摂取歴（24h以内）",
+      "to_name": "anisakiasis",
+      "reason": "アニサキス症: 生魚摂取が必須条件(CDC, 全例に摂取歴あり)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S64",
+      "from_name": "アニサキス症",
+      "to_name": "abdominal_pain_severity",
+      "reason": "アニサキス症: 激烈な心窩部痛が特徴(severe, PMC5075291)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "S61",
+      "from_name": "アニサキス症",
+      "to_name": "abdominal_pain_quality",
+      "reason": "アニサキス症: 突き刺すような鋭い痛み(PMC3732148 'severe constant burning'も)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "E01",
+      "from_name": "アニサキス症",
+      "to_name": "temperature",
+      "reason": "アニサキス症: 通常無熱、低度の発熱が稀(~15%, CMR review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D429",
+      "to": "L14",
+      "from_name": "アニサキス症",
+      "to_name": "peripheral_blood_smear",
+      "reason": "アニサキス症: 急性期は好酸球低値、亜急性期(7-10日後)に好酸球増多(9-14%, PMC5020723/PMC2532642)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
