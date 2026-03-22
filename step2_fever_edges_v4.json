@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8188,
+  "total_edges": 8200,
   "edges": [
     {
       "from": "R01",
@@ -64219,6 +64219,102 @@
       "from_name": "自己免疫性胃炎(A型胃炎)",
       "to_name": "anorexia",
       "reason": "自己免疫性胃炎: 食欲不振~30%(PMC8414617)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S12",
+      "from_name": "Meckel憩室",
+      "to_name": "abdominal_pain",
+      "reason": "Meckel: 腹痛66%(RLQ31%+lower19%+acute abdomen16%, PMC9436618)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S89",
+      "from_name": "Meckel憩室",
+      "to_name": "abdominal_pain_region",
+      "reason": "Meckel: RLQ 31%が最多、次いでdiffuse/LLQ(PMC9436618)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "T02",
+      "from_name": "Meckel憩室",
+      "to_name": "onset_speed",
+      "reason": "Meckel: 急性発症が典型(StatPearls 'emergency presentation')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "T01",
+      "from_name": "Meckel憩室",
+      "to_name": "symptom_duration",
+      "reason": "Meckel: 急性で数日以内に受診(PMC9436618)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S13",
+      "from_name": "Meckel憩室",
+      "to_name": "nausea",
+      "reason": "Meckel: 悪心~50%(特に閉塞例, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S66",
+      "from_name": "Meckel憩室",
+      "to_name": "vomiting",
+      "reason": "Meckel: 嘔吐~40%(閉塞例, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "E01",
+      "from_name": "Meckel憩室",
+      "to_name": "temperature",
+      "reason": "Meckel: 発熱30-40%(炎症/穿孔例, StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "E09",
+      "from_name": "Meckel憩室",
+      "to_name": "abdominal_exam",
+      "reason": "Meckel: RLQ圧痛(虫垂炎mimicry)~50%、腹膜刺激徴候15-19%(穿孔, PMC9436618)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "L01",
+      "from_name": "Meckel憩室",
+      "to_name": "WBC",
+      "reason": "Meckel: WBC上昇50-60%(炎症例)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "L02",
+      "from_name": "Meckel憩室",
+      "to_name": "CRP",
+      "reason": "Meckel: CRP軽度〜中等度上昇(炎症例)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S86",
+      "from_name": "Meckel憩室",
+      "to_name": "diarrhea_quality",
+      "reason": "Meckel: 血便(暗赤色)3-12%(成人, StatPearls/PMC9436618)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D433",
+      "to": "S14",
+      "from_name": "Meckel憩室",
+      "to_name": "diarrhea",
+      "reason": "Meckel: 下痢/血便(PMC9436618 'bleeding per rectum 2.9%'成人)",
       "onset_day_range": null
     }
   ],

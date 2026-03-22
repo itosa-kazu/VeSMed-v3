@@ -11754,6 +11754,18 @@
       "note": "壁細胞自己免疫破壊→胃酸低下→B12/鉄吸収障害。悪性貧血の原因。F:M≥2:1、中央値67歳。甲状腺疾患36-44%併存。有病率0.5-2%"
     },
     {
+      "id": "D433",
+      "name": "meckel_diverticulum",
+      "name_ja": "Meckel憩室",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "serious",
+      "note": "回腸遠位の先天性憩室。人口の2%。症候性は4-6%。成人では炎症/閉塞が主体、小児では出血。M:F≈1.7:1、平均25歳"
+    },
+    {
       "id": "S188",
       "name": "dysmenorrhea",
       "name_ja": "月経困難症(月経痛)",
