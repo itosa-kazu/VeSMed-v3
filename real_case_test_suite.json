@@ -31276,5 +31276,124 @@
       "R02": "male"
     },
     "notes": "MPGN from CLL. 29M. Alb 2.5. Proteinuria 7.6g. C3=0.68. Hb 6.7. Plt 43k"
+  },
+  {
+    "id": "R1198",
+    "source": "J Med Case Rep 2021",
+    "pmcid": "PMC8439022",
+    "vignette": "42F. 初潮から30年以上の過多月経(1日パッド7枚以上+鮮血)。2週間の倦怠感+めまい→転倒で搬送。著明蒼白+匙状爪。Hb 1.4g/dL, Hct 5.8%, MCV<50, フェリチン4, Fe飽和度2%。CT: 3.5cm粘膜下子宮内腔突出型筋腫。",
+    "final_diagnosis": "子宮筋腫(粘膜下型, 重度鉄欠乏性貧血Hb 1.4)",
+    "expected_id": "D427",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "L93": "very_low_under_7",
+      "S07": "severe",
+      "L62": "fibroid",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Submucosal fibroid 3.5cm. Hb 1.4. 30yr menorrhagia. Koilonychia"
+  },
+  {
+    "id": "R1199",
+    "source": "Int J Surg Case Rep 2026",
+    "pmcid": "PMC12981838",
+    "vignette": "44F 経産6. 1ヶ月の急性尿閉+下腹部不快感。過多月経なし。腹部軟非圧痛、腟口閉塞する固形腫瘤。BP 120/80, HR 86, T 37C, SpO2 98%。Hb 7.1, Hct 25.1%, Cr 0.7。US: 子宮後壁12x9x13cm不均一病変+石灰化+血管。CT: 9x12x13cm壊死巣含む軟部腫瘤。",
+    "final_diagnosis": "子宮筋腫(13cm, 尿閉型)",
+    "expected_id": "D427",
+    "in_scope": true,
+    "evidence": {
+      "S11": "present",
+      "S12": "present",
+      "L93": "low_7_10",
+      "L62": "fibroid",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Fibroid 13cm. Urinary retention. Hb 7.1. No menorrhagia. Vaginal obstruction"
+  },
+  {
+    "id": "R1200",
+    "source": "Cureus 2023",
+    "pmcid": "PMC9898999",
+    "vignette": "47F 経腟分娩2回. 2年間の慢性骨盤痛+軽度頻尿+排尿時痛。月経異常なし。臍高さまでの骨盤腫瘤触知。子宮頸部腫瘤で変形。Hb 13.1(正常), Cr 1.9(上昇), BUN 83。US: 骨盤腔占拠する固形エコー原性腫瘤。IVP: 両側水腎水尿管症+尿管偏位。",
+    "final_diagnosis": "子宮頸部筋腫(14cm, 両側水腎症+腎機能障害)",
+    "expected_id": "D427",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S11": "present",
+      "E58": "present",
+      "L62": "fibroid",
+      "L55": "mild_elevated",
+      "L93": "normal",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cervical fibroid 14cm. Bilateral hydronephrosis. Cr 1.9. No menorrhagia. 2yr pain"
+  },
+  {
+    "id": "R1201",
+    "source": "Clin Med Insights Case Rep 2024",
+    "pmcid": "PMC11403671",
+    "vignette": "35F 未経産. 14年間の進行性腹部膨隆+労作時呼吸困難+時折のびまん性腹痛+早期満腹感。月経変化なし(28日周期4-5日中等量)。体重減少/帯下なし。腹部腫瘤(子宮底長55cm)。CBC/腎肝正常。CA125 48.7。US: 子宮著明増大330x290x267mm+多発筋腫結節33-138mm。MRI: 多発筋腫→腎/胃/膀胱圧排。摘出重量12.9kg。",
+    "final_diagnosis": "巨大子宮筋腫(12.9kg, 多発性)",
+    "expected_id": "D427",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S04": "on_exertion",
+      "E58": "present",
+      "L62": "fibroid",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    },
+    "notes": "Giant fibroid 12.9kg. 14yr growth. Fundal height 55cm. No menstrual change"
+  },
+  {
+    "id": "R1202",
+    "source": "Case Rep Womens Health 2016",
+    "pmcid": "PMC5863035",
+    "vignette": "52F. 2ヶ月の過多月経悪化(1日パッド9枚)+大腹部腫瘤(妊娠30週大)+脱力感+倦怠感+腹部膨満+痛み+活動性腟出血。6cm臍上まで緊満・可動制限腫瘤触知。Hb 4.6g/dL。CA-125 173。US: 大嚢胞性骨盤腫瘤。CT: 20.3cm壁内嚢胞性病変。MRI: 19.6cm嚢胞変性筋腫→IVC/腸骨V圧迫。摘出子宮1478g。",
+    "final_diagnosis": "子宮筋腫(嚢胞変性型20cm, 重度貧血)",
+    "expected_id": "D427",
+    "in_scope": true,
+    "evidence": {
+      "S127": "present",
+      "S12": "present",
+      "S07": "severe",
+      "E58": "present",
+      "L93": "very_low_under_7",
+      "L62": "fibroid",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Cystic fibroid 20cm. Hb 4.6. Menorrhagia 9 pads/day. CA-125 173. 1478g uterus"
   }
 ]
