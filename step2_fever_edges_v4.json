@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8059,
+  "total_edges": 8074,
   "edges": [
     {
       "from": "R01",
@@ -63219,11 +63219,131 @@
       "to_name": "onset_speed",
       "reason": "中枢性尿崩症: 術後/外傷後は急性、特発性は亜急性~慢性",
       "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "S33",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "hematuria",
+      "reason": "MPGN: 血尿94%(PMC10139719)。顕微鏡的~肉眼的",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "L78",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "urine_protein",
+      "reason": "MPGN: 蛋白尿~100%(平均5.2g/日)。ネフローゼ範囲33-70%(PMC10139719/PMC2887509)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "E36",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "lower_extremity_edema",
+      "reason": "MPGN: 浮腫89%(PMC10139719)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "E50",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "edema_laterality",
+      "reason": "MPGN: 両側性浮腫(ネフローゼ/腎炎型)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "E68",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "periorbital_edema",
+      "reason": "MPGN: 眼瞼浮腫40-60%(ネフローゼ型で顕著)(Medscape)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "E38",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "systolic_BP_high",
+      "reason": "MPGN: 高血圧85%(PMC10139719)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "L75",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "complement",
+      "reason": "MPGN: 低C3 49%+低C4 47%(PMC10139719)。補体低下が鑑別の鍵",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "L70",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "serum_albumin",
+      "reason": "MPGN: 低アルブミン(平均2.8g/dL)(PMC10139719)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "L55",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "creatinine",
+      "reason": "MPGN: 腎機能障害>50%(平均Cr 1.5, eGFR 66.6)(PMC10139719)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "L93",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "hemoglobin",
+      "reason": "MPGN: 貧血85%(PMC10139719)。腎性貧血",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "S07",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "fatigue",
+      "reason": "MPGN: 倦怠感30-50%(腎不全/貧血に伴う)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "S120",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "weight_gain",
+      "reason": "MPGN: 体重増加60-70%(浮腫/体液貯留)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "E01",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "temperature",
+      "reason": "MPGN: 通常無熱。感染が二次性原因の場合あり",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "T01",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "symptom_duration",
+      "reason": "MPGN: 亜急性~慢性経過。急性腎炎型は急性発症もあり",
+      "onset_day_range": null
+    },
+    {
+      "from": "D426",
+      "to": "T02",
+      "from_name": "膜性増殖性糸球体腎炎(MPGN)",
+      "to_name": "onset_speed",
+      "reason": "MPGN: 緩徐発症が多い。急性腎炎型は急性もあり",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8059
+    "edge_count": 8074
   },
-  "edge_count": 8059
+  "edge_count": 8074
 }

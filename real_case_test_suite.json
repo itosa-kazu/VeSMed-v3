@@ -30819,5 +30819,126 @@
       "R02": "female"
     },
     "notes": "Transient CDI post cardiac arrest. Na 199. Urine osm 112. Urine 300-600mL/hr"
+  },
+  {
+    "id": "R1180",
+    "source": "Medicine 2015",
+    "pmcid": "PMC4438675",
+    "vignette": "14M. 血尿+蛋白尿で発見。Cr 1.3mg/dL, C3 19mg/dL(著明低下), C4 13mg/dL(低下)。尿蛋白15760mg/日(ネフローゼ範囲)。尿沈渣: 21-30RBC/HPF(>25%変形赤血球)。腎生検: C3糸球体腎炎(MPGN型)。",
+    "final_diagnosis": "C3糸球体腎炎(MPGN型)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "L75": "low_both",
+      "L55": "mild_elevated",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "13_17",
+      "R02": "male"
+    },
+    "notes": "C3GN/MPGN. 14yo. Proteinuria 15.7g/day. C3=19 C4=13. Cr 1.3. Dysmorphic RBCs"
+  },
+  {
+    "id": "R1181",
+    "source": "Medicine 2015",
+    "pmcid": "PMC4438675",
+    "vignette": "52F. 血尿+蛋白尿。高血圧。Cr 1.44mg/dL。C3 76mg/dL(低下), C4 26mg/dL(低下)。尿蛋白6389mg/日(ネフローゼ範囲)。尿沈渣: 50-100RBC/HPF(>25%変形赤血球)。腎生検: C3糸球体腎炎(MPGN型)。",
+    "final_diagnosis": "C3糸球体腎炎(MPGN型)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "L75": "low_both",
+      "L55": "mild_elevated",
+      "E38": "elevated_140_180",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "C3GN/MPGN. 52F. Proteinuria 6.4g/day. C3=76 C4=26. HTN. Cr 1.44"
+  },
+  {
+    "id": "R1182",
+    "source": "Medicine 2015",
+    "pmcid": "PMC4438675",
+    "vignette": "22M. 血尿+大量蛋白尿。Cr 2.02mg/dL。C3 12mg/dL(著明低下), C4正常。尿蛋白10390mg/日。尿沈渣: 50-100RBC/HPF。腎生検: C3糸球体腎炎(MPGN型)。",
+    "final_diagnosis": "C3糸球体腎炎(MPGN型)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "L75": "low_C3",
+      "L55": "high_AKI",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "C3GN/MPGN. 22M. Proteinuria 10.4g/day. C3=12(very low). Cr 2.02"
+  },
+  {
+    "id": "R1183",
+    "source": "BMC Nephrol 2016",
+    "pmcid": "PMC4962343",
+    "vignette": "27M. 2日間の嘔気嘔吐+38.8度の発熱+粘血性下痢(10-13回/日)。BP 170/100(最大)。BUN 75, Cr 10.4mg/dL。LDH 1539, Alb 2.8, 総蛋白4.5。WBC 21.6k。Hb 10→低下。C3 0.511g/L(低下), C4 0.151(正常)。尿蛋白18g/日。腎生検: C3メサンギウム増殖性糸球体腎炎+aHUS。",
+    "final_diagnosis": "C3メサンギウム増殖性糸球体腎炎+aHUS",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "nephrotic_range",
+      "L75": "low_C3",
+      "L55": "high_AKI",
+      "L70": "very_low",
+      "E38": "crisis_over_180",
+      "L93": "mild_low_10_12",
+      "S13": "present",
+      "E01": "38.0_39.0",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "C3 MPGN + aHUS. Cr 10.4. Proteinuria 18g/day. C3 low. BP 170/100. LDH 1539"
+  },
+  {
+    "id": "R1184",
+    "source": "Medicine 2015",
+    "pmcid": "PMC4438675",
+    "vignette": "71F. 血尿+蛋白尿。高血圧。Cr 1.7mg/dL。C3 46mg/dL(低下), C4 24mg/dL(低下)。尿蛋白614mg/日(軽度蛋白尿)。尿沈渣: 41-50RBC/HPF。腎生検: C3糸球体腎炎。",
+    "final_diagnosis": "C3糸球体腎炎(MPGN型)",
+    "expected_id": "D426",
+    "in_scope": true,
+    "evidence": {
+      "S33": "present",
+      "L78": "mild_proteinuria",
+      "L75": "low_both",
+      "L55": "mild_elevated",
+      "E38": "elevated_140_180",
+      "E01": "under_37.5",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    },
+    "notes": "C3GN/MPGN. 71F. Mild proteinuria 614mg. C3=46 C4=24. Cr 1.7. HTN"
   }
 ]
