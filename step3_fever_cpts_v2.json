@@ -19556,6 +19556,11 @@
           "normal_under_20": 0.1,
           "tachypnea_20_30": 0.5,
           "severe_over_30": 0.4
+        },
+        "D118": {
+          "normal_under_20": 0.6,
+          "tachypnea_20_30": 0.3,
+          "severe_over_30": 0.1
         }
       }
     },
@@ -22662,6 +22667,11 @@
           "normal": 0.9,
           "confused": 0.08,
           "obtunded": 0.02
+        },
+        "D401": {
+          "normal": 0.5,
+          "confused": 0.35,
+          "obtunded": 0.15
         }
       }
     },
@@ -29303,6 +29313,10 @@
         "D402": {
           "normal": 0.55,
           "elevated": 0.45
+        },
+        "D179": {
+          "normal": 0.45,
+          "elevated": 0.55
         }
       }
     },
@@ -30158,6 +30172,16 @@
           "normal": 0.1,
           "elevated": 0.7,
           "very_high": 0.2
+        },
+        "D370": {
+          "normal": 0.55,
+          "elevated": 0.35,
+          "very_high": 0.1
+        },
+        "D124": {
+          "normal": 0.25,
+          "elevated": 0.5,
+          "very_high": 0.25
         }
       }
     },
@@ -31448,6 +31472,10 @@
         "D419": {
           "absent": 0.33,
           "present": 0.67
+        },
+        "D373": {
+          "absent": 0.85,
+          "present": 0.15
         }
       }
     },
@@ -38379,6 +38407,10 @@
         "D413": {
           "absent": 0.8,
           "present": 0.2
+        },
+        "D162": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -38878,6 +38910,10 @@
           "present": 0.5
         },
         "D417": {
+          "absent": 0.55,
+          "present": 0.45
+        },
+        "D370": {
           "absent": 0.55,
           "present": 0.45
         }
@@ -52660,6 +52696,20 @@
           "mild_low_10_12": 0.2,
           "normal": 0.68,
           "high": 0.02
+        },
+        "D353": {
+          "very_low_under_7": 0.05,
+          "low_7_10": 0.15,
+          "mild_low_10_12": 0.35,
+          "normal": 0.45,
+          "high": 0.0
+        },
+        "D188": {
+          "very_low_under_7": 0.0,
+          "low_7_10": 0.05,
+          "mild_low_10_12": 0.25,
+          "normal": 0.7,
+          "high": 0.0
         }
       }
     },
@@ -52756,6 +52806,13 @@
           "normal": 0.95,
           "high_over_400k": 0.015,
           "very_high_over_1000k": 0.005
+        },
+        "D353": {
+          "very_low_under_50k": 0.0,
+          "low_50k_150k": 0.02,
+          "normal": 0.55,
+          "high_over_400k": 0.35,
+          "very_high_over_1000k": 0.08
         }
       }
     },
@@ -54005,6 +54062,11 @@
           "normal": 0.1,
           "mildly_low": 0.3,
           "very_low": 0.6
+        },
+        "D372": {
+          "normal": 0.5,
+          "mildly_low": 0.35,
+          "very_low": 0.15
         }
       }
     },

@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 7988,
+  "total_edges": 8000,
   "edges": [
     {
       "from": "R01",
@@ -62651,11 +62651,107 @@
       "to_name": "myalgia_distribution",
       "reason": "PMR: 近位筋群のこわばり/痛み。proximal_girdleが典型(Harrison Ch.363)",
       "onset_day_range": null
+    },
+    {
+      "from": "D373",
+      "to": "S01",
+      "from_name": "hypothyroidism_hashimoto",
+      "to_name": "cough",
+      "reason": "甲状腺機能低下: 胸水/粘膜浮腫→咳嗽10-20%(UpToDate hypothyroidism)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D353",
+      "to": "L93",
+      "from_name": "ulcerative_colitis",
+      "to_name": "hemoglobin",
+      "reason": "UC: 慢性消化管出血→鉄欠乏性貧血40-60%(Gastroenterology 2020)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D353",
+      "to": "L100",
+      "from_name": "ulcerative_colitis",
+      "to_name": "platelet_count",
+      "reason": "UC: 活動期の反応性血小板増多30-50%(PMC IBD review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D401",
+      "to": "E16",
+      "from_name": "preeclampsia_eclampsia",
+      "to_name": "consciousness",
+      "reason": "子癇: 痙攣→意識障害。子癇の100%に意識変容(Williams Obstetrics)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D370",
+      "to": "L28",
+      "from_name": "aplastic_anemia",
+      "to_name": "ESR",
+      "reason": "再生不良性貧血: ESR上昇(貧血に伴う軽度上昇30-40%)(Hematology ASH)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D370",
+      "to": "S46",
+      "from_name": "aplastic_anemia",
+      "to_name": "anorexia",
+      "reason": "再生不良性貧血: 食欲不振30-50%(全身衰弱の一部)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D124",
+      "to": "L28",
+      "from_name": "cardiac_tamponade",
+      "to_name": "ESR",
+      "reason": "心タンポナーデ: 基礎疾患(心膜炎/悪性/結核)による炎症→ESR上昇60-80%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D118",
+      "to": "E04",
+      "from_name": "brain_abscess",
+      "to_name": "respiratory_rate",
+      "reason": "脳膿瘍: 頭蓋内圧亢進→呼吸パターン変化。発熱時の頻呼吸も(Harrison Ch.436)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D162",
+      "to": "S42",
+      "from_name": "HUS",
+      "to_name": "seizure",
+      "reason": "HUS: CNS合併症→痙攣20-30%(Pediatr Nephrol review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D188",
+      "to": "L93",
+      "from_name": "eosinophilic_pneumonia",
+      "to_name": "hemoglobin",
+      "reason": "好酸球性肺炎: 軽度貧血20-30%(慢性炎症)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D372",
+      "to": "L70",
+      "from_name": "primary_sclerosing_cholangitis",
+      "to_name": "serum_albumin",
+      "reason": "PSC: 肝機能低下→低アルブミン血症30-50%(Hepatology review)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D179",
+      "to": "L16",
+      "from_name": "DILI",
+      "to_name": "LDH",
+      "reason": "DILI: 肝細胞障害→LDH上昇40-60%(LiverTox)",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 7988
+    "edge_count": 8000
   },
-  "edge_count": 7988
+  "edge_count": 8000
 }
