@@ -29284,5 +29284,134 @@
       "R02": "male"
     },
     "notes": "WPW Type A masking NSTEMI. Troponin 495. RWMA on echo. L53/E39はNSTEMI由来のため除外(WPWの所見ではない)"
+  },
+  {
+    "id": "R1115",
+    "source": "JACC Case Reports 2021",
+    "pmcid": "PMC8258264",
+    "vignette": "30M. 2日間の発熱+呼吸困難+乾性咳嗽(12時間で増悪). 二尖弁(bicuspid). 1ヶ月前に塞栓性脳卒中歴(IE). HR 112, BP 107/71, RR 18, T 101.3F(38.5C), SpO2 85%(RA→94%酸素). 左胸骨縁に粗い拡張期雑音. 右肺全体にcrackles. WBC 18.3k, NT-proBNP 23607, Troponin 9.29. CXR: 右肺間質性浸潤. Echo: EF 60-65%, 非冠尖に大きな疣贅, 重度AR.",
+    "final_diagnosis": "急性AR(IE+二尖弁, 片側性肺水腫)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E01": "38.0_39.0",
+      "E02": "100_120",
+      "E03": "normal_over_90",
+      "E05": "severe_hypoxia_under_93",
+      "E07": "crackles",
+      "L04": "bilateral_infiltrate",
+      "L51": "very_high",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Acute AR from IE on bicuspid valve. UPE (right lung). NT-proBNP 23607. EF preserved 60-65%"
+  },
+  {
+    "id": "R1116",
+    "source": "European Heart Journal Case Reports 2014",
+    "pmcid": "PMC4025367",
+    "vignette": "64F. Flash pulmonary edema(突然の呼吸困難+発汗+チアノーゼ+末梢血管収縮). 早期拡張期雑音聴取. Troponin I 0.17(軽度上昇), CRP 17.5-30.9, ESR 22-50. CXR: 両側肺うっ血. Echo: 急性重度AR, PHT>200ms, 推定PAP 65mmHg. CT: 胸部大動脈壁肥厚. 病理: 巨細胞性大動脈炎.",
+    "final_diagnosis": "急性AR(特発性大動脈炎/巨細胞性動脈炎)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E07": "crackles",
+      "L04": "bilateral_infiltrate",
+      "L51": "very_high",
+      "L65": "severe_NYHA3_4",
+      "E01": "under_37.5",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    },
+    "notes": "Acute AR from idiopathic aortitis (giant cell). Flash pulmonary edema. PAP 65mmHg"
+  },
+  {
+    "id": "R1117",
+    "source": "Frontiers in Cardiovascular Medicine 2023",
+    "pmcid": "PMC9970796",
+    "vignette": "64M. 1時間の胸痛+呼吸困難. EGPA(好酸球性肉芽腫症)でプレドニゾロン内服中. BP 98/23(!広脈圧), HR 84, SpO2 91%(酸素8L). 著明な湿性ラ音+拡張期雑音. Troponin T 0.019, 乳酸3.8. CXR: 肺うっ血. Echo: LV正常収縮+LVOT内flap+重度AR. CT: Stanford A型大動脈解離. ECG: 広範ST低下+aVR ST上昇.",
+    "final_diagnosis": "急性AR(A型大動脈解離)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S21": "present",
+      "E01": "under_37.5",
+      "E02": "under_100",
+      "E03": "normal_over_90",
+      "E05": "mild_hypoxia_93_96",
+      "E07": "crackles",
+      "L04": "bilateral_infiltrate",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    },
+    "notes": "Acute AR from Type A aortic dissection. BP 98/23 (wide pulse pressure). Circumferential subendocardial ischemia"
+  },
+  {
+    "id": "R1118",
+    "source": "Journal of Cardiothoracic Surgery 2021",
+    "pmcid": "PMC8530798",
+    "vignette": "73M. 突然の循環虚脱(cardiogenic shock). BP 65/45, HR 100, 乳酸3.6. 深いショック状態. ECG: I/aVLにST上昇, II/III/aVF/V2-V6にST低下. NT-proBNP 160(入院時低値). Echo: EF 45%, 大動脈根拡大(44mm), 右冠尖flail→massive AR. 原因: 大動脈壁の先天性線維索断裂.",
+    "final_diagnosis": "急性AR(先天性線維索断裂→心原性ショック)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "E02": "under_100",
+      "E03": "hypotension_under_90",
+      "E01": "under_37.5",
+      "L51": "normal",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "sudden"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    },
+    "notes": "Acute AR from congenital fibrous strand rupture. Cardiogenic shock BP 65/45. EF 45%. NT-proBNP 160 (paradoxically low at admission)"
+  },
+  {
+    "id": "R1119",
+    "source": "Clinical Practice and Cases in Emergency Medicine 2020",
+    "pmcid": "PMC7220014",
+    "vignette": "36M 既往歴なし. 増悪する呼吸困難+起座呼吸+胸痛。3ヶ月前から盗汗+体重減少+遊走性関節痛+筋痛+手掌病変。BP 124/41(!広脈圧), HR 127, RR 20, SpO2 98%, T 37.4. 新規全拡張期雑音+下肺野crackles+bounding pulse. ESR上昇. 血培: Streptococcus sanguinis. POCUS: 大動脈弁に振動性腫瘤+弁葉接合不全.",
+    "final_diagnosis": "急性AR(IE: S. sanguinis, 大動脈弁)",
+    "expected_id": "D215",
+    "in_scope": true,
+    "evidence": {
+      "S04": "at_rest",
+      "S49": "present",
+      "S21": "present",
+      "E01": "37.5_38.0",
+      "E02": "over_120",
+      "E03": "normal_over_90",
+      "E05": "normal_over_96",
+      "E07": "crackles",
+      "L65": "severe_NYHA3_4",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    },
+    "notes": "Acute AR from S. sanguinis IE. BP 124/41 (wide pulse pressure). 3mo constitutional symptoms. Bounding pulses. Emergent AVR"
   }
 ]
