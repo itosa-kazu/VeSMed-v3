@@ -5,6 +5,7 @@
 - [feedback_regression_report_format.md](feedback_regression_report_format.md) — 回帰テスト報告は総案例数+百分率を必ず含める
 - [feedback_speak_chinese.md](feedback_speak_chinese.md) — 用中文交流
 - [feedback_japanese_ui.md](feedback_japanese_ui.md) — 最終成果物は日本語、UI/病名/変数名は日本語で記述
+- [feedback_disease_names_japanese.md](feedback_disease_names_japanese.md) — 疾患名はユーザーとの会話で必ず日本語表記
 - [feedback_kill_flask_only.md](feedback_kill_flask_only.md) — 重启Flask只杀5000端口进程，不要杀全部python.exe
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
@@ -53,7 +54,7 @@
 - [user_profile.md](user_profile.md) — 用户背景：VeSMed项目负责人，熟悉BN和医学诊断
 
 ## プロジェクト状況
-- [project_vesmed_status.md](project_vesmed_status.md) — 当前状态：6025辺, 712cases, Top-1 79%, Top-3 94%, FATAL 0
+- [project_vesmed_status.md](project_vesmed_status.md) — 当前状态：8047辺, 1173cases, Top-1 78%, Top-3 93%, FATAL 0
 - [project_rd_prior_discovery.md](project_rd_prior_discovery.md) — **R→D Prior大発見**: 人口統計prior(年齢/性別)が史上最大の改善レバー。53/345疾患実装済み、全疾患展開が最優先
 - [project_variable_audit_pipeline.md](project_variable_audit_pipeline.md) — 変量審計パイプライン: 227新変量導入、CPT_NO_EDGE同期問題の発見と修正
 - [project_papers_plan.md](project_papers_plan.md) — 3篇论文计划：NO EDGE(85%), エントロピー(70%), 情報幾何(75%)
@@ -73,7 +74,9 @@
 - [project_complication_limitation.md](project_complication_limitation.md) — 合併症表現の構造的限界: D→D因果連鎖が表現不可。将来hierarchical BN等で対処
 - [project_kokushi_gap_analysis.md](project_kokushi_gap_analysis.md) — **国試×VeSMed缺口分析**: 精神科が最大Gap(うつ病116点+統合失調症104点)。覆盖率71%
 - [project_d120_split_needed.md](project_d120_split_needed.md) — D120分割状況: HFpEF(D420)分離済み。残りはHFrEF/原因不明ADHF
-- [project_cardiac_gap_analysis.md](project_cardiac_gap_analysis.md) — **心臓系缺口分析**: 18疾患で主要網羅。D215(急性AR)案例0件、D356(SVT)案例1件が要追加
+- [project_cardiac_gap_analysis.md](project_cardiac_gap_analysis.md) — **心臓系缺口分析**: 18疾患で主要網羅。D215案例9件/D356案例8件追加済み
+- [project_melanoma_limitation.md](project_melanoma_limitation.md) — **D423黒色腫の構造的限界**: 皮膚病変変量がなくTop-1 17%。皮膚所見変量追加が必要
+- [project_disease_gap_2026_03.md](project_disease_gap_2026_03.md) — **疾患缺口分析**: 全137缺口(A27/B33/C50/D27)。最手薄: 産科/婦人科/眼科/皮膚科/整形
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）

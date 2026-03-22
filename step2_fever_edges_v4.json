@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8103,
+  "total_edges": 8134,
   "edges": [
     {
       "from": "R01",
@@ -63571,6 +63571,223 @@
       "to_name": "onset_speed",
       "reason": "子宮内膜症: 慢性",
       "onset_day_range": null
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "S04",
+      "to_name": "dyspnea",
+      "reason": "malignant_pleural_effusion/ascites→dyspnea_in_30-50%_of_advanced_cases"
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "S01",
+      "to_name": "cough",
+      "reason": "pleural_effusion→cough_in_20-30%"
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "E04",
+      "to_name": "respiratory_rate",
+      "reason": "pleural_effusion/ascites→tachypnea_in_advanced_cases"
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "E05",
+      "to_name": "SpO2",
+      "reason": "large_pleural_effusion→hypoxemia"
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "S66",
+      "to_name": "vomiting",
+      "reason": "bowel_obstruction/peritoneal_carcinomatosis→vomiting_30-40%"
+    },
+    {
+      "from": "D421",
+      "from_name": "卵巣癌",
+      "to": "E13",
+      "to_name": "lymphadenopathy",
+      "reason": "metastatic_lymphadenopathy(inguinal/supraclavicular)_10-15%"
+    },
+    {
+      "from": "D422",
+      "from_name": "子宮頸癌",
+      "to": "E13",
+      "to_name": "lymphadenopathy",
+      "reason": "pelvic/inguinal/para-aortic_lymphadenopathy_25-35%_stage_IIB+"
+    },
+    {
+      "from": "D422",
+      "from_name": "子宮頸癌",
+      "to": "S04",
+      "to_name": "dyspnea",
+      "reason": "lung_metastasis/pleural_effusion_in_advanced_disease_10-20%"
+    },
+    {
+      "from": "D422",
+      "from_name": "子宮頸癌",
+      "to": "S46",
+      "to_name": "anorexia",
+      "reason": "cancer_cachexia/anorexia_in_advanced_cervical_cancer_40-50%"
+    },
+    {
+      "from": "D34",
+      "from_name": "deep_neck_infection",
+      "to": "E02",
+      "to_name": "heart_rate",
+      "reason": "systemic_inflammatory_response/sepsis→tachycardia_60-70%"
+    },
+    {
+      "from": "D34",
+      "from_name": "deep_neck_infection",
+      "to": "L28",
+      "to_name": "ESR",
+      "reason": "acute_infection→elevated_ESR_80-90%"
+    },
+    {
+      "from": "D34",
+      "from_name": "deep_neck_infection",
+      "to": "T02",
+      "to_name": "onset_speed",
+      "reason": "deep_neck_infection_typically_acute_onset"
+    },
+    {
+      "from": "D263",
+      "from_name": "mycoplasma_pneumonia",
+      "to": "L17",
+      "to_name": "CK",
+      "reason": "mycoplasma_rhabdomyolysis/CK_elevation_5-15%_of_cases"
+    },
+    {
+      "from": "D420",
+      "from_name": "HFpEF",
+      "to": "S01",
+      "to_name": "cough",
+      "reason": "pulmonary_congestion→cardiac_cough_40-50%"
+    },
+    {
+      "from": "D420",
+      "from_name": "HFpEF",
+      "to": "S13",
+      "to_name": "nausea",
+      "reason": "GI_congestion/low_cardiac_output→nausea_20-30%"
+    },
+    {
+      "from": "D420",
+      "from_name": "HFpEF",
+      "to": "L53",
+      "to_name": "troponin",
+      "reason": "chronic_myocardial_stress→mildly_elevated_troponin_30-50%"
+    },
+    {
+      "from": "D423",
+      "from_name": "悪性黒色腫",
+      "to": "S13",
+      "to_name": "nausea",
+      "reason": "brain/liver_metastasis→nausea_15-25%_of_metastatic_cases"
+    },
+    {
+      "from": "D423",
+      "from_name": "悪性黒色腫",
+      "to": "S46",
+      "to_name": "anorexia",
+      "reason": "cancer_cachexia→anorexia_30-40%"
+    },
+    {
+      "from": "D423",
+      "from_name": "悪性黒色腫",
+      "to": "S22",
+      "to_name": "back_pain",
+      "reason": "bone/spinal_metastasis→back_pain_10-15%"
+    },
+    {
+      "from": "D402",
+      "from_name": "small_cell_lung_cancer",
+      "to": "S13",
+      "to_name": "nausea",
+      "reason": "brain_mets/paraneoplastic/advanced_disease→nausea_20-30%"
+    },
+    {
+      "from": "D215",
+      "from_name": "acute_aortic_regurgitation",
+      "to": "S21",
+      "to_name": "chest_pain",
+      "reason": "acute_AR_commonly_presents_with_chest_pain_from_underlying_cause_50-70%"
+    },
+    {
+      "from": "D417",
+      "from_name": "結核性腹膜炎",
+      "to": "E13",
+      "to_name": "lymphadenopathy",
+      "reason": "TB_peritonitis_associated_systemic_TB_lymphadenopathy_30-40%"
+    },
+    {
+      "from": "D400",
+      "from_name": "frontotemporal_dementia",
+      "to": "S99",
+      "to_name": "urinary_incontinence",
+      "reason": "frontal_lobe_dysfunction→functional_incontinence_25-35%"
+    },
+    {
+      "from": "D68",
+      "from_name": "acute_myeloid_leukemia",
+      "to": "S17",
+      "to_name": "weight_loss",
+      "reason": "AML_cancer_cachexia→weight_loss_30-50%"
+    },
+    {
+      "from": "D68",
+      "from_name": "acute_myeloid_leukemia",
+      "to": "L28",
+      "to_name": "ESR",
+      "reason": "AML→elevated_ESR_from_inflammation_70-80%"
+    },
+    {
+      "from": "D379",
+      "from_name": "lethal_catatonia",
+      "to": "S36",
+      "to_name": "tremor",
+      "reason": "catatonia_motor_disturbance→tremor_40-50%"
+    },
+    {
+      "from": "D399",
+      "from_name": "pharyngeal_cancer",
+      "to": "E05",
+      "to_name": "SpO2",
+      "reason": "large_tumor→airway_obstruction→hypoxemia_15-20%"
+    },
+    {
+      "from": "D127",
+      "from_name": "pleural_effusion_noninfectious",
+      "to": "L28",
+      "to_name": "ESR",
+      "reason": "malignant/autoimmune_effusion→elevated_ESR"
+    },
+    {
+      "from": "D75",
+      "from_name": "serotonin_syndrome",
+      "to": "T02",
+      "to_name": "onset_speed",
+      "reason": "serotonin_syndrome→acute_onset_after_medication_change"
+    },
+    {
+      "from": "D200",
+      "from_name": "NPH",
+      "to": "L45",
+      "to_name": "CSF_analysis",
+      "reason": "NPH→typically_normal_CSF"
+    },
+    {
+      "from": "D359",
+      "from_name": "giant_cell_arteritis",
+      "to": "S04",
+      "to_name": "dyspnea",
+      "reason": "GCA_aortitis/respiratory_involvement→dyspnea_8-15%"
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
