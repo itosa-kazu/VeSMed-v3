@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8086,
+  "total_edges": 8103,
   "edges": [
     {
       "from": "R01",
@@ -63435,11 +63435,147 @@
       "to_name": "onset_speed",
       "reason": "子宮筋腫: 緩徐発症",
       "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S186",
+      "from_name": "子宮筋腫",
+      "to_name": "dysmenorrhea",
+      "reason": "子宮筋腫: 月経困難症30-40%(AAFP)。粘膜下筋腫で特に顕著",
+      "onset_day_range": null
+    },
+    {
+      "from": "D427",
+      "to": "S187",
+      "from_name": "子宮筋腫",
+      "to_name": "dyspareunia",
+      "reason": "子宮筋腫: 性交痛10-20%(Cleveland Clinic)。大型/頸部筋腫",
+      "onset_day_range": null
+    },
+    {
+      "from": "D40",
+      "to": "S186",
+      "from_name": "catheter_related_BSI",
+      "to_name": "dysmenorrhea",
+      "reason": "PID: 月経困難症60-70%。炎症による二次性",
+      "onset_day_range": null
+    },
+    {
+      "from": "D40",
+      "to": "S187",
+      "from_name": "catheter_related_BSI",
+      "to_name": "dyspareunia",
+      "reason": "PID: 性交痛50-60%(CDC)。深部性交痛",
+      "onset_day_range": null
+    },
+    {
+      "from": "D422",
+      "to": "S187",
+      "from_name": "子宮頸癌",
+      "to_name": "dyspareunia",
+      "reason": "子宮頸癌: 性交痛10-20%。進行期",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S186",
+      "from_name": "子宮内膜症",
+      "to_name": "dysmenorrhea",
+      "reason": "子宮内膜症: 月経困難症90%(UpToDate)。最も特異的症状",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S187",
+      "from_name": "子宮内膜症",
+      "to_name": "dyspareunia",
+      "reason": "子宮内膜症: 深部性交痛60-70%(UpToDate)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S12",
+      "from_name": "子宮内膜症",
+      "to_name": "abdominal_pain",
+      "reason": "子宮内膜症: 慢性骨盤痛70%(ACOG)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S127",
+      "from_name": "子宮内膜症",
+      "to_name": "abnormal_vaginal_bleeding",
+      "reason": "子宮内膜症: 不正出血20-30%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S22",
+      "from_name": "子宮内膜症",
+      "to_name": "back_pain",
+      "reason": "子宮内膜症: 腰痛20-30%(深部浸潤型)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "L62",
+      "from_name": "子宮内膜症",
+      "to_name": "pelvic_us",
+      "reason": "子宮内膜症: 骨盤USでチョコレート嚢胞30-50%(卵巣型)。TVUS感度83%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S72",
+      "from_name": "子宮内膜症",
+      "to_name": "constipation",
+      "reason": "子宮内膜症: 便秘/排便時痛15-20%(腸管浸潤)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S11",
+      "from_name": "子宮内膜症",
+      "to_name": "urinary_frequency",
+      "reason": "子宮内膜症: 頻尿/排尿時痛10-15%(膀胱浸潤)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "S07",
+      "from_name": "子宮内膜症",
+      "to_name": "fatigue",
+      "reason": "子宮内膜症: 倦怠感30-40%",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "E01",
+      "from_name": "子宮内膜症",
+      "to_name": "temperature",
+      "reason": "子宮内膜症: 通常無熱",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "T01",
+      "from_name": "子宮内膜症",
+      "to_name": "symptom_duration",
+      "reason": "子宮内膜症: 慢性経過(月経周期に連動)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D428",
+      "to": "T02",
+      "from_name": "子宮内膜症",
+      "to_name": "onset_speed",
+      "reason": "子宮内膜症: 慢性",
+      "onset_day_range": null
     }
   ],
   "changelog": "v3→v4: 74新疾患の辺追加; v4.1: D62(サルコイドーシス)にS01,S04辺追加; v4.2: D53(ブルセラ)にT01,L01,L11,S05,S46,L02辺追加+D67(リンパ腫)にT03辺追加; v4.3: FATAL8件修正 D55/D03/D53/D19/D87/D62/D94/D59に計20辺追加; v4.4: FATAL残4件修正 D19 CRP調整+D87にS05/T01/T03辺+D96にE14/E34/S46/S17/T03辺; v4.5: 情報幾何分析で検出された辺欠損7本追加: D17→L28/L02, D05→S06/S07/L28, D55→T01, D77→T03; v4.6: 新18症例分析で14辺追加: D16×5, D28×2, D90×2, D19×1, D77×3, D32×1; v4.7: D23(リケッチア)9辺追加 T01/S05/S07/S09/E02/E16/E18/L11/L02; v4.8: D103(リウマチ熱)14辺, D104(オウム病)17辺追加; v4.9: D97+5辺(T03/S17/L22/L01/L16), D23+5辺(S14/S12/E34/E14/L01)",
   "metadata": {
-    "edge_count": 8086
+    "edge_count": 8103
   },
-  "edge_count": 8086
+  "edge_count": 8103
 }

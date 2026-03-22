@@ -26283,7 +26283,7 @@
       "S07": "severe",
       "S17": "present",
       "E85": "present",
-      "L62": "uterine_abnormal",
+      "L62": "endometrial_thickening",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "subacute"
@@ -26305,7 +26305,7 @@
     "in_scope": true,
     "evidence": {
       "S127": "present",
-      "L62": "uterine_abnormal",
+      "L62": "endometrial_thickening",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"
@@ -26327,7 +26327,7 @@
     "in_scope": true,
     "evidence": {
       "S127": "present",
-      "L62": "uterine_abnormal",
+      "L62": "endometrial_thickening",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"
@@ -29796,7 +29796,7 @@
     "evidence": {
       "S127": "present",
       "S128": "present",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "subacute"
@@ -29818,7 +29818,7 @@
     "evidence": {
       "S127": "present",
       "S12": "present",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"
@@ -29887,7 +29887,7 @@
     "evidence": {
       "S127": "present",
       "L55": "mild_elevated",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"
@@ -30151,7 +30151,7 @@
     "in_scope": true,
     "evidence": {
       "S127": "present",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "L93": "normal",
       "E01": "under_37.5",
       "T01": "over_3w",
@@ -30176,7 +30176,7 @@
       "S128": "present",
       "S07": "severe",
       "L93": "very_low_under_7",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"
@@ -30202,7 +30202,7 @@
       "S04": "on_exertion",
       "L93": "very_low_under_7",
       "L55": "high_AKI",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "subacute"
@@ -30223,7 +30223,7 @@
     "in_scope": true,
     "evidence": {
       "S127": "present",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "subacute"
@@ -30247,7 +30247,7 @@
       "S22": "present",
       "L55": "high_AKI",
       "L04": "pleural_effusion",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "under_3d",
       "T02": "acute"
@@ -30270,7 +30270,7 @@
       "S12": "present",
       "E13": "present",
       "L93": "low_7_10",
-      "L62": "uterine_abnormal",
+      "L62": "cervical_mass",
       "E01": "under_37.5",
       "T01": "over_3w",
       "T02": "chronic"

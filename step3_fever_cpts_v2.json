@@ -5095,6 +5095,17 @@
         "female|40_64": 0.015,
         "female|65_plus": 0.003
       }
+    },
+    "D428": {
+      "parents": [
+        "R02",
+        "R01"
+      ],
+      "cpt": {
+        "female|18_39": 0.005,
+        "female|40_64": 0.003,
+        "female|65_plus": 0.0005
+      }
     }
   },
   "full_cpts": {
@@ -14882,6 +14893,24 @@
         "male": 0.0,
         "female": 1.0
       }
+    },
+    "D428": {
+      "parents": [
+        "R01"
+      ],
+      "cpt": {
+        "0_1": 0.0,
+        "1_5": 0.0,
+        "6_12": 0.0,
+        "13_17": 0.001,
+        "18_39": 0.005,
+        "40_64": 0.003,
+        "65_plus": 0.0005
+      },
+      "R02": {
+        "male": 0.0,
+        "female": 1.0
+      }
     }
   },
   "noisy_or_params": {
@@ -17848,6 +17877,14 @@
           "37.5_38.0": 0.07,
           "38.0_39.0": 0.02,
           "39.0_40.0": 0.01,
+          "over_40.0": 0.0
+        },
+        "D428": {
+          "hypothermia_under_35": 0.0,
+          "under_37.5": 0.93,
+          "37.5_38.0": 0.05,
+          "38.0_39.0": 0.02,
+          "39.0_40.0": 0.0,
           "over_40.0": 0.0
         }
       }
@@ -34833,6 +34870,11 @@
           "absent": 0.55,
           "mild": 0.35,
           "severe": 0.1
+        },
+        "D428": {
+          "absent": 0.6,
+          "mild": 0.3,
+          "severe": 0.1
         }
       }
     },
@@ -35809,6 +35851,10 @@
         "D422": {
           "absent": 0.65,
           "present": 0.35
+        },
+        "D428": {
+          "absent": 0.3,
+          "present": 0.7
         }
       }
     },
@@ -37623,6 +37669,10 @@
           "present": 0.7
         },
         "D422": {
+          "absent": 0.75,
+          "present": 0.25
+        },
+        "D428": {
           "absent": 0.75,
           "present": 0.25
         }
@@ -41829,6 +41879,12 @@
           "3d_to_1w": 0.1,
           "1w_to_3w": 0.25,
           "over_3w": 0.6
+        },
+        "D428": {
+          "under_3d": 0.02,
+          "3d_to_1w": 0.03,
+          "1w_to_3w": 0.1,
+          "over_3w": 0.85
         }
       }
     },
@@ -44060,6 +44116,12 @@
           "acute": 0.15,
           "subacute": 0.35,
           "chronic": 0.45
+        },
+        "D428": {
+          "sudden": 0.02,
+          "acute": 0.05,
+          "subacute": 0.18,
+          "chronic": 0.75
         }
       }
     },
@@ -44316,6 +44378,10 @@
         "D425": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D428": {
+          "absent": 0.88,
+          "present": 0.12
         }
       }
     },
@@ -48334,41 +48400,77 @@
     "L62": {
       "description": "骨盤超音波",
       "leak": {
-        "normal": 0.78,
-        "adnexal_mass": 0.08,
-        "free_fluid": 0.08,
-        "uterine_abnormal": 0.06
+        "normal": 0.72,
+        "fibroid": 0.08,
+        "endometrial_thickening": 0.04,
+        "cervical_mass": 0.02,
+        "adnexal_mass": 0.06,
+        "endometrioma": 0.03,
+        "free_fluid": 0.05
       },
       "parent_effects": {
         "D276": {
           "normal": 0.03,
+          "fibroid": 0.01,
+          "endometrial_thickening": 0.0,
+          "cervical_mass": 0.0,
           "adnexal_mass": 0.88,
-          "free_fluid": 0.07,
-          "uterine_abnormal": 0.02
+          "endometrioma": 0.01,
+          "free_fluid": 0.07
         },
         "D291": {
           "normal": 0.05,
-          "adnexal_mass": 0.3,
-          "free_fluid": 0.6,
-          "uterine_abnormal": 0.05
+          "fibroid": 0.0,
+          "endometrial_thickening": 0.02,
+          "cervical_mass": 0.0,
+          "adnexal_mass": 0.28,
+          "endometrioma": 0.0,
+          "free_fluid": 0.65
         },
         "D40": {
           "normal": 0.2,
+          "fibroid": 0.0,
+          "endometrial_thickening": 0.05,
+          "cervical_mass": 0.0,
           "adnexal_mass": 0.35,
-          "free_fluid": 0.3,
-          "uterine_abnormal": 0.15
+          "endometrioma": 0.0,
+          "free_fluid": 0.4
         },
         "D398": {
-          "normal": 0.1,
+          "normal": 0.08,
+          "fibroid": 0.02,
+          "endometrial_thickening": 0.78,
+          "cervical_mass": 0.02,
           "adnexal_mass": 0.05,
-          "free_fluid": 0.05,
-          "uterine_abnormal": 0.8
+          "endometrioma": 0.0,
+          "free_fluid": 0.05
         },
         "D422": {
-          "normal": 0.2,
+          "normal": 0.15,
+          "fibroid": 0.0,
+          "endometrial_thickening": 0.05,
+          "cervical_mass": 0.65,
+          "adnexal_mass": 0.05,
+          "endometrioma": 0.0,
+          "free_fluid": 0.1
+        },
+        "D427": {
+          "normal": 0.05,
+          "fibroid": 0.9,
+          "endometrial_thickening": 0.01,
+          "cervical_mass": 0.01,
+          "adnexal_mass": 0.01,
+          "endometrioma": 0.0,
+          "free_fluid": 0.02
+        },
+        "D428": {
+          "normal": 0.35,
+          "fibroid": 0.05,
+          "endometrial_thickening": 0.05,
+          "cervical_mass": 0.0,
           "adnexal_mass": 0.1,
-          "free_fluid": 0.05,
-          "uterine_abnormal": 0.65
+          "endometrioma": 0.4,
+          "free_fluid": 0.05
         }
       }
     },
@@ -54876,6 +54978,10 @@
         "D421": {
           "absent": 0.76,
           "present": 0.24
+        },
+        "D428": {
+          "absent": 0.82,
+          "present": 0.18
         }
       }
     },
@@ -57027,6 +57133,22 @@
           "hyperacute": 0.01,
           "subacute": 0.04,
           "chronic_progressive": 0.95
+        },
+        "D427": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D40": {
+          "absent": 0.45,
+          "present": 0.55
+        },
+        "D422": {
+          "absent": 0.85,
+          "present": 0.15
+        },
+        "D428": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -57370,6 +57492,10 @@
         "D422": {
           "absent": 0.15,
           "present": 0.85
+        },
+        "D428": {
+          "absent": 0.75,
+          "present": 0.25
         }
       }
     },
@@ -57828,6 +57954,26 @@
           "absent": 0.55,
           "mild": 0.35,
           "severe": 0.1
+        }
+      }
+    },
+    "S186": {
+      "leak": {
+        "absent": 0.7,
+        "present": 0.3
+      },
+      "parent_effects": {
+        "D427": {
+          "absent": 0.65,
+          "present": 0.35
+        },
+        "D40": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D428": {
+          "absent": 0.1,
+          "present": 0.9
         }
       }
     }
