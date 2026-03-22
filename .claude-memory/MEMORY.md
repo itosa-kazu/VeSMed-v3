@@ -15,6 +15,7 @@
 - **L108(膿瘍穿刺液鏡検)** — 将来追加。R933(脳膿瘍ドレナージ)/R935(手術検体)のノカルジアCNS案例を解決する鍵。states: negative/gpc/gnr/afb/branching_filaments/fungal
 - [feedback_never_replace_cases.md](feedback_never_replace_cases.md) — テスト案例は置換禁止、常に追加。全文献案例は貴重
 - [feedback_max_cases.md](feedback_max_cases.md) — PMCで見つけた案例は全て使う（3件以上は全部追加）
+- [feedback_use_all_found_cases.md](feedback_use_all_found_cases.md) — agentが見つけた案例は"次の機会"に残さず全て即追加
 - [feedback_no_oos_escape.md](feedback_no_oos_escape.md) — OOS逃避禁止。FATALを正直に受け入れるか、変数追加で正面解決
 - [feedback_systematic_edge_audit.md](feedback_systematic_edge_audit.md) — 体系的辺監査: rank2+の全案例で漏れ辺検出→Top-1+36,Top-3+12の劇的改善
 - [feedback_no_architecture_change.md](feedback_no_architecture_change.md) — 架構変更禁止：IDF式/推論ロジック等はユーザー承認なしに変更不可
