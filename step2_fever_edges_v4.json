@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8174,
+  "total_edges": 8188,
   "edges": [
     {
       "from": "R01",
@@ -64107,6 +64107,118 @@
       "from_name": "食道カンジダ症",
       "to_name": "anorexia",
       "reason": "食道カンジダ: 食欲不振(嚥下困難・嚥下痛による摂食回避、PMC6854261)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "T01",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "symptom_duration",
+      "reason": "自己免疫性胃炎: 年単位の慢性経過(PMC5065578 'late and unspecific')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "T02",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "onset_speed",
+      "reason": "自己免疫性胃炎: 緩徐発症、年単位(PMC5065578)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "S12",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "abdominal_pain",
+      "reason": "自己免疫性胃炎: ディスペプシア57%(有症状者中, PMC8414617)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "S89",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "abdominal_pain_region",
+      "reason": "自己免疫性胃炎: 心窩部ディスペプシア(PMC8414617 'postprandial distress-like')",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "S07",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "fatigue",
+      "reason": "自己免疫性胃炎: 倦怠感40-60%(貧血に伴う, PMC5065578)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "E44",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "abdominal_distention",
+      "reason": "自己免疫性胃炎: 食後膨満感(PDS-like dyspepsia, PMC8414617)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "L94",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "MCV",
+      "reason": "自己免疫性胃炎: B12欠乏でmacrocytic、鉄欠乏でmicrocytic(PMC5065578)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "L90",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "iron_studies",
+      "reason": "自己免疫性胃炎: 鉄欠乏は初期に多い(若年女性, PMC5065578)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "E01",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "temperature",
+      "reason": "自己免疫性胃炎: 発熱なし(慢性自己免疫疾患)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "L01",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "WBC",
+      "reason": "自己免疫性胃炎: WBC正常(器質的感染なし)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "L02",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "CRP",
+      "reason": "自己免疫性胃炎: CRP正常(自己免疫だが急性炎症はない)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "S13",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "nausea",
+      "reason": "自己免疫性胃炎: 悪心~30%(ディスペプシアの一部, PMC8414617)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "L93",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "hemoglobin",
+      "reason": "自己免疫性胃炎: 貧血~50%(B12/鉄欠乏による, PMC5065578)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D432",
+      "to": "S46",
+      "from_name": "自己免疫性胃炎(A型胃炎)",
+      "to_name": "anorexia",
+      "reason": "自己免疫性胃炎: 食欲不振~30%(PMC8414617)",
       "onset_day_range": null
     }
   ],

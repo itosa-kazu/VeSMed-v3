@@ -11742,6 +11742,18 @@
       "note": "免疫不全(HIV/ステロイド/DM)で嚥下困難+嚥下痛+口腔カンジダ。内視鏡で白苔。CD4<200でリスク増。年齢中央値55.5歳"
     },
     {
+      "id": "D432",
+      "name": "autoimmune_gastritis",
+      "name_ja": "自己免疫性胃炎(A型胃炎)",
+      "category": "disease",
+      "states": [
+        "no",
+        "yes"
+      ],
+      "severity": "moderate",
+      "note": "壁細胞自己免疫破壊→胃酸低下→B12/鉄吸収障害。悪性貧血の原因。F:M≥2:1、中央値67歳。甲状腺疾患36-44%併存。有病率0.5-2%"
+    },
+    {
       "id": "S188",
       "name": "dysmenorrhea",
       "name_ja": "月経困難症(月経痛)",
