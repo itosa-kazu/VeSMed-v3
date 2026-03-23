@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8233,
+  "total_edges": 8237,
   "edges": [
     {
       "from": "R01",
@@ -64579,6 +64579,38 @@
       "from_name": "perianal_abscess",
       "to_name": "rectal_exam",
       "reason": "肛門周囲膿瘍: 直腸診で圧痛性腫瘤(StatPearls)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D371",
+      "to": "S46",
+      "from_name": "delirium",
+      "to_name": "anorexia",
+      "reason": "せん妄: 食欲不振(認知障害→経口摂取低下, 40-50%。NICE CG103, PMC5915265)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D423",
+      "to": "E36",
+      "from_name": "悪性黒色腫",
+      "to_name": "E36",
+      "reason": "悪性黒色腫: 下肢浮腫(鼠径リンパ節転移→リンパ還流障害, 5-15%。PMC10575652, PMID20824972)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D332",
+      "to": "S15",
+      "from_name": "hypopituitarism",
+      "to_name": "flank_pain",
+      "reason": "下垂体機能低下症: 側腹部痛(副腎クリーゼ時腹痛86%中flank約20-25%。Endotext NBK279083, PMC8651400)",
+      "onset_day_range": null
+    },
+    {
+      "from": "D386",
+      "to": "E85",
+      "from_name": "hemophilia",
+      "to_name": "conjunctival_pallor",
+      "reason": "血友病: 結膜蒼白(慢性出血→貧血, Hb低下31-46%。Buchanan 1988, PMC10608116)",
       "onset_day_range": null
     }
   ],
