@@ -32497,5 +32497,540 @@
       "R02": "female"
     },
     "notes": "Slow transit constipation 5 years. Pregnancy exacerbation -> ileus. Severe pain + distension."
+  },
+  {
+    "id": "R1248",
+    "source": "Surg Case Rep 2022",
+    "pmcid": "PMC9526257",
+    "vignette": "82M 2日間の間欠的→持続的下腹部痛+血便+腹部膨満。T37.6 HR106 BP173/97。腹部膨満+圧痛。WBC11320 CRP3.81",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E44": "severe",
+      "E01": "37.5_38.0",
+      "E02": "100_120",
+      "L01": "high_10000_20000",
+      "T01": "under_3d",
+      "T02": "acute",
+      "S89": "LLQ",
+      "E09": "localized_tenderness"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1249",
+    "source": "Case Rep Surg 2016",
+    "pmcid": "PMC5051175",
+    "vignette": "50F 4-5時間の下腹部痛+腹部膨満。数ヶ月の便秘/下痢交替+血便。10kg体重減少。T36.7 HR52。左下腹部圧痛+筋性防御+腸蠕動音亢進。WBC7510正常",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "E44": "severe",
+      "E01": "under_37.5",
+      "E02": "under_100",
+      "L01": "normal_4000_10000",
+      "T01": "under_3d",
+      "T02": "acute",
+      "S89": "LLQ",
+      "E09": "peritoneal_signs",
+      "E52": "hyperactive_high_pitched"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1250",
+    "source": "J Surg Case Rep 2012",
+    "pmcid": "PMC3298211",
+    "vignette": "25F 5日間の便秘+びまん性腹痛+嘔気+嘔吐。著明な腹部膨満+びまん性圧痛。WBC18900 bands7%。Na130 K3.3。術中壊疽発見",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S66": "present",
+      "S73": "present",
+      "E44": "severe",
+      "L01": "very_high_over_20000",
+      "T01": "3d_to_1w",
+      "T02": "subacute",
+      "S89": "diffuse",
+      "E09": "localized_tenderness"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1251",
+    "source": "Cureus 2024",
+    "pmcid": "PMC11180520",
+    "vignette": "38M 3日間の便秘+腹痛。嘔気嘔吐なし。BP120/80 HR90。びまん性圧痛+膨満。WBC5600正常。Hb14.1",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S73": "present",
+      "S13": "absent",
+      "S66": "absent",
+      "E44": "severe",
+      "E02": "under_100",
+      "L01": "normal_4000_10000",
+      "T01": "under_3d",
+      "T02": "acute",
+      "S89": "diffuse",
+      "E09": "localized_tenderness"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1252",
+    "source": "BMC Surg 2018",
+    "pmcid": "PMC6232284",
+    "vignette": "26M 3日間の完全腸閉塞+腹部膨満+腹痛+嘔吐+排ガス停止。T38.5 HR68 RR24。緊満膨満+腹膜刺激徴候。K2.8。FBC正常",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S66": "present",
+      "S73": "present",
+      "S74": "present",
+      "E44": "severe",
+      "E01": "38.0_39.0",
+      "E02": "under_100",
+      "E09": "peritoneal_signs",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1253",
+    "source": "J Surg Case Rep 2021",
+    "pmcid": "PMC7797386",
+    "vignette": "28F 1週間の腹痛増悪+便秘(1週間排便なし)+嘔吐(複数回)。前夜急性増悪。四分画圧痛+反跳痛あり",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S66": "present",
+      "S73": "present",
+      "E09": "peritoneal_signs",
+      "T01": "1w_to_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1254",
+    "source": "Front Surg 2023",
+    "pmcid": "PMC9938343",
+    "vignette": "25F 重度疝痛性腹痛+嘔気+1日の完全便秘。慢性便秘既往(3日に1回)。T36.6 HR98 BP123/74。左側軽度圧痛+鼓音亢進",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S73": "present",
+      "E01": "under_37.5",
+      "E02": "under_100",
+      "E09": "localized_tenderness",
+      "T01": "under_3d",
+      "T02": "acute",
+      "S89": "LLQ"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1255",
+    "source": "Int J Surg Case Rep 2024",
+    "pmcid": "PMC11214250",
+    "vignette": "47M 5日間の完全腸閉塞+著明な腹部膨満+排便排ガス停止。腹痛目立たず嘔気嘔吐なし。HR80 BP100/60。著明膨満+全体圧痛+腸蠕動音減弱。WBC8000正常",
+    "final_diagnosis": "S状結腸捻転",
+    "expected_id": "D180",
+    "in_scope": true,
+    "evidence": {
+      "S73": "present",
+      "S74": "present",
+      "S13": "absent",
+      "S66": "absent",
+      "E44": "severe",
+      "E02": "under_100",
+      "E09": "localized_tenderness",
+      "E52": "hypoactive",
+      "L01": "normal_4000_10000",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1256",
+    "source": "Int J Surg Case Rep 2023",
+    "pmcid": "PMC10074585",
+    "vignette": "65F 4ヶ月間の間欠的腹痛→急性増悪+嘔気+嘔吐(胆汁性)。T36.4 HR77。全体的圧痛+腹膜刺激徴候。WBC20700 CRP138",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S66": "present",
+      "S89": "diffuse",
+      "E09": "peritoneal_signs",
+      "L01": "very_high_over_20000",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus"
+    }
+  },
+  {
+    "id": "R1257",
+    "source": "Radiol Case Rep 2019",
+    "pmcid": "PMC6536620",
+    "vignette": "54M 4日間の中心部~側腹部痛増悪+嘔気+嘔吐+便秘。下痢・血便なし。RUQ~右恥骨上部に不随意筋性防御。WBC正常",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S66": "present",
+      "S73": "present",
+      "S14": "absent",
+      "S26": "absent",
+      "S89": "diffuse",
+      "E09": "localized_tenderness",
+      "E52": "normal",
+      "L01": "normal_4000_10000",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64"
+    }
+  },
+  {
+    "id": "R1258",
+    "source": "Medicine 2018",
+    "pmcid": "PMC6112951",
+    "vignette": "19M 2日間の血便(200mL x3回)。腹痛なし。腹部軟・圧痛なし。WBC8620正常。Hb6.0(重度貧血)",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "absent",
+      "S26": "present",
+      "S86": "bloody",
+      "E09": "soft_nontender",
+      "L01": "normal_4000_10000",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "18_39"
+    }
+  },
+  {
+    "id": "R1259",
+    "source": "F1000Research 2021",
+    "pmcid": "PMC8080982",
+    "vignette": "38F 3ヶ月間の間欠的びまん性腹痛(臍周囲中心)+食後嘔吐。バイタル正常。びまん性圧痛(心窩部最強)。恥骨上部に腫瘤触知。WBC7000正常。Hb10.0",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S66": "present",
+      "S89": "diffuse",
+      "E09": "localized_tenderness",
+      "E52": "normal",
+      "L01": "normal_4000_10000",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39"
+    }
+  },
+  {
+    "id": "R1260",
+    "source": "McGill J Med 2009",
+    "pmcid": "PMC2687910",
+    "vignette": "29M 1週間の臍周囲疝痛性腹痛+嘔気+嘔吐(2-3回/日)+水様性下痢(2-3回/日)。血便なし。HR100。臍周囲圧痛+腸蠕動音やや亢進。WBC7400正常",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S66": "present",
+      "S14": "present",
+      "S26": "absent",
+      "S86": "watery",
+      "S89": "diffuse",
+      "E09": "localized_tenderness",
+      "E44": "absent",
+      "E52": "hyperactive_high_pitched",
+      "E02": "100_120",
+      "L01": "normal_4000_10000",
+      "T01": "3d_to_1w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39"
+    }
+  },
+  {
+    "id": "R1261",
+    "source": "Cureus 2021",
+    "pmcid": "PMC8357410",
+    "vignette": "61M 3日間の心窩部激痛+嘔気+嘔吐+血便。バイタル正常。軽度膨満+びまん性圧痛。WBC6800正常。Hb17.1",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S13": "present",
+      "S66": "present",
+      "S26": "present",
+      "S89": "epigastric",
+      "E09": "localized_tenderness",
+      "E44": "mild",
+      "L01": "normal_4000_10000",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64"
+    }
+  },
+  {
+    "id": "R1262",
+    "source": "Perm J 2015",
+    "pmcid": "PMC4315384",
+    "vignette": "37M 5年間の反復性臍周囲疝痛+嘔吐。下痢なし。T37.1 HR84。腹部軟・膨満なし+LUQ軽度圧痛+正常腸蠕動音。WBC11200",
+    "final_diagnosis": "腸重積症(成人)",
+    "expected_id": "D237",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S66": "present",
+      "S14": "absent",
+      "S89": "diffuse",
+      "E09": "localized_tenderness",
+      "E44": "absent",
+      "E52": "normal",
+      "L01": "high_10000_20000",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39"
+    }
+  },
+  {
+    "id": "R1263",
+    "source": "Cureus 2022",
+    "pmcid": "PMC9613351",
+    "vignette": "34M 8ヶ月の倦怠感+頭痛+めまい。腹痛・血便・便通異常なし。Hb3.1(重度IDA)。CT:上行結腸に9cm全周性壁肥厚+リンパ節腫大。肝肺転移なし",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S07": "severe",
+      "S12": "absent",
+      "S26": "absent",
+      "S72": "absent",
+      "L93": "very_low_under_7",
+      "L94": "microcytic",
+      "L31c": "present",
+      "L63": "absent",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1264",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10583308",
+    "vignette": "40M 1ヶ月の右側腹痛+食欲不振+体重減少+黒色便。右腸骨窩に腫瘤触知+圧痛。Hb7.4 MCV67(小球性)。CT:盲腸~上行結腸に65mm腫瘤。転移なし",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S89": "RLQ",
+      "S17": "present",
+      "S26": "present",
+      "S86": "bloody",
+      "S07": "mild",
+      "E58": "present",
+      "L93": "low_7_10",
+      "L94": "microcytic",
+      "L31b": "present",
+      "L63": "absent",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1265",
+    "source": "J Community Hosp Intern Med Perspect 2017",
+    "pmcid": "PMC5485293",
+    "vignette": "66F 1週間の発熱+悪寒+腰痛。慢性便秘。倦怠感・体重減少否定。T38.3。WBC12000。Hb11.0 MCV82.8。便潜血陰性。大腸内視鏡:盲腸に潰瘍性腫瘤",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S12": "absent",
+      "S07": "absent",
+      "S17": "absent",
+      "S26": "absent",
+      "S72": "present",
+      "E01": "38.0_39.0",
+      "L01": "high_10000_20000",
+      "L93": "mild_low_10_12",
+      "L94": "normocytic",
+      "L79": "negative",
+      "L63": "absent",
+      "T01": "3d_to_1w",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1266",
+    "source": "Pan Afr Med J 2019",
+    "pmcid": "PMC6778923",
+    "vignette": "17M 3ヶ月の腹痛+左下腹部腫瘤+便秘+血便。T37.5。左腸骨窩に8x6cm固定腫瘤。Hb12.0。CT:直腸~S状結腸に全周性腫瘍+膀胱浸潤",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S89": "LLQ",
+      "S26": "present",
+      "S72": "present",
+      "E01": "37.5_38.0",
+      "E58": "present",
+      "L93": "normal",
+      "L31b": "present",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "13_17",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1267",
+    "source": "J Med Case Rep 2012",
+    "pmcid": "PMC3305541",
+    "vignette": "27M 3ヶ月の発熱+盗汗+進行性体重減少(>10%)+腹部膨隆+倦怠感。腹水(移動性濁音陽性)。ESR90。CT:多房性嚢胞+肝腫大+腸管壁肥厚。腹膜癌腫症",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S07": "severe",
+      "S17": "present",
+      "E01": "38.0_39.0",
+      "L31c": "present",
+      "T01": "over_3w",
+      "T02": "subacute"
+    },
+    "risk_factors": {
+      "R01": "18_39",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1268",
+    "source": "Int J Surg Case Rep 2024",
+    "pmcid": "PMC11374294",
+    "vignette": "79F 6ヶ月以上の左下腹部腫瘤+頻回排便+体重減少。発熱なし。左下腹部に15x12cm腫瘤+圧痛+破裂壊死。Hb5.1(重度貧血)。Alb18g/L。CT:S状結腸腫瘍+腹壁浸潤",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S17": "present",
+      "S07": "severe",
+      "E58": "present",
+      "L93": "very_low_under_7",
+      "L31b": "present",
+      "T01": "over_3w",
+      "T02": "chronic"
+    },
+    "risk_factors": {
+      "R01": "65_plus",
+      "R02": "female"
+    }
+  },
+  {
+    "id": "R1269",
+    "source": "World J Clin Cases 2021",
+    "pmcid": "PMC8035431",
+    "vignette": "55M 急性の高熱+上腹部痛。WBC24020 CRP30.30mg/dL。CT:横行結腸に大きな腫瘍+少量ガス(膿瘍形成)",
+    "final_diagnosis": "大腸癌",
+    "expected_id": "D238",
+    "in_scope": true,
+    "evidence": {
+      "S12": "present",
+      "S89": "epigastric",
+      "E01": "39.0_40.0",
+      "L01": "very_high_over_20000",
+      "L02": "high_over_10",
+      "L31b": "present",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    }
   }
 ]
