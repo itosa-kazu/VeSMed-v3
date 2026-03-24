@@ -2,7 +2,7 @@
   "domain": "成人急性発熱（体温>37.5℃）の鑑別診断",
   "version": "4.0",
   "step": "2_causal_edges",
-  "total_edges": 8237,
+  "total_edges": 8199,
   "edges": [
     {
       "from": "R01",
@@ -10,14 +10,6 @@
       "from_name": "age_group",
       "to_name": "acute_pharyngotonsillitis",
       "reason": "咽頭扁桃炎は若年者に多い",
-      "onset_day_range": null
-    },
-    {
-      "from": "R01",
-      "to": "D05",
-      "from_name": "age_group",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "高齢者は肺炎リスクが高い（免疫低下・誤嚥）",
       "onset_day_range": null
     },
     {
@@ -110,26 +102,10 @@
     },
     {
       "from": "R03",
-      "to": "D05",
-      "from_name": "smoking",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "喫煙は気道防御機能を障害し肺炎リスクを上げる",
-      "onset_day_range": null
-    },
-    {
-      "from": "R03",
       "to": "D06",
       "from_name": "smoking",
       "to_name": "acute_bronchitis",
       "reason": "喫煙は気管支炎のリスクを上げる",
-      "onset_day_range": null
-    },
-    {
-      "from": "R04",
-      "to": "D05",
-      "from_name": "diabetes",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "糖尿病は免疫機能低下を通じて肺炎リスクを上げる",
       "onset_day_range": null
     },
     {
@@ -170,14 +146,6 @@
       "from_name": "immunosuppressed",
       "to_name": "COVID19",
       "reason": "免疫不全はCOVID重症化リスク",
-      "onset_day_range": null
-    },
-    {
-      "from": "R05",
-      "to": "D05",
-      "from_name": "immunosuppressed",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "免疫不全は肺炎リスクを上げる",
       "onset_day_range": null
     },
     {
@@ -234,14 +202,6 @@
       "from_name": "travel_tropical_2w",
       "to_name": "typhoid_fever",
       "reason": "南アジア・東南アジア渡航は腸チフスのリスク",
-      "onset_day_range": null
-    },
-    {
-      "from": "R07",
-      "to": "D05",
-      "from_name": "recent_hospitalization_3m",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "入院歴は耐性菌肺炎のリスク",
       "onset_day_range": null
     },
     {
@@ -382,14 +342,6 @@
     },
     {
       "from": "R16",
-      "to": "D05",
-      "from_name": "heavy_alcohol",
-      "to_name": "community_acquired_pneumonia",
-      "reason": "飲酒は誤嚥性肺炎のリスク（意識低下・嘔吐）",
-      "onset_day_range": null
-    },
-    {
-      "from": "R16",
       "to": "D17",
       "from_name": "heavy_alcohol",
       "to_name": "pulmonary_tuberculosis",
@@ -498,18 +450,6 @@
       "from_name": "acute_pharyngotonsillitis",
       "to_name": "symptom_duration",
       "reason": "咽頭扁桃炎は3-5日",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
-      }
-    },
-    {
-      "from": "D05",
-      "to": "T01",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "symptom_duration",
-      "reason": "肺炎は治療で3-7日、未治療で長引く",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -642,18 +582,6 @@
       "from_name": "COVID19",
       "to_name": "onset_speed",
       "reason": "COVIDは1-2日で発症",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 0
-      }
-    },
-    {
-      "from": "D05",
-      "to": "T02",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "onset_speed",
-      "reason": "細菌性肺炎は比較的急性、非定型はやや緩徐",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -805,18 +733,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "S01",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "cough",
-      "reason": "肺炎で湿性咳嗽（膿性痰）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 2
-      }
-    },
-    {
       "from": "D06",
       "to": "S01",
       "from_name": "acute_bronchitis",
@@ -922,18 +838,6 @@
         "earliest": 5,
         "typical": 7,
         "latest": 14
-      }
-    },
-    {
-      "from": "D05",
-      "to": "S04",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "dyspnea",
-      "reason": "肺炎で呼吸困難",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 2,
-        "latest": 5
       }
     },
     {
@@ -1657,18 +1561,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "S21",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "chest_pain",
-      "reason": "肺炎で胸膜痛（pleuritic）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D01",
       "to": "E01",
       "from_name": "viral_URI",
@@ -1710,18 +1602,6 @@
       "from_name": "acute_pharyngotonsillitis",
       "to_name": "temperature",
       "reason": "咽頭扁桃炎で高熱",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 0,
-        "latest": 1
-      }
-    },
-    {
-      "from": "D05",
-      "to": "E01",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "temperature",
-      "reason": "肺炎で高熱",
       "onset_day_range": {
         "earliest": 0,
         "typical": 0,
@@ -2037,18 +1917,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "E04",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "respiratory_rate",
-      "reason": "肺炎で頻呼吸",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D03",
       "to": "E04",
       "from_name": "COVID19",
@@ -2067,18 +1935,6 @@
       "to_name": "respiratory_rate",
       "reason": "発熱に伴う代償性頻呼吸",
       "onset_day_range": null
-    },
-    {
-      "from": "D05",
-      "to": "E05",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "SpO2",
-      "reason": "肺炎で低酸素",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 3,
-        "latest": 7
-      }
     },
     {
       "from": "D03",
@@ -2114,18 +1970,6 @@
         "earliest": 0,
         "typical": 0,
         "latest": 0.5
-      }
-    },
-    {
-      "from": "D05",
-      "to": "E07",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "lung_auscultation",
-      "reason": "肺炎でcrackles（水泡音）",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 2,
-        "latest": 3
       }
     },
     {
@@ -2501,18 +2345,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "L01",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "WBC",
-      "reason": "細菌性肺炎で白血球増多",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D10",
       "to": "L01",
       "from_name": "appendicitis",
@@ -2617,18 +2449,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D05",
-      "to": "L02",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "CRP",
-      "reason": "細菌性肺炎でCRP高度上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D09",
       "to": "L02",
       "from_name": "acute_pyelonephritis",
@@ -2725,18 +2545,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "L03",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "procalcitonin",
-      "reason": "細菌性肺炎でPCT上昇",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
-      }
-    },
-    {
       "from": "D09",
       "to": "L03",
       "from_name": "acute_pyelonephritis",
@@ -2782,18 +2590,6 @@
         "earliest": 0,
         "typical": 0.5,
         "latest": 1
-      }
-    },
-    {
-      "from": "D05",
-      "to": "L04",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "chest_xray",
-      "reason": "肺炎で浸潤影",
-      "onset_day_range": {
-        "earliest": 1,
-        "typical": 2,
-        "latest": 5
       }
     },
     {
@@ -3058,18 +2854,6 @@
         "earliest": 5,
         "typical": 7,
         "latest": 14
-      }
-    },
-    {
-      "from": "D05",
-      "to": "L14",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "peripheral_blood_smear",
-      "reason": "細菌感染でleft shift（桿状核球増加）",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 3
       }
     },
     {
@@ -10397,39 +10181,6 @@
       }
     },
     {
-      "from": "D05",
-      "to": "S06",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "myalgia",
-      "reason": "肺炎の全身症状として筋肉痛",
-      "onset_day_range": {
-        "min": 0,
-        "max": 3
-      }
-    },
-    {
-      "from": "D05",
-      "to": "S07",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "fatigue",
-      "reason": "肺炎で全身倦怠感",
-      "onset_day_range": {
-        "min": 0,
-        "max": 7
-      }
-    },
-    {
-      "from": "D05",
-      "to": "L28",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "ESR",
-      "reason": "細菌性肺炎でESR上昇",
-      "onset_day_range": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    {
       "from": "D55",
       "to": "T01",
       "from_name": "Q_fever",
@@ -11274,27 +11025,6 @@
       "to": "T02",
       "from_name": "acute_pharyngotonsillitis",
       "to_name": "onset_speed",
-      "reason": "TODO"
-    },
-    {
-      "from": "D05",
-      "to": "L09",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "blood_culture",
-      "reason": "TODO"
-    },
-    {
-      "from": "D05",
-      "to": "S09",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "rigors",
-      "reason": "TODO"
-    },
-    {
-      "from": "D05",
-      "to": "S46",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "anorexia",
       "reason": "TODO"
     },
     {
@@ -14151,13 +13881,6 @@
       "reason": "百日咳: 亜急性〜慢性(catarrhal→paroxysmal 2-8週)"
     },
     {
-      "from": "D05",
-      "to": "S47",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "cough_duration",
-      "reason": "市中肺炎: 急性咳嗽(<1-2週)が典型"
-    },
-    {
       "from": "D02",
       "to": "S47",
       "from_name": "influenza",
@@ -15880,13 +15603,6 @@
       "reason": "甲状腺クリーゼ: 高拍出性心不全でBNP上昇"
     },
     {
-      "from": "D05",
-      "to": "S49",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "S49",
-      "reason": "肺炎: 重症で起座呼吸(10-20%)"
-    },
-    {
       "from": "D50",
       "to": "S49",
       "from_name": "PCP",
@@ -17357,20 +17073,6 @@
       "reason": "肋軟骨炎: 急性~緩徐"
     },
     {
-      "from": "D05",
-      "to": "S50",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "S50",
-      "reason": "D05→胸痛誘発因子"
-    },
-    {
-      "from": "D05",
-      "to": "S51",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "S51",
-      "reason": "D05→胸痛放散"
-    },
-    {
       "from": "D36",
       "to": "S50",
       "from_name": "empyema",
@@ -17761,13 +17463,6 @@
       "from_name": "COVID19",
       "to_name": "L52",
       "reason": "COVID-19: D-dimer上昇(30-50%, coagulopathy/microthrombi)"
-    },
-    {
-      "from": "D05",
-      "to": "L52",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "L52",
-      "reason": "肺炎: D-dimer軽度上昇(炎症/immobilization)"
     },
     {
       "from": "D35",
@@ -22899,13 +22594,6 @@
       "from_name": "TTP",
       "to_name": "S06",
       "reason": "TTP: 筋肉痛(20-30%)"
-    },
-    {
-      "from": "D05",
-      "to": "L17",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "L17",
-      "reason": "肺炎: CK上昇(横紋筋融解合併, Legionellaで特に)"
     },
     {
       "from": "D11",
@@ -40409,14 +40097,6 @@
       "onset_day_range": null
     },
     {
-      "from": "D05",
-      "to": "S83",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "胸痛の性状",
-      "reason": "CPT_NO_EDGE sync: 市中肺炎 → 胸痛の性状",
-      "onset_day_range": null
-    },
-    {
       "from": "D36",
       "to": "S83",
       "from_name": "empyema",
@@ -40710,14 +40390,6 @@
       "from_name": "COVID19",
       "to_name": "咳嗽の性状",
       "reason": "CPT_NO_EDGE sync: 新型コロナウイルス感染症 → 咳嗽の性状",
-      "onset_day_range": null
-    },
-    {
-      "from": "D05",
-      "to": "S84",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "咳嗽の性状",
-      "reason": "CPT_NO_EDGE sync: 市中肺炎 → 咳嗽の性状",
       "onset_day_range": null
     },
     {
@@ -45850,14 +45522,6 @@
     },
     {
       "from": "R02",
-      "to": "D05",
-      "from_name": "sex",
-      "to_name": "D05",
-      "reason": "市中肺炎。高齢者、やや男性",
-      "onset_day_range": null
-    },
-    {
-      "from": "R02",
       "to": "D10",
       "from_name": "sex",
       "to_name": "D10",
@@ -47951,18 +47615,6 @@
       "to_name": "CRP",
       "reason": "ウェルニッケ脳症は非感染性でCRP正常が多い(合併症でCRP上昇もあり)",
       "onset_day_range": null
-    },
-    {
-      "from": "D05",
-      "to": "E02",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "heart_rate",
-      "reason": "肺炎でSIRS性頻脈(70-80%)",
-      "onset_day_range": {
-        "earliest": 0,
-        "typical": 1,
-        "latest": 7
-      }
     },
     {
       "from": "D130",
@@ -57994,13 +57646,6 @@
       "reason": "肺炎球菌: 喀痰Gram GPC感度50-70%(PMC7384319 PLR=7.6)"
     },
     {
-      "from": "D05",
-      "to": "L105",
-      "from_name": "community_acquired_pneumonia",
-      "to_name": "sputum_gram_stain",
-      "reason": "CAP: 肺炎球菌35%+インフル桿菌10%+非定型30%(PMC7384319)"
-    },
-    {
       "from": "D265",
       "to": "L105",
       "from_name": "h_influenzae_pneumonia",
@@ -58130,13 +57775,6 @@
       "from": "D266",
       "to": "L106",
       "from_name": "pneumococcal_pneumonia",
-      "to_name": "BAL_microscopy",
-      "reason": "BAL鏡検"
-    },
-    {
-      "from": "D05",
-      "to": "L106",
-      "from_name": "community_acquired_pneumonia",
       "to_name": "BAL_microscopy",
       "reason": "BAL鏡検"
     },

@@ -140,40 +140,6 @@
       "severity": "low"
     },
     {
-      "id": "D05",
-      "name": "community_acquired_pneumonia",
-      "name_ja": "市中肺炎",
-      "category": "disease",
-      "states": [
-        "no",
-        "yes"
-      ],
-      "note": "[DEPRECATED] pathogen-specific IDs (D263-D267/D102/D104) supersede. Cases remapped to D266/D263. Old: 細菌性・非定型含む",
-      "diagnostic_profile": {
-        "name_ja": "市中肺炎",
-        "diagnostic_speed": "fast",
-        "expected_certainty_day": 2,
-        "entropy_half_life_days": 1,
-        "typical_total_duration_days": [
-          5,
-          14
-        ],
-        "key_timeline_note": "急性高熱+湿性咳嗽+聴診異常で2日以内。X線で確定。",
-        "onset_pattern": "acute（比較的急性）",
-        "resolution_pattern": "適切な抗菌薬で3-5日で解熱、X線改善は2-4週間",
-        "escalation_rule": {
-          "days": 5,
-          "action": "5日間の第一選択抗菌薬で改善なし→耐性菌・膿胸・肺膿瘍を考慮。CT検討"
-        },
-        "red_flags": [
-          "72時間以内の改善なし",
-          "SpO2低下進行",
-          "胸水増加"
-        ]
-      },
-      "severity": "high"
-    },
-    {
       "id": "D06",
       "name": "acute_bronchitis",
       "name_ja": "急性気管支炎",

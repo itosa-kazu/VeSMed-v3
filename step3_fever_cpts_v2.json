@@ -1480,21 +1480,6 @@
         "65_plus": 0.002
       }
     },
-    "D05": {
-      "parents": [
-        "R02",
-        "R01"
-      ],
-      "description": "市中肺炎。高齢者、やや男性",
-      "cpt": {
-        "male|18_39": 0.003,
-        "male|40_64": 0.005,
-        "male|65_plus": 0.012,
-        "female|18_39": 0.002,
-        "female|40_64": 0.004,
-        "female|65_plus": 0.01
-      }
-    },
     "D08": {
       "parents": [
         "R02"
@@ -6059,25 +6044,6 @@
         "yes": 0.75
       }
     },
-    "S21": {
-      "parents": [
-        "D05"
-      ],
-      "description": "胸痛",
-      "cpt_type": "multinomial",
-      "cpt": {
-        "no": {
-          "absent": 0.97,
-          "pleuritic": 0.02,
-          "constant": 0.01
-        },
-        "yes": {
-          "absent": 0.55,
-          "pleuritic": 0.4,
-          "constant": 0.05
-        }
-      }
-    },
     "E06": {
       "parents": [
         "D13"
@@ -6092,7 +6058,6 @@
     },
     "E07": {
       "parents": [
-        "D05",
         "D06"
       ],
       "description": "肺聴診",
@@ -6310,7 +6275,6 @@
     "E05": {
       "parents": [
         "D03",
-        "D05",
         "D17"
       ],
       "description": "酸素飽和度",
@@ -13534,24 +13498,6 @@
         "female": 0.04
       }
     },
-    "D05": {
-      "parents": [
-        "R01"
-      ],
-      "cpt": {
-        "0_1": 0.06,
-        "1_5": 0.05,
-        "6_12": 0.02,
-        "13_17": 0.01,
-        "18_39": 0.02,
-        "40_64": 0.03,
-        "65_plus": 0.1
-      },
-      "R02": {
-        "male": 0.06,
-        "female": 0.04
-      }
-    },
     "D09": {
       "parents": [
         "R01"
@@ -14935,14 +14881,6 @@
         "female": 0.45
       }
     },
-    "R67": {
-      "parents": [],
-      "description": "生魚摂取歴。一般人口における24h以内の生魚摂取率",
-      "cpt": {
-        "no": 0.85,
-        "yes": 0.15
-      }
-    },
     "D430": {
       "parents": [],
       "description": "機能性ディスペプシア。有病率10-20%だが発症確率としては低め",
@@ -15096,26 +15034,6 @@
     }
   },
   "noisy_or_params": {
-    "D05": {
-      "description": "肺炎。6つのリスク因子",
-      "leak": 0.02,
-      "parent_effects": {
-        "R01": {
-          "18_39": 0.18181818181818182,
-          "40_64": 0.2727272727272727,
-          "65_plus": 0.5454545454545454
-        },
-        "R03": {
-          "never": 0.19999999999999998,
-          "former": 0.3,
-          "current": 0.5
-        },
-        "R04": 0.04,
-        "R05": 0.06,
-        "R07": 0.05,
-        "R16": 0.04
-      }
-    },
     "D09": {
       "description": "腎盂腎炎。6つの親",
       "leak": 0.005,
@@ -15236,14 +15154,6 @@
           "39.0_40.0": 0.4,
           "over_40.0": 0.1,
           "hypothermia_under_35": 0.001
-        },
-        "D05": {
-          "under_37.5": 0.0294,
-          "37.5_38.0": 0.07,
-          "38.0_39.0": 0.3,
-          "39.0_40.0": 0.45,
-          "over_40.0": 0.15,
-          "hypothermia_under_35": 0.0006
         },
         "D06": {
           "under_37.5": 0.098,
@@ -19127,11 +19037,6 @@
           "100_120": 0.4,
           "over_120": 0.3
         },
-        "D05": {
-          "under_100": 0.35,
-          "100_120": 0.45,
-          "over_120": 0.2
-        },
         "D130": {
           "under_100": 0.3,
           "100_120": 0.45,
@@ -19758,11 +19663,6 @@
         "severe_over_30": 0.02
       },
       "parent_effects": {
-        "D05": {
-          "normal_under_20": 0.25,
-          "tachypnea_20_30": 0.5,
-          "severe_over_30": 0.25
-        },
         "D03": {
           "normal_under_20": 0.4,
           "tachypnea_20_30": 0.4,
@@ -20151,11 +20051,6 @@
           "normal_over_96": 0.2,
           "mild_hypoxia_93_96": 0.4,
           "severe_hypoxia_under_93": 0.4
-        },
-        "D05": {
-          "normal_over_96": 0.3,
-          "mild_hypoxia_93_96": 0.4,
-          "severe_hypoxia_under_93": 0.3
         },
         "D03": {
           "normal_over_96": 0.3,
@@ -20696,12 +20591,6 @@
         "decreased_absent": 0.03
       },
       "parent_effects": {
-        "D05": {
-          "clear": 0.1455,
-          "crackles": 0.7275,
-          "wheezes": 0.097,
-          "decreased_absent": 0.03
-        },
         "D06": {
           "clear": 0.291,
           "crackles": 0.1455,
@@ -24096,12 +23985,6 @@
           "high_10000_20000": 0.2,
           "very_high_over_20000": 0.05
         },
-        "D05": {
-          "low_under_4000": 0.03,
-          "normal_4000_10000": 0.15,
-          "high_10000_20000": 0.55,
-          "very_high_over_20000": 0.27
-        },
         "D10": {
           "low_under_4000": 0.02,
           "normal_4000_10000": 0.2,
@@ -25836,12 +25719,6 @@
           "moderate_3_10": 0.3,
           "high_over_10": 0.05
         },
-        "D05": {
-          "normal_under_0.3": 0.03,
-          "mild_0.3_3": 0.07,
-          "moderate_3_10": 0.3,
-          "high_over_10": 0.6
-        },
         "D09": {
           "normal_under_0.3": 0.03,
           "mild_0.3_3": 0.1,
@@ -27304,11 +27181,6 @@
         "high_over_0.5": 0.04
       },
       "parent_effects": {
-        "D05": {
-          "low_under_0.25": 0.1,
-          "gray_0.25_0.5": 0.25,
-          "high_over_0.5": 0.65
-        },
         "D09": {
           "low_under_0.25": 0.1,
           "gray_0.25_0.5": 0.25,
@@ -27439,14 +27311,6 @@
         "pneumothorax": 0.04
       },
       "parent_effects": {
-        "D05": {
-          "normal": 0.047,
-          "lobar_infiltrate": 0.6426,
-          "bilateral_infiltrate": 0.1881,
-          "BHL": 0.0188,
-          "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
-        },
         "D03": {
           "normal": 0.2821,
           "lobar_infiltrate": 0.094,
@@ -28231,12 +28095,6 @@
           "negative": 0.15,
           "gram_positive": 0.6,
           "gram_negative": 0.2
-        },
-        "D05": {
-          "not_done_or_pending": 0.4,
-          "negative": 0.35,
-          "gram_positive": 0.15,
-          "gram_negative": 0.1
         },
         "D12": {
           "not_done_or_pending": 0.4,
@@ -29110,14 +28968,6 @@
         "lymphocyte_predominant": 0.03
       },
       "parent_effects": {
-        "D05": {
-          "normal": 0.194,
-          "left_shift": 0.6789999999999999,
-          "atypical_lymphocytes": 0.029099999999999997,
-          "thrombocytopenia": 0.0485,
-          "eosinophilia": 0.0194,
-          "lymphocyte_predominant": 0.03
-        },
         "D13": {
           "normal": 0.1455,
           "left_shift": 0.7275,
@@ -30152,11 +30002,6 @@
           "elevated": 0.3,
           "very_high": 0.1
         },
-        "D05": {
-          "normal": 0.6,
-          "elevated": 0.3,
-          "very_high": 0.1
-        },
         "D217": {
           "normal": 0.25,
           "elevated": 0.45,
@@ -30661,11 +30506,6 @@
           "normal": 0.05,
           "elevated": 0.45,
           "very_high_over_100": 0.5
-        },
-        "D05": {
-          "normal": 0.1,
-          "elevated": 0.5,
-          "very_high_over_100": 0.4
         },
         "D90": {
           "normal": 0.1,
@@ -31880,10 +31720,6 @@
           "absent": 0.45,
           "present": 0.55
         },
-        "D05": {
-          "absent": 0.15,
-          "present": 0.85
-        },
         "D06": {
           "absent": 0.1,
           "present": 0.9
@@ -32419,11 +32255,6 @@
         "on_exertion": 0.02
       },
       "parent_effects": {
-        "D05": {
-          "absent": 0.2,
-          "at_rest": 0.4,
-          "on_exertion": 0.4
-        },
         "D03": {
           "absent": 0.5,
           "at_rest": 0.15,
@@ -33753,10 +33584,6 @@
           "present": 0.85
         },
         "D55": 0.65,
-        "D05": {
-          "absent": 0.6,
-          "present": 0.4
-        },
         "D104": 0.5,
         "D01": {
           "absent": 0.6,
@@ -34105,11 +33932,6 @@
           "absent": 0.4,
           "mild": 0.45,
           "severe": 0.15
-        },
-        "D05": {
-          "absent": 0.25,
-          "mild": 0.4,
-          "severe": 0.35
         },
         "D16": {
           "absent": 0.1,
@@ -35636,10 +35458,6 @@
         "D04": {
           "absent": 0.6,
           "present": 0.4
-        },
-        "D05": {
-          "absent": 0.4,
-          "present": 0.6
         },
         "D12": {
           "absent": 0.55,
@@ -37897,10 +37715,6 @@
         "present": 0.15
       },
       "parent_effects": {
-        "D05": {
-          "absent": 0.55,
-          "present": 0.45
-        },
         "D36": {
           "absent": 0.3,
           "present": 0.7
@@ -39685,10 +39499,6 @@
           "absent": 0.3,
           "present": 0.7
         },
-        "D05": {
-          "absent": 0.3,
-          "present": 0.7
-        },
         "D07": {
           "absent": 0.15,
           "present": 0.85
@@ -39907,12 +39717,6 @@
           "3d_to_1w": 0.6,
           "1w_to_3w": 0.09,
           "over_3w": 0.01
-        },
-        "D05": {
-          "under_3d": 0.1,
-          "3d_to_1w": 0.5,
-          "1w_to_3w": 0.35,
-          "over_3w": 0.05
         },
         "D06": {
           "under_3d": 0.35,
@@ -42492,12 +42296,6 @@
           "acute": 0.5803,
           "subacute": 0.1865,
           "chronic": 0.1244
-        },
-        "D05": {
-          "sudden": 0.0723,
-          "acute": 0.7682,
-          "subacute": 0.1116,
-          "chronic": 0.0478
         },
         "D06": {
           "sudden": 0.0457,
@@ -45563,11 +45361,6 @@
           "subacute_3w_8w": 0.6111,
           "chronic_over_8w": 0.2222
         },
-        "D05": {
-          "acute_under_3w": 0.8889,
-          "subacute_3w_8w": 0.0889,
-          "chronic_over_8w": 0.0222
-        },
         "D02": {
           "acute_under_3w": 0.9111,
           "subacute_3w_8w": 0.0667,
@@ -45853,10 +45646,6 @@
         "D120": {
           "absent": 0.35,
           "present": 0.65
-        },
-        "D05": {
-          "absent": 0.85,
-          "present": 0.15
         },
         "D50": {
           "absent": 0.7,
@@ -46436,11 +46225,6 @@
           "mildly_elevated": 0.4,
           "very_high": 0.3
         },
-        "D05": {
-          "normal": 0.45,
-          "mildly_elevated": 0.4,
-          "very_high": 0.15
-        },
         "D152": {
           "normal": 0.03,
           "mildly_elevated": 0.1,
@@ -46748,13 +46532,6 @@
         "meals": 0.066667
       },
       "parent_effects": {
-        "D05": {
-          "none": 0.3333,
-          "exertion": 0.1111,
-          "breathing": 0.4444,
-          "position": 0.0667,
-          "meals": 0.0444
-        },
         "D36": {
           "none": 0.2143,
           "exertion": 0.0714,
@@ -46933,11 +46710,6 @@
         "back": 0.133333
       },
       "parent_effects": {
-        "D05": {
-          "none": 0.8889,
-          "left_arm_jaw": 0.0444,
-          "back": 0.0667
-        },
         "D36": {
           "none": 0.9286,
           "left_arm_jaw": 0.0286,
@@ -50346,12 +50118,6 @@
         "tearing": 0.133333
       },
       "parent_effects": {
-        "D05": {
-          "burning": 0.0667,
-          "sharp": 0.7778,
-          "pressure": 0.1111,
-          "tearing": 0.0444
-        },
         "D36": {
           "burning": 0.0429,
           "sharp": 0.7857,
@@ -50598,10 +50364,6 @@
           "productive": 0.5
         },
         "D03": {
-          "dry": 0.5,
-          "productive": 0.5
-        },
-        "D05": {
           "dry": 0.5,
           "productive": 0.5
         },
@@ -56418,14 +56180,6 @@
           "branching_filaments": 0.005,
           "fungal": 0.045
         },
-        "D05": {
-          "negative": 0.48,
-          "gpc": 0.25,
-          "gnr": 0.15,
-          "afb": 0.03,
-          "branching_filaments": 0.01,
-          "fungal": 0.08
-        },
         "D265": {
           "negative": 0.4,
           "gpc": 0.04,
@@ -56598,14 +56352,6 @@
           "afb": 0.02,
           "branching_filaments": 0.005,
           "fungal": 0.045
-        },
-        "D05": {
-          "negative": 0.4,
-          "gpc": 0.28,
-          "gnr": 0.18,
-          "afb": 0.03,
-          "branching_filaments": 0.01,
-          "fungal": 0.1
         },
         "D265": {
           "negative": 0.3,
