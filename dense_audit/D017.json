@@ -1,0 +1,252 @@
+{
+  "disease_id": "D17",
+  "name": "pulmonary_tuberculosis",
+  "name_ja": "肺結核",
+  "processed_date": "2026-04-04",
+  "pipeline_version": "dense_audit_v1_trial",
+  "source": {
+    "primary": {
+      "pmid": "15535337",
+      "type": "NR",
+      "title": "Pulmonary tuberculosis - a review of clinical features and diagnosis",
+      "year": 2004
+    },
+    "secondary": [
+      {"pmid": "31151500", "type": "SR", "title": "Prevalence of anemia among patients with tuberculosis: systematic review and meta-analysis", "year": 2019},
+      {"pmid": "38719737", "type": "SR", "title": "Subclinical tuberculosis: meta-analysis of prevalence", "year": 2024},
+      {"pmid": "8902463", "type": "CS", "title": "Large cohort PTB clinical features (n=5480)", "year": 1997}
+    ],
+    "selection_note": "No single SR covering all clinical features of PTB exists. Primary source is a comprehensive NR (PMID:15535337) supplemented by topic-specific SRs and large cohorts."
+  },
+  "edges": [
+    {
+      "to": "S01",
+      "to_name": "cough",
+      "cpt": {"absent": 0.20, "present": 0.80},
+      "reason": "Cough is the most prevalent respiratory symptom in PTB, driven by granulomatous inflammation and airway irritation",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "cough 80% (28/35) in symptomatic cohort; range 23-90% across cohorts", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S04",
+      "to_name": "dyspnea",
+      "cpt": {"absent": 0.73, "on_exertion": 0.20, "at_rest": 0.07},
+      "reason": "Dyspnea indicates extensive parenchymal disease, large pleural effusion, or endobronchial TB",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "dyspnea 3-60%; 27.53% (98/356) in one cohort", "freq_type": "at_presentation"},
+      "_note": "state distribution (on_exertion vs at_rest) estimated — no primary data for split. NEEDS VERIFICATION"
+    },
+    {
+      "to": "S13",
+      "to_name": "nausea",
+      "cpt": {"absent": 0.74, "present": 0.26},
+      "reason": "GI symptoms from swallowed sputum or cytokine-mediated vagal reflex",
+      "source_edge": {"pmid": "12998172", "type": "CS"},
+      "source_cpt": {"pmid": "12998172", "type": "CS", "excerpt": "nausea 25.84% in symptom cluster analysis", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S14",
+      "to_name": "diarrhea",
+      "cpt": {"absent": 0.95, "present": 0.05},
+      "reason": "Occasional GI involvement via swallowed sputum or cytokine effect",
+      "source_edge": {"pmid": "12998172", "type": "CS"},
+      "source_cpt": {"pmid": "12998172", "type": "CS", "excerpt": "diarrhea 2.53-6%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S16",
+      "to_name": "night_sweats",
+      "cpt": {"absent": 0.55, "present": 0.45},
+      "reason": "Classic TB sign driven by diurnal cytokine level fluctuation peaking at night",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "night sweats 45.5% (115/253); range 26.1-55.1%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S17",
+      "to_name": "weight_loss",
+      "cpt": {"absent": 0.40, "present": 0.60},
+      "reason": "TNF-α driven catabolic state — historically called 'consumption'",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "weight loss 47% (15/32) to 67.7% (289/421)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S21",
+      "to_name": "chest_pain",
+      "cpt": {"absent": 0.70, "present": 0.30},
+      "reason": "Pleural inflammation from peripheral Ghon focus involvement",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "chest pain 12.5% (4/32) to 41.5% (105/253)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "S34",
+      "to_name": "hemoptysis",
+      "cpt": {"absent": 0.85, "present": 0.15},
+      "reason": "Caseous granuloma eroding pulmonary vasculature or Rasmussen aneurysm rupture",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "hemoptysis 6-26.7%; 14.9% (23/154) in one cohort", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "T01",
+      "to_name": "symptom_duration",
+      "cpt": {"under_3d": 0.02, "3d_to_1w": 0.03, "1w_to_3w": 0.15, "over_3w": 0.80},
+      "reason": "TB characteristically has insidious onset over weeks to months",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "symptoms insidiously progressive over weeks to months; 45.3% had >1yr of waxing/waning symptoms before diagnosis", "freq_type": "at_presentation"},
+      "_note": "state distribution estimated from qualitative description. NEEDS VERIFICATION with quantitative data"
+    },
+    {
+      "to": "T02",
+      "to_name": "onset_speed",
+      "cpt": {"sudden": 0.02, "acute": 0.08, "subacute": 0.40, "chronic": 0.50},
+      "reason": "TB onset is typically subacute to chronic",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "insidious onset over weeks to months, often mistaken for allergies or routine fatigue", "freq_type": "at_presentation"},
+      "_note": "state distribution estimated from qualitative description. NEEDS VERIFICATION with quantitative data"
+    },
+    {
+      "to": "E01",
+      "to_name": "temperature",
+      "cpt": {"hypothermia_under_35": 0.01, "under_37.5": 0.35, "37.5_38.0": 0.20, "38.0_39.0": 0.30, "39.0_40.0": 0.12, "over_40.0": 0.02},
+      "reason": "Fever frequency highly variable (18-100%) depending on cohort severity",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "fever 18-42% (primary TB), 72.4% (118/421) in active cohort, 88% objective fever sign (28/32)", "freq_type": "at_presentation"},
+      "_note": "temperature distribution across ranges estimated — no primary source for exact breakdown. NEEDS VERIFICATION"
+    },
+    {
+      "to": "E07",
+      "to_name": "lung_auscultation",
+      "cpt": {"clear": 0.60, "crackles": 0.28, "wheezes": 0.05, "decreased_absent": 0.07},
+      "reason": "Lung crackles from consolidation; decreased breath sounds from effusion",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "crackles 28% (9/32); pleural effusion signs 12.5% (4/32)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "E13",
+      "to_name": "lymphadenopathy",
+      "cpt": {"absent": 0.80, "present": 0.20},
+      "reason": "Lymph node involvement from lymphatic spread of TB bacilli",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "lymphadenopathy 15.9-22.0% (7/32)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "E14",
+      "to_name": "splenomegaly",
+      "cpt": {"absent": 0.94, "present": 0.06},
+      "reason": "Reticuloendothelial involvement in disseminated disease",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "splenomegaly 6% (2/32)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "E34",
+      "to_name": "hepatomegaly",
+      "cpt": {"absent": 0.875, "present": 0.125},
+      "reason": "Hepatic granulomatous involvement or reactive hepatitis",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "hepatomegaly 12.5% (4/32)", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L01",
+      "to_name": "WBC",
+      "cpt": {"low_under_4000": 0.10, "normal_4000_10000": 0.50, "high_10000_20000": 0.30, "very_high_over_20000": 0.10},
+      "reason": "WBC can be elevated (neutrophilia) or depressed (miliary TB, immunosuppression)",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "leukocytosis 19.5-53%; leukopenia 4-20.4%", "freq_type": "at_presentation"},
+      "_note": "state distribution estimated from ranges. NEEDS VERIFICATION with exact cohort data"
+    },
+    {
+      "to": "L02",
+      "to_name": "CRP",
+      "cpt": {"normal_under_0.3": 0.10, "mild_0.3_3": 0.20, "moderate_3_10": 0.40, "high_over_10": 0.30},
+      "reason": "Acute phase reactant elevated in active TB reflecting systemic inflammation",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "CRP elevated in ~70% of cohort", "freq_type": "at_presentation"},
+      "_note": "distribution across CRP ranges estimated. NEEDS VERIFICATION"
+    },
+    {
+      "to": "L04",
+      "to_name": "chest_xray",
+      "cpt": {"normal": 0.05, "lobar_infiltrate": 0.50, "bilateral_infiltrate": 0.25, "BHL": 0.05, "pleural_effusion": 0.14, "pneumothorax": 0.01},
+      "reason": "CXR abnormal in 98.6% of symptomatic PTB; infiltrates in 99% of abnormal CXRs",
+      "source_edge": {"pmid": "8902463", "type": "CS"},
+      "source_cpt": {"pmid": "8902463", "type": "CS", "excerpt": "CXR abnormal 98.6%; infiltrates 99% of abnormal; cavity 66%; effusion 14-21.2%; hilar LAD 23%", "freq_type": "at_presentation"},
+      "_note": "distribution across CXR categories estimated from multiple data points. NEEDS VERIFICATION"
+    },
+    {
+      "to": "L28",
+      "to_name": "ESR",
+      "cpt": {"normal": 0.05, "elevated": 0.35, "very_high_over_100": 0.60},
+      "reason": "ESR almost universally elevated in active PTB due to hyperfibrinogenemia",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "ESR elevated in 91.1-99.0% of newly diagnosed PTB patients", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L44",
+      "to_name": "electrolytes",
+      "cpt": {"normal": 0.40, "hyponatremia": 0.55, "hyperkalemia": 0.02, "other": 0.03},
+      "reason": "Hyponatremia from SIADH — ectopic ADH production by inflamed lung tissue",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "hyponatremia 40-75%; mild 39%, moderate 27%, severe 9%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L70",
+      "to_name": "serum_albumin",
+      "cpt": {"normal": 0.30, "mildly_low": 0.40, "very_low": 0.30},
+      "reason": "Negative acute phase protein + severe malnutrition/cachexia",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "hypoalbuminemia 50-80%", "freq_type": "at_presentation"},
+      "_note": "distribution between mildly_low and very_low estimated. NEEDS VERIFICATION"
+    },
+    {
+      "to": "L93",
+      "to_name": "hemoglobin",
+      "cpt": {"very_low_under_7": 0.06, "low_7_10": 0.25, "mild_low_10_12": 0.30, "normal": 0.38, "high": 0.01},
+      "reason": "Anemia of chronic disease via IL-6/hepcidin pathway; iron sequestration in macrophages",
+      "source_edge": {"pmid": "31151500", "type": "SR"},
+      "source_cpt": {"pmid": "31151500", "type": "SR", "excerpt": "pooled anemia prevalence 61.53% (meta-analysis of 41 studies); mild 27.5-37.4%, moderate 27.5-52.5%, severe 6.2-10.1%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L94",
+      "to_name": "MCV",
+      "cpt": {"microcytic": 0.28, "normocytic": 0.62, "macrocytic": 0.10},
+      "reason": "Normocytic normochromic (anemia of chronic disease) predominates; microcytic from iron deficiency",
+      "source_edge": {"pmid": "31151500", "type": "SR"},
+      "source_cpt": {"pmid": "31151500", "type": "SR", "excerpt": "normochromic normocytic 60.8-64.6% of anemia; hypochromic microcytic 27.8%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L100",
+      "to_name": "platelet_count",
+      "cpt": {"very_low_under_50k": 0.03, "low_50k_150k": 0.10, "normal": 0.65, "high_over_400k": 0.20, "very_high_over_1000k": 0.02},
+      "reason": "Reactive thrombocytosis from IL-6 driven thrombopoietin; thrombocytopenia in disseminated/miliary TB",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "thrombocytosis 11.6-32.9%; thrombocytopenia 9.8-15.8%", "freq_type": "at_presentation"}
+    },
+    {
+      "to": "L105",
+      "to_name": "sputum_gram_stain",
+      "cpt": {"negative": 0.60, "gpc": 0.02, "gnr": 0.02, "afb": 0.35, "branching_filaments": 0.005, "fungal": 0.005},
+      "reason": "AFB smear positivity at baseline varies 22.8-79% depending on cohort",
+      "source_edge": {"pmid": "8902463", "type": "CS"},
+      "source_cpt": {"pmid": "8902463", "type": "CS", "excerpt": "sputum AFB smear positive 79% (3916/5094) in large cohort; 22.8-68.2% in other cohorts", "freq_type": "at_presentation"},
+      "_note": "Using 35% as conservative mid-range estimate for our general population model"
+    },
+    {
+      "to": "L11",
+      "to_name": "liver_enzymes",
+      "cpt": {"normal": 0.70, "mild_elevated": 0.25, "very_high": 0.05},
+      "reason": "Hepatic granulomatous involvement or reactive hepatitis",
+      "source_edge": {"pmid": "15535337", "type": "NR"},
+      "source_cpt": {"pmid": "15535337", "type": "NR", "excerpt": "transaminase (AST/ALT) elevation, ALP elevation reported in hepatic dissemination", "freq_type": "at_presentation"},
+      "_note": "exact frequency not provided; estimated from clinical context. NEEDS VERIFICATION"
+    }
+  ],
+  "regression_snapshot": null,
+  "_meta": {
+    "total_variables_reviewed": 402,
+    "edges_created": 25,
+    "data_quality_notes": [
+      "No single SR covers all PTB clinical features — relied on NR (PMID:15535337) as primary + topic-specific SRs",
+      "Multiple edges have multi-state CPT distributions estimated from aggregate frequency — marked with NEEDS VERIFICATION",
+      "Frequency ranges are wide across cohorts due to population heterogeneity (HIV status, disease stage, geography)",
+      "T01/T02 temporal variables: CPT based on qualitative description, not n/N count"
+    ]
+  }
+}

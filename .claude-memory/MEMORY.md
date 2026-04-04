@@ -1,6 +1,7 @@
 # Memory Index
 
 ## 鉄則・フィードバック
+- [feedback_source_level_traceability.md](feedback_source_level_traceability.md) — **全辺にPMID+情報源レベル(SR/NR/TB)+excerpt必須。降級源は明示的標記。全環節貫通の鉄律**
 - [feedback_project_principles.md](feedback_project_principles.md) — VeSMed 6大鉄則：実症例のみ/CPT文献必須/変数ID確認/三件套同期/辺+CPT同時/新疾患追加時real case必須
 - [feedback_regression_report_format.md](feedback_regression_report_format.md) — 回帰テスト報告は総案例数+百分率を必ず含める
 - [feedback_speak_chinese.md](feedback_speak_chinese.md) — 用中文交流
@@ -34,7 +35,8 @@
 - [feedback_new_var_disease_list_check.md](feedback_new_var_disease_list_check.md) — **新変量追加後は全疾患リストと手動照合**。S59/S60で17疾患の漏れを発見
 - [feedback_no_normal_value_edges.md](feedback_no_normal_value_edges.md) — 正常値辺(WBC正常等)は鑑別力ゼロで逆効果。疾患特異的辺のみ追加
 - [feedback_bidirectional_edge_check.md](feedback_bidirectional_edge_check.md) — **辺チェックは双方向**: 変量→疾患 + 疾患→変量。rank最差から優先
-- [project_dense_model_plan.md](project_dense_model_plan.md) — 稠密モデル実験結果: leak auto-fillは無効。臨床判断CPTによる漸進的稠密化が正解。年単位の長期計画
+- [project_dense_model_plan.md](project_dense_model_plan.md) — 稠密モデル実験結果: leak auto-fillは無効。臨床判断CPTによる漸進的稠密化が正解
+- [project_dense_cleanup_pipeline.md](project_dense_cleanup_pipeline.md) — **大清洗pipeline設計**: 全430疾患を1つずつ致密化。SR文献ベース、hot-swap構成、テンプレート生成でID幻覚防止
 - [project_t02_expansion.md](project_t02_expansion.md) — T02 4state化計画: sudden_minutes/acute_hours/subacute_weeks/chronic_months。自動マッピング失敗→手動CPT必要
 - [feedback_keep_experiment_branches.md](feedback_keep_experiment_branches.md) — 実験分支は削除禁止。失敗も保存
 - [feedback_evidence_needs_edges.md](feedback_evidence_needs_edges.md) — Evidence追加前に辺の整備を確認。辺なしevidenceはleak値で不利
