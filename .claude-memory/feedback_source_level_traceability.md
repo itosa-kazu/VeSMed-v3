@@ -1,24 +1,38 @@
 ---
 name: 情報源レベル追跡の鉄律
-description: 全ての辺にPMID+情報源レベル(SR/NR/TB)+原文excerptを必須記録。降級源は明示的に標記。全環節貫通。
+description: 全辺に文献根拠必須。辺根拠(source_edge)とCPT根拠(source_cpt)を分離記録。降級源は明示標記。CPT値は実数カウント(n/N)必須。
 type: feedback
 ---
 
 ## 鉄律
 
-**全ての辺(edge)に以下を必須記録する:**
+**全ての辺(edge)に以下の2層の文献根拠を記録する:**
 
-1. **pmid** — 文献のPMID（定位可能）
-2. **type** — 情報源レベル: `SR`(Systematic Review) / `NR`(Narrative Review) / `TB`(Textbook)
-3. **excerpt** — CPT値の根拠となる原文摘録（例: "fever 95% (95%CI 92-97%, n=1203)"）
+### source_edge（辺の存在根拠）
+- **pmid** — 文献のPMID
+- **type** — `SR`(Systematic Review) / `NR`(Narrative Review) / `TB`(Textbook) / `CS`(Case Series)
 
-## 優先順位
+### source_cpt（CPT値の根拠）
+- **pmid** — 頻度データの出典（source_edgeと同一文献の場合もある）
+- **type** — 同上
+- **excerpt** — **実数カウントを含む原文摘録**（例: "rash in 45/59 (76%)"）
 
-**SR > NR > TB**
+辺の存在根拠とCPT値の根拠は別の文献から来ることがある。両方を個別に記録する。
+
+## 情報源優先順位
+
+**SR > NR > TB > CS**
 
 - Systematic Reviewを最優先で探す
-- 見つからない場合はNRまたはTBに降級 → **typeフィールドで明示**
+- 見つからない場合は降級 → **typeフィールドで明示**
 - 降級した辺は将来の優先審査対象
+
+## CPT値は実数カウント(n/N)必須
+
+- 定性描述（"common", "rare", "frequent"等）からの主観的変換は**禁止**
+- SRに頻度なし → SRの引用文献を追い、頻度データのある原始研究を探す
+- SRもNRもない稀少疾患 → 最大サンプルのcase seriesから頻度を取得
+- excerptには必ず n/N または百分率+サンプルサイズを含めること
 
 ## 根拠
 

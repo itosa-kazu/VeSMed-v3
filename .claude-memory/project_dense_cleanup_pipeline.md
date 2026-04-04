@@ -13,11 +13,26 @@ type: project
 
 ### 1. 情報源の鉄則
 
-- **全ての辺にPMID + source type + excerpt必須**
-- 情報源優先順位: **Systematic Review (SR) > Narrative Review (NR) > Textbook (TB)**
+- **全ての辺に文献根拠必須（PMID + source type + excerpt）**
+- 情報源優先順位: **Systematic Review (SR) > Narrative Review (NR) > Textbook (TB) > Case Series (CS)**
 - **降級した情報源は必ず明示的にtypeで標記** → 全環節貫通の鉄律
 - 1疾患につき1篇の高品質綜述を基盤とする
 - **綜述に記載なし = 無辺**（良質な綜述が臨床所見を漏らすことはない）
+
+### 1.1 辺の根拠とCPT値の根拠は分離記録
+
+辺の存在根拠（この疾患がこの所見を引き起こすか）とCPT値の根拠（頻度データ）は
+別の文献から来ることがある。両方を個別に記録する:
+
+- **source_edge**: 辺の存在根拠（通常はSR/NR — 臨床所見として記載あり）
+- **source_cpt**: CPT値の根拠（頻度データ n/N を含む原始研究）
+
+### 1.2 CPT値は実数カウント(n/N)必須
+
+- CPT値は必ず実際の患者数カウント(n/N)から算出する
+- 定性描述（"common", "rare", "frequent"等）からの主観的変換は禁止
+- SRに頻度なし → SRの引用文献を追い、頻度データのある原始研究を探す
+- SRもNRもない稀少疾患 → 最大サンプルのcase seriesから頻度を取得
 
 ### 2. アーキテクチャ: hot-swap方式
 
@@ -45,9 +60,10 @@ type: project
     {
       "to": "E12",
       "to_name": "skin_rash",
-      "cpt": {"absent": 0.24, "maculopapular_rash": 0.70, ...},
+      "cpt": {"absent": 0.24, "maculopapular_rash": 0.76},
       "reason": "Evanescent salmon-colored rash during fever spikes",
-      "excerpt": "skin rash 76% (95%CI 70-81%, n=1203)"
+      "source_edge": {"pmid": "32345678", "type": "SR"},
+      "source_cpt": {"pmid": "28765432", "type": "CS", "excerpt": "rash in 45/59 (76%)"}
     }
   ],
   "regression_snapshot": {

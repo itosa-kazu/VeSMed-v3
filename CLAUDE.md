@@ -21,6 +21,11 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 5. **辺+CPT同時追加** — 辺だけ足してCPTなしは禁止
 6. **新疾患追加時はreal case必須** — WebSearchでPMC case report検索→テスト案例追加
 
+## 情報源追跡の鉄律（全環節貫通）
+- **全辺に文献根拠必須** — source_edge(辺の存在根拠) + source_cpt(CPT値の根拠)を分離記録
+- **情報源レベル明示** — SR(Systematic Review) > NR(Narrative Review) > TB(Textbook) > CS(Case Series)。降級は必ずtypeで標記
+- **CPT値は実数カウント(n/N)必須** — 定性描述("common","rare"等)からの主観的変換は禁止。SRに頻度なし→引用元の原始研究を追う
+
 ## その他の鉄則
 - **テスト案例は置換禁止、常に追加** — 全文献案例は貴重
 - **確定診断検査の結果はテスト案例に入れない** — 活検等
