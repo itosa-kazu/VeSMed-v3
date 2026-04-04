@@ -25,6 +25,9 @@ cp .claude-memory/*.md ~/.claude/projects/$(pwd | tr '/' '-' | sed 's/^-//')/mem
 - **全辺に文献根拠必須** — source_edge(辺の存在根拠) + source_cpt(CPT値の根拠)を分離記録
 - **情報源レベル明示** — SR(Systematic Review) > NR(Narrative Review) > TB(Textbook) > CS(Case Series)。降級は必ずtypeで標記
 - **CPT値は実数カウント(n/N)必須** — 定性描述("common","rare"等)からの主観的変換は禁止。SRに頻度なし→引用元の原始研究を追う
+- **SR選定は全候補記録** — 複数SR存在時は最新+最大N+PRISMA準拠を選定。全候補と選定理由をJSONに記録
+- **データ提取はプログラム化必須** — Claude WebFetchで論文データを直接提取しない。PMC API+Python解析 or OCR APIで構造化データを取得し、Claudeは構造化データから選択するだけ
+- **想定外事象は即停止・報告** — 設計時の想定外が発生したら自己判断で回避せず必ずユーザーに報告
 
 ## その他の鉄則
 - **テスト案例は置換禁止、常に追加** — 全文献案例は貴重
