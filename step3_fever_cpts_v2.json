@@ -19211,6 +19211,21 @@
           "under_100": 0.55,
           "100_120": 0.35,
           "over_120": 0.1
+        },
+        "D37": {
+          "under_100": 0.55,
+          "100_120": 0.32,
+          "over_120": 0.13
+        },
+        "D268": {
+          "under_100": 0.5,
+          "100_120": 0.35,
+          "over_120": 0.15
+        },
+        "D27": {
+          "under_100": 0.55,
+          "100_120": 0.35,
+          "over_120": 0.1
         }
       }
     },
@@ -19446,8 +19461,8 @@
           "hypotension_under_90": 0.3
         },
         "D177": {
-          "normal_over_90": 0.45,
-          "hypotension_under_90": 0.55
+          "normal_over_90": 0.92,
+          "hypotension_under_90": 0.08
         },
         "D199": {
           "normal_over_90": 0.4,
@@ -19652,6 +19667,18 @@
         "D389": {
           "normal_over_90": 0.65,
           "hypotension_under_90": 0.35
+        },
+        "D351": {
+          "normal_over_90": 0.85,
+          "hypotension_under_90": 0.15
+        },
+        "D275": {
+          "normal_over_90": 0.7,
+          "hypotension_under_90": 0.3
+        },
+        "D268": {
+          "normal_over_90": 0.8,
+          "hypotension_under_90": 0.2
         }
       }
     },
@@ -19926,11 +19953,13 @@
         },
         "D263": {
           "normal_under_20": 0.4,
-          "tachypnea_20_30": 0.6
+          "tachypnea_20_30": 0.6,
+          "severe_over_30": 0.0
         },
         "D264": {
           "normal_under_20": 0.4,
-          "tachypnea_20_30": 0.6000000000000001
+          "tachypnea_20_30": 0.6000000000000001,
+          "severe_over_30": 0.0
         },
         "D279": {
           "normal_under_20": 0.1,
@@ -21484,7 +21513,10 @@
           "petechiae_purpura": 0.05,
           "maculopapular_rash": 0.3,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.02
+          "diffuse_erythroderma": 0.02,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D40": {
           "normal": 0.55,
@@ -21492,7 +21524,10 @@
           "petechiae_purpura": 0.03,
           "maculopapular_rash": 0.03,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.03
+          "diffuse_erythroderma": 0.03,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D49": {
           "normal": 0.7,
@@ -21500,14 +21535,21 @@
           "petechiae_purpura": 0.05,
           "maculopapular_rash": 0.1,
           "vesicular_dermatomal": 0.01,
-          "diffuse_erythroderma": 0.04
+          "diffuse_erythroderma": 0.04,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0
         },
         "D83": {
           "normal": 0.85,
           "localized_erythema_warmth_swelling": 0.05,
           "petechiae_purpura": 0.05,
           "maculopapular_rash": 0.03,
-          "vesicular_dermatomal": 0.02
+          "vesicular_dermatomal": 0.02,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "diffuse_erythroderma": 0.0
         },
         "D39": {
           "normal": 0.15,
@@ -21547,7 +21589,11 @@
           "petechiae_purpura": 0.05,
           "diffuse_erythroderma": 0.04,
           "normal": 0.75,
-          "vesicular_dermatomal": 0.01
+          "vesicular_dermatomal": 0.01,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "localized_erythema_warmth_swelling": 0.0
         },
         "D111": {
           "normal": 0.02,
@@ -21939,21 +21985,33 @@
           "petechiae_purpura": 0.05,
           "localized_erythema_warmth_swelling": 0.6,
           "vesicle_bulla": 0.1,
-          "diffuse_erythroderma": 0.05
+          "diffuse_erythroderma": 0.05,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "maculopapular_rash": 0.0,
+          "vesicular_dermatomal": 0.0
         },
         "D219": {
           "normal": 0.5,
           "petechiae_purpura": 0.25,
           "localized_erythema_warmth_swelling": 0.1,
           "vesicle_bulla": 0.05,
-          "diffuse_erythroderma": 0.1
+          "diffuse_erythroderma": 0.1,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "maculopapular_rash": 0.0,
+          "vesicular_dermatomal": 0.0
         },
         "D222": {
           "normal": 0.55,
           "petechiae_purpura": 0.2,
           "localized_erythema_warmth_swelling": 0.1,
           "vesicle_bulla": 0.05,
-          "diffuse_erythroderma": 0.1
+          "diffuse_erythroderma": 0.1,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "maculopapular_rash": 0.0,
+          "vesicular_dermatomal": 0.0
         },
         "D63": {
           "normal": 0.8,
@@ -21971,21 +22029,33 @@
           "petechiae_purpura": 0.01,
           "diffuse_erythroderma": 0.15,
           "normal": 0.43,
-          "vesicular_dermatomal": 0.01
+          "vesicular_dermatomal": 0.01,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "localized_erythema_warmth_swelling": 0.0
         },
         "D361": {
           "maculopapular_rash": 0.02,
           "petechiae_purpura": 0.01,
           "diffuse_erythroderma": 0.01,
           "normal": 0.95,
-          "vesicular_dermatomal": 0.01
+          "vesicular_dermatomal": 0.01,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "localized_erythema_warmth_swelling": 0.0
         },
         "D108": {
           "maculopapular_rash": 0.1,
           "petechiae_purpura": 0.02,
           "diffuse_erythroderma": 0.05,
           "normal": 0.82,
-          "vesicular_dermatomal": 0.01
+          "vesicular_dermatomal": 0.01,
+          "skin_necrosis": 0.0,
+          "purpura": 0.0,
+          "vesicle_bulla": 0.0,
+          "localized_erythema_warmth_swelling": 0.0
         },
         "D24": {
           "normal": 0.03,
@@ -22244,13 +22314,11 @@
         },
         "D220": {
           "absent": 0.8,
-          "localized": 0.15,
-          "generalized": 0.05
+          "present": 0.2
         },
         "D366": {
           "absent": 0.05,
-          "localized": 0.7,
-          "generalized": 0.25
+          "present": 0.95
         },
         "D365": {
           "absent": 0.85,
@@ -22483,19 +22551,23 @@
         },
         "D212": {
           "absent": 0.3,
-          "new": 0.7
+          "new": 0.7,
+          "pre_existing": 0.0
         },
         "D214": {
           "absent": 0.3,
-          "new": 0.7
+          "new": 0.7,
+          "pre_existing": 0.0
         },
         "D216": {
           "absent": 0.05,
-          "new": 0.9500000000000001
+          "new": 0.9500000000000001,
+          "pre_existing": 0.0
         },
         "D340": {
           "absent": 0.05,
-          "new": 0.95
+          "new": 0.95,
+          "pre_existing": 0.0
         },
         "D403": {
           "absent": 0.02,
@@ -25629,10 +25701,10 @@
           "very_high_over_20000": 0.01
         },
         "D411": {
-          "low": 0.02,
-          "normal": 0.25,
-          "high": 0.6,
-          "very_high": 0.13
+          "low_under_4000": 0.02,
+          "normal_4000_10000": 0.25,
+          "high_10000_20000": 0.6,
+          "very_high_over_20000": 0.13
         },
         "D415": {
           "low_under_4000": 0.02,
@@ -25647,8 +25719,7 @@
           "very_high_over_20000": 0.05
         },
         "D419": {
-          "very_low_under_1000": 0.01,
-          "low_1000_4000": 0.05,
+          "low_under_4000": 0.06,
           "normal_4000_10000": 0.55,
           "high_10000_20000": 0.3,
           "very_high_over_20000": 0.09
@@ -26855,27 +26926,32 @@
         "D155": {
           "normal_under_0.3": 0.4,
           "mild_0.3_3": 0.45,
-          "high_over_10": 0.15
+          "high_over_10": 0.15,
+          "moderate_3_10": 0.0
         },
         "D314": {
           "normal_under_0.3": 0.8,
           "mild_0.3_3": 0.15,
-          "high_over_10": 0.05
+          "high_over_10": 0.05,
+          "moderate_3_10": 0.0
         },
         "D199": {
           "normal_under_0.3": 0.6,
           "mild_0.3_3": 0.3,
-          "high_over_10": 0.1
+          "high_over_10": 0.1,
+          "moderate_3_10": 0.0
         },
         "D194": {
           "normal_under_0.3": 0.3,
           "mild_0.3_3": 0.5,
-          "high_over_10": 0.2
+          "high_over_10": 0.2,
+          "moderate_3_10": 0.0
         },
         "D317": {
           "normal_under_0.3": 0.8,
           "mild_0.3_3": 0.15,
-          "high_over_10": 0.05
+          "high_over_10": 0.05,
+          "moderate_3_10": 0.0
         },
         "D163": {
           "normal_under_0.3": 0.55,
@@ -27112,9 +27188,10 @@
           "high_over_10": 0.01
         },
         "D411": {
-          "normal": 0.1,
-          "mildly_elevated": 0.3,
-          "highly_elevated": 0.6
+          "normal_under_0.3": 0.1,
+          "mild_0.3_3": 0.3,
+          "moderate_3_10": 0.0,
+          "high_over_10": 0.6
         },
         "D415": {
           "normal_under_0.3": 0.1,
@@ -27129,9 +27206,9 @@
           "high_over_10": 0.35
         },
         "D419": {
-          "normal_under_0.5": 0.2,
-          "mild_0.5_5": 0.35,
-          "moderate_5_10": 0.25,
+          "normal_under_0.3": 0.2,
+          "mild_0.3_3": 0.35,
+          "moderate_3_10": 0.25,
           "high_over_10": 0.2
         },
         "D429": {
@@ -27319,7 +27396,8 @@
         "bilateral_infiltrate": 0.03,
         "BHL": 0.01,
         "pleural_effusion": 0.05,
-        "pneumothorax": 0.04
+        "pneumothorax": 0.04,
+        "subdiaphragmatic_free_air": 0.005
       },
       "parent_effects": {
         "D03": {
@@ -27328,7 +27406,8 @@
           "bilateral_infiltrate": 0.5485,
           "BHL": 0.0188,
           "pleural_effusion": 0.047,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D17": {
           "normal": 0.1411,
@@ -27336,7 +27415,8 @@
           "bilateral_infiltrate": 0.1881,
           "BHL": 0.047,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D14": {
           "normal": 0.3574,
@@ -27344,7 +27424,8 @@
           "bilateral_infiltrate": 0.3792,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D35": {
           "normal": 0.094,
@@ -27352,7 +27433,8 @@
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
           "pleural_effusion": 0.1881,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D36": {
           "normal": 0.047,
@@ -27360,7 +27442,8 @@
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
           "pleural_effusion": 0.7367,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D50": {
           "normal": 0.3574,
@@ -27368,7 +27451,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D55": {
           "normal": 0.2633,
@@ -27376,7 +27460,8 @@
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D77": {
           "normal": 0.3574,
@@ -27384,7 +27469,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D83": {
           "normal": 0.3574,
@@ -27392,7 +27478,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D99": {
           "normal": 0.094,
@@ -27400,7 +27487,8 @@
           "bilateral_infiltrate": 0.2822,
           "BHL": 0.0376,
           "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D102": {
           "normal": 0.047,
@@ -27408,7 +27496,8 @@
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0188,
           "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D92": {
           "normal": 0.4044,
@@ -27416,7 +27505,8 @@
           "bilateral_infiltrate": 0.1411,
           "BHL": 0.0658,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D67": {
           "normal": 0.2351,
@@ -27424,7 +27514,8 @@
           "bilateral_infiltrate": 0.3322,
           "BHL": 0.1411,
           "pleural_effusion": 0.1881,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D60": {
           "normal": 0.3574,
@@ -27432,7 +27523,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.0188,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D62": {
           "normal": 0.094,
@@ -27440,7 +27532,8 @@
           "bilateral_infiltrate": 0.0658,
           "BHL": 0.7084,
           "pleural_effusion": 0.094,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D69": {
           "normal": 0.348,
@@ -27448,7 +27541,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.0282,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D104": {
           "normal": 0.095,
@@ -27456,7 +27550,8 @@
           "bilateral_infiltrate": 0.285,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D28": {
           "normal": 0.7995,
@@ -27464,7 +27559,8 @@
           "bilateral_infiltrate": 0.0282,
           "BHL": 0.0188,
           "pleural_effusion": 0.047,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D56": {
           "normal": 0.4703,
@@ -27472,7 +27568,8 @@
           "bilateral_infiltrate": 0.2851,
           "BHL": 0.047,
           "pleural_effusion": 0.047,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D113": {
           "normal": 0.2821,
@@ -27480,7 +27577,8 @@
           "bilateral_infiltrate": 0.4262,
           "BHL": 0.094,
           "pleural_effusion": 0.1411,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D120": {
           "normal": 0.094,
@@ -27488,7 +27586,8 @@
           "bilateral_infiltrate": 0.4732,
           "BHL": 0.0188,
           "pleural_effusion": 0.3574,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D121": {
           "normal": 0.5173,
@@ -27496,7 +27595,8 @@
           "bilateral_infiltrate": 0.094,
           "BHL": 0.0188,
           "pleural_effusion": 0.2193,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D122": {
           "normal": 0.6584,
@@ -27504,7 +27604,8 @@
           "bilateral_infiltrate": 0.047,
           "BHL": 0.0188,
           "pleural_effusion": 0.2193,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D123": {
           "normal": 0.0475,
@@ -27512,7 +27613,8 @@
           "bilateral_infiltrate": 0.019,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.8575
+          "pneumothorax": 0.8575,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D124": {
           "normal": 0.285,
@@ -27520,7 +27622,8 @@
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.019,
           "pleural_effusion": 0.5725,
-          "pneumothorax": 0.057
+          "pneumothorax": 0.057,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D125": {
           "normal": 0.6175,
@@ -27528,7 +27631,8 @@
           "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D127": {
           "normal": 0.0475,
@@ -27536,7 +27640,8 @@
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
           "pleural_effusion": 0.7625,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D129": {
           "normal": 0.855,
@@ -27544,7 +27649,8 @@
           "bilateral_infiltrate": 0.019,
           "BHL": 0.019,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D130": {
           "normal": 0.095,
@@ -27552,7 +27658,8 @@
           "bilateral_infiltrate": 0.62,
           "BHL": 0.076,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D133": {
           "normal": 0.855,
@@ -27560,7 +27667,8 @@
           "bilateral_infiltrate": 0.019,
           "BHL": 0.019,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D134": {
           "normal": 0.665,
@@ -27568,7 +27676,8 @@
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.019,
           "pleural_effusion": 0.1925,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D135": {
           "normal": 0.874,
@@ -27576,7 +27685,8 @@
           "bilateral_infiltrate": 0.0095,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D136": {
           "normal": 0.1425,
@@ -27584,7 +27694,8 @@
           "bilateral_infiltrate": 0.0285,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.753
+          "pneumothorax": 0.003,
+          "subdiaphragmatic_free_air": 0.75
         },
         "D143": {
           "normal": 0.095,
@@ -27592,7 +27703,8 @@
           "bilateral_infiltrate": 0.2375,
           "BHL": 0.019,
           "pleural_effusion": 0.1425,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D148": {
           "normal": 0.095,
@@ -27600,7 +27712,8 @@
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
           "pleural_effusion": 0.43,
-          "pneumothorax": 0.3135
+          "pneumothorax": 0.3135,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D173": {
           "normal": 0.57,
@@ -27608,7 +27721,8 @@
           "bilateral_infiltrate": 0.335,
           "BHL": 0.0095,
           "pleural_effusion": 0.0285,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D175": {
           "normal": 0.0285,
@@ -27616,7 +27730,8 @@
           "bilateral_infiltrate": 0.905,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D188": {
           "normal": 0.0475,
@@ -27624,7 +27739,8 @@
           "bilateral_infiltrate": 0.81,
           "BHL": 0.019,
           "pleural_effusion": 0.057,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D116": {
           "normal": 0.38,
@@ -27632,7 +27748,8 @@
           "bilateral_infiltrate": 0.335,
           "BHL": 0.0095,
           "pleural_effusion": 0.2375,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D193": {
           "normal": 0.076,
@@ -27640,7 +27757,8 @@
           "bilateral_infiltrate": 0.81,
           "BHL": 0.0285,
           "pleural_effusion": 0.0285,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D195": {
           "normal": 0.076,
@@ -27648,7 +27766,8 @@
           "bilateral_infiltrate": 0.7625,
           "BHL": 0.019,
           "pleural_effusion": 0.057,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D203": {
           "normal": 0.38,
@@ -27656,7 +27775,8 @@
           "bilateral_infiltrate": 0.4775,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D212": {
           "normal": 0.19,
@@ -27664,7 +27784,8 @@
           "bilateral_infiltrate": 0.2375,
           "BHL": 0.019,
           "pleural_effusion": 0.506,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D215": {
           "normal": 0.0475,
@@ -27672,7 +27793,8 @@
           "bilateral_infiltrate": 0.715,
           "BHL": 0.0095,
           "pleural_effusion": 0.19,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D216": {
           "normal": 0.0475,
@@ -27680,7 +27802,8 @@
           "bilateral_infiltrate": 0.6675,
           "BHL": 0.0095,
           "pleural_effusion": 0.2375,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D219": {
           "normal": 0.2375,
@@ -27688,7 +27811,8 @@
           "bilateral_infiltrate": 0.4775,
           "BHL": 0.0285,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D227": {
           "normal": 0.1425,
@@ -27696,7 +27820,8 @@
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.095,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.62
+          "pneumothorax": 0.62,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D254": {
           "normal": 0.57,
@@ -27704,7 +27829,8 @@
           "bilateral_infiltrate": 0.0475,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.335
+          "pneumothorax": 0.335,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D253": {
           "normal": 0.2375,
@@ -27712,7 +27838,8 @@
           "bilateral_infiltrate": 0.5725,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.114
+          "pneumothorax": 0.114,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D255": {
           "normal": 0.4275,
@@ -27720,7 +27847,8 @@
           "bilateral_infiltrate": 0.3825,
           "BHL": 0.0095,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D263": {
           "normal": 0.095,
@@ -27728,7 +27856,8 @@
           "bilateral_infiltrate": 0.62,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D264": {
           "normal": 0.095,
@@ -27736,7 +27865,8 @@
           "bilateral_infiltrate": 0.62,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D265": {
           "normal": 0.0475,
@@ -27744,7 +27874,8 @@
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.019,
           "pleural_effusion": 0.3325,
-          "pneumothorax": 0.076
+          "pneumothorax": 0.076,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D266": {
           "normal": 0.0285,
@@ -27752,7 +27883,8 @@
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.0095,
           "pleural_effusion": 0.114,
-          "pneumothorax": 0.038
+          "pneumothorax": 0.038,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D267": {
           "normal": 0.076,
@@ -27760,7 +27892,8 @@
           "bilateral_infiltrate": 0.4775,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D277": {
           "normal": 0.076,
@@ -27768,7 +27901,8 @@
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.0475,
           "pleural_effusion": 0.4775,
-          "pneumothorax": 0.0665
+          "pneumothorax": 0.0665,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D278": {
           "normal": 0.0475,
@@ -27776,7 +27910,8 @@
           "bilateral_infiltrate": 0.076,
           "BHL": 0.019,
           "pleural_effusion": 0.7625,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D281": {
           "normal": 0.2375,
@@ -27784,7 +27919,8 @@
           "bilateral_infiltrate": 0.5725,
           "BHL": 0.0095,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.057
+          "pneumothorax": 0.057,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D317": {
           "normal": 0.0475,
@@ -27792,7 +27928,8 @@
           "bilateral_infiltrate": 0.8575,
           "BHL": 0.019,
           "pleural_effusion": 0.0285,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D319": {
           "normal": 0.095,
@@ -27800,7 +27937,8 @@
           "bilateral_infiltrate": 0.525,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.076
+          "pneumothorax": 0.076,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D328": {
           "normal": 0.0095,
@@ -27808,7 +27946,8 @@
           "bilateral_infiltrate": 0.905,
           "BHL": 0.0095,
           "pleural_effusion": 0.0285,
-          "pneumothorax": 0.0095
+          "pneumothorax": 0.0095,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D331": {
           "normal": 0.095,
@@ -27816,7 +27955,8 @@
           "bilateral_infiltrate": 0.7625,
           "BHL": 0.019,
           "pleural_effusion": 0.0475,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D349": {
           "normal": 0.0285,
@@ -27824,7 +27964,8 @@
           "bilateral_infiltrate": 0.0665,
           "BHL": 0.019,
           "pleural_effusion": 0.81,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D258": {
           "normal": 0.1425,
@@ -27832,7 +27973,8 @@
           "bilateral_infiltrate": 0.5725,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D348": {
           "normal": 0.6175,
@@ -27840,7 +27982,8 @@
           "bilateral_infiltrate": 0.095,
           "BHL": 0.019,
           "pleural_effusion": 0.076,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D344": {
           "normal": 0.2375,
@@ -27848,7 +27991,8 @@
           "bilateral_infiltrate": 0.1425,
           "BHL": 0.019,
           "pleural_effusion": 0.5535,
-          "pneumothorax": 0.0285
+          "pneumothorax": 0.0285,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D301": {
           "normal": 0.855,
@@ -27856,7 +28000,8 @@
           "bilateral_infiltrate": 0.019,
           "BHL": 0.0095,
           "pleural_effusion": 0.019,
-          "pneumothorax": 0.019
+          "pneumothorax": 0.019,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D180": {
           "normal": 0.95,
@@ -27864,7 +28009,8 @@
           "bilateral_infiltrate": 0.01,
           "BHL": 0.005,
           "pleural_effusion": 0.015,
-          "pneumothorax": 0.01
+          "pneumothorax": 0.01,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D221": {
           "normal": 0.2,
@@ -27872,7 +28018,8 @@
           "bilateral_infiltrate": 0.2,
           "BHL": 0.0,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.0
+          "pneumothorax": 0.0,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D354": {
           "normal": 0.15,
@@ -27880,7 +28027,8 @@
           "bilateral_infiltrate": 0.15,
           "BHL": 0.395,
           "pleural_effusion": 0.25,
-          "pneumothorax": 0.005
+          "pneumothorax": 0.005,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D356": {
           "normal": 0.6175,
@@ -27888,7 +28036,8 @@
           "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D357": {
           "normal": 0.6175,
@@ -27896,7 +28045,8 @@
           "bilateral_infiltrate": 0.1925,
           "BHL": 0.019,
           "pleural_effusion": 0.095,
-          "pneumothorax": 0.0475
+          "pneumothorax": 0.0475,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D106": {
           "normal": 0.45,
@@ -27904,7 +28054,8 @@
           "bilateral_infiltrate": 0.4,
           "BHL": 0.01,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.04
+          "pneumothorax": 0.04,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D361": {
           "normal": 0.6,
@@ -27912,7 +28063,8 @@
           "bilateral_infiltrate": 0.27,
           "BHL": 0.01,
           "pleural_effusion": 0.04,
-          "pneumothorax": 0.04
+          "pneumothorax": 0.04,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D365": {
           "normal": 0.25,
@@ -27920,7 +28072,8 @@
           "bilateral_infiltrate": 0.35,
           "BHL": 0.05,
           "pleural_effusion": 0.1,
-          "pneumothorax": 0.05
+          "pneumothorax": 0.05,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D366": {
           "normal": 0.6,
@@ -27928,7 +28081,8 @@
           "bilateral_infiltrate": 0.25,
           "BHL": 0.03,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.02
+          "pneumothorax": 0.02,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D109": {
           "normal": 0.5,
@@ -27936,25 +28090,26 @@
           "bilateral_infiltrate": 0.25,
           "BHL": 0.05,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.05
+          "pneumothorax": 0.05,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D201": {
-          "not_done": 0.05,
-          "normal": 0.55,
+          "normal": 0.6,
           "lobar_infiltrate": 0.05,
           "bilateral_infiltrate": 0.2,
           "BHL": 0.0,
           "pleural_effusion": 0.15,
-          "pneumothorax": 0.0
+          "pneumothorax": 0.0,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D13": {
-          "not_done": 0.1,
-          "normal": 0.65,
+          "normal": 0.75,
           "lobar_infiltrate": 0.12,
           "bilateral_infiltrate": 0.05,
           "BHL": 0.0,
           "pleural_effusion": 0.04,
-          "pneumothorax": 0.04
+          "pneumothorax": 0.04,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D381": {
           "normal": 0.05,
@@ -27962,7 +28117,8 @@
           "bilateral_infiltrate": 0.25,
           "BHL": 0.02,
           "pleural_effusion": 0.2,
-          "pneumothorax": 0.08
+          "pneumothorax": 0.08,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D402": {
           "normal": 0.05,
@@ -27970,7 +28126,8 @@
           "bilateral_infiltrate": 0.05,
           "BHL": 0.45,
           "pleural_effusion": 0.2,
-          "pneumothorax": 0.05
+          "pneumothorax": 0.05,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D406": {
           "normal": 0.15,
@@ -27978,7 +28135,8 @@
           "bilateral_infiltrate": 0.3,
           "BHL": 0.05,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.05
+          "pneumothorax": 0.05,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D419": {
           "normal": 0.1,
@@ -27986,7 +28144,8 @@
           "bilateral_infiltrate": 0.1,
           "BHL": 0.12,
           "pleural_effusion": 0.1,
-          "pneumothorax": 0.03
+          "pneumothorax": 0.03,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D420": {
           "normal": 0.3,
@@ -27994,7 +28153,8 @@
           "bilateral_infiltrate": 0.3,
           "BHL": 0.0,
           "pleural_effusion": 0.35,
-          "pneumothorax": 0.0
+          "pneumothorax": 0.0,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D421": {
           "normal": 0.8,
@@ -28002,7 +28162,8 @@
           "bilateral_infiltrate": 0.0,
           "BHL": 0.0,
           "pleural_effusion": 0.18,
-          "pneumothorax": 0.0
+          "pneumothorax": 0.0,
+          "subdiaphragmatic_free_air": 0.0
         },
         "D423": {
           "normal": 0.7,
@@ -28010,7 +28171,8 @@
           "bilateral_infiltrate": 0.05,
           "BHL": 0.0,
           "pleural_effusion": 0.05,
-          "pneumothorax": 0.0
+          "pneumothorax": 0.0,
+          "subdiaphragmatic_free_air": 0.0
         }
       }
     },
@@ -28134,7 +28296,8 @@
         "D19": {
           "negative": 0.92,
           "gram_positive": 0.04,
-          "gram_negative": 0.04
+          "gram_negative": 0.04,
+          "not_done_or_pending": 0.0
         },
         "D26": {
           "not_done_or_pending": 0.3,
@@ -29160,7 +29323,8 @@
           "left_shift": 0.1,
           "atypical_lymphocytes": 0.02,
           "thrombocytopenia": 0.8,
-          "eosinophilia": 0.03
+          "eosinophilia": 0.03,
+          "lymphocyte_predominant": 0.0
         },
         "D156": {
           "normal": 0.02,
@@ -29211,12 +29375,12 @@
           "lymphocyte_predominant": 0.06
         },
         "D177": {
-          "normal": 0.6,
-          "left_shift": 0.1,
+          "normal": 0.7,
+          "left_shift": 0.15,
           "atypical_lymphocytes": 0.0,
-          "thrombocytopenia": 0.25,
+          "thrombocytopenia": 0.08,
           "eosinophilia": 0.0,
-          "lymphocyte_predominant": 0.05
+          "lymphocyte_predominant": 0.07
         },
         "D192": {
           "normal": 0.05,
@@ -29355,10 +29519,10 @@
           "lymphocyte_predominant": 0.05
         },
         "D275": {
-          "normal": 0.55,
-          "left_shift": 0.05,
+          "normal": 0.75,
+          "left_shift": 0.15,
           "atypical_lymphocytes": 0.0,
-          "thrombocytopenia": 0.35,
+          "thrombocytopenia": 0.05,
           "eosinophilia": 0.0,
           "lymphocyte_predominant": 0.05
         },
@@ -30640,19 +30804,23 @@
         },
         "D222": {
           "normal": 0.15,
-          "elevated": 0.85
+          "elevated": 0.85,
+          "very_high_over_100": 0.0
         },
         "D144": {
           "normal": 0.6,
-          "elevated": 0.4
+          "elevated": 0.4,
+          "very_high_over_100": 0.0
         },
         "D202": {
           "normal": 0.15,
-          "elevated": 0.85
+          "elevated": 0.85,
+          "very_high_over_100": 0.0
         },
         "D264": {
           "normal": 0.25,
-          "elevated": 0.75
+          "elevated": 0.75,
+          "very_high_over_100": 0.0
         },
         "D184": {
           "normal": 0.2,
@@ -30706,7 +30874,8 @@
         },
         "D360": {
           "normal": 0.1,
-          "elevated": 0.9
+          "elevated": 0.9,
+          "very_high_over_100": 0.0
         },
         "D106": {
           "normal": 0.3,
@@ -30761,17 +30930,17 @@
         "D266": {
           "normal": 0.1,
           "elevated": 0.7,
-          "very_high": 0.2
+          "very_high_over_100": 0.2
         },
         "D370": {
           "normal": 0.4,
           "elevated": 0.4,
-          "very_high": 0.2
+          "very_high_over_100": 0.2
         },
         "D124": {
           "normal": 0.25,
           "elevated": 0.5,
-          "very_high": 0.25
+          "very_high_over_100": 0.25
         },
         "D34": {
           "normal": 0.15,
@@ -31603,12 +31772,11 @@
           "tb_fungal_pattern": 0.11
         },
         "D144": {
-          "normal": 0.15,
+          "normal": 0.2,
           "viral_pattern": 0.75,
           "bacterial_pattern": 0.02,
           "tb_fungal_pattern": 0.03,
-          "hemorrhagic": 0.02,
-          "malignant_cells": 0.03
+          "HSV_PCR_positive": 0.0
         },
         "D200": {
           "normal": 0.85,
@@ -32557,9 +32725,9 @@
           "at_rest": 0.9
         },
         "D136": {
-          "absent": 0.45,
-          "on_exertion": 0.3,
-          "at_rest": 0.25
+          "absent": 0.9,
+          "on_exertion": 0.07,
+          "at_rest": 0.03
         },
         "D203": {
           "absent": 0.35,
@@ -32853,19 +33021,23 @@
         },
         "D76": {
           "absent": 0.6,
-          "on_exertion": 0.4
+          "on_exertion": 0.4,
+          "at_rest": 0.0
         },
         "D06": {
           "absent": 0.8,
-          "on_exertion": 0.2
+          "on_exertion": 0.2,
+          "at_rest": 0.0
         },
         "D309": {
           "absent": 0.8,
-          "on_exertion": 0.2
+          "on_exertion": 0.2,
+          "at_rest": 0.0
         },
         "D187": {
           "absent": 0.7,
-          "on_exertion": 0.3
+          "on_exertion": 0.3,
+          "at_rest": 0.0
         },
         "D222": {
           "absent": 0.7,
@@ -32959,7 +33131,8 @@
         },
         "D402": {
           "absent": 0.35,
-          "present": 0.65
+          "on_exertion": 0.325,
+          "at_rest": 0.325
         },
         "D403": {
           "absent": 0.1,
@@ -33458,15 +33631,18 @@
         },
         "D76": {
           "absent": 0.5,
-          "mild": 0.5
+          "mild": 0.5,
+          "severe": 0.0
         },
         "D219": {
           "absent": 0.4,
-          "mild": 0.6
+          "mild": 0.6,
+          "severe": 0.0
         },
         "D252": {
           "absent": 0.5,
-          "mild": 0.5
+          "mild": 0.5,
+          "severe": 0.0
         },
         "D264": {
           "absent": 0.4,
@@ -33563,6 +33739,16 @@
           "absent": 0.47,
           "mild": 0.35,
           "severe": 0.18
+        },
+        "D351": {
+          "absent": 0.65,
+          "mild": 0.25,
+          "severe": 0.1
+        },
+        "D269": {
+          "absent": 0.65,
+          "mild": 0.25,
+          "severe": 0.1
         }
       }
     },
@@ -33797,6 +33983,10 @@
         "D188": {
           "absent": 0.7,
           "present": 0.3
+        },
+        "D351": {
+          "absent": 0.6,
+          "present": 0.4
         }
       }
     },
@@ -34765,52 +34955,64 @@
           "severe": 0.25
         },
         "D76": {
-          "absent": 0.30000000000000004,
-          "mild": 0.7
+          "absent": 0.55,
+          "mild": 0.4,
+          "severe": 0.05
         },
         "D39": {
           "absent": 0.6,
-          "mild": 0.4
+          "mild": 0.4,
+          "severe": 0.0
         },
         "D41": {
           "absent": 0.5,
-          "mild": 0.5
+          "mild": 0.5,
+          "severe": 0.0
         },
         "D189": {
           "absent": 0.30000000000000004,
-          "mild": 0.7
+          "mild": 0.7,
+          "severe": 0.0
         },
         "D240": {
           "absent": 0.5,
-          "mild": 0.5
+          "mild": 0.5,
+          "severe": 0.0
         },
         "D241": {
           "absent": 0.4,
-          "mild": 0.6
+          "mild": 0.6,
+          "severe": 0.0
         },
         "D297": {
           "absent": 0.7,
-          "mild": 0.3
+          "mild": 0.3,
+          "severe": 0.0
         },
         "D276": {
           "absent": 0.6,
-          "mild": 0.4
+          "mild": 0.4,
+          "severe": 0.0
         },
         "D84": {
           "absent": 0.2,
-          "mild": 0.8
+          "mild": 0.8,
+          "severe": 0.0
         },
         "D314": {
           "absent": 0.3,
-          "mild": 0.7
+          "mild": 0.7,
+          "severe": 0.0
         },
         "D275": {
-          "absent": 0.5,
-          "mild": 0.5
+          "absent": 0.75,
+          "mild": 0.25,
+          "severe": 0.0
         },
         "D280": {
           "absent": 0.15,
-          "mild": 0.85
+          "mild": 0.85,
+          "severe": 0.0
         },
         "D354": {
           "absent": 0.1,
@@ -35161,6 +35363,11 @@
           "absent": 0.5,
           "mild": 0.35,
           "severe": 0.15
+        },
+        "D269": {
+          "absent": 0.35,
+          "mild": 0.4,
+          "severe": 0.25
         }
       }
     },
@@ -37001,8 +37208,8 @@
           "present": 0.5
         },
         "D238": {
-          "absent": 0.2,
-          "present": 0.8
+          "absent": 0.7,
+          "present": 0.3
         },
         "D246": {
           "absent": 0.03,
@@ -39399,39 +39606,48 @@
       "parent_effects": {
         "D71": {
           "normal": 0.1,
-          "excessive": 0.9
+          "excessive": 0.9,
+          "absent": 0.0
         },
         "D73": {
           "normal": 0.15000000000000002,
-          "excessive": 0.85
+          "excessive": 0.85,
+          "absent": 0.0
         },
         "D74": {
           "normal": 0.15000000000000002,
-          "excessive": 0.85
+          "excessive": 0.85,
+          "absent": 0.0
         },
         "D379": {
           "normal": 0.55,
-          "excessive": 0.45
+          "excessive": 0.45,
+          "absent": 0.0
         },
         "D75": {
           "normal": 0.15000000000000002,
-          "excessive": 0.85
+          "excessive": 0.85,
+          "absent": 0.0
         },
         "D78": {
           "normal": 0.9500000000000001,
-          "excessive": 0.05
+          "excessive": 0.05,
+          "absent": 0.0
         },
         "D88": {
           "normal": 0.15000000000000002,
-          "excessive": 0.85
+          "excessive": 0.85,
+          "absent": 0.0
         },
         "D89": {
           "normal": 0.4,
-          "excessive": 0.6
+          "excessive": 0.6,
+          "absent": 0.0
         },
         "D199": {
           "excessive": 0.7,
-          "normal": 0.3
+          "normal": 0.3,
+          "absent": 0.0
         },
         "D374": {
           "normal": 0.4,
@@ -39687,6 +39903,14 @@
         "D371": {
           "absent": 0.55,
           "present": 0.45
+        },
+        "D37": {
+          "absent": 0.35,
+          "present": 0.65
+        },
+        "D27": {
+          "absent": 0.35,
+          "present": 0.65
         }
       }
     },
@@ -44680,7 +44904,8 @@
         "D221": {
           "continuous": 0.4,
           "intermittent": 0.5,
-          "periodic": 0.1
+          "periodic": 0.1,
+          "double_quotidian": 0.0
         },
         "D354": {
           "continuous": 0.2,
@@ -44914,8 +45139,7 @@
           "pyuria_bacteriuria": 0.92
         },
         "D147": {
-          "not_done": 0.05,
-          "normal": 0.095,
+          "normal": 0.145,
           "pyuria_bacteriuria": 0.855
         }
       }
@@ -49382,7 +49606,8 @@
         "D220": {
           "absent": 0.4,
           "severe_NYHA3_4": 0.3,
-          "mild_NYHA2": 0.3
+          "mild_NYHA2": 0.3,
+          "not_assessed": 0.0
         },
         "D356": {
           "not_assessed": 0.05,
@@ -50965,8 +51190,8 @@
           "bloody": 0.1667
         },
         "D263": {
-          "watery": 0.0196,
-          "bloody": 0.9804
+          "watery": 0.9804,
+          "bloody": 0.0196
         },
         "D351": {
           "watery": 0.8,
@@ -51187,12 +51412,12 @@
           "diffuse": 0.1667
         },
         "D27": {
-          "epigastric": 0.0543,
-          "RUQ": 0.0217,
-          "RLQ": 0.0543,
-          "LLQ": 0.7609,
-          "suprapubic": 0.0326,
-          "diffuse": 0.0761
+          "epigastric": 0.08,
+          "RUQ": 0.05,
+          "RLQ": 0.4,
+          "LLQ": 0.3,
+          "suprapubic": 0.05,
+          "diffuse": 0.12
         },
         "D37": {
           "epigastric": 0.05,
@@ -51763,12 +51988,12 @@
           "diffuse": 0.0412
         },
         "D275": {
-          "epigastric": 0.0309,
-          "RUQ": 0.0309,
-          "RLQ": 0.2577,
-          "LLQ": 0.1031,
-          "suprapubic": 0.1031,
-          "diffuse": 0.4742
+          "epigastric": 0.03,
+          "RUQ": 0.03,
+          "RLQ": 0.35,
+          "LLQ": 0.25,
+          "suprapubic": 0.14,
+          "diffuse": 0.2
         },
         "D276": {
           "epigastric": 0.0204,
@@ -52251,7 +52476,9 @@
           "cervical": 0.4,
           "axillary": 0.2,
           "inguinal": 0.1,
-          "generalized": 0.3
+          "generalized": 0.3,
+          "supraclavicular": 0.0,
+          "mediastinal": 0.0
         },
         "D366": {
           "cervical": 0.5,
@@ -53635,97 +53862,113 @@
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D226": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D235": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D225": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D228": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D238": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D243": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D247": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D218": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D290": {
           "normal": 0.3,
           "mild_low_10_12": 0.3,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.15
+          "very_low_under_7": 0.15,
+          "high": 0.0
         },
         "D222": {
           "normal": 0.3,
           "mild_low_10_12": 0.4,
           "low_7_10": 0.2,
-          "very_low_under_7": 0.1
+          "very_low_under_7": 0.1,
+          "high": 0.0
         },
         "D219": {
           "normal": 0.3,
           "mild_low_10_12": 0.4,
           "low_7_10": 0.25,
-          "very_low_under_7": 0.05
+          "very_low_under_7": 0.05,
+          "high": 0.0
         },
         "D252": {
           "normal": 0.4,
           "mild_low_10_12": 0.4,
           "low_7_10": 0.15,
-          "very_low_under_7": 0.05
+          "very_low_under_7": 0.05,
+          "high": 0.0
         },
         "D220": {
           "normal": 0.4,
           "mild_low_10_12": 0.35,
           "low_7_10": 0.2,
-          "very_low_under_7": 0.05
+          "very_low_under_7": 0.05,
+          "high": 0.0
         },
         "D221": {
           "normal": 0.3,
           "mild_low_10_12": 0.35,
           "low_7_10": 0.3,
-          "very_low_under_7": 0.05
+          "very_low_under_7": 0.05,
+          "high": 0.0
         },
         "D65": {
           "normal": 0.6,
           "mild_low_10_12": 0.25,
           "low_7_10": 0.12,
-          "very_low_under_7": 0.03
+          "very_low_under_7": 0.03,
+          "high": 0.0
         },
         "D359": {
           "very_low_under_7": 0.01,
@@ -53836,7 +54079,8 @@
           "very_low_under_7": 0.2,
           "low_7_10": 0.2,
           "mild_low_10_12": 0.25,
-          "normal": 0.35
+          "normal": 0.35,
+          "high": 0.0
         }
       }
     },
@@ -55009,6 +55253,53 @@
         }
       }
     },
+    "S67": {
+      "description": "嘔吐の性状。S66のsatellite。吐血(bloody)が鑑別の鍵",
+      "states": [
+        "bilious",
+        "bloody",
+        "feculent",
+        "projectile",
+        "food_content"
+      ],
+      "leak": {
+        "bilious": 0.25,
+        "bloody": 0.05,
+        "feculent": 0.05,
+        "projectile": 0.15,
+        "food_content": 0.5
+      },
+      "parent_effects": {
+        "D243": {
+          "bilious": 0.03,
+          "bloody": 0.85,
+          "feculent": 0.02,
+          "projectile": 0.03,
+          "food_content": 0.07
+        },
+        "D244": {
+          "bilious": 0.08,
+          "bloody": 0.7,
+          "feculent": 0.02,
+          "projectile": 0.05,
+          "food_content": 0.15
+        },
+        "D245": {
+          "bilious": 0.1,
+          "bloody": 0.6,
+          "feculent": 0.02,
+          "projectile": 0.05,
+          "food_content": 0.23
+        },
+        "D337": {
+          "bilious": 0.15,
+          "bloody": 0.05,
+          "feculent": 0.4,
+          "projectile": 0.15,
+          "food_content": 0.25
+        }
+      }
+    },
     "S75": {
       "description": "皮疹の分布。E12のsatellite。2親",
       "leak": {
@@ -56112,6 +56403,23 @@
         "D380": {
           "absent": 0.1,
           "present": 0.9
+        }
+      }
+    },
+    "E98": {
+      "description": "鼠径部腫瘤(還納不能)。嵌頓ヘルニアの決定的所見。触診感度74-92%(AAFP 2013)",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "leak": {
+        "absent": 0.995,
+        "present": 0.005
+      },
+      "parent_effects": {
+        "D275": {
+          "absent": 0.05,
+          "present": 0.95
         }
       }
     },
@@ -57521,7 +57829,8 @@
         "D414": {
           "normal": 0.15,
           "areflexia": 0.25,
-          "hyporeflexia": 0.6
+          "hyporeflexia": 0.6,
+          "hyperreflexia": 0.0
         }
       }
     },

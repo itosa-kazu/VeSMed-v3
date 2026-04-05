@@ -2,6 +2,7 @@
 
 ## 鉄則・フィードバック
 - [feedback_source_level_traceability.md](feedback_source_level_traceability.md) — **全辺にPMID+情報源レベル(SR/NR/TB)+excerpt必須。降級源は明示的標記。全環節貫通の鉄律**
+- [feedback_structure_follows_invariants.md](feedback_structure_follows_invariants.md) — **架構三鉄律(通用)**: 結構はDomain Invariantsに従う/演進は加法のみ/補丁は架構bugの症状。Plato "carving at joints"
 - [feedback_project_principles.md](feedback_project_principles.md) — VeSMed 6大鉄則：実症例のみ/CPT文献必須/変数ID確認/三件套同期/辺+CPT同時/新疾患追加時real case必須
 - [feedback_regression_report_format.md](feedback_regression_report_format.md) — 回帰テスト報告は総案例数+百分率を必ず含める
 - [feedback_speak_chinese.md](feedback_speak_chinese.md) — 用中文交流
@@ -11,6 +12,8 @@
 - [feedback_trinity_audit.md](feedback_trinity_audit.md) — 新変数追加時は9項目の三位一体監査を必ず実施
 - [feedback_no_definitive_test_in_eval.md](feedback_no_definitive_test_in_eval.md) — 確定診断検査(活検等)の結果はテスト案例に入れない
 - [feedback_atomicity_principle.md](feedback_atomicity_principle.md) — **変量原子化原則**: 1変量=1臨床観察単位。異なる検体/手技/感度は別変量(喀痰≠BAL)
+- [feedback_variable_state_design.md](feedback_variable_state_design.md) — **変量State設計鉄律(対抗検証済)**: 三層構造(Finding=absent/present, Measurement=cutoff区間, Satellite=陽性分岐のみ)。absent+severity混合禁止。5攻撃全却下
+- [feedback_variable_granularity.md](feedback_variable_granularity.md) — **変量粒度原則(6攻撃検証済)**: 臨床観察のみ/機制不要。診断評分≠臨床測量尺。治療反応=秒分Finding/時間週D→D。粗細二重計上禁止
 - [feedback_not_fever_only.md](feedback_not_fever_only.md) — **最重要: VeSMedは発熱限定ではない**。全疾患対象の包括的システム。「scope外」と判断しない
 
 ## 将来タスク
@@ -36,7 +39,7 @@
 - [feedback_no_normal_value_edges.md](feedback_no_normal_value_edges.md) — 正常値辺(WBC正常等)は鑑別力ゼロで逆効果。疾患特異的辺のみ追加
 - [feedback_bidirectional_edge_check.md](feedback_bidirectional_edge_check.md) — **辺チェックは双方向**: 変量→疾患 + 疾患→変量。rank最差から優先
 - [project_dense_model_plan.md](project_dense_model_plan.md) — 稠密モデル実験結果: leak auto-fillは無効。臨床判断CPTによる漸進的稠密化が正解
-- [project_dense_cleanup_pipeline.md](project_dense_cleanup_pipeline.md) — **大清洗pipeline設計**: 全430疾患を1つずつ致密化。SR文献ベース、hot-swap構成、テンプレート生成でID幻覚防止
+- [project_dense_cleanup_pipeline.md](project_dense_cleanup_pipeline.md) — **大清洗pipeline**: UpToDate主軸+PMC補完、1ヶ月集中。CPT分級(Gold/Silver/Bronze)、hot-swap構成。ユーザー=コピペ、Claude=解析+JSON生成
 - [project_t02_expansion.md](project_t02_expansion.md) — T02 4state化計画: sudden_minutes/acute_hours/subacute_weeks/chronic_months。自動マッピング失敗→手動CPT必要
 - [feedback_keep_experiment_branches.md](feedback_keep_experiment_branches.md) — 実験分支は削除禁止。失敗も保存
 - [feedback_evidence_needs_edges.md](feedback_evidence_needs_edges.md) — Evidence追加前に辺の整備を確認。辺なしevidenceはleak値で不利
@@ -56,7 +59,7 @@
 - [user_profile.md](user_profile.md) — 用户背景：VeSMed项目负责人，熟悉BN和医学诊断
 
 ## プロジェクト状況
-- [project_vesmed_status.md](project_vesmed_status.md) — 当前状态：8047辺, 1173cases, Top-1 78%, Top-3 93%, FATAL 0
+- [project_vesmed_status.md](project_vesmed_status.md) — **バージョン時間軸**: v3.0(現行430疾患/8201辺/1268案例) → v3.1(大清洗: 変量三層化+UpToDate全面刷新)
 - [project_rd_prior_discovery.md](project_rd_prior_discovery.md) — **R→D Prior大発見**: 人口統計prior(年齢/性別)が史上最大の改善レバー。53/345疾患実装済み、全疾患展開が最優先
 - [project_variable_audit_pipeline.md](project_variable_audit_pipeline.md) — 変量審計パイプライン: 227新変量導入、CPT_NO_EDGE同期問題の発見と修正
 - [project_papers_plan.md](project_papers_plan.md) — 3篇论文计划：NO EDGE(85%), エントロピー(70%), 情報幾何(75%)
@@ -79,6 +82,13 @@
 - [project_cardiac_gap_analysis.md](project_cardiac_gap_analysis.md) — **心臓系缺口分析**: 18疾患で主要網羅。D215案例9件/D356案例8件追加済み
 - [project_melanoma_limitation.md](project_melanoma_limitation.md) — **D423黒色腫の構造的限界**: 皮膚病変変量がなくTop-1 17%。皮膚所見変量追加が必要
 - [project_disease_gap_2026_03.md](project_disease_gap_2026_03.md) — **疾患缺口分析**: 全137缺口(A27/B33/C50/D27)。最手薄: 産科/婦人科/眼科/皮膚科/整形
+- [project_universal_medical_graph.md](project_universal_medical_graph.md) — **万有医学因果図**: 全医学=1枚のDAG。診断=位置推定、治療=ノード削弱、時間=快照列。合併症は自然消滅。D→D辺追加が鍵
+- [project_olfactory_analogy.md](project_olfactory_analogy.md) — **嗅覚類比**: 侧抑制=explaining away=水流。VeSMedに欠ける核心拼図。v3.3で実装予定
+- [project_biological_convergence.md](project_biological_convergence.md) — **生物収束進化**: 因果図=生命普遍架構。基因調控/免疫/神経/進化が全て同一解。表観遺伝=CPT修飾
+- [project_unsolved_problems_audit.md](project_unsolved_problems_audit.md) — **未解決問題総監査**: 架構級(A1-A5)全解決、変量級(B1-B4)全解決。残りは数据/工程/人力のみ
+- [project_v33_adversarial_bio_design.md](project_v33_adversarial_bio_design.md) — **v3.3対抗性テスト(8攻撃)**: 全て生物解法あり。核心: soft lateral inhibition + additive/exclusive所見属性 + unexplained residual検出器
+- [project_immune_system_analogy.md](project_immune_system_analogy.md) — **免疫系統類比**: 上下文変量がCPT解読を変える→V→V辺。但免疫=執行者,VeSMed=偵察兵,類比に限界あり
+- [project_olfactory_time_series.md](project_olfactory_time_series.md) — **嗅覚×時間序列(版本級方向)**: 信息=変化。快照→時系列進化。採样層(AI)/推理層(VeSMed)分離。嗅覚三機制が時系列で自然湧現
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）

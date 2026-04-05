@@ -6787,7 +6787,7 @@
       "E05": "mild_hypoxia_93_96",
       "L01": "very_high_over_20000",
       "L02": "high_over_10",
-      "L04": "pneumothorax",
+      "L04": "subdiaphragmatic_free_air",
       "T01": "1w_to_3w",
       "T02": "subacute",
       "S89": "epigastric"
@@ -6797,7 +6797,7 @@
       "R02": "female"
     },
     "result": "",
-    "notes": "NSAIDs→D1穿孔. CXR free air→L04=pneumothorax mapping. WBC 24k, CRP著高"
+    "notes": "NSAIDs→D1穿孔. CXR free air→L04=subdiaphragmatic_free_air. WBC 24k, CRP著高"
   },
   {
     "id": "R256",
@@ -6814,7 +6814,7 @@
       "E03": "hypotension_under_90",
       "E01": "under_37.5",
       "E05": "mild_hypoxia_93_96",
-      "L04": "pneumothorax",
+      "L04": "subdiaphragmatic_free_air",
       "T01": "under_3d",
       "T02": "sudden",
       "S89": "diffuse"
@@ -33026,6 +33026,56 @@
       "L02": "high_over_10",
       "L31b": "present",
       "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "40_64",
+      "R02": "male"
+    }
+  },
+  {
+    "id": "R1270",
+    "source": "Cureus 2023",
+    "pmcid": "PMC10292066",
+    "vignette": "5F 3日間の高熱+悪寒+乾性咳嗽+咽頭痛+鼻閉。T38.2 HR110 RR24 SpO2 98%。扁桃発赤(浸出液なし)+頸部リンパ節圧痛。CBC正常 CRP正常。インフルエンザA/B陰性 COVID陰性",
+    "final_diagnosis": "ウイルス性上気道炎",
+    "expected_id": "D01",
+    "in_scope": true,
+    "evidence": {
+      "S01": "present",
+      "S84": "dry",
+      "S02": "present",
+      "S03": "present",
+      "E01": "38.0_39.0",
+      "E08": "erythema",
+      "L01": "normal_4000_10000",
+      "L02": "normal_under_0.3",
+      "T01": "under_3d",
+      "T02": "acute"
+    },
+    "risk_factors": {
+      "R01": "1_5"
+    }
+  },
+  {
+    "id": "R1271",
+    "source": "J Thorac Dis 2018",
+    "pmcid": "PMC6006084",
+    "vignette": "59M Day1咽頭痛→Day2微熱+倦怠感+くしゃみ+水様性鼻漏→Day3咳嗽(漿液性痰)。体温37.0℃未満。CRP0.6。咽頭壁異常なし。12日間で自然軽快",
+    "final_diagnosis": "ウイルス性上気道炎(RSV)",
+    "expected_id": "D01",
+    "in_scope": true,
+    "evidence": {
+      "S01": "present",
+      "S84": "productive",
+      "S02": "present",
+      "S03": "present",
+      "S85": "clear_rhinorrhea",
+      "S07": "mild",
+      "E01": "under_37.5",
+      "E08": "normal",
+      "L02": "mild_0.3_3",
+      "T01": "3d_to_1w",
       "T02": "acute"
     },
     "risk_factors": {

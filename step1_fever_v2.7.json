@@ -1660,9 +1660,10 @@
         "bilateral_infiltrate",
         "BHL",
         "pleural_effusion",
-        "pneumothorax"
+        "pneumothorax",
+        "subdiaphragmatic_free_air"
       ],
-      "note": "併存所見あり得る（例：浸潤影+胸水）。主要所見を1つ選択。BHL=両側肺門リンパ節腫脹"
+      "note": "併存所見あり得る（例：浸潤影+胸水）。主要所見を1つ選択。BHL=両側肺門リンパ節腫脹。subdiaphragmatic_free_air=横隔膜下遊離ガス(消化管穿孔)"
     },
     {
       "id": "L05",
@@ -10517,6 +10518,17 @@
       ],
       "note": "緘黙/木僵/蝋様屈曲/姿勢保持/拒絶症。Bush-Francis Catatonia Rating Scaleで評価。致死性緊張病/NMS/抗NMDA受容体脳炎で出現",
       "severity": "high"
+    },
+    {
+      "id": "E98",
+      "name": "inguinal_mass",
+      "name_ja": "鼠径部腫瘤",
+      "category": "sign",
+      "states": [
+        "absent",
+        "present"
+      ],
+      "note": "鼠径部の還納不能な腫瘤。嵌頓ヘルニアの決定的所見。触診感度74-92%。圧痛・硬結を伴えば絞扼を疑う"
     },
     {
       "id": "R64",
