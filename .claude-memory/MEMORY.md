@@ -87,8 +87,8 @@
 - [project_biological_convergence.md](project_biological_convergence.md) — **生物収束進化**: 因果図=生命普遍架構。基因調控/免疫/神経/進化が全て同一解。表観遺伝=CPT修飾
 - [project_unsolved_problems_audit.md](project_unsolved_problems_audit.md) — **未解決問題総監査**: 架構級(A1-A5)全解決、変量級(B1-B4)全解決。残りは数据/工程/人力のみ
 - [project_v33_adversarial_bio_design.md](project_v33_adversarial_bio_design.md) — **v3.3対抗性テスト(8攻撃)**: 全て生物解法あり。核心: soft lateral inhibition + additive/exclusive所見属性 + unexplained residual検出器
-- [project_immune_system_analogy.md](project_immune_system_analogy.md) — **免疫系統類比**: 上下文変量がCPT解読を変える→V→V辺。但免疫=執行者,VeSMed=偵察兵,類比に限界あり
-- [project_olfactory_time_series.md](project_olfactory_time_series.md) — **嗅覚×時間序列(版本級方向)**: 信息=変化。快照→時系列進化。採样層(AI)/推理層(VeSMed)分離。嗅覚三機制が時系列で自然湧現
+- [project_immune_system_analogy.md](project_immune_system_analogy.md) — **免疫類比【未証実】**: V→V辺/上下文変量は未検証仮説。確定: 免疫=執行者,VeSMed=偵察兵
+- [project_olfactory_time_series.md](project_olfactory_time_series.md) — **嗅覚×時間処理(v3.3内建)**: EA+記憶=侧抑制+適応。v4.x不要。未証実仮説は末尾に分離
 
 ## 解決済み（今回）
 - ~~推奨検査に期待所見表示~~ → 実装済み（best_state + state_details API）
